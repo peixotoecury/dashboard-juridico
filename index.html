@@ -1109,6 +1109,8 @@ body.role-user .hdr-actions { display:none !important; }
   display:flex !important;
   align-items:center !important;
   gap:10px !important;
+  white-space:nowrap !important;
+  flex-wrap:nowrap !important;
 }
 .hdr-title h1 span.hdr-emoji { font-size:15px !important; opacity:.7 !important; }
 .hdr-actions { margin-left:auto !important; display:flex !important; gap:10px !important; align-items:center !important; }
@@ -2370,10 +2372,7 @@ body.role-manager .upload-bar {
   </div>
   <div class="hdr-sep"></div>
   <div class="hdr-title">
-    <h1>⚖️ Controladoria - Controle de Prazos e Agendas</h1>
-    <div id="hdr-ultima-atualizacao" style="font-size:10px;color:rgba(255,255,255,.38);font-weight:300;letter-spacing:.03em;margin-top:2px;display:none;">
-      Dados de <span id="hdr-data-upload"></span>
-    </div>
+    <h1>⚖️ Controladoria - Controle de Prazos e Agendas<span id="hdr-ultima-atualizacao" style="font-size:10px;color:rgba(255,255,255,.38);font-weight:300;letter-spacing:.03em;margin-left:10px;display:none;">— Dados de <span id="hdr-data-upload"></span></span></h1>
   </div>
   <div class="hdr-actions" id="hdr-actions">
     <button class="hdr-btn" onclick="exportarExcel()">📥 Exportar Excel</button>
@@ -7852,21 +7851,7 @@ function qgLoadAudiencias(inp){
     document.getElementById('github-config-panel').style.display='flex';
   };
 
-  // Adiciona botão "GitHub" no header ao inicializar
-  document.addEventListener('DOMContentLoaded', function(){
-    setTimeout(function(){
-      const ha = document.getElementById('hdr-actions');
-      if(ha && !document.getElementById('btn-github-cfg')){
-        const btn = document.createElement('button');
-        btn.id = 'btn-github-cfg';
-        btn.className = 'hdr-btn';
-        btn.textContent = '🔗 GitHub';
-        btn.title = 'Configurar atualização automática via GitHub';
-        btn.onclick = window.abrirConfigGithub;
-        ha.insertBefore(btn, ha.firstChild);
-      }
-    }, 600);
-  });
+  // Botão GitHub removido a pedido dos sócios
 
 })();
 </script>
