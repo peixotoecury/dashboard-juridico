@@ -4600,13 +4600,15 @@ window.enviarEmailJustificativa = function(processo, grupo, campo6, campo4, camp
     + 'Atenciosamente,\n'
     + 'Controladoria — Peixoto & Cury Advogados';
   
-  var mailto = 'mailto:' + config.para;
+  // Converte "; " em "," para o protocolo mailto (RFC 6068)
+  var toAddr = (config.para || '').replace(/\s*;\s*/g, ',');
+  var mailto = 'mailto:' + toAddr;
   if(config.cc) mailto += '?cc=' + encodeURIComponent(config.cc);
-  mailto += '&subject=' + encodeURIComponent(assunto);
+  mailto += (config.cc ? '&' : '?') + 'subject=' + encodeURIComponent(assunto);
   mailto += '&body=' + encodeURIComponent(corpo);
-  
-  window.open(mailto);
-  console.log('✉️ Email de justificativa aberto para: ' + config.para + (config.cc ? ' (cc: ' + config.cc + ')' : ''));
+
+  window.location.href = mailto;
+  console.log('✉️ Email de justificativa aberto para: ' + toAddr + (config.cc ? ' (cc: ' + config.cc + ')' : ''));
 };
 
 // ✅ Mapeamento de Responsáveis por Reagendamento (ATUALIZADO)
@@ -4761,13 +4763,15 @@ window.enviarReagendamento = function() {
     + 'Atenciosamente,\n'
     + 'Controladoria — Peixoto & Cury Advogados';
   
-  var mailto = 'mailto:' + config.email;
+  // Converte "; " em "," para o protocolo mailto (RFC 6068)
+  var toAddr = (config.email || '').replace(/\s*;\s*/g, ',');
+  var mailto = 'mailto:' + toAddr;
   if(config.cc) mailto += '?cc=' + encodeURIComponent(config.cc);
   mailto += (config.cc ? '&' : '?') + 'subject=' + encodeURIComponent(assunto);
   mailto += '&body=' + encodeURIComponent(corpo);
-  
-  window.open(mailto);
-  console.log('✉️ Email de reagendamento aberto para: ' + config.email + (config.cc ? ' (cc: ' + config.cc + ')' : ''));
+
+  window.location.href = mailto;
+  console.log('✉️ Email de reagendamento aberto para: ' + toAddr + (config.cc ? ' (cc: ' + config.cc + ')' : ''));
 
   // Salvar reagendamento no Supabase para controle dos gestores
   _initSupabase();
