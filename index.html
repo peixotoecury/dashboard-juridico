@@ -2835,6 +2835,8 @@ body.role-manager .upload-bar {
 </div>
 <div class="bottom-action-bar" id="hdr-actions">
   <button class="hdr-btn" onclick="exportarExcel()">📥 Exportar Excel</button>
+  <button class="hdr-btn" onclick="exportarFormatoOriginal()" title="Baixar a planilha carregada com as colunas originais do upload">📋 Baixar Planilha</button>
+  <button class="hdr-btn" onclick="exportarJustificativasReagendamentos()" title="Exportar todas as justificativas e reagendamentos registrados">📊 Exportar Registros</button>
   <button class="hdr-btn" onclick="enviarEmailTrabalhista()" title="Enviar email para área trabalhista">✉️ Email Trabalhista</button>
   <button class="hdr-btn" onclick="salvarPlanilhaAtualEmLS(); alert('✅ Planilha salva! Ao recarregar, os dados serão restaurados.');" title="Salvar planilha no navegador para restaurar ao recarregar">💾 Salvar Planilha</button>
   <button class="hdr-btn primary" onclick="registrarSnapshot()">📸 Registrar Snapshot</button>
@@ -4394,7 +4396,7 @@ function renderRankFatal() {
       alertasEl.innerHTML = '⚠️ <strong>Pontos de atenção:</strong> '
         + criticos.map(function(x) {
             return '<span style="background:#fdecea;border:1px solid #f5c6c6;border-radius:4px;padding:1px 8px;margin:0 3px;font-weight:600;">'
-              + e(x.resp) + ' — ' + x.fatais + ' fatal' + (x.fatais > 1 ? 'is' : '') + '</span>';
+              + e(x.resp) + ' — ' + x.fatais + (x.fatais > 1 ? ' fatais' : ' fatal') + '</span>';
           }).join(' ');
     } else {
       alertasEl.style.display = 'none';
@@ -4766,7 +4768,20 @@ window.enviarReagendamento = function() {
   
   window.open(mailto);
   console.log('✉️ Email de reagendamento aberto para: ' + config.email + (config.cc ? ' (cc: ' + config.cc + ')' : ''));
-  
+
+  // Salvar reagendamento no Supabase para controle dos gestores
+  _initSupabase();
+  if(supabaseClient) {
+    var sess = window.SESSAO || window.sessao || window.usuarioLogado || {};
+    supabaseClient.from('reagendamentos').insert({
+      processo: processo, reclamante: reclamante, responsavel: responsavel,
+      equipe: equipe, responsavel_reag: responsavelReag,
+      data_atual: dataAtual, data_fatal: dataFatal, tipo_prazo: tipoPrazo,
+      justificativa: justificativa, usuario_email: sess.email || '',
+      usuario_nome: sess.nome || sess.login || '', criado_em: new Date().toISOString()
+    }).then(function(r){ if(r.error) console.log('Erro ao registrar reagendamento:', r.error); else console.log('✅ Reagendamento registrado no Supabase'); });
+  }
+
   // Fechar modal após envio
   setTimeout(function() {
     var modal = document.getElementById('modal-reagendamento');
@@ -5846,6 +5861,47 @@ function exportarExcel() {
 
   const dt = new Date().toLocaleDateString('pt-BR').replace(/\//g,'-');
   XLSX.writeFile(wb, `PC_${nome}_${dt}.xlsx`);
+}
+
+// ── EXPORTAR PLANILHA NO FORMATO ORIGINAL (mesmas colunas do upload) ─────────
+function exportarFormatoOriginal() {
+  if (!S.raw || !S.raw.length) {
+    alert('Nenhum dado carregado. Faça o upload da planilha de Prazos & Agendas primeiro.');
+    return;
+  }
+  var wb = XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(wb, XLSX.utils.json_to_sheet(S.raw), 'Agendamentos');
+  if (S.aud && S.aud.length)    XLSX.utils.book_append_sheet(wb, XLSX.utils.json_to_sheet(S.aud),    'Audiencias');
+  if (S.cancel && S.cancel.length) XLSX.utils.book_append_sheet(wb, XLSX.utils.json_to_sheet(S.cancel), 'Redesignadas-Canceladas');
+  var dt = new Date().toLocaleDateString('pt-BR').replace(/\//g,'-');
+  XLSX.writeFile(wb, 'Planilha_' + dt + '.xlsx');
+}
+
+// ── EXPORTAR JUSTIFICATIVAS E REAGENDAMENTOS (somente admin/gestor) ───────────
+async function exportarJustificativasReagendamentos() {
+  _initSupabase();
+  if (!supabaseClient) { alert('Supabase não disponível. Tente novamente.'); return; }
+  V('ov').style.display = 'flex';
+  try {
+    var [justResult, reagResult] = await Promise.all([
+      supabaseClient.from('justificativas').select('*').order('atualizado_em', {ascending: false}),
+      supabaseClient.from('reagendamentos').select('*').order('criado_em', {ascending: false})
+    ]);
+    var wb = XLSX.utils.book_new();
+    var justData = (justResult.data || []).map(function(r) {
+      return { 'Processo': r.numero_processo||'', 'Justificativa': r.justificativa_texto||'', 'Usuário': r.usuario_nome||'', 'Email': r.usuario_email||'', 'Atualizado em': r.atualizado_em ? new Date(r.atualizado_em).toLocaleString('pt-BR') : '' };
+    });
+    XLSX.utils.book_append_sheet(wb, XLSX.utils.json_to_sheet(justData.length ? justData : [{'Processo':'(nenhum registro)'}]), 'Justificativas');
+    var reagData = (reagResult.data || []).map(function(r) {
+      return { 'Processo': r.processo||'', 'Reclamante': r.reclamante||'', 'Responsável': r.responsavel||'', 'Equipe': r.equipe||'', 'Resp. Reagendamento': r.responsavel_reag||'', 'Data Prazo Atual': r.data_atual||'', 'Data Prazo Fatal': r.data_fatal||'', 'Tipo de Prazo': r.tipo_prazo||'', 'Justificativa': r.justificativa||'', 'Enviado por': r.usuario_nome||'', 'Email': r.usuario_email||'', 'Enviado em': r.criado_em ? new Date(r.criado_em).toLocaleString('pt-BR') : '' };
+    });
+    XLSX.utils.book_append_sheet(wb, XLSX.utils.json_to_sheet(reagData.length ? reagData : [{'Processo':'(nenhum registro)'}]), 'Reagendamentos');
+    var dt = new Date().toLocaleDateString('pt-BR').replace(/\//g,'-');
+    XLSX.writeFile(wb, 'Registros_Controle_' + dt + '.xlsx');
+  } catch(e) {
+    alert('Erro ao exportar: ' + e.message);
+  }
+  V('ov').style.display = 'none';
 }
 
 // ── PATCH renderAll to include new blocks ────────────
