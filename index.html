@@ -9,6 +9,7 @@
 <meta name="theme-color" content="#005f73">
 <title>Controladoria - Controle de Prazos e Agendas</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/exceljs@4.4.0/dist/exceljs.min.js"></script>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
@@ -5717,7 +5718,7 @@ function renderEvolucao() {
     </tr>`;
 }
 // ── EXPORTAR EXCEL ────────────────────────────────────
-function exportarExcel() {
+async function exportarExcel() {
   const aba = document.querySelector('.nav-btn.active').textContent.trim().replace(/\d+/g,'').trim();
   let data = [], nome = 'dashboard';
 
@@ -5842,29 +5843,29 @@ function exportarExcel() {
 
   if (!data.length) { alert('Nenhum dado para exportar na aba atual.'); return; }
 
-  const ws = XLSX.utils.json_to_sheet(data);
-  const wb = XLSX.utils.book_new();
-  XLSX.utils.book_append_sheet(wb, ws, nome.slice(0,31));
+  const dt = new Date().toLocaleDateString('pt-BR').replace(/\//g,'-');
 
-  // Adicionar aba de Evolução se houver snapshots estáticos
-  if (Object.keys(snapshots).length > 0) {
-    const horasComDados = HORAS.filter(h => snapshots[h]);
-    const allKeys = [...new Set(horasComDados.flatMap(h => Object.keys(itensSnap(h))))];
-    const evolData = allKeys.map(key => {
-      const itemRef = horasComDados.map(h=>itensSnap(h)[key]).find(Boolean) || {};
-      const row = { Responsável: itemRef.resp || key.split('||')[0], Grupo: itemRef.grupo || key.split('||')[1] || '' };
-      HORAS.forEach(h => { row[h] = snapshots[h] ? ((itensSnap(h)[key]?.fatais) || 0) : ''; });
-      return row;
-    });
-    const totalRow = { Responsável: 'TOTAL GERAL', Grupo: '' };
-    HORAS.forEach(h => { totalRow[h] = snapshots[h] ? totalSnap(h) : ''; });
-    evolData.push(totalRow);
-    const ws2 = XLSX.utils.json_to_sheet(evolData);
-    XLSX.utils.book_append_sheet(wb, ws2, 'Evolução Fatais');
+  // Audiências e Redesignadas têm estrutura própria — exporta com SheetJS diretamente
+  if (aba.includes('Audiências') || aba.includes('Redesignadas')) {
+    const ws = XLSX.utils.json_to_sheet(data);
+    const wb = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(wb, ws, nome.slice(0,31));
+    XLSX.writeFile(wb, `PC_${nome}_${dt}.xlsx`);
+    return;
   }
 
-  const dt = new Date().toLocaleDateString('pt-BR').replace(/\//g,'-');
-  XLSX.writeFile(wb, `PC_${nome}_${dt}.xlsx`);
+  // Para prazos / agendas / equipe — usa as 19 colunas e formatação da planilha de referência
+  let registrosBrutos = [];
+  if (aba.includes('Agenda Equipe')) {
+    registrosBrutos = fe;
+  } else if (aba.includes('Agendas')) {
+    registrosBrutos = fa;
+  } else {
+    // Dashboard Executivo, Exposição, Quadro Geral e demais → tudo
+    registrosBrutos = [...fp, ...fa, ...fe];
+  }
+  if (!registrosBrutos.length) { alert('Nenhum dado para exportar.'); return; }
+  await window._gerarExcelFormatado(registrosBrutos, `PC_${nome}_${dt}.xlsx`);
 }
 
 // ── EXPORTAR PLANILHA NO FORMATO ORIGINAL (mesmas colunas do upload) ─────────
@@ -8084,6 +8085,111 @@ function qgLoadAudiencias(inp){
 /* ===== EXPORTAR REGISTROS — CÓPIA FIEL DO ORIGINAL ===== */
 
 // Exporta a partir dos dados em memória (S.raw) quando buffer não disponível
+// ── HELPER: GERA EXCEL COM FORMATAÇÃO IDÊNTICA À PLANILHA DE REFERÊNCIA ──────
+// Cor cabeçalho: RGB(21,96,130) = #156082 | Fonte: Aptos Narrow 11pt | Altura linha: 14.4
+window._gerarExcelFormatado = async function(registros, nomeArquivo) {
+  function toDate(v) {
+    if (v instanceof Date) return v;
+    if (typeof v === 'number' && v > 20000) return new Date((v - 25569) * 86400000);
+    if (typeof v === 'string' && v) { const d = new Date(v); return isNaN(d.getTime()) ? null : d; }
+    return null;
+  }
+
+  if (typeof ExcelJS === 'undefined') {
+    // Fallback SheetJS sem formatação
+    const COLS19 = ['data','status','situacao_pasta','grupo_processo','codigo_processo',
+      'codigo_cliente','cliente','parte_principal','parte_contraria','numero_processo',
+      'importante','matricula','responsavel','area','tipo_agenda','descricao_tarefa',
+      'codigo_agenda','quando_criado','quem_criou'];
+    const ws = XLSX.utils.json_to_sheet(registros.map(r=>{
+      const o={}; COLS19.forEach(c=>{ o[c]=r[c]!==undefined?r[c]:''; }); return o;
+    }), {header:COLS19});
+    ws['!cols']=[{wch:9.6},{wch:7.8},{wch:15.4},{wch:16.4},{wch:17.2},{wch:15.3},{wch:22.8},
+      {wch:78.3},{wch:90.9},{wch:23.8},{wch:12.1},{wch:10.6},{wch:34.3},{wch:22.1},
+      {wch:13.3},{wch:100},{wch:15.4},{wch:15.3},{wch:12.7}];
+    const wbb=XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(wbb, ws, 'Agendamentos');
+    XLSX.writeFile(wbb, nomeArquivo);
+    return;
+  }
+
+  const wb = new ExcelJS.Workbook();
+  const ws = wb.addWorksheet('Agendamentos');
+
+  // 19 colunas — nomes, chaves e larguras exatamente como a planilha de referência
+  ws.columns = [
+    { header: 'data',             key: 'data',             width:  9.6  },
+    { header: 'status',           key: 'status',           width:  7.8  },
+    { header: 'situacao_pasta',   key: 'situacao_pasta',   width: 15.4  },
+    { header: 'grupo_processo',   key: 'grupo_processo',   width: 16.4  },
+    { header: 'codigo_processo',  key: 'codigo_processo',  width: 17.2  },
+    { header: 'codigo_cliente',   key: 'codigo_cliente',   width: 15.3  },
+    { header: 'cliente',          key: 'cliente',          width: 22.8  },
+    { header: 'parte_principal',  key: 'parte_principal',  width: 78.3  },
+    { header: 'parte_contraria',  key: 'parte_contraria',  width: 90.9  },
+    { header: 'numero_processo',  key: 'numero_processo',  width: 23.8  },
+    { header: 'importante',       key: 'importante',       width: 12.1  },
+    { header: 'matricula',        key: 'matricula',        width: 10.6  },
+    { header: 'responsavel',      key: 'responsavel',      width: 34.3  },
+    { header: 'area',             key: 'area',             width: 22.1  },
+    { header: 'tipo_agenda',      key: 'tipo_agenda',      width: 13.3  },
+    { header: 'descricao_tarefa', key: 'descricao_tarefa', width: 255   },
+    { header: 'codigo_agenda',    key: 'codigo_agenda',    width: 15.4  },
+    { header: 'quando_criado',    key: 'quando_criado',    width: 15.3  },
+    { header: 'quem_criou',       key: 'quem_criou',       width: 12.7  }
+  ];
+
+  // Cabeçalho: Aptos Narrow 11pt bold, texto branco, fundo #156082, altura 14.4
+  const hRow = ws.getRow(1);
+  hRow.height = 14.4;
+  hRow.eachCell(cell => {
+    cell.font      = { name: 'Aptos Narrow', size: 11, bold: true, color: { argb: 'FFFFFFFF' } };
+    cell.fill      = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FF156082' } };
+    cell.alignment = { horizontal: 'left', vertical: 'middle' };
+  });
+
+  // Linhas de dados: Aptos Narrow 11pt, altura 14.4
+  registros.forEach(r => {
+    const row = ws.addRow({
+      data:             toDate(r.data),
+      status:           r.status           || '',
+      situacao_pasta:   r.situacao_pasta   || '',
+      grupo_processo:   r.grupo_processo   || '',
+      codigo_processo:  r.codigo_processo  != null ? r.codigo_processo  : '',
+      codigo_cliente:   r.codigo_cliente   != null ? r.codigo_cliente   : '',
+      cliente:          r.cliente          || '',
+      parte_principal:  r.parte_principal  || '',
+      parte_contraria:  r.parte_contraria  || '',
+      numero_processo:  r.numero_processo  || '',
+      importante:       r.importante       || '',
+      matricula:        r.matricula        || '',
+      responsavel:      r.responsavel      || '',
+      area:             r.area             || '',
+      tipo_agenda:      r.tipo_agenda      || '',
+      descricao_tarefa: r.descricao_tarefa || '',
+      codigo_agenda:    r.codigo_agenda    != null ? r.codigo_agenda    : '',
+      quando_criado:    toDate(r.quando_criado),
+      quem_criou:       r.quem_criou       || ''
+    });
+    row.height = 14.4;
+    row.font = { name: 'Aptos Narrow', size: 11 };
+  });
+
+  // Formato de data dd/mm/yyyy nas colunas de data
+  ws.getColumn('data').numFmt         = 'dd/mm/yyyy';
+  ws.getColumn('quando_criado').numFmt = 'dd/mm/yyyy';
+
+  // Gera buffer e dispara download
+  const buffer = await wb.xlsx.writeBuffer();
+  const blob = new Blob([buffer], {type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = nomeArquivo;
+  document.body.appendChild(a); a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+};
+
 window._exportarDeSRaw = function(raw){
   const ses = (function(){ try{ if(typeof SESSAO!=='undefined'&&SESSAO) return SESSAO; }catch(e){} return window.SESSAO||{}; })();
   const nomeUser   = ses.nome || ses.login || 'Usuario';
@@ -8105,35 +8211,20 @@ window._exportarDeSRaw = function(raw){
 
   if(!rows.length){ alert('Nenhum registro encontrado.'); return; }
 
-  const COLS = ['data','status','situacao_pasta','grupo_processo','codigo_processo',
-    'codigo_cliente','cliente','parte_principal','parte_contraria','numero_processo',
-    'importante','matricula','responsavel','area','tipo_agenda','descricao_tarefa',
-    'codigo_agenda','quando_criado','quem_criou'];
-
-  const ws = XLSX.utils.json_to_sheet(rows.map(r=>{
-    const o={};
-    COLS.forEach(c=>{ o[c]=r[c]!==undefined?r[c]:''; });
-    return o;
-  }), {header:COLS});
-
-  ws['!cols'] = [
-    {wch:12},{wch:10},{wch:14},{wch:12},{wch:12},{wch:12},{wch:22},{wch:26},{wch:26},
-    {wch:28},{wch:10},{wch:8},{wch:24},{wch:14},{wch:14},{wch:50},{wch:12},{wch:12},{wch:10}
-  ];
-
-  const wb = XLSX.utils.book_new();
-  XLSX.utils.book_append_sheet(wb, ws, 'Agendamentos');
   const dt = new Date().toISOString().slice(0,10);
-  XLSX.writeFile(wb, 'PC_Prazos_'+nomeUser.split(' ')[0]+'_'+dt+'.xlsx');
+  window._gerarExcelFormatado(rows, 'PC_Prazos_'+nomeUser.split(' ')[0]+'_'+dt+'.xlsx');
 };
 
 
 window.exportarMeusRegistrosFormatado = function(){
-  if(typeof XLSX === 'undefined'){ alert('Biblioteca XLSX não carregada.'); return; }
-
+  // Usa S.raw (já carregado em memória) e aplica formatação idêntica à planilha de referência
+  let s; try{ s=(typeof S!=='undefined')?S:window.S||{}; }catch(e){ s={}; }
+  const raw = Array.isArray(s.raw) ? s.raw : [];
+  if(!raw.length){ alert('Faça upload da planilha primeiro.'); return; }
+  window._exportarDeSRaw(raw);
+};
+window._exportarMeusRegistrosOLD_unused = function(){
   const buf = window.__pcArquivoPrazosBuffer;
-
-  // Fallback: se não tem buffer mas tem dados em memória, exporta a partir de S.raw
   if(!buf){
     let s; try{ s=(typeof S!=='undefined')?S:window.S||{}; }catch(e){ s={}; }
     const raw = Array.isArray(s.raw) ? s.raw : [];
