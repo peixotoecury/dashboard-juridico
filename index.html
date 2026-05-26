@@ -3495,6 +3495,14 @@ function restaurarUltimaPlanilha(){
           return tipo.includes('Equipe');
         });
         console.log('✅ Planilha restaurada: ' + S.prazos.length + ' prazos, ' + S.agendas.length + ' agendas');
+        // Restaurar audiências salvas separadamente
+        try {
+          var savedAud = localStorage.getItem('pc_aud');
+          if(savedAud) S.aud = JSON.parse(savedAud);
+          var savedCancel = localStorage.getItem('pc_cancel');
+          if(savedCancel) S.cancel = JSON.parse(savedCancel);
+          if(S.aud && S.aud.length) console.log('✅ Audiências restauradas: ' + S.aud.length + ' registros');
+        } catch(e2) { console.log('⚠️ Erro ao restaurar audiências:', e2); }
         return true;
       }
     }
@@ -3535,6 +3543,15 @@ document.addEventListener('DOMContentLoaded', function(){
     if(restaurou && typeof window.renderAll === 'function'){
       setTimeout(function(){
         window.renderAll();
+        // Renderizar audiências restauradas
+        if(S.aud && S.aud.length){
+          if(typeof popAud==='function') popAud();
+          if(typeof renderAudDet==='function') renderAudDet();
+          if(typeof popCancel==='function') popCancel();
+          if(typeof renderCancel==='function') renderCancel();
+          n('nc-aud', S.aud.length);
+          n('nc-cancel', (S.cancel||[]).length);
+        }
         if(typeof window.renderMeuPainelSomente === 'function'){
           window.renderMeuPainelSomente();
         }
@@ -5549,7 +5566,7 @@ function renderFataisXAud() {
 
 // ── EVOLUÇÃO DE FATAIS (SNAPSHOTS ESTÁTICOS) ────────────────
 const HORAS = ['09h30','15h30'];
-const SNAP_KEY = 'pc_dashboard_evolucao_fatais_' + new Date().toISOString().slice(0,10);
+const SNAP_KEY = 'pc_dashboard_evolucao_fatais_' + (function(){const d=new Date();return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');})();
 const snapshots = carregarSnapshots(); // { hora: { timestamp, total, itens: { "resp||grupo": {resp, grupo, fatais} } } }
 let HORA_SNAPSHOT_SELECIONADA = localStorage.getItem(SNAP_KEY + '_selecionada') || '';
 
