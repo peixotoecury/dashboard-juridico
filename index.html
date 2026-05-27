@@ -4593,14 +4593,8 @@ window.salvarJustificativa = function(audId, texto, processo) {
       btnSalvar.style.backgroundColor = '#2d7d46';
       btnSalvar.style.borderColor = '#2d7d46';
       btnSalvar.style.color = '#fff';
-      btnSalvar.textContent = '✓ Justificativa salva';
-      setTimeout(function() {
-        if(areaTexto) areaTexto.style.display = 'none';
-        if(btnSalvar) btnSalvar.textContent = 'Editar justificativa';
-        btnSalvar.style.backgroundColor = '';
-        btnSalvar.style.borderColor = '';
-        btnSalvar.style.color = '';
-      }, 1500);
+      btnSalvar.textContent = '✏️ Editar';
+      if(areaTexto) areaTexto.style.display = 'none';
     }
   }
 };
