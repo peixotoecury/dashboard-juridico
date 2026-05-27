@@ -11,7 +11,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/exceljs@4.4.0/dist/exceljs.min.js"></script>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Sora:wght@300;800&display=swap');
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -2298,9 +2298,9 @@ body.role-manager .upload-bar {
   align-items: stretch !important;
 }
 .login-left {
-  flex: 0 0 38%;
-  background: linear-gradient(160deg, #081f32 0%, #0c2d45 35%, #102f47 65%, #0b2840 100%);
-  padding: 48px 44px; display: flex; flex-direction: column; color: white; overflow-y: auto;
+  flex: 0 0 46%;
+  background: linear-gradient(165deg,#0D2A45 0%,#0a1e30 55%,#071828 100%);
+  padding: 60px 56px; display: flex; flex-direction: column; justify-content: center; color: white; overflow-y: auto;
 }
 .ll-logo-wrap { margin-bottom: 44px; }
 .ll-logo-img { width: 200px; max-width: 85%; height: auto; display: block; }
@@ -2332,24 +2332,29 @@ body.role-manager .upload-bar {
 .login-right {
   flex: 1; background: #fff; display: flex; align-items: center; justify-content: center; padding: 48px;
 }
-.login-form-wrap { width: 100%; max-width: 400px; }
-.lf-title { font-size: 28px !important; font-weight: 700 !important; color: #111827 !important; text-align: center !important; margin: 0 0 6px !important; letter-spacing: -.5px !important; text-transform: none !important; }
-.lf-sub { font-size: 13px !important; color: #8a9bb5 !important; text-align: center !important; margin: 0 0 32px !important; text-transform: none !important; letter-spacing: 0 !important; }
-.lf-field { margin-bottom: 16px !important; }
-.lf-field label { display: block !important; font-size: 10px !important; font-weight: 700 !important; color: #5a7a90 !important; text-transform: uppercase !important; letter-spacing: .8px !important; margin-bottom: 7px !important; }
-.lf-field input { width: 100% !important; padding: 13px 16px !important; background: #fff !important; border: 1.5px solid #c5dae4 !important; border-radius: 10px !important; color: #111827 !important; font-family: 'Inter', sans-serif !important; font-size: 13.5px !important; outline: none !important; transition: border-color .2s, box-shadow .2s !important; }
-.lf-field input::placeholder { color: #b0c4ce !important; }
-.lf-field input:focus { border-color: #006080 !important; box-shadow: 0 0 0 3px rgba(0,95,115,.1) !important; }
-.lf-remember { display: flex; align-items: center; gap: 8px; margin-bottom: 20px; cursor: pointer; font-size: 12.5px; color: #4b6070; user-select: none; }
-.lf-remember input[type=checkbox] { width: 16px; height: 16px; accent-color: #006080; cursor: pointer; flex-shrink: 0; margin: 0 !important; }
-.lf-btn { width: 100% !important; padding: 14px !important; background: linear-gradient(135deg, #0a3347 0%, #0d4a68 100%) !important; border: none !important; border-radius: 10px !important; color: #fff !important; font-family: 'Inter', sans-serif !important; font-size: 14px !important; font-weight: 700 !important; cursor: pointer !important; box-shadow: 0 6px 20px rgba(10,51,71,.3) !important; transition: background .2s, transform .1s !important; margin-bottom: 0 !important; }
-.lf-btn:hover { background: linear-gradient(135deg, #0d3f57 0%, #115876 100%) !important; }
-.lf-btn:active { transform: scale(.98) !important; }
-.lf-forgot { display: block; text-align: center; margin-top: 14px; font-size: 12.5px; color: #006080; text-decoration: none; cursor: pointer; }
+.login-form-wrap { width: 100%; max-width: 360px; }
+.lf-title { font-size: 32px !important; font-weight: 700 !important; color: #001e36 !important; text-align: left !important; margin: 0 0 8px !important; letter-spacing: -.5px !important; text-transform: none !important; }
+.lf-sub { font-size: 14px !important; color: #7a9bb5 !important; text-align: left !important; margin: 0 0 32px !important; text-transform: none !important; letter-spacing: 0 !important; }
+.lf-field { margin-bottom: 20px !important; }
+.lf-field label { display: block !important; font-size: 11px !important; font-weight: 700 !important; color: #001e36 !important; text-transform: uppercase !important; letter-spacing: 1.5px !important; margin-bottom: 8px !important; }
+.lf-input-wrap { display: flex; align-items: center; border: 1.5px solid #e2eaf0; border-radius: 10px; padding: 0 14px; gap: 10px; transition: border-color .2s; background: #fafcfe; }
+.lf-input-wrap:focus-within { border-color: #003B5C; background: #fff; }
+.lf-input-wrap svg { flex-shrink: 0; opacity: .4; }
+.lf-input-wrap input { flex: 1; border: none !important; outline: none !important; font-size: 14px !important; color: #001e36 !important; padding: 14px 0 !important; background: transparent !important; font-family: 'Inter', sans-serif !important; box-shadow: none !important; }
+.lf-input-wrap input::placeholder { color: #b0c4d8 !important; }
+.lf-eye-btn { background: none; border: none; cursor: pointer; color: #b0c4d8; padding: 0; display: flex; align-items: center; transition: color .2s; }
+.lf-eye-btn:hover { color: #003B5C; }
+.lf-remember { display: flex; align-items: center; gap: 10px; margin-bottom: 28px; cursor: pointer; font-size: 13px; color: #7a9bb5; user-select: none; }
+.lf-remember input[type=checkbox] { width: 16px; height: 16px; accent-color: #003B5C; cursor: pointer; flex-shrink: 0; margin: 0 !important; }
+.lf-btn { width: 100% !important; padding: 15px !important; background: linear-gradient(135deg,#002a46,#003B5C) !important; border: none !important; border-radius: 10px !important; color: #fff !important; font-family: 'Inter', sans-serif !important; font-size: 15px !important; font-weight: 600 !important; cursor: pointer !important; display: flex !important; align-items: center !important; justify-content: center !important; gap: 10px !important; transition: all .2s !important; letter-spacing: .3px !important; margin-bottom: 0 !important; }
+.lf-btn:hover { background: linear-gradient(135deg,#003B5C,#005080) !important; transform: translateY(-1px) !important; box-shadow: 0 6px 20px rgba(0,59,92,.25) !important; }
+.lf-btn:active { transform: translateY(0) !important; }
+.lf-forgot { display: block; text-align: center; margin-top: 20px; font-size: 13px; color: #00A9E0; text-decoration: none; cursor: pointer; font-weight: 500; }
 .lf-forgot:hover { text-decoration: underline; }
-.lf-or { text-align: center; color: #b0c4ce; font-size: 12px; margin: 14px 0; }
-.lf-restrict { display: block; text-align: center; font-size: 12px; color: #006080; cursor: pointer; text-decoration: none; }
-.lf-err { width: 100%; margin-top: 12px; background: #fff0f0 !important; border: 1px solid #f5b8b8 !important; border-radius: 8px !important; padding: 9px 14px !important; font-size: 11.5px !important; color: #c0392b !important; text-align: center !important; display: none; }
+.lf-or { display: flex; align-items: center; gap: 16px; text-align: center; color: #c8d8e4; font-size: 12px; margin: 24px 0; }
+.lf-or::before,.lf-or::after { content:''; flex:1; height:1px; background:#e8f0f5; }
+.lf-restrict { display: block; text-align: center; font-size: 12px; color: #b0c4d8; cursor: default; text-decoration: none; }
+.lf-err { width: 100%; margin-top: 0; margin-bottom: 16px; background: rgba(192,57,43,.08) !important; border: 1px solid rgba(192,57,43,.25) !important; border-left: 3px solid #c0392b !important; border-radius: 8px !important; padding: 10px 14px !important; font-size: 12px !important; color: #c0392b !important; font-weight: 500 !important; text-align: left !important; display: none; }
 @media (max-width: 768px) {
   .login-box { flex-direction: column !important; }
   .login-left {
@@ -2477,25 +2482,15 @@ body.role-manager .upload-bar {
       <div class="ll-logo-wrap">
         <div class="lawgico-logo" style="display:flex;flex-direction:column;">
           <div style="display:flex;align-items:flex-end;line-height:1;">
-            <span style="font-size:36px;font-weight:900;color:#fff;letter-spacing:-2px;font-family:Inter,Arial,sans-serif;">LAW</span>
+            <span style="font-size:36px;font-weight:800;color:#fff;letter-spacing:-1px;font-family:'Sora',sans-serif;">LAW</span>
             <div style="display:flex;flex-direction:column;align-items:flex-start;">
-              <span style="font-size:10px;font-weight:400;color:rgba(255,255,255,.8);letter-spacing:1px;align-self:flex-end;margin-bottom:-1px;font-family:Inter,Arial,sans-serif;">prazos</span>
-              <span style="font-size:36px;font-weight:300;color:#fff;letter-spacing:-2px;line-height:1;font-family:Inter,Arial,sans-serif;">gico</span>
+              <span style="font-size:10px;font-weight:300;color:rgba(255,255,255,.8);letter-spacing:.4px;align-self:flex-end;margin-bottom:-1px;font-family:'Sora',sans-serif;">prazos</span>
+              <span style="font-size:36px;font-weight:300;color:#fff;letter-spacing:-1px;line-height:1;font-family:'Sora',sans-serif;">gico</span>
             </div>
           </div>
-          <div style="font-size:9px;color:rgba(255,255,255,.75);letter-spacing:3px;font-weight:400;margin-top:3px;font-family:Inter,Arial,sans-serif;">lawyers at work</div>
+          <div style="font-size:10px;color:rgba(255,255,255,.85);letter-spacing:3.5px;font-weight:300;margin-top:4px;font-family:'Sora',sans-serif;">lawyers at work</div>
         </div>
       </div>
-      <div class="ll-welcome">
-        <div class="ll-welcome-icon">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-        </div>
-        <div class="ll-welcome-text">
-          <h2>Bem-vindo</h2>
-          <p>Peixoto &amp; Cury Advogados</p>
-        </div>
-      </div>
-      <div class="ll-divider"></div>
       <div class="ll-features">
         <div class="ll-feature">
           <div class="ll-feat-icon">
@@ -2531,23 +2526,35 @@ body.role-manager .upload-bar {
       <div class="login-form-wrap">
         <h1 class="lf-title">Fazer login</h1>
         <p class="lf-sub">Acesse sua conta LAWgico</p>
+        <div class="lf-err" id="login-err">Login ou senha incorretos. Tente novamente.</div>
         <div class="lf-field">
           <label>E-mail / Login</label>
-          <input type="text" id="inp-login" placeholder="controladoria" autocomplete="username" onkeydown="if(event.key==='Enter')document.getElementById('inp-senha').focus()">
+          <div class="lf-input-wrap">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            <input type="text" id="inp-login" placeholder="controladoria" autocomplete="username" onkeydown="if(event.key==='Enter')document.getElementById('inp-senha').focus()">
+          </div>
         </div>
         <div class="lf-field">
           <label>Senha</label>
-          <input type="password" id="inp-senha" placeholder="••••••••" autocomplete="current-password" onkeydown="if(event.key==='Enter')doLogin()">
+          <div class="lf-input-wrap">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            <input type="password" id="inp-senha" placeholder="••••••••" autocomplete="current-password" onkeydown="if(event.key==='Enter')doLogin()">
+            <button class="lf-eye-btn" type="button" onclick="toggleLfSenha(this)">
+              <svg id="lf-eye-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </button>
+          </div>
         </div>
         <label class="lf-remember">
           <input type="checkbox" id="chk-lembrar">
-          Lembrar meu acesso
+          <span>Lembrar meu acesso</span>
         </label>
-        <button class="lf-btn" onclick="doLogin()">🔑 Entrar</button>
-        <div class="lf-err" id="login-err">Login ou senha incorretos. Tente novamente.</div>
-        <a class="lf-forgot" onclick="return false;">Esqueceu sua senha?</a>
+        <button class="lf-btn" onclick="doLogin()">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="8" cy="12" r="5"/><path d="M15.5 7.5 19 4l.5.5L18 6l1.5 1.5-.5.5L17.5 6.5 16 8z"/><path d="M15 12h7"/></svg>
+          Entrar
+        </button>
+        <a class="lf-forgot" href="#" onclick="alert('Contate o administrador do sistema para redefinir sua senha.');return false;">Esqueceu sua senha?</a>
         <div class="lf-or">ou</div>
-        <a class="lf-restrict">Acesso restrito — Peixoto &amp; Cury Advogados</a>
+        <span class="lf-restrict">Acesso restrito — Peixoto &amp; Cury Advogados</span>
       </div>
     </div>
   </div>
@@ -6072,6 +6079,18 @@ const USUARIOS = {
 };
 
 let SESSAO = null;
+
+function toggleLfSenha(btn) {
+  const input = document.getElementById('inp-senha');
+  const icon  = document.getElementById('lf-eye-icon');
+  if (input.type === 'password') {
+    input.type = 'text';
+    icon.innerHTML = '<path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/>';
+  } else {
+    input.type = 'password';
+    icon.innerHTML = '<path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/>';
+  }
+}
 
 function doLogin() {
   const login = (V('inp-login').value||'').trim().toLowerCase();
