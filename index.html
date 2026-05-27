@@ -1202,12 +1202,14 @@ body.role-user .nav::after {
 .nav-brand {
   position:fixed;
   left:16px;
-  top:14px;
+  top:10px;
   width:196px;
-  height:58px;
-  object-fit:contain;
   z-index:210;
   opacity:.95;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content:center;
 }
 .nav-section-title { display:none !important; }
 body.role-manager .nav-btn,
@@ -2498,10 +2500,12 @@ body.role-manager .upload-bar {
     <!-- Painel esquerdo -->
     <div class="login-left">
       <div class="ll-logo-wrap">
-        <div class="lawgico-logo" style="display:inline-block;position:relative;line-height:1;font-family:'Sora',sans-serif;">
-          <span style="font-size:36px;font-weight:800;color:#fff;letter-spacing:-1px;font-family:'Sora',sans-serif;">LAW</span><span style="font-size:36px;font-weight:300;color:#fff;letter-spacing:-1px;font-family:'Sora',sans-serif;">gico</span><span style="font-size:10px;font-weight:300;color:rgba(255,255,255,.8);letter-spacing:.4px;font-family:'Sora',sans-serif;position:absolute;top:-6px;right:0;">prazos</span>
+        <div class="ll-brand" style="display:flex;flex-direction:column;align-items:flex-start;">
+          <div class="lawgico-logo" style="display:inline-block;position:relative;line-height:1;font-family:'Sora',sans-serif;">
+            <span style="font-size:36px;font-weight:800;color:#fff;letter-spacing:-1px;font-family:'Sora',sans-serif;">LAW</span><span style="font-size:36px;font-weight:300;color:#fff;letter-spacing:-1px;font-family:'Sora',sans-serif;">gico</span><span style="font-size:10px;font-weight:300;color:rgba(255,255,255,.8);letter-spacing:.4px;font-family:'Sora',sans-serif;position:absolute;top:-6px;right:0;">prazos</span>
+          </div>
+          <div style="font-size:10px;color:rgba(255,255,255,.85);letter-spacing:3.5px;font-weight:300;margin-top:4px;font-family:'Sora',sans-serif;">lawyers at work</div>
         </div>
-        <div style="font-size:10px;color:rgba(255,255,255,.85);letter-spacing:3.5px;font-weight:300;margin-top:4px;font-family:'Sora',sans-serif;">lawyers at work</div>
       </div>
       <div class="ll-features">
         <div class="ll-feature">
@@ -6530,11 +6534,10 @@ document.addEventListener('DOMContentLoaded', function(){
     if(top) top.textContent = nome;
 
     const nav = document.querySelector('.nav');
-    const logo = document.querySelector('.ll-logo-wrap .lawgico-logo') || document.querySelector('.brand-pc .lawgico-logo');
+    const logo = document.querySelector('.ll-logo-wrap .ll-brand') || document.querySelector('.ll-logo-wrap .lawgico-logo');
     if(nav && logo && !document.querySelector('.nav-brand')){
       const img = logo.cloneNode(true);
-      img.className = 'nav-brand lawgico-logo';
-      img.style.position = '';  /* remove position:relative — CSS position:fixed do nav-brand assume */
+      img.className = 'nav-brand';
       document.body.appendChild(img);
     }
 
