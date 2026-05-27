@@ -1183,7 +1183,7 @@ body.role-user .nav {
   background:linear-gradient(180deg,#001e2e 0%,#002c40 55%,#001e2e 100%) !important;
   border:0 !important;
   border-right:1px solid rgba(255,255,255,.06) !important;
-  padding:96px 12px 18px !important;
+  padding:120px 12px 18px !important;
   box-shadow:4px 0 24px rgba(0,20,35,.35) !important;
   z-index:190 !important;
   overflow-y:auto !important;
@@ -6772,7 +6772,8 @@ document.addEventListener('DOMContentLoaded', function(){
       {h:'Cliente', v:r=>txt(pick(r,['cliente','Cliente']))},
       {h:'Tarefa', v:r=>txt(pick(r,['descricao_tarefa','Descrição','descrição','tarefa','Tarefa']))},
       {h:'Status', v:r=>{const s=status(r);return `<span class="mp-only-status" style="${(statusEh(s, 'Fatal')||statusEh(s, 'Vencido'))?'background:#fdecea;color:#c62828;border:1px solid #ef9a9a;':''}">${s}</span>`;}},
-      {h:'Justificativa', v:r=>{const s=status(r);if(!statusEh(s, 'Fatal')&&!statusEh(s, 'Vencido'))return '<span style="color:var(--gray4);font-size:10px;">—</span>';const proc=txt(pick(r,['numero_processo','Número do Processo','Processo','processo']));const key='justif-'+btoa(proc).replace(/[^a-z0-9]/gi,'');const just=(window._mpJustif&&window._mpJustif[key])?window._mpJustif[key]:'—';return `<div style="font-size:10px;color:${just==='—'?'var(--gray4)':'#c62828'};max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:${just==='—'?'400':'600'}">${e(just)}</div>`;}}
+      {h:'Justificativa', v:r=>{const s=status(r);if(!statusEh(s, 'Fatal')&&!statusEh(s, 'Vencido'))return '<span style="color:var(--gray4);font-size:10px;">—</span>';const proc=txt(pick(r,['numero_processo','Número do Processo','Processo','processo']));const key='justif-'+btoa(proc).replace(/[^a-z0-9]/gi,'');const just=(window._mpJustif&&window._mpJustif[key])?window._mpJustif[key]:'—';return `<div style="font-size:10px;color:${just==='—'?'var(--gray4)':'#c62828'};max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:${just==='—'?'400':'600'}">${e(just)}</div>`;}},
+      {h:'Ação', v:function(r){const s=status(r);const proc=txt(pick(r,['numero_processo','Número do Processo','Processo','processo']));const resp=r.responsavel||r['Responsável']||'';const grp=r.grupo_processo||r['Grupo Processo']||'';if(s==='Fatal'||s==='Vencido'||s==='D-1'||s==='D-2'||s==='Futuro')return `<button onclick="window.abrirModalReagendamento('${proc}','${resp}','${grp}')" style="font-size:10px;font-weight:500;padding:4px 8px;border:none;border-radius:5px;background:#d84315;color:white;cursor:pointer;font-family:inherit;white-space:nowrap;">📅 Reagendar</button>`;return '<span style="color:var(--gray4);font-size:10px;">—</span>';}}
     ];
     const agendaCols = [
       {h:'Data', v:r=>fmtD(pick(r,['data','Data']))},
@@ -7240,7 +7241,6 @@ document.addEventListener('DOMContentLoaded', function(){
       }},
       {h:'Ação', v:function(r){
         const s=status(r);
-        if(s!=='Fatal'&&s!=='Vencido') return '<span style="color:var(--gray4);font-size:10px;">—</span>';
         const proc=txt(pick(r,['numero_processo','Número do Processo','Processo','processo']));
         const cli=txt(pick(r,['cliente','Cliente'])||'');
         const tarefa=txt(pick(r,['descricao_tarefa','Descrição','descrição','tarefa','Tarefa'])||'');
@@ -7251,10 +7251,12 @@ document.addEventListener('DOMContentLoaded', function(){
         const key='justif_'+btoa(unescape(encodeURIComponent(proc))).replace(/[^a-zA-Z0-9]/g,'').slice(0,20);
         const grupo = r.grupo_processo || r['Grupo Processo'] || '';
         const responsavel = r.responsavel || r['Responsável'] || '';
-        return `<div style="display:flex;gap:4px;flex-wrap:wrap;">
+        if(s==='Fatal'||s==='Vencido') return `<div style="display:flex;gap:4px;flex-wrap:wrap;">
           <button onclick="abrirJustifSingle('${key}','${procEnc}','${cliEnc}','${tarefaEnc}','${statusStr}')" style="font-size:10px;font-weight:500;padding:4px 8px;border:none;border-radius:5px;background:#c62828;color:white;cursor:pointer;font-family:inherit;white-space:nowrap;">Justificar</button>
           <button onclick="window.abrirModalReagendamento('${proc}', '${responsavel}', '${grupo}')" style="font-size:10px;font-weight:500;padding:4px 8px;border:none;border-radius:5px;background:#d84315;color:white;cursor:pointer;font-family:inherit;white-space:nowrap;" title="Solicitar reagendamento">Reagendar</button>
         </div>`;
+        if(s==='D-1'||s==='D-2'||s==='Futuro') return `<button onclick="window.abrirModalReagendamento('${proc}', '${responsavel}', '${grupo}')" style="font-size:10px;font-weight:500;padding:4px 8px;border:none;border-radius:5px;background:#d84315;color:white;cursor:pointer;font-family:inherit;white-space:nowrap;" title="Solicitar reagendamento">📅 Reagendar</button>`;
+        return '<span style="color:var(--gray4);font-size:10px;">—</span>';
       }}
     ];
     const agendaCols = [
