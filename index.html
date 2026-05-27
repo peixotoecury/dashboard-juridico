@@ -4559,13 +4559,13 @@ window.salvarJustificativa = function(audId, texto, processo) {
       
       supabaseClient
         .from('justificativas')
-        .upsert({
+        .insert({
           numero_processo: processo,
           justificativa_texto: texto,
           usuario_email: sess.email || '',
           usuario_nome: sess.nome || '',
           atualizado_em: new Date().toISOString()
-        }, { onConflict: 'numero_processo' })
+        })
         .then(function(result){
           if(result.error) {
             console.log('❌ Erro ao salvar no Supabase:', result.error);
