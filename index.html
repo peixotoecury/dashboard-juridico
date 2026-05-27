@@ -8597,6 +8597,20 @@ document.addEventListener('DOMContentLoaded', function(){
       #btn-impersonate { display: none !important; }
       .tbl-scroll, .det-scroll { max-height: 280px !important; }
       .pg-btns { flex-wrap: wrap !important; gap: 3px !important; }
+
+      /* ── Login — painel azul como header compacto ── */
+      .login-box { flex-direction: column !important; }
+      .login-left {
+        display: flex !important;
+        flex: 0 0 auto !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        padding: 18px 24px !important;
+        min-height: unset !important;
+      }
+      .ll-welcome, .ll-divider, .ll-features { display: none !important; }
+      .ll-logo-wrap { margin-bottom: 0 !important; }
+      .login-right { padding: 28px 20px !important; }
     }
   `;
   const style = document.createElement('style');
