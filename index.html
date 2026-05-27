@@ -3784,6 +3784,8 @@ window.renderExposicaoGrupo = function() {
     grupos[grupo].push(row);
   });
   
+  window._expGrupoData = {};
+
   // Criar cards para cada grupo
   const cards = Object.entries(grupos)
     .sort((a, b) => a[0].localeCompare(b[0]))
@@ -3791,6 +3793,8 @@ window.renderExposicaoGrupo = function() {
       const icons = ['📁', '📊', '📈', '🎯', '📋', '⚙️', '🔧', '💼', '🏢', '📑'];
       const hash = nomeGrupo.charCodeAt(0) % icons.length;
       const icon = icons[hash];
+
+      window._expGrupoData[nomeGrupo] = items;
       
       // Contar fatais por pessoa
       const pessoas = {};
@@ -3801,9 +3805,10 @@ window.renderExposicaoGrupo = function() {
       
       const totalPessoas = Object.keys(pessoas).length;
       const totalFatais = items.length;
+      const grupoKey = nomeGrupo.replace(/'/g, "\\'");
       
       return `
-        <div class="exp-grupo-card" style="cursor: pointer;" onclick="abrirModalFataisPorPessoa('${e(nomeGrupo)}', ${JSON.stringify(items).replace(/'/g, '&#39;')})">
+        <div class="exp-grupo-card" style="cursor: pointer;" onclick="abrirModalFataisPorPessoa('${grupoKey}')">
           <div class="exp-grupo-header">
             <div class="exp-grupo-icon">${icon}</div>
             <div class="exp-grupo-info">
@@ -4016,11 +4021,13 @@ window.abrirModalGrupoDetalhado = function(nomeGrupo, prazosItems) {
 
 
 // ── MODAL DE PESSOAS POR GRUPO ────────────────────────────────────
-window.abrirModalFataisPorPessoa = function(nomeGrupo, items) {
+window.abrirModalFataisPorPessoa = function(nomeGrupo) {
+  // Buscar dados do objeto global (evita JSON inline no onclick)
+  const items = (window._expGrupoData && window._expGrupoData[nomeGrupo]) || [];
   // Remover modal anterior se existir
   const oldModal = document.querySelector('.modal-exp-pessoas');
   if (oldModal) oldModal.remove();
-  
+
   // Agrupar fatais por responsável
   const pessoas = {};
   items.forEach(item => {
