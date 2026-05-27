@@ -6471,7 +6471,7 @@ document.addEventListener('DOMContentLoaded', function(){
   const parent = senha.parentElement;
   parent.style.position = 'relative';
 
-  if(parent.querySelector('.pc-eye-fixed')) return;
+  if(parent.querySelector('.pc-eye-fixed') || parent.querySelector('.lf-eye-btn')) return;
 
   const btn = document.createElement('button');
   btn.type = 'button';
