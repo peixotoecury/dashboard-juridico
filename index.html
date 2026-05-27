@@ -2361,12 +2361,21 @@ body.role-manager .upload-bar {
 @media (max-width: 768px) {
   .login-box { flex-direction: column !important; }
   .login-left {
-    display: flex !important;
-    flex: 0 0 auto !important;
-    flex-direction: column !important;
-    width: 100% !important;
+    display: flex !important; flex: 0 0 auto !important;
+    flex-direction: column !important; width: 100% !important;
+    padding: 24px 24px 20px !important;
   }
-  .login-right { width: 100% !important; }
+  .login-right { width: 100% !important; padding: 28px 24px !important; }
+  .ll-logo-wrap { margin-bottom: 24px !important; }
+}
+@media (max-width: 540px) {
+  .login-right { order: -1 !important; padding: 24px 20px 28px !important; }
+  .login-left  { order: 1 !important;  padding: 20px 20px 16px !important; }
+  .ll-features { display: none !important; }
+  .ll-logo-wrap { margin-bottom: 0 !important; }
+  .login-form-wrap { max-width: 100% !important; }
+  .lf-title { font-size: 24px !important; }
+  .lf-sub   { font-size: 13px !important; margin-bottom: 24px !important; }
 }
 
 /* ── MOBILE: role-user — header azul e conteúdo ocupam 100% da tela ── */
@@ -8658,14 +8667,9 @@ document.addEventListener('DOMContentLoaded', function(){
       #login-overlay { overflow-y: auto !important; align-items: flex-start !important; }
       #login-overlay .login-box { flex-direction: column !important; max-width: 100% !important; width: 100% !important; min-height: auto !important; border-radius: 0 !important; }
       #login-overlay .login-left {
-        display: flex !important;
-        flex: 0 0 auto !important;
-        flex-direction: column !important;
-        width: 100% !important;
-        min-width: 0 !important;
-        background: linear-gradient(160deg, #081f32 0%, #0c2d45 35%, #102f47 65%, #0b2840 100%) !important;
-        box-sizing: border-box !important;
-        overflow: visible !important;
+        display: flex !important; flex: 0 0 auto !important; flex-direction: column !important;
+        width: 100% !important; min-width: 0 !important; box-sizing: border-box !important; overflow: visible !important;
+        background: linear-gradient(165deg,#0D2A45 0%,#0a1e30 55%,#071828 100%) !important;
       }
       #login-overlay .login-right { flex: 1 1 auto !important; width: 100% !important; box-sizing: border-box !important; }
     }
