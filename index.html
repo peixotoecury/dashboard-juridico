@@ -2302,7 +2302,7 @@ body.role-manager .upload-bar {
   background: linear-gradient(165deg,#0D2A45 0%,#0a1e30 55%,#071828 100%);
   padding: 60px 56px; display: flex; flex-direction: column; justify-content: center; color: white; overflow-y: auto;
 }
-.ll-logo-wrap { margin-bottom: 44px; }
+.ll-logo-wrap { margin-bottom: 52px; }
 .ll-logo-img { width: 200px; max-width: 85%; height: auto; display: block; }
 .bottom-action-bar { display:flex; align-items:center; gap:10px; flex-wrap:wrap; padding:14px 0 4px; }
 .bottom-action-bar .hdr-btn { background:#f0f6f8 !important; border:1.5px solid #aecad6 !important; color:#005070 !important; border-radius:8px !important; padding:0 18px !important; font-size:12px !important; font-weight:700 !important; cursor:pointer !important; box-shadow:0 1px 3px rgba(0,80,110,.08) !important; }
@@ -2317,26 +2317,29 @@ body.role-manager .upload-bar {
 .ll-welcome-text h2 { font-size: 15px; font-weight: 700; color: #fff; margin: 0 0 2px; }
 .ll-welcome-text p { font-size: 12px; color: rgba(255,255,255,.6); margin: 0; }
 .ll-divider { height: 1px; background: rgba(255,255,255,.2); border: none; margin: 18px 0; }
-.ll-features { display: flex; flex-direction: column; }
+.ll-features { display: flex; flex-direction: column; gap: 0; }
 .ll-feature {
-  display: flex; align-items: center; gap: 14px; padding: 18px 0;
-  border-bottom: 1px solid rgba(255,255,255,.1);
+  display: flex; align-items: flex-start; gap: 16px; padding: 18px 0;
+  border-bottom: 1px solid rgba(255,255,255,.06);
 }
-.ll-feature:last-child { border-bottom: none; }
+.ll-feature:first-child { padding-top: 0; }
+.ll-feature:last-child { border-bottom: none; padding-bottom: 0; }
 .ll-feat-icon {
-  width: 38px; height: 38px; border: 1.5px solid rgba(26,227,255,.4); border-radius: 8px;
-  display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: #1ae3ff;
+  width: 40px; height: 40px; background: rgba(0,174,239,.10); border: 1px solid rgba(0,174,239,.18); border-radius: 10px;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
 }
-.ll-feat-text h3 { font-size: 13px; font-weight: 700; color: #fff; margin: 0 0 3px; }
-.ll-feat-text p { font-size: 11.5px; color: rgba(255,255,255,.55); margin: 0; }
+.ll-feat-icon svg { width: 20px; height: 20px; stroke: #00AEEF; fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.ll-feat-text { flex: 1; padding-top: 2px; }
+.ll-feat-text h3 { font-size: 13px; font-weight: 600; color: #fff; margin: 0 0 3px; font-family: 'Sora', sans-serif; }
+.ll-feat-text p { font-size: 11.5px; color: rgba(255,255,255,.4); margin: 0; line-height: 1.55; font-family: 'Sora', sans-serif; }
 .login-right {
   flex: 1; background: #fff; display: flex; align-items: center; justify-content: center; padding: 48px;
 }
 .login-form-wrap { width: 100%; max-width: 360px; }
-.lf-title { font-size: 32px !important; font-weight: 700 !important; color: #001e36 !important; text-align: left !important; margin: 0 0 8px !important; letter-spacing: -.5px !important; text-transform: none !important; }
-.lf-sub { font-size: 14px !important; color: #7a9bb5 !important; text-align: left !important; margin: 0 0 32px !important; text-transform: none !important; letter-spacing: 0 !important; }
+.lf-title { font-size: 28px !important; font-weight: 700 !important; color: #0B1E2D !important; text-align: left !important; margin: 0 0 6px !important; letter-spacing: -.5px !important; text-transform: none !important; font-family: 'Sora', sans-serif !important; }
+.lf-sub { font-size: 13px !important; color: #8399ae !important; text-align: left !important; margin: 0 0 36px !important; text-transform: none !important; letter-spacing: 0 !important; font-family: 'Sora', sans-serif !important; }
 .lf-field { margin-bottom: 20px !important; }
-.lf-field label { display: block !important; font-size: 11px !important; font-weight: 700 !important; color: #001e36 !important; text-transform: uppercase !important; letter-spacing: 1.5px !important; margin-bottom: 8px !important; }
+.lf-field label { display: block !important; font-size: 10.5px !important; font-weight: 700 !important; color: #00AEEF !important; text-transform: uppercase !important; letter-spacing: 1.2px !important; margin-bottom: 7px !important; font-family: 'Sora', sans-serif !important; }
 .lf-input-wrap { display: flex; align-items: center; border: 1.5px solid #e2eaf0; border-radius: 10px; padding: 0 14px; gap: 10px; transition: border-color .2s; background: #fafcfe; }
 .lf-input-wrap:focus-within { border-color: #003B5C; background: #fff; }
 .lf-input-wrap svg { flex-shrink: 0; opacity: .4; }
@@ -2344,16 +2347,16 @@ body.role-manager .upload-bar {
 .lf-input-wrap input::placeholder { color: #b0c4d8 !important; }
 .lf-eye-btn { background: none; border: none; cursor: pointer; color: #b0c4d8; padding: 0; display: flex; align-items: center; transition: color .2s; }
 .lf-eye-btn:hover { color: #003B5C; }
-.lf-remember { display: flex; align-items: center; gap: 10px; margin-bottom: 28px; cursor: pointer; font-size: 13px; color: #7a9bb5; user-select: none; }
+.lf-remember { display: flex; align-items: center; gap: 10px; margin-bottom: 28px; cursor: pointer; font-size: 12.5px; color: #5a7080; user-select: none; font-family: 'Sora', sans-serif; }
 .lf-remember input[type=checkbox] { width: 16px; height: 16px; accent-color: #003B5C; cursor: pointer; flex-shrink: 0; margin: 0 !important; }
-.lf-btn { width: 100% !important; padding: 15px !important; background: linear-gradient(135deg,#002a46,#003B5C) !important; border: none !important; border-radius: 10px !important; color: #fff !important; font-family: 'Inter', sans-serif !important; font-size: 15px !important; font-weight: 600 !important; cursor: pointer !important; display: flex !important; align-items: center !important; justify-content: center !important; gap: 10px !important; transition: all .2s !important; letter-spacing: .3px !important; margin-bottom: 0 !important; }
-.lf-btn:hover { background: linear-gradient(135deg,#003B5C,#005080) !important; transform: translateY(-1px) !important; box-shadow: 0 6px 20px rgba(0,59,92,.25) !important; }
+.lf-btn { width: 100% !important; padding: 13px !important; background: linear-gradient(135deg,#0B1E2D 0%,#1a3a5c 100%) !important; border: none !important; border-radius: 10px !important; color: #fff !important; font-family: 'Sora', sans-serif !important; font-size: 14.5px !important; font-weight: 600 !important; cursor: pointer !important; display: flex !important; align-items: center !important; justify-content: center !important; gap: 10px !important; transition: all .2s !important; letter-spacing: .3px !important; margin-bottom: 0 !important; }
+.lf-btn:hover { background: linear-gradient(135deg,#0d2540 0%,#1f4770 100%) !important; box-shadow: 0 4px 18px rgba(11,30,45,.3) !important; transform: translateY(-1px) !important; }
 .lf-btn:active { transform: translateY(0) !important; }
-.lf-forgot { display: block; text-align: center; margin-top: 20px; font-size: 13px; color: #00A9E0; text-decoration: none; cursor: pointer; font-weight: 500; }
+.lf-forgot { display: block; text-align: center; margin-top: 14px; font-size: 12.5px; color: #00AEEF; text-decoration: none; cursor: pointer; font-family: 'Sora', sans-serif; }
 .lf-forgot:hover { text-decoration: underline; }
-.lf-or { display: flex; align-items: center; gap: 16px; text-align: center; color: #c8d8e4; font-size: 12px; margin: 24px 0; }
+.lf-or { display: flex; align-items: center; gap: 10px; text-align: center; color: #b0bfcc; font-size: 11px; margin: 20px 0 16px; font-family: 'Sora', sans-serif; }
 .lf-or::before,.lf-or::after { content:''; flex:1; height:1px; background:#e8f0f5; }
-.lf-restrict { display: block; text-align: center; font-size: 12px; color: #b0c4d8; cursor: default; text-decoration: none; }
+.lf-restrict { display: block; text-align: center; font-size: 12px; color: #8399ae; cursor: default; text-decoration: none; font-family: 'Sora', sans-serif; }
 .lf-err { width: 100%; margin-top: 0; margin-bottom: 16px; background: rgba(192,57,43,.08) !important; border: 1px solid rgba(192,57,43,.25) !important; border-left: 3px solid #c0392b !important; border-radius: 8px !important; padding: 10px 14px !important; font-size: 12px !important; color: #c0392b !important; font-weight: 500 !important; text-align: left !important; display: none; }
 @media (max-width: 768px) {
   .login-box { flex-direction: column !important; }
