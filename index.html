@@ -6617,7 +6617,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     const fields = mode === 'audiencia'
       ? [
-          pick(row,['responsavel_audiencia','Responsável Audiência','responsavel pela audiencia','Responsável pela Audiência']),
+          pick(row,['Advogado Responsável Audiência/SO','Advogado Responsável Audiência','responsavel_audiencia','Responsável Audiência','responsavel pela audiencia','Responsável pela Audiência']),
           pick(row,['advogado_audiencia','Advogado Audiência','advogado que fará','advogado_designado']),
           pick(row,['quem_faz','Quem faz','profissional_audiencia','Profissional Audiência']),
           pick(row,['advogado','Advogado','responsavel','Responsável'])
@@ -7052,7 +7052,7 @@ document.addEventListener('DOMContentLoaded', function(){
     let fields;
     if(mode === 'audiencia'){
       fields = [
-        pick(row,['responsavel_audiencia','Responsável Audiência','responsavel pela audiencia','Responsável pela Audiência']),
+        pick(row,['Advogado Responsável Audiência/SO','Advogado Responsável Audiência','responsavel_audiencia','Responsável Audiência','responsavel pela audiencia','Responsável pela Audiência']),
         pick(row,['advogado_audiencia','Advogado Audiência','advogado que fará','advogado_designado']),
         pick(row,['quem_faz','Quem faz','profissional_audiencia','Profissional Audiência']),
         pick(row,['advogado','Advogado','responsavel','Responsável'])
