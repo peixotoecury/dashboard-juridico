@@ -6530,12 +6530,11 @@ document.addEventListener('DOMContentLoaded', function(){
     if(top) top.textContent = nome;
 
     const nav = document.querySelector('.nav');
-    const logo = document.querySelector('.brand-pc .lawgico-logo') || document.querySelector('.ll-logo-wrap .lawgico-logo');
+    const logo = document.querySelector('.ll-logo-wrap .lawgico-logo') || document.querySelector('.brand-pc .lawgico-logo');
     if(nav && logo && !document.querySelector('.nav-brand')){
       const img = logo.cloneNode(true);
       img.className = 'nav-brand lawgico-logo';
-      img.style.position = '';  /* deixa CSS position:fixed funcionar */
-      img.style.display  = '';  /* deixa CSS controlar display */
+      img.style.position = '';  /* remove position:relative — CSS position:fixed do nav-brand assume */
       document.body.appendChild(img);
     }
 
