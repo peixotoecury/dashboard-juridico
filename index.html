@@ -4924,7 +4924,7 @@ window.abrirModalJustificativaFatal = function(audId, processo, responsavel, gru
         </div>
 
         <div>
-          <label style="display:block;margin-bottom:6px;font-size:12px;font-weight:700;color:#333;text-transform:uppercase;letter-spacing:.5px;">7. Data de envio da peça para revisão *</label>
+          <label style="display:block;margin-bottom:6px;font-size:12px;font-weight:700;color:#333;text-transform:uppercase;letter-spacing:.5px;">7. Data de envio da peça para revisão</label>
           <input type="text" id="campo7-${audId}" placeholder="dd/MM/yyyy" value="${dados.campo7}" style="width:100%;padding:10px;border:1px solid #ddd;border-radius:6px;font-size:12px;box-sizing:border-box;">
         </div>
 
@@ -4952,7 +4952,7 @@ window.gravarJustificativaFatal = function(audId, processo, responsavel, grupo) 
   var campo7 = document.getElementById('campo7-' + audId).value.trim();
   var campo8 = document.getElementById('campo8-' + audId).value.trim();
   
-  if(!campo4 || !campo5 || !campo6 || !campo7) {
+  if(!campo4 || !campo5 || !campo6) {
     alert('Por favor, preencha todos os campos obrigatórios (*)');
     return;
   }
