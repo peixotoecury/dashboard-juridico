@@ -4551,6 +4551,10 @@ window.salvarJustificativa = function(audId, texto, processo) {
   }
   window.justificativas = window.justificativas || {};
   window.justificativas[audId] = { audId: audId, texto: texto, dataSalva: new Date().toISOString() };
+  // também indexa por numero_processo para o export Excel encontrar
+  if (processo) {
+    window.justificativas[processo] = { audId: processo, texto: texto, dataSalva: new Date().toISOString() };
+  }
   
   // ✅ SALVAR NO SUPABASE TAMBÉM
   if(typeof supabaseClient !== 'undefined' && supabaseClient && processo) {
