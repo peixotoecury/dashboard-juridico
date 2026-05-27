@@ -1202,14 +1202,12 @@ body.role-user .nav::after {
 .nav-brand {
   position:fixed;
   left:16px;
-  top:10px;
-  width:196px;
+  top:14px;
   z-index:210;
   opacity:.95;
   display:flex;
   flex-direction:column;
   align-items:flex-start;
-  justify-content:center;
 }
 .nav-section-title { display:none !important; }
 body.role-manager .nav-btn,
@@ -6538,6 +6536,13 @@ document.addEventListener('DOMContentLoaded', function(){
     if(nav && logo && !document.querySelector('.nav-brand')){
       const img = logo.cloneNode(true);
       img.className = 'nav-brand';
+      /* Reduz de 36px (login) para ~20px (nav) */
+      img.querySelectorAll('span').forEach(function(s){
+        if(s.style.fontSize === '36px'){ s.style.fontSize = '20px'; s.style.letterSpacing = '-0.5px'; }
+        else if(s.style.position === 'absolute'){ s.style.fontSize = '7.5px'; s.style.top = '-4px'; }
+      });
+      const tagDiv = img.querySelector('div[style*="letter-spacing:3.5px"]');
+      if(tagDiv){ tagDiv.style.fontSize = '7.5px'; tagDiv.style.letterSpacing = '2.5px'; tagDiv.style.marginTop = '2px'; }
       document.body.appendChild(img);
     }
 
