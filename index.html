@@ -8165,13 +8165,16 @@ window._gerarExcelFormatado = async function(registros, nomeArquivo) {
     const COLS19 = ['data','status','situacao_pasta','grupo_processo','codigo_processo',
       'codigo_cliente','cliente','parte_principal','parte_contraria','numero_processo',
       'importante','matricula','responsavel','area','tipo_agenda','descricao_tarefa',
-      'codigo_agenda','quando_criado','quem_criou'];
+      'codigo_agenda','quando_criado','quem_criou','justificativa'];
     const ws = XLSX.utils.json_to_sheet(registros.map(r=>{
-      const o={}; COLS19.forEach(c=>{ o[c]=r[c]!==undefined?r[c]:''; }); return o;
+      const o={}; COLS19.forEach(c=>{ o[c]=r[c]!==undefined?r[c]:''; });
+      const jObj = window.justificativas && (window.justificativas[r.numero_processo]);
+      o['justificativa'] = (jObj && jObj.texto) || '';
+      return o;
     }), {header:COLS19});
     ws['!cols']=[{wch:9.6},{wch:7.8},{wch:15.4},{wch:16.4},{wch:17.2},{wch:15.3},{wch:22.8},
       {wch:78.3},{wch:90.9},{wch:23.8},{wch:12.1},{wch:10.6},{wch:34.3},{wch:22.1},
-      {wch:13.3},{wch:100},{wch:15.4},{wch:15.3},{wch:12.7}];
+      {wch:13.3},{wch:100},{wch:15.4},{wch:15.3},{wch:12.7},{wch:80}];
     const wbb=XLSX.utils.book_new();
     XLSX.utils.book_append_sheet(wbb, ws, 'Agendamentos');
     XLSX.writeFile(wbb, nomeArquivo);
@@ -8201,7 +8204,8 @@ window._gerarExcelFormatado = async function(registros, nomeArquivo) {
     { header: 'descricao_tarefa', key: 'descricao_tarefa', width: 255   },
     { header: 'codigo_agenda',    key: 'codigo_agenda',    width: 15.4  },
     { header: 'quando_criado',    key: 'quando_criado',    width: 15.3  },
-    { header: 'quem_criou',       key: 'quem_criou',       width: 12.7  }
+    { header: 'quem_criou',       key: 'quem_criou',       width: 12.7  },
+    { header: 'justificativa',    key: 'justificativa',    width: 80    }
   ];
 
   // Cabeçalho: Aptos Narrow 11pt bold, texto branco, fundo #156082, altura 14.4
@@ -8234,7 +8238,8 @@ window._gerarExcelFormatado = async function(registros, nomeArquivo) {
       descricao_tarefa: r.descricao_tarefa || '',
       codigo_agenda:    r.codigo_agenda    != null ? r.codigo_agenda    : '',
       quando_criado:    toDate(r.quando_criado),
-      quem_criou:       r.quem_criou       || ''
+      quem_criou:       r.quem_criou       || '',
+      justificativa:    (function(){ var jObj = window.justificativas && window.justificativas[r.numero_processo]; return (jObj && jObj.texto) || ''; })()
     });
     row.height = 14.4;
     row.font = { name: 'Aptos Narrow', size: 11 };
