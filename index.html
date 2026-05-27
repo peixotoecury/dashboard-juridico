@@ -8208,6 +8208,22 @@ window._gerarExcelFormatado = async function(registros, nomeArquivo) {
     { header: 'justificativa',    key: 'justificativa',    width: 80    }
   ];
 
+  // Linha 1 fixada (freeze pane) + auto-filtro em todas as colunas
+  ws.views = [{ state: 'frozen', xSplit: 0, ySplit: 1, topLeftCell: 'A2', activeCell: 'A2' }];
+  ws.autoFilter = { from: { row: 1, column: 1 }, to: { row: 1, column: 20 } };
+
+  // Cores de status (coluna B)
+  const _statusFill = {
+    'Fatal':      'FFFF4C4C',
+    'Vencido':    'FFC00000',
+    'D-1':        'FFFFD966',
+    'D-2':        'FFFFC000',
+    'Futuro':     'FF92D050',
+    'Encerrado':  'FFD9D9D9'
+  };
+  const _borderThin = { style: 'thin', color: { argb: 'FFD9D9D9' } };
+  const _borderCell = { top: _borderThin, left: _borderThin, bottom: _borderThin, right: _borderThin };
+
   // Cabeçalho: Aptos Narrow 11pt bold, texto branco, fundo #156082, altura 14.4
   const hRow = ws.getRow(1);
   hRow.height = 14.4;
@@ -8215,9 +8231,10 @@ window._gerarExcelFormatado = async function(registros, nomeArquivo) {
     cell.font      = { name: 'Aptos Narrow', size: 11, bold: true, color: { argb: 'FFFFFFFF' } };
     cell.fill      = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FF156082' } };
     cell.alignment = { horizontal: 'left', vertical: 'middle' };
+    cell.border    = { top: { style:'thin', color:{argb:'FF156082'} }, left: { style:'thin', color:{argb:'FF156082'} }, bottom: { style:'thin', color:{argb:'FF156082'} }, right: { style:'thin', color:{argb:'FF156082'} } };
   });
 
-  // Linhas de dados: Aptos Narrow 11pt, altura 14.4
+  // Linhas de dados: Aptos Narrow 11pt, altura 14.4, bordas e cor de status
   registros.forEach(r => {
     const row = ws.addRow({
       data:             toDate(r.data),
@@ -8243,6 +8260,15 @@ window._gerarExcelFormatado = async function(registros, nomeArquivo) {
     });
     row.height = 14.4;
     row.font = { name: 'Aptos Narrow', size: 11 };
+    // Bordas em todas as células
+    row.eachCell({ includeEmpty: true }, cell => { cell.border = _borderCell; });
+    // Cor da célula de status
+    const statusArgb = _statusFill[r.status];
+    if (statusArgb) {
+      const sCell = row.getCell('status');
+      sCell.fill = { type: 'pattern', pattern: 'solid', fgColor: { argb: statusArgb } };
+      sCell.font = { name: 'Aptos Narrow', size: 11, bold: true };
+    }
   });
 
   // Formato de data dd/mm/yyyy nas colunas de data
