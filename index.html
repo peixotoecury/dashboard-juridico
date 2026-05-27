@@ -8599,18 +8599,24 @@ document.addEventListener('DOMContentLoaded', function(){
       .pg-btns { flex-wrap: wrap !important; gap: 3px !important; }
 
       /* ── Login — painel azul como header compacto ── */
-      .login-box { flex-direction: column !important; }
-      .login-left {
+      #login-overlay .login-box { flex-direction: column !important; max-width: 100% !important; width: 100% !important; min-height: 100vh !important; border-radius: 0 !important; }
+      #login-overlay .login-left {
         display: flex !important;
         flex: 0 0 auto !important;
         flex-direction: row !important;
         align-items: center !important;
+        justify-content: flex-start !important;
+        width: 100% !important;
+        min-width: 0 !important;
         padding: 18px 24px !important;
-        min-height: unset !important;
+        min-height: 72px !important;
+        background: linear-gradient(160deg, #081f32 0%, #0c2d45 35%, #102f47 65%, #0b2840 100%) !important;
+        overflow: visible !important;
+        box-sizing: border-box !important;
       }
-      .ll-welcome, .ll-divider, .ll-features { display: none !important; }
-      .ll-logo-wrap { margin-bottom: 0 !important; }
-      .login-right { padding: 28px 20px !important; }
+      #login-overlay .ll-welcome, #login-overlay .ll-divider, #login-overlay .ll-features { display: none !important; }
+      #login-overlay .ll-logo-wrap { margin-bottom: 0 !important; flex-shrink: 0 !important; }
+      #login-overlay .login-right { flex: 1 1 auto !important; width: 100% !important; padding: 28px 20px !important; }
     }
   `;
   const style = document.createElement('style');
