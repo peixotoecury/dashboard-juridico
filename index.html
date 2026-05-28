@@ -1006,19 +1006,7 @@ html, body, button, input, select, textarea, table, th, td {
 }
 body { background:#f4f8fb !important; color:#102736 !important; }
 
-/* LOGIN — tema escuro alinhado ao logo */
-#login-overlay {
-  background: linear-gradient(145deg, #dff0f5 0%, #e8f5f9 50%, #f4fafd 100%) !important;
-}
-.login-box {
-  background: #ffffff !important;
-  border: 1px solid #c8e2ec !important;
-  border-radius: 22px !important;
-  box-shadow: 0 24px 64px rgba(0,67,92,.13), 0 2px 8px rgba(0,0,0,.05) !important;
-  max-width: 400px !important;
-  padding: 44px 48px 40px !important;
-  backdrop-filter: none !important;
-}
+/* LOGIN — tema escuro original restaurado */
 .login-logo {
   display: flex !important;
   align-items: center !important;
@@ -2288,17 +2276,23 @@ body.role-manager .upload-bar {
   margin-top: 0;
 }
 
-/* ══ LOGIN REDESIGN — painel duplo ══ */
-#login-overlay { background: linear-gradient(145deg,#e8f4f8 0%,#f4fafd 60%,#ffffff 100%) !important; align-items: center !important; justify-content: center !important; }
+/* ══ LOGIN — painel duplo (dark navy + branco) ══ */
+#login-overlay { background: linear-gradient(145deg,#001824 0%,#003a50 55%,#005f73 100%) !important; align-items: center !important; justify-content: center !important; }
 .login-box {
   display: flex !important; flex-direction: row !important;
-  width: 100% !important; max-width: 480px !important; min-height: auto !important;
-  border-radius: 20px !important; border: 1px solid #d0e8f0 !important;
-  box-shadow: 0 24px 64px rgba(0,67,92,.13), 0 2px 8px rgba(0,0,0,.05) !important;
-  padding: 0 !important; background: #fff !important; backdrop-filter: none !important;
+  width: 95% !important; max-width: 900px !important; min-height: 580px !important;
+  border-radius: 20px !important; border: none !important;
+  box-shadow: 0 40px 100px rgba(0,0,0,.55), inset 0 1px 0 rgba(255,255,255,.06) !important;
+  padding: 0 !important; background: transparent !important; backdrop-filter: none !important;
   align-items: stretch !important; overflow: hidden !important;
 }
-.login-left { display: none !important; }
+.login-left {
+  display: flex !important; flex: 0 0 400px !important;
+  flex-direction: column !important; justify-content: center !important;
+  padding: 52px 44px !important;
+  background: linear-gradient(165deg,#0D2A45 0%,#0a1e30 55%,#071828 100%) !important;
+  border-right: 1px solid rgba(26,227,255,.08) !important;
+}
 .ll-logo-wrap { margin-bottom: 52px; }
 .ll-logo-img { width: 200px; max-width: 85%; height: auto; display: block; }
 .bottom-action-bar { display:flex; align-items:center; gap:10px; flex-wrap:wrap; padding:14px 0 4px; }
