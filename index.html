@@ -3371,12 +3371,17 @@ body.role-manager .upload-bar {
 </div>
 
 <script>
-// Limpa histórico de navegação para que o botão "Voltar" não apareça ativo
-// (evita que o hub ferramentas fique como "página anterior" quando abre nesta aba)
+// Trava o botão "Voltar" do browser para que o hub ferramentas não apareça
+// como "página anterior" quando o dashboard é aberto pelo hub
 (function(){
   try {
-    if(document.referrer && window.history && window.history.length > 1){
-      window.history.replaceState(null, document.title, window.location.href);
+    if(window.history){
+      // Empurra uma entrada extra para que o "back" fique no próprio dashboard
+      window.history.pushState(null, document.title, window.location.href);
+      // Toda vez que o usuário tentar voltar, reempurra a entrada atual
+      window.addEventListener('popstate', function(){
+        window.history.pushState(null, document.title, window.location.href);
+      });
     }
   } catch(e){}
 })();
