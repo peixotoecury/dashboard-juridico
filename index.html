@@ -2289,19 +2289,16 @@ body.role-manager .upload-bar {
 }
 
 /* ══ LOGIN REDESIGN — painel duplo ══ */
-#login-overlay { background: #fff !important; align-items: stretch !important; }
+#login-overlay { background: linear-gradient(145deg,#e8f4f8 0%,#f4fafd 60%,#ffffff 100%) !important; align-items: center !important; justify-content: center !important; }
 .login-box {
   display: flex !important; flex-direction: row !important;
-  width: 100% !important; max-width: 100% !important; min-height: 100vh !important;
-  border-radius: 0 !important; border: none !important; box-shadow: none !important;
-  padding: 0 !important; background: transparent !important; backdrop-filter: none !important;
-  align-items: stretch !important;
+  width: 100% !important; max-width: 480px !important; min-height: auto !important;
+  border-radius: 20px !important; border: 1px solid #d0e8f0 !important;
+  box-shadow: 0 24px 64px rgba(0,67,92,.13), 0 2px 8px rgba(0,0,0,.05) !important;
+  padding: 0 !important; background: #fff !important; backdrop-filter: none !important;
+  align-items: stretch !important; overflow: hidden !important;
 }
-.login-left {
-  flex: 0 0 46%;
-  background: linear-gradient(165deg,#0D2A45 0%,#0a1e30 55%,#071828 100%);
-  padding: 60px 56px; display: flex; flex-direction: column; justify-content: center; color: white; overflow-y: auto;
-}
+.login-left { display: none !important; }
 .ll-logo-wrap { margin-bottom: 52px; }
 .ll-logo-img { width: 200px; max-width: 85%; height: auto; display: block; }
 .bottom-action-bar { display:flex; align-items:center; gap:10px; flex-wrap:wrap; padding:14px 0 4px; }
@@ -3371,20 +3368,7 @@ body.role-manager .upload-bar {
 </div>
 
 <script>
-// Trava o botão "Voltar" do browser para que o hub ferramentas não apareça
-// como "página anterior" quando o dashboard é aberto pelo hub
-(function(){
-  try {
-    if(window.history){
-      // Empurra uma entrada extra para que o "back" fique no próprio dashboard
-      window.history.pushState(null, document.title, window.location.href);
-      // Toda vez que o usuário tentar voltar, reempurra a entrada atual
-      window.addEventListener('popstate', function(){
-        window.history.pushState(null, document.title, window.location.href);
-      });
-    }
-  } catch(e){}
-})();
+// Navegação normal — botão Voltar funciona para retornar ao hub ferramentas
 
 const PG = 100;
 const S = { raw:[], prazos:[], agendas:[], equipe:[], aud:[], cancel:[], pgs:{} };
