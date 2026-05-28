@@ -4911,10 +4911,17 @@ window.abrirModalTransferencia = function(proc, cli, respAtual, tipo) {
   var modal = document.createElement('div');
   modal.id = 'modal-transferencia';
   modal.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:9999;display:flex;align-items:center;justify-content:center;padding:20px;';
+  var tiposOpts = [
+    {v:'prazo',        l:'Prazo'},
+    {v:'agenda',       l:'Agenda'},
+    {v:'agenda-equipe',l:'Agenda Equipe'},
+    {v:'pasta',        l:'Pasta'}
+  ].map(function(o){ return '<option value="'+o.v+'"'+(tipo===o.v?' selected':'')+'>'+o.l+'</option>'; }).join('');
+
   modal.innerHTML = '<div style="background:#fff;border-radius:12px;width:100%;max-width:560px;max-height:90vh;box-shadow:0 20px 60px rgba(0,0,0,.3);overflow:hidden;display:flex;flex-direction:column;">'
     +'<div style="background:linear-gradient(90deg,#1565C0,#1976D2);padding:18px 24px;color:#fff;display:flex;justify-content:space-between;align-items:center;flex-shrink:0;">'
-    +'<div><div style="font-weight:600;font-size:15px;">📁 TRANSFERÊNCIA DE PASTA</div>'
-    +'<div style="font-size:11px;opacity:0.85;margin-top:3px;">Processo: '+(proc||'—')+' · '+(tipo==='agenda'?'Agenda':'Prazo')+'</div></div>'
+    +'<div><div style="font-weight:600;font-size:15px;">📁 TRANSFERÊNCIA DE PASTA OU AGENDAMENTO</div>'
+    +'<div style="font-size:11px;opacity:0.85;margin-top:3px;">Processo: '+(proc||'—')+'</div></div>'
     +'<button onclick="document.getElementById(\'modal-transferencia\').remove()" style="background:rgba(255,255,255,.2);border:none;color:#fff;border-radius:6px;padding:4px 10px;cursor:pointer;font-size:16px;">✕</button>'
     +'</div>'
     +'<div style="padding:20px 24px;overflow-y:auto;flex:1;">'
@@ -4923,6 +4930,11 @@ window.abrirModalTransferencia = function(proc, cli, respAtual, tipo) {
     +'<div><b>Cliente:</b> '+(cli||'—')+'</div>'
     +'<div><b>Responsável atual:</b> '+(respAtual||'—')+'</div>'
     +'</div>'
+    +'<div style="margin-bottom:14px;">'
+    +'<label style="font-size:11px;font-weight:600;color:#333;display:block;margin-bottom:6px;">TIPO <span style="color:red;">*</span></label>'
+    +'<select id="transf-tipo" style="width:100%;border:1px solid #bbb;border-radius:6px;padding:8px;font-size:11px;box-sizing:border-box;">'
+    +tiposOpts
+    +'</select></div>'
     +'<div style="margin-bottom:14px;">'
     +'<label style="font-size:11px;font-weight:600;color:#333;display:block;margin-bottom:6px;">NOVO RESPONSÁVEL <span style="color:red;">*</span></label>'
     +'<select id="transf-novo-resp" style="width:100%;border:1px solid #bbb;border-radius:6px;padding:8px;font-size:11px;box-sizing:border-box;">'
@@ -4945,6 +4957,7 @@ window.abrirModalTransferencia = function(proc, cli, respAtual, tipo) {
 window.enviarTransferencia = function(proc, cli, respAtual, tipo) {
   var novoResp = (document.getElementById('transf-novo-resp')||{}).value||'';
   var motivo = ((document.getElementById('transf-motivo')||{}).value||'').trim();
+  var tipoSel = ((document.getElementById('transf-tipo')||{}).value||tipo||'prazo');
   novoResp = novoResp.trim();
   if(!novoResp){ alert('Selecione o novo responsável.'); return; }
   if(!motivo){ alert('Informe o motivo da transferência.'); return; }
@@ -4970,8 +4983,9 @@ window.enviarTransferencia = function(proc, cli, respAtual, tipo) {
   if(respAnteriorEmail && respAnteriorEmail !== novoEmail) ccArr.unshift(respAnteriorEmail);
 
   var hoje = new Date().toLocaleDateString('pt-BR');
-  var tipoLabel = tipo==='agenda' ? 'Agenda' : 'Prazo';
-  var assunto = '📁 TRANSFERÊNCIA DE PASTA - ' + (proc||'N/A');
+  var tipoLabels = {prazo:'Prazo','agenda':'Agenda','agenda-equipe':'Agenda Equipe','pasta':'Pasta'};
+  var tipoLabel = tipoLabels[tipoSel] || tipoSel;
+  var assunto = '📁 TRANSFERÊNCIA DE PASTA OU AGENDAMENTO - ' + (proc||'N/A');
   var corpo = 'Prezado(a) ' + novoNome + ',\n\n'
     + 'Informamos a transferência da seguinte pasta:\n\n'
     + '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n'
