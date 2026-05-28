@@ -2276,22 +2276,27 @@ body.role-manager .upload-bar {
   margin-top: 0;
 }
 
-/* ══ LOGIN — painel duplo (dark navy + branco) ══ */
-#login-overlay { background: linear-gradient(145deg,#001824 0%,#003a50 55%,#005f73 100%) !important; align-items: center !important; justify-content: center !important; }
+/* ══ LOGIN — painel duplo full-screen (igual pauta/protocolados) ══ */
+#login-overlay {
+  background: #071828 !important;
+  align-items: stretch !important;
+  justify-content: stretch !important;
+}
 .login-box {
   display: flex !important; flex-direction: row !important;
-  width: 95% !important; max-width: 900px !important; min-height: 580px !important;
-  border-radius: 20px !important; border: none !important;
-  box-shadow: 0 40px 100px rgba(0,0,0,.55), inset 0 1px 0 rgba(255,255,255,.06) !important;
+  width: 100% !important; height: 100% !important;
+  max-width: none !important; min-height: 100vh !important;
+  border-radius: 0 !important; border: none !important;
+  box-shadow: none !important;
   padding: 0 !important; background: transparent !important; backdrop-filter: none !important;
   align-items: stretch !important; overflow: hidden !important;
 }
 .login-left {
-  display: flex !important; flex: 0 0 400px !important;
+  display: flex !important; flex: 0 0 44% !important;
   flex-direction: column !important; justify-content: center !important;
-  padding: 52px 44px !important;
-  background: linear-gradient(165deg,#0D2A45 0%,#0a1e30 55%,#071828 100%) !important;
-  border-right: 1px solid rgba(26,227,255,.08) !important;
+  padding: 60px 56px !important;
+  background: linear-gradient(165deg,#0D2A45 0%,#0a1e30 60%,#071828 100%) !important;
+  border-right: 1px solid rgba(26,227,255,.07) !important;
 }
 .ll-logo-wrap { margin-bottom: 52px; }
 .ll-logo-img { width: 200px; max-width: 85%; height: auto; display: block; }
@@ -2324,7 +2329,7 @@ body.role-manager .upload-bar {
 .ll-feat-text h3 { font-size: 13px; font-weight: 600; color: #fff; margin: 0 0 3px; font-family: 'Sora', sans-serif; }
 .ll-feat-text p { font-size: 11.5px; color: rgba(255,255,255,.4); margin: 0; line-height: 1.55; font-family: 'Sora', sans-serif; }
 .login-right {
-  flex: 1; background: #fff; display: flex; align-items: center; justify-content: center; padding: 48px;
+  flex: 1; background: #fff; display: flex; align-items: center; justify-content: center; padding: 48px; min-height: 100vh;
 }
 .login-form-wrap { width: 100%; max-width: 360px; }
 .lf-title { font-size: 28px !important; font-weight: 700 !important; color: #0B1E2D !important; text-align: left !important; margin: 0 0 6px !important; letter-spacing: -.5px !important; text-transform: none !important; font-family: 'Sora', sans-serif !important; }
@@ -2350,7 +2355,8 @@ body.role-manager .upload-bar {
 .lf-restrict { display: block; text-align: center; font-size: 12px; color: #8399ae; cursor: default; text-decoration: none; font-family: 'Sora', sans-serif; }
 .lf-err { width: 100%; margin-top: 0; margin-bottom: 16px; background: rgba(192,57,43,.08) !important; border: 1px solid rgba(192,57,43,.25) !important; border-left: 3px solid #c0392b !important; border-radius: 8px !important; padding: 10px 14px !important; font-size: 12px !important; color: #c0392b !important; font-weight: 500 !important; text-align: left !important; display: none; }
 @media (max-width: 768px) {
-  .login-box { flex-direction: column !important; min-height: auto !important; }
+  #login-overlay { align-items: flex-start !important; overflow-y: auto !important; }
+  .login-box { flex-direction: column !important; min-height: 100vh !important; height: auto !important; }
   .login-left {
     display: flex !important; flex: 0 0 auto !important;
     flex-direction: column !important; justify-content: flex-start !important;
@@ -2358,7 +2364,7 @@ body.role-manager .upload-bar {
   }
   .login-right {
     width: 100% !important; padding: 36px 28px !important;
-    flex: 0 0 auto !important;
+    flex: 1 !important; min-height: auto !important;
     align-items: flex-start !important; justify-content: flex-start !important;
   }
   .ll-logo-wrap { margin-bottom: 24px !important; }
@@ -2366,7 +2372,6 @@ body.role-manager .upload-bar {
   .lawgico-logo span[style*="font-size:36px"] { font-size: 36px !important; }
 }
 @media (max-width: 480px) {
-  .login-box  { min-height: auto !important; }
   .login-left { padding: 24px 20px 28px !important; }
   .login-right { padding: 24px 20px 32px !important; }
   .ll-logo-wrap { margin-bottom: 24px !important; }
