@@ -4894,6 +4894,116 @@ window.enviarReagendamento = function() {
 };
 
 
+// 📁 Transferência de Pasta
+window.abrirModalTransferencia = function(proc, cli, respAtual, tipo) {
+  var old = document.getElementById('modal-transferencia');
+  if(old) old.remove();
+
+  var advogados = Object.keys(USUARIOS)
+    .filter(function(k){ return USUARIOS[k].sigla && USUARIOS[k].nome; })
+    .map(function(k){ return { login: k, nome: USUARIOS[k].nome, sigla: USUARIOS[k].sigla }; })
+    .sort(function(a,b){ return a.nome.localeCompare(b.nome,'pt-BR'); });
+
+  var opcoesAdv = advogados.map(function(a){
+    return '<option value="'+a.login+'">'+a.nome+' ('+a.sigla+')</option>';
+  }).join('');
+
+  var modal = document.createElement('div');
+  modal.id = 'modal-transferencia';
+  modal.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:9999;display:flex;align-items:center;justify-content:center;padding:20px;';
+  modal.innerHTML = '<div style="background:#fff;border-radius:12px;width:100%;max-width:560px;max-height:90vh;box-shadow:0 20px 60px rgba(0,0,0,.3);overflow:hidden;display:flex;flex-direction:column;">'
+    +'<div style="background:linear-gradient(90deg,#1565C0,#1976D2);padding:18px 24px;color:#fff;display:flex;justify-content:space-between;align-items:center;flex-shrink:0;">'
+    +'<div><div style="font-weight:600;font-size:15px;">📁 TRANSFERÊNCIA DE PASTA</div>'
+    +'<div style="font-size:11px;opacity:0.85;margin-top:3px;">Processo: '+(proc||'—')+' · '+(tipo==='agenda'?'Agenda':'Prazo')+'</div></div>'
+    +'<button onclick="document.getElementById(\'modal-transferencia\').remove()" style="background:rgba(255,255,255,.2);border:none;color:#fff;border-radius:6px;padding:4px 10px;cursor:pointer;font-size:16px;">✕</button>'
+    +'</div>'
+    +'<div style="padding:20px 24px;overflow-y:auto;flex:1;">'
+    +'<div style="background:#f5f7fa;border-radius:8px;padding:12px;margin-bottom:16px;font-size:11px;color:#555;line-height:1.7;">'
+    +'<div><b>Processo:</b> '+(proc||'—')+'</div>'
+    +'<div><b>Cliente:</b> '+(cli||'—')+'</div>'
+    +'<div><b>Responsável atual:</b> '+(respAtual||'—')+'</div>'
+    +'</div>'
+    +'<div style="margin-bottom:14px;">'
+    +'<label style="font-size:11px;font-weight:600;color:#333;display:block;margin-bottom:6px;">NOVO RESPONSÁVEL <span style="color:red;">*</span></label>'
+    +'<select id="transf-novo-resp" style="width:100%;border:1px solid #bbb;border-radius:6px;padding:8px;font-size:11px;box-sizing:border-box;">'
+    +'<option value="">Selecione o novo responsável</option>'
+    +opcoesAdv
+    +'</select></div>'
+    +'<div style="margin-bottom:4px;">'
+    +'<label style="font-size:11px;font-weight:600;color:#333;display:block;margin-bottom:6px;">MOTIVO DA TRANSFERÊNCIA <span style="color:red;">*</span></label>'
+    +'<textarea id="transf-motivo" rows="4" placeholder="Descreva o motivo da transferência..." style="width:100%;border:1px solid #bbb;border-radius:6px;padding:8px;font-size:11px;font-family:inherit;resize:vertical;outline:none;box-sizing:border-box;"></textarea>'
+    +'</div></div>'
+    +'<div style="padding:14px 24px;border-top:1px solid #eee;display:flex;gap:10px;justify-content:flex-end;flex-shrink:0;">'
+    +'<button onclick="document.getElementById(\'modal-transferencia\').remove()" style="background:#f0f0f0;border:none;border-radius:6px;padding:10px 20px;cursor:pointer;font-size:12px;color:#666;font-weight:500;">Cancelar</button>'
+    +'<button onclick="window.enviarTransferencia(\''+proc.replace(/'/g,"\\'")+ '\',\''+cli.replace(/'/g,"\\'")+'\',\''+respAtual.replace(/'/g,"\\'")+'\',\''+tipo+'\')" style="background:#1565C0;color:#fff;border:none;border-radius:6px;padding:10px 20px;cursor:pointer;font-size:12px;font-weight:600;">📧 Enviar</button>'
+    +'</div></div>';
+  document.body.appendChild(modal);
+  modal.addEventListener('click', function(e){ if(e.target===this) this.remove(); });
+  setTimeout(function(){ var t=document.getElementById('transf-motivo');if(t)t.focus(); }, 100);
+};
+
+window.enviarTransferencia = function(proc, cli, respAtual, tipo) {
+  var novoResp = (document.getElementById('transf-novo-resp')||{}).value||'';
+  var motivo = ((document.getElementById('transf-motivo')||{}).value||'').trim();
+  novoResp = novoResp.trim();
+  if(!novoResp){ alert('Selecione o novo responsável.'); return; }
+  if(!motivo){ alert('Informe o motivo da transferência.'); return; }
+
+  var novoUser = USUARIOS[novoResp] || {};
+  var novoNome = novoUser.nome || novoResp;
+  var novoEmail = novoResp + '@peixotoecury.com.br';
+
+  // Busca email do responsável anterior pela sigla, nome ou login
+  var respAnteriorEmail = '';
+  if(respAtual) {
+    var respNorm = (respAtual||'').trim().toLowerCase();
+    var matchLogin = Object.keys(USUARIOS).find(function(k){
+      var u = USUARIOS[k];
+      return (u.nome||'').toLowerCase()===respNorm
+          || (u.sigla||'').toLowerCase()===respNorm
+          || k===respNorm;
+    });
+    if(matchLogin) respAnteriorEmail = matchLogin + '@peixotoecury.com.br';
+  }
+
+  var ccArr = ['prazos.trabalhista@peixotoecury.com.br'];
+  if(respAnteriorEmail && respAnteriorEmail !== novoEmail) ccArr.unshift(respAnteriorEmail);
+
+  var hoje = new Date().toLocaleDateString('pt-BR');
+  var tipoLabel = tipo==='agenda' ? 'Agenda' : 'Prazo';
+  var assunto = '📁 TRANSFERÊNCIA DE PASTA - ' + (proc||'N/A');
+  var corpo = 'Prezado(a) ' + novoNome + ',\n\n'
+    + 'Informamos a transferência da seguinte pasta:\n\n'
+    + '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n'
+    + 'PROCESSO: ' + (proc||'—') + '\n'
+    + 'CLIENTE: ' + (cli||'—') + '\n'
+    + 'TIPO: ' + tipoLabel + '\n'
+    + 'RESPONSÁVEL ANTERIOR: ' + (respAtual||'—') + '\n'
+    + 'NOVO RESPONSÁVEL: ' + novoNome + '\n'
+    + 'MOTIVO: ' + motivo + '\n'
+    + '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n'
+    + 'Favor atualizar o sistema com o novo responsável.\n\n'
+    + 'Data: ' + hoje + '\n\n'
+    + 'Atenciosamente,\n'
+    + 'Controladoria — Peixoto & Cury Advogados';
+
+  var mailto = 'mailto:' + encodeURIComponent(novoEmail)
+    + '?cc=' + encodeURIComponent(ccArr.join(','))
+    + '&subject=' + encodeURIComponent(assunto)
+    + '&body=' + encodeURIComponent(corpo);
+
+  var link = document.createElement('a');
+  link.href = mailto;
+  document.body.appendChild(link);
+  link.click();
+  setTimeout(function(){ if(link.parentNode) link.parentNode.removeChild(link); }, 500);
+
+  setTimeout(function(){
+    var m = document.getElementById('modal-transferencia');
+    if(m) m.remove();
+  }, 700);
+};
+
 // 🔴 Função para abrir modal de justificativa com grupo
 window.abrirModalJustificativaFatal = function(audId, processo, responsavel, grupo) {
   window.carregarJustificativa(audId, function(textoAtual) {
@@ -6848,14 +6958,15 @@ document.addEventListener('DOMContentLoaded', function(){
       {h:'Tarefa', v:r=>txt(pick(r,['descricao_tarefa','Descrição','descrição','tarefa','Tarefa']))},
       {h:'Status', v:r=>{const s=status(r);return `<span class="mp-only-status" style="${(statusEh(s, 'Fatal')||statusEh(s, 'Vencido'))?'background:#fdecea;color:#c62828;border:1px solid #ef9a9a;':''}">${s}</span>`;}},
       {h:'Justificativa', v:r=>{const s=status(r);if(!statusEh(s, 'Fatal')&&!statusEh(s, 'Vencido'))return '<span style="color:var(--gray4);font-size:10px;">—</span>';const proc=txt(pick(r,['numero_processo','Número do Processo','Processo','processo']));const key='justif-'+btoa(proc).replace(/[^a-z0-9]/gi,'');const just=(window._mpJustif&&window._mpJustif[key])?window._mpJustif[key]:'—';return `<div style="font-size:10px;color:${just==='—'?'var(--gray4)':'#c62828'};max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:${just==='—'?'400':'600'}">${e(just)}</div>`;}},
-      {h:'Ação', v:function(r){const s=status(r);const proc=txt(pick(r,['numero_processo','Número do Processo','Processo','processo']));const resp=r.responsavel||r['Responsável']||'';const grp=r.grupo_processo||r['Grupo Processo']||'';if(s==='Fatal'||s==='Vencido'||s==='D-1'||s==='D-2'||s==='Futuro')return `<button onclick="window.abrirModalReagendamento('${proc}','${resp}','${grp}')" style="font-size:10px;font-weight:500;padding:4px 8px;border:none;border-radius:5px;background:#d84315;color:white;cursor:pointer;font-family:inherit;white-space:nowrap;">📅 Reagendar</button>`;return '<span style="color:var(--gray4);font-size:10px;">—</span>';}}
+      {h:'Ação', v:function(r){const s=status(r);const proc=txt(pick(r,['numero_processo','Número do Processo','Processo','processo']));const cli=txt(pick(r,['cliente','Cliente'])||'');const resp=r.responsavel||r['Responsável']||'';const grp=r.grupo_processo||r['Grupo Processo']||'';const procE=proc.replace(/'/g,"\\'");const cliE=cli.replace(/'/g,"\\'");const respE=resp.replace(/'/g,"\\'");const reagBtn=(s==='Fatal'||s==='Vencido'||s==='D-1'||s==='D-2'||s==='Futuro')?`<button onclick="window.abrirModalReagendamento('${procE}','${respE}','${grp}')" style="font-size:10px;font-weight:500;padding:4px 8px;border:none;border-radius:5px;background:#d84315;color:white;cursor:pointer;font-family:inherit;white-space:nowrap;">📅 Reagendar</button>`:'';const transfBtn=`<button onclick="window.abrirModalTransferencia('${procE}','${cliE}','${respE}','prazo')" style="font-size:10px;font-weight:500;padding:4px 8px;border:none;border-radius:5px;background:#1565C0;color:white;cursor:pointer;font-family:inherit;white-space:nowrap;">📁 Transferir</button>`;return `<div style="display:flex;gap:4px;flex-wrap:wrap;">${reagBtn}${transfBtn}</div>`;}}
     ];
     const agendaCols = [
       {h:'Data', v:r=>fmtD(pick(r,['data','Data']))},
       {h:'Processo', v:r=>txt(pick(r,['numero_processo','Número do Processo','Processo','processo']))},
       {h:'Cliente', v:r=>txt(pick(r,['cliente','Cliente']))},
       {h:'Descrição', v:r=>txt(pick(r,['descricao_tarefa','Descrição','descrição','tarefa','Tarefa']))},
-      {h:'Status', v:r=>`<span class="mp-only-status">${status(r)}</span>`}
+      {h:'Status', v:r=>`<span class="mp-only-status">${status(r)}</span>`},
+      {h:'Ação', v:function(r){const proc=txt(pick(r,['numero_processo','Número do Processo','Processo','processo']));const cli=txt(pick(r,['cliente','Cliente'])||'');const resp=r.responsavel||r['Responsável']||'';const procE=proc.replace(/'/g,"\\'");const cliE=cli.replace(/'/g,"\\'");const respE=resp.replace(/'/g,"\\'");return `<button onclick="window.abrirModalTransferencia('${procE}','${cliE}','${respE}','agenda')" style="font-size:10px;font-weight:500;padding:4px 8px;border:none;border-radius:5px;background:#1565C0;color:white;cursor:pointer;font-family:inherit;white-space:nowrap;">📁 Transferir</button>`;}}
     ];
     const equipeCols = [
       {h:'Data', v:r=>fmtD(pick(r,['data','Data']))},
@@ -7327,12 +7438,17 @@ document.addEventListener('DOMContentLoaded', function(){
         const key='justif_'+btoa(unescape(encodeURIComponent(proc))).replace(/[^a-zA-Z0-9]/g,'').slice(0,20);
         const grupo = r.grupo_processo || r['Grupo Processo'] || '';
         const responsavel = r.responsavel || r['Responsável'] || '';
+        const procE=proc.replace(/'/g,"\\'");
+        const cliE=cli.replace(/'/g,"\\'");
+        const respE=responsavel.replace(/'/g,"\\'");
+        const transfBtn=`<button onclick="window.abrirModalTransferencia('${procE}','${cliE}','${respE}','prazo')" style="font-size:10px;font-weight:500;padding:4px 8px;border:none;border-radius:5px;background:#1565C0;color:white;cursor:pointer;font-family:inherit;white-space:nowrap;">📁 Transferir</button>`;
         if(s==='Fatal'||s==='Vencido') return `<div style="display:flex;gap:4px;flex-wrap:wrap;">
           <button onclick="abrirJustifSingle('${key}','${procEnc}','${cliEnc}','${tarefaEnc}','${statusStr}')" style="font-size:10px;font-weight:500;padding:4px 8px;border:none;border-radius:5px;background:#c62828;color:white;cursor:pointer;font-family:inherit;white-space:nowrap;">Justificar</button>
-          <button onclick="window.abrirModalReagendamento('${proc}', '${responsavel}', '${grupo}')" style="font-size:10px;font-weight:500;padding:4px 8px;border:none;border-radius:5px;background:#d84315;color:white;cursor:pointer;font-family:inherit;white-space:nowrap;" title="Solicitar reagendamento">Reagendar</button>
+          <button onclick="window.abrirModalReagendamento('${procE}', '${respE}', '${grupo}')" style="font-size:10px;font-weight:500;padding:4px 8px;border:none;border-radius:5px;background:#d84315;color:white;cursor:pointer;font-family:inherit;white-space:nowrap;" title="Solicitar reagendamento">Reagendar</button>
+          ${transfBtn}
         </div>`;
-        if(s==='D-1'||s==='D-2'||s==='Futuro') return `<button onclick="window.abrirModalReagendamento('${proc}', '${responsavel}', '${grupo}')" style="font-size:10px;font-weight:500;padding:4px 8px;border:none;border-radius:5px;background:#d84315;color:white;cursor:pointer;font-family:inherit;white-space:nowrap;" title="Solicitar reagendamento">📅 Reagendar</button>`;
-        return '<span style="color:var(--gray4);font-size:10px;">—</span>';
+        if(s==='D-1'||s==='D-2'||s==='Futuro') return `<div style="display:flex;gap:4px;flex-wrap:wrap;"><button onclick="window.abrirModalReagendamento('${procE}', '${respE}', '${grupo}')" style="font-size:10px;font-weight:500;padding:4px 8px;border:none;border-radius:5px;background:#d84315;color:white;cursor:pointer;font-family:inherit;white-space:nowrap;" title="Solicitar reagendamento">📅 Reagendar</button>${transfBtn}</div>`;
+        return `<div style="display:flex;gap:4px;flex-wrap:wrap;">${transfBtn}</div>`;
       }}
     ];
     const agendaCols = [
@@ -7341,7 +7457,8 @@ document.addEventListener('DOMContentLoaded', function(){
       {h:'Cliente', v:r=>txt(pick(r,['cliente','Cliente']))},
       {h:'Responsável', v:r=>txt(pick(r,['responsavel','Responsável','profissional','Advogado','advogado']))},
       {h:'Descrição', v:r=>txt(pick(r,['descricao_tarefa','Descrição','descrição','tarefa','Tarefa']))},
-      {h:'Status', v:r=>`<span class="mp-only-status">${status(r)}</span>`}
+      {h:'Status', v:r=>`<span class="mp-only-status">${status(r)}</span>`},
+      {h:'Ação', v:function(r){const proc=txt(pick(r,['numero_processo','Número do Processo','Processo','processo']));const cli=txt(pick(r,['cliente','Cliente'])||'');const resp=r.responsavel||r['Responsável']||'';const procE=proc.replace(/'/g,"\\'");const cliE=cli.replace(/'/g,"\\'");const respE=resp.replace(/'/g,"\\'");return `<button onclick="window.abrirModalTransferencia('${procE}','${cliE}','${respE}','agenda')" style="font-size:10px;font-weight:500;padding:4px 8px;border:none;border-radius:5px;background:#1565C0;color:white;cursor:pointer;font-family:inherit;white-space:nowrap;">📁 Transferir</button>`;}}
     ];
     const equipeCols = [
       {h:'Data', v:r=>fmtD(pick(r,['data','Data']))},
