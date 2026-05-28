@@ -6865,11 +6865,12 @@ document.addEventListener('DOMContentLoaded', function(){
       {h:'Status', v:r=>`<span class="mp-only-status">${status(r)}</span>`}
     ];
     const audCols = [
-      {h:'Data', v:r=>txt(pick(r,['data','Data','data_audiencia']))},
-      {h:'Cliente', v:r=>txt(pick(r,['cliente','Cliente']))},
-      {h:'Audiência', v:r=>txt(pick(r,['tipo','Tipo','tipo_audiencia','modalidade']))},
-      {h:'Responsável pela audiência', v:r=>txt(pick(r,['responsavel_audiencia','Responsável Audiência','advogado_audiencia','Advogado Audiência','advogado que fará','profissional_audiencia','Advogado','advogado']))},
-      {h:'Status', v:r=>`<span class="mp-only-status">${status(r)}</span>`}
+      {h:'Data',    v:r=>fmtD(pick(r,['Data','data','data_audiencia']))},
+      {h:'Horário', v:r=>txt(pick(r,['Horário','horario','horário','Hora']))},
+      {h:'Tipo',    v:r=>txt(pick(r,['Tipo Agendamento','tipo','Tipo','tipo_audiencia','modalidade']))},
+      {h:'Cliente', v:r=>txt(pick(r,['Parte Principal','parte_principal','cliente','Cliente']))},
+      {h:'Comarca', v:r=>txt(pick(r,['Comarca','comarca']))},
+      {h:'Adv. Audiência', v:r=>txt(pick(r,['Advogado Responsável Audiência/SO','responsavel_audiencia','Advogado Audiência','advogado_audiencia','Advogado','advogado','responsavel']))},
     ];
 
     // ── FATAIS COM JUSTIFICATIVA ──
@@ -7351,11 +7352,12 @@ document.addEventListener('DOMContentLoaded', function(){
       {h:'Status', v:r=>`<span class="mp-only-status">${status(r)}</span>`}
     ];
     const audCols = [
-      {h:'Data', v:r=>txt(pick(r,['data','Data','data_audiencia']))},
-      {h:'Cliente', v:r=>txt(pick(r,['cliente','Cliente']))},
-      {h:'Audiência', v:r=>txt(pick(r,['tipo','Tipo','tipo_audiencia','modalidade']))},
-      {h:'Responsável pela audiência', v:r=>txt(pick(r,['responsavel_audiencia','Responsável Audiência','advogado_audiencia','Advogado Audiência','advogado que fará','profissional_audiencia','Advogado','advogado','responsavel','Responsável']))},
-      {h:'Status', v:r=>`<span class="mp-only-status">${status(r)}</span>`}
+      {h:'Data',    v:r=>fmtD(pick(r,['Data','data','data_audiencia']))},
+      {h:'Horário', v:r=>txt(pick(r,['Horário','horario','horário','Hora']))},
+      {h:'Tipo',    v:r=>txt(pick(r,['Tipo Agendamento','tipo','Tipo','tipo_audiencia','modalidade']))},
+      {h:'Cliente', v:r=>txt(pick(r,['Parte Principal','parte_principal','cliente','Cliente']))},
+      {h:'Comarca', v:r=>txt(pick(r,['Comarca','comarca']))},
+      {h:'Adv. Audiência', v:r=>txt(pick(r,['Advogado Responsável Audiência/SO','responsavel_audiencia','Advogado Audiência','advogado_audiencia','Advogado','advogado','responsavel']))},
     ];
 
     const prazosHtml = table('📋 Prazos', d.prazos, prazoCols);
