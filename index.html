@@ -1183,7 +1183,7 @@ body.role-user .nav {
   background:linear-gradient(180deg,#001e2e 0%,#002c40 55%,#001e2e 100%) !important;
   border:0 !important;
   border-right:1px solid rgba(255,255,255,.06) !important;
-  padding:96px 12px 18px !important;
+  padding:120px 12px 18px !important;
   box-shadow:4px 0 24px rgba(0,20,35,.35) !important;
   z-index:190 !important;
   overflow-y:auto !important;
@@ -2350,7 +2350,16 @@ body.role-manager .upload-bar {
 .lf-or { text-align: center; color: #b0c4ce; font-size: 12px; margin: 14px 0; }
 .lf-restrict { display: block; text-align: center; font-size: 12px; color: #006080; cursor: pointer; text-decoration: none; }
 .lf-err { width: 100%; margin-top: 12px; background: #fff0f0 !important; border: 1px solid #f5b8b8 !important; border-radius: 8px !important; padding: 9px 14px !important; font-size: 11.5px !important; color: #c0392b !important; text-align: center !important; display: none; }
-@media (max-width: 768px) { .login-left { display: none; } .login-right { padding: 32px 24px; } }
+@media (max-width: 768px) {
+  .login-box { flex-direction: column !important; }
+  .login-left {
+    display: flex !important;
+    flex: 0 0 auto !important;
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+  .login-right { width: 100% !important; }
+}
 
 /* ── MOBILE: role-user — header azul e conteúdo ocupam 100% da tela ── */
 @media(max-width:900px){
@@ -2468,10 +2477,10 @@ body.role-manager .upload-bar {
       <div class="ll-logo-wrap">
         <div class="lawgico-logo" style="display:flex;flex-direction:column;">
           <div style="display:flex;align-items:flex-end;line-height:1;">
-            <span style="font-size:48px;font-weight:900;color:#fff;letter-spacing:-2px;font-family:Inter,Arial,sans-serif;">LAW</span>
+            <span style="font-size:34px;font-weight:900;color:#fff;letter-spacing:-2px;font-family:Inter,Arial,sans-serif;">LAW</span>
             <div style="display:flex;flex-direction:column;align-items:flex-start;">
               <span style="font-size:9px;font-weight:400;color:rgba(255,255,255,.8);letter-spacing:1px;align-self:flex-end;margin-bottom:-1px;font-family:Inter,Arial,sans-serif;">prazos</span>
-              <span style="font-size:48px;font-weight:300;color:#fff;letter-spacing:-2px;line-height:1;font-family:Inter,Arial,sans-serif;">gico</span>
+              <span style="font-size:34px;font-weight:300;color:#fff;letter-spacing:-2px;line-height:1;font-family:Inter,Arial,sans-serif;">gico</span>
             </div>
           </div>
           <div style="font-size:9px;color:rgba(255,255,255,.75);letter-spacing:3px;font-weight:400;margin-top:3px;font-family:Inter,Arial,sans-serif;">lawyers at work</div>
@@ -2515,6 +2524,15 @@ body.role-manager .upload-bar {
             <p>Proteção total das informações</p>
           </div>
         </div>
+        <div class="ll-feature">
+          <div class="ll-feat-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <div class="ll-feat-text">
+            <h3>Visão individual por profissional</h3>
+            <p>Cada um acessa apenas seus prazos, suas agendas e a agenda da equipe</p>
+          </div>
+        </div>
       </div>
     </div>
     <!-- Painel direito -->
@@ -2554,10 +2572,10 @@ body.role-manager .upload-bar {
 <header class="hdr">
   <div class="brand-pc" aria-label="Peixoto & Cury Advogados">
     <div class="lawgico-logo" style="display:flex;align-items:center;line-height:1;padding:4px 12px;width:100%;height:100%;box-sizing:border-box;">
-    <span style="font-size:26px;font-weight:900;color:#fff;letter-spacing:-1px;font-family:Inter,Arial,sans-serif;">LAW</span>
+    <span style="font-size:16px;font-weight:900;color:#fff;letter-spacing:-1px;font-family:Inter,Arial,sans-serif;">LAW</span>
     <div style="display:flex;flex-direction:column;align-items:flex-start;margin-left:0;">
-      <span style="font-size:8px;font-weight:400;color:rgba(255,255,255,.8);letter-spacing:1px;align-self:flex-end;margin-bottom:-2px;font-family:Inter,Arial,sans-serif;">prazos</span>
-      <span style="font-size:26px;font-weight:300;color:#fff;letter-spacing:-1px;line-height:1;font-family:Inter,Arial,sans-serif;">gico</span>
+      <span style="font-size:6px;font-weight:400;color:rgba(255,255,255,.8);letter-spacing:1px;align-self:flex-end;margin-bottom:-2px;font-family:Inter,Arial,sans-serif;">prazos</span>
+      <span style="font-size:16px;font-weight:300;color:#fff;letter-spacing:-1px;line-height:1;font-family:Inter,Arial,sans-serif;">gico</span>
     </div>
   </div>
   </div>
@@ -3775,6 +3793,8 @@ window.renderExposicaoGrupo = function() {
     grupos[grupo].push(row);
   });
   
+  window._expGrupoData = {};
+
   // Criar cards para cada grupo
   const cards = Object.entries(grupos)
     .sort((a, b) => a[0].localeCompare(b[0]))
@@ -3782,6 +3802,8 @@ window.renderExposicaoGrupo = function() {
       const icons = ['📁', '📊', '📈', '🎯', '📋', '⚙️', '🔧', '💼', '🏢', '📑'];
       const hash = nomeGrupo.charCodeAt(0) % icons.length;
       const icon = icons[hash];
+
+      window._expGrupoData[nomeGrupo] = items;
       
       // Contar fatais por pessoa
       const pessoas = {};
@@ -3792,9 +3814,10 @@ window.renderExposicaoGrupo = function() {
       
       const totalPessoas = Object.keys(pessoas).length;
       const totalFatais = items.length;
+      const grupoKey = nomeGrupo.replace(/'/g, "\\'");
       
       return `
-        <div class="exp-grupo-card" style="cursor: pointer;" onclick="abrirModalFataisPorPessoa('${e(nomeGrupo)}', ${JSON.stringify(items).replace(/'/g, '&#39;')})">
+        <div class="exp-grupo-card" style="cursor: pointer;" onclick="abrirModalFataisPorPessoa('${grupoKey}')">
           <div class="exp-grupo-header">
             <div class="exp-grupo-icon">${icon}</div>
             <div class="exp-grupo-info">
@@ -4007,11 +4030,13 @@ window.abrirModalGrupoDetalhado = function(nomeGrupo, prazosItems) {
 
 
 // ── MODAL DE PESSOAS POR GRUPO ────────────────────────────────────
-window.abrirModalFataisPorPessoa = function(nomeGrupo, items) {
+window.abrirModalFataisPorPessoa = function(nomeGrupo) {
+  // Buscar dados do objeto global (evita JSON inline no onclick)
+  const items = (window._expGrupoData && window._expGrupoData[nomeGrupo]) || [];
   // Remover modal anterior se existir
   const oldModal = document.querySelector('.modal-exp-pessoas');
   if (oldModal) oldModal.remove();
-  
+
   // Agrupar fatais por responsável
   const pessoas = {};
   items.forEach(item => {
@@ -4535,6 +4560,10 @@ window.salvarJustificativa = function(audId, texto, processo) {
   }
   window.justificativas = window.justificativas || {};
   window.justificativas[audId] = { audId: audId, texto: texto, dataSalva: new Date().toISOString() };
+  // também indexa por numero_processo para o export Excel encontrar
+  if (processo) {
+    window.justificativas[processo] = { audId: processo, texto: texto, dataSalva: new Date().toISOString() };
+  }
   
   // ✅ SALVAR NO SUPABASE TAMBÉM
   if(typeof supabaseClient !== 'undefined' && supabaseClient && processo) {
@@ -4543,13 +4572,13 @@ window.salvarJustificativa = function(audId, texto, processo) {
       
       supabaseClient
         .from('justificativas')
-        .upsert({
+        .insert({
           numero_processo: processo,
           justificativa_texto: texto,
           usuario_email: sess.email || '',
           usuario_nome: sess.nome || '',
           atualizado_em: new Date().toISOString()
-        }, { onConflict: 'numero_processo' })
+        })
         .then(function(result){
           if(result.error) {
             console.log('❌ Erro ao salvar no Supabase:', result.error);
@@ -4573,14 +4602,8 @@ window.salvarJustificativa = function(audId, texto, processo) {
       btnSalvar.style.backgroundColor = '#2d7d46';
       btnSalvar.style.borderColor = '#2d7d46';
       btnSalvar.style.color = '#fff';
-      btnSalvar.textContent = '✓ Justificativa salva';
-      setTimeout(function() {
-        if(areaTexto) areaTexto.style.display = 'none';
-        if(btnSalvar) btnSalvar.textContent = 'Editar justificativa';
-        btnSalvar.style.backgroundColor = '';
-        btnSalvar.style.borderColor = '';
-        btnSalvar.style.color = '';
-      }, 1500);
+      btnSalvar.textContent = '✏️ Editar';
+      if(areaTexto) areaTexto.style.display = 'none';
     }
   }
 };
@@ -4611,7 +4634,7 @@ window.temJustificativa = function(audId) {
 
 // 📧 Mapeamento de grupos para emails de destino
 window.emailMapeamento = {
-  'Grupo A1e': { para: 'natalia.gaggini@peixotoecury.com.br', cc: 'prazos.trabalhista@peixotoecury.com.br' },
+  'Grupo A1': { para: 'natalia.gaggini@peixotoecury.com.br', cc: 'prazos.trabalhista@peixotoecury.com.br' },
   'Grupo A2': { para: 'natalia.gaggini@peixotoecury.com.br', cc: 'prazos.trabalhista@peixotoecury.com.br' },
   'Grupo A3': { para: 'sofia.freire@peixotoecury.com.br', cc: 'prazos.trabalhista@peixotoecury.com.br' },
   'Grupo B1': { para: 'nicolau.coelho@peixotoecury.com.br; anacarolina.martini@peixotoecury.com.br', cc: 'prazos.trabalhista@peixotoecury.com.br' },
@@ -4662,7 +4685,7 @@ window.reagendamentoMapeamento = {
   'Grupo A1': { email: 'natalia.gaggini@peixotoecury.com.br', cc: 'prazos.trabalhista@peixotoecury.com.br' },
   'Grupo A2': { email: 'natalia.gaggini@peixotoecury.com.br', cc: 'prazos.trabalhista@peixotoecury.com.br' },
   'Grupo A3': { email: 'natalia.gaggini@peixotoecury.com.br', cc: 'prazos.trabalhista@peixotoecury.com.br' },
-  'Grupo A1e': { email: 'natalia.gaggini@peixotoecury.com.br', cc: 'prazos.trabalhista@peixotoecury.com.br' },
+  'Grupo A1': { email: 'natalia.gaggini@peixotoecury.com.br', cc: 'prazos.trabalhista@peixotoecury.com.br' },
   'Grupo B1': { email: 'nicolau.coelho@peixotoecury.com.br', cc: 'prazos.trabalhista@peixotoecury.com.br' },
   'Grupo B2': { email: 'nicolau.coelho@peixotoecury.com.br', cc: 'prazos.trabalhista@peixotoecury.com.br' },
   'Grupo B3': { email: 'nicolau.coelho@peixotoecury.com.br', cc: 'prazos.trabalhista@peixotoecury.com.br' },
@@ -4910,7 +4933,7 @@ window.abrirModalJustificativaFatal = function(audId, processo, responsavel, gru
         </div>
 
         <div>
-          <label style="display:block;margin-bottom:6px;font-size:12px;font-weight:700;color:#333;text-transform:uppercase;letter-spacing:.5px;">7. Data de envio da peça para revisão *</label>
+          <label style="display:block;margin-bottom:6px;font-size:12px;font-weight:700;color:#333;text-transform:uppercase;letter-spacing:.5px;">7. Data de envio da peça para revisão</label>
           <input type="text" id="campo7-${audId}" placeholder="dd/MM/yyyy" value="${dados.campo7}" style="width:100%;padding:10px;border:1px solid #ddd;border-radius:6px;font-size:12px;box-sizing:border-box;">
         </div>
 
@@ -4938,7 +4961,7 @@ window.gravarJustificativaFatal = function(audId, processo, responsavel, grupo) 
   var campo7 = document.getElementById('campo7-' + audId).value.trim();
   var campo8 = document.getElementById('campo8-' + audId).value.trim();
   
-  if(!campo4 || !campo5 || !campo6 || !campo7) {
+  if(!campo4 || !campo5 || !campo6) {
     alert('Por favor, preencha todos os campos obrigatórios (*)');
     return;
   }
@@ -5982,7 +6005,9 @@ const USUARIOS = {
   'annacarolina.baani': { senha: 'pc@anb', nivel: 'usuario', nome: 'Anna Carolina Balbino Gatti Baani', sigla: 'ANB' },
   'arthur.castro': { senha: 'pc@arc', nivel: 'usuario', nome: 'Arthur Rodrigues Rios Toledo de Castro', sigla: 'ARC' },
   'anajulia.carmona': { senha: 'pc@atc', nivel: 'usuario', nome: 'Ana Julia Thomaz Carmona', sigla: 'ATC' },
-  'bianca.camacho': { senha: 'pc@bbo', nivel: 'usuario', nome: 'Bianca Bolanhi Camacho', sigla: 'BBO' },
+  'antoniocarlos.aguiar': { senha: '123456', nivel: 'admin', nome: 'Antonio Carlos Aguiar', sigla: 'ACA' },
+  'beatriz.rodrigues': { senha: '123456', nivel: 'admin', nome: 'Beatriz Rodrigues Luna', sigla: 'BLU' },
+  'bianca.camacho': { senha: 'pc@bbo', nivel: 'admin', nome: 'Bianca Bolanhi Camacho', sigla: 'BBO' },
   'bruna.fazenda': { senha: 'pc@bcf', nivel: 'usuario', nome: 'Bruna Cembranelli Fazenda', sigla: 'BCF' },
   'brenna.malta': { senha: 'pc@bfm', nivel: 'usuario', nome: 'Brenna Braga Freitas Malta', sigla: 'BFM' },
   'beatriz.souza': { senha: 'pc@bso', nivel: 'usuario', nome: 'Beatriz Santiago de Souza', sigla: 'BSO' },
@@ -6018,7 +6043,7 @@ const USUARIOS = {
   'jessica.cerqueira': { senha: 'pc@jqs', nivel: 'usuario', nome: 'Jessica Cerqueira Silva', sigla: 'JQS' },
   'joice.miranda': { senha: 'pc@jrm', nivel: 'usuario', nome: 'Joice Ramos Miranda', sigla: 'JRM' },
   'jackeline.torres': { senha: 'pc@jrt', nivel: 'usuario', nome: 'Jackeline Romeu Torres', sigla: 'JRT' },
-  'keyla.moraes': { senha: 'pc@kbm', nivel: 'usuario', nome: 'Keyla Maria Barbosa Silva Moraes', sigla: 'KBM' },
+  'keyla.moraes': { senha: 'pc@kbm', nivel: 'admin', nome: 'Keyla Maria Barbosa Silva Moraes', sigla: 'KBM' },
   'karoline.torres': { senha: 'pc@kto', nivel: 'usuario', nome: 'Karoline de Castro Torres', sigla: 'KTO' },
   'lorena.goncalves': { senha: 'pc@lcg', nivel: 'usuario', nome: 'Lorena Rodrigues Costa Gonçalves', sigla: 'LCG' },
   'larissa.lekich': { senha: 'pc@lll', nivel: 'usuario', nome: 'Larissa Lekich Lobenwein', sigla: 'LLL' },
@@ -6027,10 +6052,10 @@ const USUARIOS = {
   'mariana.favaro': { senha: 'pc@mbf', nivel: 'usuario', nome: 'Mariana Borges de Menezes Fávaro', sigla: 'MBF' },
   'mariacarolina.dias': { senha: 'pc@mcd', nivel: 'usuario', nome: 'Maria Carolina Silva Santos Dias', sigla: 'MCD' },
   'matheus.trindade': { senha: 'pc@mjt', nivel: 'usuario', nome: 'Matheus de Jesus Trindade', sigla: 'MJT' },
-  'marina.brechiani': { senha: 'pc@mnb', nivel: 'usuario', nome: 'Marina de Novaes Brechiani', sigla: 'MNB' },
+  'marina.brechiani': { senha: 'pc@mnb', nivel: 'admin', nome: 'Marina de Novaes Brechiani', sigla: 'MNB' },
   'marcel.alves': { senha: 'pc@mtm', nivel: 'admin', nome: 'Marcel Tadeu Matos Alves da Silva', sigla: 'MTM' },
   'natalia.baliero': { senha: 'pc@nbb', nivel: 'usuario', nome: 'Natalia Bezerra Baliero', sigla: 'NBB' },
-  'natalia.gaggini': { senha: 'pc@nbg', nivel: 'usuario', nome: 'Natália Biondi Gaggini Robles', sigla: 'NBG' },
+  'natalia.gaggini': { senha: 'pc@nbg', nivel: 'admin', nome: 'Natália Biondi Gaggini Robles', sigla: 'NBG' },
   'nathalie.louise': { senha: 'pc@nlo', nivel: 'usuario', nome: 'Nathalie Louise dos Santos Rodrigues Dias', sigla: 'NLO' },
   'nicolau.coelho': { senha: 'pc@nrg', nivel: 'usuario', nome: 'Nicolau Rafael Guimarães Coelho', sigla: 'NRG' },
   'poliana.banqueri': { senha: 'pc@pbs', nivel: 'admin', nome: 'Poliana Banqueri da Silva Guimarães', sigla: 'PBS' },
@@ -6042,7 +6067,7 @@ const USUARIOS = {
   'rodrigo.nishijima': { senha: 'pc@rsn', nivel: 'usuario', nome: 'Rodrigo Souichi Nishijima', sigla: 'RSN' },
   'rafaella.domenicis': { senha: 'pc@rwd', nivel: 'usuario', nome: 'Rafaella Wittmann Domenicis', sigla: 'RWD' },
   'rafael.lago': { senha: 'pc@ryl', nivel: 'usuario', nome: 'Rafael Yepez do Lago', sigla: 'RYL' },
-  'sofia.freire': { senha: 'pc@sof', nivel: 'usuario', nome: 'Sofia Freire', sigla: 'SOF' },
+  'sofia.freire': { senha: 'pc@sof', nivel: 'admin', nome: 'Sofia Freire', sigla: 'SOF' },
   'thais.esteves': { senha: 'pc@tce', nivel: 'usuario', nome: 'Thais Catharine Cardozo Esteves', sigla: 'TCE' },
   'tamireslins.costa': { senha: 'pc@tco', nivel: 'usuario', nome: 'Tamires Lins Costa', sigla: 'TCO' },
   'thiago.rossi': { senha: 'pc@tfr', nivel: 'usuario', nome: 'Thiago Frid Figueiredo Rossi', sigla: 'TFR' },
@@ -6052,7 +6077,7 @@ const USUARIOS = {
   'vinicius.garcia': { senha: 'pc@vga', nivel: 'usuario', nome: 'Vinicius Ferreira Garcia', sigla: 'VGA' },
   'vinicius.ronchi': { senha: 'pc@vro', nivel: 'usuario', nome: 'Vinícius Ronchi Arruda', sigla: 'VRO' },
   'vinicius.dasilva': { senha: 'pc@vsi', nivel: 'usuario', nome: 'Vinicius da Silva Cerqueira', sigla: 'VSI' },
-  'washington.soares': { senha: 'pc@wsf', nivel: 'usuario', nome: 'Washington Soares Silva Filho', sigla: 'WSF' },
+  'washington.soares': { senha: 'pc@wsf', nivel: 'admin', nome: 'Washington Soares Silva Filho', sigla: 'WSF' },
 };
 
 let SESSAO = null;
@@ -6555,7 +6580,7 @@ document.addEventListener('DOMContentLoaded', function(){
     if(niveisAdmin.includes(nivel)) return 'gerencial';
 
     // 2. Logins com acesso total fixo
-    const loginsAdmin = ['controladoria','coord','gisela.freire','marcel.alves','poliana.banqueri'];
+    const loginsAdmin = ['controladoria','coord','antoniocarlos.aguiar','beatriz.rodrigues','bianca.camacho','gisela.freire','keyla.moraes','marcel.alves','marina.brechiani','natalia.gaggini','poliana.banqueri','sofia.freire','washington.soares'];
     if(loginsAdmin.includes(login)) return 'gerencial';
 
     // 3. Fallback: palavras-chave no nome (compatibilidade legada)
@@ -6617,7 +6642,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     const fields = mode === 'audiencia'
       ? [
-          pick(row,['responsavel_audiencia','Responsável Audiência','responsavel pela audiencia','Responsável pela Audiência']),
+          pick(row,['Advogado Responsável Audiência/SO','Advogado Responsável Audiência','responsavel_audiencia','Responsável Audiência','responsavel pela audiencia','Responsável pela Audiência']),
           pick(row,['advogado_audiencia','Advogado Audiência','advogado que fará','advogado_designado']),
           pick(row,['quem_faz','Quem faz','profissional_audiencia','Profissional Audiência']),
           pick(row,['advogado','Advogado','responsavel','Responsável'])
@@ -6709,7 +6734,7 @@ document.addEventListener('DOMContentLoaded', function(){
       const _n = ((_sessaoAtiva.nivel||_sessaoAtiva.perfil||_sessaoAtiva.role||_sessaoAtiva.tipo) || '').toLowerCase();
       const _l = (_sessaoAtiva.login || '').toLowerCase();
       const _admNiveis = ['admin','gerencial','gestor','gestora','coordenador','coordenadora','socio','sócio'];
-      const _admLogins = ['controladoria','coord','gisela.freire','marcel.alves','poliana.banqueri'];
+      const _admLogins = ['controladoria','coord','antoniocarlos.aguiar','beatriz.rodrigues','bianca.camacho','gisela.freire','keyla.moraes','marcel.alves','marina.brechiani','natalia.gaggini','poliana.banqueri','sofia.freire','washington.soares'];
       return _admNiveis.includes(_n) || _admLogins.includes(_l);
     })();
     if(resumoDiv && !_isAdmin) {
@@ -6772,7 +6797,8 @@ document.addEventListener('DOMContentLoaded', function(){
       {h:'Cliente', v:r=>txt(pick(r,['cliente','Cliente']))},
       {h:'Tarefa', v:r=>txt(pick(r,['descricao_tarefa','Descrição','descrição','tarefa','Tarefa']))},
       {h:'Status', v:r=>{const s=status(r);return `<span class="mp-only-status" style="${(statusEh(s, 'Fatal')||statusEh(s, 'Vencido'))?'background:#fdecea;color:#c62828;border:1px solid #ef9a9a;':''}">${s}</span>`;}},
-      {h:'Justificativa', v:r=>{const s=status(r);if(!statusEh(s, 'Fatal')&&!statusEh(s, 'Vencido'))return '<span style="color:var(--gray4);font-size:10px;">—</span>';const proc=txt(pick(r,['numero_processo','Número do Processo','Processo','processo']));const key='justif-'+btoa(proc).replace(/[^a-z0-9]/gi,'');const just=(window._mpJustif&&window._mpJustif[key])?window._mpJustif[key]:'—';return `<div style="font-size:10px;color:${just==='—'?'var(--gray4)':'#c62828'};max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:${just==='—'?'400':'600'}">${e(just)}</div>`;}}
+      {h:'Justificativa', v:r=>{const s=status(r);if(!statusEh(s, 'Fatal')&&!statusEh(s, 'Vencido'))return '<span style="color:var(--gray4);font-size:10px;">—</span>';const proc=txt(pick(r,['numero_processo','Número do Processo','Processo','processo']));const key='justif-'+btoa(proc).replace(/[^a-z0-9]/gi,'');const just=(window._mpJustif&&window._mpJustif[key])?window._mpJustif[key]:'—';return `<div style="font-size:10px;color:${just==='—'?'var(--gray4)':'#c62828'};max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:${just==='—'?'400':'600'}">${e(just)}</div>`;}},
+      {h:'Ação', v:function(r){const s=status(r);const proc=txt(pick(r,['numero_processo','Número do Processo','Processo','processo']));const resp=r.responsavel||r['Responsável']||'';const grp=r.grupo_processo||r['Grupo Processo']||'';if(s==='Fatal'||s==='Vencido'||s==='D-1'||s==='D-2'||s==='Futuro')return `<button onclick="window.abrirModalReagendamento('${proc}','${resp}','${grp}')" style="font-size:10px;font-weight:500;padding:4px 8px;border:none;border-radius:5px;background:#d84315;color:white;cursor:pointer;font-family:inherit;white-space:nowrap;">📅 Reagendar</button>`;return '<span style="color:var(--gray4);font-size:10px;">—</span>';}}
     ];
     const agendaCols = [
       {h:'Data', v:r=>fmtD(pick(r,['data','Data']))},
@@ -7031,7 +7057,7 @@ document.addEventListener('DOMContentLoaded', function(){
     const login = low(s.login || s.usuario || s.nome);
     return (
       ['admin','gerencial','gestor','gestora','manager','coord','coordenador','coordenadora','socio','sócio','controladoria'].includes(perfil) ||
-      ['controladoria','coord','coordenador','coordenadora','socio','sócio','gisela.freire','marcel.alves','poliana.banqueri'].includes(login)
+      ['controladoria','coord','coordenador','coordenadora','socio','sócio','antoniocarlos.aguiar','beatriz.rodrigues','bianca.camacho','gisela.freire','keyla.moraes','marcel.alves','marina.brechiani','natalia.gaggini','poliana.banqueri','sofia.freire','washington.soares'].includes(login)
     );
   }
 
@@ -7051,7 +7077,7 @@ document.addEventListener('DOMContentLoaded', function(){
     let fields;
     if(mode === 'audiencia'){
       fields = [
-        pick(row,['responsavel_audiencia','Responsável Audiência','responsavel pela audiencia','Responsável pela Audiência']),
+        pick(row,['Advogado Responsável Audiência/SO','Advogado Responsável Audiência','responsavel_audiencia','Responsável Audiência','responsavel pela audiencia','Responsável pela Audiência']),
         pick(row,['advogado_audiencia','Advogado Audiência','advogado que fará','advogado_designado']),
         pick(row,['quem_faz','Quem faz','profissional_audiencia','Profissional Audiência']),
         pick(row,['advogado','Advogado','responsavel','Responsável'])
@@ -7240,7 +7266,6 @@ document.addEventListener('DOMContentLoaded', function(){
       }},
       {h:'Ação', v:function(r){
         const s=status(r);
-        if(s!=='Fatal'&&s!=='Vencido') return '<span style="color:var(--gray4);font-size:10px;">—</span>';
         const proc=txt(pick(r,['numero_processo','Número do Processo','Processo','processo']));
         const cli=txt(pick(r,['cliente','Cliente'])||'');
         const tarefa=txt(pick(r,['descricao_tarefa','Descrição','descrição','tarefa','Tarefa'])||'');
@@ -7251,10 +7276,12 @@ document.addEventListener('DOMContentLoaded', function(){
         const key='justif_'+btoa(unescape(encodeURIComponent(proc))).replace(/[^a-zA-Z0-9]/g,'').slice(0,20);
         const grupo = r.grupo_processo || r['Grupo Processo'] || '';
         const responsavel = r.responsavel || r['Responsável'] || '';
-        return `<div style="display:flex;gap:4px;flex-wrap:wrap;">
+        if(s==='Fatal'||s==='Vencido') return `<div style="display:flex;gap:4px;flex-wrap:wrap;">
           <button onclick="abrirJustifSingle('${key}','${procEnc}','${cliEnc}','${tarefaEnc}','${statusStr}')" style="font-size:10px;font-weight:500;padding:4px 8px;border:none;border-radius:5px;background:#c62828;color:white;cursor:pointer;font-family:inherit;white-space:nowrap;">Justificar</button>
           <button onclick="window.abrirModalReagendamento('${proc}', '${responsavel}', '${grupo}')" style="font-size:10px;font-weight:500;padding:4px 8px;border:none;border-radius:5px;background:#d84315;color:white;cursor:pointer;font-family:inherit;white-space:nowrap;" title="Solicitar reagendamento">Reagendar</button>
         </div>`;
+        if(s==='D-1'||s==='D-2'||s==='Futuro') return `<button onclick="window.abrirModalReagendamento('${proc}', '${responsavel}', '${grupo}')" style="font-size:10px;font-weight:500;padding:4px 8px;border:none;border-radius:5px;background:#d84315;color:white;cursor:pointer;font-family:inherit;white-space:nowrap;" title="Solicitar reagendamento">📅 Reagendar</button>`;
+        return '<span style="color:var(--gray4);font-size:10px;">—</span>';
       }}
     ];
     const agendaCols = [
@@ -8145,13 +8172,16 @@ window._gerarExcelFormatado = async function(registros, nomeArquivo) {
     const COLS19 = ['data','status','situacao_pasta','grupo_processo','codigo_processo',
       'codigo_cliente','cliente','parte_principal','parte_contraria','numero_processo',
       'importante','matricula','responsavel','area','tipo_agenda','descricao_tarefa',
-      'codigo_agenda','quando_criado','quem_criou'];
+      'codigo_agenda','quando_criado','quem_criou','justificativa'];
     const ws = XLSX.utils.json_to_sheet(registros.map(r=>{
-      const o={}; COLS19.forEach(c=>{ o[c]=r[c]!==undefined?r[c]:''; }); return o;
+      const o={}; COLS19.forEach(c=>{ o[c]=r[c]!==undefined?r[c]:''; });
+      const jObj = window.justificativas && (window.justificativas[r.numero_processo]);
+      o['justificativa'] = (jObj && jObj.texto) || '';
+      return o;
     }), {header:COLS19});
     ws['!cols']=[{wch:9.6},{wch:7.8},{wch:15.4},{wch:16.4},{wch:17.2},{wch:15.3},{wch:22.8},
       {wch:78.3},{wch:90.9},{wch:23.8},{wch:12.1},{wch:10.6},{wch:34.3},{wch:22.1},
-      {wch:13.3},{wch:100},{wch:15.4},{wch:15.3},{wch:12.7}];
+      {wch:13.3},{wch:100},{wch:15.4},{wch:15.3},{wch:12.7},{wch:80}];
     const wbb=XLSX.utils.book_new();
     XLSX.utils.book_append_sheet(wbb, ws, 'Agendamentos');
     XLSX.writeFile(wbb, nomeArquivo);
@@ -8181,8 +8211,25 @@ window._gerarExcelFormatado = async function(registros, nomeArquivo) {
     { header: 'descricao_tarefa', key: 'descricao_tarefa', width: 255   },
     { header: 'codigo_agenda',    key: 'codigo_agenda',    width: 15.4  },
     { header: 'quando_criado',    key: 'quando_criado',    width: 15.3  },
-    { header: 'quem_criou',       key: 'quem_criou',       width: 12.7  }
+    { header: 'quem_criou',       key: 'quem_criou',       width: 12.7  },
+    { header: 'justificativa',    key: 'justificativa',    width: 80    }
   ];
+
+  // Linha 1 fixada (freeze pane) + auto-filtro em todas as colunas
+  ws.views = [{ state: 'frozen', xSplit: 0, ySplit: 1, topLeftCell: 'A2', activeCell: 'A2' }];
+  ws.autoFilter = { from: { row: 1, column: 1 }, to: { row: 1, column: 20 } };
+
+  // Cores de status (coluna B)
+  const _statusFill = {
+    'Fatal':      'FFFF4C4C',
+    'Vencido':    'FFC00000',
+    'D-1':        'FFFFD966',
+    'D-2':        'FFFFC000',
+    'Futuro':     'FF92D050',
+    'Encerrado':  'FFD9D9D9'
+  };
+  const _borderThin = { style: 'thin', color: { argb: 'FFD9D9D9' } };
+  const _borderCell = { top: _borderThin, left: _borderThin, bottom: _borderThin, right: _borderThin };
 
   // Cabeçalho: Aptos Narrow 11pt bold, texto branco, fundo #156082, altura 14.4
   const hRow = ws.getRow(1);
@@ -8191,9 +8238,10 @@ window._gerarExcelFormatado = async function(registros, nomeArquivo) {
     cell.font      = { name: 'Aptos Narrow', size: 11, bold: true, color: { argb: 'FFFFFFFF' } };
     cell.fill      = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FF156082' } };
     cell.alignment = { horizontal: 'left', vertical: 'middle' };
+    cell.border    = { top: { style:'thin', color:{argb:'FF156082'} }, left: { style:'thin', color:{argb:'FF156082'} }, bottom: { style:'thin', color:{argb:'FF156082'} }, right: { style:'thin', color:{argb:'FF156082'} } };
   });
 
-  // Linhas de dados: Aptos Narrow 11pt, altura 14.4
+  // Linhas de dados: Aptos Narrow 11pt, altura 14.4, bordas e cor de status
   registros.forEach(r => {
     const row = ws.addRow({
       data:             toDate(r.data),
@@ -8214,10 +8262,20 @@ window._gerarExcelFormatado = async function(registros, nomeArquivo) {
       descricao_tarefa: r.descricao_tarefa || '',
       codigo_agenda:    r.codigo_agenda    != null ? r.codigo_agenda    : '',
       quando_criado:    toDate(r.quando_criado),
-      quem_criou:       r.quem_criou       || ''
+      quem_criou:       r.quem_criou       || '',
+      justificativa:    (function(){ var jObj = window.justificativas && window.justificativas[r.numero_processo]; return (jObj && jObj.texto) || ''; })()
     });
     row.height = 14.4;
     row.font = { name: 'Aptos Narrow', size: 11 };
+    // Bordas em todas as células
+    row.eachCell({ includeEmpty: true }, cell => { cell.border = _borderCell; });
+    // Cor da célula de status
+    const statusArgb = _statusFill[r.status];
+    if (statusArgb) {
+      const sCell = row.getCell('status');
+      sCell.fill = { type: 'pattern', pattern: 'solid', fgColor: { argb: statusArgb } };
+      sCell.font = { name: 'Aptos Narrow', size: 11, bold: true };
+    }
   });
 
   // Formato de data dd/mm/yyyy nas colunas de data
@@ -8582,6 +8640,21 @@ document.addEventListener('DOMContentLoaded', function(){
       #btn-impersonate { display: none !important; }
       .tbl-scroll, .det-scroll { max-height: 280px !important; }
       .pg-btns { flex-wrap: wrap !important; gap: 3px !important; }
+
+      /* ── Login — painel duplo empilhado no mobile ── */
+      #login-overlay { overflow-y: auto !important; align-items: flex-start !important; }
+      #login-overlay .login-box { flex-direction: column !important; max-width: 100% !important; width: 100% !important; min-height: auto !important; border-radius: 0 !important; }
+      #login-overlay .login-left {
+        display: flex !important;
+        flex: 0 0 auto !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        min-width: 0 !important;
+        background: linear-gradient(160deg, #081f32 0%, #0c2d45 35%, #102f47 65%, #0b2840 100%) !important;
+        box-sizing: border-box !important;
+        overflow: visible !important;
+      }
+      #login-overlay .login-right { flex: 1 1 auto !important; width: 100% !important; box-sizing: border-box !important; }
     }
   `;
   const style = document.createElement('style');
