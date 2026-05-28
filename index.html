@@ -3371,6 +3371,16 @@ body.role-manager .upload-bar {
 </div>
 
 <script>
+// Limpa histórico de navegação para que o botão "Voltar" não apareça ativo
+// (evita que o hub ferramentas fique como "página anterior" quando abre nesta aba)
+(function(){
+  try {
+    if(document.referrer && window.history && window.history.length > 1){
+      window.history.replaceState(null, document.title, window.location.href);
+    }
+  } catch(e){}
+})();
+
 const PG = 100;
 const S = { raw:[], prazos:[], agendas:[], equipe:[], aud:[], cancel:[], pgs:{} };
 const V = id => document.getElementById(id);
