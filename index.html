@@ -2964,7 +2964,7 @@ body.role-manager .upload-bar {
       <button class="btn-limpar" onclick="V('ag-s').value='';V('ag-st').value='';renderAgDet()">✕ Limpar</button>
     </div>
     <div class="det-scroll"><table>
-      <thead><tr><th>Data</th><th>Status</th><th>Cliente</th><th>Parte Contrária</th><th>Processo</th><th>Responsável</th><th>Grupo</th><th>Tarefa</th></tr></thead>
+      <thead><tr><th>Data</th><th>Status</th><th>Cliente</th><th>Parte Contrária</th><th>Processo</th><th>Responsável</th><th>Grupo</th><th>Tarefa</th><th>Ação</th></tr></thead>
       <tbody id="body-aget"></tbody>
     </table></div>
     <div class="pg-bar" id="pg-aget"></div>
@@ -3013,7 +3013,7 @@ body.role-manager .upload-bar {
       <button class="btn-limpar" onclick="V('eq-s').value='';V('eq-st').value='';renderEqDet()">✕ Limpar</button>
     </div>
     <div class="det-scroll"><table>
-      <thead><tr><th>Data</th><th>Status</th><th>Cliente</th><th>Parte Contrária</th><th>Processo</th><th>Responsável</th><th>Grupo</th><th>Tarefa</th></tr></thead>
+      <thead><tr><th>Data</th><th>Status</th><th>Cliente</th><th>Parte Contrária</th><th>Processo</th><th>Responsável</th><th>Grupo</th><th>Tarefa</th><th>Ação</th></tr></thead>
       <tbody id="body-eet"></tbody>
     </table></div>
     <div class="pg-bar" id="pg-eet"></div>
@@ -5336,10 +5336,12 @@ function renderFatais() {
     <td class="td-clip" style="max-width:250px;font-size:11px;color:${temJust?'#2d7d46':'#999'};cursor:${temJust?'pointer':'default'};" title="${justPreview}" onclick="${temJust?`window.abrirModalJustificativaFatal('${audId}', '${e(r.numero_processo)}', '${e(r.responsavel)}', '${e(r.grupo_processo)}')`:''}">${temJust?'✅ '+justPreview:'—'}</td>
     <td style="text-align:center;padding:4px;min-width:220px;">
       <div style="display:flex;flex-direction:column;gap:4px;">
-        <button class="btn-salvar-just" data-aud-id="${audId}" style="background:${temJust?'#2d7d46':'#d62828'};color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;width:100%;" 
+        <button class="btn-salvar-just" data-aud-id="${audId}" style="background:${temJust?'#2d7d46':'#d62828'};color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;width:100%;"
           onclick="window.abrirModalJustificativaFatal('${audId}', '${e(r.numero_processo)}', '${e(r.responsavel)}', '${e(r.grupo_processo)}')">${temJust?'✏️ Editar':'🔴 Justificar'}</button>
-        <button style="background:#d84315;color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;width:100%;" 
+        <button style="background:#d84315;color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;width:100%;"
           onclick="window.abrirModalReagendamento('${e(r.numero_processo)}', '${e(r.responsavel)}', '${e(r.grupo_processo)}')" title="Solicitar reagendamento">📅 Reagendar</button>
+        <button style="background:#1565C0;color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;width:100%;"
+          onclick="window.abrirModalTransferencia('${e(r.numero_processo)}', '${e(r.cliente)}', '${e(r.responsavel)}', 'prazo')" title="Transferir pasta ou agendamento">📁 Transferir</button>
       </div>
     </td>
   </tr>`;
@@ -5367,7 +5369,8 @@ async function atualizarGitHub() {
 }
 
 // ── GENERIC PRAZO/AGENDA DETAIL ──────────────────────
-function renderDetGeneric(baseData, bodyId, pgId, ctId, srchId, stId, pgKey) {
+function renderDetGeneric(baseData, bodyId, pgId, ctId, srchId, stId, pgKey, tipo) {
+  tipo = tipo || 'agenda';
   const srch=(V(srchId)?.value||'').toLowerCase(), st=V(stId)?.value||'';
   let data=baseData;
   if(st)   data=data.filter(r=>(r.status||'').trim()===st);
@@ -5383,12 +5386,14 @@ function renderDetGeneric(baseData, bodyId, pgId, ctId, srchId, stId, pgKey) {
     <td class="td-clip-sm">${e(r.responsavel)}</td>
     <td class="td-clip-sm">${e(r.grupo_processo)}</td>
     <td class="td-clip" style="max-width:220px" title="${e(r.descricao_tarefa)}">${e(r.descricao_tarefa)}</td>
-  </tr>`).join(''):emptyR(8);
-  renderPg(pgId,pg,pages,total,pgKey,()=>renderDetGeneric(baseData,bodyId,pgId,ctId,srchId,stId,pgKey));
+    <td style="text-align:center;padding:4px;"><button style="background:#1565C0;color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;white-space:nowrap;"
+      onclick="window.abrirModalTransferencia('${e(r.numero_processo)}','${e(r.cliente)}','${e(r.responsavel)}','${tipo}')" title="Transferir pasta ou agendamento">📁 Transferir</button></td>
+  </tr>`).join(''):emptyR(9);
+  renderPg(pgId,pg,pages,total,pgKey,()=>renderDetGeneric(baseData,bodyId,pgId,ctId,srchId,stId,pgKey,tipo));
 }
 
-function renderAgDet() { renderDetGeneric(applyGF(S.agendas),'body-aget','pg-aget','ct-aget','ag-s','ag-st','aget'); }
-function renderEqDet() { renderDetGeneric(applyGF(S.equipe),'body-eet','pg-eet','ct-eet','eq-s','eq-st','eet'); }
+function renderAgDet() { renderDetGeneric(applyGF(S.agendas),'body-aget','pg-aget','ct-aget','ag-s','ag-st','aget','agenda'); }
+function renderEqDet() { renderDetGeneric(applyGF(S.equipe),'body-eet','pg-eet','ct-eet','eq-s','eq-st','eet','agenda-equipe'); }
 
 // ── AUDIÊNCIAS ───────────────────────────────────────
 // Formata horário do Excel corretamente (serial numérico ou string)
