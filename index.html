@@ -2627,6 +2627,7 @@ body.role-manager .upload-bar {
   <button class="nav-btn" id="nav-quadro" style="display:none" onclick="switchTab('quadro',this)">📊 Quadro Geral <span class="nb-cnt" id="nc-quadro">0</span></button>
   <button class="nav-btn" id="nav-admin" onclick="switchTab('admin',this)" style="display:none">⚙️ Gestão de Usuários <span class="nb-cnt" id="nc-admin">0</span></button>
   <button class="nav-btn" id="nav-exposicao" onclick="switchTab('exposicao',this)">📈 Exposição por Grupo <span class="nb-cnt" id="nc-exposicao">0</span></button>
+  <button class="nav-btn" id="nav-kpi" onclick="switchTab('kpi',this)">📊 KPIs</button>
   <button class="nav-btn" id="nav-meu-painel-only" onclick="
     document.querySelectorAll('.nav-btn').forEach(function(b){b.classList.remove('active');});
     this.classList.add('active');
@@ -3241,7 +3242,67 @@ body.role-manager .upload-bar {
 
 
 <!-- ===== PÁGINA: EXPOSIÇÃO POR GRUPO ===== -->
-<div id="page-exposicao" class="page">
+<div 
+
+<!-- ===== KPI PAGE ===== -->
+<div id="page-kpi" class="page" style="padding:16px;">
+  <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:16px;">
+    <select id="kpi-filtro-grupo" onchange="renderKPI()"
+      style="padding:8px 12px;border-radius:6px;border:1px solid var(--border);background:var(--card);color:var(--fg);font-family:inherit;font-size:13px;">
+      <option value="">Todos os grupos</option>
+    </select>
+    <span id="kpi-ultima-atualizacao" style="font-size:11px;color:#7a909f;"></span>
+  </div>
+  <div id="kpi-cards" style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:20px;"></div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;">
+    <div class="det-card">
+      <div class="det-hdr"><h2>📋 Prazos por Responsável — Ativos</h2></div>
+      <div class="det-scroll"><table><thead><tr>
+        <th>Responsável</th><th class="tn">Grupo</th>
+        <th class="tn" style="color:var(--red)">Venc.</th>
+        <th class="tn" style="color:var(--red)">Fatal</th>
+        <th class="tn" style="color:var(--orange)">D-1</th>
+        <th class="tn" style="color:#2196F3">D-2</th>
+        <th class="tn">Total</th>
+      </tr></thead><tbody id="kpi-prazos-body"></tbody></table></div>
+    </div>
+    <div class="det-card">
+      <div class="det-hdr"><h2>📅 Agendas por Responsável — Ativas</h2></div>
+      <div class="det-scroll"><table><thead><tr>
+        <th>Responsável</th><th class="tn">Grupo</th>
+        <th class="tn" style="color:var(--red)">Venc.</th>
+        <th class="tn" style="color:var(--red)">Fatal</th>
+        <th class="tn" style="color:var(--orange)">D-1</th>
+        <th class="tn" style="color:#2196F3">D-2</th>
+        <th class="tn">Total</th>
+      </tr></thead><tbody id="kpi-agendas-body"></tbody></table></div>
+    </div>
+  </div>
+  <div class="det-card" style="margin-bottom:16px;">
+    <div class="det-hdr"><h2>🗂️ Tipos de Prazo por Responsável</h2></div>
+    <div class="det-scroll"><table><thead><tr>
+      <th>Responsável</th><th class="tn">Grupo</th>
+      <th class="tn">Defesa</th><th class="tn">RO</th><th class="tn">RR</th>
+      <th class="tn">AIRR</th><th class="tn">Agravo</th><th class="tn">Outros</th><th class="tn">Total</th>
+    </tr></thead><tbody id="kpi-tipos-body"></tbody></table></div>
+  </div>
+  <div class="det-card" style="margin-bottom:16px;">
+    <div class="det-hdr"><h2>⚠️ Concentração de Prazos (+4 por dia)</h2></div>
+    <div class="det-scroll"><table><thead><tr>
+      <th>Data</th><th>Responsável</th><th class="tn">Grupo</th>
+      <th class="tn">Qtd</th><th class="tn">Total Dia</th><th>Tipos</th>
+    </tr></thead><tbody id="kpi-conc-body"></tbody></table></div>
+  </div>
+  <div class="det-card">
+    <div class="det-hdr"><h2>🔍 Integridade — Responsáveis Não Mapeados</h2></div>
+    <div class="det-scroll"><table><thead><tr>
+      <th>Responsável</th><th class="tn">Grupo Processo</th>
+      <th class="tn">Status</th><th class="tn">Qtd</th>
+    </tr></thead><tbody id="kpi-integ-body"></tbody></table></div>
+  </div>
+</div>
+
+id="page-exposicao" class="page">
   <div class="content">
     <div class="exp-container">
       <h2 style="margin-bottom: 20px; color: var(--gray2); font-size: 16px; font-weight: 600;">📊 Exposição por Grupo — Prazos Fatais</h2>
@@ -3454,6 +3515,7 @@ function switchTab(n, el) {
   V('fpanel').style.display = ['prazos','agendas','equipe'].includes(n)?'':'none';
   if(n==='admin' && typeof window.renderAdmin === 'function') setTimeout(window.renderAdmin, 50);
   if(n==='exposicao' && typeof window.renderExposicaoGrupo === 'function') setTimeout(window.renderExposicaoGrupo, 50);
+  if(n==='kpi' && typeof window.renderKPI === 'function') { inicializarFiltroGrupos(); setTimeout(window.renderKPI, 50); }
 }
 
 // ── CONTROLAR VISIBILIDADE DAS ABAS POR PERFIL ──
