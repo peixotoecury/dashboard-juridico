@@ -8381,15 +8381,18 @@ function renderKPI() {
   var grupoFiltro = (document.getElementById('kpi-filtro-grupo') || {}).value || '';
   var raw = (S && S.raw) ? S.raw : [];
 
-  // Apenas processos ativos e tipo Prazo ou Agenda
+  // Apenas processos ativos (Andamento) e tipo Prazo ou Agenda
+  // Se nenhum tiver situacao_pasta, aceita todos (compatibilidade)
+  var temSituacao = raw.some(function(r){ return r.situacao_pasta; });
   var dados = raw.filter(function(r) {
     var sp = (r.situacao_pasta || '').trim().toLowerCase();
     var ta = (r.tipo_agenda || '').trim();
-    var ativo = sp === 'andamento' || sp === '';
+    var ativo = !temSituacao || sp === 'andamento' || sp === '';
     var tipoOk = ta === 'Prazo' || ta === 'Agenda';
     var grupoOk = !grupoFiltro || (r.grupo_processo || '') === grupoFiltro;
     return ativo && tipoOk && grupoOk;
   });
+  console.log('[KPI] raw='+raw.length+' temSituacao='+temSituacao+' dados='+dados.length+' grupo='+grupoFiltro);
 
   var prazos  = dados.filter(function(r){ return (r.tipo_agenda||'').trim() === 'Prazo'; });
   var agendas = dados.filter(function(r){ return (r.tipo_agenda||'').trim() === 'Agenda'; });
