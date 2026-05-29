@@ -5779,17 +5779,25 @@ function carregarSnapshots() {
 }
 function salvarSnapshots() {
   localStorage.setItem(SNAP_KEY, JSON.stringify(snapshots));
-  if (window.supabaseClient) {
-    var _hoje = new Date().toISOString().slice(0,10);
-    var _HORA_IDS = {'09h30': 300000, '15h30': 300001};
-    Object.entries(snapshots).forEach(function([hora, data]) {
-      var id = _HORA_IDS[hora] !== undefined ? _HORA_IDS[hora] : 300002;
-      window.supabaseClient.from('base_planilha').upsert({
-        id: id,
-        dados: {tipo:'__snapshot__', snap_data:_hoje, hora:hora, snapshot_data:data}
-      });
-    });
-  }
+  var _sd = new Date().toISOString().slice(0,10);
+  var _HIDS = {'09h30': 300000, '15h30': 300001};
+  var _hdrs = {
+    'apikey': 'sb_publishable_MdUFFFJ5xRqiQysyxlWHFA_yk_LsknZ',
+    'Authorization': 'Bearer sb_publishable_MdUFFFJ5xRqiQysyxlWHFA_yk_LsknZ',
+    'Content-Type': 'application/json',
+    'Prefer': 'resolution=merge-duplicates,return=minimal'
+  };
+  Object.entries(snapshots).forEach(function(entry) {
+    var hora = entry[0]; var dados = entry[1];
+    var id = _HIDS[hora] !== undefined ? _HIDS[hora] : 300002;
+    fetch('https://kgyeeuynerhpaqlhqwkx.supabase.co/rest/v1/base_planilha', {
+      method: 'POST',
+      headers: _hdrs,
+      body: JSON.stringify([{id: id, dados: {tipo: '__snapshot__', snap_data: _sd, hora: hora, snapshot_data: dados}}])
+    }).then(function(res) {
+      if (!res.ok) res.text().then(function(t) { console.warn('Snapshot Supabase erro:', res.status, t); });
+    }).catch(function(e) { console.warn('Snapshot fetch erro:', e); });
+  });
 }
 function itensSnap(hora) {
   const snap = snapshots[hora];
