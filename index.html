@@ -8211,7 +8211,7 @@ function qgLoadAudiencias(inp){
   }
 
   async function atualizarDoPrazosGithub(silencioso){
-    const url = localStorage.getItem('pc_github_prazos') || '';
+    const url = localStorage.getItem('pc_github_prazos') || 'https://raw.githubusercontent.com/peixotoecury/dashboard-juridico/main/Prazos_e_agendas.xlsx';
     if(!url){ if(!silencioso) mostrarToast('⚠️ URL do GitHub não configurada.'); return; }
 
     mostrarToast('🔄 Buscando atualização no GitHub...');
@@ -8252,6 +8252,9 @@ function qgLoadAudiencias(inp){
 
   // Expõe para uso manual
   window.atualizarDoGithub = atualizarDoPrazosGithub;
+  // Auto-atualiza silenciosamente ao abrir o dashboard
+  setTimeout(function(){ if(typeof atualizarDoGithub==='function') atualizarDoGithub(true); }, 4000);
+
 
   // Agendador automático — verifica a cada minuto
   let ultimaAtualizacao = '';
