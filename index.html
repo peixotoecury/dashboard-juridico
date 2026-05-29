@@ -8387,7 +8387,7 @@ function renderKPI() {
   var dados = raw.filter(function(r) {
     var sp = (r.situacao_pasta || '').trim().toLowerCase();
     var ta = (r.tipo_agenda || '').trim();
-    var ativo = !temSituacao || sp === 'andamento' || sp === '';
+    var ativo = !temSituacao || sp === '' || sp.indexOf('andamento') !== -1;
     var tipoOk = ta === 'Prazo' || ta === 'Agenda';
     var grupoOk = !grupoFiltro || (r.grupo_processo || '') === grupoFiltro;
     return ativo && tipoOk && grupoOk;
