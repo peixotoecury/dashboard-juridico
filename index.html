@@ -8254,6 +8254,8 @@ function qgLoadAudiencias(inp){
   window.atualizarDoGithub = atualizarDoPrazosGithub;
   // Auto-atualiza silenciosamente ao abrir o dashboard
   setTimeout(function(){ if(typeof atualizarDoGithub==='function') atualizarDoGithub(true); }, 4000);
+  // Atualiza a cada 2h enquanto o dashboard estiver aberto
+  setInterval(function(){ if(typeof atualizarDoGithub==='function') atualizarDoGithub(true); }, 2*60*60*1000);
 
 
   // Agendador automático — verifica a cada minuto
