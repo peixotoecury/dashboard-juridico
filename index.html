@@ -5750,17 +5750,23 @@ const HORAS = ['09h30','15h30'];
 const SNAP_KEY = 'pc_dashboard_evolucao_fatais_' + (function(){const d=new Date();return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');})();
 const snapshots = carregarSnapshots(); // { hora: { timestamp, total, itens: { "resp||grupo": {resp, grupo, fatais} } } }
 let HORA_SNAPSHOT_SELECIONADA = localStorage.getItem(SNAP_KEY + '_selecionada') || '';
-// Sincroniza snapshots do Supabase entre máquinas (carrega após 6s)
+// Carrega snapshots do Supabase (sincroniza entre máquinas)
 setTimeout(async function(){
-  if (!window.supabaseClient) return;
-  var _hoje2 = new Date().toISOString().slice(0,10);
-  var _r = await window.supabaseClient.from('base_planilha').select('dados').filter('dados->>tipo','eq','__snapshot__').filter('dados->>snap_data','eq',_hoje2);
-  if (_r.data && _r.data.length) {
-    var changed = false;
-    _r.data.forEach(function(row){ var d=row.dados; if(d&&d.hora&&d.snapshot_data&&!snapshots[d.hora]){snapshots[d.hora]=d.snapshot_data;changed=true;} });
-    if (changed) { try{salvarSnapshots();}catch(e){} try{renderEvolucao();}catch(e){} }
-  }
-}, 6000);
+  try {
+    var _hoje3 = new Date().toISOString().slice(0,10);
+    var _resp3 = await fetch('https://kgyeeuynerhpaqlhqwkx.supabase.co/rest/v1/base_planilha?id=in.(300000,300001,300002)&select=dados',{headers:{'apikey':'sb_publishable_MdUFFFJ5xRqiQysyxlWHFA_yk_LsknZ','Authorization':'Bearer sb_publishable_MdUFFFJ5xRqiQysyxlWHFA_yk_LsknZ'}});
+    var _rows3 = await _resp3.json();
+    var _changed3 = false;
+    (_rows3||[]).forEach(function(row){
+      var d=row.dados;
+      if(d&&d.tipo==='__snapshot__'&&d.snap_data===_hoje3&&d.hora&&d.snapshot_data&&!snapshots[d.hora]){
+        snapshots[d.hora]=d.snapshot_data; _changed3=true;
+      }
+    });
+    if(_changed3){try{salvarSnapshots();}catch(e){} try{renderEvolucao();}catch(e){}}
+  } catch(e) {}
+}, 7000);
+
 
 function carregarSnapshots() {
   try { return JSON.parse(localStorage.getItem(SNAP_KEY) || '{}') || {}; }
@@ -5768,18 +5774,7 @@ function carregarSnapshots() {
 }
 function salvarSnapshots() {
   localStorage.setItem(SNAP_KEY, JSON.stringify(snapshots));
-  if (window.supabaseClient) {
-    var _hoje = new Date().toISOString().slice(0,10);
-    var _HORA_IDS = {'09h30': 300000, '15h30': 300001};
-    Object.entries(snapshots).forEach(function([hora, data]) {
-      var id = _HORA_IDS[hora] !== undefined ? _HORA_IDS[hora] : 300002;
-      window.supabaseClient.from('base_planilha').upsert({
-        id: id,
-        dados: {tipo:'__snapshot__', snap_data:_hoje, hora:hora, snapshot_data:data}
-      });
-    });
-  }
-}
+
 function itensSnap(hora) {
   const snap = snapshots[hora];
   if (!snap) return {};
@@ -5882,9 +5877,7 @@ function limparSnapshots() {
   if (!confirm('Limpar todos os snapshots do dia?')) return;
   Object.keys(snapshots).forEach(k => delete snapshots[k]);
   localStorage.removeItem(SNAP_KEY);
-  if (window.supabaseClient) {
-    window.supabaseClient.from('base_planilha').delete().in('id', [300000, 300001, 300002]);
-  }
+  fetch('https://kgyeeuynerhpaqlhqwkx.supabase.co/rest/v1/base_planilha?id=in.(300000,300001,300002)',{method:'DELETE',headers:{'apikey':'sb_publishable_MdUFFFJ5xRqiQysyxlWHFA_yk_LsknZ','Authorization':'Bearer sb_publishable_MdUFFFJ5xRqiQysyxlWHFA_yk_LsknZ'}}).catch(function(){});
   marcarSlotsSnapshots();
   renderEvolucao();
 }
