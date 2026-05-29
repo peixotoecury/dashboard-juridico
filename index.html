@@ -4504,7 +4504,10 @@ function renderAll() {
   renderInsights();
   renderRankFatal();
   renderRankTarefa();
-
+  // Atualiza KPI se a aba estiver visível
+  if (document.getElementById('page-kpi') && document.getElementById('page-kpi').classList.contains('active')) {
+    if (typeof window.renderKPI === 'function') window.renderKPI();
+  }
 }
 
 // ── PAGINATE ─────────────────────────────────────────
@@ -8377,61 +8380,75 @@ function kpiBadge(n, cor) {
   return '<span style="color:' + cor + ';font-weight:700">' + n + '</span>';
 }
 
-function renderKPI() {
-  var grupoFiltro = (document.getElementById('kpi-filtro-grupo') || {}).value || '';
-  var raw = (S && S.raw) ? S.raw : [];
-
-  // Apenas processos ativos (Andamento) e tipo Prazo ou Agenda
-  // Se nenhum tiver situacao_pasta, aceita todos (compatibilidade)
-  var temSituacao = raw.some(function(r){ return r.situacao_pasta; });
-  var dados = raw.filter(function(r) {
-    var sp = (r.situacao_pasta || '').trim().toLowerCase();
-    var ta = (r.tipo_agenda || '').trim();
-    var ativo = !temSituacao || sp === '' || sp.indexOf('andamento') !== -1;
-    var tipoOk = ta === 'Prazo' || ta === 'Agenda';
-    var grupoOk = !grupoFiltro || (r.grupo_processo || '') === grupoFiltro;
-    return ativo && tipoOk && grupoOk;
+// Popula o select de grupos a partir dos dados reais
+function inicializarFiltroGrupos() {
+  var sel = document.getElementById('kpi-filtro-grupo');
+  if (!sel) return;
+  // Coletar grupos únicos dos dados
+  var gruposSet = {};
+  var todos = (S.prazos || []).concat(S.agendas || []);
+  todos.forEach(function(r) {
+    var g = (r.grupo_processo || r['grupo processo'] || r.grupo || '').trim();
+    if (g) gruposSet[g] = true;
   });
-  console.log('[KPI] raw='+raw.length+' temSituacao='+temSituacao+' dados='+dados.length+' grupo='+grupoFiltro);
+  var grupos = Object.keys(gruposSet).sort();
+  // Resetar e recriar opções
+  sel.innerHTML = '<option value="">Todos os grupos</option>';
+  grupos.forEach(function(g) {
+    var opt = document.createElement('option');
+    opt.value = g; opt.textContent = g;
+    sel.appendChild(opt);
+  });
+}
 
-  var prazos  = dados.filter(function(r){ return (r.tipo_agenda||'').trim() === 'Prazo'; });
-  var agendas = dados.filter(function(r){ return (r.tipo_agenda||'').trim() === 'Agenda'; });
+window.renderKPI = function() {
+  var grupoFiltro = (document.getElementById('kpi-filtro-grupo') || {}).value || '';
+
+  // Usa S.prazos e S.agendas (já populados e normalizados pelo pcSepararRows)
+  var prazos  = (S.prazos  || []).filter(function(r) {
+    return !grupoFiltro || (r.grupo_processo || r['grupo processo'] || r.grupo || '') === grupoFiltro;
+  });
+  var agendas = (S.agendas || []).filter(function(r) {
+    return !grupoFiltro || (r.grupo_processo || r['grupo processo'] || r.grupo || '') === grupoFiltro;
+  });
+
+  var todos   = prazos.concat(agendas);
 
   // ── Cards de resumo ──────────────────────────────────────────────────────
-  var totVenc  = dados.filter(function(r){ return r.status==='Vencido'; }).length;
-  var totFatal = dados.filter(function(r){ return r.status==='Fatal'; }).length;
-  var totD1    = dados.filter(function(r){ return r.status==='D-1'; }).length;
-  var totD2    = dados.filter(function(r){ return r.status==='D-2'; }).length;
+  var totVenc  = todos.filter(function(r){ return r.status==='Vencido'; }).length;
+  var totFatal = todos.filter(function(r){ return r.status==='Fatal'; }).length;
+  var totD1    = todos.filter(function(r){ return r.status==='D-1'; }).length;
+  var totD2    = todos.filter(function(r){ return r.status==='D-2'; }).length;
   var cards = document.getElementById('kpi-cards');
   if (cards) cards.innerHTML = [
-    ['Total Ativos', dados.length, '#00A9E0'],
-    ['Vencidos', totVenc, '#e53935'],
-    ['Fatais', totFatal, '#e53935'],
-    ['D-1 (Hoje)', totD1, '#FF6D00'],
-    ['D-2 (Próximo)', totD2, '#2196F3'],
-    ['Prazos', prazos.length, '#7B1FA2'],
-    ['Agendas', agendas.length, '#00897B'],
+    ['Total Ativos', todos.length, '#00A9E0'],
+    ['Vencidos',     totVenc,  '#e53935'],
+    ['Fatais',       totFatal, '#e53935'],
+    ['D-1 (Hoje)',   totD1,    '#FF6D00'],
+    ['D-2 (Amanhã)', totD2,   '#2196F3'],
+    ['Prazos',       prazos.length,  '#7B1FA2'],
+    ['Agendas',      agendas.length, '#00897B'],
   ].map(function(c) {
     return '<div style="background:var(--card);border:1px solid var(--border);border-radius:8px;padding:12px 18px;min-width:110px;text-align:center;">'
       + '<div style="font-size:11px;color:#7a909f;text-transform:uppercase;letter-spacing:.5px">' + c[0] + '</div>'
       + '<div style="font-size:28px;font-weight:800;color:' + c[2] + '">' + c[1] + '</div></div>';
   }).join('');
 
-  // ── Helper: agrupa por responsável ───────────────────────────────────────
+  // ── Helper: agrupar por responsável ─────────────────────────────────────
   function agrupar(arr) {
     var m = {};
     arr.forEach(function(r) {
       var k = (r.responsavel || '').trim();
       if (!k) return;
-      if (!m[k]) m[k] = { nome: k, grupo: r.grupo_processo || '', venc:0, fatal:0, d1:0, d2:0, fut:0, total:0 };
+      var g = (r.grupo_processo || r['grupo processo'] || r.grupo || '').trim();
+      if (!m[k]) m[k] = { nome:k, grupo:g, venc:0, fatal:0, d1:0, d2:0, total:0 };
       m[k].total++;
-      if (r.status==='Vencido') m[k].venc++;
-      else if (r.status==='Fatal') m[k].fatal++;
-      else if (r.status==='D-1') m[k].d1++;
-      else if (r.status==='D-2') m[k].d2++;
-      else m[k].fut++;
+      if      (r.status==='Vencido') m[k].venc++;
+      else if (r.status==='Fatal')   m[k].fatal++;
+      else if (r.status==='D-1')     m[k].d1++;
+      else if (r.status==='D-2')     m[k].d2++;
     });
-    return Object.values(m).sort(function(a,b){ return (b.fatal+b.venc) - (a.fatal+a.venc) || b.total-a.total; });
+    return Object.values(m).sort(function(a,b){ return (b.fatal+b.venc)-(a.fatal+a.venc)||b.total-a.total; });
   }
 
   function renderTblResp(tbodyId, arr) {
@@ -8443,24 +8460,25 @@ function renderKPI() {
       return '<tr>'
         + '<td>' + r.nome + '</td>'
         + '<td class="tn"><span class="grp-badge">' + (r.grupo||'—') + '</span></td>'
-        + '<td class="tn">' + kpiBadge(r.venc,'#e53935') + '</td>'
+        + '<td class="tn">' + kpiBadge(r.venc,'#e53935')  + '</td>'
         + '<td class="tn">' + kpiBadge(r.fatal,'#e53935') + '</td>'
-        + '<td class="tn">' + kpiBadge(r.d1,'#FF6D00') + '</td>'
-        + '<td class="tn">' + kpiBadge(r.d2,'#2196F3') + '</td>'
+        + '<td class="tn">' + kpiBadge(r.d1,'#FF6D00')    + '</td>'
+        + '<td class="tn">' + kpiBadge(r.d2,'#2196F3')    + '</td>'
         + '<td class="tn" style="font-weight:600">' + r.total + '</td>'
         + '</tr>';
     }).join('');
   }
 
-  renderTblResp('kpi-tbl-prazos-body', prazos);
+  renderTblResp('kpi-tbl-prazos-body',  prazos);
   renderTblResp('kpi-tbl-agendas-body', agendas);
 
-  // ── Tipos de prazo (só ativos = Andamento) ───────────────────────────────
+  // ── Tipos de prazo por responsável ──────────────────────────────────────
   var tipoMap = {};
   prazos.forEach(function(r) {
     var k = (r.responsavel || '').trim();
     if (!k) return;
-    if (!tipoMap[k]) tipoMap[k] = {nome:k, grupo:r.grupo_processo||'', Defesa:0,RO:0,RR:0,AIRR:0,Agravo:0,Outros:0,total:0};
+    var g = (r.grupo_processo || r['grupo processo'] || r.grupo || '').trim();
+    if (!tipoMap[k]) tipoMap[k] = {nome:k, grupo:g, Defesa:0, RO:0, RR:0, AIRR:0, Agravo:0, Outros:0, total:0};
     var t = tipoPrazo(r.descricao_tarefa);
     tipoMap[k][t]++;
     tipoMap[k].total++;
@@ -8469,24 +8487,27 @@ function renderKPI() {
   var tipoBody = document.getElementById('kpi-tbl-tipos-body');
   if (tipoBody) tipoBody.innerHTML = tipoRows.length ? tipoRows.map(function(r) {
     return '<tr><td>' + r.nome + '</td><td class="tn"><span class="grp-badge">' + r.grupo + '</span></td>'
-      + '<td class="tn">' + (r.Defesa||'—') + '</td><td class="tn">' + (r.RO||'—') + '</td>'
-      + '<td class="tn">' + (r.RR||'—') + '</td><td class="tn">' + (r.AIRR||'—') + '</td>'
-      + '<td class="tn">' + (r.Agravo||'—') + '</td><td class="tn">' + (r.Outros||'—') + '</td>'
+      + '<td class="tn">' + (r.Defesa||'—')  + '</td>'
+      + '<td class="tn">' + (r.RO||'—')      + '</td>'
+      + '<td class="tn">' + (r.RR||'—')      + '</td>'
+      + '<td class="tn">' + (r.AIRR||'—')    + '</td>'
+      + '<td class="tn">' + (r.Agravo||'—')  + '</td>'
+      + '<td class="tn">' + (r.Outros||'—')  + '</td>'
       + '<td class="tn" style="font-weight:600">' + r.total + '</td></tr>';
   }).join('') : '<tr><td colspan="9" class="empty">Nenhum registro</td></tr>';
 
-  // ── Concentração (+4 prazos por dia por responsável) ─────────────────────
+  // ── Concentração (+4 prazos por dia por responsável) ────────────────────
   var concMap = {};
   prazos.forEach(function(r) {
-    if (r.status === 'Futuro' || r.status === 'D-2') {
-      var k = (r.data || '').toString().slice(0,10) + '|' + (r.responsavel||'').trim();
-      if (!concMap[k]) concMap[k] = {data:r.data,resp:r.responsavel||'',grupo:r.grupo_processo||'',qtd:0,tipos:{}};
-      concMap[k].qtd++;
-      var t = tipoPrazo(r.descricao_tarefa);
-      concMap[k].tipos[t] = (concMap[k].tipos[t]||0)+1;
+    var k = (r.data || '').toString().slice(0,10) + '|' + (r.responsavel||'').trim();
+    if (!concMap[k]) {
+      var g = (r.grupo_processo || r['grupo processo'] || r.grupo || '').trim();
+      concMap[k] = {data:r.data, resp:(r.responsavel||'').trim(), grupo:g, qtd:0, tipos:{}};
     }
+    concMap[k].qtd++;
+    var t = tipoPrazo(r.descricao_tarefa);
+    concMap[k].tipos[t] = (concMap[k].tipos[t]||0)+1;
   });
-  // Totais por dia
   var diaTotal = {};
   Object.values(concMap).forEach(function(c){ var d=c.data; diaTotal[d]=(diaTotal[d]||0)+c.qtd; });
   var concRows = Object.values(concMap).filter(function(c){ return c.qtd>=4; })
@@ -8494,23 +8515,27 @@ function renderKPI() {
   var concBody = document.getElementById('kpi-tbl-conc-body');
   if (concBody) concBody.innerHTML = concRows.length ? concRows.map(function(c) {
     var tipos = Object.entries(c.tipos).map(function(e){ return e[0]+':'+e[1]; }).join(', ');
-    var dt = c.data ? new Date(c.data).toLocaleDateString('pt-BR') : '—';
-    return '<tr><td>' + dt + '</td><td>' + c.resp + '</td>'
+    var dt = c.data ? new Date(c.data+'T00:00:00').toLocaleDateString('pt-BR') : '—';
+    return '<tr>'
+      + '<td>' + dt + '</td>'
+      + '<td>' + c.resp + '</td>'
       + '<td class="tn"><span class="grp-badge">' + c.grupo + '</span></td>'
       + '<td class="tn" style="font-weight:700;color:#FF6D00">' + c.qtd + '</td>'
       + '<td class="tn">' + (diaTotal[c.data]||c.qtd) + '</td>'
-      + '<td style="font-size:11px;color:#7a909f">' + tipos + '</td></tr>';
+      + '<td style="font-size:11px;color:#7a909f">' + tipos + '</td>'
+      + '</tr>';
   }).join('') : '<tr><td colspan="6" class="empty">Nenhuma concentração ≥ 4</td></tr>';
 
-  // ── Integridade ──────────────────────────────────────────────────────────
+  // ── Integridade — responsáveis não mapeados ──────────────────────────────
   var matriculasValidas = {};
   (window.PC_PROFISSIONAIS||[]).forEach(function(p){ matriculasValidas[p.matricula] = p; });
   var naoMapeados = {};
-  dados.forEach(function(r) {
+  todos.forEach(function(r) {
     var mat = (r.matricula||'').trim().toUpperCase();
     if (!mat || matriculasValidas[mat]) return;
-    var k = mat + '|' + (r.grupo_processo||'');
-    if (!naoMapeados[k]) naoMapeados[k] = {mat:mat, nome:r.responsavel||mat, grupo:r.grupo_processo||'', qtd:0};
+    var g = (r.grupo_processo || r['grupo processo'] || r.grupo || '').trim();
+    var k = mat + '|' + g;
+    if (!naoMapeados[k]) naoMapeados[k] = {mat:mat, nome:(r.responsavel||mat), grupo:g, qtd:0};
     naoMapeados[k].qtd++;
   });
   var integRows = Object.values(naoMapeados).sort(function(a,b){ return b.qtd-a.qtd; });
@@ -8520,23 +8545,12 @@ function renderKPI() {
       + '<td class="tn"><span class="grp-badge">' + r.grupo + '</span></td>'
       + '<td class="tn" style="color:#e53935">Não mapeado</td>'
       + '<td class="tn">' + r.qtd + '</td></tr>';
-  }).join('') : '<tr><td colspan="4" class="empty" style="color:#4CAF50">✅ Todos os responsáveis estão mapeados</td></tr>';
+  }).join('') : '<tr><td colspan="4" class="empty" style="color:#4CAF50">✅ Todos mapeados</td></tr>';
 
-  // Atualiza timestamp
+  // Timestamp
   var ts = document.getElementById('kpi-ultima-atualizacao');
   if (ts) ts.textContent = 'Atualizado: ' + new Date().toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});
-}
-
-function inicializarFiltroGrupos() {
-  var sel = document.getElementById('kpi-filtro-grupo');
-  if (!sel) return;
-  var grupos = window.PC_GRUPOS_VALIDOS || [];
-  grupos.forEach(function(g) {
-    var opt = document.createElement('option');
-    opt.value = g; opt.textContent = g;
-    sel.appendChild(opt);
-  });
-}
+};
 // ═══════════ FIM KPIs ═══════════
 
   // Auto-atualiza silenciosamente ao abrir o dashboard
