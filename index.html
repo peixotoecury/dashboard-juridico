@@ -6389,6 +6389,7 @@ document.addEventListener('DOMContentLoaded', function(){
         if(typeof popGlobal === 'function') popGlobal();
         if(typeof popFatal === 'function') popFatal();
         if(typeof renderAll === 'function') renderAll();
+      if(typeof renderKPI === 'function' && document.getElementById('aba-kpi') && document.getElementById('aba-kpi').style.display !== 'none') renderKPI();
         if(typeof renderQuadro === 'function') renderQuadro();
         if(typeof renderMeuPainelSomente === 'function') renderMeuPainelSomente();
       }, 300);
@@ -6627,6 +6628,8 @@ renderAll = function() {
 </script>
 
 <script>
+const PC_PROFISSIONAIS = [{"matricula": "AAO", "nome": "Aline Amorim Oliveira ", "login": "aline.oliveira@peixotoecury.com.br", "grupo": "Grupo A3", "coordenador": "sofia.freire@peixotoecury.com.br"}, {"matricula": "ABR", "nome": "Aline Cunha de Oliveira Borges", "login": "aline.borges@peixotoecury.com.br", "grupo": "Grupo B1", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "ALF", "nome": "Aline Ferreira Miron", "login": "aline.miron@peixotoecury.com.br", "grupo": "Grupo E1", "coordenador": "keyla.moraes@peixotoecury.com.br"}, {"matricula": "ALH", "nome": "Alícia Marcondes Hamati", "login": "alicia.hamati@peixotoecury.com.br", "grupo": "Grupo A3", "coordenador": "sofia.freire@peixotoecury.com.br"}, {"matricula": "AML", "nome": "Amanda Mesquita de Lima Araujo ", "login": "amanda.araujo@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "ANB", "nome": "Anna Carolina Balbino Gatti Baani", "login": "annacarolina.baani@peixotoecury.com.br", "grupo": "Grupo B2", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "ARC", "nome": "Arthur Rodrigues Rios Toledo de Castro", "login": "arthur.castro@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "ATC", "nome": "Ana Julia Thomaz Carmona ", "login": "anajulia.carmona@peixotoecury.com.br", "grupo": "Grupo A1", "coordenador": "natalia.gaggini@peixotoecury.com.br"}, {"matricula": "BBO", "nome": "Bianca Bolanhi Camacho", "login": "bianca.camacho@peixotoecury.com.br", "grupo": "Grupo D1", "coordenador": "bianca.camacho@peixotoecury.com.br"}, {"matricula": "BCF", "nome": "Bruna Cembranelli Fazenda ", "login": "bruna.fazenda@peixotoecury.com.br", "grupo": "Grupo B2", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "BFM", "nome": "Brenna Braga Freitas Malta", "login": "brenna.malta@peixotoecury.com.br", "grupo": "Grupo B3", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "BSO", "nome": "Beatriz Santiago de Souza", "login": "beatriz.souza@peixotoecury.com.br", "grupo": "Grupo B1", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "BSS", "nome": "Brenda da Silva dos Santos", "login": "brenda.santos@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "CAL", "nome": "Camila Alves Magalhães de Paula", "login": "camila.paula@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "CAR", "nome": "Chris Carvalho", "login": "chris.carvalho@peixotoecury.com.br", "grupo": "Grupo A3", "coordenador": "sofia.freire@peixotoecury.com.br"}, {"matricula": "CGV", "nome": "Cícera Gabriela Ferreira Vicente", "login": "cicera.vicente@peixotoecury.com.br", "grupo": "Grupo B1", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "DJE", "nome": "Diana de Jesus Santos", "login": "diana.santos@peixotoecury.com.br", "grupo": "Grupo E1", "coordenador": "keyla.moraes@peixotoecury.com.br"}, {"matricula": "DPR", "nome": "Daniela Prandi Pedro Ricca ", "login": "daniela.ricca@peixotoecury.com.br", "grupo": "Grupo E1", "coordenador": "keyla.moraes@peixotoecury.com.br"}, {"matricula": "ECO", "nome": "Erik Mota Coppi", "login": "erik.coppi@peixotoecury.com.br", "grupo": "Grupo C", "coordenador": "sofia.freire@peixotoecury.com.br"}, {"matricula": "EMM", "nome": "Ellen Mary Maciel Silva", "login": "ellenmary.silva@peixotoecury.com.br", "grupo": "Grupo E1", "coordenador": "keyla.moraes@peixotoecury.com.br"}, {"matricula": "EVV", "nome": "Evandro Vecchio Vessoni", "login": "evandro.vessoni@peixotoecury.com.br", "grupo": "Grupo B1", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "EYN", "nome": "Erick Yuji Nakama", "login": "erick.nakama@peixotoecury.com.br", "grupo": "Grupo A2", "coordenador": "natalia.gaggini@peixotoecury.com.br"}, {"matricula": "FFI", "nome": "Fabiano Fritz Ferreira Filho", "login": "fabiano.filho@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "FLS", "nome": "Fabrício Lima da Silva", "login": "fabricio.silva@peixotoecury.com.br", "grupo": "Grupo E1", "coordenador": "keyla.moraes@peixotoecury.com.br"}, {"matricula": "GFO", "nome": "Gabriel Fretas de Oliveira", "login": "gabriel.oliveira@peixotoecury.com.br", "grupo": "Grupo E1", "coordenador": "keyla.moraes@peixotoecury.com.br"}, {"matricula": "GIF", "nome": "Giovanna Teixeira Franco", "login": "giovanna.teixeira@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "GIO", "nome": "Giovanni Comunale Oliveira", "login": "giovanni.oliveira@peixotoecury.com.br", "grupo": "Grupo A1", "coordenador": "natalia.gaggini@peixotoecury.com.br"}, {"matricula": "GMG", "nome": "Giovanna Malheiros Gatto", "login": "giovanna.gatto@peixotoecury.com.br", "grupo": "Grupo B1", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "GSF", "nome": "Gisela da Silva Freire", "login": "gisela.freire@peixotoecury.com.br", "grupo": "Sócios", "coordenador": "gisela.freire@peixotoecury.com.br"}, {"matricula": "GSI", "nome": "Geovanna Rodrigues Silva", "login": "geovanna.rodrigues@peixotoecury.com.br", "grupo": "Grupo B2", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "GSM", "nome": "Guilherme Silva Morimoto", "login": "guilherme.morimoto@peixotoecury.com.br", "grupo": "Grupo B1", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "GSP", "nome": "Gabriela de Souza Pedroso", "login": "gabriela.pedroso@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "GVM", "nome": "Giulia Vendramini Milani", "login": "giulia.milani@peixotoecury.com.br", "grupo": "Grupo E1", "coordenador": "keyla.moraes@peixotoecury.com.br"}, {"matricula": "HAS", "nome": "Hanyelle Alves da Silva", "login": "hanyelle.silva@peixotoecury.com.br", "grupo": "Grupo A1", "coordenador": "natalia.gaggini@peixotoecury.com.br"}, {"matricula": "HRP", "nome": "Henrique Remorini Pantuzo", "login": "henrique.pantuzo@peixotoecury.com.br", "grupo": "Grupo A1", "coordenador": "natalia.gaggini@peixotoecury.com.br"}, {"matricula": "IGA", "nome": "Isadora Silva Gagliardi", "login": "isadora.gagliardi@peixotoecury.com.br", "grupo": "Grupo B2", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "JJM", "nome": "Jaqueline Jahel Moraes", "login": "jaqueline.moraes@peixotoecury.com.br", "grupo": "Grupo A1", "coordenador": "natalia.gaggini@peixotoecury.com.br"}, {"matricula": "JJS", "nome": "Jenifer de Jesus Silva", "login": "jenifer.silva@peixotoecury.com.br", "grupo": "Grupo B1", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "JLM", "nome": "Juan Leonardo Ikier Moraes", "login": "juanleonardo.moraes@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "JPE", "nome": "Juliana Perucci ", "login": "juliana.perucci@peixotoecury.com.br", "grupo": "Grupo B1", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "JPL", "nome": "Júlia Priego Lopes da Silva", "login": "julia.priego@peixotoecury.com.br", "grupo": "Grupo E1", "coordenador": "keyla.moraes@peixotoecury.com.br"}, {"matricula": "JQS", "nome": "Jessica Cerqueira Silva", "login": "jessica.cerqueira@peixotoecury.com.br", "grupo": "Grupo D1", "coordenador": "bianca.camacho@peixotoecury.com.br"}, {"matricula": "JRM", "nome": "Joice Ramos Miranda", "login": "joice.miranda@peixotoecury.com.br", "grupo": "Grupo E1", "coordenador": "keyla.moraes@peixotoecury.com.br"}, {"matricula": "JRT", "nome": "Jackeline Romeu Torres", "login": "jackeline.torres@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "KBM", "nome": "Keyla Maria Barbosa Silva Moraes", "login": "keyla.moraes@peixotoecury.com.br", "grupo": "Grupo E1", "coordenador": "keyla.moraes@peixotoecury.com.br"}, {"matricula": "KTO", "nome": "Karoline de Castro Torres", "login": "karoline.torres@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "LCG", "nome": "Lorena Rodrigues Costa Gonçalves", "login": "lorena.goncalves@peixotoecury.com.br", "grupo": "Grupo B1", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "LLL", "nome": "Larissa Lekich Lobenwein", "login": "larissa.lekich@peixotoecury.com.br", "grupo": "Grupo E1", "coordenador": "keyla.moraes@peixotoecury.com.br"}, {"matricula": "LMI", "nome": "Letícia Meneghini Fontes ", "login": "leticia.fontes@peixotoecury.com.br", "grupo": "Grupo B3", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "LPJ", "nome": "Leonardo Pereira de Jesus", "login": "leonardo.jesus@peixotoecury.com.br", "grupo": "Grupo E1", "coordenador": "keyla.moraes@peixotoecury.com.br"}, {"matricula": "MBF", "nome": "Mariana Borges de Menezes Fávaro", "login": "mariana.favaro@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "MCD", "nome": "Maria Carolina Silva Santos Dias", "login": "mariacarolina.dias@peixotoecury.com.br", "grupo": "Grupo B2", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "MJT", "nome": "Matheus de Jesus Trindade ", "login": "matheus.trindade@peixotoecury.com.br", "grupo": "Grupo E1", "coordenador": "keyla.moraes@peixotoecury.com.br"}, {"matricula": "MNB", "nome": "Marina de Novaes Brechiani", "login": "marina.brechiani@peixotoecury.com.br", "grupo": "Grupo A1", "coordenador": "natalia.gaggini@peixotoecury.com.br"}, {"matricula": "MTM", "nome": "Marcel Tadeu Matos Alves da Silva", "login": "marcel.alves@peixotoecury.com.br", "grupo": "Sócios", "coordenador": "antoniocarlos.aguiar@peixotoecury.com.br, marcel.alves@peixotoecury.com.br, poliana.banqueri@peixotoecury.com.br"}, {"matricula": "NBB", "nome": "Natalia Bezerra Baliero", "login": "natalia.baliero@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "NBG", "nome": "Natália Biondi Gaggini Robles", "login": "natalia.gaggini@peixotoecury.com.br", "grupo": "Grupo A2", "coordenador": "natalia.gaggini@peixotoecury.com.br"}, {"matricula": "NLO", "nome": "Nathalie Louise dos Santos Rodrigues Dias ", "login": "nathalie.louise@peixotoecury.com.br", "grupo": "Grupo E1", "coordenador": "keyla.moraes@peixotoecury.com.br"}, {"matricula": "NRG", "nome": "Nicolau Rafael Guimarães Coelho", "login": "nicolau.coelho@peixotoecury.com.br", "grupo": "Grupo B1, B2 e B3", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "PBS", "nome": "Poliana Banqueri da Silva Guimarães", "login": "poliana.banqueri@peixotoecury.com.br", "grupo": "Sócios", "coordenador": "antoniocarlos.aguiar@peixotoecury.com.br, marcel.alves@peixotoecury.com.br, poliana.banqueri@peixotoecury.com.br"}, {"matricula": "PSI", "nome": "Paloma da Silva Santos", "login": "paloma.santos@peixotoecury.com.br", "grupo": "Grupo E1", "coordenador": "keyla.moraes@peixotoecury.com.br"}, {"matricula": "RCF", "nome": "Rafael Camargo Felisbino", "login": "rafael.camargo@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "RFE", "nome": "Rafael Rocha Ferreira", "login": "rafael.ferreira@peixotoecury.com.br", "grupo": "Grupo B1", "coordenador": "sofia.freire@peixotoecury.com.br"}, {"matricula": "RFK", "nome": "Raica Fernandes Kwok", "login": "raica.kwok@peixotoecury.com.br", "grupo": "Grupo B3", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "RRU", "nome": "Richard Ruan Leo da Silva", "login": "richard.silva@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "RSN", "nome": "Rodrigo Souichi Nishijima", "login": "rodrigo.nishijima@peixotoecury.com.br", "grupo": "Grupo B1", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "RWD", "nome": "Rafaella Wittmann Domenicis", "login": "rafaella.domenicis@peixotoecury.com.br", "grupo": "Grupo B2", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "RYL", "nome": "Rafael Yepez do Lago", "login": "rafael.lago@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "SOF", "nome": "Sofia Freire ", "login": "sofia.freire@peixotoecury.com.br", "grupo": "Grupo A3", "coordenador": "sofia.freire@peixotoecury.com.br"}, {"matricula": "TCE", "nome": "Thais Catharine Cardozo Esteves", "login": "thais.esteves@peixotoecury.com.br", "grupo": "Grupo A1", "coordenador": "natalia.gaggini@peixotoecury.com.br"}, {"matricula": "TCO", "nome": "Tamires Lins Costa", "login": "tamireslins.costa@peixotoecury.com.br", "grupo": "Grupo E1", "coordenador": "keyla.moraes@peixotoecury.com.br"}, {"matricula": "TFR", "nome": "Thiago Frid Figueiredo Rossi", "login": "thiago.rossi@peixotoecury.com.br", "grupo": "Grupo C", "coordenador": "sofia.freire@peixotoecury.com.br"}, {"matricula": "TNE", "nome": "Tabata Neves Caramelli", "login": "tabata.caramelli@peixotoecury.com.br", "grupo": "Grupo A2", "coordenador": "natalia.gaggini@peixotoecury.com.br"}, {"matricula": "VAR", "nome": "Vitoria Araujo Carvalho", "login": "vitoria.carvalho@peixotoecury.com.br", "grupo": "Grupo B1", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "VCR", "nome": "Vanessa de Cassia Castrequini Rosa", "login": "vanessa.rosa@peixotoecury.com.br", "grupo": "Grupo B2", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "VGA", "nome": "Vinicius Ferreira Garcia", "login": "vinicius.garcia@peixotoecury.com.br", "grupo": "Grupo A1", "coordenador": "natalia.gaggini@peixotoecury.com.br"}, {"matricula": "VRO", "nome": "Vinícius Ronchi Arruda", "login": "vinicius.ronchi@peixotoecury.com.br", "grupo": "Grupo E1", "coordenador": "keyla.moraes@peixotoecury.com.br"}, {"matricula": "VSI", "nome": "Vinicius da Silva Cerqueira", "login": "vinicius.dasilva@peixotoecury.com.br", "grupo": "Grupo C", "coordenador": "sofia.freire@peixotoecury.com.br"}, {"matricula": "WSF", "nome": "Washington Soares Silva Filho", "login": "washington.soares@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}];
+const PC_GRUPOS_VALIDOS = ["Grupo A1", "Grupo A2", "Grupo A3", "Grupo B1", "Grupo B1, B2 e B3", "Grupo B2", "Grupo B3", "Grupo C", "Grupo D1", "Grupo E1", "Grupo E2", "Sócios"];
 const SUPABASE_URL = 'https://kgyeeuynerhpaqlhqwkx.supabase.co';
 const SUPABASE_KEY = 'sb_publishable_MdUFFFJ5xRqiQysyxlWHFA_yk_LsknZ';
 
@@ -8296,6 +8299,181 @@ function qgLoadAudiencias(inp){
 
   // Expõe para uso manual
   window.atualizarDoGithub = atualizarDoPrazosGithub;
+// ═══════════ ABA KPIs ═══════════
+function tipoPrazo(desc) {
+  var d = (desc || '').toLowerCase();
+  if (/defesa|protocolar defesa|elaborar defesa/.test(d)) return 'Defesa';
+  if (/recurso ordin|\bro\b/.test(d)) return 'RO';
+  if (/recurso de revista|\brr\b/.test(d)) return 'RR';
+  if (/airr|agravo de instrumento/.test(d)) return 'AIRR';
+  if (/agravo/.test(d)) return 'Agravo';
+  return 'Outros';
+}
+
+function kpiBadge(n, cor) {
+  if (!n) return '<span style="color:#7a909f">—</span>';
+  return '<span style="color:' + cor + ';font-weight:700">' + n + '</span>';
+}
+
+function renderKPI() {
+  var grupoFiltro = (document.getElementById('kpi-filtro-grupo') || {}).value || '';
+  var raw = (S && S.raw) ? S.raw : [];
+
+  // Apenas processos ativos e tipo Prazo ou Agenda
+  var dados = raw.filter(function(r) {
+    var sp = (r.situacao_pasta || '').trim().toLowerCase();
+    var ta = (r.tipo_agenda || '').trim();
+    var ativo = sp === 'andamento' || sp === '';
+    var tipoOk = ta === 'Prazo' || ta === 'Agenda';
+    var grupoOk = !grupoFiltro || (r.grupo_processo || '') === grupoFiltro;
+    return ativo && tipoOk && grupoOk;
+  });
+
+  var prazos  = dados.filter(function(r){ return (r.tipo_agenda||'').trim() === 'Prazo'; });
+  var agendas = dados.filter(function(r){ return (r.tipo_agenda||'').trim() === 'Agenda'; });
+
+  // ── Cards de resumo ──────────────────────────────────────────────────────
+  var totVenc  = dados.filter(function(r){ return r.status==='Vencido'; }).length;
+  var totFatal = dados.filter(function(r){ return r.status==='Fatal'; }).length;
+  var totD1    = dados.filter(function(r){ return r.status==='D-1'; }).length;
+  var totD2    = dados.filter(function(r){ return r.status==='D-2'; }).length;
+  var cards = document.getElementById('kpi-cards');
+  if (cards) cards.innerHTML = [
+    ['Total Ativos', dados.length, '#00A9E0'],
+    ['Vencidos', totVenc, '#e53935'],
+    ['Fatais', totFatal, '#e53935'],
+    ['D-1 (Hoje)', totD1, '#FF6D00'],
+    ['D-2 (Próximo)', totD2, '#2196F3'],
+    ['Prazos', prazos.length, '#7B1FA2'],
+    ['Agendas', agendas.length, '#00897B'],
+  ].map(function(c) {
+    return '<div style="background:var(--card);border:1px solid var(--border);border-radius:8px;padding:12px 18px;min-width:110px;text-align:center;">'
+      + '<div style="font-size:11px;color:#7a909f;text-transform:uppercase;letter-spacing:.5px">' + c[0] + '</div>'
+      + '<div style="font-size:28px;font-weight:800;color:' + c[2] + '">' + c[1] + '</div></div>';
+  }).join('');
+
+  // ── Helper: agrupa por responsável ───────────────────────────────────────
+  function agrupar(arr) {
+    var m = {};
+    arr.forEach(function(r) {
+      var k = (r.responsavel || '').trim();
+      if (!k) return;
+      if (!m[k]) m[k] = { nome: k, grupo: r.grupo_processo || '', venc:0, fatal:0, d1:0, d2:0, fut:0, total:0 };
+      m[k].total++;
+      if (r.status==='Vencido') m[k].venc++;
+      else if (r.status==='Fatal') m[k].fatal++;
+      else if (r.status==='D-1') m[k].d1++;
+      else if (r.status==='D-2') m[k].d2++;
+      else m[k].fut++;
+    });
+    return Object.values(m).sort(function(a,b){ return (b.fatal+b.venc) - (a.fatal+a.venc) || b.total-a.total; });
+  }
+
+  function renderTblResp(tbodyId, arr) {
+    var tbody = document.getElementById(tbodyId);
+    if (!tbody) return;
+    var rows = agrupar(arr);
+    if (!rows.length) { tbody.innerHTML = '<tr><td colspan="7" class="empty">Nenhum registro</td></tr>'; return; }
+    tbody.innerHTML = rows.map(function(r) {
+      return '<tr>'
+        + '<td>' + r.nome + '</td>'
+        + '<td class="tn"><span class="grp-badge">' + (r.grupo||'—') + '</span></td>'
+        + '<td class="tn">' + kpiBadge(r.venc,'#e53935') + '</td>'
+        + '<td class="tn">' + kpiBadge(r.fatal,'#e53935') + '</td>'
+        + '<td class="tn">' + kpiBadge(r.d1,'#FF6D00') + '</td>'
+        + '<td class="tn">' + kpiBadge(r.d2,'#2196F3') + '</td>'
+        + '<td class="tn" style="font-weight:600">' + r.total + '</td>'
+        + '</tr>';
+    }).join('');
+  }
+
+  renderTblResp('kpi-tbl-prazos-body', prazos);
+  renderTblResp('kpi-tbl-agendas-body', agendas);
+
+  // ── Tipos de prazo (só ativos = Andamento) ───────────────────────────────
+  var tipoMap = {};
+  prazos.forEach(function(r) {
+    var k = (r.responsavel || '').trim();
+    if (!k) return;
+    if (!tipoMap[k]) tipoMap[k] = {nome:k, grupo:r.grupo_processo||'', Defesa:0,RO:0,RR:0,AIRR:0,Agravo:0,Outros:0,total:0};
+    var t = tipoPrazo(r.descricao_tarefa);
+    tipoMap[k][t]++;
+    tipoMap[k].total++;
+  });
+  var tipoRows = Object.values(tipoMap).sort(function(a,b){ return b.total-a.total; });
+  var tipoBody = document.getElementById('kpi-tbl-tipos-body');
+  if (tipoBody) tipoBody.innerHTML = tipoRows.length ? tipoRows.map(function(r) {
+    return '<tr><td>' + r.nome + '</td><td class="tn"><span class="grp-badge">' + r.grupo + '</span></td>'
+      + '<td class="tn">' + (r.Defesa||'—') + '</td><td class="tn">' + (r.RO||'—') + '</td>'
+      + '<td class="tn">' + (r.RR||'—') + '</td><td class="tn">' + (r.AIRR||'—') + '</td>'
+      + '<td class="tn">' + (r.Agravo||'—') + '</td><td class="tn">' + (r.Outros||'—') + '</td>'
+      + '<td class="tn" style="font-weight:600">' + r.total + '</td></tr>';
+  }).join('') : '<tr><td colspan="9" class="empty">Nenhum registro</td></tr>';
+
+  // ── Concentração (+4 prazos por dia por responsável) ─────────────────────
+  var concMap = {};
+  prazos.forEach(function(r) {
+    if (r.status === 'Futuro' || r.status === 'D-2') {
+      var k = (r.data || '').toString().slice(0,10) + '|' + (r.responsavel||'').trim();
+      if (!concMap[k]) concMap[k] = {data:r.data,resp:r.responsavel||'',grupo:r.grupo_processo||'',qtd:0,tipos:{}};
+      concMap[k].qtd++;
+      var t = tipoPrazo(r.descricao_tarefa);
+      concMap[k].tipos[t] = (concMap[k].tipos[t]||0)+1;
+    }
+  });
+  // Totais por dia
+  var diaTotal = {};
+  Object.values(concMap).forEach(function(c){ var d=c.data; diaTotal[d]=(diaTotal[d]||0)+c.qtd; });
+  var concRows = Object.values(concMap).filter(function(c){ return c.qtd>=4; })
+    .sort(function(a,b){ return (a.data<b.data?-1:1)||b.qtd-a.qtd; });
+  var concBody = document.getElementById('kpi-tbl-conc-body');
+  if (concBody) concBody.innerHTML = concRows.length ? concRows.map(function(c) {
+    var tipos = Object.entries(c.tipos).map(function(e){ return e[0]+':'+e[1]; }).join(', ');
+    var dt = c.data ? new Date(c.data).toLocaleDateString('pt-BR') : '—';
+    return '<tr><td>' + dt + '</td><td>' + c.resp + '</td>'
+      + '<td class="tn"><span class="grp-badge">' + c.grupo + '</span></td>'
+      + '<td class="tn" style="font-weight:700;color:#FF6D00">' + c.qtd + '</td>'
+      + '<td class="tn">' + (diaTotal[c.data]||c.qtd) + '</td>'
+      + '<td style="font-size:11px;color:#7a909f">' + tipos + '</td></tr>';
+  }).join('') : '<tr><td colspan="6" class="empty">Nenhuma concentração ≥ 4</td></tr>';
+
+  // ── Integridade ──────────────────────────────────────────────────────────
+  var matriculasValidas = {};
+  (window.PC_PROFISSIONAIS||[]).forEach(function(p){ matriculasValidas[p.matricula] = p; });
+  var naoMapeados = {};
+  dados.forEach(function(r) {
+    var mat = (r.matricula||'').trim().toUpperCase();
+    if (!mat || matriculasValidas[mat]) return;
+    var k = mat + '|' + (r.grupo_processo||'');
+    if (!naoMapeados[k]) naoMapeados[k] = {mat:mat, nome:r.responsavel||mat, grupo:r.grupo_processo||'', qtd:0};
+    naoMapeados[k].qtd++;
+  });
+  var integRows = Object.values(naoMapeados).sort(function(a,b){ return b.qtd-a.qtd; });
+  var integBody = document.getElementById('kpi-tbl-integ-body');
+  if (integBody) integBody.innerHTML = integRows.length ? integRows.map(function(r) {
+    return '<tr><td>' + r.nome + ' (' + r.mat + ')</td>'
+      + '<td class="tn"><span class="grp-badge">' + r.grupo + '</span></td>'
+      + '<td class="tn" style="color:#e53935">Não mapeado</td>'
+      + '<td class="tn">' + r.qtd + '</td></tr>';
+  }).join('') : '<tr><td colspan="4" class="empty" style="color:#4CAF50">✅ Todos os responsáveis estão mapeados</td></tr>';
+
+  // Atualiza timestamp
+  var ts = document.getElementById('kpi-ultima-atualizacao');
+  if (ts) ts.textContent = 'Atualizado: ' + new Date().toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});
+}
+
+function inicializarFiltroGrupos() {
+  var sel = document.getElementById('kpi-filtro-grupo');
+  if (!sel) return;
+  var grupos = window.PC_GRUPOS_VALIDOS || [];
+  grupos.forEach(function(g) {
+    var opt = document.createElement('option');
+    opt.value = g; opt.textContent = g;
+    sel.appendChild(opt);
+  });
+}
+// ═══════════ FIM KPIs ═══════════
+
   // Auto-atualiza silenciosamente ao abrir o dashboard
   setTimeout(function(){ if(typeof atualizarDoGithub==='function') atualizarDoGithub(true); }, 4000);
   // Atualiza a cada 2h enquanto o dashboard estiver aberto
