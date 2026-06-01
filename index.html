@@ -9079,6 +9079,14 @@ document.addEventListener('DOMContentLoaded', function(){
       const payload = await resp.json();
       const todasLinhas = payload.dados || [];
 
+      // Se o cache local tem data diferente do GitHub, limpa tudo para evitar dados misturados
+      const dataGithub = payload.atualizado_em || '';
+      const dataCacheLocal = localStorage.getItem('pc_dados_data') || '';
+      if(dataGithub && dataGithub !== dataCacheLocal){
+        ['pc_raw','pc_prazos','pc_agendas','pc_equipe','_lastPlanilha'].forEach(k => localStorage.removeItem(k));
+        localStorage.setItem('pc_dados_data', dataGithub);
+      }
+
       if(!todasLinhas.length){
         if(!silencioso && ov) ov.style.display = 'none';
         return;
