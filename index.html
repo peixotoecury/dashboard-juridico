@@ -9008,13 +9008,18 @@ document.addEventListener('DOMContentLoaded', function(){
       }
 
       if(silencioso){
-        // Modo silencioso: só atualiza dados em memória, NUNCA renderiza
-        // A tela fica estável — o usuário vê a atualização na próxima navegação
         S.raw    = normalizarChaves(todasLinhas);
         S.prazos = S.raw.filter(r => (r.tipo_agenda||'').trim() === 'Prazo');
         S.agendas= S.raw.filter(r => (r.tipo_agenda||'').trim() === 'Agenda');
         S.equipe = S.raw.filter(r => (r.tipo_agenda||'').trim().startsWith('Agenda Equipe'));
         console.log('Dados atualizados em memória:', S.raw.length, 'registros');
+        // Re-renderiza a tela automaticamente após atualização silenciosa
+        setTimeout(function(){
+          if(typeof window.renderAll === 'function') window.renderAll();
+          if(typeof window.popGlobal === 'function') window.popGlobal();
+          if(typeof window.popFatal === 'function') window.popFatal();
+          if(typeof window.popAud === 'function') window.popAud();
+        }, 300);
         // Persiste no IndexedDB para a próxima carga não cair nos dados embutidos
         try {
           if(typeof IndexedDBHelper !== 'undefined' && IndexedDBHelper.salvar) {
