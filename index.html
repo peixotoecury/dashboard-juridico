@@ -6550,7 +6550,9 @@ function salvarNovaSenha() {
 
 function aplicarAcesso() {
   if (!SESSAO) return;
-  const isAdmin = SESSAO.nivel === 'admin';
+  // Verifica por nível OU por login fixo (garante acesso mesmo se localStorage sobrescreveu o nível)
+  const _loginsAdmin = ['controladoria','coord','antoniocarlos.aguiar','beatriz.rodrigues','bianca.camacho','gisela.freire','keyla.moraes','marcel.alves','marina.brechiani','natalia.gaggini','poliana.banqueri','sofia.freire','washington.soares'];
+  const isAdmin = SESSAO.nivel === 'admin' || _loginsAdmin.includes((SESSAO.login || '').toLowerCase());
   // Remove banner de privacidade imediatamente se for admin
   if (isAdmin) document.querySelectorAll('.aviso-privacidade').forEach(el => el.remove());
   // Sincroniza usuários do localStorage com o sistema de login
