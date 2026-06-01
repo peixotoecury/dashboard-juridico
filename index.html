@@ -6341,12 +6341,16 @@ function doLogin() {
   const senha  = (V('inp-senha').value||'').trim();
   const lembrar = document.getElementById('chk-lembrar')?.checked;
 
-  // Sincroniza USUARIOS com localStorage antes de tentar login
+  // Sincroniza USUARIOS com localStorage — mas NÃO sobrescreve admins hardcoded
+  const _adminsFixos = ['controladoria','coord','sofia.freire','antoniocarlos.aguiar',
+    'beatriz.rodrigues','bianca.camacho','gisela.freire','keyla.moraes','marcel.alves',
+    'marina.brechiani','natalia.gaggini','poliana.banqueri','washington.soares'];
   try {
     const saved = localStorage.getItem('pc_usuarios_v1');
     if(saved) {
       const users = JSON.parse(saved);
       users.filter(u=>u.status==='Ativo').forEach(u=>{
+        if(_adminsFixos.includes((u.login||'').toLowerCase())) return; // protege admins
         USUARIOS[u.login] = { senha: u.senha, nivel: u.nivel, nome: u.nome, sigla: u.sigla };
       });
     }
