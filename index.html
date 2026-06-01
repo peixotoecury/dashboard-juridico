@@ -9217,18 +9217,12 @@ document.addEventListener('DOMContentLoaded', function(){
   window.loadPrazos  = window.__pcRealtimeLoadPrazos;
   window.qgLoadPrazos = function(inp){ return processarUploadPrazosRealtime(inp, true); };
 
+  // Carrega dados do GitHub assim que o DOM estiver pronto — sem depender do Supabase
   document.addEventListener('DOMContentLoaded', function(){
-    // Reafirma override após DOM pronto
     window.loadPrazos = window.__pcRealtimeLoadPrazos;
-    // NÃO chama carregarBaseOnline aqui — Supabase ainda não carregou.
-    // O onload do script Supabase (no final do body) chama iniciarRealtimeSupabase().
-  });
-
-  // Carrega dados do GitHub ao iniciar (independe do Supabase)
-  window.iniciarRealtimeSupabase = function(){
     carregarBaseOnline();
 
-    // Polling a cada 5 minutos — verifica dados.json no GitHub
+    // Polling a cada 5 minutos
     if(!window.__pcPollingInterval){
       window.__pcPollingInterval = setInterval(function(){
         carregarBaseOnline(true);
@@ -9239,7 +9233,10 @@ document.addEventListener('DOMContentLoaded', function(){
     document.addEventListener('visibilitychange', function(){
       if(document.visibilityState === 'visible') carregarBaseOnline(true);
     });
-  };
+  });
+
+  // Mantém compatibilidade — chamado pelo onload do Supabase, mas dados já carregaram
+  window.iniciarRealtimeSupabase = function(){ /* dados já carregados via DOMContentLoaded */ };
 })();
 </script>
 
