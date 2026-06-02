@@ -7157,7 +7157,7 @@ document.addEventListener('DOMContentLoaded', function(){
       }
     }
 
-    function stCnt(arr, st){ return arr.filter(r => (r.status||'').trim() === st).length; }
+    function stCnt(arr, st){ return arr.filter(r => status(r) === st).length; }
 
     // Prazos por status
     set('mp-st-p-venc',  stCnt(d.prazos,  'Vencido'));
@@ -7226,7 +7226,7 @@ document.addEventListener('DOMContentLoaded', function(){
         {h:'Processo', v:r=>txt(pick(r,['numero_processo','Número do Processo','Processo','processo']))},
         {h:'Cliente', v:r=>txt(pick(r,['cliente','Cliente']))},
         {h:'Tarefa', v:r=>txt(pick(r,['descricao_tarefa','Descrição','descrição','tarefa','Tarefa']))},
-        {h:'Status', v:r=>{const s=(r.status||'').trim();return `<span class="mp-only-status" style="${(statusEh(s, 'Fatal')||statusEh(s, 'Vencido'))?'background:#fdecea;color:#c62828;border:1px solid #ef9a9a;':''}">${s}</span>`;}},
+        {h:'Status', v:r=>{const s=status(r);return `<span class="mp-only-status" style="${(statusEh(s, 'Fatal')||statusEh(s, 'Vencido'))?'background:#fdecea;color:#c62828;border:1px solid #ef9a9a;':''}">${s}</span>`;}},
         {h:'Grupo', v:r=>txt(pick(r,['grupo_processo','Grupo Processo']))},
         {h:'Justificativa', v:r=>{const proc=txt(pick(r,['numero_processo','Número do Processo','Processo','processo']));const key='justif-'+btoa(proc).replace(/[^a-z0-9]/gi,'');const just=(window._mpJustif&&window._mpJustif[key])?window._mpJustif[key]:'—';return `<div style="font-size:10px;color:${just==='—'?'var(--gray4)':'var(--gray1)'};max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${e(just)}</div>`;}},
         {h:'Ação', v:function(r){
@@ -7640,7 +7640,7 @@ document.addEventListener('DOMContentLoaded', function(){
       }
     }
 
-    function stCnt2(arr, st){ return arr.filter(r => (r.status||'').trim() === st).length; }
+    function stCnt2(arr, st){ return arr.filter(r => status(r) === st).length; }
     set('mp-st-p-venc',  stCnt2(d.prazos,  'Vencido'));
     set('mp-st-p-fatal', stCnt2(d.prazos,  'Fatal'));
     set('mp-st-p-d1',    stCnt2(d.prazos,  'D-1'));
