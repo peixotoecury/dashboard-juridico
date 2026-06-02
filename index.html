@@ -3699,6 +3699,11 @@ async function carregarPrazosSupabase() {
     if(typeof window.renderMeuPainelSomente === 'function') window.renderMeuPainelSomente();
     if(typeof window.renderMP === 'function') window.renderMP();
 
+    // Mostra hora da última atualização
+    const horaAtual = new Date().toLocaleTimeString('pt-BR', {hour:'2-digit', minute:'2-digit'});
+    document.querySelectorAll('[data-sync-hora]').forEach(el => el.textContent = 'Atualizado às ' + horaAtual);
+    console.log('✅ Supabase atualizado às ' + horaAtual);
+
     return true;
 
   } catch(err) {
@@ -3713,7 +3718,7 @@ document.addEventListener('DOMContentLoaded', function(){
     controlarAbas();
     carregarJustificativasSupabase();
 
-    // Busca prazos do Supabase (com fallback para localStorage)
+    // Busca prazos do Supabase ao abrir
     carregarPrazosSupabase().then(function(ok){
       if(ok && typeof window.renderAll === 'function'){
         setTimeout(function(){
@@ -3731,6 +3736,13 @@ document.addEventListener('DOMContentLoaded', function(){
         }, 200);
       }
     });
+
+    // Refresh automático a cada 20 minutos — atualiza mesmo com página aberta
+    setInterval(function(){
+      console.log('🔄 Refresh automático do Supabase...');
+      carregarPrazosSupabase();
+    }, 20 * 60 * 1000); // 20 minutos
+
   }, 800);
 });
 
