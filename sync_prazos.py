@@ -74,19 +74,19 @@ def ler_excel():
             dias_restantes = None
 
         # Calcula status real baseado na data
-        # Fatal=hoje, D-1=amanhã, D-2=depois de amanhã, Vencido=antes de hoje, Futuro=3+dias
+        # Vencido=antes de ontem, Fatal=ontem, D-1=hoje, D-2=amanhã, Futuro=depois de amanhã
         if dias_restantes is None:
-            status_calc = "Pendente"
-        elif dias_restantes < 0:
+            status_calc = "Futuro"
+        elif dias_restantes < -1:
             status_calc = "Vencido"
-        elif dias_restantes == 0:
+        elif dias_restantes == -1:
             status_calc = "Fatal"
-        elif dias_restantes == 1:
+        elif dias_restantes == 0:
             status_calc = "D-1"
-        elif dias_restantes == 2:
+        elif dias_restantes == 1:
             status_calc = "D-2"
         else:
-            status_calc = "Pendente"
+            status_calc = "Futuro"
 
         registros.append({
             "data":             data_iso,
