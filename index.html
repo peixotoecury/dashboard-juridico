@@ -7039,10 +7039,12 @@ document.addEventListener('DOMContentLoaded', function(){
     return 'prazo';
   }
   function status(row){
-    // Recalcula pelo campo data para garantir status sempre correto
-    const dataVal = row['data'] || row['Data'] || row['DATA'] || '';
+    const dataVal = String(row['data'] || row['Data'] || row['DATA'] || '').trim();
     if (dataVal) {
-      const d = parseDateAny ? parseDateAny(dataVal) : null;
+      let d = null;
+      const iso = dataVal.match(/^(\d{4})-(\d{2})-(\d{2})/);
+      if (iso) d = new Date(+iso[1], +iso[2]-1, +iso[3]);
+      if (!d) { const br = dataVal.match(/^(\d{2})\/(\d{2})\/(\d{4})/); if (br) d = new Date(+br[3], +br[2]-1, +br[1]); }
       if (d && !isNaN(d)) {
         const hoje = new Date(); hoje.setHours(0,0,0,0);
         const diff = Math.round((d - hoje) / 86400000);
@@ -7514,10 +7516,12 @@ document.addEventListener('DOMContentLoaded', function(){
   }
 
   function status(row){
-    // Recalcula pelo campo data para garantir status sempre correto
-    const dataVal = row['data'] || row['Data'] || row['DATA'] || '';
+    const dataVal = String(row['data'] || row['Data'] || row['DATA'] || '').trim();
     if (dataVal) {
-      const d = parseDateAny ? parseDateAny(dataVal) : null;
+      let d = null;
+      const iso = dataVal.match(/^(\d{4})-(\d{2})-(\d{2})/);
+      if (iso) d = new Date(+iso[1], +iso[2]-1, +iso[3]);
+      if (!d) { const br = dataVal.match(/^(\d{2})\/(\d{2})\/(\d{4})/); if (br) d = new Date(+br[3], +br[2]-1, +br[1]); }
       if (d && !isNaN(d)) {
         const hoje = new Date(); hoje.setHours(0,0,0,0);
         const diff = Math.round((d - hoje) / 86400000);
