@@ -3657,11 +3657,11 @@ async function carregarPrazosSupabase() {
       if (!d) return r;
       const diff = Math.round((d - hoje) / 86400000);
       let status;
-      if      (diff < 0)  status = 'Vencido';
-      else if (diff === 0) status = 'Fatal';
-      else if (diff === 1) status = 'D-1';
-      else if (diff === 2) status = 'D-2';
-      else                 status = 'Futuro';
+      if      (diff < -1)   status = 'Vencido';
+      else if (diff === -1) status = 'Fatal';
+      else if (diff === 0)  status = 'D-1';
+      else if (diff === 1)  status = 'D-2';
+      else                  status = 'Futuro';
       return {...r, status, dias_restantes: diff};
     });
 
