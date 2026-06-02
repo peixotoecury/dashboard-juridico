@@ -3910,7 +3910,8 @@ function loadAudiencias(inp) {
 
 // ── SELECTS ──────────────────────────────────────────
 function popGlobal() {
-  const resps =[...new Set(S.raw.map(r=>r.responsavel).filter(Boolean))].sort();
+  const isSigla = x => /^[A-Z]{2,5}$/.test(x.trim());
+  const resps =[...new Set(S.raw.map(r=>r.responsavel).filter(Boolean))].filter(x=>!isSigla(x)).sort();
   const grupos=[...new Set(S.raw.map(r=>r.grupo_processo).filter(Boolean))].sort();
   V('gf-resp').innerHTML ='<option value="">Todos os profissionais com fatal</option>'+resps.map(x=>`<option value="${e(x)}">${e(x)}</option>`).join('');
   V('gf-grupo').innerHTML='<option value="">Todos os grupos</option>'+grupos.map(x=>`<option value="${e(x)}">${e(x)}</option>`).join('');
