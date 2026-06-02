@@ -3670,6 +3670,7 @@ async function carregarPrazosSupabase() {
     S.prazos  = todos.filter(r => (r.tipo_agenda||'').trim() === 'Prazo');
     S.agendas = todos.filter(r => (r.tipo_agenda||'').trim() === 'Agenda');
     S.equipe  = todos.filter(r => (r.tipo_agenda||'').includes('Equipe'));
+    window._supabaseCarregado = true; // impede IndexedDB de sobrescrever
 
     console.log(`📊 Prazos: ${S.prazos.length} | Agendas: ${S.agendas.length} | Equipe: ${S.equipe.length}`);
     console.log(`🔴 Fatais: ${S.prazos.filter(r=>r.status==='Fatal').length} | D-1: ${S.prazos.filter(r=>r.status==='D-1').length}`);
@@ -9854,10 +9855,13 @@ document.addEventListener('DOMContentLoaded', function(){
 
   function tentarInjetar(n){
     n=n||1;
-    if(typeof renderAll==='function'){ 
+    if(typeof renderAll==='function'){
       recuperarDadosPersistidos(function(recuperou) {
         if(!recuperou) injetarDados();
-        else {
+        else if(window._supabaseCarregado) {
+          // Supabase já carregou com dados frescos — ignora IndexedDB antigo
+          console.log('[PC] Supabase já carregado, IndexedDB ignorado.');
+        } else {
           var e;
           e=document.getElementById('uf1n'); if(e) e.textContent='✅ Prazos (salvo)';
           e=document.getElementById('uf1');  if(e) e.classList.add('loaded');
