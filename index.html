@@ -3616,38 +3616,122 @@ function salvarPlanilhaAtualEmLS(){
   }
 }
 
-document.addEventListener('DOMContentLoaded', function(){ 
+// ── BUSCAR PRAZOS DO SUPABASE (fonte principal) ──────────────────────────────
+async function carregarPrazosSupabase() {
+  const SUPA_URL = 'https://kgyeeuynerhpaqlhqwkx.supabase.co';
+  const SUPA_KEY = 'sb_publishable_MdUFFFJ5xRqiQysyxlWHFA_yk_LsknZ';
+
+  // Limpa IndexedDB para forcar leitura do Supabase
+  try {
+    ['peixoto','agendas','dashboard','pc','prazos'].forEach(function(dbName){
+      var req = indexedDB.deleteDatabase(dbName);
+      req.onsuccess = function(){ console.log('IndexedDB limpo:', dbName); };
+    });
+  } catch(e) {}
+
+  try {
+    console.log('🔄 Buscando prazos do Supabase...');
+
+    // Busca todos os registros em páginas de 1000
+    let todos = [], offset = 0, pagSize = 1000;
+    while(true) {
+      const r = await fetch(
+        `${SUPA_URL}/rest/v1/prazos_agendas?select=*&order=data.asc&limit=${pagSize}&offset=${offset}`,
+        { headers: { 'apikey': SUPA_KEY, 'Authorization': `Bearer ${SUPA_KEY}` } }
+      );
+      if (!r.ok) throw new Error(`Supabase ${r.status}`);
+      const lote = await r.json();
+      todos = todos.concat(lote);
+      if (lote.length < pagSize) break;
+      offset += pagSize;
+    }
+
+    if (!todos.length) throw new Error('Nenhum dado no Supabase');
+
+    console.log(`✅ Supabase: ${todos.length} registros recebidos`);
+
+    // Recalcula status com base na data atual (garante precisão diária)
+    const hoje = new Date(); hoje.setHours(0,0,0,0);
+    todos = todos.map(r => {
+      const d = r.data ? new Date(r.data + 'T00:00:00') : null;
+      if (!d) return r;
+      const diff = Math.round((d - hoje) / 86400000);
+      let status;
+      if      (diff < 0)  status = 'Vencido';
+      else if (diff === 0) status = 'Fatal';
+      else if (diff === 1) status = 'D-1';
+      else if (diff === 2) status = 'D-2';
+      else                 status = 'Pendente';
+      return {...r, status, dias_restantes: diff};
+    });
+
+    // Normaliza campos para o formato que o dashboard espera
+    S.raw = todos;
+    S.prazos  = todos.filter(r => (r.tipo_agenda||'').trim() === 'Prazo');
+    S.agendas = todos.filter(r => (r.tipo_agenda||'').trim() === 'Agenda');
+    S.equipe  = todos.filter(r => (r.tipo_agenda||'').includes('Equipe'));
+
+    console.log(`📊 Prazos: ${S.prazos.length} | Agendas: ${S.agendas.length} | Equipe: ${S.equipe.length}`);
+    console.log(`🔴 Fatais: ${S.prazos.filter(r=>r.status==='Fatal').length} | D-1: ${S.prazos.filter(r=>r.status==='D-1').length}`);
+
+    // Salva no localStorage como cache offline
+    try {
+      localStorage.setItem('_lastPlanilha', JSON.stringify({
+        data: todos, timestamp: new Date().toISOString(), fileName: 'Supabase'
+      }));
+      localStorage.setItem('pc_upload_date', new Date().toISOString());
+    } catch(e) {}
+
+    // Atualiza badge de atualização
+    const atualizado = todos[0]?.atualizado_em
+      ? new Date(todos[0].atualizado_em).toLocaleString('pt-BR')
+      : new Date().toLocaleString('pt-BR');
+    document.querySelectorAll('.upload-date, #upload-date, [id*="upload"]').forEach(el => {
+      if(el.tagName !== 'INPUT') el.textContent = 'Atualizado: ' + atualizado;
+    });
+
+    n('nc-prazos', S.prazos.length);
+    if(typeof window.renderAll === 'function') window.renderAll();
+    if(S.aud && S.aud.length){
+      if(typeof popAud==='function') popAud();
+      if(typeof renderAudDet==='function') renderAudDet();
+    }
+    if(typeof window.renderMeuPainelSomente === 'function') window.renderMeuPainelSomente();
+    if(typeof window.renderMP === 'function') window.renderMP();
+
+    return true;
+
+  } catch(err) {
+    console.warn('⚠️ Supabase falhou, usando cache local:', err.message);
+    // Fallback: usa localStorage se Supabase não responder
+    return restaurarUltimaPlanilha();
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function(){
   setTimeout(function(){
     controlarAbas();
-    
-    // ✅ Carregar justificativas do Supabase
     carregarJustificativasSupabase();
-    
-    // Restaurar planilha
-    var restaurou = restaurarUltimaPlanilha();
-    
-    // Se restaurou, forçar renderização
-    if(restaurou && typeof window.renderAll === 'function'){
-      setTimeout(function(){
-        window.renderAll();
-        // Renderizar audiências restauradas
-        if(S.aud && S.aud.length){
-          if(typeof popAud==='function') popAud();
-          if(typeof renderAudDet==='function') renderAudDet();
-          if(typeof popCancel==='function') popCancel();
-          if(typeof renderCancel==='function') renderCancel();
-          n('nc-aud', S.aud.length);
-          n('nc-cancel', (S.cancel||[]).length);
-        }
-        if(typeof window.renderMeuPainelSomente === 'function'){
-          window.renderMeuPainelSomente();
-        }
-        if(typeof window.renderMP === 'function'){
-          window.renderMP();
-        }
-      }, 200);
-    }
-  }, 800); 
+
+    // Busca prazos do Supabase (com fallback para localStorage)
+    carregarPrazosSupabase().then(function(ok){
+      if(ok && typeof window.renderAll === 'function'){
+        setTimeout(function(){
+          window.renderAll();
+          if(S.aud && S.aud.length){
+            if(typeof popAud==='function') popAud();
+            if(typeof renderAudDet==='function') renderAudDet();
+            if(typeof popCancel==='function') popCancel();
+            if(typeof renderCancel==='function') renderCancel();
+            n('nc-aud', S.aud.length);
+            n('nc-cancel', (S.cancel||[]).length);
+          }
+          if(typeof window.renderMeuPainelSomente === 'function') window.renderMeuPainelSomente();
+          if(typeof window.renderMP === 'function') window.renderMP();
+        }, 200);
+      }
+    });
+  }, 800);
 });
 
 // ✅ CARREGAR JUSTIFICATIVAS DO SUPABASE
