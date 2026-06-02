@@ -3740,11 +3740,12 @@ document.addEventListener('DOMContentLoaded', function(){
       }
     });
 
-    // Refresh automático a cada 20 minutos — atualiza mesmo com página aberta
+    // Refresh automático a cada 10 minutos — atualiza mesmo com página aberta
     setInterval(function(){
       console.log('🔄 Refresh automático do Supabase...');
       carregarPrazosSupabase();
-    }, 20 * 60 * 1000); // 20 minutos
+      if(typeof window.renderMeuPainelSomente === 'function') window.renderMeuPainelSomente();
+    }, 10 * 60 * 1000); // 10 minutos
 
   }, 800);
 });
