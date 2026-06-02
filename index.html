@@ -3661,7 +3661,7 @@ async function carregarPrazosSupabase() {
       else if (diff === 0) status = 'Fatal';
       else if (diff === 1) status = 'D-1';
       else if (diff === 2) status = 'D-2';
-      else                 status = 'Futuro';
+      else                 status = 'Pendente';
       return {...r, status, dias_restantes: diff};
     });
 
@@ -5438,7 +5438,7 @@ function renderFatais() {
   const srch=(V('fatal-s')?.value||'').toLowerCase();
   const resp=V('fatal-resp')?.value||'';
   const grupo=V('fatal-grupo')?.value||'';
-  let data=applyGF(S.prazos).filter(r=>statusEh(r.status, 'Fatal'));
+  let data=applyGF(S.prazos).filter(r=>statusEh(r.status, 'Fatal')||statusEh(r.status, 'Vencido'));
   if(resp)  data=data.filter(r=>r.responsavel===resp);
   if(grupo) data=data.filter(r=>r.grupo_processo===grupo);
   if(srch)  data=data.filter(r=>[r.responsavel,r.numero_processo,r.cliente,r.descricao_tarefa].join(' ').toLowerCase().includes(srch));
