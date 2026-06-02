@@ -3623,7 +3623,7 @@ async function carregarPrazosSupabase() {
 
   // Limpa IndexedDB para forcar leitura do Supabase
   try {
-    ['peixoto','agendas','dashboard','pc','prazos'].forEach(function(dbName){
+    ['peixoto','agendas','dashboard','pc','prazos','PC_Database'].forEach(function(dbName){
       var req = indexedDB.deleteDatabase(dbName);
       req.onsuccess = function(){ console.log('IndexedDB limpo:', dbName); };
     });
