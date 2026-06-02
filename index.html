@@ -3691,6 +3691,8 @@ async function carregarPrazosSupabase() {
     });
 
     n('nc-prazos', S.prazos.length);
+    if(typeof popGlobal === 'function') popGlobal();
+    if(typeof popFatal  === 'function') popFatal();
     if(typeof window.renderAll === 'function') window.renderAll();
     if(S.aud && S.aud.length){
       if(typeof popAud==='function') popAud();
