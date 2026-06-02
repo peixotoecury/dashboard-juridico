@@ -7038,7 +7038,23 @@ document.addEventListener('DOMContentLoaded', function(){
     if(tipo.includes('agenda')) return 'agenda';
     return 'prazo';
   }
-  function status(row){ return txt(pick(row,['status','Status','situação','situacao'])); }
+  function status(row){
+    // Recalcula pelo campo data para garantir status sempre correto
+    const dataVal = row['data'] || row['Data'] || row['DATA'] || '';
+    if (dataVal) {
+      const d = parseDateAny ? parseDateAny(dataVal) : null;
+      if (d && !isNaN(d)) {
+        const hoje = new Date(); hoje.setHours(0,0,0,0);
+        const diff = Math.round((d - hoje) / 86400000);
+        if (diff < -1) return 'Vencido';
+        if (diff === -1) return 'Fatal';
+        if (diff === 0)  return 'D-1';
+        if (diff === 1)  return 'D-2';
+        return 'Futuro';
+      }
+    }
+    return txt(pick(row,['status','Status','situação','situacao']));
+  }
   function set(id,v){ const el=document.getElementById(id); if(el) el.textContent=v; }
   function width(id,p){ const el=document.getElementById(id); if(el) el.style.width=p+'%'; }
 
@@ -7497,7 +7513,23 @@ document.addEventListener('DOMContentLoaded', function(){
     return {prazos, agendas, equipe, aud};
   }
 
-  function status(row){ return txt(pick(row,['status','Status','situação','situacao'])); }
+  function status(row){
+    // Recalcula pelo campo data para garantir status sempre correto
+    const dataVal = row['data'] || row['Data'] || row['DATA'] || '';
+    if (dataVal) {
+      const d = parseDateAny ? parseDateAny(dataVal) : null;
+      if (d && !isNaN(d)) {
+        const hoje = new Date(); hoje.setHours(0,0,0,0);
+        const diff = Math.round((d - hoje) / 86400000);
+        if (diff < -1) return 'Vencido';
+        if (diff === -1) return 'Fatal';
+        if (diff === 0)  return 'D-1';
+        if (diff === 1)  return 'D-2';
+        return 'Futuro';
+      }
+    }
+    return txt(pick(row,['status','Status','situação','situacao']));
+  }
   function set(id,v){ const el=document.getElementById(id); if(el) el.textContent=v; }
   function width(id,p){ const el=document.getElementById(id); if(el) el.style.width=p+'%'; }
 
