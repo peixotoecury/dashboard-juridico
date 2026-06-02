@@ -6393,7 +6393,7 @@ const USUARIOS = {
   'rodrigo.nishijima': { senha: 'pc@rsn', nivel: 'usuario', nome: 'Rodrigo Souichi Nishijima', sigla: 'RSN' },
   'rafaella.domenicis': { senha: 'pc@rwd', nivel: 'usuario', nome: 'Rafaella Wittmann Domenicis', sigla: 'RWD' },
   'rafael.lago': { senha: 'pc@ryl', nivel: 'usuario', nome: 'Rafael Yepez do Lago', sigla: 'RYL' },
-  'sofia.freire': { senha: 'pc@sof', nivel: 'admin', nome: 'Sofia Freire', sigla: 'SOF' },
+  'sofia.freire': { senha: '123456', nivel: 'admin', nome: 'Sofia Freire', sigla: 'SOF' },
   'thais.esteves': { senha: 'pc@tce', nivel: 'usuario', nome: 'Thais Catharine Cardozo Esteves', sigla: 'TCE' },
   'tamireslins.costa': { senha: 'pc@tco', nivel: 'usuario', nome: 'Tamires Lins Costa', sigla: 'TCO' },
   'thiago.rossi': { senha: 'pc@tfr', nivel: 'usuario', nome: 'Thiago Frid Figueiredo Rossi', sigla: 'TFR' },
@@ -6425,12 +6425,16 @@ function doLogin() {
   const senha  = (V('inp-senha').value||'').trim();
   const lembrar = document.getElementById('chk-lembrar')?.checked;
 
-  // Sincroniza USUARIOS com localStorage antes de tentar login
+  // Sincroniza USUARIOS com localStorage — mas NÃO sobrescreve admins hardcoded
+  const _adminsFixos = ['controladoria','coord','sofia.freire','antoniocarlos.aguiar',
+    'beatriz.rodrigues','bianca.camacho','gisela.freire','keyla.moraes','marcel.alves',
+    'marina.brechiani','natalia.gaggini','poliana.banqueri','washington.soares'];
   try {
     const saved = localStorage.getItem('pc_usuarios_v1');
     if(saved) {
       const users = JSON.parse(saved);
       users.filter(u=>u.status==='Ativo').forEach(u=>{
+        if(_adminsFixos.includes((u.login||'').toLowerCase())) return; // protege admins
         USUARIOS[u.login] = { senha: u.senha, nivel: u.nivel, nome: u.nome, sigla: u.sigla };
       });
     }
@@ -6634,7 +6638,9 @@ function salvarNovaSenha() {
 
 function aplicarAcesso() {
   if (!SESSAO) return;
-  const isAdmin = SESSAO.nivel === 'admin';
+  // Verifica por nível OU por login fixo (garante acesso mesmo se localStorage sobrescreveu o nível)
+  const _loginsAdmin = ['controladoria','coord','antoniocarlos.aguiar','beatriz.rodrigues','bianca.camacho','gisela.freire','keyla.moraes','marcel.alves','marina.brechiani','natalia.gaggini','poliana.banqueri','sofia.freire','washington.soares'];
+  const isAdmin = SESSAO.nivel === 'admin' || _loginsAdmin.includes((SESSAO.login || '').toLowerCase());
   // Remove banner de privacidade imediatamente se for admin
   if (isAdmin) document.querySelectorAll('.aviso-privacidade').forEach(el => el.remove());
   // Sincroniza usuários do localStorage com o sistema de login
@@ -9143,79 +9149,58 @@ document.addEventListener('DOMContentLoaded', function(){
     localStorage.setItem('pc_ultima_atualizacao', new Date().toISOString());
   }
 
+  const GITHUB_DADOS_URL = 'https://raw.githubusercontent.com/peixotoecury/dashboard-juridico/main/dados.json';
+
   async function carregarBaseOnline(silencioso){
-    if(!window.supabaseClient || carregandoRealtime) return;
+    if(carregandoRealtime) return;
     carregandoRealtime = true;
 
-    // Mostra spinner apenas no carregamento inicial (não no polling)
     const ov = document.getElementById('ov');
     const ovTxt = document.querySelector('.loading-txt');
     if(!silencioso && ov) ov.style.display = 'flex';
     if(!silencioso && ovTxt) ovTxt.textContent = 'Carregando dados...';
 
     try{
-      // Busca todas as linhas em páginas de 1000 (limite padrão do Supabase)
-      const PAGINA = 1000;
-      let todasLinhas = [];
-      let from = 0;
-      while(true){
-        if(ovTxt) ovTxt.textContent = 'Carregando dados... (' + todasLinhas.length + ' registros)';
-        const { data, error } = await supabaseClient
-          .from(TABELA_BASE)
-          .select('dados')
-          .order('id', { ascending:true })
-          .range(from, from + PAGINA - 1);
-        if(error) throw error;
-        const lote = (data || []).map(x => x.dados);
-        todasLinhas = todasLinhas.concat(lote);
+      // Busca dados.json do GitHub (sem cache — cache-busting com timestamp)
+      const resp = await fetch(GITHUB_DADOS_URL + '?t=' + Date.now());
+      if(!resp.ok) throw new Error('HTTP ' + resp.status);
+      const payload = await resp.json();
+      const todasLinhas = payload.dados || [];
 
-        // Renderiza parcialmente após o 1º lote — só no carregamento inicial
-        if(!silencioso && from === 0 && lote.length > 0){
-          pcSepararRows(todasLinhas);
-          if(ov) ov.style.display = 'none';
-          pcAtualizarTela('Base online — Supabase');
-        }
-
-        if(lote.length < PAGINA) break; // última página
-        from += PAGINA;
+      // Se o cache local tem data diferente do GitHub, limpa tudo para evitar dados misturados
+      const dataGithub = payload.atualizado_em || '';
+      const dataCacheLocal = localStorage.getItem('pc_dados_data') || '';
+      if(dataGithub && dataGithub !== dataCacheLocal){
+        ['pc_raw','pc_prazos','pc_agendas','pc_equipe','_lastPlanilha'].forEach(k => localStorage.removeItem(k));
+        localStorage.setItem('pc_dados_data', dataGithub);
       }
-      if(!todasLinhas.length){ 
-        if(ov) ov.style.display = 'none';
-        if(ovTxt) ovTxt.textContent = 'Processando planilha...';
+
+      if(!todasLinhas.length){
+        if(!silencioso && ov) ov.style.display = 'none';
         return;
       }
 
-      if(silencioso){
-        // Modo silencioso: só atualiza dados em memória, NUNCA renderiza
-        // A tela fica estável — o usuário vê a atualização na próxima navegação
-        S.raw    = normalizarChaves(todasLinhas);
-        S.prazos = S.raw.filter(r => (r.tipo_agenda||'').trim() === 'Prazo');
-        S.agendas= S.raw.filter(r => (r.tipo_agenda||'').trim() === 'Agenda');
-        S.equipe = S.raw.filter(r => (r.tipo_agenda||'').trim().startsWith('Agenda Equipe'));
-        console.log('Dados atualizados em memória:', S.raw.length, 'registros');
-        // Persiste no IndexedDB para a próxima carga não cair nos dados embutidos
-        try {
-          if(typeof IndexedDBHelper !== 'undefined' && IndexedDBHelper.salvar) {
-            IndexedDBHelper.salvar('raw',    S.raw);
-            IndexedDBHelper.salvar('prazos', S.prazos);
-            IndexedDBHelper.salvar('agendas',S.agendas);
-            IndexedDBHelper.salvar('equipe', S.equipe);
-            IndexedDBHelper.salvar('data_upload', new Date().toISOString());
-          }
-          try {
-            localStorage.setItem('pc_raw',    JSON.stringify(S.raw));
-            localStorage.setItem('pc_prazos', JSON.stringify(S.prazos));
-            localStorage.setItem('pc_agendas',JSON.stringify(S.agendas));
-            localStorage.setItem('pc_equipe', JSON.stringify(S.equipe));
-          } catch(e) {}
-        } catch(e) {}
-      } else {
-        // Carregamento inicial: renderiza normalmente
-        pcSepararRows(todasLinhas);
-        pcAtualizarTela('Base online — Supabase');
+      // Detecta se houve mudança real antes de re-renderizar no polling
+      const dataArquivo = payload.atualizado_em || '';
+      if(silencioso && dataArquivo && dataArquivo === window.__pcUltimaAttGithub){
+        return; // sem mudança, evita re-render desnecessário
       }
+      window.__pcUltimaAttGithub = dataArquivo;
+
+      pcSepararRows(todasLinhas);
+      if(!silencioso) pcAtualizarTela('Base online — GitHub');
+      else {
+        // Atualização em background: re-renderiza para refletir novos dados
+        setTimeout(function(){
+          if(typeof window.renderAll === 'function') window.renderAll();
+          if(typeof window.popGlobal === 'function') window.popGlobal();
+          if(typeof window.popFatal === 'function') window.popFatal();
+          if(typeof window.popAud === 'function') window.popAud();
+        }, 300);
+      }
+
     }catch(err){
-      console.error('Erro ao carregar base online:', JSON.stringify(err), err.message, err.code, err.details, err.hint);
+      console.error('[PC] Erro ao carregar dados.json do GitHub:', err.message);
     }finally{
       carregandoRealtime = false;
       if(!silencioso && ov) ov.style.display = 'none';
@@ -9328,45 +9313,26 @@ document.addEventListener('DOMContentLoaded', function(){
   window.loadPrazos  = window.__pcRealtimeLoadPrazos;
   window.qgLoadPrazos = function(inp){ return processarUploadPrazosRealtime(inp, true); };
 
+  // Carrega dados do GitHub assim que o DOM estiver pronto — sem depender do Supabase
   document.addEventListener('DOMContentLoaded', function(){
-    // Reafirma override após DOM pronto
     window.loadPrazos = window.__pcRealtimeLoadPrazos;
-    // NÃO chama carregarBaseOnline aqui — Supabase ainda não carregou.
-    // O onload do script Supabase (no final do body) chama iniciarRealtimeSupabase().
-  });
-
-  // Chamado pelo onload do script Supabase — cliente garantidamente pronto
-  window.iniciarRealtimeSupabase = function(){
     carregarBaseOnline();
-    // Polling a cada 5 minutos — só busca dados novos se houver mudança
-    // NUNCA re-renderiza automaticamente: só atualiza S em memória
-    // A tela atualiza quando o usuário faz upload ou navega entre abas
+
+    // Polling a cada 5 minutos
     if(!window.__pcPollingInterval){
-      window.__pcPollingInterval = setInterval(async function(){
-        if(!window.supabaseClient) return;
-        try {
-          const { data } = await window.supabaseClient
-            .from(TABELA_BASE)
-            .select('atualizado_em')
-            .order('atualizado_em', { ascending: false })
-            .limit(1);
-          const ultimaAtt = data && data[0] ? data[0].atualizado_em : null;
-          if(ultimaAtt && ultimaAtt !== window.__pcUltimaAttSupabase){
-            window.__pcUltimaAttSupabase = ultimaAtt;
-            // Só baixa os dados — NÃO renderiza
-            carregarBaseOnline(true);
-          }
-        } catch(e){}
-      }, 300000); // 5 minutos
+      window.__pcPollingInterval = setInterval(function(){
+        carregarBaseOnline(true);
+      }, 300000);
     }
 
-    // Atualiza silenciosamente quando o usuário volta à aba
+    // Recarrega ao voltar para a aba
     document.addEventListener('visibilitychange', function(){
-      if(document.visibilityState === 'visible' && window.supabaseClient){
-        carregarBaseOnline(true);
-      }
+      if(document.visibilityState === 'visible') carregarBaseOnline(true);
     });
-  };
+  });
+
+  // Mantém compatibilidade — chamado pelo onload do Supabase, mas dados já carregaram
+  window.iniciarRealtimeSupabase = function(){ /* dados já carregados via DOMContentLoaded */ };
 })();
 </script>
 
