@@ -9108,6 +9108,26 @@ document.addEventListener('DOMContentLoaded', function(){
 
   function pcSepararRows(rows){
     S.raw = normalizarChaves(rows);
+
+    // Recalcula status pela data (Fatal=ontem, D-1=hoje, D-2=amanhã)
+    const _hoje = new Date(); _hoje.setHours(0,0,0,0);
+    S.raw = S.raw.map(function(r){
+      const dv = r.data || r['Data'] || r['DATA'] || '';
+      if (!dv) return r;
+      const iso = String(dv).match(/^(\d{4})-(\d{2})-(\d{2})/);
+      if (!iso) return r;
+      const d = new Date(+iso[1], +iso[2]-1, +iso[3]);
+      if (isNaN(d)) return r;
+      const diff = Math.round((d - _hoje) / 86400000);
+      let status;
+      if      (diff < -1)   status = 'Vencido';
+      else if (diff === -1) status = 'Fatal';
+      else if (diff === 0)  status = 'D-1';
+      else if (diff === 1)  status = 'D-2';
+      else                  status = 'Futuro';
+      return Object.assign({}, r, {status: status, dias_restantes: diff});
+    });
+
     // Aceita "tipo_agenda" (underscore) e "tipo agenda" (espaço) para compatibilidade com diferentes templates de planilha
     const _getTa = r => (r.tipo_agenda || r['tipo agenda'] || r.tipo || '').trim();
     S.prazos  = S.raw.filter(r => _getTa(r) === 'Prazo');
