@@ -6622,7 +6622,9 @@ document.addEventListener('DOMContentLoaded', function(){
     const savedAgendas = localStorage.getItem('pc_agendas');
     const savedEquipe = localStorage.getItem('pc_equipe');
     
-    if(savedRaw && savedPrazos){
+    // Só usa o cache local se o Supabase AINDA não trouxe o dado ao vivo.
+    // Caso contrário o cache (que pode estar velho) sobrescreveria o Meu Painel.
+    if(savedRaw && savedPrazos && !window._supabaseCarregado){
       const _hj1 = new Date(); _hj1.setHours(0,0,0,0);
       function _restat(arr){ return (arr||[]).map(function(r){
         const dv=r.data||r['Data']||''; if(!dv) return r;
@@ -6636,10 +6638,11 @@ document.addEventListener('DOMContentLoaded', function(){
       S.prazos = _restat(JSON.parse(savedPrazos));
       S.agendas= _restat(JSON.parse(savedAgendas || '[]'));
       S.equipe = _restat(JSON.parse(savedEquipe  || '[]'));
-      console.log('✅ Dados restaurados:', S.prazos.length, 'prazos,', S.agendas.length, 'agendas');
-      
-      // Renderizar após delay
+      console.log('✅ Dados restaurados do cache local:', S.prazos.length, 'prazos (provisório até o Supabase)');
+
+      // Renderiza só se o Supabase ainda não chegou (evita mostrar cache velho)
       setTimeout(() => {
+        if(window._supabaseCarregado) return;  // Supabase já trouxe dado fresco
         if(typeof popGlobal === 'function') popGlobal();
         if(typeof popFatal === 'function') popFatal();
         if(typeof renderAll === 'function') renderAll();
