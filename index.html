@@ -7157,7 +7157,7 @@ document.addEventListener('DOMContentLoaded', function(){
       if (!d) { const br = dataVal.match(/^(\d{2})\/(\d{2})\/(\d{4})/); if (br) d = new Date(+br[3], +br[2]-1, +br[1]); }
       if (d && !isNaN(d)) {
         const hoje = new Date(); hoje.setHours(0,0,0,0);
-        const diff = Math.round((d - hoje) / 86400000);
+        const diff = diasUteisDiff(d, hoje);
         if (diff < -1) return 'Vencido';
         if (diff === -1) return 'Fatal';
         if (diff === 0)  return 'D-1';
@@ -7634,7 +7634,7 @@ document.addEventListener('DOMContentLoaded', function(){
       if (!d) { const br = dataVal.match(/^(\d{2})\/(\d{2})\/(\d{4})/); if (br) d = new Date(+br[3], +br[2]-1, +br[1]); }
       if (d && !isNaN(d)) {
         const hoje = new Date(); hoje.setHours(0,0,0,0);
-        const diff = Math.round((d - hoje) / 86400000);
+        const diff = diasUteisDiff(d, hoje);
         if (diff < -1) return 'Vencido';
         if (diff === -1) return 'Fatal';
         if (diff === 0)  return 'D-1';
