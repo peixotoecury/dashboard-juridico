@@ -3572,10 +3572,15 @@ function controlarAbas(){
 // Chamar ao carregar
 // ── RESTAURAR ÚLTIMA PLANILHA AO CARREGAR ──
 function restaurarUltimaPlanilha(){
+  // Se o Supabase já trouxe dado ao vivo, NÃO sobrescreve com cache local (pode estar velho).
+  if(window._supabaseCarregado && S.prazos && S.prazos.length){
+    console.log('⏭️ Supabase ao vivo já carregado — ignorando cache local.');
+    return true;
+  }
   try{
     var salvo = localStorage.getItem('_lastPlanilha');
     console.log('🔍 Procurando planilha salva...', salvo ? 'ENCONTRADA' : 'NÃO ENCONTRADA');
-    
+
     if(salvo){
       var obj = JSON.parse(salvo);
       if(obj && obj.data && Array.isArray(obj.data) && obj.data.length > 0){
