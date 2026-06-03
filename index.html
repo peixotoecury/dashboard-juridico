@@ -3585,7 +3585,7 @@ function restaurarUltimaPlanilha(){
         // Restaurar audiências salvas separadamente
         try {
           var savedAud = localStorage.getItem('pc_aud');
-          if(savedAud) S.aud = JSON.parse(savedAud);
+          if(savedAud) S.aud = recalcularStatusAudiencias(JSON.parse(savedAud));
           var savedCancel = localStorage.getItem('pc_cancel');
           if(savedCancel) S.cancel = JSON.parse(savedCancel);
           if(S.aud && S.aud.length) console.log('✅ Audiências restauradas: ' + S.aud.length + ' registros');
@@ -3613,6 +3613,93 @@ function salvarPlanilhaAtualEmLS(){
     }
   }catch(e){
     console.log('Erro ao salvar planilha:', e);
+  }
+}
+
+// ── RECALCULA STATUS DE AUDIÊNCIAS COM DIAS ÚTEIS ────────────────────────────
+function recalcularStatusAudiencias(arr) {
+  if (!arr || !arr.length) return arr;
+  const hoje = new Date(); hoje.setHours(0,0,0,0);
+  return arr.map(function(r) {
+    const raw = r.data || r.Data || r.DATA || r['Data'] || '';
+    if (!raw) return r;
+    let d = null;
+    if (raw instanceof Date) { d = new Date(raw); d.setHours(0,0,0,0); }
+    else {
+      const s = String(raw);
+      const iso = s.match(/^(\d{4})-(\d{2})-(\d{2})/);
+      if (iso) d = new Date(+iso[1], +iso[2]-1, +iso[3]);
+      else { const br = s.match(/^(\d{2})\/(\d{2})\/(\d{4})/); if (br) d = new Date(+br[3], +br[2]-1, +br[1]); }
+    }
+    if (!d || isNaN(d)) return r;
+    const diff = diasUteisDiff(d, hoje);
+    let status;
+    if      (diff < -1)   status = 'Vencido';
+    else if (diff === -1) status = 'Fatal';
+    else if (diff === 0)  status = 'D-1';
+    else if (diff === 1)  status = 'D-2';
+    else                  status = 'Futuro';
+    return Object.assign({}, r, {status: status, dias_restantes: diff});
+  });
+}
+
+// ── AUTO-REFRESH DE AUDIÊNCIAS DO GITHUB ─────────────────────────────────────
+async function carregarAudienciasGithub(silencioso) {
+  const url = localStorage.getItem('pc_github_audiencias') ||
+              'https://raw.githubusercontent.com/peixotoecury/dashboard-juridico/main/Pauta_de_Audiencias.xlsx';
+  try {
+    const resp = await fetch(url + '?t=' + Date.now(), {cache: 'no-store'});
+    if (!resp.ok) throw new Error('HTTP ' + resp.status);
+    const buf = await resp.arrayBuffer();
+    const wb  = XLSX.read(buf, {type: 'array', cellDates: true});
+    const ws  = wb.Sheets[wb.SheetNames[0]];
+    const raw = XLSX.utils.sheet_to_json(ws, {defval: '', header: 1});
+
+    // Detecta linha de cabeçalho
+    let hdr = 0;
+    for (let i = 0; i < Math.min(5, raw.length); i++) {
+      if (raw[i].some(c => String(c).match(/[Cc]ódigo|[Pp]rocesso|[Pp]arte|[Tt]ipo|[Dd]ata/))) { hdr = i; break; }
+    }
+    const cols = raw[hdr];
+    const rows = raw.slice(hdr + 1)
+      .filter(r => r.some(c => c !== ''))
+      .map(r => { const o = {}; cols.forEach((c, i) => o[String(c).trim()] = r[i] !== undefined ? r[i] : ''); return o; });
+
+    // Normaliza chaves para lowercase
+    const norm = rows.map(r => { const n = {}; Object.keys(r).forEach(k => n[k.toLowerCase().replace(/\s+/g,'_')] = r[k]); return n; });
+
+    S.aud = recalcularStatusAudiencias(norm);
+
+    // Canceladas / Redesignadas (aba 2 se existir)
+    if (wb.SheetNames.length > 1) {
+      const ws2 = wb.Sheets[wb.SheetNames[1]];
+      S.cancel = XLSX.utils.sheet_to_json(ws2, {defval: '', cellDates: true});
+    }
+
+    try {
+      localStorage.setItem('pc_aud', JSON.stringify(S.aud));
+      if (S.cancel) localStorage.setItem('pc_cancel', JSON.stringify(S.cancel));
+    } catch(e) {}
+
+    n('nc-aud', S.aud.length);
+    n('nc-cancel', (S.cancel||[]).length);
+    if (typeof popAud       === 'function') popAud();
+    if (typeof popCancel    === 'function') popCancel();
+    if (typeof renderAudDet === 'function') renderAudDet();
+    if (typeof renderCancel === 'function') renderCancel();
+    if (typeof window.renderMP === 'function') window.renderMP();
+
+    if (!silencioso) console.log('✅ Audiências GitHub: ' + S.aud.length + ' registros');
+    return true;
+  } catch(err) {
+    // Fallback: recalcula status das audiências já em memória
+    if (S.aud && S.aud.length) {
+      S.aud = recalcularStatusAudiencias(S.aud);
+      if (typeof popAud       === 'function') popAud();
+      if (typeof renderAudDet === 'function') renderAudDet();
+    }
+    if (!silencioso) console.warn('⚠️ Audiências GitHub falhou:', err.message);
+    return false;
   }
 }
 
@@ -3732,30 +3819,22 @@ document.addEventListener('DOMContentLoaded', function(){
     controlarAbas();
     carregarJustificativasSupabase();
 
-    // Busca prazos do Supabase (com fallback para localStorage)
-    carregarPrazosSupabase().then(function(ok){
-      if(ok && typeof window.renderAll === 'function'){
-        setTimeout(function(){
-          window.renderAll();
-          if(S.aud && S.aud.length){
-            if(typeof popAud==='function') popAud();
-            if(typeof renderAudDet==='function') renderAudDet();
-            if(typeof popCancel==='function') popCancel();
-            if(typeof renderCancel==='function') renderCancel();
-            n('nc-aud', S.aud.length);
-            n('nc-cancel', (S.cancel||[]).length);
-          }
-          if(typeof window.renderMeuPainelSomente === 'function') window.renderMeuPainelSomente();
-          if(typeof window.renderMP === 'function') window.renderMP();
-        }, 200);
-      }
+    // Busca prazos do Supabase + audiências do GitHub em paralelo
+    Promise.all([
+      carregarPrazosSupabase(),
+      carregarAudienciasGithub(true)
+    ]).then(function(){
+      setTimeout(function(){
+        if(typeof window.renderAll === 'function') window.renderAll();
+        if(typeof window.renderMP  === 'function') window.renderMP();
+      }, 200);
     });
 
-    // Refresh automático a cada 10 minutos — atualiza mesmo com página aberta
+    // Refresh automático a cada 10 minutos — prazos + audiências juntos
     setInterval(function(){
-      console.log('🔄 Refresh automático do Supabase...');
+      console.log('🔄 Refresh automático — prazos + audiências...');
       carregarPrazosSupabase();
-      if(typeof window.renderMeuPainelSomente === 'function') window.renderMeuPainelSomente();
+      carregarAudienciasGithub(true);
     }, 10 * 60 * 1000); // 10 minutos
 
   }, 800);
