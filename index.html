@@ -3661,14 +3661,12 @@ async function carregarAudienciasGithub(silencioso) {
       if (raw[i].some(c => String(c).match(/[Cc]ódigo|[Pp]rocesso|[Pp]arte|[Tt]ipo|[Dd]ata/))) { hdr = i; break; }
     }
     const cols = raw[hdr];
+    // Mantém nomes de coluna originais ("Data", "Tipo Agendamento"...) iguais ao upload manual
     const rows = raw.slice(hdr + 1)
       .filter(r => r.some(c => c !== ''))
       .map(r => { const o = {}; cols.forEach((c, i) => o[String(c).trim()] = r[i] !== undefined ? r[i] : ''); return o; });
 
-    // Normaliza chaves para lowercase
-    const norm = rows.map(r => { const n = {}; Object.keys(r).forEach(k => n[k.toLowerCase().replace(/\s+/g,'_')] = r[k]); return n; });
-
-    S.aud = recalcularStatusAudiencias(norm);
+    S.aud = recalcularStatusAudiencias(rows);
 
     // Canceladas / Redesignadas (aba 2 se existir)
     if (wb.SheetNames.length > 1) {
