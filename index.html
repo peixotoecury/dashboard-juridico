@@ -9385,60 +9385,12 @@ document.addEventListener('DOMContentLoaded', function(){
   const GITHUB_DADOS_URL = 'https://raw.githubusercontent.com/peixotoecury/dashboard-juridico/data/dados.json';
 
   async function carregarBaseOnline(silencioso){
-    if(carregandoRealtime) return;
-    carregandoRealtime = true;
-
-    const ov = document.getElementById('ov');
-    const ovTxt = document.querySelector('.loading-txt');
-    if(!silencioso && ov) ov.style.display = 'flex';
-    if(!silencioso && ovTxt) ovTxt.textContent = 'Carregando dados...';
-
-    try{
-      // Busca dados.json do GitHub (sem cache — cache-busting com timestamp)
-      const resp = await fetch(GITHUB_DADOS_URL + '?t=' + Date.now());
-      if(!resp.ok) throw new Error('HTTP ' + resp.status);
-      const payload = await resp.json();
-      const todasLinhas = payload.dados || [];
-
-      // Se o cache local tem data diferente do GitHub, limpa tudo para evitar dados misturados
-      const dataGithub = payload.atualizado_em || '';
-      const dataCacheLocal = localStorage.getItem('pc_dados_data') || '';
-      if(dataGithub && dataGithub !== dataCacheLocal){
-        ['pc_raw','pc_prazos','pc_agendas','pc_equipe','_lastPlanilha'].forEach(k => localStorage.removeItem(k));
-        localStorage.setItem('pc_dados_data', dataGithub);
-      }
-
-      if(!todasLinhas.length){
-        if(!silencioso && ov) ov.style.display = 'none';
-        return;
-      }
-
-      // Detecta se houve mudança real antes de re-renderizar no polling
-      const dataArquivo = payload.atualizado_em || '';
-      if(silencioso && dataArquivo && dataArquivo === window.__pcUltimaAttGithub){
-        return; // sem mudança, evita re-render desnecessário
-      }
-      window.__pcUltimaAttGithub = dataArquivo;
-
-      pcSepararRows(todasLinhas);
-      if(!silencioso) pcAtualizarTela('Base online — GitHub');
-      else {
-        // Atualização em background: re-renderiza para refletir novos dados
-        setTimeout(function(){
-          if(typeof window.renderAll === 'function') window.renderAll();
-          if(typeof window.popGlobal === 'function') window.popGlobal();
-          if(typeof window.popFatal === 'function') window.popFatal();
-          if(typeof window.popAud === 'function') window.popAud();
-        }, 300);
-      }
-
-    }catch(err){
-      console.error('[PC] Erro ao carregar dados.json do GitHub:', err.message);
-    }finally{
-      carregandoRealtime = false;
-      if(!silencioso && ov) ov.style.display = 'none';
-      if(!silencioso && ovTxt) ovTxt.textContent = 'Processando planilha...';
+    // DESATIVADO: o dados.json é gerado do Excel (defasado) e sobrescrevia o
+    // dado ao vivo. A fonte única é o Supabase (prazos_agendas), em tempo real.
+    if(typeof carregarPrazosSupabase === 'function'){
+      try { await carregarPrazosSupabase(); } catch(e){ console.warn('Supabase falhou:', e.message); }
     }
+    return;
   }
 
   function pcHoraUpload(){
