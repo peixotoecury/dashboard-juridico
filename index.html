@@ -3616,6 +3616,22 @@ function salvarPlanilhaAtualEmLS(){
   }
 }
 
+// ── CÁLCULO DE DIAS ÚTEIS (ignora sábado/domingo) ────────────────────────────
+function diasUteisDiff(dataDate, hoje) {
+  const calDiff = Math.round((dataDate - hoje) / 86400000);
+  if (Math.abs(calDiff) > 14) return calDiff;
+  if (calDiff === 0) return 0;
+  const step = calDiff > 0 ? 1 : -1;
+  let count = 0;
+  const cur = new Date(hoje);
+  while (cur.getTime() !== dataDate.getTime()) {
+    cur.setDate(cur.getDate() + step);
+    const dow = cur.getDay(); // 0=dom, 6=sab
+    if (dow !== 0 && dow !== 6) count += step;
+  }
+  return count;
+}
+
 // ── BUSCAR PRAZOS DO SUPABASE (fonte principal) ──────────────────────────────
 async function carregarPrazosSupabase() {
   const SUPA_URL = 'https://kgyeeuynerhpaqlhqwkx.supabase.co';
@@ -3650,18 +3666,18 @@ async function carregarPrazosSupabase() {
 
     console.log(`✅ Supabase: ${todos.length} registros recebidos`);
 
-    // Recalcula status com base na data atual (garante precisão diária)
+    // Recalcula status usando dias úteis (ignora sábado/domingo — fatal da segunda = sexta)
     const hoje = new Date(); hoje.setHours(0,0,0,0);
     todos = todos.map(r => {
       const d = r.data ? new Date(r.data + 'T00:00:00') : null;
       if (!d) return r;
-      const diff = Math.round((d - hoje) / 86400000);
+      const diff = diasUteisDiff(d, hoje);
       let status;
-      if      (diff < 0)  status = 'Vencido';
-      else if (diff === 0) status = 'Fatal';
-      else if (diff === 1) status = 'D-1';
-      else if (diff === 2) status = 'D-2';
-      else                 status = 'Pendente';
+      if      (diff < -1)   status = 'Vencido';
+      else if (diff === -1) status = 'Fatal';
+      else if (diff === 0)  status = 'D-1';
+      else if (diff === 1)  status = 'D-2';
+      else                  status = 'Futuro';
       return {...r, status, dias_restantes: diff};
     });
 
@@ -3699,11 +3715,6 @@ async function carregarPrazosSupabase() {
     if(typeof window.renderMeuPainelSomente === 'function') window.renderMeuPainelSomente();
     if(typeof window.renderMP === 'function') window.renderMP();
 
-    // Mostra hora da última atualização
-    const horaAtual = new Date().toLocaleTimeString('pt-BR', {hour:'2-digit', minute:'2-digit'});
-    document.querySelectorAll('[data-sync-hora]').forEach(el => el.textContent = 'Atualizado às ' + horaAtual);
-    console.log('✅ Supabase atualizado às ' + horaAtual);
-
     return true;
 
   } catch(err) {
@@ -3718,7 +3729,7 @@ document.addEventListener('DOMContentLoaded', function(){
     controlarAbas();
     carregarJustificativasSupabase();
 
-    // Busca prazos do Supabase ao abrir
+    // Busca prazos do Supabase (com fallback para localStorage)
     carregarPrazosSupabase().then(function(ok){
       if(ok && typeof window.renderAll === 'function'){
         setTimeout(function(){
@@ -3736,13 +3747,6 @@ document.addEventListener('DOMContentLoaded', function(){
         }, 200);
       }
     });
-
-    // Refresh automático a cada 20 minutos — atualiza mesmo com página aberta
-    setInterval(function(){
-      console.log('🔄 Refresh automático do Supabase...');
-      carregarPrazosSupabase();
-    }, 20 * 60 * 1000); // 20 minutos
-
   }, 800);
 });
 
