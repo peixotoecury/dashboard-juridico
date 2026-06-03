@@ -9545,8 +9545,36 @@ document.addEventListener('DOMContentLoaded', function(){
     });
   });
 
-  // Mantém compatibilidade — chamado pelo onload do Supabase, mas dados já carregaram
-  window.iniciarRealtimeSupabase = function(){ /* dados já carregados via DOMContentLoaded */ };
+  // ── REALTIME: assina mudanças na tabela prazos_agendas ──
+  // Quando o sync_prazos.py atualiza o Supabase, todo dashboard aberto recarrega em segundos.
+  window.iniciarRealtimeSupabase = function(){
+    if(typeof _initSupabase !== 'function' || !_initSupabase() || !window.supabaseClient){
+      setTimeout(window.iniciarRealtimeSupabase, 800);
+      return;
+    }
+    if(window._realtimeAtivo) return;
+    window._realtimeAtivo = true;
+
+    // Debounce: o sync faz DELETE+INSERT em massa (milhares de eventos).
+    // Aguarda 2,5s de silêncio e recarrega UMA vez só.
+    let _debounceRT = null;
+    function _agendarReload(){
+      clearTimeout(_debounceRT);
+      _debounceRT = setTimeout(function(){
+        console.log('⚡ Realtime: base mudou — recarregando dashboard...');
+        if(typeof carregarPrazosSupabase === 'function') carregarPrazosSupabase();
+        if(typeof carregarAudienciasGithub === 'function') carregarAudienciasGithub(true);
+      }, 2500);
+    }
+
+    window.supabaseClient
+      .channel('prazos-agendas-realtime')
+      .on('postgres_changes', { event: '*', schema: 'public', table: 'prazos_agendas' }, _agendarReload)
+      .subscribe(function(status){
+        console.log('📡 Realtime prazos_agendas:', status);
+        if(status === 'SUBSCRIBED') console.log('✅ Atualização em tempo real ATIVA');
+      });
+  };
 })();
 </script>
 
