@@ -3916,8 +3916,20 @@ function loadPrazos(inp) {
         // Fallback para IndexedDB se localStorage estiver cheio
       }
       
+      // Recalcula status com dias úteis antes de filtrar
+      const _hj0 = new Date(); _hj0.setHours(0,0,0,0);
+      S.raw = rows.map(function(r){
+        const dv = r.data||r['Data']||r['DATA']||''; if(!dv) return r;
+        const iso=String(dv).match(/^(\d{4})-(\d{2})-(\d{2})/);
+        const br =String(dv).match(/^(\d{2})\/(\d{2})\/(\d{4})/);
+        const _d = iso?new Date(+iso[1],+iso[2]-1,+iso[3]):br?new Date(+br[3],+br[2]-1,+br[1]):null;
+        if(!_d||isNaN(_d)) return r;
+        const df=diasUteisDiff(_d,_hj0);
+        const st=df<-1?'Vencido':df===-1?'Fatal':df===0?'D-1':df===1?'D-2':'Futuro';
+        return Object.assign({},r,{status:st,dias_restantes:df});
+      });
       // Procurar pela coluna correta (pode ser "tipo_agenda", "Tipo Agendamento", etc)
-      S.prazos = rows.filter(r => {
+      S.prazos = S.raw.filter(r => {
         const tipo = (r.tipo_agenda || r['Tipo Agendamento'] || r['tipo_agendamento'] || '').trim();
         return tipo === 'Prazo' || tipo.toLowerCase() === 'prazo';
       });
@@ -6613,10 +6625,19 @@ document.addEventListener('DOMContentLoaded', function(){
     const savedEquipe = localStorage.getItem('pc_equipe');
     
     if(savedRaw && savedPrazos){
-      S.raw = JSON.parse(savedRaw);
-      S.prazos = JSON.parse(savedPrazos);
-      S.agendas = JSON.parse(savedAgendas || '[]');
-      S.equipe = JSON.parse(savedEquipe || '[]');
+      const _hj1 = new Date(); _hj1.setHours(0,0,0,0);
+      function _restat(arr){ return (arr||[]).map(function(r){
+        const dv=r.data||r['Data']||''; if(!dv) return r;
+        const iso=String(dv).match(/^(\d{4})-(\d{2})-(\d{2})/); if(!iso) return r;
+        const _d=new Date(+iso[1],+iso[2]-1,+iso[3]); if(isNaN(_d)) return r;
+        const df=diasUteisDiff(_d,_hj1);
+        const st=df<-1?'Vencido':df===-1?'Fatal':df===0?'D-1':df===1?'D-2':'Futuro';
+        return Object.assign({},r,{status:st,dias_restantes:df});
+      }); }
+      S.raw    = _restat(JSON.parse(savedRaw));
+      S.prazos = _restat(JSON.parse(savedPrazos));
+      S.agendas= _restat(JSON.parse(savedAgendas || '[]'));
+      S.equipe = _restat(JSON.parse(savedEquipe  || '[]'));
       console.log('✅ Dados restaurados:', S.prazos.length, 'prazos,', S.agendas.length, 'agendas');
       
       // Renderizar após delay
@@ -8203,7 +8224,16 @@ function qgLoadPrazos(inp){
       const rows = (typeof normalizarChaves === 'function') ? normalizarChaves(_rawRows1) : _rawRows1.map(r=>{const n={};Object.keys(r).forEach(k=>n[k.trim().toLowerCase()]=(typeof r[k]==='string'?r[k].trim():r[k]));return n;});
       window.__pcArquivoPrazosBuffer = ev.target.result;
       window.__pcArquivoPrazosNome   = f.name;
-      const _nr1 = (function(rr){return rr.map(function(row){var n={};Object.keys(row).forEach(function(k){var v=row[k];n[k.trim().toLowerCase()]=(typeof v==='string')?v.trim():v;});return n;});})(rows);
+      const _nr1raw = (function(rr){return rr.map(function(row){var n={};Object.keys(row).forEach(function(k){var v=row[k];n[k.trim().toLowerCase()]=(typeof v==='string')?v.trim():v;});return n;});})(rows);
+      const _hj3=new Date(); _hj3.setHours(0,0,0,0);
+      const _nr1=_nr1raw.map(function(r){
+        const dv=r.data||r['Data']||''; if(!dv) return r;
+        const iso=String(dv).match(/^(\d{4})-(\d{2})-(\d{2})/); if(!iso) return r;
+        const _d=new Date(+iso[1],+iso[2]-1,+iso[3]); if(isNaN(_d)) return r;
+        const df=diasUteisDiff(_d,_hj3);
+        const st=df<-1?'Vencido':df===-1?'Fatal':df===0?'D-1':df===1?'D-2':'Futuro';
+        return Object.assign({},r,{status:st,dias_restantes:df});
+      });
       S.raw    = _nr1;
       S.prazos = _nr1.filter(r=>(r.tipo_agenda||'').trim()==='Prazo');
       S.agendas= _nr1.filter(r=>(r.tipo_agenda||'').trim()==='Agenda');
@@ -8543,10 +8573,24 @@ function qgLoadAudiencias(inp){
       const _rawRows2 = XLSX.utils.sheet_to_json(wb.Sheets[wb.SheetNames[0]], {defval:''});
       const rows = (typeof normalizarChaves === 'function') ? normalizarChaves(_rawRows2) : _rawRows2.map(r=>{const n={};Object.keys(r).forEach(k=>n[k.trim().toLowerCase()]=(typeof r[k]==='string'?r[k].trim():r[k]));return n;});
       const _nr2 = (function(rr){return rr.map(function(row){var n={};Object.keys(row).forEach(function(k){var v=row[k];n[k.trim().toLowerCase()]=(typeof v==='string')?v.trim():v;});return n;});})(rows);
-      S.raw    = _nr2;
-      S.prazos = _nr2.filter(r=>(r.tipo_agenda||'').trim()==='Prazo');
-      S.agendas= _nr2.filter(r=>(r.tipo_agenda||'').trim()==='Agenda');
-      S.equipe = _nr2.filter(r=>(r.tipo_agenda||'').trim().startsWith('Agenda Equipe'));
+      // Recalcula status com dias úteis (ignora sábado/domingo)
+      const _hoje2 = new Date(); _hoje2.setHours(0,0,0,0);
+      const _nr2c = _nr2.map(r => {
+        const _d = r.data ? (r.data instanceof Date ? new Date(r.data) : new Date(String(r.data).substring(0,10)+'T00:00:00')) : null;
+        if (!_d || isNaN(_d)) return r;
+        const _diff = diasUteisDiff(_d, _hoje2);
+        let _st;
+        if      (_diff < -1)   _st = 'Vencido';
+        else if (_diff === -1) _st = 'Fatal';
+        else if (_diff === 0)  _st = 'D-1';
+        else if (_diff === 1)  _st = 'D-2';
+        else                   _st = 'Futuro';
+        return Object.assign({}, r, {status: _st, dias_restantes: _diff});
+      });
+      S.raw    = _nr2c;
+      S.prazos = _nr2c.filter(r=>(r.tipo_agenda||'').trim()==='Prazo');
+      S.agendas= _nr2c.filter(r=>(r.tipo_agenda||'').trim()==='Agenda');
+      S.equipe = _nr2c.filter(r=>(r.tipo_agenda||'').trim().startsWith('Agenda Equipe'));
       window.__pcArquivoPrazosBuffer = buf;
       window.__pcArquivoPrazosNome = 'GitHub_' + new Date().toLocaleString('pt-BR') + '.xlsx';
 
@@ -9199,7 +9243,7 @@ document.addEventListener('DOMContentLoaded', function(){
   function pcSepararRows(rows){
     S.raw = normalizarChaves(rows);
 
-    // Recalcula status pela data (Fatal=ontem, D-1=hoje, D-2=amanhã)
+    // Recalcula status com dias úteis (Fatal=ontem útil, D-1=hoje, D-2=amanhã útil)
     const _hoje = new Date(); _hoje.setHours(0,0,0,0);
     S.raw = S.raw.map(function(r){
       const dv = r.data || r['Data'] || r['DATA'] || '';
@@ -9208,7 +9252,7 @@ document.addEventListener('DOMContentLoaded', function(){
       if (!iso) return r;
       const d = new Date(+iso[1], +iso[2]-1, +iso[3]);
       if (isNaN(d)) return r;
-      const diff = Math.round((d - _hoje) / 86400000);
+      const diff = diasUteisDiff(d, _hoje);
       let status;
       if      (diff < -1)   status = 'Vencido';
       else if (diff === -1) status = 'Fatal';
