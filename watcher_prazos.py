@@ -8,11 +8,11 @@ from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
 PASTA    = Path(__file__).parent
-EXCEL    = "Prazos_e_agendas.xlsx"
+EXCEL    = "v_pc_controle_prazos_trabalhista.xlsx"
 PYTHON   = sys.executable
 SYNC     = PASTA / "sync_prazos.py"
 LOG      = PASTA / "watcher_prazos.log"
-COOLDOWN = 60  # segundos minimos entre syncs
+COOLDOWN = 600  # 10 minutos minimos entre syncs
 
 logging.basicConfig(filename=LOG, level=logging.INFO,
     format="%(asctime)s  %(message)s", datefmt="%Y-%m-%d %H:%M:%S")

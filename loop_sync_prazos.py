@@ -10,7 +10,7 @@ from datetime import datetime
 PASTA    = Path(__file__).parent
 SYNC     = PASTA / "sync_prazos.py"
 LOG      = PASTA / "loop_sync_prazos.log"
-INTERVALO = 20 * 60  # 20 minutos em segundos
+INTERVALO = 10 * 60  # 10 minutos em segundos
 
 logging.basicConfig(filename=LOG, level=logging.INFO,
     format="%(asctime)s  %(message)s", datefmt="%Y-%m-%d %H:%M:%S")

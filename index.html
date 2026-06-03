@@ -3639,7 +3639,7 @@ async function carregarPrazosSupabase() {
 
   // Limpa IndexedDB para forcar leitura do Supabase
   try {
-    ['peixoto','agendas','dashboard','pc','prazos'].forEach(function(dbName){
+    ['peixoto','agendas','dashboard','pc','prazos','PC_Database'].forEach(function(dbName){
       var req = indexedDB.deleteDatabase(dbName);
       req.onsuccess = function(){ console.log('IndexedDB limpo:', dbName); };
     });
@@ -3686,6 +3686,7 @@ async function carregarPrazosSupabase() {
     S.prazos  = todos.filter(r => (r.tipo_agenda||'').trim() === 'Prazo');
     S.agendas = todos.filter(r => (r.tipo_agenda||'').trim() === 'Agenda');
     S.equipe  = todos.filter(r => (r.tipo_agenda||'').includes('Equipe'));
+    window._supabaseCarregado = true; // impede IndexedDB de sobrescrever
 
     console.log(`📊 Prazos: ${S.prazos.length} | Agendas: ${S.agendas.length} | Equipe: ${S.equipe.length}`);
     console.log(`🔴 Fatais: ${S.prazos.filter(r=>r.status==='Fatal').length} | D-1: ${S.prazos.filter(r=>r.status==='D-1').length}`);
@@ -3707,6 +3708,8 @@ async function carregarPrazosSupabase() {
     });
 
     n('nc-prazos', S.prazos.length);
+    if(typeof popGlobal === 'function') popGlobal();
+    if(typeof popFatal  === 'function') popFatal();
     if(typeof window.renderAll === 'function') window.renderAll();
     if(S.aud && S.aud.length){
       if(typeof popAud==='function') popAud();
@@ -3747,6 +3750,14 @@ document.addEventListener('DOMContentLoaded', function(){
         }, 200);
       }
     });
+
+    // Refresh automático a cada 10 minutos — atualiza mesmo com página aberta
+    setInterval(function(){
+      console.log('🔄 Refresh automático do Supabase...');
+      carregarPrazosSupabase();
+      if(typeof window.renderMeuPainelSomente === 'function') window.renderMeuPainelSomente();
+    }, 10 * 60 * 1000); // 10 minutos
+
   }, 800);
 });
 
@@ -3912,7 +3923,8 @@ function loadAudiencias(inp) {
 
 // ── SELECTS ──────────────────────────────────────────
 function popGlobal() {
-  const resps =[...new Set(S.raw.map(r=>r.responsavel).filter(Boolean))].sort();
+  const isSigla = x => /^[A-Z]{2,5}$/.test(x.trim());
+  const resps =[...new Set(S.raw.map(r=>r.responsavel).filter(Boolean))].filter(x=>!isSigla(x)).sort();
   const grupos=[...new Set(S.raw.map(r=>r.grupo_processo).filter(Boolean))].sort();
   V('gf-resp').innerHTML ='<option value="">Todos os profissionais com fatal</option>'+resps.map(x=>`<option value="${e(x)}">${e(x)}</option>`).join('');
   V('gf-grupo').innerHTML='<option value="">Todos os grupos</option>'+grupos.map(x=>`<option value="${e(x)}">${e(x)}</option>`).join('');
@@ -5442,7 +5454,7 @@ function renderFatais() {
   const srch=(V('fatal-s')?.value||'').toLowerCase();
   const resp=V('fatal-resp')?.value||'';
   const grupo=V('fatal-grupo')?.value||'';
-  let data=applyGF(S.prazos).filter(r=>statusEh(r.status, 'Fatal')||statusEh(r.status, 'Vencido'));
+  let data=applyGF(S.prazos).filter(r=>statusEh(r.status, 'Fatal'));
   if(resp)  data=data.filter(r=>r.responsavel===resp);
   if(grupo) data=data.filter(r=>r.grupo_processo===grupo);
   if(srch)  data=data.filter(r=>[r.responsavel,r.numero_processo,r.cliente,r.descricao_tarefa].join(' ').toLowerCase().includes(srch));
@@ -7038,7 +7050,25 @@ document.addEventListener('DOMContentLoaded', function(){
     if(tipo.includes('agenda')) return 'agenda';
     return 'prazo';
   }
-  function status(row){ return txt(pick(row,['status','Status','situação','situacao'])); }
+  function status(row){
+    const dataVal = String(row['data'] || row['Data'] || row['DATA'] || '').trim();
+    if (dataVal) {
+      let d = null;
+      const iso = dataVal.match(/^(\d{4})-(\d{2})-(\d{2})/);
+      if (iso) d = new Date(+iso[1], +iso[2]-1, +iso[3]);
+      if (!d) { const br = dataVal.match(/^(\d{2})\/(\d{2})\/(\d{4})/); if (br) d = new Date(+br[3], +br[2]-1, +br[1]); }
+      if (d && !isNaN(d)) {
+        const hoje = new Date(); hoje.setHours(0,0,0,0);
+        const diff = Math.round((d - hoje) / 86400000);
+        if (diff < -1) return 'Vencido';
+        if (diff === -1) return 'Fatal';
+        if (diff === 0)  return 'D-1';
+        if (diff === 1)  return 'D-2';
+        return 'Futuro';
+      }
+    }
+    return txt(pick(row,['status','Status','situação','situacao']));
+  }
   function set(id,v){ const el=document.getElementById(id); if(el) el.textContent=v; }
   function width(id,p){ const el=document.getElementById(id); if(el) el.style.width=p+'%'; }
 
@@ -7139,7 +7169,7 @@ document.addEventListener('DOMContentLoaded', function(){
       }
     }
 
-    function stCnt(arr, st){ return arr.filter(r => (r.status||'').trim() === st).length; }
+    function stCnt(arr, st){ return arr.filter(r => status(r) === st).length; }
 
     // Prazos por status
     set('mp-st-p-venc',  stCnt(d.prazos,  'Vencido'));
@@ -7208,7 +7238,7 @@ document.addEventListener('DOMContentLoaded', function(){
         {h:'Processo', v:r=>txt(pick(r,['numero_processo','Número do Processo','Processo','processo']))},
         {h:'Cliente', v:r=>txt(pick(r,['cliente','Cliente']))},
         {h:'Tarefa', v:r=>txt(pick(r,['descricao_tarefa','Descrição','descrição','tarefa','Tarefa']))},
-        {h:'Status', v:r=>{const s=(r.status||'').trim();return `<span class="mp-only-status" style="${(statusEh(s, 'Fatal')||statusEh(s, 'Vencido'))?'background:#fdecea;color:#c62828;border:1px solid #ef9a9a;':''}">${s}</span>`;}},
+        {h:'Status', v:r=>{const s=status(r);return `<span class="mp-only-status" style="${(statusEh(s, 'Fatal')||statusEh(s, 'Vencido'))?'background:#fdecea;color:#c62828;border:1px solid #ef9a9a;':''}">${s}</span>`;}},
         {h:'Grupo', v:r=>txt(pick(r,['grupo_processo','Grupo Processo']))},
         {h:'Justificativa', v:r=>{const proc=txt(pick(r,['numero_processo','Número do Processo','Processo','processo']));const key='justif-'+btoa(proc).replace(/[^a-z0-9]/gi,'');const just=(window._mpJustif&&window._mpJustif[key])?window._mpJustif[key]:'—';return `<div style="font-size:10px;color:${just==='—'?'var(--gray4)':'var(--gray1)'};max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${e(just)}</div>`;}},
         {h:'Ação', v:function(r){
@@ -7497,7 +7527,25 @@ document.addEventListener('DOMContentLoaded', function(){
     return {prazos, agendas, equipe, aud};
   }
 
-  function status(row){ return txt(pick(row,['status','Status','situação','situacao'])); }
+  function status(row){
+    const dataVal = String(row['data'] || row['Data'] || row['DATA'] || '').trim();
+    if (dataVal) {
+      let d = null;
+      const iso = dataVal.match(/^(\d{4})-(\d{2})-(\d{2})/);
+      if (iso) d = new Date(+iso[1], +iso[2]-1, +iso[3]);
+      if (!d) { const br = dataVal.match(/^(\d{2})\/(\d{2})\/(\d{4})/); if (br) d = new Date(+br[3], +br[2]-1, +br[1]); }
+      if (d && !isNaN(d)) {
+        const hoje = new Date(); hoje.setHours(0,0,0,0);
+        const diff = Math.round((d - hoje) / 86400000);
+        if (diff < -1) return 'Vencido';
+        if (diff === -1) return 'Fatal';
+        if (diff === 0)  return 'D-1';
+        if (diff === 1)  return 'D-2';
+        return 'Futuro';
+      }
+    }
+    return txt(pick(row,['status','Status','situação','situacao']));
+  }
   function set(id,v){ const el=document.getElementById(id); if(el) el.textContent=v; }
   function width(id,p){ const el=document.getElementById(id); if(el) el.style.width=p+'%'; }
 
@@ -7604,7 +7652,7 @@ document.addEventListener('DOMContentLoaded', function(){
       }
     }
 
-    function stCnt2(arr, st){ return arr.filter(r => (r.status||'').trim() === st).length; }
+    function stCnt2(arr, st){ return arr.filter(r => status(r) === st).length; }
     set('mp-st-p-venc',  stCnt2(d.prazos,  'Vencido'));
     set('mp-st-p-fatal', stCnt2(d.prazos,  'Fatal'));
     set('mp-st-p-d1',    stCnt2(d.prazos,  'D-1'));
@@ -9071,6 +9119,26 @@ document.addEventListener('DOMContentLoaded', function(){
 
   function pcSepararRows(rows){
     S.raw = normalizarChaves(rows);
+
+    // Recalcula status pela data (Fatal=ontem, D-1=hoje, D-2=amanhã)
+    const _hoje = new Date(); _hoje.setHours(0,0,0,0);
+    S.raw = S.raw.map(function(r){
+      const dv = r.data || r['Data'] || r['DATA'] || '';
+      if (!dv) return r;
+      const iso = String(dv).match(/^(\d{4})-(\d{2})-(\d{2})/);
+      if (!iso) return r;
+      const d = new Date(+iso[1], +iso[2]-1, +iso[3]);
+      if (isNaN(d)) return r;
+      const diff = Math.round((d - _hoje) / 86400000);
+      let status;
+      if      (diff < -1)   status = 'Vencido';
+      else if (diff === -1) status = 'Fatal';
+      else if (diff === 0)  status = 'D-1';
+      else if (diff === 1)  status = 'D-2';
+      else                  status = 'Futuro';
+      return Object.assign({}, r, {status: status, dias_restantes: diff});
+    });
+
     // Aceita "tipo_agenda" (underscore) e "tipo agenda" (espaço) para compatibilidade com diferentes templates de planilha
     const _getTa = r => (r.tipo_agenda || r['tipo agenda'] || r.tipo || '').trim();
     S.prazos  = S.raw.filter(r => _getTa(r) === 'Prazo');
@@ -9855,10 +9923,13 @@ document.addEventListener('DOMContentLoaded', function(){
 
   function tentarInjetar(n){
     n=n||1;
-    if(typeof renderAll==='function'){ 
+    if(typeof renderAll==='function'){
       recuperarDadosPersistidos(function(recuperou) {
         if(!recuperou) injetarDados();
-        else {
+        else if(window._supabaseCarregado) {
+          // Supabase já carregou com dados frescos — ignora IndexedDB antigo
+          console.log('[PC] Supabase já carregado, IndexedDB ignorado.');
+        } else {
           var e;
           e=document.getElementById('uf1n'); if(e) e.textContent='✅ Prazos (salvo)';
           e=document.getElementById('uf1');  if(e) e.classList.add('loaded');
