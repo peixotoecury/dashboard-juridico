@@ -3411,6 +3411,17 @@ body.role-manager .upload-bar {
 
 const PG = 100;
 const S = { raw:[], prazos:[], agendas:[], equipe:[], aud:[], cancel:[], pgs:{} };
+// ── Limpeza ÚNICA de cache antigo (era do Excel, com dados desatualizados) ──
+// Força o navegador a usar SÓ a fonte ao vivo (Supabase). Roda uma vez por versão.
+try {
+  const _CACHE_VER = 'lm-direto-2026-06';
+  if (localStorage.getItem('pc_cache_ver') !== _CACHE_VER) {
+    ['pc_raw','pc_prazos','pc_agendas','pc_equipe','_lastPlanilha','pc_aud','pc_cancel','pc_upload_date']
+      .forEach(k => { try { localStorage.removeItem(k); } catch(e){} });
+    localStorage.setItem('pc_cache_ver', _CACHE_VER);
+    console.log('🧹 Cache local antigo limpo — usando dados ao vivo do Supabase.');
+  }
+} catch(e) {}
 const V = id => document.getElementById(id);
 const e = s => String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 const n = (id,v) => { const el=V(id); if(el) el.textContent=typeof v==='number'?v.toLocaleString('pt-BR'):v; };
