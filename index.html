@@ -8561,6 +8561,13 @@ function qgLoadAudiencias(inp){
   }
 
   async function atualizarDoPrazosGithub(silencioso){
+    // Supabase é a fonte principal — se já carregou, atualiza por lá (dados em tempo real)
+    if(window._supabaseCarregado && typeof carregarPrazosSupabase === 'function'){
+      if(!silencioso) mostrarToast('🔄 Atualizando do Supabase...');
+      await carregarPrazosSupabase();
+      return;
+    }
+
     const url = localStorage.getItem('pc_github_prazos') || 'https://raw.githubusercontent.com/peixotoecury/dashboard-juridico/main/Prazos_e_agendas.xlsx';
     if(!url){ if(!silencioso) mostrarToast('⚠️ URL do GitHub não configurada.'); return; }
 
