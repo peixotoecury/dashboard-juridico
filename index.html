@@ -3645,8 +3645,9 @@ function recalcularStatusAudiencias(arr) {
 
 // ── AUTO-REFRESH DE AUDIÊNCIAS DO GITHUB ─────────────────────────────────────
 async function carregarAudienciasGithub(silencioso) {
-  const url = localStorage.getItem('pc_github_audiencias') ||
-              'https://raw.githubusercontent.com/peixotoecury/dashboard-juridico/main/Pauta_de_Audiencias.xlsx';
+  const url = (localStorage.getItem('pc_github_audiencias') ||
+              'https://raw.githubusercontent.com/peixotoecury/dashboard-juridico/data/Pauta_de_Audiencias.xlsx')
+              .replace('/dashboard-juridico/main/', '/dashboard-juridico/data/');
   try {
     const resp = await fetch(url + '?t=' + Date.now(), {cache: 'no-store'});
     if (!resp.ok) throw new Error('HTTP ' + resp.status);
@@ -8512,8 +8513,15 @@ function qgLoadAudiencias(inp){
 
   // ══════════════════════════════════════════════
   // URLs padrão do repositório Peixoto & Cury
-  const DEFAULT_PRAZOS_URL    = 'https://raw.githubusercontent.com/peixotoecury/dashboard-juridico/main/Prazos_e_agendas.xlsx';
-  const DEFAULT_AUDIENCIAS_URL = 'https://raw.githubusercontent.com/peixotoecury/dashboard-juridico/main/Pauta_de_Audiencias.xlsx';
+  const DEFAULT_PRAZOS_URL    = 'https://raw.githubusercontent.com/peixotoecury/dashboard-juridico/data/Prazos_e_agendas.xlsx';
+  const DEFAULT_AUDIENCIAS_URL = 'https://raw.githubusercontent.com/peixotoecury/dashboard-juridico/data/Pauta_de_Audiencias.xlsx';
+  // Migração: usuários antigos têm a URL '/main/' salva — força para '/data/'
+  ['pc_github_prazos','pc_github_audiencias'].forEach(function(k){
+    const v = localStorage.getItem(k);
+    if(v && v.indexOf('/dashboard-juridico/main/') !== -1){
+      localStorage.setItem(k, v.replace('/dashboard-juridico/main/', '/dashboard-juridico/data/'));
+    }
+  });
   const GITHUB_URL_PRAZOS    = localStorage.getItem('pc_github_prazos')     || DEFAULT_PRAZOS_URL;
   const GITHUB_URL_AUDIENCIAS = localStorage.getItem('pc_github_audiencias') || DEFAULT_AUDIENCIAS_URL;
   // Pre-popula localStorage com o padrão se ainda não configurado
@@ -8566,7 +8574,7 @@ function qgLoadAudiencias(inp){
       return;
     }
 
-    const url = localStorage.getItem('pc_github_prazos') || 'https://raw.githubusercontent.com/peixotoecury/dashboard-juridico/main/Prazos_e_agendas.xlsx';
+    const url = localStorage.getItem('pc_github_prazos') || 'https://raw.githubusercontent.com/peixotoecury/dashboard-juridico/data/Prazos_e_agendas.xlsx';
     if(!url){ if(!silencioso) mostrarToast('⚠️ URL do GitHub não configurada.'); return; }
 
     mostrarToast('🔄 Buscando atualização no GitHub...');
@@ -8671,11 +8679,11 @@ function qgLoadAudiencias(inp){
 
         <div style="margin-bottom:14px;">
           <label style="font-size:9.5px;font-weight:400;color:var(--gray4);text-transform:uppercase;letter-spacing:.5px;display:block;margin-bottom:4px;">URL Raw — Prazos &amp; Agendas (.xlsx)</label>
-          <input id="gh-url-prazos" class="srch-in" style="width:100%;font-size:11px;font-family:monospace;" placeholder="https://raw.githubusercontent.com/peixotoecury/dashboard-juridico/main/Prazos_e_agendas.xlsx" value="${localStorage.getItem('pc_github_prazos')||DEFAULT_PRAZOS_URL}">
+          <input id="gh-url-prazos" class="srch-in" style="width:100%;font-size:11px;font-family:monospace;" placeholder="https://raw.githubusercontent.com/peixotoecury/dashboard-juridico/data/Prazos_e_agendas.xlsx" value="${localStorage.getItem('pc_github_prazos')||DEFAULT_PRAZOS_URL}">
         </div>
         <div style="margin-bottom:14px;">
           <label style="font-size:9.5px;font-weight:400;color:var(--gray4);text-transform:uppercase;letter-spacing:.5px;display:block;margin-bottom:4px;">URL Raw — Pauta de Audiências (.xlsx)</label>
-          <input id="gh-url-audiencias" class="srch-in" style="width:100%;font-size:11px;font-family:monospace;" placeholder="https://raw.githubusercontent.com/peixotoecury/dashboard-juridico/main/Pauta_de_Audiencias.xlsx" value="${localStorage.getItem('pc_github_audiencias')||DEFAULT_AUDIENCIAS_URL}">
+          <input id="gh-url-audiencias" class="srch-in" style="width:100%;font-size:11px;font-family:monospace;" placeholder="https://raw.githubusercontent.com/peixotoecury/dashboard-juridico/data/Pauta_de_Audiencias.xlsx" value="${localStorage.getItem('pc_github_audiencias')||DEFAULT_AUDIENCIAS_URL}">
         </div>
 
         <div style="background:#fafbfc;border:1px solid var(--border);border-radius:8px;padding:12px 16px;margin-bottom:18px;">
@@ -9361,7 +9369,7 @@ document.addEventListener('DOMContentLoaded', function(){
     localStorage.setItem('pc_ultima_atualizacao', new Date().toISOString());
   }
 
-  const GITHUB_DADOS_URL = 'https://raw.githubusercontent.com/peixotoecury/dashboard-juridico/main/dados.json';
+  const GITHUB_DADOS_URL = 'https://raw.githubusercontent.com/peixotoecury/dashboard-juridico/data/dados.json';
 
   async function carregarBaseOnline(silencioso){
     if(carregandoRealtime) return;
