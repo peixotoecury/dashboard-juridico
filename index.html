@@ -7288,7 +7288,7 @@ document.addEventListener('DOMContentLoaded', function(){
     set('mp-st-e-d2',    stCnt(d.equipe,  'D-2'));
     set('mp-st-e-fut',   stCnt(d.equipe,  'Futuro'));
 
-    function fmtD(v){try{const d=new Date(v);if(isNaN(d))return String(v||'');return d.toLocaleDateString('pt-BR');}catch(e){return String(v||'');}}
+    function fmtD(v){var _s=String(v||'');var _m=_s.match(/^(\d{4})-(\d{2})-(\d{2})/);if(_m)return _m[3]+'/'+_m[2]+'/'+_m[1];try{const d=new Date(v);if(isNaN(d))return _s;return d.toLocaleDateString('pt-BR');}catch(e){return _s;}}
     function fmtHora(v){if(!v)return '';var s=String(v).trim();var m=s.match(/T(\d{2}):(\d{2})/);if(m)return m[1]+':'+m[2];return s;}
     const prazoCols = [
       {h:'Data', v:r=>fmtD(pick(r,['data','Data','prazo','Prazo']))},
@@ -7767,7 +7767,7 @@ document.addEventListener('DOMContentLoaded', function(){
     set('mp-st-e-d2',    stCnt2(d.equipe,  'D-2'));
     set('mp-st-e-fut',   stCnt2(d.equipe,  'Futuro'));
 
-    function fmtD(v){try{const d=new Date(v);if(isNaN(d))return String(v||'');return d.toLocaleDateString('pt-BR');}catch(e){return String(v||'');}}
+    function fmtD(v){var _s=String(v||'');var _m=_s.match(/^(\d{4})-(\d{2})-(\d{2})/);if(_m)return _m[3]+'/'+_m[2]+'/'+_m[1];try{const d=new Date(v);if(isNaN(d))return _s;return d.toLocaleDateString('pt-BR');}catch(e){return _s;}}
     function fmtHora(v){if(!v)return '';var s=String(v).trim();var m=s.match(/T(\d{2}):(\d{2})/);if(m)return m[1]+':'+m[2];return s;}
     const prazoCols = [
       {h:'Data', v:r=>fmtD(pick(r,['data','Data','prazo','Prazo']))},
@@ -9756,7 +9756,7 @@ document.addEventListener('DOMContentLoaded', function(){
     var nomeAdv=sess.nome||sess.login||'Advogado';
     var old=document.getElementById('modal-justif-bulk');
     if(old) old.remove();
-    function fmtD(v){try{var d=new Date(v);if(isNaN(d))return String(v||'');return d.toLocaleDateString('pt-BR');}catch(e){return String(v||'');}}
+    function fmtD(v){var _s=String(v||'');var _m=_s.match(/^(\d{4})-(\d{2})-(\d{2})/);if(_m)return _m[3]+'/'+_m[2]+'/'+_m[1];try{var d=new Date(v);if(isNaN(d))return _s;return d.toLocaleDateString('pt-BR');}catch(e){return _s;}}
     var rowsHTML=fataisVenc.map(function(r,i){
       var proc=(r.numero_processo||r['Número do Processo']||r.Processo||r.processo||'').trim();
       var cli=(r.cliente||r.Cliente||'').trim();
@@ -9830,7 +9830,7 @@ document.addEventListener('DOMContentLoaded', function(){
     });
     var nomeAdv=sess.nome||sess.login||'Advogado';
     var hoje=new Date().toLocaleDateString('pt-BR');
-    function fmtD(v){try{var d=new Date(v);if(isNaN(d))return String(v||'');return d.toLocaleDateString('pt-BR');}catch(e){return String(v||'');}}
+    function fmtD(v){var _s=String(v||'');var _m=_s.match(/^(\d{4})-(\d{2})-(\d{2})/);if(_m)return _m[3]+'/'+_m[2]+'/'+_m[1];try{var d=new Date(v);if(isNaN(d))return _s;return d.toLocaleDateString('pt-BR');}catch(e){return _s;}}
     var NL='\r\n';
     var semJustif=0;
     var corpo='Controladoria - Justificativa de Prazos Fatais e Vencidos'+NL;
