@@ -3411,6 +3411,7 @@ body.role-manager .upload-bar {
 
 const PG = 100;
 const S = { raw:[], prazos:[], agendas:[], equipe:[], aud:[], cancel:[], pgs:{} };
+window.S = S; // expõe S para IIFEs (renderMP/dataMP usam window.S)
 // ── Limpeza ÚNICA de cache antigo (era do Excel, com dados desatualizados) ──
 // Força o navegador a usar SÓ a fonte ao vivo (Supabase). Roda uma vez por versão.
 try {
