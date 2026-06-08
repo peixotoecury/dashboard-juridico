@@ -66,15 +66,29 @@ def ler_excel():
         if matricula in MATRICULAS_DESCARTAR:
             continue
 
-        # Calcula dias até o prazo
+        # Calcula dias úteis até o prazo (igual ao JavaScript do dashboard)
         try:
             data_dt = datetime.strptime(data_iso, "%Y-%m-%d").date()
-            dias_restantes = (data_dt - hoje).days
+            cal_diff = (data_dt - hoje).days
+            if abs(cal_diff) > 14:
+                dias_uteis = cal_diff
+            elif cal_diff == 0:
+                dias_uteis = 0
+            else:
+                step = 1 if cal_diff > 0 else -1
+                count = 0
+                cur = date(hoje.year, hoje.month, hoje.day)
+                from datetime import timedelta
+                while cur != data_dt:
+                    cur += timedelta(days=step)
+                    if cur.weekday() < 5:  # 0=seg ... 4=sex
+                        count += step
+                dias_uteis = count
+            dias_restantes = dias_uteis
         except:
             dias_restantes = None
 
-        # Calcula status real baseado na data
-        # Vencido=antes de ontem, Fatal=ontem, D-1=hoje, D-2=amanhã, Futuro=depois de amanhã
+        # Status baseado em dias úteis — espelha exatamente o cálculo do dashboard
         if dias_restantes is None:
             status_calc = "Futuro"
         elif dias_restantes < -1:
