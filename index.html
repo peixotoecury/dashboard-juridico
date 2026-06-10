@@ -10082,13 +10082,9 @@ document.addEventListener('DOMContentLoaded', function(){
   };
 
   function injetarDados(){
-    window.S=window.S||{};
-    window.S.raw=_raw; window.S.prazos=_prazos;
-    window.S.agendas=_agendas; window.S.equipe=_equipe;
-    window.S.aud=_aud; window.S.canceladas=_canc;
-    window.S.pgs=window.S.pgs||{};
-    
-    // PERSISTÊNCIA: Salvar dados no IndexedDB
+    // Supabase ja carregou com dados frescos — nao sobrescrever
+    if(window._supabaseCarregado) return;
+    // Apenas salva no IndexedDB como cache offline; nao renderiza dados velhos de 15/05
     IndexedDBHelper.salvar('raw', _raw);
     IndexedDBHelper.salvar('prazos', _prazos);
     IndexedDBHelper.salvar('agendas', _agendas);
@@ -10096,20 +10092,7 @@ document.addEventListener('DOMContentLoaded', function(){
     IndexedDBHelper.salvar('aud', _aud);
     IndexedDBHelper.salvar('canceladas', _canc);
     IndexedDBHelper.salvar('data_upload', new Date().toISOString());
-    
-    var e;
-    e=document.getElementById('uf1n'); if(e) e.textContent='✅ Prazos 15/05/2026';
-    e=document.getElementById('uf1');  if(e) e.classList.add('loaded');
-    e=document.getElementById('uf2n'); if(e) e.textContent='✅ Audiências 15/05/2026';
-    e=document.getElementById('uf2');  if(e) e.classList.add('loaded');
-    window._dashIntelSource = 'embedded'; // dados embutidos — podem ser substituídos pelo IndexedDB
-    if(typeof popGlobal==='function') popGlobal();
-    if(typeof popFatal==='function')  popFatal();
-    if(typeof renderAll==='function') renderAll();
-    if(typeof renderQuadro==='function') renderQuadro();
-    if(typeof window.renderMeuPainelSomente==='function') window.renderMeuPainelSomente();
-    if(typeof window.aplicarPerfilVisual==='function') window.aplicarPerfilVisual();
-    console.log('[PC] 15/05/2026: '+_raw.length+' itens, '+_aud.length+' audiências');
+    console.log('[PC] snapshot 15/05 salvo no IndexedDB como fallback offline (nao renderizado)');
   }
 
   function recuperarDadosPersistidos(callback){
