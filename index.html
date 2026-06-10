@@ -2446,6 +2446,26 @@ body.role-manager .upload-bar {
   .det-scroll thead th { position:sticky; top:0; z-index:5; background:#f1f7fa; }
 }
 
+/* ── Banner dado desatualizado ── */
+#banner-stale {
+  display:none;
+  position:fixed; top:52px; left:0; right:0; z-index:9999;
+  background:linear-gradient(90deg,#7c3f00,#b45309);
+  color:#fff; font-size:12px; font-weight:500;
+  padding:8px 20px; gap:10px;
+  align-items:center; justify-content:center;
+  box-shadow:0 2px 8px rgba(0,0,0,.25);
+  animation: slideDown .3s ease;
+}
+#banner-stale.show { display:flex; }
+#banner-stale .bs-icon { font-size:15px; flex-shrink:0; }
+#banner-stale .bs-close {
+  margin-left:auto; cursor:pointer; opacity:.7;
+  font-size:16px; line-height:1; padding:0 4px;
+}
+#banner-stale .bs-close:hover { opacity:1; }
+@keyframes slideDown { from{transform:translateY(-100%);opacity:0} to{transform:translateY(0);opacity:1} }
+
 </style>
 </head>
 <body>
@@ -2682,6 +2702,12 @@ body.role-manager .upload-bar {
   </div>
 </nav>
 
+<!-- Banner dado desatualizado -->
+<div id="banner-stale">
+  <span class="bs-icon">⚠️</span>
+  <span id="banner-stale-msg">Banco de dados temporariamente indisponível — exibindo dados de <strong id="banner-stale-ts"></strong>. Tentando reconectar...</span>
+  <span class="bs-close" onclick="document.getElementById('banner-stale').classList.remove('show')" title="Fechar">✕</span>
+</div>
 
 <!-- FILTER PANEL (prazos/agendas/equipe) -->
 <div class="filter-panel" id="fpanel">
@@ -3736,6 +3762,24 @@ function diasUteisDiff(dataDate, hoje) {
 }
 
 // ── BUSCAR PRAZOS DO SUPABASE (fonte principal) ──────────────────────────────
+function _verificarDadoDesatualizado(tsUltimo) {
+  const banner = document.getElementById('banner-stale');
+  if (!banner) return;
+  if (!tsUltimo) { banner.classList.remove('show'); return; }
+  const diffMin = (Date.now() - tsUltimo.getTime()) / 60000;
+  if (diffMin > 6) {
+    const mins = Math.round(diffMin);
+    const tsStr = tsUltimo.toLocaleString('pt-BR', {hour:'2-digit', minute:'2-digit'});
+    const el = document.getElementById('banner-stale-ts');
+    if (el) el.textContent = tsStr;
+    const msg = document.getElementById('banner-stale-msg');
+    if (msg) msg.innerHTML = `Banco de dados indisponível há ~${mins} min — exibindo dados das ${tsStr}. Tentando reconectar automaticamente...`;
+    banner.classList.add('show');
+  } else {
+    banner.classList.remove('show');
+  }
+}
+
 async function carregarPrazosSupabase() {
   const SUPA_URL = 'https://kgyeeuynerhpaqlhqwkx.supabase.co';
   const SUPA_KEY = 'sb_publishable_MdUFFFJ5xRqiQysyxlWHFA_yk_LsknZ';
@@ -3802,13 +3846,19 @@ async function carregarPrazosSupabase() {
       localStorage.setItem('pc_upload_date', new Date().toISOString());
     } catch(e) {}
 
-    // Atualiza badge de atualização
-    const atualizado = todos[0]?.atualizado_em
-      ? new Date(todos[0].atualizado_em).toLocaleString('pt-BR')
-      : new Date().toLocaleString('pt-BR');
+    // Atualiza badge de atualização + banner de dado desatualizado
+    const tsUltimo = todos[0]?.atualizado_em ? new Date(todos[0].atualizado_em) : null;
+    const atualizado = tsUltimo ? tsUltimo.toLocaleString('pt-BR') : new Date().toLocaleString('pt-BR');
     document.querySelectorAll('.upload-date, #upload-date, [id*="upload"]').forEach(el => {
       if(el.tagName !== 'INPUT') el.textContent = 'Atualizado: ' + atualizado;
     });
+    // Atualiza header badge
+    const hdrEl = document.getElementById('hdr-data-upload');
+    if(hdrEl) hdrEl.textContent = atualizado;
+    const hdrBadge = document.getElementById('hdr-ultima-atualizacao');
+    if(hdrBadge) hdrBadge.style.display = 'flex';
+    // Verifica se dado está stale (> 6 min sem sync — banco LM pode estar fora)
+    _verificarDadoDesatualizado(tsUltimo);
 
     n('nc-prazos', S.prazos.length);
     if(typeof popGlobal === 'function') popGlobal();
