@@ -56,6 +56,9 @@ tbody td select:hover{border-color:#00A9E0!important;}
     </select>
     <div style="display:flex;gap:5px;margin-left:auto;flex-shrink:0">
       <button class="btn btn-out btn-sm" onclick="exportXLSX()" title="Exportar">⬇ Excel</button>
+      <button class="btn btn-out btn-sm" onclick="exportarBackup()" title="Baixa um arquivo com todos os casos para compartilhar">💾 Backup</button>
+      <button class="btn btn-out btn-sm" onclick="document.getElementById('imp-backup').click()" title="Carrega um arquivo de backup recebido de outra pessoa">⬆ Importar</button>
+      <input id="imp-backup" type="file" accept=".json" style="display:none" onchange="importarBackup(event)">
       <button class="btn btn-dk btn-sm" onclick="openNovoCasoPainel()">＋ Novo Caso</button>
       <button class="btn btn-cy btn-sm" onclick="goTab('ia')">🤖 IA</button>
     </div>
@@ -511,6 +514,43 @@ function num(v){
   return isNaN(n)?0:n;
 }
 function save(){localStorage.setItem('pc_req_bridge_data',JSON.stringify(DATA));_sbSync();}function td(){return new Date().toLocaleDateString('pt-BR')}
+
+// ── BACKUP / IMPORTAÇÃO MANUAL ───────────────────────────────────────────────
+function exportarBackup(){
+  const blob=new Blob([JSON.stringify(DATA,null,1)],{type:'application/json'});
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);
+  a.download='requant_bridgestone_'+new Date().toISOString().slice(0,10)+'.json';
+  a.click();
+  URL.revokeObjectURL(a.href);
+  if(typeof toast==='function')toast('💾 Backup baixado — '+DATA.length+' casos');
+}
+
+function importarBackup(ev){
+  const f=ev.target.files[0];
+  if(!f)return;
+  const r=new FileReader();
+  r.onload=function(){
+    try{
+      const arr=JSON.parse(r.result);
+      if(!Array.isArray(arr)||!arr.length)throw new Error('vazio');
+      if(!arr[0].pasta&&!arr[0].proc&&!arr[0].recl)throw new Error('formato');
+      const antes=DATA.length;
+      // mescla: caso do arquivo substitui o local de mesmo id; novos são adicionados
+      const porId={};
+      DATA.forEach(function(d){porId[d.id]=d;});
+      arr.forEach(function(d){porId[d.id]=d;});
+      DATA=Object.values(porId);
+      save();
+      _sbRerender();
+      if(typeof toast==='function')toast('✅ Importado: '+arr.length+' casos do arquivo ('+antes+' → '+DATA.length+' no painel)');
+    }catch(e){
+      if(typeof toast==='function')toast('❌ Arquivo inválido — use o JSON gerado pelo botão Backup');
+    }
+  };
+  r.readAsText(f);
+  ev.target.value='';
+}
 
 // ── SYNC SUPABASE — tempo real para todo o time ──────────────────────────────
 const SB_URL='https://kgyeeuynerhpaqlhqwkx.supabase.co';
