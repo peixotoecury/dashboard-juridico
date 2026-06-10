@@ -60,6 +60,8 @@ tbody td select:hover{border-color:#00A9E0!important;}
       <button class="btn btn-out btn-sm" onclick="document.getElementById('imp-backup').click()" title="Carrega um arquivo de backup recebido de outra pessoa">⬆ Importar</button>
       <input id="imp-backup" type="file" accept=".json" style="display:none" onchange="importarBackup(event)">
       <button class="btn btn-dk btn-sm" onclick="openNovoCasoPainel()">＋ Novo Caso</button>
+      <button class="btn btn-ok btn-sm" onclick="openSolicitarCGV()" title="Advogado solicita à CGV a inclusão de cálculo no eLaw">🧮 Solicitar Cálculo → CGV</button>
+      <button class="btn btn-warn btn-sm" onclick="openIncluirImproc()" title="Registrar improcedência para inclusão no eLaw">🚫 Incluir Improcedência</button>
       <button class="btn btn-cy btn-sm" onclick="goTab('ia')">🤖 IA</button>
     </div>
   </div>
@@ -879,6 +881,7 @@ function usarNaIA(id){let d=DATA.find(x=>x.id===id);closeMo('mo-det');goTab('ia'
 function openMo(id){document.getElementById(id).classList.add('open')}function closeMo(id){document.getElementById(id).classList.remove('open')}
 
 function openNovoCasoPainel(){
+  var t=document.querySelector('#mo-novo-caso .mh h3'); if(t) t.textContent='＋ Novo Caso — Painel Geral';
   // Pre-fill today's date
   document.getElementById('nc-dtsolic').value = td();
   document.getElementById('nc-pasta').value = '';
@@ -890,6 +893,23 @@ function openNovoCasoPainel(){
   var nf=document.getElementById('nc-forecast'); if(nf) nf.checked=false;
   document.getElementById('nc-status').value = 'Pendente Revisão';
   openMo('mo-novo-caso');
+}
+
+function openSolicitarCGV(){
+  openNovoCasoPainel();
+  var t=document.querySelector('#mo-novo-caso .mh h3'); if(t) t.textContent='🧮 Solicitação à CGV — Inclusão de Cálculo';
+  document.getElementById('nc-lanc').value='CGV';
+  document.getElementById('nc-status').value='Aguardando Lançamento';
+  document.getElementById('nc-obs').value='Solicitação do advogado à CGV — incluir cálculo no eLaw';
+}
+
+function openIncluirImproc(){
+  openNovoCasoPainel();
+  var t=document.querySelector('#mo-novo-caso .mh h3'); if(t) t.textContent='🚫 Incluir Improcedência';
+  document.getElementById('nc-calc').value='Sentença Improcedente';
+  document.getElementById('nc-lanc').value='CGV';
+  document.getElementById('nc-status').value='Aguardando Lançamento';
+  document.getElementById('nc-obs').value='Improcedência — incluir no eLaw';
 }
 
 function criarNovoCaso(){
