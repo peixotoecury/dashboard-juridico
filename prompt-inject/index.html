@@ -65,12 +65,35 @@ a{color:var(--cy)}
 <body>
 <div class="hdr">
   <div class="logo">🛡️</div>
-  <div><h1>LAWgico — Detector de Prompt Injection</h1><div class="sub">Peixoto &amp; Cury · Controladoria — varredura local + análise por IA (Claude)</div></div>
+  <div style="flex:1"><h1>LAWgico — Detector de Prompt Injection</h1><div class="sub">Peixoto &amp; Cury — ferramenta do escritório · varredura local + análise por IA (Claude)</div></div>
+  <div class="tabs-top">
+    <button class="ttab active" id="ttab-verif" onclick="irAba('verif')">🔍 Verificador</button>
+    <button class="ttab" id="ttab-base" onclick="irAba('base')">📚 Base de Dados <span id="base-count" class="cnt"></span></button>
+  </div>
 </div>
-<div class="wrap">
+<style>
+.tabs-top{display:flex;gap:8px}
+.ttab{background:transparent;border:1px solid var(--brd);color:var(--mut);border-radius:9px;padding:9px 16px;font-family:inherit;font-size:13px;font-weight:600;cursor:pointer}
+.ttab.active{background:var(--cy);color:#04222e;border-color:var(--cy)}
+.cnt{background:rgba(0,0,0,.25);border-radius:99px;padding:1px 8px;font-size:11px;margin-left:4px}
+.ttab.active .cnt{background:rgba(255,255,255,.35)}
+table.base{width:100%;border-collapse:collapse;font-size:12px}
+table.base th{background:var(--panel2);color:var(--mut);text-align:left;padding:8px 10px;font-size:10px;text-transform:uppercase;letter-spacing:.05em;position:sticky;top:0}
+table.base td{padding:8px 10px;border-bottom:1px solid var(--brd);vertical-align:top}
+table.base tr:hover td{background:rgba(0,180,216,.05)}
+.sync-tag{font-size:11px;padding:3px 10px;border-radius:99px;font-weight:700}
+.sync-on{background:rgba(61,220,151,.15);color:var(--ok)}
+.sync-off{background:rgba(255,209,102,.13);color:var(--med)}
+</style>
+<div class="wrap" id="page-verif">
 
 <div class="card">
   <h2>1 · Documento para análise</h2>
+  <div class="row" style="margin:0 0 14px">
+    <input type="text" id="analista" placeholder="Seu nome (analista)" oninput="try{localStorage.setItem('pc_pi_analista',this.value)}catch(e){}" style="flex:1;min-width:160px">
+    <input type="text" id="cliente" placeholder="Cliente / carteira (ex: Telefônica, Bridgestone...)" style="flex:1.4;min-width:200px">
+    <input type="text" id="processo" placeholder="Nº do processo (opcional)" style="flex:1.2;min-width:180px">
+  </div>
   <div class="drop" id="drop" onclick="document.getElementById('file').click()">
     <input id="file" type="file" accept=".pdf,.txt,.xlsx,.xls,.csv,.json,.md,.doc,.docx" style="display:none" onchange="lerArquivo(event)">
     <div class="ic">📄</div>
@@ -102,6 +125,30 @@ a{color:var(--cy)}
 </div>
 
 <p class="tag" style="text-align:center">Regras de detecção idênticas ao módulo <code>static_scan.py</code> do LAWgico Prompt Inject · Modelo IA: <code>claude-opus-4-8</code></p>
+</div>
+
+<div class="wrap" id="page-base" style="display:none">
+  <div class="card">
+    <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:14px">
+      <h2 style="margin:0;flex:1">Base de Dados — tudo que o escritório já verificou</h2>
+      <span class="sync-tag sync-off" id="sync-tag">verificando sync...</span>
+      <button class="btn btn-cy" onclick="exportarExcelBase()">⬇ Excel completo</button>
+    </div>
+    <div class="row" style="margin:0 0 12px">
+      <input type="text" id="base-busca" placeholder="🔍 Buscar por arquivo, cliente, processo, analista..." oninput="renderBase()" style="flex:2">
+      <select id="base-risco" onchange="renderBase()" style="background:var(--bg);color:var(--txt);border:1px solid var(--brd);border-radius:9px;padding:10px 12px;font-family:inherit;font-size:13px">
+        <option value="">Todos os riscos</option>
+        <option>CRÍTICO</option><option>ALTO</option><option>MÉDIO</option><option>BAIXO</option><option>LIMPO</option>
+      </select>
+    </div>
+    <div style="overflow:auto;max-height:65vh;border:1px solid var(--brd);border-radius:10px">
+      <table class="base">
+        <thead><tr><th>Data</th><th>Analista</th><th>Cliente</th><th>Processo</th><th>Arquivo</th><th>Risco</th><th>Achados</th><th>IA</th><th>Resumo IA</th></tr></thead>
+        <tbody id="base-tbody"></tbody>
+      </table>
+    </div>
+    <div class="status" id="base-status"></div>
+  </div>
 </div>
 
 <script>
@@ -295,6 +342,9 @@ function analisar(){
   const scan = scanEstatico(texto);
   const usarIA = document.getElementById('usarIA').checked && document.getElementById('apikey').value.trim();
   renderResultado(scan, usarIA);
+  // registra na base do escritório
+  window._regAtual = criarRegistro(scan, texto);
+  salvarRegistro(window._regAtual);
   if(usarIA) analisarComIA(texto, scan);
   else if(document.getElementById('usarIA').checked) document.getElementById('iastatus').textContent='⚠️ Informe a chave Anthropic para rodar a análise por IA.';
 }
@@ -367,6 +417,19 @@ async function analisarComIA(texto, scan){
     if(!block){ setStatus('❌ Resposta sem dados estruturados.'); return; }
     renderIA(block.input);
     document.getElementById('iastatus').textContent='✅ Análise por IA concluída.';
+    // atualiza o registro na base com o resultado da IA
+    if(window._regAtual){
+      const r = block.input;
+      const reg = window._regAtual;
+      reg.ia_rodou = true;
+      reg.e_injection = !!r.e_injection;
+      reg.risco_ia = r.risco;
+      reg.resumo_ia = r.resumo||'';
+      reg.recomendacao_ia = r.recomendacao||'';
+      // risco final = o pior entre regras e IA
+      reg.risco_final = (NIVEL_ORDEM[r.risco]||0) > (NIVEL_ORDEM[reg.risco_regras]||0) ? r.risco : reg.risco_regras;
+      salvarRegistro(reg);
+    }
   }catch(e){
     setStatus('❌ Falha na conexão: '+esc(e.message)+' (verifique internet / firewall do escritório)');
   }
@@ -407,7 +470,139 @@ Dos fatos: o reclamante foi admitido em 01/02/2020 e dispensado sem justa causa 
   document.getElementById('fileinfo').textContent='Exemplo carregado (contém uma injeção [SYSTEM] proposital).';
 }
 
-// restaura chave salva
+// ─────────────────────────────────────────────────────────────────────────
+// BASE DE DADOS — histórico de varreduras do escritório (Supabase + local)
+// ─────────────────────────────────────────────────────────────────────────
+const DB_URL = 'https://kgyeeuynerhpaqlhqwkx.supabase.co';
+const DB_KEY = 'sb_publishable_MdUFFFJ5xRqiQysyxlWHFA_yk_LsknZ';
+const DB_TBL = 'scans_injection';
+let _dbAll = [];
+let _dbOnline = false;
+
+function irAba(a){
+  document.getElementById('page-verif').style.display = a==='verif'?'':'none';
+  document.getElementById('page-base').style.display  = a==='base'?'':'none';
+  document.getElementById('ttab-verif').classList.toggle('active', a==='verif');
+  document.getElementById('ttab-base').classList.toggle('active', a==='base');
+  if(a==='base') carregarBase();
+}
+
+async function carregarBase(){
+  // local primeiro (instantâneo)
+  try{ _dbAll = JSON.parse(localStorage.getItem('pc_pi_base')||'[]'); }catch(e){ _dbAll=[]; }
+  renderBase();
+  // depois tenta o Supabase (base compartilhada do escritório)
+  try{
+    const r = await fetch(`${DB_URL}/rest/v1/${DB_TBL}?select=id,dados&order=id.desc&limit=2000`,
+      {headers:{apikey:DB_KEY, Authorization:'Bearer '+DB_KEY}});
+    if(r.ok){
+      const rows = await r.json();
+      _dbAll = rows.map(x=>x.dados);
+      _dbOnline = true;
+      try{ localStorage.setItem('pc_pi_base', JSON.stringify(_dbAll.slice(0,500))); }catch(e){}
+      renderBase();
+    } else { _dbOnline = false; renderBase(); }
+  }catch(e){ _dbOnline = false; renderBase(); }
+}
+
+async function salvarRegistro(rec){
+  // sempre salva local
+  try{
+    let arr = JSON.parse(localStorage.getItem('pc_pi_base')||'[]');
+    const i = arr.findIndex(x=>x.id===rec.id);
+    if(i>=0) arr[i]=rec; else arr.unshift(rec);
+    localStorage.setItem('pc_pi_base', JSON.stringify(arr.slice(0,500)));
+  }catch(e){}
+  // tenta o compartilhado
+  try{
+    await fetch(`${DB_URL}/rest/v1/${DB_TBL}`,{method:'POST',
+      headers:{apikey:DB_KEY, Authorization:'Bearer '+DB_KEY,'Content-Type':'application/json',Prefer:'resolution=merge-duplicates'},
+      body:JSON.stringify([{id:rec.id, dados:rec}])});
+  }catch(e){}
+  const cnt=document.getElementById('base-count'); if(cnt) cnt.textContent='';
+}
+
+function renderBase(){
+  const tb = document.getElementById('base-tbody'); if(!tb) return;
+  const q = (document.getElementById('base-busca').value||'').toLowerCase();
+  const fr = document.getElementById('base-risco').value;
+  const rows = _dbAll.filter(r=>{
+    if(fr && r.risco_final!==fr) return false;
+    if(q){
+      const blob = [r.arquivo,r.cliente,r.processo,r.analista,r.resumo_ia].join(' ').toLowerCase();
+      if(!blob.includes(q)) return false;
+    }
+    return true;
+  });
+  tb.innerHTML = rows.map(r=>`<tr>
+    <td>${(r.data||'').slice(0,16).replace('T',' ')}</td>
+    <td>${esc(r.analista||'—')}</td>
+    <td>${esc(r.cliente||'—')}</td>
+    <td style="font-family:'IBM Plex Mono',monospace;font-size:11px">${esc(r.processo||'—')}</td>
+    <td>${esc(r.arquivo||'(texto colado)')}</td>
+    <td><span class="pill p-${classe(r.risco_final||'BAIXO')}" style="${r.risco_final==='LIMPO'?'background:var(--ok);color:#04331f':''}">${r.risco_final||'—'}</span></td>
+    <td>${r.n_achados??'—'}</td>
+    <td>${r.ia_rodou?(r.e_injection?'🚨 injeção':'✅ ok'):'—'}</td>
+    <td style="max-width:340px">${esc((r.resumo_ia||'').slice(0,160))}</td>
+  </tr>`).join('') || '<tr><td colspan="9" style="text-align:center;color:var(--mut);padding:24px">Nenhuma varredura registrada ainda.</td></tr>';
+  document.getElementById('base-status').textContent = rows.length+' registro(s)'+(q||fr?' (filtrado de '+_dbAll.length+')':'');
+  const tag = document.getElementById('sync-tag');
+  if(tag){
+    tag.className = 'sync-tag '+(_dbOnline?'sync-on':'sync-off');
+    tag.textContent = _dbOnline?'● base compartilhada do escritório':'● somente este navegador (sync indisponível)';
+  }
+  const cnt=document.getElementById('base-count'); if(cnt) cnt.textContent=_dbAll.length||'';
+}
+
+function exportarExcelBase(){
+  if(!_dbAll.length){ alert('Base vazia.'); return; }
+  const linhas = _dbAll.map(r=>({
+    'Data': (r.data||'').replace('T',' ').slice(0,19),
+    'Analista': r.analista||'', 'Cliente': r.cliente||'', 'Processo': r.processo||'',
+    'Arquivo': r.arquivo||'(texto colado)', 'Tamanho (chars)': r.tamanho||0,
+    'Risco Final': r.risco_final||'', 'Risco Regras': r.risco_regras||'',
+    'Achados (regras)': r.n_achados??0,
+    'Detalhe Achados': r.achados_detalhe||'',
+    'IA Rodou': r.ia_rodou?'SIM':'NÃO', 'IA: É injeção': r.ia_rodou?(r.e_injection?'SIM':'NÃO'):'',
+    'IA: Risco': r.risco_ia||'', 'IA: Resumo': r.resumo_ia||'', 'IA: Recomendação': r.recomendacao_ia||'',
+  }));
+  const ws = XLSX.utils.json_to_sheet(linhas);
+  ws['!cols'] = [{wch:17},{wch:18},{wch:18},{wch:26},{wch:34},{wch:12},{wch:11},{wch:11},{wch:9},{wch:50},{wch:8},{wch:11},{wch:9},{wch:60},{wch:60}];
+  const wb = XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(wb, ws, 'Varreduras');
+  // aba resumo
+  const porRisco = {};
+  _dbAll.forEach(r=>{ const k=r.risco_final||'?'; porRisco[k]=(porRisco[k]||0)+1; });
+  const resumo = Object.entries(porRisco).map(([k,v])=>({'Risco':k,'Total':v}));
+  resumo.push({'Risco':'TOTAL','Total':_dbAll.length});
+  XLSX.utils.book_append_sheet(wb, XLSX.utils.json_to_sheet(resumo), 'Resumo');
+  XLSX.writeFile(wb, 'LAWgico_PromptInject_Base_'+new Date().toISOString().slice(0,10)+'.xlsx');
+}
+
+// registro corrente (preenchido pelo analisar / analisarComIA)
+window._regAtual = null;
+function criarRegistro(scan, texto){
+  const f = document.getElementById('fileinfo').textContent||'';
+  const mArq = f.match(/✅\s*(.+?)\s+—/);
+  return {
+    id: Date.now(),
+    data: new Date().toISOString(),
+    analista: document.getElementById('analista').value.trim(),
+    cliente: document.getElementById('cliente').value.trim(),
+    processo: document.getElementById('processo').value.trim(),
+    arquivo: mArq?mArq[1]:'',
+    tamanho: texto.length,
+    risco_regras: scan.risco_injection,
+    risco_final: scan.risco_injection,
+    n_achados: scan.n_achados,
+    achados_detalhe: scan.achados.map(a=>`[${a.risco}] ${a.tipo}: ${a.descricao}`).join(' || ').slice(0,1500),
+    ia_rodou: false, e_injection: null, risco_ia: '', resumo_ia: '', recomendacao_ia: ''
+  };
+}
+
+// restaura chave e analista salvos
 try{ const k=localStorage.getItem('pc_anthropic_key'); if(k) document.getElementById('apikey').value=k; }catch(e){}
+try{ const a=localStorage.getItem('pc_pi_analista'); if(a) document.getElementById('analista').value=a; }catch(e){}
+carregarBase();
 </script>
 </body></html>
