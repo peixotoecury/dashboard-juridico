@@ -2700,6 +2700,9 @@ body.role-manager .upload-bar {
     <span style="width:7px;height:7px;border-radius:50%;background:#2d7d46;flex-shrink:0;display:inline-block;"></span>
     Dados de <strong id="hdr-data-upload" style="color:#2c3d4f;font-weight:600;margin-left:3px;"></strong>
   </div>
+  <button id="btn-sync-now" onclick="syncAgora()" title="Força sincronização imediata com o banco LM" style="margin-left:8px;margin-right:8px;padding:5px 12px;border:none;border-radius:6px;background:#1565c0;color:#fff;font-size:11px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:5px;flex-shrink:0;">
+    <span id="btn-sync-icon">🔄</span> <span id="btn-sync-txt">Sincronizar</span>
+  </button>
 </nav>
 
 
@@ -5871,6 +5874,65 @@ function mpFiltrarStatus(st) {
 }
 
 function clearFatal() { ['fatal-s','fatal-resp','fatal-grupo'].forEach(id=>{const el=V(id);if(el)el.value='';}); renderFatais(); }
+
+// ── SINCRONIZAR AGORA (chama sync_server.py local na porta 8765) ─────────────
+async function syncAgora() {
+  const btn  = document.getElementById('btn-sync-now');
+  const icon = document.getElementById('btn-sync-icon');
+  const txt  = document.getElementById('btn-sync-txt');
+  if (!btn) return;
+
+  btn.disabled = true;
+  icon.textContent = '⏳';
+  txt.textContent  = 'Sincronizando...';
+  btn.style.background = '#546e7a';
+
+  try {
+    const r = await fetch('http://localhost:8765/sync', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+    });
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+
+    // Aguarda até 90 s para o sync concluir, consultando /status a cada 2 s
+    let tentativas = 45;
+    while (tentativas-- > 0) {
+      await new Promise(res => setTimeout(res, 2000));
+      try {
+        const s = await fetch('http://localhost:8765/status');
+        const j = await s.json();
+        if (!j.rodando) {
+          if (j.erro) throw new Error(j.erro);
+          // Recarrega dados do Supabase
+          icon.textContent = '✅';
+          txt.textContent  = j.saida ? j.saida.split('|')[0].replace('OK —','').trim() : 'Concluído!';
+          btn.style.background = '#2e7d32';
+          await carregarPrazosSupabase();
+          setTimeout(() => {
+            btn.disabled = false;
+            icon.textContent = '🔄';
+            txt.textContent  = 'Sincronizar';
+            btn.style.background = '#1565c0';
+          }, 4000);
+          return;
+        }
+      } catch(_) {}
+    }
+    throw new Error('Timeout — sync demorou mais de 90 s');
+  } catch (ex) {
+    icon.textContent = '❌';
+    txt.textContent  = ex.message.includes('Failed to fetch')
+      ? 'Servidor local offline'
+      : ex.message.slice(0, 30);
+    btn.style.background = '#c62828';
+    btn.disabled = false;
+    setTimeout(() => {
+      icon.textContent = '🔄';
+      txt.textContent  = 'Sincronizar';
+      btn.style.background = '#1565c0';
+    }, 5000);
+  }
+}
 function clearAud()   { ['ud-tipo','ud-grupo','ud-estado','ud-s'].forEach(id=>{const el=V(id);if(el)el.value='';}); renderAudDet(); }
 
 // ── INSIGHTS AUTOMÁTICOS ──────────────────────────────
