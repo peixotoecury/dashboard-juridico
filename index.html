@@ -2696,9 +2696,9 @@ body.role-manager .upload-bar {
     if(typeof window.renderMP==='function') window.renderMP();
     else if(typeof window.renderMeuPainelSomente==='function') window.renderMeuPainelSomente();
   ">👤 Meu Painel <span class="nb-cnt" id="mp-only-nav-count">0</span></button>
-  <div id="hdr-ultima-atualizacao" style="margin-left:auto;display:none;align-items:center;gap:6px;font-size:10.5px;color:#7a909f;padding:0 16px;flex-shrink:0;white-space:nowrap;">
-    <span style="width:7px;height:7px;border-radius:50%;background:#2d7d46;flex-shrink:0;display:inline-block;"></span>
-    Dados de <strong id="hdr-data-upload" style="color:#2c3d4f;font-weight:600;margin-left:3px;"></strong>
+  <div id="hdr-ultima-atualizacao" style="margin-left:auto;display:none;align-items:center;gap:6px;font-size:10.5px;color:rgba(255,255,255,.5);padding:0 12px 0 4px;flex-shrink:0;white-space:nowrap;">
+    <span style="width:7px;height:7px;border-radius:50%;background:#4caf50;flex-shrink:0;display:inline-block;"></span>
+    Dados de <strong id="hdr-data-upload" style="color:rgba(255,255,255,.85);font-weight:600;margin-left:3px;"></strong>
   </div>
 </nav>
 
@@ -3829,11 +3829,12 @@ async function carregarPrazosSupabase() {
     document.querySelectorAll('.upload-date, #upload-date, [id*="upload"]').forEach(el => {
       if(el.tagName !== 'INPUT') el.textContent = 'Atualizado: ' + atualizado;
     });
-    // Atualiza header badge
+    // Atualiza header badge e sidebar timestamp
     const hdrEl = document.getElementById('hdr-data-upload');
     if(hdrEl) hdrEl.textContent = atualizado;
     const hdrBadge = document.getElementById('hdr-ultima-atualizacao');
     if(hdrBadge) hdrBadge.style.display = 'flex';
+    if(typeof window._atualizarSidebarTs === 'function') window._atualizarSidebarTs(atualizado);
 
     n('nc-prazos', S.prazos.length);
     if(typeof popGlobal === 'function') popGlobal();
