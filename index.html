@@ -2702,12 +2702,6 @@ body.role-manager .upload-bar {
   </div>
 </nav>
 
-<!-- Banner dado desatualizado -->
-<div id="banner-stale">
-  <span class="bs-icon">⚠️</span>
-  <span id="banner-stale-msg">Banco de dados temporariamente indisponível — exibindo dados de <strong id="banner-stale-ts"></strong>. Tentando reconectar...</span>
-  <span class="bs-close" onclick="document.getElementById('banner-stale').classList.remove('show')" title="Fechar">✕</span>
-</div>
 
 <!-- FILTER PANEL (prazos/agendas/equipe) -->
 <div class="filter-panel" id="fpanel">
@@ -3762,23 +3756,6 @@ function diasUteisDiff(dataDate, hoje) {
 }
 
 // ── BUSCAR PRAZOS DO SUPABASE (fonte principal) ──────────────────────────────
-function _verificarDadoDesatualizado(tsUltimo) {
-  const banner = document.getElementById('banner-stale');
-  if (!banner) return;
-  if (!tsUltimo) { banner.classList.remove('show'); return; }
-  const diffMin = (Date.now() - tsUltimo.getTime()) / 60000;
-  if (diffMin > 6) {
-    const mins = Math.round(diffMin);
-    const tsStr = tsUltimo.toLocaleString('pt-BR', {hour:'2-digit', minute:'2-digit'});
-    const el = document.getElementById('banner-stale-ts');
-    if (el) el.textContent = tsStr;
-    const msg = document.getElementById('banner-stale-msg');
-    if (msg) msg.innerHTML = `Banco de dados indisponível há ~${mins} min — exibindo dados das ${tsStr}. Tentando reconectar automaticamente...`;
-    banner.classList.add('show');
-  } else {
-    banner.classList.remove('show');
-  }
-}
 
 async function carregarPrazosSupabase() {
   const SUPA_URL = 'https://kgyeeuynerhpaqlhqwkx.supabase.co';
@@ -3857,8 +3834,6 @@ async function carregarPrazosSupabase() {
     if(hdrEl) hdrEl.textContent = atualizado;
     const hdrBadge = document.getElementById('hdr-ultima-atualizacao');
     if(hdrBadge) hdrBadge.style.display = 'flex';
-    // Verifica se dado está stale (> 6 min sem sync — banco LM pode estar fora)
-    _verificarDadoDesatualizado(tsUltimo);
 
     n('nc-prazos', S.prazos.length);
     if(typeof popGlobal === 'function') popGlobal();
