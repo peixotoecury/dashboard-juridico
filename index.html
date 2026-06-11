@@ -3770,20 +3770,43 @@ async function carregarPrazosSupabase() {
   } catch(e) {}
 
   try {
-    console.log('🔄 Buscando prazos do Supabase...');
+    console.log('🔄 Buscando prazos do Supabase (paralelo)...');
 
-    // Busca todos os registros em páginas de 1000
-    let todos = [], offset = 0, pagSize = 1000;
-    while(true) {
-      const r = await fetch(
-        `${SUPA_URL}/rest/v1/prazos_agendas?select=*&order=data.asc&limit=${pagSize}&offset=${offset}`,
-        { headers: { 'apikey': SUPA_KEY, 'Authorization': `Bearer ${SUPA_KEY}` } }
+    const COLS = 'data,status,dias_restantes,situacao_pasta,responsavel,grupo_processo,cliente,tipo_agenda,descricao_tarefa,numero_processo,parte_contraria,importante,matricula,parte_principal,area,codigo_processo,atualizado_em';
+    const HDR  = { 'apikey': SUPA_KEY, 'Authorization': `Bearer ${SUPA_KEY}` };
+    const PAG  = 1000;
+
+    // 1) busca total com HEAD
+    const headR = await fetch(
+      `${SUPA_URL}/rest/v1/prazos_agendas?select=data&limit=1&offset=0`,
+      { headers: { ...HDR, 'Prefer': 'count=exact', 'Range-Unit': 'items', 'Range': '0-0' } }
+    );
+    const totalStr = (headR.headers.get('Content-Range') || '').split('/')[1];
+    const total = totalStr ? parseInt(totalStr) : 0;
+
+    let todos;
+    if (total > 0) {
+      // 2) todas as páginas em paralelo
+      const nPags = Math.ceil(total / PAG);
+      const results = await Promise.all(
+        Array.from({length: nPags}, (_, i) =>
+          fetch(`${SUPA_URL}/rest/v1/prazos_agendas?select=${COLS}&order=data.asc&limit=${PAG}&offset=${i*PAG}`, { headers: HDR })
+            .then(r => r.ok ? r.json() : Promise.reject(`Supabase ${r.status}`))
+        )
       );
-      if (!r.ok) throw new Error(`Supabase ${r.status}`);
-      const lote = await r.json();
-      todos = todos.concat(lote);
-      if (lote.length < pagSize) break;
-      offset += pagSize;
+      todos = results.flat();
+    } else {
+      // fallback sequencial se count não vier
+      todos = [];
+      let offset = 0;
+      while(true) {
+        const r = await fetch(`${SUPA_URL}/rest/v1/prazos_agendas?select=${COLS}&order=data.asc&limit=${PAG}&offset=${offset}`, { headers: HDR });
+        if (!r.ok) throw new Error(`Supabase ${r.status}`);
+        const lote = await r.json();
+        todos = todos.concat(lote);
+        if (lote.length < PAG) break;
+        offset += PAG;
+      }
     }
 
     if (!todos.length) throw new Error('Nenhum dado no Supabase');
