@@ -2700,9 +2700,6 @@ body.role-manager .upload-bar {
     <span style="width:7px;height:7px;border-radius:50%;background:#2d7d46;flex-shrink:0;display:inline-block;"></span>
     Dados de <strong id="hdr-data-upload" style="color:#2c3d4f;font-weight:600;margin-left:3px;"></strong>
   </div>
-  <button id="btn-sync-now" onclick="syncAgora()" title="Força sincronização imediata com o banco LM" style="margin-left:8px;margin-right:8px;padding:5px 12px;border:none;border-radius:6px;background:#1565c0;color:#fff;font-size:11px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:5px;flex-shrink:0;">
-    <span id="btn-sync-icon">🔄</span> <span id="btn-sync-txt">Sincronizar</span>
-  </button>
 </nav>
 
 
@@ -5905,8 +5902,13 @@ async function syncAgora() {
           if (j.erro) throw new Error(j.erro);
           // Recarrega dados do Supabase
           icon.textContent = '✅';
-          txt.textContent  = j.saida ? j.saida.split('|')[0].replace('OK —','').trim() : 'Concluído!';
+          txt.textContent  = 'Concluído!';
           btn.style.background = '#2e7d32';
+          // Atualiza timestamp da sidebar
+          const agora = new Date();
+          const tsStr = agora.toLocaleDateString('pt-BR') + ' às ' + agora.toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});
+          if(typeof window._atualizarSidebarTs === 'function') window._atualizarSidebarTs(tsStr);
+          localStorage.setItem('pc_upload_date', agora.toISOString());
           await carregarPrazosSupabase();
           setTimeout(() => {
             btn.disabled = false;
@@ -9114,17 +9116,33 @@ window._exportarMeusRegistrosOLD_unused = function(){
     nav.appendChild(btn);
 
     if(!document.getElementById('sidebar-att-ts')){
-      const tsEl = document.createElement('div');
+      const wrap = document.createElement('div');
+      wrap.style.cssText = 'display:flex;align-items:center;gap:6px;padding:2px 4px 6px;';
+
+      const tsEl = document.createElement('span');
       tsEl.id = 'sidebar-att-ts';
-      tsEl.style.cssText = 'font-size:10px;color:rgba(255,255,255,.35);padding:2px 4px 6px;letter-spacing:.02em;';
-      nav.appendChild(tsEl);
+      tsEl.style.cssText = 'font-size:10px;color:rgba(255,255,255,.35);letter-spacing:.02em;flex:1;';
+
+      const btnSync = document.createElement('button');
+      btnSync.id = 'btn-sync-now';
+      btnSync.title = 'Forçar sincronização com o banco LM agora';
+      btnSync.style.cssText = 'border:none;border-radius:5px;background:#1565c0;color:#fff;font-size:10px;font-weight:600;cursor:pointer;padding:3px 8px;display:flex;align-items:center;gap:3px;flex-shrink:0;white-space:nowrap;';
+      btnSync.innerHTML = '<span id="btn-sync-icon">🔄</span><span id="btn-sync-txt">Sincronizar</span>';
+      btnSync.onclick = function(){ if(typeof syncAgora==='function') syncAgora(); };
+
       const _saved = localStorage.getItem('pc_ultima_planilha') || localStorage.getItem('pc_upload_date');
       if(_saved){
         try{
           const _d = new Date(_saved);
           tsEl.textContent = 'Atualizado ' + _d.toLocaleDateString('pt-BR') + ' às ' + _d.toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});
         }catch(e){ tsEl.textContent = 'Atualizado ' + _saved.slice(0,16).replace('T',' '); }
+      } else {
+        tsEl.textContent = 'Aguardando sync...';
       }
+
+      wrap.appendChild(tsEl);
+      wrap.appendChild(btnSync);
+      nav.appendChild(wrap);
     }
   }
 
