@@ -2972,6 +2972,7 @@ body.role-manager .upload-bar {
   <button class="hdr-btn" onclick="enviarEmailTrabalhista()" title="Enviar email para área trabalhista">✉️ Email Trabalhista</button>
   <button class="hdr-btn" onclick="salvarPlanilhaAtualEmLS(); alert('✅ Planilha salva! Ao recarregar, os dados serão restaurados.');" title="Salvar planilha no navegador para restaurar ao recarregar">💾 Salvar Planilha</button>
   <button class="hdr-btn primary" onclick="registrarSnapshot()">📸 Registrar Snapshot</button>
+  <button class="hdr-btn" id="btn-migrar-indexeddb-exec" onclick="migrarIndexedDBparaSupabase()" style="background:#6A1B9A;color:#fff;border-color:#6A1B9A;display:none;">📥 Recuperar justificativas locais</button>
 </div>
 
 </div><!-- /prazos -->
@@ -9823,8 +9824,10 @@ document.addEventListener('DOMContentLoaded', function(){
       var podeAprovar = (typeof isManager==='function' && isManager(sess)) || typeof _equipeDoGestor(sess)==='string';
       var btnApr = document.getElementById('btn-aprovar-justif');
       var btnMig = document.getElementById('btn-migrar-indexeddb');
+      var btnMigExec = document.getElementById('btn-migrar-indexeddb-exec');
       if(btnApr) btnApr.style.display = podeAprovar ? '' : 'none';
       if(btnMig) btnMig.style.display = podeAprovar ? '' : 'none';
+      if(btnMigExec) btnMigExec.style.display = podeAprovar ? '' : 'none';
     }catch(e){}
   }
 
