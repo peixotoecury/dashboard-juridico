@@ -3758,6 +3758,7 @@ function diasUteisDiff(dataDate, hoje) {
 // ── BUSCAR PRAZOS DO SUPABASE (fonte principal) ──────────────────────────────
 
 async function carregarPrazosSupabase() {
+  window._ultimoLoadSupabase = Date.now(); // atualiza timestamp para o fallback de 5min
   const SUPA_URL = 'https://kgyeeuynerhpaqlhqwkx.supabase.co';
   const SUPA_KEY = 'sb_publishable_MdUFFFJ5xRqiQysyxlWHFA_yk_LsknZ';
 
@@ -9711,6 +9712,26 @@ document.addEventListener('DOMContentLoaded', function(){
 
 <!-- Supabase carregado no final para garantir que o DOM já existe -->
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" onload="_initSupabase(); if(typeof window.iniciarRealtimeSupabase==='function') window.iniciarRealtimeSupabase();"></script>
+
+<script>
+// Fallback de auto-refresh: se o Realtime Supabase falhar (página aberta antes da sync,
+// timeout de websocket, etc.), recarrega os dados a cada 5 minutos.
+(function(){
+  var INTERVALO = 5 * 60 * 1000;
+  window._ultimoLoadSupabase = Date.now();
+
+  setInterval(function(){
+    if(document.visibilityState !== 'visible') return;
+    // Respeita debounce: não recarrega se o Realtime já fez isso recentemente
+    if(Date.now() - (window._ultimoLoadSupabase || 0) < INTERVALO - 15000) return;
+    if(typeof carregarPrazosSupabase === 'function'){
+      console.log('⏱ Auto-refresh 5min: recarregando do Supabase...');
+      window._ultimoLoadSupabase = Date.now();
+      carregarPrazosSupabase();
+    }
+  }, INTERVALO);
+})();
+</script>
 
 <!-- AUTO_DATA removido: dados vêm do Supabase -->
 
