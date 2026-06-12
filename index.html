@@ -7189,7 +7189,8 @@ document.addEventListener('DOMContentLoaded', function(){
     }
 
     // Botões de gestor (Meu Painel + rodapé executivo)
-    var podeAprovar = isManager(sess) || (typeof _equipeDoGestor === 'function' && typeof _equipeDoGestor(sess) === 'string');
+    var _ged = window._equipeDoGestor;
+    var podeAprovar = isManager(sess) || (typeof _ged === 'function' && typeof _ged(sess) === 'string');
     ['btn-aprovar-justif','btn-migrar-indexeddb','btn-migrar-indexeddb-exec'].forEach(function(id){
       var el = document.getElementById(id);
       if(el) el.style.display = podeAprovar ? '' : 'none';
