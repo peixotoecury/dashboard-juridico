@@ -340,14 +340,24 @@ def push_dados_json(df_prazos: "pd.DataFrame", df_aud: "pd.DataFrame"):
 def main():
     logging.info("=== Início da sincronização ===")
     try:
-        atualizar_excel_legal_manager()
-        df = gerar_xlsx()
+        # Prazos já vêm do banco via sync_prazos.py (psycopg2) — não abre Excel
         df_aud = gerar_audiencias()
-        push_github()
-        push_dados_json(df, df_aud)
-        total = len(df)
-        logging.info(f"=== Concluído. {total} prazos + {len(df_aud)} audiências publicados via GitHub. ===")
-        print(f"OK — {total} prazos e {len(df_aud)} audiências publicados no dashboard.")
+
+        # Publica a Pauta de Audiências como xlsx no GitHub (branch data)
+        if not df_aud.empty:
+            import tempfile
+            with tempfile.NamedTemporaryFile(suffix=".xlsx", delete=False) as tmp:
+                tmp_path = tmp.name
+            df_aud.to_excel(tmp_path, index=False, sheet_name="Audiencias")
+            _push_arquivo_github(
+                "Pauta_de_Audiencias.xlsx",
+                Path(tmp_path).read_bytes(),
+                f"Audiências: sync {date.today()} — {len(df_aud)} registros",
+            )
+            Path(tmp_path).unlink(missing_ok=True)
+
+        logging.info(f"=== Concluído. {len(df_aud)} audiências publicadas via GitHub. ===")
+        print(f"OK — {len(df_aud)} audiências publicadas no dashboard.")
     except Exception as e:
         logging.error(f"ERRO: {e}", exc_info=True)
         print(f"ERRO: {e}")

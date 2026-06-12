@@ -3339,6 +3339,8 @@ body.role-manager .upload-bar {
         <div class="mp-only-actions">
           <button class="mp-only-btn primary" onclick="exportarMeusRegistrosFormatado()">📥 Exportar meus registros</button>
           <button class="mp-only-btn" id="btn-enviar-justif" onclick="abrirModalJustificativas()" style="background:#c62828;color:#fff;border-color:#c62828;display:none;">📨 Enviar justificativas dos fatais</button>
+          <button class="mp-only-btn" id="btn-aprovar-justif" onclick="abrirPainelAprovacao()" style="background:#1565C0;color:#fff;border-color:#1565C0;display:none;">✅ Aprovar justificativas</button>
+          <button class="mp-only-btn" id="btn-migrar-indexeddb" onclick="migrarIndexedDBparaSupabase()" style="background:#6A1B9A;color:#fff;border-color:#6A1B9A;display:none;">📥 Recuperar justificativas locais</button>
         </div>
 
         <div class="mp-only-cards">
@@ -4915,13 +4917,14 @@ window.salvarJustificativa = function(audId, texto, processo) {
           justificativa_texto: texto,
           usuario_email: sess.email || '',
           usuario_nome: sess.nome || '',
-          atualizado_em: new Date().toISOString()
+          atualizado_em: new Date().toISOString(),
+          status: 'pendente'
         }, { onConflict: 'numero_processo' })
         .then(function(result){
           if(result.error) {
             console.log('❌ Erro ao salvar no Supabase:', result.error);
           } else {
-            console.log('✅ Justificativa salva no Supabase');
+            console.log('✅ Justificativa salva no Supabase (pendente aprovação)');
           }
         })
         .catch(function(err){
@@ -9765,7 +9768,193 @@ document.addEventListener('DOMContentLoaded', function(){
       var btn=document.getElementById('btn-enviar-justif');
       if(btn) btn.style.display=meusFatais.length>0?'':'none';
     }catch(e){}
+    // Botões exclusivos de gestor
+    try {
+      var sess = window.SESSAO||window.sessao||window.usuarioLogado||{};
+      var mgr = typeof isManager==='function' && isManager(sess);
+      var btnApr = document.getElementById('btn-aprovar-justif');
+      var btnMig = document.getElementById('btn-migrar-indexeddb');
+      if(btnApr) btnApr.style.display = mgr ? '' : 'none';
+      if(btnMig) btnMig.style.display = mgr ? '' : 'none';
+    }catch(e){}
   }
+
+  // ══════════════════════════════════════════════════════════
+  // PAINEL DE APROVAÇÃO DE JUSTIFICATIVAS (só gestores)
+  // ══════════════════════════════════════════════════════════
+  window.abrirPainelAprovacao = function() {
+    _initSupabase();
+    if(!supabaseClient) { alert('Supabase não disponível.'); return; }
+    var old = document.getElementById('modal-aprovacao-justif');
+    if(old) old.remove();
+
+    var modal = document.createElement('div');
+    modal.id = 'modal-aprovacao-justif';
+    modal.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:9999;display:flex;align-items:flex-start;justify-content:center;padding:20px;overflow-y:auto;';
+    modal.innerHTML = '<div style="background:#fff;border-radius:12px;width:100%;max-width:900px;box-shadow:0 20px 60px rgba(0,0,0,.3);overflow:hidden;">'
+      +'<div style="background:linear-gradient(90deg,#1565C0,#1976D2);padding:18px 24px;color:#fff;display:flex;justify-content:space-between;align-items:center;">'
+      +'<div style="font-size:16px;font-weight:700;">✅ Aprovação de Justificativas de Prazos Fatais</div>'
+      +'<button onclick="document.getElementById(\'modal-aprovacao-justif\').remove()" style="background:rgba(255,255,255,.2);border:none;color:#fff;border-radius:6px;padding:6px 12px;cursor:pointer;font-size:13px;">✕ Fechar</button>'
+      +'</div>'
+      +'<div id="aprovacao-body" style="padding:20px;"><div style="text-align:center;padding:40px;color:#666;">Carregando justificativas pendentes...</div></div>'
+      +'</div>';
+    document.body.appendChild(modal);
+
+    supabaseClient.from('justificativas').select('*').order('atualizado_em', {ascending:false})
+      .then(function(result) {
+        var body = document.getElementById('aprovacao-body');
+        if(!body) return;
+        if(result.error) { body.innerHTML = '<div style="color:red;padding:20px;">Erro: '+result.error.message+'</div>'; return; }
+        var rows = result.data || [];
+        if(!rows.length) { body.innerHTML = '<div style="text-align:center;padding:40px;color:#666;">Nenhuma justificativa encontrada.</div>'; return; }
+
+        var pendentes = rows.filter(function(r){ return !r.status || r.status==='pendente'; });
+        var aprovadas = rows.filter(function(r){ return r.status==='aprovada'; });
+        var rejeitadas = rows.filter(function(r){ return r.status==='rejeitada'; });
+
+        function fmtDt(v){ if(!v) return '—'; try{ return new Date(v).toLocaleString('pt-BR'); }catch(e){ return v; } }
+        function rowHtml(r) {
+          var st = r.status||'pendente';
+          var stBadge = st==='aprovada'
+            ? '<span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;">✅ Aprovada</span>'
+            : st==='rejeitada'
+            ? '<span style="background:#ffebee;color:#c62828;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;">❌ Rejeitada</span>'
+            : '<span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;">⏳ Pendente</span>';
+          var acoes = st==='pendente'
+            ? '<button onclick="aprovarJustif(\''+r.numero_processo+'\')" style="background:#2e7d32;color:#fff;border:none;border-radius:5px;padding:5px 10px;cursor:pointer;font-size:11px;margin-right:4px;">✅ Aprovar</button>'
+              +'<button onclick="rejeitarJustif(\''+r.numero_processo+'\')" style="background:#c62828;color:#fff;border:none;border-radius:5px;padding:5px 10px;cursor:pointer;font-size:11px;">❌ Rejeitar</button>'
+            : '<button onclick="reabrirJustif(\''+r.numero_processo+'\')" style="background:#666;color:#fff;border:none;border-radius:5px;padding:5px 10px;cursor:pointer;font-size:11px;">↩ Reabrir</button>';
+          var texto = (r.justificativa_texto||'').replace(/\n/g,'<br>');
+          return '<tr style="border-bottom:1px solid #eee;">'
+            +'<td style="padding:10px 8px;font-size:11px;font-weight:600;color:#1565C0;white-space:nowrap;">'+r.numero_processo+'</td>'
+            +'<td style="padding:10px 8px;font-size:11px;max-width:300px;">'+texto+'</td>'
+            +'<td style="padding:10px 8px;font-size:11px;white-space:nowrap;">'+r.usuario_nome+'</td>'
+            +'<td style="padding:10px 8px;font-size:11px;white-space:nowrap;">'+fmtDt(r.atualizado_em)+'</td>'
+            +'<td style="padding:10px 8px;">'+stBadge+'</td>'
+            +'<td style="padding:10px 8px;white-space:nowrap;">'+acoes+'</td>'
+            +'</tr>';
+        }
+
+        var html = '<div style="margin-bottom:12px;display:flex;gap:10px;flex-wrap:wrap;">'
+          +'<span style="background:#fff3e0;color:#e65100;padding:4px 12px;border-radius:10px;font-size:12px;font-weight:600;">⏳ Pendentes: '+pendentes.length+'</span>'
+          +'<span style="background:#e8f5e9;color:#2e7d32;padding:4px 12px;border-radius:10px;font-size:12px;font-weight:600;">✅ Aprovadas: '+aprovadas.length+'</span>'
+          +'<span style="background:#ffebee;color:#c62828;padding:4px 12px;border-radius:10px;font-size:12px;font-weight:600;">❌ Rejeitadas: '+rejeitadas.length+'</span>'
+          +'</div>'
+          +'<table style="width:100%;border-collapse:collapse;">'
+          +'<thead><tr style="background:#1565C0;color:#fff;">'
+          +'<th style="padding:10px 8px;font-size:11px;text-align:left;">Processo</th>'
+          +'<th style="padding:10px 8px;font-size:11px;text-align:left;">Justificativa</th>'
+          +'<th style="padding:10px 8px;font-size:11px;text-align:left;">Advogado</th>'
+          +'<th style="padding:10px 8px;font-size:11px;text-align:left;">Enviado em</th>'
+          +'<th style="padding:10px 8px;font-size:11px;text-align:left;">Status</th>'
+          +'<th style="padding:10px 8px;font-size:11px;text-align:left;">Ação</th>'
+          +'</tr></thead><tbody>'
+          + rows.map(rowHtml).join('')
+          +'</tbody></table>';
+        body.innerHTML = html;
+      });
+  };
+
+  window.aprovarJustif = function(processo) {
+    _initSupabase();
+    var sess = window.SESSAO||window.sessao||window.usuarioLogado||{};
+    supabaseClient.from('justificativas').upsert({
+      numero_processo: processo,
+      status: 'aprovada',
+      gestor_nome: sess.nome||'',
+      gestor_email: sess.email||'',
+      aprovado_em: new Date().toISOString()
+    }, {onConflict:'numero_processo'}).then(function(r){
+      if(r.error) { alert('Erro: '+r.error.message); return; }
+      if(typeof mostrarToast==='function') mostrarToast('✅ Justificativa aprovada.');
+      window.abrirPainelAprovacao();
+    });
+  };
+
+  window.rejeitarJustif = function(processo) {
+    var motivo = prompt('Motivo da rejeição (obrigatório):');
+    if(!motivo || !motivo.trim()) return;
+    _initSupabase();
+    var sess = window.SESSAO||window.sessao||window.usuarioLogado||{};
+    supabaseClient.from('justificativas').upsert({
+      numero_processo: processo,
+      status: 'rejeitada',
+      gestor_nome: sess.nome||'',
+      gestor_email: sess.email||'',
+      aprovado_em: new Date().toISOString(),
+      motivo_rejeicao: motivo.trim()
+    }, {onConflict:'numero_processo'}).then(function(r){
+      if(r.error) { alert('Erro: '+r.error.message); return; }
+      if(typeof mostrarToast==='function') mostrarToast('❌ Justificativa rejeitada.');
+      window.abrirPainelAprovacao();
+    });
+  };
+
+  window.reabrirJustif = function(processo) {
+    if(!confirm('Reabrir esta justificativa como pendente?')) return;
+    _initSupabase();
+    supabaseClient.from('justificativas').upsert({
+      numero_processo: processo,
+      status: 'pendente',
+      gestor_nome: null,
+      gestor_email: null,
+      aprovado_em: null,
+      motivo_rejeicao: null
+    }, {onConflict:'numero_processo'}).then(function(r){
+      if(r.error) { alert('Erro: '+r.error.message); return; }
+      window.abrirPainelAprovacao();
+    });
+  };
+
+  // ══════════════════════════════════════════════════════════
+  // MIGRAÇÃO INDEXEDDB → SUPABASE (só gestores)
+  // ══════════════════════════════════════════════════════════
+  window.migrarIndexedDBparaSupabase = function() {
+    if(!confirm('Isso vai recuperar todas as justificativas salvas localmente neste browser e enviá-las para o Supabase como "pendente". Continuar?')) return;
+    var req = indexedDB.open('PC_Database', 2);
+    req.onsuccess = function(e) {
+      var db = e.target.result;
+      var tx = db.transaction(['justificativas'], 'readonly');
+      var store = tx.objectStore('justificativas');
+      var reqKeys = store.getAllKeys();
+      reqKeys.onsuccess = function(ke) {
+        var keys = ke.target.result;
+        var reqVals = store.getAll();
+        reqVals.onsuccess = function(ve) {
+          var itens = ve.target.result;
+          if(!itens.length) { alert('Nenhuma justificativa encontrada no armazenamento local deste browser.'); return; }
+          _initSupabase();
+          var sess = window.SESSAO||window.sessao||window.usuarioLogado||{};
+          var promessas = itens.map(function(item, i) {
+            var chave = String(keys[i]||'');
+            var numero = chave;
+            // Se chave for numérica, tenta extrair número do processo do texto
+            if(/^\d+$/.test(chave)) {
+              var m = (item.texto||'').match(/(\d{7}-\d{2}\.\d{4}\.\d\.\d{2}\.\d{4})/);
+              if(m) numero = m[1];
+            }
+            return supabaseClient.from('justificativas').upsert({
+              numero_processo: numero,
+              justificativa_texto: item.texto||'',
+              usuario_email: sess.email||item.email||'',
+              usuario_nome: sess.nome||item.nome||'',
+              atualizado_em: item.dataSalva||new Date().toISOString(),
+              status: 'pendente'
+            }, {onConflict:'numero_processo'}).then(function(r){
+              if(r.error) console.log('❌ Erro ao migrar', numero, r.error);
+              else console.log('✅ Migrado:', numero);
+              return r;
+            });
+          });
+          Promise.all(promessas).then(function() {
+            alert('✅ ' + itens.length + ' justificativa(s) recuperada(s) e enviada(s) para aprovação!');
+            if(typeof mostrarToast==='function') mostrarToast('✅ Migração concluída: '+itens.length+' justificativas enviadas.');
+          });
+        };
+      };
+    };
+    req.onerror = function() { alert('Erro ao acessar armazenamento local.'); };
+  };
 
   window.abrirJustifSingle = function(key, procEnc, cliEnc, tarefaEnc, statusStr){
     var proc=decodeURIComponent(procEnc);
@@ -9866,7 +10055,8 @@ document.addEventListener('DOMContentLoaded', function(){
           justificativa_texto: textoCompleto,
           usuario_email: sess.email || '',
           usuario_nome: sess.nome || '',
-          atualizado_em: new Date().toISOString()
+          atualizado_em: new Date().toISOString(),
+          status: 'pendente'
         }, { onConflict: 'numero_processo' })
         .then(function(result){
           if(result.error) {
