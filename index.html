@@ -5595,6 +5595,31 @@ window.gravarJustificativa = function(audId) {
   window.salvarJustificativa(audId, texto);
 };
 
+// Carrega status das justificativas do Supabase e injeta badges/botões inline na tabela de fatais
+window.justificativasStatus = window.justificativasStatus || {};
+window.carregarJustificativasDoSupabase = function() {
+  _initSupabase();
+  if(!supabaseClient) return;
+  supabaseClient.from('justificativas').select('numero_processo,status,justificativa_texto,usuario_nome,equipe')
+    .then(function(result) {
+      if(result.error || !result.data) return;
+      result.data.forEach(function(r) {
+        window.justificativasStatus[r.numero_processo] = r.status || 'pendente';
+        // Também popula window.justificativas para o preview de texto
+        if(r.justificativa_texto) {
+          window.justificativas = window.justificativas || {};
+          window.justificativas[r.numero_processo] = {
+            texto: r.justificativa_texto,
+            status: r.status || 'pendente',
+            usuario_nome: r.usuario_nome
+          };
+        }
+      });
+      // Re-renderiza a tabela com os status atualizados
+      if(typeof renderFatais === 'function') renderFatais();
+    });
+};
+
 window.carregarTodasJustificativas = function() {
   if(!window.justificativas) return;
   
@@ -5637,6 +5662,19 @@ function renderFatais() {
       justCompleta = texto.replace(/DATA DO REGISTRO:|PRAZO:|JUSTIFICATIVA:|DATA DE ENVIO:|CONSIDERAÇÕES:/g, '\n$&').replace(/\n\n+/g, '\n');
       justPreview = texto.length > 80 ? texto.slice(0, 80) + '...' : texto;
     }
+    const justStatus = (window.justificativasStatus && window.justificativasStatus[r.numero_processo]) || (temJust ? 'pendente' : null);
+    const sessAtual = window.SESSAO||window.sessao||window.usuarioLogado||{};
+    const podeAprovarRow = temJust && ((typeof isManager==='function' && isManager(sessAtual)) || typeof _equipeDoGestor(sessAtual)==='string');
+    const justBadge = !temJust ? '—'
+      : justStatus==='aprovada' ? `<span style="background:#e8f5e9;color:#2e7d32;padding:2px 6px;border-radius:8px;font-size:10px;font-weight:700;">✅ Aprovada</span>`
+      : justStatus==='rejeitada' ? `<span style="background:#ffebee;color:#c62828;padding:2px 6px;border-radius:8px;font-size:10px;font-weight:700;">❌ Rejeitada</span>`
+      : `<span style="background:#fff3e0;color:#e65100;padding:2px 6px;border-radius:8px;font-size:10px;font-weight:700;">⏳ Pendente</span>`;
+    const btnAprovar = podeAprovarRow && justStatus==='pendente'
+      ? `<button onclick="aprovarJustif('${e(r.numero_processo)}')" style="background:#2e7d32;color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;width:100%;">✅ Aprovar</button>
+         <button onclick="rejeitarJustif('${e(r.numero_processo)}')" style="background:#c62828;color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;width:100%;">❌ Rejeitar</button>`
+      : podeAprovarRow && justStatus && justStatus!=='pendente'
+      ? `<button onclick="reabrirJustif('${e(r.numero_processo)}')" style="background:#666;color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;width:100%;">↩ Reabrir</button>`
+      : '';
     return `<tr data-aud-id="${audId}">
     <td class="td-clip-sm">${e(r.responsavel)}</td>
     <td class="td-clip-sm proc-normal" title="${e(r.numero_processo)}">${e(r.numero_processo)}</td>
@@ -5644,11 +5682,17 @@ function renderFatais() {
     <td class="td-clip" style="max-width:220px" title="${e(r.descricao_tarefa)}">${e(r.descricao_tarefa)}</td>
     <td>${sBadge(r.status)}</td>
     <td class="td-clip-sm">${e(r.grupo_processo)}</td>
-    <td class="td-clip" style="max-width:250px;font-size:11px;color:${temJust?'#2d7d46':'#999'};cursor:${temJust?'pointer':'default'};" title="${justPreview}" onclick="${temJust?`window.abrirModalJustificativaFatal('${audId}', '${e(r.numero_processo)}', '${e(r.responsavel)}', '${e(r.grupo_processo)}')`:''}">${temJust?'✅ '+justPreview:'—'}</td>
+    <td class="td-clip" style="max-width:220px;font-size:11px;">
+      <div style="display:flex;flex-direction:column;gap:4px;">
+        ${justBadge}
+        ${temJust?`<span style="font-size:10px;color:#555;cursor:pointer;" onclick="window.abrirModalJustificativaFatal('${audId}','${e(r.numero_processo)}','${e(r.responsavel)}','${e(r.grupo_processo)}')" title="${justPreview}">${justPreview}</span>`:''}
+      </div>
+    </td>
     <td style="text-align:center;padding:4px;min-width:220px;">
       <div style="display:flex;flex-direction:column;gap:4px;">
         <button class="btn-salvar-just" data-aud-id="${audId}" style="background:${temJust?'#2d7d46':'#d62828'};color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;width:100%;"
           onclick="window.abrirModalJustificativaFatal('${audId}', '${e(r.numero_processo)}', '${e(r.responsavel)}', '${e(r.grupo_processo)}')">${temJust?'✏️ Editar':'🔴 Justificar'}</button>
+        ${btnAprovar}
         <button style="background:#d84315;color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;width:100%;"
           onclick="window.abrirModalReagendamento('${e(r.numero_processo)}', '${e(r.responsavel)}', '${e(r.grupo_processo)}')" title="Solicitar reagendamento">📅 Reagendar</button>
         <button style="background:#1565C0;color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;width:100%;"
@@ -5658,8 +5702,12 @@ function renderFatais() {
   </tr>`;
   }).join(''):emptyR(7);
   renderPg('pg-fatal',pg,pages,total,'fatal',renderFatais);
-  
   carregarTodasJustificativas();
+  // Carrega status do Supabase apenas na primeira vez ou após mudança
+  if(!window._justifSupabaseCarregado) {
+    window._justifSupabaseCarregado = true;
+    carregarJustificativasDoSupabase();
+  }
 }
 
 function abrirFormReagendamento(processo, responsavel) {
