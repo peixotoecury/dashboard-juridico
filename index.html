@@ -9828,8 +9828,9 @@ document.addEventListener('DOMContentLoaded', function(){
     }catch(e){}
     // Botões exclusivos de gestor / gestor de equipe
     try {
-      var sess = window.SESSAO||window.sessao||window.usuarioLogado||{};
-      var podeAprovar = (typeof isManager==='function' && isManager(sess)) || typeof _equipeDoGestor(sess)==='string';
+      var sess = (typeof getCurrentSession==='function') ? getCurrentSession() : (window.SESSAO||window.sessao||window.usuarioLogado||{});
+      var _ged2 = window._equipeDoGestor;
+      var podeAprovar = (typeof isManager==='function' && isManager(sess)) || (typeof _ged2==='function' && typeof _ged2(sess)==='string');
       var btnApr = document.getElementById('btn-aprovar-justif');
       var btnMig = document.getElementById('btn-migrar-indexeddb');
       var btnMigExec = document.getElementById('btn-migrar-indexeddb-exec');
