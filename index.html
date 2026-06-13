@@ -7220,6 +7220,7 @@ document.addEventListener('DOMContentLoaded', function(){
   });
 
   window.aplicarPerfilVisual = aplicarPerfilVisual;
+  window.getCurrentSession = getCurrentSession;
 })();
 </script>
 
@@ -9828,9 +9829,9 @@ document.addEventListener('DOMContentLoaded', function(){
     }catch(e){}
     // Botões exclusivos de gestor / gestor de equipe
     try {
-      var sess = (typeof getCurrentSession==='function') ? getCurrentSession() : (window.SESSAO||window.sessao||window.usuarioLogado||{});
+      var _gs = typeof window.getCurrentSession==='function' ? window.getCurrentSession() : (window.SESSAO||window.sessao||window.usuarioLogado||{});
       var _ged2 = window._equipeDoGestor;
-      var podeAprovar = (typeof isManager==='function' && isManager(sess)) || (typeof _ged2==='function' && typeof _ged2(sess)==='string');
+      var podeAprovar = (typeof isManager==='function' && isManager(_gs)) || (typeof _ged2==='function' && typeof _ged2(_gs)==='string');
       var btnApr = document.getElementById('btn-aprovar-justif');
       var btnMig = document.getElementById('btn-migrar-indexeddb');
       var btnMigExec = document.getElementById('btn-migrar-indexeddb-exec');
@@ -9891,9 +9892,13 @@ document.addEventListener('DOMContentLoaded', function(){
         var allRows = result.data || [];
 
         // Filtrar por equipe se for gestor de equipe (não sócio)
-        var rows = isSocio ? allRows : allRows.filter(function(r){
-          return r.equipe === equipeGestor;
-        });
+        // equipeGestor='B' deve bater com r.equipe='Grupo B1','Grupo B2','B','B1' etc.
+        function equipeMatch(re) {
+          var eq = (re || '').toUpperCase().replace('GRUPO ','').trim();
+          var gst = (equipeGestor || '').toUpperCase().trim();
+          return eq === gst || eq.startsWith(gst);
+        }
+        var rows = isSocio ? allRows : allRows.filter(function(r){ return equipeMatch(r.equipe); });
 
         if(!rows.length) {
           body.innerHTML = '<div style="text-align:center;padding:40px;color:#666;">'
