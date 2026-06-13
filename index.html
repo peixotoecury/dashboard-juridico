@@ -4911,17 +4911,20 @@ window.salvarJustificativa = function(audId, texto, processo) {
     try {
       var sess = window.SESSAO || window.sessao || window.usuarioLogado || {};
       
-      supabaseClient
-        .from('justificativas')
-        .upsert({
+      var _payload1 = {
           numero_processo: processo,
           justificativa_texto: texto,
           usuario_email: sess.email || '',
           usuario_nome: sess.nome || '',
-          atualizado_em: new Date().toISOString(),
-          status: 'pendente',
-          equipe: sess.equipe || sess.grupo || ''
-        }, { onConflict: 'numero_processo' })
+          atualizado_em: new Date().toISOString()
+        };
+      if(window._supabaseColunasNovas) {
+        _payload1.status = 'pendente';
+        _payload1.equipe = sess.equipe || sess.grupo || '';
+      }
+      supabaseClient
+        .from('justificativas')
+        .upsert(_payload1, { onConflict: 'numero_processo' })
         .then(function(result){
           if(result.error) {
             console.log('❌ Erro ao salvar no Supabase:', result.error);
@@ -5596,11 +5599,28 @@ window.gravarJustificativa = function(audId) {
   window.salvarJustificativa(audId, texto);
 };
 
+// Detecta se as colunas novas (status, equipe) já existem no Supabase
+window._supabaseColunasNovas = false;
+window._detectarColunasSupabase = function() {
+  _initSupabase();
+  if(!supabaseClient) return;
+  supabaseClient.from('justificativas').select('status').limit(1)
+    .then(function(r) {
+      if(!r.error) {
+        window._supabaseColunasNovas = true;
+        console.log('✅ Supabase: colunas novas detectadas (status, equipe)');
+      } else {
+        console.log('⚠️ Supabase: colunas novas ainda não existem. Rode o SQL de migração.');
+      }
+    });
+};
+
 // Carrega status das justificativas do Supabase e injeta badges/botões inline na tabela de fatais
 window.justificativasStatus = window.justificativasStatus || {};
 window.carregarJustificativasDoSupabase = function() {
   _initSupabase();
   if(!supabaseClient) return;
+  window._detectarColunasSupabase();
   supabaseClient.from('justificativas').select('numero_processo,status,justificativa_texto,usuario_nome,equipe')
     .then(function(result) {
       if(result.error || !result.data) return;
@@ -10149,17 +10169,20 @@ document.addEventListener('DOMContentLoaded', function(){
     if(supabaseClient && numeroProcesso) {
       var sess = window.SESSAO || window.sessao || window.usuarioLogado || {};
       
-      supabaseClient
-        .from('justificativas')
-        .upsert({
+      var _payload2 = {
           numero_processo: numeroProcesso,
           justificativa_texto: textoCompleto,
           usuario_email: sess.email || '',
           usuario_nome: sess.nome || '',
-          atualizado_em: new Date().toISOString(),
-          status: 'pendente',
-          equipe: grupo || sess.equipe || sess.grupo || ''
-        }, { onConflict: 'numero_processo' })
+          atualizado_em: new Date().toISOString()
+        };
+      if(window._supabaseColunasNovas) {
+        _payload2.status = 'pendente';
+        _payload2.equipe = grupo || sess.equipe || sess.grupo || '';
+      }
+      supabaseClient
+        .from('justificativas')
+        .upsert(_payload2, { onConflict: 'numero_processo' })
         .then(function(result){
           if(result.error) {
             console.log('❌ Erro ao salvar no Supabase:', result.error);
