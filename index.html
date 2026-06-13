@@ -2972,7 +2972,6 @@ body.role-manager .upload-bar {
   <button class="hdr-btn" onclick="enviarEmailTrabalhista()" title="Enviar email para área trabalhista">✉️ Email Trabalhista</button>
   <button class="hdr-btn" onclick="salvarPlanilhaAtualEmLS(); alert('✅ Planilha salva! Ao recarregar, os dados serão restaurados.');" title="Salvar planilha no navegador para restaurar ao recarregar">💾 Salvar Planilha</button>
   <button class="hdr-btn primary" onclick="registrarSnapshot()">📸 Registrar Snapshot</button>
-  <button class="hdr-btn" id="btn-migrar-indexeddb-exec" onclick="migrarIndexedDBparaSupabase()" style="background:#6A1B9A;color:#fff;border-color:#6A1B9A;display:none;">📥 Recuperar justificativas locais</button>
 </div>
 
 </div><!-- /prazos -->
@@ -3341,7 +3340,6 @@ body.role-manager .upload-bar {
           <button class="mp-only-btn primary" onclick="exportarMeusRegistrosFormatado()">📥 Exportar meus registros</button>
           <button class="mp-only-btn" id="btn-enviar-justif" onclick="abrirModalJustificativas()" style="background:#c62828;color:#fff;border-color:#c62828;display:none;">📨 Enviar justificativas dos fatais</button>
           <button class="mp-only-btn" id="btn-aprovar-justif" onclick="abrirPainelAprovacao()" style="background:#1565C0;color:#fff;border-color:#1565C0;display:none;">✅ Aprovar justificativas</button>
-          <button class="mp-only-btn" id="btn-migrar-indexeddb" onclick="migrarIndexedDBparaSupabase()" style="background:#6A1B9A;color:#fff;border-color:#6A1B9A;display:none;">📥 Recuperar justificativas locais</button>
         </div>
 
         <div class="mp-only-cards">
@@ -7211,7 +7209,7 @@ document.addEventListener('DOMContentLoaded', function(){
     // Botões de gestor (Meu Painel + rodapé executivo)
     var _ged = window._equipeDoGestor;
     var podeAprovar = isManager(sess) || (typeof _ged === 'function' && typeof _ged(sess) === 'string');
-    ['btn-aprovar-justif','btn-migrar-indexeddb','btn-migrar-indexeddb-exec'].forEach(function(id){
+    ['btn-aprovar-justif'].forEach(function(id){
       var el = document.getElementById(id);
       if(el) el.style.display = podeAprovar ? '' : 'none';
     });
@@ -9853,11 +9851,7 @@ document.addEventListener('DOMContentLoaded', function(){
       var _ged2 = window._equipeDoGestor;
       var podeAprovar = (typeof isManager==='function' && isManager(_gs)) || (typeof _ged2==='function' && typeof _ged2(_gs)==='string');
       var btnApr = document.getElementById('btn-aprovar-justif');
-      var btnMig = document.getElementById('btn-migrar-indexeddb');
-      var btnMigExec = document.getElementById('btn-migrar-indexeddb-exec');
       if(btnApr) btnApr.style.display = podeAprovar ? '' : 'none';
-      if(btnMig) btnMig.style.display = podeAprovar ? '' : 'none';
-      if(btnMigExec) btnMigExec.style.display = podeAprovar ? '' : 'none';
     }catch(e){}
   }
 
