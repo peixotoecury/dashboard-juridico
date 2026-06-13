@@ -3672,8 +3672,8 @@ function recalcularStatusAudiencias(arr) {
     if (!d || isNaN(d)) return r;
     const diff = diasUteisDiff(d, hoje);
     let status;
-    if      (diff < 0)    status = 'Vencido';
-    else if (diff === 0)  status = 'Fatal';
+    if      (diff < -1)   status = 'Vencido';
+    else if (diff <= 0)   status = 'Fatal';
     else if (diff === 1)  status = 'D-1';
     else if (diff === 2)  status = 'D-2';
     else                  status = 'Futuro';
@@ -3822,8 +3822,8 @@ async function carregarPrazosSupabase() {
       if (!d) return r;
       const diff = diasUteisDiff(d, hoje);
       let status;
-      if      (diff < 0)    status = 'Vencido';
-      else if (diff === 0)  status = 'Fatal';
+      if      (diff < -1)   status = 'Vencido';
+      else if (diff <= 0)   status = 'Fatal';
       else if (diff === 1)  status = 'D-1';
       else if (diff === 2)  status = 'D-2';
       else                  status = 'Futuro';
@@ -3992,7 +3992,7 @@ function loadPrazos(inp) {
         const _d = iso?new Date(+iso[1],+iso[2]-1,+iso[3]):br?new Date(+br[3],+br[2]-1,+br[1]):null;
         if(!_d||isNaN(_d)) return r;
         const df=diasUteisDiff(_d,_hj0);
-        const st=df<0?'Vencido':df===0?'Fatal':df===1?'D-1':df===2?'D-2':'Futuro';
+        const st=df<-1?'Vencido':df<=0?'Fatal':df===1?'D-1':df===2?'D-2':'Futuro';
         return Object.assign({},r,{status:st,dias_restantes:df});
       });
       // Procurar pela coluna correta (pode ser "tipo_agenda", "Tipo Agendamento", etc)
@@ -6839,7 +6839,7 @@ document.addEventListener('DOMContentLoaded', function(){
         const iso=String(dv).match(/^(\d{4})-(\d{2})-(\d{2})/); if(!iso) return r;
         const _d=new Date(+iso[1],+iso[2]-1,+iso[3]); if(isNaN(_d)) return r;
         const df=diasUteisDiff(_d,_hj1);
-        const st=df<0?'Vencido':df===0?'Fatal':df===1?'D-1':df===2?'D-2':'Futuro';
+        const st=df<-1?'Vencido':df<=0?'Fatal':df===1?'D-1':df===2?'D-2':'Futuro';
         return Object.assign({},r,{status:st,dias_restantes:df});
       }); }
       S.raw    = _restat(JSON.parse(savedRaw));
@@ -7378,8 +7378,8 @@ document.addEventListener('DOMContentLoaded', function(){
       if (d && !isNaN(d)) {
         const hoje = new Date(); hoje.setHours(0,0,0,0);
         const diff = diasUteisDiff(d, hoje);
-        if (diff < 0)  return 'Vencido';
-        if (diff === 0)  return 'Fatal';
+        if (diff < -1)   return 'Vencido';
+        if (diff <= 0)   return 'Fatal';
         if (diff === 1)  return 'D-1';
         if (diff === 2)  return 'D-2';
         return 'Futuro';
@@ -7855,8 +7855,8 @@ document.addEventListener('DOMContentLoaded', function(){
       if (d && !isNaN(d)) {
         const hoje = new Date(); hoje.setHours(0,0,0,0);
         const diff = diasUteisDiff(d, hoje);
-        if (diff < 0)  return 'Vencido';
-        if (diff === 0)  return 'Fatal';
+        if (diff < -1)   return 'Vencido';
+        if (diff <= 0)   return 'Fatal';
         if (diff === 1)  return 'D-1';
         if (diff === 2)  return 'D-2';
         return 'Futuro';
@@ -8449,7 +8449,7 @@ function qgLoadPrazos(inp){
         const iso=String(dv).match(/^(\d{4})-(\d{2})-(\d{2})/); if(!iso) return r;
         const _d=new Date(+iso[1],+iso[2]-1,+iso[3]); if(isNaN(_d)) return r;
         const df=diasUteisDiff(_d,_hj3);
-        const st=df<0?'Vencido':df===0?'Fatal':df===1?'D-1':df===2?'D-2':'Futuro';
+        const st=df<-1?'Vencido':df<=0?'Fatal':df===1?'D-1':df===2?'D-2':'Futuro';
         return Object.assign({},r,{status:st,dias_restantes:df});
       });
       S.raw    = _nr1;
@@ -8812,8 +8812,8 @@ function qgLoadAudiencias(inp){
         if (!_d || isNaN(_d)) return r;
         const _diff = diasUteisDiff(_d, _hoje2);
         let _st;
-        if      (_diff < 0)    _st = 'Vencido';
-        else if (_diff === 0)  _st = 'Fatal';
+        if      (_diff < -1)   _st = 'Vencido';
+        else if (_diff <= 0)   _st = 'Fatal';
         else if (_diff === 1)  _st = 'D-1';
         else if (_diff === 2)  _st = 'D-2';
         else                   _st = 'Futuro';
@@ -9521,8 +9521,8 @@ document.addEventListener('DOMContentLoaded', function(){
       if (isNaN(d)) return r;
       const diff = diasUteisDiff(d, _hoje);
       let status;
-      if      (diff < 0)    status = 'Vencido';
-      else if (diff === 0)  status = 'Fatal';
+      if      (diff < -1)   status = 'Vencido';
+      else if (diff <= 0)   status = 'Fatal';
       else if (diff === 1)  status = 'D-1';
       else if (diff === 2)  status = 'D-2';
       else                  status = 'Futuro';
