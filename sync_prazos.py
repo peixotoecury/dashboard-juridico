@@ -120,6 +120,10 @@ def ler_excel():
             "parte_principal":  str(r.get("parte_principal") or "").strip(),
             "area":             str(r.get("area") or "").strip(),
             "codigo_processo":  str(r.get("codigo_processo") or "").strip(),
+            "codigo_agenda":    str(r.get("codigo_agenda") or "").strip(),
+            "codigo_cliente":   str(r.get("codigo_cliente") or "").strip(),
+            "quando_criado":    to_iso(r.get("quando_criado")),
+            "quem_criou":       str(r.get("quem_criou") or "").strip(),
         })
 
     wb.close()
