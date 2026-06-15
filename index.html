@@ -6612,7 +6612,7 @@ async function exportarExcel() {
     try {
       V('ov').style.display = 'flex';
       const [jRes, rRes] = await Promise.all([
-        supabaseClient.from('justificativas').select('numero_processo,justificativa_texto,status,usuario_nome,usuario_email,gestor_nome,aprovado_em,motivo_rejeicao,criado_em').order('criado_em', {ascending: false}),
+        supabaseClient.from('justificativas').select('*').order('atualizado_em', {ascending: false}),
         supabaseClient.from('reagendamentos').select('*').order('criado_em', {ascending: false})
       ]);
       if (jRes.data) {
@@ -9106,11 +9106,10 @@ window._gerarExcelFormatado = async function(registros, nomeArquivo, reagendamen
       { header: 'Justificativa',  key: 'justificativa_texto',width: 60 },
       { header: 'Status',         key: 'status',             width: 14 },
       { header: 'Enviado por',    key: 'usuario_nome',       width: 30 },
-      { header: 'E-mail',         key: 'usuario_email',      width: 34 },
       { header: 'Gestor',         key: 'gestor_nome',        width: 30 },
       { header: 'Aprovado em',    key: 'aprovado_em',        width: 18 },
       { header: 'Motivo rejeição',key: 'motivo_rejeicao',    width: 40 },
-      { header: 'Criado em',      key: 'criado_em',          width: 18 }
+      { header: 'Atualizado em',  key: 'atualizado_em',      width: 18 }
     ];
     const hJ = wsJ.getRow(1);
     hJ.height = 14.4;
@@ -9125,11 +9124,10 @@ window._gerarExcelFormatado = async function(registros, nomeArquivo, reagendamen
         justificativa_texto:r.justificativa_texto|| '',
         status:             r.status             || '',
         usuario_nome:       r.usuario_nome       || '',
-        usuario_email:      r.usuario_email      || '',
         gestor_nome:        r.gestor_nome        || '',
         aprovado_em:        r.aprovado_em ? new Date(r.aprovado_em).toLocaleString('pt-BR') : '',
         motivo_rejeicao:    r.motivo_rejeicao    || '',
-        criado_em:          r.criado_em ? new Date(r.criado_em).toLocaleString('pt-BR') : ''
+        atualizado_em:      r.atualizado_em ? new Date(r.atualizado_em).toLocaleString('pt-BR') : ''
       });
       row.height = 14.4;
       row.font = { name: 'Aptos Narrow', size: 11 };
