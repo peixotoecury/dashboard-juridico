@@ -4500,8 +4500,8 @@ function enviarEmailTrabalhista() {
 
   function tabelaHTML(titulo, d1, d2, fatal, venc, tot){
     return '<div style="margin-bottom:20px;">'
-      +'<div style="font-weight:700;font-size:14px;font-family:Verdana,Geneva,sans-serif;color:#005f73;border-bottom:2px solid #005f73;padding-bottom:5px;margin-bottom:8px;">'+titulo+'</div>'
-      +'<table style="width:100%;border-collapse:collapse;font-size:14px;font-family:Verdana,Geneva,sans-serif;">'
+      +'<div style="font-weight:700;font-size:10.5pt;font-family:Verdana,Geneva,sans-serif;color:#005f73;border-bottom:2px solid #005f73;padding-bottom:5px;margin-bottom:8px;">'+titulo+'</div>'
+      +'<table style="width:100%;border-collapse:collapse;font-size:10.5pt;font-family:Verdana,Geneva,sans-serif;">'
       +'<tr style="border-bottom:1px solid #f0f0f0;"><td style="padding:5px 8px;color:#555;">D-1</td><td style="padding:5px 8px;text-align:right;font-weight:600;color:#1976d2;">'+d1+'</td></tr>'
       +'<tr style="border-bottom:1px solid #f0f0f0;"><td style="padding:5px 8px;color:#555;">D-2</td><td style="padding:5px 8px;text-align:right;font-weight:600;color:#0097a7;">'+d2+'</td></tr>'
       +'<tr style="border-bottom:1px solid #f0f0f0;"><td style="padding:5px 8px;color:#555;">FATAL</td><td style="padding:5px 8px;text-align:right;font-weight:600;color:#e07a1f;">'+fatal+'</td></tr>'
@@ -4510,20 +4510,20 @@ function enviarEmailTrabalhista() {
       +'</table></div>';
   }
 
-  const previewHTML = '<div style="padding:24px;font-family:Verdana,Geneva,sans-serif;font-size:14px;">'
-    +'<p style="margin:0 0 14px;color:#333;font-size:14px;font-family:Verdana,Geneva,sans-serif;line-height:1.7;">Equipes, bom dia.</p>'
-    +'<p style="margin:0 0 10px;color:#333;font-size:14px;font-family:Verdana,Geneva,sans-serif;line-height:1.7;">Segue a listagem de compromissos agendados para cumprimento.</p>'
-    +'<p style="margin:0 0 10px;color:#333;font-size:14px;font-family:Verdana,Geneva,sans-serif;line-height:1.7;">Por favor, para segurança dos procedimentos, precisamos manter a regra de protocolo dos prazos no D-1.</p>'
-    +'<p style="margin:0 0 10px;color:#333;font-size:14px;font-family:Verdana,Geneva,sans-serif;line-height:1.7;">Por favor, priorizem o cumprimento ou reajuste dos prazos e agendas vencidas.</p>'
-    +'<p style="margin:0 0 14px;color:#333;font-size:14px;font-family:Verdana,Geneva,sans-serif;line-height:1.7;">Ao final do dia, retransmitiremos a listagem dos prazos pendentes, bem como das agendas de ciências de atas, cadastros e publicações, para auxiliar na visibilidade das prioridades, de modo adicional às telas dos seus usuários no LM.</p>'
+  const previewHTML = '<div style="padding:24px;font-family:Verdana,Geneva,sans-serif;font-size:10.5pt;">'
+    +'<p style="margin:0 0 14px;color:#333;font-size:10.5pt;font-family:Verdana,Geneva,sans-serif;line-height:1.7;">Equipes, bom dia.</p>'
+    +'<p style="margin:0 0 10px;color:#333;font-size:10.5pt;font-family:Verdana,Geneva,sans-serif;line-height:1.7;">Segue a listagem de compromissos agendados para cumprimento.</p>'
+    +'<p style="margin:0 0 10px;color:#333;font-size:10.5pt;font-family:Verdana,Geneva,sans-serif;line-height:1.7;">Por favor, para segurança dos procedimentos, precisamos manter a regra de protocolo dos prazos no D-1.</p>'
+    +'<p style="margin:0 0 10px;color:#333;font-size:10.5pt;font-family:Verdana,Geneva,sans-serif;line-height:1.7;">Por favor, priorizem o cumprimento ou reajuste dos prazos e agendas vencidas.</p>'
+    +'<p style="margin:0 0 14px;color:#333;font-size:10.5pt;font-family:Verdana,Geneva,sans-serif;line-height:1.7;">Ao final do dia, retransmitiremos a listagem dos prazos pendentes, bem como das agendas de ciências de atas, cadastros e publicações, para auxiliar na visibilidade das prioridades, de modo adicional às telas dos seus usuários no LM.</p>'
     + tabelaHTML('Prazo', pD1, pD2, pFatal, pVenc, pTot)
     + tabelaHTML('Agenda', aD1, aD2, aFatal, aVenc, aTot)
     + tabelaHTML('Agenda Equipe', eD1, eD2, eFatal, eVenc, eTot)
-    +'<p style="margin:14px 0;color:#333;font-size:14px;font-family:Verdana,Geneva,sans-serif;line-height:1.7;">Por gentileza, consultar as respectivas portarias de expediente forense, objetivando o cumprimento dos prazos tempestivamente.</p>'
+    +'<p style="margin:14px 0;color:#333;font-size:10.5pt;font-family:Verdana,Geneva,sans-serif;line-height:1.7;">Por gentileza, consultar as respectivas portarias de expediente forense, objetivando o cumprimento dos prazos tempestivamente.</p>'
     +'<div style="background:#f0f8ff;border:1px solid #b3d9f0;border-radius:8px;padding:12px 16px;margin-bottom:16px;">'
-    +'<div style="font-size:13px;font-family:Verdana,Geneva,sans-serif;color:#555;margin-bottom:4px;">Acesse o dashboard para detalhes por responsável e grupo:</div>'
-    +'<a href="'+link+'" style="color:#005f73;font-weight:600;font-size:13px;">'+link+'</a></div>'
-    +'<p style="margin:0;color:#555;font-size:14px;font-family:Verdana,Geneva,sans-serif;">Permanecemos à disposição.<br><strong>Atenciosamente,<br>Controladoria — Peixoto & Cury Advogados</strong></p>'
+    +'<div style="font-size:10.5pt;font-family:Verdana,Geneva,sans-serif;color:#555;margin-bottom:4px;">Acesse o dashboard para detalhes por responsável e grupo:</div>'
+    +'<a href="'+link+'" style="color:#005f73;font-weight:600;font-size:10.5pt;">'+link+'</a></div>'
+    +'<p style="margin:0;color:#555;font-size:10.5pt;font-family:Verdana,Geneva,sans-serif;">Permanecemos à disposição.<br><strong>Atenciosamente,<br>Controladoria — Peixoto & Cury Advogados</strong></p>'
     +'</div>';
 
   const corpoPlain = 'Equipes, bom dia.\n\n'
