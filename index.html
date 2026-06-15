@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
@@ -3767,14 +3767,6 @@ async function carregarPrazosSupabase() {
   window._ultimoLoadSupabase = Date.now(); // atualiza timestamp para o fallback de 5min
   const SUPA_URL = 'https://kgyeeuynerhpaqlhqwkx.supabase.co';
   const SUPA_KEY = 'sb_publishable_MdUFFFJ5xRqiQysyxlWHFA_yk_LsknZ';
-
-  // Limpa IndexedDB para forcar leitura do Supabase
-  try {
-    ['peixoto','agendas','dashboard','pc','prazos','PC_Database'].forEach(function(dbName){
-      var req = indexedDB.deleteDatabase(dbName);
-      req.onsuccess = function(){ console.log('IndexedDB limpo:', dbName); };
-    });
-  } catch(e) {}
 
   try {
     console.log('🔄 Buscando prazos do Supabase (paralelo)...');
