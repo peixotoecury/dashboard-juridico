@@ -51,6 +51,15 @@ def ler_excel():
         if not data_iso:
             continue
 
+        # Só sincroniza registros dos últimos 60 dias até o futuro
+        try:
+            from datetime import timedelta
+            data_dt2 = datetime.strptime(data_iso, "%Y-%m-%d").date()
+            if data_dt2 < hoje - timedelta(days=60):
+                continue
+        except:
+            pass
+
         # Ignora pastas encerradas
         if str(r.get("situacao_pasta") or "").strip().lower() == "encerrado":
             continue
