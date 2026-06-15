@@ -10420,9 +10420,37 @@ document.addEventListener('DOMContentLoaded', function(){
     }
     var assunto=encodeURIComponent('[Controladoria] Justificativa de Prazos - '+nomeAdv+' - '+hoje);
     var bodyEnc=encodeURIComponent(corpo);
-    window.location.href='mailto:'+emailDest+'?subject='+assunto+'&body='+bodyEnc;
-    modal.remove();
-    if(typeof renderMeuPainelSomente==='function') renderMeuPainelSomente();
+
+    // Salva no Supabase antes de abrir o e-mail
+    if(typeof _initSupabase==='function') _initSupabase();
+    var promessas=[];
+    if(typeof supabaseClient!=='undefined' && supabaseClient) {
+      var agora=new Date().toISOString();
+      fataisVenc.forEach(function(r){
+        var proc=(r.numero_processo||r['Número do Processo']||r.Processo||r.processo||'').trim();
+        var tarefa=(r.descricao_tarefa||r.Descrição||r.descrição||r.Tarefa||r.tarefa||'').trim();
+        var key='justif_'+btoa(unescape(encodeURIComponent(proc+'|'+tarefa))).replace(/[^a-zA-Z0-9]/g,'').slice(0,20);
+        var justif=(window._mpJustif||{})[key]||'';
+        if(!justif||!proc) return;
+        promessas.push(
+          supabaseClient.from('justificativas').upsert({
+            numero_processo: proc,
+            justificativa_texto: justif,
+            usuario_email: sess.email||'',
+            usuario_nome: sess.nome||sess.login||nomeAdv,
+            equipe: sess.equipe||r.grupo_processo||'',
+            status: 'pendente',
+            atualizado_em: agora
+          }, {onConflict:'numero_processo'})
+        );
+      });
+    }
+
+    Promise.all(promessas).catch(function(){}).finally(function(){
+      window.location.href='mailto:'+emailDest+'?subject='+assunto+'&body='+bodyEnc;
+      modal.remove();
+      if(typeof renderMeuPainelSomente==='function') renderMeuPainelSomente();
+    });
   };
 
   // Hook: atualiza botão de justificativas depois que tudo carregou
