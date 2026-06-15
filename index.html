@@ -6634,17 +6634,45 @@ async function exportarExcel() {
 }
 
 // ── EXPORTAR PLANILHA NO FORMATO ORIGINAL (mesmas colunas do upload) ─────────
-function exportarFormatoOriginal() {
+async function exportarFormatoOriginal() {
   if (!S.raw || !S.raw.length) {
     alert('Nenhum dado carregado. Faça o upload da planilha de Prazos & Agendas primeiro.');
     return;
   }
-  var wb = XLSX.utils.book_new();
-  XLSX.utils.book_append_sheet(wb, XLSX.utils.json_to_sheet(S.raw), 'Agendamentos');
-  if (S.aud && S.aud.length)    XLSX.utils.book_append_sheet(wb, XLSX.utils.json_to_sheet(S.aud),    'Audiencias');
-  if (S.cancel && S.cancel.length) XLSX.utils.book_append_sheet(wb, XLSX.utils.json_to_sheet(S.cancel), 'Redesignadas-Canceladas');
-  var dt = new Date().toLocaleDateString('pt-BR').replace(/\//g,'-');
-  XLSX.writeFile(wb, 'Planilha_' + dt + '.xlsx');
+  V('ov').style.display = 'flex';
+  try {
+    _initSupabase();
+    var justMap = {};
+    if (supabaseClient) {
+      var jRes = await supabaseClient.from('justificativas').select('numero_processo, justificativa_texto, usuario_nome, atualizado_em');
+      if (jRes.data && jRes.data.length) {
+        jRes.data.forEach(function(j) {
+          justMap[j.numero_processo] = {
+            justificativa: j.justificativa_texto || '',
+            justificativa_usuario: j.usuario_nome || '',
+            justificativa_data: j.atualizado_em ? new Date(j.atualizado_em).toLocaleString('pt-BR') : ''
+          };
+        });
+      }
+    }
+    var dadosComJust = S.raw.map(function(r) {
+      var j = justMap[r.numero_processo] || {};
+      return Object.assign({}, r, {
+        justificativa: j.justificativa || '',
+        justificativa_usuario: j.justificativa_usuario || '',
+        justificativa_data: j.justificativa_data || ''
+      });
+    });
+    var wb = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(wb, XLSX.utils.json_to_sheet(dadosComJust), 'Agendamentos');
+    if (S.aud && S.aud.length)    XLSX.utils.book_append_sheet(wb, XLSX.utils.json_to_sheet(S.aud),    'Audiencias');
+    if (S.cancel && S.cancel.length) XLSX.utils.book_append_sheet(wb, XLSX.utils.json_to_sheet(S.cancel), 'Redesignadas-Canceladas');
+    var dt = new Date().toLocaleDateString('pt-BR').replace(/\//g,'-');
+    XLSX.writeFile(wb, 'Planilha_' + dt + '.xlsx');
+  } catch(e) {
+    alert('Erro ao exportar: ' + e.message);
+  }
+  V('ov').style.display = 'none';
 }
 
 // ── EXPORTAR JUSTIFICATIVAS E REAGENDAMENTOS (somente admin/gestor) ───────────
@@ -6812,7 +6840,7 @@ function doLogin() {
       const users = JSON.parse(saved);
       users.filter(u=>u.status==='Ativo').forEach(u=>{
         if(_adminsFixos.includes((u.login||'').toLowerCase())) return; // protege admins
-        USUARIOS[u.login] = { senha: u.senha, nivel: u.nivel, nome: u.nome, sigla: u.sigla };
+        USUARIOS[u.login] = { senha: u.senha, nivel: u.nivel, nome: u.nome, sigla: u.sigla, equipe: u.equipe||'' };
       });
     }
   } catch(e) {}
@@ -6835,7 +6863,7 @@ function doLogin() {
   }
 
   V('login-err').style.display = 'none';
-  SESSAO = { login, nivel: u.nivel, nome: u.nome, sigla: u.sigla };
+  SESSAO = { login, nivel: u.nivel, nome: u.nome, sigla: u.sigla, equipe: u.equipe||'' };
   window.SESSAO = SESSAO;
   V('login-overlay').style.display = 'none';
   aplicarAcesso();
@@ -7952,7 +7980,7 @@ document.addEventListener('DOMContentLoaded', function(){
       prazos:     d.prazos.filter(r => matchBase(r)),
       agendas:    d.agendas.filter(r => matchBase(r)),
       equipe:     d.equipe.filter(r => matchBase(r)),
-      audiencias: d.aud.filter(r => matchAud(r))
+      audiencias: d.aud.filter(r => matchAud(r) && (function(){var v=r['Data']||r['data']||'';if(!v)return true;var d2=new Date(String(v).slice(0,10)+'T00:00:00');var hoje=new Date();hoje.setHours(0,0,0,0);return !isNaN(d2)&&d2>=hoje;}()))
     };
   }
 
@@ -9440,19 +9468,19 @@ window.entrarComo = function(login){
   try{
     const saved=localStorage.getItem('pc_usuarios_v1');
     if(saved) JSON.parse(saved).filter(u=>u.status==='Ativo').forEach(u=>{
-      USUARIOS[u.login]={senha:u.senha,nivel:u.nivel,nome:u.nome,sigla:u.sigla};
+      USUARIOS[u.login]={senha:u.senha,nivel:u.nivel,nome:u.nome,sigla:u.sigla,equipe:u.equipe||''};
     });
   }catch(e){}
   // Also try USUARIOS_BASE (JSON array in the file)
   let u = USUARIOS[login];
   if(!u && typeof USUARIOS_BASE !== 'undefined'){
     const base = USUARIOS_BASE.find(x=>x.login===login);
-    if(base) u = {senha:base.senha,nivel:base.nivel,nome:base.nome,sigla:base.sigla};
+    if(base) u = {senha:base.senha,nivel:base.nivel,nome:base.nome,sigla:base.sigla,equipe:base.equipe||''};
   }
   if(!u){ alert('Usuário não encontrado: '+login); return; }
   // Preserve original admin session, set impersonated session
   window._SESSAO_ADMIN = window._SESSAO_ADMIN || (window.SESSAO ? {...window.SESSAO} : null);
-  SESSAO = {login, nivel:u.nivel, nome:u.nome, sigla:u.sigla};
+  SESSAO = {login, nivel:u.nivel, nome:u.nome, sigla:u.sigla, equipe:u.equipe||''};
   document.getElementById('user-badge-label').textContent = '👤 '+u.nome+' (como '+login+')';
   // Aplica perfil visual do usuário impersonado (role-user oculta abas gerenciais)
   if(typeof aplicarPerfilVisual==='function') setTimeout(aplicarPerfilVisual, 30);
