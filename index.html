@@ -3779,7 +3779,7 @@ async function carregarPrazosSupabase() {
   try {
     console.log('🔄 Buscando prazos do Supabase (paralelo)...');
 
-    const COLS = 'data,status,dias_restantes,situacao_pasta,responsavel,grupo_processo,cliente,tipo_agenda,descricao_tarefa,numero_processo,parte_contraria,importante,matricula,parte_principal,area,codigo_processo,codigo_agenda,codigo_cliente,quando_criado,quem_criou,atualizado_em';
+    const COLS = 'data,status,dias_restantes,situacao_pasta,responsavel,grupo_processo,cliente,tipo_agenda,descricao_tarefa,numero_processo,parte_contraria,importante,matricula,parte_principal,area,codigo_processo,atualizado_em';
     const HDR  = { 'apikey': SUPA_KEY, 'Authorization': `Bearer ${SUPA_KEY}` };
     const PAG  = 1000;
 
