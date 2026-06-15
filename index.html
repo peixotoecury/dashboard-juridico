@@ -4610,22 +4610,49 @@ function enviarEmailTrabalhista() {
   
   atualizarListaEmails();
 
-  document.getElementById('btn-enviar-email').onclick = function(){
+  document.getElementById('btn-enviar-email').onclick = async function(){
     const emailPrincipal = 'areatrabalhista@peixotoecury.com.br';
     const cc = window.emailCopia.length > 0 ? window.emailCopia.join(';') : '';
-    
-    let mailtoLink = 'mailto:' + emailPrincipal;
-    if(cc){
-      mailtoLink += '?cc=' + encodeURIComponent(cc);
-      mailtoLink += '&subject=' + encodeURIComponent('Controladoria — Compromissos do dia ' + hoje);
-      mailtoLink += '&body=' + encodeURIComponent(corpoPlain);
-    } else {
-      mailtoLink += '?subject=' + encodeURIComponent('Controladoria — Compromissos do dia ' + hoje);
-      mailtoLink += '&body=' + encodeURIComponent(corpoPlain);
+    const assunto = 'Controladoria — Compromissos do dia ' + hoje;
+
+    // Copia o HTML formatado para o clipboard
+    try {
+      const blob = new Blob([previewHTML], {type: 'text/html'});
+      await navigator.clipboard.write([new ClipboardItem({'text/html': blob})]);
+    } catch(e) {
+      // fallback: tenta copiar via execCommand
+      try {
+        const tmp = document.createElement('div');
+        tmp.innerHTML = previewHTML;
+        tmp.style.cssText = 'position:fixed;left:-9999px;top:0;';
+        document.body.appendChild(tmp);
+        const range = document.createRange();
+        range.selectNodeContents(tmp);
+        const sel = window.getSelection();
+        sel.removeAllRanges();
+        sel.addRange(range);
+        document.execCommand('copy');
+        sel.removeAllRanges();
+        document.body.removeChild(tmp);
+      } catch(e2) { console.warn('Clipboard indisponível:', e2); }
     }
-    
+
+    // Abre o Outlook com Para/CC/Assunto preenchidos — sem corpo (será colado)
+    let mailtoLink = 'mailto:' + emailPrincipal;
+    mailtoLink += '?subject=' + encodeURIComponent(assunto);
+    if(cc) mailtoLink += '&cc=' + encodeURIComponent(cc);
     window.location.href = mailtoLink;
+
     document.getElementById('email-modal').remove();
+
+    // Toast orientando o usuário a colar
+    setTimeout(function(){
+      if(typeof mostrarToast === 'function'){
+        mostrarToast('📋 HTML copiado! No Outlook, clique no corpo do email e pressione Ctrl+V para colar formatado.');
+      } else {
+        alert('📋 O email foi aberto no Outlook.\n\nClique no corpo da mensagem e pressione Ctrl+V para colar o conteúdo formatado.');
+      }
+    }, 600);
   };
 }
 
@@ -6575,7 +6602,34 @@ async function exportarExcel() {
     registrosBrutos = [...fp, ...fa, ...fe];
   }
   if (!registrosBrutos.length) { alert('Nenhum dado para exportar.'); return; }
-  await window._gerarExcelFormatado(registrosBrutos, `PC_${nome}_${dt}.xlsx`);
+
+  // Busca justificativas e reagendamentos do Supabase antes de gerar
+  _initSupabase();
+  var _justMap = {};
+  var _reagRows = [];
+  if (supabaseClient) {
+    try {
+      V('ov').style.display = 'flex';
+      const [jRes, rRes] = await Promise.all([
+        supabaseClient.from('justificativas').select('numero_processo,justificativa_texto,status,usuario_nome,gestor_nome,aprovado_em,motivo_rejeicao'),
+        supabaseClient.from('reagendamentos').select('*').order('criado_em', {ascending: false})
+      ]);
+      if (jRes.data) {
+        jRes.data.forEach(function(r) {
+          _justMap[r.numero_processo] = r.justificativa_texto || '';
+        });
+        // Sobrescreve o cache local para que _gerarExcelFormatado use os dados do Supabase
+        window.justificativas = window.justificativas || {};
+        jRes.data.forEach(function(r) {
+          window.justificativas[r.numero_processo] = { audId: r.numero_processo, texto: r.justificativa_texto || '', dataSalva: r.atualizado_em || '' };
+        });
+      }
+      if (rRes.data) _reagRows = rRes.data;
+    } catch(e) { console.warn('Supabase fetch antes do export:', e); }
+    finally { V('ov').style.display = 'none'; }
+  }
+
+  await window._gerarExcelFormatado(registrosBrutos, `PC_${nome}_${dt}.xlsx`, _reagRows);
 }
 
 // ── EXPORTAR PLANILHA NO FORMATO ORIGINAL (mesmas colunas do upload) ─────────
@@ -8931,7 +8985,7 @@ function qgLoadAudiencias(inp){
 // Exporta a partir dos dados em memória (S.raw) quando buffer não disponível
 // ── HELPER: GERA EXCEL COM FORMATAÇÃO IDÊNTICA À PLANILHA DE REFERÊNCIA ──────
 // Cor cabeçalho: RGB(21,96,130) = #156082 | Fonte: Aptos Narrow 11pt | Altura linha: 14.4
-window._gerarExcelFormatado = async function(registros, nomeArquivo) {
+window._gerarExcelFormatado = async function(registros, nomeArquivo, reagendamentos) {
   function toDate(v) {
     if (v instanceof Date) return v;
     if (typeof v === 'number' && v > 20000) return new Date((v - 25569) * 86400000);
@@ -9053,6 +9107,50 @@ window._gerarExcelFormatado = async function(registros, nomeArquivo) {
   // Formato de data dd/mm/yyyy nas colunas de data
   ws.getColumn('data').numFmt         = 'dd/mm/yyyy';
   ws.getColumn('quando_criado').numFmt = 'dd/mm/yyyy';
+
+  // Aba de Reagendamentos (se fornecida)
+  if (reagendamentos && reagendamentos.length) {
+    const wsR = wb.addWorksheet('Reagendamentos');
+    wsR.columns = [
+      { header: 'Processo',            key: 'processo',         width: 26 },
+      { header: 'Reclamante',          key: 'reclamante',       width: 30 },
+      { header: 'Responsável',         key: 'responsavel',      width: 34 },
+      { header: 'Equipe',              key: 'equipe',           width: 14 },
+      { header: 'Resp. Reagendamento', key: 'responsavel_reag', width: 34 },
+      { header: 'Data Prazo Atual',    key: 'data_atual',       width: 16 },
+      { header: 'Data Prazo Fatal',    key: 'data_fatal',       width: 16 },
+      { header: 'Tipo de Prazo',       key: 'tipo_prazo',       width: 16 },
+      { header: 'Justificativa',       key: 'justificativa',    width: 60 },
+      { header: 'Enviado por',         key: 'usuario_nome',     width: 30 },
+      { header: 'Enviado em',          key: 'criado_em',        width: 18 }
+    ];
+    const hR = wsR.getRow(1);
+    hR.height = 14.4;
+    hR.eachCell(cell => {
+      cell.font  = { name: 'Aptos Narrow', size: 11, bold: true, color: { argb: 'FFFFFFFF' } };
+      cell.fill  = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FF156082' } };
+      cell.alignment = { horizontal: 'left', vertical: 'middle' };
+    });
+    reagendamentos.forEach(function(r) {
+      const row = wsR.addRow({
+        processo:        r.processo        || '',
+        reclamante:      r.reclamante      || '',
+        responsavel:     r.responsavel     || '',
+        equipe:          r.equipe          || '',
+        responsavel_reag:r.responsavel_reag|| '',
+        data_atual:      r.data_atual      || '',
+        data_fatal:      r.data_fatal      || '',
+        tipo_prazo:      r.tipo_prazo      || '',
+        justificativa:   r.justificativa   || '',
+        usuario_nome:    r.usuario_nome    || '',
+        criado_em:       r.criado_em ? new Date(r.criado_em).toLocaleString('pt-BR') : ''
+      });
+      row.height = 14.4;
+      row.font = { name: 'Aptos Narrow', size: 11 };
+    });
+    wsR.views = [{ state: 'frozen', xSplit: 0, ySplit: 1, topLeftCell: 'A2', activeCell: 'A2' }];
+    wsR.autoFilter = { from: { row: 1, column: 1 }, to: { row: 1, column: 11 } };
+  }
 
   // Gera buffer e dispara download
   const buffer = await wb.xlsx.writeBuffer();
