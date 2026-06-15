@@ -6629,7 +6629,7 @@ async function exportarExcel() {
     finally { V('ov').style.display = 'none'; }
   }
 
-  await window._gerarExcelFormatado(registrosBrutos, `PC_${nome}_${dt}.xlsx`, _reagRows);
+  await window._gerarExcelFormatado(registrosBrutos, `PC_${nome}_${dt}.xlsx`, _reagRows, _justMap);
 }
 
 // ── EXPORTAR PLANILHA NO FORMATO ORIGINAL (mesmas colunas do upload) ─────────
@@ -8985,7 +8985,7 @@ function qgLoadAudiencias(inp){
 // Exporta a partir dos dados em memória (S.raw) quando buffer não disponível
 // ── HELPER: GERA EXCEL COM FORMATAÇÃO IDÊNTICA À PLANILHA DE REFERÊNCIA ──────
 // Cor cabeçalho: RGB(21,96,130) = #156082 | Fonte: Aptos Narrow 11pt | Altura linha: 14.4
-window._gerarExcelFormatado = async function(registros, nomeArquivo, reagendamentos) {
+window._gerarExcelFormatado = async function(registros, nomeArquivo, reagendamentos, justMap) {
   function toDate(v) {
     if (v instanceof Date) return v;
     if (typeof v === 'number' && v > 20000) return new Date((v - 25569) * 86400000);
@@ -8993,22 +8993,44 @@ window._gerarExcelFormatado = async function(registros, nomeArquivo, reagendamen
     return null;
   }
 
+  // Detecta todas as colunas presentes nos dados (preserva ordem e nomes originais do LM)
+  const _colsSet = new Set();
+  registros.forEach(r => Object.keys(r).forEach(k => _colsSet.add(k)));
+  // Remove colunas internas do dashboard que não devem ir para o Excel
+  ['status','dias_restantes'].forEach(k => _colsSet.delete(k));
+  const _colsRaw = Array.from(_colsSet);
+  // Garante que 'status' vai na frente e 'justificativa_controladoria' no final
+  const _cols = ['status', ..._colsRaw.filter(c => c !== 'status'), 'justificativa_controladoria'];
+
+  // Função que resolve o número do processo independente do nome da coluna
+  function getProcNum(r) {
+    return r.numero_processo || r['numero_processo'] || r['Número do Processo'] || r['numero processo'] || r['Processo'] || '';
+  }
+  // Função que resolve a justificativa: justMap (Supabase) tem prioridade sobre cache local
+  function getJust(r) {
+    const proc = getProcNum(r);
+    if (justMap && justMap[proc]) return justMap[proc];
+    const jObj = window.justificativas && window.justificativas[proc];
+    return (jObj && jObj.texto) || '';
+  }
+
+  const _statusFill = {
+    'Fatal':     'FFFF4C4C', 'Vencido': 'FFC00000',
+    'D-1':       'FFFFD966', 'D-2':     'FFFFC000',
+    'Futuro':    'FF92D050', 'Encerrado':'FFD9D9D9'
+  };
+  const _borderThin = { style: 'thin', color: { argb: 'FFD9D9D9' } };
+  const _borderCell = { top: _borderThin, left: _borderThin, bottom: _borderThin, right: _borderThin };
+
   if (typeof ExcelJS === 'undefined') {
-    // Fallback SheetJS sem formatação
-    const COLS19 = ['data','status','situacao_pasta','grupo_processo','codigo_processo',
-      'codigo_cliente','cliente','parte_principal','parte_contraria','numero_processo',
-      'importante','matricula','responsavel','area','tipo_agenda','descricao_tarefa',
-      'codigo_agenda','quando_criado','quem_criou','justificativa'];
-    const ws = XLSX.utils.json_to_sheet(registros.map(r=>{
-      const o={}; COLS19.forEach(c=>{ o[c]=r[c]!==undefined?r[c]:''; });
-      const jObj = window.justificativas && (window.justificativas[r.numero_processo]);
-      o['justificativa'] = (jObj && jObj.texto) || '';
+    // Fallback SheetJS sem formatação — inclui todas as colunas
+    const ws = XLSX.utils.json_to_sheet(registros.map(r => {
+      const o = { status: r.status || '' };
+      _colsRaw.filter(c => c !== 'status').forEach(c => { o[c] = r[c] !== undefined ? r[c] : ''; });
+      o['justificativa_controladoria'] = getJust(r);
       return o;
-    }), {header:COLS19});
-    ws['!cols']=[{wch:9.6},{wch:7.8},{wch:15.4},{wch:16.4},{wch:17.2},{wch:15.3},{wch:22.8},
-      {wch:78.3},{wch:90.9},{wch:23.8},{wch:12.1},{wch:10.6},{wch:34.3},{wch:22.1},
-      {wch:13.3},{wch:100},{wch:15.4},{wch:15.3},{wch:12.7},{wch:80}];
-    const wbb=XLSX.utils.book_new();
+    }), { header: _cols });
+    const wbb = XLSX.utils.book_new();
     XLSX.utils.book_append_sheet(wbb, ws, 'Agendamentos');
     XLSX.writeFile(wbb, nomeArquivo);
     return;
@@ -9017,85 +9039,51 @@ window._gerarExcelFormatado = async function(registros, nomeArquivo, reagendamen
   const wb = new ExcelJS.Workbook();
   const ws = wb.addWorksheet('Agendamentos');
 
-  // 19 colunas — nomes, chaves e larguras exatamente como a planilha de referência
-  ws.columns = [
-    { header: 'data',             key: 'data',             width:  9.6  },
-    { header: 'status',           key: 'status',           width:  7.8  },
-    { header: 'situacao_pasta',   key: 'situacao_pasta',   width: 15.4  },
-    { header: 'grupo_processo',   key: 'grupo_processo',   width: 16.4  },
-    { header: 'codigo_processo',  key: 'codigo_processo',  width: 17.2  },
-    { header: 'codigo_cliente',   key: 'codigo_cliente',   width: 15.3  },
-    { header: 'cliente',          key: 'cliente',          width: 22.8  },
-    { header: 'parte_principal',  key: 'parte_principal',  width: 78.3  },
-    { header: 'parte_contraria',  key: 'parte_contraria',  width: 90.9  },
-    { header: 'numero_processo',  key: 'numero_processo',  width: 23.8  },
-    { header: 'importante',       key: 'importante',       width: 12.1  },
-    { header: 'matricula',        key: 'matricula',        width: 10.6  },
-    { header: 'responsavel',      key: 'responsavel',      width: 34.3  },
-    { header: 'area',             key: 'area',             width: 22.1  },
-    { header: 'tipo_agenda',      key: 'tipo_agenda',      width: 13.3  },
-    { header: 'descricao_tarefa', key: 'descricao_tarefa', width: 255   },
-    { header: 'codigo_agenda',    key: 'codigo_agenda',    width: 15.4  },
-    { header: 'quando_criado',    key: 'quando_criado',    width: 15.3  },
-    { header: 'quem_criou',       key: 'quem_criou',       width: 12.7  },
-    { header: 'justificativa',    key: 'justificativa',    width: 80    }
-  ];
+  // Colunas dinâmicas — todas as colunas do LM + justificativa_controladoria
+  ws.columns = _cols.map(c => ({
+    header: c,
+    key: c,
+    width: c === 'justificativa_controladoria' ? 80
+         : c === 'status' ? 9
+         : (c.includes('descricao') || c.includes('Descrição') || c.includes('parte')) ? 60
+         : c.includes('processo') || c.includes('Processo') ? 26
+         : c.includes('responsavel') || c.includes('Responsável') ? 34
+         : c.includes('cliente') || c.includes('Cliente') ? 22
+         : 16
+  }));
 
-  // Linha 1 fixada (freeze pane) + auto-filtro em todas as colunas
+  // Linha 1: cabeçalho formatado
   ws.views = [{ state: 'frozen', xSplit: 0, ySplit: 1, topLeftCell: 'A2', activeCell: 'A2' }];
-  ws.autoFilter = { from: { row: 1, column: 1 }, to: { row: 1, column: 20 } };
-
-  // Cores de status (coluna B)
-  const _statusFill = {
-    'Fatal':      'FFFF4C4C',
-    'Vencido':    'FFC00000',
-    'D-1':        'FFFFD966',
-    'D-2':        'FFFFC000',
-    'Futuro':     'FF92D050',
-    'Encerrado':  'FFD9D9D9'
-  };
-  const _borderThin = { style: 'thin', color: { argb: 'FFD9D9D9' } };
-  const _borderCell = { top: _borderThin, left: _borderThin, bottom: _borderThin, right: _borderThin };
-
-  // Cabeçalho: Aptos Narrow 11pt bold, texto branco, fundo #156082, altura 14.4
+  ws.autoFilter = { from: { row: 1, column: 1 }, to: { row: 1, column: _cols.length } };
   const hRow = ws.getRow(1);
   hRow.height = 14.4;
   hRow.eachCell(cell => {
     cell.font      = { name: 'Aptos Narrow', size: 11, bold: true, color: { argb: 'FFFFFFFF' } };
     cell.fill      = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FF156082' } };
     cell.alignment = { horizontal: 'left', vertical: 'middle' };
-    cell.border    = { top: { style:'thin', color:{argb:'FF156082'} }, left: { style:'thin', color:{argb:'FF156082'} }, bottom: { style:'thin', color:{argb:'FF156082'} }, right: { style:'thin', color:{argb:'FF156082'} } };
+    cell.border    = { top:{style:'thin',color:{argb:'FF156082'}}, left:{style:'thin',color:{argb:'FF156082'}}, bottom:{style:'thin',color:{argb:'FF156082'}}, right:{style:'thin',color:{argb:'FF156082'}} };
   });
 
-  // Linhas de dados: Aptos Narrow 11pt, altura 14.4, bordas e cor de status
+  // Linhas de dados — todas as colunas do LM, com justificativa do Supabase
   registros.forEach(r => {
-    const row = ws.addRow({
-      data:             toDate(r.data),
-      status:           r.status           || '',
-      situacao_pasta:   r.situacao_pasta   || '',
-      grupo_processo:   r.grupo_processo   || '',
-      codigo_processo:  r.codigo_processo  != null ? r.codigo_processo  : '',
-      codigo_cliente:   r.codigo_cliente   != null ? r.codigo_cliente   : '',
-      cliente:          r.cliente          || '',
-      parte_principal:  r.parte_principal  || '',
-      parte_contraria:  r.parte_contraria  || '',
-      numero_processo:  r.numero_processo  || '',
-      importante:       r.importante       || '',
-      matricula:        r.matricula        || '',
-      responsavel:      r.responsavel      || '',
-      area:             r.area             || '',
-      tipo_agenda:      r.tipo_agenda      || '',
-      descricao_tarefa: r.descricao_tarefa || '',
-      codigo_agenda:    r.codigo_agenda    != null ? r.codigo_agenda    : '',
-      quando_criado:    toDate(r.quando_criado),
-      quem_criou:       r.quem_criou       || '',
-      justificativa:    (function(){ var jObj = window.justificativas && window.justificativas[r.numero_processo]; return (jObj && jObj.texto) || ''; })()
+    const rowData = { status: r.status || '' };
+    _colsRaw.filter(c => c !== 'status').forEach(c => {
+      const v = r[c];
+      // Tenta converter datas
+      if (c === 'data' || c === 'Data' || c === 'quando_criado' || c === 'Quando Criado') {
+        rowData[c] = toDate(v) || (v != null ? v : '');
+      } else {
+        rowData[c] = v != null ? v : '';
+      }
     });
+    rowData['justificativa_controladoria'] = getJust(r);
+
+    const row = ws.addRow(rowData);
     row.height = 14.4;
     row.font = { name: 'Aptos Narrow', size: 11 };
-    // Bordas em todas as células
     row.eachCell({ includeEmpty: true }, cell => { cell.border = _borderCell; });
-    // Cor da célula de status
+
+    // Cor de status na coluna status
     const statusArgb = _statusFill[r.status];
     if (statusArgb) {
       const sCell = row.getCell('status');
@@ -9104,9 +9092,10 @@ window._gerarExcelFormatado = async function(registros, nomeArquivo, reagendamen
     }
   });
 
-  // Formato de data dd/mm/yyyy nas colunas de data
-  ws.getColumn('data').numFmt         = 'dd/mm/yyyy';
-  ws.getColumn('quando_criado').numFmt = 'dd/mm/yyyy';
+  // Formato de data nas colunas de data conhecidas
+  ['data','Data','quando_criado','Quando Criado'].forEach(c => {
+    try { ws.getColumn(c).numFmt = 'dd/mm/yyyy'; } catch(e) {}
+  });
 
   // Aba de Reagendamentos (se fornecida)
   if (reagendamentos && reagendamentos.length) {
