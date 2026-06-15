@@ -9753,15 +9753,43 @@ document.addEventListener('DOMContentLoaded', function(){
     localStorage.setItem('pc_ultima_atualizacao', new Date().toISOString());
   }
 
-  const GITHUB_DADOS_URL = 'https://raw.githubusercontent.com/peixotoecury/dashboard-juridico/data/dados.json';
+  const GITHUB_DADOS_URL = 'https://raw.githubusercontent.com/peixotoecury/dashboard-juridico/main/dados.json';
 
   async function carregarBaseOnline(silencioso){
-    // DESATIVADO: o dados.json é gerado do Excel (defasado) e sobrescrevia o
-    // dado ao vivo. A fonte única é o Supabase (prazos_agendas), em tempo real.
+    // Tenta Supabase (fonte primária, tempo real)
     if(typeof carregarPrazosSupabase === 'function'){
-      try { await carregarPrazosSupabase(); } catch(e){ console.warn('Supabase falhou:', e.message); }
+      try {
+        await carregarPrazosSupabase();
+        return;
+      } catch(e){
+        console.warn('Supabase indisponível, usando fallback dados.json:', e.message);
+      }
     }
-    return;
+    // Fallback: dados.json publicado pelo sync direto do LM no GitHub
+    try {
+      const r = await fetch(GITHUB_DADOS_URL + '?_=' + Date.now());
+      if(!r.ok) throw new Error('HTTP ' + r.status);
+      const payload = await r.json();
+      const rows = payload.dados || payload;
+      if(rows && rows.length){
+        const hoje = new Date(); hoje.setHours(0,0,0,0);
+        const todos = rows.map(function(rec){
+          const d = rec.data ? new Date(rec.data.slice(0,10) + 'T00:00:00') : null;
+          if(!d) return rec;
+          const diff = typeof diasUteisDiff === 'function' ? diasUteisDiff(d, hoje) : null;
+          return Object.assign({}, rec, { status: diff !== null ? (typeof calcStatusDiff === 'function' ? calcStatusDiff(diff) : rec.status) : rec.status, dias_restantes: diff });
+        });
+        S.raw    = todos;
+        S.prazos = todos.filter(function(r){ return (r.tipo_agenda||'').trim() === 'Prazo'; });
+        S.agendas= todos.filter(function(r){ return (r.tipo_agenda||'').trim() === 'Agenda'; });
+        S.equipe = todos.filter(function(r){ return (r.tipo_agenda||'').includes('Equipe'); });
+        window._supabaseCarregado = true;
+        if(typeof renderAll === 'function') renderAll();
+        console.info('Fallback dados.json carregado: ' + todos.length + ' registros (Supabase indisponível)');
+      }
+    } catch(e2){
+      console.warn('Fallback dados.json também falhou:', e2.message);
+    }
   }
 
   function pcHoraUpload(){
