@@ -3991,7 +3991,7 @@ function loadPrazos(inp) {
         const _d = iso?new Date(+iso[1],+iso[2]-1,+iso[3]):br?new Date(+br[3],+br[2]-1,+br[1]):null;
         if(!_d||isNaN(_d)) return r;
         const df=diasUteisDiff(_d,_hj0);
-        const st=df<-1?'Vencido':df<=0?'Fatal':df===1?'D-1':df===2?'D-2':'Futuro';
+        const st=calcStatusDiff(df);
         return Object.assign({},r,{status:st,dias_restantes:df});
       });
       // Procurar pela coluna correta (pode ser "tipo_agenda", "Tipo Agendamento", etc)
@@ -6836,7 +6836,7 @@ document.addEventListener('DOMContentLoaded', function(){
         const iso=String(dv).match(/^(\d{4})-(\d{2})-(\d{2})/); if(!iso) return r;
         const _d=new Date(+iso[1],+iso[2]-1,+iso[3]); if(isNaN(_d)) return r;
         const df=diasUteisDiff(_d,_hj1);
-        const st=df<-1?'Vencido':df<=0?'Fatal':df===1?'D-1':df===2?'D-2':'Futuro';
+        const st=calcStatusDiff(df);
         return Object.assign({},r,{status:st,dias_restantes:df});
       }); }
       S.raw    = _restat(JSON.parse(savedRaw));
@@ -8436,7 +8436,7 @@ function qgLoadPrazos(inp){
         const iso=String(dv).match(/^(\d{4})-(\d{2})-(\d{2})/); if(!iso) return r;
         const _d=new Date(+iso[1],+iso[2]-1,+iso[3]); if(isNaN(_d)) return r;
         const df=diasUteisDiff(_d,_hj3);
-        const st=df<-1?'Vencido':df<=0?'Fatal':df===1?'D-1':df===2?'D-2':'Futuro';
+        const st=calcStatusDiff(df);
         return Object.assign({},r,{status:st,dias_restantes:df});
       });
       S.raw    = _nr1;
