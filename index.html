@@ -3751,13 +3751,13 @@ function diasUteisDiff(dataDate, hoje) {
 }
 
 // REGRA ÚNICA DE STATUS — alterar só aqui:
-// diff < -1 → Vencido | -1 → Fatal | 0 → D-1 (hoje) | 1 → D-2 (amanhã) | >1 → Futuro
+// diff < 0 → Vencido | 0 → Fatal (hoje) | 1 → D-1 (amanhã) | 2 → D-2 | >2 → Futuro
 function calcStatusDiff(diff) {
   if (diff === null || diff === undefined) return 'Futuro';
-  if (diff < -1)   return 'Vencido';
-  if (diff === -1) return 'Fatal';
-  if (diff === 0)  return 'D-1';
-  if (diff === 1)  return 'D-2';
+  if (diff < 0)    return 'Vencido';
+  if (diff === 0)  return 'Fatal';
+  if (diff === 1)  return 'D-1';
+  if (diff === 2)  return 'D-2';
   return 'Futuro';
 }
 
