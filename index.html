@@ -9949,13 +9949,12 @@ document.addEventListener('DOMContentLoaded', function(){
   window.aprovarJustif = function(processo) {
     _initSupabase();
     var sess = window.SESSAO||window.sessao||window.usuarioLogado||{};
-    supabaseClient.from('justificativas').upsert({
-      numero_processo: processo,
+    supabaseClient.from('justificativas').update({
       status: 'aprovada',
       gestor_nome: sess.nome||'',
       gestor_email: sess.email||'',
       aprovado_em: new Date().toISOString()
-    }, {onConflict:'numero_processo'}).then(function(r){
+    }).eq('numero_processo', processo).then(function(r){
       if(r.error) { alert('Erro: '+r.error.message); return; }
       if(typeof mostrarToast==='function') mostrarToast('✅ Justificativa aprovada.');
       window.abrirPainelAprovacao();
@@ -9967,14 +9966,13 @@ document.addEventListener('DOMContentLoaded', function(){
     if(!motivo || !motivo.trim()) return;
     _initSupabase();
     var sess = window.SESSAO||window.sessao||window.usuarioLogado||{};
-    supabaseClient.from('justificativas').upsert({
-      numero_processo: processo,
+    supabaseClient.from('justificativas').update({
       status: 'rejeitada',
       gestor_nome: sess.nome||'',
       gestor_email: sess.email||'',
       aprovado_em: new Date().toISOString(),
       motivo_rejeicao: motivo.trim()
-    }, {onConflict:'numero_processo'}).then(function(r){
+    }).eq('numero_processo', processo).then(function(r){
       if(r.error) { alert('Erro: '+r.error.message); return; }
       if(typeof mostrarToast==='function') mostrarToast('❌ Justificativa rejeitada.');
       window.abrirPainelAprovacao();
@@ -9984,14 +9982,13 @@ document.addEventListener('DOMContentLoaded', function(){
   window.reabrirJustif = function(processo) {
     if(!confirm('Reabrir esta justificativa como pendente?')) return;
     _initSupabase();
-    supabaseClient.from('justificativas').upsert({
-      numero_processo: processo,
+    supabaseClient.from('justificativas').update({
       status: 'pendente',
       gestor_nome: null,
       gestor_email: null,
       aprovado_em: null,
       motivo_rejeicao: null
-    }, {onConflict:'numero_processo'}).then(function(r){
+    }).eq('numero_processo', processo).then(function(r){
       if(r.error) { alert('Erro: '+r.error.message); return; }
       window.abrirPainelAprovacao();
     });
