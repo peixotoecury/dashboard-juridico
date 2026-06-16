@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
@@ -2696,18 +2696,12 @@ body.role-manager .upload-bar {
     if(typeof window.renderMP==='function') window.renderMP();
     else if(typeof window.renderMeuPainelSomente==='function') window.renderMeuPainelSomente();
   ">👤 Meu Painel <span class="nb-cnt" id="mp-only-nav-count">0</span></button>
-  <div id="hdr-ultima-atualizacao" style="margin-left:auto;display:none;align-items:center;gap:6px;font-size:10.5px;color:#7a909f;padding:0 16px;flex-shrink:0;white-space:nowrap;">
-    <span style="width:7px;height:7px;border-radius:50%;background:#2d7d46;flex-shrink:0;display:inline-block;"></span>
-    Dados de <strong id="hdr-data-upload" style="color:#2c3d4f;font-weight:600;margin-left:3px;"></strong>
+  <div id="hdr-ultima-atualizacao" style="margin-left:auto;display:none;align-items:center;gap:6px;font-size:10.5px;color:rgba(255,255,255,.5);padding:0 12px 0 4px;flex-shrink:0;white-space:nowrap;">
+    <span style="width:7px;height:7px;border-radius:50%;background:#4caf50;flex-shrink:0;display:inline-block;"></span>
+    Dados de <strong id="hdr-data-upload" style="color:rgba(255,255,255,.85);font-weight:600;margin-left:3px;"></strong>
   </div>
 </nav>
 
-<!-- Banner dado desatualizado -->
-<div id="banner-stale">
-  <span class="bs-icon">⚠️</span>
-  <span id="banner-stale-msg">Banco de dados temporariamente indisponível — exibindo dados de <strong id="banner-stale-ts"></strong>. Tentando reconectar...</span>
-  <span class="bs-close" onclick="document.getElementById('banner-stale').classList.remove('show')" title="Fechar">✕</span>
-</div>
 
 <!-- FILTER PANEL (prazos/agendas/equipe) -->
 <div class="filter-panel" id="fpanel">
@@ -3345,6 +3339,7 @@ body.role-manager .upload-bar {
         <div class="mp-only-actions">
           <button class="mp-only-btn primary" onclick="exportarMeusRegistrosFormatado()">📥 Exportar meus registros</button>
           <button class="mp-only-btn" id="btn-enviar-justif" onclick="abrirModalJustificativas()" style="background:#c62828;color:#fff;border-color:#c62828;display:none;">📨 Enviar justificativas dos fatais</button>
+          <button class="mp-only-btn" id="btn-aprovar-justif" onclick="abrirPainelAprovacao()" style="background:#1565C0;color:#fff;border-color:#1565C0;display:none;">✅ Aprovar justificativas</button>
         </div>
 
         <div class="mp-only-cards">
@@ -3676,13 +3671,7 @@ function recalcularStatusAudiencias(arr) {
     }
     if (!d || isNaN(d)) return r;
     const diff = diasUteisDiff(d, hoje);
-    let status;
-    if      (diff < -1)   status = 'Vencido';
-    else if (diff === -1) status = 'Fatal';
-    else if (diff === 0)  status = 'D-1';
-    else if (diff === 1)  status = 'D-2';
-    else                  status = 'Futuro';
-    return Object.assign({}, r, {status: status, dias_restantes: diff});
+    return Object.assign({}, r, {status: calcStatusDiff(diff), dias_restantes: diff});
   });
 }
 
@@ -3761,52 +3750,62 @@ function diasUteisDiff(dataDate, hoje) {
   return count;
 }
 
-// ── BUSCAR PRAZOS DO SUPABASE (fonte principal) ──────────────────────────────
-function _verificarDadoDesatualizado(tsUltimo) {
-  const banner = document.getElementById('banner-stale');
-  if (!banner) return;
-  if (!tsUltimo) { banner.classList.remove('show'); return; }
-  const diffMin = (Date.now() - tsUltimo.getTime()) / 60000;
-  if (diffMin > 6) {
-    const mins = Math.round(diffMin);
-    const tsStr = tsUltimo.toLocaleString('pt-BR', {hour:'2-digit', minute:'2-digit'});
-    const el = document.getElementById('banner-stale-ts');
-    if (el) el.textContent = tsStr;
-    const msg = document.getElementById('banner-stale-msg');
-    if (msg) msg.innerHTML = `Banco de dados indisponível há ~${mins} min — exibindo dados das ${tsStr}. Tentando reconectar automaticamente...`;
-    banner.classList.add('show');
-  } else {
-    banner.classList.remove('show');
-  }
+// REGRA ÚNICA DE STATUS — alterar só aqui:
+// diff < -1 → Vencido | -1 → Fatal (último dia útil) | 0 → D-1 (hoje) | 1 → D-2 (amanhã) | >1 → Futuro
+function calcStatusDiff(diff) {
+  if (diff === null || diff === undefined) return 'Futuro';
+  if (diff < -1)   return 'Vencido';
+  if (diff === -1) return 'Fatal';
+  if (diff === 0)  return 'D-1';
+  if (diff === 1)  return 'D-2';
+  return 'Futuro';
 }
 
+// ── BUSCAR PRAZOS DO SUPABASE (fonte principal) ──────────────────────────────
+
 async function carregarPrazosSupabase() {
-  const SUPA_URL = 'https://rpibvjcnrseuugpkfmdj.supabase.co';
-  const SUPA_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJwaWJ2amNucnNldXVncGtmbWRqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODE1NTc3MTcsImV4cCI6MjA5NzEzMzcxN30.ecihol8JESMH7cgFSvWKIzp-OwoPRFqdK3aCDwpCeg8';
-
-  // Limpa IndexedDB para forcar leitura do Supabase
-  try {
-    ['peixoto','agendas','dashboard','pc','prazos','PC_Database'].forEach(function(dbName){
-      var req = indexedDB.deleteDatabase(dbName);
-      req.onsuccess = function(){ console.log('IndexedDB limpo:', dbName); };
-    });
-  } catch(e) {}
+  window._ultimoLoadSupabase = Date.now(); // atualiza timestamp para o fallback de 5min
+  const SUPA_URL = 'https://kgyeeuynerhpaqlhqwkx.supabase.co';
+  const SUPA_KEY = 'sb_publishable_MdUFFFJ5xRqiQysyxlWHFA_yk_LsknZ';
 
   try {
-    console.log('🔄 Buscando prazos do Supabase...');
+    console.log('🔄 Buscando prazos do Supabase (paralelo)...');
 
-    // Busca todos os registros em páginas de 1000
-    let todos = [], offset = 0, pagSize = 1000;
-    while(true) {
-      const r = await fetch(
-        `${SUPA_URL}/rest/v1/prazos_agendas?select=*&order=data.asc&limit=${pagSize}&offset=${offset}`,
-        { headers: { 'apikey': SUPA_KEY, 'Authorization': `Bearer ${SUPA_KEY}` } }
+    const COLS = 'data,status,dias_restantes,situacao_pasta,responsavel,grupo_processo,cliente,tipo_agenda,descricao_tarefa,numero_processo,parte_contraria,importante,matricula,parte_principal,area,codigo_processo,codigo_agenda,codigo_cliente,quando_criado,quem_criou,atualizado_em';
+    const HDR  = { 'apikey': SUPA_KEY, 'Authorization': `Bearer ${SUPA_KEY}` };
+    const PAG  = 1000;
+
+    // 1) busca total com HEAD
+    const headR = await fetch(
+      `${SUPA_URL}/rest/v1/prazos_agendas?select=data&limit=1&offset=0`,
+      { headers: { ...HDR, 'Prefer': 'count=exact', 'Range-Unit': 'items', 'Range': '0-0' } }
+    );
+    const totalStr = (headR.headers.get('Content-Range') || '').split('/')[1];
+    const total = totalStr ? parseInt(totalStr) : 0;
+
+    let todos;
+    if (total > 0) {
+      // 2) todas as páginas em paralelo
+      const nPags = Math.ceil(total / PAG);
+      const results = await Promise.all(
+        Array.from({length: nPags}, (_, i) =>
+          fetch(`${SUPA_URL}/rest/v1/prazos_agendas?select=${COLS}&order=data.asc&limit=${PAG}&offset=${i*PAG}`, { headers: HDR })
+            .then(r => r.ok ? r.json() : Promise.reject(`Supabase ${r.status}`))
+        )
       );
-      if (!r.ok) throw new Error(`Supabase ${r.status}`);
-      const lote = await r.json();
-      todos = todos.concat(lote);
-      if (lote.length < pagSize) break;
-      offset += pagSize;
+      todos = results.flat();
+    } else {
+      // fallback sequencial se count não vier
+      todos = [];
+      let offset = 0;
+      while(true) {
+        const r = await fetch(`${SUPA_URL}/rest/v1/prazos_agendas?select=${COLS}&order=data.asc&limit=${PAG}&offset=${offset}`, { headers: HDR });
+        if (!r.ok) throw new Error(`Supabase ${r.status}`);
+        const lote = await r.json();
+        todos = todos.concat(lote);
+        if (lote.length < PAG) break;
+        offset += PAG;
+      }
     }
 
     if (!todos.length) throw new Error('Nenhum dado no Supabase');
@@ -3819,13 +3818,7 @@ async function carregarPrazosSupabase() {
       const d = r.data ? new Date(r.data + 'T00:00:00') : null;
       if (!d) return r;
       const diff = diasUteisDiff(d, hoje);
-      let status;
-      if      (diff < -1)   status = 'Vencido';
-      else if (diff === -1) status = 'Fatal';
-      else if (diff === 0)  status = 'D-1';
-      else if (diff === 1)  status = 'D-2';
-      else                  status = 'Futuro';
-      return {...r, status, dias_restantes: diff};
+      return {...r, status: calcStatusDiff(diff), dias_restantes: diff};
     });
 
     // Normaliza campos para o formato que o dashboard espera
@@ -3833,6 +3826,24 @@ async function carregarPrazosSupabase() {
     S.prazos  = todos.filter(r => (r.tipo_agenda||'').trim() === 'Prazo');
     S.agendas = todos.filter(r => (r.tipo_agenda||'').trim() === 'Agenda');
     S.equipe  = todos.filter(r => (r.tipo_agenda||'').includes('Equipe'));
+
+    // Audiências da pauta (vindas do Supabase via sync_audiencias.py)
+    const audSupa = todos.filter(r => (r.tipo_agenda||'').trim() === 'Audiência');
+    if (audSupa.length > 0 && (!S.aud || S.aud.length === 0)) {
+      // Converte para o formato que getAdvAudiencia / renderFataisXAud esperam
+      S.aud = audSupa.map(r => ({
+        ...r,
+        'Data': r.data,
+        'Advogado Responsável Audiência/SO': r.responsavel,
+        'Equipe responsável': r.grupo_processo,
+        'Tipo Agendamento': r.descricao_tarefa,
+        'Parte Principal': r.parte_principal || r.cliente,
+        'Parte Contrária': r.parte_contraria,
+        'Processo': r.numero_processo,
+      }));
+      console.log(`⚖️ Audiências Supabase: ${S.aud.length}`);
+    }
+
     window._supabaseCarregado = true; // impede IndexedDB de sobrescrever
 
     console.log(`📊 Prazos: ${S.prazos.length} | Agendas: ${S.agendas.length} | Equipe: ${S.equipe.length}`);
@@ -3852,13 +3863,12 @@ async function carregarPrazosSupabase() {
     document.querySelectorAll('.upload-date, #upload-date, [id*="upload"]').forEach(el => {
       if(el.tagName !== 'INPUT') el.textContent = 'Atualizado: ' + atualizado;
     });
-    // Atualiza header badge
+    // Atualiza header badge e sidebar timestamp
     const hdrEl = document.getElementById('hdr-data-upload');
     if(hdrEl) hdrEl.textContent = atualizado;
     const hdrBadge = document.getElementById('hdr-ultima-atualizacao');
     if(hdrBadge) hdrBadge.style.display = 'flex';
-    // Verifica se dado está stale (> 6 min sem sync — banco LM pode estar fora)
-    _verificarDadoDesatualizado(tsUltimo);
+    if(typeof window._atualizarSidebarTs === 'function') window._atualizarSidebarTs(atualizado);
 
     n('nc-prazos', S.prazos.length);
     if(typeof popGlobal === 'function') popGlobal();
@@ -3991,7 +4001,7 @@ function loadPrazos(inp) {
         const _d = iso?new Date(+iso[1],+iso[2]-1,+iso[3]):br?new Date(+br[3],+br[2]-1,+br[1]):null;
         if(!_d||isNaN(_d)) return r;
         const df=diasUteisDiff(_d,_hj0);
-        const st=df<-1?'Vencido':df===-1?'Fatal':df===0?'D-1':df===1?'D-2':'Futuro';
+        const st=calcStatusDiff(df);
         return Object.assign({},r,{status:st,dias_restantes:df});
       });
       // Procurar pela coluna correta (pode ser "tipo_agenda", "Tipo Agendamento", etc)
@@ -4500,8 +4510,8 @@ function enviarEmailTrabalhista() {
 
   function tabelaHTML(titulo, d1, d2, fatal, venc, tot){
     return '<div style="margin-bottom:20px;">'
-      +'<div style="font-weight:700;font-size:14px;font-family:Verdana,Geneva,sans-serif;color:#005f73;border-bottom:2px solid #005f73;padding-bottom:5px;margin-bottom:8px;">'+titulo+'</div>'
-      +'<table style="width:100%;border-collapse:collapse;font-size:14px;font-family:Verdana,Geneva,sans-serif;">'
+      +'<div style="font-weight:700;font-size:10.5pt;font-family:Verdana,Geneva,sans-serif;color:#005f73;border-bottom:2px solid #005f73;padding-bottom:5px;margin-bottom:8px;">'+titulo+'</div>'
+      +'<table style="width:100%;border-collapse:collapse;font-size:10.5pt;font-family:Verdana,Geneva,sans-serif;">'
       +'<tr style="border-bottom:1px solid #f0f0f0;"><td style="padding:5px 8px;color:#555;">D-1</td><td style="padding:5px 8px;text-align:right;font-weight:600;color:#1976d2;">'+d1+'</td></tr>'
       +'<tr style="border-bottom:1px solid #f0f0f0;"><td style="padding:5px 8px;color:#555;">D-2</td><td style="padding:5px 8px;text-align:right;font-weight:600;color:#0097a7;">'+d2+'</td></tr>'
       +'<tr style="border-bottom:1px solid #f0f0f0;"><td style="padding:5px 8px;color:#555;">FATAL</td><td style="padding:5px 8px;text-align:right;font-weight:600;color:#e07a1f;">'+fatal+'</td></tr>'
@@ -4510,20 +4520,20 @@ function enviarEmailTrabalhista() {
       +'</table></div>';
   }
 
-  const previewHTML = '<div style="padding:24px;font-family:Verdana,Geneva,sans-serif;font-size:14px;">'
-    +'<p style="margin:0 0 14px;color:#333;font-size:14px;font-family:Verdana,Geneva,sans-serif;line-height:1.7;">Equipes, bom dia.</p>'
-    +'<p style="margin:0 0 10px;color:#333;font-size:14px;font-family:Verdana,Geneva,sans-serif;line-height:1.7;">Segue a listagem de compromissos agendados para cumprimento.</p>'
-    +'<p style="margin:0 0 10px;color:#333;font-size:14px;font-family:Verdana,Geneva,sans-serif;line-height:1.7;">Por favor, para segurança dos procedimentos, precisamos manter a regra de protocolo dos prazos no D-1.</p>'
-    +'<p style="margin:0 0 10px;color:#333;font-size:14px;font-family:Verdana,Geneva,sans-serif;line-height:1.7;">Por favor, priorizem o cumprimento ou reajuste dos prazos e agendas vencidas.</p>'
-    +'<p style="margin:0 0 14px;color:#333;font-size:14px;font-family:Verdana,Geneva,sans-serif;line-height:1.7;">Ao final do dia, retransmitiremos a listagem dos prazos pendentes, bem como das agendas de ciências de atas, cadastros e publicações, para auxiliar na visibilidade das prioridades, de modo adicional às telas dos seus usuários no LM.</p>'
+  const previewHTML = '<div style="padding:24px;font-family:Verdana,Geneva,sans-serif;font-size:10.5pt;">'
+    +'<p style="margin:0 0 14px;color:#333;font-size:10.5pt;font-family:Verdana,Geneva,sans-serif;line-height:1.7;">Equipes, bom dia.</p>'
+    +'<p style="margin:0 0 10px;color:#333;font-size:10.5pt;font-family:Verdana,Geneva,sans-serif;line-height:1.7;">Segue a listagem de compromissos agendados para cumprimento.</p>'
+    +'<p style="margin:0 0 10px;color:#333;font-size:10.5pt;font-family:Verdana,Geneva,sans-serif;line-height:1.7;">Por favor, para segurança dos procedimentos, precisamos manter a regra de protocolo dos prazos no D-1.</p>'
+    +'<p style="margin:0 0 10px;color:#333;font-size:10.5pt;font-family:Verdana,Geneva,sans-serif;line-height:1.7;">Por favor, priorizem o cumprimento ou reajuste dos prazos e agendas vencidas.</p>'
+    +'<p style="margin:0 0 14px;color:#333;font-size:10.5pt;font-family:Verdana,Geneva,sans-serif;line-height:1.7;">Ao final do dia, retransmitiremos a listagem dos prazos pendentes, bem como das agendas de ciências de atas, cadastros e publicações, para auxiliar na visibilidade das prioridades, de modo adicional às telas dos seus usuários no LM.</p>'
     + tabelaHTML('Prazo', pD1, pD2, pFatal, pVenc, pTot)
     + tabelaHTML('Agenda', aD1, aD2, aFatal, aVenc, aTot)
     + tabelaHTML('Agenda Equipe', eD1, eD2, eFatal, eVenc, eTot)
-    +'<p style="margin:14px 0;color:#333;font-size:14px;font-family:Verdana,Geneva,sans-serif;line-height:1.7;">Por gentileza, consultar as respectivas portarias de expediente forense, objetivando o cumprimento dos prazos tempestivamente.</p>'
+    +'<p style="margin:14px 0;color:#333;font-size:10.5pt;font-family:Verdana,Geneva,sans-serif;line-height:1.7;">Por gentileza, consultar as respectivas portarias de expediente forense, objetivando o cumprimento dos prazos tempestivamente.</p>'
     +'<div style="background:#f0f8ff;border:1px solid #b3d9f0;border-radius:8px;padding:12px 16px;margin-bottom:16px;">'
-    +'<div style="font-size:13px;font-family:Verdana,Geneva,sans-serif;color:#555;margin-bottom:4px;">Acesse o dashboard para detalhes por responsável e grupo:</div>'
-    +'<a href="'+link+'" style="color:#005f73;font-weight:600;font-size:13px;">'+link+'</a></div>'
-    +'<p style="margin:0;color:#555;font-size:14px;font-family:Verdana,Geneva,sans-serif;">Permanecemos à disposição.<br><strong>Atenciosamente,<br>Controladoria — Peixoto & Cury Advogados</strong></p>'
+    +'<div style="font-size:10.5pt;font-family:Verdana,Geneva,sans-serif;color:#555;margin-bottom:4px;">Acesse o dashboard para detalhes por responsável e grupo:</div>'
+    +'<a href="'+link+'" style="color:#005f73;font-weight:600;font-size:10.5pt;">'+link+'</a></div>'
+    +'<p style="margin:0;color:#555;font-size:10.5pt;font-family:Verdana,Geneva,sans-serif;">Permanecemos à disposição.<br><strong>Atenciosamente,<br>Controladoria — Peixoto & Cury Advogados</strong></p>'
     +'</div>';
 
   const corpoPlain = 'Equipes, bom dia.\n\n'
@@ -4610,22 +4620,49 @@ function enviarEmailTrabalhista() {
   
   atualizarListaEmails();
 
-  document.getElementById('btn-enviar-email').onclick = function(){
+  document.getElementById('btn-enviar-email').onclick = async function(){
     const emailPrincipal = 'areatrabalhista@peixotoecury.com.br';
     const cc = window.emailCopia.length > 0 ? window.emailCopia.join(';') : '';
-    
-    let mailtoLink = 'mailto:' + emailPrincipal;
-    if(cc){
-      mailtoLink += '?cc=' + encodeURIComponent(cc);
-      mailtoLink += '&subject=' + encodeURIComponent('Controladoria — Compromissos do dia ' + hoje);
-      mailtoLink += '&body=' + encodeURIComponent(corpoPlain);
-    } else {
-      mailtoLink += '?subject=' + encodeURIComponent('Controladoria — Compromissos do dia ' + hoje);
-      mailtoLink += '&body=' + encodeURIComponent(corpoPlain);
+    const assunto = 'Controladoria — Compromissos do dia ' + hoje;
+
+    // Copia o HTML formatado para o clipboard
+    try {
+      const blob = new Blob([previewHTML], {type: 'text/html'});
+      await navigator.clipboard.write([new ClipboardItem({'text/html': blob})]);
+    } catch(e) {
+      // fallback: tenta copiar via execCommand
+      try {
+        const tmp = document.createElement('div');
+        tmp.innerHTML = previewHTML;
+        tmp.style.cssText = 'position:fixed;left:-9999px;top:0;';
+        document.body.appendChild(tmp);
+        const range = document.createRange();
+        range.selectNodeContents(tmp);
+        const sel = window.getSelection();
+        sel.removeAllRanges();
+        sel.addRange(range);
+        document.execCommand('copy');
+        sel.removeAllRanges();
+        document.body.removeChild(tmp);
+      } catch(e2) { console.warn('Clipboard indisponível:', e2); }
     }
-    
+
+    // Abre o Outlook com Para/CC/Assunto preenchidos — sem corpo (será colado)
+    let mailtoLink = 'mailto:' + emailPrincipal;
+    mailtoLink += '?subject=' + encodeURIComponent(assunto);
+    if(cc) mailtoLink += '&cc=' + encodeURIComponent(cc);
     window.location.href = mailtoLink;
+
     document.getElementById('email-modal').remove();
+
+    // Toast orientando o usuário a colar
+    setTimeout(function(){
+      if(typeof mostrarToast === 'function'){
+        mostrarToast('📋 HTML copiado! No Outlook, clique no corpo do email e pressione Ctrl+V para colar formatado.');
+      } else {
+        alert('📋 O email foi aberto no Outlook.\n\nClique no corpo da mensagem e pressione Ctrl+V para colar o conteúdo formatado.');
+      }
+    }, 600);
   };
 }
 
@@ -4892,7 +4929,7 @@ function renderRankTarefa() {
 }
 
 // ── JUSTIFICATIVAS ──────────────────────────────────
-window.salvarJustificativa = function(audId, texto, processo) {
+window.salvarJustificativa = function(audId, texto, processo, grupoParam) {
   if(typeof IndexedDBHelper !== 'undefined') {
     IndexedDBHelper.salvarJustificativa(audId, texto);
   }
@@ -4908,21 +4945,23 @@ window.salvarJustificativa = function(audId, texto, processo) {
     try {
       var sess = window.SESSAO || window.sessao || window.usuarioLogado || {};
       
-      supabaseClient
-        .from('justificativas')
-        .upsert({
+      var _payload1 = {
           numero_processo: processo,
           justificativa_texto: texto,
           usuario_email: sess.email || '',
           usuario_nome: sess.nome || '',
-          equipe: sess.equipe || '',
-          atualizado_em: new Date().toISOString()
-        }, { onConflict: 'numero_processo' })
+          atualizado_em: new Date().toISOString(),
+          status: 'pendente',
+          equipe: grupoParam || sess.equipe || sess.grupo || ''
+        };
+      supabaseClient
+        .from('justificativas')
+        .upsert(_payload1, { onConflict: 'numero_processo' })
         .then(function(result){
           if(result.error) {
             console.log('❌ Erro ao salvar no Supabase:', result.error);
           } else {
-            console.log('✅ Justificativa salva no Supabase');
+            console.log('✅ Justificativa salva no Supabase (pendente aprovação)');
           }
         })
         .catch(function(err){
@@ -5431,7 +5470,7 @@ window.gravarJustificativaFatal = function(audId, processo, responsavel, grupo) 
   
   var textoCompleto = `DATA DO REGISTRO: ${campo4}\nPRAZO: ${campo5}\nJUSTIFICATIVA: ${campo6.value}\nDATA DE ENVIO: ${campo7}\nCONSIDERAÇÕES: ${campo8}`;
   
-  window.salvarJustificativa(audId, textoCompleto, processo);
+  window.salvarJustificativa(audId, textoCompleto, processo, grupo);
   document.getElementById('modal-just-' + audId).remove();
   
   // ✉️ Enviar email com a justificativa
@@ -5592,6 +5631,48 @@ window.gravarJustificativa = function(audId) {
   window.salvarJustificativa(audId, texto);
 };
 
+// Detecta se as colunas novas (status, equipe) já existem no Supabase
+window._supabaseColunasNovas = false;
+window._detectarColunasSupabase = function() {
+  _initSupabase();
+  if(!supabaseClient) return;
+  supabaseClient.from('justificativas').select('status').limit(1)
+    .then(function(r) {
+      if(!r.error) {
+        window._supabaseColunasNovas = true;
+        console.log('✅ Supabase: colunas novas detectadas (status, equipe)');
+      } else {
+        console.log('⚠️ Supabase: colunas novas ainda não existem. Rode o SQL de migração.');
+      }
+    });
+};
+
+// Carrega status das justificativas do Supabase e injeta badges/botões inline na tabela de fatais
+window.justificativasStatus = window.justificativasStatus || {};
+window.carregarJustificativasDoSupabase = function() {
+  _initSupabase();
+  if(!supabaseClient) return;
+  window._detectarColunasSupabase();
+  supabaseClient.from('justificativas').select('numero_processo,status,justificativa_texto,usuario_nome,equipe')
+    .then(function(result) {
+      if(result.error || !result.data) return;
+      result.data.forEach(function(r) {
+        window.justificativasStatus[r.numero_processo] = r.status || 'pendente';
+        // Também popula window.justificativas para o preview de texto
+        if(r.justificativa_texto) {
+          window.justificativas = window.justificativas || {};
+          window.justificativas[r.numero_processo] = {
+            texto: r.justificativa_texto,
+            status: r.status || 'pendente',
+            usuario_nome: r.usuario_nome
+          };
+        }
+      });
+      // Re-renderiza a tabela com os status atualizados
+      if(typeof renderFatais === 'function') renderFatais();
+    });
+};
+
 window.carregarTodasJustificativas = function() {
   if(!window.justificativas) return;
   
@@ -5634,6 +5715,19 @@ function renderFatais() {
       justCompleta = texto.replace(/DATA DO REGISTRO:|PRAZO:|JUSTIFICATIVA:|DATA DE ENVIO:|CONSIDERAÇÕES:/g, '\n$&').replace(/\n\n+/g, '\n');
       justPreview = texto.length > 80 ? texto.slice(0, 80) + '...' : texto;
     }
+    const justStatus = (window.justificativasStatus && window.justificativasStatus[r.numero_processo]) || (temJust ? 'pendente' : null);
+    const sessAtual = window.SESSAO||window.sessao||window.usuarioLogado||{};
+    const podeAprovarRow = temJust && ((typeof isManager==='function' && isManager(sessAtual)) || typeof _equipeDoGestor(sessAtual)==='string');
+    const justBadge = !temJust ? '—'
+      : justStatus==='aprovada' ? `<span style="background:#e8f5e9;color:#2e7d32;padding:2px 6px;border-radius:8px;font-size:10px;font-weight:700;">✅ Aprovada</span>`
+      : justStatus==='rejeitada' ? `<span style="background:#ffebee;color:#c62828;padding:2px 6px;border-radius:8px;font-size:10px;font-weight:700;">❌ Rejeitada</span>`
+      : `<span style="background:#fff3e0;color:#e65100;padding:2px 6px;border-radius:8px;font-size:10px;font-weight:700;">⏳ Pendente</span>`;
+    const btnAprovar = podeAprovarRow && justStatus==='pendente'
+      ? `<button onclick="aprovarJustif('${e(r.numero_processo)}')" style="background:#2e7d32;color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;width:100%;">✅ Aprovar</button>
+         <button onclick="rejeitarJustif('${e(r.numero_processo)}')" style="background:#c62828;color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;width:100%;">❌ Rejeitar</button>`
+      : podeAprovarRow && justStatus && justStatus!=='pendente'
+      ? `<button onclick="reabrirJustif('${e(r.numero_processo)}')" style="background:#666;color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;width:100%;">↩ Reabrir</button>`
+      : '';
     return `<tr data-aud-id="${audId}">
     <td class="td-clip-sm">${e(r.responsavel)}</td>
     <td class="td-clip-sm proc-normal" title="${e(r.numero_processo)}">${e(r.numero_processo)}</td>
@@ -5641,11 +5735,17 @@ function renderFatais() {
     <td class="td-clip" style="max-width:220px" title="${e(r.descricao_tarefa)}">${e(r.descricao_tarefa)}</td>
     <td>${sBadge(r.status)}</td>
     <td class="td-clip-sm">${e(r.grupo_processo)}</td>
-    <td class="td-clip" style="max-width:250px;font-size:11px;color:${temJust?'#2d7d46':'#999'};cursor:${temJust?'pointer':'default'};" title="${justPreview}" onclick="${temJust?`window.abrirModalJustificativaFatal('${audId}', '${e(r.numero_processo)}', '${e(r.responsavel)}', '${e(r.grupo_processo)}')`:''}">${temJust?'✅ '+justPreview:'—'}</td>
+    <td class="td-clip" style="max-width:220px;font-size:11px;">
+      <div style="display:flex;flex-direction:column;gap:4px;">
+        ${justBadge}
+        ${temJust?`<span style="font-size:10px;color:#555;cursor:pointer;" onclick="window.abrirModalJustificativaFatal('${audId}','${e(r.numero_processo)}','${e(r.responsavel)}','${e(r.grupo_processo)}')" title="${justPreview}">${justPreview}</span>`:''}
+      </div>
+    </td>
     <td style="text-align:center;padding:4px;min-width:220px;">
       <div style="display:flex;flex-direction:column;gap:4px;">
         <button class="btn-salvar-just" data-aud-id="${audId}" style="background:${temJust?'#2d7d46':'#d62828'};color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;width:100%;"
           onclick="window.abrirModalJustificativaFatal('${audId}', '${e(r.numero_processo)}', '${e(r.responsavel)}', '${e(r.grupo_processo)}')">${temJust?'✏️ Editar':'🔴 Justificar'}</button>
+        ${btnAprovar}
         <button style="background:#d84315;color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;width:100%;"
           onclick="window.abrirModalReagendamento('${e(r.numero_processo)}', '${e(r.responsavel)}', '${e(r.grupo_processo)}')" title="Solicitar reagendamento">📅 Reagendar</button>
         <button style="background:#1565C0;color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;width:100%;"
@@ -5655,8 +5755,12 @@ function renderFatais() {
   </tr>`;
   }).join(''):emptyR(7);
   renderPg('pg-fatal',pg,pages,total,'fatal',renderFatais);
-  
   carregarTodasJustificativas();
+  // Carrega status do Supabase apenas na primeira vez ou após mudança
+  if(!window._justifSupabaseCarregado) {
+    window._justifSupabaseCarregado = true;
+    carregarJustificativasDoSupabase();
+  }
 }
 
 function abrirFormReagendamento(processo, responsavel) {
@@ -5897,6 +6001,70 @@ function mpFiltrarStatus(st) {
 }
 
 function clearFatal() { ['fatal-s','fatal-resp','fatal-grupo'].forEach(id=>{const el=V(id);if(el)el.value='';}); renderFatais(); }
+
+// ── SINCRONIZAR AGORA (chama sync_server.py local na porta 8765) ─────────────
+async function syncAgora() {
+  const btn  = document.getElementById('btn-sync-now');
+  const icon = document.getElementById('btn-sync-icon');
+  const txt  = document.getElementById('btn-sync-txt');
+  if (!btn) return;
+
+  btn.disabled = true;
+  icon.textContent = '⏳';
+  txt.textContent  = 'Sincronizando...';
+  btn.style.background = '#546e7a';
+
+  try {
+    const r = await fetch('http://localhost:8765/sync', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+    });
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+
+    // Aguarda até 90 s para o sync concluir, consultando /status a cada 2 s
+    let tentativas = 45;
+    while (tentativas-- > 0) {
+      await new Promise(res => setTimeout(res, 2000));
+      try {
+        const s = await fetch('http://localhost:8765/status');
+        const j = await s.json();
+        if (!j.rodando) {
+          if (j.erro) throw new Error(j.erro);
+          // Recarrega dados do Supabase
+          icon.textContent = '✅';
+          txt.textContent  = 'Concluído!';
+          btn.style.background = '#2e7d32';
+          // Atualiza timestamp da sidebar
+          const agora = new Date();
+          const tsStr = agora.toLocaleDateString('pt-BR') + ' às ' + agora.toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});
+          if(typeof window._atualizarSidebarTs === 'function') window._atualizarSidebarTs(tsStr);
+          localStorage.setItem('pc_upload_date', agora.toISOString());
+          await carregarPrazosSupabase();
+          setTimeout(() => {
+            btn.disabled = false;
+            icon.textContent = '🔄';
+            txt.textContent  = 'Sincronizar';
+            btn.style.background = '#1565c0';
+          }, 4000);
+          return;
+        }
+      } catch(_) {}
+    }
+    throw new Error('Timeout — sync demorou mais de 90 s');
+  } catch (ex) {
+    icon.textContent = '❌';
+    txt.textContent  = ex.message.includes('Failed to fetch')
+      ? 'Servidor local offline'
+      : ex.message.slice(0, 30);
+    btn.style.background = '#c62828';
+    btn.disabled = false;
+    setTimeout(() => {
+      icon.textContent = '🔄';
+      txt.textContent  = 'Sincronizar';
+      btn.style.background = '#1565c0';
+    }, 5000);
+  }
+}
 function clearAud()   { ['ud-tipo','ud-grupo','ud-estado','ud-s'].forEach(id=>{const el=V(id);if(el)el.value='';}); renderAudDet(); }
 
 // ── INSIGHTS AUTOMÁTICOS ──────────────────────────────
@@ -6063,7 +6231,7 @@ let HORA_SNAPSHOT_SELECIONADA = localStorage.getItem(SNAP_KEY + '_selecionada') 
 setTimeout(async function(){
   try {
     var _d3 = new Date().toISOString().slice(0,10);
-    var _res3 = await fetch('https://rpibvjcnrseuugpkfmdj.supabase.co/rest/v1/base_planilha?id=in.(300000,300001,300002)&select=dados',{headers:{'apikey':'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJwaWJ2amNucnNldXVncGtmbWRqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODE1NTc3MTcsImV4cCI6MjA5NzEzMzcxN30.ecihol8JESMH7cgFSvWKIzp-OwoPRFqdK3aCDwpCeg8','Authorization':'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJwaWJ2amNucnNldXVncGtmbWRqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODE1NTc3MTcsImV4cCI6MjA5NzEzMzcxN30.ecihol8JESMH7cgFSvWKIzp-OwoPRFqdK3aCDwpCeg8'}});
+    var _res3 = await fetch('https://kgyeeuynerhpaqlhqwkx.supabase.co/rest/v1/base_planilha?id=in.(300000,300001,300002)&select=dados',{headers:{'apikey':'sb_publishable_MdUFFFJ5xRqiQysyxlWHFA_yk_LsknZ','Authorization':'Bearer sb_publishable_MdUFFFJ5xRqiQysyxlWHFA_yk_LsknZ'}});
     var _rows3 = await _res3.json();
     var _ch3 = false;
     (_rows3||[]).forEach(function(row){ var d=row.dados; if(d&&d.tipo==='__snapshot__'&&d.snap_data===_d3&&d.hora&&d.snapshot_data&&!snapshots[d.hora]){ snapshots[d.hora]=d.snapshot_data; _ch3=true; } });
@@ -6091,15 +6259,15 @@ function salvarSnapshots() {
   var _sd = new Date().toISOString().slice(0,10);
   var _HIDS = {'09h30': 300000, '15h30': 300001};
   var _hdrs = {
-    'apikey': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJwaWJ2amNucnNldXVncGtmbWRqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODE1NTc3MTcsImV4cCI6MjA5NzEzMzcxN30.ecihol8JESMH7cgFSvWKIzp-OwoPRFqdK3aCDwpCeg8',
-    'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJwaWJ2amNucnNldXVncGtmbWRqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODE1NTc3MTcsImV4cCI6MjA5NzEzMzcxN30.ecihol8JESMH7cgFSvWKIzp-OwoPRFqdK3aCDwpCeg8',
+    'apikey': 'sb_publishable_MdUFFFJ5xRqiQysyxlWHFA_yk_LsknZ',
+    'Authorization': 'Bearer sb_publishable_MdUFFFJ5xRqiQysyxlWHFA_yk_LsknZ',
     'Content-Type': 'application/json',
     'Prefer': 'resolution=merge-duplicates,return=minimal'
   };
   Object.entries(snapshots).forEach(function(entry) {
     var hora = entry[0]; var dados = entry[1];
     var id = _HIDS[hora] !== undefined ? _HIDS[hora] : 300002;
-    fetch('https://rpibvjcnrseuugpkfmdj.supabase.co/rest/v1/base_planilha', {
+    fetch('https://kgyeeuynerhpaqlhqwkx.supabase.co/rest/v1/base_planilha', {
       method: 'POST',
       headers: _hdrs,
       body: JSON.stringify([{id: id, dados: {tipo: '__snapshot__', snap_data: _sd, hora: hora, snapshot_data: dados}}])
@@ -6444,10 +6612,38 @@ async function exportarExcel() {
     registrosBrutos = [...fp, ...fa, ...fe];
   }
   if (!registrosBrutos.length) { alert('Nenhum dado para exportar.'); return; }
-  await window._gerarExcelFormatado(registrosBrutos, `PC_${nome}_${dt}.xlsx`);
+
+  // Busca justificativas e reagendamentos do Supabase antes de gerar
+  _initSupabase();
+  var _justMap = {};
+  var _reagRows = [];
+  var _justRows = [];
+  if (supabaseClient) {
+    try {
+      V('ov').style.display = 'flex';
+      const [jRes, rRes] = await Promise.all([
+        supabaseClient.from('justificativas').select('*').order('atualizado_em', {ascending: false}),
+        supabaseClient.from('reagendamentos').select('*').order('criado_em', {ascending: false})
+      ]);
+      if (jRes.data) {
+        _justRows = jRes.data;
+        jRes.data.forEach(function(r) {
+          _justMap[r.numero_processo] = r.justificativa_texto || '';
+        });
+        window.justificativas = window.justificativas || {};
+        jRes.data.forEach(function(r) {
+          window.justificativas[r.numero_processo] = { audId: r.numero_processo, texto: r.justificativa_texto || '', dataSalva: r.criado_em || '' };
+        });
+      }
+      if (rRes.data) _reagRows = rRes.data;
+    } catch(e) { console.warn('Supabase fetch antes do export:', e); }
+    finally { V('ov').style.display = 'none'; }
+  }
+
+  await window._gerarExcelFormatado(registrosBrutos, `PC_${nome}_${dt}.xlsx`, _reagRows, _justMap, _justRows);
 }
 
-// ── EXPORTAR PLANILHA NO FORMATO ORIGINAL + JUSTIFICATIVAS ──────────────────
+// ── EXPORTAR PLANILHA NO FORMATO ORIGINAL (mesmas colunas do upload) ─────────
 async function exportarFormatoOriginal() {
   if (!S.raw || !S.raw.length) {
     alert('Nenhum dado carregado. Faça o upload da planilha de Prazos & Agendas primeiro.');
@@ -6455,7 +6651,6 @@ async function exportarFormatoOriginal() {
   }
   V('ov').style.display = 'flex';
   try {
-    // Busca justificativas do Supabase para cruzar com os dados
     _initSupabase();
     var justMap = {};
     if (supabaseClient) {
@@ -6470,20 +6665,17 @@ async function exportarFormatoOriginal() {
         });
       }
     }
-
-    // Mescla justificativas nos dados de prazos/agendas
     var dadosComJust = S.raw.map(function(r) {
       var j = justMap[r.numero_processo] || {};
       return Object.assign({}, r, {
-        justificativa:          j.justificativa          || '',
-        justificativa_usuario:  j.justificativa_usuario  || '',
-        justificativa_data:     j.justificativa_data     || ''
+        justificativa: j.justificativa || '',
+        justificativa_usuario: j.justificativa_usuario || '',
+        justificativa_data: j.justificativa_data || ''
       });
     });
-
     var wb = XLSX.utils.book_new();
     XLSX.utils.book_append_sheet(wb, XLSX.utils.json_to_sheet(dadosComJust), 'Agendamentos');
-    if (S.aud    && S.aud.length)    XLSX.utils.book_append_sheet(wb, XLSX.utils.json_to_sheet(S.aud),    'Audiencias');
+    if (S.aud && S.aud.length)    XLSX.utils.book_append_sheet(wb, XLSX.utils.json_to_sheet(S.aud),    'Audiencias');
     if (S.cancel && S.cancel.length) XLSX.utils.book_append_sheet(wb, XLSX.utils.json_to_sheet(S.cancel), 'Redesignadas-Canceladas');
     var dt = new Date().toLocaleDateString('pt-BR').replace(/\//g,'-');
     XLSX.writeFile(wb, 'Planilha_' + dt + '.xlsx');
@@ -6543,7 +6735,8 @@ const USUARIOS = {
   'aline.borges': { senha: 'pc@abr', nivel: 'usuario', nome: 'Aline Cunha de Oliveira Borges', sigla: 'ABR' },
   'aline.miron': { senha: 'pc@alf', nivel: 'usuario', nome: 'Aline Ferreira Miron', sigla: 'ALF' },
   'alicia.hamati': { senha: 'pc@alh', nivel: 'usuario', nome: 'Alícia Marcondes Hamati', sigla: 'ALH' },
-  'amanda.araujo': { senha: 'pc@aml', nivel: 'usuario', nome: 'Amanda Mesquita de Lima Araujo', sigla: 'AML' },
+  'amanda.araujo': { senha: 'pc@aml', nivel: 'admin', nome: 'Amanda Mesquita de Lima Araujo', sigla: 'AML' },
+  'natalia.baliero': { senha: 'pc@nbl', nivel: 'admin', nome: 'Natalia Baliero', sigla: 'NBL' },
   'anacarolina.martini': { senha: 'pc@ach', nivel: 'usuario', nome: 'Ana Carolina Honório Martini', sigla: 'ACH' },
   'annacarolina.baani': { senha: 'pc@anb', nivel: 'usuario', nome: 'Anna Carolina Balbino Gatti Baani', sigla: 'ANB' },
   'arthur.castro': { senha: 'pc@arc', nivel: 'usuario', nome: 'Arthur Rodrigues Rios Toledo de Castro', sigla: 'ARC' },
@@ -6605,10 +6798,10 @@ const USUARIOS = {
   'natalia.baliero': { senha: 'pc@nbb', nivel: 'usuario', nome: 'Natalia Bezerra Baliero', sigla: 'NBB' },
   'natalia.gaggini': { senha: 'pc@nbg', nivel: 'admin', nome: 'Natália Biondi Gaggini Robles', sigla: 'NBG' },
   'nathalie.louise': { senha: 'pc@nlo', nivel: 'usuario', nome: 'Nathalie Louise dos Santos Rodrigues Dias', sigla: 'NLO' },
-  'nicolau.coelho': { senha: 'pc@nrg', nivel: 'usuario', nome: 'Nicolau Rafael Guimarães Coelho', sigla: 'NRG' },
+  'nicolau.coelho': { senha: 'pc@nrg', nivel: 'admin', nome: 'Nicolau Rafael Guimarães Coelho', sigla: 'NRG' },
   'poliana.banqueri': { senha: 'pc@pbs', nivel: 'admin', nome: 'Poliana Banqueri da Silva Guimarães', sigla: 'PBS' },
   'paloma.santos': { senha: 'pc@psi', nivel: 'usuario', nome: 'Paloma da Silva Santos', sigla: 'PSI' },
-  'rafael.camargo': { senha: 'pc@rcf', nivel: 'usuario', nome: 'Rafael Camargo Felisbino', sigla: 'RCF' },
+  'rafael.camargo': { senha: 'pc@rcf', nivel: 'admin', nome: 'Rafael Camargo Felisbino', sigla: 'RCF' },
   'rafael.ferreira': { senha: 'pc@rfe', nivel: 'usuario', nome: 'Rafael Rocha Ferreira', sigla: 'RFE' },
   'raica.kwok': { senha: 'pc@rfk', nivel: 'usuario', nome: 'Raica FernandesKwok', sigla: 'RFK' },
   'richard.silva': { senha: 'pc@rru', nivel: 'usuario', nome: 'Richard Ruan Leo da Silva', sigla: 'RRU' },
@@ -6737,7 +6930,7 @@ document.addEventListener('DOMContentLoaded', function(){
         const iso=String(dv).match(/^(\d{4})-(\d{2})-(\d{2})/); if(!iso) return r;
         const _d=new Date(+iso[1],+iso[2]-1,+iso[3]); if(isNaN(_d)) return r;
         const df=diasUteisDiff(_d,_hj1);
-        const st=df<-1?'Vencido':df===-1?'Fatal':df===0?'D-1':df===1?'D-2':'Futuro';
+        const st=calcStatusDiff(df);
         return Object.assign({},r,{status:st,dias_restantes:df});
       }); }
       S.raw    = _restat(JSON.parse(savedRaw));
@@ -6874,7 +7067,7 @@ function salvarNovaSenha() {
 function aplicarAcesso() {
   if (!SESSAO) return;
   // Verifica por nível OU por login fixo (garante acesso mesmo se localStorage sobrescreveu o nível)
-  const _loginsAdmin = ['controladoria','coord','antoniocarlos.aguiar','beatriz.rodrigues','bianca.camacho','gisela.freire','keyla.moraes','marcel.alves','marina.brechiani','natalia.gaggini','poliana.banqueri','sofia.freire','washington.soares'];
+  const _loginsAdmin = ['controladoria','coord','antoniocarlos.aguiar','beatriz.rodrigues','bianca.camacho','gisela.freire','keyla.moraes','marcel.alves','marina.brechiani','natalia.gaggini','nicolau.coelho','poliana.banqueri','rafael.camargo','sofia.freire','washington.soares'];
   const isAdmin = SESSAO.nivel === 'admin' || _loginsAdmin.includes((SESSAO.login || '').toLowerCase());
   // Remove banner de privacidade imediatamente se for admin
   if (isAdmin) document.querySelectorAll('.aviso-privacidade').forEach(el => el.remove());
@@ -6884,7 +7077,7 @@ function aplicarAcesso() {
     if(saved) {
       const users = JSON.parse(saved);
       users.filter(u=>u.status==='Ativo').forEach(u=>{
-        USUARIOS[u.login] = { senha: u.senha, nivel: u.nivel, nome: u.nome, sigla: u.sigla, equipe: u.equipe||'' };
+        USUARIOS[u.login] = { senha: u.senha, nivel: u.nivel, nome: u.nome, sigla: u.sigla };
       });
     }
   } catch(e) {}
@@ -6995,8 +7188,8 @@ renderAll = function() {
 <script>
 const PC_PROFISSIONAIS = [{"matricula": "AAO", "nome": "Aline Amorim Oliveira ", "login": "aline.oliveira@peixotoecury.com.br", "grupo": "Grupo A3", "coordenador": "sofia.freire@peixotoecury.com.br"}, {"matricula": "ABR", "nome": "Aline Cunha de Oliveira Borges", "login": "aline.borges@peixotoecury.com.br", "grupo": "Grupo B1", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "ALF", "nome": "Aline Ferreira Miron", "login": "aline.miron@peixotoecury.com.br", "grupo": "Grupo E1", "coordenador": "keyla.moraes@peixotoecury.com.br"}, {"matricula": "ALH", "nome": "Alícia Marcondes Hamati", "login": "alicia.hamati@peixotoecury.com.br", "grupo": "Grupo A3", "coordenador": "sofia.freire@peixotoecury.com.br"}, {"matricula": "AML", "nome": "Amanda Mesquita de Lima Araujo ", "login": "amanda.araujo@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "ANB", "nome": "Anna Carolina Balbino Gatti Baani", "login": "annacarolina.baani@peixotoecury.com.br", "grupo": "Grupo B2", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "ARC", "nome": "Arthur Rodrigues Rios Toledo de Castro", "login": "arthur.castro@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "ATC", "nome": "Ana Julia Thomaz Carmona ", "login": "anajulia.carmona@peixotoecury.com.br", "grupo": "Grupo A1", "coordenador": "natalia.gaggini@peixotoecury.com.br"}, {"matricula": "BBO", "nome": "Bianca Bolanhi Camacho", "login": "bianca.camacho@peixotoecury.com.br", "grupo": "Grupo D1", "coordenador": "bianca.camacho@peixotoecury.com.br"}, {"matricula": "BCF", "nome": "Bruna Cembranelli Fazenda ", "login": "bruna.fazenda@peixotoecury.com.br", "grupo": "Grupo B2", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "BFM", "nome": "Brenna Braga Freitas Malta", "login": "brenna.malta@peixotoecury.com.br", "grupo": "Grupo B3", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "BSO", "nome": "Beatriz Santiago de Souza", "login": "beatriz.souza@peixotoecury.com.br", "grupo": "Grupo B1", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "BSS", "nome": "Brenda da Silva dos Santos", "login": "brenda.santos@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "CAL", "nome": "Camila Alves Magalhães de Paula", "login": "camila.paula@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "CAR", "nome": "Chris Carvalho", "login": "chris.carvalho@peixotoecury.com.br", "grupo": "Grupo A3", "coordenador": "sofia.freire@peixotoecury.com.br"}, {"matricula": "CGV", "nome": "Cícera Gabriela Ferreira Vicente", "login": "cicera.vicente@peixotoecury.com.br", "grupo": "Grupo B1", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "DJE", "nome": "Diana de Jesus Santos", "login": "diana.santos@peixotoecury.com.br", "grupo": "Grupo E1", "coordenador": "keyla.moraes@peixotoecury.com.br"}, {"matricula": "DPR", "nome": "Daniela Prandi Pedro Ricca ", "login": "daniela.ricca@peixotoecury.com.br", "grupo": "Grupo E1", "coordenador": "keyla.moraes@peixotoecury.com.br"}, {"matricula": "ECO", "nome": "Erik Mota Coppi", "login": "erik.coppi@peixotoecury.com.br", "grupo": "Grupo C", "coordenador": "sofia.freire@peixotoecury.com.br"}, {"matricula": "EMM", "nome": "Ellen Mary Maciel Silva", "login": "ellenmary.silva@peixotoecury.com.br", "grupo": "Grupo E1", "coordenador": "keyla.moraes@peixotoecury.com.br"}, {"matricula": "EVV", "nome": "Evandro Vecchio Vessoni", "login": "evandro.vessoni@peixotoecury.com.br", "grupo": "Grupo B1", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "EYN", "nome": "Erick Yuji Nakama", "login": "erick.nakama@peixotoecury.com.br", "grupo": "Grupo A2", "coordenador": "natalia.gaggini@peixotoecury.com.br"}, {"matricula": "FFI", "nome": "Fabiano Fritz Ferreira Filho", "login": "fabiano.filho@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "FLS", "nome": "Fabrício Lima da Silva", "login": "fabricio.silva@peixotoecury.com.br", "grupo": "Grupo E1", "coordenador": "keyla.moraes@peixotoecury.com.br"}, {"matricula": "GFO", "nome": "Gabriel Fretas de Oliveira", "login": "gabriel.oliveira@peixotoecury.com.br", "grupo": "Grupo E1", "coordenador": "keyla.moraes@peixotoecury.com.br"}, {"matricula": "GIF", "nome": "Giovanna Teixeira Franco", "login": "giovanna.teixeira@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "GIO", "nome": "Giovanni Comunale Oliveira", "login": "giovanni.oliveira@peixotoecury.com.br", "grupo": "Grupo A1", "coordenador": "natalia.gaggini@peixotoecury.com.br"}, {"matricula": "GMG", "nome": "Giovanna Malheiros Gatto", "login": "giovanna.gatto@peixotoecury.com.br", "grupo": "Grupo B1", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "GSF", "nome": "Gisela da Silva Freire", "login": "gisela.freire@peixotoecury.com.br", "grupo": "Sócios", "coordenador": "gisela.freire@peixotoecury.com.br"}, {"matricula": "GSI", "nome": "Geovanna Rodrigues Silva", "login": "geovanna.rodrigues@peixotoecury.com.br", "grupo": "Grupo B2", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "GSM", "nome": "Guilherme Silva Morimoto", "login": "guilherme.morimoto@peixotoecury.com.br", "grupo": "Grupo B1", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "GSP", "nome": "Gabriela de Souza Pedroso", "login": "gabriela.pedroso@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "GVM", "nome": "Giulia Vendramini Milani", "login": "giulia.milani@peixotoecury.com.br", "grupo": "Grupo E1", "coordenador": "keyla.moraes@peixotoecury.com.br"}, {"matricula": "HAS", "nome": "Hanyelle Alves da Silva", "login": "hanyelle.silva@peixotoecury.com.br", "grupo": "Grupo A1", "coordenador": "natalia.gaggini@peixotoecury.com.br"}, {"matricula": "HRP", "nome": "Henrique Remorini Pantuzo", "login": "henrique.pantuzo@peixotoecury.com.br", "grupo": "Grupo A1", "coordenador": "natalia.gaggini@peixotoecury.com.br"}, {"matricula": "IGA", "nome": "Isadora Silva Gagliardi", "login": "isadora.gagliardi@peixotoecury.com.br", "grupo": "Grupo B2", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "JJM", "nome": "Jaqueline Jahel Moraes", "login": "jaqueline.moraes@peixotoecury.com.br", "grupo": "Grupo A1", "coordenador": "natalia.gaggini@peixotoecury.com.br"}, {"matricula": "JJS", "nome": "Jenifer de Jesus Silva", "login": "jenifer.silva@peixotoecury.com.br", "grupo": "Grupo B1", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "JLM", "nome": "Juan Leonardo Ikier Moraes", "login": "juanleonardo.moraes@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "JPE", "nome": "Juliana Perucci ", "login": "juliana.perucci@peixotoecury.com.br", "grupo": "Grupo B1", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "JPL", "nome": "Júlia Priego Lopes da Silva", "login": "julia.priego@peixotoecury.com.br", "grupo": "Grupo E1", "coordenador": "keyla.moraes@peixotoecury.com.br"}, {"matricula": "JQS", "nome": "Jessica Cerqueira Silva", "login": "jessica.cerqueira@peixotoecury.com.br", "grupo": "Grupo D1", "coordenador": "bianca.camacho@peixotoecury.com.br"}, {"matricula": "JRM", "nome": "Joice Ramos Miranda", "login": "joice.miranda@peixotoecury.com.br", "grupo": "Grupo E1", "coordenador": "keyla.moraes@peixotoecury.com.br"}, {"matricula": "JRT", "nome": "Jackeline Romeu Torres", "login": "jackeline.torres@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "KBM", "nome": "Keyla Maria Barbosa Silva Moraes", "login": "keyla.moraes@peixotoecury.com.br", "grupo": "Grupo E1", "coordenador": "keyla.moraes@peixotoecury.com.br"}, {"matricula": "KTO", "nome": "Karoline de Castro Torres", "login": "karoline.torres@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "LCG", "nome": "Lorena Rodrigues Costa Gonçalves", "login": "lorena.goncalves@peixotoecury.com.br", "grupo": "Grupo B1", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "LLL", "nome": "Larissa Lekich Lobenwein", "login": "larissa.lekich@peixotoecury.com.br", "grupo": "Grupo E1", "coordenador": "keyla.moraes@peixotoecury.com.br"}, {"matricula": "LMI", "nome": "Letícia Meneghini Fontes ", "login": "leticia.fontes@peixotoecury.com.br", "grupo": "Grupo B3", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "LPJ", "nome": "Leonardo Pereira de Jesus", "login": "leonardo.jesus@peixotoecury.com.br", "grupo": "Grupo E1", "coordenador": "keyla.moraes@peixotoecury.com.br"}, {"matricula": "MBF", "nome": "Mariana Borges de Menezes Fávaro", "login": "mariana.favaro@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "MCD", "nome": "Maria Carolina Silva Santos Dias", "login": "mariacarolina.dias@peixotoecury.com.br", "grupo": "Grupo B2", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "MJT", "nome": "Matheus de Jesus Trindade ", "login": "matheus.trindade@peixotoecury.com.br", "grupo": "Grupo E1", "coordenador": "keyla.moraes@peixotoecury.com.br"}, {"matricula": "MNB", "nome": "Marina de Novaes Brechiani", "login": "marina.brechiani@peixotoecury.com.br", "grupo": "Grupo A1", "coordenador": "natalia.gaggini@peixotoecury.com.br"}, {"matricula": "MTM", "nome": "Marcel Tadeu Matos Alves da Silva", "login": "marcel.alves@peixotoecury.com.br", "grupo": "Sócios", "coordenador": "antoniocarlos.aguiar@peixotoecury.com.br, marcel.alves@peixotoecury.com.br, poliana.banqueri@peixotoecury.com.br"}, {"matricula": "NBB", "nome": "Natalia Bezerra Baliero", "login": "natalia.baliero@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "NBG", "nome": "Natália Biondi Gaggini Robles", "login": "natalia.gaggini@peixotoecury.com.br", "grupo": "Grupo A2", "coordenador": "natalia.gaggini@peixotoecury.com.br"}, {"matricula": "NLO", "nome": "Nathalie Louise dos Santos Rodrigues Dias ", "login": "nathalie.louise@peixotoecury.com.br", "grupo": "Grupo E1", "coordenador": "keyla.moraes@peixotoecury.com.br"}, {"matricula": "NRG", "nome": "Nicolau Rafael Guimarães Coelho", "login": "nicolau.coelho@peixotoecury.com.br", "grupo": "Grupo B1, B2 e B3", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "PBS", "nome": "Poliana Banqueri da Silva Guimarães", "login": "poliana.banqueri@peixotoecury.com.br", "grupo": "Sócios", "coordenador": "antoniocarlos.aguiar@peixotoecury.com.br, marcel.alves@peixotoecury.com.br, poliana.banqueri@peixotoecury.com.br"}, {"matricula": "PSI", "nome": "Paloma da Silva Santos", "login": "paloma.santos@peixotoecury.com.br", "grupo": "Grupo E1", "coordenador": "keyla.moraes@peixotoecury.com.br"}, {"matricula": "RCF", "nome": "Rafael Camargo Felisbino", "login": "rafael.camargo@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "RFE", "nome": "Rafael Rocha Ferreira", "login": "rafael.ferreira@peixotoecury.com.br", "grupo": "Grupo B1", "coordenador": "sofia.freire@peixotoecury.com.br"}, {"matricula": "RFK", "nome": "Raica Fernandes Kwok", "login": "raica.kwok@peixotoecury.com.br", "grupo": "Grupo B3", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "RRU", "nome": "Richard Ruan Leo da Silva", "login": "richard.silva@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "RSN", "nome": "Rodrigo Souichi Nishijima", "login": "rodrigo.nishijima@peixotoecury.com.br", "grupo": "Grupo B1", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "RWD", "nome": "Rafaella Wittmann Domenicis", "login": "rafaella.domenicis@peixotoecury.com.br", "grupo": "Grupo B2", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "RYL", "nome": "Rafael Yepez do Lago", "login": "rafael.lago@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "SOF", "nome": "Sofia Freire ", "login": "sofia.freire@peixotoecury.com.br", "grupo": "Grupo A3", "coordenador": "sofia.freire@peixotoecury.com.br"}, {"matricula": "TCE", "nome": "Thais Catharine Cardozo Esteves", "login": "thais.esteves@peixotoecury.com.br", "grupo": "Grupo A1", "coordenador": "natalia.gaggini@peixotoecury.com.br"}, {"matricula": "TCO", "nome": "Tamires Lins Costa", "login": "tamireslins.costa@peixotoecury.com.br", "grupo": "Grupo E1", "coordenador": "keyla.moraes@peixotoecury.com.br"}, {"matricula": "TFR", "nome": "Thiago Frid Figueiredo Rossi", "login": "thiago.rossi@peixotoecury.com.br", "grupo": "Grupo C", "coordenador": "sofia.freire@peixotoecury.com.br"}, {"matricula": "TNE", "nome": "Tabata Neves Caramelli", "login": "tabata.caramelli@peixotoecury.com.br", "grupo": "Grupo A2", "coordenador": "natalia.gaggini@peixotoecury.com.br"}, {"matricula": "VAR", "nome": "Vitoria Araujo Carvalho", "login": "vitoria.carvalho@peixotoecury.com.br", "grupo": "Grupo B1", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "VCR", "nome": "Vanessa de Cassia Castrequini Rosa", "login": "vanessa.rosa@peixotoecury.com.br", "grupo": "Grupo B2", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "VGA", "nome": "Vinicius Ferreira Garcia", "login": "vinicius.garcia@peixotoecury.com.br", "grupo": "Grupo A1", "coordenador": "natalia.gaggini@peixotoecury.com.br"}, {"matricula": "VRO", "nome": "Vinícius Ronchi Arruda", "login": "vinicius.ronchi@peixotoecury.com.br", "grupo": "Grupo E1", "coordenador": "keyla.moraes@peixotoecury.com.br"}, {"matricula": "VSI", "nome": "Vinicius da Silva Cerqueira", "login": "vinicius.dasilva@peixotoecury.com.br", "grupo": "Grupo C", "coordenador": "sofia.freire@peixotoecury.com.br"}, {"matricula": "WSF", "nome": "Washington Soares Silva Filho", "login": "washington.soares@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}];
 const PC_GRUPOS_VALIDOS = ["Grupo A1", "Grupo A2", "Grupo A3", "Grupo B1", "Grupo B1, B2 e B3", "Grupo B2", "Grupo B3", "Grupo C", "Grupo D1", "Grupo E1", "Grupo E2", "Sócios"];
-const SUPABASE_URL = 'https://rpibvjcnrseuugpkfmdj.supabase.co';
-const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJwaWJ2amNucnNldXVncGtmbWRqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODE1NTc3MTcsImV4cCI6MjA5NzEzMzcxN30.ecihol8JESMH7cgFSvWKIzp-OwoPRFqdK3aCDwpCeg8';
+const SUPABASE_URL = 'https://kgyeeuynerhpaqlhqwkx.supabase.co';
+const SUPABASE_KEY = 'sb_publishable_MdUFFFJ5xRqiQysyxlWHFA_yk_LsknZ';
 
 // Inicialização segura: cria o cliente UMA única vez
 let supabaseClient = null;
@@ -7104,6 +7297,14 @@ document.addEventListener('DOMContentLoaded', function(){
       document.body.appendChild(img);
     }
 
+    // Botões de gestor (Meu Painel + rodapé executivo)
+    var _ged = window._equipeDoGestor;
+    var podeAprovar = isManager(sess) || (typeof _ged === 'function' && typeof _ged(sess) === 'string');
+    ['btn-aprovar-justif'].forEach(function(id){
+      var el = document.getElementById(id);
+      if(el) el.style.display = podeAprovar ? '' : 'none';
+    });
+
     // Atualiza contador do Meu Painel
     setTimeout(function(){
       if(typeof window.renderMP === 'function') window.renderMP();
@@ -7128,6 +7329,7 @@ document.addEventListener('DOMContentLoaded', function(){
   });
 
   window.aplicarPerfilVisual = aplicarPerfilVisual;
+  window.getCurrentSession = getCurrentSession;
 })();
 </script>
 
@@ -7169,7 +7371,7 @@ document.addEventListener('DOMContentLoaded', function(){
     if(niveisAdmin.includes(nivel)) return 'gerencial';
 
     // 2. Logins com acesso total fixo
-    const loginsAdmin = ['controladoria','coord','antoniocarlos.aguiar','beatriz.rodrigues','bianca.camacho','gisela.freire','keyla.moraes','marcel.alves','marina.brechiani','natalia.gaggini','poliana.banqueri','sofia.freire','washington.soares'];
+    const loginsAdmin = ['controladoria','coord','antoniocarlos.aguiar','beatriz.rodrigues','bianca.camacho','gisela.freire','keyla.moraes','marcel.alves','marina.brechiani','natalia.gaggini','nicolau.coelho','poliana.banqueri','rafael.camargo','sofia.freire','washington.soares'];
     if(loginsAdmin.includes(login)) return 'gerencial';
 
     // 3. Fallback: palavras-chave no nome (compatibilidade legada)
@@ -7266,12 +7468,7 @@ document.addEventListener('DOMContentLoaded', function(){
       if (!d) { const br = dataVal.match(/^(\d{2})\/(\d{2})\/(\d{4})/); if (br) d = new Date(+br[3], +br[2]-1, +br[1]); }
       if (d && !isNaN(d)) {
         const hoje = new Date(); hoje.setHours(0,0,0,0);
-        const diff = diasUteisDiff(d, hoje);
-        if (diff < -1) return 'Vencido';
-        if (diff === -1) return 'Fatal';
-        if (diff === 0)  return 'D-1';
-        if (diff === 1)  return 'D-2';
-        return 'Futuro';
+        return calcStatusDiff(diasUteisDiff(d, hoje));
       }
     }
     return txt(pick(row,['status','Status','situação','situacao']));
@@ -7341,7 +7538,7 @@ document.addEventListener('DOMContentLoaded', function(){
       const _n = ((_sessaoAtiva.nivel||_sessaoAtiva.perfil||_sessaoAtiva.role||_sessaoAtiva.tipo) || '').toLowerCase();
       const _l = (_sessaoAtiva.login || '').toLowerCase();
       const _admNiveis = ['admin','gerencial','gestor','gestora','coordenador','coordenadora','socio','sócio'];
-      const _admLogins = ['controladoria','coord','antoniocarlos.aguiar','beatriz.rodrigues','bianca.camacho','gisela.freire','keyla.moraes','marcel.alves','marina.brechiani','natalia.gaggini','poliana.banqueri','sofia.freire','washington.soares'];
+      const _admLogins = ['controladoria','coord','antoniocarlos.aguiar','beatriz.rodrigues','bianca.camacho','gisela.freire','keyla.moraes','marcel.alves','marina.brechiani','natalia.gaggini','nicolau.coelho','poliana.banqueri','rafael.camargo','sofia.freire','washington.soares'];
       return _admNiveis.includes(_n) || _admLogins.includes(_l);
     })();
     if(resumoDiv && !_isAdmin) {
@@ -7743,12 +7940,7 @@ document.addEventListener('DOMContentLoaded', function(){
       if (!d) { const br = dataVal.match(/^(\d{2})\/(\d{2})\/(\d{4})/); if (br) d = new Date(+br[3], +br[2]-1, +br[1]); }
       if (d && !isNaN(d)) {
         const hoje = new Date(); hoje.setHours(0,0,0,0);
-        const diff = diasUteisDiff(d, hoje);
-        if (diff < -1) return 'Vencido';
-        if (diff === -1) return 'Fatal';
-        if (diff === 0)  return 'D-1';
-        if (diff === 1)  return 'D-2';
-        return 'Futuro';
+        return calcStatusDiff(diasUteisDiff(d, hoje));
       }
     }
     return txt(pick(row,['status','Status','situação','situacao']));
@@ -7795,19 +7987,11 @@ document.addEventListener('DOMContentLoaded', function(){
       return matchesUsuario(row, 'audiencia');
     }
 
-    const hoje = new Date(); hoje.setHours(0,0,0,0);
-    function audFutura(row){
-      const v = row['Data'] || row['data'] || '';
-      if(!v) return true;
-      const d = new Date(String(v).slice(0,10) + 'T00:00:00');
-      return !isNaN(d) && d >= hoje;
-    }
-
     return {
       prazos:     d.prazos.filter(r => matchBase(r)),
       agendas:    d.agendas.filter(r => matchBase(r)),
       equipe:     d.equipe.filter(r => matchBase(r)),
-      audiencias: d.aud.filter(r => matchAud(r) && audFutura(r))
+      audiencias: d.aud.filter(r => matchAud(r) && (function(){var v=r['Data']||r['data']||'';if(!v)return true;var d2=new Date(String(v).slice(0,10)+'T00:00:00');var hoje=new Date();hoje.setHours(0,0,0,0);return !isNaN(d2)&&d2>=hoje;}()))
     };
   }
 
@@ -8346,7 +8530,7 @@ function qgLoadPrazos(inp){
         const iso=String(dv).match(/^(\d{4})-(\d{2})-(\d{2})/); if(!iso) return r;
         const _d=new Date(+iso[1],+iso[2]-1,+iso[3]); if(isNaN(_d)) return r;
         const df=diasUteisDiff(_d,_hj3);
-        const st=df<-1?'Vencido':df===-1?'Fatal':df===0?'D-1':df===1?'D-2':'Futuro';
+        const st=calcStatusDiff(df);
         return Object.assign({},r,{status:st,dias_restantes:df});
       });
       S.raw    = _nr1;
@@ -8400,7 +8584,7 @@ function qgLoadAudiencias(inp){
 (function(){
 
   // Base importada do Profissionais.xlsx
-  const USUARIOS_BASE = [{"sigla": "ALH", "nome": "Alícia Marcondes Hamati", "login": "alicia.hamati", "email": "alicia.hamati@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ESTAGIÁRIO", "equipe": "Equipe A", "status": "Ativo"}, {"sigla": "AAO", "nome": "Aline Amorim Oliveira", "login": "aline.oliveira", "email": "aline.oliveira@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ESTAGIÁRIO", "equipe": "Equipe A", "status": "Ativo"}, {"sigla": "ABR", "nome": "Aline Cunha de Oliveira Borges", "login": "aline.borges", "email": "aline.borges@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. PLENO", "equipe": "Equipe B", "status": "Ativo"}, {"sigla": "ALF", "nome": "Aline Ferreira Miron", "login": "aline.miron", "email": "aline.miron@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. PLENO", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "AML", "nome": "Amanda Mesquita de Lima Araujo", "login": "amanda.araujo", "email": "amanda.araujo@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ASSISTENTE ADMINISTRATIVO", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "ACH", "nome": "Ana Carolina Honório Martini", "login": "anacarolina.martini", "email": "anacarolina.martini@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "COORDENADOR(A) DE PROCESSOS", "equipe": "Equipe B", "status": "Ativo"}, {"sigla": "ATC", "nome": "Ana Julia Thomaz Carmona", "login": "anajulia.carmona", "email": "anajulia.carmona@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ESTAGIÁRIO", "equipe": "Equipe A", "status": "Ativo"}, {"sigla": "AAP", "nome": "André Alessandro de Paula", "login": "andre.alessandro", "email": "andre.alessandro@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. SÊNIOR", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "ANB", "nome": "Anna Carolina Balbino Gatti Baani", "login": "annacarolina.baani", "email": "annacarolina.baani@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. JUNIOR", "equipe": "Equipe B", "status": "Ativo"}, {"sigla": "ACA", "nome": "Antonio Carlos Aguiar", "login": "antoniocarlos.aguiar", "email": "antoniocarlos.aguiar@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "SÓCIO SÊNIOR", "equipe": "TRABALHISTA", "status": "Ativo"}, {"sigla": "ARC", "nome": "Arthur Rodrigues Rios Toledo de Castro", "login": "arthur.castro", "email": "arthur.castro@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. SÊNIOR", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "BHF", "nome": "Beatriz Helena Maguetta Feitosa", "login": "beatriz.feitosa", "email": "beatriz.feitosa@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ESTAGIÁRIO", "equipe": "Equipe C", "status": "Ativo"}, {"sigla": "BLU", "nome": "Beatriz Rodrigues Luna", "login": "beatriz.rodrigues", "email": "beatriz.rodrigues@peixotoecury.com.br", "senha": "123456", "nivel": "admin", "cargo": "ADV. JUNIOR", "equipe": "Equipe Controladoria", "status": "Ativo"}, {"sigla": "BSO", "nome": "Beatriz Santiago de Souza", "login": "beatriz.souza", "email": "beatriz.souza@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. JUNIOR", "equipe": "Equipe B", "status": "Ativo"}, {"sigla": "BBO", "nome": "Bianca Bolanhi Camacho", "login": "bianca.camacho", "email": "bianca.camacho@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. JUNIOR", "equipe": "Equipe D", "status": "Ativo"}, {"sigla": "BSS", "nome": "Brenda da Silva dos Santos", "login": "brenda.santos", "email": "brenda.santos@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ESTAGIÁRIO", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "BFM", "nome": "Brenna Braga Freitas Malta", "login": "brenna.malta", "email": "brenna.malta@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ASSISTENTE JURIDICO", "equipe": "Equipe B", "status": "Ativo"}, {"sigla": "BCF", "nome": "Bruna Cembranelli Fazenda", "login": "bruna.fazenda", "email": "bruna.fazenda@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. PLENO", "equipe": "Equipe B", "status": "Ativo"}, {"sigla": "CAL", "nome": "Camila Alves Magalhães de Paula", "login": "camila.paula", "email": "camila.paula@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. PLENO", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "CDS", "nome": "Carolina Duarte de Souza", "login": "carolina.souza", "email": "carolina.souza@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ASSISTENTE JURIDICO", "equipe": "Equipe C", "status": "Ativo"}, {"sigla": "CAR", "nome": "Chris Carvalho", "login": "chris.carvalho", "email": "chris.carvalho@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ESTAGIÁRIO", "equipe": "Equipe A", "status": "Ativo"}, {"sigla": "CGV", "nome": "Cícera Gabriela Ferreira Vicente", "login": "cicera.vicente", "email": "cicera.vicente@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ASSISTENTE JURIDICO", "equipe": "Equipe B", "status": "Ativo"}, {"sigla": "DPR", "nome": "Daniela Prandi Pedro Ricca", "login": "daniela.ricca", "email": "daniela.ricca@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. PLENO", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "DJE", "nome": "Diana de Jesus Santos", "login": "diana.santos", "email": "diana.santos@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ESTAGIÁRIO", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "EMM", "nome": "Ellen Mary Maciel Silva", "login": "ellenmary.silva", "email": "ellenmary.silva@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ESTAGIÁRIO", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "EYN", "nome": "Erick Yuji Nakama", "login": "erick.nakama", "email": "erick.nakama@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ESTAGIÁRIO", "equipe": "Equipe A", "status": "Ativo"}, {"sigla": "ECO", "nome": "Erik Mota Coppi", "login": "erik.coppi", "email": "erik.coppi@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. SÊNIOR", "equipe": "Equipe C", "status": "Ativo"}, {"sigla": "EVV", "nome": "Evandro Vecchio Vessoni", "login": "evandro.vessoni", "email": "evandro.vessoni@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ANALISTA JURÍDICO", "equipe": "Equipe B", "status": "Ativo"}, {"sigla": "FCG", "nome": "Fabiana Correia dos Anjos Gomes", "login": "fabiana.gomes", "email": "fabiana.gomes@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. JUNIOR", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "FFI", "nome": "Fabiano Fritz Ferreira Filho", "login": "fabiano.filho", "email": "fabiano.filho@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ESTAGIÁRIO", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "FLS", "nome": "Fabrício Lima da Silva", "login": "fabricio.silva", "email": "fabricio.silva@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ESTAGIÁRIO", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "GFO", "nome": "Gabriel Fretas de Oliveira", "login": "gabriel.oliveira", "email": "gabriel.oliveira@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ASSISTENTE JURIDICO", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "GSP", "nome": "Gabriela de Souza Pedroso", "login": "gabriela.pedroso", "email": "gabriela.pedroso@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ESTAGIÁRIO", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "GSI", "nome": "Geovanna Rodrigues Silva", "login": "geovanna.rodrigues", "email": "geovanna.rodrigues@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "JOVEM APRENDIZ", "equipe": "Equipe B", "status": "Ativo"}, {"sigla": "GMG", "nome": "Giovanna Malheiros Gatto", "login": "giovanna.gatto", "email": "giovanna.gatto@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ASSISTENTE JURIDICO", "equipe": "Equipe B", "status": "Ativo"}, {"sigla": "GIF", "nome": "Giovanna Teixeira Franco", "login": "giovanna.teixeira", "email": "giovanna.teixeira@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ASSISTENTE JURIDICO", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "GIO", "nome": "Giovanni Comunale Oliveira", "login": "giovanni.oliveira", "email": "giovanni.oliveira@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ESTAGIÁRIO", "equipe": "Equipe A", "status": "Ativo"}, {"sigla": "GSF", "nome": "Gisela da Silva Freire", "login": "gisela.freire", "email": "gisela.freire@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "SÓCIO", "equipe": "TRABALHISTA", "status": "Ativo"}, {"sigla": "GVM", "nome": "Giulia Vendramini Milani", "login": "giulia.milani", "email": "giulia.milani@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ASSISTENTE JURIDICO", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "GPL", "nome": "Giullia Peleje Leme", "login": "giullia.leme", "email": "giullia.leme@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ANALISTA JURÍDICO", "equipe": "Equipe Controladoria", "status": "Ativo"}, {"sigla": "GSM", "nome": "Guilherme Silva Morimoto", "login": "guilherme.morimoto", "email": "guilherme.morimoto@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. JUNIOR", "equipe": "Equipe B", "status": "Ativo"}, {"sigla": "HAS", "nome": "Hanyelle Alves da Silva", "login": "hanyelle.silva", "email": "hanyelle.silva@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ESTAGIÁRIO", "equipe": "Equipe A", "status": "Ativo"}, {"sigla": "HRP", "nome": "Henrique Remorini Pantuzo", "login": "henrique.pantuzo", "email": "henrique.pantuzo@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ESTAGIÁRIO", "equipe": "Equipe A", "status": "Ativo"}, {"sigla": "IGA", "nome": "Isadora Silva Gagliardi", "login": "isadora.gagliardi", "email": "isadora.gagliardi@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ESTAGIÁRIO", "equipe": "Equipe B", "status": "Ativo"}, {"sigla": "JRT", "nome": "Jackeline Romeu Torres", "login": "jackeline.torres", "email": "jackeline.torres@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. PLENO", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "JJM", "nome": "Jaqueline Jahel Moraes", "login": "jaqueline.moraes", "email": "jaqueline.moraes@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ESTAGIÁRIO", "equipe": "Equipe A", "status": "Ativo"}, {"sigla": "JJS", "nome": "Jenifer de Jesus Silva", "login": "jenifer.silva", "email": "jenifer.silva@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. JUNIOR", "equipe": "Equipe B", "status": "Ativo"}, {"sigla": "JQS", "nome": "Jessica Cerqueira Silva", "login": "jessica.cerqueira", "email": "jessica.cerqueira@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. JUNIOR", "equipe": "Equipe D", "status": "Ativo"}, {"sigla": "JRM", "nome": "Joice Ramos Miranda", "login": "joice.miranda", "email": "joice.miranda@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. SÊNIOR", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "JLM", "nome": "Juan Leonardo Ikier Moraes", "login": "juanleonardo.moraes", "email": "juanleonardo.moraes@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ASSISTENTE ADMINISTRATIVO", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "JPL", "nome": "Júlia Priego Lopes da Silva", "login": "julia.priego", "email": "julia.priego@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. JUNIOR", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "JPA", "nome": "Juliana Pereira Nascimento", "login": "juliana.nascimento", "email": "juliana.nascimento@peixotoecury.com.br", "senha": "123456", "nivel": "admin", "cargo": "ADV. JUNIOR", "equipe": "Equipe Relatórios", "status": "Ativo"}, {"sigla": "JPE", "nome": "Juliana Perucci", "login": "juliana.perucci", "email": "juliana.perucci@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. PLENO", "equipe": "Equipe B", "status": "Ativo"}, {"sigla": "KTO", "nome": "Karoline de Castro Torres", "login": "karoline.torres", "email": "karoline.torres@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ESTAGIÁRIO", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "KBM", "nome": "Keyla Maria Barbosa Silva Moraes", "login": "keyla.moraes", "email": "keyla.moraes@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. SÊNIOR", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "LLL", "nome": "Larissa Lekich Lobenwein", "login": "larissa.lekich", "email": "larissa.lekich@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ASSISTENTE JURIDICO", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "LPJ", "nome": "Leonardo Pereira de Jesus", "login": "leonardo.jesus", "email": "leonardo.jesus@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ESTAGIÁRIO", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "LMI", "nome": "Letícia Meneghini Fontes", "login": "leticia.fontes", "email": "leticia.fontes@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. JUNIOR", "equipe": "Equipe B", "status": "Ativo"}, {"sigla": "LCG", "nome": "Lorena Rodrigues Costa Gonçalves", "login": "lorena.goncalves", "email": "lorena.goncalves@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ESTAGIÁRIO", "equipe": "Equipe B", "status": "Ativo"}, {"sigla": "LVC", "nome": "Luiz Vicente de Carvalho", "login": "luizvicente.carvalho", "email": "luizvicente.carvalho@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "SÓCIO SÊNIOR", "equipe": "TRABALHISTA", "status": "Ativo"}, {"sigla": "MTM", "nome": "Marcel Tadeu Matos Alves da Silva", "login": "marcel.alves", "email": "marcel.alves@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "SÓCIO", "equipe": "TRABALHISTA", "status": "Ativo"}, {"sigla": "MCD", "nome": "Maria Carolina Silva Santos Dias", "login": "mariacarolina.dias", "email": "mariacarolina.dias@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ANALISTA JURÍDICO", "equipe": "Equipe B", "status": "Ativo"}, {"sigla": "MBF", "nome": "Mariana Borges de Menezes Fávaro", "login": "mariana.favaro", "email": "mariana.favaro@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. PLENO", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "MNB", "nome": "Marina de Novaes Brechiani", "login": "marina.brechiani", "email": "marina.brechiani@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. JUNIOR", "equipe": "Equipe A", "status": "Ativo"}, {"sigla": "MJT", "nome": "Matheus de Jesus Trindade", "login": "matheus.trindade", "email": "matheus.trindade@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ESTAGIÁRIO", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "MOC", "nome": "Michael Oliveira Coqueiro", "login": "michael.coqueiro", "email": "michael.coqueiro@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ASSISTENTE JURIDICO", "equipe": "Equipe Relatórios", "status": "Ativo"}, {"sigla": "NBB", "nome": "Natalia Bezerra Baliero", "login": "natalia.baliero", "email": "natalia.baliero@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. JUNIOR", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "NBG", "nome": "Natália Biondi Gaggini Robles", "login": "natalia.gaggini", "email": "natalia.gaggini@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. SÊNIOR", "equipe": "Equipe A", "status": "Ativo"}, {"sigla": "NLO", "nome": "Nathalie Louise dos Santos Rodrigues Dias", "login": "nathalie.louise", "email": "nathalie.louise@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ASSISTENTE JURIDICO", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "NRG", "nome": "Nicolau Rafael Guimarães Coelho", "login": "nicolau.coelho", "email": "nicolau.coelho@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. SÊNIOR", "equipe": "Equipe B", "status": "Ativo"}, {"sigla": "PSI", "nome": "Paloma da Silva Santos", "login": "paloma.santos", "email": "paloma.santos@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. PLENO", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "PBS", "nome": "Poliana Banqueri da Silva Guimarães", "login": "poliana.banqueri", "email": "poliana.banqueri@peixotoecury.com.br", "senha": "123456", "nivel": "admin", "cargo": "SÓCIO", "equipe": "TRABALHISTA", "status": "Ativo"}, {"sigla": "RCF", "nome": "Rafael Camargo Felisbino", "login": "rafael.camargo", "email": "rafael.camargo@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. SÊNIOR", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "RFE", "nome": "Rafael Rocha Ferreira", "login": "rafael.ferreira", "email": "rafael.ferreira@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. JUNIOR", "equipe": "Equipe B", "status": "Ativo"}, {"sigla": "RYL", "nome": "Rafael Yepez do Lago", "login": "rafael.lago", "email": "rafael.lago@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. JUNIOR", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "RWD", "nome": "Rafaella Wittmann Domenicis", "login": "rafaella.domenicis", "email": "rafaella.domenicis@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ASSISTENTE JURIDICO", "equipe": "Equipe B", "status": "Ativo"}, {"sigla": "RFK", "nome": "Raica Fernandes Kwok", "login": "raica.kwok", "email": "raica.kwok@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ESTAGIÁRIO", "equipe": "Equipe B", "status": "Ativo"}, {"sigla": "RRU", "nome": "Richard Ruan Leo da Silva", "login": "richard.silva", "email": "richard.silva@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. JUNIOR", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "RSN", "nome": "Rodrigo Souichi Nishijima", "login": "rodrigo.nishijima", "email": "rodrigo.nishijima@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ESTAGIÁRIO", "equipe": "Equipe B", "status": "Ativo"}, {"sigla": "SOF", "nome": "Sofia Freire", "login": "sofia.freire", "email": "sofia.freire@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. JUNIOR", "equipe": "Equipe A", "status": "Ativo"}, {"sigla": "TNE", "nome": "Tabata Neves Caramelli", "login": "tabata.caramelli", "email": "tabata.caramelli@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ESTAGIÁRIO", "equipe": "Equipe A", "status": "Ativo"}, {"sigla": "TCO", "nome": "Tamires Lins Costa", "login": "tamireslins.costa", "email": "tamireslins.costa@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADVOGADO", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "TCE", "nome": "Thais Catharine Cardozo Esteves", "login": "thais.esteves", "email": "thais.esteves@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. JUNIOR", "equipe": "Equipe A", "status": "Ativo"}, {"sigla": "TFR", "nome": "Thiago Frid Figueiredo Rossi", "login": "thiago.rossi", "email": "thiago.rossi@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. PLENO", "equipe": "Equipe C", "status": "Ativo"}, {"sigla": "VCR", "nome": "Vanessa de Cassia Castrequini Rosa", "login": "vanessa.rosa", "email": "vanessa.rosa@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. PLENO", "equipe": "Equipe B", "status": "Ativo"}, {"sigla": "VSI", "nome": "Vinicius da Silva Cerqueira", "login": "vinicius.dasilva", "email": "vinicius.dasilva@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. SÊNIOR", "equipe": "Equipe A", "status": "Ativo"}, {"sigla": "VGA", "nome": "Vinicius Ferreira Garcia", "login": "vinicius.garcia", "email": "vinicius.garcia@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ASSISTENTE JURIDICO", "equipe": "Equipe A", "status": "Ativo"}, {"sigla": "VRO", "nome": "Vinícius Ronchi Arruda", "login": "vinicius.ronchi", "email": "vinicius.ronchi@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. JUNIOR", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "VAR", "nome": "Vitoria Araujo Carvalho", "login": "vitoria.carvalho", "email": "vitoria.carvalho@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ASSISTENTE JURIDICO", "equipe": "Equipe B", "status": "Ativo"}, {"sigla": "WSF", "nome": "Washington Soares Silva Filho", "login": "washington.soares", "email": "washington.soares@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. PLENO", "equipe": "Equipe E", "status": "Ativo"}];
+  const USUARIOS_BASE = [{"sigla": "ALH", "nome": "Alícia Marcondes Hamati", "login": "alicia.hamati", "email": "alicia.hamati@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ESTAGIÁRIO", "equipe": "Equipe A", "status": "Ativo"}, {"sigla": "AAO", "nome": "Aline Amorim Oliveira", "login": "aline.oliveira", "email": "aline.oliveira@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ESTAGIÁRIO", "equipe": "Equipe A", "status": "Ativo"}, {"sigla": "ABR", "nome": "Aline Cunha de Oliveira Borges", "login": "aline.borges", "email": "aline.borges@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. PLENO", "equipe": "Equipe B", "status": "Ativo"}, {"sigla": "ALF", "nome": "Aline Ferreira Miron", "login": "aline.miron", "email": "aline.miron@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. PLENO", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "AML", "nome": "Amanda Mesquita de Lima Araujo", "login": "amanda.araujo", "email": "amanda.araujo@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ASSISTENTE ADMINISTRATIVO", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "ACH", "nome": "Ana Carolina Honório Martini", "login": "anacarolina.martini", "email": "anacarolina.martini@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "COORDENADOR(A) DE PROCESSOS", "equipe": "Equipe B", "status": "Ativo"}, {"sigla": "ATC", "nome": "Ana Julia Thomaz Carmona", "login": "anajulia.carmona", "email": "anajulia.carmona@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ESTAGIÁRIO", "equipe": "Equipe A", "status": "Ativo"}, {"sigla": "AAP", "nome": "André Alessandro de Paula", "login": "andre.alessandro", "email": "andre.alessandro@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. SÊNIOR", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "ANB", "nome": "Anna Carolina Balbino Gatti Baani", "login": "annacarolina.baani", "email": "annacarolina.baani@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. JUNIOR", "equipe": "Equipe B", "status": "Ativo"}, {"sigla": "ACA", "nome": "Antonio Carlos Aguiar", "login": "antoniocarlos.aguiar", "email": "antoniocarlos.aguiar@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "SÓCIO SÊNIOR", "equipe": "TRABALHISTA", "status": "Ativo"}, {"sigla": "ARC", "nome": "Arthur Rodrigues Rios Toledo de Castro", "login": "arthur.castro", "email": "arthur.castro@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. SÊNIOR", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "BHF", "nome": "Beatriz Helena Maguetta Feitosa", "login": "beatriz.feitosa", "email": "beatriz.feitosa@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ESTAGIÁRIO", "equipe": "Equipe C", "status": "Ativo"}, {"sigla": "BLU", "nome": "Beatriz Rodrigues Luna", "login": "beatriz.rodrigues", "email": "beatriz.rodrigues@peixotoecury.com.br", "senha": "123456", "nivel": "admin", "cargo": "ADV. JUNIOR", "equipe": "Equipe Controladoria", "status": "Ativo"}, {"sigla": "BSO", "nome": "Beatriz Santiago de Souza", "login": "beatriz.souza", "email": "beatriz.souza@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. JUNIOR", "equipe": "Equipe B", "status": "Ativo"}, {"sigla": "BBO", "nome": "Bianca Bolanhi Camacho", "login": "bianca.camacho", "email": "bianca.camacho@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. JUNIOR", "equipe": "Equipe D", "status": "Ativo"}, {"sigla": "BSS", "nome": "Brenda da Silva dos Santos", "login": "brenda.santos", "email": "brenda.santos@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ESTAGIÁRIO", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "BFM", "nome": "Brenna Braga Freitas Malta", "login": "brenna.malta", "email": "brenna.malta@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ASSISTENTE JURIDICO", "equipe": "Equipe B", "status": "Ativo"}, {"sigla": "BCF", "nome": "Bruna Cembranelli Fazenda", "login": "bruna.fazenda", "email": "bruna.fazenda@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. PLENO", "equipe": "Equipe B", "status": "Ativo"}, {"sigla": "CAL", "nome": "Camila Alves Magalhães de Paula", "login": "camila.paula", "email": "camila.paula@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. PLENO", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "CDS", "nome": "Carolina Duarte de Souza", "login": "carolina.souza", "email": "carolina.souza@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ASSISTENTE JURIDICO", "equipe": "Equipe C", "status": "Ativo"}, {"sigla": "CAR", "nome": "Chris Carvalho", "login": "chris.carvalho", "email": "chris.carvalho@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ESTAGIÁRIO", "equipe": "Equipe A", "status": "Ativo"}, {"sigla": "CGV", "nome": "Cícera Gabriela Ferreira Vicente", "login": "cicera.vicente", "email": "cicera.vicente@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ASSISTENTE JURIDICO", "equipe": "Equipe B", "status": "Ativo"}, {"sigla": "DPR", "nome": "Daniela Prandi Pedro Ricca", "login": "daniela.ricca", "email": "daniela.ricca@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. PLENO", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "DJE", "nome": "Diana de Jesus Santos", "login": "diana.santos", "email": "diana.santos@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ESTAGIÁRIO", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "EMM", "nome": "Ellen Mary Maciel Silva", "login": "ellenmary.silva", "email": "ellenmary.silva@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ESTAGIÁRIO", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "EYN", "nome": "Erick Yuji Nakama", "login": "erick.nakama", "email": "erick.nakama@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ESTAGIÁRIO", "equipe": "Equipe A", "status": "Ativo"}, {"sigla": "ECO", "nome": "Erik Mota Coppi", "login": "erik.coppi", "email": "erik.coppi@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. SÊNIOR", "equipe": "Equipe C", "status": "Ativo"}, {"sigla": "EVV", "nome": "Evandro Vecchio Vessoni", "login": "evandro.vessoni", "email": "evandro.vessoni@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ANALISTA JURÍDICO", "equipe": "Equipe B", "status": "Ativo"}, {"sigla": "FCG", "nome": "Fabiana Correia dos Anjos Gomes", "login": "fabiana.gomes", "email": "fabiana.gomes@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. JUNIOR", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "FFI", "nome": "Fabiano Fritz Ferreira Filho", "login": "fabiano.filho", "email": "fabiano.filho@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ESTAGIÁRIO", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "FLS", "nome": "Fabrício Lima da Silva", "login": "fabricio.silva", "email": "fabricio.silva@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ESTAGIÁRIO", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "GFO", "nome": "Gabriel Fretas de Oliveira", "login": "gabriel.oliveira", "email": "gabriel.oliveira@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ASSISTENTE JURIDICO", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "GSP", "nome": "Gabriela de Souza Pedroso", "login": "gabriela.pedroso", "email": "gabriela.pedroso@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ESTAGIÁRIO", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "GSI", "nome": "Geovanna Rodrigues Silva", "login": "geovanna.rodrigues", "email": "geovanna.rodrigues@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "JOVEM APRENDIZ", "equipe": "Equipe B", "status": "Ativo"}, {"sigla": "GMG", "nome": "Giovanna Malheiros Gatto", "login": "giovanna.gatto", "email": "giovanna.gatto@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ASSISTENTE JURIDICO", "equipe": "Equipe B", "status": "Ativo"}, {"sigla": "GIF", "nome": "Giovanna Teixeira Franco", "login": "giovanna.teixeira", "email": "giovanna.teixeira@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ASSISTENTE JURIDICO", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "GIO", "nome": "Giovanni Comunale Oliveira", "login": "giovanni.oliveira", "email": "giovanni.oliveira@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ESTAGIÁRIO", "equipe": "Equipe A", "status": "Ativo"}, {"sigla": "GSF", "nome": "Gisela da Silva Freire", "login": "gisela.freire", "email": "gisela.freire@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "SÓCIO", "equipe": "TRABALHISTA", "status": "Ativo"}, {"sigla": "GVM", "nome": "Giulia Vendramini Milani", "login": "giulia.milani", "email": "giulia.milani@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ASSISTENTE JURIDICO", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "GPL", "nome": "Giullia Peleje Leme", "login": "giullia.leme", "email": "giullia.leme@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ANALISTA JURÍDICO", "equipe": "Equipe Controladoria", "status": "Ativo"}, {"sigla": "GSM", "nome": "Guilherme Silva Morimoto", "login": "guilherme.morimoto", "email": "guilherme.morimoto@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. JUNIOR", "equipe": "Equipe B", "status": "Ativo"}, {"sigla": "HAS", "nome": "Hanyelle Alves da Silva", "login": "hanyelle.silva", "email": "hanyelle.silva@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ESTAGIÁRIO", "equipe": "Equipe A", "status": "Ativo"}, {"sigla": "HRP", "nome": "Henrique Remorini Pantuzo", "login": "henrique.pantuzo", "email": "henrique.pantuzo@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ESTAGIÁRIO", "equipe": "Equipe A", "status": "Ativo"}, {"sigla": "IGA", "nome": "Isadora Silva Gagliardi", "login": "isadora.gagliardi", "email": "isadora.gagliardi@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ESTAGIÁRIO", "equipe": "Equipe B", "status": "Ativo"}, {"sigla": "JRT", "nome": "Jackeline Romeu Torres", "login": "jackeline.torres", "email": "jackeline.torres@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. PLENO", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "JJM", "nome": "Jaqueline Jahel Moraes", "login": "jaqueline.moraes", "email": "jaqueline.moraes@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ESTAGIÁRIO", "equipe": "Equipe A", "status": "Ativo"}, {"sigla": "JJS", "nome": "Jenifer de Jesus Silva", "login": "jenifer.silva", "email": "jenifer.silva@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. JUNIOR", "equipe": "Equipe B", "status": "Ativo"}, {"sigla": "JQS", "nome": "Jessica Cerqueira Silva", "login": "jessica.cerqueira", "email": "jessica.cerqueira@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. JUNIOR", "equipe": "Equipe D", "status": "Ativo"}, {"sigla": "JRM", "nome": "Joice Ramos Miranda", "login": "joice.miranda", "email": "joice.miranda@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. SÊNIOR", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "JLM", "nome": "Juan Leonardo Ikier Moraes", "login": "juanleonardo.moraes", "email": "juanleonardo.moraes@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ASSISTENTE ADMINISTRATIVO", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "JPL", "nome": "Júlia Priego Lopes da Silva", "login": "julia.priego", "email": "julia.priego@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. JUNIOR", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "JPA", "nome": "Juliana Pereira Nascimento", "login": "juliana.nascimento", "email": "juliana.nascimento@peixotoecury.com.br", "senha": "123456", "nivel": "admin", "cargo": "ADV. JUNIOR", "equipe": "Equipe Relatórios", "status": "Ativo"}, {"sigla": "JPE", "nome": "Juliana Perucci", "login": "juliana.perucci", "email": "juliana.perucci@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. PLENO", "equipe": "Equipe B", "status": "Ativo"}, {"sigla": "KTO", "nome": "Karoline de Castro Torres", "login": "karoline.torres", "email": "karoline.torres@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ESTAGIÁRIO", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "KBM", "nome": "Keyla Maria Barbosa Silva Moraes", "login": "keyla.moraes", "email": "keyla.moraes@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. SÊNIOR", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "LLL", "nome": "Larissa Lekich Lobenwein", "login": "larissa.lekich", "email": "larissa.lekich@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ASSISTENTE JURIDICO", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "LPJ", "nome": "Leonardo Pereira de Jesus", "login": "leonardo.jesus", "email": "leonardo.jesus@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ESTAGIÁRIO", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "LMI", "nome": "Letícia Meneghini Fontes", "login": "leticia.fontes", "email": "leticia.fontes@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. JUNIOR", "equipe": "Equipe B", "status": "Ativo"}, {"sigla": "LCG", "nome": "Lorena Rodrigues Costa Gonçalves", "login": "lorena.goncalves", "email": "lorena.goncalves@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ESTAGIÁRIO", "equipe": "Equipe B", "status": "Ativo"}, {"sigla": "LVC", "nome": "Luiz Vicente de Carvalho", "login": "luizvicente.carvalho", "email": "luizvicente.carvalho@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "SÓCIO SÊNIOR", "equipe": "TRABALHISTA", "status": "Ativo"}, {"sigla": "MTM", "nome": "Marcel Tadeu Matos Alves da Silva", "login": "marcel.alves", "email": "marcel.alves@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "SÓCIO", "equipe": "TRABALHISTA", "status": "Ativo"}, {"sigla": "MCD", "nome": "Maria Carolina Silva Santos Dias", "login": "mariacarolina.dias", "email": "mariacarolina.dias@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ANALISTA JURÍDICO", "equipe": "Equipe B", "status": "Ativo"}, {"sigla": "MBF", "nome": "Mariana Borges de Menezes Fávaro", "login": "mariana.favaro", "email": "mariana.favaro@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. PLENO", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "MNB", "nome": "Marina de Novaes Brechiani", "login": "marina.brechiani", "email": "marina.brechiani@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. JUNIOR", "equipe": "Equipe A", "status": "Ativo"}, {"sigla": "MJT", "nome": "Matheus de Jesus Trindade", "login": "matheus.trindade", "email": "matheus.trindade@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ESTAGIÁRIO", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "MOC", "nome": "Michael Oliveira Coqueiro", "login": "michael.coqueiro", "email": "michael.coqueiro@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ASSISTENTE JURIDICO", "equipe": "Equipe Relatórios", "status": "Ativo"}, {"sigla": "NBB", "nome": "Natalia Bezerra Baliero", "login": "natalia.baliero", "email": "natalia.baliero@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. JUNIOR", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "NBG", "nome": "Natália Biondi Gaggini Robles", "login": "natalia.gaggini", "email": "natalia.gaggini@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. SÊNIOR", "equipe": "Equipe A", "status": "Ativo"}, {"sigla": "NLO", "nome": "Nathalie Louise dos Santos Rodrigues Dias", "login": "nathalie.louise", "email": "nathalie.louise@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ASSISTENTE JURIDICO", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "NRG", "nome": "Nicolau Rafael Guimarães Coelho", "login": "nicolau.coelho", "email": "nicolau.coelho@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. SÊNIOR", "equipe": "Equipe B", "status": "Ativo"}, {"sigla": "PSI", "nome": "Paloma da Silva Santos", "login": "paloma.santos", "email": "paloma.santos@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. PLENO", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "PBS", "nome": "Poliana Banqueri da Silva Guimarães", "login": "poliana.banqueri", "email": "poliana.banqueri@peixotoecury.com.br", "senha": "123456", "nivel": "admin", "cargo": "SÓCIO", "equipe": "TRABALHISTA", "status": "Ativo"}, {"sigla": "RCF", "nome": "Rafael Camargo Felisbino", "login": "rafael.camargo", "email": "rafael.camargo@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. SÊNIOR", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "RFE", "nome": "Rafael Rocha Ferreira", "login": "rafael.ferreira", "email": "rafael.ferreira@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. JUNIOR", "equipe": "Equipe B", "status": "Ativo"}, {"sigla": "RYL", "nome": "Rafael Yepez do Lago", "login": "rafael.lago", "email": "rafael.lago@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. JUNIOR", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "RWD", "nome": "Rafaella Wittmann Domenicis", "login": "rafaella.domenicis", "email": "rafaella.domenicis@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ASSISTENTE JURIDICO", "equipe": "Equipe B", "status": "Ativo"}, {"sigla": "RFK", "nome": "Raica Fernandes Kwok", "login": "raica.kwok", "email": "raica.kwok@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ESTAGIÁRIO", "equipe": "Equipe B", "status": "Ativo"}, {"sigla": "RRU", "nome": "Richard Ruan Leo da Silva", "login": "richard.silva", "email": "richard.silva@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. JUNIOR", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "RSN", "nome": "Rodrigo Souichi Nishijima", "login": "rodrigo.nishijima", "email": "rodrigo.nishijima@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ESTAGIÁRIO", "equipe": "Equipe B", "status": "Ativo"}, {"sigla": "SOF", "nome": "Sofia Freire", "login": "sofia.freire", "email": "sofia.freire@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. JUNIOR", "equipe": "Equipe A", "status": "Ativo"}, {"sigla": "TNE", "nome": "Tabata Neves Caramelli", "login": "tabata.caramelli", "email": "tabata.caramelli@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ESTAGIÁRIO", "equipe": "Equipe A", "status": "Ativo"}, {"sigla": "TCO", "nome": "Tamires Lins Costa", "login": "tamireslins.costa", "email": "tamireslins.costa@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADVOGADO", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "TSM", "nome": "Tamara Silva Marcílio", "login": "tamara.marcilio", "email": "tamara.marcilio@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. PLENO", "equipe": "Equipe B", "status": "Ativo"}, {"sigla": "TCE", "nome": "Thais Catharine Cardozo Esteves", "login": "thais.esteves", "email": "thais.esteves@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. JUNIOR", "equipe": "Equipe A", "status": "Ativo"}, {"sigla": "TFR", "nome": "Thiago Frid Figueiredo Rossi", "login": "thiago.rossi", "email": "thiago.rossi@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. PLENO", "equipe": "Equipe C", "status": "Ativo"}, {"sigla": "VCR", "nome": "Vanessa de Cassia Castrequini Rosa", "login": "vanessa.rosa", "email": "vanessa.rosa@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. PLENO", "equipe": "Equipe B", "status": "Ativo"}, {"sigla": "VSI", "nome": "Vinicius da Silva Cerqueira", "login": "vinicius.dasilva", "email": "vinicius.dasilva@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. SÊNIOR", "equipe": "Equipe A", "status": "Ativo"}, {"sigla": "VGA", "nome": "Vinicius Ferreira Garcia", "login": "vinicius.garcia", "email": "vinicius.garcia@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ASSISTENTE JURIDICO", "equipe": "Equipe A", "status": "Ativo"}, {"sigla": "VRO", "nome": "Vinícius Ronchi Arruda", "login": "vinicius.ronchi", "email": "vinicius.ronchi@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. JUNIOR", "equipe": "Equipe E", "status": "Ativo"}, {"sigla": "VAR", "nome": "Vitoria Araujo Carvalho", "login": "vitoria.carvalho", "email": "vitoria.carvalho@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ASSISTENTE JURIDICO", "equipe": "Equipe B", "status": "Ativo"}, {"sigla": "WSF", "nome": "Washington Soares Silva Filho", "login": "washington.soares", "email": "washington.soares@peixotoecury.com.br", "senha": "123456", "nivel": "usuario", "cargo": "ADV. PLENO", "equipe": "Equipe E", "status": "Ativo"}];
 
   const LS_KEY = 'pc_usuarios_v1';
 
@@ -8708,13 +8892,7 @@ function qgLoadAudiencias(inp){
         const _d = r.data ? (r.data instanceof Date ? new Date(r.data) : new Date(String(r.data).substring(0,10)+'T00:00:00')) : null;
         if (!_d || isNaN(_d)) return r;
         const _diff = diasUteisDiff(_d, _hoje2);
-        let _st;
-        if      (_diff < -1)   _st = 'Vencido';
-        else if (_diff === -1) _st = 'Fatal';
-        else if (_diff === 0)  _st = 'D-1';
-        else if (_diff === 1)  _st = 'D-2';
-        else                   _st = 'Futuro';
-        return Object.assign({}, r, {status: _st, dias_restantes: _diff});
+        return Object.assign({}, r, {status: calcStatusDiff(_diff), dias_restantes: _diff});
       });
       S.raw    = _nr2c;
       S.prazos = _nr2c.filter(r=>(r.tipo_agenda||'').trim()==='Prazo');
@@ -8847,7 +9025,7 @@ function qgLoadAudiencias(inp){
 // Exporta a partir dos dados em memória (S.raw) quando buffer não disponível
 // ── HELPER: GERA EXCEL COM FORMATAÇÃO IDÊNTICA À PLANILHA DE REFERÊNCIA ──────
 // Cor cabeçalho: RGB(21,96,130) = #156082 | Fonte: Aptos Narrow 11pt | Altura linha: 14.4
-window._gerarExcelFormatado = async function(registros, nomeArquivo) {
+window._gerarExcelFormatado = async function(registros, nomeArquivo, reagendamentos, justMap, justRows) {
   function toDate(v) {
     if (v instanceof Date) return v;
     if (typeof v === 'number' && v > 20000) return new Date((v - 25569) * 86400000);
@@ -8855,22 +9033,44 @@ window._gerarExcelFormatado = async function(registros, nomeArquivo) {
     return null;
   }
 
+  // Detecta todas as colunas presentes nos dados (preserva ordem e nomes originais do LM)
+  const _colsSet = new Set();
+  registros.forEach(r => Object.keys(r).forEach(k => _colsSet.add(k)));
+  // Remove colunas internas do dashboard que não devem ir para o Excel
+  ['status','dias_restantes'].forEach(k => _colsSet.delete(k));
+  const _colsRaw = Array.from(_colsSet);
+  // Garante que 'status' vai na frente e 'justificativa_controladoria' no final
+  const _cols = ['status', ..._colsRaw.filter(c => c !== 'status'), 'justificativa_controladoria'];
+
+  // Função que resolve o número do processo independente do nome da coluna
+  function getProcNum(r) {
+    return r.numero_processo || r['numero_processo'] || r['Número do Processo'] || r['numero processo'] || r['Processo'] || '';
+  }
+  // Função que resolve a justificativa: justMap (Supabase) tem prioridade sobre cache local
+  function getJust(r) {
+    const proc = getProcNum(r);
+    if (justMap && justMap[proc]) return justMap[proc];
+    const jObj = window.justificativas && window.justificativas[proc];
+    return (jObj && jObj.texto) || '';
+  }
+
+  const _statusFill = {
+    'Fatal':     'FFFF4C4C', 'Vencido': 'FFC00000',
+    'D-1':       'FFFFD966', 'D-2':     'FFFFC000',
+    'Futuro':    'FF92D050', 'Encerrado':'FFD9D9D9'
+  };
+  const _borderThin = { style: 'thin', color: { argb: 'FFD9D9D9' } };
+  const _borderCell = { top: _borderThin, left: _borderThin, bottom: _borderThin, right: _borderThin };
+
   if (typeof ExcelJS === 'undefined') {
-    // Fallback SheetJS sem formatação
-    const COLS19 = ['data','status','situacao_pasta','grupo_processo','codigo_processo',
-      'codigo_cliente','cliente','parte_principal','parte_contraria','numero_processo',
-      'importante','matricula','responsavel','area','tipo_agenda','descricao_tarefa',
-      'codigo_agenda','quando_criado','quem_criou','justificativa'];
-    const ws = XLSX.utils.json_to_sheet(registros.map(r=>{
-      const o={}; COLS19.forEach(c=>{ o[c]=r[c]!==undefined?r[c]:''; });
-      const jObj = window.justificativas && (window.justificativas[r.numero_processo]);
-      o['justificativa'] = (jObj && jObj.texto) || '';
+    // Fallback SheetJS sem formatação — inclui todas as colunas
+    const ws = XLSX.utils.json_to_sheet(registros.map(r => {
+      const o = { status: r.status || '' };
+      _colsRaw.filter(c => c !== 'status').forEach(c => { o[c] = r[c] !== undefined ? r[c] : ''; });
+      o['justificativa_controladoria'] = getJust(r);
       return o;
-    }), {header:COLS19});
-    ws['!cols']=[{wch:9.6},{wch:7.8},{wch:15.4},{wch:16.4},{wch:17.2},{wch:15.3},{wch:22.8},
-      {wch:78.3},{wch:90.9},{wch:23.8},{wch:12.1},{wch:10.6},{wch:34.3},{wch:22.1},
-      {wch:13.3},{wch:100},{wch:15.4},{wch:15.3},{wch:12.7},{wch:80}];
-    const wbb=XLSX.utils.book_new();
+    }), { header: _cols });
+    const wbb = XLSX.utils.book_new();
     XLSX.utils.book_append_sheet(wbb, ws, 'Agendamentos');
     XLSX.writeFile(wbb, nomeArquivo);
     return;
@@ -8879,85 +9079,51 @@ window._gerarExcelFormatado = async function(registros, nomeArquivo) {
   const wb = new ExcelJS.Workbook();
   const ws = wb.addWorksheet('Agendamentos');
 
-  // 19 colunas — nomes, chaves e larguras exatamente como a planilha de referência
-  ws.columns = [
-    { header: 'data',             key: 'data',             width:  9.6  },
-    { header: 'status',           key: 'status',           width:  7.8  },
-    { header: 'situacao_pasta',   key: 'situacao_pasta',   width: 15.4  },
-    { header: 'grupo_processo',   key: 'grupo_processo',   width: 16.4  },
-    { header: 'codigo_processo',  key: 'codigo_processo',  width: 17.2  },
-    { header: 'codigo_cliente',   key: 'codigo_cliente',   width: 15.3  },
-    { header: 'cliente',          key: 'cliente',          width: 22.8  },
-    { header: 'parte_principal',  key: 'parte_principal',  width: 78.3  },
-    { header: 'parte_contraria',  key: 'parte_contraria',  width: 90.9  },
-    { header: 'numero_processo',  key: 'numero_processo',  width: 23.8  },
-    { header: 'importante',       key: 'importante',       width: 12.1  },
-    { header: 'matricula',        key: 'matricula',        width: 10.6  },
-    { header: 'responsavel',      key: 'responsavel',      width: 34.3  },
-    { header: 'area',             key: 'area',             width: 22.1  },
-    { header: 'tipo_agenda',      key: 'tipo_agenda',      width: 13.3  },
-    { header: 'descricao_tarefa', key: 'descricao_tarefa', width: 255   },
-    { header: 'codigo_agenda',    key: 'codigo_agenda',    width: 15.4  },
-    { header: 'quando_criado',    key: 'quando_criado',    width: 15.3  },
-    { header: 'quem_criou',       key: 'quem_criou',       width: 12.7  },
-    { header: 'justificativa',    key: 'justificativa',    width: 80    }
-  ];
+  // Colunas dinâmicas — todas as colunas do LM + justificativa_controladoria
+  ws.columns = _cols.map(c => ({
+    header: c,
+    key: c,
+    width: c === 'justificativa_controladoria' ? 80
+         : c === 'status' ? 9
+         : (c.includes('descricao') || c.includes('Descrição') || c.includes('parte')) ? 60
+         : c.includes('processo') || c.includes('Processo') ? 26
+         : c.includes('responsavel') || c.includes('Responsável') ? 34
+         : c.includes('cliente') || c.includes('Cliente') ? 22
+         : 16
+  }));
 
-  // Linha 1 fixada (freeze pane) + auto-filtro em todas as colunas
+  // Linha 1: cabeçalho formatado
   ws.views = [{ state: 'frozen', xSplit: 0, ySplit: 1, topLeftCell: 'A2', activeCell: 'A2' }];
-  ws.autoFilter = { from: { row: 1, column: 1 }, to: { row: 1, column: 20 } };
-
-  // Cores de status (coluna B)
-  const _statusFill = {
-    'Fatal':      'FFFF4C4C',
-    'Vencido':    'FFC00000',
-    'D-1':        'FFFFD966',
-    'D-2':        'FFFFC000',
-    'Futuro':     'FF92D050',
-    'Encerrado':  'FFD9D9D9'
-  };
-  const _borderThin = { style: 'thin', color: { argb: 'FFD9D9D9' } };
-  const _borderCell = { top: _borderThin, left: _borderThin, bottom: _borderThin, right: _borderThin };
-
-  // Cabeçalho: Aptos Narrow 11pt bold, texto branco, fundo #156082, altura 14.4
+  ws.autoFilter = { from: { row: 1, column: 1 }, to: { row: 1, column: _cols.length } };
   const hRow = ws.getRow(1);
   hRow.height = 14.4;
   hRow.eachCell(cell => {
     cell.font      = { name: 'Aptos Narrow', size: 11, bold: true, color: { argb: 'FFFFFFFF' } };
     cell.fill      = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FF156082' } };
     cell.alignment = { horizontal: 'left', vertical: 'middle' };
-    cell.border    = { top: { style:'thin', color:{argb:'FF156082'} }, left: { style:'thin', color:{argb:'FF156082'} }, bottom: { style:'thin', color:{argb:'FF156082'} }, right: { style:'thin', color:{argb:'FF156082'} } };
+    cell.border    = { top:{style:'thin',color:{argb:'FF156082'}}, left:{style:'thin',color:{argb:'FF156082'}}, bottom:{style:'thin',color:{argb:'FF156082'}}, right:{style:'thin',color:{argb:'FF156082'}} };
   });
 
-  // Linhas de dados: Aptos Narrow 11pt, altura 14.4, bordas e cor de status
+  // Linhas de dados — todas as colunas do LM, com justificativa do Supabase
   registros.forEach(r => {
-    const row = ws.addRow({
-      data:             toDate(r.data),
-      status:           r.status           || '',
-      situacao_pasta:   r.situacao_pasta   || '',
-      grupo_processo:   r.grupo_processo   || '',
-      codigo_processo:  r.codigo_processo  != null ? r.codigo_processo  : '',
-      codigo_cliente:   r.codigo_cliente   != null ? r.codigo_cliente   : '',
-      cliente:          r.cliente          || '',
-      parte_principal:  r.parte_principal  || '',
-      parte_contraria:  r.parte_contraria  || '',
-      numero_processo:  r.numero_processo  || '',
-      importante:       r.importante       || '',
-      matricula:        r.matricula        || '',
-      responsavel:      r.responsavel      || '',
-      area:             r.area             || '',
-      tipo_agenda:      r.tipo_agenda      || '',
-      descricao_tarefa: r.descricao_tarefa || '',
-      codigo_agenda:    r.codigo_agenda    != null ? r.codigo_agenda    : '',
-      quando_criado:    toDate(r.quando_criado),
-      quem_criou:       r.quem_criou       || '',
-      justificativa:    (function(){ var jObj = window.justificativas && window.justificativas[r.numero_processo]; return (jObj && jObj.texto) || ''; })()
+    const rowData = { status: r.status || '' };
+    _colsRaw.filter(c => c !== 'status').forEach(c => {
+      const v = r[c];
+      // Tenta converter datas
+      if (c === 'data' || c === 'Data' || c === 'quando_criado' || c === 'Quando Criado') {
+        rowData[c] = toDate(v) || (v != null ? v : '');
+      } else {
+        rowData[c] = v != null ? v : '';
+      }
     });
+    rowData['justificativa_controladoria'] = getJust(r);
+
+    const row = ws.addRow(rowData);
     row.height = 14.4;
     row.font = { name: 'Aptos Narrow', size: 11 };
-    // Bordas em todas as células
     row.eachCell({ includeEmpty: true }, cell => { cell.border = _borderCell; });
-    // Cor da célula de status
+
+    // Cor de status na coluna status
     const statusArgb = _statusFill[r.status];
     if (statusArgb) {
       const sCell = row.getCell('status');
@@ -8966,9 +9132,92 @@ window._gerarExcelFormatado = async function(registros, nomeArquivo) {
     }
   });
 
-  // Formato de data dd/mm/yyyy nas colunas de data
-  ws.getColumn('data').numFmt         = 'dd/mm/yyyy';
-  ws.getColumn('quando_criado').numFmt = 'dd/mm/yyyy';
+  // Formato de data nas colunas de data conhecidas
+  ['data','Data','quando_criado','Quando Criado'].forEach(c => {
+    try { ws.getColumn(c).numFmt = 'dd/mm/yyyy'; } catch(e) {}
+  });
+
+  // Aba de Justificativas (se fornecida)
+  if (justRows && justRows.length) {
+    const wsJ = wb.addWorksheet('Justificativas');
+    wsJ.columns = [
+      { header: 'Processo',       key: 'numero_processo',    width: 30 },
+      { header: 'Justificativa',  key: 'justificativa_texto',width: 60 },
+      { header: 'Status',         key: 'status',             width: 14 },
+      { header: 'Enviado por',    key: 'usuario_nome',       width: 30 },
+      { header: 'Gestor',         key: 'gestor_nome',        width: 30 },
+      { header: 'Aprovado em',    key: 'aprovado_em',        width: 18 },
+      { header: 'Motivo rejeição',key: 'motivo_rejeicao',    width: 40 },
+      { header: 'Atualizado em',  key: 'atualizado_em',      width: 18 }
+    ];
+    const hJ = wsJ.getRow(1);
+    hJ.height = 14.4;
+    hJ.eachCell(cell => {
+      cell.font      = { name: 'Aptos Narrow', size: 11, bold: true, color: { argb: 'FFFFFFFF' } };
+      cell.fill      = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FF156082' } };
+      cell.alignment = { horizontal: 'left', vertical: 'middle' };
+    });
+    justRows.forEach(function(r) {
+      const row = wsJ.addRow({
+        numero_processo:    r.numero_processo    || '',
+        justificativa_texto:r.justificativa_texto|| '',
+        status:             r.status             || '',
+        usuario_nome:       r.usuario_nome       || '',
+        gestor_nome:        r.gestor_nome        || '',
+        aprovado_em:        r.aprovado_em ? new Date(r.aprovado_em).toLocaleString('pt-BR') : '',
+        motivo_rejeicao:    r.motivo_rejeicao    || '',
+        atualizado_em:      r.atualizado_em ? new Date(r.atualizado_em).toLocaleString('pt-BR') : ''
+      });
+      row.height = 14.4;
+      row.font = { name: 'Aptos Narrow', size: 11 };
+    });
+    wsJ.views = [{ state: 'frozen', xSplit: 0, ySplit: 1, topLeftCell: 'A2', activeCell: 'A2' }];
+    wsJ.autoFilter = { from: { row: 1, column: 1 }, to: { row: 1, column: 9 } };
+  }
+
+  // Aba de Reagendamentos (se fornecida)
+  if (reagendamentos && reagendamentos.length) {
+    const wsR = wb.addWorksheet('Reagendamentos');
+    wsR.columns = [
+      { header: 'Processo',            key: 'processo',         width: 26 },
+      { header: 'Reclamante',          key: 'reclamante',       width: 30 },
+      { header: 'Responsável',         key: 'responsavel',      width: 34 },
+      { header: 'Equipe',              key: 'equipe',           width: 14 },
+      { header: 'Resp. Reagendamento', key: 'responsavel_reag', width: 34 },
+      { header: 'Data Prazo Atual',    key: 'data_atual',       width: 16 },
+      { header: 'Data Prazo Fatal',    key: 'data_fatal',       width: 16 },
+      { header: 'Tipo de Prazo',       key: 'tipo_prazo',       width: 16 },
+      { header: 'Justificativa',       key: 'justificativa',    width: 60 },
+      { header: 'Enviado por',         key: 'usuario_nome',     width: 30 },
+      { header: 'Enviado em',          key: 'criado_em',        width: 18 }
+    ];
+    const hR = wsR.getRow(1);
+    hR.height = 14.4;
+    hR.eachCell(cell => {
+      cell.font  = { name: 'Aptos Narrow', size: 11, bold: true, color: { argb: 'FFFFFFFF' } };
+      cell.fill  = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FF156082' } };
+      cell.alignment = { horizontal: 'left', vertical: 'middle' };
+    });
+    reagendamentos.forEach(function(r) {
+      const row = wsR.addRow({
+        processo:        r.processo        || '',
+        reclamante:      r.reclamante      || '',
+        responsavel:     r.responsavel     || '',
+        equipe:          r.equipe          || '',
+        responsavel_reag:r.responsavel_reag|| '',
+        data_atual:      r.data_atual      || '',
+        data_fatal:      r.data_fatal      || '',
+        tipo_prazo:      r.tipo_prazo      || '',
+        justificativa:   r.justificativa   || '',
+        usuario_nome:    r.usuario_nome    || '',
+        criado_em:       r.criado_em ? new Date(r.criado_em).toLocaleString('pt-BR') : ''
+      });
+      row.height = 14.4;
+      row.font = { name: 'Aptos Narrow', size: 11 };
+    });
+    wsR.views = [{ state: 'frozen', xSplit: 0, ySplit: 1, topLeftCell: 'A2', activeCell: 'A2' }];
+    wsR.autoFilter = { from: { row: 1, column: 1 }, to: { row: 1, column: 11 } };
+  }
 
   // Gera buffer e dispara download
   const buffer = await wb.xlsx.writeBuffer();
@@ -9118,17 +9367,33 @@ window._exportarMeusRegistrosOLD_unused = function(){
     nav.appendChild(btn);
 
     if(!document.getElementById('sidebar-att-ts')){
-      const tsEl = document.createElement('div');
+      const wrap = document.createElement('div');
+      wrap.style.cssText = 'display:flex;align-items:center;gap:6px;padding:2px 4px 6px;';
+
+      const tsEl = document.createElement('span');
       tsEl.id = 'sidebar-att-ts';
-      tsEl.style.cssText = 'font-size:10px;color:rgba(255,255,255,.35);padding:2px 4px 6px;letter-spacing:.02em;';
-      nav.appendChild(tsEl);
+      tsEl.style.cssText = 'font-size:10px;color:rgba(255,255,255,.35);letter-spacing:.02em;flex:1;';
+
+      const btnSync = document.createElement('button');
+      btnSync.id = 'btn-sync-now';
+      btnSync.title = 'Forçar sincronização com o banco LM agora';
+      btnSync.style.cssText = 'border:none;border-radius:5px;background:#1565c0;color:#fff;font-size:10px;font-weight:600;cursor:pointer;padding:3px 8px;display:flex;align-items:center;gap:3px;flex-shrink:0;white-space:nowrap;';
+      btnSync.innerHTML = '<span id="btn-sync-icon">🔄</span><span id="btn-sync-txt">Sincronizar</span>';
+      btnSync.onclick = function(){ if(typeof syncAgora==='function') syncAgora(); };
+
       const _saved = localStorage.getItem('pc_ultima_planilha') || localStorage.getItem('pc_upload_date');
       if(_saved){
         try{
           const _d = new Date(_saved);
           tsEl.textContent = 'Atualizado ' + _d.toLocaleDateString('pt-BR') + ' às ' + _d.toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});
         }catch(e){ tsEl.textContent = 'Atualizado ' + _saved.slice(0,16).replace('T',' '); }
+      } else {
+        tsEl.textContent = 'Aguardando sync...';
       }
+
+      wrap.appendChild(tsEl);
+      wrap.appendChild(btnSync);
+      nav.appendChild(wrap);
     }
   }
 
@@ -9214,19 +9479,19 @@ window.entrarComo = function(login){
   try{
     const saved=localStorage.getItem('pc_usuarios_v1');
     if(saved) JSON.parse(saved).filter(u=>u.status==='Ativo').forEach(u=>{
-      USUARIOS[u.login]={senha:u.senha,nivel:u.nivel,nome:u.nome,sigla:u.sigla};
+      USUARIOS[u.login]={senha:u.senha,nivel:u.nivel,nome:u.nome,sigla:u.sigla,equipe:u.equipe||''};
     });
   }catch(e){}
   // Also try USUARIOS_BASE (JSON array in the file)
   let u = USUARIOS[login];
   if(!u && typeof USUARIOS_BASE !== 'undefined'){
     const base = USUARIOS_BASE.find(x=>x.login===login);
-    if(base) u = {senha:base.senha,nivel:base.nivel,nome:base.nome,sigla:base.sigla};
+    if(base) u = {senha:base.senha,nivel:base.nivel,nome:base.nome,sigla:base.sigla,equipe:base.equipe||''};
   }
   if(!u){ alert('Usuário não encontrado: '+login); return; }
   // Preserve original admin session, set impersonated session
   window._SESSAO_ADMIN = window._SESSAO_ADMIN || (window.SESSAO ? {...window.SESSAO} : null);
-  SESSAO = {login, nivel:u.nivel, nome:u.nome, sigla:u.sigla};
+  SESSAO = {login, nivel:u.nivel, nome:u.nome, sigla:u.sigla, equipe:u.equipe||''};
   document.getElementById('user-badge-label').textContent = '👤 '+u.nome+' (como '+login+')';
   // Aplica perfil visual do usuário impersonado (role-user oculta abas gerenciais)
   if(typeof aplicarPerfilVisual==='function') setTimeout(aplicarPerfilVisual, 30);
@@ -9401,13 +9666,7 @@ document.addEventListener('DOMContentLoaded', function(){
       const d = new Date(+iso[1], +iso[2]-1, +iso[3]);
       if (isNaN(d)) return r;
       const diff = diasUteisDiff(d, _hoje);
-      let status;
-      if      (diff < -1)   status = 'Vencido';
-      else if (diff === -1) status = 'Fatal';
-      else if (diff === 0)  status = 'D-1';
-      else if (diff === 1)  status = 'D-2';
-      else                  status = 'Futuro';
-      return Object.assign({}, r, {status: status, dias_restantes: diff});
+      return Object.assign({}, r, {status: calcStatusDiff(diff), dias_restantes: diff});
     });
 
     // Aceita "tipo_agenda" (underscore) e "tipo agenda" (espaço) para compatibilidade com diferentes templates de planilha
@@ -9504,15 +9763,43 @@ document.addEventListener('DOMContentLoaded', function(){
     localStorage.setItem('pc_ultima_atualizacao', new Date().toISOString());
   }
 
-  const GITHUB_DADOS_URL = 'https://raw.githubusercontent.com/peixotoecury/dashboard-juridico/data/dados.json';
+  const GITHUB_DADOS_URL = 'https://raw.githubusercontent.com/peixotoecury/dashboard-juridico/main/dados.json';
 
   async function carregarBaseOnline(silencioso){
-    // DESATIVADO: o dados.json é gerado do Excel (defasado) e sobrescrevia o
-    // dado ao vivo. A fonte única é o Supabase (prazos_agendas), em tempo real.
+    // Tenta Supabase (fonte primária, tempo real)
     if(typeof carregarPrazosSupabase === 'function'){
-      try { await carregarPrazosSupabase(); } catch(e){ console.warn('Supabase falhou:', e.message); }
+      try {
+        await carregarPrazosSupabase();
+        return;
+      } catch(e){
+        console.warn('Supabase indisponível, usando fallback dados.json:', e.message);
+      }
     }
-    return;
+    // Fallback: dados.json publicado pelo sync direto do LM no GitHub
+    try {
+      const r = await fetch(GITHUB_DADOS_URL + '?_=' + Date.now());
+      if(!r.ok) throw new Error('HTTP ' + r.status);
+      const payload = await r.json();
+      const rows = payload.dados || payload;
+      if(rows && rows.length){
+        const hoje = new Date(); hoje.setHours(0,0,0,0);
+        const todos = rows.map(function(rec){
+          const d = rec.data ? new Date(rec.data.slice(0,10) + 'T00:00:00') : null;
+          if(!d) return rec;
+          const diff = typeof diasUteisDiff === 'function' ? diasUteisDiff(d, hoje) : null;
+          return Object.assign({}, rec, { status: diff !== null ? (typeof calcStatusDiff === 'function' ? calcStatusDiff(diff) : rec.status) : rec.status, dias_restantes: diff });
+        });
+        S.raw    = todos;
+        S.prazos = todos.filter(function(r){ return (r.tipo_agenda||'').trim() === 'Prazo'; });
+        S.agendas= todos.filter(function(r){ return (r.tipo_agenda||'').trim() === 'Agenda'; });
+        S.equipe = todos.filter(function(r){ return (r.tipo_agenda||'').includes('Equipe'); });
+        window._supabaseCarregado = true;
+        if(typeof renderAll === 'function') renderAll();
+        console.info('Fallback dados.json carregado: ' + todos.length + ' registros (Supabase indisponível)');
+      }
+    } catch(e2){
+      console.warn('Fallback dados.json também falhou:', e2.message);
+    }
   }
 
   function pcHoraUpload(){
@@ -9674,6 +9961,26 @@ document.addEventListener('DOMContentLoaded', function(){
 <!-- Supabase carregado no final para garantir que o DOM já existe -->
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" onload="_initSupabase(); if(typeof window.iniciarRealtimeSupabase==='function') window.iniciarRealtimeSupabase();"></script>
 
+<script>
+// Fallback de auto-refresh: se o Realtime Supabase falhar (página aberta antes da sync,
+// timeout de websocket, etc.), recarrega os dados a cada 5 minutos.
+(function(){
+  var INTERVALO = 5 * 60 * 1000;
+  window._ultimoLoadSupabase = Date.now();
+
+  setInterval(function(){
+    if(document.visibilityState !== 'visible') return;
+    // Respeita debounce: não recarrega se o Realtime já fez isso recentemente
+    if(Date.now() - (window._ultimoLoadSupabase || 0) < INTERVALO - 15000) return;
+    if(typeof carregarPrazosSupabase === 'function'){
+      console.log('⏱ Auto-refresh 5min: recarregando do Supabase...');
+      window._ultimoLoadSupabase = Date.now();
+      carregarPrazosSupabase();
+    }
+  }, INTERVALO);
+})();
+</script>
+
 <!-- AUTO_DATA removido: dados vêm do Supabase -->
 
 
@@ -9706,7 +10013,229 @@ document.addEventListener('DOMContentLoaded', function(){
       var btn=document.getElementById('btn-enviar-justif');
       if(btn) btn.style.display=meusFatais.length>0?'':'none';
     }catch(e){}
+    // Botões exclusivos de gestor / gestor de equipe
+    try {
+      var _gs = typeof window.getCurrentSession==='function' ? window.getCurrentSession() : (window.SESSAO||window.sessao||window.usuarioLogado||{});
+      var _ged2 = window._equipeDoGestor;
+      var podeAprovar = (typeof isManager==='function' && isManager(_gs)) || (typeof _ged2==='function' && typeof _ged2(_gs)==='string');
+      var btnApr = document.getElementById('btn-aprovar-justif');
+      if(btnApr) btnApr.style.display = podeAprovar ? '' : 'none';
+    }catch(e){}
   }
+
+  // ── Mapeamento login → equipe ──────────────────────────────
+  var _GESTORES_EQUIPE = {
+    'natalia.gaggini':  'A',
+    'nicolau.coelho':   'B',
+    'rafael.camargo':   'C',
+    'bianca.camacho':   'D',
+    'washington.soares':'E2',
+    'keyla.moraes':     'E1'
+  };
+  function _equipeDoGestor(sess) {
+    var login = (sess.login||sess.usuario||sess.email||'').toLowerCase().replace(/@.*$/,'').replace(/\s+/g,'.');
+    return _GESTORES_EQUIPE[login] || null;
+  }
+  window._equipeDoGestor = _equipeDoGestor;
+
+  // ══════════════════════════════════════════════════════════
+  // PAINEL DE APROVAÇÃO DE JUSTIFICATIVAS (só gestores)
+  // ══════════════════════════════════════════════════════════
+  window.abrirPainelAprovacao = function() {
+    _initSupabase();
+    if(!supabaseClient) { alert('Supabase não disponível.'); return; }
+    var old = document.getElementById('modal-aprovacao-justif');
+    if(old) old.remove();
+
+    var sess = window.SESSAO||window.sessao||window.usuarioLogado||{};
+    var isSocio = typeof isManager==='function' && isManager(sess);
+    var equipeGestor = _equipeDoGestor(sess); // null se for sócio
+    var titulo = isSocio
+      ? '✅ Aprovação de Justificativas — Todas as Equipes'
+      : '✅ Aprovação de Justificativas — Equipe ' + (equipeGestor||'');
+
+    var modal = document.createElement('div');
+    modal.id = 'modal-aprovacao-justif';
+    modal.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:9999;display:flex;align-items:flex-start;justify-content:center;padding:20px;overflow-y:auto;';
+    modal.innerHTML = '<div style="background:#fff;border-radius:12px;width:100%;max-width:960px;box-shadow:0 20px 60px rgba(0,0,0,.3);overflow:hidden;">'
+      +'<div style="background:linear-gradient(90deg,#1565C0,#1976D2);padding:18px 24px;color:#fff;display:flex;justify-content:space-between;align-items:center;">'
+      +'<div style="font-size:16px;font-weight:700;">'+titulo+'</div>'
+      +'<button onclick="document.getElementById(\'modal-aprovacao-justif\').remove()" style="background:rgba(255,255,255,.2);border:none;color:#fff;border-radius:6px;padding:6px 12px;cursor:pointer;font-size:13px;">✕ Fechar</button>'
+      +'</div>'
+      +'<div id="aprovacao-body" style="padding:20px;"><div style="text-align:center;padding:40px;color:#666;">Carregando justificativas...</div></div>'
+      +'</div>';
+    document.body.appendChild(modal);
+
+    supabaseClient.from('justificativas').select('*').order('atualizado_em', {ascending:false})
+      .then(function(result) {
+        var body = document.getElementById('aprovacao-body');
+        if(!body) return;
+        if(result.error) { body.innerHTML = '<div style="color:red;padding:20px;">Erro: '+result.error.message+'</div>'; return; }
+        var allRows = result.data || [];
+
+        // Filtrar por equipe se for gestor de equipe (não sócio)
+        // equipeGestor='B' deve bater com r.equipe='Grupo B1','Grupo B2','B','B1' etc.
+        function equipeMatch(re) {
+          var eq = (re || '').toUpperCase().replace('GRUPO ','').trim();
+          if (!eq) return true; // equipe vazia/nula → visível para todos os gestores
+          var gst = (equipeGestor || '').toUpperCase().trim();
+          return eq === gst || eq.startsWith(gst);
+        }
+        var rows = isSocio ? allRows : allRows.filter(function(r){ return equipeMatch(r.equipe); });
+
+        if(!rows.length) {
+          body.innerHTML = '<div style="text-align:center;padding:40px;color:#666;">'
+            +(equipeGestor ? 'Nenhuma justificativa da Equipe '+equipeGestor+'.' : 'Nenhuma justificativa encontrada.')
+            +'</div>';
+          return;
+        }
+
+        var pendentes = rows.filter(function(r){ return !r.status || r.status==='pendente'; });
+        var aprovadas = rows.filter(function(r){ return r.status==='aprovada'; });
+        var rejeitadas = rows.filter(function(r){ return r.status==='rejeitada'; });
+
+        function fmtDt(v){ if(!v) return '—'; try{ return new Date(v).toLocaleString('pt-BR'); }catch(e){ return v; } }
+        function rowHtml(r, showEquipe) {
+          var st = r.status||'pendente';
+          var stBadge = st==='aprovada'
+            ? '<span style="background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;">✅ Aprovada</span>'
+            : st==='rejeitada'
+            ? '<span style="background:#ffebee;color:#c62828;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;">❌ Rejeitada</span>'
+            : '<span style="background:#fff3e0;color:#e65100;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;">⏳ Pendente</span>';
+          var acoes = st==='pendente'
+            ? '<button onclick="aprovarJustif(\''+r.numero_processo+'\')" style="background:#2e7d32;color:#fff;border:none;border-radius:5px;padding:5px 10px;cursor:pointer;font-size:11px;margin-right:4px;">✅ Aprovar</button>'
+              +'<button onclick="rejeitarJustif(\''+r.numero_processo+'\')" style="background:#c62828;color:#fff;border:none;border-radius:5px;padding:5px 10px;cursor:pointer;font-size:11px;">❌ Rejeitar</button>'
+            : '<button onclick="reabrirJustif(\''+r.numero_processo+'\')" style="background:#666;color:#fff;border:none;border-radius:5px;padding:5px 10px;cursor:pointer;font-size:11px;">↩ Reabrir</button>';
+          var texto = (r.justificativa_texto||'').replace(/\n/g,'<br>');
+          return '<tr style="border-bottom:1px solid #eee;">'
+            +(showEquipe ? '<td style="padding:10px 8px;font-size:11px;font-weight:700;color:#1565C0;text-align:center;">'+(r.equipe||'—')+'</td>' : '')
+            +'<td style="padding:10px 8px;font-size:11px;font-weight:600;color:#1565C0;white-space:nowrap;">'+r.numero_processo+'</td>'
+            +'<td style="padding:10px 8px;font-size:11px;max-width:300px;">'+texto+'</td>'
+            +'<td style="padding:10px 8px;font-size:11px;white-space:nowrap;">'+r.usuario_nome+'</td>'
+            +'<td style="padding:10px 8px;font-size:11px;white-space:nowrap;">'+fmtDt(r.atualizado_em)+'</td>'
+            +'<td style="padding:10px 8px;">'+stBadge+'</td>'
+            +'<td style="padding:10px 8px;white-space:nowrap;">'+acoes+'</td>'
+            +'</tr>';
+        }
+
+        var html = '<div style="margin-bottom:12px;display:flex;gap:10px;flex-wrap:wrap;">'
+          +'<span style="background:#fff3e0;color:#e65100;padding:4px 12px;border-radius:10px;font-size:12px;font-weight:600;">⏳ Pendentes: '+pendentes.length+'</span>'
+          +'<span style="background:#e8f5e9;color:#2e7d32;padding:4px 12px;border-radius:10px;font-size:12px;font-weight:600;">✅ Aprovadas: '+aprovadas.length+'</span>'
+          +'<span style="background:#ffebee;color:#c62828;padding:4px 12px;border-radius:10px;font-size:12px;font-weight:600;">❌ Rejeitadas: '+rejeitadas.length+'</span>'
+          +'</div>'
+          +'<table style="width:100%;border-collapse:collapse;">'
+          +'<thead><tr style="background:#1565C0;color:#fff;">'
+          +(isSocio ? '<th style="padding:10px 8px;font-size:11px;text-align:left;">Equipe</th>' : '')
+          +'<th style="padding:10px 8px;font-size:11px;text-align:left;">Processo</th>'
+          +'<th style="padding:10px 8px;font-size:11px;text-align:left;">Justificativa</th>'
+          +'<th style="padding:10px 8px;font-size:11px;text-align:left;">Advogado</th>'
+          +'<th style="padding:10px 8px;font-size:11px;text-align:left;">Enviado em</th>'
+          +'<th style="padding:10px 8px;font-size:11px;text-align:left;">Status</th>'
+          +'<th style="padding:10px 8px;font-size:11px;text-align:left;">Ação</th>'
+          +'</tr></thead><tbody>'
+          + rows.map(function(r){ return rowHtml(r, isSocio); }).join('')
+          +'</tbody></table>';
+        body.innerHTML = html;
+      });
+  };
+
+  window.aprovarJustif = function(processo) {
+    _initSupabase();
+    var sess = window.SESSAO||window.sessao||window.usuarioLogado||{};
+    supabaseClient.from('justificativas').update({
+      status: 'aprovada',
+      gestor_nome: sess.nome||'',
+      gestor_email: sess.email||'',
+      aprovado_em: new Date().toISOString()
+    }).eq('numero_processo', processo).then(function(r){
+      if(r.error) { alert('Erro: '+r.error.message); return; }
+      if(typeof mostrarToast==='function') mostrarToast('✅ Justificativa aprovada.');
+      window.abrirPainelAprovacao();
+    });
+  };
+
+  window.rejeitarJustif = function(processo) {
+    var motivo = prompt('Motivo da rejeição (obrigatório):');
+    if(!motivo || !motivo.trim()) return;
+    _initSupabase();
+    var sess = window.SESSAO||window.sessao||window.usuarioLogado||{};
+    supabaseClient.from('justificativas').update({
+      status: 'rejeitada',
+      gestor_nome: sess.nome||'',
+      gestor_email: sess.email||'',
+      aprovado_em: new Date().toISOString(),
+      motivo_rejeicao: motivo.trim()
+    }).eq('numero_processo', processo).then(function(r){
+      if(r.error) { alert('Erro: '+r.error.message); return; }
+      if(typeof mostrarToast==='function') mostrarToast('❌ Justificativa rejeitada.');
+      window.abrirPainelAprovacao();
+    });
+  };
+
+  window.reabrirJustif = function(processo) {
+    if(!confirm('Reabrir esta justificativa como pendente?')) return;
+    _initSupabase();
+    supabaseClient.from('justificativas').update({
+      status: 'pendente',
+      gestor_nome: null,
+      gestor_email: null,
+      aprovado_em: null,
+      motivo_rejeicao: null
+    }).eq('numero_processo', processo).then(function(r){
+      if(r.error) { alert('Erro: '+r.error.message); return; }
+      window.abrirPainelAprovacao();
+    });
+  };
+
+  // ══════════════════════════════════════════════════════════
+  // MIGRAÇÃO INDEXEDDB → SUPABASE (só gestores)
+  // ══════════════════════════════════════════════════════════
+  window.migrarIndexedDBparaSupabase = function() {
+    if(!confirm('Isso vai recuperar todas as justificativas salvas localmente neste browser e enviá-las para o Supabase como "pendente". Continuar?')) return;
+    var req = indexedDB.open('PC_Database', 2);
+    req.onsuccess = function(e) {
+      var db = e.target.result;
+      var tx = db.transaction(['justificativas'], 'readonly');
+      var store = tx.objectStore('justificativas');
+      var reqKeys = store.getAllKeys();
+      reqKeys.onsuccess = function(ke) {
+        var keys = ke.target.result;
+        var reqVals = store.getAll();
+        reqVals.onsuccess = function(ve) {
+          var itens = ve.target.result;
+          if(!itens.length) { alert('Nenhuma justificativa encontrada no armazenamento local deste browser.'); return; }
+          _initSupabase();
+          var sess = window.SESSAO||window.sessao||window.usuarioLogado||{};
+          var promessas = itens.map(function(item, i) {
+            var chave = String(keys[i]||'');
+            var numero = chave;
+            // Se chave for numérica, tenta extrair número do processo do texto
+            if(/^\d+$/.test(chave)) {
+              var m = (item.texto||'').match(/(\d{7}-\d{2}\.\d{4}\.\d\.\d{2}\.\d{4})/);
+              if(m) numero = m[1];
+            }
+            return supabaseClient.from('justificativas').upsert({
+              numero_processo: numero,
+              justificativa_texto: item.texto||'',
+              usuario_email: sess.email||item.email||'',
+              usuario_nome: sess.nome||item.nome||'',
+              atualizado_em: item.dataSalva||new Date().toISOString(),
+              status: 'pendente'
+            }, {onConflict:'numero_processo'}).then(function(r){
+              if(r.error) console.log('❌ Erro ao migrar', numero, r.error);
+              else console.log('✅ Migrado:', numero);
+              return r;
+            });
+          });
+          Promise.all(promessas).then(function() {
+            alert('✅ ' + itens.length + ' justificativa(s) recuperada(s) e enviada(s) para aprovação!');
+            if(typeof mostrarToast==='function') mostrarToast('✅ Migração concluída: '+itens.length+' justificativas enviadas.');
+          });
+        };
+      };
+    };
+    req.onerror = function() { alert('Erro ao acessar armazenamento local.'); };
+  };
 
   window.abrirJustifSingle = function(key, procEnc, cliEnc, tarefaEnc, statusStr){
     var proc=decodeURIComponent(procEnc);
@@ -9800,15 +10329,20 @@ document.addEventListener('DOMContentLoaded', function(){
     if(supabaseClient && numeroProcesso) {
       var sess = window.SESSAO || window.sessao || window.usuarioLogado || {};
       
-      supabaseClient
-        .from('justificativas')
-        .upsert({
+      var _payload2 = {
           numero_processo: numeroProcesso,
           justificativa_texto: textoCompleto,
           usuario_email: sess.email || '',
           usuario_nome: sess.nome || '',
           atualizado_em: new Date().toISOString()
-        }, { onConflict: 'numero_processo' })
+        };
+      if(window._supabaseColunasNovas) {
+        _payload2.status = 'pendente';
+        _payload2.equipe = grupo || sess.equipe || sess.grupo || '';
+      }
+      supabaseClient
+        .from('justificativas')
+        .upsert(_payload2, { onConflict: 'numero_processo' })
         .then(function(result){
           if(result.error) {
             console.log('❌ Erro ao salvar no Supabase:', result.error);
@@ -9954,7 +10488,7 @@ document.addEventListener('DOMContentLoaded', function(){
     var assunto=encodeURIComponent('[Controladoria] Justificativa de Prazos - '+nomeAdv+' - '+hoje);
     var bodyEnc=encodeURIComponent(corpo);
 
-    // Salva no Supabase e só abre o e-mail depois que tudo salvou
+    // Salva no Supabase antes de abrir o e-mail
     if(typeof _initSupabase==='function') _initSupabase();
     var promessas=[];
     if(typeof supabaseClient!=='undefined' && supabaseClient) {
@@ -9964,14 +10498,15 @@ document.addEventListener('DOMContentLoaded', function(){
         var tarefa=(r.descricao_tarefa||r.Descrição||r.descrição||r.Tarefa||r.tarefa||'').trim();
         var key='justif_'+btoa(unescape(encodeURIComponent(proc+'|'+tarefa))).replace(/[^a-zA-Z0-9]/g,'').slice(0,20);
         var justif=(window._mpJustif||{})[key]||'';
-        if(!justif || !proc) return;
+        if(!justif||!proc) return;
         promessas.push(
           supabaseClient.from('justificativas').upsert({
             numero_processo: proc,
             justificativa_texto: justif,
             usuario_email: sess.email||'',
             usuario_nome: sess.nome||sess.login||nomeAdv,
-            equipe: sess.equipe||'',
+            equipe: sess.equipe||r.grupo_processo||'',
+            status: 'pendente',
             atualizado_em: agora
           }, {onConflict:'numero_processo'})
         );
