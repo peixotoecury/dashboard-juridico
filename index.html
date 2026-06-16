@@ -3829,7 +3829,7 @@ async function carregarPrazosSupabase() {
 
     // Audiências da pauta (vindas do Supabase via sync_audiencias.py)
     const audSupa = todos.filter(r => (r.tipo_agenda||'').trim() === 'Audiência');
-    if (audSupa.length > 0 && (!S.aud || S.aud.length === 0)) {
+    if (audSupa.length > 0) {
       // Converte para o formato que getAdvAudiencia / renderFataisXAud esperam
       S.aud = audSupa.map(r => ({
         ...r,
