@@ -3912,6 +3912,18 @@ document.addEventListener('DOMContentLoaded', function(){
         S.aud = window._audSupa;
         console.log(`⚖️ S.aud final: ${S.aud.length} audiências do Supabase`);
       }
+      // Atualiza badge nc-aud após S.aud final estar definido
+      (function(){
+        const _hj3 = new Date().toISOString().slice(0,10);
+        const _sess3 = typeof getCurrentSession === 'function' ? getCurrentSession() : null;
+        const _mgr3 = _sess3 && typeof isManager === 'function' && isManager(_sess3);
+        let _cnt3 = S.aud.filter(r => (r.data||r['Data']||'').slice(0,10) === _hj3);
+        if (!_mgr3 && _sess3 && _sess3.nome) {
+          const _nome = (_sess3.nome||'').toLowerCase();
+          _cnt3 = _cnt3.filter(r => (r.responsavel||r['Advogado Responsável Audiência/SO']||'').toLowerCase() === _nome);
+        }
+        if (typeof n === 'function') n('nc-aud', _cnt3.length);
+      })();
       setTimeout(function(){
         if(typeof window.renderAll === 'function') window.renderAll();
         if(typeof window.renderMP  === 'function') window.renderMP();
