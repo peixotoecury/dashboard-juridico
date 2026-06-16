@@ -7289,8 +7289,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     const nav = document.querySelector('.nav');
     const logo = document.querySelector('.ll-logo-wrap .ll-brand') || document.querySelector('.ll-logo-wrap .lawgico-logo');
-    // nav-brand só para sidebar (role-manager/role-user), não para admin
-    if(nav && logo && !document.querySelector('.nav-brand') && _isAdm === false){
+    if(nav && logo && !document.querySelector('.nav-brand')){
       const img = logo.cloneNode(true);
       img.className = 'nav-brand';
       /* Reduz de 36px (login) para ~20px (nav) */
