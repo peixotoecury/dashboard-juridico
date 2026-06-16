@@ -3828,10 +3828,10 @@ async function carregarPrazosSupabase() {
     S.equipe  = todos.filter(r => (r.tipo_agenda||'').includes('Equipe'));
 
     // Audiências da pauta (vindas do Supabase via sync_audiencias.py)
+    // Salva em _audSupa — será aplicado em S.aud DEPOIS que carregarAudienciasGithub terminar
     const audSupa = todos.filter(r => (r.tipo_agenda||'').trim() === 'Audiência');
     if (audSupa.length > 0) {
-      // Converte para o formato que getAdvAudiencia / renderFataisXAud esperam
-      S.aud = audSupa.map(r => ({
+      window._audSupa = audSupa.map(r => ({
         ...r,
         'Data': r.data,
         'Advogado Responsável Audiência/SO': r.responsavel,
@@ -3841,7 +3841,7 @@ async function carregarPrazosSupabase() {
         'Parte Contrária': r.parte_contraria,
         'Processo': r.numero_processo,
       }));
-      console.log(`⚖️ Audiências Supabase: ${S.aud.length}`);
+      console.log(`⚖️ Audiências Supabase (buffer): ${window._audSupa.length}`);
     }
 
     window._supabaseCarregado = true; // impede IndexedDB de sobrescrever
@@ -3900,6 +3900,11 @@ document.addEventListener('DOMContentLoaded', function(){
       carregarPrazosSupabase(),
       carregarAudienciasGithub(true)
     ]).then(function(){
+      // Audiências do Supabase têm prioridade sobre GitHub
+      if (window._audSupa && window._audSupa.length > 0) {
+        S.aud = window._audSupa;
+        console.log(`⚖️ S.aud final: ${S.aud.length} audiências do Supabase`);
+      }
       setTimeout(function(){
         if(typeof window.renderAll === 'function') window.renderAll();
         if(typeof window.renderMP  === 'function') window.renderMP();
