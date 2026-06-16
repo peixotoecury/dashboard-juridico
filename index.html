@@ -4986,7 +4986,7 @@ window.salvarJustificativa = function(audId, texto, processo, grupoParam) {
         };
       supabaseClient
         .from('justificativas')
-        .upsert(_payload1, { onConflict: 'numero_processo' })
+        .insert(_payload1)
         .then(function(result){
           if(result.error) {
             console.log('❌ Erro ao salvar no Supabase:', result.error);
@@ -5251,16 +5251,23 @@ window.enviarReagendamento = function() {
   console.log('✉️ Email de reagendamento aberto para: ' + toAddr + (config.cc ? ' (cc: ' + config.cc + ')' : ''));
 
   // Salvar reagendamento no Supabase para controle dos gestores
+  // (usa max(id)+1 porque a sequência do PK ficou dessincronizada)
   _initSupabase();
   if(supabaseClient) {
     var sess = window.SESSAO || window.sessao || window.usuarioLogado || {};
-    supabaseClient.from('reagendamentos').insert({
-      processo: processo, reclamante: reclamante, responsavel: responsavel,
+    var _reag = { processo: processo, reclamante: reclamante, responsavel: responsavel,
       equipe: equipe, responsavel_reag: responsavelReag,
       data_atual: dataAtual, data_fatal: dataFatal, tipo_prazo: tipoPrazo,
       justificativa: justificativa, usuario_email: sess.email || '',
-      usuario_nome: sess.nome || sess.login || '', criado_em: new Date().toISOString()
-    }).then(function(r){ if(r.error) console.log('Erro ao registrar reagendamento:', r.error); else console.log('✅ Reagendamento registrado no Supabase'); });
+      usuario_nome: sess.nome || sess.login || '', criado_em: new Date().toISOString() };
+    supabaseClient.from('reagendamentos').select('id').order('id',{ascending:false}).limit(1)
+      .then(function(res){
+        var nextId = (res.data && res.data[0] ? res.data[0].id + 1 : 1000);
+        _reag.id = nextId;
+        return supabaseClient.from('reagendamentos').insert(_reag);
+      })
+      .then(function(r){ if(r && r.error) console.log('Erro ao registrar reagendamento:', r.error); else console.log('✅ Reagendamento registrado no Supabase'); })
+      .catch(function(e){ console.log('Erro reagendamento:', e); });
   }
 
   // Fechar modal após envio
