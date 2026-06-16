@@ -7279,12 +7279,7 @@ document.addEventListener('DOMContentLoaded', function(){
   function aplicarPerfilVisual(){
     const sess = getCurrentSession();
     document.body.classList.remove('role-manager','role-user');
-    // Admin/Controladoria fica sem classe de perfil (layout admin padrão, sem sidebar)
-    const _admLogin = ['controladoria','coord','antoniocarlos.aguiar','beatriz.rodrigues','bianca.camacho','gisela.freire','keyla.moraes','marcel.alves','marina.brechiani','natalia.gaggini','nicolau.coelho','poliana.banqueri','rafael.camargo','sofia.freire','washington.soares'];
-    const _isAdm = sess && (sess.nivel === 'admin' || _admLogin.includes((sess.login||'').toLowerCase()));
-    if (!_isAdm) {
-      document.body.classList.add(isManager(sess) ? 'role-manager' : 'role-user');
-    }
+    document.body.classList.add(isManager(sess) ? 'role-manager' : 'role-user');
 
     const nome = (sess && (sess.nome || sess.login)) || 'Usuário';
     const hello = document.getElementById('userHello');
