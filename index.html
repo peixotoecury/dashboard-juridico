@@ -3718,7 +3718,8 @@ async function carregarAudienciasGithub(silencioso) {
       if (S.cancel) localStorage.setItem('pc_cancel', JSON.stringify(S.cancel));
     } catch(e) {}
 
-    n('nc-aud', S.aud.length);
+    const _hj = new Date().toISOString().slice(0,10);
+    n('nc-aud', S.aud.filter(r=>(r.data||r['Data']||'').slice(0,10)===_hj).length);
     n('nc-cancel', (S.cancel||[]).length);
     if (typeof popAud       === 'function') popAud();
     if (typeof popCancel    === 'function') popCancel();
@@ -4087,7 +4088,8 @@ function loadAudiencias(inp) {
       } catch(e) { console.warn('⚠️ localStorage cheio ou desativado'); }
       
       V('uf2n').textContent=f.name; V('uf2').classList.add('loaded');
-      n('nc-aud', S.aud.length); n('nc-cancel', S.cancel.length);
+      const _hj2 = new Date().toISOString().slice(0,10);
+      n('nc-aud', S.aud.filter(r=>(r.data||r['Data']||'').slice(0,10)===_hj2).length); n('nc-cancel', S.cancel.length);
       popAud(); popCancel();
       renderAudDet(); renderCancel();
       updateCards(applyGF(S.prazos), applyGF(S.agendas));
