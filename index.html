@@ -3798,7 +3798,7 @@ async function carregarPrazosSupabase() {
       const nPags = Math.ceil(total / PAG);
       const results = await Promise.all(
         Array.from({length: nPags}, (_, i) =>
-          fetch(`${SUPA_URL}/rest/v1/prazos_agendas?select=${COLS}&order=data.asc&limit=${PAG}&offset=${i*PAG}`, { headers: HDR })
+          fetch(`${SUPA_URL}/rest/v1/prazos_agendas?select=${COLS}&order=id.asc&limit=${PAG}&offset=${i*PAG}`, { headers: HDR })
             .then(r => r.ok ? r.json() : Promise.reject(`Supabase ${r.status}`))
         )
       );
@@ -3808,7 +3808,7 @@ async function carregarPrazosSupabase() {
       todos = [];
       let offset = 0;
       while(true) {
-        const r = await fetch(`${SUPA_URL}/rest/v1/prazos_agendas?select=${COLS}&order=data.asc&limit=${PAG}&offset=${offset}`, { headers: HDR });
+        const r = await fetch(`${SUPA_URL}/rest/v1/prazos_agendas?select=${COLS}&order=id.asc&limit=${PAG}&offset=${offset}`, { headers: HDR });
         if (!r.ok) throw new Error(`Supabase ${r.status}`);
         const lote = await r.json();
         todos = todos.concat(lote);
