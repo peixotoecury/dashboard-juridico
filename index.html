@@ -10402,12 +10402,10 @@ document.addEventListener('DOMContentLoaded', function(){
           justificativa_texto: textoCompleto,
           usuario_email: sess.email || '',
           usuario_nome: sess.nome || '',
-          atualizado_em: new Date().toISOString()
+          atualizado_em: new Date().toISOString(),
+          status: 'pendente',
+          equipe: grupo || sess.equipe || sess.grupo || ''
         };
-      if(window._supabaseColunasNovas) {
-        _payload2.status = 'pendente';
-        _payload2.equipe = grupo || sess.equipe || sess.grupo || '';
-      }
       supabaseClient
         .from('justificativas')
         .upsert(_payload2, { onConflict: 'numero_processo' })
