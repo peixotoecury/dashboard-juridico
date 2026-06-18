@@ -3946,11 +3946,14 @@ document.addEventListener('DOMContentLoaded', function(){
 });
 
 // ✅ CARREGAR JUSTIFICATIVAS DO SUPABASE
-function carregarJustificativasSupabase(){
+function carregarJustificativasSupabase(tentativa){
+  tentativa = (tentativa || 0);
   try {
+    _initSupabase();
     if(typeof supabaseClient === 'undefined' || !supabaseClient) {
-      console.log('⏳ Supabase ainda não inicializou');
-      setTimeout(carregarJustificativasSupabase, 500);
+      if(tentativa >= 12) { console.log('⚠️ Supabase não inicializou após 6s — desistindo de carregar justificativas'); return; }
+      console.log('⏳ Supabase ainda não inicializou (tentativa ' + (tentativa+1) + ')');
+      setTimeout(function(){ carregarJustificativasSupabase(tentativa+1); }, 500);
       return;
     }
     
@@ -4971,6 +4974,7 @@ window.salvarJustificativa = function(audId, texto, processo, grupoParam) {
   }
   
   // ✅ SALVAR NO SUPABASE TAMBÉM
+  _initSupabase();
   if(typeof supabaseClient !== 'undefined' && supabaseClient && processo) {
     try {
       var sess = window.SESSAO || window.sessao || window.usuarioLogado || {};
@@ -4986,17 +4990,23 @@ window.salvarJustificativa = function(audId, texto, processo, grupoParam) {
         };
       supabaseClient
         .from('justificativas')
-        .insert(_payload1)
+        .update(_payload1)
+        .eq('numero_processo', processo)
+        .select()
+        .then(function(upd){
+          if(upd.error || !upd.data || upd.data.length === 0) {
+            return supabaseClient.from('justificativas').insert([_payload1]);
+          }
+          return upd;
+        })
         .then(function(result){
-          if(result.error) {
-            console.log('❌ Erro ao salvar no Supabase:', result.error);
+          if(result && result.error) {
+            console.log('❌ Erro ao salvar justificativa no Supabase:', result.error);
           } else {
             console.log('✅ Justificativa salva no Supabase (pendente aprovação)');
           }
         })
-        .catch(function(err){
-          console.log('Erro Supabase:', err);
-        });
+        .catch(function(err){ console.log('Erro Supabase:', err); });
     } catch(e) {
       console.log('Erro ao processar justificativa:', e);
     }
@@ -5084,7 +5094,13 @@ window.enviarEmailJustificativa = function(processo, grupo, campo6, campo4, camp
   mailto += (config.cc ? '&' : '?') + 'subject=' + encodeURIComponent(assunto);
   mailto += '&body=' + encodeURIComponent(corpo);
 
-  window.location.href = mailto;
+  var link = document.createElement('a');
+  link.href = mailto;
+  link.target = '_blank';
+  link.style.display = 'none';
+  document.body.appendChild(link);
+  link.click();
+  setTimeout(function(){ document.body.removeChild(link); }, 500);
   console.log('✉️ Email de justificativa aberto para: ' + toAddr + (config.cc ? ' (cc: ' + config.cc + ')' : ''));
 };
 
@@ -5793,11 +5809,7 @@ function renderFatais() {
   }).join(''):emptyR(7);
   renderPg('pg-fatal',pg,pages,total,'fatal',renderFatais);
   carregarTodasJustificativas();
-  // Carrega status do Supabase apenas na primeira vez ou após mudança
-  if(!window._justifSupabaseCarregado) {
-    window._justifSupabaseCarregado = true;
-    carregarJustificativasDoSupabase();
-  }
+  carregarJustificativasDoSupabase();
 }
 
 function abrirFormReagendamento(processo, responsavel) {
@@ -6275,6 +6287,18 @@ setTimeout(async function(){
     if(_ch3){ try{localStorage.setItem(SNAP_KEY,JSON.stringify(snapshots));}catch(e){} try{renderEvolucao();}catch(e){} }
   } catch(e) {}
 }, 7000);
+// Resync periódico de snapshots entre máquinas (a cada 3 min)
+setInterval(async function(){
+  try {
+    var _d4 = new Date().toISOString().slice(0,10);
+    var _res4 = await fetch('https://kgyeeuynerhpaqlhqwkx.supabase.co/rest/v1/base_planilha?id=in.(300000,300001,300002)&select=dados',{headers:{'apikey':'sb_publishable_MdUFFFJ5xRqiQysyxlWHFA_yk_LsknZ','Authorization':'Bearer sb_publishable_MdUFFFJ5xRqiQysyxlWHFA_yk_LsknZ'}});
+    var _rows4 = await _res4.json();
+    var _ch4 = false;
+    (_rows4||[]).forEach(function(row){ var d=row.dados; if(d&&d.tipo==='__snapshot__'&&d.snap_data===_d4&&d.hora&&d.snapshot_data&&!snapshots[d.hora]){ snapshots[d.hora]=d.snapshot_data; _ch4=true; } });
+    if(_ch4){ try{localStorage.setItem(SNAP_KEY,JSON.stringify(snapshots));}catch(e){} try{renderEvolucao();}catch(e){} }
+  } catch(e) {}
+}, 3 * 60 * 1000);
+
 // Sincroniza snapshots do Supabase entre máquinas (carrega após 6s)
 setTimeout(async function(){
   if (!window.supabaseClient) return;
@@ -6848,7 +6872,7 @@ const USUARIOS = {
   'sofia.freire': { senha: '123456', nivel: 'admin', nome: 'Sofia Freire', sigla: 'SOF' },
   'thais.esteves': { senha: 'pc@tce', nivel: 'usuario', nome: 'Thais Catharine Cardozo Esteves', sigla: 'TCE' },
   'tamara.marcilio': { senha: 'pc@tsm', nivel: 'usuario', nome: 'Tamara Silva Marcílio', sigla: 'TSM' },
-  'tamireslins.costa': { senha: 'pc@tco', nivel: 'usuario', nome: 'Tamires Lins Costa', sigla: 'TCO' },
+  'tamires.lins': { senha: 'pc@tco', nivel: 'usuario', nome: 'Tamires Lins Costa', sigla: 'TCO' },
   'thiago.rossi': { senha: 'pc@tfr', nivel: 'usuario', nome: 'Thiago Frid Figueiredo Rossi', sigla: 'TFR' },
   'tabata.caramelli': { senha: 'pc@tne', nivel: 'usuario', nome: 'Tabata Neves Caramelli', sigla: 'TNE' },
   'vitoria.carvalho': { senha: 'pc@var', nivel: 'usuario', nome: 'Vitoria Araujo Carvalho', sigla: 'VAR' },
@@ -7470,9 +7494,9 @@ document.addEventListener('DOMContentLoaded', function(){
 
     const fields = mode === 'audiencia'
       ? [
-          pick(row,['Advogado Responsável Audiência/SO','Advogado Responsável Audiência','responsavel_audiencia','Responsável Audiência','responsavel pela audiencia','Responsável pela Audiência']),
-          pick(row,['advogado_audiencia','Advogado Audiência','advogado que fará','advogado_designado']),
-          pick(row,['quem_faz','Quem faz','profissional_audiencia','Profissional Audiência']),
+          pick(row,['Advogado Responsável Audiência/SO','Advogado Responsável Audiência','responsavel_audiencia','Responsável Audiência','responsavel pela audiencia','Responsável pela Audiência','Adv. Audiência','adv_audiencia','Advogado Audiência/SO']),
+          pick(row,['Advogado Responsável Preparo/Análise','Adv. Preparo','advogado_audiencia','Advogado Audiência','advogado que fará','advogado_designado','advogado_preparo']),
+          pick(row,['quem_faz','Quem faz','profissional_audiencia','Profissional Audiência','Equipe responsável','Equipe']),
           pick(row,['advogado','Advogado','responsavel','Responsável'])
         ]
       : [
@@ -7586,6 +7610,19 @@ document.addEventListener('DOMContentLoaded', function(){
     }
 
     const d = dataMP();
+    // Ordenar: Fatal/Vencido primeiro, depois D-1, D-2, Futuro — dentro de cada status por data ASC
+    const _mpStOrd = { Vencido: 0, Fatal: 1, 'D-1': 2, 'D-2': 3, Futuro: 4 };
+    function _mpSort(arr) {
+      return arr.slice().sort((a, b) => {
+        const sa = _mpStOrd[a.status || ''] ?? 5, sb = _mpStOrd[b.status || ''] ?? 5;
+        if (sa !== sb) return sa - sb;
+        const da = a.data || a['Data'] || '', db = b.data || b['Data'] || '';
+        return da < db ? -1 : da > db ? 1 : 0;
+      });
+    }
+    d.prazos   = _mpSort(d.prazos);
+    d.agendas  = _mpSort(d.agendas);
+    d.equipe   = _mpSort(d.equipe);
     const total = d.prazos.length + d.agendas.length + d.equipe.length + d.audiencias.length;
 
     set('mp-only-k-prazos', d.prazos.length);
@@ -7901,7 +7938,7 @@ document.addEventListener('DOMContentLoaded', function(){
     const login = low(s.login || s.usuario || s.nome);
     return (
       ['admin','gerencial','gestor','gestora','manager','coord','coordenador','coordenadora','socio','sócio','controladoria'].includes(perfil) ||
-      ['controladoria','coord','coordenador','coordenadora','socio','sócio','antoniocarlos.aguiar','beatriz.rodrigues','bianca.camacho','gisela.freire','keyla.moraes','marcel.alves','marina.brechiani','natalia.gaggini','poliana.banqueri','sofia.freire','washington.soares'].includes(login)
+      ['controladoria','coord','coordenador','coordenadora','socio','sócio','antoniocarlos.aguiar','beatriz.rodrigues','bianca.camacho','gisela.freire','keyla.moraes','marcel.alves','marina.brechiani','natalia.gaggini','nicolau.coelho','poliana.banqueri','sofia.freire','washington.soares'].includes(login)
     );
   }
 
@@ -8024,10 +8061,20 @@ document.addEventListener('DOMContentLoaded', function(){
       return matchesUsuario(row, 'audiencia');
     }
 
+    const _stOrdMP = { Vencido: 0, Fatal: 1, 'D-1': 2, 'D-2': 3, Futuro: 4 };
+    function sortMP(arr) {
+      return arr.slice().sort((a, b) => {
+        const sa = _stOrdMP[status(a)] ?? 5, sb = _stOrdMP[status(b)] ?? 5;
+        if (sa !== sb) return sa - sb;
+        const ma = (a.matricula || a.responsavel || '').toLowerCase();
+        const mb = (b.matricula || b.responsavel || '').toLowerCase();
+        return ma < mb ? -1 : ma > mb ? 1 : 0;
+      });
+    }
     return {
-      prazos:     d.prazos.filter(r => matchBase(r)),
-      agendas:    d.agendas.filter(r => matchBase(r)),
-      equipe:     d.equipe.filter(r => matchBase(r)),
+      prazos:     sortMP(d.prazos.filter(r => matchBase(r))),
+      agendas:    sortMP(d.agendas.filter(r => matchBase(r))),
+      equipe:     sortMP(d.equipe.filter(r => matchBase(r))),
       audiencias: d.aud.filter(r => matchAud(r) && (function(){var v=r['Data']||r['data']||'';if(!v)return true;var d2=new Date(String(v).slice(0,10)+'T00:00:00');var hoje=new Date();hoje.setHours(0,0,0,0);return !isNaN(d2)&&d2>=hoje;}()))
     };
   }
@@ -9139,6 +9186,18 @@ window._gerarExcelFormatado = async function(registros, nomeArquivo, reagendamen
     cell.fill      = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FF156082' } };
     cell.alignment = { horizontal: 'left', vertical: 'middle' };
     cell.border    = { top:{style:'thin',color:{argb:'FF156082'}}, left:{style:'thin',color:{argb:'FF156082'}}, bottom:{style:'thin',color:{argb:'FF156082'}}, right:{style:'thin',color:{argb:'FF156082'}} };
+  });
+
+  // Ordenar: Vencido → Fatal → D-1 → D-2 → Futuro, depois data ASC, depois matricula A→Z
+  const _stOrd = { Vencido: 0, Fatal: 1, 'D-1': 2, 'D-2': 3, Futuro: 4 };
+  registros = registros.slice().sort((a, b) => {
+    const sa = _stOrd[a.status] ?? 5, sb = _stOrd[b.status] ?? 5;
+    if (sa !== sb) return sa - sb;
+    const da = a.data || a['Data'] || '', db = b.data || b['Data'] || '';
+    if (da !== db) return da < db ? -1 : 1;
+    const ma = (a.matricula || a.responsavel || '').toLowerCase();
+    const mb = (b.matricula || b.responsavel || '').toLowerCase();
+    return ma < mb ? -1 : ma > mb ? 1 : 0;
   });
 
   // Linhas de dados — todas as colunas do LM, com justificativa do Supabase
@@ -10371,25 +10430,29 @@ document.addEventListener('DOMContentLoaded', function(){
           justificativa_texto: textoCompleto,
           usuario_email: sess.email || '',
           usuario_nome: sess.nome || '',
-          atualizado_em: new Date().toISOString()
+          atualizado_em: new Date().toISOString(),
+          status: 'pendente',
+          equipe: grupo || sess.equipe || sess.grupo || ''
         };
-      if(window._supabaseColunasNovas) {
-        _payload2.status = 'pendente';
-        _payload2.equipe = grupo || sess.equipe || sess.grupo || '';
-      }
       supabaseClient
         .from('justificativas')
-        .upsert(_payload2, { onConflict: 'numero_processo' })
+        .update(_payload2)
+        .eq('numero_processo', numeroProcesso)
+        .select()
+        .then(function(upd){
+          if(upd.error || !upd.data || upd.data.length === 0) {
+            return supabaseClient.from('justificativas').insert([_payload2]);
+          }
+          return upd;
+        })
         .then(function(result){
-          if(result.error) {
-            console.log('❌ Erro ao salvar no Supabase:', result.error);
+          if(result && result.error) {
+            console.log('❌ Erro ao salvar justificativa no Supabase:', result.error);
           } else {
             console.log('✅ Justificativa salva no Supabase para processo:', numeroProcesso);
           }
         })
-        .catch(function(err){
-          console.log('Erro Supabase:', err);
-        });
+        .catch(function(err){ console.log('Erro Supabase:', err); });
     }
     
     // ✅ ENVIAR EMAIL
@@ -10423,41 +10486,49 @@ document.addEventListener('DOMContentLoaded', function(){
     var old=document.getElementById('modal-justif-bulk');
     if(old) old.remove();
     function fmtD(v){var _s=String(v||'');var _m=_s.match(/^(\d{4})-(\d{2})-(\d{2})/);if(_m)return _m[3]+'/'+_m[2]+'/'+_m[1];try{var d=new Date(v);if(isNaN(d))return _s;return d.toLocaleDateString('pt-BR');}catch(e){return _s;}}
-    var rowsHTML=fataisVenc.map(function(r,i){
+    var rowsHTML=fataisVenc.map(function(r){
       var proc=(r.numero_processo||r['Número do Processo']||r.Processo||r.processo||'').trim();
       var cli=(r.cliente||r.Cliente||'').trim();
       var tarefa=(r.descricao_tarefa||r.Descrição||r.descrição||r.Tarefa||r.tarefa||'').trim();
       var data=fmtD(r.data||r.Data||r.prazo||r.Prazo);
       var s=(r.status||'').trim();
-      var key='justif_'+btoa(unescape(encodeURIComponent(proc+'|'+tarefa))).replace(/[^a-zA-Z0-9]/g,'').slice(0,20);
-      var salvo=window._mpJustif[key]||'';
-      return '<div style="border:1px solid #f0d0d0;border-radius:9px;padding:13px 15px;margin-bottom:10px;background:'+(salvo?'#f5fff8':'#fff8f8')+';">'
-        +'<div style="display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:7px;flex-wrap:wrap;">'
-        +'<div><span style="font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;background:'+(s==='Fatal'?'#fdecea':'#fff3e0')+';color:'+(s==='Fatal'?'#c62828':'#e07a1f')+';">'+s+'</span>'
-        +'<strong style="font-size:12px;color:#1a2d3a;margin-left:8px;">'+(proc||'—')+'</strong>'
-        +(cli?'<span style="font-size:11px;color:#607c8e;"> — '+cli+'</span>':'')+'</div>'
-        +'<span style="font-size:10px;color:#90a4ae;">'+data+'</span></div>'
-        +(tarefa?'<div style="font-size:10.5px;color:#607c8e;margin-bottom:7px;">📌 '+tarefa+'</div>':'')
-        +'<textarea id="justif-bulk-'+key+'" rows="2" placeholder="Informe o motivo / status do cumprimento..." style="width:100%;border:1.5px solid '+(salvo?'#a8d5b5':'#f0c0c0')+';border-radius:7px;padding:8px 10px;font-family:inherit;font-size:11.5px;color:#1b2c38;resize:vertical;outline:none;box-sizing:border-box;">'+salvo+'</textarea></div>';
+      var key='justif_'+btoa(unescape(encodeURIComponent(proc))).replace(/[^a-zA-Z0-9]/g,'').slice(0,20);
+      var grupo=r.grupo_processo||r['Grupo Processo']||'';
+      var procEnc=encodeURIComponent(proc);
+      var cliEnc=encodeURIComponent(cli);
+      var tarefaEnc=encodeURIComponent(tarefa);
+      var temJust=!!(window._mpJustif&&window._mpJustif[key]);
+      return '<div style="border:1px solid '+(temJust?'#a8d5b5':'#f0c0c0')+';border-radius:9px;padding:12px 15px;margin-bottom:10px;background:'+(temJust?'#f5fff8':'#fff8f8')+';display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;">'
+        +'<div style="flex:1;min-width:0;">'
+        +'<div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:4px;">'
+        +'<span style="font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;background:'+(s==='Fatal'?'#fdecea':'#fff3e0')+';color:'+(s==='Fatal'?'#c62828':'#e07a1f')+';">'+s+'</span>'
+        +'<strong style="font-size:12px;color:#1a2d3a;">'+(proc||'—')+'</strong>'
+        +(cli?'<span style="font-size:11px;color:#607c8e;">— '+cli+'</span>':'')
+        +'<span style="font-size:10px;color:#90a4ae;">'+data+'</span>'
+        +'</div>'
+        +(tarefa?'<div style="font-size:10.5px;color:#607c8e;">📌 '+tarefa+'</div>':'')
+        +(temJust?'<div style="font-size:10px;color:#2d7d46;margin-top:4px;font-weight:600;">✅ Justificativa preenchida</div>':'<div style="font-size:10px;color:#c62828;margin-top:4px;">🔴 Sem justificativa</div>')
+        +'</div>'
+        +'<button onclick="document.getElementById(\'modal-justif-bulk\').remove();abrirJustifSingle(\''+key+'\',\''+procEnc+'\',\''+cliEnc+'\',\''+tarefaEnc+'\',\''+s+'\')" '
+        +'style="flex-shrink:0;font-size:11px;font-weight:600;padding:7px 14px;border:none;border-radius:6px;background:'+(temJust?'#2d7d46':'#c62828')+';color:#fff;cursor:pointer;white-space:nowrap;">'
+        +(temJust?'✏️ Editar':'🔴 Justificar')+'</button>'
+        +'</div>';
     }).join('');
     var modal=document.createElement('div');
     modal.id='modal-justif-bulk';
     modal.style.cssText='position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:9999;display:flex;align-items:center;justify-content:center;padding:16px;';
-    modal.innerHTML='<div style="background:#fff;border-radius:14px;width:100%;max-width:640px;max-height:90vh;display:flex;flex-direction:column;box-shadow:0 20px 60px rgba(0,0,0,.28);overflow:hidden;">'
+    modal.innerHTML='<div style="background:#fff;border-radius:14px;width:100%;max-width:660px;max-height:90vh;display:flex;flex-direction:column;box-shadow:0 20px 60px rgba(0,0,0,.28);overflow:hidden;">'
       +'<div style="background:linear-gradient(90deg,#7b0000,#c62828);padding:16px 22px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0;">'
       +'<div><div style="color:#fff;font-size:14px;font-weight:600;">📨 Justificativas — Prazos Fatais e Vencidos</div>'
       +'<div style="color:rgba(255,255,255,.7);font-size:11px;margin-top:3px;">'+nomeAdv+' · '+fataisVenc.length+' prazo(s)</div></div>'
-      +'<button onclick="document.getElementById(\"modal-justif-bulk\").remove()" style="background:rgba(255,255,255,.15);border:none;color:#fff;border-radius:7px;padding:5px 12px;cursor:pointer;font-size:13px;">✕</button></div>'
+      +'<button onclick="document.getElementById(\'modal-justif-bulk\').remove()" style="background:rgba(255,255,255,.15);border:none;color:#fff;border-radius:7px;padding:5px 12px;cursor:pointer;font-size:13px;">✕</button></div>'
       +'<div style="padding:16px 22px;overflow-y:auto;flex:1;">'
-      +'<div style="font-size:11px;color:#607c8e;background:#f0f7fb;border-radius:7px;padding:9px 13px;margin-bottom:14px;">📋 Preencha a justificativa de cada prazo. Ao clicar em <strong>Enviar por e-mail</strong>, seu cliente de e-mail abrirá com o resumo para a Controladoria.</div>'
+      +'<div style="font-size:11px;color:#607c8e;background:#f0f7fb;border-radius:7px;padding:9px 13px;margin-bottom:14px;">📋 Clique em <strong>Justificar</strong> em cada processo para preencher o formulário individual.</div>'
       +rowsHTML
-      +'<div style="margin-top:10px;"><label style="font-size:11px;font-weight:600;color:#37474f;display:block;margin-bottom:5px;">📧 Destinatário (Controladoria)</label>'
-      +'<input id="justif-email-dest" type="email" value="prazos@peixotoecury.com.br" style="width:100%;border:1.5px solid #bfd6e2;border-radius:7px;padding:8px 12px;font-family:inherit;font-size:12px;color:#1b2c38;outline:none;box-sizing:border-box;">'
-      +'<div style="font-size:9.5px;color:#90a4ae;margin-top:4px;">Você pode editar o endereço antes de enviar.</div></div></div>'
-      +'<div style="padding:14px 22px;border-top:1px solid #eee;display:flex;gap:10px;justify-content:flex-end;flex-shrink:0;flex-wrap:wrap;">'
-      +'<button onclick="document.getElementById(\"modal-justif-bulk\").remove()" style="background:transparent;border:1px solid #dde8ee;border-radius:7px;padding:9px 16px;font-family:inherit;font-size:12px;color:#607c8e;cursor:pointer;">Cancelar</button>'
-      +'<button onclick="salvarTodasJustif()" style="background:#2d7d46;color:#fff;border:none;border-radius:7px;padding:9px 16px;font-family:inherit;font-size:12px;font-weight:600;cursor:pointer;">💾 Só salvar</button>'
-      +'<button onclick="enviarEmailJustif()" style="background:#c62828;color:#fff;border:none;border-radius:7px;padding:9px 18px;font-family:inherit;font-size:12px;font-weight:600;cursor:pointer;">📤 Enviar por e-mail</button></div></div>';
+      +'</div>'
+      +'<div style="padding:14px 22px;border-top:1px solid #eee;display:flex;justify-content:flex-end;flex-shrink:0;">'
+      +'<button onclick="document.getElementById(\'modal-justif-bulk\').remove()" style="background:transparent;border:1px solid #dde8ee;border-radius:7px;padding:9px 16px;font-family:inherit;font-size:12px;color:#607c8e;cursor:pointer;">Fechar</button>'
+      +'</div></div>';
     document.body.appendChild(modal);
   };
 
