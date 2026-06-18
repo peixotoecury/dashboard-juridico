@@ -5721,8 +5721,8 @@ window.carregarJustificativasDoSupabase = function() {
           };
         }
       });
-      // Re-renderiza a tabela com os status atualizados
-      if(typeof renderFatais === 'function') renderFatais();
+      // Atualiza apenas os botões já renderizados (sem re-renderizar a tabela)
+      if(typeof carregarTodasJustificativas === 'function') carregarTodasJustificativas();
     });
 };
 
