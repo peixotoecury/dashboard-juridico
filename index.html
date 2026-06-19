@@ -3867,7 +3867,11 @@ async function carregarPrazosSupabase() {
     } catch(e) {}
 
     // Atualiza badge de atualização + banner de dado desatualizado
-    const tsUltimo = todos[0]?.atualizado_em ? new Date(todos[0].atualizado_em) : null;
+    // Usa MAX(atualizado_em) dos prazos — audiências e perícias antigas não distorcem o timestamp
+    const somentePrazos = todos.filter(r => (r.tipo_agenda||'').trim() === 'Prazo');
+    const tsRef = somentePrazos.length ? somentePrazos : todos;
+    const maxTs = tsRef.reduce((mx, r) => r.atualizado_em > mx ? r.atualizado_em : mx, '');
+    const tsUltimo = maxTs ? new Date(maxTs) : null;
     const atualizado = tsUltimo ? tsUltimo.toLocaleString('pt-BR') : new Date().toLocaleString('pt-BR');
     document.querySelectorAll('.upload-date, #upload-date, [id*="upload"]').forEach(el => {
       if(el.tagName !== 'INPUT') el.textContent = 'Atualizado: ' + atualizado;
