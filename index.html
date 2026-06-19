@@ -9266,16 +9266,27 @@ window._gerarExcelFormatado = async function(registros, nomeArquivo, reagendamen
 
   // Aba de Justificativas (se fornecida)
   if (justRows && justRows.length) {
+    // Mapa numero_processo → status do prazo (de S.prazos + S.agendas + S.equipe)
+    const _statusPrazoMap = {};
+    const _allRows = [...(S.prazos||[]), ...(S.agendas||[]), ...(S.equipe||[])];
+    _allRows.forEach(function(p) {
+      const np = (p.numero_processo || p['Processo'] || '').trim();
+      if (np && p.status) _statusPrazoMap[np] = p.status;
+    });
+
+    const _statusFillJ = { 'Fatal':'FFFF0000','Vencido':'FFFF6B6B','D-1':'FFFF8C00','D-2':'FFFFF2CC','Futuro':'FF92D050' };
+
     const wsJ = wb.addWorksheet('Justificativas');
     wsJ.columns = [
-      { header: 'Processo',       key: 'numero_processo',    width: 30 },
-      { header: 'Justificativa',  key: 'justificativa_texto',width: 60 },
-      { header: 'Status',         key: 'status',             width: 14 },
-      { header: 'Enviado por',    key: 'usuario_nome',       width: 30 },
-      { header: 'Gestor',         key: 'gestor_nome',        width: 30 },
-      { header: 'Aprovado em',    key: 'aprovado_em',        width: 18 },
-      { header: 'Motivo rejeição',key: 'motivo_rejeicao',    width: 40 },
-      { header: 'Atualizado em',  key: 'atualizado_em',      width: 18 }
+      { header: 'Processo',        key: 'numero_processo',    width: 30 },
+      { header: 'Status do Prazo', key: 'status_prazo',       width: 14 },
+      { header: 'Justificativa',   key: 'justificativa_texto',width: 60 },
+      { header: 'Status Aprovação',key: 'status',             width: 16 },
+      { header: 'Enviado por',     key: 'usuario_nome',       width: 30 },
+      { header: 'Gestor',          key: 'gestor_nome',        width: 30 },
+      { header: 'Aprovado em',     key: 'aprovado_em',        width: 18 },
+      { header: 'Motivo rejeição', key: 'motivo_rejeicao',    width: 40 },
+      { header: 'Atualizado em',   key: 'atualizado_em',      width: 18 }
     ];
     const hJ = wsJ.getRow(1);
     hJ.height = 14.4;
@@ -9284,9 +9295,18 @@ window._gerarExcelFormatado = async function(registros, nomeArquivo, reagendamen
       cell.fill      = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FF156082' } };
       cell.alignment = { horizontal: 'left', vertical: 'middle' };
     });
-    justRows.forEach(function(r) {
+    // Ordena: Fatal primeiro, depois D-1, Vencido, Futuro, resto
+    const _ordJ = { 'Fatal':0, 'D-1':1, 'Vencido':2, 'D-2':3, 'Futuro':4 };
+    const justSorted = justRows.slice().sort(function(a, b) {
+      const sa = _ordJ[_statusPrazoMap[a.numero_processo]] ?? 9;
+      const sb = _ordJ[_statusPrazoMap[b.numero_processo]] ?? 9;
+      return sa - sb;
+    });
+    justSorted.forEach(function(r) {
+      const statusPrazo = _statusPrazoMap[(r.numero_processo||'').trim()] || '';
       const row = wsJ.addRow({
         numero_processo:    r.numero_processo    || '',
+        status_prazo:       statusPrazo,
         justificativa_texto:r.justificativa_texto|| '',
         status:             r.status             || '',
         usuario_nome:       r.usuario_nome       || '',
@@ -9297,6 +9317,12 @@ window._gerarExcelFormatado = async function(registros, nomeArquivo, reagendamen
       });
       row.height = 14.4;
       row.font = { name: 'Aptos Narrow', size: 11 };
+      // Colore célula "Status do Prazo"
+      if (statusPrazo && _statusFillJ[statusPrazo]) {
+        const sc = row.getCell('status_prazo');
+        sc.fill = { type: 'pattern', pattern: 'solid', fgColor: { argb: _statusFillJ[statusPrazo] } };
+        sc.font = { name: 'Aptos Narrow', size: 11, bold: true };
+      }
     });
     wsJ.views = [{ state: 'frozen', xSplit: 0, ySplit: 1, topLeftCell: 'A2', activeCell: 'A2' }];
     wsJ.autoFilter = { from: { row: 1, column: 1 }, to: { row: 1, column: 9 } };
