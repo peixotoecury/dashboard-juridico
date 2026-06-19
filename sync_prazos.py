@@ -60,9 +60,11 @@ def ler_excel():
         except:
             pass
 
-        # Ignora pastas encerradas
+        # Ignora pastas encerradas, EXCETO agendas (Ciência de publicação, etc. precisam ser cumpridas mesmo após encerramento)
         if str(r.get("situacao_pasta") or "").strip().lower() == "encerrado":
-            continue
+            tipo_agenda = str(r.get("tipo_agenda") or "").strip()
+            if "Agenda" not in tipo_agenda:
+                continue
 
         # Filtra apenas area TRABALHISTA
         area = str(r.get("area") or "").strip().upper()
