@@ -60,10 +60,16 @@ def ler_excel():
         except:
             pass
 
-        # Ignora pastas encerradas, EXCETO agendas (Ciência de publicação, etc. precisam ser cumpridas mesmo após encerramento)
+        # Pastas encerradas: inclui agendas sempre + prazos só se data >= hoje (Fatal/D-1/Futuro)
+        # Prazos vencidos de encerrados são descartados
         if str(r.get("situacao_pasta") or "").strip().lower() == "encerrado":
             tipo_agenda = str(r.get("tipo_agenda") or "").strip()
-            if "Agenda" not in tipo_agenda:
+            try:
+                data_enc = datetime.strptime(data_iso, "%Y-%m-%d").date()
+                eh_futuro = data_enc >= hoje  # Fatal (hoje) ou D-1/Futuro (futuro)
+            except:
+                eh_futuro = False
+            if "Agenda" not in tipo_agenda and not eh_futuro:
                 continue
 
         # Filtra apenas area TRABALHISTA
