@@ -5445,6 +5445,24 @@ window.enviarTransferencia = function(proc, cli, respAtual, tipo) {
   link.click();
   setTimeout(function(){ if(link.parentNode) link.parentNode.removeChild(link); }, 500);
 
+  // Salva no Supabase para histórico e export Excel
+  _initSupabase();
+  if(supabaseClient) {
+    var sess = window.SESSAO || window.sessao || window.usuarioLogado || {};
+    supabaseClient.from('transferencias').insert([{
+      numero_processo:      proc || '',
+      cliente:              cli || '',
+      tipo:                 tipoLabel,
+      responsavel_anterior: respAtual || '',
+      novo_responsavel:     novoNome,
+      novo_responsavel_email: novoEmail,
+      motivo:               motivo,
+      usuario_nome:         sess.nome || '',
+      usuario_email:        sess.email || '',
+      criado_em:            new Date().toISOString()
+    }]).then(function(r){ if(r.error) console.warn('Transferência Supabase:', r.error); });
+  }
+
   setTimeout(function(){
     var m = document.getElementById('modal-transferencia');
     if(m) m.remove();
@@ -6707,17 +6725,19 @@ async function exportarExcel() {
   }
   if (!registrosBrutos.length) { alert('Nenhum dado para exportar.'); return; }
 
-  // Busca justificativas e reagendamentos do Supabase antes de gerar
+  // Busca justificativas, reagendamentos e transferências do Supabase antes de gerar
   _initSupabase();
   var _justMap = {};
   var _reagRows = [];
   var _justRows = [];
+  var _transfRows = [];
   if (supabaseClient) {
     try {
       V('ov').style.display = 'flex';
-      const [jRes, rRes] = await Promise.all([
+      const [jRes, rRes, tRes] = await Promise.all([
         supabaseClient.from('justificativas').select('*').order('atualizado_em', {ascending: false}),
-        supabaseClient.from('reagendamentos').select('*').order('criado_em', {ascending: false})
+        supabaseClient.from('reagendamentos').select('*').order('criado_em', {ascending: false}),
+        supabaseClient.from('transferencias').select('*').order('criado_em', {ascending: false})
       ]);
       if (jRes.data) {
         _justRows = jRes.data;
@@ -6730,11 +6750,12 @@ async function exportarExcel() {
         });
       }
       if (rRes.data) _reagRows = rRes.data;
+      if (tRes && tRes.data) _transfRows = tRes.data;
     } catch(e) { console.warn('Supabase fetch antes do export:', e); }
     finally { V('ov').style.display = 'none'; }
   }
 
-  await window._gerarExcelFormatado(registrosBrutos, `PC_${nome}_${dt}.xlsx`, _reagRows, _justMap, _justRows);
+  await window._gerarExcelFormatado(registrosBrutos, `PC_${nome}_${dt}.xlsx`, _reagRows, _justMap, _justRows, _transfRows);
 }
 
 // ── EXPORTAR PLANILHA NO FORMATO ORIGINAL (mesmas colunas do upload) ─────────
@@ -9142,7 +9163,7 @@ function qgLoadAudiencias(inp){
 // Exporta a partir dos dados em memória (S.raw) quando buffer não disponível
 // ── HELPER: GERA EXCEL COM FORMATAÇÃO IDÊNTICA À PLANILHA DE REFERÊNCIA ──────
 // Cor cabeçalho: RGB(21,96,130) = #156082 | Fonte: Aptos Narrow 11pt | Altura linha: 14.4
-window._gerarExcelFormatado = async function(registros, nomeArquivo, reagendamentos, justMap, justRows) {
+window._gerarExcelFormatado = async function(registros, nomeArquivo, reagendamentos, justMap, justRows, transfRows) {
   function toDate(v) {
     if (v instanceof Date) return v;
     if (typeof v === 'number' && v > 20000) return new Date((v - 25569) * 86400000);
@@ -9372,6 +9393,44 @@ window._gerarExcelFormatado = async function(registros, nomeArquivo, reagendamen
     });
     wsR.views = [{ state: 'frozen', xSplit: 0, ySplit: 1, topLeftCell: 'A2', activeCell: 'A2' }];
     wsR.autoFilter = { from: { row: 1, column: 1 }, to: { row: 1, column: 11 } };
+  }
+
+  // Aba de Transferências (se fornecida)
+  if (transfRows && transfRows.length) {
+    const wsT = wb.addWorksheet('Transferências');
+    wsT.columns = [
+      { header: 'Processo',             key: 'numero_processo',       width: 30 },
+      { header: 'Cliente',              key: 'cliente',               width: 30 },
+      { header: 'Tipo',                 key: 'tipo',                  width: 16 },
+      { header: 'Resp. Anterior',       key: 'responsavel_anterior',  width: 34 },
+      { header: 'Novo Responsável',     key: 'novo_responsavel',      width: 34 },
+      { header: 'Motivo',               key: 'motivo',                width: 50 },
+      { header: 'Registrado por',       key: 'usuario_nome',          width: 30 },
+      { header: 'Data',                 key: 'criado_em',             width: 18 }
+    ];
+    const hT = wsT.getRow(1);
+    hT.height = 14.4;
+    hT.eachCell(cell => {
+      cell.font      = { name: 'Aptos Narrow', size: 11, bold: true, color: { argb: 'FFFFFFFF' } };
+      cell.fill      = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FF156082' } };
+      cell.alignment = { horizontal: 'left', vertical: 'middle' };
+    });
+    transfRows.forEach(function(r) {
+      const row = wsT.addRow({
+        numero_processo:      r.numero_processo      || '',
+        cliente:              r.cliente              || '',
+        tipo:                 r.tipo                 || '',
+        responsavel_anterior: r.responsavel_anterior || '',
+        novo_responsavel:     r.novo_responsavel     || '',
+        motivo:               r.motivo               || '',
+        usuario_nome:         r.usuario_nome         || '',
+        criado_em:            r.criado_em ? new Date(r.criado_em).toLocaleString('pt-BR') : ''
+      });
+      row.height = 14.4;
+      row.font = { name: 'Aptos Narrow', size: 11 };
+    });
+    wsT.views = [{ state: 'frozen', xSplit: 0, ySplit: 1, topLeftCell: 'A2', activeCell: 'A2' }];
+    wsT.autoFilter = { from: { row: 1, column: 1 }, to: { row: 1, column: 8 } };
   }
 
   // Gera buffer e dispara download
