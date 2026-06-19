@@ -4994,6 +4994,7 @@ window.salvarJustificativa = function(audId, texto, processo, grupoParam) {
     try {
       var sess = window.SESSAO || window.sessao || window.usuarioLogado || {};
       
+      var _grupoJ1 = grupoParam || sess.equipe || sess.grupo || '';
       var _payload1 = {
           numero_processo: processo,
           justificativa_texto: texto,
@@ -5001,7 +5002,8 @@ window.salvarJustificativa = function(audId, texto, processo, grupoParam) {
           usuario_nome: sess.nome || '',
           atualizado_em: new Date().toISOString(),
           status: 'pendente',
-          equipe: grupoParam || sess.equipe || sess.grupo || ''
+          equipe: _grupoJ1,
+          gestor_nome: (window.gestorNomeMapeamento && window.gestorNomeMapeamento[_grupoJ1]) || ''
         };
       supabaseClient
         .from('justificativas')
@@ -5079,6 +5081,20 @@ window.emailMapeamento = {
   'Grupo D': { para: 'bianca.camacho@peixotoecury.com.br', cc: 'prazos.trabalhista@peixotoecury.com.br' },
   'Grupo E1': { para: 'keyla.moraes@peixotoecury.com.br', cc: 'prazos.trabalhista@peixotoecury.com.br' },
   'Grupo E2': { para: 'washington.soares@peixotoecury.com.br', cc: 'prazos.trabalhista@peixotoecury.com.br' }
+};
+window.gestorNomeMapeamento = {
+  'Grupo A1': 'Natalia Gaggini',
+  'Grupo A2': 'Natalia Gaggini',
+  'Grupo A3': 'Sofia Freire',
+  'Grupo B1': 'Nicolau Rafael Guimarães Coelho',
+  'Grupo B2': 'Nicolau Rafael Guimarães Coelho',
+  'Grupo B3': 'Nicolau Rafael Guimarães Coelho',
+  'Grupo C1': 'Sofia Freire',
+  'Grupo C':  'Sofia Freire',
+  'Grupo D1': 'Bianca Camacho',
+  'Grupo D':  'Bianca Camacho',
+  'Grupo E1': 'Keyla Moraes',
+  'Grupo E2': 'Washington Soares'
 };
 
 // 📋 Função para enviar email de justificativa
@@ -10440,6 +10456,7 @@ document.addEventListener('DOMContentLoaded', function(){
     if(supabaseClient && numeroProcesso) {
       var sess = window.SESSAO || window.sessao || window.usuarioLogado || {};
       
+      var _grupoJ2 = grupo || sess.equipe || sess.grupo || '';
       var _payload2 = {
           numero_processo: numeroProcesso,
           justificativa_texto: textoCompleto,
@@ -10447,7 +10464,8 @@ document.addEventListener('DOMContentLoaded', function(){
           usuario_nome: sess.nome || '',
           atualizado_em: new Date().toISOString(),
           status: 'pendente',
-          equipe: grupo || sess.equipe || sess.grupo || ''
+          equipe: _grupoJ2,
+          gestor_nome: (window.gestorNomeMapeamento && window.gestorNomeMapeamento[_grupoJ2]) || ''
         };
       supabaseClient
         .from('justificativas')
