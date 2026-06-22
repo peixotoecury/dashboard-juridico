@@ -9408,8 +9408,9 @@ window._gerarExcelFormatado = async function(registros, nomeArquivo, reagendamen
     wsR.autoFilter = { from: { row: 1, column: 1 }, to: { row: 1, column: 11 } };
   }
 
-  // Aba de Transferências (se fornecida)
-  if (transfRows && transfRows.length) {
+  // Aba de Transferências (sempre presente)
+  {
+    const _transfData = (transfRows && transfRows.length) ? transfRows : [];
     const wsT = wb.addWorksheet('Transferências');
     wsT.columns = [
       { header: 'Processo',             key: 'numero_processo',       width: 30 },
@@ -9428,7 +9429,7 @@ window._gerarExcelFormatado = async function(registros, nomeArquivo, reagendamen
       cell.fill      = { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FF156082' } };
       cell.alignment = { horizontal: 'left', vertical: 'middle' };
     });
-    transfRows.forEach(function(r) {
+    _transfData.forEach(function(r) {
       const row = wsT.addRow({
         numero_processo:      r.numero_processo      || '',
         cliente:              r.cliente              || '',
