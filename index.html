@@ -1,4 +1,4 @@
-﻿﻿<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
@@ -3676,7 +3676,7 @@ function salvarPlanilhaAtualEmLS(){
 // ── RECALCULA STATUS DE AUDIÊNCIAS COM DIAS ÚTEIS ────────────────────────────
 function recalcularStatusAudiencias(arr) {
   if (!arr || !arr.length) return arr;
-  const hoje = new Date(); hoje.setHours(0,0,0,0);
+  const hoje = refHoje();
   return arr.map(function(r) {
     const raw = r.data || r.Data || r.DATA || r['Data'] || '';
     if (!raw) return r;
@@ -3770,8 +3770,16 @@ function diasUteisDiff(dataDate, hoje) {
   return count;
 }
 
+// Retorna a data de referência: hoje se dia útil, senão o próximo dia útil.
+// Garante que em fins de semana D-1 = segunda-feira (próximo dia útil).
+function refHoje() {
+  const d = new Date(); d.setHours(0,0,0,0);
+  while (d.getDay() === 0 || d.getDay() === 6) d.setDate(d.getDate() + 1);
+  return d;
+}
+
 // REGRA ÚNICA DE STATUS — alterar só aqui:
-// diff < -1 → Vencido | -1 → Fatal (último dia útil) | 0 → D-1 (hoje) | 1 → D-2 (amanhã) | >1 → Futuro
+// diff < -1 → Vencido | -1 → Fatal (último dia útil antes da ref) | 0 → D-1 (próx. dia útil) | 1 → D-2 | >1 → Futuro
 function calcStatusDiff(diff) {
   if (diff === null || diff === undefined) return 'Futuro';
   if (diff < -1)   return 'Vencido';
@@ -3833,7 +3841,7 @@ async function carregarPrazosSupabase() {
     console.log(`✅ Supabase: ${todos.length} registros recebidos`);
 
     // Recalcula status usando dias úteis (ignora sábado/domingo — fatal da segunda = sexta)
-    const hoje = new Date(); hoje.setHours(0,0,0,0);
+    const hoje = refHoje();
     todos = todos.map(r => {
       const d = r.data ? new Date(r.data + 'T00:00:00') : null;
       if (!d) return r;
@@ -7587,7 +7595,7 @@ document.addEventListener('DOMContentLoaded', function(){
       if (iso) d = new Date(+iso[1], +iso[2]-1, +iso[3]);
       if (!d) { const br = dataVal.match(/^(\d{2})\/(\d{2})\/(\d{4})/); if (br) d = new Date(+br[3], +br[2]-1, +br[1]); }
       if (d && !isNaN(d)) {
-        const hoje = new Date(); hoje.setHours(0,0,0,0);
+        const hoje = refHoje();
         return calcStatusDiff(diasUteisDiff(d, hoje));
       }
     }
@@ -8072,7 +8080,7 @@ document.addEventListener('DOMContentLoaded', function(){
       if (iso) d = new Date(+iso[1], +iso[2]-1, +iso[3]);
       if (!d) { const br = dataVal.match(/^(\d{2})\/(\d{2})\/(\d{4})/); if (br) d = new Date(+br[3], +br[2]-1, +br[1]); }
       if (d && !isNaN(d)) {
-        const hoje = new Date(); hoje.setHours(0,0,0,0);
+        const hoje = refHoje();
         return calcStatusDiff(diasUteisDiff(d, hoje));
       }
     }
@@ -9876,7 +9884,7 @@ document.addEventListener('DOMContentLoaded', function(){
     S.raw = normalizarChaves(rows);
 
     // Recalcula status com dias úteis (Fatal=ontem útil, D-1=hoje, D-2=amanhã útil)
-    const _hoje = new Date(); _hoje.setHours(0,0,0,0);
+    const _hoje = refHoje();
     S.raw = S.raw.map(function(r){
       const dv = r.data || r['Data'] || r['DATA'] || '';
       if (!dv) return r;
@@ -10001,7 +10009,7 @@ document.addEventListener('DOMContentLoaded', function(){
       const payload = await r.json();
       const rows = payload.dados || payload;
       if(rows && rows.length){
-        const hoje = new Date(); hoje.setHours(0,0,0,0);
+        const hoje = refHoje();
         const todos = rows.map(function(rec){
           const d = rec.data ? new Date(rec.data.slice(0,10) + 'T00:00:00') : null;
           if(!d) return rec;
@@ -11015,3 +11023,4 @@ function mobileSwitchTab(n, el) {
 
 </body>
 </html>
+
