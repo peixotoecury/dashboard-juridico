@@ -6806,9 +6806,10 @@ async function exportarJustificativasReagendamentos() {
   if (!supabaseClient) { alert('Supabase não disponível. Tente novamente.'); return; }
   V('ov').style.display = 'flex';
   try {
-    var [justResult, reagResult] = await Promise.all([
+    var [justResult, reagResult, transfResult] = await Promise.all([
       supabaseClient.from('justificativas').select('*').order('atualizado_em', {ascending: false}),
-      supabaseClient.from('reagendamentos').select('*').order('criado_em', {ascending: false})
+      supabaseClient.from('reagendamentos').select('*').order('criado_em', {ascending: false}),
+      supabaseClient.from('transferencias').select('*').order('criado_em', {ascending: false})
     ]);
     var wb = XLSX.utils.book_new();
     var justData = (justResult.data || []).map(function(r) {
@@ -6819,6 +6820,10 @@ async function exportarJustificativasReagendamentos() {
       return { 'Processo': r.processo||'', 'Reclamante': r.reclamante||'', 'Responsável': r.responsavel||'', 'Equipe': r.equipe||'', 'Resp. Reagendamento': r.responsavel_reag||'', 'Data Prazo Atual': r.data_atual||'', 'Data Prazo Fatal': r.data_fatal||'', 'Tipo de Prazo': r.tipo_prazo||'', 'Justificativa': r.justificativa||'', 'Enviado por': r.usuario_nome||'', 'Email': r.usuario_email||'', 'Enviado em': r.criado_em ? new Date(r.criado_em).toLocaleString('pt-BR') : '' };
     });
     XLSX.utils.book_append_sheet(wb, XLSX.utils.json_to_sheet(reagData.length ? reagData : [{'Processo':'(nenhum registro)'}]), 'Reagendamentos');
+    var transfData = (transfResult.data || []).map(function(r) {
+      return { 'Processo': r.numero_processo||'', 'Cliente': r.cliente||'', 'Tipo': r.tipo||'', 'Responsável Anterior': r.responsavel_anterior||'', 'Novo Responsável': r.novo_responsavel||'', 'Email Novo Resp.': r.novo_responsavel_email||'', 'Motivo': r.motivo||'', 'Enviado por': r.usuario_nome||'', 'Email': r.usuario_email||'', 'Enviado em': r.criado_em ? new Date(r.criado_em).toLocaleString('pt-BR') : '' };
+    });
+    XLSX.utils.book_append_sheet(wb, XLSX.utils.json_to_sheet(transfData.length ? transfData : [{'Processo':'(nenhum registro)'}]), 'Transferências');
     var dt = new Date().toLocaleDateString('pt-BR').replace(/\//g,'-');
     XLSX.writeFile(wb, 'Registros_Controle_' + dt + '.xlsx');
   } catch(e) {
