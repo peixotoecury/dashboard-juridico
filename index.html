@@ -6137,13 +6137,15 @@ function renderDetGeneric(baseData, bodyId, pgId, ctId, srchId, stId, pgKey, tip
     <td class="td-clip-sm">${e(r.responsavel)}</td>
     <td class="td-clip-sm">${e(r.grupo_processo)}</td>
     <td class="td-clip" style="max-width:220px" title="${e(r.descricao_tarefa)}">${e(r.descricao_tarefa)}</td>
-    <td style="text-align:center;padding:4px;white-space:nowrap;">
-      <button style="background:#0E5E6F;color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;white-space:nowrap;margin-right:4px;"
-        onclick="window.abrirModalAgendamento('${e(r.numero_processo)}','${e(r.cliente)}','${e(r.responsavel)}','${e(r.grupo_processo)}','${tipo==='agenda-equipe'?'Agenda Equipe':'Agenda'}','${e(r.data||'')}')" title="Incluir / Ajustar / Excluir agendamento">🗓 Agendamento</button>
-      <button style="background:#d84315;color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;white-space:nowrap;margin-right:4px;"
-        onclick="window.abrirModalReagendamento('${e(r.numero_processo)}','${e(r.responsavel)}','${e(r.grupo_processo)}')" title="Solicitar reagendamento">📅 Reagendar</button>
-      <button style="background:#1565C0;color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;white-space:nowrap;"
-        onclick="window.abrirModalTransferencia('${e(r.numero_processo)}','${e(r.cliente)}','${e(r.responsavel)}','${tipo}')" title="Transferir pasta ou agendamento">📁 Transferir</button>
+    <td style="padding:4px;min-width:140px;">
+      <div style="display:flex;flex-direction:column;gap:4px;">
+        <button style="background:#0E5E6F;color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;width:100%;"
+          onclick="window.abrirModalAgendamento('${e(r.numero_processo)}','${e(r.cliente)}','${e(r.responsavel)}','${e(r.grupo_processo)}','${tipo==='agenda-equipe'?'Agenda Equipe':'Agenda'}','${e(r.data||'')}')" title="Incluir / Ajustar / Excluir agendamento">🗓 Agendamento</button>
+        <button style="background:#d84315;color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;width:100%;"
+          onclick="window.abrirModalReagendamento('${e(r.numero_processo)}','${e(r.responsavel)}','${e(r.grupo_processo)}')" title="Solicitar reagendamento">📅 Reagendar</button>
+        <button style="background:#1565C0;color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;width:100%;"
+          onclick="window.abrirModalTransferencia('${e(r.numero_processo)}','${e(r.cliente)}','${e(r.responsavel)}','${tipo}')" title="Transferir pasta ou agendamento">📁 Transferir</button>
+      </div>
     </td>
   </tr>`).join(''):emptyR(9);
   renderPg(pgId,pg,pages,total,pgKey,()=>renderDetGeneric(baseData,bodyId,pgId,ctId,srchId,stId,pgKey,tipo));
