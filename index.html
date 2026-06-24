@@ -5208,7 +5208,7 @@ window.abrirModalAgendamento = function(processo, cliente, responsavel, grupo, t
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
           <div>
             <label style="font-size:11px;font-weight:600;color:#333;display:block;margin-bottom:6px;">ORIGEM</label>
-            <input id="ag-item-tipo" value="${(tipoItem||'').replace(/"/g,'&quot;')}" readonly style="width:100%;border:1px solid #ddd;border-radius:6px;padding:8px;font-size:11px;outline:none;box-sizing:border-box;background:#f5f5f5;color:#555;" />
+            <select id="ag-item-tipo" style="width:100%;border:1px solid #ddd;border-radius:6px;padding:8px;font-size:11px;outline:none;box-sizing:border-box;background:#fff;color:#333;"><option value="Prazo"${(tipoItem||'')==='Prazo'?' selected':''}>Prazo</option><option value="Agenda"${(tipoItem||'')==='Agenda'?' selected':''}>Agenda</option><option value="Agenda Equipe"${(tipoItem||'')==='Agenda Equipe'?' selected':''}>Agenda Equipe</option></select>
           </div>
           <div>
             <label style="font-size:11px;font-weight:600;color:#333;display:block;margin-bottom:6px;">DATA DO FATAL</label>
