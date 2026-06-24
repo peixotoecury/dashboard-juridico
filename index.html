@@ -5370,8 +5370,8 @@ window.enviarReagendamento = function() {
     return;
   }
   
-  // Sempre envia para prazos.trabalhista (controladoria faz o reagendamento)
-  var config = { email: 'prazos.trabalhista@peixotoecury.com.br', cc: '' };
+  // Roteamento pelo grupo: coordenador do grupo com CC prazos.trabalhista
+  var config = window.reagendamentoMapeamento[equipe] || { email: 'prazos.trabalhista@peixotoecury.com.br', cc: 'prazos.trabalhista@peixotoecury.com.br' };
   var hoje = new Date().toLocaleDateString('pt-BR');
   
   var assunto = '📅 REAGENDAMENTO DE PRAZO - ' + processo;
