@@ -5309,11 +5309,8 @@ window.abrirModalReagendamento = function(processo, responsavel, grupo) {
         </div>
         
         <div style="margin-bottom:16px;">
-          <label style="font-size:11px;font-weight:600;color:#333;display:block;margin-bottom:6px;">5. RESPONSÁVEL PELO REAGENDAMENTO <span style="color:red;">*</span></label>
-          <select id="reag-responsavel-reag" style="width:100%;border:1px solid #bbb;border-radius:6px;padding:8px;font-size:11px;box-sizing:border-box;">
-            <option value="">Selecione responsável</option>
-            ${opcoesResponsavel}
-          </select>
+          <label style="font-size:11px;font-weight:600;color:#333;display:block;margin-bottom:6px;">5. RESPONSÁVEL PELO REAGENDAMENTO</label>
+          <input id="reag-responsavel-reag" value="Controladoria" readonly style="width:100%;border:1px solid #ddd;border-radius:6px;padding:8px;font-size:11px;box-sizing:border-box;background:#f5f5f5;color:#555;" />
         </div>
         
         <div style="margin-bottom:16px;">
@@ -5373,8 +5370,8 @@ window.enviarReagendamento = function() {
     return;
   }
   
-  // Buscar email correto com CC
-  var config = window.reagendamentoMapeamento[equipe] || { email: 'prazos.trabalhista@peixotoecury.com.br', cc: 'prazos.trabalhista@peixotoecury.com.br' };
+  // Sempre envia para prazos.trabalhista (controladoria faz o reagendamento)
+  var config = { email: 'prazos.trabalhista@peixotoecury.com.br', cc: '' };
   var hoje = new Date().toLocaleDateString('pt-BR');
   
   var assunto = '📅 REAGENDAMENTO DE PRAZO - ' + processo;
