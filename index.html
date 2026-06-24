@@ -1255,7 +1255,8 @@ body.role-manager .filter-panel,
 body.role-manager .content,
 body.role-user .upload-bar,
 body.role-user .filter-panel,
-body.role-user .content {
+body.role-user .content,
+body.role-user #page-meu-painel {
   margin-left:250px !important;
   width:calc(100% - 250px) !important;
 }
@@ -7347,8 +7348,14 @@ document.addEventListener('DOMContentLoaded', function(){
   const sl = localStorage.getItem('pc_saved_login');
   const ss = localStorage.getItem('pc_saved_senha');
   if(sl && ss){
+    const _admFixAutofill = ['controladoria','coord','sofia.freire','antoniocarlos.aguiar',
+      'beatriz.rodrigues','bianca.camacho','gisela.freire','keyla.moraes','marcel.alves',
+      'marina.brechiani','natalia.baliero','natalia.gaggini','poliana.banqueri','washington.soares'];
     const li = V('inp-login'); if(li) li.value = sl;
-    const si = V('inp-senha'); if(si) si.value = ss;
+    // Não preenche senha salva para admins fixos (evita senha antiga bloqueando login)
+    if(!_admFixAutofill.includes((sl||'').toLowerCase())){
+      const si = V('inp-senha'); if(si) si.value = ss;
+    }
     const cb = document.getElementById('chk-lembrar'); if(cb) cb.checked = true;
   }
 });
