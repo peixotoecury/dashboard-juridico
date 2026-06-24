@@ -3932,17 +3932,17 @@ document.addEventListener('DOMContentLoaded', function(){
       carregarPrazosSupabase(),
       carregarAudienciasGithub(true)
     ]).then(function(){
-      // Audiências do Supabase têm prioridade sobre GitHub
-      if (window._audSupa && window._audSupa.length > 0) {
-        S.aud = window._audSupa;
-        console.log(`⚖️ S.aud final: ${S.aud.length} audiências do Supabase`);
+      // Audiências do GitHub têm prioridade — são da Pauta de Audiências Excel (pipeline oficial)
+      // _audSupa vem do LM e tem dados diferentes; só usa se GitHub não carregou nada
+      if (window._audSupa && window._audSupa.length > 0 && (!S.aud || S.aud.length === 0)) {
+        S.aud = typeof recalcularStatusAudiencias === 'function' ? recalcularStatusAudiencias(window._audSupa) : window._audSupa;
+        console.log(`⚖️ S.aud final (fallback Supabase): ${S.aud.length} audiências`);
       }
       // Atualiza badges de audiência após S.aud final estar definido
       (function(){
-        const _hj3 = new Date().toISOString().slice(0,10);
         const _sess3 = typeof getCurrentSession === 'function' ? getCurrentSession() : null;
         const _mgr3 = _sess3 && typeof isManager === 'function' && isManager(_sess3);
-        let _cnt3 = S.aud.filter(r => (r.data||r['Data']||'').slice(0,10) === _hj3);
+        let _cnt3 = (S.aud||[]).filter(r => r.status === 'D-1');
         if (!_mgr3 && _sess3 && _sess3.nome) {
           const _nome = (_sess3.nome||'').toLowerCase();
           _cnt3 = _cnt3.filter(r => (r.responsavel||r['Advogado Responsável Audiência/SO']||'').toLowerCase() === _nome);
