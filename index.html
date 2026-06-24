@@ -7625,8 +7625,9 @@ document.addEventListener('DOMContentLoaded', function(){
   function isManager(sess){
     const n = String((sess && (sess.nivel || sess.perfil || sess.role)) || '').toLowerCase();
     const l = String((sess && sess.login) || '').toLowerCase();
+    const _mgLogins = ['controladoria','coord','coordenador','socio','sócio','antoniocarlos.aguiar','beatriz.rodrigues','bianca.camacho','gisela.freire','keyla.moraes','marcel.alves','marina.brechiani','natalia.baliero','natalia.gaggini','nicolau.coelho','poliana.banqueri','rafael.camargo','sofia.freire','washington.soares'];
     return ['admin','gerencial','gestor','gestora','coordenador','coordenadora','socio','sócio','controladoria'].includes(n) ||
-           ['controladoria','coord','coordenador','socio','sócio'].includes(l);
+           _mgLogins.includes(l);
   }
 
   function aplicarPerfilVisual(){
