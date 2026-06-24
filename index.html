@@ -5164,9 +5164,15 @@ window.reagendamentoMapeamento = {
 };
 
 // 📅 Modal de Solicitação de Agendamento (Incluir / Ajustar / Excluir)
-window.abrirModalAgendamento = function(processo, cliente, responsavel, grupo) {
+window.abrirModalAgendamento = function(processo, cliente, responsavel, grupo, tipoItem, dataFatal) {
   var old = document.getElementById('modal-agendamento');
   if(old) old.remove();
+  // Formatar dataFatal para input[type=date] (yyyy-mm-dd)
+  var dataFatalISO = '';
+  if(dataFatal) {
+    var df = String(dataFatal).slice(0,10);
+    if(/^\d{4}-\d{2}-\d{2}/.test(df)) dataFatalISO = df;
+  }
   var modal = document.createElement('div');
   modal.id = 'modal-agendamento';
   modal.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:9999;display:flex;align-items:center;justify-content:center;padding:20px;';
@@ -5174,7 +5180,7 @@ window.abrirModalAgendamento = function(processo, cliente, responsavel, grupo) {
     <div style="background:#fff;border-radius:12px;width:100%;max-width:520px;max-height:92vh;overflow-y:auto;box-shadow:0 8px 32px rgba(0,0,0,.28);display:flex;flex-direction:column;">
       <div style="background:#0E5E6F;color:#fff;padding:16px 24px;border-radius:12px 12px 0 0;display:flex;align-items:center;justify-content:space-between;flex-shrink:0;">
         <div>
-          <div style="font-size:14px;font-weight:700;letter-spacing:.3px;">📅 Solicitação de Agendamento</div>
+          <div style="font-size:14px;font-weight:700;letter-spacing:.3px;">🗓 Solicitação de Agendamento</div>
           <div style="font-size:11px;opacity:.85;margin-top:3px;">${processo||'N/A'}${cliente?' — '+cliente:''}</div>
         </div>
         <button onclick="document.getElementById('modal-agendamento').remove()" style="background:rgba(255,255,255,.2);border:none;color:#fff;border-radius:6px;padding:4px 10px;cursor:pointer;font-size:16px;">✕</button>
@@ -5197,6 +5203,16 @@ window.abrirModalAgendamento = function(processo, cliente, responsavel, grupo) {
           <div>
             <label style="font-size:11px;font-weight:600;color:#333;display:block;margin-bottom:6px;">GRUPO</label>
             <input id="ag-grupo" value="${(grupo||'').replace(/"/g,'&quot;')}" style="width:100%;border:1px solid #bbb;border-radius:6px;padding:8px;font-size:11px;outline:none;box-sizing:border-box;" />
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+          <div>
+            <label style="font-size:11px;font-weight:600;color:#333;display:block;margin-bottom:6px;">ORIGEM</label>
+            <input id="ag-item-tipo" value="${(tipoItem||'').replace(/"/g,'&quot;')}" readonly style="width:100%;border:1px solid #ddd;border-radius:6px;padding:8px;font-size:11px;outline:none;box-sizing:border-box;background:#f5f5f5;color:#555;" />
+          </div>
+          <div>
+            <label style="font-size:11px;font-weight:600;color:#333;display:block;margin-bottom:6px;">DATA DO FATAL</label>
+            <input id="ag-data-fatal" type="date" value="${dataFatalISO}" style="width:100%;border:1px solid #ddd;border-radius:6px;padding:8px;font-size:12px;outline:none;box-sizing:border-box;background:#f5f5f5;" />
           </div>
         </div>
         <div>
@@ -5233,22 +5249,27 @@ window._agendaTipoChanged = function() {
 };
 
 window.enviarSolicitacaoAgendamento = function() {
-  var tipo    = (document.getElementById('ag-tipo')||{}).value||'';
-  var proc    = (document.getElementById('ag-proc')||{}).value||'';
-  var grupo   = (document.getElementById('ag-grupo')||{}).value||'';
-  var resp    = (document.getElementById('ag-resp')||{}).value||'';
-  var data    = (document.getElementById('ag-data')||{}).value||'';
-  var hora    = (document.getElementById('ag-hora')||{}).value||'';
-  var obs     = (document.getElementById('ag-obs')||{}).value||'';
+  var tipo       = (document.getElementById('ag-tipo')||{}).value||'';
+  var proc       = (document.getElementById('ag-proc')||{}).value||'';
+  var grupo      = (document.getElementById('ag-grupo')||{}).value||'';
+  var resp       = (document.getElementById('ag-resp')||{}).value||'';
+  var itemTipo   = (document.getElementById('ag-item-tipo')||{}).value||'';
+  var dataFatalV = (document.getElementById('ag-data-fatal')||{}).value||'';
+  var data       = (document.getElementById('ag-data')||{}).value||'';
+  var hora       = (document.getElementById('ag-hora')||{}).value||'';
+  var obs        = (document.getElementById('ag-obs')||{}).value||'';
   if(!tipo){ alert('Selecione o tipo de solicitação.'); return; }
   if(!proc){ alert('Informe o processo.'); return; }
-  var dataFmt = data ? new Date(data+'T12:00:00').toLocaleDateString('pt-BR') : '—';
+  var dataFmt      = data ? new Date(data+'T12:00:00').toLocaleDateString('pt-BR') : '—';
+  var dataFatalFmt = dataFatalV ? new Date(dataFatalV+'T12:00:00').toLocaleDateString('pt-BR') : '—';
   var horaFmt = hora || '—';
   var assunto = '['+tipo+' Agendamento] ' + proc + (grupo?' — '+grupo:'');
   var corpo = 'Solicitação: ' + tipo + ' Agendamento\n\n'
     + 'Processo: ' + proc + '\n'
+    + 'Origem: ' + (itemTipo||'—') + '\n'
     + 'Grupo: ' + (grupo||'—') + '\n'
     + 'Responsável: ' + (resp||'—') + '\n'
+    + 'Data do Fatal: ' + dataFatalFmt + '\n'
     + (tipo !== 'Excluir' ? 'Data solicitada: ' + dataFmt + '\n' : '')
     + (tipo !== 'Excluir' && horaFmt !== '—' ? 'Horário: ' + horaFmt + '\n' : '')
     + (obs ? '\nObservações:\n' + obs : '');
@@ -5955,7 +5976,7 @@ function renderFatais() {
           onclick="window.abrirModalJustificativaFatal('${audId}', '${e(r.numero_processo)}', '${e(r.responsavel)}', '${e(r.grupo_processo)}')">${temJust?'✏️ Editar':'🔴 Justificar'}</button>
         ${btnAprovar}
         <button style="background:#0E5E6F;color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;width:100%;"
-          onclick="window.abrirModalAgendamento('${e(r.numero_processo)}','${e(r.cliente)}','${e(r.responsavel)}','${e(r.grupo_processo)}')" title="Incluir / Ajustar / Excluir agendamento">🗓 Agendamento</button>
+          onclick="window.abrirModalAgendamento('${e(r.numero_processo)}','${e(r.cliente)}','${e(r.responsavel)}','${e(r.grupo_processo)}','Prazo','${e(r.data||'')}')" title="Incluir / Ajustar / Excluir agendamento">🗓 Agendamento</button>
         <button style="background:#d84315;color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;width:100%;"
           onclick="window.abrirModalReagendamento('${e(r.numero_processo)}', '${e(r.responsavel)}', '${e(r.grupo_processo)}')" title="Solicitar reagendamento">📅 Reagendar</button>
         <button style="background:#1565C0;color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;width:100%;"
@@ -6006,7 +6027,7 @@ function renderDetGeneric(baseData, bodyId, pgId, ctId, srchId, stId, pgKey, tip
     <td class="td-clip" style="max-width:220px" title="${e(r.descricao_tarefa)}">${e(r.descricao_tarefa)}</td>
     <td style="text-align:center;padding:4px;white-space:nowrap;">
       <button style="background:#0E5E6F;color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;white-space:nowrap;margin-right:4px;"
-        onclick="window.abrirModalAgendamento('${e(r.numero_processo)}','${e(r.cliente)}','${e(r.responsavel)}','${e(r.grupo_processo)}')" title="Incluir / Ajustar / Excluir agendamento">🗓 Agendamento</button>
+        onclick="window.abrirModalAgendamento('${e(r.numero_processo)}','${e(r.cliente)}','${e(r.responsavel)}','${e(r.grupo_processo)}','${tipo==='agenda-equipe'?'Agenda Equipe':'Agenda'}','${e(r.data||'')}')" title="Incluir / Ajustar / Excluir agendamento">🗓 Agendamento</button>
       <button style="background:#d84315;color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;white-space:nowrap;margin-right:4px;"
         onclick="window.abrirModalReagendamento('${e(r.numero_processo)}','${e(r.responsavel)}','${e(r.grupo_processo)}')" title="Solicitar reagendamento">📅 Reagendar</button>
       <button style="background:#1565C0;color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;white-space:nowrap;"
