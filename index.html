@@ -3690,8 +3690,8 @@ function recalcularStatusAudiencias(arr) {
     }
     if (!d || isNaN(d)) return r;
     const diff = diasUteisDiff(d, hoje);
-    const iso = d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0');
-    return Object.assign({}, r, {status: calcStatusDiff(diff), dias_restantes: diff, data: iso, Data: iso});
+    const isoStr = d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0');
+    return Object.assign({}, r, {status: calcStatusDiff(diff), dias_restantes: diff, data: isoStr, Data: isoStr});
   });
 }
 
@@ -4736,7 +4736,7 @@ function updateCards(p, a) {
   n('ka-d1',   a.filter(r=>statusEh(r.status, 'D-1')).length);
   n('ka-fut',  a.filter(r=>statusEh(r.status, 'Futuro')).length);
   const today=new Date();
-  n('kaud-hoje', S.aud.filter(r=>sameDay(r['Data'], today)).length);
+  n('kaud-hoje', S.aud.filter(r=>r.status==='D-1').length);
   n('kciencia-venc', a.filter(r=>statusEh(r.status, 'Vencido') && normTxt(r.descricao_tarefa).includes('CIENCIA')).length);
 }
 
@@ -6217,11 +6217,7 @@ function renderInsights() {
   }
 
   // Fatais × Audiências hoje
-  const today = new Date().toDateString();
-  const audHoje = S.aud.filter(r => {
-    const d = r['Data']; if (!d) return false;
-    return new Date(d instanceof Date ? d : typeof d==='number'?(d-25569)*86400*1000:d).toDateString() === today;
-  });
+  const audHoje = S.aud.filter(r => r.status === 'D-1');
   const conflitos = {};
   fatais.forEach(r => {
     const resp = r.responsavel; if (!resp) return;
@@ -6281,7 +6277,7 @@ function renderFataisXAud() {
   const fatais = fp.filter(r => statusEh(r.status, 'Fatal') || statusEh(r.status, 'Vencido'));
   const hoje = new Date();
 
-  const audHoje = S.aud.filter(r => sameDay(r['Data'], hoje));
+  const audHoje = S.aud.filter(r => r.status === 'D-1');
 
   const respMap = {};
   fatais.forEach(r => {
