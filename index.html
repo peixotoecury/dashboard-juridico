@@ -8482,14 +8482,16 @@ document.addEventListener('DOMContentLoaded', function(){
         const procE=proc.replace(/'/g,"\\'");
         const cliE=cli.replace(/'/g,"\\'");
         const respE=responsavel.replace(/'/g,"\\'");
+        const dataE=String(r.data||r['Data']||'').slice(0,10);
+        const grupoE=grupo.replace(/'/g,"\\'");
+        const agendBtn=`<button onclick="window.abrirModalAgendamento('${procE}','${cliE}','${respE}','${grupoE}','Prazo','${dataE}')" style="font-size:10px;font-weight:500;padding:4px 8px;border:none;border-radius:5px;background:#0E5E6F;color:white;cursor:pointer;font-family:inherit;white-space:nowrap;">🗓 Agendamento</button>`;
+        const reagBtn=`<button onclick="window.abrirModalReagendamento('${procE}','${respE}','${grupo}')" style="font-size:10px;font-weight:500;padding:4px 8px;border:none;border-radius:5px;background:#d84315;color:white;cursor:pointer;font-family:inherit;white-space:nowrap;">📅 Reagendar</button>`;
         const transfBtn=`<button onclick="window.abrirModalTransferencia('${procE}','${cliE}','${respE}','prazo')" style="font-size:10px;font-weight:500;padding:4px 8px;border:none;border-radius:5px;background:#1565C0;color:white;cursor:pointer;font-family:inherit;white-space:nowrap;">📁 Transferir</button>`;
         if(s==='Fatal'||s==='Vencido') return `<div style="display:flex;gap:4px;flex-wrap:wrap;">
           <button onclick="abrirJustifSingle('${key}','${procEnc}','${cliEnc}','${tarefaEnc}','${statusStr}')" style="font-size:10px;font-weight:500;padding:4px 8px;border:none;border-radius:5px;background:#c62828;color:white;cursor:pointer;font-family:inherit;white-space:nowrap;">Justificar</button>
-          <button onclick="window.abrirModalReagendamento('${procE}', '${respE}', '${grupo}')" style="font-size:10px;font-weight:500;padding:4px 8px;border:none;border-radius:5px;background:#d84315;color:white;cursor:pointer;font-family:inherit;white-space:nowrap;" title="Solicitar reagendamento">Reagendar</button>
-          ${transfBtn}
+          ${agendBtn}${reagBtn}${transfBtn}
         </div>`;
-        if(s==='D-1'||s==='D-2'||s==='Futuro') return `<div style="display:flex;gap:4px;flex-wrap:wrap;"><button onclick="window.abrirModalReagendamento('${procE}', '${respE}', '${grupo}')" style="font-size:10px;font-weight:500;padding:4px 8px;border:none;border-radius:5px;background:#d84315;color:white;cursor:pointer;font-family:inherit;white-space:nowrap;" title="Solicitar reagendamento">📅 Reagendar</button>${transfBtn}</div>`;
-        return `<div style="display:flex;gap:4px;flex-wrap:wrap;">${transfBtn}</div>`;
+        return `<div style="display:flex;gap:4px;flex-wrap:wrap;">${agendBtn}${reagBtn}${transfBtn}</div>`;
       }}
     ];
     const agendaCols = [
@@ -8512,6 +8514,7 @@ document.addEventListener('DOMContentLoaded', function(){
     const audCols = [
       {h:'Data',    v:r=>fmtD(pick(r,['Data','data','data_audiencia']))},
       {h:'Horário', v:r=>fmtHorario(pick(r,['Horário','horario','horário','Hora']))},
+      {h:'Processo', v:r=>txt(pick(r,['numero_processo','Número do Processo','Processo','processo','Nº Processo']))},
       {h:'Tipo',    v:r=>txt(pick(r,['Tipo Agendamento','tipo','Tipo','tipo_audiencia','modalidade']))},
       {h:'Cliente', v:r=>txt(pick(r,['Parte Principal','parte_principal','cliente','Cliente']))},
       {h:'Comarca', v:r=>txt(pick(r,['Comarca','comarca']))},
