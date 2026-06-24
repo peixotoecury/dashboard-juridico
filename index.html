@@ -9853,11 +9853,11 @@ window._exportarMeusRegistrosOLD_unused = function(){
 
     if(!document.getElementById('sidebar-att-ts')){
       const wrap = document.createElement('div');
-      wrap.style.cssText = 'display:flex;align-items:center;gap:6px;padding:8px 4px 6px 15px;margin-top:6px;border-top:1px solid rgba(255,255,255,.07);';
+      wrap.style.cssText = 'display:flex;flex-direction:column;gap:5px;padding:10px 12px 8px 12px;margin-top:6px;border-top:1px solid rgba(255,255,255,.07);';
 
       const tsEl = document.createElement('span');
       tsEl.id = 'sidebar-att-ts';
-      tsEl.style.cssText = 'font-size:10px;color:rgba(255,255,255,.35);letter-spacing:.02em;flex:1;';
+      tsEl.style.cssText = 'font-size:10px;color:rgba(255,255,255,.35);letter-spacing:.02em;line-height:1.4;';
 
       const btnSync = document.createElement('button');
       btnSync.id = 'btn-sync-now';
