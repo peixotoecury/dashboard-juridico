@@ -5290,7 +5290,7 @@ window.abrirModalReagendamento = function(processo, responsavel, grupo) {
   var equipas = Object.keys(window.reagendamentoMapeamento).sort();
   var opcoesEquipa = equipas.map(e => '<option value="' + e + '">' + e + '</option>').join('');
   
-  var responsaveisReag = ['André Alessandro', 'Natália Gaggini', 'Nicolau Coelho', 'Rafael Camargo'];
+  var responsaveisReag = ['André Alessandro', 'Controladoria', 'Natália Gaggini', 'Nicolau Coelho', 'Rafael Camargo'];
   var opcoesResponsavel = responsaveisReag.map(r => '<option value="' + r + '">' + r + '</option>').join('');
   
   var modal = document.createElement('div');
@@ -5331,8 +5331,11 @@ window.abrirModalReagendamento = function(processo, responsavel, grupo) {
         </div>
         
         <div style="margin-bottom:16px;">
-          <label style="font-size:11px;font-weight:600;color:#333;display:block;margin-bottom:6px;">5. RESPONSÁVEL PELO REAGENDAMENTO</label>
-          <input id="reag-responsavel-reag" value="Controladoria" readonly style="width:100%;border:1px solid #ddd;border-radius:6px;padding:8px;font-size:11px;box-sizing:border-box;background:#f5f5f5;color:#555;" />
+          <label style="font-size:11px;font-weight:600;color:#333;display:block;margin-bottom:6px;">5. RESPONSÁVEL PELO REAGENDAMENTO <span style="color:red;">*</span></label>
+          <select id="reag-responsavel-reag" style="width:100%;border:1px solid #bbb;border-radius:6px;padding:8px;font-size:11px;box-sizing:border-box;">
+            <option value="">Selecione responsável</option>
+            ${opcoesResponsavel}
+          </select>
         </div>
         
         <div style="margin-bottom:16px;">
@@ -5392,8 +5395,10 @@ window.enviarReagendamento = function() {
     return;
   }
   
-  // Roteamento pelo grupo: coordenador do grupo com CC prazos.trabalhista
-  var config = window.reagendamentoMapeamento[equipe] || { email: 'prazos.trabalhista@peixotoecury.com.br', cc: 'prazos.trabalhista@peixotoecury.com.br' };
+  // Roteamento: Controladoria → prazos direto; demais → coordenador do grupo
+  var config = (responsavelReag === 'Controladoria')
+    ? { email: 'prazos.trabalhista@peixotoecury.com.br', cc: '' }
+    : (window.reagendamentoMapeamento[equipe] || { email: 'prazos.trabalhista@peixotoecury.com.br', cc: 'prazos.trabalhista@peixotoecury.com.br' });
   var hoje = new Date().toLocaleDateString('pt-BR');
   
   var assunto = '📅 REAGENDAMENTO DE PRAZO - ' + processo;
