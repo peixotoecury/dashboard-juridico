@@ -8018,9 +8018,9 @@ document.addEventListener('DOMContentLoaded', function(){
     const audCols = [
       {h:'Data',    v:r=>fmtD(pick(r,['Data','data','data_audiencia']))},
       {h:'Horário', v:r=>fmtHorario(pick(r,['Horário','horario','horário','Hora']))},
-      {h:'Tipo',    v:r=>txt(pick(r,['Tipo Agendamento','tipo','Tipo','tipo_audiencia','modalidade']))},
+      {h:'Tipo',    v:r=>txt(pick(r,['Tipo Agendamento','Tipo de Audiência','Tipo de Audiencia','tipo_audiencia','Tipo','tipo','modalidade','Modalidade']))},
       {h:'Cliente', v:r=>txt(pick(r,['Parte Principal','parte_principal','cliente','Cliente']))},
-      {h:'Comarca', v:r=>txt(pick(r,['Comarca','comarca']))},
+      {h:'Comarca', v:r=>txt(pick(r,['Comarca/UF','Comarca / UF','Comarca','comarca','Cidade','cidade']))},
       {h:'Adv. Audiência', v:r=>txt(pick(r,['Advogado Responsável Audiência/SO','responsavel_audiencia','Advogado Audiência','advogado_audiencia','Advogado','advogado','responsavel']))},
     ];
 
@@ -8538,9 +8538,9 @@ document.addEventListener('DOMContentLoaded', function(){
       {h:'Data',    v:r=>fmtD(pick(r,['Data','data','data_audiencia']))},
       {h:'Horário', v:r=>fmtHorario(pick(r,['Horário','horario','horário','Hora']))},
       {h:'Processo', v:r=>txt(pick(r,['numero_processo','Número do Processo','Processo','processo','Nº Processo']))},
-      {h:'Tipo',    v:r=>txt(pick(r,['Tipo Agendamento','tipo','Tipo','tipo_audiencia','modalidade']))},
+      {h:'Tipo',    v:r=>txt(pick(r,['Tipo Agendamento','Tipo de Audiência','Tipo de Audiencia','tipo_audiencia','Tipo','tipo','modalidade','Modalidade']))},
       {h:'Cliente', v:r=>txt(pick(r,['Parte Principal','parte_principal','cliente','Cliente']))},
-      {h:'Comarca', v:r=>txt(pick(r,['Comarca','comarca']))},
+      {h:'Comarca', v:r=>txt(pick(r,['Comarca/UF','Comarca / UF','Comarca','comarca','Cidade','cidade']))},
       {h:'Adv. Audiência', v:r=>txt(pick(r,['Advogado Responsável Audiência/SO','responsavel_audiencia','Advogado Audiência','advogado_audiencia','Advogado','advogado','responsavel']))},
     ];
 
