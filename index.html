@@ -7666,6 +7666,18 @@ document.addEventListener('DOMContentLoaded', function(){
       if(el) el.style.display = podeAprovar ? '' : 'none';
     });
 
+    // Garante tabs visíveis para admin (evita race condition com renders async)
+    if(isManager(sess)){
+      ['nav-prazos','nav-agendas','nav-equipe','nav-audiencias','nav-canceladas','nav-quadro','nav-exposicao'].forEach(function(id){
+        var el = document.getElementById(id);
+        if(el) el.style.display = '';
+      });
+      var fp = document.getElementById('fpanel');
+      if(fp) fp.style.display = '';
+      var ha = document.getElementById('hdr-actions');
+      if(ha) ha.style.display = '';
+    }
+
     // Atualiza contador do Meu Painel
     setTimeout(function(){
       if(typeof window.renderMP === 'function') window.renderMP();
@@ -7677,6 +7689,8 @@ document.addEventListener('DOMContentLoaded', function(){
     window.doLogin = function(){
       const result = originalDoLogin.apply(this, arguments);
       setTimeout(aplicarPerfilVisual, 50);
+      // Reforço em 500ms para cobrir callbacks assíncronos (Supabase, renders)
+      setTimeout(aplicarPerfilVisual, 500);
       return result;
     };
   }
