@@ -3359,6 +3359,7 @@ body.role-manager .upload-bar {
           <button class="mp-only-btn primary" onclick="exportarMeusRegistrosFormatado()">📥 Exportar meus registros</button>
           <button class="mp-only-btn" id="btn-enviar-justif" onclick="abrirModalJustificativas()" style="background:#c62828;color:#fff;border-color:#c62828;display:none;">📨 Enviar justificativas dos fatais</button>
           <button class="mp-only-btn" id="btn-aprovar-justif" onclick="abrirPainelAprovacao()" style="background:#1565C0;color:#fff;border-color:#1565C0;display:none;">✅ Aprovar justificativas</button>
+          <button class="mp-only-btn" onclick="window.abrirModalNovoAgendamento()" style="background:#0E5E6F;color:#fff;border-color:#0E5E6F;">➕ Incluir Novo Agendamento</button>
         </div>
 
         <div class="mp-only-cards">
@@ -5280,6 +5281,109 @@ window.enviarSolicitacaoAgendamento = function() {
     + '&body=' + encodeURIComponent(corpo);
   window.location.href = mailto;
   document.getElementById('modal-agendamento').remove();
+};
+
+// ➕ Modal Incluir Novo Agendamento (da Controladoria — ex: ciência de publicação)
+window.abrirModalNovoAgendamento = function() {
+  var old = document.getElementById('modal-novo-agendamento');
+  if(old) old.remove();
+  var s = (typeof sess === 'function') ? sess() : {};
+  var respNome = s.nome || s.login || s.usuario || '';
+  var hoje = new Date().toISOString().slice(0,10);
+  var modal = document.createElement('div');
+  modal.id = 'modal-novo-agendamento';
+  modal.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:9999;display:flex;align-items:center;justify-content:center;padding:20px;';
+  modal.innerHTML = `
+    <div style="background:#fff;border-radius:12px;width:100%;max-width:540px;max-height:92vh;overflow-y:auto;box-shadow:0 8px 32px rgba(0,0,0,.28);display:flex;flex-direction:column;">
+      <div style="background:linear-gradient(135deg,#0E5E6F,#1a8a9e);padding:18px 24px;border-radius:12px 12px 0 0;flex-shrink:0;">
+        <div style="color:#fff;font-size:14px;font-weight:700;">➕ Incluir Novo Agendamento</div>
+        <div style="color:rgba(255,255,255,.75);font-size:11px;margin-top:3px;">Solicitação à Controladoria — prazos captados em ciência de publicação</div>
+      </div>
+      <div style="padding:20px 24px;display:flex;flex-direction:column;gap:14px;flex:1;">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+          <div>
+            <label style="font-size:11px;font-weight:600;color:#333;display:block;margin-bottom:6px;">TIPO *</label>
+            <select id="nag-tipo" style="width:100%;border:1px solid #ddd;border-radius:6px;padding:8px;font-size:11px;outline:none;box-sizing:border-box;">
+              <option value="">Selecione...</option>
+              <option value="Prazo">Prazo</option>
+              <option value="Agenda">Agenda</option>
+              <option value="Agenda Equipe">Agenda Equipe</option>
+            </select>
+          </div>
+          <div>
+            <label style="font-size:11px;font-weight:600;color:#333;display:block;margin-bottom:6px;">DATA DO FATAL *</label>
+            <input id="nag-fatal" type="date" style="width:100%;border:1px solid #ddd;border-radius:6px;padding:8px;font-size:12px;outline:none;box-sizing:border-box;" />
+          </div>
+        </div>
+        <div>
+          <label style="font-size:11px;font-weight:600;color:#333;display:block;margin-bottom:6px;">NÚMERO DO PROCESSO *</label>
+          <input id="nag-proc" type="text" placeholder="0000000-00.0000.0.00.0000" style="width:100%;border:1px solid #ddd;border-radius:6px;padding:8px;font-size:12px;outline:none;box-sizing:border-box;" />
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+          <div>
+            <label style="font-size:11px;font-weight:600;color:#333;display:block;margin-bottom:6px;">RECLAMANTE</label>
+            <input id="nag-reclamante" type="text" placeholder="Nome do reclamante" style="width:100%;border:1px solid #ddd;border-radius:6px;padding:8px;font-size:12px;outline:none;box-sizing:border-box;" />
+          </div>
+          <div>
+            <label style="font-size:11px;font-weight:600;color:#333;display:block;margin-bottom:6px;">CLIENTE / EMPRESA</label>
+            <input id="nag-cliente" type="text" placeholder="Nome do cliente" style="width:100%;border:1px solid #ddd;border-radius:6px;padding:8px;font-size:12px;outline:none;box-sizing:border-box;" />
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+          <div>
+            <label style="font-size:11px;font-weight:600;color:#333;display:block;margin-bottom:6px;">GRUPO</label>
+            <input id="nag-grupo" type="text" placeholder="Ex: Grupo B1" style="width:100%;border:1px solid #ddd;border-radius:6px;padding:8px;font-size:12px;outline:none;box-sizing:border-box;" />
+          </div>
+          <div>
+            <label style="font-size:11px;font-weight:600;color:#333;display:block;margin-bottom:6px;">SOLICITANTE</label>
+            <input id="nag-resp" type="text" value="${respNome.replace(/"/g,'&quot;')}" style="width:100%;border:1px solid #ddd;border-radius:6px;padding:8px;font-size:12px;outline:none;box-sizing:border-box;background:#f5f5f5;" readonly />
+          </div>
+        </div>
+        <div>
+          <label style="font-size:11px;font-weight:600;color:#333;display:block;margin-bottom:6px;">DESCRIÇÃO / TAREFA</label>
+          <textarea id="nag-desc" rows="3" placeholder="Descreva o prazo ou agendamento a incluir" style="width:100%;border:1px solid #ddd;border-radius:6px;padding:8px;font-size:12px;outline:none;box-sizing:border-box;resize:vertical;font-family:inherit;"></textarea>
+        </div>
+      </div>
+      <div style="padding:16px 24px;border-top:1px solid #eee;display:flex;gap:10px;justify-content:flex-end;flex-shrink:0;">
+        <button onclick="document.getElementById('modal-novo-agendamento').remove()" style="background:#f0f0f0;border:none;border-radius:6px;padding:10px 20px;cursor:pointer;font-size:12px;color:#666;font-weight:500;">Cancelar</button>
+        <button onclick="window.enviarNovoAgendamento()" style="background:#0E5E6F;color:#fff;border:none;border-radius:6px;padding:10px 20px;cursor:pointer;font-size:12px;font-weight:600;">Enviar para Controladoria</button>
+      </div>
+    </div>`;
+  document.body.appendChild(modal);
+};
+
+window.enviarNovoAgendamento = function() {
+  var tipo       = (document.getElementById('nag-tipo')||{}).value||'';
+  var fatal      = (document.getElementById('nag-fatal')||{}).value||'';
+  var proc       = (document.getElementById('nag-proc')||{}).value||'';
+  var reclamante = (document.getElementById('nag-reclamante')||{}).value||'';
+  var cliente    = (document.getElementById('nag-cliente')||{}).value||'';
+  var grupo      = (document.getElementById('nag-grupo')||{}).value||'';
+  var resp       = (document.getElementById('nag-resp')||{}).value||'';
+  var desc       = (document.getElementById('nag-desc')||{}).value||'';
+  if(!tipo){ alert('Selecione o tipo.'); return; }
+  if(!proc){ alert('Informe o número do processo.'); return; }
+  if(!fatal){ alert('Informe a data do fatal.'); return; }
+  var fatalFmt = new Date(fatal+'T12:00:00').toLocaleDateString('pt-BR');
+  var assunto = '[Novo Agendamento] ' + proc + (grupo ? ' — ' + grupo : '');
+  var corpo = 'SOLICITAÇÃO DE NOVO AGENDAMENTO\n\n'
+    + 'Tipo: ' + tipo + '\n'
+    + 'Processo: ' + proc + '\n'
+    + 'Reclamante: ' + (reclamante||'—') + '\n'
+    + 'Cliente: ' + (cliente||'—') + '\n'
+    + 'Grupo: ' + (grupo||'—') + '\n'
+    + 'Data do Fatal: ' + fatalFmt + '\n'
+    + 'Descrição: ' + (desc||'—') + '\n\n'
+    + 'Solicitado por: ' + (resp||'—') + '\n'
+    + 'Data do envio: ' + new Date().toLocaleDateString('pt-BR');
+  var mailto = 'mailto:prazos.trabalhista@peixotoecury.com.br'
+    + '?subject=' + encodeURIComponent(assunto)
+    + '&body=' + encodeURIComponent(corpo);
+  var link = document.createElement('a');
+  link.href = mailto; link.target='_blank'; link.style.display='none';
+  document.body.appendChild(link); link.click();
+  setTimeout(function(){ document.body.removeChild(link); }, 500);
+  document.getElementById('modal-novo-agendamento').remove();
 };
 
 // 📅 Função para abrir modal de Reagendamento
@@ -9723,7 +9827,7 @@ window._exportarMeusRegistrosOLD_unused = function(){
 
     if(!document.getElementById('sidebar-att-ts')){
       const wrap = document.createElement('div');
-      wrap.style.cssText = 'display:flex;align-items:center;gap:6px;padding:2px 4px 6px;';
+      wrap.style.cssText = 'display:flex;align-items:center;gap:6px;padding:4px 4px 6px 12px;';
 
       const tsEl = document.createElement('span');
       tsEl.id = 'sidebar-att-ts';
