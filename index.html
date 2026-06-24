@@ -3690,7 +3690,8 @@ function recalcularStatusAudiencias(arr) {
     }
     if (!d || isNaN(d)) return r;
     const diff = diasUteisDiff(d, hoje);
-    return Object.assign({}, r, {status: calcStatusDiff(diff), dias_restantes: diff});
+    const iso = d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0');
+    return Object.assign({}, r, {status: calcStatusDiff(diff), dias_restantes: diff, data: iso, Data: iso});
   });
 }
 
