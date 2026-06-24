@@ -3731,8 +3731,7 @@ async function carregarAudienciasGithub(silencioso) {
       if (S.cancel) localStorage.setItem('pc_cancel', JSON.stringify(S.cancel));
     } catch(e) {}
 
-    const _hj = new Date().toISOString().slice(0,10);
-    n('nc-aud', S.aud.filter(r=>(r.data||r['Data']||'').slice(0,10)===_hj).length);
+    n('nc-aud', S.aud.filter(r => r.status === 'D-1').length);
     n('nc-cancel', (S.cancel||[]).length);
     if (typeof popAud       === 'function') popAud();
     if (typeof popCancel    === 'function') popCancel();
