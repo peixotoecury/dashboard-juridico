@@ -8023,10 +8023,10 @@ document.addEventListener('DOMContentLoaded', function(){
     const audCols = [
       {h:'Data',    v:r=>fmtD(pick(r,['Data','data','data_audiencia']))},
       {h:'Horário', v:r=>fmtHorario(pick(r,['Horário','horario','horário','Hora']))},
-      {h:'Tipo',    v:r=>txt(pick(r,['Tipo Agendamento','Tipo de Audiência','Tipo de Audiencia','tipo_audiencia','Tipo','tipo','modalidade','Modalidade']))},
-      {h:'Cliente', v:r=>txt(pick(r,['Parte Principal','parte_principal','cliente','Cliente']))},
-      {h:'Comarca', v:r=>txt(pick(r,['Comarca/UF','Comarca / UF','Comarca','comarca','Cidade','cidade']))},
-      {h:'Adv. Audiência', v:r=>txt(pick(r,['Advogado Responsável Audiência/SO','responsavel_audiencia','Advogado Audiência','advogado_audiencia','Advogado','advogado','responsavel']))},
+      {h:'Tipo',    v:r=>txt(r['Tipo Agendamento']||pick(r,['tipo_audiencia','Tipo','tipo','modalidade','Modalidade']))},
+      {h:'Cliente', v:r=>txt(r['Parte Principal']||pick(r,['parte_principal','cliente','Cliente']))},
+      {h:'Comarca', v:r=>txt(r['Comarca']||(r['Estado']||'')||pick(r,['cidade','Cidade']))},
+      {h:'Adv. Audiência', v:r=>txt(r['Advogado Responsável Audiência/SO']||pick(r,['responsavel_audiencia','advogado','Advogado','responsavel']))},
     ];
 
     // ── FATAIS COM JUSTIFICATIVA ──
@@ -8539,11 +8539,11 @@ document.addEventListener('DOMContentLoaded', function(){
     const audCols = [
       {h:'Data',    v:r=>fmtD(pick(r,['Data','data','data_audiencia']))},
       {h:'Horário', v:r=>fmtHorario(pick(r,['Horário','horario','horário','Hora']))},
-      {h:'Processo', v:r=>txt(pick(r,['numero_processo','Número do Processo','Processo','processo','Nº Processo']))},
-      {h:'Tipo',    v:r=>txt(pick(r,['Tipo Agendamento','Tipo de Audiência','Tipo de Audiencia','tipo_audiencia','Tipo','tipo','modalidade','Modalidade']))},
-      {h:'Cliente', v:r=>txt(pick(r,['Parte Principal','parte_principal','cliente','Cliente']))},
-      {h:'Comarca', v:r=>txt(pick(r,['Comarca/UF','Comarca / UF','Comarca','comarca','Cidade','cidade']))},
-      {h:'Adv. Audiência', v:r=>txt(pick(r,['Advogado Responsável Audiência/SO','responsavel_audiencia','Advogado Audiência','advogado_audiencia','Advogado','advogado','responsavel']))},
+      {h:'Processo', v:r=>txt(r['Processo']||pick(r,['numero_processo','Número do Processo','processo','Nº Processo']))},
+      {h:'Tipo',    v:r=>txt(r['Tipo Agendamento']||pick(r,['tipo_audiencia','Tipo','tipo','modalidade','Modalidade']))},
+      {h:'Cliente', v:r=>txt(r['Parte Principal']||pick(r,['parte_principal','cliente','Cliente']))},
+      {h:'Comarca', v:r=>txt(r['Comarca']||(r['Estado']||'')||pick(r,['cidade','Cidade']))},
+      {h:'Adv. Audiência', v:r=>txt(r['Advogado Responsável Audiência/SO']||pick(r,['responsavel_audiencia','advogado','Advogado','responsavel']))},
     ];
 
     const prazosHtml = table('📋 Prazos', d.prazos, prazoCols);
