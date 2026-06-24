@@ -5162,6 +5162,104 @@ window.reagendamentoMapeamento = {
   'Grupo E2': { email: 'andre.alessandro@peixotoecury.com.br', cc: 'prazos.trabalhista@peixotoecury.com.br' }
 };
 
+// 📅 Modal de Solicitação de Agendamento (Incluir / Ajustar / Excluir)
+window.abrirModalAgendamento = function(processo, cliente, responsavel, grupo) {
+  var old = document.getElementById('modal-agendamento');
+  if(old) old.remove();
+  var modal = document.createElement('div');
+  modal.id = 'modal-agendamento';
+  modal.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:9999;display:flex;align-items:center;justify-content:center;padding:20px;';
+  modal.innerHTML = `
+    <div style="background:#fff;border-radius:12px;width:100%;max-width:520px;max-height:92vh;overflow-y:auto;box-shadow:0 8px 32px rgba(0,0,0,.28);display:flex;flex-direction:column;">
+      <div style="background:#0E5E6F;color:#fff;padding:16px 24px;border-radius:12px 12px 0 0;display:flex;align-items:center;justify-content:space-between;flex-shrink:0;">
+        <div>
+          <div style="font-size:14px;font-weight:700;letter-spacing:.3px;">📅 Solicitação de Agendamento</div>
+          <div style="font-size:11px;opacity:.85;margin-top:3px;">${processo||'N/A'}${cliente?' — '+cliente:''}</div>
+        </div>
+        <button onclick="document.getElementById('modal-agendamento').remove()" style="background:rgba(255,255,255,.2);border:none;color:#fff;border-radius:6px;padding:4px 10px;cursor:pointer;font-size:16px;">✕</button>
+      </div>
+      <div style="padding:20px 24px;display:flex;flex-direction:column;gap:14px;">
+        <div>
+          <label style="font-size:11px;font-weight:600;color:#333;display:block;margin-bottom:6px;">TIPO DE SOLICITAÇÃO <span style="color:red">*</span></label>
+          <select id="ag-tipo" onchange="window._agendaTipoChanged()" style="width:100%;border:1px solid #bbb;border-radius:6px;padding:8px;font-size:12px;outline:none;box-sizing:border-box;">
+            <option value="">Selecione...</option>
+            <option value="Incluir">Incluir agendamento</option>
+            <option value="Ajustar">Ajustar agendamento</option>
+            <option value="Excluir">Excluir agendamento</option>
+          </select>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+          <div>
+            <label style="font-size:11px;font-weight:600;color:#333;display:block;margin-bottom:6px;">PROCESSO</label>
+            <input id="ag-proc" value="${(processo||'').replace(/"/g,'&quot;')}" style="width:100%;border:1px solid #bbb;border-radius:6px;padding:8px;font-size:11px;outline:none;box-sizing:border-box;" />
+          </div>
+          <div>
+            <label style="font-size:11px;font-weight:600;color:#333;display:block;margin-bottom:6px;">GRUPO</label>
+            <input id="ag-grupo" value="${(grupo||'').replace(/"/g,'&quot;')}" style="width:100%;border:1px solid #bbb;border-radius:6px;padding:8px;font-size:11px;outline:none;box-sizing:border-box;" />
+          </div>
+        </div>
+        <div>
+          <label style="font-size:11px;font-weight:600;color:#333;display:block;margin-bottom:6px;">RESPONSÁVEL</label>
+          <input id="ag-resp" value="${(responsavel||'').replace(/"/g,'&quot;')}" style="width:100%;border:1px solid #bbb;border-radius:6px;padding:8px;font-size:11px;outline:none;box-sizing:border-box;" />
+        </div>
+        <div id="ag-data-wrap" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+          <div>
+            <label style="font-size:11px;font-weight:600;color:#333;display:block;margin-bottom:6px;">DATA SOLICITADA</label>
+            <input id="ag-data" type="date" style="width:100%;border:1px solid #bbb;border-radius:6px;padding:8px;font-size:12px;outline:none;box-sizing:border-box;" />
+          </div>
+          <div>
+            <label style="font-size:11px;font-weight:600;color:#333;display:block;margin-bottom:6px;">HORÁRIO</label>
+            <input id="ag-hora" type="time" style="width:100%;border:1px solid #bbb;border-radius:6px;padding:8px;font-size:12px;outline:none;box-sizing:border-box;" />
+          </div>
+        </div>
+        <div>
+          <label style="font-size:11px;font-weight:600;color:#333;display:block;margin-bottom:6px;">OBSERVAÇÕES / JUSTIFICATIVA</label>
+          <textarea id="ag-obs" rows="3" placeholder="Descreva o motivo ou detalhes da solicitação" style="width:100%;border:1px solid #bbb;border-radius:6px;padding:8px;font-size:11px;font-family:inherit;resize:vertical;outline:none;box-sizing:border-box;"></textarea>
+        </div>
+      </div>
+      <div style="padding:16px 24px;border-top:1px solid #eee;display:flex;gap:10px;justify-content:flex-end;flex-shrink:0;">
+        <button onclick="document.getElementById('modal-agendamento').remove()" style="background:#f0f0f0;border:none;border-radius:6px;padding:10px 20px;cursor:pointer;font-size:12px;color:#666;font-weight:500;">Cancelar</button>
+        <button onclick="window.enviarSolicitacaoAgendamento()" style="background:#0E5E6F;color:#fff;border:none;border-radius:6px;padding:10px 20px;cursor:pointer;font-size:12px;font-weight:600;">Enviar</button>
+      </div>
+    </div>`;
+  document.body.appendChild(modal);
+};
+
+window._agendaTipoChanged = function() {
+  var tipo = (document.getElementById('ag-tipo')||{}).value||'';
+  var wrap = document.getElementById('ag-data-wrap');
+  if(wrap) wrap.style.display = tipo === 'Excluir' ? 'none' : 'grid';
+};
+
+window.enviarSolicitacaoAgendamento = function() {
+  var tipo    = (document.getElementById('ag-tipo')||{}).value||'';
+  var proc    = (document.getElementById('ag-proc')||{}).value||'';
+  var grupo   = (document.getElementById('ag-grupo')||{}).value||'';
+  var resp    = (document.getElementById('ag-resp')||{}).value||'';
+  var data    = (document.getElementById('ag-data')||{}).value||'';
+  var hora    = (document.getElementById('ag-hora')||{}).value||'';
+  var obs     = (document.getElementById('ag-obs')||{}).value||'';
+  if(!tipo){ alert('Selecione o tipo de solicitação.'); return; }
+  if(!proc){ alert('Informe o processo.'); return; }
+  var dataFmt = data ? new Date(data+'T12:00:00').toLocaleDateString('pt-BR') : '—';
+  var horaFmt = hora || '—';
+  var assunto = '['+tipo+' Agendamento] ' + proc + (grupo?' — '+grupo:'');
+  var corpo = 'Solicitação: ' + tipo + ' Agendamento\n\n'
+    + 'Processo: ' + proc + '\n'
+    + 'Grupo: ' + (grupo||'—') + '\n'
+    + 'Responsável: ' + (resp||'—') + '\n'
+    + (tipo !== 'Excluir' ? 'Data solicitada: ' + dataFmt + '\n' : '')
+    + (tipo !== 'Excluir' && horaFmt !== '—' ? 'Horário: ' + horaFmt + '\n' : '')
+    + (obs ? '\nObservações:\n' + obs : '');
+  var cfg = window.reagendamentoMapeamento[grupo] || { email: 'prazos.trabalhista@peixotoecury.com.br', cc: '' };
+  var mailto = 'mailto:' + cfg.email
+    + (cfg.cc ? '?cc=' + cfg.cc : '?')
+    + '&subject=' + encodeURIComponent(assunto)
+    + '&body=' + encodeURIComponent(corpo);
+  window.location.href = mailto;
+  document.getElementById('modal-agendamento').remove();
+};
+
 // 📅 Função para abrir modal de Reagendamento
 window.abrirModalReagendamento = function(processo, responsavel, grupo) {
   var old = document.getElementById('modal-reagendamento');
@@ -5858,6 +5956,8 @@ function renderFatais() {
         <button class="btn-salvar-just" data-aud-id="${audId}" style="background:${temJust?'#2d7d46':'#d62828'};color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;width:100%;"
           onclick="window.abrirModalJustificativaFatal('${audId}', '${e(r.numero_processo)}', '${e(r.responsavel)}', '${e(r.grupo_processo)}')">${temJust?'✏️ Editar':'🔴 Justificar'}</button>
         ${btnAprovar}
+        <button style="background:#0E5E6F;color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;width:100%;"
+          onclick="window.abrirModalAgendamento('${e(r.numero_processo)}','${e(r.cliente)}','${e(r.responsavel)}','${e(r.grupo_processo)}')" title="Incluir / Ajustar / Excluir agendamento">🗓 Agendamento</button>
         <button style="background:#d84315;color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;width:100%;"
           onclick="window.abrirModalReagendamento('${e(r.numero_processo)}', '${e(r.responsavel)}', '${e(r.grupo_processo)}')" title="Solicitar reagendamento">📅 Reagendar</button>
         <button style="background:#1565C0;color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;width:100%;"
@@ -5907,6 +6007,8 @@ function renderDetGeneric(baseData, bodyId, pgId, ctId, srchId, stId, pgKey, tip
     <td class="td-clip-sm">${e(r.grupo_processo)}</td>
     <td class="td-clip" style="max-width:220px" title="${e(r.descricao_tarefa)}">${e(r.descricao_tarefa)}</td>
     <td style="text-align:center;padding:4px;white-space:nowrap;">
+      <button style="background:#0E5E6F;color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;white-space:nowrap;margin-right:4px;"
+        onclick="window.abrirModalAgendamento('${e(r.numero_processo)}','${e(r.cliente)}','${e(r.responsavel)}','${e(r.grupo_processo)}')" title="Incluir / Ajustar / Excluir agendamento">🗓 Agendamento</button>
       <button style="background:#d84315;color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;white-space:nowrap;margin-right:4px;"
         onclick="window.abrirModalReagendamento('${e(r.numero_processo)}','${e(r.responsavel)}','${e(r.grupo_processo)}')" title="Solicitar reagendamento">📅 Reagendar</button>
       <button style="background:#1565C0;color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;white-space:nowrap;"
