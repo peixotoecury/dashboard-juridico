@@ -2485,6 +2485,64 @@ body.role-manager .upload-bar {
 #banner-stale .bs-close:hover { opacity:1; }
 @keyframes slideDown { from{transform:translateY(-100%);opacity:0} to{transform:translateY(0);opacity:1} }
 
+/* ===== Painel de alertas de Fatais/D-1 por e-mail (responsável e grupo) ===== */
+.alertas-designacao-overlay{
+  position:fixed;inset:0;z-index:9998;display:flex;align-items:center;justify-content:center;
+  background:rgba(0,59,92,.35);backdrop-filter:blur(5px);padding:22px;
+}
+.alertas-designacao-box{
+  width:min(980px,96vw);max-height:88vh;overflow:auto;background:#fff;border:1px solid var(--border);
+  border-radius:18px;box-shadow:0 22px 80px rgba(0,59,92,.22);color:var(--gray2);
+}
+.alertas-designacao-header{
+  display:flex;justify-content:space-between;align-items:flex-start;gap:16px;padding:22px 26px 18px;
+  background:linear-gradient(90deg,#004b67,#006080 72%,#00a9e0);color:#fff;border-radius:18px 18px 0 0;
+}
+.alertas-designacao-kicker{font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:#D9F2FB;margin-bottom:5px;}
+.alertas-designacao-header h2{margin:0;font-size:20px;line-height:1.2;color:#fff;}
+.alertas-designacao-header p{margin:6px 0 0;color:#EAF6FB;font-size:12px;}
+.alertas-designacao-close{
+  width:34px;height:34px;border-radius:50%;border:1px solid rgba(255,255,255,.45);background:rgba(255,255,255,.12);
+  color:#fff;font-size:24px;line-height:28px;cursor:pointer;flex-shrink:0;
+}
+.alertas-designacao-info{
+  margin:18px 22px 0;padding:12px 14px;border:1px solid rgba(0,169,224,.22);background:#F0FAFE;
+  border-radius:12px;color:var(--teal);font-size:12px;line-height:1.55;
+}
+.alertas-designacao-lista{padding:18px 22px 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;}
+.alerta-card-email{background:#fff;border:1px solid var(--border);border-radius:14px;padding:15px 16px;box-shadow:0 8px 22px rgba(0,59,92,.08);}
+.alerta-card-top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;margin-bottom:10px;}
+.alerta-card-email-destino{font-weight:800;color:var(--teal);font-size:13px;word-break:break-word;}
+.alerta-card-meta{font-size:11px;color:var(--gray3);margin-top:3px;}
+.alerta-card-count{background:#FFF4EA;color:#B85C00;border:1px solid #F0C49A;border-radius:999px;min-width:36px;height:28px;display:flex;align-items:center;justify-content:center;font-weight:900;}
+.alerta-card-lista{margin:8px 0 0 18px;padding:0;color:var(--gray2);font-size:11px;line-height:1.45;}
+.alerta-card-lista li{margin-bottom:7px;}
+.alerta-card-lista span{color:var(--gray3);}
+.alerta-card-mais{font-size:11px;font-weight:700;color:#B85C00;background:#FFF4EA;border:1px solid #F0C49A;border-radius:9px;padding:6px 9px;margin-top:8px;}
+.alerta-card-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px;}
+.alerta-btn-primary,.alerta-btn-secondary{border:none;border-radius:9px;padding:9px 12px;font-size:11px;font-weight:800;font-family:inherit;cursor:pointer;}
+.alerta-btn-primary{background:var(--teal);color:#fff;}
+.alerta-btn-primary:hover{background:#004b67;}
+.alerta-btn-primary[disabled]{opacity:.5;cursor:not-allowed;}
+.alerta-btn-secondary{background:#F4F9FC;color:var(--teal);border:1px solid var(--border);}
+.alerta-btn-secondary:hover{background:#EAF6FB;}
+.designacao-grupo-card{background:#fff;border:1px solid var(--border);border-radius:14px;padding:15px 16px;box-shadow:0 8px 22px rgba(0,59,92,.08);}
+.designacao-grupo-top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;margin-bottom:10px;}
+.designacao-grupo-nome{font-weight:900;color:var(--teal);font-size:14px;}
+.designacao-grupo-meta{font-size:11px;color:var(--gray3);margin-top:3px;}
+.designacao-grupo-count{background:#FFF4EA;color:#B85C00;border:1px solid #F0C49A;border-radius:999px;min-width:40px;height:30px;display:flex;align-items:center;justify-content:center;font-weight:900;}
+.designacao-mini-list{margin:8px 0 0 18px;padding:0;color:var(--gray2);font-size:11px;line-height:1.45;}
+.designacao-mini-list li{margin-bottom:7px;}
+.designacao-mini-list span{color:var(--gray3);}
+.designacao-critico{border-color:#F0C49A;background:#FFFBF7;}
+@media(max-width:768px){
+  .alertas-designacao-overlay{padding:0;align-items:flex-end;}
+  .alertas-designacao-box{width:100vw;max-height:92vh;border-radius:18px 18px 0 0;}
+  .alertas-designacao-header{border-radius:18px 18px 0 0;padding:18px 18px 14px;}
+  .alertas-designacao-lista{grid-template-columns:1fr;padding:14px;}
+  .alertas-designacao-info{margin:14px 14px 0;}
+}
+
 </style>
 </head>
 <body>
@@ -2905,9 +2963,15 @@ body.role-manager .upload-bar {
 
   <!-- Fatais detail -->
   <div class="det-card">
-    <div class="det-hdr">
-      <h2>🔴 Prazos Detalhados — Fatais <span class="det-cnt" id="ct-fatal-det">0 registros</span></h2>
-      <div class="det-desc">Lista detalhada exclusivamente dos prazos fatais para acompanhamento operacional.</div>
+    <div class="det-hdr" style="display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:10px;">
+      <div>
+        <h2>🔴 Prazos Detalhados — Fatais <span class="det-cnt" id="ct-fatal-det">0 registros</span></h2>
+        <div class="det-desc">Lista detalhada exclusivamente dos prazos fatais para acompanhamento operacional.</div>
+      </div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;">
+        <button type="button" style="background:#fff;color:var(--teal);border:none;border-radius:8px;padding:8px 14px;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap;" onclick="dispararAlertasFataisD1()">📧 Alertas de Fatais + D-1 (por responsável)</button>
+        <button type="button" style="background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.4);border-radius:8px;padding:8px 14px;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap;" onclick="abrirDashboardFataisD1PorGrupo()">📁 Alertas por grupo</button>
+      </div>
     </div>
     <div class="det-filters">
       <div class="srch-wrap">
@@ -5151,6 +5215,239 @@ window.enviarEmailJustificativa = function(processo, grupo, campo6, campo4, camp
   setTimeout(function(){ document.body.removeChild(link); }, 500);
   console.log('✉️ Email de justificativa aberto para: ' + toAddr + (config.cc ? ' (cc: ' + config.cc + ')' : ''));
 };
+
+// ══════════════════════════════════════════════════════════════════════════
+// ALERTAS DE PRAZOS FATAIS + D-1 POR E-MAIL (responsável individual e grupo)
+// ══════════════════════════════════════════════════════════════════════════
+
+function emailIndividualPorPrazo(r){
+  var sigla = String((r && r.matricula) || '').trim().toUpperCase();
+  var nome  = String((r && r.responsavel) || '').trim().toLowerCase();
+  if(typeof USUARIOS === 'undefined') return '';
+  var loginKey = Object.keys(USUARIOS).find(function(k){
+    var u = USUARIOS[k];
+    return (sigla && u.sigla && u.sigla.toUpperCase() === sigla) ||
+           (nome && u.nome && u.nome.trim().toLowerCase() === nome);
+  });
+  return loginKey ? loginKey + '@peixotoecury.com.br' : '';
+}
+
+function getPrazosFataisED1(){
+  return (S.prazos || []).filter(function(r){ return statusEh(r.status, 'Fatal') || statusEh(r.status, 'D-1'); });
+}
+
+function montarCorpoAlertaPrazo(rows, maxItens){
+  var ordenadas = rows.slice().sort(function(a,b){
+    return String(a.status||'').localeCompare(String(b.status||'')) || String(a.data||'').localeCompare(String(b.data||''));
+  });
+  var cortadas = maxItens ? ordenadas.slice(0, maxItens) : ordenadas;
+  var linhas = cortadas.map(function(r, i){
+    return (i+1) + '. [' + (r.status||'-') + '] ' + (r.data||'-') + ' | ' + (r.grupo_processo||'-') + ' | ' + (r.numero_processo||'-') + '\n'
+      + '   Responsável: ' + (r.responsavel||'-') + '\n'
+      + '   Cliente: ' + (r.cliente || r.parte_principal || '-') + '\n'
+      + '   Parte contrária: ' + (r.parte_contraria||'-') + '\n'
+      + '   Tarefa: ' + (r.descricao_tarefa||'-');
+  }).join('\n\n');
+  var restantes = ordenadas.length - cortadas.length;
+  var aviso = restantes > 0
+    ? '\n\n[+ ' + restantes + ' pendência(s) adicional(is) não incluída(s) por limite de tamanho do e-mail — texto completo copiado para a área de transferência, cole no corpo deste e-mail.]'
+    : '';
+  return 'Prezados,\n\nSeguem os prazos FATAIS e D-1 pendentes de conclusão imediata, a partir da base sincronizada:\n\n'
+    + linhas + aviso
+    + '\n\nFavor regularizar com urgência.\n\nControladoria Jurídica — Peixoto & Cury Advogados';
+}
+
+var LIMITE_TAMANHO_MAILTO_PRAZO = 1800;
+
+function montarMailtoAlertaPrazo(toAddr, ccAddr, rows, maxItens){
+  var qtdFatal = rows.filter(function(r){ return statusEh(r.status, 'Fatal'); }).length;
+  var qtdD1 = rows.filter(function(r){ return statusEh(r.status, 'D-1'); }).length;
+  var assunto = '🔴 Alerta de Prazos — ' + qtdFatal + ' Fatal(is) + ' + qtdD1 + ' D-1';
+  var corpo = montarCorpoAlertaPrazo(rows, maxItens);
+  var to = String(toAddr||'').replace(/\s*;\s*/g, ',');
+  var cc = String(ccAddr||'').replace(/\s*;\s*/g, ',');
+  return 'mailto:' + to + '?cc=' + encodeURIComponent(cc) + '&subject=' + encodeURIComponent(assunto) + '&body=' + encodeURIComponent(corpo);
+}
+
+// Espelha o fix aplicado no pauta-audiencias: mailto: muito grande (muitas pendências)
+// falha silenciosamente em vários clientes de e-mail. Acima do limite, resumimos o
+// corpo e copiamos o texto completo para a área de transferência.
+function abrirMailtoPrazoComFallback(toAddr, ccAddr, rows){
+  if(!rows || !rows.length) return;
+  var mailto = montarMailtoAlertaPrazo(toAddr, ccAddr, rows);
+  if(mailto.length > LIMITE_TAMANHO_MAILTO_PRAZO){
+    var corpoCompleto = montarCorpoAlertaPrazo(rows);
+    navigator.clipboard?.writeText(corpoCompleto).catch(function(){});
+    var maxItens = rows.length;
+    do{
+      maxItens--;
+      mailto = montarMailtoAlertaPrazo(toAddr, ccAddr, rows, maxItens);
+    } while(mailto.length > LIMITE_TAMANHO_MAILTO_PRAZO && maxItens > 0);
+    alert('📋 E-mail muito grande: corpo resumido e texto completo copiado para a área de transferência — cole no corpo do e-mail (Ctrl+V).');
+  }
+  window.location.href = mailto;
+}
+
+function ccParaResponsavel(rows){
+  var grupos = Array.from(new Set(rows.map(function(r){ return r.grupo_processo; }).filter(Boolean)));
+  var coordEmails = grupos.map(function(g){ return (window.emailMapeamento[g]||{}).para; }).filter(Boolean);
+  var ccSet = coordEmails.join(',').split(/[,;]/).map(function(s){ return s.trim(); }).filter(Boolean);
+  ccSet.push('prazos.trabalhista@peixotoecury.com.br');
+  return Array.from(new Set(ccSet)).join(',');
+}
+
+window.__alertasPrazoPorResp = {};
+window.__alertasPrazoPorGrupo = {};
+
+function dispararAlertasFataisD1(){
+  var pendentes = getPrazosFataisED1();
+  if(!pendentes.length){
+    alert('Nenhum prazo Fatal ou D-1 encontrado. 🎉');
+    return;
+  }
+
+  var agrupado = {};
+  pendentes.forEach(function(r){
+    var key = (r.responsavel || 'Sem responsável').trim();
+    if(!agrupado[key]) agrupado[key] = [];
+    agrupado[key].push(r);
+  });
+
+  var nomes = Object.keys(agrupado).sort(function(a,b){ return agrupado[b].length - agrupado[a].length || a.localeCompare(b); });
+  window.__alertasPrazoPorResp = agrupado;
+
+  var total = pendentes.length;
+  var totalFatal = pendentes.filter(function(r){ return statusEh(r.status, 'Fatal'); }).length;
+  var totalD1 = pendentes.filter(function(r){ return statusEh(r.status, 'D-1'); }).length;
+
+  var cards = nomes.map(function(nome){
+    var rows = agrupado[nome];
+    var fatalQ = rows.filter(function(r){ return statusEh(r.status, 'Fatal'); }).length;
+    var d1Q = rows.filter(function(r){ return statusEh(r.status, 'D-1'); }).length;
+    var grupos = Array.from(new Set(rows.map(function(r){ return r.grupo_processo; }).filter(Boolean)));
+    var email = emailIndividualPorPrazo(rows[0]);
+    var semEmail = !email;
+    var preview = rows.slice(0,4).map(function(r){
+      return '<li><b>[' + e(r.status) + ']</b> ' + e(r.data||'-') + ' · ' + e(r.numero_processo||'-') + '<br><span>' + e(r.cliente||r.parte_principal||'-') + ' · ' + e(r.descricao_tarefa||'-') + '</span></li>';
+    }).join('');
+    var mais = rows.length > 4 ? '<div class="alerta-card-mais">+ ' + (rows.length-4) + ' pendência(s) neste e-mail</div>' : '';
+    return '<div class="alerta-card-email">'
+      + '<div class="alerta-card-top"><div>'
+      + '<div class="alerta-card-email-destino">' + e(nome) + (semEmail ? ' <span style="color:#c62828;font-weight:700;">(e-mail não encontrado)</span>' : '') + '</div>'
+      + '<div class="alerta-card-meta">' + fatalQ + ' fatal(is) · ' + d1Q + ' D-1 · Grupo(s): ' + e(grupos.join(', ')||'-') + '</div>'
+      + '</div><div class="alerta-card-count">' + rows.length + '</div></div>'
+      + '<ul class="alerta-card-lista">' + preview + '</ul>' + mais
+      + '<div class="alerta-card-actions">'
+      + '<button type="button" class="alerta-btn-primary" ' + (semEmail?'disabled':'') + ' onclick="abrirEmailAlertaPrazoResp(\'' + nome.replace(/'/g,"\\'") + '\')">Abrir e-mail deste responsável</button>'
+      + '<button type="button" class="alerta-btn-secondary" onclick="copiarCorpoAlertaPrazoResp(\'' + nome.replace(/'/g,"\\'") + '\')">Copiar texto</button>'
+      + '</div></div>';
+  }).join('');
+
+  fecharPainelAlertasFataisD1();
+  var overlay = document.createElement('div');
+  overlay.id = 'alertas-prazo-modal';
+  overlay.className = 'alertas-designacao-overlay open';
+  overlay.innerHTML =
+    '<div class="alertas-designacao-box" role="dialog" aria-modal="true">'
+    + '<div class="alertas-designacao-header"><div>'
+    + '<div class="alertas-designacao-kicker">Controladoria Jurídica</div>'
+    + '<h2>Alertas de Prazos — Fatais e D-1</h2>'
+    + '<p>' + total + ' prazo(s) (' + totalFatal + ' fatal, ' + totalD1 + ' D-1), organizados em ' + nomes.length + ' responsável(is).</p>'
+    + '</div><button type="button" class="alertas-designacao-close" onclick="fecharPainelAlertasFataisD1()">×</button></div>'
+    + '<div class="alertas-designacao-info">Clique em <b>“Abrir e-mail deste responsável”</b> para notificar cada responsável individualmente — cópia automática para o coordenador do grupo e para <b>prazos.trabalhista@peixotoecury.com.br</b>. Para um e-mail único por grupo, use <b>“Alertas por grupo”</b>.</div>'
+    + '<div class="alertas-designacao-lista">' + cards + '</div>'
+    + '</div>';
+  document.body.appendChild(overlay);
+}
+
+function fecharPainelAlertasFataisD1(){
+  var overlay = document.getElementById('alertas-prazo-modal');
+  if(overlay) overlay.remove();
+}
+
+function abrirEmailAlertaPrazoResp(nome){
+  var rows = window.__alertasPrazoPorResp && window.__alertasPrazoPorResp[nome];
+  if(!rows || !rows.length) return;
+  var email = emailIndividualPorPrazo(rows[0]);
+  if(!email){ alert('Não foi possível localizar o e-mail deste responsável. Use "Copiar texto" e envie manualmente.'); return; }
+  abrirMailtoPrazoComFallback(email, ccParaResponsavel(rows), rows);
+}
+
+function copiarCorpoAlertaPrazoResp(nome){
+  var rows = window.__alertasPrazoPorResp && window.__alertasPrazoPorResp[nome];
+  if(!rows || !rows.length) return;
+  var corpo = montarCorpoAlertaPrazo(rows);
+  navigator.clipboard?.writeText(corpo).then(function(){ alert('Texto do alerta copiado.'); }).catch(function(){ alert(corpo); });
+}
+
+function abrirDashboardFataisD1PorGrupo(){
+  var pendentes = getPrazosFataisED1();
+  if(!pendentes.length){
+    alert('Nenhum prazo Fatal ou D-1 encontrado. 🎉');
+    return;
+  }
+
+  var gruposMap = {};
+  pendentes.forEach(function(r){
+    var g = r.grupo_processo || 'Sem grupo';
+    if(!gruposMap[g]) gruposMap[g] = [];
+    gruposMap[g].push(r);
+  });
+  window.__alertasPrazoPorGrupo = gruposMap;
+
+  var gruposOrdenados = Object.keys(gruposMap).sort(function(a,b){ return gruposMap[b].length - gruposMap[a].length || a.localeCompare(b); });
+
+  var cards = gruposOrdenados.map(function(g){
+    var rows = gruposMap[g];
+    var fatalQ = rows.filter(function(r){ return statusEh(r.status, 'Fatal'); }).length;
+    var d1Q = rows.filter(function(r){ return statusEh(r.status, 'D-1'); }).length;
+    var cfg = window.emailMapeamento[g] || { para:'', cc:'prazos.trabalhista@peixotoecury.com.br' };
+    var coordNome = (window.gestorNomeMapeamento && window.gestorNomeMapeamento[g]) || '-';
+    var semCoord = !cfg.para;
+    var preview = rows.slice(0,5).map(function(r){
+      return '<li><b>[' + e(r.status) + ']</b> ' + e(r.data||'-') + ' · ' + e(r.numero_processo||'-') + '<br><span>' + e(r.responsavel||'-') + ' · ' + e(r.cliente||r.parte_principal||'-') + '</span></li>';
+    }).join('');
+    var mais = rows.length > 5 ? '<div class="alerta-card-mais">+ ' + (rows.length-5) + ' pendência(s) neste grupo</div>' : '';
+    return '<div class="designacao-grupo-card' + (rows.length>=3?' designacao-critico':'') + '">'
+      + '<div class="designacao-grupo-top"><div>'
+      + '<div class="designacao-grupo-nome">' + e(g) + '</div>'
+      + '<div class="designacao-grupo-meta">Coordenador: ' + e(coordNome) + (semCoord ? ' <span style="color:#c62828;">(e-mail não mapeado)</span>' : '') + '</div>'
+      + '</div><div class="designacao-grupo-count">' + rows.length + '</div></div>'
+      + '<div class="designacao-grupo-meta">' + fatalQ + ' fatal(is) · ' + d1Q + ' D-1</div>'
+      + '<ul class="designacao-mini-list">' + preview + '</ul>' + mais
+      + '<div class="alerta-card-actions">'
+      + '<button type="button" class="alerta-btn-primary" ' + (semCoord?'disabled':'') + ' onclick="abrirEmailAlertaPrazoGrupo(\'' + g.replace(/'/g,"\\'") + '\')">Abrir e-mail do grupo</button>'
+      + '</div></div>';
+  }).join('');
+
+  fecharDashboardFataisD1PorGrupo();
+  var overlay = document.createElement('div');
+  overlay.id = 'dashboard-prazo-grupo-modal';
+  overlay.className = 'alertas-designacao-overlay open';
+  overlay.innerHTML =
+    '<div class="alertas-designacao-box" role="dialog" aria-modal="true">'
+    + '<div class="alertas-designacao-header"><div>'
+    + '<div class="alertas-designacao-kicker">Controladoria Jurídica</div>'
+    + '<h2>Alertas de Fatais/D-1 por Grupo</h2>'
+    + '<p>Um e-mail por grupo, endereçado ao coordenador, com cópia para prazos.trabalhista@peixotoecury.com.br.</p>'
+    + '</div><button type="button" class="alertas-designacao-close" onclick="fecharDashboardFataisD1PorGrupo()">×</button></div>'
+    + '<div class="alertas-designacao-lista">' + cards + '</div>'
+    + '</div>';
+  document.body.appendChild(overlay);
+}
+
+function fecharDashboardFataisD1PorGrupo(){
+  var overlay = document.getElementById('dashboard-prazo-grupo-modal');
+  if(overlay) overlay.remove();
+}
+
+function abrirEmailAlertaPrazoGrupo(grupo){
+  var rows = window.__alertasPrazoPorGrupo && window.__alertasPrazoPorGrupo[grupo];
+  if(!rows || !rows.length) return;
+  var cfg = window.emailMapeamento[grupo] || { para:'', cc:'prazos.trabalhista@peixotoecury.com.br' };
+  if(!cfg.para){ alert('Este grupo não tem coordenador mapeado em window.emailMapeamento.'); return; }
+  abrirMailtoPrazoComFallback(cfg.para, cfg.cc || 'prazos.trabalhista@peixotoecury.com.br', rows);
+}
 
 // ✅ Mapeamento de Responsáveis por Reagendamento (ATUALIZADO)
 window.reagendamentoMapeamento = {
