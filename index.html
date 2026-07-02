@@ -2970,6 +2970,7 @@ body.role-manager .upload-bar {
       </div>
       <div style="display:flex;gap:8px;flex-wrap:wrap;">
         <button type="button" style="background:#c62828;color:#fff;border:none;border-radius:8px;padding:8px 14px;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap;" onclick="dispararAlertasFatais()">🔴 Alertas de Fatais (por responsável)</button>
+        <button type="button" style="background:#5c0e0e;color:#fff;border:none;border-radius:8px;padding:8px 14px;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap;" onclick="dispararAlertaTodosFataisJunto()">📢 Alerta Único — Todos os Fatais</button>
         <button type="button" style="background:#fff;color:var(--teal);border:none;border-radius:8px;padding:8px 14px;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap;" onclick="dispararAlertasFataisD1()">📧 Alertas de Fatais + D-1 (por responsável)</button>
         <button type="button" style="background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.4);border-radius:8px;padding:8px 14px;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap;" onclick="abrirDashboardFataisD1PorGrupo()">📁 Alertas por grupo</button>
       </div>
@@ -5607,6 +5608,146 @@ function copiarCorpoAlertaFatalResp(nome){
   var rows = window.__alertasFatalPorResp && window.__alertasFatalPorResp[nome];
   if(!rows || !rows.length) return;
   var corpo = montarCorpoAlertaFatal(rows);
+  navigator.clipboard?.writeText(corpo).then(function(){ alert('Texto do alerta copiado.'); }).catch(function(){ alert(corpo); });
+}
+
+// ── Alerta único com TODOS os fatais juntos ─────────────────────────────────
+// Um só e-mail para todos os responsáveis com fatal, CC para o(s) coordenador(es)
+// de cada grupo envolvido (via ccParaResponsavelFatal, que já cobre a escalação
+// pós-16h) + prazos.trabalhista. Corpo inclui se cada prazo já foi justificado.
+function prazoFoiJustificado(r){
+  var audId = (r.numero_processo||'') + '_' + (r.responsavel||'').replace(/\s+/g, '_');
+  return !!(window.justificativas && (window.justificativas[r.numero_processo] || window.justificativas[audId]));
+}
+
+function montarCorpoAlertaTodosFatais(rows, maxItens){
+  var ordenadas = rows.slice().sort(function(a,b){
+    return String(a.responsavel||'').localeCompare(String(b.responsavel||'')) || String(a.data||'').localeCompare(String(b.data||''));
+  });
+  var cortadas = maxItens ? ordenadas.slice(0, maxItens) : ordenadas;
+  var linhas = cortadas.map(function(r, i){
+    return (i+1) + '. [' + (r.status||'-') + '] ' + (r.data||'-') + ' | ' + (r.grupo_processo||'-') + ' | ' + (r.numero_processo||'-') + '\n'
+      + '   Responsável: ' + (r.responsavel||'-') + '\n'
+      + '   Cliente: ' + (r.cliente || r.parte_principal || '-') + '\n'
+      + '   Parte contrária: ' + (r.parte_contraria||'-') + '\n'
+      + '   Tarefa: ' + (r.descricao_tarefa||'-') + '\n'
+      + '   Justificado: ' + (prazoFoiJustificado(r) ? 'Sim' : 'Não');
+  }).join('\n\n');
+  var restantes = ordenadas.length - cortadas.length;
+  var aviso = restantes > 0
+    ? '\n\n[+ ' + restantes + ' pendência(s) adicional(is) não incluída(s) por limite de tamanho do e-mail — texto completo copiado para a área de transferência, cole no corpo deste e-mail.]'
+    : '';
+  return 'Prezados,\n\nSeguem TODOS os prazos FATAIS pendentes de conclusão imediata, consolidados em um único e-mail para os responsáveis e coordenadores envolvidos:\n\n'
+    + linhas + aviso
+    + '\n\nFavor regularizar com urgência.\n\nControladoria Jurídica — Peixoto & Cury Advogados';
+}
+
+function montarMailtoAlertaTodosFatais(toAddr, ccAddr, rows, maxItens){
+  var assunto = '🔴 Alerta de Prazos FATAIS — TODOS OS RESPONSÁVEIS (' + rows.length + ' fatal(is))';
+  var corpo = montarCorpoAlertaTodosFatais(rows, maxItens);
+  var to = String(toAddr||'').replace(/\s*;\s*/g, ',');
+  var cc = String(ccAddr||'').replace(/\s*;\s*/g, ',');
+  return 'mailto:' + to + '?cc=' + encodeURIComponent(cc) + '&subject=' + encodeURIComponent(assunto) + '&body=' + encodeURIComponent(corpo);
+}
+
+function abrirMailtoTodosFataisComFallback(toAddr, ccAddr, rows){
+  if(!rows || !rows.length) return;
+  var mailto = montarMailtoAlertaTodosFatais(toAddr, ccAddr, rows);
+  if(mailto.length > LIMITE_TAMANHO_MAILTO_PRAZO){
+    var corpoCompleto = montarCorpoAlertaTodosFatais(rows);
+    navigator.clipboard?.writeText(corpoCompleto).catch(function(){});
+    var maxItens = rows.length;
+    do{
+      maxItens--;
+      mailto = montarMailtoAlertaTodosFatais(toAddr, ccAddr, rows, maxItens);
+    } while(mailto.length > LIMITE_TAMANHO_MAILTO_PRAZO && maxItens > 0);
+    alert('📋 E-mail muito grande: corpo resumido e texto completo copiado para a área de transferência — cole no corpo do e-mail (Ctrl+V).');
+  }
+  window.location.href = mailto;
+}
+
+function destinatariosTodosFataisResp(rows){
+  var vistos = {};
+  var emails = [];
+  rows.forEach(function(r){
+    var em = emailIndividualPorPrazo(r);
+    if(em && !vistos[em]){ vistos[em] = true; emails.push(em); }
+  });
+  return emails.join(',');
+}
+
+window.__alertaTodosFataisRows = [];
+
+function dispararAlertaTodosFataisJunto(){
+  var pendentes = getPrazosFataisApenas();
+  if(!pendentes.length){
+    alert('Nenhum prazo Fatal encontrado. 🎉');
+    return;
+  }
+  window.__alertaTodosFataisRows = pendentes;
+
+  var responsaveis = Array.from(new Set(pendentes.map(function(r){ return (r.responsavel || 'Sem responsável').trim(); })));
+  var gruposEnvolvidos = Array.from(new Set(pendentes.map(function(r){ return r.grupo_processo; }).filter(Boolean)));
+  var semEmailCount = responsaveis.filter(function(nome){
+    var linha = pendentes.find(function(r){ return (r.responsavel || 'Sem responsável').trim() === nome; });
+    return !emailIndividualPorPrazo(linha);
+  }).length;
+
+  var avisoCC = depoisDas16hBrasilia()
+    ? '<div class="alertas-designacao-info" style="background:#fdecea;color:#c62828;">⚠️ Após 16h (horário de Brasília): este e-mail copia automaticamente Poliana Banqueri, Marcel Alves e Antonio Carlos Aguiar.</div>'
+    : '';
+
+  var preview = pendentes.slice(0,6).map(function(r){
+    return '<li><b>[' + e(r.status) + ']</b> ' + e(r.data||'-') + ' · ' + e(r.numero_processo||'-') + '<br><span>' + e(r.responsavel||'-') + ' · ' + e(r.cliente||r.parte_principal||'-') + '</span></li>';
+  }).join('');
+  var mais = pendentes.length > 6 ? '<div class="alerta-card-mais">+ ' + (pendentes.length-6) + ' pendência(s) neste e-mail</div>' : '';
+
+  var card = '<div class="designacao-grupo-card designacao-critico">'
+    + '<div class="designacao-grupo-top"><div>'
+    + '<div class="designacao-grupo-nome">Todos os Responsáveis com Fatal</div>'
+    + '<div class="designacao-grupo-meta">' + responsaveis.length + ' responsável(is) · ' + gruposEnvolvidos.length + ' grupo(s)' + (semEmailCount ? ' · <span style="color:#c62828;">' + semEmailCount + ' sem e-mail mapeado</span>' : '') + '</div>'
+    + '</div><div class="designacao-grupo-count">' + pendentes.length + '</div></div>'
+    + '<ul class="designacao-mini-list">' + preview + '</ul>' + mais
+    + '<div class="alerta-card-actions">'
+    + '<button type="button" class="alerta-btn-primary" onclick="abrirEmailTodosFataisJunto()">Abrir e-mail único (todos os responsáveis)</button>'
+    + '<button type="button" class="alerta-btn-secondary" onclick="copiarCorpoTodosFataisJunto()">Copiar texto</button>'
+    + '</div></div>';
+
+  fecharPainelAlertaTodosFatais();
+  var overlay = document.createElement('div');
+  overlay.id = 'alertas-todos-fatais-modal';
+  overlay.className = 'alertas-designacao-overlay open';
+  overlay.innerHTML =
+    '<div class="alertas-designacao-box" role="dialog" aria-modal="true">'
+    + '<div class="alertas-designacao-header"><div>'
+    + '<div class="alertas-designacao-kicker">Controladoria Jurídica</div>'
+    + '<h2>Alerta Único — Todos os Fatais</h2>'
+    + '<p>' + pendentes.length + ' prazo(s) fatal(is) em um único e-mail, para todos os responsáveis com CC aos coordenadores.</p>'
+    + '</div><button type="button" class="alertas-designacao-close" onclick="fecharPainelAlertaTodosFatais()">×</button></div>'
+    + avisoCC
+    + '<div class="alertas-designacao-info">Um único e-mail para <b>todos os responsáveis</b> com fatal, com cópia automática para o(s) coordenador(es) de cada grupo envolvido e para <b>prazos.trabalhista@peixotoecury.com.br</b>.</div>'
+    + '<div class="alertas-designacao-lista">' + card + '</div>'
+    + '</div>';
+  document.body.appendChild(overlay);
+}
+
+function fecharPainelAlertaTodosFatais(){
+  var overlay = document.getElementById('alertas-todos-fatais-modal');
+  if(overlay) overlay.remove();
+}
+
+function abrirEmailTodosFataisJunto(){
+  var rows = window.__alertaTodosFataisRows;
+  if(!rows || !rows.length) return;
+  var to = destinatariosTodosFataisResp(rows);
+  if(!to){ alert('Não foi possível localizar e-mail de nenhum responsável. Use "Copiar texto" e envie manualmente.'); return; }
+  abrirMailtoTodosFataisComFallback(to, ccParaResponsavelFatal(rows), rows);
+}
+
+function copiarCorpoTodosFataisJunto(){
+  var rows = window.__alertaTodosFataisRows;
+  if(!rows || !rows.length) return;
+  var corpo = montarCorpoAlertaTodosFatais(rows);
   navigator.clipboard?.writeText(corpo).then(function(){ alert('Texto do alerta copiado.'); }).catch(function(){ alert(corpo); });
 }
 
