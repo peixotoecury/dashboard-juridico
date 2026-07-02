@@ -5259,7 +5259,7 @@ function montarCorpoAlertaPrazo(rows, maxItens){
     + '\n\nFavor regularizar com urgência.\n\nControladoria Jurídica — Peixoto & Cury Advogados';
 }
 
-var LIMITE_TAMANHO_MAILTO_PRAZO = 1800;
+var LIMITE_TAMANHO_MAILTO_PRAZO = 1950;
 
 function montarMailtoAlertaPrazo(toAddr, ccAddr, rows, maxItens){
   var qtdFatal = rows.filter(function(r){ return statusEh(r.status, 'Fatal'); }).length;
