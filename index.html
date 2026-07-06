@@ -3434,6 +3434,14 @@ body.role-manager .upload-bar {
           <button class="mp-only-btn" onclick="window.abrirModalNovoAgendamento()" style="background:#0E5E6F;color:#fff;border-color:#0E5E6F;">➕ Incluir Novo Agendamento</button>
         </div>
 
+        <div class="mp-only-search-wrap" style="margin:14px 0 4px;position:relative;max-width:440px;">
+          <input type="text" id="mp-only-search" placeholder="🔎 Buscar por processo, reclamante ou cliente…"
+            style="width:100%;padding:10px 34px 10px 12px;border:1px solid #d0d9e2;border-radius:8px;font-size:13px;outline:none;box-sizing:border-box;"
+            oninput="window._mpSearchTerm=this.value; if(typeof window.renderMeuPainelSomente==='function') window.renderMeuPainelSomente();">
+          <button type="button" onclick="var i=document.getElementById('mp-only-search'); i.value=''; window._mpSearchTerm=''; if(typeof window.renderMeuPainelSomente==='function') window.renderMeuPainelSomente();"
+            style="position:absolute;right:6px;top:50%;transform:translateY(-50%);border:none;background:transparent;color:#8ea0ae;cursor:pointer;font-size:14px;padding:4px 6px;" title="Limpar busca">✕</button>
+        </div>
+
         <div class="mp-only-cards">
           <div class="mp-only-card"><div class="mp-only-card-lbl">Prazos</div><div class="mp-only-card-val" id="mp-only-k-prazos">0</div></div>
           <div class="mp-only-card"><div class="mp-only-card-lbl">Agenda</div><div class="mp-only-card-val" id="mp-only-k-agendas">0</div></div>
@@ -3525,6 +3533,7 @@ body.role-manager .upload-bar {
 const PG = 100;
 const S = { raw:[], prazos:[], agendas:[], equipe:[], aud:[], cancel:[], pgs:{} };
 window.S = S; // expõe S para IIFEs (renderMP/dataMP usam window.S)
+window._mpSearchTerm = window._mpSearchTerm || ''; // busca do Meu Painel (processo/reclamante/cliente)
 // ── Limpeza ÚNICA de cache antigo (era do Excel, com dados desatualizados) ──
 // Força o navegador a usar SÓ a fonte ao vivo (Supabase). Roda uma vez por versão.
 try {
@@ -8996,11 +9005,25 @@ document.addEventListener('DOMContentLoaded', function(){
         return ma < mb ? -1 : ma > mb ? 1 : 0;
       });
     }
+
+    function normBusca(v){ return norm(v).replace(/ /g,''); }
+    const _qBusca = normBusca(window._mpSearchTerm || '');
+    function matchBusca(row){
+      if(!_qBusca) return true;
+      const candidatos = [
+        pick(row, ['numero_processo','Número do Processo','Processo','processo','Nº Processo']),
+        pick(row, ['cliente','Cliente']),
+        pick(row, ['parte_principal','Parte Principal','reclamante','Reclamante']),
+        pick(row, ['parte_contraria','Parte Contrária'])
+      ];
+      return candidatos.some(v => normBusca(v).includes(_qBusca));
+    }
+
     return {
-      prazos:     sortMP(d.prazos.filter(r => matchBase(r))),
-      agendas:    sortMP(d.agendas.filter(r => matchBase(r))),
-      equipe:     sortMP(d.equipe.filter(r => matchBase(r))),
-      audiencias: d.aud.filter(r => matchAud(r) && (function(){var v=r['Data']||r['data']||'';if(!v)return true;var d2=new Date(String(v).slice(0,10)+'T00:00:00');var hoje=new Date();hoje.setHours(0,0,0,0);return !isNaN(d2)&&d2>=hoje;}()))
+      prazos:     sortMP(d.prazos.filter(r => matchBase(r))).filter(matchBusca),
+      agendas:    sortMP(d.agendas.filter(r => matchBase(r))).filter(matchBusca),
+      equipe:     sortMP(d.equipe.filter(r => matchBase(r))).filter(matchBusca),
+      audiencias: d.aud.filter(r => matchAud(r) && (function(){var v=r['Data']||r['data']||'';if(!v)return true;var d2=new Date(String(v).slice(0,10)+'T00:00:00');var hoje=new Date();hoje.setHours(0,0,0,0);return !isNaN(d2)&&d2>=hoje;}())).filter(matchBusca)
     };
   }
 
