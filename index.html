@@ -2804,6 +2804,10 @@ body.role-manager .upload-bar {
       <option value="Futuro">Futuro</option>
     </select>
   </div>
+  <div class="srch-wrap">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    <input class="srch-in" id="gf-busca" placeholder="Buscar processo, cliente ou reclamante..." oninput="renderAll()">
+  </div>
   <button class="btn-limpar" onclick="clearGF()">✕ Limpar filtro</button>
 </div>
 
@@ -4603,13 +4607,14 @@ window.abrirModalFataisPorPessoa = function(nomeGrupo) {
 };
 
 // ── GLOBAL FILTER ────────────────────────────────────
-const GF = () => ({ resp:V('gf-resp')?.value||'', grupo:V('gf-grupo')?.value||'', status:V('gf-status')?.value||'' });
+const GF = () => ({ resp:V('gf-resp')?.value||'', grupo:V('gf-grupo')?.value||'', status:V('gf-status')?.value||'', busca:(V('gf-busca')?.value||'').toLowerCase() });
 function applyGF(data) {
   const f=GF();
   return data.filter(r=>{
     if(f.resp   && r.responsavel!==f.resp)     return false;
     if(f.grupo  && r.grupo_processo!==f.grupo) return false;
     if(f.status && (r.status||'').trim()!==(f.status||'').trim())        return false;
+    if(f.busca  && ![r.numero_processo,r.cliente,r.parte_principal].join(' ').toLowerCase().includes(f.busca)) return false;
     return true;
   });
 }
@@ -6936,7 +6941,7 @@ function renderCancel() {
 
 
 // ── CLEAR FILTERS ────────────────────────────────────
-function clearGF()    { ['gf-resp','gf-grupo','gf-status'].forEach(id=>{const el=V(id);if(el)el.value='';}); renderAll(); setTimeout(function(){ if(typeof window.renderMeuPainelSomente==='function') window.renderMeuPainelSomente(); },150); }
+function clearGF()    { ['gf-resp','gf-grupo','gf-status','gf-busca'].forEach(id=>{const el=V(id);if(el)el.value='';}); renderAll(); setTimeout(function(){ if(typeof window.renderMeuPainelSomente==='function') window.renderMeuPainelSomente(); },150); }
 function mpFiltrarTipo(tipo) {
   // Rola até a seção correspondente
   const mapa = { prazos: 'mp-only-prazos', agendas: 'mp-only-agendas', equipe: 'mp-only-equipe' };
