@@ -2850,7 +2850,7 @@ body.role-manager .upload-bar {
     <div class="det-hdr" style="display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:10px;background:linear-gradient(90deg,#7a4200,#e07a1f);">
       <div>
         <h2>⚠️ Antes do Feriado (09/07 SP) e Emenda (10/07) <span class="det-cnt" id="ct-feriado-det">0 registros</span></h2>
-        <div class="det-desc">Fatal + D-1 + D-2 juntos: quinta é feriado em SP e sexta é emenda. Resolver tudo aqui hoje.</div>
+        <div class="det-desc">D-1 + D-2 juntos: quinta é feriado em SP e sexta é emenda. Resolver tudo aqui hoje. (Fatais já têm tabela própria acima.)</div>
       </div>
     </div>
     <div class="det-filters">
@@ -4325,7 +4325,7 @@ function popFatal() {
     V('p-uf').innerHTML='<option value="">Todas</option>'+ufsTodos.map(x=>`<option value="${e(x)}">${e(x)}</option>`).join('');
   }
   if(V('fer-resp')){
-    const baseFer=S.prazos.filter(r=>statusEh(r.status,'Fatal')||statusEh(r.status,'D-1')||statusEh(r.status,'D-2'));
+    const baseFer=S.prazos.filter(r=>statusEh(r.status,'D-1')||statusEh(r.status,'D-2'));
     const respsFer=[...new Set(baseFer.map(r=>r.responsavel).filter(Boolean))].sort();
     const ufsFer=[...new Set(baseFer.map(r=>ufDoProcesso(r.numero_processo)).filter(Boolean))].sort();
     V('fer-resp').innerHTML='<option value="">Todos os responsáveis</option>'+respsFer.map(x=>`<option value="${e(x)}">${e(x)}</option>`).join('');
@@ -6867,17 +6867,17 @@ function renderAgDet() { renderDetGeneric(applyGF(S.agendas),'body-aget','pg-age
 function renderEqDet() { renderDetGeneric(applyGF(S.equipe),'body-eet','pg-eet','ct-eet','eq-s','eq-st','eet','agenda-equipe'); }
 function renderPDet() { renderDetGeneric(applyGF(S.prazos),'body-pt','pg-pt','ct-pt','p-s','p-st','pt','prazo','p-uf'); }
 
-// ── ANTES DO FERIADO — Fatal + D-1 + D-2 juntos ──────────
+// ── ANTES DO FERIADO — D-1 + D-2 (Fatal já tem tabela própria) ──────────
 function renderAntesFeriado() {
   const srch=(V('fer-s')?.value||'').toLowerCase();
   const resp=V('fer-resp')?.value||'';
   const uf=V('fer-uf')?.value||'';
-  let data=applyGF(S.prazos).filter(r=>statusEh(r.status,'Fatal')||statusEh(r.status,'D-1')||statusEh(r.status,'D-2'));
+  let data=applyGF(S.prazos).filter(r=>statusEh(r.status,'D-1')||statusEh(r.status,'D-2'));
   if(resp) data=data.filter(r=>r.responsavel===resp);
   if(uf)   data=data.filter(r=>ufDoProcesso(r.numero_processo)===uf);
   if(srch) data=data.filter(r=>[r.responsavel,r.numero_processo,r.cliente,r.parte_principal,r.descricao_tarefa].join(' ').toLowerCase().includes(srch));
   data.sort((a,b)=>{
-    const ord={Fatal:0,'D-1':1,'D-2':2};
+    const ord={'D-1':0,'D-2':1};
     return (ord[(a.status||'').trim()]??9)-(ord[(b.status||'').trim()]??9);
   });
   V('ct-feriado-det').textContent=data.length+' registros';
@@ -8812,10 +8812,10 @@ document.addEventListener('DOMContentLoaded', function(){
       fataisHtml = table('🔴 Prazos Fatais — ' + fatais.length + ' registros', fatais, fataisCols);
     }
 
-    // ── ANTES DO FERIADO (09/07 SP + emenda 10/07) — Fatal + D-1 + D-2 ──
+    // ── ANTES DO FERIADO (09/07 SP + emenda 10/07) — D-1 + D-2 (Fatal já tem quadro próprio acima) ──
     const antesFeriado = d.prazos.filter(r => {
       const s = (r.status || '').trim();
-      return s === 'Fatal' || s === 'D-1' || s === 'D-2';
+      return s === 'D-1' || s === 'D-2';
     });
     let feriadoHtml = '';
     if (antesFeriado.length > 0) {
