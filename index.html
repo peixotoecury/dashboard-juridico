@@ -3505,6 +3505,7 @@ body.role-manager .upload-bar {
       </section>
 
       <section class="mp-only-section active" data-mp-only="resumo">
+        <div id="mp-feriado-alerta"></div>
         <div class="mp-only-graphs">
           <div class="mp-only-box">
             <div class="mp-only-box-h"><h3>Distribuição dos meus itens</h3><span>visão geral</span></div>
@@ -8810,6 +8811,20 @@ document.addEventListener('DOMContentLoaded', function(){
       ];
       fataisHtml = table('🔴 Prazos Fatais — ' + fatais.length + ' registros', fatais, fataisCols);
     }
+
+    // ── ANTES DO FERIADO (09/07 SP + emenda 10/07) — Fatal + D-1 + D-2 ──
+    const antesFeriado = d.prazos.filter(r => {
+      const s = (r.status || '').trim();
+      return s === 'Fatal' || s === 'D-1' || s === 'D-2';
+    });
+    let feriadoHtml = '';
+    if (antesFeriado.length > 0) {
+      feriadoHtml = '<div style="border:2px solid #e07a1f;border-radius:10px;overflow:hidden;margin-bottom:18px;">' +
+        table('⚠️ Antes do Feriado (09/07 SP) e Emenda (10/07) — ' + antesFeriado.length + ' registros', antesFeriado, prazoCols) +
+        '</div>';
+    }
+    const feriadoDiv = document.getElementById('mp-feriado-alerta');
+    if (feriadoDiv) feriadoDiv.innerHTML = feriadoHtml;
 
     const prazosHtml = table('📋 Prazos', d.prazos, prazoCols);
     const agendasHtml = table('📅 Agenda', d.agendas, agendaCols);
