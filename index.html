@@ -2845,32 +2845,6 @@ body.role-manager .upload-bar {
     </div>
   </div>
 
-  <!-- Alerta Feriado + Emenda — Fatal + D-1 + D-2 juntos, pra resolver antes da pausa -->
-  <div class="det-card" style="margin-bottom:14px;border:2px solid #e07a1f;">
-    <div class="det-hdr" style="display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:10px;background:linear-gradient(90deg,#7a4200,#e07a1f);">
-      <div>
-        <h2>⚠️ Antes do Feriado (09/07 SP) e Emenda (10/07) <span class="det-cnt" id="ct-feriado-det">0 registros</span></h2>
-        <div class="det-desc">Fatal + D-1 + D-2 juntos: quinta é feriado em SP e sexta é emenda. Resolver tudo aqui hoje.</div>
-      </div>
-    </div>
-    <div class="det-filters">
-      <div class="srch-wrap">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-        <input class="srch-in" id="fer-s" placeholder="Buscar por processo, cliente, reclamante ou tarefa..." oninput="renderAntesFeriado()">
-      </div>
-      <div class="fg"><select class="fsel" id="fer-resp" onchange="renderAntesFeriado()"><option value="">Todos os responsáveis</option></select></div>
-      <div class="fg"><select class="fsel" id="fer-uf" onchange="renderAntesFeriado()"><option value="">Todas as UF</option></select></div>
-      <button class="btn-limpar" onclick="V('fer-s').value='';V('fer-resp').value='';V('fer-uf').value='';renderAntesFeriado()">✕ Limpar</button>
-    </div>
-    <div class="det-scroll"><table>
-      <thead><tr>
-        <th>Data</th><th>Status</th><th>Responsável</th><th>Processo</th><th>UF</th><th>Cliente</th><th>Tarefa</th><th>Grupo</th><th>Ação</th>
-      </tr></thead>
-      <tbody id="body-feriado"></tbody>
-    </table></div>
-    <div class="pg-bar" id="pg-feriado"></div>
-  </div>
-
   <!-- ══ RANKING FATAIS + TAREFAS COM MAIS FATAIS ══ -->
   <div class="tbl-grid" style="margin-bottom:14px;">
 
@@ -3505,7 +3479,6 @@ body.role-manager .upload-bar {
       </section>
 
       <section class="mp-only-section active" data-mp-only="resumo">
-        <div id="mp-feriado-alerta"></div>
         <div class="mp-only-graphs">
           <div class="mp-only-box">
             <div class="mp-only-box-h"><h3>Distribuição dos meus itens</h3><span>visão geral</span></div>
@@ -4324,13 +4297,6 @@ function popFatal() {
     const ufsTodos=[...new Set(S.prazos.map(r=>ufDoProcesso(r.numero_processo)).filter(Boolean))].sort();
     V('p-uf').innerHTML='<option value="">Todas</option>'+ufsTodos.map(x=>`<option value="${e(x)}">${e(x)}</option>`).join('');
   }
-  if(V('fer-resp')){
-    const baseFer=S.prazos.filter(r=>statusEh(r.status,'Fatal')||statusEh(r.status,'D-1')||statusEh(r.status,'D-2'));
-    const respsFer=[...new Set(baseFer.map(r=>r.responsavel).filter(Boolean))].sort();
-    const ufsFer=[...new Set(baseFer.map(r=>ufDoProcesso(r.numero_processo)).filter(Boolean))].sort();
-    V('fer-resp').innerHTML='<option value="">Todos os responsáveis</option>'+respsFer.map(x=>`<option value="${e(x)}">${e(x)}</option>`).join('');
-    V('fer-uf').innerHTML='<option value="">Todas as UF</option>'+ufsFer.map(x=>`<option value="${e(x)}">${e(x)}</option>`).join('');
-  }
 }
 function popAud() {
   const tipos  =[...new Set(S.aud.map(r=>r['Tipo Agendamento']).filter(Boolean))].sort();
@@ -5012,7 +4978,6 @@ function renderAll() {
   renderResp(fe,'body-re','ct-re','re');
   renderGrupo(fe,'body-ge','ct-ge');
   renderFatais();
-  renderAntesFeriado();
   renderPDet();
   renderAgDet();
   renderEqDet();
@@ -6866,44 +6831,6 @@ function renderDetGeneric(baseData, bodyId, pgId, ctId, srchId, stId, pgKey, tip
 function renderAgDet() { renderDetGeneric(applyGF(S.agendas),'body-aget','pg-aget','ct-aget','ag-s','ag-st','aget','agenda'); }
 function renderEqDet() { renderDetGeneric(applyGF(S.equipe),'body-eet','pg-eet','ct-eet','eq-s','eq-st','eet','agenda-equipe'); }
 function renderPDet() { renderDetGeneric(applyGF(S.prazos),'body-pt','pg-pt','ct-pt','p-s','p-st','pt','prazo','p-uf'); }
-
-// ── ANTES DO FERIADO — Fatal + D-1 + D-2 juntos ──────────
-function renderAntesFeriado() {
-  const srch=(V('fer-s')?.value||'').toLowerCase();
-  const resp=V('fer-resp')?.value||'';
-  const uf=V('fer-uf')?.value||'';
-  let data=applyGF(S.prazos).filter(r=>statusEh(r.status,'Fatal')||statusEh(r.status,'D-1')||statusEh(r.status,'D-2'));
-  if(resp) data=data.filter(r=>r.responsavel===resp);
-  if(uf)   data=data.filter(r=>ufDoProcesso(r.numero_processo)===uf);
-  if(srch) data=data.filter(r=>[r.responsavel,r.numero_processo,r.cliente,r.parte_principal,r.descricao_tarefa].join(' ').toLowerCase().includes(srch));
-  data.sort((a,b)=>{
-    const ord={Fatal:0,'D-1':1,'D-2':2};
-    return (ord[(a.status||'').trim()]??9)-(ord[(b.status||'').trim()]??9);
-  });
-  V('ct-feriado-det').textContent=data.length+' registros';
-  const {slice,pg,pages,total}=pgSlice(data,'feriado');
-  V('body-feriado').innerHTML=slice.length?slice.map(r=>`<tr>
-    <td class="td-mono">${fmtDate(r.data)}</td>
-    <td>${sBadge(r.status)}</td>
-    <td class="td-clip-sm">${e(r.responsavel)}</td>
-    <td class="td-clip-sm proc-normal" title="${e(r.numero_processo)}">${e(r.numero_processo)}</td>
-    <td class="td-clip-sm">${e(ufDoProcesso(r.numero_processo))}</td>
-    <td class="td-clip-sm" title="${e(r.cliente)}">${e(r.cliente)}</td>
-    <td class="td-clip" style="max-width:220px" title="${e(r.descricao_tarefa)}">${e(r.descricao_tarefa)}</td>
-    <td class="td-clip-sm">${e(r.grupo_processo)}</td>
-    <td style="padding:4px;min-width:140px;">
-      <div style="display:flex;flex-direction:column;gap:4px;">
-        <button style="background:#0E5E6F;color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;width:100%;"
-          onclick="window.abrirModalAgendamento('${e(r.numero_processo)}','${e(r.cliente)}','${e(r.responsavel)}','${e(r.grupo_processo)}','Prazo','${e(r.data||'')}')" title="Incluir / Ajustar / Excluir agendamento">🗓 Agendamento</button>
-        <button style="background:#d84315;color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;width:100%;"
-          onclick="window.abrirModalReagendamento('${e(r.numero_processo)}','${e(r.responsavel)}','${e(r.grupo_processo)}')" title="Solicitar reagendamento">📅 Reagendar</button>
-        <button style="background:#1565C0;color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;width:100%;"
-          onclick="window.abrirModalTransferencia('${e(r.numero_processo)}','${e(r.cliente)}','${e(r.responsavel)}','prazo')" title="Transferir pasta ou agendamento">📁 Transferir</button>
-      </div>
-    </td>
-  </tr>`).join(''):emptyR(9);
-  renderPg('pg-feriado',pg,pages,total,'feriado',renderAntesFeriado);
-}
 
 // ── AUDIÊNCIAS ───────────────────────────────────────
 // Formata horário do Excel corretamente (serial numérico ou string)
@@ -8811,20 +8738,6 @@ document.addEventListener('DOMContentLoaded', function(){
       ];
       fataisHtml = table('🔴 Prazos Fatais — ' + fatais.length + ' registros', fatais, fataisCols);
     }
-
-    // ── ANTES DO FERIADO (09/07 SP + emenda 10/07) — Fatal + D-1 + D-2 ──
-    const antesFeriado = d.prazos.filter(r => {
-      const s = (r.status || '').trim();
-      return s === 'Fatal' || s === 'D-1' || s === 'D-2';
-    });
-    let feriadoHtml = '';
-    if (antesFeriado.length > 0) {
-      feriadoHtml = '<div style="border:2px solid #e07a1f;border-radius:10px;overflow:hidden;margin-bottom:18px;">' +
-        table('⚠️ Antes do Feriado (09/07 SP) e Emenda (10/07) — ' + antesFeriado.length + ' registros', antesFeriado, prazoCols) +
-        '</div>';
-    }
-    const feriadoDiv = document.getElementById('mp-feriado-alerta');
-    if (feriadoDiv) feriadoDiv.innerHTML = feriadoHtml;
 
     const prazosHtml = table('📋 Prazos', d.prazos, prazoCols);
     const agendasHtml = table('📅 Agenda', d.agendas, agendaCols);
