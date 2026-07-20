@@ -182,7 +182,10 @@ def gerar_audiencias() -> pd.DataFrame:
 
     path = arquivos[0]
     logging.info(f"Lendo pauta: {os.path.basename(path)}")
-    df = pd.read_excel(path, sheet_name=0, header=1, parse_dates=["Data"])
+    # Detecta se há linha extra antes do cabeçalho (varia entre exports)
+    _probe = pd.read_excel(path, sheet_name=0, header=None, nrows=2)
+    _header_row = 0 if "Data" in str(_probe.iloc[0].tolist()) else 1
+    df = pd.read_excel(path, sheet_name=0, header=_header_row, parse_dates=["Data"])
 
     df = df.rename(columns={
         "Tipo Agendamento":                        "tipo_agenda",
