@@ -4696,8 +4696,11 @@ function enviarEmailTrabalhista() {
   const ae = S.equipe || [];
 
   function cnt(arr, st){ return arr.filter(r => (r.status||'').trim() === st).length; }
+  // Prazos contam processos únicos (mesmo critério do card do dashboard) — um
+  // processo pode ter mais de uma tarefa fatal no mesmo dia.
+  function cntProc(arr, st){ return contarProcessosUnicos(arr.filter(r => (r.status||'').trim() === st)); }
 
-  const pD1=cnt(p,'D-1'), pD2=cnt(p,'D-2'), pFatal=cnt(p,'Fatal'), pVenc=cnt(p,'Vencido'), pTot=p.length;
+  const pD1=cntProc(p,'D-1'), pD2=cntProc(p,'D-2'), pFatal=cntProc(p,'Fatal'), pVenc=cntProc(p,'Vencido'), pTot=p.length;
   const aD1=cnt(a,'D-1'), aD2=cnt(a,'D-2'), aFatal=cnt(a,'Fatal'), aVenc=cnt(a,'Vencido'), aTot=a.length;
   const eD1=cnt(ae,'D-1'),eD2=cnt(ae,'D-2'),eFatal=cnt(ae,'Fatal'),eVenc=cnt(ae,'Vencido'),eTot=ae.length;
 
