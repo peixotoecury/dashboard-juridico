@@ -3643,14 +3643,21 @@ body.role-manager .upload-bar {
 <div 
 
 <div id="page-exposicao" class="page">
-  <div class="content">
-    <div class="exp-container">
-      <h2 style="margin-bottom: 20px; color: var(--gray2); font-size: 16px; font-weight: 600;">📊 Exposição por Grupo — Prazos Fatais</h2>
-      <div style="margin-bottom: 16px; padding: 10px; background: #fff8f8; border-left: 4px solid #c62828; border-radius: 4px; font-size: 12px; color: #7b0000;">
-        ⚠️ <strong>Filtrando APENAS prazos FATAIS:</strong> Esta visualização mostra exclusivamente os prazos com status "Fatal" agrupados por grupo de processo. Para ver agendas, audiências ou outros status, use o Dashboard Executivo.
-      </div>
-      <div id="exposicao-grupos" class="exp-grupos"></div>
+  <div class="exp-container">
+    <h2 style="margin-bottom: 16px; color: var(--gray2); font-size: 16px; font-weight: 600;">📊 Exposição por Grupo — Prazos Fatais</h2>
+    <div style="margin-bottom: 16px; padding: 10px; background: #fff8f8; border-left: 4px solid #c62828; border-radius: 4px; font-size: 12px; color: #7b0000;">
+      ⚠️ <strong>Filtrando APENAS prazos FATAIS:</strong> Esta visualização mostra exclusivamente os prazos com status "Fatal" agrupados por grupo de processo. Para ver agendas, audiências ou outros status, use o Dashboard Executivo.
     </div>
+    <div class="det-filters" style="margin-bottom:16px;padding:10px 14px;background:var(--gray6);border:1px solid var(--border);border-radius:8px;">
+      <div class="fg"><label>Grupo</label>
+        <select class="fsel" id="exp-flt-grupo" onchange="window.renderExposicaoGrupo()"><option value="">Todos os grupos</option></select>
+      </div>
+      <div class="fg"><label>Profissional</label>
+        <select class="fsel" id="exp-flt-prof" onchange="window.renderExposicaoGrupo()"><option value="">Todos os profissionais</option></select>
+      </div>
+      <button class="btn-limpar" onclick="V('exp-flt-grupo').value='';V('exp-flt-prof').value='';window.renderExposicaoGrupo()">✕ Limpar</button>
+    </div>
+    <div id="exposicao-grupos" class="exp-grupos"></div>
   </div>
 </div><!-- /page-exposicao -->
 
@@ -4916,14 +4923,36 @@ window.renderExposicaoGrupo = function() {
   
   const container = V('exposicao-grupos');
   if (!container) return;
-  
+
   // Agrupar dados APENAS COM FATAIS por grupo_processo
   const grupos = {};
   const allData = S.prazos || []; // 🔥 USAR APENAS PRAZOS, NÃO RAW!
-  
+
   // Filtrar apenas os fatais (case-insensitive com função normalizada)
-  const fataisOnly = allData.filter(row => statusEh(row.status, 'fatal'));
-  
+  const fataisTodos = allData.filter(row => statusEh(row.status, 'fatal'));
+
+  // Popula os selects de filtro a partir do universo COMPLETO de fatais (não do já filtrado)
+  const selGrupo = V('exp-flt-grupo'), selProf = V('exp-flt-prof');
+  if(selGrupo){
+    const atual = selGrupo.value;
+    const gruposTodos = Array.from(new Set(fataisTodos.map(r=>r.grupo_processo || r['Grupo Processo'] || 'Sem Grupo'))).sort();
+    selGrupo.innerHTML = '<option value="">Todos os grupos</option>' + gruposTodos.map(g=>`<option value="${e(g)}">${e(g)}</option>`).join('');
+    if(gruposTodos.includes(atual)) selGrupo.value = atual;
+  }
+  if(selProf){
+    const atual = selProf.value;
+    const profsTodos = Array.from(new Set(fataisTodos.map(r=>r.responsavel || r['Responsável'] || 'Não atribuído'))).sort();
+    selProf.innerHTML = '<option value="">Todos os profissionais</option>' + profsTodos.map(p=>`<option value="${e(p)}">${e(p)}</option>`).join('');
+    if(profsTodos.includes(atual)) selProf.value = atual;
+  }
+  const grupoSel = selGrupo?.value || '';
+  const profSel = selProf?.value || '';
+  const fataisOnly = fataisTodos.filter(row => {
+    if(grupoSel && (row.grupo_processo || row['Grupo Processo'] || 'Sem Grupo') !== grupoSel) return false;
+    if(profSel && (row.responsavel || row['Responsável'] || 'Não atribuído') !== profSel) return false;
+    return true;
+  });
+
   fataisOnly.forEach(row => {
     const grupo = row.grupo_processo || row['Grupo Processo'] || 'Sem Grupo';
     if (!grupos[grupo]) {
