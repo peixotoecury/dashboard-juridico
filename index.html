@@ -3915,6 +3915,15 @@ function controlarAbas(){
           btn.style.display = 'none';
         }
       });
+      // Idem na barra inferior do mobile — senão dá pra tocar no ícone e entrar
+      // mesmo assim, já que o botão escondido no menu lateral ainda existe no DOM
+      // e mobileSwitchTab() dispara o click nele independente de estar visível.
+      document.querySelectorAll('#mobile-bottom-nav .mn-btn').forEach(function(btn){
+        var text = btn.textContent || '';
+        if(!text.includes('Meu Painel')){
+          btn.style.display = 'none';
+        }
+      });
       // Força abrir Meu Painel
       var btnMeuPainel = document.getElementById('nav-meu-painel-only');
       if(btnMeuPainel){
