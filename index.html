@@ -3269,6 +3269,14 @@ body.role-manager .upload-bar {
           <option value="Futuro">Futuro</option>
         </select>
       </div>
+      <div class="fg"><label>Tipo</label>
+        <select class="fsel" id="bx-tipo" onchange="renderBaixados()">
+          <option value="">Prazos, Agendas e Agenda Equipe</option>
+          <option value="Prazo">Prazos</option>
+          <option value="Agenda">Agendas</option>
+          <option value="Equipe">Agenda Equipe</option>
+        </select>
+      </div>
       <div class="fg"><label>Justificativa</label>
         <select class="fsel" id="bx-just" onchange="renderBaixados()">
           <option value="">Todos</option>
@@ -3280,10 +3288,10 @@ body.role-manager .upload-bar {
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
         <input class="srch-in" id="bx-s" placeholder="Buscar processo, cliente ou reclamante..." oninput="renderBaixados()">
       </div>
-      <button class="btn-limpar" onclick="V('bx-s').value='';V('bx-status').value='';V('bx-just').value='';renderBaixados()">✕ Limpar</button>
+      <button class="btn-limpar" onclick="V('bx-s').value='';V('bx-status').value='';V('bx-tipo').value='';V('bx-just').value='';renderBaixados()">✕ Limpar</button>
     </div>
     <div class="det-scroll" style="max-height:65vh;"><table>
-      <thead><tr><th>Data da Baixa</th><th>Status Antes</th><th>Data do Prazo</th><th>Responsável</th><th>Processo</th><th>Cliente</th><th>Tarefa</th><th>Grupo</th><th>Justificativa</th></tr></thead>
+      <thead><tr><th>Data da Baixa</th><th>Tipo</th><th>Status Antes</th><th>Data do Prazo</th><th>Responsável</th><th>Processo</th><th>Cliente</th><th>Tarefa</th><th>Grupo</th><th>Justificativa</th></tr></thead>
       <tbody id="body-baixados"></tbody>
     </table></div>
     <div class="pg-bar" id="pg-baixados"></div>
@@ -4177,13 +4185,27 @@ function popBaixadosData(){
   sel.value = datas.includes(atual) ? atual : hojeIso;
 }
 
+function classificarTipoAgendaBaixado(tipoAgenda){
+  const t = (tipoAgenda||'').trim();
+  if(t.includes('Equipe')) return 'Equipe';
+  if(t === 'Agenda') return 'Agenda';
+  if(t === 'Prazo') return 'Prazo';
+  return t;
+}
+function tipoBaixadoLabel(tipoAgenda){
+  const c = classificarTipoAgendaBaixado(tipoAgenda);
+  return c === 'Equipe' ? 'Agenda Equipe' : (c || '—');
+}
+
 function renderBaixados(){
   const dataSel = V('bx-data')?.value || new Date().toISOString().slice(0,10);
   const statusSel = V('bx-status')?.value || '';
+  const tipoSel = V('bx-tipo')?.value || '';
   const justSel = V('bx-just')?.value || '';
   const srch = (V('bx-s')?.value||'').toLowerCase();
   let data = (S.baixados||[]).filter(r => r.data_baixa === dataSel && ['Fatal','D-1','D-2','Futuro'].includes(r.status_antes_baixa));
   if(statusSel) data = data.filter(r => r.status_antes_baixa === statusSel);
+  if(tipoSel) data = data.filter(r => classificarTipoAgendaBaixado(r.tipo_agenda) === tipoSel);
   if(srch) data = data.filter(r => [r.responsavel,r.numero_processo,r.cliente,r.parte_principal,r.descricao_tarefa].join(' ').toLowerCase().includes(srch));
   if(justSel){
     data = data.filter(r => {
@@ -4201,6 +4223,7 @@ function renderBaixados(){
       : `<span style="background:#fff3e0;color:#e65100;padding:2px 6px;border-radius:8px;font-size:10px;font-weight:700;">— Sem justificativa</span>`;
     return `<tr>
       <td class="td-mono">${fmtDate(r.data_baixa)}</td>
+      <td><span class="badge b-outro">${e(tipoBaixadoLabel(r.tipo_agenda))}</span></td>
       <td>${sBadge(r.status_antes_baixa)}</td>
       <td class="td-mono">${fmtDate(r.data)}</td>
       <td class="td-clip-sm">${e(r.responsavel)}</td>
@@ -4210,17 +4233,19 @@ function renderBaixados(){
       <td class="td-clip-sm">${e(r.grupo_processo)}</td>
       <td>${justBadge}</td>
     </tr>`;
-  }).join('') : emptyR(9);
+  }).join('') : emptyR(10);
   renderPg('pg-baixados',pg,pages,total,'baixados',renderBaixados);
 }
 
 function exportarBaixadosExcel(){
   const dataSel = V('bx-data')?.value || new Date().toISOString().slice(0,10);
   const statusSel = V('bx-status')?.value || '';
+  const tipoSel = V('bx-tipo')?.value || '';
   const justSel = V('bx-just')?.value || '';
   const srch = (V('bx-s')?.value||'').toLowerCase();
   let data = (S.baixados||[]).filter(r => r.data_baixa === dataSel && ['Fatal','D-1','D-2','Futuro'].includes(r.status_antes_baixa));
   if(statusSel) data = data.filter(r => r.status_antes_baixa === statusSel);
+  if(tipoSel) data = data.filter(r => classificarTipoAgendaBaixado(r.tipo_agenda) === tipoSel);
   if(srch) data = data.filter(r => [r.responsavel,r.numero_processo,r.cliente,r.parte_principal,r.descricao_tarefa].join(' ').toLowerCase().includes(srch));
   if(justSel){
     data = data.filter(r => {
@@ -4231,6 +4256,7 @@ function exportarBaixadosExcel(){
   if(!data.length){ alert('Nenhum registro para exportar com os filtros atuais.'); return; }
   const linhas = data.map(r => ({
     'Data da Baixa': fmtDate(r.data_baixa),
+    'Tipo': tipoBaixadoLabel(r.tipo_agenda),
     'Status Antes': r.status_antes_baixa,
     'Data do Prazo': fmtDate(r.data),
     'Responsável': r.responsavel,
