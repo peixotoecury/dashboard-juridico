@@ -3251,7 +3251,10 @@ body.role-manager .upload-bar {
 <!-- ═══ BAIXADOS NO DIA ═══ -->
 <div class="page" id="page-baixados">
   <div class="det-card">
-    <div class="det-hdr"><h2>✅ Baixados no Dia <span class="det-cnt" id="ct-baixados">0 registros</span></h2></div>
+    <div class="det-hdr" style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;">
+      <h2>✅ Baixados no Dia <span class="det-cnt" id="ct-baixados">0 registros</span></h2>
+      <button type="button" style="background:#f0f6f8;border:1.5px solid #aecad6;color:#005070;border-radius:8px;padding:8px 16px;font-size:12px;font-weight:700;cursor:pointer;" onclick="exportarBaixadosExcel()">📥 Exportar Excel</button>
+    </div>
     <div style="margin:0 0 12px;background:#f0f7fb;border:1px solid #ccdde4;border-radius:8px;padding:10px 14px;font-size:11px;color:var(--gray3);">
       ℹ️ Lista tudo que estava Fatal/D-1/D-2/Futuro e sumiu do banco LM de um sync pro outro (ou seja, foi baixado/resolvido na origem) — confira no PJe se realmente foi protocolado. Prazos que já tinham justificativa registrada aparecem marcados.
     </div>
@@ -4198,6 +4201,39 @@ function renderBaixados(){
     </tr>`;
   }).join('') : emptyR(9);
   renderPg('pg-baixados',pg,pages,total,'baixados',renderBaixados);
+}
+
+function exportarBaixadosExcel(){
+  const dataSel = V('bx-data')?.value || new Date().toISOString().slice(0,10);
+  const statusSel = V('bx-status')?.value || '';
+  const justSel = V('bx-just')?.value || '';
+  const srch = (V('bx-s')?.value||'').toLowerCase();
+  let data = (S.baixados||[]).filter(r => r.data_baixa === dataSel && ['Fatal','D-1','D-2','Futuro'].includes(r.status_antes_baixa));
+  if(statusSel) data = data.filter(r => r.status_antes_baixa === statusSel);
+  if(srch) data = data.filter(r => [r.responsavel,r.numero_processo,r.cliente,r.parte_principal,r.descricao_tarefa].join(' ').toLowerCase().includes(srch));
+  if(justSel){
+    data = data.filter(r => {
+      const tem = !!(window.justificativas && window.justificativas[r.numero_processo]);
+      return justSel === 'com' ? tem : !tem;
+    });
+  }
+  if(!data.length){ alert('Nenhum registro para exportar com os filtros atuais.'); return; }
+  const linhas = data.map(r => ({
+    'Data da Baixa': fmtDate(r.data_baixa),
+    'Status Antes': r.status_antes_baixa,
+    'Data do Prazo': fmtDate(r.data),
+    'Responsável': r.responsavel,
+    'Processo': r.numero_processo,
+    'Cliente': r.cliente,
+    'Tarefa': r.descricao_tarefa,
+    'Grupo': r.grupo_processo,
+    'Justificativa': (window.justificativas && window.justificativas[r.numero_processo]) ? 'Com justificativa' : 'Sem justificativa',
+  }));
+  const ws = XLSX.utils.json_to_sheet(linhas);
+  const wb = XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(wb, ws, 'Baixados');
+  const dt = new Date().toLocaleDateString('pt-BR').replace(/\//g,'-');
+  XLSX.writeFile(wb, `PC_Baixados_${dataSel}_${dt}.xlsx`);
 }
 
 // ── CONTROLE DE DECISÕES ─────────────────────────────
