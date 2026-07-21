@@ -2766,6 +2766,7 @@ body.role-manager .upload-bar {
   <button class="nav-btn" id="nav-audiencias" onclick="switchTab('audiencias',this)">⚖️ Audiências <span class="nb-cnt" id="nc-aud">0</span></button>
   <button class="nav-btn" id="nav-canceladas" onclick="switchTab('canceladas',this)">🚫 Redesignadas/Canceladas <span class="nb-cnt" id="nc-cancel">0</span></button>
   <button class="nav-btn" id="nav-baixados" onclick="switchTab('baixados',this)">✅ Baixados no Dia <span class="nb-cnt" id="nc-baixados">0</span></button>
+  <button class="nav-btn" id="nav-controle-decisoes" onclick="switchTab('controle-decisoes',this)">📑 Controle de Decisões <span class="nb-cnt" id="nc-cd">0</span></button>
   <button class="nav-btn" id="nav-quadro" style="display:none" onclick="switchTab('quadro',this)">📊 Quadro Geral <span class="nb-cnt" id="nc-quadro">0</span></button>
   <button class="nav-btn" id="nav-admin" onclick="switchTab('admin',this)" style="display:none">⚙️ Gestão de Usuários <span class="nb-cnt" id="nc-admin">0</span></button>
   <button class="nav-btn" id="nav-exposicao" onclick="switchTab('exposicao',this)">📈 Exposição por Grupo <span class="nb-cnt" id="nc-exposicao">0</span></button>
@@ -3001,6 +3002,7 @@ body.role-manager .upload-bar {
         <button type="button" style="background:#5c0e0e;color:#fff;border:none;border-radius:8px;padding:8px 14px;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap;" onclick="dispararAlertaTodosFataisJunto()">📢 Alerta Único — Todos os Fatais</button>
         <button type="button" style="background:#fff;color:var(--teal);border:none;border-radius:8px;padding:8px 14px;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap;" onclick="dispararAlertasFataisD1()">📧 Alertas de Fatais + D-1 (por responsável)</button>
         <button type="button" style="background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.4);border-radius:8px;padding:8px 14px;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap;" onclick="abrirDashboardFataisD1PorGrupo()">📁 Alertas por grupo</button>
+        <button type="button" style="background:#0E5E6F;color:#fff;border:none;border-radius:8px;padding:8px 14px;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap;" onclick="dispararAlertasDecisao()">📑 Alertas de Decisão <span class="nb-cnt" id="nc-decisoes">0</span></button>
       </div>
     </div>
     <div class="det-filters">
@@ -3282,6 +3284,38 @@ body.role-manager .upload-bar {
       <tbody id="body-baixados"></tbody>
     </table></div>
     <div class="pg-bar" id="pg-baixados"></div>
+  </div>
+</div>
+
+<!-- ═══ CONTROLE DE DECISÕES ═══ -->
+<div class="page" id="page-controle-decisoes">
+  <div class="det-card">
+    <div class="det-hdr"><h2>📑 Controle de Decisões <span class="det-cnt" id="ct-cd">0 registros</span></h2></div>
+    <div style="margin:0 0 12px;background:#f0f7fb;border:1px solid #ccdde4;border-radius:8px;padding:10px 14px;font-size:11px;color:var(--gray3);">
+      ℹ️ Base histórica de todo prazo detectado como Embargos de Declaração, Recurso Ordinário, Recurso de Revista, Manifestação sobre Laudo Pericial ou Apresentação de Cálculos — cada um é gravado aqui na primeira vez que aparece. Use o botão "📑 Alertas de Decisão" (no Dashboard Executivo) pra notificar Maria Carolina Dias, Ana Carolina Martini, Cícera Gabriela e Brenna Malta sobre os que estão pendentes agora.
+    </div>
+    <div class="det-filters">
+      <div class="fg"><label>Tipo</label>
+        <select class="fsel" id="cd-tipo" onchange="renderControleDecisoes()">
+          <option value="">Todos os tipos</option>
+          <option>Embargos de Declaração</option>
+          <option>Recurso Ordinário</option>
+          <option>Recurso de Revista</option>
+          <option>Manifestação sobre Laudo Pericial</option>
+          <option>Apresentação de Cálculos</option>
+        </select>
+      </div>
+      <div class="srch-wrap">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input class="srch-in" id="cd-s" placeholder="Buscar processo, cliente ou reclamante..." oninput="renderControleDecisoes()">
+      </div>
+      <button class="btn-limpar" onclick="V('cd-s').value='';V('cd-tipo').value='';renderControleDecisoes()">✕ Limpar</button>
+    </div>
+    <div class="det-scroll"><table>
+      <thead><tr><th>Detectado em</th><th>Tipo</th><th>Data do Prazo</th><th>Responsável</th><th>Processo</th><th>Cliente</th><th>Tarefa</th><th>Grupo</th></tr></thead>
+      <tbody id="body-cd"></tbody>
+    </table></div>
+    <div class="pg-bar" id="pg-cd"></div>
   </div>
 </div>
 
@@ -4166,12 +4200,182 @@ function renderBaixados(){
   renderPg('pg-baixados',pg,pages,total,'baixados',renderBaixados);
 }
 
+// ── CONTROLE DE DECISÕES ─────────────────────────────
+// Detecta prazos que representam decisão em aberto (Embargos de Declaração,
+// Recurso Ordinário, Recurso de Revista, Manifestação sobre Laudo Pericial,
+// Apresentação de Cálculos), grava um rastro em controle_decisoes (upsert por
+// id determinístico, então só entra uma vez por processo+tarefa+data) e
+// permite alertar por e-mail o grupo fixo de acompanhamento.
+var DECISAO_EMAILS_FIXOS = ['mariacarolina.dias@peixotoecury.com.br','anacarolina.martini@peixotoecury.com.br','cicera.vicente@peixotoecury.com.br','brenna.malta@peixotoecury.com.br'];
+
+function classificarDecisaoPrazo(descricaoTarefa){
+  const norm = normTxt(descricaoTarefa);
+  if(!norm || norm.length > 120) return null; // tarefas do catálogo são curtas; evita casar dentro de anotações longas
+  if(norm.startsWith('EMBARGOS DE DECLARACAO')) return 'Embargos de Declaração';
+  if(norm.startsWith('RECURSO ORDINARIO')) return 'Recurso Ordinário';
+  if(norm.startsWith('RECURSO DE REVISTA')) return 'Recurso de Revista';
+  if(norm.startsWith('MANIFESTACAO') && norm.includes('LAUDO')) return 'Manifestação sobre Laudo Pericial';
+  if(norm.startsWith('APRESENTACAO DE CALCULOS')) return 'Apresentação de Cálculos';
+  return null;
+}
+
+function getPrazosDecisao(){
+  return (S.prazos||[]).reduce(function(acc, r){
+    var tipo = classificarDecisaoPrazo(r.descricao_tarefa);
+    if(tipo) acc.push(Object.assign({}, r, { tipo_decisao: tipo }));
+    return acc;
+  }, []);
+}
+
+function hashIdDecisao(str){
+  // FNV-1a 32 bits — id determinístico, risco de colisão desprezível neste volume
+  let h = 0x811c9dc5;
+  for(let i=0;i<str.length;i++){ h ^= str.charCodeAt(i); h = Math.imul(h, 0x01000193); }
+  return (h >>> 0);
+}
+
+async function registrarControleDecisoes(){
+  const pend = getPrazosDecisao();
+  window.__decisoesPendentes = pend;
+  n('nc-decisoes', pend.length);
+  if(!pend.length) return;
+  const SUPA_URL = 'https://rpibvjcnrseuugpkfmdj.supabase.co';
+  const SUPA_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJwaWJ2amNucnNldXVncGtmbWRqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODE1NTc3MTcsImV4cCI6MjA5NzEzMzcxN30.ecihol8JESMH7cgFSvWKIzp-OwoPRFqdK3aCDwpCeg8';
+  const linhas = pend.map(function(r){
+    const chave = [r.numero_processo, r.descricao_tarefa, r.data].join('|');
+    return {
+      id: hashIdDecisao(chave),
+      numero_processo: r.numero_processo,
+      descricao_tarefa: r.descricao_tarefa,
+      tipo_decisao: r.tipo_decisao,
+      data: r.data,
+      responsavel: r.responsavel,
+      grupo_processo: r.grupo_processo,
+      cliente: r.cliente,
+      parte_principal: r.parte_principal,
+    };
+  });
+  try{
+    await fetch(`${SUPA_URL}/rest/v1/controle_decisoes`, {
+      method: 'POST',
+      headers: { 'apikey': SUPA_KEY, 'Authorization': `Bearer ${SUPA_KEY}`, 'Content-Type': 'application/json', 'Prefer': 'resolution=merge-duplicates,return=minimal' },
+      body: JSON.stringify(linhas),
+    });
+  }catch(err){ console.warn('⚠️ Falha ao registrar controle de decisões:', err.message); }
+}
+
+function montarCorpoAlertaDecisao(rows){
+  var linhas = rows.map(function(r){
+    return '• [' + e(r.tipo_decisao) + '] ' + e(r.data||'-') + ' · ' + e(r.numero_processo||'-') + ' · ' + e(r.cliente||r.parte_principal||'-') + ' · Resp.: ' + e(r.responsavel||'-') + '\n  ' + e(r.descricao_tarefa||'-');
+  }).join('\n\n');
+  return 'Prezadas,\n\nSeguem os prazos que envolvem decisão (Embargos de Declaração, Recurso Ordinário, Recurso de Revista, Manifestação sobre Laudo Pericial ou Apresentação de Cálculos) pendentes de acompanhamento:\n\n'
+    + linhas
+    + '\n\nControladoria Jurídica — Peixoto & Cury Advogados';
+}
+
+function dispararAlertasDecisao(){
+  var pend = window.__decisoesPendentes || getPrazosDecisao();
+  if(!pend.length){ alert('Nenhum prazo de decisão (Embargos de Declaração, Recurso Ordinário, Recurso de Revista, Manifestação sobre Laudo ou Apresentação de Cálculos) encontrado no momento.'); return; }
+
+  var cards = pend.map(function(r){
+    return '<li><b>[' + e(r.tipo_decisao) + ']</b> ' + e(r.data||'-') + ' · ' + e(r.numero_processo||'-') + '<br><span>' + e(r.cliente||r.parte_principal||'-') + ' · ' + e(r.responsavel||'-') + '<br>' + e(r.descricao_tarefa||'-') + '</span></li>';
+  }).join('');
+
+  fecharPainelAlertasDecisao();
+  var overlay = document.createElement('div');
+  overlay.id = 'alertas-decisao-modal';
+  overlay.className = 'alertas-designacao-overlay open';
+  overlay.innerHTML =
+    '<div class="alertas-designacao-box" role="dialog" aria-modal="true">'
+    + '<div class="alertas-designacao-header"><div>'
+    + '<div class="alertas-designacao-kicker">Controladoria Jurídica</div>'
+    + '<h2>📑 Alertas de Decisão</h2>'
+    + '<p>' + pend.length + ' prazo(s) de decisão (Embargos de Declaração, Recurso Ordinário, Recurso de Revista, Manifestação sobre Laudo Pericial, Apresentação de Cálculos).</p>'
+    + '</div><button type="button" class="alertas-designacao-close" onclick="fecharPainelAlertasDecisao()">×</button></div>'
+    + '<div class="alertas-designacao-info">Clique em <b>"Abrir e-mail"</b> pra notificar Maria Carolina Dias, Ana Carolina Martini, Cícera Gabriela e Brenna Malta.</div>'
+    + '<div class="alertas-designacao-lista"><div class="alerta-card-email" style="grid-column:1/-1;">'
+    + '<ul class="alerta-card-lista">' + cards + '</ul>'
+    + '<div class="alerta-card-actions">'
+    + '<button type="button" class="alerta-btn-primary" onclick="abrirEmailAlertaDecisao()">Abrir e-mail</button>'
+    + '<button type="button" class="alerta-btn-secondary" onclick="copiarCorpoAlertaDecisao()">Copiar texto</button>'
+    + '</div></div></div>'
+    + '</div>';
+  document.body.appendChild(overlay);
+}
+
+function fecharPainelAlertasDecisao(){
+  var overlay = document.getElementById('alertas-decisao-modal');
+  if(overlay) overlay.remove();
+}
+
+function abrirEmailAlertaDecisao(){
+  var pend = window.__decisoesPendentes || getPrazosDecisao();
+  if(!pend.length) return;
+  var assunto = '📑 Alerta de Decisão — ' + pend.length + ' prazo(s)';
+  var corpo = montarCorpoAlertaDecisao(pend);
+  var to = DECISAO_EMAILS_FIXOS.join(',');
+  var mailto = 'mailto:' + to + '?subject=' + encodeURIComponent(assunto) + '&body=' + encodeURIComponent(corpo);
+  if(mailto.length > LIMITE_TAMANHO_MAILTO_PRAZO){
+    navigator.clipboard?.writeText(corpo).catch(function(){});
+    mailto = 'mailto:' + to + '?subject=' + encodeURIComponent(assunto);
+    alert('📋 E-mail muito grande: texto completo copiado para a área de transferência — cole no corpo do e-mail (Ctrl+V).');
+  }
+  window.location.href = mailto;
+}
+
+function copiarCorpoAlertaDecisao(){
+  var pend = window.__decisoesPendentes || getPrazosDecisao();
+  if(!pend.length) return;
+  var corpo = montarCorpoAlertaDecisao(pend);
+  navigator.clipboard?.writeText(corpo).then(function(){ alert('Texto do alerta copiado.'); }).catch(function(){ alert(corpo); });
+}
+
+// ── CONTROLE DE DECISÕES: base histórica (aba própria) ──
+let S_CD = [];
+async function carregarControleDecisoesSupabase(){
+  const SUPA_URL = 'https://rpibvjcnrseuugpkfmdj.supabase.co';
+  const SUPA_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJwaWJ2amNucnNldXVncGtmbWRqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODE1NTc3MTcsImV4cCI6MjA5NzEzMzcxN30.ecihol8JESMH7cgFSvWKIzp-OwoPRFqdK3aCDwpCeg8';
+  const HDR = { 'apikey': SUPA_KEY, 'Authorization': `Bearer ${SUPA_KEY}` };
+  try{
+    const r = await fetch(`${SUPA_URL}/rest/v1/controle_decisoes?select=*&order=detectado_em.desc&limit=2000`, { headers: HDR });
+    if(!r.ok) throw new Error(`Supabase ${r.status}`);
+    S_CD = await r.json();
+    n('nc-cd', S_CD.length);
+    renderControleDecisoes();
+  }catch(err){
+    console.warn('⚠️ Falha ao carregar Controle de Decisões:', err.message);
+  }
+}
+
+function renderControleDecisoes(){
+  const tipoSel = V('cd-tipo')?.value || '';
+  const srch = (V('cd-s')?.value||'').toLowerCase();
+  let data = [...S_CD];
+  if(tipoSel) data = data.filter(r => r.tipo_decisao === tipoSel);
+  if(srch) data = data.filter(r => [r.responsavel,r.numero_processo,r.cliente,r.parte_principal,r.descricao_tarefa].join(' ').toLowerCase().includes(srch));
+  const ctEl = V('ct-cd'); if(ctEl) ctEl.textContent = data.length+' registros';
+  const {slice,pg,pages,total} = pgSlice(data,'cd');
+  const bodyEl = V('body-cd');
+  if(bodyEl) bodyEl.innerHTML = slice.length ? slice.map(r=>`<tr>
+    <td class="td-mono">${fmtDate(r.detectado_em)}</td>
+    <td><span class="badge b-outro">${e(r.tipo_decisao)}</span></td>
+    <td class="td-mono">${fmtDate(r.data)}</td>
+    <td class="td-clip-sm">${e(r.responsavel)}</td>
+    <td class="td-clip-sm proc-normal" title="${e(r.numero_processo)}">${e(r.numero_processo)}</td>
+    <td class="td-clip-sm" title="${e(r.cliente)}">${e(r.cliente)}</td>
+    <td class="td-clip" style="max-width:220px" title="${e(r.descricao_tarefa)}">${e(r.descricao_tarefa)}</td>
+    <td class="td-clip-sm">${e(r.grupo_processo)}</td>
+  </tr>`).join('') : emptyR(8);
+  renderPg('pg-cd',pg,pages,total,'cd',renderControleDecisoes);
+}
+
 document.addEventListener('DOMContentLoaded', function(){
   setTimeout(function(){
     controlarAbas();
     carregarJustificativasSupabase();
 
     carregarBaixadosSupabase();
+    carregarControleDecisoesSupabase();
 
     // Busca prazos do Supabase + audiências do GitHub em paralelo
     Promise.all([
@@ -4202,12 +4406,13 @@ document.addEventListener('DOMContentLoaded', function(){
         if(typeof window.renderAll === 'function') window.renderAll();
         if(typeof window.renderMP  === 'function') window.renderMP();
       }, 200);
+      registrarControleDecisoes();
     });
 
     // Refresh automático a cada 10 minutos — prazos + audiências juntos
     setInterval(function(){
       console.log('🔄 Refresh automático — prazos + audiências...');
-      carregarPrazosSupabase();
+      carregarPrazosSupabase().then(registrarControleDecisoes);
       carregarAudienciasGithub(true);
       carregarBaixadosSupabase();
     }, 10 * 60 * 1000); // 10 minutos
