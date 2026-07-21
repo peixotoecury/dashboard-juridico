@@ -3128,16 +3128,26 @@ body.role-manager .upload-bar {
     </div>
   </div>
   <div class="det-card">
-    <div class="det-hdr"><h2>📅 Todas as Agendas <span class="det-cnt" id="ct-aget">0 registros</span></h2></div>
+    <div class="det-hdr" style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;">
+      <h2>📅 Todas as Agendas <span class="det-cnt" id="ct-aget">0 registros</span></h2>
+      <button type="button" style="background:#f0f6f8;border:1.5px solid #aecad6;color:#005070;border-radius:8px;padding:8px 16px;font-size:12px;font-weight:700;cursor:pointer;" onclick="exportarAgendasExcel()">📥 Exportar Excel</button>
+    </div>
     <div class="det-filters">
       <div class="fg"><label>Status</label>
         <select class="fsel" id="ag-st" onchange="renderAgDet()"><option value="">Todos</option><option value="Vencido">Vencido</option><option value="Fatal">Fatal</option><option value="D-1">D-1</option><option value="D-2">D-2</option><option value="Futuro">Futuro</option></select>
+      </div>
+      <div class="fg"><label>Tipo</label>
+        <select class="fsel" id="ag-ciencia" onchange="renderAgDet()">
+          <option value="">Todas as agendas</option>
+          <option value="ciencia">Só Ciências</option>
+          <option value="outras">Só outras (sem Ciência)</option>
+        </select>
       </div>
       <div class="srch-wrap">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
         <input class="srch-in" id="ag-s" placeholder="Buscar cliente, processo, tarefa..." oninput="renderAgDet()">
       </div>
-      <button class="btn-limpar" onclick="V('ag-s').value='';V('ag-st').value='';renderAgDet()">✕ Limpar</button>
+      <button class="btn-limpar" onclick="V('ag-s').value='';V('ag-st').value='';V('ag-ciencia').value='';renderAgDet()">✕ Limpar</button>
     </div>
     <div class="det-scroll"><table>
       <thead><tr><th>Data</th><th>Status</th><th>Cliente</th><th>Parte Contrária</th><th>Processo</th><th>Responsável</th><th>Grupo</th><th>Tarefa</th><th>Ação</th></tr></thead>
@@ -7304,7 +7314,41 @@ function renderDetGeneric(baseData, bodyId, pgId, ctId, srchId, stId, pgKey, tip
   renderPg(pgId,pg,pages,total,pgKey,()=>renderDetGeneric(baseData,bodyId,pgId,ctId,srchId,stId,pgKey,tipo,ufId));
 }
 
-function renderAgDet() { renderDetGeneric(applyGF(S.agendas),'body-aget','pg-aget','ct-aget','ag-s','ag-st','aget','agenda'); }
+function renderAgDet() {
+  let data = applyGF(S.agendas);
+  const cienciaSel = V('ag-ciencia')?.value || '';
+  if(cienciaSel === 'ciencia') data = data.filter(r => normTxt(r.descricao_tarefa).includes('CIENCIA'));
+  else if(cienciaSel === 'outras') data = data.filter(r => !normTxt(r.descricao_tarefa).includes('CIENCIA'));
+  renderDetGeneric(data,'body-aget','pg-aget','ct-aget','ag-s','ag-st','aget','agenda');
+}
+
+function exportarAgendasExcel(){
+  let data = applyGF(S.agendas);
+  const cienciaSel = V('ag-ciencia')?.value || '';
+  if(cienciaSel === 'ciencia') data = data.filter(r => normTxt(r.descricao_tarefa).includes('CIENCIA'));
+  else if(cienciaSel === 'outras') data = data.filter(r => !normTxt(r.descricao_tarefa).includes('CIENCIA'));
+  const st = V('ag-st')?.value || '';
+  if(st) data = data.filter(r => (r.status||'').trim() === st);
+  const srch = (V('ag-s')?.value||'').toLowerCase();
+  if(srch) data = data.filter(r => [r.cliente,r.parte_principal,r.parte_contraria,r.numero_processo,r.descricao_tarefa].join(' ').toLowerCase().includes(srch));
+  if(!data.length){ alert('Nenhum registro para exportar com os filtros atuais.'); return; }
+  const linhas = data.map(r => ({
+    'Data': fmtDate(r.data),
+    'Status': r.status,
+    'Tipo': normTxt(r.descricao_tarefa).includes('CIENCIA') ? 'Ciência' : 'Outra',
+    'Cliente': r.cliente,
+    'Parte Contrária': r.parte_contraria,
+    'Processo': r.numero_processo,
+    'Responsável': r.responsavel,
+    'Grupo': r.grupo_processo,
+    'Tarefa': r.descricao_tarefa,
+  }));
+  const ws = XLSX.utils.json_to_sheet(linhas);
+  const wb = XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(wb, ws, 'Agendas');
+  const dt = new Date().toLocaleDateString('pt-BR').replace(/\//g,'-');
+  XLSX.writeFile(wb, `PC_Agendas_${dt}.xlsx`);
+}
 function renderEqDet() { renderDetGeneric(applyGF(S.equipe),'body-eet','pg-eet','ct-eet','eq-s','eq-st','eet','agenda-equipe'); }
 function renderPDet() { renderDetGeneric(applyGF(S.prazos),'body-pt','pg-pt','ct-pt','p-s','p-st','pt','prazo','p-uf'); }
 
