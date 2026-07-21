@@ -2761,6 +2761,7 @@ body.role-manager .upload-bar {
     <div style="font-size:7.5px;color:rgba(255,255,255,.85);letter-spacing:2.5px;font-weight:300;margin-top:2px;font-family:'Sora',sans-serif;">lawyers at work</div>
   </div>
   <button class="nav-btn active" id="nav-prazos" onclick="switchTab('prazos',this)">📋 Dashboard Executivo <span class="nb-cnt" id="nc-prazos">0</span></button>
+  <button class="nav-btn" id="nav-prazos-solo" onclick="switchTab('prazos-solo',this)">📋 Prazos <span class="nb-cnt" id="nc-prazos-solo">0</span></button>
   <button class="nav-btn" id="nav-agendas" onclick="switchTab('agendas',this)">📅 Agendas <span class="nb-cnt" id="nc-agendas">0</span></button>
   <button class="nav-btn" id="nav-equipe" onclick="switchTab('equipe',this)">👥 Agenda Equipe <span class="nb-cnt" id="nc-equipe">0</span></button>
   <button class="nav-btn" id="nav-audiencias" onclick="switchTab('audiencias',this)">⚖️ Audiências <span class="nb-cnt" id="nc-aud">0</span></button>
@@ -3097,6 +3098,76 @@ body.role-manager .upload-bar {
 </div>
 
 </div><!-- /prazos -->
+
+<!-- ═══ PRAZOS (SÓ) ═══ -->
+<div class="page" id="page-prazos-solo">
+
+  <div class="cards-strip">
+    <div class="cards-group-inner">
+      <div class="kcard"     onclick="window.filtrarPrazosSolo('')"        id="kc-p2-tot"><div class="kcard-lbl">Prazos Gerais</div><div class="kcard-val" id="kp2-tot">—</div></div>
+      <div class="kcard red" onclick="window.filtrarPrazosSolo('Vencido')" id="kc-p2-venc"><div class="kcard-lbl">Vencidos</div><div class="kcard-val" id="kp2-venc">—</div></div>
+      <div class="kcard red" onclick="window.filtrarPrazosSolo('Fatal')"   id="kc-p2-fatal"><div class="kcard-lbl">Fatais</div><div class="kcard-val" id="kp2-fatal">—</div></div>
+      <div class="kcard org" onclick="window.filtrarPrazosSolo('D-1')"     id="kc-p2-d1"><div class="kcard-lbl">D-1</div><div class="kcard-val" id="kp2-d1">—</div></div>
+      <div class="kcard org" onclick="window.filtrarPrazosSolo('D-2')"     id="kc-p2-d2"><div class="kcard-lbl">D-2</div><div class="kcard-val" id="kp2-d2">—</div></div>
+      <div class="kcard"     onclick="window.filtrarPrazosSolo('Futuro')"  id="kc-p2-fut"><div class="kcard-lbl">Prazos Futuros</div><div class="kcard-val" id="kp2-fut">—</div></div>
+    </div>
+  </div>
+
+  <div class="tbl-grid">
+    <div class="tbl-card">
+      <div class="tbl-hdr">📊 Quantidade por Responsável — Prazos <span class="tc" id="ct-rp2">0</span></div>
+      <div class="tbl-scroll"><table>
+        <thead><tr>
+          <th onclick="sortResp('rp2','resp')">Responsável ↕</th>
+          <th class="tn" onclick="sortResp('rp2','total')">Total ↕</th>
+          <th class="tn" onclick="sortResp('rp2','venc')">Venc. ↕</th>
+          <th class="tn" onclick="sortResp('rp2','fatal')">Fatal ↕</th>
+          <th class="tn" onclick="sortResp('rp2','d1')">D-1 ↕</th>
+        </tr></thead>
+        <tbody id="body-rp2"></tbody>
+      </table></div>
+    </div>
+    <div class="tbl-card">
+      <div class="tbl-hdr">🗂️ Distribuição por Grupo — Prazos <span class="tc" id="ct-gp2">0</span></div>
+      <div class="tbl-scroll"><table>
+        <thead><tr>
+          <th>Grupo / Responsável</th>
+          <th class="tn">Total</th>
+          <th class="tn">Venc.</th>
+          <th class="tn">Fatal</th>
+          <th class="tn">D-1</th>
+        </tr></thead>
+        <tbody id="body-gp2"></tbody>
+      </table></div>
+    </div>
+  </div>
+
+  <div class="det-card">
+    <div class="det-hdr" style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;">
+      <h2>📋 Todos os Prazos <span class="det-cnt" id="ct-p2">0 registros</span></h2>
+      <button type="button" style="background:#f0f6f8;border:1.5px solid #aecad6;color:#005070;border-radius:8px;padding:8px 16px;font-size:12px;font-weight:700;cursor:pointer;" onclick="exportarPrazosSoloExcel()">📥 Exportar Excel</button>
+    </div>
+    <div class="det-filters">
+      <div class="fg"><label>Status</label>
+        <select class="fsel" id="p2-st" onchange="renderPrazosSoloDet()"><option value="">Todos</option><option value="Vencido">Vencido</option><option value="Fatal">Fatal</option><option value="D-1">D-1</option><option value="D-2">D-2</option><option value="Futuro">Futuro</option></select>
+      </div>
+      <div class="fg"><label>UF</label>
+        <select class="fsel" id="p2-uf" onchange="renderPrazosSoloDet()"><option value="">Todas</option></select>
+      </div>
+      <div class="srch-wrap">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input class="srch-in" id="p2-s" placeholder="Buscar cliente, processo, reclamante, tarefa..." oninput="renderPrazosSoloDet()">
+      </div>
+      <button class="btn-limpar" onclick="V('p2-s').value='';V('p2-st').value='';V('p2-uf').value='';renderPrazosSoloDet()">✕ Limpar</button>
+    </div>
+    <div class="det-scroll" style="max-height:65vh;"><table>
+      <thead><tr><th>Data</th><th>Status</th><th>Cliente</th><th>Parte Contrária</th><th>Processo</th><th>UF</th><th>Responsável</th><th>Grupo</th><th>Tarefa</th><th>Ação</th></tr></thead>
+      <tbody id="body-p2"></tbody>
+    </table></div>
+    <div class="pg-bar" id="pg-p2"></div>
+  </div>
+
+</div><!-- /prazos-solo -->
 
 <!-- ═══ AGENDAS ═══ -->
 <div class="page" id="page-agendas">
@@ -3792,7 +3863,7 @@ function switchTab(n, el) {
   document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
   el.classList.add('active');
   V('page-'+n).classList.add('active');
-  V('fpanel').style.display = ['prazos','agendas','equipe'].includes(n)?'':'none';
+  V('fpanel').style.display = ['prazos','prazos-solo','agendas','equipe'].includes(n)?'':'none';
   if(n==='admin' && typeof window.renderAdmin === 'function') setTimeout(window.renderAdmin, 50);
   if(n==='exposicao' && typeof window.renderExposicaoGrupo === 'function') setTimeout(window.renderExposicaoGrupo, 50);
 }
@@ -4776,6 +4847,7 @@ function popFatal() {
   if(V('p-uf')){
     const ufsTodos=[...new Set(S.prazos.map(r=>ufDoProcesso(r.numero_processo)).filter(Boolean))].sort();
     V('p-uf').innerHTML='<option value="">Todas</option>'+ufsTodos.map(x=>`<option value="${e(x)}">${e(x)}</option>`).join('');
+    if(V('p2-uf')) V('p2-uf').innerHTML = V('p-uf').innerHTML;
   }
 }
 function popAud() {
@@ -5394,6 +5466,58 @@ function updateCardsEquipe(e) {
   n('keq-fut',  e.filter(r=>statusEh(r.status, 'Futuro')).length);
 }
 
+// ── ABA "PRAZOS" (só, sem o resto do Dashboard Executivo) ──
+function updateCardsPrazosSolo(p) {
+  n('kp2-tot',  p.length);
+  n('kp2-venc', p.filter(r=>statusEh(r.status, 'Vencido')).length);
+  n('kp2-fatal',p.filter(r=>statusEh(r.status, 'Fatal')).length);
+  n('kp2-d1',   p.filter(r=>statusEh(r.status, 'D-1')).length);
+  n('kp2-d2',   p.filter(r=>statusEh(r.status, 'D-2')).length);
+  n('kp2-fut',  p.filter(r=>statusEh(r.status, 'Futuro')).length);
+  n('nc-prazos-solo', p.length);
+}
+
+window.filtrarPrazosSolo = function(status) {
+  const sel = V('p2-st');
+  if (!sel) return;
+  sel.value = (sel.value === status) ? '' : status;
+  renderPrazosSoloDet();
+  let fp = applyGF(S.prazos);
+  if(sel.value) fp = fp.filter(r => (r.status||'').trim() === sel.value);
+  updateCardsPrazosSolo(fp);
+  renderResp(fp, 'body-rp2', 'ct-rp2', 'rp2');
+  renderGrupo(fp, 'body-gp2', 'ct-gp2');
+};
+
+function renderPrazosSoloDet() { renderDetGeneric(applyGF(S.prazos),'body-p2','pg-p2','ct-p2','p2-s','p2-st','p2','prazo','p2-uf'); }
+
+function exportarPrazosSoloExcel(){
+  let data = applyGF(S.prazos);
+  const st = V('p2-st')?.value || '';
+  if(st) data = data.filter(r => (r.status||'').trim() === st);
+  const uf = V('p2-uf')?.value || '';
+  if(uf) data = data.filter(r => ufDoProcesso(r.numero_processo) === uf);
+  const srch = (V('p2-s')?.value||'').toLowerCase();
+  if(srch) data = data.filter(r => [r.cliente,r.parte_principal,r.parte_contraria,r.numero_processo,r.descricao_tarefa].join(' ').toLowerCase().includes(srch));
+  if(!data.length){ alert('Nenhum registro para exportar com os filtros atuais.'); return; }
+  const linhas = data.map(r => ({
+    'Data': fmtDate(r.data),
+    'Status': r.status,
+    'Cliente': r.cliente,
+    'Parte Contrária': r.parte_contraria,
+    'Processo': r.numero_processo,
+    'UF': ufDoProcesso(r.numero_processo),
+    'Responsável': r.responsavel,
+    'Grupo': r.grupo_processo,
+    'Tarefa': r.descricao_tarefa,
+  }));
+  const ws = XLSX.utils.json_to_sheet(linhas);
+  const wb = XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(wb, ws, 'Prazos');
+  const dt = new Date().toLocaleDateString('pt-BR').replace(/\//g,'-');
+  XLSX.writeFile(wb, `PC_Prazos_${dt}.xlsx`);
+}
+
 // ── AGG ──────────────────────────────────────────────
 function agg(data, field) {
   const m={};
@@ -5469,6 +5593,10 @@ function renderAll() {
   updateCardsEquipe(fe);
   renderResp(fp,'body-rp','ct-rp','rp');
   renderGrupo(fp,'body-gp','ct-gp');
+  updateCardsPrazosSolo(fp);
+  renderResp(fp,'body-rp2','ct-rp2','rp2');
+  renderGrupo(fp,'body-gp2','ct-gp2');
+  renderPrazosSoloDet();
   renderResp(fa,'body-ra','ct-ra','ra');
   renderGrupo(fa,'body-ga','ct-ga');
   renderResp(fe,'body-re','ct-re','re');
@@ -12519,6 +12647,7 @@ document.addEventListener('DOMContentLoaded', function(){
 <!-- ── MOBILE BOTTOM NAV ── -->
 <div id="mobile-bottom-nav">
   <button class="mn-btn active" onclick="mobileSwitchTab('prazos',this)"><span class="mn-icon">📋</span>Prazos</button>
+  <button class="mn-btn" onclick="mobileSwitchTab('prazos-solo',this)"><span class="mn-icon">📋</span>Só Prazos</button>
   <button class="mn-btn" onclick="mobileSwitchTab('agendas',this)"><span class="mn-icon">📅</span>Agendas</button>
   <button class="mn-btn" onclick="mobileSwitchTab('equipe',this)"><span class="mn-icon">👥</span>Equipe</button>
   <button class="mn-btn" onclick="mobileSwitchTab('audiencias',this)"><span class="mn-icon">⚖️</span>Audiências</button>
