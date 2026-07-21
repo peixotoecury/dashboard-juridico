@@ -3314,11 +3314,16 @@ body.role-manager .upload-bar {
           <option>Apresentação de Cálculos</option>
         </select>
       </div>
+      <div class="fg"><label>Grupo</label>
+        <select class="fsel" id="cd-grupo" onchange="renderControleDecisoes()">
+          <option value="">Todos os grupos</option>
+        </select>
+      </div>
       <div class="srch-wrap">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
         <input class="srch-in" id="cd-s" placeholder="Buscar processo, cliente ou reclamante..." oninput="renderControleDecisoes()">
       </div>
-      <button class="btn-limpar" onclick="V('cd-s').value='';V('cd-tipo').value='';renderControleDecisoes()">✕ Limpar</button>
+      <button class="btn-limpar" onclick="V('cd-s').value='';V('cd-tipo').value='';V('cd-grupo').value='';renderControleDecisoes()">✕ Limpar</button>
     </div>
     <div class="det-scroll" style="max-height:65vh;"><table>
       <thead><tr><th>Detectado em</th><th>Tipo</th><th>Data do Prazo</th><th>Responsável</th><th>Processo</th><th>Cliente</th><th>Tarefa</th><th>Grupo</th></tr></thead>
@@ -4318,7 +4323,12 @@ function montarCorpoAlertaDecisao(rows){
 
 function dispararAlertasDecisao(){
   var pend = window.__decisoesPendentes || getPrazosDecisao();
-  if(!pend.length){ alert('Nenhum prazo de decisão (Embargos de Declaração, Recurso Ordinário, Recurso de Revista, Manifestação sobre Laudo ou Apresentação de Cálculos) encontrado no momento.'); return; }
+  var grupoSel = V('cd-grupo')?.value || '';
+  if(grupoSel) pend = pend.filter(function(r){ return r.grupo_processo === grupoSel; });
+  if(!pend.length){ alert(grupoSel ? ('Nenhum prazo de decisão pendente para o grupo ' + grupoSel + '.') : 'Nenhum prazo de decisão (Embargos de Declaração, Recurso Ordinário, Recurso de Revista, Manifestação sobre Laudo ou Apresentação de Cálculos) encontrado no momento.'); return; }
+  // Reaplica a lista já filtrada por grupo — os botões do modal (Abrir e-mail/Copiar
+  // texto) leem daqui, então precisam ver só o que passou pelo filtro.
+  window.__decisoesPendentes = pend;
 
   var cards = pend.map(function(r){
     return '<li><b>[' + e(r.tipo_decisao) + ']</b> ' + e(r.data||'-') + ' · ' + e(r.numero_processo||'-') + '<br><span>' + e(r.cliente||r.parte_principal||'-') + ' · ' + e(r.responsavel||'-') + '<br>' + e(r.descricao_tarefa||'-') + '</span></li>';
@@ -4333,7 +4343,7 @@ function dispararAlertasDecisao(){
     + '<div class="alertas-designacao-header"><div>'
     + '<div class="alertas-designacao-kicker">Controladoria Jurídica</div>'
     + '<h2>📑 Alertas de Decisão</h2>'
-    + '<p>' + pend.length + ' prazo(s) de decisão (Embargos de Declaração, Recurso Ordinário, Recurso de Revista, Manifestação sobre Laudo Pericial, Apresentação de Cálculos).</p>'
+    + '<p>' + pend.length + ' prazo(s) de decisão (Embargos de Declaração, Recurso Ordinário, Recurso de Revista, Manifestação sobre Laudo Pericial, Apresentação de Cálculos)' + (grupoSel ? ' — filtrado pelo grupo ' + e(grupoSel) : '') + '.</p>'
     + '</div><button type="button" class="alertas-designacao-close" onclick="fecharPainelAlertasDecisao()">×</button></div>'
     + '<div class="alertas-designacao-info">Clique em <b>"Abrir e-mail"</b> pra notificar Maria Carolina Dias, Ana Carolina Martini, Cícera Gabriela e Brenna Malta.</div>'
     + '<div class="alertas-designacao-lista"><div class="alerta-card-email" style="grid-column:1/-1;">'
@@ -4384,17 +4394,28 @@ async function carregarControleDecisoesSupabase(){
     if(!r.ok) throw new Error(`Supabase ${r.status}`);
     S_CD = await r.json();
     n('nc-cd', S_CD.length);
+    popControleDecisoesGrupo();
     renderControleDecisoes();
   }catch(err){
     console.warn('⚠️ Falha ao carregar Controle de Decisões:', err.message);
   }
 }
 
+function popControleDecisoesGrupo(){
+  const sel = V('cd-grupo'); if(!sel) return;
+  const atual = sel.value;
+  const grupos = Array.from(new Set(S_CD.map(r=>r.grupo_processo).filter(Boolean))).sort();
+  sel.innerHTML = '<option value="">Todos os grupos</option>' + grupos.map(g=>`<option value="${e(g)}">${e(g)}</option>`).join('');
+  if(grupos.includes(atual)) sel.value = atual;
+}
+
 function renderControleDecisoes(){
   const tipoSel = V('cd-tipo')?.value || '';
+  const grupoSel = V('cd-grupo')?.value || '';
   const srch = (V('cd-s')?.value||'').toLowerCase();
   let data = [...S_CD];
   if(tipoSel) data = data.filter(r => r.tipo_decisao === tipoSel);
+  if(grupoSel) data = data.filter(r => r.grupo_processo === grupoSel);
   if(srch) data = data.filter(r => [r.responsavel,r.numero_processo,r.cliente,r.parte_principal,r.descricao_tarefa].join(' ').toLowerCase().includes(srch));
   const ctEl = V('ct-cd'); if(ctEl) ctEl.textContent = data.length+' registros';
   const {slice,pg,pages,total} = pgSlice(data,'cd');
@@ -4414,9 +4435,11 @@ function renderControleDecisoes(){
 
 function exportarControleDecisoesExcel(){
   const tipoSel = V('cd-tipo')?.value || '';
+  const grupoSel = V('cd-grupo')?.value || '';
   const srch = (V('cd-s')?.value||'').toLowerCase();
   let data = [...S_CD];
   if(tipoSel) data = data.filter(r => r.tipo_decisao === tipoSel);
+  if(grupoSel) data = data.filter(r => r.grupo_processo === grupoSel);
   if(srch) data = data.filter(r => [r.responsavel,r.numero_processo,r.cliente,r.parte_principal,r.descricao_tarefa].join(' ').toLowerCase().includes(srch));
   if(!data.length){ alert('Nenhum registro para exportar com os filtros atuais.'); return; }
   const linhas = data.map(r => ({
