@@ -4185,6 +4185,26 @@ function popBaixadosData(){
   sel.value = datas.includes(atual) ? atual : hojeIso;
 }
 
+function abrirModalVerJustificativa(numeroProcesso){
+  const obj = window.justificativas && window.justificativas[numeroProcesso];
+  if(!obj){ alert('Justificativa não encontrada.'); return; }
+  const existente = document.getElementById('ver-justificativa-modal');
+  if(existente) existente.remove();
+  const overlay = document.createElement('div');
+  overlay.id = 'ver-justificativa-modal';
+  overlay.className = 'alertas-designacao-overlay open';
+  overlay.innerHTML =
+    '<div class="alertas-designacao-box" role="dialog" aria-modal="true" style="max-width:640px;">'
+    + '<div class="alertas-designacao-header"><div>'
+    + '<div class="alertas-designacao-kicker">Justificativa</div>'
+    + '<h2>' + e(numeroProcesso) + '</h2>'
+    + (obj.usuario_nome ? '<p>Registrada por ' + e(obj.usuario_nome) + '</p>' : '')
+    + '</div><button type="button" class="alertas-designacao-close" onclick="document.getElementById(\'ver-justificativa-modal\').remove()">×</button></div>'
+    + '<div style="padding:18px 22px 24px;white-space:pre-wrap;font-size:13px;line-height:1.6;color:var(--gray2);">' + e(obj.texto || '(sem texto)') + '</div>'
+    + '</div>';
+  document.body.appendChild(overlay);
+}
+
 function classificarTipoAgendaBaixado(tipoAgenda){
   const t = (tipoAgenda||'').trim();
   if(t.includes('Equipe')) return 'Equipe';
@@ -4218,8 +4238,13 @@ function renderBaixados(){
   const bodyEl = V('body-baixados');
   if(bodyEl) bodyEl.innerHTML = slice.length ? slice.map(r=>{
     const temJust = window.justificativas && window.justificativas[r.numero_processo];
+    const justTexto = temJust ? (temJust.texto || '') : '';
+    const justPreview = justTexto.length > 60 ? justTexto.slice(0,60) + '…' : justTexto;
     const justBadge = temJust
-      ? `<span style="background:#e8f5e9;color:#2e7d32;padding:2px 6px;border-radius:8px;font-size:10px;font-weight:700;">✅ Com justificativa</span>`
+      ? `<div style="display:flex;flex-direction:column;gap:3px;cursor:pointer;" onclick="abrirModalVerJustificativa('${e(r.numero_processo)}')" title="Clique pra ver o texto completo">
+           <span style="background:#e8f5e9;color:#2e7d32;padding:2px 6px;border-radius:8px;font-size:10px;font-weight:700;width:fit-content;">✅ Com justificativa</span>
+           ${justPreview ? `<span style="font-size:10.5px;color:var(--gray3);" title="${e(justTexto)}">${e(justPreview)}</span>` : ''}
+         </div>`
       : `<span style="background:#fff3e0;color:#e65100;padding:2px 6px;border-radius:8px;font-size:10px;font-weight:700;">— Sem justificativa</span>`;
     return `<tr>
       <td class="td-mono">${fmtDate(r.data_baixa)}</td>
