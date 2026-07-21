@@ -2762,6 +2762,7 @@ body.role-manager .upload-bar {
   </div>
   <button class="nav-btn active" id="nav-prazos" onclick="switchTab('prazos',this)">📋 Dashboard Executivo <span class="nb-cnt" id="nc-prazos">0</span></button>
   <button class="nav-btn" id="nav-prazos-solo" onclick="switchTab('prazos-solo',this)">📋 Prazos <span class="nb-cnt" id="nc-prazos-solo">0</span></button>
+  <button class="nav-btn" id="nav-vencidos-geral" onclick="switchTab('vencidos-geral',this)">🔴 Vencidos <span class="nb-cnt" id="nc-vg">0</span></button>
   <button class="nav-btn" id="nav-agendas" onclick="switchTab('agendas',this)">📅 Agendas <span class="nb-cnt" id="nc-agendas">0</span></button>
   <button class="nav-btn" id="nav-equipe" onclick="switchTab('equipe',this)">👥 Agenda Equipe <span class="nb-cnt" id="nc-equipe">0</span></button>
   <button class="nav-btn" id="nav-audiencias" onclick="switchTab('audiencias',this)">⚖️ Audiências <span class="nb-cnt" id="nc-aud">0</span></button>
@@ -3168,6 +3169,40 @@ body.role-manager .upload-bar {
   </div>
 
 </div><!-- /prazos-solo -->
+
+<!-- ═══ VENCIDOS (TUDO JUNTO) ═══ -->
+<div class="page" id="page-vencidos-geral">
+  <div class="det-card">
+    <div class="det-hdr" style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;">
+      <h2>🔴 Todos os Vencidos <span class="det-cnt" id="ct-vg">0 registros</span></h2>
+      <button type="button" style="background:#f0f6f8;border:1.5px solid #aecad6;color:#005070;border-radius:8px;padding:8px 16px;font-size:12px;font-weight:700;cursor:pointer;" onclick="exportarVencidosGeralExcel()">📥 Exportar Excel</button>
+    </div>
+    <div style="margin:0 0 12px;background:#f0f7fb;border:1px solid #ccdde4;border-radius:8px;padding:10px 14px;font-size:11px;color:var(--gray3);">
+      ℹ️ Junta tudo que está com status Vencido — Prazos, Agendas, Agenda Equipe e Audiências — numa lista só, respeitando o filtro global (Profissional/Grupo/Busca) do topo.
+    </div>
+    <div class="det-filters">
+      <div class="fg"><label>Tipo</label>
+        <select class="fsel" id="vg-tipo" onchange="renderVencidosGeral()">
+          <option value="">Todos os tipos</option>
+          <option value="Prazo">Prazos</option>
+          <option value="Agenda">Agendas</option>
+          <option value="Agenda Equipe">Agenda Equipe</option>
+          <option value="Audiência">Audiências</option>
+        </select>
+      </div>
+      <div class="srch-wrap">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input class="srch-in" id="vg-s" placeholder="Buscar cliente, processo, responsável, tarefa..." oninput="renderVencidosGeral()">
+      </div>
+      <button class="btn-limpar" onclick="V('vg-s').value='';V('vg-tipo').value='';renderVencidosGeral()">✕ Limpar</button>
+    </div>
+    <div class="det-scroll" style="max-height:65vh;"><table>
+      <thead><tr><th>Tipo</th><th>Data</th><th>Cliente</th><th>Parte Contrária</th><th>Processo</th><th>Responsável</th><th>Grupo</th><th>Tarefa</th></tr></thead>
+      <tbody id="body-vg"></tbody>
+    </table></div>
+    <div class="pg-bar" id="pg-vg"></div>
+  </div>
+</div><!-- /vencidos-geral -->
 
 <!-- ═══ AGENDAS ═══ -->
 <div class="page" id="page-agendas">
@@ -3863,7 +3898,7 @@ function switchTab(n, el) {
   document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
   el.classList.add('active');
   V('page-'+n).classList.add('active');
-  V('fpanel').style.display = ['prazos','prazos-solo','agendas','equipe'].includes(n)?'':'none';
+  V('fpanel').style.display = ['prazos','prazos-solo','agendas','equipe','vencidos-geral'].includes(n)?'':'none';
   if(n==='admin' && typeof window.renderAdmin === 'function') setTimeout(window.renderAdmin, 50);
   if(n==='exposicao' && typeof window.renderExposicaoGrupo === 'function') setTimeout(window.renderExposicaoGrupo, 50);
 }
@@ -5500,6 +5535,87 @@ window.filtrarPrazosSolo = function(status) {
 
 function renderPrazosSoloDet() { renderDetGeneric(applyGF(S.prazos),'body-p2','pg-p2','ct-p2','p2-s','p2-st','p2','prazo','p2-uf'); }
 
+// ── VENCIDOS (TUDO JUNTO) ────────────────────────────
+// Junta Prazos + Agendas + Agenda Equipe + Audiências, só os com status
+// Vencido, normalizando pra um formato comum (audiências usam chaves
+// capitalizadas do Excel: 'Processo', 'Parte Principal' etc.).
+function normalizarVencidos(tipo){
+  if(tipo === 'Audiência'){
+    return (S.aud||[]).filter(r => statusEh(r.status, 'Vencido')).map(r => ({
+      tipo: 'Audiência',
+      data: r.data || r['Data'],
+      cliente: r['Parte Principal'] || r.parte_principal || r.cliente,
+      parte_contraria: r['Parte Contrária'] || r.parte_contraria,
+      numero_processo: r['Processo'] || r.numero_processo,
+      responsavel: r['Advogado Responsável Audiência/SO'] || r.responsavel,
+      grupo_processo: r['Equipe responsável'] || r.grupo_processo,
+      descricao_tarefa: r['Tipo Agendamento'] || r.descricao_tarefa,
+    }));
+  }
+  const origem = { 'Prazo': S.prazos, 'Agenda': S.agendas, 'Agenda Equipe': S.equipe }[tipo] || [];
+  return applyGF(origem).filter(r => statusEh(r.status, 'Vencido')).map(r => ({
+    tipo,
+    data: r.data,
+    cliente: r.cliente,
+    parte_contraria: r.parte_contraria,
+    numero_processo: r.numero_processo,
+    responsavel: r.responsavel,
+    grupo_processo: r.grupo_processo,
+    descricao_tarefa: r.descricao_tarefa,
+  }));
+}
+
+function getVencidosGeral(){
+  return ['Prazo','Agenda','Agenda Equipe','Audiência'].flatMap(normalizarVencidos);
+}
+
+function renderVencidosGeral(){
+  const tipoSel = V('vg-tipo')?.value || '';
+  const srch = (V('vg-s')?.value||'').toLowerCase();
+  let data = getVencidosGeral();
+  if(tipoSel) data = data.filter(r => r.tipo === tipoSel);
+  if(srch) data = data.filter(r => [r.responsavel,r.numero_processo,r.cliente,r.parte_contraria,r.descricao_tarefa].join(' ').toLowerCase().includes(srch));
+  const ctEl = V('ct-vg'); if(ctEl) ctEl.textContent = data.length+' registros';
+  n('nc-vg', getVencidosGeral().length);
+  const {slice,pg,pages,total} = pgSlice(data,'vg');
+  const bodyEl = V('body-vg');
+  if(bodyEl) bodyEl.innerHTML = slice.length ? slice.map(r=>`<tr>
+    <td><span class="badge b-outro">${e(r.tipo)}</span></td>
+    <td class="td-mono">${fmtDate(r.data)}</td>
+    <td class="td-clip" title="${e(r.cliente)}">${e(r.cliente)}</td>
+    <td class="td-clip" title="${e(r.parte_contraria)}">${e(r.parte_contraria)}</td>
+    <td class="td-clip-sm proc-normal" title="${e(r.numero_processo)}">${e(r.numero_processo)}</td>
+    <td class="td-clip-sm">${e(r.responsavel)}</td>
+    <td class="td-clip-sm">${e(r.grupo_processo)}</td>
+    <td class="td-clip" style="max-width:220px" title="${e(r.descricao_tarefa)}">${e(r.descricao_tarefa)}</td>
+  </tr>`).join('') : emptyR(8);
+  renderPg('pg-vg',pg,pages,total,'vg',renderVencidosGeral);
+}
+
+function exportarVencidosGeralExcel(){
+  const tipoSel = V('vg-tipo')?.value || '';
+  const srch = (V('vg-s')?.value||'').toLowerCase();
+  let data = getVencidosGeral();
+  if(tipoSel) data = data.filter(r => r.tipo === tipoSel);
+  if(srch) data = data.filter(r => [r.responsavel,r.numero_processo,r.cliente,r.parte_contraria,r.descricao_tarefa].join(' ').toLowerCase().includes(srch));
+  if(!data.length){ alert('Nenhum registro para exportar com os filtros atuais.'); return; }
+  const linhas = data.map(r => ({
+    'Tipo': r.tipo,
+    'Data': fmtDate(r.data),
+    'Cliente': r.cliente,
+    'Parte Contrária': r.parte_contraria,
+    'Processo': r.numero_processo,
+    'Responsável': r.responsavel,
+    'Grupo': r.grupo_processo,
+    'Tarefa': r.descricao_tarefa,
+  }));
+  const ws = XLSX.utils.json_to_sheet(linhas);
+  const wb = XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(wb, ws, 'Vencidos');
+  const dt = new Date().toLocaleDateString('pt-BR').replace(/\//g,'-');
+  XLSX.writeFile(wb, `PC_Todos_Vencidos_${dt}.xlsx`);
+}
+
 function exportarPrazosSoloExcel(){
   let data = applyGF(S.prazos);
   const st = V('p2-st')?.value || '';
@@ -5606,6 +5722,7 @@ function renderAll() {
   renderResp(fp,'body-rp2','ct-rp2','rp2');
   renderGrupo(fp,'body-gp2','ct-gp2');
   renderPrazosSoloDet();
+  renderVencidosGeral();
   renderResp(fa,'body-ra','ct-ra','ra');
   renderGrupo(fa,'body-ga','ct-ga');
   renderResp(fe,'body-re','ct-re','re');
@@ -12658,6 +12775,7 @@ document.addEventListener('DOMContentLoaded', function(){
 <div id="mobile-bottom-nav">
   <button class="mn-btn active" onclick="mobileSwitchTab('prazos',this)"><span class="mn-icon">📋</span>Prazos</button>
   <button class="mn-btn" onclick="mobileSwitchTab('prazos-solo',this)"><span class="mn-icon">📋</span>Só Prazos</button>
+  <button class="mn-btn" onclick="mobileSwitchTab('vencidos-geral',this)"><span class="mn-icon">🔴</span>Vencidos</button>
   <button class="mn-btn" onclick="mobileSwitchTab('agendas',this)"><span class="mn-icon">📅</span>Agendas</button>
   <button class="mn-btn" onclick="mobileSwitchTab('equipe',this)"><span class="mn-icon">👥</span>Equipe</button>
   <button class="mn-btn" onclick="mobileSwitchTab('audiencias',this)"><span class="mn-icon">⚖️</span>Audiências</button>
