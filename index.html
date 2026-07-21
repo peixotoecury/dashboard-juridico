@@ -8198,6 +8198,7 @@ const USUARIOS = {
   // ACESSO TOTAL FIXO
   'controladoria': { senha: 'ctrl@pc2025', nivel: 'admin', nome: 'Controladoria', sigla: null },
   'coord': { senha: 'coord@pc2025', nivel: 'admin', nome: 'Coordenação', sigla: null },
+  'mariana.teberges': { senha: '123456', nivel: 'admin', nome: 'Mariana Teberges', sigla: null },
   // EQUIPE - senha: pc@ + matricula minuscula (ex: pc@aao)
   'aline.oliveira': { senha: 'pc@aao', nivel: 'usuario', nome: 'Aline Amorim Oliveira', sigla: 'AAO' },
   'aline.borges': { senha: 'pc@abr', nivel: 'usuario', nome: 'Aline Cunha de Oliveira Borges', sigla: 'ABR' },
@@ -8311,7 +8312,7 @@ function doLogin() {
   // Sincroniza USUARIOS com localStorage — mas NÃO sobrescreve admins hardcoded
   const _adminsFixos = ['controladoria','coord','sofia.freire','antoniocarlos.aguiar',
     'beatriz.rodrigues','bianca.camacho','gisela.freire','keyla.moraes','marcel.alves',
-    'marina.brechiani','natalia.baliero','natalia.gaggini','nicolau.coelho','rafael.camargo','poliana.banqueri','washington.soares'];
+    'marina.brechiani','natalia.baliero','natalia.gaggini','nicolau.coelho','rafael.camargo','poliana.banqueri','washington.soares','mariana.teberges'];
   try {
     const saved = localStorage.getItem('pc_usuarios_v1');
     if(saved) {
@@ -8540,7 +8541,7 @@ function salvarNovaSenha() {
 function aplicarAcesso() {
   if (!SESSAO) return;
   // Verifica por nível OU por login fixo (garante acesso mesmo se localStorage sobrescreveu o nível)
-  const _loginsAdmin = ['controladoria','coord','antoniocarlos.aguiar','beatriz.rodrigues','bianca.camacho','gisela.freire','keyla.moraes','marcel.alves','marina.brechiani','natalia.baliero','natalia.gaggini','nicolau.coelho','poliana.banqueri','rafael.camargo','sofia.freire','washington.soares'];
+  const _loginsAdmin = ['controladoria','coord','antoniocarlos.aguiar','beatriz.rodrigues','bianca.camacho','gisela.freire','keyla.moraes','marcel.alves','marina.brechiani','natalia.baliero','natalia.gaggini','nicolau.coelho','poliana.banqueri','rafael.camargo','sofia.freire','washington.soares','mariana.teberges'];
   const isAdmin = SESSAO.nivel === 'admin' || _loginsAdmin.includes((SESSAO.login || '').toLowerCase());
   // Remove banner de privacidade imediatamente se for admin
   if (isAdmin) document.querySelectorAll('.aviso-privacidade').forEach(el => el.remove());
@@ -8740,7 +8741,7 @@ document.addEventListener('DOMContentLoaded', function(){
   function isManager(sess){
     const n = String((sess && (sess.nivel || sess.perfil || sess.role)) || '').toLowerCase();
     const l = String((sess && sess.login) || '').toLowerCase();
-    const _mgLogins = ['controladoria','coord','coordenador','socio','sócio','antoniocarlos.aguiar','beatriz.rodrigues','bianca.camacho','gisela.freire','keyla.moraes','marcel.alves','marina.brechiani','natalia.baliero','natalia.gaggini','nicolau.coelho','poliana.banqueri','rafael.camargo','sofia.freire','washington.soares'];
+    const _mgLogins = ['controladoria','coord','coordenador','socio','sócio','antoniocarlos.aguiar','beatriz.rodrigues','bianca.camacho','gisela.freire','keyla.moraes','marcel.alves','marina.brechiani','natalia.baliero','natalia.gaggini','nicolau.coelho','poliana.banqueri','rafael.camargo','sofia.freire','washington.soares','mariana.teberges'];
     return ['admin','gerencial','gestor','gestora','coordenador','coordenadora','socio','sócio','controladoria'].includes(n) ||
            _mgLogins.includes(l);
   }
@@ -8859,7 +8860,7 @@ document.addEventListener('DOMContentLoaded', function(){
     if(niveisAdmin.includes(nivel)) return 'gerencial';
 
     // 2. Logins com acesso total fixo
-    const loginsAdmin = ['controladoria','coord','antoniocarlos.aguiar','beatriz.rodrigues','bianca.camacho','gisela.freire','keyla.moraes','marcel.alves','marina.brechiani','natalia.baliero','natalia.gaggini','nicolau.coelho','poliana.banqueri','rafael.camargo','sofia.freire','washington.soares'];
+    const loginsAdmin = ['controladoria','coord','antoniocarlos.aguiar','beatriz.rodrigues','bianca.camacho','gisela.freire','keyla.moraes','marcel.alves','marina.brechiani','natalia.baliero','natalia.gaggini','nicolau.coelho','poliana.banqueri','rafael.camargo','sofia.freire','washington.soares','mariana.teberges'];
     if(loginsAdmin.includes(login)) return 'gerencial';
 
     // 3. Fallback: palavras-chave no nome (compatibilidade legada)
@@ -9026,7 +9027,7 @@ document.addEventListener('DOMContentLoaded', function(){
       const _n = ((_sessaoAtiva.nivel||_sessaoAtiva.perfil||_sessaoAtiva.role||_sessaoAtiva.tipo) || '').toLowerCase();
       const _l = (_sessaoAtiva.login || '').toLowerCase();
       const _admNiveis = ['admin','gerencial','gestor','gestora','coordenador','coordenadora','socio','sócio'];
-      const _admLogins = ['controladoria','coord','antoniocarlos.aguiar','beatriz.rodrigues','bianca.camacho','gisela.freire','keyla.moraes','marcel.alves','marina.brechiani','natalia.baliero','natalia.gaggini','nicolau.coelho','poliana.banqueri','rafael.camargo','sofia.freire','washington.soares'];
+      const _admLogins = ['controladoria','coord','antoniocarlos.aguiar','beatriz.rodrigues','bianca.camacho','gisela.freire','keyla.moraes','marcel.alves','marina.brechiani','natalia.baliero','natalia.gaggini','nicolau.coelho','poliana.banqueri','rafael.camargo','sofia.freire','washington.soares','mariana.teberges'];
       return _admNiveis.includes(_n) || _admLogins.includes(_l);
     })();
     if(resumoDiv && !_isAdmin) {
