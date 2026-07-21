@@ -3293,9 +3293,15 @@ body.role-manager .upload-bar {
 <!-- ═══ CONTROLE DE DECISÕES ═══ -->
 <div class="page" id="page-controle-decisoes">
   <div class="det-card">
-    <div class="det-hdr"><h2>📑 Controle de Decisões <span class="det-cnt" id="ct-cd">0 registros</span></h2></div>
+    <div class="det-hdr" style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;">
+      <h2>📑 Controle de Decisões <span class="det-cnt" id="ct-cd">0 registros</span></h2>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;">
+        <button type="button" style="background:#0E5E6F;color:#fff;border:none;border-radius:8px;padding:8px 16px;font-size:12px;font-weight:700;cursor:pointer;" onclick="dispararAlertasDecisao()">📑 Alertas de Decisão <span class="nb-cnt" id="nc-decisoes-cd">0</span></button>
+        <button type="button" style="background:#f0f6f8;border:1.5px solid #aecad6;color:#005070;border-radius:8px;padding:8px 16px;font-size:12px;font-weight:700;cursor:pointer;" onclick="exportarControleDecisoesExcel()">📥 Exportar Excel</button>
+      </div>
+    </div>
     <div style="margin:0 0 12px;background:#f0f7fb;border:1px solid #ccdde4;border-radius:8px;padding:10px 14px;font-size:11px;color:var(--gray3);">
-      ℹ️ Base histórica de todo prazo detectado como Embargos de Declaração, Recurso Ordinário, Recurso de Revista, Manifestação sobre Laudo Pericial ou Apresentação de Cálculos — cada um é gravado aqui na primeira vez que aparece. Use o botão "📑 Alertas de Decisão" (no Dashboard Executivo) pra notificar Maria Carolina Dias, Ana Carolina Martini, Cícera Gabriela e Brenna Malta sobre os que estão pendentes agora.
+      ℹ️ Base histórica de todo prazo detectado como Embargos de Declaração, Recurso Ordinário, Recurso de Revista, Manifestação sobre Laudo Pericial ou Apresentação de Cálculos — cada um é gravado aqui na primeira vez que aparece. Use o botão "📑 Alertas de Decisão" acima pra notificar Maria Carolina Dias, Ana Carolina Martini, Cícera Gabriela e Brenna Malta sobre os que estão pendentes agora.
     </div>
     <div class="det-filters">
       <div class="fg"><label>Tipo</label>
@@ -4274,6 +4280,7 @@ async function registrarControleDecisoes(){
   const pend = getPrazosDecisao();
   window.__decisoesPendentes = pend;
   n('nc-decisoes', pend.length);
+  n('nc-decisoes-cd', pend.length);
   if(!pend.length) return;
   const SUPA_URL = 'https://rpibvjcnrseuugpkfmdj.supabase.co';
   const SUPA_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJwaWJ2amNucnNldXVncGtmbWRqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODE1NTc3MTcsImV4cCI6MjA5NzEzMzcxN30.ecihol8JESMH7cgFSvWKIzp-OwoPRFqdK3aCDwpCeg8';
@@ -4403,6 +4410,30 @@ function renderControleDecisoes(){
     <td class="td-clip-sm">${e(r.grupo_processo)}</td>
   </tr>`).join('') : emptyR(8);
   renderPg('pg-cd',pg,pages,total,'cd',renderControleDecisoes);
+}
+
+function exportarControleDecisoesExcel(){
+  const tipoSel = V('cd-tipo')?.value || '';
+  const srch = (V('cd-s')?.value||'').toLowerCase();
+  let data = [...S_CD];
+  if(tipoSel) data = data.filter(r => r.tipo_decisao === tipoSel);
+  if(srch) data = data.filter(r => [r.responsavel,r.numero_processo,r.cliente,r.parte_principal,r.descricao_tarefa].join(' ').toLowerCase().includes(srch));
+  if(!data.length){ alert('Nenhum registro para exportar com os filtros atuais.'); return; }
+  const linhas = data.map(r => ({
+    'Detectado em': fmtDate(r.detectado_em),
+    'Tipo': r.tipo_decisao,
+    'Data do Prazo': fmtDate(r.data),
+    'Responsável': r.responsavel,
+    'Processo': r.numero_processo,
+    'Cliente': r.cliente,
+    'Tarefa': r.descricao_tarefa,
+    'Grupo': r.grupo_processo,
+  }));
+  const ws = XLSX.utils.json_to_sheet(linhas);
+  const wb = XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(wb, ws, 'Controle_Decisoes');
+  const dt = new Date().toLocaleDateString('pt-BR').replace(/\//g,'-');
+  XLSX.writeFile(wb, `PC_Controle_Decisoes_${dt}.xlsx`);
 }
 
 document.addEventListener('DOMContentLoaded', function(){
