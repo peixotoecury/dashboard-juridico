@@ -4322,9 +4322,9 @@ function montarCorpoAlertaDecisao(rows){
 }
 
 function dispararAlertasDecisao(){
-  var pend = window.__decisoesPendentes || getPrazosDecisao();
+  var pend = getPrazosDecisao(); // sempre recalcula na hora — não usar cache potencialmente desatualizado
   var grupoSel = V('cd-grupo')?.value || '';
-  if(grupoSel) pend = pend.filter(function(r){ return r.grupo_processo === grupoSel; });
+  if(grupoSel) pend = pend.filter(function(r){ return String(r.grupo_processo||'').trim() === grupoSel.trim(); });
   if(!pend.length){ alert(grupoSel ? ('Nenhum prazo de decisão pendente para o grupo ' + grupoSel + '.') : 'Nenhum prazo de decisão (Embargos de Declaração, Recurso Ordinário, Recurso de Revista, Manifestação sobre Laudo ou Apresentação de Cálculos) encontrado no momento.'); return; }
   // Reaplica a lista já filtrada por grupo — os botões do modal (Abrir e-mail/Copiar
   // texto) leem daqui, então precisam ver só o que passou pelo filtro.
@@ -7490,6 +7490,7 @@ async function syncAgora() {
           if(typeof window._atualizarSidebarTs === 'function') window._atualizarSidebarTs(tsStr);
           localStorage.setItem('pc_upload_date', agora.toISOString());
           await carregarPrazosSupabase();
+          if(typeof registrarControleDecisoes === 'function') registrarControleDecisoes();
           setTimeout(() => {
             btn.disabled = false;
             icon.textContent = '🔄';
