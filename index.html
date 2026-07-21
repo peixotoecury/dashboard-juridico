@@ -2765,6 +2765,7 @@ body.role-manager .upload-bar {
   <button class="nav-btn" id="nav-equipe" onclick="switchTab('equipe',this)">👥 Agenda Equipe <span class="nb-cnt" id="nc-equipe">0</span></button>
   <button class="nav-btn" id="nav-audiencias" onclick="switchTab('audiencias',this)">⚖️ Audiências <span class="nb-cnt" id="nc-aud">0</span></button>
   <button class="nav-btn" id="nav-canceladas" onclick="switchTab('canceladas',this)">🚫 Redesignadas/Canceladas <span class="nb-cnt" id="nc-cancel">0</span></button>
+  <button class="nav-btn" id="nav-baixados" onclick="switchTab('baixados',this)">✅ Baixados no Dia <span class="nb-cnt" id="nc-baixados">0</span></button>
   <button class="nav-btn" id="nav-quadro" style="display:none" onclick="switchTab('quadro',this)">📊 Quadro Geral <span class="nb-cnt" id="nc-quadro">0</span></button>
   <button class="nav-btn" id="nav-admin" onclick="switchTab('admin',this)" style="display:none">⚙️ Gestão de Usuários <span class="nb-cnt" id="nc-admin">0</span></button>
   <button class="nav-btn" id="nav-exposicao" onclick="switchTab('exposicao',this)">📈 Exposição por Grupo <span class="nb-cnt" id="nc-exposicao">0</span></button>
@@ -3245,6 +3246,45 @@ body.role-manager .upload-bar {
   </div>
 </div>
 
+<!-- ═══ BAIXADOS NO DIA ═══ -->
+<div class="page" id="page-baixados">
+  <div class="det-card">
+    <div class="det-hdr"><h2>✅ Baixados no Dia <span class="det-cnt" id="ct-baixados">0 registros</span></h2></div>
+    <div style="margin:0 0 12px;background:#f0f7fb;border:1px solid #ccdde4;border-radius:8px;padding:10px 14px;font-size:11px;color:var(--gray3);">
+      ℹ️ Lista tudo que estava Fatal/D-1/D-2/Futuro e sumiu do banco LM de um sync pro outro (ou seja, foi baixado/resolvido na origem) — confira no PJe se realmente foi protocolado. Prazos que já tinham justificativa registrada aparecem marcados.
+    </div>
+    <div class="det-filters">
+      <div class="fg"><label>Data da Baixa</label><select class="fsel" id="bx-data" onchange="renderBaixados()"></select></div>
+      <div class="fg"><label>Status Antes da Baixa</label>
+        <select class="fsel" id="bx-status" onchange="renderBaixados()">
+          <option value="">Fatal, D-1, D-2 e Futuro</option>
+          <option value="Fatal">Fatal</option>
+          <option value="D-1">D-1</option>
+          <option value="D-2">D-2</option>
+          <option value="Futuro">Futuro</option>
+        </select>
+      </div>
+      <div class="fg"><label>Justificativa</label>
+        <select class="fsel" id="bx-just" onchange="renderBaixados()">
+          <option value="">Todos</option>
+          <option value="com">Só com justificativa</option>
+          <option value="sem">Só sem justificativa</option>
+        </select>
+      </div>
+      <div class="srch-wrap">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input class="srch-in" id="bx-s" placeholder="Buscar processo, cliente ou reclamante..." oninput="renderBaixados()">
+      </div>
+      <button class="btn-limpar" onclick="V('bx-s').value='';V('bx-status').value='';V('bx-just').value='';renderBaixados()">✕ Limpar</button>
+    </div>
+    <div class="det-scroll"><table>
+      <thead><tr><th>Data da Baixa</th><th>Status Antes</th><th>Data do Prazo</th><th>Responsável</th><th>Processo</th><th>Cliente</th><th>Tarefa</th><th>Grupo</th><th>Justificativa</th></tr></thead>
+      <tbody id="body-baixados"></tbody>
+    </table></div>
+    <div class="pg-bar" id="pg-baixados"></div>
+  </div>
+</div>
+
 <!-- ═══ QUADRO GERAL ═══ -->
 <div class="page" id="page-quadro">
 
@@ -3559,7 +3599,7 @@ body.role-manager .upload-bar {
 // Navegação normal — botão Voltar funciona para retornar ao hub ferramentas
 
 const PG = 100;
-const S = { raw:[], prazos:[], agendas:[], equipe:[], aud:[], cancel:[], pgs:{} };
+const S = { raw:[], prazos:[], agendas:[], equipe:[], aud:[], cancel:[], baixados:[], pgs:{} };
 window.S = S; // expõe S para IIFEs (renderMP/dataMP usam window.S)
 window._mpSearchTerm = window._mpSearchTerm || ''; // busca do Meu Painel (processo/reclamante/cliente)
 // ── Limpeza ÚNICA de cache antigo (era do Excel, com dados desatualizados) ──
@@ -4055,10 +4095,83 @@ async function carregarPrazosSupabase() {
   }
 }
 
+// ── BAIXADOS NO DIA ──────────────────────────────────
+// Prazos/agendas que sumiram do banco LM entre um sync e outro (sync_prazos.py
+// grava uma cópia em prazos_baixados, com o status que tinham na última
+// leitura, antes de apagar de prazos_agendas). Últimos 14 dias, pra dar uma
+// margem de olhar pra trás além de "hoje".
+async function carregarBaixadosSupabase() {
+  const SUPA_URL = 'https://rpibvjcnrseuugpkfmdj.supabase.co';
+  const SUPA_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJwaWJ2amNucnNldXVncGtmbWRqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODE1NTc3MTcsImV4cCI6MjA5NzEzMzcxN30.ecihol8JESMH7cgFSvWKIzp-OwoPRFqdK3aCDwpCeg8';
+  const HDR = { 'apikey': SUPA_KEY, 'Authorization': `Bearer ${SUPA_KEY}` };
+  try {
+    const desde = new Date(); desde.setDate(desde.getDate() - 13);
+    const desdeIso = desde.toISOString().slice(0,10);
+    const r = await fetch(`${SUPA_URL}/rest/v1/prazos_baixados?select=*&data_baixa=gte.${desdeIso}&order=data_baixa.desc`, { headers: HDR });
+    if (!r.ok) throw new Error(`Supabase ${r.status}`);
+    S.baixados = await r.json();
+    popBaixadosData();
+    const hojeIso = new Date().toISOString().slice(0,10);
+    n('nc-baixados', S.baixados.filter(x => x.data_baixa === hojeIso && ['Fatal','D-1','D-2','Futuro'].includes(x.status_antes_baixa)).length);
+    renderBaixados();
+  } catch(err) {
+    console.warn('⚠️ Falha ao carregar Baixados no Dia:', err.message);
+  }
+}
+
+function popBaixadosData(){
+  const sel = V('bx-data'); if(!sel) return;
+  const hojeIso = new Date().toISOString().slice(0,10);
+  const atual = sel.value;
+  const datas = Array.from(new Set(S.baixados.map(r=>r.data_baixa).filter(Boolean))).sort().reverse();
+  if(!datas.includes(hojeIso)) datas.unshift(hojeIso);
+  sel.innerHTML = datas.map(d=>`<option value="${d}">${d===hojeIso?'Hoje ('+fmtDate(d)+')':fmtDate(d)}</option>`).join('');
+  sel.value = datas.includes(atual) ? atual : hojeIso;
+}
+
+function renderBaixados(){
+  const dataSel = V('bx-data')?.value || new Date().toISOString().slice(0,10);
+  const statusSel = V('bx-status')?.value || '';
+  const justSel = V('bx-just')?.value || '';
+  const srch = (V('bx-s')?.value||'').toLowerCase();
+  let data = (S.baixados||[]).filter(r => r.data_baixa === dataSel && ['Fatal','D-1','D-2','Futuro'].includes(r.status_antes_baixa));
+  if(statusSel) data = data.filter(r => r.status_antes_baixa === statusSel);
+  if(srch) data = data.filter(r => [r.responsavel,r.numero_processo,r.cliente,r.parte_principal,r.descricao_tarefa].join(' ').toLowerCase().includes(srch));
+  if(justSel){
+    data = data.filter(r => {
+      const tem = !!(window.justificativas && window.justificativas[r.numero_processo]);
+      return justSel === 'com' ? tem : !tem;
+    });
+  }
+  const ctEl = V('ct-baixados'); if(ctEl) ctEl.textContent = data.length+' registros';
+  const {slice,pg,pages,total} = pgSlice(data,'baixados');
+  const bodyEl = V('body-baixados');
+  if(bodyEl) bodyEl.innerHTML = slice.length ? slice.map(r=>{
+    const temJust = window.justificativas && window.justificativas[r.numero_processo];
+    const justBadge = temJust
+      ? `<span style="background:#e8f5e9;color:#2e7d32;padding:2px 6px;border-radius:8px;font-size:10px;font-weight:700;">✅ Com justificativa</span>`
+      : `<span style="background:#fff3e0;color:#e65100;padding:2px 6px;border-radius:8px;font-size:10px;font-weight:700;">— Sem justificativa</span>`;
+    return `<tr>
+      <td class="td-mono">${fmtDate(r.data_baixa)}</td>
+      <td>${sBadge(r.status_antes_baixa)}</td>
+      <td class="td-mono">${fmtDate(r.data)}</td>
+      <td class="td-clip-sm">${e(r.responsavel)}</td>
+      <td class="td-clip-sm proc-normal" title="${e(r.numero_processo)}">${e(r.numero_processo)}</td>
+      <td class="td-clip-sm" title="${e(r.cliente)}">${e(r.cliente)}</td>
+      <td class="td-clip" style="max-width:220px" title="${e(r.descricao_tarefa)}">${e(r.descricao_tarefa)}</td>
+      <td class="td-clip-sm">${e(r.grupo_processo)}</td>
+      <td>${justBadge}</td>
+    </tr>`;
+  }).join('') : emptyR(9);
+  renderPg('pg-baixados',pg,pages,total,'baixados',renderBaixados);
+}
+
 document.addEventListener('DOMContentLoaded', function(){
   setTimeout(function(){
     controlarAbas();
     carregarJustificativasSupabase();
+
+    carregarBaixadosSupabase();
 
     // Busca prazos do Supabase + audiências do GitHub em paralelo
     Promise.all([
@@ -4096,6 +4209,7 @@ document.addEventListener('DOMContentLoaded', function(){
       console.log('🔄 Refresh automático — prazos + audiências...');
       carregarPrazosSupabase();
       carregarAudienciasGithub(true);
+      carregarBaixadosSupabase();
     }, 10 * 60 * 1000); // 10 minutos
 
   }, 800);
