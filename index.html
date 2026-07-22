@@ -5321,11 +5321,8 @@ function enviarEmailTrabalhista() {
   const ae = S.equipe || [];
 
   function cnt(arr, st){ return arr.filter(r => (r.status||'').trim() === st).length; }
-  // Prazos contam processos únicos (mesmo critério do card do dashboard) — um
-  // processo pode ter mais de uma tarefa fatal no mesmo dia.
-  function cntProc(arr, st){ return contarProcessosUnicos(arr.filter(r => (r.status||'').trim() === st)); }
 
-  const pD1=cntProc(p,'D-1'), pD2=cntProc(p,'D-2'), pFatal=cntProc(p,'Fatal'), pVenc=cntProc(p,'Vencido'), pTot=p.length;
+  const pD1=cnt(p,'D-1'), pD2=cnt(p,'D-2'), pFatal=cnt(p,'Fatal'), pVenc=cnt(p,'Vencido'), pTot=p.length;
   const aD1=cnt(a,'D-1'), aD2=cnt(a,'D-2'), aFatal=cnt(a,'Fatal'), aVenc=cnt(a,'Vencido'), aTot=a.length;
   const eD1=cnt(ae,'D-1'),eD2=cnt(ae,'D-2'),eFatal=cnt(ae,'Fatal'),eVenc=cnt(ae,'Vencido'),eTot=ae.length;
 
@@ -5491,25 +5488,12 @@ function enviarEmailTrabalhista() {
 }
 
 
-// Conta processos únicos (numero_processo) em vez de linhas — um processo pode ter
-// mais de um prazo/tarefa fatal no mesmo dia, e a contagem de negócio é por processo.
-function contarProcessosUnicos(arr) {
-  const vistos = new Set();
-  let count = 0;
-  arr.forEach(r => {
-    const proc = (r.numero_processo || '').trim();
-    if (!proc) { count++; return; }
-    if (!vistos.has(proc)) { vistos.add(proc); count++; }
-  });
-  return count;
-}
-
 function updateCards(p, a) {
   n('kp-tot',  p.length);
-  n('kp-venc', contarProcessosUnicos(p.filter(r=>statusEh(r.status, 'Vencido'))));
-  n('kp-fatal',contarProcessosUnicos(p.filter(r=>statusEh(r.status, 'Fatal'))));
-  n('kp-d1',   contarProcessosUnicos(p.filter(r=>statusEh(r.status, 'D-1'))));
-  n('kp-d2',   contarProcessosUnicos(p.filter(r=>statusEh(r.status, 'D-2'))));
+  n('kp-venc', p.filter(r=>statusEh(r.status, 'Vencido')).length);
+  n('kp-fatal',p.filter(r=>statusEh(r.status, 'Fatal')).length);
+  n('kp-d1',   p.filter(r=>statusEh(r.status, 'D-1')).length);
+  n('kp-d2',   p.filter(r=>statusEh(r.status, 'D-2')).length);
   n('kp-fut',  p.filter(r=>statusEh(r.status, 'Futuro')).length);
   n('ka-tot',  a.length);
   n('ka-venc', a.filter(r=>statusEh(r.status, 'Vencido')).length);
