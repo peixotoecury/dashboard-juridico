@@ -3004,6 +3004,7 @@ body.role-manager .upload-bar {
         <button type="button" style="background:#5c0e0e;color:#fff;border:none;border-radius:8px;padding:8px 14px;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap;" onclick="dispararAlertaTodosFataisJunto()">📢 Alerta Único — Todos os Fatais</button>
         <button type="button" style="background:#fff;color:var(--teal);border:none;border-radius:8px;padding:8px 14px;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap;" onclick="dispararAlertasFataisD1()">📧 Alertas de Fatais + D-1 (por responsável)</button>
         <button type="button" style="background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.4);border-radius:8px;padding:8px 14px;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap;" onclick="abrirDashboardFataisD1PorGrupo()">📁 Alertas por grupo</button>
+        <button type="button" style="background:#8a4b00;color:#fff;border:none;border-radius:8px;padding:8px 14px;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap;" onclick="abrirDashboardFataisSemJustificativaPorGrupo()">📭 Fatais sem justificativa (por grupo)</button>
         <button type="button" style="background:#0E5E6F;color:#fff;border:none;border-radius:8px;padding:8px 14px;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap;" onclick="dispararAlertasDecisao()">📑 Alertas de Decisão <span class="nb-cnt" id="nc-decisoes">0</span></button>
       </div>
     </div>
@@ -6280,6 +6281,126 @@ function abrirEmailAlertaPrazoGrupo(grupo){
   var cfg = window.emailMapeamento[grupo] || { para:'', cc:'prazos.trabalhista@peixotoecury.com.br' };
   if(!cfg.para){ alert('Este grupo não tem coordenador mapeado em window.emailMapeamento.'); return; }
   abrirMailtoPrazoComFallback(cfg.para, cfg.cc || 'prazos.trabalhista@peixotoecury.com.br', rows);
+}
+
+// ── Alertas de Fatais SEM justificativa, por grupo ──────────────────────────
+// "Não justificou" = o advogado responsável ainda não registrou nenhuma
+// justificativa (window.justificativas) para o processo do prazo fatal.
+function getFataisSemJustificativa(){
+  return (S.prazos || []).filter(function(r){
+    return statusEh(r.status, 'Fatal') && !(window.justificativas && window.justificativas[r.numero_processo]);
+  });
+}
+
+function montarCorpoAlertaSemJustificativa(rows, maxItens){
+  var ordenadas = rows.slice().sort(function(a,b){ return String(a.data||'').localeCompare(String(b.data||'')); });
+  var cortadas = maxItens ? ordenadas.slice(0, maxItens) : ordenadas;
+  var linhas = cortadas.map(function(r, i){
+    return (i+1) + '. [Fatal] ' + (r.data||'-') + ' | ' + (r.grupo_processo||'-') + ' | ' + (r.numero_processo||'-') + '\n'
+      + '   Responsável: ' + (r.responsavel||'-') + '\n'
+      + '   Cliente: ' + (r.cliente || r.parte_principal || '-') + '\n'
+      + '   Tarefa: ' + (r.descricao_tarefa||'-');
+  }).join('\n\n');
+  var restantes = ordenadas.length - cortadas.length;
+  var aviso = restantes > 0
+    ? '\n\n[+ ' + restantes + ' pendência(s) adicional(is) não incluída(s) por limite de tamanho do e-mail — texto completo copiado para a área de transferência, cole no corpo deste e-mail.]'
+    : '';
+  return 'Prezados,\n\nOs prazos FATAIS abaixo ainda não têm justificativa registrada pelo advogado responsável na base:\n\n'
+    + linhas + aviso
+    + '\n\nFavor cobrar o registro da justificativa com urgência.\n\nControladoria Jurídica — Peixoto & Cury Advogados';
+}
+
+function montarMailtoAlertaSemJustificativa(toAddr, ccAddr, rows, maxItens){
+  var assunto = '⚠️ Fatais SEM justificativa — ' + rows.length + ' processo(s)';
+  var corpo = montarCorpoAlertaSemJustificativa(rows, maxItens);
+  var to = String(toAddr||'').replace(/\s*;\s*/g, ',');
+  var cc = String(ccAddr||'').replace(/\s*;\s*/g, ',');
+  return 'mailto:' + to + '?cc=' + encodeURIComponent(cc) + '&subject=' + encodeURIComponent(assunto) + '&body=' + encodeURIComponent(corpo);
+}
+
+function abrirMailtoSemJustComFallback(toAddr, ccAddr, rows){
+  if(!rows || !rows.length) return;
+  var mailto = montarMailtoAlertaSemJustificativa(toAddr, ccAddr, rows);
+  if(mailto.length > LIMITE_TAMANHO_MAILTO_PRAZO){
+    var corpoCompleto = montarCorpoAlertaSemJustificativa(rows);
+    navigator.clipboard?.writeText(corpoCompleto).catch(function(){});
+    var maxItens = rows.length;
+    do{
+      maxItens--;
+      mailto = montarMailtoAlertaSemJustificativa(toAddr, ccAddr, rows, maxItens);
+    } while(mailto.length > LIMITE_TAMANHO_MAILTO_PRAZO && maxItens > 0);
+    alert('📋 E-mail muito grande: corpo resumido e texto completo copiado para a área de transferência — cole no corpo do e-mail (Ctrl+V).');
+  }
+  window.location.href = mailto;
+}
+
+window.__alertasSemJustPorGrupo = {};
+
+function abrirDashboardFataisSemJustificativaPorGrupo(){
+  var pendentes = getFataisSemJustificativa();
+  if(!pendentes.length){
+    alert('Todos os Fatais já têm justificativa registrada. 🎉');
+    return;
+  }
+
+  var gruposMap = {};
+  pendentes.forEach(function(r){
+    var g = r.grupo_processo || 'Sem grupo';
+    if(!gruposMap[g]) gruposMap[g] = [];
+    gruposMap[g].push(r);
+  });
+  window.__alertasSemJustPorGrupo = gruposMap;
+
+  var gruposOrdenados = Object.keys(gruposMap).sort(function(a,b){ return gruposMap[b].length - gruposMap[a].length || a.localeCompare(b); });
+
+  var cards = gruposOrdenados.map(function(g){
+    var rows = gruposMap[g];
+    var cfg = window.emailMapeamento[g] || { para:'', cc:'prazos.trabalhista@peixotoecury.com.br' };
+    var coordNome = (window.gestorNomeMapeamento && window.gestorNomeMapeamento[g]) || '-';
+    var semCoord = !cfg.para;
+    var preview = rows.slice(0,5).map(function(r){
+      return '<li><b>[Fatal]</b> ' + e(r.data||'-') + ' · ' + e(r.numero_processo||'-') + '<br><span>' + e(r.responsavel||'-') + ' · ' + e(r.cliente||r.parte_principal||'-') + '</span></li>';
+    }).join('');
+    var mais = rows.length > 5 ? '<div class="alerta-card-mais">+ ' + (rows.length-5) + ' pendência(s) neste grupo</div>' : '';
+    return '<div class="designacao-grupo-card' + (rows.length>=3?' designacao-critico':'') + '">'
+      + '<div class="designacao-grupo-top"><div>'
+      + '<div class="designacao-grupo-nome">' + e(g) + '</div>'
+      + '<div class="designacao-grupo-meta">Coordenador: ' + e(coordNome) + (semCoord ? ' <span style="color:#c62828;">(e-mail não mapeado)</span>' : '') + '</div>'
+      + '</div><div class="designacao-grupo-count">' + rows.length + '</div></div>'
+      + '<div class="designacao-grupo-meta">' + rows.length + ' fatal(is) sem justificativa</div>'
+      + '<ul class="designacao-mini-list">' + preview + '</ul>' + mais
+      + '<div class="alerta-card-actions">'
+      + '<button type="button" class="alerta-btn-primary" ' + (semCoord?'disabled':'') + ' onclick="abrirEmailAlertaSemJustGrupo(\'' + g.replace(/'/g,"\\'") + '\')">Abrir e-mail do grupo</button>'
+      + '</div></div>';
+  }).join('');
+
+  fecharDashboardFataisSemJustificativaPorGrupo();
+  var overlay = document.createElement('div');
+  overlay.id = 'dashboard-semjust-grupo-modal';
+  overlay.className = 'alertas-designacao-overlay open';
+  overlay.innerHTML =
+    '<div class="alertas-designacao-box" role="dialog" aria-modal="true">'
+    + '<div class="alertas-designacao-header"><div>'
+    + '<div class="alertas-designacao-kicker">Controladoria Jurídica</div>'
+    + '<h2>Fatais sem justificativa — por grupo</h2>'
+    + '<p>Um e-mail por grupo, endereçado ao coordenador, cobrando a justificativa dos fatais ainda não justificados pelo advogado responsável.</p>'
+    + '</div><button type="button" class="alertas-designacao-close" onclick="fecharDashboardFataisSemJustificativaPorGrupo()">×</button></div>'
+    + '<div class="alertas-designacao-lista">' + cards + '</div>'
+    + '</div>';
+  document.body.appendChild(overlay);
+}
+
+function fecharDashboardFataisSemJustificativaPorGrupo(){
+  var overlay = document.getElementById('dashboard-semjust-grupo-modal');
+  if(overlay) overlay.remove();
+}
+
+function abrirEmailAlertaSemJustGrupo(grupo){
+  var rows = window.__alertasSemJustPorGrupo && window.__alertasSemJustPorGrupo[grupo];
+  if(!rows || !rows.length) return;
+  var cfg = window.emailMapeamento[grupo] || { para:'', cc:'prazos.trabalhista@peixotoecury.com.br' };
+  if(!cfg.para){ alert('Este grupo não tem coordenador mapeado em window.emailMapeamento.'); return; }
+  abrirMailtoSemJustComFallback(cfg.para, cfg.cc || 'prazos.trabalhista@peixotoecury.com.br', rows);
 }
 
 // ── Alertas exclusivos de Fatais (sem D-1) ──────────────────────────────────
