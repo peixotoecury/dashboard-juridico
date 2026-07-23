@@ -6322,14 +6322,18 @@ function abrirMailtoSemJustComFallback(toAddr, ccAddr, rows){
   if(!rows || !rows.length) return;
   var mailto = montarMailtoAlertaSemJustificativa(toAddr, ccAddr, rows);
   if(mailto.length > LIMITE_TAMANHO_MAILTO_PRAZO){
+    // mailto: tem limite de tamanho no navegador/Outlook — não dá pra mandar o
+    // texto completo direto no link quando a lista é grande. Em vez de abrir
+    // com uma lista parcial pra substituir, copia o texto completo pro
+    // clipboard e abre o e-mail só com um aviso curto pra colar (Ctrl+V).
     var corpoCompleto = montarCorpoAlertaSemJustificativa(rows);
     navigator.clipboard?.writeText(corpoCompleto).catch(function(){});
-    var maxItens = rows.length;
-    do{
-      maxItens--;
-      mailto = montarMailtoAlertaSemJustificativa(toAddr, ccAddr, rows, maxItens);
-    } while(mailto.length > LIMITE_TAMANHO_MAILTO_PRAZO && maxItens > 0);
-    alert('📋 E-mail muito grande: corpo resumido e texto completo copiado para a área de transferência — cole no corpo do e-mail (Ctrl+V).');
+    var assunto = '⚠️ Fatais SEM justificativa — ' + rows.length + ' processo(s)';
+    var to = String(toAddr||'').replace(/\s*;\s*/g, ',');
+    var cc = String(ccAddr||'').replace(/\s*;\s*/g, ',');
+    var aviso = '[Cole aqui o texto completo — já está copiado na área de transferência. Pressione Ctrl+V para substituir este aviso.]';
+    mailto = 'mailto:' + to + '?cc=' + encodeURIComponent(cc) + '&subject=' + encodeURIComponent(assunto) + '&body=' + encodeURIComponent(aviso);
+    alert('📋 Lista grande demais para o link de e-mail: o texto completo já foi copiado para a área de transferência. O Outlook vai abrir com um aviso no corpo — selecione tudo e cole (Ctrl+V) por cima antes de enviar.');
   }
   window.location.href = mailto;
 }
