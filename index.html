@@ -4511,8 +4511,9 @@ function montarCorpoAlertaDecisao(rows){
   var linhas = rows.map(function(r){
     return '• [' + e(r.tipo_decisao) + '] ' + e(r.data||'-') + ' · ' + e(r.numero_processo||'-') + ' · ' + e(r.cliente||r.parte_principal||'-') + ' · Resp.: ' + e(r.responsavel||'-') + '\n  ' + e(r.descricao_tarefa||'-');
   }).join('\n\n');
-  return 'Prezadas,\n\nSeguem os prazos que envolvem decisão (Embargos de Declaração, Recurso Ordinário, Recurso de Revista, Manifestação sobre Laudo Pericial ou Apresentação de Cálculos) pendentes de acompanhamento:\n\n'
+  return 'Prezados,\n\nSeguem os prazos que envolvem decisão (Embargos de Declaração, Recurso Ordinário, Recurso de Revista, Manifestação sobre Laudo Pericial ou Apresentação de Cálculos) pendentes de acompanhamento:\n\n'
     + linhas
+    + '\n\nObservação: para os itens já inseridos no Controle de Decisões, verificar se é necessário solicitar o cálculo e inserir os valores nos relatórios e sistemas do cliente.'
     + '\n\nControladoria Jurídica — Peixoto & Cury Advogados';
 }
 
