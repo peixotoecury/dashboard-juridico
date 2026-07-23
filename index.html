@@ -3006,6 +3006,7 @@ body.role-manager .upload-bar {
         <button type="button" style="background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.4);border-radius:8px;padding:8px 14px;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap;" onclick="abrirDashboardFataisD1PorGrupo()">📁 Alertas por grupo</button>
         <button type="button" style="background:#8a4b00;color:#fff;border:none;border-radius:8px;padding:8px 14px;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap;" onclick="abrirDashboardFataisSemJustificativaPorGrupo()">📭 Fatais sem justificativa (por grupo)</button>
         <button type="button" style="background:#0E5E6F;color:#fff;border:none;border-radius:8px;padding:8px 14px;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap;" onclick="dispararAlertasDecisao()">📑 Alertas de Decisão <span class="nb-cnt" id="nc-decisoes">0</span></button>
+        <button type="button" style="background:rgba(14,94,111,.5);color:#fff;border:1px solid rgba(255,255,255,.4);border-radius:8px;padding:8px 14px;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap;" onclick="abrirDashboardDecisaoPorGrupo()">📁 Alertas de Decisão por grupo</button>
       </div>
     </div>
     <div class="det-filters">
@@ -4575,6 +4576,100 @@ function copiarCorpoAlertaDecisao(){
   if(!pend.length) return;
   var corpo = montarCorpoAlertaDecisao(pend);
   navigator.clipboard?.writeText(corpo).then(function(){ alert('Texto do alerta copiado.'); }).catch(function(){ alert(corpo); });
+}
+
+// ── Alertas de Decisão por grupo (ao coordenador, não aos 4 fixos) ──────────
+function montarMailtoAlertaDecisao(toAddr, ccAddr, rows){
+  var assunto = '📑 Alerta de Decisão — ' + rows.length + ' prazo(s)';
+  var corpo = montarCorpoAlertaDecisao(rows);
+  var to = String(toAddr||'').replace(/\s*;\s*/g, ',');
+  var cc = String(ccAddr||'').replace(/\s*;\s*/g, ',');
+  return 'mailto:' + to + '?cc=' + encodeURIComponent(cc) + '&subject=' + encodeURIComponent(assunto) + '&body=' + encodeURIComponent(corpo);
+}
+
+function abrirMailtoDecisaoComFallback(toAddr, ccAddr, rows){
+  if(!rows || !rows.length) return;
+  var mailto = montarMailtoAlertaDecisao(toAddr, ccAddr, rows);
+  if(mailto.length > LIMITE_TAMANHO_MAILTO_PRAZO){
+    var corpoCompleto = montarCorpoAlertaDecisao(rows);
+    navigator.clipboard?.writeText(corpoCompleto).catch(function(){});
+    var assunto = '📑 Alerta de Decisão — ' + rows.length + ' prazo(s)';
+    var to = String(toAddr||'').replace(/\s*;\s*/g, ',');
+    var cc = String(ccAddr||'').replace(/\s*;\s*/g, ',');
+    var aviso = '[Cole aqui o texto completo — já está copiado na área de transferência. Pressione Ctrl+V para substituir este aviso.]';
+    mailto = 'mailto:' + to + '?cc=' + encodeURIComponent(cc) + '&subject=' + encodeURIComponent(assunto) + '&body=' + encodeURIComponent(aviso);
+    alert('📋 Lista grande demais para o link de e-mail: o texto completo já foi copiado para a área de transferência. O Outlook vai abrir com um aviso no corpo — selecione tudo e cole (Ctrl+V) por cima antes de enviar.');
+  }
+  window.location.href = mailto;
+}
+
+window.__alertasDecisaoPorGrupo = {};
+
+function abrirDashboardDecisaoPorGrupo(){
+  var pend = getPrazosDecisao();
+  if(!pend.length){
+    alert('Nenhum prazo de decisão (Embargos de Declaração, Recurso Ordinário, Recurso de Revista, Manifestação sobre Laudo ou Apresentação de Cálculos) encontrado no momento.');
+    return;
+  }
+
+  var gruposMap = {};
+  pend.forEach(function(r){
+    var g = r.grupo_processo || 'Sem grupo';
+    if(!gruposMap[g]) gruposMap[g] = [];
+    gruposMap[g].push(r);
+  });
+  window.__alertasDecisaoPorGrupo = gruposMap;
+
+  var gruposOrdenados = Object.keys(gruposMap).sort(function(a,b){ return gruposMap[b].length - gruposMap[a].length || a.localeCompare(b); });
+
+  var cards = gruposOrdenados.map(function(g){
+    var rows = gruposMap[g];
+    var cfg = window.emailMapeamento[g] || { para:'', cc:'prazos.trabalhista@peixotoecury.com.br' };
+    var coordNome = (window.gestorNomeMapeamento && window.gestorNomeMapeamento[g]) || '-';
+    var semCoord = !cfg.para;
+    var preview = rows.slice(0,5).map(function(r){
+      return '<li><b>[' + e(r.tipo_decisao) + ']</b> ' + e(r.data||'-') + ' · ' + e(r.numero_processo||'-') + '<br><span>' + e(r.responsavel||'-') + ' · ' + e(r.cliente||r.parte_principal||'-') + '</span></li>';
+    }).join('');
+    var mais = rows.length > 5 ? '<div class="alerta-card-mais">+ ' + (rows.length-5) + ' pendência(s) neste grupo</div>' : '';
+    return '<div class="designacao-grupo-card' + (rows.length>=3?' designacao-critico':'') + '">'
+      + '<div class="designacao-grupo-top"><div>'
+      + '<div class="designacao-grupo-nome">' + e(g) + '</div>'
+      + '<div class="designacao-grupo-meta">Coordenador: ' + e(coordNome) + (semCoord ? ' <span style="color:#c62828;">(e-mail não mapeado)</span>' : '') + '</div>'
+      + '</div><div class="designacao-grupo-count">' + rows.length + '</div></div>'
+      + '<div class="designacao-grupo-meta">' + rows.length + ' prazo(s) de decisão</div>'
+      + '<ul class="designacao-mini-list">' + preview + '</ul>' + mais
+      + '<div class="alerta-card-actions">'
+      + '<button type="button" class="alerta-btn-primary" ' + (semCoord?'disabled':'') + ' onclick="abrirEmailAlertaDecisaoGrupo(\'' + g.replace(/'/g,"\\'") + '\')">Abrir e-mail do grupo</button>'
+      + '</div></div>';
+  }).join('');
+
+  fecharDashboardDecisaoPorGrupo();
+  var overlay = document.createElement('div');
+  overlay.id = 'dashboard-decisao-grupo-modal';
+  overlay.className = 'alertas-designacao-overlay open';
+  overlay.innerHTML =
+    '<div class="alertas-designacao-box" role="dialog" aria-modal="true">'
+    + '<div class="alertas-designacao-header"><div>'
+    + '<div class="alertas-designacao-kicker">Controladoria Jurídica</div>'
+    + '<h2>📑 Alertas de Decisão — por grupo</h2>'
+    + '<p>Um e-mail por grupo, endereçado ao coordenador, com os prazos de decisão (Embargos, Recursos, Manifestação sobre Laudo, Apresentação de Cálculos).</p>'
+    + '</div><button type="button" class="alertas-designacao-close" onclick="fecharDashboardDecisaoPorGrupo()">×</button></div>'
+    + '<div class="alertas-designacao-lista">' + cards + '</div>'
+    + '</div>';
+  document.body.appendChild(overlay);
+}
+
+function fecharDashboardDecisaoPorGrupo(){
+  var overlay = document.getElementById('dashboard-decisao-grupo-modal');
+  if(overlay) overlay.remove();
+}
+
+function abrirEmailAlertaDecisaoGrupo(grupo){
+  var rows = window.__alertasDecisaoPorGrupo && window.__alertasDecisaoPorGrupo[grupo];
+  if(!rows || !rows.length) return;
+  var cfg = window.emailMapeamento[grupo] || { para:'', cc:'prazos.trabalhista@peixotoecury.com.br' };
+  if(!cfg.para){ alert('Este grupo não tem coordenador mapeado em window.emailMapeamento.'); return; }
+  abrirMailtoDecisaoComFallback(cfg.para, cfg.cc || 'prazos.trabalhista@peixotoecury.com.br', rows);
 }
 
 // ── CONTROLE DE DECISÕES: base histórica (aba própria) ──
