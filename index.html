@@ -505,11 +505,6 @@ body {
   color: var(--teal); line-height: 1;
   font-variant-numeric: tabular-nums;
 }
-.kcard-dup {
-  font-size: 8px; font-weight: 700;
-  color: var(--red); line-height: 1.2;
-  min-height: 10px;
-}
 
 /* Vencidos e Fatal — vermelho */
 .kcard.red  { border-top-color: var(--red); }
@@ -2830,10 +2825,10 @@ body.role-manager .upload-bar {
   <div class="cards-strip">
     <div class="cards-group-inner">
       <div class="kcard"        onclick="filtrarCard('')"        id="kc-ptot"><div class="kcard-lbl">Prazos Gerais</div><div class="kcard-val" id="kp-tot">—</div></div>
-      <div class="kcard red"    onclick="filtrarCard('Vencido')" id="kc-pvenc"><div class="kcard-lbl">Vencidos</div><div class="kcard-val" id="kp-venc">—</div><div class="kcard-dup" id="kp-venc-dup"></div></div>
-      <div class="kcard red"    onclick="filtrarCard('Fatal')"   id="kc-pfatal"><div class="kcard-lbl">Fatais</div><div class="kcard-val" id="kp-fatal">—</div><div class="kcard-dup" id="kp-fatal-dup"></div></div>
-      <div class="kcard org"    onclick="filtrarCard('D-1')"     id="kc-pd1"><div class="kcard-lbl">D-1</div><div class="kcard-val" id="kp-d1">—</div><div class="kcard-dup" id="kp-d1-dup"></div></div>
-      <div class="kcard org"    onclick="filtrarCard('D-2')"     id="kc-pd2"><div class="kcard-lbl">D-2</div><div class="kcard-val" id="kp-d2">—</div><div class="kcard-dup" id="kp-d2-dup"></div></div>
+      <div class="kcard red"    onclick="filtrarCard('Vencido')" id="kc-pvenc"><div class="kcard-lbl">Vencidos</div><div class="kcard-val" id="kp-venc">—</div></div>
+      <div class="kcard red"    onclick="filtrarCard('Fatal')"   id="kc-pfatal"><div class="kcard-lbl">Fatais</div><div class="kcard-val" id="kp-fatal">—</div></div>
+      <div class="kcard org"    onclick="filtrarCard('D-1')"     id="kc-pd1"><div class="kcard-lbl">D-1</div><div class="kcard-val" id="kp-d1">—</div></div>
+      <div class="kcard org"    onclick="filtrarCard('D-2')"     id="kc-pd2"><div class="kcard-lbl">D-2</div><div class="kcard-val" id="kp-d2">—</div></div>
       <div class="kcard"        onclick="filtrarCard('Futuro')"  id="kc-pfut"><div class="kcard-lbl">Prazos Futuros</div><div class="kcard-val" id="kp-fut">—</div></div>
     </div>
     <div class="cards-sep"></div>
@@ -5493,31 +5488,12 @@ function enviarEmailTrabalhista() {
 }
 
 
-// Conta processos únicos (numero_processo) dentro de um conjunto de linhas e
-// quantos desses processos têm mais de uma tarefa (prazo duplicado no mesmo status).
-function statsProcessosUnicos(rows) {
-  const cont = {};
-  rows.forEach(r => { const k = r.numero_processo || ''; cont[k] = (cont[k]||0) + 1; });
-  const chaves = Object.keys(cont).filter(Boolean);
-  return { unicos: chaves.length, duplicados: chaves.filter(k => cont[k] > 1).length };
-}
-
-function setCardDedup(valId, dupId, rows) {
-  // Card soma TODAS as tarefas (igual à planilha/LM) — cada tarefa é uma ação
-  // separada que o responsável precisa checar e baixar. O aviso abaixo é só
-  // informativo: mostra quantos processos têm mais de uma tarefa no mesmo status.
-  const st = statsProcessosUnicos(rows);
-  n(valId, rows.length);
-  const el = V(dupId);
-  if (el) el.textContent = st.duplicados > 0 ? `⚠ ${st.duplicados} c/ prazo duplicado` : '';
-}
-
 function updateCards(p, a) {
   n('kp-tot',  p.length);
-  setCardDedup('kp-venc', 'kp-venc-dup', p.filter(r=>statusEh(r.status, 'Vencido')));
-  setCardDedup('kp-fatal','kp-fatal-dup',p.filter(r=>statusEh(r.status, 'Fatal')));
-  setCardDedup('kp-d1',   'kp-d1-dup',   p.filter(r=>statusEh(r.status, 'D-1')));
-  setCardDedup('kp-d2',   'kp-d2-dup',   p.filter(r=>statusEh(r.status, 'D-2')));
+  n('kp-venc', p.filter(r=>statusEh(r.status, 'Vencido')).length);
+  n('kp-fatal',p.filter(r=>statusEh(r.status, 'Fatal')).length);
+  n('kp-d1',   p.filter(r=>statusEh(r.status, 'D-1')).length);
+  n('kp-d2',   p.filter(r=>statusEh(r.status, 'D-2')).length);
   n('kp-fut',  p.filter(r=>statusEh(r.status, 'Futuro')).length);
   n('ka-tot',  a.length);
   n('ka-venc', a.filter(r=>statusEh(r.status, 'Vencido')).length);
