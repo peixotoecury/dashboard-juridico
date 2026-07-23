@@ -5503,8 +5503,11 @@ function statsProcessosUnicos(rows) {
 }
 
 function setCardDedup(valId, dupId, rows) {
+  // Card soma TODAS as tarefas (igual à planilha/LM) — cada tarefa é uma ação
+  // separada que o responsável precisa checar e baixar. O aviso abaixo é só
+  // informativo: mostra quantos processos têm mais de uma tarefa no mesmo status.
   const st = statsProcessosUnicos(rows);
-  n(valId, st.unicos);
+  n(valId, rows.length);
   const el = V(dupId);
   if (el) el.textContent = st.duplicados > 0 ? `⚠ ${st.duplicados} c/ prazo duplicado` : '';
 }
