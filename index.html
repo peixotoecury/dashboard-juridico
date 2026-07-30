@@ -2904,6 +2904,25 @@ body.role-manager .upload-bar {
     </div>
 
   </div>
+
+  <!-- Lista combinada: cada Fatal com Responsável + Tipo juntos, pra bater o olho -->
+  <div class="tbl-card" style="border-top:3px solid #c62828;margin-bottom:14px;">
+    <div class="tbl-hdr" style="background:linear-gradient(90deg,#7b0000,#c62828);">
+      🔴 Fatais — Responsável e Tipo
+      <span class="tc" id="ct-fatal-rt" style="background:rgba(255,255,255,.18);color:#fff;">0</span>
+    </div>
+    <div class="tbl-scroll" style="max-height:320px;">
+      <table>
+        <thead><tr>
+          <th>Responsável</th>
+          <th>Tipo de Prazo</th>
+          <th>Processo</th>
+          <th>Cliente</th>
+        </tr></thead>
+        <tbody id="body-fatal-rt"></tbody>
+      </table>
+    </div>
+  </div>
   <!-- ══ FIM RANKING FATAIS ══ -->
 
   <!-- Tabelas -->
@@ -5822,6 +5841,7 @@ function renderAll() {
   renderInsights();
   renderRankFatal();
   renderRankTarefa();
+  renderFataisRespTipo();
 
 }
 
@@ -5958,6 +5978,42 @@ function renderRankTarefa() {
           + '<span style="font-size:10px;font-weight:600;color:' + barColor + ';min-width:28px;">' + pct + '%</span>'
         + '</div>'
       + '</td>'
+      + '</tr>';
+  }).join('');
+}
+
+// ── FATAIS: LISTA COMBINADA RESPONSÁVEL + TIPO ────────────────
+function renderFataisRespTipo() {
+  var fatais = applyGF(S.prazos || []).filter(function(r) { return (r.status || '').trim() === 'Fatal'; });
+
+  var linhas = fatais.map(function(r) {
+    return {
+      resp: (r.responsavel || '').trim() || '(sem responsável)',
+      tarefa: (r.descricao_tarefa || r.Tarefa || r.tarefa || r.tipo_prazo || '').trim() || '(sem tarefa)',
+      processo: r.numero_processo || '-',
+      cliente: r.cliente || r.parte_principal || '-',
+    };
+  }).sort(function(a, b) { return a.resp.localeCompare(b.resp) || a.tarefa.localeCompare(b.tarefa); });
+
+  var ct = document.getElementById('ct-fatal-rt');
+  if (ct) ct.textContent = linhas.length;
+
+  var tbody = document.getElementById('body-fatal-rt');
+  if (!tbody) return;
+  if (!linhas.length) {
+    tbody.innerHTML = '<tr><td colspan="4" style="text-align:center;color:#90a4ae;padding:20px;">Nenhum prazo fatal.</td></tr>';
+    return;
+  }
+
+  tbody.innerHTML = linhas.map(function(x, i) {
+    var rowBg = i % 2 === 0 ? '#fff' : '#fafafa';
+    return '<tr style="background:' + rowBg + ';">'
+      + '<td style="padding:7px 8px;font-weight:600;color:#1a2b3c;">' + e(x.resp) + '</td>'
+      + '<td style="padding:7px 8px;">'
+        + '<span style="background:#ffebee;color:#b71c1c;border-radius:20px;padding:2px 10px;font-size:11px;font-weight:600;white-space:nowrap;">' + e(x.tarefa) + '</span>'
+      + '</td>'
+      + '<td class="td-mono proc-normal" style="padding:7px 8px;" title="' + e(x.processo) + '">' + e(x.processo) + '</td>'
+      + '<td style="padding:7px 8px;color:#555;" title="' + e(x.cliente) + '">' + e(x.cliente) + '</td>'
       + '</tr>';
   }).join('');
 }
