@@ -9871,7 +9871,6 @@ document.addEventListener('DOMContentLoaded', function(){
 
     const cnt = document.getElementById('mp-only-nav-count');
     if(cnt) cnt.textContent = total;
-    if(typeof atualizarBtnJustif === 'function') atualizarBtnJustif();
   }
 
   window.mpOnlyShow = function(section, btn){
@@ -10364,7 +10363,6 @@ document.addEventListener('DOMContentLoaded', function(){
 
     const cnt = document.getElementById('mp-only-nav-count');
     if(cnt) cnt.textContent = total;
-    if(typeof atualizarBtnJustif === 'function') atualizarBtnJustif();
   };
 
   function abrirMeuPainelParaUsuarioComum(){
@@ -12330,6 +12328,17 @@ document.addEventListener('DOMContentLoaded', function(){
           var dv = String(r['Data']||r.data||r.data_audiencia||'');
           return dv.slice(0,10)===hojeIso;
         }) : [];
+        function meusPorStatus(arr, st){
+          return (arr||[]).filter(function(r){
+            var s=(r.status||'').trim();
+            if(s!==st) return false;
+            if(!tokens.length) return false;
+            var rv = String(r.responsavel||r.Responsável||r.profissional||'').toLowerCase();
+            return tokens.some(function(t){return rv.indexOf(t)>=0||t.indexOf(rv.split(' ')[0])>=0;});
+          });
+        }
+        var minhasAgendaVenc = meusPorStatus(window.S&&window.S.agendas, 'Vencido');
+        var minhaEquipeVenc  = meusPorStatus(window.S&&window.S.equipe,  'Vencido');
 
         var msgs=[];
         if(semJustif.length>0){
@@ -12337,6 +12346,12 @@ document.addEventListener('DOMContentLoaded', function(){
         }
         if(meusD1.length>0){
           msgs.push('<span class="warn-t">⏰ '+meusD1.length+' prazo(s) seu(s) vencendo amanhã (D-1)</span>');
+        }
+        if(minhasAgendaVenc.length>0){
+          msgs.push('<span class="crit-t">📅 '+minhasAgendaVenc.length+' item(ns) da sua Agenda vencido(s)</span>');
+        }
+        if(minhaEquipeVenc.length>0){
+          msgs.push('<span class="crit-t">👥 '+minhaEquipeVenc.length+' item(ns) da sua Agenda Equipe vencido(s)</span>');
         }
         if(minhasAudHoje.length>0){
           msgs.push('<span>⚖️ Você tem <b>'+minhasAudHoje.length+'</b> audiência(s) hoje</span>');
