@@ -6088,6 +6088,9 @@ function renderExecTicker(){
   var eqVenc = (S.equipe||[]).filter(function(r){ return (r.status||'').trim()==='Vencido'; }).length;
 
   var msgs=[];
+  if(fatais.length>0){
+    msgs.push('<span class="crit-t">📄 <b>'+fatais.length+'</b> fatal(is) pendente(s) de protocolo na equipe</span>');
+  }
   if(fataisSemJustif.length>0){
     msgs.push('<span class="crit-t">⚠ <b>'+fataisSemJustif.length+'</b> fatal(is) sem justificativa no total, entre <b>'+qtdRespSemJustif+'</b> responsável(is)</span>');
   }
@@ -9860,7 +9863,7 @@ document.addEventListener('DOMContentLoaded', function(){
       {h:'Cliente', v:r=>txt(pick(r,['cliente','Cliente']))},
       {h:'Tarefa', v:r=>txt(pick(r,['descricao_tarefa','Descrição','descrição','tarefa','Tarefa']))},
       {h:'Status', v:r=>{const s=status(r);return `<span class="mp-only-status" style="${(statusEh(s, 'Fatal')||statusEh(s, 'Vencido'))?'background:#fdecea;color:#c62828;border:1px solid #ef9a9a;':''}">${s}</span>`;}},
-      {h:'Justificativa', v:r=>{const s=status(r);if(!statusEh(s, 'Fatal')&&!statusEh(s, 'Vencido'))return '<span style="color:var(--gray4);font-size:10px;">—</span>';const proc=txt(pick(r,['numero_processo','Número do Processo','Processo','processo']));const key='justif-'+btoa(proc).replace(/[^a-z0-9]/gi,'');const just=(window._mpJustif&&window._mpJustif[key])?window._mpJustif[key]:'—';return `<div style="font-size:10px;color:${just==='—'?'var(--gray4)':'#c62828'};max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:${just==='—'?'400':'600'}">${e(just)}</div>`;}},
+      {h:'Justificativa', v:r=>{const s=status(r);if(!statusEh(s, 'Fatal')&&!statusEh(s, 'Vencido'))return '<span style="color:var(--gray4);font-size:10px;">—</span>';const proc=txt(pick(r,['numero_processo','Número do Processo','Processo','processo']));const key='justif-'+btoa(proc).replace(/[^a-z0-9]/gi,'');const just=(window._mpJustif&&window._mpJustif[key])?window._mpJustif[key]:((window.justificativas&&window.justificativas[proc])?(window.justificativas[proc].texto||'✅ Justificado'):'—');return `<div style="font-size:10px;color:${just==='—'?'var(--gray4)':'#c62828'};max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:${just==='—'?'400':'600'}">${e(just)}</div>`;}},
       {h:'Ação', v:function(r){const s=status(r);const proc=txt(pick(r,['numero_processo','Número do Processo','Processo','processo']));const cli=txt(pick(r,['cliente','Cliente'])||'');const resp=r.responsavel||r['Responsável']||'';const grp=r.grupo_processo||r['Grupo Processo']||'';const procE=proc.replace(/'/g,"\\'");const cliE=cli.replace(/'/g,"\\'");const respE=resp.replace(/'/g,"\\'");const reagBtn=(s==='Fatal'||s==='Vencido'||s==='D-1'||s==='D-2'||s==='Futuro')?`<button onclick="window.abrirModalReagendamento('${procE}','${respE}','${grp}')" style="background:#d84315;color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;width:100%;display:block;margin-bottom:3px;">📅 Reagendar</button>`:'';const transfBtn=`<button onclick="window.abrirModalTransferencia('${procE}','${cliE}','${respE}','prazo')" style="background:#1565C0;color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;width:100%;display:block;">📁 Transferir</button>`;return `<div style="min-width:130px;display:flex;flex-direction:column;gap:3px;">${reagBtn}${transfBtn}</div>`;}}
     ];
     const agendaCols = [
@@ -9902,7 +9905,7 @@ document.addEventListener('DOMContentLoaded', function(){
         {h:'Tarefa', v:r=>txt(pick(r,['descricao_tarefa','Descrição','descrição','tarefa','Tarefa']))},
         {h:'Status', v:r=>{const s=status(r);return `<span class="mp-only-status" style="${(statusEh(s, 'Fatal')||statusEh(s, 'Vencido'))?'background:#fdecea;color:#c62828;border:1px solid #ef9a9a;':''}">${s}</span>`;}},
         {h:'Grupo', v:r=>txt(pick(r,['grupo_processo','Grupo Processo']))},
-        {h:'Justificativa', v:r=>{const proc=txt(pick(r,['numero_processo','Número do Processo','Processo','processo']));const key='justif-'+btoa(proc).replace(/[^a-z0-9]/gi,'');const just=(window._mpJustif&&window._mpJustif[key])?window._mpJustif[key]:'—';return `<div style="font-size:10px;color:${just==='—'?'var(--gray4)':'var(--gray1)'};max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${e(just)}</div>`;}},
+        {h:'Justificativa', v:r=>{const proc=txt(pick(r,['numero_processo','Número do Processo','Processo','processo']));const key='justif-'+btoa(proc).replace(/[^a-z0-9]/gi,'');const just=(window._mpJustif&&window._mpJustif[key])?window._mpJustif[key]:((window.justificativas&&window.justificativas[proc])?(window.justificativas[proc].texto||'✅ Justificado'):'—');return `<div style="font-size:10px;color:${just==='—'?'var(--gray4)':'var(--gray1)'};max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${e(just)}</div>`;}},
         {h:'Ação', v:function(r){
           var s=(r.status||'').trim();
           var proc=txt(pick(r,['numero_processo','Número do Processo','Processo','processo']));
@@ -12411,8 +12414,12 @@ document.addEventListener('DOMContentLoaded', function(){
         }
         var minhasAgendaVenc = meusPorStatus(window.S&&window.S.agendas, 'Vencido');
         var minhaEquipeVenc  = meusPorStatus(window.S&&window.S.equipe,  'Vencido');
+        var meusFataisAbertos = meusPorStatus(prazos, 'Fatal');
 
         var msgs=[];
+        if(meusFataisAbertos.length>0){
+          msgs.push('<span class="crit-t">📄 '+meusFataisAbertos.length+' fatal(is) seu(s) pendente(s) de protocolo</span>');
+        }
         if(semJustif.length>0){
           msgs.push('<span class="crit-t" onclick="abrirModalJustificativas()">⚠ Você tem <b>'+semJustif.length+'</b> prazo(s) Fatal/Vencido sem justificativa — clique aqui pra justificar</span>');
         }
