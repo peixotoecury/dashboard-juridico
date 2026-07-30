@@ -6067,6 +6067,7 @@ function renderExecTicker(){
   var fatais = prazos.filter(function(r){ return (r.status||'').trim()==='Fatal'; });
   var fataisSemJustif = fatais.filter(function(r){
     var proc = r.numero_processo||'';
+    if(window.justificativas && window.justificativas[proc]) return false; // já justificado no Supabase (mesmo pendente de aprovação)
     var k = 'justif-'+btoa(String(proc)).replace(/[^a-z0-9]/gi,'');
     var just = (window._mpJustif&&window._mpJustif[k])?window._mpJustif[k]:'—';
     return just==='—';
@@ -12379,6 +12380,7 @@ document.addEventListener('DOMContentLoaded', function(){
       if(elWrap && elTrack){
         var semJustif = meusFatais.filter(function(r){
           var proc = r.numero_processo||r['Número do Processo']||r.processo||'';
+          if(window.justificativas && window.justificativas[proc]) return false; // já justificado no Supabase (mesmo pendente de aprovação)
           var key = 'justif-' + btoa(String(proc)).replace(/[^a-z0-9]/gi,'');
           var just = (window._mpJustif && window._mpJustif[key]) ? window._mpJustif[key] : '—';
           return just === '—';
