@@ -10515,6 +10515,7 @@ document.addEventListener('DOMContentLoaded', function(){
       const r = oldDoLogin2.apply(this, arguments);
       setTimeout(function(){
         if(typeof window.renderMeuPainelSomente === 'function') window.renderMeuPainelSomente();
+        if(typeof renderExecTicker === 'function') renderExecTicker();
         // Só redireciona para Meu Painel se for usuário comum (não gerencial/admin)
         if(!perfilGerencial()) abrirMeuPainelParaUsuarioComum();
       }, 200);
@@ -10528,6 +10529,7 @@ document.addEventListener('DOMContentLoaded', function(){
       oldRenderAll2.apply(this, arguments);
       setTimeout(function(){
         if(typeof window.renderMeuPainelSomente === 'function') window.renderMeuPainelSomente();
+        if(typeof renderExecTicker === 'function') renderExecTicker();
       }, 80);
     };
   }
