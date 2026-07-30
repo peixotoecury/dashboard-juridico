@@ -1542,6 +1542,28 @@ body.role-user .filter-panel {
   gap: 8px;
   flex-wrap: wrap;
 }
+.mp-ticker {
+  margin: 12px 0 4px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 10px 0;
+  position: relative;
+}
+.mp-ticker-track {
+  display: inline-block;
+  animation: mpTickerScroll 26s linear infinite;
+  font-size: 12.5px;
+  font-weight: 600;
+}
+.mp-ticker:hover .mp-ticker-track { animation-play-state: paused; }
+.mp-ticker-track span { margin: 0 30px; color: var(--gray3); }
+.mp-ticker-track b { color: #0E5E6F; }
+.mp-ticker-track .warn-t { color: #b96a00; }
+.mp-ticker-track .crit-t { color: #c62828; font-weight: 800; cursor: pointer; }
+@keyframes mpTickerScroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 .mp-only-btn {
   border: 1px solid var(--border);
   background: var(--white);
@@ -3677,6 +3699,11 @@ body.role-manager .upload-bar {
       <section class="mp-only-hero">
         <div class="mp-only-title" id="mp-only-title">Olá!</div>
         <div class="mp-only-sub">Este painel mostra apenas as informações vinculadas ao login. Audiências são filtradas por quem fará a audiência.</div>
+
+        <div class="mp-ticker" id="mp-ticker" style="display:none;">
+          <div class="mp-ticker-track" id="mp-ticker-track"></div>
+        </div>
+
         <div id="mp-ultima-atualizacao" style="display:none;font-size:10.5px;color:#7a909f;margin-top:6px;display:flex;align-items:center;gap:6px;">
           <span style="width:6px;height:6px;border-radius:50%;background:#2d7d46;flex-shrink:0;display:inline-block;"></span>
           Planilha carregada em <strong id="mp-data-upload" style="color:#2c3d4f;font-weight:500;"></strong>
@@ -9844,6 +9871,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     const cnt = document.getElementById('mp-only-nav-count');
     if(cnt) cnt.textContent = total;
+    if(typeof atualizarBtnJustif === 'function') atualizarBtnJustif();
   }
 
   window.mpOnlyShow = function(section, btn){
@@ -10336,6 +10364,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     const cnt = document.getElementById('mp-only-nav-count');
     if(cnt) cnt.textContent = total;
+    if(typeof atualizarBtnJustif === 'function') atualizarBtnJustif();
   };
 
   function abrirMeuPainelParaUsuarioComum(){
@@ -12275,6 +12304,52 @@ document.addEventListener('DOMContentLoaded', function(){
       });
       var btn=document.getElementById('btn-enviar-justif');
       if(btn) btn.style.display=meusFatais.length>0?'':'none';
+
+      // ── Ticker rolante: fatais sem justificativa + D-1 + audiências de hoje ──
+      var elWrap = document.getElementById('mp-ticker');
+      var elTrack = document.getElementById('mp-ticker-track');
+      if(elWrap && elTrack){
+        var semJustif = meusFatais.filter(function(r){
+          var proc = r.numero_processo||r['Número do Processo']||r.processo||'';
+          var key = 'justif-' + btoa(String(proc)).replace(/[^a-z0-9]/gi,'');
+          var just = (window._mpJustif && window._mpJustif[key]) ? window._mpJustif[key] : '—';
+          return just === '—';
+        });
+        var meusD1 = prazos.filter(function(r){
+          var s=(r.status||'').trim();
+          if(s!=='D-1') return false;
+          var rv = String(r.responsavel||r.Responsável||r.profissional||'').toLowerCase();
+          return tokens.some(function(t){return rv.indexOf(t)>=0||t.indexOf(rv.split(' ')[0])>=0;});
+        });
+        var hojeIso = (function(){ var n=new Date(); return n.getFullYear()+'-'+String(n.getMonth()+1).padStart(2,'0')+'-'+String(n.getDate()).padStart(2,'0'); })();
+        var auds = (window.S&&Array.isArray(window.S.aud))?window.S.aud:[];
+        var minhasAudHoje = tokens.length ? auds.filter(function(r){
+          var rv = String(r['Advogado Responsável Audiência/SO']||r.responsavel_audiencia||r.responsavel||'').toLowerCase();
+          var bate = tokens.some(function(t){return rv.indexOf(t)>=0||t.indexOf(rv.split(' ')[0])>=0;});
+          if(!bate) return false;
+          var dv = String(r['Data']||r.data||r.data_audiencia||'');
+          return dv.slice(0,10)===hojeIso;
+        }) : [];
+
+        var msgs=[];
+        if(semJustif.length>0){
+          msgs.push('<span class="crit-t" onclick="abrirModalJustificativas()">⚠ Você tem <b>'+semJustif.length+'</b> prazo(s) Fatal/Vencido sem justificativa — clique aqui pra justificar</span>');
+        }
+        if(meusD1.length>0){
+          msgs.push('<span class="warn-t">⏰ '+meusD1.length+' prazo(s) seu(s) vencendo amanhã (D-1)</span>');
+        }
+        if(minhasAudHoje.length>0){
+          msgs.push('<span>⚖️ Você tem <b>'+minhasAudHoje.length+'</b> audiência(s) hoje</span>');
+        }
+        if(msgs.length){
+          var _html = msgs.join('');
+          elTrack.innerHTML = _html+_html; // duplicado para loop contínuo
+          elWrap.style.display='';
+        } else {
+          elTrack.innerHTML='';
+          elWrap.style.display='none';
+        }
+      }
     }catch(e){}
     // Botões exclusivos de gestor / gestor de equipe
     try {
@@ -12633,6 +12708,7 @@ document.addEventListener('DOMContentLoaded', function(){
     var m=document.getElementById('modal-justif-single');
     if(m) m.remove();
     if(typeof renderMeuPainelSomente==='function') renderMeuPainelSomente();
+    if(typeof atualizarBtnJustif==='function') atualizarBtnJustif();
     if(typeof mostrarToast==='function') mostrarToast('✅ Justificativa salva.');
   };
 
@@ -12710,6 +12786,7 @@ document.addEventListener('DOMContentLoaded', function(){
     });
     modal.remove();
     if(typeof renderMeuPainelSomente==='function') renderMeuPainelSomente();
+    if(typeof atualizarBtnJustif==='function') atualizarBtnJustif();
     if(typeof mostrarToast==='function') mostrarToast('✅ Justificativas salvas.');
   };
 
