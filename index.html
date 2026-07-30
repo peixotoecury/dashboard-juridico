@@ -2871,6 +2871,10 @@ body.role-manager .upload-bar {
     </div>
   </div>
 
+  <div class="mp-ticker" id="exec-ticker" style="display:none;margin-bottom:14px;">
+    <div class="mp-ticker-track" id="exec-ticker-track"></div>
+  </div>
+
   <!-- ══ RANKING FATAIS + TAREFAS COM MAIS FATAIS ══ -->
   <div class="tbl-grid" style="margin-bottom:14px;">
 
@@ -5869,6 +5873,7 @@ function renderAll() {
   renderRankFatal();
   renderRankTarefa();
   renderFataisRespTipo();
+  renderExecTicker();
 
 }
 
@@ -6043,6 +6048,69 @@ function renderFataisRespTipo() {
       + '<td style="padding:7px 8px;color:#555;" title="' + e(x.cliente) + '">' + e(x.cliente) + '</td>'
       + '</tr>';
   }).join('');
+}
+
+// ── TICKER GERENCIAL: agregado da equipe (só admin) ──
+function renderExecTicker(){
+  var elWrap = document.getElementById('exec-ticker');
+  var elTrack = document.getElementById('exec-ticker-track');
+  if(!elWrap || !elTrack) return;
+
+  var sess = (window.SESSAO||window.sessao||window.usuarioLogado||{});
+  var nivel = String(sess.nivel||sess.perfil||sess.role||sess.tipo||'').toLowerCase();
+  var login = String(sess.login||'').toLowerCase();
+  var _admLoginsExec = ['controladoria','coord','antoniocarlos.aguiar','beatriz.rodrigues','bianca.camacho','gisela.freire','keyla.moraes','marcel.alves','marina.brechiani','natalia.baliero','natalia.gaggini','nicolau.coelho','poliana.banqueri','rafael.camargo','sofia.freire','washington.soares','mariana.teberges','cicera.vicente','evandro.vessoni','juanleonardo.moraes','giovanna.teixeira'];
+  var isAdminNow = ['admin','gerencial','gestor','gestora','coordenador','coordenadora','socio','sócio'].indexOf(nivel)>=0 || _admLoginsExec.indexOf(login)>=0;
+  if(!isAdminNow){ elWrap.style.display='none'; elTrack.innerHTML=''; return; }
+
+  var prazos = S.prazos||[];
+  var fatais = prazos.filter(function(r){ return (r.status||'').trim()==='Fatal'; });
+  var fataisSemJustif = fatais.filter(function(r){
+    var proc = r.numero_processo||'';
+    var k = 'justif-'+btoa(String(proc)).replace(/[^a-z0-9]/gi,'');
+    var just = (window._mpJustif&&window._mpJustif[k])?window._mpJustif[k]:'—';
+    return just==='—';
+  });
+  var respSemJustif = {};
+  fataisSemJustif.forEach(function(r){ respSemJustif[(r.responsavel||'(sem responsável)').trim()] = true; });
+  var qtdRespSemJustif = Object.keys(respSemJustif).length;
+
+  var d1 = prazos.filter(function(r){ return (r.status||'').trim()==='D-1'; }).length;
+
+  var hojeIso = (function(){ var n=new Date(); return n.getFullYear()+'-'+String(n.getMonth()+1).padStart(2,'0')+'-'+String(n.getDate()).padStart(2,'0'); })();
+  var audHoje = (S.aud||[]).filter(function(r){
+    var dv = String(r['Data']||r.data||r.data_audiencia||'');
+    return dv.slice(0,10)===hojeIso;
+  }).length;
+
+  var agVenc = (S.agendas||[]).filter(function(r){ return (r.status||'').trim()==='Vencido'; }).length;
+  var eqVenc = (S.equipe||[]).filter(function(r){ return (r.status||'').trim()==='Vencido'; }).length;
+
+  var msgs=[];
+  if(fataisSemJustif.length>0){
+    msgs.push('<span class="crit-t">⚠ <b>'+fataisSemJustif.length+'</b> fatal(is) sem justificativa no total, entre <b>'+qtdRespSemJustif+'</b> responsável(is)</span>');
+  }
+  if(d1>0){
+    msgs.push('<span class="warn-t">⏰ '+d1+' prazo(s) D-1 na equipe</span>');
+  }
+  if(agVenc>0){
+    msgs.push('<span class="crit-t">📅 '+agVenc+' item(ns) de Agenda vencido(s) na equipe</span>');
+  }
+  if(eqVenc>0){
+    msgs.push('<span class="crit-t">👥 '+eqVenc+' item(ns) de Agenda Equipe vencido(s)</span>');
+  }
+  if(audHoje>0){
+    msgs.push('<span>⚖️ '+audHoje+' audiência(s) hoje na equipe</span>');
+  }
+
+  if(msgs.length){
+    var html = msgs.join('');
+    elTrack.innerHTML = html+html;
+    elWrap.style.display='';
+  } else {
+    elTrack.innerHTML='';
+    elWrap.style.display='none';
+  }
 }
 
 // ── JUSTIFICATIVAS ──────────────────────────────────
