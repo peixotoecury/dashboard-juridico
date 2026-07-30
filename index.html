@@ -2936,29 +2936,6 @@ body.role-manager .upload-bar {
     </div>
   </div>
 
-  <!-- Todos os Prazos — detalhado, todos os status -->
-  <div class="det-card">
-    <div class="det-hdr"><h2>📋 Todos os Prazos <span class="det-cnt" id="ct-pt">0 registros</span></h2></div>
-    <div class="det-filters">
-      <div class="fg"><label>Status</label>
-        <select class="fsel" id="p-st" onchange="renderPDet()"><option value="">Todos</option><option value="Vencido">Vencido</option><option value="Fatal">Fatal</option><option value="D-1">D-1</option><option value="D-2">D-2</option><option value="Futuro">Futuro</option></select>
-      </div>
-      <div class="fg"><label>UF</label>
-        <select class="fsel" id="p-uf" onchange="renderPDet()"><option value="">Todas</option></select>
-      </div>
-      <div class="srch-wrap">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-        <input class="srch-in" id="p-s" placeholder="Buscar cliente, processo, reclamante, tarefa..." oninput="renderPDet()">
-      </div>
-      <button class="btn-limpar" onclick="V('p-s').value='';V('p-st').value='';V('p-uf').value='';renderPDet()">✕ Limpar</button>
-    </div>
-    <div class="det-scroll"><table>
-      <thead><tr><th>Data</th><th>Status</th><th>Cliente</th><th>Parte Contrária</th><th>Processo</th><th>UF</th><th>Responsável</th><th>Grupo</th><th>Tarefa</th><th>Ação</th></tr></thead>
-      <tbody id="body-pt"></tbody>
-    </table></div>
-    <div class="pg-bar" id="pg-pt"></div>
-  </div>
-
   <!-- Fatais × Audiências — destacado após os quadros principais -->
   <div class="tbl-grid" style="margin-bottom:14px;">
     <div class="tbl-card fxaud-card">
@@ -4499,11 +4476,12 @@ async function registrarControleDecisoes(){
     };
   });
   try{
-    await fetch(`${SUPA_URL}/rest/v1/controle_decisoes`, {
+    const resp = await fetch(`${SUPA_URL}/rest/v1/controle_decisoes`, {
       method: 'POST',
-      headers: { 'apikey': SUPA_KEY, 'Authorization': `Bearer ${SUPA_KEY}`, 'Content-Type': 'application/json', 'Prefer': 'resolution=merge-duplicates,return=minimal' },
+      headers: { 'apikey': SUPA_KEY, 'Authorization': `Bearer ${SUPA_KEY}`, 'Content-Type': 'application/json', 'Prefer': 'resolution=ignore-duplicates,return=minimal' },
       body: JSON.stringify(linhas),
     });
+    if(!resp.ok){ console.warn('⚠️ Falha ao registrar controle de decisões:', resp.status, await resp.text()); }
   }catch(err){ console.warn('⚠️ Falha ao registrar controle de decisões:', err.message); }
 }
 
@@ -5838,7 +5816,6 @@ function renderAll() {
   renderResp(fe,'body-re','ct-re','re');
   renderGrupo(fe,'body-ge','ct-ge');
   renderFatais();
-  renderPDet();
   renderAgDet();
   renderEqDet();
   renderFataisXAud();
@@ -7882,8 +7859,6 @@ function exportarEquipeExcel(){
   const dt = new Date().toLocaleDateString('pt-BR').replace(/\//g,'-');
   XLSX.writeFile(wb, `PC_Agenda_Equipe_${dt}.xlsx`);
 }
-function renderPDet() { renderDetGeneric(applyGF(S.prazos),'body-pt','pg-pt','ct-pt','p-s','p-st','pt','prazo','p-uf'); }
-
 // ── AUDIÊNCIAS ───────────────────────────────────────
 // Formata horário do Excel corretamente (serial numérico ou string)
 function fmtHorario(v){
