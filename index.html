@@ -4482,6 +4482,15 @@ function exportarBaixadosExcel(){
 // decisão da usuária, cai em Sentença por padrão.
 var DECISAO_EMAILS_FIXOS = ['mariacarolina.dias@peixotoecury.com.br','anacarolina.martini@peixotoecury.com.br','cicera.vicente@peixotoecury.com.br','brenna.malta@peixotoecury.com.br'];
 
+// CC extra só pros Alertas de Decisão por grupo — B1/B2/B3 são clientes diferentes
+// (Bridgestone/Embraer/Bimbo+CBC+T4F) e a controladoria quer o e-mail do grupo do
+// cliente em cópia, além do CC padrão (prazos.trabalhista@) já definido em emailMapeamento.
+var CC_EXTRA_DECISAO_POR_GRUPO = {
+  'Grupo B1': 'grupobridgestone@peixotoecury.com.br',
+  'Grupo B2': 'embraer.pec@peixotoecury.com.br',
+  'Grupo B3': 'grupobimbo@peixotoecury.com.br; grupocbc@peixotoecury.com.br; grupot4f@peixotoecury.com.br',
+};
+
 function classificarDecisaoPrazo(descricaoTarefa){
   const norm = normTxt(descricaoTarefa);
   if(!norm || norm.length > 120) return null; // tarefas do catálogo são curtas; evita casar dentro de anotações longas
@@ -4705,7 +4714,10 @@ function abrirEmailAlertaDecisaoGrupo(grupo){
   if(!rows || !rows.length) return;
   var cfg = window.emailMapeamento[grupo] || { para:'', cc:'prazos.trabalhista@peixotoecury.com.br' };
   if(!cfg.para){ alert('Este grupo não tem coordenador mapeado em window.emailMapeamento.'); return; }
-  abrirMailtoDecisaoComFallback(cfg.para, cfg.cc || 'prazos.trabalhista@peixotoecury.com.br', rows);
+  var ccBase = cfg.cc || 'prazos.trabalhista@peixotoecury.com.br';
+  var ccExtra = CC_EXTRA_DECISAO_POR_GRUPO[grupo];
+  var cc = ccExtra ? (ccBase + '; ' + ccExtra) : ccBase;
+  abrirMailtoDecisaoComFallback(cfg.para, cc, rows);
 }
 
 // ── CONTROLE DE DECISÕES: base histórica (aba própria) ──
