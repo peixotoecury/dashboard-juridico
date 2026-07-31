@@ -3459,17 +3459,16 @@ body.role-manager .upload-bar {
       </div>
     </div>
     <div style="margin:0 0 12px;background:#f0f7fb;border:1px solid #ccdde4;border-radius:8px;padding:10px 14px;font-size:11px;color:var(--gray3);">
-      ℹ️ Base histórica de todo prazo detectado como Embargos de Declaração, Recurso Ordinário, Recurso de Revista, Manifestação sobre Laudo Pericial ou Apresentação de Cálculos — cada um é gravado aqui na primeira vez que aparece. Use o botão "📑 Alertas de Decisão" acima.
+      ℹ️ Base histórica de todo prazo detectado como decisão de Sentença, Acórdão, Execução ou Laudo Pericial — cada um é gravado aqui na primeira vez que aparece. Use o botão "📑 Alertas de Decisão" acima.
     </div>
     <div class="det-filters">
       <div class="fg"><label>Tipo</label>
         <select class="fsel" id="cd-tipo" onchange="renderControleDecisoes()">
           <option value="">Todos os tipos</option>
-          <option>Embargos de Declaração</option>
-          <option>Recurso Ordinário</option>
-          <option>Recurso de Revista</option>
-          <option>Manifestação sobre Laudo Pericial</option>
-          <option>Apresentação de Cálculos</option>
+          <option>Sentença</option>
+          <option>Acórdão</option>
+          <option>Execução</option>
+          <option>Laudo Pericial</option>
         </select>
       </div>
       <div class="fg"><label>Grupo</label>
@@ -4470,21 +4469,29 @@ function exportarBaixadosExcel(){
 }
 
 // ── CONTROLE DE DECISÕES ─────────────────────────────
-// Detecta prazos que representam decisão em aberto (Embargos de Declaração,
-// Recurso Ordinário, Recurso de Revista, Manifestação sobre Laudo Pericial,
-// Apresentação de Cálculos), grava um rastro em controle_decisoes (upsert por
-// id determinístico, então só entra uma vez por processo+tarefa+data) e
-// permite alertar por e-mail o grupo fixo de acompanhamento.
+// Detecta prazos que representam decisão em aberto e classifica em 4 categorias
+// (Sentença, Acórdão, Execução, Laudo Pericial), grava um rastro em
+// controle_decisoes (upsert por id determinístico, então só entra uma vez por
+// processo+tarefa+data) e permite alertar por e-mail o grupo fixo de acompanhamento.
+// Mapeamento (decidido com a usuária 2026-07-31): Recurso Ordinário e Embargos de
+// Declaração = decisão de Sentença; Recurso de Revista, Embargos de Declaração
+// contra acórdão e Início da liquidação = decisão de Acórdão (TST); Apresentação
+// de Cálculos e Sentença Homologatória = Execução; Manifestação sobre Laudo
+// Pericial = resultado do laudo, fica em Laudo Pericial. Embargos de Declaração
+// não tem, no texto da tarefa, como saber se é contra sentença ou acórdão — por
+// decisão da usuária, cai em Sentença por padrão.
 var DECISAO_EMAILS_FIXOS = ['mariacarolina.dias@peixotoecury.com.br','anacarolina.martini@peixotoecury.com.br','cicera.vicente@peixotoecury.com.br','brenna.malta@peixotoecury.com.br'];
 
 function classificarDecisaoPrazo(descricaoTarefa){
   const norm = normTxt(descricaoTarefa);
   if(!norm || norm.length > 120) return null; // tarefas do catálogo são curtas; evita casar dentro de anotações longas
-  if(norm.startsWith('EMBARGOS DE DECLARACAO')) return 'Embargos de Declaração';
-  if(norm.startsWith('RECURSO ORDINARIO')) return 'Recurso Ordinário';
-  if(norm.startsWith('RECURSO DE REVISTA')) return 'Recurso de Revista';
-  if(norm.startsWith('MANIFESTACAO') && norm.includes('LAUDO')) return 'Manifestação sobre Laudo Pericial';
-  if(norm.startsWith('APRESENTACAO DE CALCULOS')) return 'Apresentação de Cálculos';
+  if(norm.startsWith('RECURSO ORDINARIO')) return 'Sentença';
+  if(norm.startsWith('EMBARGOS DE DECLARACAO')) return 'Sentença';
+  if(norm.startsWith('RECURSO DE REVISTA')) return 'Acórdão';
+  if(norm.startsWith('INICIO DA LIQUIDACAO')) return 'Acórdão';
+  if(norm.startsWith('APRESENTACAO DE CALCULOS')) return 'Execução';
+  if(norm.startsWith('SENTENCA HOMOLOGATORIA')) return 'Execução';
+  if(norm.startsWith('MANIFESTACAO') && norm.includes('LAUDO')) return 'Laudo Pericial';
   return null;
 }
 
@@ -4539,7 +4546,7 @@ function montarCorpoAlertaDecisao(rows){
   var linhas = rows.map(function(r){
     return '• [' + e(r.tipo_decisao) + '] ' + e(r.data||'-') + ' · ' + e(r.numero_processo||'-') + ' · ' + e(r.cliente||r.parte_principal||'-') + ' · Resp.: ' + e(r.responsavel||'-') + '\n  ' + e(r.descricao_tarefa||'-');
   }).join('\n\n');
-  return 'Prezados,\n\nSeguem os prazos que envolvem decisão (Embargos de Declaração, Recurso Ordinário, Recurso de Revista, Manifestação sobre Laudo Pericial ou Apresentação de Cálculos) pendentes de acompanhamento:\n\n'
+  return 'Prezados,\n\nSeguem os prazos que envolvem decisão (Sentença, Acórdão, Execução ou Laudo Pericial) pendentes de acompanhamento:\n\n'
     + linhas
     + '\n\nObservação: para os itens já inseridos no Controle de Decisões, verificar se é necessário solicitar o cálculo, inserir os valores nos relatórios e sistemas do cliente, e se deve ser enviado ao cliente.'
     + '\n\nControladoria Jurídica — Peixoto & Cury Advogados';
@@ -4549,7 +4556,7 @@ function dispararAlertasDecisao(){
   var pend = getPrazosDecisao(); // sempre recalcula na hora — não usar cache potencialmente desatualizado
   var grupoSel = V('cd-grupo')?.value || '';
   if(grupoSel) pend = pend.filter(function(r){ return String(r.grupo_processo||'').trim() === grupoSel.trim(); });
-  if(!pend.length){ alert(grupoSel ? ('Nenhum prazo de decisão pendente para o grupo ' + grupoSel + '.') : 'Nenhum prazo de decisão (Embargos de Declaração, Recurso Ordinário, Recurso de Revista, Manifestação sobre Laudo ou Apresentação de Cálculos) encontrado no momento.'); return; }
+  if(!pend.length){ alert(grupoSel ? ('Nenhum prazo de decisão pendente para o grupo ' + grupoSel + '.') : 'Nenhum prazo de decisão (Sentença, Acórdão, Execução ou Laudo Pericial) encontrado no momento.'); return; }
   // Reaplica a lista já filtrada por grupo — os botões do modal (Abrir e-mail/Copiar
   // texto) leem daqui, então precisam ver só o que passou pelo filtro.
   window.__decisoesPendentes = pend;
@@ -4567,7 +4574,7 @@ function dispararAlertasDecisao(){
     + '<div class="alertas-designacao-header"><div>'
     + '<div class="alertas-designacao-kicker">Controladoria Jurídica</div>'
     + '<h2>📑 Alertas de Decisão</h2>'
-    + '<p>' + pend.length + ' prazo(s) de decisão (Embargos de Declaração, Recurso Ordinário, Recurso de Revista, Manifestação sobre Laudo Pericial, Apresentação de Cálculos)' + (grupoSel ? ' — filtrado pelo grupo ' + e(grupoSel) : '') + '.</p>'
+    + '<p>' + pend.length + ' prazo(s) de decisão (Sentença, Acórdão, Execução, Laudo Pericial)' + (grupoSel ? ' — filtrado pelo grupo ' + e(grupoSel) : '') + '.</p>'
     + '</div><button type="button" class="alertas-designacao-close" onclick="fecharPainelAlertasDecisao()">×</button></div>'
     + '<div class="alertas-designacao-info">Clique em <b>"Abrir e-mail"</b> pra notificar Maria Carolina Dias, Ana Carolina Martini, Cícera Gabriela e Brenna Malta.</div>'
     + '<div class="alertas-designacao-lista"><div class="alerta-card-email" style="grid-column:1/-1;">'
@@ -4637,7 +4644,7 @@ window.__alertasDecisaoPorGrupo = {};
 function abrirDashboardDecisaoPorGrupo(){
   var pend = getPrazosDecisao();
   if(!pend.length){
-    alert('Nenhum prazo de decisão (Embargos de Declaração, Recurso Ordinário, Recurso de Revista, Manifestação sobre Laudo ou Apresentação de Cálculos) encontrado no momento.');
+    alert('Nenhum prazo de decisão (Sentença, Acórdão, Execução ou Laudo Pericial) encontrado no momento.');
     return;
   }
 
@@ -4681,7 +4688,7 @@ function abrirDashboardDecisaoPorGrupo(){
     + '<div class="alertas-designacao-header"><div>'
     + '<div class="alertas-designacao-kicker">Controladoria Jurídica</div>'
     + '<h2>📑 Alertas de Decisão — por grupo</h2>'
-    + '<p>Um e-mail por grupo, endereçado ao coordenador, com os prazos de decisão (Embargos, Recursos, Manifestação sobre Laudo, Apresentação de Cálculos).</p>'
+    + '<p>Um e-mail por grupo, endereçado ao coordenador, com os prazos de decisão (Sentença, Acórdão, Execução, Laudo Pericial).</p>'
     + '</div><button type="button" class="alertas-designacao-close" onclick="fecharDashboardDecisaoPorGrupo()">×</button></div>'
     + '<div class="alertas-designacao-lista">' + cards + '</div>'
     + '</div>';
