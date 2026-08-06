@@ -3844,12 +3844,14 @@ function mostrarToast(msg, ms) {
     if (!box) {
       box = document.createElement('div');
       box.id = 'pc-toast-box';
-      box.style.cssText = 'position:fixed;bottom:20px;right:20px;z-index:99999;display:flex;flex-direction:column;gap:8px;align-items:flex-end;';
+      // bottom fica acima da #mobile-bottom-nav (58px + safe-area) no celular; no
+      // desktop (sem essa barra) sobra como uma margem confortável, sem prejuízo.
+      box.style.cssText = 'position:fixed;bottom:calc(78px + env(safe-area-inset-bottom));right:16px;left:16px;z-index:99999;display:flex;flex-direction:column;gap:8px;align-items:flex-end;pointer-events:none;';
       document.body.appendChild(box);
     }
     const t = document.createElement('div');
     t.textContent = msg;
-    t.style.cssText = 'background:var(--teal,#006080);color:#fff;padding:10px 16px;border-radius:8px;font-family:inherit;font-size:13px;font-weight:600;box-shadow:0 4px 12px rgba(0,0,0,0.25);opacity:0;transform:translateY(8px);transition:opacity .2s,transform .2s;max-width:360px;';
+    t.style.cssText = 'background:var(--teal,#006080);color:#fff;padding:10px 16px;border-radius:8px;font-family:inherit;font-size:13px;font-weight:600;box-shadow:0 4px 12px rgba(0,0,0,0.25);opacity:0;transform:translateY(8px);transition:opacity .2s,transform .2s;max-width:360px;pointer-events:none;';
     box.appendChild(t);
     requestAnimationFrame(() => { t.style.opacity = '1'; t.style.transform = 'translateY(0)'; });
     setTimeout(() => {
