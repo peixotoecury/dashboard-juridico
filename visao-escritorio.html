@@ -16,9 +16,7 @@
 html,body{height:100%;}
 body{
   font-family:'Inter',system-ui,sans-serif;color:#eef6f9;min-height:100vh;
-  background:
-    radial-gradient(ellipse 900px 420px at 85% -10%,rgba(0,93,130,0.18),transparent),
-    linear-gradient(180deg,var(--navy),var(--navy-deep));
+  background:var(--navy-deep);
   padding-bottom:40px;
 }
 a{color:inherit;}
@@ -113,8 +111,8 @@ tr:last-child td{border-bottom:none;}
 .tornado-num-l{text-align:right;}
 .tornado-num-r{text-align:left;}
 .tornado-bar-l,.tornado-bar-r{height:16px;border-radius:4px;}
-.tornado-bar-l{background:var(--violeta);margin-left:auto;}
-.tornado-bar-r{background:var(--teal2);}
+.tornado-bar-l{background:var(--vermelho);margin-left:auto;}
+.tornado-bar-r{background:var(--cyan);}
 .tornado-total{color:var(--soft);font-size:11px;text-align:left;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
 .legend{display:flex;gap:18px;margin-top:14px;font-size:11.5px;color:var(--soft);}
 .legend span{display:inline-flex;align-items:center;gap:6px;}
@@ -165,15 +163,16 @@ footer{text-align:center;font-size:11px;color:#4d6a7a;padding:34px 0 10px;}
 .alert-list.open{display:flex;}
 
 /* ── FUNIL ──────────────────────────────────────────────────────────────── */
-.funil{display:flex;flex-direction:column;gap:6px;max-width:640px;margin:0 auto;}
+.funil{display:flex;flex-direction:column;gap:4px;max-width:480px;margin:0 auto;}
 .funil-stage{
-  position:relative;height:52px;display:flex;align-items:center;justify-content:center;
-  color:#fff;font-weight:700;font-size:13px;cursor:pointer;transition:filter .15s;
+  position:relative;height:38px;display:flex;align-items:center;justify-content:center;gap:8px;
+  color:#fff;font-weight:700;font-size:11.5px;letter-spacing:.2px;cursor:pointer;transition:filter .15s,transform .15s;
   clip-path:polygon(6% 0,94% 0,88% 100%,12% 100%);
+  box-shadow:0 2px 8px rgba(0,0,0,.18);
 }
-.funil-stage:hover{filter:brightness(1.15);}
-.funil-stage.active{outline:2px solid var(--cyan);outline-offset:-2px;}
-.funil-stage .fn-n{font-size:16px;font-weight:800;margin-left:8px;}
+.funil-stage:hover{filter:brightness(1.15);transform:translateY(-1px);}
+.funil-stage.active{outline:2px solid #fff;outline-offset:-2px;}
+.funil-stage .fn-n{font-size:13.5px;font-weight:800;}
 .funil-drill{margin-top:16px;}
 .funil-drill-hint{font-size:11.5px;color:var(--soft);text-align:center;margin-top:10px;}
 
@@ -252,6 +251,7 @@ footer{text-align:center;font-size:11px;color:#4d6a7a;padding:34px 0 10px;}
     <div class="ttl">⚠ Processos sem Grupo definido</div>
     <div class="desc" id="alertaSemGrupoDesc"></div>
     <button class="alert-toggle" data-target="alertaSemGrupoList">Ver processos</button>
+    <button class="alert-toggle" id="btnAvisarControladoria" style="margin-left:8px;">📧 Avisar Controladoria</button>
     <div class="alert-list" id="alertaSemGrupoList"></div>
   </div>
 
@@ -291,8 +291,8 @@ footer{text-align:center;font-size:11px;color:#4d6a7a;padding:34px 0 10px;}
     <div class="desc">Compare o volume de novos casos com o de encerramentos em cada grupo, no mês em curso.</div>
     <div id="tornadoGrupo"></div>
     <div class="legend">
-      <span><span class="dot" style="background:var(--violeta)"></span>Saídas (mês)</span>
-      <span><span class="dot" style="background:var(--teal2)"></span>Entradas (mês)</span>
+      <span><span class="dot" style="background:var(--vermelho)"></span>Saídas (mês)</span>
+      <span><span class="dot" style="background:var(--cyan)"></span>Entradas (mês)</span>
     </div>
   </div>
 
@@ -545,7 +545,7 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
   });
 });
 
-document.querySelectorAll('.alert-toggle').forEach(btn => {
+document.querySelectorAll('.alert-toggle[data-target]').forEach(btn => {
   btn.addEventListener('click', () => {
     const list = document.getElementById(btn.dataset.target);
     const open = list.classList.toggle('open');
@@ -554,7 +554,39 @@ document.querySelectorAll('.alert-toggle').forEach(btn => {
 });
 
 // ── Alertas ───────────────────────────────────────────────────────────────
+const EMAIL_CONTROLADORIA = 'prazos.trabalhista@peixotoecury.com.br';
+const LIMITE_TAMANHO_MAILTO = 1950;
+let _semGrupoLista = [];
+
+function montarCorpoAlertaSemGrupo(lista, maxItens){
+  const itens = typeof maxItens === 'number' ? lista.slice(0, maxItens) : lista;
+  const linhas = itens.map(p => `- ${p.numero_processo} · ${p.cliente || 'sem cliente'} · ${p.profissional || 'sem profissional'}`).join('\n');
+  const aviso = (typeof maxItens === 'number' && maxItens < lista.length)
+    ? `\n\n(lista resumida — ${lista.length - maxItens} processo(s) a mais; texto completo copiado pra área de transferência)` : '';
+  return `Prezados,\n\nOs processos abaixo estão EM ANDAMENTO (trabalhista) mas sem Grupo atribuído no LM. Favor corrigir o cadastro:\n\n${linhas}${aviso}\n\nControladoria — Visão Geral do Escritório`;
+}
+function montarMailtoAlertaSemGrupo(lista, maxItens){
+  const assunto = `⚠ ${lista.length} processo(s) sem Grupo definido — ajuste no LM`;
+  const corpo = montarCorpoAlertaSemGrupo(lista, maxItens);
+  return 'mailto:' + EMAIL_CONTROLADORIA + '?subject=' + encodeURIComponent(assunto) + '&body=' + encodeURIComponent(corpo);
+}
+function abrirAlertaSemGrupo(){
+  const lista = _semGrupoLista;
+  if(!lista.length) return;
+  let mailto = montarMailtoAlertaSemGrupo(lista);
+  if(mailto.length > LIMITE_TAMANHO_MAILTO){
+    navigator.clipboard?.writeText(montarCorpoAlertaSemGrupo(lista)).catch(()=>{});
+    let maxItens = lista.length;
+    do{ maxItens--; mailto = montarMailtoAlertaSemGrupo(lista, maxItens); }
+    while(mailto.length > LIMITE_TAMANHO_MAILTO && maxItens > 0);
+    alert('📋 E-mail muito grande: corpo resumido e texto completo copiado para a área de transferência — cole no corpo do e-mail (Ctrl+V).');
+  }
+  window.location.href = mailto;
+}
+document.getElementById('btnAvisarControladoria').addEventListener('click', abrirAlertaSemGrupo);
+
 function renderAlertaSemGrupo(lista){
+  _semGrupoLista = lista;
   const banner = document.getElementById('alertaSemGrupo');
   if(!lista.length){ banner.classList.remove('show'); return; }
   banner.classList.add('show');
@@ -616,7 +648,7 @@ function renderCargaGrupoDrill(grupo){
 }
 
 // ── Funil por Fase Processual ────────────────────────────────────────────────
-const FUNIL_CORES = ['var(--cyan)','var(--teal2)','var(--teal)','var(--violeta)','#5b6bc4'];
+const FUNIL_CORES = ['#00AEEF','#0090c9','#0074a3','#00587d','#003B5C'];
 let _porFaseGrupo = [];
 function renderFunil(porFase, porFaseGrupo, outras){
   _porFaseGrupo = porFaseGrupo;
