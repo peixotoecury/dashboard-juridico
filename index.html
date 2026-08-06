@@ -4120,7 +4120,8 @@ function recalcularStatusAudiencias(arr) {
 }
 
 // ── AUTO-REFRESH DE AUDIÊNCIAS DO GITHUB ─────────────────────────────────────
-async function carregarAudienciasGithub(silencioso) {
+async function carregarAudienciasGithub(silencioso, _tentativa) {
+  _tentativa = _tentativa || 0;
   const url = (localStorage.getItem('pc_github_audiencias') ||
               'https://raw.githubusercontent.com/peixotoecury/dashboard-juridico/data/Pauta_de_Audiencias.xlsx')
               .replace('/dashboard-juridico/main/', '/dashboard-juridico/data/');
@@ -4167,13 +4168,19 @@ async function carregarAudienciasGithub(silencioso) {
     if (!silencioso) console.log('✅ Audiências GitHub: ' + S.aud.length + ' registros');
     return true;
   } catch(err) {
+    // Retry rápido antes de cair no fallback do LM (que tem status/datas mais pobres) —
+    // falha de fetch pra CDN externo (raw.githubusercontent.com) costuma ser transitória.
+    if (_tentativa < 2) {
+      await new Promise(r => setTimeout(r, 1000 * (_tentativa + 1)));
+      return carregarAudienciasGithub(silencioso, _tentativa + 1);
+    }
     // Fallback: recalcula status das audiências já em memória
     if (S.aud && S.aud.length) {
       S.aud = recalcularStatusAudiencias(S.aud);
       if (typeof popAud       === 'function') popAud();
       if (typeof renderAudDet === 'function') renderAudDet();
     }
-    if (!silencioso) console.warn('⚠️ Audiências GitHub falhou:', err.message);
+    console.warn('⚠️ Audiências GitHub falhou após retries:', err.message);
     return false;
   }
 }
