@@ -128,9 +128,76 @@ svg{display:block;}
 
 footer{text-align:center;font-size:11px;color:#4d6a7a;padding:34px 0 10px;}
 
+/* ── TABS ───────────────────────────────────────────────────────────────── */
+.tabs-nav{display:flex;gap:8px;margin-bottom:6px;flex-wrap:wrap;}
+.tab-btn{
+  font-family:inherit;font-size:12.5px;font-weight:700;background:transparent;
+  border:1px solid var(--border);color:var(--soft);border-radius:9px;padding:9px 16px;cursor:pointer;transition:all .15s;
+}
+.tab-btn:hover{border-color:var(--cyan);color:#fff;}
+.tab-btn.active{background:linear-gradient(135deg,var(--teal2),var(--teal));border-color:transparent;color:#fff;}
+.tab-panel{display:none;}
+.tab-panel.active{display:block;}
+
+/* ── ALERTA ─────────────────────────────────────────────────────────────── */
+.alert-banner{
+  background:rgba(192,57,43,.09);border:1px solid rgba(192,57,43,.35);border-radius:14px;
+  padding:16px 20px;margin-bottom:24px;display:none;
+}
+.alert-banner.show{display:block;}
+.alert-banner .ttl{font-size:13.5px;font-weight:800;color:#ff8a7a;display:flex;align-items:center;gap:8px;}
+.alert-banner .desc{font-size:12px;color:var(--soft);margin:6px 0 12px;}
+.alert-list{display:flex;flex-wrap:wrap;gap:8px;}
+.alert-chip{
+  font-size:11.5px;background:rgba(192,57,43,.12);border:1px solid rgba(192,57,43,.3);
+  border-radius:8px;padding:5px 10px;color:#f3d9d6;
+}
+.alert-chip b{color:#fff;}
+.alert-banner.warn{background:rgba(243,156,18,.09);border-color:rgba(243,156,18,.35);}
+.alert-banner.warn .ttl{color:var(--ambar);}
+.alert-banner.warn .alert-chip{background:rgba(243,156,18,.12);border-color:rgba(243,156,18,.3);color:#fbe4bd;}
+
+/* ── FUNIL ──────────────────────────────────────────────────────────────── */
+.funil{display:flex;flex-direction:column;gap:6px;max-width:640px;margin:0 auto;}
+.funil-stage{
+  position:relative;height:52px;display:flex;align-items:center;justify-content:center;
+  color:#fff;font-weight:700;font-size:13px;cursor:pointer;transition:filter .15s;
+  clip-path:polygon(6% 0,94% 0,88% 100%,12% 100%);
+}
+.funil-stage:hover{filter:brightness(1.15);}
+.funil-stage.active{outline:2px solid var(--cyan);outline-offset:-2px;}
+.funil-stage .fn-n{font-size:16px;font-weight:800;margin-left:8px;}
+.funil-drill{margin-top:16px;}
+.funil-drill-hint{font-size:11.5px;color:var(--soft);text-align:center;margin-top:10px;}
+
+/* ── MAPA ───────────────────────────────────────────────────────────────── */
+.mapa-wrap{display:flex;gap:24px;flex-wrap:wrap;align-items:flex-start;}
+.mapa-svg-wrap{flex:0 0 auto;}
+.mapa-tile{cursor:default;}
+.mapa-tile rect{stroke:rgba(255,255,255,.15);stroke-width:1;rx:5;}
+.mapa-tile text{font-family:'Inter',sans-serif;text-anchor:middle;pointer-events:none;}
+.mapa-tile .uf-lbl{font-size:10px;font-weight:800;fill:#fff;}
+.mapa-tile .uf-val{font-size:8.5px;font-weight:600;fill:rgba(255,255,255,.85);}
+.mapa-legend-scale{display:flex;align-items:center;gap:6px;margin-top:10px;font-size:10.5px;color:var(--soft);}
+.mapa-legend-scale .sw{width:14px;height:10px;border-radius:2px;}
+.mapa-ranking{flex:1;min-width:220px;}
+
+/* ── BARRAS GRUPO (entradas x saídas) ──────────────────────────────────── */
+.barchart-wrap{display:flex;align-items:flex-end;gap:16px;height:220px;padding:0 6px 0;overflow-x:auto;}
+.barchart-col{display:flex;flex-direction:column;align-items:center;gap:6px;min-width:56px;cursor:pointer;}
+.barchart-bars{display:flex;align-items:flex-end;gap:3px;height:170px;}
+.barchart-bar{width:16px;border-radius:3px 3px 0 0;position:relative;transition:filter .15s;}
+.barchart-col:hover .barchart-bar{filter:brightness(1.25);}
+.barchart-col.active .barchart-bar{outline:2px solid #fff;outline-offset:1px;}
+.barchart-bar.entrada{background:linear-gradient(180deg,var(--cyan),var(--teal2));}
+.barchart-bar.saida{background:linear-gradient(180deg,#ff8a7a,var(--vermelho));}
+.barchart-lbl{font-size:11px;font-weight:700;color:var(--soft);}
+.barchart-val{font-size:9.5px;color:#fff;position:absolute;top:-16px;left:50%;transform:translateX(-50%);white-space:nowrap;}
+
 @media(max-width:1150px){
   .kpi-grid{grid-template-columns:repeat(3,1fr);}
   .grid-2,.grid-3{grid-template-columns:1fr;}
+  .mapa-wrap{flex-direction:column;}
 }
 @media(max-width:640px){
   .kpi-grid{grid-template-columns:repeat(2,1fr);}
@@ -163,8 +230,27 @@ footer{text-align:center;font-size:11px;color:#4d6a7a;padding:34px 0 10px;}
   <div class="page-head">
     <div>
       <h1>Contencioso Trabalhista — Andamento, Entradas e Saídas</h1>
-      <div class="sub">Base viva do LM · atualiza automaticamente a cada sincronização · só processos EM ANDAMENTO da área TRABALHISTA (encerrados saem da base)</div>
+      <div class="sub">Só processos EM ANDAMENTO da área TRABALHISTA — encerrados saem da base automaticamente</div>
     </div>
+  </div>
+
+  <div class="tabs-nav">
+    <button class="tab-btn active" data-tab="geral">Visão Geral</button>
+    <button class="tab-btn" data-tab="cliente">Grupo × Cliente</button>
+  </div>
+
+  <div class="tab-panel active" id="tab-geral">
+
+  <div class="alert-banner warn" id="alertaSemGrupo">
+    <div class="ttl">⚠ Processos sem Grupo definido</div>
+    <div class="desc" id="alertaSemGrupoDesc"></div>
+    <div class="alert-list" id="alertaSemGrupoList"></div>
+  </div>
+
+  <div class="alert-banner" id="alertaEntrada">
+    <div class="ttl">⚠ Clientes entrando acima do padrão este mês</div>
+    <div class="desc">Comparando o ritmo diário de entradas do mês atual com o mês anterior. Vale avisar o time responsável.</div>
+    <div class="alert-list" id="alertaEntradaList"></div>
   </div>
 
   <div class="kpi-grid" id="kpiGrid"></div>
@@ -178,6 +264,18 @@ footer{text-align:center;font-size:11px;color:#4d6a7a;padding:34px 0 10px;}
     </div>
   </div>
 
+  <div class="section-title"><span>Carga por Grupo — Entradas × Saídas (mês)</span><span class="line"></span></div>
+  <div class="card">
+    <h3>Clique numa coluna para ver o detalhe por profissional</h3>
+    <div class="desc">Volume de entradas e saídas do mês em curso, grupo a grupo.</div>
+    <div class="barchart-wrap" id="cargaGrupo"></div>
+    <div class="legend">
+      <span><span class="dot" style="background:var(--cyan)"></span>Entradas</span>
+      <span><span class="dot" style="background:var(--vermelho)"></span>Saídas</span>
+    </div>
+    <div id="cargaGrupoDrill"></div>
+  </div>
+
   <div class="section-title"><span>Entradas × Saídas por Grupo — mês atual</span><span class="line"></span></div>
   <div class="card">
     <h3>Gráfico Tornado</h3>
@@ -186,6 +284,29 @@ footer{text-align:center;font-size:11px;color:#4d6a7a;padding:34px 0 10px;}
     <div class="legend">
       <span><span class="dot" style="background:var(--violeta)"></span>Saídas (mês)</span>
       <span><span class="dot" style="background:var(--teal2)"></span>Entradas (mês)</span>
+    </div>
+  </div>
+
+  <div class="section-title"><span>Funil — Fase Processual</span><span class="line"></span></div>
+  <div class="card">
+    <h3>Carteira em andamento por fase</h3>
+    <div class="desc" id="funilDesc">Clique numa etapa pra ver a distribuição por grupo.</div>
+    <div class="funil" id="funil"></div>
+    <div class="funil-drill" id="funilDrill"></div>
+  </div>
+
+  <div class="section-title"><span>Onde estão os processos — por Estado</span><span class="line"></span></div>
+  <div class="card">
+    <h3>Mapa por Estado (comarca do processo)</h3>
+    <div class="desc">Tamanho e cor representam o volume em andamento em cada UF.</div>
+    <div class="mapa-wrap">
+      <div class="mapa-svg-wrap">
+        <svg id="mapaEstados" width="460" height="500" viewBox="0 0 460 500"></svg>
+        <div class="mapa-legend-scale" id="mapaLegenda"></div>
+      </div>
+      <div class="mapa-ranking">
+        <table id="tblEstado"><thead><tr><th>UF</th><th class="num">Andamento</th><th class="num">Entr. mês</th><th class="num">Saí. mês</th></tr></thead><tbody></tbody></table>
+      </div>
     </div>
   </div>
 
@@ -215,7 +336,25 @@ footer{text-align:center;font-size:11px;color:#4d6a7a;padding:34px 0 10px;}
     <div id="barrasValor"></div>
   </div>
 
-  <footer>Peixoto &amp; Cury Advogados · Controladoria — Visão Geral do Escritório · dados sincronizados automaticamente do LM</footer>
+  </div>
+
+  <div class="tab-panel" id="tab-cliente">
+    <div class="card" style="margin-bottom:20px;">
+      <h3>Entradas e Saídas — Grupo × Cliente</h3>
+      <div class="desc">Cada cliente que entrou ou saiu este mês ou no mês anterior, agrupado pelo Grupo responsável. Use pra responder clientes que perguntam sobre o ritmo da carteira deles.</div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px;">
+        <input type="text" id="filtroClienteGrupo" placeholder="Buscar grupo ou cliente…" style="flex:1;min-width:220px;background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:9px 12px;color:#eef6f9;font-size:12.5px;">
+      </div>
+      <div class="scroll-y" style="max-height:640px;">
+        <table id="tblGrupoCliente">
+          <thead><tr><th>Grupo</th><th>Cliente</th><th class="num">Andamento</th><th class="num">Entr. mês</th><th class="num">Saí. mês</th><th class="num">Entr. mês ant.</th><th class="num">Saí. mês ant.</th><th>Sinal</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <footer>Peixoto &amp; Cury Advogados · Controladoria — Visão Geral do Escritório</footer>
 </div>
 
 <script>
@@ -362,6 +501,215 @@ function renderTabelas(porGrupo, porCliente, porProf){
     </td></tr>`).join('');
 }
 
+// ── Tabs ────────────────────────────────────────────────────────────────────
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+    document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('tab-'+btn.dataset.tab).classList.add('active');
+  });
+});
+
+// ── Alertas ───────────────────────────────────────────────────────────────
+function renderAlertaSemGrupo(lista){
+  const banner = document.getElementById('alertaSemGrupo');
+  if(!lista.length){ banner.classList.remove('show'); return; }
+  banner.classList.add('show');
+  document.getElementById('alertaSemGrupoDesc').textContent =
+    `${lista.length} processo(s) em andamento sem grupo atribuído no LM — pedir pra Controladoria corrigir o cadastro.`;
+  document.getElementById('alertaSemGrupoList').innerHTML = lista.map(p => `
+    <span class="alert-chip"><b>${p.numero_processo}</b> · ${p.cliente || 'sem cliente'}</span>`).join('');
+}
+
+function renderAlertaEntrada(lista){
+  const banner = document.getElementById('alertaEntrada');
+  if(!lista.length){ banner.classList.remove('show'); return; }
+  banner.classList.add('show');
+  document.getElementById('alertaEntradaList').innerHTML = lista.map(c => `
+    <span class="alert-chip"><b>${c.nome}</b> · ${fmtInt(c.entradas_mes)} entradas este mês (mês ant.: ${fmtInt(c.entradas_mes_anterior)})</span>`).join('');
+}
+
+// ── Carga por Grupo (entradas x saídas, com drilldown) ──────────────────────
+let _porGrupoProfissional = [];
+function renderCargaGrupo(porGrupo, porGrupoProfissional){
+  _porGrupoProfissional = porGrupoProfissional;
+  const ordenado = porGrupo.slice().sort((a,b)=> (b.entradas_mes+b.saidas_mes) - (a.entradas_mes+a.saidas_mes));
+  const maxV = Math.max(1, ...ordenado.map(g=>Math.max(g.entradas_mes,g.saidas_mes)));
+  const el = document.getElementById('cargaGrupo');
+  el.innerHTML = ordenado.map(g => {
+    const hE = Math.max(2,(g.entradas_mes/maxV)*100);
+    const hS = Math.max(2,(g.saidas_mes/maxV)*100);
+    return `
+    <div class="barchart-col" data-grupo="${g.nome}">
+      <div class="barchart-bars">
+        <div class="barchart-bar entrada" style="height:${hE}%"><span class="barchart-val">${g.entradas_mes}</span></div>
+        <div class="barchart-bar saida" style="height:${hS}%"><span class="barchart-val">${g.saidas_mes}</span></div>
+      </div>
+      <div class="barchart-lbl">${g.nome}</div>
+    </div>`;
+  }).join('');
+  el.querySelectorAll('.barchart-col').forEach(col => {
+    col.addEventListener('click', () => {
+      const jaAtivo = col.classList.contains('active');
+      el.querySelectorAll('.barchart-col').forEach(c=>c.classList.remove('active'));
+      const drill = document.getElementById('cargaGrupoDrill');
+      if(jaAtivo){ drill.innerHTML=''; return; }
+      col.classList.add('active');
+      renderCargaGrupoDrill(col.dataset.grupo);
+    });
+  });
+}
+function renderCargaGrupoDrill(grupo){
+  const linhas = _porGrupoProfissional.filter(g=>g.grupo===grupo).sort((a,b)=>b.andamento-a.andamento);
+  const drill = document.getElementById('cargaGrupoDrill');
+  if(!linhas.length){ drill.innerHTML = `<div class="desc">Sem detalhe por profissional pra ${grupo}.</div>`; return; }
+  drill.innerHTML = `
+    <div class="desc" style="margin-top:16px;">Detalhe de <b style="color:#fff">${grupo}</b> por profissional:</div>
+    <table><thead><tr><th>Profissional</th><th class="num">Andamento</th><th class="num">Entr. mês</th><th class="num">Saí. mês</th></tr></thead>
+    <tbody>${linhas.map(p => `
+      <tr><td>${p.profissional}</td><td class="num">${fmtInt(p.andamento)}</td>
+      <td class="num" style="color:var(--verde)">+${fmtInt(p.entradas_mes)}</td>
+      <td class="num" style="color:var(--vermelho)">-${fmtInt(p.saidas_mes)}</td></tr>`).join('')}</tbody></table>`;
+}
+
+// ── Funil por Fase Processual ────────────────────────────────────────────────
+const FUNIL_CORES = ['var(--cyan)','var(--teal2)','var(--teal)','var(--violeta)','#5b6bc4'];
+let _porFaseGrupo = [];
+function renderFunil(porFase, porFaseGrupo, outras){
+  _porFaseGrupo = porFaseGrupo;
+  const maxV = Math.max(1, ...porFase.map(f=>f.andamento));
+  const el = document.getElementById('funil');
+  el.innerHTML = porFase.map((f,i) => {
+    const w = Math.max(28,(f.andamento/maxV)*100);
+    return `
+    <div class="funil-stage" data-fase="${f.nome}" style="width:${w}%;margin:0 auto;background:${FUNIL_CORES[i]};">
+      ${f.nome}<span class="fn-n">${fmtInt(f.andamento)}</span>
+    </div>`;
+  }).join('');
+  document.getElementById('funilDesc').textContent =
+    `Clique numa etapa pra ver a distribuição por grupo` + (outras ? ` · ${fmtInt(outras)} processo(s) em fases não mapeadas (suspenso/arquivado/administrativa) ficaram fora do funil.` : '.');
+  el.querySelectorAll('.funil-stage').forEach(st => {
+    st.addEventListener('click', () => {
+      const jaAtivo = st.classList.contains('active');
+      el.querySelectorAll('.funil-stage').forEach(s=>s.classList.remove('active'));
+      const drill = document.getElementById('funilDrill');
+      if(jaAtivo){ drill.innerHTML=''; return; }
+      st.classList.add('active');
+      renderFunilDrill(st.dataset.fase);
+    });
+  });
+}
+function renderFunilDrill(fase){
+  const linhas = _porFaseGrupo.filter(f=>f.fase===fase).sort((a,b)=>b.andamento-a.andamento);
+  const drill = document.getElementById('funilDrill');
+  if(!linhas.length){ drill.innerHTML = `<div class="funil-drill-hint">Sem detalhe por grupo pra ${fase}.</div>`; return; }
+  const maxV = Math.max(1, ...linhas.map(l=>l.andamento));
+  drill.innerHTML = `<div class="desc" style="margin-top:6px;">Distribuição de <b style="color:#fff">${fase}</b> por grupo:</div>` +
+    linhas.map(l => `
+    <div class="tornado-row" style="grid-template-columns:100px 1fr 60px;">
+      <div class="tornado-label">${l.grupo}</div>
+      <div class="bar-track" style="height:16px;"><div class="bar-fill" style="width:${(l.andamento/maxV*100).toFixed(0)}%;height:100%;"></div></div>
+      <div class="tornado-total" style="text-align:right;">${fmtInt(l.andamento)}</div>
+    </div>`).join('');
+}
+
+// ── Mapa por Estado ───────────────────────────────────────────────────────
+const UF_COORDS = {
+  AC:[-9.0,-70.0], AL:[-9.6,-36.5], AM:[-3.5,-65.0], AP:[1.5,-51.9], BA:[-12.5,-41.5],
+  CE:[-5.2,-39.5], DF:[-15.8,-47.9], ES:[-19.5,-40.5], GO:[-15.9,-49.8], MA:[-5.0,-45.5],
+  MG:[-18.5,-44.5], MS:[-20.5,-54.8], MT:[-12.8,-56.0], PA:[-4.5,-52.5], PB:[-7.2,-36.5],
+  PE:[-8.5,-37.8], PI:[-7.5,-42.5], PR:[-24.7,-51.5], RJ:[-22.2,-42.8], RN:[-5.8,-36.9],
+  RO:[-10.9,-62.5], RR:[2.0,-61.5], RS:[-30.0,-53.0], SC:[-27.3,-49.8], SE:[-10.6,-37.3],
+  SP:[-22.3,-48.5], TO:[-10.0,-48.3],
+};
+// posição fixa (pixels, canto sup. esquerdo do tile) só pro cluster apertado do
+// litoral nordestino — CE/RN/PB/PE/AL/SE ficam geograficamente colados demais
+// pra caber via projeção lat/lon direta sem sobrepor; arranjo manual em coluna.
+const MAPA_XY_OVERRIDE = {
+  CE:[368,142], RN:[398,138], PB:[398,166], PE:[382,192], AL:[382,218], SE:[356,218],
+};
+
+function renderMapa(porEstado){
+  const LON_MIN=-73, LON_MAX=-34.5, LAT_MAX=5.5, LAT_MIN=-33.5;
+  const MAP_W=420, MAP_H=460, OFF_X=20, OFF_Y=18, TILE=25;
+  const svg = document.getElementById('mapaEstados');
+  svg.setAttribute('viewBox', `0 0 460 500`);
+  svg.setAttribute('width', 460); svg.setAttribute('height', 500);
+  const maxV = Math.max(1, ...porEstado.map(e=>e.andamento));
+  const intensidade = v => Math.sqrt(v/maxV); // 0..1, sqrt pra não deixar SP esmagar o resto
+  const cor = t => {
+    // interpola de card2 (baixo) pra cyan (alto)
+    const r = Math.round(13 + t*(0-13)), g = Math.round(58 + t*(174-58)), b = Math.round(84 + t*(239-84));
+    return `rgb(${r},${g},${b})`;
+  };
+  let html = '';
+  porEstado.forEach(e => {
+    const coord = UF_COORDS[e.nome];
+    if(!coord) return;
+    const [lat,lon] = coord;
+    let x, y;
+    if(MAPA_XY_OVERRIDE[e.nome]){
+      [x,y] = MAPA_XY_OVERRIDE[e.nome];
+    }else{
+      x = OFF_X + (lon-LON_MIN)/(LON_MAX-LON_MIN)*MAP_W - TILE/2;
+      y = OFF_Y + (LAT_MAX-lat)/(LAT_MAX-LAT_MIN)*MAP_H - TILE/2;
+    }
+    const t = intensidade(e.andamento);
+    html += `
+      <g class="mapa-tile">
+        <rect x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${TILE}" height="${TILE}" rx="6" fill="${cor(t)}">
+          <title>${e.nome}: ${e.andamento} em andamento</title>
+        </rect>
+        <text class="uf-lbl" x="${(x+TILE/2).toFixed(1)}" y="${(y+TILE/2-2).toFixed(1)}">${e.nome}</text>
+        <text class="uf-val" x="${(x+TILE/2).toFixed(1)}" y="${(y+TILE/2+9).toFixed(1)}">${fmtInt(e.andamento)}</text>
+      </g>`;
+  });
+  svg.innerHTML = html;
+
+  document.getElementById('mapaLegenda').innerHTML = `
+    <span>Menos</span>
+    <span class="sw" style="background:${cor(0.15)}"></span>
+    <span class="sw" style="background:${cor(0.45)}"></span>
+    <span class="sw" style="background:${cor(0.75)}"></span>
+    <span class="sw" style="background:${cor(1)}"></span>
+    <span>Mais</span>`;
+
+  const tbody = document.querySelector('#tblEstado tbody');
+  tbody.innerHTML = porEstado.map(e => `
+    <tr><td>${e.nome}</td><td class="num">${fmtInt(e.andamento)}</td>
+    <td class="num" style="color:var(--verde)">+${fmtInt(e.entradas_mes)}</td>
+    <td class="num" style="color:var(--vermelho)">-${fmtInt(e.saidas_mes)}</td></tr>`).join('');
+}
+
+// ── Aba Grupo × Cliente ─────────────────────────────────────────────────────
+let _grupoClienteData = [];
+function sinalCliente(c){
+  if(c.alerta_entrada) return '<span class="pill down" style="background:rgba(243,156,18,.15);color:var(--ambar);">▲ entrando mais</span>';
+  if(c.saidas_mes >= 3 && c.saidas_mes > c.entradas_mes*2) return '<span class="pill down">▼ saindo mais</span>';
+  return '<span class="pill flat">—</span>';
+}
+function renderGrupoCliente(lista){
+  _grupoClienteData = lista;
+  desenharGrupoCliente(lista);
+}
+function desenharGrupoCliente(lista){
+  const tbody = document.querySelector('#tblGrupoCliente tbody');
+  tbody.innerHTML = lista.map(c => `
+    <tr><td>${c.grupo}</td><td>${c.cliente}</td><td class="num">${fmtInt(c.andamento)}</td>
+    <td class="num" style="color:var(--verde)">+${fmtInt(c.entradas_mes)}</td>
+    <td class="num" style="color:var(--vermelho)">-${fmtInt(c.saidas_mes)}</td>
+    <td class="num">${fmtInt(c.entradas_mes_anterior)}</td>
+    <td class="num">${fmtInt(c.saidas_mes_anterior)}</td>
+    <td>${sinalCliente(c)}</td></tr>`).join('');
+}
+document.getElementById('filtroClienteGrupo').addEventListener('input', (e) => {
+  const q = e.target.value.trim().toLowerCase();
+  if(!q){ desenharGrupoCliente(_grupoClienteData); return; }
+  desenharGrupoCliente(_grupoClienteData.filter(c =>
+    c.grupo.toLowerCase().includes(q) || c.cliente.toLowerCase().includes(q)));
+});
+
 function renderValores(porGrupo, total){
   document.getElementById('valorTotalDesc').textContent =
     `Total em andamento (trabalhista): ${fmtMoney(total)} — distribuído entre ${porGrupo.length} grupos.`;
@@ -381,10 +729,16 @@ async function carregar(){
     const data = await resp.json();
     renderKpis(data.kpis);
     renderTicker(data.kpis, data.por_grupo);
+    renderAlertaSemGrupo(data.sem_grupo_processos || []);
+    renderAlertaEntrada(data.clientes_com_alerta || []);
     renderSerie(data.serie_diaria);
+    renderCargaGrupo(data.por_grupo, data.por_grupo_profissional || []);
     renderTornado(data.por_grupo);
+    renderFunil(data.por_fase || [], data.por_fase_grupo || [], data.por_fase_outras || 0);
+    renderMapa(data.por_estado || []);
     renderTabelas(data.por_grupo, data.por_cliente, data.por_profissional);
     renderValores(data.por_grupo, data.kpis.valor_causa_total);
+    renderGrupoCliente(data.por_grupo_cliente || []);
     const dt = new Date(data.atualizado_em);
     document.getElementById('updNote').textContent =
       'Atualizado ' + dt.toLocaleDateString('pt-BR') + ' ' + dt.toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});
