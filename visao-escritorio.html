@@ -188,6 +188,18 @@ footer{text-align:center;font-size:11px;color:#4d6a7a;padding:34px 0 10px;}
 .mapa-legend-scale .sw{width:14px;height:10px;border-radius:2px;}
 .mapa-ranking{flex:1;min-width:220px;}
 
+/* ── CARDS POR GRUPO ────────────────────────────────────────────────────── */
+.grupo-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:14px;}
+.grupo-card{
+  background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px 16px 14px;
+  position:relative;overflow:hidden;
+}
+.grupo-card::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--teal2),var(--cyan));opacity:.7;}
+.grupo-card .gc-nome{font-size:11px;font-weight:800;letter-spacing:.6px;text-transform:uppercase;color:var(--soft);}
+.grupo-card .gc-val{font-family:'Sora',sans-serif;font-size:30px;font-weight:800;color:var(--cyan);margin-top:6px;line-height:1;}
+.grupo-card .gc-mov{display:flex;gap:10px;margin-top:10px;font-size:11.5px;font-weight:700;}
+.grupo-card .gc-mov .in{color:var(--verde);} .grupo-card .gc-mov .out{color:var(--vermelho);}
+
 /* ── BARRAS GRUPO (entradas x saídas) ──────────────────────────────────── */
 .barchart-wrap{display:flex;align-items:flex-end;gap:16px;height:220px;padding:0 6px 0;overflow-x:auto;}
 .barchart-col{display:flex;flex-direction:column;align-items:center;gap:6px;min-width:56px;cursor:pointer;}
@@ -272,6 +284,9 @@ footer{text-align:center;font-size:11px;color:#4d6a7a;padding:34px 0 10px;}
       <span><span class="dot" style="background:var(--vermelho)"></span>Saídas</span>
     </div>
   </div>
+
+  <div class="section-title"><span>Posição Atual — por Grupo</span><span class="line"></span></div>
+  <div class="grupo-cards" id="grupoCards"></div>
 
   <div class="section-title"><span>Carga por Grupo — Entradas × Saídas (mês)</span><span class="line"></span></div>
   <div class="card">
@@ -604,6 +619,17 @@ function renderAlertaEntrada(lista){
     <span class="alert-chip"><b>${c.nome}</b> · ${fmtInt(c.entradas_mes)} entradas este mês (mês ant.: ${fmtInt(c.entradas_mes_anterior)})</span>`).join('');
 }
 
+// ── Posição atual por Grupo (cards) ─────────────────────────────────────────
+function renderGrupoCards(porGrupo){
+  const ordenado = porGrupo.slice().sort((a,b)=>b.andamento-a.andamento);
+  document.getElementById('grupoCards').innerHTML = ordenado.map(g => `
+    <div class="grupo-card">
+      <div class="gc-nome">${g.nome}</div>
+      <div class="gc-val">${fmtInt(g.andamento)}</div>
+      <div class="gc-mov"><span class="in">+${fmtInt(g.entradas_mes)}</span><span class="out">-${fmtInt(g.saidas_mes)}</span></div>
+    </div>`).join('');
+}
+
 // ── Carga por Grupo (entradas x saídas, com drilldown) ──────────────────────
 let _porGrupoProfissional = [];
 function renderCargaGrupo(porGrupo, porGrupoProfissional){
@@ -858,6 +884,7 @@ async function carregar(){
     renderAlertaSemGrupo(data.sem_grupo_processos || []);
     renderAlertaEntrada(data.clientes_com_alerta || []);
     renderSerie(data.serie_diaria);
+    renderGrupoCards(data.por_grupo);
     renderCargaGrupo(data.por_grupo, data.por_grupo_profissional || []);
     renderTornado(data.por_grupo);
     renderFunil(data.por_fase || [], data.por_fase_grupo || [], data.por_fase_outras || 0);
