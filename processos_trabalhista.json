@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-08-06T16:44:16",
+  "atualizado_em": "2026-08-06T16:46:57",
   "kpis": {
     "total_andamento": 8168,
     "entradas_hoje": 11,
@@ -650,6 +650,646 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
       "valor_causa": 0.0
+    }
+  ],
+  "por_fase": [
+    {
+      "nome": "Ajuizamento",
+      "andamento": 366,
+      "entradas_mes": 0,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 33,
+      "saidas_mes_anterior": 6,
+      "valor_causa": 77628460.32
+    },
+    {
+      "nome": "Instrução",
+      "andamento": 2890,
+      "entradas_mes": 42,
+      "saidas_mes": 13,
+      "entradas_mes_anterior": 196,
+      "saidas_mes_anterior": 77,
+      "valor_causa": 746596939.13
+    },
+    {
+      "nome": "Sentença",
+      "andamento": 30,
+      "entradas_mes": 0,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 2,
+      "saidas_mes_anterior": 2,
+      "valor_causa": 34337673.39
+    },
+    {
+      "nome": "Recurso",
+      "andamento": 3238,
+      "entradas_mes": 0,
+      "saidas_mes": 20,
+      "entradas_mes_anterior": 4,
+      "saidas_mes_anterior": 51,
+      "valor_causa": 679930503.16
+    },
+    {
+      "nome": "Execução",
+      "andamento": 1235,
+      "entradas_mes": 0,
+      "saidas_mes": 40,
+      "entradas_mes_anterior": 5,
+      "saidas_mes_anterior": 73,
+      "valor_causa": 174356189.73
+    }
+  ],
+  "por_fase_outras": 409,
+  "por_fase_grupo": [
+    {
+      "fase": "Ajuizamento",
+      "grupo": "Grupo E2",
+      "andamento": 128,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 27,
+      "saidas_mes_anterior": 4,
+      "valor_causa": 35119597.87
+    },
+    {
+      "fase": "Ajuizamento",
+      "grupo": "Grupo B2",
+      "andamento": 119,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 13189648.59
+    },
+    {
+      "fase": "Ajuizamento",
+      "grupo": "Grupo C",
+      "andamento": 41,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 18819487.2
+    },
+    {
+      "fase": "Ajuizamento",
+      "grupo": "Grupo E1",
+      "andamento": 34,
+      "entradas_mes": 0,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 6,
+      "saidas_mes_anterior": 2,
+      "valor_causa": 9364976.02
+    },
+    {
+      "fase": "Ajuizamento",
+      "grupo": "Grupo A3",
+      "andamento": 28,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 0.0
+    },
+    {
+      "fase": "Ajuizamento",
+      "grupo": "Grupo A1",
+      "andamento": 5,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 0.0
+    },
+    {
+      "fase": "Ajuizamento",
+      "grupo": "Grupo D1",
+      "andamento": 4,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 825068.85
+    },
+    {
+      "fase": "Ajuizamento",
+      "grupo": "Grupo A2",
+      "andamento": 3,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 38507.26
+    },
+    {
+      "fase": "Ajuizamento",
+      "grupo": "Sócios",
+      "andamento": 2,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 0.0
+    },
+    {
+      "fase": "Ajuizamento",
+      "grupo": "Sem grupo",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 271174.53
+    },
+    {
+      "fase": "Ajuizamento",
+      "grupo": "Grupo B3",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 0.0
+    },
+    {
+      "fase": "Execução",
+      "grupo": "Grupo E2",
+      "andamento": 362,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 3,
+      "saidas_mes_anterior": 26,
+      "valor_causa": 55622628.73
+    },
+    {
+      "fase": "Execução",
+      "grupo": "Grupo D1",
+      "andamento": 288,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 41115203.11
+    },
+    {
+      "fase": "Execução",
+      "grupo": "Grupo E1",
+      "andamento": 179,
+      "entradas_mes": 0,
+      "saidas_mes": 32,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 11,
+      "valor_causa": 18987037.41
+    },
+    {
+      "fase": "Execução",
+      "grupo": "Grupo B1",
+      "andamento": 165,
+      "entradas_mes": 0,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 29,
+      "valor_causa": 16733934.84
+    },
+    {
+      "fase": "Execução",
+      "grupo": "Grupo B3",
+      "andamento": 113,
+      "entradas_mes": 0,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 3,
+      "valor_causa": 22400990.13
+    },
+    {
+      "fase": "Execução",
+      "grupo": "Grupo B2",
+      "andamento": 105,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 15842399.22
+    },
+    {
+      "fase": "Execução",
+      "grupo": "Grupo C",
+      "andamento": 20,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 3,
+      "valor_causa": 2252467.23
+    },
+    {
+      "fase": "Execução",
+      "grupo": "Sem grupo",
+      "andamento": 2,
+      "entradas_mes": 0,
+      "saidas_mes": 6,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 375954.62
+    },
+    {
+      "fase": "Execução",
+      "grupo": "Grupo A2",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1025574.44
+    },
+    {
+      "fase": "Instrução",
+      "grupo": "Grupo E2",
+      "andamento": 868,
+      "entradas_mes": 6,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 56,
+      "saidas_mes_anterior": 28,
+      "valor_causa": 156966101.88
+    },
+    {
+      "fase": "Instrução",
+      "grupo": "Grupo E1",
+      "andamento": 762,
+      "entradas_mes": 1,
+      "saidas_mes": 8,
+      "entradas_mes_anterior": 30,
+      "saidas_mes_anterior": 15,
+      "valor_causa": 154229461.45
+    },
+    {
+      "fase": "Instrução",
+      "grupo": "Grupo B1",
+      "andamento": 420,
+      "entradas_mes": 8,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 44,
+      "saidas_mes_anterior": 20,
+      "valor_causa": 128776627.56
+    },
+    {
+      "fase": "Instrução",
+      "grupo": "Grupo C",
+      "andamento": 352,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 17,
+      "saidas_mes_anterior": 4,
+      "valor_causa": 126209547.32
+    },
+    {
+      "fase": "Instrução",
+      "grupo": "Grupo D1",
+      "andamento": 136,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 7,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 17936027.44
+    },
+    {
+      "fase": "Instrução",
+      "grupo": "Grupo B3",
+      "andamento": 125,
+      "entradas_mes": 8,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 22,
+      "saidas_mes_anterior": 2,
+      "valor_causa": 21612384.24
+    },
+    {
+      "fase": "Instrução",
+      "grupo": "Grupo B2",
+      "andamento": 116,
+      "entradas_mes": 7,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 17,
+      "saidas_mes_anterior": 3,
+      "valor_causa": 24498389.94
+    },
+    {
+      "fase": "Instrução",
+      "grupo": "Grupo A3",
+      "andamento": 80,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 4,
+      "valor_causa": 101078665.51
+    },
+    {
+      "fase": "Instrução",
+      "grupo": "Grupo A2",
+      "andamento": 17,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 2,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 7860137.12
+    },
+    {
+      "fase": "Instrução",
+      "grupo": "Sem grupo",
+      "andamento": 12,
+      "entradas_mes": 11,
+      "saidas_mes": 2,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 7429596.67
+    },
+    {
+      "fase": "Instrução",
+      "grupo": "Grupo A1",
+      "andamento": 2,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 0.0
+    },
+    {
+      "fase": "Outras",
+      "grupo": "Grupo E2",
+      "andamento": 127,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 5,
+      "saidas_mes_anterior": 5,
+      "valor_causa": 6030565.62
+    },
+    {
+      "fase": "Outras",
+      "grupo": "Grupo C",
+      "andamento": 71,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 313695.71
+    },
+    {
+      "fase": "Outras",
+      "grupo": "Grupo B3",
+      "andamento": 66,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 174669.73
+    },
+    {
+      "fase": "Outras",
+      "grupo": "Grupo E1",
+      "andamento": 44,
+      "entradas_mes": 1,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 6,
+      "saidas_mes_anterior": 14,
+      "valor_causa": 678465.23
+    },
+    {
+      "fase": "Outras",
+      "grupo": "Grupo B2",
+      "andamento": 35,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 12,
+      "valor_causa": 3552691.34
+    },
+    {
+      "fase": "Outras",
+      "grupo": "Grupo A3",
+      "andamento": 29,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 0.0
+    },
+    {
+      "fase": "Outras",
+      "grupo": "Grupo B1",
+      "andamento": 15,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 0.0
+    },
+    {
+      "fase": "Outras",
+      "grupo": "Grupo A1",
+      "andamento": 13,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 0.0
+    },
+    {
+      "fase": "Outras",
+      "grupo": "Grupo D1",
+      "andamento": 5,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 0.0
+    },
+    {
+      "fase": "Outras",
+      "grupo": "Grupo A2",
+      "andamento": 3,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 0.0
+    },
+    {
+      "fase": "Outras",
+      "grupo": "Sócios",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 0.0
+    },
+    {
+      "fase": "Recurso",
+      "grupo": "Grupo B1",
+      "andamento": 829,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 7,
+      "valor_causa": 148719172.43
+    },
+    {
+      "fase": "Recurso",
+      "grupo": "Grupo E1",
+      "andamento": 747,
+      "entradas_mes": 0,
+      "saidas_mes": 8,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 19,
+      "valor_causa": 104419934.11
+    },
+    {
+      "fase": "Recurso",
+      "grupo": "Grupo E2",
+      "andamento": 565,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 18,
+      "valor_causa": 182212712.06
+    },
+    {
+      "fase": "Recurso",
+      "grupo": "Grupo B2",
+      "andamento": 361,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 67220152.18
+    },
+    {
+      "fase": "Recurso",
+      "grupo": "Grupo D1",
+      "andamento": 347,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 46196225.66
+    },
+    {
+      "fase": "Recurso",
+      "grupo": "Grupo B3",
+      "andamento": 238,
+      "entradas_mes": 0,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 4,
+      "valor_causa": 56692736.01
+    },
+    {
+      "fase": "Recurso",
+      "grupo": "Grupo C",
+      "andamento": 131,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 63833136.7
+    },
+    {
+      "fase": "Recurso",
+      "grupo": "Grupo A3",
+      "andamento": 14,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 8573888.29
+    },
+    {
+      "fase": "Recurso",
+      "grupo": "Grupo A2",
+      "andamento": 3,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 2062545.72
+    },
+    {
+      "fase": "Recurso",
+      "grupo": "Grupo A1",
+      "andamento": 3,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 0.0
+    },
+    {
+      "fase": "Sentença",
+      "grupo": "Grupo E2",
+      "andamento": 13,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 1069343.81
+    },
+    {
+      "fase": "Sentença",
+      "grupo": "Grupo E1",
+      "andamento": 5,
+      "entradas_mes": 0,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 475727.04
+    },
+    {
+      "fase": "Sentença",
+      "grupo": "Grupo D1",
+      "andamento": 4,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 5303300.0
+    },
+    {
+      "fase": "Sentença",
+      "grupo": "Grupo B3",
+      "andamento": 4,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 804924.31
+    },
+    {
+      "fase": "Sentença",
+      "grupo": "Grupo A3",
+      "andamento": 2,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 25621392.0
+    },
+    {
+      "fase": "Sentença",
+      "grupo": "Grupo C",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 150747.29
+    },
+    {
+      "fase": "Sentença",
+      "grupo": "Grupo A2",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 912238.94
     }
   ],
   "por_profissional": [
