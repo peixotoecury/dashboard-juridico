@@ -33,7 +33,7 @@ a{color:inherit;}
 .lw-wordmark{display:inline-block;position:relative;line-height:1;}
 .lw-law{font-size:19px;font-weight:800;color:#fff;letter-spacing:-.5px;font-family:'Sora',sans-serif;}
 .lw-gico{font-size:19px;font-weight:300;color:#fff;letter-spacing:-.5px;font-family:'Sora',sans-serif;}
-.lw-mod{font-size:9px;font-weight:300;color:rgba(255,255,255,.7);font-family:'Sora',sans-serif;position:absolute;top:-11px;right:-58px;white-space:nowrap;}
+.lw-mod{font-size:9px;font-weight:300;color:rgba(255,255,255,.7);font-family:'Sora',sans-serif;position:absolute;top:-11px;left:50%;transform:translateX(-50%);white-space:nowrap;}
 .lw-tag{font-size:7.5px;font-weight:300;letter-spacing:3px;color:rgba(255,255,255,.65);margin-top:1px;font-family:'Sora',sans-serif;text-transform:uppercase;}
 .divider-v{width:1px;height:28px;background:var(--border);}
 .product-name{line-height:1.1;}
@@ -156,6 +156,13 @@ footer{text-align:center;font-size:11px;color:#4d6a7a;padding:34px 0 10px;}
 .alert-banner.warn{background:rgba(243,156,18,.09);border-color:rgba(243,156,18,.35);}
 .alert-banner.warn .ttl{color:var(--ambar);}
 .alert-banner.warn .alert-chip{background:rgba(243,156,18,.12);border-color:rgba(243,156,18,.3);color:#fbe4bd;}
+.alert-toggle{
+  font-family:inherit;font-size:11px;font-weight:700;background:transparent;color:inherit;
+  border:1px solid currentColor;opacity:.75;border-radius:7px;padding:4px 10px;cursor:pointer;margin-top:2px;
+}
+.alert-toggle:hover{opacity:1;}
+.alert-list{display:none;margin-top:12px;}
+.alert-list.open{display:flex;}
 
 /* ── FUNIL ──────────────────────────────────────────────────────────────── */
 .funil{display:flex;flex-direction:column;gap:6px;max-width:640px;margin:0 auto;}
@@ -244,12 +251,14 @@ footer{text-align:center;font-size:11px;color:#4d6a7a;padding:34px 0 10px;}
   <div class="alert-banner warn" id="alertaSemGrupo">
     <div class="ttl">⚠ Processos sem Grupo definido</div>
     <div class="desc" id="alertaSemGrupoDesc"></div>
+    <button class="alert-toggle" data-target="alertaSemGrupoList">Ver processos</button>
     <div class="alert-list" id="alertaSemGrupoList"></div>
   </div>
 
   <div class="alert-banner" id="alertaEntrada">
     <div class="ttl">⚠ Clientes entrando acima do padrão este mês</div>
     <div class="desc">Comparando o ritmo diário de entradas do mês atual com o mês anterior. Vale avisar o time responsável.</div>
+    <button class="alert-toggle" data-target="alertaEntradaList">Ver clientes</button>
     <div class="alert-list" id="alertaEntradaList"></div>
   </div>
 
@@ -306,6 +315,8 @@ footer{text-align:center;font-size:11px;color:#4d6a7a;padding:34px 0 10px;}
       </div>
       <div class="mapa-ranking">
         <table id="tblEstado"><thead><tr><th>UF</th><th class="num">Andamento</th><th class="num">Entr. mês</th><th class="num">Saí. mês</th></tr></thead><tbody></tbody></table>
+        <div class="funil-drill-hint">Clique numa UF no mapa pra ver os clientes.</div>
+        <div id="mapaDrill"></div>
       </div>
     </div>
   </div>
@@ -458,6 +469,7 @@ function renderSerie(serie){
   `;
 }
 
+let _porGrupoCliente = [];
 function renderTornado(porGrupo){
   const top = porGrupo.slice().sort((a,b)=> (b.entradas_mes+b.saidas_mes) - (a.entradas_mes+a.saidas_mes)).slice(0,12);
   const maxV = Math.max(1, ...top.map(g=>Math.max(g.entradas_mes,g.saidas_mes)));
@@ -466,7 +478,7 @@ function renderTornado(porGrupo){
     const wL = Math.max(3,(g.saidas_mes/maxV)*100);
     const wR = Math.max(3,(g.entradas_mes/maxV)*100);
     return `
-    <div class="tornado-row">
+    <div class="tornado-row" data-grupo="${g.nome}" style="cursor:pointer;">
       <div class="tornado-label">${g.nome}</div>
       <div class="tornado-num tornado-num-l">${fmtInt(g.saidas_mes)}</div>
       <div class="tornado-bar-l" style="width:${wL}%"></div>
@@ -474,7 +486,29 @@ function renderTornado(porGrupo){
       <div class="tornado-num tornado-num-r">${fmtInt(g.entradas_mes)}</div>
       <div class="tornado-total">andamento: ${fmtInt(g.andamento)}</div>
     </div>`;
-  }).join('');
+  }).join('') + '<div class="funil-drill-hint" id="tornadoHint">Clique num grupo pra ver os clientes que entraram/saíram.</div><div id="tornadoDrill"></div>';
+  el.querySelectorAll('.tornado-row').forEach(row => {
+    row.addEventListener('click', () => {
+      const ativo = row.dataset.active === '1';
+      el.querySelectorAll('.tornado-row').forEach(r=>{r.dataset.active='0'; r.style.outline='';});
+      const drill = document.getElementById('tornadoDrill');
+      if(ativo){ drill.innerHTML=''; return; }
+      row.dataset.active = '1'; row.style.outline = '1px solid var(--cyan)';
+      renderTornadoDrill(row.dataset.grupo);
+    });
+  });
+}
+function renderTornadoDrill(grupo){
+  const linhas = _porGrupoCliente.filter(g=>g.grupo===grupo && (g.entradas_mes>0 || g.saidas_mes>0))
+    .sort((a,b)=>(b.entradas_mes+b.saidas_mes)-(a.entradas_mes+a.saidas_mes));
+  const drill = document.getElementById('tornadoDrill');
+  if(!linhas.length){ drill.innerHTML = `<div class="desc" style="margin-top:10px;">Sem entradas/saídas de cliente em ${grupo} este mês.</div>`; return; }
+  drill.innerHTML = `<div class="desc" style="margin-top:12px;">Clientes movimentados em <b style="color:#fff">${grupo}</b> este mês:</div>
+    <table><thead><tr><th>Cliente</th><th class="num">Entr.</th><th class="num">Saí.</th></tr></thead>
+    <tbody>${linhas.map(c => `
+      <tr><td>${c.cliente}</td>
+      <td class="num" style="color:var(--verde)">+${fmtInt(c.entradas_mes)}</td>
+      <td class="num" style="color:var(--vermelho)">-${fmtInt(c.saidas_mes)}</td></tr>`).join('')}</tbody></table>`;
 }
 
 function renderTabelas(porGrupo, porCliente, porProf){
@@ -508,6 +542,14 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
     document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));
     btn.classList.add('active');
     document.getElementById('tab-'+btn.dataset.tab).classList.add('active');
+  });
+});
+
+document.querySelectorAll('.alert-toggle').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const list = document.getElementById(btn.dataset.target);
+    const open = list.classList.toggle('open');
+    btn.textContent = open ? 'Ocultar' : (btn.dataset.target === 'alertaSemGrupoList' ? 'Ver processos' : 'Ver clientes');
   });
 });
 
@@ -630,6 +672,7 @@ const MAPA_XY_OVERRIDE = {
   CE:[368,142], RN:[398,138], PB:[398,166], PE:[382,192], AL:[382,218], SE:[356,218],
 };
 
+let _porEstadoCliente = [];
 function renderMapa(porEstado){
   const LON_MIN=-73, LON_MAX=-34.5, LAT_MAX=5.5, LAT_MIN=-33.5;
   const MAP_W=420, MAP_H=460, OFF_X=20, OFF_Y=18, TILE=25;
@@ -657,15 +700,27 @@ function renderMapa(porEstado){
     }
     const t = intensidade(e.andamento);
     html += `
-      <g class="mapa-tile">
+      <g class="mapa-tile" data-uf="${e.nome}" style="cursor:pointer;">
         <rect x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${TILE}" height="${TILE}" rx="6" fill="${cor(t)}">
-          <title>${e.nome}: ${e.andamento} em andamento</title>
+          <title>${e.nome}: ${e.andamento} em andamento — clique pra ver clientes</title>
         </rect>
         <text class="uf-lbl" x="${(x+TILE/2).toFixed(1)}" y="${(y+TILE/2-2).toFixed(1)}">${e.nome}</text>
         <text class="uf-val" x="${(x+TILE/2).toFixed(1)}" y="${(y+TILE/2+9).toFixed(1)}">${fmtInt(e.andamento)}</text>
       </g>`;
   });
   svg.innerHTML = html;
+  svg.querySelectorAll('.mapa-tile').forEach(tile => {
+    tile.addEventListener('click', () => {
+      const ativo = tile.dataset.active === '1';
+      svg.querySelectorAll('.mapa-tile rect').forEach(r=>r.style.stroke='rgba(255,255,255,.15)');
+      svg.querySelectorAll('.mapa-tile').forEach(t=>t.dataset.active='0');
+      const drill = document.getElementById('mapaDrill');
+      if(ativo){ drill.innerHTML=''; return; }
+      tile.dataset.active = '1';
+      tile.querySelector('rect').style.stroke = '#fff';
+      renderMapaDrill(tile.dataset.uf);
+    });
+  });
 
   document.getElementById('mapaLegenda').innerHTML = `
     <span>Menos</span>
@@ -680,6 +735,19 @@ function renderMapa(porEstado){
     <tr><td>${e.nome}</td><td class="num">${fmtInt(e.andamento)}</td>
     <td class="num" style="color:var(--verde)">+${fmtInt(e.entradas_mes)}</td>
     <td class="num" style="color:var(--vermelho)">-${fmtInt(e.saidas_mes)}</td></tr>`).join('');
+}
+
+function renderMapaDrill(uf){
+  const linhas = _porEstadoCliente.filter(e=>e.estado===uf).sort((a,b)=>b.andamento-a.andamento).slice(0,10);
+  const drill = document.getElementById('mapaDrill');
+  if(!linhas.length){ drill.innerHTML = `<div class="desc" style="margin-top:8px;">Sem detalhe por cliente em ${uf}.</div>`; return; }
+  const maxV = Math.max(1, ...linhas.map(l=>l.andamento));
+  drill.innerHTML = `<div class="desc" style="margin-top:10px;">Clientes em <b style="color:#fff">${uf}</b>:</div>` +
+    linhas.map(l => `
+    <div class="tornado-row" style="grid-template-columns:1fr 60px;">
+      <div class="tornado-label" style="text-align:left;">${l.cliente}</div>
+      <div class="tornado-total" style="text-align:right;">${fmtInt(l.andamento)}</div>
+    </div>`).join('');
 }
 
 // ── Aba Grupo × Cliente ─────────────────────────────────────────────────────
@@ -712,14 +780,38 @@ document.getElementById('filtroClienteGrupo').addEventListener('input', (e) => {
 
 function renderValores(porGrupo, total){
   document.getElementById('valorTotalDesc').textContent =
-    `Total em andamento (trabalhista): ${fmtMoney(total)} — distribuído entre ${porGrupo.length} grupos.`;
+    `Total em andamento (trabalhista): ${fmtMoney(total)} — distribuído entre ${porGrupo.length} grupos. Clique num grupo pra ver os clientes.`;
   const maxV = Math.max(1, ...porGrupo.map(g=>g.valor_causa));
   const ordenado = porGrupo.slice().sort((a,b)=>b.valor_causa-a.valor_causa);
   document.getElementById('barrasValor').innerHTML = ordenado.map(g => `
-    <div class="tornado-row" style="grid-template-columns:120px 1fr 90px;">
+    <div class="tornado-row" data-grupo="${g.nome}" style="grid-template-columns:120px 1fr 90px;cursor:pointer;">
       <div class="tornado-label">${g.nome}</div>
       <div class="bar-track" style="height:20px;"><div class="bar-fill" style="width:${(g.valor_causa/maxV*100).toFixed(0)}%;height:100%;"></div></div>
       <div class="tornado-total" style="text-align:right;">${fmtMoney(g.valor_causa)}</div>
+    </div>`).join('') + '<div id="valorDrill"></div>';
+  document.querySelectorAll('#barrasValor .tornado-row').forEach(row => {
+    row.addEventListener('click', () => {
+      const ativo = row.dataset.active === '1';
+      document.querySelectorAll('#barrasValor .tornado-row').forEach(r=>{r.dataset.active='0'; r.style.outline='';});
+      const drill = document.getElementById('valorDrill');
+      if(ativo){ drill.innerHTML=''; return; }
+      row.dataset.active = '1'; row.style.outline = '1px solid var(--cyan)';
+      renderValorDrill(row.dataset.grupo);
+    });
+  });
+}
+function renderValorDrill(grupo){
+  const linhas = _porGrupoCliente.filter(g=>g.grupo===grupo && g.valor_causa>0)
+    .sort((a,b)=>b.valor_causa-a.valor_causa).slice(0,10);
+  const drill = document.getElementById('valorDrill');
+  if(!linhas.length){ drill.innerHTML = `<div class="desc" style="margin-top:10px;">Sem valor de causa detalhado por cliente em ${grupo}.</div>`; return; }
+  const maxV = Math.max(1, ...linhas.map(l=>l.valor_causa));
+  drill.innerHTML = `<div class="desc" style="margin-top:14px;">Maiores exposições em <b style="color:#fff">${grupo}</b>:</div>` +
+    linhas.map(l => `
+    <div class="tornado-row" style="grid-template-columns:150px 1fr 90px;">
+      <div class="tornado-label">${l.cliente}</div>
+      <div class="bar-track" style="height:16px;"><div class="bar-fill" style="width:${(l.valor_causa/maxV*100).toFixed(0)}%;height:100%;"></div></div>
+      <div class="tornado-total" style="text-align:right;">${fmtMoney(l.valor_causa)}</div>
     </div>`).join('');
 }
 
@@ -727,6 +819,8 @@ async function carregar(){
   try{
     const resp = await fetch(DATA_URL + '?t=' + Date.now(), {cache:'no-store'});
     const data = await resp.json();
+    _porGrupoCliente = data.por_grupo_cliente || [];
+    _porEstadoCliente = data.por_estado_cliente || [];
     renderKpis(data.kpis);
     renderTicker(data.kpis, data.por_grupo);
     renderAlertaSemGrupo(data.sem_grupo_processos || []);
