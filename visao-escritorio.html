@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Visão Geral do Escritório · Peixoto &amp; Cury</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#003B5C;--navy-deep:#001E36;--teal:#006080;--teal2:#005D82;--cyan:#00AEEF;
+  --card:#0A2E44;--card2:#0D3A54;--border:rgba(0,174,239,0.14);--soft:#8FB0C4;
+  --verde:#1E7A3E;--ambar:#F39C12;--vermelho:#C0392B;--violeta:#8b7ee8;
+}
+*{box-sizing:border-box;margin:0;}
+html,body{height:100%;}
+body{
+  font-family:'Inter',system-ui,sans-serif;color:#eef6f9;min-height:100vh;
+  background:
+    radial-gradient(ellipse 900px 420px at 85% -10%,rgba(0,93,130,0.18),transparent),
+    linear-gradient(180deg,var(--navy),var(--navy-deep));
+  padding-bottom:40px;
+}
+a{color:inherit;}
+
+/* ── TOPBAR / LOGO ─────────────────────────────────────────────────────── */
+.topbar{
+  background:rgba(0,30,54,0.96);border-bottom:1px solid var(--border);
+  display:flex;align-items:center;gap:16px;padding:14px 26px;flex-wrap:wrap;
+  position:sticky;top:0;z-index:50;backdrop-filter:blur(6px);
+}
+.lw-mark{display:flex;flex-direction:column;line-height:1;}
+.lw-wordmark{display:inline-block;position:relative;line-height:1;}
+.lw-law{font-size:19px;font-weight:800;color:#fff;letter-spacing:-.5px;font-family:'Sora',sans-serif;}
+.lw-gico{font-size:19px;font-weight:300;color:#fff;letter-spacing:-.5px;font-family:'Sora',sans-serif;}
+.lw-mod{font-size:9px;font-weight:300;color:rgba(255,255,255,.7);font-family:'Sora',sans-serif;position:absolute;top:-11px;right:-58px;white-space:nowrap;}
+.lw-tag{font-size:7.5px;font-weight:300;letter-spacing:3px;color:rgba(255,255,255,.65);margin-top:1px;font-family:'Sora',sans-serif;text-transform:uppercase;}
+.divider-v{width:1px;height:28px;background:var(--border);}
+.product-name{line-height:1.1;}
+.product-name .pn{font-size:14px;font-weight:700;letter-spacing:.2px;color:#fff;}
+.product-name .pf{font-size:9.5px;font-weight:600;color:var(--soft);letter-spacing:2px;text-transform:uppercase;}
+.top-right{margin-left:auto;display:flex;align-items:center;gap:14px;}
+.live-badge{
+  display:flex;align-items:center;gap:6px;font-size:10.5px;font-weight:800;letter-spacing:1.5px;
+  color:var(--verde);border:1px solid rgba(30,122,62,.4);border-radius:20px;padding:5px 12px;
+  background:rgba(30,122,62,.1);
+}
+.live-dot{width:7px;height:7px;border-radius:50%;background:var(--verde);animation:pulse 1.6s infinite;}
+@keyframes pulse{0%,100%{opacity:1;}50%{opacity:.3;}}
+.clock{font-family:'Sora',sans-serif;font-size:20px;font-weight:700;color:var(--cyan);letter-spacing:.5px;min-width:70px;text-align:right;}
+.upd-note{font-size:10.5px;color:var(--soft);text-align:right;}
+
+/* ── TICKER ─────────────────────────────────────────────────────────────── */
+.ticker-wrap{background:var(--card2);border-bottom:1px solid var(--border);overflow:hidden;white-space:nowrap;padding:9px 0;}
+.ticker{display:inline-block;padding-left:100%;animation:ticker-scroll 38s linear infinite;font-size:12.5px;font-weight:600;}
+.ticker span{margin-right:56px;color:var(--soft);}
+.ticker b{color:#fff;}
+.ticker .up{color:var(--verde);} .ticker .down{color:var(--vermelho);}
+@keyframes ticker-scroll{0%{transform:translateX(0);}100%{transform:translateX(-100%);}}
+
+/* ── LAYOUT ─────────────────────────────────────────────────────────────── */
+.wrap{max-width:1400px;margin:0 auto;padding:28px 26px 0;}
+.page-head{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:22px;}
+.page-head h1{font-size:24px;font-weight:800;letter-spacing:-.2px;}
+.page-head .sub{font-size:12.5px;color:var(--soft);}
+.section-title{font-size:13px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--soft);margin:36px 0 14px;display:flex;align-items:center;gap:8px;}
+.section-title .line{flex:1;height:1px;background:var(--border);}
+
+/* KPI wallboard */
+.kpi-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;}
+.kpi{
+  background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px 18px 16px;
+  position:relative;overflow:hidden;
+}
+.kpi::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--teal2),var(--cyan));opacity:.7;}
+.kpi .lbl{font-size:10.5px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:var(--soft);}
+.kpi .val{font-family:'Sora',sans-serif;font-size:34px;font-weight:800;margin-top:8px;line-height:1;}
+.kpi .trend{font-size:11px;margin-top:8px;color:var(--soft);}
+.kpi .trend.up{color:var(--verde);} .kpi .trend.down{color:var(--vermelho);}
+.kpi.accent-verde .val{color:var(--verde);}
+.kpi.accent-vermelho .val{color:var(--vermelho);}
+.kpi.accent-cyan .val{color:var(--cyan);}
+.kpi.accent-ambar .val{color:var(--ambar);}
+
+/* generic card */
+.card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:22px 24px;}
+.card h3{font-size:14.5px;font-weight:800;margin-bottom:2px;}
+.card .desc{font-size:12px;color:var(--soft);margin-bottom:16px;}
+.grid-2{display:grid;grid-template-columns:1.5fr 1fr;gap:16px;}
+.grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;}
+
+/* tables */
+table{width:100%;border-collapse:collapse;font-size:12.5px;}
+th{text-align:left;font-size:10.5px;letter-spacing:.6px;text-transform:uppercase;color:var(--soft);
+   font-weight:700;padding:8px 10px;border-bottom:1px solid var(--border);}
+td{padding:9px 10px;border-bottom:1px solid rgba(255,255,255,0.04);}
+tr:last-child td{border-bottom:none;}
+.num{text-align:right;font-family:'Sora',sans-serif;font-weight:700;}
+.bar-cell{display:flex;align-items:center;gap:8px;}
+.bar-track{flex:1;height:6px;background:rgba(255,255,255,.07);border-radius:4px;overflow:hidden;min-width:50px;}
+.bar-fill{height:100%;border-radius:4px;background:linear-gradient(90deg,var(--teal2),var(--cyan));}
+.pill{display:inline-block;font-size:10px;font-weight:700;padding:2px 8px;border-radius:10px;}
+.pill.up{background:rgba(30,122,62,.15);color:var(--verde);}
+.pill.down{background:rgba(192,57,43,.15);color:var(--vermelho);}
+.pill.flat{background:rgba(143,176,196,.12);color:var(--soft);}
+.scroll-y{max-height:420px;overflow-y:auto;}
+.scroll-y::-webkit-scrollbar{width:6px;} .scroll-y::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px;}
+
+/* tornado */
+.tornado-row{display:grid;grid-template-columns:100px 30px 1fr 1fr 30px 110px;align-items:center;gap:8px;margin-bottom:11px;font-size:12px;}
+.tornado-label{font-weight:700;text-align:right;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.tornado-num{font-size:11.5px;font-weight:800;color:#fff;white-space:nowrap;}
+.tornado-num-l{text-align:right;}
+.tornado-num-r{text-align:left;}
+.tornado-bar-l,.tornado-bar-r{height:16px;border-radius:4px;}
+.tornado-bar-l{background:var(--violeta);margin-left:auto;}
+.tornado-bar-r{background:var(--teal2);}
+.tornado-total{color:var(--soft);font-size:11px;text-align:left;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.legend{display:flex;gap:18px;margin-top:14px;font-size:11.5px;color:var(--soft);}
+.legend span{display:inline-flex;align-items:center;gap:6px;}
+.dot{width:9px;height:9px;border-radius:3px;display:inline-block;}
+
+/* chart svg */
+.chart-wrap{width:100%;overflow-x:auto;}
+svg{display:block;}
+.axis-lbl{font-size:9.5px;fill:var(--soft);font-family:'Inter',sans-serif;}
+.gridline{stroke:rgba(255,255,255,.06);stroke-width:1;}
+
+footer{text-align:center;font-size:11px;color:#4d6a7a;padding:34px 0 10px;}
+
+@media(max-width:1150px){
+  .kpi-grid{grid-template-columns:repeat(3,1fr);}
+  .grid-2,.grid-3{grid-template-columns:1fr;}
+}
+@media(max-width:640px){
+  .kpi-grid{grid-template-columns:repeat(2,1fr);}
+  .tornado-row{grid-template-columns:80px 1fr 1fr 60px;}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="lw-mark">
+    <div class="lw-wordmark"><span class="lw-law">LAW</span><span class="lw-gico">gico</span><span class="lw-mod">Visão Geral</span></div>
+    <div class="lw-tag">lawyers at work</div>
+  </div>
+  <div class="divider-v"></div>
+  <div class="product-name">
+    <div class="pn">Visão Geral do Escritório</div>
+    <div class="pf">Peixoto &amp; Cury Advogados</div>
+  </div>
+  <div class="top-right">
+    <div class="upd-note" id="updNote">carregando…</div>
+    <div class="clock" id="clock">--:--</div>
+    <div class="live-badge"><span class="live-dot"></span>AO VIVO</div>
+  </div>
+</div>
+
+<div class="ticker-wrap"><div class="ticker" id="ticker">Carregando indicadores…</div></div>
+
+<div class="wrap">
+  <div class="page-head">
+    <div>
+      <h1>Contencioso Trabalhista — Andamento, Entradas e Saídas</h1>
+      <div class="sub">Base viva do LM · atualiza automaticamente a cada sincronização · só processos EM ANDAMENTO da área TRABALHISTA (encerrados saem da base)</div>
+    </div>
+  </div>
+
+  <div class="kpi-grid" id="kpiGrid"></div>
+
+  <div class="section-title"><span>Entradas × Saídas — últimos 60 dias</span><span class="line"></span></div>
+  <div class="card">
+    <div class="chart-wrap"><svg id="chartSerie" width="1340" height="300"></svg></div>
+    <div class="legend">
+      <span><span class="dot" style="background:var(--cyan)"></span>Entradas</span>
+      <span><span class="dot" style="background:var(--vermelho)"></span>Saídas</span>
+    </div>
+  </div>
+
+  <div class="section-title"><span>Entradas × Saídas por Grupo — mês atual</span><span class="line"></span></div>
+  <div class="card">
+    <h3>Gráfico Tornado</h3>
+    <div class="desc">Compare o volume de novos casos com o de encerramentos em cada grupo, no mês em curso.</div>
+    <div id="tornadoGrupo"></div>
+    <div class="legend">
+      <span><span class="dot" style="background:var(--violeta)"></span>Saídas (mês)</span>
+      <span><span class="dot" style="background:var(--teal2)"></span>Entradas (mês)</span>
+    </div>
+  </div>
+
+  <div class="section-title"><span>Por Grupo · Cliente · Profissional</span><span class="line"></span></div>
+  <div class="grid-3">
+    <div class="card">
+      <h3>Por Grupo</h3>
+      <div class="desc">Carteira em andamento e movimento do mês.</div>
+      <div class="scroll-y"><table id="tblGrupo"><thead><tr><th>Grupo</th><th class="num">Andamento</th><th class="num">Entr.</th><th class="num">Saí.</th></tr></thead><tbody></tbody></table></div>
+    </div>
+    <div class="card">
+      <h3>Top Clientes</h3>
+      <div class="desc">Maiores carteiras ativas (top 20).</div>
+      <div class="scroll-y"><table id="tblCliente"><thead><tr><th>Cliente</th><th class="num">Andamento</th></tr></thead><tbody></tbody></table></div>
+    </div>
+    <div class="card">
+      <h3>Por Profissional</h3>
+      <div class="desc">Distribuição da carteira ativa por advogado(a).</div>
+      <div class="scroll-y"><table id="tblProf"><thead><tr><th>Profissional</th><th class="num">Andamento</th></tr></thead><tbody></tbody></table></div>
+    </div>
+  </div>
+
+  <div class="section-title"><span>Valor da Causa em Andamento — por Grupo</span><span class="line"></span></div>
+  <div class="card">
+    <h3>Exposição total</h3>
+    <div class="desc" id="valorTotalDesc"></div>
+    <div id="barrasValor"></div>
+  </div>
+
+  <footer>Peixoto &amp; Cury Advogados · Controladoria — Visão Geral do Escritório · dados sincronizados automaticamente do LM</footer>
+</div>
+
+<script>
+const DATA_URL = 'https://raw.githubusercontent.com/peixotoecury/dashboard-juridico/data/processos_trabalhista.json';
+const REFRESH_MS = 10 * 60 * 1000; // 10 min
+
+function fmtInt(n){ return (n||0).toLocaleString('pt-BR'); }
+function fmtMoney(n){
+  n = n||0;
+  if(Math.abs(n) >= 1e9) return 'R$ ' + (n/1e9).toFixed(2).replace('.',',') + ' bi';
+  if(Math.abs(n) >= 1e6) return 'R$ ' + (n/1e6).toFixed(2).replace('.',',') + ' mi';
+  if(Math.abs(n) >= 1e3) return 'R$ ' + (n/1e3).toFixed(0).replace('.',',') + ' mil';
+  return 'R$ ' + n.toFixed(0);
+}
+function pillTrend(atual, anterior){
+  if(anterior === 0 && atual === 0) return '<span class="pill flat">—</span>';
+  if(anterior === 0) return '<span class="pill up">novo</span>';
+  const delta = ((atual - anterior) / anterior) * 100;
+  if(Math.abs(delta) < 1) return '<span class="pill flat">≈ estável</span>';
+  const cls = delta > 0 ? 'up' : 'down';
+  const arrow = delta > 0 ? '▲' : '▼';
+  return `<span class="pill ${cls}">${arrow} ${Math.abs(delta).toFixed(0)}%</span>`;
+}
+
+function updateClock(){
+  const d = new Date();
+  document.getElementById('clock').textContent =
+    d.getHours().toString().padStart(2,'0') + ':' + d.getMinutes().toString().padStart(2,'0');
+}
+setInterval(updateClock, 1000); updateClock();
+
+function renderKpis(k){
+  const items = [
+    {lbl:'Em andamento', val: fmtInt(k.total_andamento), accent:'cyan'},
+    {lbl:'Entradas hoje', val: fmtInt(k.entradas_hoje), accent:'verde',
+      trend: `ontem: ${fmtInt(k.entradas_ontem)}`},
+    {lbl:'Saídas hoje', val: fmtInt(k.saidas_hoje), accent:'vermelho',
+      trend: `ontem: ${fmtInt(k.saidas_ontem)}`},
+    {lbl:'Entradas no mês', val: fmtInt(k.entradas_mes), accent:'verde',
+      trend: `mês ant.: ${fmtInt(k.entradas_mes_anterior)}`},
+    {lbl:'Saídas no mês', val: fmtInt(k.saidas_mes), accent:'vermelho',
+      trend: `mês ant.: ${fmtInt(k.saidas_mes_anterior)}`},
+    {lbl:'Saldo do mês', val: (k.saldo_mes>0?'+':'') + fmtInt(k.saldo_mes), accent: k.saldo_mes>=0?'verde':'vermelho',
+      trend: 'entradas − saídas'},
+  ];
+  document.getElementById('kpiGrid').innerHTML = items.map(it => `
+    <div class="kpi accent-${it.accent}">
+      <div class="lbl">${it.lbl}</div>
+      <div class="val">${it.val}</div>
+      <div class="trend">${it.trend||''}</div>
+    </div>`).join('');
+}
+
+function renderTicker(k, porGrupo){
+  const top = porGrupo.slice().sort((a,b)=>b.andamento-a.andamento)[0];
+  const maiorSaida = porGrupo.slice().sort((a,b)=>b.saidas_mes-a.saidas_mes)[0];
+  const parts = [
+    `<span><b>${fmtInt(k.total_andamento)}</b> processos trabalhistas em andamento no escritório</span>`,
+    `<span><b>${fmtInt(k.entradas_hoje)}</b> entradas hoje · <b>${fmtInt(k.saidas_hoje)}</b> saídas hoje</span>`,
+    `<span>Saldo do mês: <b class="${k.saldo_mes>=0?'up':'down'}">${k.saldo_mes>=0?'+':''}${fmtInt(k.saldo_mes)}</b> processos</span>`,
+    `<span>Exposição total em andamento: <b>${fmtMoney(k.valor_causa_total)}</b></span>`,
+    top?`<span>Maior carteira: <b>${top.nome}</b> (${fmtInt(top.andamento)} processos)</span>`:'',
+    maiorSaida?`<span>Grupo com mais saídas no mês: <b>${maiorSaida.nome}</b> (${fmtInt(maiorSaida.saidas_mes)})</span>`:'',
+  ].filter(Boolean);
+  document.getElementById('ticker').innerHTML = parts.join('');
+}
+
+function renderSerie(serie){
+  const svg = document.getElementById('chartSerie');
+  const W = 1340, H = 300, padL = 40, padR = 10, padT = 20, padB = 30;
+  const innerW = W - padL - padR, innerH = H - padT - padB;
+  const maxV = Math.max(1, ...serie.map(d=>Math.max(d.entradas,d.saidas)));
+  const stepX = innerW / (serie.length - 1);
+  const y = v => padT + innerH - (v/maxV)*innerH;
+  const x = i => padL + i*stepX;
+
+  let grid = '';
+  for(let g=0; g<=4; g++){
+    const gy = padT + innerH - (g/4)*innerH;
+    grid += `<line class="gridline" x1="${padL}" y1="${gy}" x2="${W-padR}" y2="${gy}"></line>`;
+    grid += `<text class="axis-lbl" x="4" y="${gy+3}">${Math.round(maxV*g/4)}</text>`;
+  }
+
+  function pathFor(key){
+    return serie.map((d,i) => `${i===0?'M':'L'}${x(i).toFixed(1)},${y(d[key]).toFixed(1)}`).join(' ');
+  }
+  let dateLbls = '';
+  serie.forEach((d,i) => {
+    if(i % 7 === 0){
+      const dt = new Date(d.data);
+      dateLbls += `<text class="axis-lbl" x="${x(i).toFixed(1)}" y="${H-8}" text-anchor="middle">${dt.getDate()}/${dt.getMonth()+1}</text>`;
+    }
+  });
+
+  svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+  svg.innerHTML = `
+    ${grid}
+    <path d="${pathFor('entradas')}" fill="none" stroke="var(--cyan)" stroke-width="2.2"></path>
+    <path d="${pathFor('saidas')}" fill="none" stroke="var(--vermelho)" stroke-width="2.2"></path>
+    ${dateLbls}
+  `;
+}
+
+function renderTornado(porGrupo){
+  const top = porGrupo.slice().sort((a,b)=> (b.entradas_mes+b.saidas_mes) - (a.entradas_mes+a.saidas_mes)).slice(0,12);
+  const maxV = Math.max(1, ...top.map(g=>Math.max(g.entradas_mes,g.saidas_mes)));
+  const el = document.getElementById('tornadoGrupo');
+  el.innerHTML = top.map(g => {
+    const wL = Math.max(3,(g.saidas_mes/maxV)*100);
+    const wR = Math.max(3,(g.entradas_mes/maxV)*100);
+    return `
+    <div class="tornado-row">
+      <div class="tornado-label">${g.nome}</div>
+      <div class="tornado-num tornado-num-l">${fmtInt(g.saidas_mes)}</div>
+      <div class="tornado-bar-l" style="width:${wL}%"></div>
+      <div class="tornado-bar-r" style="width:${wR}%"></div>
+      <div class="tornado-num tornado-num-r">${fmtInt(g.entradas_mes)}</div>
+      <div class="tornado-total">andamento: ${fmtInt(g.andamento)}</div>
+    </div>`;
+  }).join('');
+}
+
+function renderTabelas(porGrupo, porCliente, porProf){
+  const tGrupo = document.querySelector('#tblGrupo tbody');
+  tGrupo.innerHTML = porGrupo.map(g => `
+    <tr><td>${g.nome}</td><td class="num">${fmtInt(g.andamento)}</td>
+    <td class="num" style="color:var(--verde)">+${fmtInt(g.entradas_mes)}</td>
+    <td class="num" style="color:var(--vermelho)">-${fmtInt(g.saidas_mes)}</td></tr>`).join('');
+
+  const maxCliente = Math.max(1, ...porCliente.map(c=>c.andamento));
+  const tCliente = document.querySelector('#tblCliente tbody');
+  tCliente.innerHTML = porCliente.map(c => `
+    <tr><td>${c.nome}</td><td class="num">
+      <div class="bar-cell"><div class="bar-track"><div class="bar-fill" style="width:${(c.andamento/maxCliente*100).toFixed(0)}%"></div></div>
+      <span>${fmtInt(c.andamento)}</span></div>
+    </td></tr>`).join('');
+
+  const maxProf = Math.max(1, ...porProf.map(p=>p.andamento));
+  const tProf = document.querySelector('#tblProf tbody');
+  tProf.innerHTML = porProf.slice().sort((a,b)=>b.andamento-a.andamento).map(p => `
+    <tr><td>${p.nome}</td><td class="num">
+      <div class="bar-cell"><div class="bar-track"><div class="bar-fill" style="width:${(p.andamento/maxProf*100).toFixed(0)}%"></div></div>
+      <span>${fmtInt(p.andamento)}</span></div>
+    </td></tr>`).join('');
+}
+
+function renderValores(porGrupo, total){
+  document.getElementById('valorTotalDesc').textContent =
+    `Total em andamento (trabalhista): ${fmtMoney(total)} — distribuído entre ${porGrupo.length} grupos.`;
+  const maxV = Math.max(1, ...porGrupo.map(g=>g.valor_causa));
+  const ordenado = porGrupo.slice().sort((a,b)=>b.valor_causa-a.valor_causa);
+  document.getElementById('barrasValor').innerHTML = ordenado.map(g => `
+    <div class="tornado-row" style="grid-template-columns:120px 1fr 90px;">
+      <div class="tornado-label">${g.nome}</div>
+      <div class="bar-track" style="height:20px;"><div class="bar-fill" style="width:${(g.valor_causa/maxV*100).toFixed(0)}%;height:100%;"></div></div>
+      <div class="tornado-total" style="text-align:right;">${fmtMoney(g.valor_causa)}</div>
+    </div>`).join('');
+}
+
+async function carregar(){
+  try{
+    const resp = await fetch(DATA_URL + '?t=' + Date.now(), {cache:'no-store'});
+    const data = await resp.json();
+    renderKpis(data.kpis);
+    renderTicker(data.kpis, data.por_grupo);
+    renderSerie(data.serie_diaria);
+    renderTornado(data.por_grupo);
+    renderTabelas(data.por_grupo, data.por_cliente, data.por_profissional);
+    renderValores(data.por_grupo, data.kpis.valor_causa_total);
+    const dt = new Date(data.atualizado_em);
+    document.getElementById('updNote').textContent =
+      'Atualizado ' + dt.toLocaleDateString('pt-BR') + ' ' + dt.toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});
+  }catch(e){
+    document.getElementById('updNote').textContent = 'Falha ao carregar dados — tentando novamente…';
+    console.error(e);
+  }
+}
+
+carregar();
+setInterval(carregar, REFRESH_MS);
+</script>
+</body>
+</html>
