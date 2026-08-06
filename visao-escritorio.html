@@ -8,106 +8,113 @@
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
-  --navy:#003B5C;--navy-deep:#001E36;--teal:#006080;--teal2:#005D82;--cyan:#00AEEF;
-  --card:#0A2E44;--card2:#0D3A54;--border:rgba(0,174,239,0.14);--soft:#8FB0C4;
-  --verde:#1E7A3E;--ambar:#F39C12;--vermelho:#C0392B;--violeta:#8b7ee8;
+  --navy:#003a50;--teal:#006080;--teal2:#006080;--cyan:#00a9e0;
+  --card:#ffffff;--card2:#eef3f6;--border:#dde3e8;--soft:#607d8b;
+  --verde:#2d7d46;--ambar:#e07a1f;--vermelho:#d62828;--violeta:#8b7ee8;
+  --ink:#0d1b21;--shadow:0 1px 4px rgba(0,0,0,.08);--shadow2:0 6px 18px rgba(0,70,95,.08);
+  --verde-lt:#e8f5e9;--ambar-lt:#fff3e0;--vermelho-lt:#fdecea;
 }
 *{box-sizing:border-box;margin:0;}
 html,body{height:100%;}
 body{
-  font-family:'Inter',system-ui,sans-serif;color:#eef6f9;min-height:100vh;
-  background:var(--navy-deep);
+  font-family:'Inter',system-ui,sans-serif;color:var(--ink);min-height:100vh;
+  background:var(--card2);
   padding-bottom:40px;
 }
 a{color:inherit;}
 
 /* ── TOPBAR / LOGO ─────────────────────────────────────────────────────── */
 .topbar{
-  background:rgba(0,30,54,0.96);border-bottom:1px solid var(--border);
-  display:flex;align-items:center;gap:16px;padding:14px 26px;flex-wrap:wrap;
-  position:sticky;top:0;z-index:50;backdrop-filter:blur(6px);
+  background:linear-gradient(90deg,var(--navy) 0%,var(--teal) 55%,var(--teal) 100%);
+  box-shadow:0 2px 8px rgba(0,0,0,.25);
+  display:flex;align-items:center;gap:16px;padding:12px 26px;flex-wrap:wrap;
+  position:sticky;top:0;z-index:50;
 }
 .lw-mark{display:flex;flex-direction:column;line-height:1;}
 .lw-wordmark{display:inline-block;position:relative;line-height:1;}
 .lw-law{font-size:19px;font-weight:800;color:#fff;letter-spacing:-.5px;font-family:'Sora',sans-serif;}
 .lw-gico{font-size:19px;font-weight:300;color:#fff;letter-spacing:-.5px;font-family:'Sora',sans-serif;}
-.lw-mod{font-size:9px;font-weight:300;color:rgba(255,255,255,.7);font-family:'Sora',sans-serif;position:absolute;top:-11px;left:50%;transform:translateX(-50%);white-space:nowrap;}
-.lw-tag{font-size:7.5px;font-weight:300;letter-spacing:3px;color:rgba(255,255,255,.65);margin-top:1px;font-family:'Sora',sans-serif;text-transform:uppercase;}
-.divider-v{width:1px;height:28px;background:var(--border);}
+.lw-mod{font-size:9px;font-weight:300;color:rgba(255,255,255,.75);font-family:'Sora',sans-serif;position:absolute;top:-11px;left:50%;transform:translateX(-50%);white-space:nowrap;}
+.lw-tag{font-size:7.5px;font-weight:300;letter-spacing:3px;color:rgba(255,255,255,.7);margin-top:1px;font-family:'Sora',sans-serif;text-transform:uppercase;}
+.divider-v{width:1px;height:28px;background:rgba(255,255,255,.2);}
 .product-name{line-height:1.1;}
 .product-name .pn{font-size:14px;font-weight:700;letter-spacing:.2px;color:#fff;}
-.product-name .pf{font-size:9.5px;font-weight:600;color:var(--soft);letter-spacing:2px;text-transform:uppercase;}
+.product-name .pf{font-size:9.5px;font-weight:600;color:rgba(255,255,255,.65);letter-spacing:2px;text-transform:uppercase;}
 .top-right{margin-left:auto;display:flex;align-items:center;gap:14px;}
 .live-badge{
   display:flex;align-items:center;gap:6px;font-size:10.5px;font-weight:800;letter-spacing:1.5px;
-  color:var(--verde);border:1px solid rgba(30,122,62,.4);border-radius:20px;padding:5px 12px;
-  background:rgba(30,122,62,.1);
+  color:#c8f7d4;border:1px solid rgba(255,255,255,.3);border-radius:20px;padding:5px 12px;
+  background:rgba(255,255,255,.08);
 }
-.live-dot{width:7px;height:7px;border-radius:50%;background:var(--verde);animation:pulse 1.6s infinite;}
+.live-dot{width:7px;height:7px;border-radius:50%;background:#4ee08a;animation:pulse 1.6s infinite;}
 @keyframes pulse{0%,100%{opacity:1;}50%{opacity:.3;}}
-.clock{font-family:'Sora',sans-serif;font-size:20px;font-weight:700;color:var(--cyan);letter-spacing:.5px;min-width:70px;text-align:right;}
-.upd-note{font-size:10.5px;color:var(--soft);text-align:right;}
+.clock{font-family:'Sora',sans-serif;font-size:20px;font-weight:700;color:#fff;letter-spacing:.5px;min-width:70px;text-align:right;}
+.upd-note{font-size:10.5px;color:rgba(255,255,255,.7);text-align:right;}
 
 /* ── TICKER ─────────────────────────────────────────────────────────────── */
-.ticker-wrap{background:var(--card2);border-bottom:1px solid var(--border);overflow:hidden;white-space:nowrap;padding:9px 0;}
+.ticker-wrap{background:#fff;border-bottom:1px solid var(--border);box-shadow:var(--shadow);overflow:hidden;white-space:nowrap;padding:9px 0;}
 .ticker{display:inline-block;padding-left:100%;animation:ticker-scroll 38s linear infinite;font-size:12.5px;font-weight:600;}
 .ticker span{margin-right:56px;color:var(--soft);}
-.ticker b{color:#fff;}
+.ticker b{color:var(--navy);}
 .ticker .up{color:var(--verde);} .ticker .down{color:var(--vermelho);}
 @keyframes ticker-scroll{0%{transform:translateX(0);}100%{transform:translateX(-100%);}}
 
 /* ── LAYOUT ─────────────────────────────────────────────────────────────── */
-.wrap{max-width:1400px;margin:0 auto;padding:28px 26px 0;}
-.page-head{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:22px;}
-.page-head h1{font-size:24px;font-weight:800;letter-spacing:-.2px;}
+.wrap{max-width:1400px;margin:0 auto;padding:22px 26px 0;}
+.page-head{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:18px;}
+.page-head h1{font-size:21px;font-weight:800;letter-spacing:-.2px;color:var(--navy);}
 .page-head .sub{font-size:12.5px;color:var(--soft);}
-.section-title{font-size:13px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--soft);margin:36px 0 14px;display:flex;align-items:center;gap:8px;}
-.section-title .line{flex:1;height:1px;background:var(--border);}
+.section-label{font-size:11.5px;font-weight:800;letter-spacing:.8px;text-transform:uppercase;color:var(--soft);margin:26px 2px 10px;}
 
-/* KPI wallboard */
-.kpi-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;}
+/* KPI strip */
+.kpi-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:0;background:#fff;border:1px solid var(--border);border-radius:10px;padding:14px 18px;box-shadow:var(--shadow);margin-bottom:6px;}
 .kpi{
-  background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px 18px 16px;
-  position:relative;overflow:hidden;
+  padding:6px 14px;border-left:1px solid var(--border);border-top:3px solid var(--teal);
+  border-radius:6px 6px 0 0;position:relative;
 }
-.kpi::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--teal2),var(--cyan));opacity:.7;}
-.kpi .lbl{font-size:10.5px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:var(--soft);}
-.kpi .val{font-family:'Sora',sans-serif;font-size:34px;font-weight:800;margin-top:8px;line-height:1;}
-.kpi .trend{font-size:11px;margin-top:8px;color:var(--soft);}
-.kpi .trend.up{color:var(--verde);} .kpi .trend.down{color:var(--vermelho);}
-.kpi.accent-verde .val{color:var(--verde);}
-.kpi.accent-vermelho .val{color:var(--vermelho);}
-.kpi.accent-cyan .val{color:var(--cyan);}
-.kpi.accent-ambar .val{color:var(--ambar);}
+.kpi:first-child{border-left:none;}
+.kpi .lbl{font-size:9.5px;font-weight:800;letter-spacing:.7px;text-transform:uppercase;color:var(--teal);}
+.kpi .val{font-family:'Sora',sans-serif;font-size:30px;font-weight:800;margin-top:4px;line-height:1;color:var(--teal);}
+.kpi .trend{font-size:10.5px;margin-top:6px;color:var(--soft);}
+.kpi.accent-verde{border-top-color:var(--verde);} .kpi.accent-verde .lbl,.kpi.accent-verde .val{color:var(--verde);}
+.kpi.accent-vermelho{border-top-color:var(--vermelho);} .kpi.accent-vermelho .lbl,.kpi.accent-vermelho .val{color:var(--vermelho);}
+.kpi.accent-cyan{border-top-color:var(--cyan);} .kpi.accent-cyan .lbl,.kpi.accent-cyan .val{color:var(--cyan);}
+.kpi.accent-ambar{border-top-color:var(--ambar);} .kpi.accent-ambar .lbl,.kpi.accent-ambar .val{color:var(--ambar);}
 
-/* generic card */
-.card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:22px 24px;}
-.card h3{font-size:14.5px;font-weight:800;margin-bottom:2px;}
-.card .desc{font-size:12px;color:var(--soft);margin-bottom:16px;}
+/* generic card (estilo .tbl-card / .det-card do padrão P&C) */
+.card{background:var(--card);border:1px solid var(--border);border-radius:10px;overflow:hidden;box-shadow:var(--shadow);}
+.card-hdr{
+  background:linear-gradient(90deg,var(--navy),var(--teal));color:#fff;
+  padding:11px 18px;font-size:12px;font-weight:800;letter-spacing:.4px;text-transform:uppercase;
+  display:flex;align-items:center;gap:8px;
+}
+.card-body{padding:18px 20px;}
+.card .desc{font-size:12px;color:var(--soft);margin-bottom:14px;}
 .grid-2{display:grid;grid-template-columns:1.5fr 1fr;gap:16px;}
 .grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;}
 
 /* tables */
 table{width:100%;border-collapse:collapse;font-size:12.5px;}
-th{text-align:left;font-size:10.5px;letter-spacing:.6px;text-transform:uppercase;color:var(--soft);
-   font-weight:700;padding:8px 10px;border-bottom:1px solid var(--border);}
-td{padding:9px 10px;border-bottom:1px solid rgba(255,255,255,0.04);}
+th{text-align:left;font-size:10px;letter-spacing:.5px;text-transform:uppercase;color:var(--soft);
+   background:var(--card2);font-weight:700;padding:8px 12px;border-bottom:1px solid var(--border);}
+td{padding:8px 12px;border-bottom:1px solid #f0f4f6;color:var(--ink);}
+tbody tr:hover{background:#f5fafd;}
 tr:last-child td{border-bottom:none;}
 .num{text-align:right;font-family:'Sora',sans-serif;font-weight:700;}
 .bar-cell{display:flex;align-items:center;gap:8px;}
-.bar-track{flex:1;height:6px;background:rgba(255,255,255,.07);border-radius:4px;overflow:hidden;min-width:50px;}
+.bar-track{flex:1;height:6px;background:var(--card2);border-radius:4px;overflow:hidden;min-width:50px;}
 .bar-fill{height:100%;border-radius:4px;background:linear-gradient(90deg,var(--teal2),var(--cyan));}
 .pill{display:inline-block;font-size:10px;font-weight:700;padding:2px 8px;border-radius:10px;}
-.pill.up{background:rgba(30,122,62,.15);color:var(--verde);}
-.pill.down{background:rgba(192,57,43,.15);color:var(--vermelho);}
-.pill.flat{background:rgba(143,176,196,.12);color:var(--soft);}
+.pill.up{background:var(--verde-lt);color:var(--verde);}
+.pill.down{background:var(--vermelho-lt);color:var(--vermelho);}
+.pill.flat{background:var(--card2);color:var(--soft);}
 .scroll-y{max-height:420px;overflow-y:auto;}
 .scroll-y::-webkit-scrollbar{width:6px;} .scroll-y::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px;}
 
 /* tornado */
 .tornado-row{display:grid;grid-template-columns:100px 30px 1fr 1fr 30px 110px;align-items:center;gap:8px;margin-bottom:11px;font-size:12px;}
-.tornado-label{font-weight:700;text-align:right;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
-.tornado-num{font-size:11.5px;font-weight:800;color:#fff;white-space:nowrap;}
+.tornado-label{font-weight:700;text-align:right;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--ink);}
+.tornado-num{font-size:11.5px;font-weight:800;color:var(--ink);white-space:nowrap;}
 .tornado-num-l{text-align:right;}
 .tornado-num-r{text-align:left;}
 .tornado-bar-l,.tornado-bar-r{height:16px;border-radius:4px;}
@@ -122,41 +129,43 @@ tr:last-child td{border-bottom:none;}
 .chart-wrap{width:100%;overflow-x:auto;}
 svg{display:block;}
 .axis-lbl{font-size:9.5px;fill:var(--soft);font-family:'Inter',sans-serif;}
-.gridline{stroke:rgba(255,255,255,.06);stroke-width:1;}
+.gridline{stroke:var(--border);stroke-width:1;}
 
-footer{text-align:center;font-size:11px;color:#4d6a7a;padding:34px 0 10px;}
+footer{text-align:center;font-size:11px;color:var(--soft);padding:34px 0 10px;}
 
 /* ── TABS ───────────────────────────────────────────────────────────────── */
-.tabs-nav{display:flex;gap:8px;margin-bottom:6px;flex-wrap:wrap;}
+.tabs-nav{display:flex;gap:4px;margin-bottom:16px;flex-wrap:wrap;background:#fff;border:1px solid var(--border);border-radius:10px;padding:0 8px;box-shadow:var(--shadow);}
 .tab-btn{
-  font-family:inherit;font-size:12.5px;font-weight:700;background:transparent;
-  border:1px solid var(--border);color:var(--soft);border-radius:9px;padding:9px 16px;cursor:pointer;transition:all .15s;
+  font-family:inherit;font-size:12.5px;font-weight:600;background:transparent;
+  border:none;border-bottom:3px solid transparent;color:var(--soft);padding:12px 14px;cursor:pointer;transition:all .15s;
 }
-.tab-btn:hover{border-color:var(--cyan);color:#fff;}
-.tab-btn.active{background:linear-gradient(135deg,var(--teal2),var(--teal));border-color:transparent;color:#fff;}
+.tab-btn:hover{color:var(--ink);}
+.tab-btn.active{color:var(--teal);border-bottom-color:var(--teal);font-weight:800;}
 .tab-panel{display:none;}
 .tab-panel.active{display:block;}
 
 /* ── ALERTA ─────────────────────────────────────────────────────────────── */
 .alert-banner{
-  background:rgba(192,57,43,.09);border:1px solid rgba(192,57,43,.35);border-radius:14px;
-  padding:16px 20px;margin-bottom:24px;display:none;
+  background:var(--vermelho-lt);border:1px solid #f5c6c6;border-radius:10px;
+  padding:14px 18px;margin-bottom:16px;display:none;box-shadow:var(--shadow);
 }
 .alert-banner.show{display:block;}
-.alert-banner .ttl{font-size:13.5px;font-weight:800;color:#ff8a7a;display:flex;align-items:center;gap:8px;}
-.alert-banner .desc{font-size:12px;color:var(--soft);margin:6px 0 12px;}
+.alert-banner .ttl{font-size:13px;font-weight:800;color:#7b0000;display:flex;align-items:center;gap:8px;}
+.alert-banner .desc{font-size:12px;color:#8a3b3b;margin:6px 0 12px;}
 .alert-list{display:flex;flex-wrap:wrap;gap:8px;}
 .alert-chip{
-  font-size:11.5px;background:rgba(192,57,43,.12);border:1px solid rgba(192,57,43,.3);
-  border-radius:8px;padding:5px 10px;color:#f3d9d6;
+  font-size:11.5px;background:#fff;border:1px solid #f0d0d0;
+  border-radius:8px;padding:5px 10px;color:#7b0000;
 }
-.alert-chip b{color:#fff;}
-.alert-banner.warn{background:rgba(243,156,18,.09);border-color:rgba(243,156,18,.35);}
-.alert-banner.warn .ttl{color:var(--ambar);}
-.alert-banner.warn .alert-chip{background:rgba(243,156,18,.12);border-color:rgba(243,156,18,.3);color:#fbe4bd;}
+.alert-chip b{color:var(--vermelho);}
+.alert-banner.warn{background:var(--ambar-lt);border-color:#f0dca0;}
+.alert-banner.warn .ttl{color:#7a4a00;}
+.alert-banner.warn .desc{color:#8a6a30;}
+.alert-banner.warn .alert-chip{border-color:#f0dca0;color:#7a4a00;}
+.alert-banner.warn .alert-chip b{color:var(--ambar);}
 .alert-toggle{
-  font-family:inherit;font-size:11px;font-weight:700;background:transparent;color:inherit;
-  border:1px solid currentColor;opacity:.75;border-radius:7px;padding:4px 10px;cursor:pointer;margin-top:2px;
+  font-family:inherit;font-size:11px;font-weight:700;background:#fff;color:inherit;
+  border:1px solid currentColor;opacity:.8;border-radius:7px;padding:4px 10px;cursor:pointer;margin-top:2px;
 }
 .alert-toggle:hover{opacity:1;}
 .alert-list{display:none;margin-top:12px;}
@@ -168,10 +177,10 @@ footer{text-align:center;font-size:11px;color:#4d6a7a;padding:34px 0 10px;}
   position:relative;height:38px;display:flex;align-items:center;justify-content:center;gap:8px;
   color:#fff;font-weight:700;font-size:11.5px;letter-spacing:.2px;cursor:pointer;transition:filter .15s,transform .15s;
   clip-path:polygon(6% 0,94% 0,88% 100%,12% 100%);
-  box-shadow:0 2px 8px rgba(0,0,0,.18);
+  box-shadow:0 2px 6px rgba(0,60,90,.18);
 }
-.funil-stage:hover{filter:brightness(1.15);transform:translateY(-1px);}
-.funil-stage.active{outline:2px solid #fff;outline-offset:-2px;}
+.funil-stage:hover{filter:brightness(1.1);transform:translateY(-1px);}
+.funil-stage.active{outline:2px solid var(--navy);outline-offset:-2px;}
 .funil-stage .fn-n{font-size:13.5px;font-weight:800;}
 .funil-drill{margin-top:16px;}
 .funil-drill-hint{font-size:11.5px;color:var(--soft);text-align:center;margin-top:10px;}
@@ -179,38 +188,37 @@ footer{text-align:center;font-size:11px;color:#4d6a7a;padding:34px 0 10px;}
 /* ── MAPA ───────────────────────────────────────────────────────────────── */
 .mapa-wrap{display:flex;gap:24px;flex-wrap:wrap;align-items:flex-start;}
 .mapa-svg-wrap{flex:0 0 auto;}
-.mapa-tile{cursor:default;}
-.mapa-tile rect{stroke:rgba(255,255,255,.15);stroke-width:1;rx:5;}
+.mapa-tile{cursor:pointer;}
+.mapa-tile rect{stroke:var(--border);stroke-width:1;rx:5;}
 .mapa-tile text{font-family:'Inter',sans-serif;text-anchor:middle;pointer-events:none;}
-.mapa-tile .uf-lbl{font-size:10px;font-weight:800;fill:#fff;}
-.mapa-tile .uf-val{font-size:8.5px;font-weight:600;fill:rgba(255,255,255,.85);}
+.mapa-tile .uf-lbl{font-size:10px;font-weight:800;}
+.mapa-tile .uf-val{font-size:8.5px;font-weight:600;}
 .mapa-legend-scale{display:flex;align-items:center;gap:6px;margin-top:10px;font-size:10.5px;color:var(--soft);}
 .mapa-legend-scale .sw{width:14px;height:10px;border-radius:2px;}
 .mapa-ranking{flex:1;min-width:220px;}
 
 /* ── CARDS POR GRUPO ────────────────────────────────────────────────────── */
-.grupo-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:14px;}
+.grupo-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px;}
 .grupo-card{
-  background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px 16px 14px;
-  position:relative;overflow:hidden;
+  background:var(--card);border:1px solid var(--border);border-top:3px solid var(--teal);border-radius:8px;
+  padding:14px 15px 12px;box-shadow:var(--shadow);
 }
-.grupo-card::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--teal2),var(--cyan));opacity:.7;}
-.grupo-card .gc-nome{font-size:11px;font-weight:800;letter-spacing:.6px;text-transform:uppercase;color:var(--soft);}
-.grupo-card .gc-val{font-family:'Sora',sans-serif;font-size:30px;font-weight:800;color:var(--cyan);margin-top:6px;line-height:1;}
-.grupo-card .gc-mov{display:flex;gap:10px;margin-top:10px;font-size:11.5px;font-weight:700;}
+.grupo-card .gc-nome{font-size:10.5px;font-weight:800;letter-spacing:.5px;text-transform:uppercase;color:var(--teal);}
+.grupo-card .gc-val{font-family:'Sora',sans-serif;font-size:27px;font-weight:800;color:var(--navy);margin-top:5px;line-height:1;}
+.grupo-card .gc-mov{display:flex;gap:10px;margin-top:9px;font-size:11.5px;font-weight:700;}
 .grupo-card .gc-mov .in{color:var(--verde);} .grupo-card .gc-mov .out{color:var(--vermelho);}
 
 /* ── BARRAS GRUPO (entradas x saídas) ──────────────────────────────────── */
-.barchart-wrap{display:flex;align-items:flex-end;gap:16px;height:220px;padding:0 6px 0;overflow-x:auto;}
+.barchart-wrap{display:flex;align-items:flex-end;gap:16px;height:220px;padding:20px 6px 0;overflow-x:auto;}
 .barchart-col{display:flex;flex-direction:column;align-items:center;gap:6px;min-width:56px;cursor:pointer;}
 .barchart-bars{display:flex;align-items:flex-end;gap:3px;height:170px;}
 .barchart-bar{width:16px;border-radius:3px 3px 0 0;position:relative;transition:filter .15s;}
-.barchart-col:hover .barchart-bar{filter:brightness(1.25);}
-.barchart-col.active .barchart-bar{outline:2px solid #fff;outline-offset:1px;}
+.barchart-col:hover .barchart-bar{filter:brightness(1.15);}
+.barchart-col.active .barchart-bar{outline:2px solid var(--navy);outline-offset:1px;}
 .barchart-bar.entrada{background:linear-gradient(180deg,var(--cyan),var(--teal2));}
-.barchart-bar.saida{background:linear-gradient(180deg,#ff8a7a,var(--vermelho));}
+.barchart-bar.saida{background:linear-gradient(180deg,#ef6b6b,var(--vermelho));}
 .barchart-lbl{font-size:11px;font-weight:700;color:var(--soft);}
-.barchart-val{font-size:9.5px;color:#fff;position:absolute;top:-16px;left:50%;transform:translateX(-50%);white-space:nowrap;}
+.barchart-val{font-size:9.5px;font-weight:700;color:var(--ink);position:absolute;top:-16px;left:50%;transform:translateX(-50%);white-space:nowrap;}
 
 @media(max-width:1150px){
   .kpi-grid{grid-template-columns:repeat(3,1fr);}
@@ -219,6 +227,7 @@ footer{text-align:center;font-size:11px;color:#4d6a7a;padding:34px 0 10px;}
 }
 @media(max-width:640px){
   .kpi-grid{grid-template-columns:repeat(2,1fr);}
+  .kpi{border-left:none;border-top:3px solid var(--teal);}
   .tornado-row{grid-template-columns:80px 1fr 1fr 60px;}
 }
 </style>
@@ -276,106 +285,126 @@ footer{text-align:center;font-size:11px;color:#4d6a7a;padding:34px 0 10px;}
 
   <div class="kpi-grid" id="kpiGrid"></div>
 
-  <div class="section-title"><span>Entradas × Saídas — últimos 60 dias</span><span class="line"></span></div>
+  <div class="section-label">Entradas × Saídas — últimos 60 dias</div>
   <div class="card">
-    <div class="chart-wrap"><svg id="chartSerie" width="1340" height="300"></svg></div>
-    <div class="legend">
-      <span><span class="dot" style="background:var(--cyan)"></span>Entradas</span>
-      <span><span class="dot" style="background:var(--vermelho)"></span>Saídas</span>
+    <div class="card-body">
+      <div class="chart-wrap"><svg id="chartSerie" width="1340" height="300"></svg></div>
+      <div class="legend">
+        <span><span class="dot" style="background:var(--cyan)"></span>Entradas</span>
+        <span><span class="dot" style="background:var(--vermelho)"></span>Saídas</span>
+      </div>
     </div>
   </div>
 
-  <div class="section-title"><span>Posição Atual — por Grupo</span><span class="line"></span></div>
+  <div class="section-label">Posição Atual — por Grupo</div>
   <div class="grupo-cards" id="grupoCards"></div>
 
-  <div class="section-title"><span>Carga por Grupo — Entradas × Saídas (mês)</span><span class="line"></span></div>
+  <div class="section-label">Carga por Grupo — Entradas × Saídas (mês)</div>
   <div class="card">
-    <h3>Clique numa coluna para ver o detalhe por profissional</h3>
-    <div class="desc">Volume de entradas e saídas do mês em curso, grupo a grupo.</div>
-    <div class="barchart-wrap" id="cargaGrupo"></div>
-    <div class="legend">
-      <span><span class="dot" style="background:var(--cyan)"></span>Entradas</span>
-      <span><span class="dot" style="background:var(--vermelho)"></span>Saídas</span>
-    </div>
-    <div id="cargaGrupoDrill"></div>
-  </div>
-
-  <div class="section-title"><span>Entradas × Saídas por Grupo — mês atual</span><span class="line"></span></div>
-  <div class="card">
-    <h3>Gráfico Tornado</h3>
-    <div class="desc">Compare o volume de novos casos com o de encerramentos em cada grupo, no mês em curso.</div>
-    <div id="tornadoGrupo"></div>
-    <div class="legend">
-      <span><span class="dot" style="background:var(--vermelho)"></span>Saídas (mês)</span>
-      <span><span class="dot" style="background:var(--cyan)"></span>Entradas (mês)</span>
-    </div>
-  </div>
-
-  <div class="section-title"><span>Funil — Fase Processual</span><span class="line"></span></div>
-  <div class="card">
-    <h3>Carteira em andamento por fase</h3>
-    <div class="desc" id="funilDesc">Clique numa etapa pra ver a distribuição por grupo.</div>
-    <div class="funil" id="funil"></div>
-    <div class="funil-drill" id="funilDrill"></div>
-  </div>
-
-  <div class="section-title"><span>Onde estão os processos — por Estado</span><span class="line"></span></div>
-  <div class="card">
-    <h3>Mapa por Estado (comarca do processo)</h3>
-    <div class="desc">Tamanho e cor representam o volume em andamento em cada UF.</div>
-    <div class="mapa-wrap">
-      <div class="mapa-svg-wrap">
-        <svg id="mapaEstados" width="460" height="500" viewBox="0 0 460 500"></svg>
-        <div class="mapa-legend-scale" id="mapaLegenda"></div>
+    <div class="card-hdr">📊 Clique numa coluna para ver o detalhe por profissional</div>
+    <div class="card-body">
+      <div class="desc">Volume de entradas e saídas do mês em curso, grupo a grupo.</div>
+      <div class="barchart-wrap" id="cargaGrupo"></div>
+      <div class="legend">
+        <span><span class="dot" style="background:var(--cyan)"></span>Entradas</span>
+        <span><span class="dot" style="background:var(--vermelho)"></span>Saídas</span>
       </div>
-      <div class="mapa-ranking">
-        <table id="tblEstado"><thead><tr><th>UF</th><th class="num">Andamento</th><th class="num">Entr. mês</th><th class="num">Saí. mês</th></tr></thead><tbody></tbody></table>
-        <div class="funil-drill-hint">Clique numa UF no mapa pra ver os clientes.</div>
-        <div id="mapaDrill"></div>
+      <div id="cargaGrupoDrill"></div>
+    </div>
+  </div>
+
+  <div class="section-label">Entradas × Saídas por Grupo — mês atual</div>
+  <div class="card">
+    <div class="card-hdr">🌀 Gráfico Tornado</div>
+    <div class="card-body">
+      <div class="desc">Compare o volume de novos casos com o de encerramentos em cada grupo, no mês em curso.</div>
+      <div id="tornadoGrupo"></div>
+      <div class="legend">
+        <span><span class="dot" style="background:var(--vermelho)"></span>Saídas (mês)</span>
+        <span><span class="dot" style="background:var(--cyan)"></span>Entradas (mês)</span>
       </div>
     </div>
   </div>
 
-  <div class="section-title"><span>Por Grupo · Cliente · Profissional</span><span class="line"></span></div>
+  <div class="section-label">Funil — Fase Processual</div>
+  <div class="card">
+    <div class="card-hdr">⚖️ Carteira em andamento por fase</div>
+    <div class="card-body">
+      <div class="desc" id="funilDesc">Clique numa etapa pra ver a distribuição por grupo.</div>
+      <div class="funil" id="funil"></div>
+      <div class="funil-drill" id="funilDrill"></div>
+    </div>
+  </div>
+
+  <div class="section-label">Onde estão os processos — por Estado</div>
+  <div class="card">
+    <div class="card-hdr">🗺 Mapa por Estado (comarca do processo)</div>
+    <div class="card-body">
+      <div class="desc">Tamanho e cor representam o volume em andamento em cada UF.</div>
+      <div class="mapa-wrap">
+        <div class="mapa-svg-wrap">
+          <svg id="mapaEstados" width="460" height="500" viewBox="0 0 460 500"></svg>
+          <div class="mapa-legend-scale" id="mapaLegenda"></div>
+        </div>
+        <div class="mapa-ranking">
+          <table id="tblEstado"><thead><tr><th>UF</th><th class="num">Andamento</th><th class="num">Entr. mês</th><th class="num">Saí. mês</th></tr></thead><tbody></tbody></table>
+          <div class="funil-drill-hint">Clique numa UF no mapa pra ver os clientes.</div>
+          <div id="mapaDrill"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-label">Por Grupo · Cliente · Profissional</div>
   <div class="grid-3">
     <div class="card">
-      <h3>Por Grupo</h3>
-      <div class="desc">Carteira em andamento e movimento do mês.</div>
-      <div class="scroll-y"><table id="tblGrupo"><thead><tr><th>Grupo</th><th class="num">Andamento</th><th class="num">Entr.</th><th class="num">Saí.</th></tr></thead><tbody></tbody></table></div>
+      <div class="card-hdr">Por Grupo</div>
+      <div class="card-body">
+        <div class="desc">Carteira em andamento e movimento do mês.</div>
+        <div class="scroll-y"><table id="tblGrupo"><thead><tr><th>Grupo</th><th class="num">Andamento</th><th class="num">Entr.</th><th class="num">Saí.</th></tr></thead><tbody></tbody></table></div>
+      </div>
     </div>
     <div class="card">
-      <h3>Top Clientes</h3>
-      <div class="desc">Maiores carteiras ativas (top 20).</div>
-      <div class="scroll-y"><table id="tblCliente"><thead><tr><th>Cliente</th><th class="num">Andamento</th></tr></thead><tbody></tbody></table></div>
+      <div class="card-hdr">Top Clientes</div>
+      <div class="card-body">
+        <div class="desc">Maiores carteiras ativas (top 20).</div>
+        <div class="scroll-y"><table id="tblCliente"><thead><tr><th>Cliente</th><th class="num">Andamento</th></tr></thead><tbody></tbody></table></div>
+      </div>
     </div>
     <div class="card">
-      <h3>Por Profissional</h3>
-      <div class="desc">Distribuição da carteira ativa por advogado(a).</div>
-      <div class="scroll-y"><table id="tblProf"><thead><tr><th>Profissional</th><th class="num">Andamento</th></tr></thead><tbody></tbody></table></div>
+      <div class="card-hdr">Por Profissional</div>
+      <div class="card-body">
+        <div class="desc">Distribuição da carteira ativa por advogado(a).</div>
+        <div class="scroll-y"><table id="tblProf"><thead><tr><th>Profissional</th><th class="num">Andamento</th></tr></thead><tbody></tbody></table></div>
+      </div>
     </div>
   </div>
 
-  <div class="section-title"><span>Valor da Causa em Andamento — por Grupo</span><span class="line"></span></div>
+  <div class="section-label">Valor da Causa em Andamento — por Grupo</div>
   <div class="card">
-    <h3>Exposição total</h3>
-    <div class="desc" id="valorTotalDesc"></div>
-    <div id="barrasValor"></div>
+    <div class="card-hdr">💰 Exposição total</div>
+    <div class="card-body">
+      <div class="desc" id="valorTotalDesc"></div>
+      <div id="barrasValor"></div>
+    </div>
   </div>
 
   </div>
 
   <div class="tab-panel" id="tab-cliente">
     <div class="card" style="margin-bottom:20px;">
-      <h3>Entradas e Saídas — Grupo × Cliente</h3>
-      <div class="desc">Cada cliente que entrou ou saiu este mês ou no mês anterior, agrupado pelo Grupo responsável. Use pra responder clientes que perguntam sobre o ritmo da carteira deles.</div>
-      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px;">
-        <input type="text" id="filtroClienteGrupo" placeholder="Buscar grupo ou cliente…" style="flex:1;min-width:220px;background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:9px 12px;color:#eef6f9;font-size:12.5px;">
-      </div>
-      <div class="scroll-y" style="max-height:640px;">
-        <table id="tblGrupoCliente">
-          <thead><tr><th>Grupo</th><th>Cliente</th><th class="num">Andamento</th><th class="num">Entr. mês</th><th class="num">Saí. mês</th><th class="num">Entr. mês ant.</th><th class="num">Saí. mês ant.</th><th>Sinal</th></tr></thead>
-          <tbody></tbody>
-        </table>
+      <div class="card-hdr">Entradas e Saídas — Grupo × Cliente</div>
+      <div class="card-body">
+        <div class="desc">Cada cliente que entrou ou saiu este mês ou no mês anterior, agrupado pelo Grupo responsável. Use pra responder clientes que perguntam sobre o ritmo da carteira deles.</div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px;">
+          <input type="text" id="filtroClienteGrupo" placeholder="Buscar grupo ou cliente…" style="flex:1;min-width:220px;background:#fff;border:1px solid var(--border);border-radius:8px;padding:9px 12px;color:var(--ink);font-size:12.5px;">
+        </div>
+        <div class="scroll-y" style="max-height:640px;">
+          <table id="tblGrupoCliente">
+            <thead><tr><th>Grupo</th><th>Cliente</th><th class="num">Andamento</th><th class="num">Entr. mês</th><th class="num">Saí. mês</th><th class="num">Entr. mês ant.</th><th class="num">Saí. mês ant.</th><th>Sinal</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
       </div>
     </div>
   </div>
@@ -518,7 +547,7 @@ function renderTornadoDrill(grupo){
     .sort((a,b)=>(b.entradas_mes+b.saidas_mes)-(a.entradas_mes+a.saidas_mes));
   const drill = document.getElementById('tornadoDrill');
   if(!linhas.length){ drill.innerHTML = `<div class="desc" style="margin-top:10px;">Sem entradas/saídas de cliente em ${grupo} este mês.</div>`; return; }
-  drill.innerHTML = `<div class="desc" style="margin-top:12px;">Clientes movimentados em <b style="color:#fff">${grupo}</b> este mês:</div>
+  drill.innerHTML = `<div class="desc" style="margin-top:12px;">Clientes movimentados em <b style="color:var(--navy)">${grupo}</b> este mês:</div>
     <table><thead><tr><th>Cliente</th><th class="num">Entr.</th><th class="num">Saí.</th></tr></thead>
     <tbody>${linhas.map(c => `
       <tr><td>${c.cliente}</td>
@@ -665,7 +694,7 @@ function renderCargaGrupoDrill(grupo){
   const drill = document.getElementById('cargaGrupoDrill');
   if(!linhas.length){ drill.innerHTML = `<div class="desc">Sem detalhe por profissional pra ${grupo}.</div>`; return; }
   drill.innerHTML = `
-    <div class="desc" style="margin-top:16px;">Detalhe de <b style="color:#fff">${grupo}</b> por profissional:</div>
+    <div class="desc" style="margin-top:16px;">Detalhe de <b style="color:var(--navy)">${grupo}</b> por profissional:</div>
     <table><thead><tr><th>Profissional</th><th class="num">Andamento</th><th class="num">Entr. mês</th><th class="num">Saí. mês</th></tr></thead>
     <tbody>${linhas.map(p => `
       <tr><td>${p.profissional}</td><td class="num">${fmtInt(p.andamento)}</td>
@@ -705,7 +734,7 @@ function renderFunilDrill(fase){
   const drill = document.getElementById('funilDrill');
   if(!linhas.length){ drill.innerHTML = `<div class="funil-drill-hint">Sem detalhe por grupo pra ${fase}.</div>`; return; }
   const maxV = Math.max(1, ...linhas.map(l=>l.andamento));
-  drill.innerHTML = `<div class="desc" style="margin-top:6px;">Distribuição de <b style="color:#fff">${fase}</b> por grupo:</div>` +
+  drill.innerHTML = `<div class="desc" style="margin-top:6px;">Distribuição de <b style="color:var(--navy)">${fase}</b> por grupo:</div>` +
     linhas.map(l => `
     <div class="tornado-row" style="grid-template-columns:100px 1fr 60px;">
       <div class="tornado-label">${l.grupo}</div>
@@ -740,10 +769,11 @@ function renderMapa(porEstado){
   const maxV = Math.max(1, ...porEstado.map(e=>e.andamento));
   const intensidade = v => Math.sqrt(v/maxV); // 0..1, sqrt pra não deixar SP esmagar o resto
   const cor = t => {
-    // interpola de card2 (baixo) pra cyan (alto)
-    const r = Math.round(13 + t*(0-13)), g = Math.round(58 + t*(174-58)), b = Math.round(84 + t*(239-84));
+    // interpola de um teal claro (baixo) pra navy escuro (alto) — tema claro
+    const r = Math.round(214 + t*(0-214)), g = Math.round(232 + t*(58-232)), b = Math.round(238 + t*(80-238));
     return `rgb(${r},${g},${b})`;
   };
+  const corTexto = t => t > 0.42 ? '#fff' : 'var(--navy)';
   let html = '';
   porEstado.forEach(e => {
     const coord = UF_COORDS[e.nome];
@@ -757,25 +787,27 @@ function renderMapa(porEstado){
       y = OFF_Y + (LAT_MAX-lat)/(LAT_MAX-LAT_MIN)*MAP_H - TILE/2;
     }
     const t = intensidade(e.andamento);
+    const txtCor = corTexto(t);
     html += `
       <g class="mapa-tile" data-uf="${e.nome}" style="cursor:pointer;">
         <rect x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${TILE}" height="${TILE}" rx="6" fill="${cor(t)}">
           <title>${e.nome}: ${e.andamento} em andamento — clique pra ver clientes</title>
         </rect>
-        <text class="uf-lbl" x="${(x+TILE/2).toFixed(1)}" y="${(y+TILE/2-2).toFixed(1)}">${e.nome}</text>
-        <text class="uf-val" x="${(x+TILE/2).toFixed(1)}" y="${(y+TILE/2+9).toFixed(1)}">${fmtInt(e.andamento)}</text>
+        <text class="uf-lbl" fill="${txtCor}" x="${(x+TILE/2).toFixed(1)}" y="${(y+TILE/2-2).toFixed(1)}">${e.nome}</text>
+        <text class="uf-val" fill="${txtCor}" x="${(x+TILE/2).toFixed(1)}" y="${(y+TILE/2+9).toFixed(1)}">${fmtInt(e.andamento)}</text>
       </g>`;
   });
   svg.innerHTML = html;
   svg.querySelectorAll('.mapa-tile').forEach(tile => {
     tile.addEventListener('click', () => {
       const ativo = tile.dataset.active === '1';
-      svg.querySelectorAll('.mapa-tile rect').forEach(r=>r.style.stroke='rgba(255,255,255,.15)');
+      svg.querySelectorAll('.mapa-tile rect').forEach(r=>{r.style.stroke='var(--border)'; r.style.strokeWidth='1';});
       svg.querySelectorAll('.mapa-tile').forEach(t=>t.dataset.active='0');
       const drill = document.getElementById('mapaDrill');
       if(ativo){ drill.innerHTML=''; return; }
       tile.dataset.active = '1';
-      tile.querySelector('rect').style.stroke = '#fff';
+      tile.querySelector('rect').style.stroke = 'var(--navy)';
+      tile.querySelector('rect').style.strokeWidth = '2';
       renderMapaDrill(tile.dataset.uf);
     });
   });
@@ -800,7 +832,7 @@ function renderMapaDrill(uf){
   const drill = document.getElementById('mapaDrill');
   if(!linhas.length){ drill.innerHTML = `<div class="desc" style="margin-top:8px;">Sem detalhe por cliente em ${uf}.</div>`; return; }
   const maxV = Math.max(1, ...linhas.map(l=>l.andamento));
-  drill.innerHTML = `<div class="desc" style="margin-top:10px;">Clientes em <b style="color:#fff">${uf}</b>:</div>` +
+  drill.innerHTML = `<div class="desc" style="margin-top:10px;">Clientes em <b style="color:var(--navy)">${uf}</b>:</div>` +
     linhas.map(l => `
     <div class="tornado-row" style="grid-template-columns:1fr 60px;">
       <div class="tornado-label" style="text-align:left;">${l.cliente}</div>
@@ -864,7 +896,7 @@ function renderValorDrill(grupo){
   const drill = document.getElementById('valorDrill');
   if(!linhas.length){ drill.innerHTML = `<div class="desc" style="margin-top:10px;">Sem valor de causa detalhado por cliente em ${grupo}.</div>`; return; }
   const maxV = Math.max(1, ...linhas.map(l=>l.valor_causa));
-  drill.innerHTML = `<div class="desc" style="margin-top:14px;">Maiores exposições em <b style="color:#fff">${grupo}</b>:</div>` +
+  drill.innerHTML = `<div class="desc" style="margin-top:14px;">Maiores exposições em <b style="color:var(--navy)">${grupo}</b>:</div>` +
     linhas.map(l => `
     <div class="tornado-row" style="grid-template-columns:150px 1fr 90px;">
       <div class="tornado-label">${l.cliente}</div>
