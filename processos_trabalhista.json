@@ -1,11 +1,11 @@
 {
-  "atualizado_em": "2026-08-06T19:45:21",
+  "atualizado_em": "2026-08-07T08:57:39",
   "kpis": {
     "total_andamento": 8167,
-    "entradas_hoje": 11,
-    "saidas_hoje": 3,
-    "entradas_ontem": 5,
-    "saidas_ontem": 5,
+    "entradas_hoje": 0,
+    "saidas_hoje": 0,
+    "entradas_ontem": 11,
+    "saidas_ontem": 3,
     "entradas_mes": 43,
     "saidas_mes": 77,
     "entradas_mes_anterior": 252,
@@ -14,11 +14,6 @@
     "saldo_mes": -34
   },
   "serie_diaria": [
-    {
-      "data": "2026-06-08",
-      "entradas": 16,
-      "saidas": 7
-    },
     {
       "data": "2026-06-09",
       "entradas": 10,
@@ -313,6 +308,11 @@
       "data": "2026-08-06",
       "entradas": 11,
       "saidas": 3
+    },
+    {
+      "data": "2026-08-07",
+      "entradas": 0,
+      "saidas": 0
     }
   ],
   "por_grupo": [
@@ -336,12 +336,12 @@
     },
     {
       "nome": "Grupo B1",
-      "andamento": 1429,
-      "entradas_mes": 8,
+      "andamento": 1430,
+      "entradas_mes": 9,
       "saidas_mes": 1,
       "entradas_mes_anterior": 45,
       "saidas_mes_anterior": 56,
-      "valor_causa": 294229734.83
+      "valor_causa": 296278335.5
     },
     {
       "nome": "Grupo D1",
@@ -408,12 +408,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 15,
-      "entradas_mes": 11,
+      "andamento": 14,
+      "entradas_mes": 10,
       "saidas_mes": 19,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
-      "valor_causa": 8076725.82
+      "valor_causa": 6028125.15
     },
     {
       "nome": "Sócios",
@@ -664,7 +664,7 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2887,
+      "andamento": 2886,
       "entradas_mes": 42,
       "saidas_mes": 14,
       "entradas_mes_anterior": 194,
@@ -682,7 +682,7 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 3237,
+      "andamento": 3238,
       "entradas_mes": 0,
       "saidas_mes": 20,
       "entradas_mes_anterior": 4,
@@ -904,7 +904,7 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 866,
+      "andamento": 865,
       "entradas_mes": 6,
       "saidas_mes": 1,
       "entradas_mes_anterior": 54,
@@ -924,12 +924,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B1",
-      "andamento": 420,
-      "entradas_mes": 8,
+      "andamento": 421,
+      "entradas_mes": 9,
       "saidas_mes": 0,
       "entradas_mes_anterior": 44,
       "saidas_mes_anterior": 20,
-      "valor_causa": 128776627.56
+      "valor_causa": 130825228.23
     },
     {
       "fase": "Instrução",
@@ -994,12 +994,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 12,
-      "entradas_mes": 11,
+      "andamento": 11,
+      "entradas_mes": 10,
       "saidas_mes": 2,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 7429596.67
+      "valor_causa": 5380996.0
     },
     {
       "fase": "Instrução",
@@ -1144,7 +1144,7 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo E2",
-      "andamento": 564,
+      "andamento": 565,
       "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
@@ -1729,7 +1729,7 @@
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 20,
       "valor_causa": 134264160.39,
-      "alerta_entrada": true
+      "alerta_entrada": false
     },
     {
       "nome": "MAHLE METAL - MOGI",
@@ -2336,12 +2336,12 @@
     {
       "grupo": "Grupo B1",
       "cliente": "BRIDGESTONE",
-      "andamento": 1429,
-      "entradas_mes": 8,
+      "andamento": 1430,
+      "entradas_mes": 9,
       "saidas_mes": 1,
       "entradas_mes_anterior": 45,
       "saidas_mes_anterior": 56,
-      "valor_causa": 294229734.83,
+      "valor_causa": 296278335.5,
       "alerta_entrada": false
     },
     {
@@ -3766,12 +3766,12 @@
     {
       "grupo": "Sem grupo",
       "cliente": "BRIDGESTONE",
-      "andamento": 5,
-      "entradas_mes": 4,
+      "andamento": 4,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 3083254.6,
+      "valor_causa": 1034653.93,
       "alerta_entrada": true
     },
     {
@@ -3994,12 +3994,12 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Guilherme Silva Morimoto(GSM)",
-      "andamento": 226,
-      "entradas_mes": 2,
+      "andamento": 227,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 7,
-      "valor_causa": 86295320.36
+      "valor_causa": 88343921.03
     },
     {
       "grupo": "Grupo B1",
@@ -4453,16 +4453,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Guilherme Silva Morimoto(GSM)",
-      "andamento": 3,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 2640490.67
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Júlia Priego Lopes da Silva(JPL)",
       "andamento": 3,
       "entradas_mes": 3,
@@ -4470,6 +4460,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 247981.39
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Guilherme Silva Morimoto(GSM)",
+      "andamento": 2,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 591890.0
     },
     {
       "grupo": "Sem grupo",
@@ -8016,16 +8016,6 @@
       "alerta_entrada": true
     },
     {
-      "nome": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 698,
-      "entradas_mes": 8,
-      "saidas_mes": 3,
-      "entradas_mes_anterior": 24,
-      "saidas_mes_anterior": 20,
-      "valor_causa": 134264160.39,
-      "alerta_entrada": true
-    },
-    {
       "nome": "CBC CARTUCHOS BRASIL",
       "andamento": 221,
       "entradas_mes": 8,
@@ -8059,11 +8049,6 @@
     },
     {
       "numero_processo": "0010726-60.2026.5.15.0040",
-      "cliente": "BRIDGESTONE",
-      "profissional": "Guilherme Silva Morimoto(GSM)"
-    },
-    {
-      "numero_processo": "1001532-67.2026.5.02.0432",
       "cliente": "BRIDGESTONE",
       "profissional": "Guilherme Silva Morimoto(GSM)"
     },
