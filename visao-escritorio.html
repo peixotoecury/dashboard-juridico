@@ -220,6 +220,30 @@ footer{text-align:center;font-size:11px;color:var(--soft);padding:34px 0 10px;}
 .barchart-lbl{font-size:11px;font-weight:700;color:var(--soft);}
 .barchart-val{font-size:9.5px;font-weight:700;color:var(--ink);position:absolute;top:-16px;left:50%;transform:translateX(-50%);white-space:nowrap;}
 
+/* ── DIVISÃO TRABALHISTA ────────────────────────────────────────────────── */
+.divisao-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px;}
+.divisao-grupo-cols{display:grid;grid-template-columns:1fr 1fr;gap:0 16px;}
+@media(max-width:640px){.divisao-grupo-cols{grid-template-columns:1fr;}}
+.divisao-equipe{background:var(--card);border:1px solid var(--border);border-radius:10px;overflow:hidden;box-shadow:var(--shadow);}
+.divisao-equipe-hdr{background:linear-gradient(90deg,var(--navy),var(--teal));color:#fff;padding:11px 16px;}
+.divisao-equipe-hdr .nome{font-size:13px;font-weight:800;letter-spacing:.3px;text-transform:uppercase;}
+.divisao-equipe-hdr .meta{font-size:10.5px;color:rgba(255,255,255,.8);margin-top:3px;}
+.divisao-equipe-hdr .tot{font-family:'Sora',sans-serif;font-size:22px;font-weight:800;margin-top:4px;}
+.divisao-equipe-body{padding:14px 16px;}
+.divisao-grupo{border-top:1px solid #eef1f3;padding-top:12px;margin-top:12px;}
+.divisao-grupo:first-child{border-top:none;padding-top:0;margin-top:0;}
+.divisao-grupo-hdr{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:8px;}
+.divisao-grupo-hdr .nome{font-size:12.5px;font-weight:800;color:var(--teal);}
+.divisao-grupo-hdr .tot{font-family:'Sora',sans-serif;font-size:16px;font-weight:800;color:var(--navy);}
+.divisao-sub-lbl{font-size:9.5px;font-weight:800;letter-spacing:.6px;text-transform:uppercase;color:var(--soft);margin:8px 0 4px;}
+.divisao-mini-row{display:flex;justify-content:space-between;gap:8px;font-size:11.5px;padding:2px 0;}
+.divisao-mini-row .nome{color:var(--ink);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.divisao-mini-row .val{font-family:'Sora',sans-serif;font-weight:700;color:var(--teal);flex-shrink:0;}
+.divisao-mini-row.zero .val{color:#c3ccd1;}
+.divisao-assist{font-size:11px;color:var(--soft);line-height:1.6;}
+.divisao-media{font-size:11px;color:var(--soft);margin-top:6px;font-style:italic;}
+.roster-list{list-style:none;font-size:12.5px;line-height:2;color:var(--ink);}
+
 @media(max-width:1150px){
   .kpi-grid{grid-template-columns:repeat(3,1fr);}
   .grid-2,.grid-3{grid-template-columns:1fr;}
@@ -264,6 +288,7 @@ footer{text-align:center;font-size:11px;color:var(--soft);padding:34px 0 10px;}
   <div class="tabs-nav">
     <button class="tab-btn active" data-tab="geral">Visão Geral</button>
     <button class="tab-btn" data-tab="cliente">Grupo × Cliente</button>
+    <button class="tab-btn" data-tab="divisao">Divisão Trabalhista</button>
   </div>
 
   <div class="tab-panel active" id="tab-geral">
@@ -405,6 +430,30 @@ footer{text-align:center;font-size:11px;color:var(--soft);padding:34px 0 10px;}
             <tbody></tbody>
           </table>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-panel" id="tab-divisao">
+    <div class="card" style="margin-bottom:16px;">
+      <div class="card-hdr">📋 Divisão Trabalhista — por Equipe</div>
+      <div class="card-body">
+        <div class="desc">Estrutura da planilha "Divisão Trabalhista" (Equipe → Grupo → Clientes/Advogados) — os números de andamento, entradas e saídas são calculados em tempo real a partir da base do LM; nomes/composição de equipe vêm da planilha e são atualizados manualmente quando a divisão muda.</div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px;align-items:center;">
+          <input type="text" id="filtroDivisao" placeholder="🔍 Buscar equipe, grupo, cliente ou advogado…" style="flex:1;min-width:220px;background:#fff;border:1px solid var(--border);border-radius:8px;padding:9px 12px;color:var(--ink);font-size:12.5px;">
+          <span class="desc" id="filtroDivisaoCount" style="margin:0;"></span>
+        </div>
+      </div>
+    </div>
+    <div class="divisao-grid" id="divisaoGrid"></div>
+    <div class="grid-2" style="margin-top:16px;">
+      <div class="card">
+        <div class="card-hdr">Controladoria</div>
+        <div class="card-body"><ul class="roster-list" id="rosterControladoria"></ul></div>
+      </div>
+      <div class="card">
+        <div class="card-hdr">Relatórios</div>
+        <div class="card-body"><ul class="roster-list" id="rosterRelatorios"></ul></div>
       </div>
     </div>
   </div>
@@ -905,6 +954,125 @@ function renderValorDrill(grupo){
     </div>`).join('');
 }
 
+// ── Divisão Trabalhista (estrutura fixa da planilha + números vivos) ───────
+const DIVISAO_ORG = {"equipes":{"Equipe A":{"responsavel_clientes":"Responsável Clientes: PBS","gestor":null,"total_xlsx":202,"grupos":[{"grupo":"Grupo A1","total_xlsx":26,"clientes":[{"nome":"ACCIONA CONSTRUCCION","total_xlsx":7},{"nome":"CBC CARTUCHOS BRASIL","total_xlsx":3},{"nome":"CTG - RIO PARANAPANE","total_xlsx":1},{"nome":"EMBRAER","total_xlsx":1},{"nome":"GORDILHO NAPOLITANO","total_xlsx":1},{"nome":"GRAMMER DO BRASIL","total_xlsx":1},{"nome":"HERINGER","total_xlsx":1},{"nome":"IVANYRA CORREIA","total_xlsx":2},{"nome":"SYNGENTA PROTEÇÃO DE","total_xlsx":4},{"nome":"THE LYCRA COMPANY","total_xlsx":4},{"nome":"VIA APPIA CONCESSOES","total_xlsx":1}],"advogados":[{"nome":"Natália Biondi Gaggini Robles (NBG)","sigla":"NBG","total_xlsx":2},{"nome":"Marina de Novaes Brechiani (MNB)","sigla":"MNB","total_xlsx":null},{"nome":"Thais Catharine Cardozo (TCE)","sigla":"TCE","total_xlsx":24}],"assistentes":["Hanyelle Alves da Silva - Analista Jurídico","Giovanni Comunale - Estagiário","Jacqueline Jahel - Estagiária","Bianca Pimentel de Oliveira (BPO) - estagiária"],"media_xlsx":26},{"grupo":"Grupo A2","total_xlsx":25,"clientes":[{"nome":"3CORP TECHNOLOGY","total_xlsx":8},{"nome":"AAF BRASIL","total_xlsx":1},{"nome":"EMPLAS","total_xlsx":1},{"nome":"HUB SERVIÇOS","total_xlsx":1},{"nome":"INFINITTO DESIGN - 2","total_xlsx":2},{"nome":"LABORATÓRIO PRODUÇÃO","total_xlsx":2},{"nome":"MARJAN INDUSTRIA","total_xlsx":3},{"nome":"MERCADO BITCOIN MB","total_xlsx":1},{"nome":"NATUREZA URBANA","total_xlsx":1},{"nome":"OCP BRASIL","total_xlsx":1},{"nome":"SINTHORESP","total_xlsx":2},{"nome":"SYNGENTA PROTEÇÃO DE","total_xlsx":1},{"nome":"T4F ENTRETENIMENTO","total_xlsx":1}],"advogados":[{"nome":"Natália Biondi Gaggini Robles(NBG)","sigla":"NBG","total_xlsx":25}],"assistentes":["Tabata Neves Caramelli (TNE) - Estagiária","Eric Yuji (EYN) - Estagiário"],"media_xlsx":25},{"grupo":"Grupo A3","total_xlsx":151,"clientes":[{"nome":"AZEVEDO & TRAVASSOS","total_xlsx":1},{"nome":"CeA MODAS","total_xlsx":1},{"nome":"CORREIOS E TELEGRAFO","total_xlsx":4},{"nome":"EDUARDO RUDGE","total_xlsx":4},{"nome":"ELFER INDÚSTRIA","total_xlsx":1},{"nome":"FELIPE GRANADO","total_xlsx":1},{"nome":"FIS SOLUCÕES","total_xlsx":1},{"nome":"GUARUPART","total_xlsx":20},{"nome":"INCOM INDUSTRIAL","total_xlsx":1},{"nome":"MIGUEL MAQUINAS","total_xlsx":1},{"nome":"PEIXOTO E CURY","total_xlsx":2},{"nome":"RPMA","total_xlsx":1},{"nome":"SINDIGÁS","total_xlsx":1},{"nome":"TELEFONICA BRASIL","total_xlsx":23},{"nome":"WHIRLPOOL S.A.","total_xlsx":89}],"advogados":[{"nome":"Arthur Rodrigues Rios Toledo de Castro(ARC)","sigla":"ARC","total_xlsx":1},{"nome":"Sofia Freire (SOF)","sigla":"SOF","total_xlsx":117},{"nome":"Vinicius da Silva Cerqueira(VSI)","sigla":"VSI","total_xlsx":6}],"assistentes":["Chris Carvalho (CAR) - assistente","Aline Amorim Oliveira (AAO) - estagiária"],"media_xlsx":117}]},"Equipe B":{"responsavel_clientes":"Responsável Clientes: PBS","gestor":"Gestor: Nicolau e Ana Carolina","total_xlsx":2695,"media_equipe_xlsx":299.44444444444446,"grupos":[{"grupo":"Grupo B1","total_xlsx":1422,"clientes":[{"nome":"BRIDGESTONE","total_xlsx":1422}],"advogados":[{"nome":"Beatriz Santiago de Souza(BSO)","sigla":"BSO","total_xlsx":262},{"nome":"Bruna Cembranelli Fazenda (BCF)","sigla":"BCF","total_xlsx":70},{"nome":"Guilherme Silva Morimoto(GSM)","sigla":"GSM","total_xlsx":224},{"nome":"Juliana Perucci (JPE)","sigla":"JPE","total_xlsx":254},{"nome":"Nicolau Rafael Guimarães Coelho(NRG)","sigla":"NRG","total_xlsx":73},{"nome":"Rafael Rocha Ferreira(RFE)","sigla":"RFE","total_xlsx":267},{"nome":"Tamara Silva Marcílio(TAM)","sigla":"TAM","total_xlsx":272}],"assistentes":["Cícera Gabriela (assistente)","Jennifer Nogueira (assistente)","Mariana Arruda Teberges (estagiária)","Evandro Vessoni (analista)","Breno Torquato (estagiário)"],"media_xlsx":284.4},{"grupo":"Grupo B2","total_xlsx":733,"clientes":[{"nome":"EMBRAER ESPECIAIS","total_xlsx":324},{"nome":"EMBRAER REINTEGRADOS","total_xlsx":354},{"nome":"EMBRAER PREVIDENCIÁRIO","total_xlsx":55}],"advogados":[{"nome":"Anna Carolina Balbino Gatti Baani(ANB)","sigla":"ANB","total_xlsx":163},{"nome":"Bruna Cembranelli Fazenda (BCF)","sigla":"BCF","total_xlsx":206},{"nome":"Nicolau Rafael Guimarães Coelho(NRG)","sigla":"NRG","total_xlsx":87},{"nome":"Vanessa de Cassia Castrequini Rosa(VCR)","sigla":"VCR","total_xlsx":278}],"assistentes":["Maria Carolina (analista)","Rafaella Wittmann (assistente)","Lucas Gusthavo (estagiário)","Geovanna Rodrigues (aprendiz)"],"media_xlsx":244.33333333333334},{"grupo":"Grupo B3","total_xlsx":540,"clientes":[{"nome":"CBC CARTUCHOS BRASIL","total_xlsx":212},{"nome":"CBC MONTENEGRO","total_xlsx":125},{"nome":"FERRERO DO BRASIL","total_xlsx":31},{"nome":"GRANOL","total_xlsx":2},{"nome":"JEMA PATRIMONIAL","total_xlsx":1},{"nome":"PATRICK EYD SABBAGH","total_xlsx":6},{"nome":"T4F ENTRETENIMENTO","total_xlsx":100},{"nome":"VLEAF PARTICIPAÇÕES","total_xlsx":3},{"nome":"VORTTEXCO INFORMATIC","total_xlsx":3},{"nome":"WICKBOLD","total_xlsx":57}],"advogados":[{"nome":"Anna Carolina Balbino Gatti Baani(ANB)","sigla":"ANB","total_xlsx":82},{"nome":"Guilherme Silva Morimoto(GSM)","sigla":"GSM","total_xlsx":49},{"nome":"Juliana Perucci (JPE)","sigla":"JPE","total_xlsx":8},{"nome":"Letícia Meneghini Fontes (LMI)","sigla":"LMI","total_xlsx":321},{"nome":"Nicolau Rafael Guimarães Coelho(NRG)","sigla":"NRG","total_xlsx":80}],"assistentes":["Brenna Malta (assistente)","Raica Kwok (estagiária)"],"media_xlsx":270}]},"Equipe C1":{"responsavel_clientes":null,"gestor":"Gestora: Poliana Banqueri","total_xlsx":610,"grupos":[{"grupo":"Grupo C1","total_xlsx":610,"clientes":[{"nome":"AGRIVALLE BRASIL","total_xlsx":1},{"nome":"AZEVEDO & TRAVASSOS","total_xlsx":1},{"nome":"CASA DO SABER","total_xlsx":1},{"nome":"CATERPILLAR BRASIL","total_xlsx":1},{"nome":"CEBRACE","total_xlsx":11},{"nome":"COMPANHIA AIX","total_xlsx":96},{"nome":"CTG - CHINA THREE","total_xlsx":11},{"nome":"CTG - RIO PARANÁ","total_xlsx":3},{"nome":"CTG - RIO PARANA 2","total_xlsx":8},{"nome":"CTG - RIO PARANA 3","total_xlsx":4},{"nome":"CTG - RIO PARANAPANE","total_xlsx":13},{"nome":"ENERGISA - EAC","total_xlsx":1},{"nome":"ENERGISA ESS","total_xlsx":1},{"nome":"FABIO CARAMURU CORRE","total_xlsx":1},{"nome":"GDM SEMENTES Matriz","total_xlsx":1},{"nome":"GRUPO TV1","total_xlsx":1},{"nome":"HEWLETT-PACKARD - HP","total_xlsx":2},{"nome":"HP - HPE","total_xlsx":2},{"nome":"INTERSERVICE","total_xlsx":2},{"nome":"JAYME BRENER","total_xlsx":1},{"nome":"LAÉRCIO VALENTIM","total_xlsx":1},{"nome":"McCANN-ERICKSON","total_xlsx":8},{"nome":"MULTICEL","total_xlsx":1},{"nome":"PEDRO CURY","total_xlsx":8},{"nome":"PEIXOTO E CURY","total_xlsx":3},{"nome":"RPMA","total_xlsx":1},{"nome":"SINDIGÁS","total_xlsx":2},{"nome":"SOCIEDADE FOGAS","total_xlsx":9},{"nome":"STELLA TONANNI","total_xlsx":2},{"nome":"SYNGENTA PROTEÇÃO DE","total_xlsx":66},{"nome":"SYNGENTA SEEDS NIDER","total_xlsx":5},{"nome":"TELEFONICA BRASIL","total_xlsx":321},{"nome":"UHE SÃO SIMÃO","total_xlsx":21}],"advogados":[{"nome":"Erik Mota Coppi(ECO)","sigla":"ECO","total_xlsx":209},{"nome":"Rafael Camargo Felisbino(RCF)","sigla":"RCF","total_xlsx":133},{"nome":"Thiago Frid Figueiredo Rossi(TFR)","sigla":"TFR","total_xlsx":158},{"nome":"Vinicius da Silva Cerqueira(VSI)","sigla":"VSI","total_xlsx":110}],"assistentes":["Clayton Bufarele Narciso (CBN) - estagiário"],"media_xlsx":152.5}]},"Equipe D":{"responsavel_clientes":"Responsável Clientes: PBS/MTM","gestor":"Gestora: Bianca Camacho","total_xlsx":783,"grupos":[{"grupo":"Grupo D1","total_xlsx":783,"clientes":[{"nome":"AME DIGITAL BRASIL","total_xlsx":5},{"nome":"AMERICANAS FILIAL","total_xlsx":1},{"nome":"B2W","total_xlsx":219},{"nome":"B2W VIAGENS","total_xlsx":1},{"nome":"BIT SERVICES LASA","total_xlsx":70},{"nome":"CLICK RODO ENTREGAS","total_xlsx":7},{"nome":"DIRECT EXPRESS LOGIS","total_xlsx":76},{"nome":"HORTIGIL HORTIFRUTI","total_xlsx":69},{"nome":"LOJAS AMERICANAS","total_xlsx":334},{"nome":"UNILOG EXPRESS","total_xlsx":1}],"advogados":[{"nome":"Bianca Bolanhi Camacho(BBO)","sigla":"BBO","total_xlsx":null},{"nome":"Jessica Cerqueira Silva(JQS)","sigla":"JQS","total_xlsx":null}],"assistentes":[],"media_xlsx":391.5}]},"Equipe E":{"responsavel_clientes":"Responsável Clientes: Marcel","gestor":"Gestor: André Alessandro","total_xlsx":3984,"media_equipe_xlsx":306.46153846153845,"grupos":[{"grupo":"Grupo E1","total_xlsx":2005,"clientes":[{"nome":"ARCHROMA - SPICE","total_xlsx":1},{"nome":"COLEGIO INOVATI","total_xlsx":1},{"nome":"COLÉGIO VÉRTICE","total_xlsx":5},{"nome":"COOPERATIVA AGRICOLA","total_xlsx":1},{"nome":"CORREIOS E TELEGRAFO","total_xlsx":7},{"nome":"DE NORA DO BRASIL","total_xlsx":2},{"nome":"DELL COMPUTADORES","total_xlsx":98},{"nome":"DIPAGRO","total_xlsx":1},{"nome":"GRAMMER DO BRASIL","total_xlsx":28},{"nome":"IPE REALTY","total_xlsx":1},{"nome":"MAHLE BEHR","total_xlsx":53},{"nome":"MAHLE METAL - MOGI","total_xlsx":376},{"nome":"MAHLE METAL - SBC","total_xlsx":274},{"nome":"MAHLE METAL - SSC","total_xlsx":2},{"nome":"MAHLE METAL -FILTROS","total_xlsx":3},{"nome":"MAHLE METAL- ITAJUBÁ","total_xlsx":1},{"nome":"MAHLE METAL-JUNDIAÍ","total_xlsx":1},{"nome":"PEIXOTO E CURY","total_xlsx":2},{"nome":"ROBERT BOSCH","total_xlsx":190},{"nome":"SYNGENTA PROTEÇÃO DE","total_xlsx":622},{"nome":"SYNGENTA SEEDS NIDER","total_xlsx":147},{"nome":"UAB MOTORS","total_xlsx":1}],"advogados":[{"nome":"Aline Ferreira Miron(ALF)","sigla":"ALF","total_xlsx":297},{"nome":"André Alessandro de Paula(AAP)","sigla":"AAP","total_xlsx":28},{"nome":"Arthur Rodrigues Rios Toledo de Castro(ARC)","sigla":"ARC","total_xlsx":1},{"nome":"Daniela Prandi Pedro Ricca (DPR)","sigla":"DPR","total_xlsx":152},{"nome":"Erik Mota Coppi(ECO)","sigla":"ECO","total_xlsx":12},{"nome":"Joice Ramos Miranda(JRM)","sigla":"JRM","total_xlsx":160},{"nome":"Júlia Priego Lopes da Silva(JPL)","sigla":"JPL","total_xlsx":401},{"nome":"Keyla Maria Barbosa Silva Moraes(KBM)","sigla":"KBM","total_xlsx":10},{"nome":"Paloma da Silva Santos(PSI)","sigla":"PSI","total_xlsx":273},{"nome":"Tamires Lins Costa(TLI)","sigla":"TLI","total_xlsx":218},{"nome":"Vinicius da Silva Cerqueira(VSI)","sigla":"VSI","total_xlsx":7},{"nome":"Vinícius Ronchi Arruda(VRO)","sigla":"VRO","total_xlsx":258}],"assistentes":["Alícia Marcondes Hamati (ALH) - estagiária","Ellen Mary Maciel Silva (EMM) - estagiária","Larissa Lekich (LLL) - assistente","Giulia Milani (GVM) - assistente","Nathalie Louise Dias (NLO) - (Adv trab e civel) relatórios","Matheus de Jesus Trindade (MJT) - Assistente eSocial","Gabriel Freitas de Oliveira (GFO) - Assistente eSocial"],"media_xlsx":250.625},{"grupo":"Grupo E2","total_xlsx":1979,"clientes":[{"nome":"A. RAYMOND","total_xlsx":19},{"nome":"AKAMAI TECNOLOGIAS","total_xlsx":4},{"nome":"ANTONIO C. AGUIAR","total_xlsx":2},{"nome":"ARCHROMA - SPICE","total_xlsx":2},{"nome":"BECTON DICKINSON BD","total_xlsx":1},{"nome":"BP BIOENERGIA","total_xlsx":768},{"nome":"BP BUNGE","total_xlsx":1},{"nome":"BUNGE ALIMENTOS","total_xlsx":2},{"nome":"CEPAM COMERCIO","total_xlsx":44},{"nome":"DANILLA FOODS BRASIL","total_xlsx":1},{"nome":"ECU LOGISTICS","total_xlsx":1},{"nome":"ELETROBRAS","total_xlsx":4},{"nome":"EUROCHEM FTO MATRIZ","total_xlsx":100},{"nome":"EUROCHEM SALITRE","total_xlsx":149},{"nome":"FABIO CARAMURU CORRE","total_xlsx":2},{"nome":"FAMILIA ANGANUZZI","total_xlsx":1},{"nome":"FEDERAL-MOGUL","total_xlsx":1},{"nome":"FRANCISCO MARINS","total_xlsx":19},{"nome":"GARANTIA REAL SERVIC","total_xlsx":2},{"nome":"GRUPO BAND RADIO TV","total_xlsx":6},{"nome":"GUILHERME PRIANTE","total_xlsx":1},{"nome":"HERINGER","total_xlsx":325},{"nome":"INPASA SINOP","total_xlsx":4},{"nome":"INTEL SEMICONDUTORES","total_xlsx":1},{"nome":"INTERNATIONAL PAPER","total_xlsx":1},{"nome":"IPE REALTY","total_xlsx":3},{"nome":"ITW CHEMICAL MATRIZ","total_xlsx":21},{"nome":"ITW PPF","total_xlsx":8},{"nome":"IVAN SEGURADO PINTO","total_xlsx":1},{"nome":"JAMES ACACIO LOBO","total_xlsx":1},{"nome":"L. SANT ANGELO","total_xlsx":32},{"nome":"LEONARDO WAISSMANN","total_xlsx":1},{"nome":"LOCALIZA RENT A CAR","total_xlsx":38},{"nome":"MARCELO MENDES MOURA","total_xlsx":1},{"nome":"MITRE VENDAS","total_xlsx":8},{"nome":"MSA BRASIL","total_xlsx":11},{"nome":"MULTICEL","total_xlsx":12},{"nome":"NEO MULTIMERCADO","total_xlsx":2},{"nome":"PEIXOTO E CURY","total_xlsx":1},{"nome":"PILKINGTON (NSG)","total_xlsx":76},{"nome":"RENATO THOMAZ PEREIR","total_xlsx":1},{"nome":"ROYAL PRESTIGE - HY","total_xlsx":3},{"nome":"SINDIGÁS","total_xlsx":2},{"nome":"SISTENGE","total_xlsx":45},{"nome":"STEELCORP CONSTRUCTI","total_xlsx":5},{"nome":"TENDA ATACADO","total_xlsx":1},{"nome":"TV SBT CANAL 4","total_xlsx":1},{"nome":"UBER DO BRASIL","total_xlsx":1},{"nome":"VERZANI & SANDRINI","total_xlsx":1},{"nome":"VITERRA AGRICULTURE","total_xlsx":2},{"nome":"VITERRA RIO VERMELHO","total_xlsx":321}],"advogados":[{"nome":"André Alessandro de Paula(AAP)","sigla":"AAP","total_xlsx":50},{"nome":"Arthur Rodrigues Rios Toledo de Castro(ARC)","sigla":"ARC","total_xlsx":289},{"nome":"Camila Alves Magalhães de Paula(CAL)","sigla":"CAL","total_xlsx":294},{"nome":"Fabiana Correia dos Anjos Gomes(FCG)","sigla":"FCG","total_xlsx":284},{"nome":"João Paulo Mortari Neves(JNE)","sigla":"JNE","total_xlsx":268},{"nome":"Mariana Borges de Menezes Fávaro(MBF)","sigla":"MBF","total_xlsx":190},{"nome":"Natalia Bezerra Baliero(NBB)","sigla":"NBB","total_xlsx":1},{"nome":"Rafael Camargo Felisbino(RCF)","sigla":"RCF","total_xlsx":99},{"nome":"Rafael Yepez do Lago(RYL)","sigla":"RYL","total_xlsx":268},{"nome":"Richard Ruan Leo da Silva(RRU)","sigla":"RRU","total_xlsx":307},{"nome":"Washington Soares Silva Filho(WSF)","sigla":"WSF","total_xlsx":6}],"assistentes":["Julio Cesar Valadares (JVC) - estagiário","Edjan Gonçalves dos Reis (EGR) - estagiária","Julio Cesar Ferreira Rodrigues (JUR) - estágiario","Giovanna Teixeira Franco (GIF) - assistente","Gabriela Pedroso (GSP) - estagiária","Brenda da Silva dos Santos (BSS) - estagiária","Karoline de Castro Torres (KTO) - estagiária","Juan Leonardo Ikier Moraes (JLM) - assistente","Amanda Mesquita Araujo (AML) - assistente"],"media_xlsx":219.88888888888889}]}},"controladoria":["Ana Carolina Honório - ACH","Beatriz Luna","Giullia Leme"],"relatorios":["Juliana Nascimento - JPS","Michael"]};
+
+const ALIAS_GRUPO_LIVE = { "Grupo C1": "Grupo C" };
+
+function extrairSiglaOrg(nome){
+  const m = /\(([A-Z]{2,4})\)\s*$/.exec(String(nome||'').trim());
+  return m ? m[1] : null;
+}
+function siglaDoProfissionalLive(nomeLive){
+  const m = /\(([A-Za-z]{2,4})\)/.exec(String(nomeLive||''));
+  return m ? m[1].toUpperCase() : null;
+}
+function normCliente(s){
+  return String(s||'').normalize('NFD').replace(/[̀-ͯ]/g,'').toUpperCase().trim();
+}
+
+let _divisaoArgs = null;
+function _normDiv(s){ return String(s||'').normalize('NFD').replace(/[̀-ͯ]/g,'').toUpperCase().trim(); }
+
+function renderDivisao(porGrupo, porGrupoCliente, porGrupoProfissional){
+  _divisaoArgs = {porGrupo, porGrupoCliente, porGrupoProfissional};
+  desenharDivisao();
+}
+
+function desenharDivisao(){
+  if(!_divisaoArgs) return;
+  const {porGrupo, porGrupoCliente, porGrupoProfissional} = _divisaoArgs;
+  const q = _normDiv(document.getElementById('filtroDivisao')?.value || '');
+
+  const grupoLiveMap = {};
+  porGrupo.forEach(g => grupoLiveMap[g.nome] = g);
+
+  let equipesVisiveis = 0, gruposVisiveis = 0;
+  const grid = document.getElementById('divisaoGrid');
+  grid.innerHTML = Object.entries(DIVISAO_ORG.equipes).map(([nomeEquipe, eq]) => {
+    const equipeMatch = !q || _normDiv(nomeEquipe).includes(q);
+    let totalEquipeLive = 0;
+    const gruposHtml = eq.grupos.map(g => {
+      const grupoLiveNome = ALIAS_GRUPO_LIVE[g.grupo] || g.grupo;
+      const liveGrupo = grupoLiveMap[grupoLiveNome];
+      const totalLive = liveGrupo ? liveGrupo.andamento : 0;
+      totalEquipeLive += totalLive;
+
+      const grupoMatch = equipeMatch || _normDiv(g.grupo).includes(q);
+
+      const clientesLive = porGrupoCliente.filter(c => c.grupo === grupoLiveNome);
+      const clientesOrdenados = g.clientes.map(c => {
+        const alvo = normCliente(c.nome);
+        const match = clientesLive.find(cl => normCliente(cl.cliente) === alvo || normCliente(cl.cliente).startsWith(alvo) || alvo.startsWith(normCliente(cl.cliente)));
+        return {nome: c.nome, val: match ? match.andamento : 0};
+      }).sort((a,b) => b.val - a.val);
+      const clientesFiltrados = grupoMatch ? clientesOrdenados : clientesOrdenados.filter(c => _normDiv(c.nome).includes(q));
+      const clientesHtml = clientesFiltrados.map(c =>
+        `<div class="divisao-mini-row${c.val===0?' zero':''}"><span class="nome" title="${c.nome}">${c.nome}</span><span class="val">${fmtInt(c.val)}</span></div>`
+      ).join('');
+
+      const profsLive = porGrupoProfissional.filter(p => p.grupo === grupoLiveNome);
+      let somaAdv = 0, nAdv = 0;
+      const advOrdenados = g.advogados.map(a => {
+        const match = a.sigla ? profsLive.find(p => siglaDoProfissionalLive(p.profissional) === a.sigla) : null;
+        const val = match ? match.andamento : 0;
+        if(match){ somaAdv += val; nAdv++; }
+        return {nome: a.nome, val};
+      }).sort((a,b) => b.val - a.val);
+      const advFiltrados = grupoMatch ? advOrdenados : advOrdenados.filter(a => _normDiv(a.nome).includes(q));
+      const advHtml = advFiltrados.map(a =>
+        `<div class="divisao-mini-row${a.val===0?' zero':''}"><span class="nome" title="${a.nome}">${a.nome}</span><span class="val">${fmtInt(a.val)}</span></div>`
+      ).join('');
+      const mediaLive = nAdv ? (somaAdv/nAdv) : 0;
+
+      const temMatchNesteGrupo = grupoMatch || clientesFiltrados.length || advFiltrados.length;
+      if(!temMatchNesteGrupo) return '';
+      gruposVisiveis++;
+
+      const assistHtml = g.assistentes.length ? `<div class="divisao-sub-lbl">Assistentes/Estagiários</div><div class="divisao-assist">${g.assistentes.join(' · ')}</div>` : '';
+
+      return `
+        <div class="divisao-grupo">
+          <div class="divisao-grupo-hdr"><span class="nome">${g.grupo}</span><span class="tot">${fmtInt(totalLive)}</span></div>
+          <div class="divisao-grupo-cols">
+            <div class="divisao-col">
+              <div class="divisao-sub-lbl">Clientes${clientesFiltrados.length!==clientesOrdenados.length?` (${clientesFiltrados.length}/${clientesOrdenados.length})`:''}</div>
+              ${clientesHtml || '<div class="divisao-mini-row zero"><span class="nome">—</span></div>'}
+            </div>
+            <div class="divisao-col">
+              <div class="divisao-sub-lbl">Advogados${advFiltrados.length!==advOrdenados.length?` (${advFiltrados.length}/${advOrdenados.length})`:''}</div>
+              ${advHtml || '<div class="divisao-mini-row zero"><span class="nome">—</span></div>'}
+              <div class="divisao-media">Média de processos: ${mediaLive.toFixed(1).replace('.',',')}</div>
+            </div>
+          </div>
+          ${assistHtml}
+        </div>`;
+    }).join('');
+
+    if(!gruposHtml) return '';
+    equipesVisiveis++;
+
+    const metaLinhas = [eq.gestor, eq.responsavel_clientes].filter(Boolean).join(' · ');
+    return `
+      <div class="divisao-equipe">
+        <div class="divisao-equipe-hdr">
+          <div class="nome">${nomeEquipe}</div>
+          ${metaLinhas ? `<div class="meta">${metaLinhas}</div>` : ''}
+          <div class="tot">${fmtInt(totalEquipeLive)} processos</div>
+        </div>
+        <div class="divisao-equipe-body">${gruposHtml}</div>
+      </div>`;
+  }).join('');
+
+  const countEl = document.getElementById('filtroDivisaoCount');
+  if(countEl) countEl.textContent = q ? `${equipesVisiveis} equipe(s) · ${gruposVisiveis} grupo(s) encontrados` : '';
+  if(q && !equipesVisiveis) grid.innerHTML = '<div class="desc">Nenhum resultado para essa busca.</div>';
+
+  document.getElementById('rosterControladoria').innerHTML = DIVISAO_ORG.controladoria.map(n => `<li>${n}</li>`).join('');
+  document.getElementById('rosterRelatorios').innerHTML = DIVISAO_ORG.relatorios.map(n => `<li>${n}</li>`).join('');
+}
+document.getElementById('filtroDivisao').addEventListener('input', desenharDivisao);
+
 async function carregar(){
   try{
     const resp = await fetch(DATA_URL + '?t=' + Date.now(), {cache:'no-store'});
@@ -924,6 +1092,7 @@ async function carregar(){
     renderTabelas(data.por_grupo, data.por_cliente, data.por_profissional);
     renderValores(data.por_grupo, data.kpis.valor_causa_total);
     renderGrupoCliente(data.por_grupo_cliente || []);
+    renderDivisao(data.por_grupo || [], data.por_grupo_cliente || [], data.por_grupo_profissional || []);
     const dt = new Date(data.atualizado_em);
     document.getElementById('updNote').textContent =
       'Atualizado ' + dt.toLocaleDateString('pt-BR') + ' ' + dt.toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});
