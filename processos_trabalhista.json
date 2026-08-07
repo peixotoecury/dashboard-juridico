@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-08-07T12:45:21",
+  "atualizado_em": "2026-08-07T13:00:23",
   "kpis": {
-    "total_andamento": 8166,
+    "total_andamento": 8165,
     "entradas_hoje": 4,
-    "saidas_hoje": 6,
+    "saidas_hoje": 7,
     "entradas_ontem": 11,
     "saidas_ontem": 3,
     "entradas_mes": 47,
-    "saidas_mes": 83,
+    "saidas_mes": 84,
     "entradas_mes_anterior": 252,
     "saidas_mes_anterior": 241,
-    "valor_causa_total": 1723046449.03,
-    "saldo_mes": -36
+    "valor_causa_total": 1722994572.89,
+    "saldo_mes": -37
   },
   "serie_diaria": [
     {
@@ -312,7 +312,7 @@
     {
       "data": "2026-08-07",
       "entradas": 4,
-      "saidas": 6
+      "saidas": 7
     }
   ],
   "por_grupo": [
@@ -390,12 +390,12 @@
     },
     {
       "nome": "Grupo A2",
-      "andamento": 28,
+      "andamento": 27,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 1,
-      "valor_causa": 11899003.48
+      "valor_causa": 11847127.34
     },
     {
       "nome": "Grupo A1",
@@ -428,12 +428,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 6374,
+      "andamento": 6373,
       "entradas_mes": 40,
-      "saidas_mes": 79,
+      "saidas_mes": 80,
       "entradas_mes_anterior": 166,
       "saidas_mes_anterior": 180,
-      "valor_causa": 1370944786.89
+      "valor_causa": 1370892910.75
     },
     {
       "nome": "MG",
@@ -664,12 +664,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2890,
+      "andamento": 2889,
       "entradas_mes": 46,
-      "saidas_mes": 14,
+      "saidas_mes": 15,
       "entradas_mes_anterior": 194,
       "saidas_mes_anterior": 77,
-      "valor_causa": 746779131.87
+      "valor_causa": 746727255.73
     },
     {
       "nome": "Sentença",
@@ -984,12 +984,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo A2",
-      "andamento": 17,
+      "andamento": 16,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 1,
-      "valor_causa": 7860137.12
+      "valor_causa": 7808260.98
     },
     {
       "fase": "Instrução",
@@ -1583,12 +1583,12 @@
     },
     {
       "nome": "Natália Biondi Gaggini Robles(NBG)",
-      "andamento": 28,
+      "andamento": 27,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 1,
-      "valor_causa": 11861457.76
+      "valor_causa": 11809581.62
     },
     {
       "nome": "Thais Catharine Cardozo Esteves(TCE)",
@@ -2109,17 +2109,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Grupo A2",
-      "cliente": "OCP BRASIL",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 51876.14,
       "alerta_entrada": false
     },
     {
@@ -3875,12 +3864,12 @@
     {
       "grupo": "Grupo A2",
       "profissional": "Natália Biondi Gaggini Robles(NBG)",
-      "andamento": 27,
+      "andamento": 26,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 1,
-      "valor_causa": 11861457.76
+      "valor_causa": 11809581.62
     },
     {
       "grupo": "Grupo A2",
@@ -7683,16 +7672,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 128800.0
-    },
-    {
-      "estado": "SP",
-      "cliente": "OCP BRASIL",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 51876.14
     },
     {
       "estado": "SP",
