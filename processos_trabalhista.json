@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-08-07T11:45:17",
+  "atualizado_em": "2026-08-07T12:00:29",
   "kpis": {
-    "total_andamento": 8165,
-    "entradas_hoje": 3,
+    "total_andamento": 8166,
+    "entradas_hoje": 4,
     "saidas_hoje": 6,
     "entradas_ontem": 11,
     "saidas_ontem": 3,
-    "entradas_mes": 46,
+    "entradas_mes": 47,
     "saidas_mes": 83,
     "entradas_mes_anterior": 252,
     "saidas_mes_anterior": 241,
-    "valor_causa_total": 1722681656.32,
-    "saldo_mes": -37
+    "valor_causa_total": 1723046449.03,
+    "saldo_mes": -36
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-08-07",
-      "entradas": 3,
+      "entradas": 4,
       "saidas": 6
     }
   ],
@@ -408,12 +408,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 8,
-      "entradas_mes": 4,
+      "andamento": 9,
+      "entradas_mes": 5,
       "saidas_mes": 19,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
-      "valor_causa": 4498350.87
+      "valor_causa": 4863143.58
     },
     {
       "nome": "Sócios",
@@ -428,12 +428,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 6373,
-      "entradas_mes": 39,
+      "andamento": 6374,
+      "entradas_mes": 40,
       "saidas_mes": 79,
       "entradas_mes_anterior": 166,
       "saidas_mes_anterior": 180,
-      "valor_causa": 1370579994.18
+      "valor_causa": 1370944786.89
     },
     {
       "nome": "MG",
@@ -664,12 +664,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2889,
-      "entradas_mes": 45,
+      "andamento": 2890,
+      "entradas_mes": 46,
       "saidas_mes": 14,
       "entradas_mes_anterior": 194,
       "saidas_mes_anterior": 77,
-      "valor_causa": 746414339.16
+      "valor_causa": 746779131.87
     },
     {
       "nome": "Sentença",
@@ -994,12 +994,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 5,
-      "entradas_mes": 4,
+      "andamento": 6,
+      "entradas_mes": 5,
       "saidas_mes": 2,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 3851221.72
+      "valor_causa": 4216014.43
     },
     {
       "fase": "Instrução",
@@ -1349,12 +1349,12 @@
     },
     {
       "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 295,
-      "entradas_mes": 0,
+      "andamento": 296,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 15,
       "saidas_mes_anterior": 3,
-      "valor_causa": 201209194.9
+      "valor_causa": 201573987.61
     },
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
@@ -1772,12 +1772,12 @@
     },
     {
       "nome": "HERINGER",
-      "andamento": 326,
-      "entradas_mes": 0,
+      "andamento": 327,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 15,
-      "valor_causa": 39567849.49,
+      "valor_causa": 39932642.2,
       "alerta_entrada": false
     },
     {
@@ -3828,6 +3828,17 @@
       "alerta_entrada": false
     },
     {
+      "grupo": "Sem grupo",
+      "cliente": "HERINGER",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 364792.71,
+      "alerta_entrada": false
+    },
+    {
       "grupo": "Sócios",
       "cliente": "PEIXOTO E CURY",
       "andamento": 2,
@@ -4483,6 +4494,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
+      "andamento": 2,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 635967.24
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Paloma da Silva Santos(PSI)",
       "andamento": 2,
       "entradas_mes": 2,
@@ -4490,16 +4511,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
       "valor_causa": 60000.0
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 271174.53
     },
     {
       "grupo": "Sem grupo",
@@ -6626,12 +6637,12 @@
     {
       "estado": "SP",
       "cliente": "HERINGER",
-      "andamento": 102,
-      "entradas_mes": 0,
+      "andamento": 103,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 5,
-      "valor_causa": 10465344.01
+      "valor_causa": 10830136.72
     },
     {
       "estado": "SP",
@@ -8061,6 +8072,11 @@
       "numero_processo": "0010726-60.2026.5.15.0040",
       "cliente": "BRIDGESTONE",
       "profissional": "Guilherme Silva Morimoto(GSM)"
+    },
+    {
+      "numero_processo": "0010990-13.2026.5.15.0126",
+      "cliente": "HERINGER",
+      "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
     },
     {
       "numero_processo": "1000003-42.2021.5.02.0382",
