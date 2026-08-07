@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-08-07T13:45:20",
+  "atualizado_em": "2026-08-07T14:00:20",
   "kpis": {
-    "total_andamento": 8165,
-    "entradas_hoje": 4,
+    "total_andamento": 8167,
+    "entradas_hoje": 6,
     "saidas_hoje": 7,
     "entradas_ontem": 11,
     "saidas_ontem": 3,
-    "entradas_mes": 47,
+    "entradas_mes": 49,
     "saidas_mes": 84,
     "entradas_mes_anterior": 252,
     "saidas_mes_anterior": 241,
-    "valor_causa_total": 1722994572.89,
-    "saldo_mes": -37
+    "valor_causa_total": 1723343422.29,
+    "saldo_mes": -35
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-08-07",
-      "entradas": 4,
+      "entradas": 6,
       "saidas": 7
     }
   ],
@@ -408,12 +408,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 8,
-      "entradas_mes": 4,
+      "andamento": 10,
+      "entradas_mes": 6,
       "saidas_mes": 19,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
-      "valor_causa": 1663811.86
+      "valor_causa": 2012661.26
     },
     {
       "nome": "Sócios",
@@ -464,12 +464,21 @@
     },
     {
       "nome": "RJ",
-      "andamento": 220,
-      "entradas_mes": 0,
+      "andamento": 221,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 17254821.22
+      "valor_causa": 17333170.34
+    },
+    {
+      "nome": "BA",
+      "andamento": 103,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 6,
+      "saidas_mes_anterior": 6,
+      "valor_causa": 14544632.51
     },
     {
       "nome": "MS",
@@ -479,15 +488,6 @@
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
       "valor_causa": 17287406.01
-    },
-    {
-      "nome": "BA",
-      "andamento": 102,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 6,
-      "saidas_mes_anterior": 6,
-      "valor_causa": 14274132.23
     },
     {
       "nome": "GO",
@@ -664,12 +664,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2889,
-      "entradas_mes": 46,
+      "andamento": 2891,
+      "entradas_mes": 48,
       "saidas_mes": 15,
       "entradas_mes_anterior": 194,
       "saidas_mes_anterior": 77,
-      "valor_causa": 746727255.73
+      "valor_causa": 747076105.13
     },
     {
       "nome": "Sentença",
@@ -994,12 +994,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 5,
-      "entradas_mes": 4,
+      "andamento": 7,
+      "entradas_mes": 6,
       "saidas_mes": 2,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 1016682.71
+      "valor_causa": 1365532.11
     },
     {
       "fase": "Instrução",
@@ -1331,12 +1331,12 @@
     },
     {
       "nome": "Richard Ruan Leo da Silva(RRU)",
-      "andamento": 308,
-      "entradas_mes": 4,
+      "andamento": 309,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 15,
-      "valor_causa": 31582504.61
+      "valor_causa": 31853004.89
     },
     {
       "nome": "Aline Ferreira Miron(ALF)",
@@ -1627,6 +1627,15 @@
       "valor_causa": 0.0
     },
     {
+      "nome": "Luiz Vicente de Carvalho(LVC)",
+      "andamento": 2,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 114349.12
+    },
+    {
       "nome": "Gabriel Neder De Donato(GND)",
       "andamento": 1,
       "entradas_mes": 0,
@@ -1643,15 +1652,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
-    },
-    {
-      "nome": "Luiz Vicente de Carvalho(LVC)",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 36000.0
     },
     {
       "nome": "Sofia Freire (SOF) ; Gabriel Neder De Donato(GND)",
@@ -3817,6 +3817,28 @@
       "alerta_entrada": false
     },
     {
+      "grupo": "Sem grupo",
+      "cliente": "INPASA SINOP",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 270500.28,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "SISTENGE",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 78349.12,
+      "alerta_entrada": false
+    },
+    {
       "grupo": "Sócios",
       "cliente": "PEIXOTO E CURY",
       "andamento": 2,
@@ -4482,6 +4504,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Luiz Vicente de Carvalho(LVC)",
+      "andamento": 2,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 114349.12
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Paloma da Silva Santos(PSI)",
       "andamento": 2,
       "entradas_mes": 2,
@@ -4492,16 +4524,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Luiz Vicente de Carvalho(LVC)",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 36000.0
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Jessica Cerqueira Silva(JQS)",
       "andamento": 1,
       "entradas_mes": 0,
@@ -4509,6 +4531,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 339954.62
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Richard Ruan Leo da Silva(RRU)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 270500.28
     },
     {
       "grupo": "Sócios",
@@ -4721,6 +4753,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
+    },
+    {
+      "estado": "BA",
+      "cliente": "INPASA SINOP",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 270500.28
     },
     {
       "estado": "CE",
@@ -6101,6 +6143,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
+    },
+    {
+      "estado": "RJ",
+      "cliente": "SISTENGE",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 78349.12
     },
     {
       "estado": "RN",
@@ -8006,12 +8058,12 @@
     },
     {
       "nome": "INPASA SINOP",
-      "andamento": 6,
-      "entradas_mes": 4,
+      "andamento": 7,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
-      "valor_causa": 643747.96,
+      "valor_causa": 914248.24,
       "alerta_entrada": true
     }
   ],
@@ -8037,6 +8089,11 @@
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
     },
     {
+      "numero_processo": "0001959-89.2026.5.05.0661",
+      "cliente": "INPASA SINOP",
+      "profissional": "Richard Ruan Leo da Silva(RRU)"
+    },
+    {
       "numero_processo": "1000003-42.2021.5.02.0382",
       "cliente": "LOJAS AMERICANAS",
       "profissional": "Jessica Cerqueira Silva(JQS)"
@@ -8055,6 +8112,11 @@
       "numero_processo": "1000930-65.2026.5.02.0080",
       "cliente": "PEIXOTO E CURY",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
+    },
+    {
+      "numero_processo": "0100921-48.2026.5.01.0342",
+      "cliente": "SISTENGE",
+      "profissional": "Luiz Vicente de Carvalho(LVC)"
     }
   ]
 }
