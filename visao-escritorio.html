@@ -221,9 +221,9 @@ footer{text-align:center;font-size:11px;color:var(--soft);padding:34px 0 10px;}
 .barchart-val{font-size:9.5px;font-weight:700;color:var(--ink);position:absolute;top:-16px;left:50%;transform:translateX(-50%);white-space:nowrap;}
 
 /* ── DIVISÃO TRABALHISTA ────────────────────────────────────────────────── */
-.divisao-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px;}
-.divisao-grupo-cols{display:grid;grid-template-columns:1fr 1fr;gap:0 16px;}
-@media(max-width:640px){.divisao-grupo-cols{grid-template-columns:1fr;}}
+.divisao-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;}
+@media(max-width:1100px){.divisao-grid{grid-template-columns:repeat(3,1fr);}}
+@media(max-width:700px){.divisao-grid{grid-template-columns:1fr;}}
 .divisao-equipe{background:var(--card);border:1px solid var(--border);border-radius:10px;overflow:hidden;box-shadow:var(--shadow);}
 .divisao-equipe-hdr{background:linear-gradient(90deg,var(--navy),var(--teal));color:#fff;padding:11px 16px;}
 .divisao-equipe-hdr .nome{font-size:13px;font-weight:800;letter-spacing:.3px;text-transform:uppercase;}
@@ -237,8 +237,8 @@ footer{text-align:center;font-size:11px;color:var(--soft);padding:34px 0 10px;}
 .divisao-grupo-hdr .tot{font-family:'Sora',sans-serif;font-size:16px;font-weight:800;color:var(--navy);}
 .divisao-sub-lbl{font-size:9.5px;font-weight:800;letter-spacing:.6px;text-transform:uppercase;color:var(--soft);margin:8px 0 4px;}
 .divisao-mini-row{display:flex;justify-content:space-between;gap:8px;font-size:11.5px;padding:2px 0;}
-.divisao-mini-row .nome{color:var(--ink);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
-.divisao-mini-row .val{font-family:'Sora',sans-serif;font-weight:700;color:var(--teal);flex-shrink:0;}
+.divisao-mini-row .nome{color:var(--ink);overflow-wrap:break-word;word-break:break-word;}
+.divisao-mini-row .val{font-family:'Sora',sans-serif;font-weight:700;color:var(--teal);flex-shrink:0;margin-left:8px;}
 .divisao-mini-row.zero .val{color:#c3ccd1;}
 .divisao-assist{font-size:11px;color:var(--soft);line-height:1.6;}
 .divisao-media{font-size:11px;color:var(--soft);margin-top:6px;font-style:italic;}
@@ -1034,17 +1034,11 @@ function desenharDivisao(){
       return `
         <div class="divisao-grupo">
           <div class="divisao-grupo-hdr"><span class="nome">${g.grupo}</span><span class="tot">${fmtInt(totalLive)}</span></div>
-          <div class="divisao-grupo-cols">
-            <div class="divisao-col">
-              <div class="divisao-sub-lbl">Clientes${clientesFiltrados.length!==clientesOrdenados.length?` (${clientesFiltrados.length}/${clientesOrdenados.length})`:''}</div>
-              ${clientesHtml || '<div class="divisao-mini-row zero"><span class="nome">—</span></div>'}
-            </div>
-            <div class="divisao-col">
-              <div class="divisao-sub-lbl">Advogados${advFiltrados.length!==advOrdenados.length?` (${advFiltrados.length}/${advOrdenados.length})`:''}</div>
-              ${advHtml || '<div class="divisao-mini-row zero"><span class="nome">—</span></div>'}
-              <div class="divisao-media">Média de processos: ${mediaLive.toFixed(1).replace('.',',')}</div>
-            </div>
-          </div>
+          <div class="divisao-sub-lbl">Clientes${clientesFiltrados.length!==clientesOrdenados.length?` (${clientesFiltrados.length}/${clientesOrdenados.length})`:''}</div>
+          ${clientesHtml || '<div class="divisao-mini-row zero"><span class="nome">—</span></div>'}
+          <div class="divisao-sub-lbl">Advogados${advFiltrados.length!==advOrdenados.length?` (${advFiltrados.length}/${advOrdenados.length})`:''}</div>
+          ${advHtml || '<div class="divisao-mini-row zero"><span class="nome">—</span></div>'}
+          <div class="divisao-media">Média de processos: ${mediaLive.toFixed(1).replace('.',',')}</div>
           ${assistHtml}
         </div>`;
     }).join('');
