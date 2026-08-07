@@ -8476,8 +8476,11 @@ function renderFataisXAud() {
       // 1. Sigla/matrícula exata (mais confiável)
       if(sigla && advAud === sigla) return true;
       if(mat   && advAud === mat)   return true;
-      // 2. Sigla contida na string (ex: "BCF - Bruna")
-      if(sigla && advAud.includes(sigla)) return true;
+      // 2. Sigla como palavra isolada na string (ex: "BCF - Bruna") — precisa ser
+      // \b (fronteira de palavra), não .includes(), senão sigla="CAR" (Chris Carvalho)
+      // dá falso positivo em qualquer nome que contenha "car" como substring, tipo
+      // "CAROLINA" (bug real: Chris puxava audiências da Anna Carolina Baani).
+      if(sigla && new RegExp('\\b' + sigla.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\b').test(advAud)) return true;
       // 3. Nome completo (fallback)
       return nomeBate(resp, getAdvAudiencia(a));
     }).length;
