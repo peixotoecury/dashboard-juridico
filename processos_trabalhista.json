@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-08-10T14:15:20",
+  "atualizado_em": "2026-08-10T14:30:21",
   "kpis": {
-    "total_andamento": 8177,
+    "total_andamento": 8176,
     "entradas_hoje": 5,
-    "saidas_hoje": 4,
+    "saidas_hoje": 5,
     "entradas_ontem": 0,
     "saidas_ontem": 0,
     "entradas_mes": 65,
-    "saidas_mes": 90,
+    "saidas_mes": 91,
     "entradas_mes_anterior": 252,
     "saidas_mes_anterior": 241,
-    "valor_causa_total": 1725514846.28,
-    "saldo_mes": -25
+    "valor_causa_total": 1725485878.15,
+    "saldo_mes": -26
   },
   "serie_diaria": [
     {
@@ -312,7 +312,7 @@
     {
       "data": "2026-08-10",
       "entradas": 5,
-      "saidas": 4
+      "saidas": 5
     }
   ],
   "por_grupo": [
@@ -336,12 +336,12 @@
     },
     {
       "nome": "Grupo B1",
-      "andamento": 1433,
+      "andamento": 1432,
       "entradas_mes": 12,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 45,
       "saidas_mes_anterior": 56,
-      "valor_causa": 296969146.86
+      "valor_causa": 296940178.73
     },
     {
       "nome": "Grupo D1",
@@ -428,12 +428,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 6372,
-      "entradas_mes": 44,
-      "saidas_mes": 85,
+      "andamento": 6370,
+      "entradas_mes": 43,
+      "saidas_mes": 86,
       "entradas_mes_anterior": 166,
       "saidas_mes_anterior": 180,
-      "valor_causa": 1370909733.04
+      "valor_causa": 1370645476.99
     },
     {
       "nome": "MG",
@@ -607,6 +607,15 @@
       "valor_causa": 958880.0
     },
     {
+      "nome": "RO",
+      "andamento": 5,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 2,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 235287.92
+    },
+    {
       "nome": "RN",
       "andamento": 5,
       "entradas_mes": 0,
@@ -623,15 +632,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 2636804.66
-    },
-    {
-      "nome": "RO",
-      "andamento": 4,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 2,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 0.0
     },
     {
       "nome": "AC",
@@ -664,12 +664,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2888,
+      "andamento": 2887,
       "entradas_mes": 63,
-      "saidas_mes": 18,
+      "saidas_mes": 19,
       "entradas_mes_anterior": 192,
       "saidas_mes_anterior": 72,
-      "valor_causa": 748241658.75
+      "valor_causa": 748212690.62
     },
     {
       "nome": "Sentença",
@@ -924,12 +924,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B1",
-      "andamento": 423,
+      "andamento": 422,
       "entradas_mes": 12,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 44,
       "saidas_mes_anterior": 20,
-      "valor_causa": 131419163.08
+      "valor_causa": 131390194.95
     },
     {
       "fase": "Instrução",
@@ -1412,12 +1412,12 @@
     },
     {
       "nome": "Tamara Silva Marcílio(TAM)",
-      "andamento": 272,
+      "andamento": 271,
       "entradas_mes": 1,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 4,
-      "valor_causa": 46145240.99
+      "valor_causa": 46116272.86
     },
     {
       "nome": "João Paulo Mortari Neves(JNE)",
@@ -1457,12 +1457,12 @@
     },
     {
       "nome": "Paloma da Silva Santos(PSI)",
-      "andamento": 256,
+      "andamento": 255,
       "entradas_mes": 2,
       "saidas_mes": 28,
-      "entradas_mes_anterior": 4,
+      "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 14,
-      "valor_causa": 52573866.23
+      "valor_causa": 52350866.23
     },
     {
       "nome": "Anna Carolina Balbino Gatti Baani(ANB)",
@@ -1493,12 +1493,12 @@
     },
     {
       "nome": "Vinícius Ronchi Arruda(VRO)",
-      "andamento": 233,
+      "andamento": 234,
       "entradas_mes": 2,
       "saidas_mes": 34,
-      "entradas_mes_anterior": 0,
+      "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 4,
-      "valor_causa": 33954955.41
+      "valor_causa": 34177955.41
     },
     {
       "nome": "Erik Mota Coppi(ECO)",
@@ -1711,12 +1711,12 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1434,
+      "andamento": 1433,
       "entradas_mes": 12,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 45,
       "saidas_mes_anterior": 56,
-      "valor_causa": 297312989.43,
+      "valor_causa": 297284021.3,
       "alerta_entrada": false
     },
     {
@@ -2343,12 +2343,12 @@
     {
       "grupo": "Grupo B1",
       "cliente": "BRIDGESTONE",
-      "andamento": 1433,
+      "andamento": 1432,
       "entradas_mes": 12,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 45,
       "saidas_mes_anterior": 56,
-      "valor_causa": 296969146.86,
+      "valor_causa": 296940178.73,
       "alerta_entrada": false
     },
     {
@@ -3983,12 +3983,12 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Tamara Silva Marcílio(TAM)",
-      "andamento": 272,
+      "andamento": 271,
       "entradas_mes": 1,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 4,
-      "valor_causa": 46145240.99
+      "valor_causa": 46116272.86
     },
     {
       "grupo": "Grupo B1",
@@ -4253,22 +4253,22 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Paloma da Silva Santos(PSI)",
-      "andamento": 256,
+      "andamento": 255,
       "entradas_mes": 2,
       "saidas_mes": 19,
-      "entradas_mes_anterior": 4,
+      "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 13,
-      "valor_causa": 52573866.23
+      "valor_causa": 52350866.23
     },
     {
       "grupo": "Grupo E1",
       "profissional": "Vinícius Ronchi Arruda(VRO)",
-      "andamento": 233,
+      "andamento": 234,
       "entradas_mes": 2,
       "saidas_mes": 24,
-      "entradas_mes_anterior": 0,
+      "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 4,
-      "valor_causa": 33954955.41
+      "valor_causa": 34177955.41
     },
     {
       "grupo": "Grupo E1",
@@ -6205,12 +6205,12 @@
     {
       "estado": "RO",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 2,
-      "entradas_mes": 1,
+      "andamento": 3,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 0.0
+      "valor_causa": 235287.92
     },
     {
       "estado": "RO",
@@ -6545,12 +6545,12 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1414,
+      "andamento": 1413,
       "entradas_mes": 12,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 45,
       "saidas_mes_anterior": 55,
-      "valor_causa": 288659464.2
+      "valor_causa": 288630496.07
     },
     {
       "estado": "SP",
@@ -6565,12 +6565,12 @@
     {
       "estado": "SP",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 595,
-      "entradas_mes": 7,
+      "andamento": 594,
+      "entradas_mes": 6,
       "saidas_mes": 10,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 17,
-      "valor_causa": 117678885.4
+      "valor_causa": 117443597.48
     },
     {
       "estado": "SP",
