@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-08-10T09:15:23",
+  "atualizado_em": "2026-08-10T09:30:21",
   "kpis": {
-    "total_andamento": 8172,
+    "total_andamento": 8170,
     "entradas_hoje": 0,
-    "saidas_hoje": 0,
+    "saidas_hoje": 2,
     "entradas_ontem": 0,
     "saidas_ontem": 0,
     "entradas_mes": 56,
-    "saidas_mes": 86,
+    "saidas_mes": 88,
     "entradas_mes_anterior": 252,
     "saidas_mes_anterior": 241,
-    "valor_causa_total": 1724602122.65,
-    "saldo_mes": -30
+    "valor_causa_total": 1724326165.07,
+    "saldo_mes": -32
   },
   "serie_diaria": [
     {
@@ -312,7 +312,7 @@
     {
       "data": "2026-08-10",
       "entradas": 0,
-      "saidas": 0
+      "saidas": 2
     }
   ],
   "por_grupo": [
@@ -327,12 +327,12 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1775,
+      "andamento": 1773,
       "entradas_mes": 13,
-      "saidas_mes": 58,
+      "saidas_mes": 60,
       "entradas_mes_anterior": 44,
       "saidas_mes_anterior": 61,
-      "valor_causa": 291557237.54
+      "valor_causa": 291281279.96
     },
     {
       "nome": "Grupo B1",
@@ -428,12 +428,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 6372,
+      "andamento": 6370,
       "entradas_mes": 41,
-      "saidas_mes": 82,
+      "saidas_mes": 84,
       "entradas_mes_anterior": 166,
       "saidas_mes_anterior": 180,
-      "valor_causa": 1370763347.68
+      "valor_causa": 1370487390.1
     },
     {
       "nome": "MG",
@@ -664,12 +664,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2880,
+      "andamento": 2879,
       "entradas_mes": 54,
-      "saidas_mes": 17,
+      "saidas_mes": 18,
       "entradas_mes_anterior": 192,
       "saidas_mes_anterior": 72,
-      "valor_causa": 746984322.44
+      "valor_causa": 746938992.44
     },
     {
       "nome": "Sentença",
@@ -691,12 +691,12 @@
     },
     {
       "nome": "Execução",
-      "andamento": 1242,
+      "andamento": 1241,
       "entradas_mes": 1,
-      "saidas_mes": 40,
+      "saidas_mes": 41,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 73,
-      "valor_causa": 174687785.72
+      "valor_causa": 174457158.14
     }
   ],
   "por_fase_outras": 410,
@@ -834,12 +834,12 @@
     {
       "fase": "Execução",
       "grupo": "Grupo E1",
-      "andamento": 179,
+      "andamento": 178,
       "entradas_mes": 0,
-      "saidas_mes": 32,
+      "saidas_mes": 33,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 11,
-      "valor_causa": 18987037.41
+      "valor_causa": 18756409.83
     },
     {
       "fase": "Execução",
@@ -914,12 +914,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 769,
+      "andamento": 768,
       "entradas_mes": 12,
-      "saidas_mes": 9,
+      "saidas_mes": 10,
       "entradas_mes_anterior": 30,
       "saidas_mes_anterior": 10,
-      "valor_causa": 158479592.77
+      "valor_causa": 158434262.77
     },
     {
       "fase": "Instrução",
@@ -1295,12 +1295,12 @@
   "por_profissional": [
     {
       "nome": "Júlia Priego Lopes da Silva(JPL)",
-      "andamento": 549,
+      "andamento": 548,
       "entradas_mes": 4,
-      "saidas_mes": 9,
+      "saidas_mes": 10,
       "entradas_mes_anterior": 15,
       "saidas_mes_anterior": 15,
-      "valor_causa": 96543151.93
+      "valor_causa": 96497821.93
     },
     {
       "nome": "Jessica Cerqueira Silva(JQS)",
@@ -1484,12 +1484,12 @@
     },
     {
       "nome": "Vinícius Ronchi Arruda(VRO)",
-      "andamento": 237,
+      "andamento": 236,
       "entradas_mes": 2,
-      "saidas_mes": 33,
+      "saidas_mes": 34,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 4,
-      "valor_causa": 35900720.62
+      "valor_causa": 35670093.04
     },
     {
       "nome": "Rafael Camargo Felisbino(RCF)",
@@ -1732,12 +1732,12 @@
     },
     {
       "nome": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 692,
+      "andamento": 691,
       "entradas_mes": 9,
-      "saidas_mes": 10,
+      "saidas_mes": 11,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 20,
-      "valor_causa": 133259454.6,
+      "valor_causa": 133214124.6,
       "alerta_entrada": false
     },
     {
@@ -1792,12 +1792,12 @@
     },
     {
       "nome": "MAHLE METAL - SBC",
-      "andamento": 255,
+      "andamento": 254,
       "entradas_mes": 0,
-      "saidas_mes": 34,
+      "saidas_mes": 35,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 4,
-      "valor_causa": 22255261.97,
+      "valor_causa": 22024634.39,
       "alerta_entrada": false
     },
     {
@@ -2961,12 +2961,12 @@
     {
       "grupo": "Grupo E1",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 621,
+      "andamento": 620,
       "entradas_mes": 9,
-      "saidas_mes": 10,
+      "saidas_mes": 11,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 19,
-      "valor_causa": 132285215.66,
+      "valor_causa": 132239885.66,
       "alerta_entrada": false
     },
     {
@@ -2983,12 +2983,12 @@
     {
       "grupo": "Grupo E1",
       "cliente": "MAHLE METAL - SBC",
-      "andamento": 255,
+      "andamento": 254,
       "entradas_mes": 0,
-      "saidas_mes": 24,
+      "saidas_mes": 25,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 4,
-      "valor_causa": 22255261.97,
+      "valor_causa": 22024634.39,
       "alerta_entrada": false
     },
     {
@@ -4224,12 +4224,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Júlia Priego Lopes da Silva(JPL)",
-      "andamento": 549,
+      "andamento": 548,
       "entradas_mes": 4,
-      "saidas_mes": 9,
+      "saidas_mes": 10,
       "entradas_mes_anterior": 15,
       "saidas_mes_anterior": 15,
-      "valor_causa": 96543151.93
+      "valor_causa": 96497821.93
     },
     {
       "grupo": "Grupo E1",
@@ -4254,12 +4254,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Vinícius Ronchi Arruda(VRO)",
-      "andamento": 237,
+      "andamento": 236,
       "entradas_mes": 2,
-      "saidas_mes": 23,
+      "saidas_mes": 24,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 4,
-      "valor_causa": 35900720.62
+      "valor_causa": 35670093.04
     },
     {
       "grupo": "Grupo E1",
@@ -6526,12 +6526,12 @@
     {
       "estado": "SP",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 596,
+      "andamento": 595,
       "entradas_mes": 7,
-      "saidas_mes": 9,
+      "saidas_mes": 10,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 17,
-      "valor_causa": 117724215.4
+      "valor_causa": 117678885.4
     },
     {
       "estado": "SP",
@@ -6576,12 +6576,12 @@
     {
       "estado": "SP",
       "cliente": "MAHLE METAL - SBC",
-      "andamento": 255,
+      "andamento": 254,
       "entradas_mes": 0,
-      "saidas_mes": 34,
+      "saidas_mes": 35,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 4,
-      "valor_causa": 22255261.97
+      "valor_causa": 22024634.39
     },
     {
       "estado": "SP",
