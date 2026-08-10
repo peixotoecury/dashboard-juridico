@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-08-10T13:30:22",
+  "atualizado_em": "2026-08-10T13:45:20",
   "kpis": {
-    "total_andamento": 8175,
+    "total_andamento": 8174,
     "entradas_hoje": 2,
-    "saidas_hoje": 3,
+    "saidas_hoje": 4,
     "entradas_ontem": 0,
     "saidas_ontem": 0,
     "entradas_mes": 62,
-    "saidas_mes": 89,
+    "saidas_mes": 90,
     "entradas_mes_anterior": 252,
     "saidas_mes_anterior": 241,
     "valor_causa_total": 1725262529.23,
-    "saldo_mes": -27
+    "saldo_mes": -28
   },
   "serie_diaria": [
     {
@@ -312,7 +312,7 @@
     {
       "data": "2026-08-10",
       "entradas": 2,
-      "saidas": 3
+      "saidas": 4
     }
   ],
   "por_grupo": [
@@ -328,11 +328,11 @@
     {
       "nome": "Grupo E1",
       "andamento": 1773,
-      "entradas_mes": 13,
-      "saidas_mes": 60,
+      "entradas_mes": 14,
+      "saidas_mes": 61,
       "entradas_mes_anterior": 44,
       "saidas_mes_anterior": 61,
-      "valor_causa": 291281279.96
+      "valor_causa": 291381721.76
     },
     {
       "nome": "Grupo B1",
@@ -408,12 +408,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 8,
-      "entradas_mes": 4,
+      "andamento": 7,
+      "entradas_mes": 3,
       "saidas_mes": 19,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
-      "valor_causa": 1875136.12
+      "valor_causa": 1774694.32
     },
     {
       "nome": "Sócios",
@@ -446,9 +446,9 @@
     },
     {
       "nome": "RS",
-      "andamento": 231,
+      "andamento": 230,
       "entradas_mes": 3,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 3,
       "valor_causa": 53021901.98
@@ -682,9 +682,9 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 3237,
+      "andamento": 3236,
       "entradas_mes": 0,
-      "saidas_mes": 26,
+      "saidas_mes": 27,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 42,
       "valor_causa": 679037975.3
@@ -914,12 +914,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 768,
-      "entradas_mes": 12,
+      "andamento": 769,
+      "entradas_mes": 13,
       "saidas_mes": 10,
       "entradas_mes_anterior": 30,
       "saidas_mes_anterior": 10,
-      "valor_causa": 158434262.77
+      "valor_causa": 158534704.57
     },
     {
       "fase": "Instrução",
@@ -994,12 +994,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 5,
-      "entradas_mes": 4,
+      "andamento": 4,
+      "entradas_mes": 3,
       "saidas_mes": 2,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 1228006.97
+      "valor_causa": 1127565.17
     },
     {
       "fase": "Instrução",
@@ -1134,9 +1134,9 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo E1",
-      "andamento": 744,
+      "andamento": 743,
       "entradas_mes": 0,
-      "saidas_mes": 14,
+      "saidas_mes": 15,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 10,
       "valor_causa": 103571439.07
@@ -1556,9 +1556,9 @@
     },
     {
       "nome": "Júlia Priego Lopes da Silva(JPL)",
-      "andamento": 114,
+      "andamento": 113,
       "entradas_mes": 0,
-      "saidas_mes": 10,
+      "saidas_mes": 11,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 15,
       "valor_causa": 32688760.72
@@ -1741,9 +1741,9 @@
     },
     {
       "nome": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 692,
+      "andamento": 691,
       "entradas_mes": 10,
-      "saidas_mes": 11,
+      "saidas_mes": 12,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 20,
       "valor_causa": 133314566.4,
@@ -2971,11 +2971,11 @@
       "grupo": "Grupo E1",
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "andamento": 620,
-      "entradas_mes": 9,
-      "saidas_mes": 11,
+      "entradas_mes": 10,
+      "saidas_mes": 12,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 19,
-      "valor_causa": 132239885.66,
+      "valor_causa": 132340327.46,
       "alerta_entrada": false
     },
     {
@@ -3816,17 +3816,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 100441.8,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "MITRE VENDAS",
       "andamento": 1,
       "entradas_mes": 1,
@@ -4294,19 +4283,19 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Joice Ramos Miranda(JRM)",
-      "andamento": 154,
-      "entradas_mes": 1,
+      "andamento": 155,
+      "entradas_mes": 2,
       "saidas_mes": 1,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 9,
-      "valor_causa": 36676123.87
+      "valor_causa": 36776565.67
     },
     {
       "grupo": "Grupo E1",
       "profissional": "Júlia Priego Lopes da Silva(JPL)",
-      "andamento": 114,
+      "andamento": 113,
       "entradas_mes": 0,
-      "saidas_mes": 10,
+      "saidas_mes": 11,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 15,
       "valor_causa": 32688760.72
@@ -4540,16 +4529,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 41822.6
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Joice Ramos Miranda(JRM)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 100441.8
     },
     {
       "grupo": "Sem grupo",
@@ -6276,9 +6255,9 @@
     {
       "estado": "RS",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 17,
+      "andamento": 16,
       "entradas_mes": 1,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 8849062.29
@@ -8101,11 +8080,6 @@
       "numero_processo": "1000930-65.2026.5.02.0080",
       "cliente": "PEIXOTO E CURY",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
-    },
-    {
-      "numero_processo": "0001513-14.2026.5.18.0083",
-      "cliente": "SYNGENTA PROTEÇÃO DE",
-      "profissional": "Joice Ramos Miranda(JRM)"
     }
   ]
 }
