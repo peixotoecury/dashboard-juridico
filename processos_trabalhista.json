@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-08-10T09:30:21",
+  "atualizado_em": "2026-08-10T09:45:20",
   "kpis": {
-    "total_andamento": 8170,
+    "total_andamento": 8172,
     "entradas_hoje": 0,
     "saidas_hoje": 2,
     "entradas_ontem": 0,
     "saidas_ontem": 0,
-    "entradas_mes": 56,
+    "entradas_mes": 58,
     "saidas_mes": 88,
     "entradas_mes_anterior": 252,
     "saidas_mes_anterior": 241,
-    "valor_causa_total": 1724326165.07,
-    "saldo_mes": -32
+    "valor_causa_total": 1724471341.05,
+    "saldo_mes": -30
   },
   "serie_diaria": [
     {
@@ -301,7 +301,7 @@
     },
     {
       "data": "2026-08-08",
-      "entradas": 0,
+      "entradas": 2,
       "saidas": 0
     },
     {
@@ -408,12 +408,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 7,
-      "entradas_mes": 3,
+      "andamento": 9,
+      "entradas_mes": 5,
       "saidas_mes": 19,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
-      "valor_causa": 1670099.49
+      "valor_causa": 1815275.47
     },
     {
       "nome": "Sócios",
@@ -437,21 +437,21 @@
     },
     {
       "nome": "MG",
-      "andamento": 527,
-      "entradas_mes": 1,
+      "andamento": 528,
+      "entradas_mes": 2,
       "saidas_mes": 1,
       "entradas_mes_anterior": 30,
       "saidas_mes_anterior": 29,
-      "valor_causa": 124369855.44
+      "valor_causa": 124407823.01
     },
     {
       "nome": "RS",
-      "andamento": 230,
-      "entradas_mes": 2,
+      "andamento": 231,
+      "entradas_mes": 3,
       "saidas_mes": 1,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 3,
-      "valor_causa": 52914693.57
+      "valor_causa": 53021901.98
     },
     {
       "nome": "PR",
@@ -664,12 +664,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2879,
-      "entradas_mes": 54,
+      "andamento": 2881,
+      "entradas_mes": 56,
       "saidas_mes": 18,
       "entradas_mes_anterior": 192,
       "saidas_mes_anterior": 72,
-      "valor_causa": 746938992.44
+      "valor_causa": 747084168.42
     },
     {
       "nome": "Sentença",
@@ -994,12 +994,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 4,
-      "entradas_mes": 3,
+      "andamento": 6,
+      "entradas_mes": 5,
       "saidas_mes": 2,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 1022970.34
+      "valor_causa": 1168146.32
     },
     {
       "fase": "Instrução",
@@ -1331,12 +1331,12 @@
     },
     {
       "nome": "Richard Ruan Leo da Silva(RRU)",
-      "andamento": 313,
-      "entradas_mes": 9,
+      "andamento": 314,
+      "entradas_mes": 10,
       "saidas_mes": 0,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 15,
-      "valor_causa": 32928945.31
+      "valor_causa": 33036153.72
     },
     {
       "nome": "Aline Ferreira Miron(ALF)",
@@ -1358,12 +1358,12 @@
     },
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 293,
-      "entradas_mes": 0,
+      "andamento": 294,
+      "entradas_mes": 1,
       "saidas_mes": 1,
       "entradas_mes_anterior": 26,
       "saidas_mes_anterior": 20,
-      "valor_causa": 30806959.43
+      "valor_causa": 30844927.0
     },
     {
       "nome": "Fabiana Correia dos Anjos Gomes(FCG)",
@@ -1772,12 +1772,12 @@
     },
     {
       "nome": "HERINGER",
-      "andamento": 329,
-      "entradas_mes": 3,
+      "andamento": 330,
+      "entradas_mes": 4,
       "saidas_mes": 0,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 15,
-      "valor_causa": 40083792.57,
+      "valor_causa": 40191000.98,
       "alerta_entrada": false
     },
     {
@@ -1842,12 +1842,12 @@
     },
     {
       "nome": "EUROCHEM SALITRE",
-      "andamento": 149,
-      "entradas_mes": 0,
+      "andamento": 150,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 14,
-      "valor_causa": 26288733.39,
+      "valor_causa": 26326700.96,
       "alerta_entrada": false
     },
     {
@@ -3752,6 +3752,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "HERINGER",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 149031.01,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "BRIDGESTONE",
       "andamento": 1,
       "entradas_mes": 0,
@@ -3818,13 +3829,13 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "HERINGER",
+      "cliente": "EUROCHEM SALITRE",
       "andamento": 1,
       "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 41822.6,
+      "valor_causa": 37967.57,
       "alerta_entrada": false
     },
     {
@@ -4463,6 +4474,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Richard Ruan Leo da Silva(RRU)",
+      "andamento": 3,
+      "entradas_mes": 3,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 707987.06
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Luiz Vicente de Carvalho(LVC)",
       "andamento": 2,
       "entradas_mes": 1,
@@ -4470,16 +4491,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 114349.12
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Richard Ruan Leo da Silva(RRU)",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 600778.65
     },
     {
       "grupo": "Sem grupo",
@@ -4510,6 +4521,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 339954.62
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Camila Alves Magalhães de Paula(CAL)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 37967.57
     },
     {
       "grupo": "Sócios",
@@ -5156,12 +5177,12 @@
     {
       "estado": "MG",
       "cliente": "EUROCHEM SALITRE",
-      "andamento": 103,
-      "entradas_mes": 0,
+      "andamento": 104,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 12,
-      "valor_causa": 14395980.42
+      "valor_causa": 14433947.99
     },
     {
       "estado": "MG",
@@ -6206,12 +6227,12 @@
     {
       "estado": "RS",
       "cliente": "HERINGER",
-      "andamento": 51,
-      "entradas_mes": 1,
+      "andamento": 52,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
-      "valor_causa": 8701487.72
+      "valor_causa": 8808696.13
     },
     {
       "estado": "RS",
@@ -8038,7 +8059,17 @@
       "profissional": "Guilherme Silva Morimoto(GSM)"
     },
     {
+      "numero_processo": "0010882-58.2026.5.03.0080",
+      "cliente": "EUROCHEM SALITRE",
+      "profissional": "Camila Alves Magalhães de Paula(CAL)"
+    },
+    {
       "numero_processo": "0010852-16.2026.5.03.0147",
+      "cliente": "HERINGER",
+      "profissional": "Richard Ruan Leo da Silva(RRU)"
+    },
+    {
+      "numero_processo": "0020721-54.2026.5.04.0121",
       "cliente": "HERINGER",
       "profissional": "Richard Ruan Leo da Silva(RRU)"
     },
