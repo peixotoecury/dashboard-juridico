@@ -1,11 +1,11 @@
 {
-  "atualizado_em": "2026-08-07T17:45:23",
+  "atualizado_em": "2026-08-10T08:08:21",
   "kpis": {
     "total_andamento": 8172,
-    "entradas_hoje": 13,
-    "saidas_hoje": 9,
-    "entradas_ontem": 11,
-    "saidas_ontem": 3,
+    "entradas_hoje": 0,
+    "saidas_hoje": 0,
+    "entradas_ontem": 0,
+    "saidas_ontem": 0,
     "entradas_mes": 56,
     "saidas_mes": 86,
     "entradas_mes_anterior": 252,
@@ -14,21 +14,6 @@
     "saldo_mes": -30
   },
   "serie_diaria": [
-    {
-      "data": "2026-06-09",
-      "entradas": 10,
-      "saidas": 7
-    },
-    {
-      "data": "2026-06-10",
-      "entradas": 9,
-      "saidas": 15
-    },
-    {
-      "data": "2026-06-11",
-      "entradas": 10,
-      "saidas": 12
-    },
     {
       "data": "2026-06-12",
       "entradas": 21,
@@ -313,17 +298,32 @@
       "data": "2026-08-07",
       "entradas": 13,
       "saidas": 9
+    },
+    {
+      "data": "2026-08-08",
+      "entradas": 0,
+      "saidas": 0
+    },
+    {
+      "data": "2026-08-09",
+      "entradas": 0,
+      "saidas": 0
+    },
+    {
+      "data": "2026-08-10",
+      "entradas": 0,
+      "saidas": 0
     }
   ],
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2068,
-      "entradas_mes": 10,
+      "andamento": 2070,
+      "entradas_mes": 12,
       "saidas_mes": 1,
       "entradas_mes_anterior": 93,
       "saidas_mes_anterior": 82,
-      "valor_causa": 437843393.46
+      "valor_causa": 438479727.74
     },
     {
       "nome": "Grupo E1",
@@ -408,12 +408,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 9,
-      "entradas_mes": 5,
+      "andamento": 7,
+      "entradas_mes": 3,
       "saidas_mes": 19,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
-      "valor_causa": 2306433.77
+      "valor_causa": 1670099.49
     },
     {
       "nome": "Sócios",
@@ -428,12 +428,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 6373,
-      "entradas_mes": 42,
+      "andamento": 6372,
+      "entradas_mes": 41,
       "saidas_mes": 82,
       "entradas_mes_anterior": 166,
       "saidas_mes_anterior": 180,
-      "valor_causa": 1371129181.68
+      "valor_causa": 1370763347.68
     },
     {
       "nome": "MG",
@@ -527,12 +527,12 @@
     },
     {
       "nome": "MT",
-      "andamento": 28,
-      "entradas_mes": 4,
+      "andamento": 29,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 3,
-      "valor_causa": 3570924.39
+      "valor_causa": 3936758.39
     },
     {
       "nome": "DF",
@@ -655,48 +655,48 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 368,
+      "andamento": 372,
       "entradas_mes": 0,
       "saidas_mes": 1,
-      "entradas_mes_anterior": 35,
+      "entradas_mes_anterior": 37,
       "saidas_mes_anterior": 6,
-      "valor_causa": 77839866.29
+      "valor_causa": 78758996.6
     },
     {
       "nome": "Instrução",
-      "andamento": 2890,
-      "entradas_mes": 55,
+      "andamento": 2880,
+      "entradas_mes": 54,
       "saidas_mes": 17,
-      "entradas_mes_anterior": 194,
+      "entradas_mes_anterior": 192,
       "saidas_mes_anterior": 72,
-      "valor_causa": 748088262.14
+      "valor_causa": 746984322.44
     },
     {
       "nome": "Sentença",
-      "andamento": 30,
+      "andamento": 31,
       "entradas_mes": 0,
       "saidas_mes": 1,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 2,
-      "valor_causa": 34337673.39
+      "valor_causa": 34346954.96
     },
     {
       "nome": "Recurso",
-      "andamento": 3235,
+      "andamento": 3237,
       "entradas_mes": 0,
       "saidas_mes": 26,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 42,
-      "valor_causa": 678956026.37
+      "valor_causa": 679037975.3
     },
     {
       "nome": "Execução",
-      "andamento": 1239,
-      "entradas_mes": 0,
+      "andamento": 1242,
+      "entradas_mes": 1,
       "saidas_mes": 40,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 73,
-      "valor_causa": 174594206.83
+      "valor_causa": 174687785.72
     }
   ],
   "por_fase_outras": 410,
@@ -704,12 +704,12 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo E2",
-      "andamento": 130,
+      "andamento": 134,
       "entradas_mes": 0,
       "saidas_mes": 0,
-      "entradas_mes_anterior": 29,
+      "entradas_mes_anterior": 31,
       "saidas_mes_anterior": 4,
-      "valor_causa": 35331003.84
+      "valor_causa": 36250134.15
     },
     {
       "fase": "Ajuizamento",
@@ -814,12 +814,12 @@
     {
       "fase": "Execução",
       "grupo": "Grupo E2",
-      "andamento": 363,
-      "entradas_mes": 0,
+      "andamento": 366,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 26,
-      "valor_causa": 55704700.07
+      "valor_causa": 55798278.96
     },
     {
       "fase": "Execução",
@@ -904,12 +904,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 868,
-      "entradas_mes": 10,
+      "andamento": 860,
+      "entradas_mes": 11,
       "saidas_mes": 1,
-      "entradas_mes_anterior": 54,
+      "entradas_mes_anterior": 52,
       "saidas_mes_anterior": 28,
-      "valor_causa": 157525980.56
+      "valor_causa": 157058375.14
     },
     {
       "fase": "Instrução",
@@ -994,12 +994,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 6,
-      "entradas_mes": 5,
+      "andamento": 4,
+      "entradas_mes": 3,
       "saidas_mes": 2,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 1659304.62
+      "valor_causa": 1022970.34
     },
     {
       "fase": "Instrução",
@@ -1144,12 +1144,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo E2",
-      "andamento": 566,
+      "andamento": 568,
       "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 18,
-      "valor_causa": 182145799.56
+      "valor_causa": 182227748.49
     },
     {
       "fase": "Recurso",
@@ -1224,12 +1224,12 @@
     {
       "fase": "Sentença",
       "grupo": "Grupo E2",
-      "andamento": 13,
+      "andamento": 14,
       "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 1,
-      "valor_causa": 1069343.81
+      "valor_causa": 1078625.38
     },
     {
       "fase": "Sentença",
@@ -1728,7 +1728,7 @@
       "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 15,
       "valor_causa": 121593548.66,
-      "alerta_entrada": true
+      "alerta_entrada": false
     },
     {
       "nome": "SYNGENTA PROTEÇÃO DE",
@@ -1738,7 +1738,7 @@
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 20,
       "valor_causa": 133259454.6,
-      "alerta_entrada": true
+      "alerta_entrada": false
     },
     {
       "nome": "MAHLE METAL - MOGI",
@@ -2351,7 +2351,7 @@
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 15,
       "valor_causa": 121593548.66,
-      "alerta_entrada": true
+      "alerta_entrada": false
     },
     {
       "grupo": "Grupo B2",
@@ -2967,7 +2967,7 @@
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 19,
       "valor_causa": 132285215.66,
-      "alerta_entrada": true
+      "alerta_entrada": false
     },
     {
       "grupo": "Grupo E1",
@@ -3378,6 +3378,17 @@
     },
     {
       "grupo": "Grupo E2",
+      "cliente": "INPASA SINOP",
+      "andamento": 8,
+      "entradas_mes": 6,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 2,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1280082.24,
+      "alerta_entrada": true
+    },
+    {
+      "grupo": "Grupo E2",
       "cliente": "GRUPO BAND RADIO TV",
       "andamento": 6,
       "entradas_mes": 0,
@@ -3386,17 +3397,6 @@
       "saidas_mes_anterior": 0,
       "valor_causa": 1500000.0,
       "alerta_entrada": false
-    },
-    {
-      "grupo": "Grupo E2",
-      "cliente": "INPASA SINOP",
-      "andamento": 6,
-      "entradas_mes": 4,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 2,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 643747.96,
-      "alerta_entrada": true
     },
     {
       "grupo": "Grupo E2",
@@ -3752,17 +3752,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "INPASA SINOP",
-      "andamento": 3,
-      "entradas_mes": 3,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 1195290.33,
-      "alerta_entrada": true
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "BRIDGESTONE",
       "andamento": 1,
       "entradas_mes": 0,
@@ -3803,6 +3792,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 339954.62,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "INPASA SINOP",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 558956.05,
       "alerta_entrada": false
     },
     {
@@ -4334,12 +4334,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Richard Ruan Leo da Silva(RRU)",
-      "andamento": 309,
-      "entradas_mes": 5,
+      "andamento": 311,
+      "entradas_mes": 7,
       "saidas_mes": 0,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 15,
-      "valor_causa": 31691832.38
+      "valor_causa": 32328166.66
     },
     {
       "grupo": "Grupo E2",
@@ -4463,16 +4463,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Richard Ruan Leo da Silva(RRU)",
-      "andamento": 4,
-      "entradas_mes": 4,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 1237112.93
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Luiz Vicente de Carvalho(LVC)",
       "andamento": 2,
       "entradas_mes": 1,
@@ -4480,6 +4470,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 114349.12
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Richard Ruan Leo da Silva(RRU)",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 600778.65
     },
     {
       "grupo": "Sem grupo",
@@ -5516,12 +5516,12 @@
     {
       "estado": "MT",
       "cliente": "INPASA SINOP",
-      "andamento": 4,
-      "entradas_mes": 3,
+      "andamento": 5,
+      "entradas_mes": 4,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 597716.79
+      "valor_causa": 963550.79
     },
     {
       "estado": "MT",
@@ -7764,16 +7764,6 @@
       "valor_causa": 0.0
     },
     {
-      "estado": "SP",
-      "cliente": "INPASA SINOP",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 365834.0
-    },
-    {
       "estado": "TO",
       "cliente": "BP BIOENERGIA",
       "andamento": 23,
@@ -8016,26 +8006,6 @@
   ],
   "clientes_com_alerta": [
     {
-      "nome": "EMBRAER",
-      "andamento": 713,
-      "entradas_mes": 7,
-      "saidas_mes": 1,
-      "entradas_mes_anterior": 19,
-      "saidas_mes_anterior": 15,
-      "valor_causa": 121593548.66,
-      "alerta_entrada": true
-    },
-    {
-      "nome": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 692,
-      "entradas_mes": 9,
-      "saidas_mes": 10,
-      "entradas_mes_anterior": 24,
-      "saidas_mes_anterior": 20,
-      "valor_causa": 133259454.6,
-      "alerta_entrada": true
-    },
-    {
       "nome": "CBC CARTUCHOS BRASIL",
       "andamento": 221,
       "entradas_mes": 8,
@@ -8074,16 +8044,6 @@
     },
     {
       "numero_processo": "0025284-42.2026.5.24.0022",
-      "cliente": "INPASA SINOP",
-      "profissional": "Richard Ruan Leo da Silva(RRU)"
-    },
-    {
-      "numero_processo": "0000631-95.2026.5.23.0056",
-      "cliente": "INPASA SINOP",
-      "profissional": "Richard Ruan Leo da Silva(RRU)"
-    },
-    {
-      "numero_processo": "0001959-89.2026.5.05.0661",
       "cliente": "INPASA SINOP",
       "profissional": "Richard Ruan Leo da Silva(RRU)"
     },
