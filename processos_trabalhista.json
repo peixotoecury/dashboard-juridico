@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-08-10T14:30:21",
+  "atualizado_em": "2026-08-10T14:45:20",
   "kpis": {
     "total_andamento": 8176,
     "entradas_hoje": 5,
@@ -318,12 +318,12 @@
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2074,
-      "entradas_mes": 17,
+      "andamento": 2075,
+      "entradas_mes": 18,
       "saidas_mes": 2,
       "entradas_mes_anterior": 93,
       "saidas_mes_anterior": 82,
-      "valor_causa": 439487223.79
+      "valor_causa": 439557820.35
     },
     {
       "nome": "Grupo E1",
@@ -408,12 +408,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 9,
-      "entradas_mes": 5,
+      "andamento": 8,
+      "entradas_mes": 4,
       "saidas_mes": 19,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
-      "valor_causa": 1688011.37
+      "valor_causa": 1617414.81
     },
     {
       "nome": "Sócios",
@@ -655,21 +655,21 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 372,
+      "andamento": 373,
       "entradas_mes": 0,
       "saidas_mes": 1,
       "entradas_mes_anterior": 37,
       "saidas_mes_anterior": 6,
-      "valor_causa": 78758996.6
+      "valor_causa": 78858420.22
     },
     {
       "nome": "Instrução",
-      "andamento": 2887,
+      "andamento": 2886,
       "entradas_mes": 63,
       "saidas_mes": 19,
       "entradas_mes_anterior": 192,
       "saidas_mes_anterior": 72,
-      "valor_causa": 748212690.62
+      "valor_causa": 748113267.0
     },
     {
       "nome": "Sentença",
@@ -682,21 +682,21 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 3236,
+      "andamento": 3237,
       "entradas_mes": 0,
       "saidas_mes": 27,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 42,
-      "valor_causa": 679037975.3
+      "valor_causa": 679334430.23
     },
     {
       "nome": "Execução",
-      "andamento": 1241,
+      "andamento": 1240,
       "entradas_mes": 1,
       "saidas_mes": 41,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 73,
-      "valor_causa": 174457158.14
+      "valor_causa": 174160703.21
     }
   ],
   "por_fase_outras": 410,
@@ -704,12 +704,12 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo E2",
-      "andamento": 134,
+      "andamento": 135,
       "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 31,
       "saidas_mes_anterior": 4,
-      "valor_causa": 36250134.15
+      "valor_causa": 36349557.77
     },
     {
       "fase": "Ajuizamento",
@@ -814,12 +814,12 @@
     {
       "fase": "Execução",
       "grupo": "Grupo E2",
-      "andamento": 366,
+      "andamento": 365,
       "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 26,
-      "valor_causa": 55798278.96
+      "valor_causa": 55501824.03
     },
     {
       "fase": "Execução",
@@ -905,11 +905,11 @@
       "fase": "Instrução",
       "grupo": "Grupo E2",
       "andamento": 865,
-      "entradas_mes": 16,
+      "entradas_mes": 17,
       "saidas_mes": 1,
       "entradas_mes_anterior": 52,
       "saidas_mes_anterior": 28,
-      "valor_causa": 158179856.29
+      "valor_causa": 158151029.23
     },
     {
       "fase": "Instrução",
@@ -994,12 +994,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 6,
-      "entradas_mes": 5,
+      "andamento": 5,
+      "entradas_mes": 4,
       "saidas_mes": 2,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 1040882.22
+      "valor_causa": 970285.66
     },
     {
       "fase": "Instrução",
@@ -1144,12 +1144,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo E2",
-      "andamento": 568,
+      "andamento": 569,
       "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 18,
-      "valor_causa": 182227748.49
+      "valor_causa": 182524203.42
     },
     {
       "fase": "Recurso",
@@ -3201,12 +3201,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "BP BIOENERGIA",
-      "andamento": 770,
-      "entradas_mes": 1,
+      "andamento": 771,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 31,
-      "valor_causa": 210360032.57,
+      "valor_causa": 210430629.13,
       "alerta_entrada": false
     },
     {
@@ -3762,13 +3762,13 @@
     {
       "grupo": "Sem grupo",
       "cliente": "BP BIOENERGIA",
-      "andamento": 3,
-      "entradas_mes": 3,
+      "andamento": 2,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 252317.05,
-      "alerta_entrada": true
+      "valor_causa": 181720.49,
+      "alerta_entrada": false
     },
     {
       "grupo": "Sem grupo",
@@ -4363,12 +4363,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 293,
-      "entradas_mes": 1,
+      "andamento": 294,
+      "entradas_mes": 2,
       "saidas_mes": 2,
       "entradas_mes_anterior": 26,
       "saidas_mes_anterior": 20,
-      "valor_causa": 30730941.9
+      "valor_causa": 30801538.46
     },
     {
       "grupo": "Grupo E2",
@@ -4492,16 +4492,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 214620.45
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Guilherme Silva Morimoto(GSM)",
       "andamento": 1,
       "entradas_mes": 0,
@@ -4549,6 +4539,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 37696.6
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Camila Alves Magalhães de Paula(CAL)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 144023.89
     },
     {
       "grupo": "Sócios",
@@ -8060,11 +8060,6 @@
       "numero_processo": "1001249-83.2015.5.02.0382",
       "cliente": "B2W",
       "profissional": "Luiz Vicente de Carvalho(LVC)"
-    },
-    {
-      "numero_processo": "0011029-16.2026.5.15.0027",
-      "cliente": "BP BIOENERGIA",
-      "profissional": "Camila Alves Magalhães de Paula(CAL)"
     },
     {
       "numero_processo": "0011661-12.2026.5.03.0048",
