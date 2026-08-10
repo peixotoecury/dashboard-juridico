@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-08-10T16:15:22",
+  "atualizado_em": "2026-08-10T16:30:22",
   "kpis": {
-    "total_andamento": 8177,
-    "entradas_hoje": 6,
+    "total_andamento": 8178,
+    "entradas_hoje": 7,
     "saidas_hoje": 6,
     "entradas_ontem": 0,
     "saidas_ontem": 0,
-    "entradas_mes": 66,
+    "entradas_mes": 67,
     "saidas_mes": 92,
     "entradas_mes_anterior": 252,
     "saidas_mes_anterior": 241,
     "valor_causa_total": 1725506689.96,
-    "saldo_mes": -26
+    "saldo_mes": -25
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-08-10",
-      "entradas": 6,
+      "entradas": 7,
       "saidas": 6
     }
   ],
@@ -327,8 +327,8 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1774,
-      "entradas_mes": 14,
+      "andamento": 1775,
+      "entradas_mes": 15,
       "saidas_mes": 61,
       "entradas_mes_anterior": 44,
       "saidas_mes_anterior": 61,
@@ -500,8 +500,8 @@
     },
     {
       "nome": "—",
-      "andamento": 54,
-      "entradas_mes": 0,
+      "andamento": 55,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
@@ -664,8 +664,8 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2884,
-      "entradas_mes": 64,
+      "andamento": 2885,
+      "entradas_mes": 65,
       "saidas_mes": 19,
       "entradas_mes_anterior": 192,
       "saidas_mes_anterior": 72,
@@ -914,8 +914,8 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 769,
-      "entradas_mes": 13,
+      "andamento": 770,
+      "entradas_mes": 14,
       "saidas_mes": 10,
       "entradas_mes_anterior": 30,
       "saidas_mes_anterior": 10,
@@ -1457,8 +1457,8 @@
     },
     {
       "nome": "Paloma da Silva Santos(PSI)",
-      "andamento": 255,
-      "entradas_mes": 2,
+      "andamento": 256,
+      "entradas_mes": 3,
       "saidas_mes": 28,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 14,
@@ -3036,13 +3036,13 @@
     {
       "grupo": "Grupo E1",
       "cliente": "MAHLE THERMAL",
-      "andamento": 48,
-      "entradas_mes": 2,
+      "andamento": 49,
+      "entradas_mes": 3,
       "saidas_mes": 8,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 2,
       "valor_causa": 7019017.59,
-      "alerta_entrada": false
+      "alerta_entrada": true
     },
     {
       "grupo": "Grupo E1",
@@ -4242,8 +4242,8 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Paloma da Silva Santos(PSI)",
-      "andamento": 255,
-      "entradas_mes": 2,
+      "andamento": 256,
+      "entradas_mes": 3,
       "saidas_mes": 19,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 13,
@@ -8000,6 +8000,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
+    },
+    {
+      "estado": "—",
+      "cliente": "MAHLE THERMAL",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 0.0
     }
   ],
   "clientes_com_alerta": [
@@ -8011,6 +8021,16 @@
       "entradas_mes_anterior": 15,
       "saidas_mes_anterior": 7,
       "valor_causa": 28772030.1,
+      "alerta_entrada": true
+    },
+    {
+      "nome": "MAHLE THERMAL",
+      "andamento": 49,
+      "entradas_mes": 3,
+      "saidas_mes": 10,
+      "entradas_mes_anterior": 2,
+      "saidas_mes_anterior": 2,
+      "valor_causa": 7019017.59,
       "alerta_entrada": true
     },
     {
