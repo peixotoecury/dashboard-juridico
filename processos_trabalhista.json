@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-08-10T17:00:21",
+  "atualizado_em": "2026-08-10T17:15:32",
   "kpis": {
-    "total_andamento": 8183,
-    "entradas_hoje": 12,
+    "total_andamento": 8184,
+    "entradas_hoje": 13,
     "saidas_hoje": 6,
     "entradas_ontem": 0,
     "saidas_ontem": 0,
-    "entradas_mes": 72,
+    "entradas_mes": 73,
     "saidas_mes": 92,
     "entradas_mes_anterior": 252,
     "saidas_mes_anterior": 241,
-    "valor_causa_total": 1728578746.18,
-    "saldo_mes": -20
+    "valor_causa_total": 1729904667.71,
+    "saldo_mes": -19
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-08-10",
-      "entradas": 12,
+      "entradas": 13,
       "saidas": 6
     }
   ],
@@ -408,12 +408,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 9,
-      "entradas_mes": 5,
+      "andamento": 10,
+      "entradas_mes": 6,
       "saidas_mes": 19,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
-      "valor_causa": 4507750.54
+      "valor_causa": 5833672.07
     },
     {
       "nome": "Sócios",
@@ -428,12 +428,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 6373,
-      "entradas_mes": 46,
+      "andamento": 6374,
+      "entradas_mes": 47,
       "saidas_mes": 87,
       "entradas_mes_anterior": 166,
       "saidas_mes_anterior": 180,
-      "valor_causa": 1373736724.02
+      "valor_causa": 1375062645.55
     },
     {
       "nome": "MG",
@@ -664,12 +664,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2890,
-      "entradas_mes": 70,
+      "andamento": 2891,
+      "entradas_mes": 71,
       "saidas_mes": 19,
       "entradas_mes_anterior": 192,
       "saidas_mes_anterior": 72,
-      "valor_causa": 749215872.53
+      "valor_causa": 750541794.06
     },
     {
       "nome": "Sentença",
@@ -994,12 +994,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 6,
-      "entradas_mes": 5,
+      "andamento": 7,
+      "entradas_mes": 6,
       "saidas_mes": 2,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 3860621.39
+      "valor_causa": 5186542.92
     },
     {
       "fase": "Instrução",
@@ -1529,12 +1529,12 @@
     },
     {
       "nome": "Thiago Frid Figueiredo Rossi(TFR)",
-      "andamento": 163,
-      "entradas_mes": 0,
+      "andamento": 164,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 0,
-      "valor_causa": 105855780.16
+      "valor_causa": 107181701.69
     },
     {
       "nome": "Joice Ramos Miranda(JRM)",
@@ -1761,12 +1761,12 @@
     },
     {
       "nome": "TELEFONICA BRASIL",
-      "andamento": 344,
-      "entradas_mes": 0,
+      "andamento": 345,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 8,
-      "valor_causa": 169354450.75,
+      "valor_causa": 170680372.28,
       "alerta_entrada": false
     },
     {
@@ -3848,6 +3848,17 @@
       "alerta_entrada": false
     },
     {
+      "grupo": "Sem grupo",
+      "cliente": "TELEFONICA BRASIL",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1325921.53,
+      "alerta_entrada": false
+    },
+    {
       "grupo": "Sócios",
       "cliente": "PEIXOTO E CURY",
       "andamento": 2,
@@ -4560,6 +4571,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 216500.0
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Thiago Frid Figueiredo Rossi(TFR)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1325921.53
     },
     {
       "grupo": "Sócios",
@@ -6636,12 +6657,12 @@
     {
       "estado": "SP",
       "cliente": "TELEFONICA BRASIL",
-      "andamento": 236,
-      "entradas_mes": 0,
+      "andamento": 237,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 3,
-      "valor_causa": 141984016.43
+      "valor_causa": 143309937.96
     },
     {
       "estado": "SP",
@@ -8121,6 +8142,11 @@
       "numero_processo": "1000930-65.2026.5.02.0080",
       "cliente": "PEIXOTO E CURY",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
+    },
+    {
+      "numero_processo": "1001256-13.2026.5.02.0084",
+      "cliente": "TELEFONICA BRASIL",
+      "profissional": "Thiago Frid Figueiredo Rossi(TFR)"
     },
     {
       "numero_processo": "0010963-60.2026.5.15.0019",
