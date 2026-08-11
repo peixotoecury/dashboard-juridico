@@ -1,11 +1,11 @@
 {
-  "atualizado_em": "2026-08-10T19:00:21",
+  "atualizado_em": "2026-08-11T08:15:30",
   "kpis": {
     "total_andamento": 8187,
-    "entradas_hoje": 16,
-    "saidas_hoje": 6,
-    "entradas_ontem": 0,
-    "saidas_ontem": 0,
+    "entradas_hoje": 0,
+    "saidas_hoje": 0,
+    "entradas_ontem": 16,
+    "saidas_ontem": 6,
     "entradas_mes": 76,
     "saidas_mes": 92,
     "entradas_mes_anterior": 252,
@@ -14,11 +14,6 @@
     "saldo_mes": -16
   },
   "serie_diaria": [
-    {
-      "data": "2026-06-12",
-      "entradas": 21,
-      "saidas": 20
-    },
     {
       "data": "2026-06-13",
       "entradas": 0,
@@ -313,6 +308,11 @@
       "data": "2026-08-10",
       "entradas": 16,
       "saidas": 6
+    },
+    {
+      "data": "2026-08-11",
+      "entradas": 0,
+      "saidas": 0
     }
   ],
   "por_grupo": [
@@ -655,7 +655,7 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 376,
+      "andamento": 378,
       "entradas_mes": 0,
       "saidas_mes": 1,
       "entradas_mes_anterior": 38,
@@ -664,12 +664,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2893,
+      "andamento": 2889,
       "entradas_mes": 74,
       "saidas_mes": 19,
       "entradas_mes_anterior": 191,
       "saidas_mes_anterior": 72,
-      "valor_causa": 750530182.17
+      "valor_causa": 751304438.76
     },
     {
       "nome": "Sentença",
@@ -682,12 +682,12 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 3238,
+      "andamento": 3240,
       "entradas_mes": 0,
       "saidas_mes": 28,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 42,
-      "valor_causa": 679553502.04
+      "valor_causa": 678779245.45
     },
     {
       "nome": "Execução",
@@ -704,7 +704,7 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo E2",
-      "andamento": 138,
+      "andamento": 140,
       "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 32,
@@ -904,22 +904,22 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 864,
+      "andamento": 862,
       "entradas_mes": 20,
       "saidas_mes": 1,
       "entradas_mes_anterior": 51,
       "saidas_mes_anterior": 28,
-      "valor_causa": 155885764.34
+      "valor_causa": 156815294.32
     },
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 772,
+      "andamento": 770,
       "entradas_mes": 16,
       "saidas_mes": 10,
       "entradas_mes_anterior": 30,
       "saidas_mes_anterior": 10,
-      "valor_causa": 158534704.57
+      "valor_causa": 158379431.18
     },
     {
       "fase": "Instrução",
@@ -1134,12 +1134,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo E1",
-      "andamento": 744,
+      "andamento": 746,
       "entradas_mes": 0,
       "saidas_mes": 15,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 10,
-      "valor_causa": 103670629.88
+      "valor_causa": 103825903.27
     },
     {
       "fase": "Recurso",
@@ -1149,7 +1149,7 @@
       "saidas_mes": 1,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 18,
-      "valor_causa": 182644084.42
+      "valor_causa": 181714554.44
     },
     {
       "fase": "Recurso",
