@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-08-12T15:45:25",
+  "atualizado_em": "2026-08-12T16:00:22",
   "kpis": {
-    "total_andamento": 8196,
+    "total_andamento": 8195,
     "entradas_hoje": 7,
-    "saidas_hoje": 0,
+    "saidas_hoje": 1,
     "entradas_ontem": 4,
     "saidas_ontem": 4,
     "entradas_mes": 90,
-    "saidas_mes": 96,
+    "saidas_mes": 97,
     "entradas_mes_anterior": 252,
     "saidas_mes_anterior": 242,
-    "valor_causa_total": 1731996205.19,
-    "saldo_mes": -6
+    "valor_causa_total": 1731849884.45,
+    "saldo_mes": -7
   },
   "serie_diaria": [
     {
@@ -312,7 +312,7 @@
     {
       "data": "2026-08-12",
       "entradas": 7,
-      "saidas": 0
+      "saidas": 1
     }
   ],
   "por_grupo": [
@@ -327,12 +327,12 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1778,
+      "andamento": 1777,
       "entradas_mes": 21,
-      "saidas_mes": 64,
+      "saidas_mes": 65,
       "entradas_mes_anterior": 44,
       "saidas_mes_anterior": 61,
-      "valor_causa": 292047749.52
+      "valor_causa": 291901428.78
     },
     {
       "nome": "Grupo B1",
@@ -428,12 +428,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 6383,
+      "andamento": 6382,
       "entradas_mes": 61,
-      "saidas_mes": 91,
+      "saidas_mes": 92,
       "entradas_mes_anterior": 166,
       "saidas_mes_anterior": 181,
-      "valor_causa": 1376402908.98
+      "valor_causa": 1376256588.24
     },
     {
       "nome": "MG",
@@ -682,12 +682,12 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 3241,
+      "andamento": 3240,
       "entradas_mes": 1,
-      "saidas_mes": 31,
+      "saidas_mes": 32,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 42,
-      "valor_causa": 679235971.42
+      "valor_causa": 679089650.68
     },
     {
       "nome": "Execução",
@@ -1134,12 +1134,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo E1",
-      "andamento": 744,
+      "andamento": 743,
       "entradas_mes": 0,
-      "saidas_mes": 17,
+      "saidas_mes": 18,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 10,
-      "valor_causa": 103825903.27
+      "valor_causa": 103679582.53
     },
     {
       "fase": "Recurso",
@@ -1385,7 +1385,7 @@
     },
     {
       "nome": "Guilherme Silva Morimoto(GSM)",
-      "andamento": 277,
+      "andamento": 278,
       "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 11,
@@ -1411,13 +1411,13 @@
       "valor_causa": 42964005.32
     },
     {
-      "nome": "Juliana Perucci (JPE)",
-      "andamento": 273,
-      "entradas_mes": 5,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 7,
-      "saidas_mes_anterior": 25,
-      "valor_causa": 37945518.66
+      "nome": "Tamara Silva Marcílio(TAM)",
+      "andamento": 274,
+      "entradas_mes": 3,
+      "saidas_mes": 2,
+      "entradas_mes_anterior": 13,
+      "saidas_mes_anterior": 4,
+      "valor_causa": 48825878.02
     },
     {
       "nome": "João Paulo Mortari Neves(JNE)",
@@ -1429,15 +1429,6 @@
       "valor_causa": 37599144.3
     },
     {
-      "nome": "Tamara Silva Marcílio(TAM)",
-      "andamento": 268,
-      "entradas_mes": 3,
-      "saidas_mes": 2,
-      "entradas_mes_anterior": 12,
-      "saidas_mes_anterior": 4,
-      "valor_causa": 45992595.81
-    },
-    {
       "nome": "Rafael Rocha Ferreira(RFE)",
       "andamento": 267,
       "entradas_mes": 2,
@@ -1445,6 +1436,15 @@
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 9,
       "valor_causa": 74391745.79
+    },
+    {
+      "nome": "Juliana Perucci (JPE)",
+      "andamento": 266,
+      "entradas_mes": 5,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 6,
+      "saidas_mes_anterior": 25,
+      "valor_causa": 35112236.45
     },
     {
       "nome": "Beatriz Santiago de Souza(BSO)",
@@ -1457,12 +1457,12 @@
     },
     {
       "nome": "Paloma da Silva Santos(PSI)",
-      "andamento": 257,
+      "andamento": 256,
       "entradas_mes": 5,
-      "saidas_mes": 29,
+      "saidas_mes": 30,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 14,
-      "valor_causa": 52350866.23
+      "valor_causa": 52204545.49
     },
     {
       "nome": "Anna Carolina Balbino Gatti Baani(ANB)",
@@ -1751,12 +1751,12 @@
     },
     {
       "nome": "MAHLE METAL - MOGI",
-      "andamento": 365,
+      "andamento": 364,
       "entradas_mes": 5,
-      "saidas_mes": 20,
+      "saidas_mes": 21,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 20,
-      "valor_causa": 66871395.1,
+      "valor_causa": 66725074.36,
       "alerta_entrada": true
     },
     {
@@ -2981,12 +2981,12 @@
     {
       "grupo": "Grupo E1",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 365,
+      "andamento": 364,
       "entradas_mes": 5,
-      "saidas_mes": 13,
+      "saidas_mes": 14,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 19,
-      "valor_causa": 66871395.1,
+      "valor_causa": 66725074.36,
       "alerta_entrada": true
     },
     {
@@ -3972,12 +3972,12 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Tamara Silva Marcílio(TAM)",
-      "andamento": 268,
+      "andamento": 274,
       "entradas_mes": 3,
       "saidas_mes": 2,
-      "entradas_mes_anterior": 12,
+      "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 4,
-      "valor_causa": 45992595.81
+      "valor_causa": 48825878.02
     },
     {
       "grupo": "Grupo B1",
@@ -4002,17 +4002,17 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Juliana Perucci (JPE)",
-      "andamento": 265,
+      "andamento": 258,
       "entradas_mes": 5,
       "saidas_mes": 0,
-      "entradas_mes_anterior": 7,
+      "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 25,
-      "valor_causa": 36088588.37
+      "valor_causa": 33255306.16
     },
     {
       "grupo": "Grupo B1",
       "profissional": "Guilherme Silva Morimoto(GSM)",
-      "andamento": 227,
+      "andamento": 228,
       "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 10,
@@ -4242,12 +4242,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Paloma da Silva Santos(PSI)",
-      "andamento": 257,
+      "andamento": 256,
       "entradas_mes": 5,
-      "saidas_mes": 20,
+      "saidas_mes": 21,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 13,
-      "valor_causa": 52350866.23
+      "valor_causa": 52204545.49
     },
     {
       "grupo": "Grupo E1",
@@ -6564,12 +6564,12 @@
     {
       "estado": "SP",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 364,
+      "andamento": 363,
       "entradas_mes": 5,
-      "saidas_mes": 20,
+      "saidas_mes": 21,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 20,
-      "valor_causa": 66871395.1
+      "valor_causa": 66725074.36
     },
     {
       "estado": "SP",
@@ -8025,12 +8025,12 @@
   "clientes_com_alerta": [
     {
       "nome": "MAHLE METAL - MOGI",
-      "andamento": 365,
+      "andamento": 364,
       "entradas_mes": 5,
-      "saidas_mes": 20,
+      "saidas_mes": 21,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 20,
-      "valor_causa": 66871395.1,
+      "valor_causa": 66725074.36,
       "alerta_entrada": true
     },
     {
