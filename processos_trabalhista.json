@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-08-13T13:27:49",
+  "atualizado_em": "2026-08-13T13:49:14",
   "kpis": {
-    "total_andamento": 8201,
+    "total_andamento": 8199,
     "entradas_hoje": 4,
-    "saidas_hoje": 1,
+    "saidas_hoje": 3,
     "entradas_ontem": 12,
     "saidas_ontem": 2,
     "entradas_mes": 99,
-    "saidas_mes": 99,
+    "saidas_mes": 101,
     "entradas_mes_anterior": 252,
     "saidas_mes_anterior": 243,
-    "valor_causa_total": 1731973564.68,
-    "saldo_mes": 0
+    "valor_causa_total": 1731933350.85,
+    "saldo_mes": -2
   },
   "serie_diaria": [
     {
@@ -312,18 +312,18 @@
     {
       "data": "2026-08-13",
       "entradas": 4,
-      "saidas": 1
+      "saidas": 3
     }
   ],
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2083,
+      "andamento": 2082,
       "entradas_mes": 28,
-      "saidas_mes": 4,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 93,
       "saidas_mes_anterior": 82,
-      "valor_causa": 443514551.86
+      "valor_causa": 443474338.03
     },
     {
       "nome": "Grupo E1",
@@ -372,9 +372,9 @@
     },
     {
       "nome": "Grupo B3",
-      "andamento": 546,
+      "andamento": 545,
       "entradas_mes": 8,
-      "saidas_mes": 4,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 10,
       "valor_causa": 101654510.42
@@ -428,21 +428,21 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 6383,
+      "andamento": 6382,
       "entradas_mes": 65,
-      "saidas_mes": 94,
+      "saidas_mes": 95,
       "entradas_mes_anterior": 166,
       "saidas_mes_anterior": 182,
       "valor_causa": 1376311969.4
     },
     {
       "nome": "MG",
-      "andamento": 533,
+      "andamento": 532,
       "entradas_mes": 7,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 30,
       "saidas_mes_anterior": 29,
-      "valor_causa": 124930164.5
+      "valor_causa": 124889950.67
     },
     {
       "nome": "RS",
@@ -664,12 +664,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2891,
+      "andamento": 2890,
       "entradas_mes": 86,
-      "saidas_mes": 22,
+      "saidas_mes": 23,
       "entradas_mes_anterior": 188,
       "saidas_mes_anterior": 73,
-      "valor_causa": 750985105.07
+      "valor_causa": 750944891.24
     },
     {
       "nome": "Sentença",
@@ -682,9 +682,9 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 3240,
+      "andamento": 3239,
       "entradas_mes": 1,
-      "saidas_mes": 32,
+      "saidas_mes": 33,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 43,
       "valor_causa": 679115664.13
@@ -904,12 +904,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 860,
+      "andamento": 859,
       "entradas_mes": 23,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 49,
       "saidas_mes_anterior": 28,
-      "valor_causa": 159336846.94
+      "valor_causa": 159296633.11
     },
     {
       "fase": "Instrução",
@@ -1174,9 +1174,9 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo B3",
-      "andamento": 238,
+      "andamento": 237,
       "entradas_mes": 0,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 4,
       "valor_causa": 56692736.01
@@ -1322,9 +1322,9 @@
     },
     {
       "nome": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 323,
+      "andamento": 322,
       "entradas_mes": 4,
-      "saidas_mes": 4,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 9,
       "valor_causa": 59115288.14
@@ -1358,12 +1358,12 @@
     },
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 293,
+      "andamento": 292,
       "entradas_mes": 4,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 26,
       "saidas_mes_anterior": 20,
-      "valor_causa": 30848711.1
+      "valor_causa": 30808497.27
     },
     {
       "nome": "Fabiana Correia dos Anjos Gomes(FCG)",
@@ -1810,16 +1810,6 @@
       "alerta_entrada": true
     },
     {
-      "nome": "CBC CARTUCHOS BRASIL",
-      "andamento": 221,
-      "entradas_mes": 8,
-      "saidas_mes": 3,
-      "entradas_mes_anterior": 15,
-      "saidas_mes_anterior": 7,
-      "valor_causa": 28772030.1,
-      "alerta_entrada": false
-    },
-    {
       "nome": "B2W",
       "andamento": 220,
       "entradas_mes": 0,
@@ -1827,6 +1817,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
       "valor_causa": 31860114.63,
+      "alerta_entrada": false
+    },
+    {
+      "nome": "CBC CARTUCHOS BRASIL",
+      "andamento": 220,
+      "entradas_mes": 8,
+      "saidas_mes": 4,
+      "entradas_mes_anterior": 15,
+      "saidas_mes_anterior": 7,
+      "valor_causa": 28772030.1,
       "alerta_entrada": false
     },
     {
@@ -1851,12 +1851,12 @@
     },
     {
       "nome": "EUROCHEM SALITRE",
-      "andamento": 151,
+      "andamento": 150,
       "entradas_mes": 2,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 14,
-      "valor_causa": 26395000.03,
+      "valor_causa": 26354786.2,
       "alerta_entrada": false
     },
     {
@@ -2387,9 +2387,9 @@
     {
       "grupo": "Grupo B3",
       "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 218,
+      "andamento": 217,
       "entradas_mes": 8,
-      "saidas_mes": 3,
+      "saidas_mes": 4,
       "entradas_mes_anterior": 15,
       "saidas_mes_anterior": 7,
       "valor_causa": 28772030.1,
@@ -3234,12 +3234,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "EUROCHEM SALITRE",
-      "andamento": 151,
+      "andamento": 150,
       "entradas_mes": 2,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 14,
-      "valor_causa": 26395000.03,
+      "valor_causa": 26354786.2,
       "alerta_entrada": false
     },
     {
@@ -4092,9 +4092,9 @@
     {
       "grupo": "Grupo B3",
       "profissional": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 323,
+      "andamento": 322,
       "entradas_mes": 4,
-      "saidas_mes": 4,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 9,
       "valor_causa": 59115288.14
@@ -4362,12 +4362,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 293,
+      "andamento": 292,
       "entradas_mes": 4,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 26,
       "saidas_mes_anterior": 20,
-      "valor_causa": 30848711.1
+      "valor_causa": 30808497.27
     },
     {
       "grupo": "Grupo E2",
@@ -5174,12 +5174,12 @@
     {
       "estado": "MG",
       "cliente": "EUROCHEM SALITRE",
-      "andamento": 104,
+      "andamento": 103,
       "entradas_mes": 1,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 12,
-      "valor_causa": 14433947.99
+      "valor_causa": 14393734.16
     },
     {
       "estado": "MG",
@@ -6624,9 +6624,9 @@
     {
       "estado": "SP",
       "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 210,
+      "andamento": 209,
       "entradas_mes": 8,
-      "saidas_mes": 3,
+      "saidas_mes": 4,
       "entradas_mes_anterior": 15,
       "saidas_mes_anterior": 7,
       "valor_causa": 27531536.16
