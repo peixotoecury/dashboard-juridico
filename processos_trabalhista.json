@@ -1,16 +1,16 @@
 {
-  "atualizado_em": "2026-08-13T15:18:14",
+  "atualizado_em": "2026-08-13T15:30:26",
   "kpis": {
     "total_andamento": 8198,
-    "entradas_hoje": 6,
-    "saidas_hoje": 6,
+    "entradas_hoje": 7,
+    "saidas_hoje": 7,
     "entradas_ontem": 12,
     "saidas_ontem": 2,
-    "entradas_mes": 101,
-    "saidas_mes": 104,
+    "entradas_mes": 102,
+    "saidas_mes": 105,
     "entradas_mes_anterior": 252,
     "saidas_mes_anterior": 243,
-    "valor_causa_total": 1733504017.01,
+    "valor_causa_total": 1733444017.01,
     "saldo_mes": -3
   },
   "serie_diaria": [
@@ -311,8 +311,8 @@
     },
     {
       "data": "2026-08-13",
-      "entradas": 6,
-      "saidas": 6
+      "entradas": 7,
+      "saidas": 7
     }
   ],
   "por_grupo": [
@@ -327,12 +327,12 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1776,
+      "andamento": 1775,
       "entradas_mes": 22,
-      "saidas_mes": 67,
+      "saidas_mes": 68,
       "entradas_mes_anterior": 44,
       "saidas_mes_anterior": 61,
-      "valor_causa": 291596954.76
+      "valor_causa": 291536954.76
     },
     {
       "nome": "Grupo B1",
@@ -363,8 +363,8 @@
     },
     {
       "nome": "Grupo C",
-      "andamento": 622,
-      "entradas_mes": 7,
+      "andamento": 623,
+      "entradas_mes": 8,
       "saidas_mes": 0,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 10,
@@ -428,12 +428,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 6379,
+      "andamento": 6378,
       "entradas_mes": 65,
-      "saidas_mes": 98,
+      "saidas_mes": 99,
       "entradas_mes_anterior": 166,
       "saidas_mes_anterior": 182,
-      "valor_causa": 1377882635.56
+      "valor_causa": 1377822635.56
     },
     {
       "nome": "MG",
@@ -491,8 +491,8 @@
     },
     {
       "nome": "GO",
-      "andamento": 94,
-      "entradas_mes": 4,
+      "andamento": 95,
+      "entradas_mes": 5,
       "saidas_mes": 1,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 3,
@@ -655,8 +655,8 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 387,
-      "entradas_mes": 7,
+      "andamento": 388,
+      "entradas_mes": 8,
       "saidas_mes": 1,
       "entradas_mes_anterior": 41,
       "saidas_mes_anterior": 6,
@@ -664,12 +664,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2890,
+      "andamento": 2889,
       "entradas_mes": 88,
-      "saidas_mes": 25,
+      "saidas_mes": 26,
       "entradas_mes_anterior": 188,
       "saidas_mes_anterior": 73,
-      "valor_causa": 752820031.42
+      "valor_causa": 752760031.42
     },
     {
       "nome": "Sentença",
@@ -724,8 +724,8 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo C",
-      "andamento": 41,
-      "entradas_mes": 0,
+      "andamento": 42,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
@@ -914,12 +914,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 767,
+      "andamento": 766,
       "entradas_mes": 15,
-      "saidas_mes": 12,
+      "saidas_mes": 13,
       "entradas_mes_anterior": 30,
       "saidas_mes_anterior": 10,
-      "valor_causa": 158644586.13
+      "valor_causa": 158584586.13
     },
     {
       "fase": "Instrução",
@@ -1457,12 +1457,12 @@
     },
     {
       "nome": "Paloma da Silva Santos(PSI)",
-      "andamento": 256,
+      "andamento": 255,
       "entradas_mes": 6,
-      "saidas_mes": 31,
+      "saidas_mes": 32,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 14,
-      "valor_causa": 52469700.44
+      "valor_causa": 52409700.44
     },
     {
       "nome": "Anna Carolina Balbino Gatti Baani(ANB)",
@@ -1492,6 +1492,15 @@
       "valor_causa": 34414809.81
     },
     {
+      "nome": "Erik Mota Coppi(ECO)",
+      "andamento": 234,
+      "entradas_mes": 8,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 14,
+      "saidas_mes_anterior": 7,
+      "valor_causa": 41062327.97
+    },
+    {
       "nome": "Rafael Camargo Felisbino(RCF)",
       "andamento": 234,
       "entradas_mes": 0,
@@ -1499,15 +1508,6 @@
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 4,
       "valor_causa": 53877789.12
-    },
-    {
-      "nome": "Erik Mota Coppi(ECO)",
-      "andamento": 233,
-      "entradas_mes": 7,
-      "saidas_mes": 1,
-      "entradas_mes_anterior": 14,
-      "saidas_mes_anterior": 7,
-      "valor_causa": 41062327.97
     },
     {
       "nome": "Tamires Lins Costa(TLI)",
@@ -2530,8 +2530,8 @@
     {
       "grupo": "Grupo C",
       "cliente": "UHE SÃO SIMÃO",
-      "andamento": 24,
-      "entradas_mes": 3,
+      "andamento": 25,
+      "entradas_mes": 4,
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 2,
@@ -3036,12 +3036,12 @@
     {
       "grupo": "Grupo E1",
       "cliente": "MAHLE THERMAL",
-      "andamento": 47,
+      "andamento": 46,
       "entradas_mes": 2,
-      "saidas_mes": 9,
+      "saidas_mes": 10,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 2,
-      "valor_causa": 7019017.59,
+      "valor_causa": 6959017.59,
       "alerta_entrada": false
     },
     {
@@ -4130,8 +4130,8 @@
     {
       "grupo": "Grupo C",
       "profissional": "Erik Mota Coppi(ECO)",
-      "andamento": 219,
-      "entradas_mes": 4,
+      "andamento": 220,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 6,
@@ -4220,12 +4220,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Paloma da Silva Santos(PSI)",
-      "andamento": 256,
+      "andamento": 255,
       "entradas_mes": 6,
-      "saidas_mes": 22,
+      "saidas_mes": 23,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 13,
-      "valor_causa": 52469700.44
+      "valor_causa": 52409700.44
     },
     {
       "grupo": "Grupo E1",
@@ -5002,8 +5002,8 @@
     {
       "estado": "GO",
       "cliente": "UHE SÃO SIMÃO",
-      "andamento": 9,
-      "entradas_mes": 3,
+      "andamento": 10,
+      "entradas_mes": 4,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 1,
@@ -6691,16 +6691,6 @@
     },
     {
       "estado": "SP",
-      "cliente": "MAHLE THERMAL",
-      "andamento": 47,
-      "entradas_mes": 2,
-      "saidas_mes": 11,
-      "entradas_mes_anterior": 2,
-      "saidas_mes_anterior": 2,
-      "valor_causa": 7019017.59
-    },
-    {
-      "estado": "SP",
       "cliente": "WICKBOLD",
       "andamento": 46,
       "entradas_mes": 0,
@@ -6708,6 +6698,16 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
       "valor_causa": 17332939.43
+    },
+    {
+      "estado": "SP",
+      "cliente": "MAHLE THERMAL",
+      "andamento": 46,
+      "entradas_mes": 2,
+      "saidas_mes": 12,
+      "entradas_mes_anterior": 2,
+      "saidas_mes_anterior": 2,
+      "valor_causa": 6959017.59
     },
     {
       "estado": "SP",
@@ -8003,8 +8003,8 @@
     },
     {
       "nome": "UHE SÃO SIMÃO",
-      "andamento": 24,
-      "entradas_mes": 3,
+      "andamento": 25,
+      "entradas_mes": 4,
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 2,
