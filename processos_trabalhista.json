@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-08-13T12:15:23",
+  "atualizado_em": "2026-08-13T13:27:49",
   "kpis": {
-    "total_andamento": 8198,
-    "entradas_hoje": 1,
+    "total_andamento": 8201,
+    "entradas_hoje": 4,
     "saidas_hoje": 1,
     "entradas_ontem": 12,
     "saidas_ontem": 2,
-    "entradas_mes": 96,
+    "entradas_mes": 99,
     "saidas_mes": 99,
     "entradas_mes_anterior": 252,
     "saidas_mes_anterior": 243,
     "valor_causa_total": 1731973564.68,
-    "saldo_mes": -3
+    "saldo_mes": 0
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-08-13",
-      "entradas": 1,
+      "entradas": 4,
       "saidas": 1
     }
   ],
@@ -363,8 +363,8 @@
     },
     {
       "nome": "Grupo C",
-      "andamento": 618,
-      "entradas_mes": 3,
+      "andamento": 620,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 10,
@@ -408,8 +408,8 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 5,
-      "entradas_mes": 1,
+      "andamento": 6,
+      "entradas_mes": 2,
       "saidas_mes": 19,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
@@ -428,8 +428,8 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 6382,
-      "entradas_mes": 64,
+      "andamento": 6383,
+      "entradas_mes": 65,
       "saidas_mes": 94,
       "entradas_mes_anterior": 166,
       "saidas_mes_anterior": 182,
@@ -491,8 +491,8 @@
     },
     {
       "nome": "GO",
-      "andamento": 91,
-      "entradas_mes": 1,
+      "andamento": 93,
+      "entradas_mes": 3,
       "saidas_mes": 1,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 3,
@@ -664,8 +664,8 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2888,
-      "entradas_mes": 83,
+      "andamento": 2891,
+      "entradas_mes": 86,
       "saidas_mes": 22,
       "entradas_mes_anterior": 188,
       "saidas_mes_anterior": 73,
@@ -934,8 +934,8 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo C",
-      "andamento": 354,
-      "entradas_mes": 3,
+      "andamento": 356,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 5,
@@ -993,6 +993,16 @@
     },
     {
       "fase": "Instrução",
+      "grupo": "Sem grupo",
+      "andamento": 3,
+      "entradas_mes": 2,
+      "saidas_mes": 2,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 385665.17
+    },
+    {
+      "fase": "Instrução",
       "grupo": "Grupo A1",
       "andamento": 2,
       "entradas_mes": 0,
@@ -1000,16 +1010,6 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
-    },
-    {
-      "fase": "Instrução",
-      "grupo": "Sem grupo",
-      "andamento": 2,
-      "entradas_mes": 1,
-      "saidas_mes": 2,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 385665.17
     },
     {
       "fase": "Outras",
@@ -1502,8 +1502,8 @@
     },
     {
       "nome": "Erik Mota Coppi(ECO)",
-      "andamento": 229,
-      "entradas_mes": 3,
+      "andamento": 231,
+      "entradas_mes": 5,
       "saidas_mes": 1,
       "entradas_mes_anterior": 14,
       "saidas_mes_anterior": 7,
@@ -1529,8 +1529,8 @@
     },
     {
       "nome": "Thiago Frid Figueiredo Rossi(TFR)",
-      "andamento": 163,
-      "entradas_mes": 1,
+      "andamento": 164,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 1,
@@ -1761,8 +1761,8 @@
     },
     {
       "nome": "TELEFONICA BRASIL",
-      "andamento": 344,
-      "entradas_mes": 1,
+      "andamento": 345,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 9,
@@ -2530,8 +2530,8 @@
     {
       "grupo": "Grupo C",
       "cliente": "UHE SÃO SIMÃO",
-      "andamento": 21,
-      "entradas_mes": 0,
+      "andamento": 23,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 2,
@@ -3815,6 +3815,17 @@
       "alerta_entrada": false
     },
     {
+      "grupo": "Sem grupo",
+      "cliente": "TELEFONICA BRASIL",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 0.0,
+      "alerta_entrada": false
+    },
+    {
       "grupo": "Sócios",
       "cliente": "PEIXOTO E CURY",
       "andamento": 2,
@@ -4141,8 +4152,8 @@
     {
       "grupo": "Grupo C",
       "profissional": "Erik Mota Coppi(ECO)",
-      "andamento": 216,
-      "entradas_mes": 1,
+      "andamento": 218,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 6,
@@ -4507,6 +4518,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 41822.6
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Thiago Frid Figueiredo Rossi(TFR)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 0.0
     },
     {
       "grupo": "Sócios",
@@ -5012,6 +5033,16 @@
     },
     {
       "estado": "GO",
+      "cliente": "UHE SÃO SIMÃO",
+      "andamento": 8,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 584084.69
+    },
+    {
+      "estado": "GO",
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "andamento": 8,
       "entradas_mes": 1,
@@ -5019,16 +5050,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 921154.39
-    },
-    {
-      "estado": "GO",
-      "cliente": "UHE SÃO SIMÃO",
-      "andamento": 6,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 584084.69
     },
     {
       "estado": "GO",
@@ -6583,8 +6604,8 @@
     {
       "estado": "SP",
       "cliente": "TELEFONICA BRASIL",
-      "andamento": 236,
-      "entradas_mes": 1,
+      "andamento": 237,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 4,
@@ -8058,6 +8079,11 @@
       "numero_processo": "1000930-65.2026.5.02.0080",
       "cliente": "PEIXOTO E CURY",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
+    },
+    {
+      "numero_processo": "1001287-79.2026.5.02.0004",
+      "cliente": "TELEFONICA BRASIL",
+      "profissional": "Thiago Frid Figueiredo Rossi(TFR)"
     }
   ]
 }
