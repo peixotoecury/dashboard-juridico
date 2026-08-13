@@ -1,16 +1,16 @@
 {
-  "atualizado_em": "2026-08-13T14:30:56",
+  "atualizado_em": "2026-08-13T14:45:26",
   "kpis": {
     "total_andamento": 8198,
-    "entradas_hoje": 4,
-    "saidas_hoje": 4,
+    "entradas_hoje": 5,
+    "saidas_hoje": 5,
     "entradas_ontem": 12,
     "saidas_ontem": 2,
-    "entradas_mes": 99,
-    "saidas_mes": 102,
+    "entradas_mes": 100,
+    "saidas_mes": 103,
     "entradas_mes_anterior": 252,
     "saidas_mes_anterior": 243,
-    "valor_causa_total": 1731849702.03,
+    "valor_causa_total": 1731545228.01,
     "saldo_mes": -3
   },
   "serie_diaria": [
@@ -311,8 +311,8 @@
     },
     {
       "data": "2026-08-13",
-      "entradas": 4,
-      "saidas": 4
+      "entradas": 5,
+      "saidas": 5
     }
   ],
   "por_grupo": [
@@ -327,12 +327,12 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1777,
+      "andamento": 1776,
       "entradas_mes": 21,
-      "saidas_mes": 65,
+      "saidas_mes": 66,
       "entradas_mes_anterior": 44,
       "saidas_mes_anterior": 61,
-      "valor_causa": 291901428.78
+      "valor_causa": 291596954.76
     },
     {
       "nome": "Grupo B1",
@@ -363,8 +363,8 @@
     },
     {
       "nome": "Grupo C",
-      "andamento": 620,
-      "entradas_mes": 5,
+      "andamento": 621,
+      "entradas_mes": 6,
       "saidas_mes": 0,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 10,
@@ -428,12 +428,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 6381,
+      "andamento": 6380,
       "entradas_mes": 65,
-      "saidas_mes": 96,
+      "saidas_mes": 97,
       "entradas_mes_anterior": 166,
       "saidas_mes_anterior": 182,
-      "valor_causa": 1376228320.58
+      "valor_causa": 1375923846.56
     },
     {
       "nome": "MG",
@@ -491,8 +491,8 @@
     },
     {
       "nome": "GO",
-      "andamento": 93,
-      "entradas_mes": 3,
+      "andamento": 94,
+      "entradas_mes": 4,
       "saidas_mes": 1,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 3,
@@ -664,8 +664,8 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2889,
-      "entradas_mes": 86,
+      "andamento": 2890,
+      "entradas_mes": 87,
       "saidas_mes": 24,
       "entradas_mes_anterior": 188,
       "saidas_mes_anterior": 73,
@@ -673,12 +673,12 @@
     },
     {
       "nome": "Sentença",
-      "andamento": 30,
+      "andamento": 29,
       "entradas_mes": 0,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 2,
-      "valor_causa": 34232969.86
+      "valor_causa": 33928495.84
     },
     {
       "nome": "Recurso",
@@ -934,8 +934,8 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo C",
-      "andamento": 356,
-      "entradas_mes": 5,
+      "andamento": 357,
+      "entradas_mes": 6,
       "saidas_mes": 0,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 5,
@@ -1234,12 +1234,12 @@
     {
       "fase": "Sentença",
       "grupo": "Grupo E1",
-      "andamento": 5,
+      "andamento": 4,
       "entradas_mes": 0,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 475727.04
+      "valor_causa": 171253.02
     },
     {
       "fase": "Sentença",
@@ -1349,12 +1349,12 @@
     },
     {
       "nome": "Aline Ferreira Miron(ALF)",
-      "andamento": 297,
+      "andamento": 296,
       "entradas_mes": 0,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 5,
-      "valor_causa": 33851463.9
+      "valor_causa": 33546989.88
     },
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
@@ -1502,8 +1502,8 @@
     },
     {
       "nome": "Erik Mota Coppi(ECO)",
-      "andamento": 231,
-      "entradas_mes": 5,
+      "andamento": 232,
+      "entradas_mes": 6,
       "saidas_mes": 1,
       "entradas_mes_anterior": 14,
       "saidas_mes_anterior": 7,
@@ -2530,13 +2530,13 @@
     {
       "grupo": "Grupo C",
       "cliente": "UHE SÃO SIMÃO",
-      "andamento": 23,
-      "entradas_mes": 2,
+      "andamento": 24,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 2,
       "valor_causa": 4456025.52,
-      "alerta_entrada": false
+      "alerta_entrada": true
     },
     {
       "grupo": "Grupo C",
@@ -3119,17 +3119,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 627758.89,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Grupo E1",
-      "cliente": "UAB MOTORS",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 304474.02,
       "alerta_entrada": false
     },
     {
@@ -4152,8 +4141,8 @@
     {
       "grupo": "Grupo C",
       "profissional": "Erik Mota Coppi(ECO)",
-      "andamento": 218,
-      "entradas_mes": 3,
+      "andamento": 219,
+      "entradas_mes": 4,
       "saidas_mes": 0,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 6,
@@ -4232,12 +4221,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Aline Ferreira Miron(ALF)",
-      "andamento": 297,
+      "andamento": 296,
       "entradas_mes": 0,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 5,
-      "valor_causa": 33851463.9
+      "valor_causa": 33546989.88
     },
     {
       "grupo": "Grupo E1",
@@ -5034,8 +5023,8 @@
     {
       "estado": "GO",
       "cliente": "UHE SÃO SIMÃO",
-      "andamento": 8,
-      "entradas_mes": 2,
+      "andamento": 9,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 1,
@@ -7343,16 +7332,6 @@
     },
     {
       "estado": "SP",
-      "cliente": "UAB MOTORS",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 304474.02
-    },
-    {
-      "estado": "SP",
       "cliente": "CBC MONTENEGRO",
       "andamento": 1,
       "entradas_mes": 0,
@@ -8041,6 +8020,16 @@
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 4,
       "valor_causa": 22024634.39,
+      "alerta_entrada": true
+    },
+    {
+      "nome": "UHE SÃO SIMÃO",
+      "andamento": 24,
+      "entradas_mes": 3,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 2,
+      "saidas_mes_anterior": 2,
+      "valor_causa": 4456025.52,
       "alerta_entrada": true
     },
     {
