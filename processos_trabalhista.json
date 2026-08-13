@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-08-13T11:00:27",
+  "atualizado_em": "2026-08-13T11:15:24",
   "kpis": {
-    "total_andamento": 8197,
-    "entradas_hoje": 0,
+    "total_andamento": 8198,
+    "entradas_hoje": 1,
     "saidas_hoje": 1,
     "entradas_ontem": 12,
     "saidas_ontem": 2,
-    "entradas_mes": 95,
+    "entradas_mes": 96,
     "saidas_mes": 99,
     "entradas_mes_anterior": 252,
     "saidas_mes_anterior": 243,
     "valor_causa_total": 1731973564.68,
-    "saldo_mes": -4
+    "saldo_mes": -3
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-08-13",
-      "entradas": 0,
+      "entradas": 1,
       "saidas": 1
     }
   ],
@@ -336,8 +336,8 @@
     },
     {
       "nome": "Grupo B1",
-      "andamento": 1440,
-      "entradas_mes": 22,
+      "andamento": 1441,
+      "entradas_mes": 23,
       "saidas_mes": 4,
       "entradas_mes_anterior": 45,
       "saidas_mes_anterior": 56,
@@ -455,8 +455,8 @@
     },
     {
       "nome": "PR",
-      "andamento": 226,
-      "entradas_mes": 3,
+      "andamento": 227,
+      "entradas_mes": 4,
       "saidas_mes": 0,
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 5,
@@ -664,8 +664,8 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2888,
-      "entradas_mes": 83,
+      "andamento": 2889,
+      "entradas_mes": 84,
       "saidas_mes": 22,
       "entradas_mes_anterior": 188,
       "saidas_mes_anterior": 73,
@@ -924,8 +924,8 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B1",
-      "andamento": 430,
-      "entradas_mes": 21,
+      "andamento": 431,
+      "entradas_mes": 22,
       "saidas_mes": 2,
       "entradas_mes_anterior": 44,
       "saidas_mes_anterior": 20,
@@ -1385,8 +1385,8 @@
     },
     {
       "nome": "Guilherme Silva Morimoto(GSM)",
-      "andamento": 279,
-      "entradas_mes": 4,
+      "andamento": 280,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 7,
@@ -1711,8 +1711,8 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1441,
-      "entradas_mes": 22,
+      "andamento": 1442,
+      "entradas_mes": 23,
       "saidas_mes": 4,
       "entradas_mes_anterior": 45,
       "saidas_mes_anterior": 56,
@@ -2343,8 +2343,8 @@
     {
       "grupo": "Grupo B1",
       "cliente": "BRIDGESTONE",
-      "andamento": 1440,
-      "entradas_mes": 22,
+      "andamento": 1441,
+      "entradas_mes": 23,
       "saidas_mes": 4,
       "entradas_mes_anterior": 45,
       "saidas_mes_anterior": 56,
@@ -4001,8 +4001,8 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Guilherme Silva Morimoto(GSM)",
-      "andamento": 229,
-      "entradas_mes": 4,
+      "andamento": 230,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 7,
@@ -5752,6 +5752,16 @@
     },
     {
       "estado": "PR",
+      "cliente": "BRIDGESTONE",
+      "andamento": 5,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 50000.0
+    },
+    {
+      "estado": "PR",
       "cliente": "FERRERO DO BRASIL",
       "andamento": 4,
       "entradas_mes": 0,
@@ -5759,16 +5769,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 328689.95
-    },
-    {
-      "estado": "PR",
-      "cliente": "BRIDGESTONE",
-      "andamento": 4,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 50000.0
     },
     {
       "estado": "PR",
