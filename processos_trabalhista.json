@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-08-13T14:45:26",
+  "atualizado_em": "2026-08-13T15:00:28",
   "kpis": {
-    "total_andamento": 8198,
+    "total_andamento": 8197,
     "entradas_hoje": 5,
-    "saidas_hoje": 5,
+    "saidas_hoje": 6,
     "entradas_ontem": 12,
     "saidas_ontem": 2,
     "entradas_mes": 100,
-    "saidas_mes": 103,
+    "saidas_mes": 104,
     "entradas_mes_anterior": 252,
     "saidas_mes_anterior": 243,
     "valor_causa_total": 1731545228.01,
-    "saldo_mes": -3
+    "saldo_mes": -4
   },
   "serie_diaria": [
     {
@@ -312,7 +312,7 @@
     {
       "data": "2026-08-13",
       "entradas": 5,
-      "saidas": 5
+      "saidas": 6
     }
   ],
   "por_grupo": [
@@ -327,9 +327,9 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1776,
+      "andamento": 1775,
       "entradas_mes": 21,
-      "saidas_mes": 66,
+      "saidas_mes": 67,
       "entradas_mes_anterior": 44,
       "saidas_mes_anterior": 61,
       "valor_causa": 291596954.76
@@ -363,8 +363,8 @@
     },
     {
       "nome": "Grupo C",
-      "andamento": 621,
-      "entradas_mes": 6,
+      "andamento": 622,
+      "entradas_mes": 7,
       "saidas_mes": 0,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 10,
@@ -408,8 +408,8 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 6,
-      "entradas_mes": 2,
+      "andamento": 5,
+      "entradas_mes": 1,
       "saidas_mes": 19,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
@@ -428,9 +428,9 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 6380,
+      "andamento": 6379,
       "entradas_mes": 65,
-      "saidas_mes": 97,
+      "saidas_mes": 98,
       "entradas_mes_anterior": 166,
       "saidas_mes_anterior": 182,
       "valor_causa": 1375923846.56
@@ -664,9 +664,9 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2890,
+      "andamento": 2889,
       "entradas_mes": 87,
-      "saidas_mes": 24,
+      "saidas_mes": 25,
       "entradas_mes_anterior": 188,
       "saidas_mes_anterior": 73,
       "valor_causa": 750861242.42
@@ -914,9 +914,9 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 767,
+      "andamento": 766,
       "entradas_mes": 14,
-      "saidas_mes": 11,
+      "saidas_mes": 12,
       "entradas_mes_anterior": 30,
       "saidas_mes_anterior": 10,
       "valor_causa": 158644586.13
@@ -934,8 +934,8 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo C",
-      "andamento": 357,
-      "entradas_mes": 6,
+      "andamento": 358,
+      "entradas_mes": 7,
       "saidas_mes": 0,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 5,
@@ -993,16 +993,6 @@
     },
     {
       "fase": "Instrução",
-      "grupo": "Sem grupo",
-      "andamento": 3,
-      "entradas_mes": 2,
-      "saidas_mes": 2,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 385665.17
-    },
-    {
-      "fase": "Instrução",
       "grupo": "Grupo A1",
       "andamento": 2,
       "entradas_mes": 0,
@@ -1010,6 +1000,16 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
+    },
+    {
+      "fase": "Instrução",
+      "grupo": "Sem grupo",
+      "andamento": 2,
+      "entradas_mes": 1,
+      "saidas_mes": 2,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 385665.17
     },
     {
       "fase": "Outras",
@@ -1457,9 +1457,9 @@
     },
     {
       "nome": "Paloma da Silva Santos(PSI)",
-      "andamento": 257,
+      "andamento": 256,
       "entradas_mes": 6,
-      "saidas_mes": 30,
+      "saidas_mes": 31,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 14,
       "valor_causa": 52469700.44
@@ -2497,8 +2497,8 @@
     {
       "grupo": "Grupo C",
       "cliente": "TELEFONICA BRASIL",
-      "andamento": 321,
-      "entradas_mes": 1,
+      "andamento": 322,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 5,
@@ -3036,9 +3036,9 @@
     {
       "grupo": "Grupo E1",
       "cliente": "MAHLE THERMAL",
-      "andamento": 48,
+      "andamento": 47,
       "entradas_mes": 2,
-      "saidas_mes": 8,
+      "saidas_mes": 9,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 2,
       "valor_causa": 7019017.59,
@@ -3804,17 +3804,6 @@
       "alerta_entrada": false
     },
     {
-      "grupo": "Sem grupo",
-      "cliente": "TELEFONICA BRASIL",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 0.0,
-      "alerta_entrada": false
-    },
-    {
       "grupo": "Sócios",
       "cliente": "PEIXOTO E CURY",
       "andamento": 2,
@@ -4151,8 +4140,8 @@
     {
       "grupo": "Grupo C",
       "profissional": "Thiago Frid Figueiredo Rossi(TFR)",
-      "andamento": 158,
-      "entradas_mes": 1,
+      "andamento": 159,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 1,
@@ -4231,9 +4220,9 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Paloma da Silva Santos(PSI)",
-      "andamento": 257,
+      "andamento": 256,
       "entradas_mes": 6,
-      "saidas_mes": 21,
+      "saidas_mes": 22,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 13,
       "valor_causa": 52469700.44
@@ -4507,16 +4496,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 41822.6
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Thiago Frid Figueiredo Rossi(TFR)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 0.0
     },
     {
       "grupo": "Sócios",
@@ -6713,9 +6692,9 @@
     {
       "estado": "SP",
       "cliente": "MAHLE THERMAL",
-      "andamento": 48,
+      "andamento": 47,
       "entradas_mes": 2,
-      "saidas_mes": 10,
+      "saidas_mes": 11,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 2,
       "valor_causa": 7019017.59
@@ -8068,11 +8047,6 @@
       "numero_processo": "1000930-65.2026.5.02.0080",
       "cliente": "PEIXOTO E CURY",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
-    },
-    {
-      "numero_processo": "1001287-79.2026.5.02.0004",
-      "cliente": "TELEFONICA BRASIL",
-      "profissional": "Thiago Frid Figueiredo Rossi(TFR)"
     }
   ]
 }
