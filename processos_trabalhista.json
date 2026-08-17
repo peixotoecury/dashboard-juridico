@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-08-17T09:45:22",
+  "atualizado_em": "2026-08-17T10:00:20",
   "kpis": {
-    "total_andamento": 8134,
-    "entradas_hoje": 0,
+    "total_andamento": 8135,
+    "entradas_hoje": 1,
     "saidas_hoje": 0,
     "entradas_ontem": 0,
     "saidas_ontem": 3,
-    "entradas_mes": 123,
+    "entradas_mes": 124,
     "saidas_mes": 124,
     "entradas_mes_anterior": 252,
     "saidas_mes_anterior": 254,
-    "valor_causa_total": 1730200248.71,
-    "saldo_mes": -1
+    "valor_causa_total": 1730724776.99,
+    "saldo_mes": 0
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-08-17",
-      "entradas": 0,
+      "entradas": 1,
       "saidas": 0
     }
   ],
@@ -336,12 +336,12 @@
     },
     {
       "nome": "Grupo B1",
-      "andamento": 1444,
-      "entradas_mes": 26,
+      "andamento": 1445,
+      "entradas_mes": 27,
       "saidas_mes": 4,
       "entradas_mes_anterior": 45,
       "saidas_mes_anterior": 56,
-      "valor_causa": 298461019.18
+      "valor_causa": 298985547.46
     },
     {
       "nome": "Grupo B2",
@@ -472,6 +472,15 @@
       "valor_causa": 16379209.13
     },
     {
+      "nome": "BA",
+      "andamento": 105,
+      "entradas_mes": 3,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 6,
+      "saidas_mes_anterior": 6,
+      "valor_causa": 15137459.86
+    },
+    {
       "nome": "MS",
       "andamento": 105,
       "entradas_mes": 2,
@@ -479,15 +488,6 @@
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
       "valor_causa": 18373767.05
-    },
-    {
-      "nome": "BA",
-      "andamento": 104,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 6,
-      "saidas_mes_anterior": 6,
-      "valor_causa": 14612931.58
     },
     {
       "nome": "GO",
@@ -664,12 +664,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2873,
-      "entradas_mes": 100,
+      "andamento": 2874,
+      "entradas_mes": 101,
       "saidas_mes": 31,
       "entradas_mes_anterior": 182,
       "saidas_mes_anterior": 74,
-      "valor_causa": 753923901.56
+      "valor_causa": 754448429.84
     },
     {
       "nome": "Sentença",
@@ -924,12 +924,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B1",
-      "andamento": 427,
-      "entradas_mes": 25,
+      "andamento": 428,
+      "entradas_mes": 26,
       "saidas_mes": 2,
       "entradas_mes_anterior": 44,
       "saidas_mes_anterior": 20,
-      "valor_causa": 130719816.06
+      "valor_causa": 131244344.34
     },
     {
       "fase": "Instrução",
@@ -1421,12 +1421,12 @@
     },
     {
       "nome": "Beatriz Santiago de Souza(BSO)",
-      "andamento": 268,
-      "entradas_mes": 6,
+      "andamento": 269,
+      "entradas_mes": 7,
       "saidas_mes": 0,
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 4,
-      "valor_causa": 39167325.38
+      "valor_causa": 39691853.66
     },
     {
       "nome": "Rafael Rocha Ferreira(RFE)",
@@ -1483,6 +1483,15 @@
       "valor_causa": 41153546.17
     },
     {
+      "nome": "Rafael Camargo Felisbino(RCF)",
+      "andamento": 235,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 6,
+      "saidas_mes_anterior": 4,
+      "valor_causa": 53877789.12
+    },
+    {
       "nome": "Vinícius Ronchi Arruda(VRO)",
       "andamento": 235,
       "entradas_mes": 4,
@@ -1490,15 +1499,6 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 4,
       "valor_causa": 34264460.13
-    },
-    {
-      "nome": "Rafael Camargo Felisbino(RCF)",
-      "andamento": 234,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 6,
-      "saidas_mes_anterior": 4,
-      "valor_causa": 53877789.12
     },
     {
       "nome": "Tamires Lins Costa(TLI)",
@@ -1592,8 +1592,8 @@
     },
     {
       "nome": "Washington Soares Silva Filho(WSF)",
-      "andamento": 6,
-      "entradas_mes": 1,
+      "andamento": 5,
+      "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
@@ -1702,12 +1702,12 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1446,
-      "entradas_mes": 27,
+      "andamento": 1447,
+      "entradas_mes": 28,
       "saidas_mes": 4,
       "entradas_mes_anterior": 45,
       "saidas_mes_anterior": 56,
-      "valor_causa": 299757409.59,
+      "valor_causa": 300281937.87,
       "alerta_entrada": false
     },
     {
@@ -2334,12 +2334,12 @@
     {
       "grupo": "Grupo B1",
       "cliente": "BRIDGESTONE",
-      "andamento": 1444,
-      "entradas_mes": 26,
+      "andamento": 1445,
+      "entradas_mes": 27,
       "saidas_mes": 4,
       "entradas_mes_anterior": 45,
       "saidas_mes_anterior": 56,
-      "valor_causa": 298461019.18,
+      "valor_causa": 298985547.46,
       "alerta_entrada": false
     },
     {
@@ -3973,12 +3973,12 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Beatriz Santiago de Souza(BSO)",
-      "andamento": 268,
-      "entradas_mes": 6,
+      "andamento": 269,
+      "entradas_mes": 7,
       "saidas_mes": 0,
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 4,
-      "valor_causa": 39167325.38
+      "valor_causa": 39691853.66
     },
     {
       "grupo": "Grupo B1",
@@ -4383,8 +4383,8 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Rafael Camargo Felisbino(RCF)",
-      "andamento": 99,
-      "entradas_mes": 0,
+      "andamento": 100,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 1,
@@ -4403,8 +4403,8 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Washington Soares Silva Filho(WSF)",
-      "andamento": 6,
-      "entradas_mes": 1,
+      "andamento": 5,
+      "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
@@ -4721,6 +4721,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 270500.28
+    },
+    {
+      "estado": "BA",
+      "cliente": "BRIDGESTONE",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 524528.28
     },
     {
       "estado": "CE",
