@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-08-17T18:30:30",
+  "atualizado_em": "2026-08-17T19:25:30",
   "kpis": {
-    "total_andamento": 8138,
+    "total_andamento": 8137,
     "entradas_hoje": 22,
-    "saidas_hoje": 8,
+    "saidas_hoje": 9,
     "entradas_ontem": 0,
     "saidas_ontem": 3,
     "entradas_mes": 147,
-    "saidas_mes": 136,
+    "saidas_mes": 137,
     "entradas_mes_anterior": 252,
     "saidas_mes_anterior": 261,
-    "valor_causa_total": 1733664330.12,
-    "saldo_mes": 11
+    "valor_causa_total": 1733591362.92,
+    "saldo_mes": 10
   },
   "serie_diaria": [
     {
@@ -312,18 +312,18 @@
     {
       "data": "2026-08-17",
       "entradas": 22,
-      "saidas": 8
+      "saidas": 9
     }
   ],
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2085,
+      "andamento": 2084,
       "entradas_mes": 41,
-      "saidas_mes": 15,
+      "saidas_mes": 16,
       "entradas_mes_anterior": 93,
       "saidas_mes_anterior": 82,
-      "valor_causa": 445259579.57
+      "valor_causa": 445186612.37
     },
     {
       "nome": "Grupo E1",
@@ -428,12 +428,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 6324,
+      "andamento": 6323,
       "entradas_mes": 94,
-      "saidas_mes": 121,
+      "saidas_mes": 122,
       "entradas_mes_anterior": 166,
       "saidas_mes_anterior": 193,
-      "valor_causa": 1377875489.51
+      "valor_causa": 1377802522.31
     },
     {
       "nome": "MG",
@@ -655,12 +655,12 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 406,
+      "andamento": 405,
       "entradas_mes": 25,
       "saidas_mes": 2,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 6,
-      "valor_causa": 90649150.93
+      "valor_causa": 90376650.93
     },
     {
       "nome": "Instrução",
@@ -682,34 +682,34 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 3208,
+      "andamento": 3209,
       "entradas_mes": 1,
       "saidas_mes": 45,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 50,
-      "valor_causa": 678296806.11
+      "valor_causa": 678520706.11
     },
     {
       "nome": "Execução",
       "andamento": 1203,
       "entradas_mes": 5,
-      "saidas_mes": 48,
+      "saidas_mes": 49,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 82,
-      "valor_causa": 167621199.24
+      "valor_causa": 167820732.04
     }
   ],
-  "por_fase_outras": 408,
+  "por_fase_outras": 407,
   "por_fase_grupo": [
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo E2",
-      "andamento": 157,
+      "andamento": 156,
       "entradas_mes": 13,
       "saidas_mes": 1,
       "entradas_mes_anterior": 36,
       "saidas_mes_anterior": 4,
-      "valor_causa": 42886074.75
+      "valor_causa": 42613574.75
     },
     {
       "fase": "Ajuizamento",
@@ -826,10 +826,10 @@
       "grupo": "Grupo E2",
       "andamento": 367,
       "entradas_mes": 1,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 26,
-      "valor_causa": 53931553.38
+      "valor_causa": 54131086.18
     },
     {
       "fase": "Execução",
@@ -1024,12 +1024,12 @@
     {
       "fase": "Outras",
       "grupo": "Grupo E2",
-      "andamento": 129,
+      "andamento": 128,
       "entradas_mes": 0,
       "saidas_mes": 1,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 5,
-      "valor_causa": 5765321.07
+      "valor_causa": 5541421.07
     },
     {
       "fase": "Outras",
@@ -1154,12 +1154,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo E2",
-      "andamento": 571,
+      "andamento": 572,
       "entradas_mes": 0,
       "saidas_mes": 3,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 18,
-      "valor_causa": 184776833.07
+      "valor_causa": 185000733.07
     },
     {
       "fase": "Recurso",
@@ -1323,12 +1323,12 @@
     },
     {
       "nome": "Rafael Yepez do Lago(RYL)",
-      "andamento": 433,
+      "andamento": 432,
       "entradas_mes": 9,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 15,
-      "valor_causa": 63443815.84
+      "valor_causa": 63370848.64
     },
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
@@ -1722,12 +1722,12 @@
     },
     {
       "nome": "BP BIOENERGIA",
-      "andamento": 776,
+      "andamento": 775,
       "entradas_mes": 9,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 31,
-      "valor_causa": 213620796.6,
+      "valor_causa": 213547829.4,
       "alerta_entrada": false
     },
     {
@@ -3191,12 +3191,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "BP BIOENERGIA",
-      "andamento": 776,
+      "andamento": 775,
       "entradas_mes": 9,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 31,
-      "valor_causa": 213620796.6,
+      "valor_causa": 213547829.4,
       "alerta_entrada": false
     },
     {
@@ -4331,12 +4331,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Rafael Yepez do Lago(RYL)",
-      "andamento": 433,
+      "andamento": 432,
       "entradas_mes": 9,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 15,
-      "valor_causa": 63443815.84
+      "valor_causa": 63370848.64
     },
     {
       "grupo": "Grupo E2",
@@ -6503,12 +6503,12 @@
     {
       "estado": "SP",
       "cliente": "BP BIOENERGIA",
-      "andamento": 436,
+      "andamento": 435,
       "entradas_mes": 4,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 21,
-      "valor_causa": 98280981.27
+      "valor_causa": 98208014.07
     },
     {
       "estado": "SP",
