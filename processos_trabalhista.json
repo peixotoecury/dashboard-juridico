@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-08-17T10:15:22",
+  "atualizado_em": "2026-08-17T10:45:21",
   "kpis": {
-    "total_andamento": 8135,
-    "entradas_hoje": 2,
-    "saidas_hoje": 1,
+    "total_andamento": 8136,
+    "entradas_hoje": 3,
+    "saidas_hoje": 2,
     "entradas_ontem": 0,
     "saidas_ontem": 3,
-    "entradas_mes": 125,
-    "saidas_mes": 125,
+    "entradas_mes": 127,
+    "saidas_mes": 126,
     "entradas_mes_anterior": 252,
     "saidas_mes_anterior": 254,
-    "valor_causa_total": 1730782845.82,
-    "saldo_mes": 0
+    "valor_causa_total": 1730737388.63,
+    "saldo_mes": 1
   },
   "serie_diaria": [
     {
@@ -296,7 +296,7 @@
     },
     {
       "data": "2026-08-14",
-      "entradas": 10,
+      "entradas": 11,
       "saidas": 3
     },
     {
@@ -311,19 +311,19 @@
     },
     {
       "data": "2026-08-17",
-      "entradas": 2,
-      "saidas": 1
+      "entradas": 3,
+      "saidas": 2
     }
   ],
   "por_grupo": [
     {
       "nome": "Grupo E2",
       "andamento": 2085,
-      "entradas_mes": 35,
-      "saidas_mes": 9,
+      "entradas_mes": 36,
+      "saidas_mes": 10,
       "entradas_mes_anterior": 93,
       "saidas_mes_anterior": 82,
-      "valor_causa": 444722691.53
+      "valor_causa": 444676234.34
     },
     {
       "nome": "Grupo E1",
@@ -336,12 +336,12 @@
     },
     {
       "nome": "Grupo B1",
-      "andamento": 1445,
-      "entradas_mes": 27,
+      "andamento": 1446,
+      "entradas_mes": 28,
       "saidas_mes": 4,
       "entradas_mes_anterior": 45,
       "saidas_mes_anterior": 56,
-      "valor_causa": 298985547.46
+      "valor_causa": 299938095.3
     },
     {
       "nome": "Grupo B2",
@@ -413,7 +413,7 @@
       "saidas_mes": 19,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
-      "valor_causa": 2645175.78
+      "valor_causa": 1693627.94
     },
     {
       "nome": "Sócios",
@@ -428,18 +428,18 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 6320,
-      "entradas_mes": 78,
+      "andamento": 6322,
+      "entradas_mes": 80,
       "saidas_mes": 115,
       "entradas_mes_anterior": 166,
       "saidas_mes_anterior": 188,
-      "valor_causa": 1374502734.91
+      "valor_causa": 1374457277.72
     },
     {
       "nome": "MG",
-      "andamento": 530,
+      "andamento": 529,
       "entradas_mes": 8,
-      "saidas_mes": 4,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 30,
       "saidas_mes_anterior": 29,
       "valor_causa": 124763900.99
@@ -655,21 +655,21 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 400,
-      "entradas_mes": 17,
+      "andamento": 401,
+      "entradas_mes": 18,
       "saidas_mes": 2,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 6,
-      "valor_causa": 85661027.65
+      "valor_causa": 85706320.57
     },
     {
       "nome": "Instrução",
       "andamento": 2873,
-      "entradas_mes": 100,
-      "saidas_mes": 31,
+      "entradas_mes": 101,
+      "saidas_mes": 32,
       "entradas_mes_anterior": 182,
       "saidas_mes_anterior": 74,
-      "valor_causa": 753923901.56
+      "valor_causa": 753833151.45
     },
     {
       "nome": "Sentença",
@@ -704,12 +704,12 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo E2",
-      "andamento": 154,
-      "entradas_mes": 10,
+      "andamento": 155,
+      "entradas_mes": 11,
       "saidas_mes": 1,
       "entradas_mes_anterior": 36,
       "saidas_mes_anterior": 4,
-      "valor_causa": 42440915.05
+      "valor_causa": 42486207.97
     },
     {
       "fase": "Ajuizamento",
@@ -904,12 +904,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 845,
+      "andamento": 844,
       "entradas_mes": 24,
-      "saidas_mes": 5,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 28,
-      "valor_causa": 157289254.16
+      "valor_causa": 157197504.05
     },
     {
       "fase": "Instrução",
@@ -924,12 +924,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B1",
-      "andamento": 427,
-      "entradas_mes": 25,
+      "andamento": 428,
+      "entradas_mes": 26,
       "saidas_mes": 2,
       "entradas_mes_anterior": 44,
       "saidas_mes_anterior": 20,
-      "valor_causa": 130719816.06
+      "valor_causa": 131672363.9
     },
     {
       "fase": "Instrução",
@@ -999,7 +999,7 @@
       "saidas_mes": 2,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 2034046.63
+      "valor_causa": 1082498.79
     },
     {
       "fase": "Instrução",
@@ -1323,11 +1323,11 @@
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
       "andamento": 420,
-      "entradas_mes": 6,
-      "saidas_mes": 7,
+      "entradas_mes": 7,
+      "saidas_mes": 8,
       "entradas_mes_anterior": 26,
       "saidas_mes_anterior": 22,
-      "valor_causa": 48901598.7
+      "valor_causa": 48855141.51
     },
     {
       "nome": "Jessica Cerqueira Silva(JQS)",
@@ -1520,12 +1520,12 @@
     },
     {
       "nome": "Joice Ramos Miranda(JRM)",
-      "andamento": 154,
-      "entradas_mes": 2,
+      "andamento": 155,
+      "entradas_mes": 3,
       "saidas_mes": 2,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 9,
-      "valor_causa": 36776565.67
+      "valor_causa": 36777565.67
     },
     {
       "nome": "Vinicius da Silva Cerqueira(VSI)",
@@ -1732,12 +1732,12 @@
     },
     {
       "nome": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 691,
-      "entradas_mes": 13,
+      "andamento": 692,
+      "entradas_mes": 14,
       "saidas_mes": 16,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 20,
-      "valor_causa": 133492765.92,
+      "valor_causa": 133493765.92,
       "alerta_entrada": false
     },
     {
@@ -1842,9 +1842,9 @@
     },
     {
       "nome": "EUROCHEM SALITRE",
-      "andamento": 150,
+      "andamento": 149,
       "entradas_mes": 3,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 14,
       "valor_causa": 26761855.03,
@@ -2334,12 +2334,12 @@
     {
       "grupo": "Grupo B1",
       "cliente": "BRIDGESTONE",
-      "andamento": 1445,
-      "entradas_mes": 27,
+      "andamento": 1446,
+      "entradas_mes": 28,
       "saidas_mes": 4,
       "entradas_mes_anterior": 45,
       "saidas_mes_anterior": 56,
-      "valor_causa": 298985547.46,
+      "valor_causa": 299938095.3,
       "alerta_entrada": false
     },
     {
@@ -2828,17 +2828,6 @@
     },
     {
       "grupo": "Grupo C",
-      "cliente": "AGRIVALLE BRASIL",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 78500.0,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Grupo C",
       "cliente": "JAYME BRENER",
       "andamento": 1,
       "entradas_mes": 0,
@@ -2846,6 +2835,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 1059756.71,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Grupo C",
+      "cliente": "AGRIVALLE BRASIL",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 78500.0,
       "alerta_entrada": false
     },
     {
@@ -3214,9 +3214,9 @@
     {
       "grupo": "Grupo E2",
       "cliente": "EUROCHEM SALITRE",
-      "andamento": 150,
+      "andamento": 149,
       "entradas_mes": 3,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 14,
       "valor_causa": 26761855.03,
@@ -3280,12 +3280,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "L. SANT ANGELO",
-      "andamento": 30,
-      "entradas_mes": 1,
+      "andamento": 31,
+      "entradas_mes": 2,
       "saidas_mes": 3,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 2,
-      "valor_causa": 4931052.2,
+      "valor_causa": 4884595.01,
       "alerta_entrada": false
     },
     {
@@ -3741,13 +3741,24 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "BRIDGESTONE",
+      "cliente": "SYNGENTA PROTEÇÃO DE",
       "andamento": 2,
-      "entradas_mes": 1,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 1296390.41,
+      "valor_causa": 2000.0,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "BRIDGESTONE",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 343842.57,
       "alerta_entrada": false
     },
     {
@@ -3803,17 +3814,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 167428.63,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 1000.0,
       "alerta_entrada": false
     },
     {
@@ -4003,12 +4003,12 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Guilherme Silva Morimoto(GSM)",
-      "andamento": 230,
-      "entradas_mes": 5,
+      "andamento": 231,
+      "entradas_mes": 6,
       "saidas_mes": 0,
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 7,
-      "valor_causa": 89438061.87
+      "valor_causa": 90390609.71
     },
     {
       "grupo": "Grupo B1",
@@ -4354,11 +4354,11 @@
       "grupo": "Grupo E2",
       "profissional": "Camila Alves Magalhães de Paula(CAL)",
       "andamento": 420,
-      "entradas_mes": 6,
-      "saidas_mes": 7,
+      "entradas_mes": 7,
+      "saidas_mes": 8,
       "entradas_mes_anterior": 26,
       "saidas_mes_anterior": 22,
-      "valor_causa": 48901598.7
+      "valor_causa": 48855141.51
     },
     {
       "grupo": "Grupo E2",
@@ -4442,16 +4442,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Guilherme Silva Morimoto(GSM)",
-      "andamento": 2,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 1296390.41
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Richard Ruan Leo da Silva(RRU)",
       "andamento": 2,
       "entradas_mes": 2,
@@ -4459,6 +4449,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 569227.59
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Guilherme Silva Morimoto(GSM)",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 343842.57
     },
     {
       "grupo": "Sem grupo",
@@ -4493,6 +4493,16 @@
     {
       "grupo": "Sem grupo",
       "profissional": "Júlia Priego Lopes da Silva(JPL)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1000.0
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Joice Ramos Miranda(JRM)",
       "andamento": 1,
       "entradas_mes": 1,
       "saidas_mes": 0,
@@ -5155,9 +5165,9 @@
     {
       "estado": "MG",
       "cliente": "EUROCHEM SALITRE",
-      "andamento": 102,
+      "andamento": 101,
       "entradas_mes": 1,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 12,
       "valor_causa": 14220802.99
@@ -6515,12 +6525,12 @@
     {
       "estado": "SP",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 593,
-      "entradas_mes": 7,
+      "andamento": 594,
+      "entradas_mes": 8,
       "saidas_mes": 13,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 17,
-      "valor_causa": 117543788.29
+      "valor_causa": 117544788.29
     },
     {
       "estado": "SP",
@@ -6745,12 +6755,12 @@
     {
       "estado": "SP",
       "cliente": "L. SANT ANGELO",
-      "andamento": 30,
-      "entradas_mes": 1,
+      "andamento": 31,
+      "entradas_mes": 2,
       "saidas_mes": 3,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 2,
-      "valor_causa": 4931052.2
+      "valor_causa": 4884595.01
     },
     {
       "estado": "SP",
@@ -8032,11 +8042,6 @@
       "profissional": "Guilherme Silva Morimoto(GSM)"
     },
     {
-      "numero_processo": "1001402-71.2026.5.02.0434",
-      "cliente": "BRIDGESTONE",
-      "profissional": "Guilherme Silva Morimoto(GSM)"
-    },
-    {
       "numero_processo": "0010852-16.2026.5.03.0147",
       "cliente": "HERINGER",
       "profissional": "Richard Ruan Leo da Silva(RRU)"
@@ -8065,6 +8070,11 @@
       "numero_processo": "1010849-27.2026.5.02.0000",
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "profissional": "Júlia Priego Lopes da Silva(JPL)"
+    },
+    {
+      "numero_processo": "0015776-90.2026.5.15.0000",
+      "cliente": "SYNGENTA PROTEÇÃO DE",
+      "profissional": "Joice Ramos Miranda(JRM)"
     }
   ]
 }
