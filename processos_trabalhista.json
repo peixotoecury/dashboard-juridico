@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-08-18T14:30:21",
+  "atualizado_em": "2026-08-18T14:45:26",
   "kpis": {
-    "total_andamento": 8143,
+    "total_andamento": 8142,
     "entradas_hoje": 12,
-    "saidas_hoje": 3,
+    "saidas_hoje": 4,
     "entradas_ontem": 22,
     "saidas_ontem": 12,
     "entradas_mes": 159,
-    "saidas_mes": 143,
+    "saidas_mes": 144,
     "entradas_mes_anterior": 252,
     "saidas_mes_anterior": 261,
-    "valor_causa_total": 1735537936.99,
-    "saldo_mes": 16
+    "valor_causa_total": 1735359388.6,
+    "saldo_mes": 15
   },
   "serie_diaria": [
     {
@@ -312,7 +312,7 @@
     {
       "data": "2026-08-18",
       "entradas": 12,
-      "saidas": 3
+      "saidas": 4
     }
   ],
   "por_grupo": [
@@ -372,12 +372,12 @@
     },
     {
       "nome": "Grupo B3",
-      "andamento": 546,
+      "andamento": 545,
       "entradas_mes": 14,
-      "saidas_mes": 10,
+      "saidas_mes": 11,
       "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 10,
-      "valor_causa": 100944072.33
+      "valor_causa": 100765523.94
     },
     {
       "nome": "Grupo A3",
@@ -428,12 +428,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 6329,
+      "andamento": 6328,
       "entradas_mes": 105,
-      "saidas_mes": 127,
+      "saidas_mes": 128,
       "entradas_mes_anterior": 166,
       "saidas_mes_anterior": 193,
-      "valor_causa": 1379779096.37
+      "valor_causa": 1379600547.98
     },
     {
       "nome": "MG",
@@ -682,12 +682,12 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 3206,
+      "andamento": 3205,
       "entradas_mes": 1,
-      "saidas_mes": 47,
+      "saidas_mes": 48,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 50,
-      "valor_causa": 677880323.75
+      "valor_causa": 677701775.36
     },
     {
       "nome": "Execução",
@@ -1184,12 +1184,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo B3",
-      "andamento": 237,
+      "andamento": 236,
       "entradas_mes": 0,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 4,
-      "valor_causa": 56692736.01
+      "valor_causa": 56514187.62
     },
     {
       "fase": "Recurso",
@@ -1404,12 +1404,12 @@
     },
     {
       "nome": "Guilherme Silva Morimoto(GSM)",
-      "andamento": 280,
+      "andamento": 279,
       "entradas_mes": 7,
-      "saidas_mes": 3,
+      "saidas_mes": 4,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 7,
-      "valor_causa": 112260699.41
+      "valor_causa": 112082151.02
     },
     {
       "nome": "Tamara Silva Marcílio(TAM)",
@@ -2421,12 +2421,12 @@
     {
       "grupo": "Grupo B3",
       "cliente": "WICKBOLD",
-      "andamento": 55,
+      "andamento": 54,
       "entradas_mes": 0,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 22375009.21,
+      "valor_causa": 22196460.82,
       "alerta_entrada": false
     },
     {
@@ -4101,12 +4101,12 @@
     {
       "grupo": "Grupo B3",
       "profissional": "Guilherme Silva Morimoto(GSM)",
-      "andamento": 48,
+      "andamento": 47,
       "entradas_mes": 0,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 20886474.34
+      "valor_causa": 20707925.95
     },
     {
       "grupo": "Grupo B3",
@@ -6722,16 +6722,6 @@
     },
     {
       "estado": "SP",
-      "cliente": "WICKBOLD",
-      "andamento": 44,
-      "entradas_mes": 0,
-      "saidas_mes": 2,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 16925550.92
-    },
-    {
-      "estado": "SP",
       "cliente": "CEPAM COMERCIO",
       "andamento": 43,
       "entradas_mes": 0,
@@ -6739,6 +6729,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
       "valor_causa": 7221111.96
+    },
+    {
+      "estado": "SP",
+      "cliente": "WICKBOLD",
+      "andamento": 43,
+      "entradas_mes": 0,
+      "saidas_mes": 3,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 16747002.53
     },
     {
       "estado": "SP",
