@@ -1,24 +1,19 @@
 {
-  "atualizado_em": "2026-08-17T19:25:30",
+  "atualizado_em": "2026-08-18T08:00:27",
   "kpis": {
-    "total_andamento": 8137,
-    "entradas_hoje": 22,
-    "saidas_hoje": 9,
-    "entradas_ontem": 0,
-    "saidas_ontem": 3,
+    "total_andamento": 8133,
+    "entradas_hoje": 0,
+    "saidas_hoje": 1,
+    "entradas_ontem": 22,
+    "saidas_ontem": 12,
     "entradas_mes": 147,
-    "saidas_mes": 137,
+    "saidas_mes": 141,
     "entradas_mes_anterior": 252,
     "saidas_mes_anterior": 261,
-    "valor_causa_total": 1733591362.92,
-    "saldo_mes": 10
+    "valor_causa_total": 1732767812.88,
+    "saldo_mes": 6
   },
   "serie_diaria": [
-    {
-      "data": "2026-06-19",
-      "entradas": 12,
-      "saidas": 13
-    },
     {
       "data": "2026-06-20",
       "entradas": 0,
@@ -312,7 +307,12 @@
     {
       "data": "2026-08-17",
       "entradas": 22,
-      "saidas": 9
+      "saidas": 12
+    },
+    {
+      "data": "2026-08-18",
+      "entradas": 0,
+      "saidas": 1
     }
   ],
   "por_grupo": [
@@ -336,12 +336,12 @@
     },
     {
       "nome": "Grupo B1",
-      "andamento": 1449,
+      "andamento": 1447,
       "entradas_mes": 31,
-      "saidas_mes": 4,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 45,
       "saidas_mes_anterior": 56,
-      "valor_causa": 300604319.8
+      "valor_causa": 300182339.34
     },
     {
       "nome": "Grupo B2",
@@ -372,12 +372,12 @@
     },
     {
       "nome": "Grupo B3",
-      "andamento": 549,
+      "andamento": 547,
       "entradas_mes": 13,
-      "saidas_mes": 6,
+      "saidas_mes": 8,
       "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 10,
-      "valor_causa": 101669381.6
+      "valor_causa": 101267812.02
     },
     {
       "nome": "Grupo A3",
@@ -428,12 +428,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 6323,
+      "andamento": 6320,
       "entradas_mes": 94,
-      "saidas_mes": 122,
+      "saidas_mes": 125,
       "entradas_mes_anterior": 166,
       "saidas_mes_anterior": 193,
-      "valor_causa": 1377802522.31
+      "valor_causa": 1377008972.27
     },
     {
       "nome": "MG",
@@ -446,12 +446,12 @@
     },
     {
       "nome": "RS",
-      "andamento": 231,
+      "andamento": 230,
       "entradas_mes": 5,
-      "saidas_mes": 3,
+      "saidas_mes": 4,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 3,
-      "valor_causa": 53050421.98
+      "valor_causa": 53020421.98
     },
     {
       "nome": "PR",
@@ -655,21 +655,21 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 405,
+      "andamento": 408,
       "entradas_mes": 25,
       "saidas_mes": 2,
-      "entradas_mes_anterior": 43,
+      "entradas_mes_anterior": 46,
       "saidas_mes_anterior": 6,
-      "valor_causa": 90376650.93
+      "valor_causa": 90739148.38
     },
     {
       "nome": "Instrução",
-      "andamento": 2882,
+      "andamento": 2878,
       "entradas_mes": 114,
-      "saidas_mes": 34,
-      "entradas_mes_anterior": 182,
+      "saidas_mes": 35,
+      "entradas_mes_anterior": 179,
       "saidas_mes_anterior": 75,
-      "valor_causa": 752712114.46
+      "valor_causa": 751978047.43
     },
     {
       "nome": "Sentença",
@@ -682,21 +682,21 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 3209,
+      "andamento": 3207,
       "entradas_mes": 1,
-      "saidas_mes": 45,
+      "saidas_mes": 47,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 50,
-      "valor_causa": 678520706.11
+      "valor_causa": 678098725.65
     },
     {
       "nome": "Execução",
-      "andamento": 1203,
+      "andamento": 1202,
       "entradas_mes": 5,
-      "saidas_mes": 49,
+      "saidas_mes": 50,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 82,
-      "valor_causa": 167820732.04
+      "valor_causa": 167790732.04
     }
   ],
   "por_fase_outras": 407,
@@ -704,12 +704,12 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo E2",
-      "andamento": 156,
+      "andamento": 159,
       "entradas_mes": 13,
       "saidas_mes": 1,
-      "entradas_mes_anterior": 36,
+      "entradas_mes_anterior": 39,
       "saidas_mes_anterior": 4,
-      "valor_causa": 42613574.75
+      "valor_causa": 42976072.2
     },
     {
       "fase": "Ajuizamento",
@@ -864,12 +864,12 @@
     {
       "fase": "Execução",
       "grupo": "Grupo B3",
-      "andamento": 113,
+      "andamento": 112,
       "entradas_mes": 0,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 3,
-      "valor_causa": 22400990.13
+      "valor_causa": 22370990.13
     },
     {
       "fase": "Execução",
@@ -914,12 +914,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 845,
+      "andamento": 842,
       "entradas_mes": 27,
       "saidas_mes": 8,
-      "entradas_mes_anterior": 43,
+      "entradas_mes_anterior": 40,
       "saidas_mes_anterior": 28,
-      "valor_causa": 156831101.39
+      "valor_causa": 156468603.94
     },
     {
       "fase": "Instrução",
@@ -964,12 +964,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B3",
-      "andamento": 126,
+      "andamento": 125,
       "entradas_mes": 11,
-      "saidas_mes": 3,
+      "saidas_mes": 4,
       "entradas_mes_anterior": 22,
       "saidas_mes_anterior": 2,
-      "valor_causa": 21497541.42
+      "valor_causa": 21125971.84
     },
     {
       "fase": "Instrução",
@@ -1134,12 +1134,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo B1",
-      "andamento": 833,
+      "andamento": 831,
       "entradas_mes": 1,
-      "saidas_mes": 1,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 7,
-      "valor_causa": 150810971.01
+      "valor_causa": 150388990.55
     },
     {
       "fase": "Recurso",
@@ -1350,12 +1350,12 @@
     },
     {
       "nome": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 326,
+      "andamento": 324,
       "entradas_mes": 9,
-      "saidas_mes": 6,
+      "saidas_mes": 8,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 9,
-      "valor_causa": 59130159.32
+      "valor_causa": 58728589.74
     },
     {
       "nome": "Mariana Borges de Menezes Fávaro(MBF)",
@@ -1404,18 +1404,18 @@
     },
     {
       "nome": "Guilherme Silva Morimoto(GSM)",
-      "andamento": 282,
+      "andamento": 281,
       "entradas_mes": 6,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 7,
-      "valor_causa": 112028315.13
+      "valor_causa": 111606334.67
     },
     {
       "nome": "Tamara Silva Marcílio(TAM)",
-      "andamento": 278,
+      "andamento": 277,
       "entradas_mes": 7,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 4,
       "valor_causa": 49590056.71
@@ -1712,12 +1712,12 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1450,
+      "andamento": 1448,
       "entradas_mes": 31,
-      "saidas_mes": 4,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 45,
       "saidas_mes_anterior": 56,
-      "valor_causa": 300948162.37,
+      "valor_causa": 300526181.91,
       "alerta_entrada": false
     },
     {
@@ -1812,12 +1812,12 @@
     },
     {
       "nome": "CBC CARTUCHOS BRASIL",
-      "andamento": 222,
+      "andamento": 221,
       "entradas_mes": 11,
-      "saidas_mes": 5,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 15,
       "saidas_mes_anterior": 7,
-      "valor_causa": 28688381.28,
+      "valor_causa": 28316811.7,
       "alerta_entrada": false
     },
     {
@@ -1862,12 +1862,12 @@
     },
     {
       "nome": "CBC MONTENEGRO",
-      "andamento": 127,
+      "andamento": 126,
       "entradas_mes": 2,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 1,
-      "valor_causa": 29639612.29,
+      "valor_causa": 29609612.29,
       "alerta_entrada": false
     },
     {
@@ -2344,12 +2344,12 @@
     {
       "grupo": "Grupo B1",
       "cliente": "BRIDGESTONE",
-      "andamento": 1449,
+      "andamento": 1447,
       "entradas_mes": 31,
-      "saidas_mes": 4,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 45,
       "saidas_mes_anterior": 56,
-      "valor_causa": 300604319.8,
+      "valor_causa": 300182339.34,
       "alerta_entrada": false
     },
     {
@@ -2388,23 +2388,23 @@
     {
       "grupo": "Grupo B3",
       "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 219,
+      "andamento": 218,
       "entradas_mes": 11,
-      "saidas_mes": 5,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 15,
       "saidas_mes_anterior": 7,
-      "valor_causa": 28688381.28,
+      "valor_causa": 28316811.7,
       "alerta_entrada": false
     },
     {
       "grupo": "Grupo B3",
       "cliente": "CBC MONTENEGRO",
-      "andamento": 127,
+      "andamento": 126,
       "entradas_mes": 2,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 1,
-      "valor_causa": 29639612.29,
+      "valor_causa": 29609612.29,
       "alerta_entrada": false
     },
     {
@@ -3951,9 +3951,9 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Tamara Silva Marcílio(TAM)",
-      "andamento": 278,
+      "andamento": 277,
       "entradas_mes": 7,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 4,
       "valor_causa": 49590056.71
@@ -3991,12 +3991,12 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Guilherme Silva Morimoto(GSM)",
-      "andamento": 231,
+      "andamento": 230,
       "entradas_mes": 6,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 7,
-      "valor_causa": 90390609.71
+      "valor_causa": 89968629.25
     },
     {
       "grupo": "Grupo B1",
@@ -4071,12 +4071,12 @@
     {
       "grupo": "Grupo B3",
       "profissional": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 326,
+      "andamento": 324,
       "entradas_mes": 9,
-      "saidas_mes": 6,
+      "saidas_mes": 8,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 9,
-      "valor_causa": 59130159.32
+      "valor_causa": 58728589.74
     },
     {
       "grupo": "Grupo B3",
@@ -6163,12 +6163,12 @@
     {
       "estado": "RS",
       "cliente": "CBC MONTENEGRO",
-      "andamento": 110,
+      "andamento": 109,
       "entradas_mes": 2,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 1,
-      "valor_causa": 25719717.69
+      "valor_causa": 25689717.69
     },
     {
       "estado": "RS",
@@ -6473,12 +6473,12 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1427,
+      "andamento": 1425,
       "entradas_mes": 28,
-      "saidas_mes": 4,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 45,
       "saidas_mes_anterior": 55,
-      "valor_causa": 291686634.81
+      "valor_causa": 291264654.35
     },
     {
       "estado": "SP",
@@ -6563,12 +6563,12 @@
     {
       "estado": "SP",
       "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 211,
+      "andamento": 210,
       "entradas_mes": 11,
-      "saidas_mes": 5,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 15,
       "saidas_mes_anterior": 7,
-      "valor_causa": 27447887.34
+      "valor_causa": 27076317.76
     },
     {
       "estado": "SP",
