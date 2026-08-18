@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-08-18T16:00:31",
+  "atualizado_em": "2026-08-18T16:15:29",
   "kpis": {
-    "total_andamento": 8142,
-    "entradas_hoje": 12,
+    "total_andamento": 8144,
+    "entradas_hoje": 14,
     "saidas_hoje": 5,
     "entradas_ontem": 22,
     "saidas_ontem": 12,
-    "entradas_mes": 159,
+    "entradas_mes": 161,
     "saidas_mes": 144,
     "entradas_mes_anterior": 252,
     "saidas_mes_anterior": 261,
-    "valor_causa_total": 1735590016.18,
-    "saldo_mes": 15
+    "valor_causa_total": 1735601812.12,
+    "saldo_mes": 17
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-08-18",
-      "entradas": 12,
+      "entradas": 14,
       "saidas": 5
     }
   ],
@@ -408,12 +408,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 5,
-      "entradas_mes": 2,
+      "andamento": 7,
+      "entradas_mes": 4,
       "saidas_mes": 19,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
-      "valor_causa": 997794.32
+      "valor_causa": 1009590.26
     },
     {
       "nome": "Sócios",
@@ -428,21 +428,21 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 6329,
-      "entradas_mes": 105,
+      "andamento": 6330,
+      "entradas_mes": 106,
       "saidas_mes": 127,
       "entradas_mes_anterior": 166,
       "saidas_mes_anterior": 193,
-      "valor_causa": 1379831175.56
+      "valor_causa": 1379832175.56
     },
     {
       "nome": "MG",
-      "andamento": 532,
-      "entradas_mes": 12,
+      "andamento": 533,
+      "entradas_mes": 13,
       "saidas_mes": 6,
       "entradas_mes_anterior": 30,
       "saidas_mes_anterior": 29,
-      "valor_causa": 124566053.17
+      "valor_causa": 124576849.11
     },
     {
       "nome": "RS",
@@ -664,12 +664,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2887,
-      "entradas_mes": 124,
+      "andamento": 2889,
+      "entradas_mes": 126,
       "saidas_mes": 36,
       "entradas_mes_anterior": 179,
       "saidas_mes_anterior": 75,
-      "valor_causa": 754806879.39
+      "valor_causa": 754818675.33
     },
     {
       "nome": "Sentença",
@@ -1004,12 +1004,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 3,
-      "entradas_mes": 2,
+      "andamento": 5,
+      "entradas_mes": 4,
       "saidas_mes": 2,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 386665.17
+      "valor_causa": 398461.11
     },
     {
       "fase": "Instrução",
@@ -1359,12 +1359,12 @@
     },
     {
       "nome": "Mariana Borges de Menezes Fávaro(MBF)",
-      "andamento": 319,
-      "entradas_mes": 5,
+      "andamento": 320,
+      "entradas_mes": 6,
       "saidas_mes": 0,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 4,
-      "valor_causa": 46716073.56
+      "valor_causa": 46726869.5
     },
     {
       "nome": "Richard Ruan Leo da Silva(RRU)",
@@ -1476,12 +1476,12 @@
     },
     {
       "nome": "Nicolau Rafael Guimarães Coelho(NRG)",
-      "andamento": 244,
-      "entradas_mes": 7,
+      "andamento": 245,
+      "entradas_mes": 8,
       "saidas_mes": 0,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 13,
-      "valor_causa": 24730351.7
+      "valor_causa": 24731351.7
     },
     {
       "nome": "Erik Mota Coppi(ECO)",
@@ -1712,22 +1712,22 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1453,
-      "entradas_mes": 36,
+      "andamento": 1454,
+      "entradas_mes": 37,
       "saidas_mes": 6,
       "entradas_mes_anterior": 45,
       "saidas_mes_anterior": 56,
-      "valor_causa": 302419656.94,
+      "valor_causa": 302420656.94,
       "alerta_entrada": false
     },
     {
       "nome": "BP BIOENERGIA",
-      "andamento": 775,
-      "entradas_mes": 9,
+      "andamento": 776,
+      "entradas_mes": 10,
       "saidas_mes": 3,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 31,
-      "valor_causa": 213547829.4,
+      "valor_causa": 213558625.34,
       "alerta_entrada": false
     },
     {
@@ -3752,12 +3752,12 @@
     {
       "grupo": "Sem grupo",
       "cliente": "BRIDGESTONE",
-      "andamento": 1,
-      "entradas_mes": 0,
+      "andamento": 2,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 343842.57,
+      "valor_causa": 344842.57,
       "alerta_entrada": false
     },
     {
@@ -3802,6 +3802,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 1000.0,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "BP BIOENERGIA",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 10795.94,
       "alerta_entrada": false
     },
     {
@@ -4479,6 +4490,26 @@
       "valor_causa": 1000.0
     },
     {
+      "grupo": "Sem grupo",
+      "profissional": "Nicolau Rafael Guimarães Coelho(NRG)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1000.0
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Mariana Borges de Menezes Fávaro(MBF)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 10795.94
+    },
+    {
       "grupo": "Sócios",
       "profissional": "Poliana Banqueri da Silva Guimarães(PBS)",
       "andamento": 3,
@@ -5123,12 +5154,12 @@
     {
       "estado": "MG",
       "cliente": "BP BIOENERGIA",
-      "andamento": 219,
-      "entradas_mes": 5,
+      "andamento": 220,
+      "entradas_mes": 6,
       "saidas_mes": 0,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 8,
-      "valor_causa": 86140107.23
+      "valor_causa": 86150903.17
     },
     {
       "estado": "MG",
@@ -6473,12 +6504,12 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1430,
-      "entradas_mes": 33,
+      "andamento": 1431,
+      "entradas_mes": 34,
       "saidas_mes": 6,
       "entradas_mes_anterior": 45,
       "saidas_mes_anterior": 55,
-      "valor_causa": 293158129.38
+      "valor_causa": 293159129.38
     },
     {
       "estado": "SP",
@@ -8015,9 +8046,19 @@
   ],
   "sem_grupo_processos": [
     {
+      "numero_processo": "0010810-37.2026.5.03.0156",
+      "cliente": "BP BIOENERGIA",
+      "profissional": "Mariana Borges de Menezes Fávaro(MBF)"
+    },
+    {
       "numero_processo": "1000741-04.2026.5.02.0431",
       "cliente": "BRIDGESTONE",
       "profissional": "Guilherme Silva Morimoto(GSM)"
+    },
+    {
+      "numero_processo": "1004433-43.2026.5.02.0000",
+      "cliente": "BRIDGESTONE",
+      "profissional": "Nicolau Rafael Guimarães Coelho(NRG)"
     },
     {
       "numero_processo": "0010852-16.2026.5.03.0147",
