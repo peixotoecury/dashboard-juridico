@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-08-18T09:30:23",
+  "atualizado_em": "2026-08-18T11:19:53",
   "kpis": {
-    "total_andamento": 8133,
-    "entradas_hoje": 0,
+    "total_andamento": 8136,
+    "entradas_hoje": 3,
     "saidas_hoje": 1,
     "entradas_ontem": 22,
     "saidas_ontem": 12,
-    "entradas_mes": 147,
+    "entradas_mes": 150,
     "saidas_mes": 141,
     "entradas_mes_anterior": 252,
     "saidas_mes_anterior": 261,
-    "valor_causa_total": 1732767812.88,
-    "saldo_mes": 6
+    "valor_causa_total": 1733927437.96,
+    "saldo_mes": 9
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-08-18",
-      "entradas": 0,
+      "entradas": 3,
       "saidas": 1
     }
   ],
@@ -327,12 +327,12 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1774,
-      "entradas_mes": 28,
+      "andamento": 1777,
+      "entradas_mes": 31,
       "saidas_mes": 75,
       "entradas_mes_anterior": 44,
       "saidas_mes_anterior": 61,
-      "valor_causa": 291609446.72
+      "valor_causa": 292769071.8
     },
     {
       "nome": "Grupo B1",
@@ -428,12 +428,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 6320,
-      "entradas_mes": 94,
+      "andamento": 6323,
+      "entradas_mes": 97,
       "saidas_mes": 125,
       "entradas_mes_anterior": 166,
       "saidas_mes_anterior": 193,
-      "valor_causa": 1377008972.27
+      "valor_causa": 1378168597.35
     },
     {
       "nome": "MG",
@@ -664,12 +664,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2877,
-      "entradas_mes": 113,
+      "andamento": 2880,
+      "entradas_mes": 116,
       "saidas_mes": 35,
       "entradas_mes_anterior": 179,
       "saidas_mes_anterior": 75,
-      "valor_causa": 751978047.43
+      "valor_causa": 753137672.51
     },
     {
       "nome": "Sentença",
@@ -924,12 +924,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 768,
-      "entradas_mes": 18,
+      "andamento": 771,
+      "entradas_mes": 21,
       "saidas_mes": 14,
       "entradas_mes_anterior": 30,
       "saidas_mes_anterior": 10,
-      "valor_causa": 158365678.0
+      "valor_causa": 159525303.08
     },
     {
       "fase": "Instrução",
@@ -1305,8 +1305,8 @@
   "por_profissional": [
     {
       "nome": "Giulia Vendramini Milani(GVM)",
-      "andamento": 451,
-      "entradas_mes": 8,
+      "andamento": 452,
+      "entradas_mes": 9,
       "saidas_mes": 2,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 0,
@@ -1548,12 +1548,12 @@
     },
     {
       "nome": "Júlia Priego Lopes da Silva(JPL)",
-      "andamento": 116,
-      "entradas_mes": 1,
+      "andamento": 118,
+      "entradas_mes": 3,
       "saidas_mes": 11,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 15,
-      "valor_causa": 32852620.18
+      "valor_causa": 34012245.26
     },
     {
       "nome": "Sofia Freire (SOF)",
@@ -1742,13 +1742,13 @@
     },
     {
       "nome": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 696,
-      "entradas_mes": 18,
+      "andamento": 699,
+      "entradas_mes": 21,
       "saidas_mes": 16,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 20,
-      "valor_causa": 133721536.08,
-      "alerta_entrada": false
+      "valor_causa": 134881161.16,
+      "alerta_entrada": true
     },
     {
       "nome": "MAHLE METAL - MOGI",
@@ -2971,12 +2971,12 @@
     {
       "grupo": "Grupo E1",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 625,
-      "entradas_mes": 17,
+      "andamento": 628,
+      "entradas_mes": 20,
       "saidas_mes": 15,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 19,
-      "valor_causa": 132746297.14,
+      "valor_causa": 133905922.22,
       "alerta_entrada": false
     },
     {
@@ -4201,8 +4201,8 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Giulia Vendramini Milani(GVM)",
-      "andamento": 451,
-      "entradas_mes": 8,
+      "andamento": 452,
+      "entradas_mes": 9,
       "saidas_mes": 2,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 0,
@@ -4261,12 +4261,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Júlia Priego Lopes da Silva(JPL)",
-      "andamento": 116,
-      "entradas_mes": 1,
+      "andamento": 118,
+      "entradas_mes": 3,
       "saidas_mes": 11,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 15,
-      "valor_causa": 32852620.18
+      "valor_causa": 34012245.26
     },
     {
       "grupo": "Grupo E1",
@@ -6493,12 +6493,12 @@
     {
       "estado": "SP",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 597,
-      "entradas_mes": 11,
+      "andamento": 600,
+      "entradas_mes": 14,
       "saidas_mes": 13,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 17,
-      "valor_causa": 117772558.45
+      "valor_causa": 118932183.53
     },
     {
       "estado": "SP",
@@ -7962,6 +7962,16 @@
     }
   ],
   "clientes_com_alerta": [
+    {
+      "nome": "SYNGENTA PROTEÇÃO DE",
+      "andamento": 699,
+      "entradas_mes": 21,
+      "saidas_mes": 16,
+      "entradas_mes_anterior": 24,
+      "saidas_mes_anterior": 20,
+      "valor_causa": 134881161.16,
+      "alerta_entrada": true
+    },
     {
       "nome": "MAHLE METAL - MOGI",
       "andamento": 360,
