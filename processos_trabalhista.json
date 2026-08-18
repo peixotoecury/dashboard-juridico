@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-08-18T12:15:27",
+  "atualizado_em": "2026-08-18T12:30:23",
   "kpis": {
-    "total_andamento": 8138,
-    "entradas_hoje": 5,
+    "total_andamento": 8140,
+    "entradas_hoje": 7,
     "saidas_hoje": 1,
     "entradas_ontem": 22,
     "saidas_ontem": 12,
-    "entradas_mes": 152,
+    "entradas_mes": 154,
     "saidas_mes": 141,
     "entradas_mes_anterior": 252,
     "saidas_mes_anterior": 261,
-    "valor_causa_total": 1733927437.97,
-    "saldo_mes": 11
+    "valor_causa_total": 1735072840.04,
+    "saldo_mes": 13
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-08-18",
-      "entradas": 5,
+      "entradas": 7,
       "saidas": 1
     }
   ],
@@ -408,12 +408,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 6,
-      "entradas_mes": 3,
+      "andamento": 8,
+      "entradas_mes": 5,
       "saidas_mes": 19,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
-      "valor_causa": 997794.33
+      "valor_causa": 2143196.4
     },
     {
       "nome": "Sócios",
@@ -428,12 +428,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 6324,
-      "entradas_mes": 98,
+      "andamento": 6326,
+      "entradas_mes": 100,
       "saidas_mes": 125,
       "entradas_mes_anterior": 166,
       "saidas_mes_anterior": 193,
-      "valor_causa": 1378168597.35
+      "valor_causa": 1379313999.42
     },
     {
       "nome": "MG",
@@ -664,12 +664,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2882,
-      "entradas_mes": 118,
+      "andamento": 2884,
+      "entradas_mes": 120,
       "saidas_mes": 35,
       "entradas_mes_anterior": 179,
       "saidas_mes_anterior": 75,
-      "valor_causa": 753137672.52
+      "valor_causa": 754283074.59
     },
     {
       "nome": "Sentença",
@@ -1004,12 +1004,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 4,
-      "entradas_mes": 3,
+      "andamento": 6,
+      "entradas_mes": 5,
       "saidas_mes": 2,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 386665.18
+      "valor_causa": 1532067.25
     },
     {
       "fase": "Instrução",
@@ -1350,12 +1350,12 @@
     },
     {
       "nome": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 324,
-      "entradas_mes": 9,
+      "andamento": 325,
+      "entradas_mes": 10,
       "saidas_mes": 8,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 9,
-      "valor_causa": 58728589.74
+      "valor_causa": 58812238.56
     },
     {
       "nome": "Mariana Borges de Menezes Fávaro(MBF)",
@@ -1404,12 +1404,12 @@
     },
     {
       "nome": "Guilherme Silva Morimoto(GSM)",
-      "andamento": 281,
-      "entradas_mes": 6,
+      "andamento": 282,
+      "entradas_mes": 7,
       "saidas_mes": 1,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 7,
-      "valor_causa": 111606334.67
+      "valor_causa": 112668087.92
     },
     {
       "nome": "Tamara Silva Marcílio(TAM)",
@@ -1721,12 +1721,12 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1448,
-      "entradas_mes": 31,
+      "andamento": 1449,
+      "entradas_mes": 32,
       "saidas_mes": 6,
       "entradas_mes_anterior": 45,
       "saidas_mes_anterior": 56,
-      "valor_causa": 300526181.91,
+      "valor_causa": 301587935.16,
       "alerta_entrada": false
     },
     {
@@ -1821,12 +1821,12 @@
     },
     {
       "nome": "CBC CARTUCHOS BRASIL",
-      "andamento": 221,
-      "entradas_mes": 11,
+      "andamento": 222,
+      "entradas_mes": 12,
       "saidas_mes": 6,
       "entradas_mes_anterior": 15,
       "saidas_mes_anterior": 7,
-      "valor_causa": 28316811.7,
+      "valor_causa": 28400460.52,
       "alerta_entrada": false
     },
     {
@@ -3761,12 +3761,12 @@
     {
       "grupo": "Sem grupo",
       "cliente": "BRIDGESTONE",
-      "andamento": 1,
-      "entradas_mes": 0,
+      "andamento": 2,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 343842.57,
+      "valor_causa": 1405595.82,
       "alerta_entrada": false
     },
     {
@@ -3822,6 +3822,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.01,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "CBC CARTUCHOS BRASIL",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 83648.82,
       "alerta_entrada": false
     },
     {
@@ -4451,12 +4462,12 @@
     {
       "grupo": "Sem grupo",
       "profissional": "Guilherme Silva Morimoto(GSM)",
-      "andamento": 1,
-      "entradas_mes": 0,
+      "andamento": 2,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 343842.57
+      "valor_causa": 1405595.82
     },
     {
       "grupo": "Sem grupo",
@@ -4507,6 +4518,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.01
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Letícia Meneghini Fontes (LMI)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 83648.82
     },
     {
       "grupo": "Sócios",
@@ -6503,12 +6524,12 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1425,
-      "entradas_mes": 28,
+      "andamento": 1426,
+      "entradas_mes": 29,
       "saidas_mes": 6,
       "entradas_mes_anterior": 45,
       "saidas_mes_anterior": 55,
-      "valor_causa": 291264654.35
+      "valor_causa": 292326407.6
     },
     {
       "estado": "SP",
@@ -6593,12 +6614,12 @@
     {
       "estado": "SP",
       "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 210,
-      "entradas_mes": 11,
+      "andamento": 211,
+      "entradas_mes": 12,
       "saidas_mes": 6,
       "entradas_mes_anterior": 15,
       "saidas_mes_anterior": 7,
-      "valor_causa": 27076317.76
+      "valor_causa": 27159966.58
     },
     {
       "estado": "SP",
@@ -8048,6 +8069,16 @@
       "numero_processo": "1000741-04.2026.5.02.0431",
       "cliente": "BRIDGESTONE",
       "profissional": "Guilherme Silva Morimoto(GSM)"
+    },
+    {
+      "numero_processo": "1001402-97.2026.5.02.0005",
+      "cliente": "BRIDGESTONE",
+      "profissional": "Guilherme Silva Morimoto(GSM)"
+    },
+    {
+      "numero_processo": "1001200-66.2026.5.02.0411",
+      "cliente": "CBC CARTUCHOS BRASIL",
+      "profissional": "Letícia Meneghini Fontes (LMI)"
     },
     {
       "numero_processo": "0010852-16.2026.5.03.0147",
