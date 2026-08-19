@@ -1,24 +1,19 @@
 {
-  "atualizado_em": "2026-08-18T17:30:20",
+  "atualizado_em": "2026-08-19T08:30:26",
   "kpis": {
-    "total_andamento": 8144,
-    "entradas_hoje": 16,
-    "saidas_hoje": 7,
-    "entradas_ontem": 22,
-    "saidas_ontem": 12,
+    "total_andamento": 8143,
+    "entradas_hoje": 0,
+    "saidas_hoje": 1,
+    "entradas_ontem": 16,
+    "saidas_ontem": 7,
     "entradas_mes": 163,
-    "saidas_mes": 146,
+    "saidas_mes": 147,
     "entradas_mes_anterior": 252,
     "saidas_mes_anterior": 261,
     "valor_causa_total": 1737022606.25,
-    "saldo_mes": 17
+    "saldo_mes": 16
   },
   "serie_diaria": [
-    {
-      "data": "2026-06-20",
-      "entradas": 0,
-      "saidas": 0
-    },
     {
       "data": "2026-06-21",
       "entradas": 0,
@@ -313,6 +308,11 @@
       "data": "2026-08-18",
       "entradas": 16,
       "saidas": 7
+    },
+    {
+      "data": "2026-08-19",
+      "entradas": 0,
+      "saidas": 1
     }
   ],
   "por_grupo": [
@@ -327,9 +327,9 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1780,
+      "andamento": 1779,
       "entradas_mes": 33,
-      "saidas_mes": 74,
+      "saidas_mes": 75,
       "entradas_mes_anterior": 44,
       "saidas_mes_anterior": 61,
       "valor_causa": 292999699.39
@@ -428,9 +428,9 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 6331,
+      "andamento": 6330,
       "entradas_mes": 108,
-      "saidas_mes": 128,
+      "saidas_mes": 129,
       "entradas_mes_anterior": 166,
       "saidas_mes_anterior": 193,
       "valor_causa": 1381258628.98
@@ -664,12 +664,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2890,
+      "andamento": 2888,
       "entradas_mes": 128,
       "saidas_mes": 37,
       "entradas_mes_anterior": 179,
       "saidas_mes_anterior": 75,
-      "valor_causa": 756245128.75
+      "valor_causa": 756162128.75
     },
     {
       "nome": "Sentença",
@@ -684,19 +684,19 @@
       "nome": "Recurso",
       "andamento": 3204,
       "entradas_mes": 1,
-      "saidas_mes": 49,
+      "saidas_mes": 50,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 50,
-      "valor_causa": 677701775.36
+      "valor_causa": 677746377.27
     },
     {
       "nome": "Execução",
-      "andamento": 1203,
+      "andamento": 1204,
       "entradas_mes": 5,
       "saidas_mes": 50,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 82,
-      "valor_causa": 168181053.67
+      "valor_causa": 168219451.76
     }
   ],
   "por_fase_outras": 408,
@@ -824,12 +824,12 @@
     {
       "fase": "Execução",
       "grupo": "Grupo E2",
-      "andamento": 367,
+      "andamento": 368,
       "entradas_mes": 1,
       "saidas_mes": 2,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 26,
-      "valor_causa": 54131086.18
+      "valor_causa": 54169484.27
     },
     {
       "fase": "Execução",
@@ -914,12 +914,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 841,
+      "andamento": 839,
       "entradas_mes": 27,
       "saidas_mes": 9,
       "entradas_mes_anterior": 40,
       "saidas_mes_anterior": 28,
-      "valor_causa": 156366198.66
+      "valor_causa": 156283198.66
     },
     {
       "fase": "Instrução",
@@ -1144,9 +1144,9 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo E1",
-      "andamento": 740,
+      "andamento": 739,
       "entradas_mes": 0,
-      "saidas_mes": 20,
+      "saidas_mes": 21,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 10,
       "valor_causa": 103325444.32
@@ -1154,12 +1154,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo E2",
-      "andamento": 571,
+      "andamento": 572,
       "entradas_mes": 0,
       "saidas_mes": 4,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 18,
-      "valor_causa": 185000733.07
+      "valor_causa": 185045334.98
     },
     {
       "fase": "Recurso",
@@ -1314,12 +1314,12 @@
     },
     {
       "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 446,
+      "andamento": 443,
       "entradas_mes": 6,
       "saidas_mes": 3,
       "entradas_mes_anterior": 15,
       "saidas_mes_anterior": 3,
-      "valor_causa": 214932632.49
+      "valor_causa": 214861441.18
     },
     {
       "nome": "Rafael Yepez do Lago(RYL)",
@@ -1368,12 +1368,12 @@
     },
     {
       "nome": "Richard Ruan Leo da Silva(RRU)",
-      "andamento": 312,
+      "andamento": 315,
       "entradas_mes": 13,
       "saidas_mes": 5,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 15,
-      "valor_causa": 33457012.47
+      "valor_causa": 33528203.78
     },
     {
       "nome": "Bianca Bolanhi Camacho(BBO)",
@@ -1458,9 +1458,9 @@
     },
     {
       "nome": "Paloma da Silva Santos(PSI)",
-      "andamento": 255,
+      "andamento": 254,
       "entradas_mes": 6,
-      "saidas_mes": 32,
+      "saidas_mes": 33,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 14,
       "valor_causa": 52409700.44
@@ -1748,16 +1748,16 @@
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 20,
       "valor_causa": 134881161.16,
-      "alerta_entrada": true
+      "alerta_entrada": false
     },
     {
       "nome": "MAHLE METAL - MOGI",
-      "andamento": 362,
-      "entradas_mes": 5,
-      "saidas_mes": 24,
+      "andamento": 360,
+      "entradas_mes": 4,
+      "saidas_mes": 25,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 20,
-      "valor_causa": 67045153.06,
+      "valor_causa": 66980325.46,
       "alerta_entrada": true
     },
     {
@@ -1802,12 +1802,12 @@
     },
     {
       "nome": "MAHLE METAL - SBC",
-      "andamento": 256,
-      "entradas_mes": 4,
+      "andamento": 257,
+      "entradas_mes": 5,
       "saidas_mes": 36,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 4,
-      "valor_causa": 21733658.25,
+      "valor_causa": 21798485.85,
       "alerta_entrada": true
     },
     {
@@ -2982,23 +2982,23 @@
     {
       "grupo": "Grupo E1",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 362,
-      "entradas_mes": 5,
-      "saidas_mes": 17,
+      "andamento": 360,
+      "entradas_mes": 4,
+      "saidas_mes": 18,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 19,
-      "valor_causa": 67045153.06,
+      "valor_causa": 66980325.46,
       "alerta_entrada": true
     },
     {
       "grupo": "Grupo E1",
       "cliente": "MAHLE METAL - SBC",
-      "andamento": 256,
-      "entradas_mes": 4,
+      "andamento": 257,
+      "entradas_mes": 5,
       "saidas_mes": 26,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 4,
-      "valor_causa": 21733658.25,
+      "valor_causa": 21798485.85,
       "alerta_entrada": true
     },
     {
@@ -4232,9 +4232,9 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Paloma da Silva Santos(PSI)",
-      "andamento": 255,
+      "andamento": 254,
       "entradas_mes": 6,
-      "saidas_mes": 23,
+      "saidas_mes": 24,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 13,
       "valor_causa": 52409700.44
@@ -4332,12 +4332,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 441,
+      "andamento": 438,
       "entradas_mes": 6,
       "saidas_mes": 3,
       "entradas_mes_anterior": 15,
       "saidas_mes_anterior": 3,
-      "valor_causa": 214623912.24
+      "valor_causa": 214552720.93
     },
     {
       "grupo": "Grupo E2",
@@ -4372,12 +4372,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Richard Ruan Leo da Silva(RRU)",
-      "andamento": 311,
+      "andamento": 314,
       "entradas_mes": 12,
       "saidas_mes": 5,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 15,
-      "valor_causa": 33415189.87
+      "valor_causa": 33486381.18
     },
     {
       "grupo": "Grupo E2",
@@ -6534,12 +6534,12 @@
     {
       "estado": "SP",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 361,
-      "entradas_mes": 5,
-      "saidas_mes": 24,
+      "andamento": 359,
+      "entradas_mes": 4,
+      "saidas_mes": 25,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 20,
-      "valor_causa": 67045153.06
+      "valor_causa": 66980325.46
     },
     {
       "estado": "SP",
@@ -6554,12 +6554,12 @@
     {
       "estado": "SP",
       "cliente": "MAHLE METAL - SBC",
-      "andamento": 253,
-      "entradas_mes": 1,
+      "andamento": 254,
+      "entradas_mes": 2,
       "saidas_mes": 36,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 4,
-      "valor_causa": 21733658.25
+      "valor_causa": 21798485.85
     },
     {
       "estado": "SP",
@@ -7984,33 +7984,23 @@
   ],
   "clientes_com_alerta": [
     {
-      "nome": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 699,
-      "entradas_mes": 21,
-      "saidas_mes": 16,
-      "entradas_mes_anterior": 24,
-      "saidas_mes_anterior": 20,
-      "valor_causa": 134881161.16,
-      "alerta_entrada": true
-    },
-    {
       "nome": "MAHLE METAL - MOGI",
-      "andamento": 362,
-      "entradas_mes": 5,
-      "saidas_mes": 24,
+      "andamento": 360,
+      "entradas_mes": 4,
+      "saidas_mes": 25,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 20,
-      "valor_causa": 67045153.06,
+      "valor_causa": 66980325.46,
       "alerta_entrada": true
     },
     {
       "nome": "MAHLE METAL - SBC",
-      "andamento": 256,
-      "entradas_mes": 4,
+      "andamento": 257,
+      "entradas_mes": 5,
       "saidas_mes": 36,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 4,
-      "valor_causa": 21733658.25,
+      "valor_causa": 21798485.85,
       "alerta_entrada": true
     },
     {
