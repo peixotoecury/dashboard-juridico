@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-08-19T13:30:30",
+  "atualizado_em": "2026-08-19T13:45:31",
   "kpis": {
-    "total_andamento": 8142,
-    "entradas_hoje": 1,
+    "total_andamento": 8144,
+    "entradas_hoje": 3,
     "saidas_hoje": 9,
     "entradas_ontem": 21,
     "saidas_ontem": 7,
-    "entradas_mes": 169,
+    "entradas_mes": 171,
     "saidas_mes": 155,
     "entradas_mes_anterior": 252,
     "saidas_mes_anterior": 261,
-    "valor_causa_total": 1739031011.49,
-    "saldo_mes": 14
+    "valor_causa_total": 1739855522.57,
+    "saldo_mes": 16
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-08-19",
-      "entradas": 1,
+      "entradas": 3,
       "saidas": 9
     }
   ],
@@ -408,12 +408,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 5,
-      "entradas_mes": 2,
+      "andamento": 7,
+      "entradas_mes": 4,
       "saidas_mes": 19,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
-      "valor_causa": 997794.32
+      "valor_causa": 1822305.4
     },
     {
       "nome": "Sócios",
@@ -428,12 +428,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 6329,
-      "entradas_mes": 113,
+      "andamento": 6331,
+      "entradas_mes": 115,
       "saidas_mes": 136,
       "entradas_mes_anterior": 166,
       "saidas_mes_anterior": 193,
-      "valor_causa": 1382952303.57
+      "valor_causa": 1383776814.65
     },
     {
       "nome": "MG",
@@ -664,12 +664,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2886,
-      "entradas_mes": 134,
+      "andamento": 2888,
+      "entradas_mes": 136,
       "saidas_mes": 40,
       "entradas_mes_anterior": 179,
       "saidas_mes_anterior": 75,
-      "valor_causa": 758381400.23
+      "valor_causa": 759205911.31
     },
     {
       "nome": "Sentença",
@@ -1004,12 +1004,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 3,
-      "entradas_mes": 2,
+      "andamento": 5,
+      "entradas_mes": 4,
       "saidas_mes": 2,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 386665.17
+      "valor_causa": 1211176.25
     },
     {
       "fase": "Instrução",
@@ -1422,12 +1422,12 @@
     },
     {
       "nome": "Vanessa de Cassia Castrequini Rosa(VCR)",
-      "andamento": 276,
-      "entradas_mes": 4,
+      "andamento": 277,
+      "entradas_mes": 5,
       "saidas_mes": 1,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 3,
-      "valor_causa": 43028642.45
+      "valor_causa": 43673753.53
     },
     {
       "nome": "Beatriz Santiago de Souza(BSO)",
@@ -1467,12 +1467,12 @@
     },
     {
       "nome": "Anna Carolina Balbino Gatti Baani(ANB)",
-      "andamento": 248,
-      "entradas_mes": 4,
+      "andamento": 249,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 1,
-      "valor_causa": 57552152.05
+      "valor_causa": 57731552.05
     },
     {
       "nome": "Nicolau Rafael Guimarães Coelho(NRG)",
@@ -1732,12 +1732,12 @@
     },
     {
       "nome": "EMBRAER",
-      "andamento": 719,
-      "entradas_mes": 14,
+      "andamento": 721,
+      "entradas_mes": 16,
       "saidas_mes": 1,
       "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 15,
-      "valor_causa": 125864582.76,
+      "valor_causa": 126689093.84,
       "alerta_entrada": false
     },
     {
@@ -3751,6 +3751,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "EMBRAER",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 824511.08,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "BRIDGESTONE",
       "andamento": 1,
       "entradas_mes": 0,
@@ -4477,6 +4488,26 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 1000.0
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Vanessa de Cassia Castrequini Rosa(VCR)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 645111.08
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Anna Carolina Balbino Gatti Baani(ANB)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 179400.0
     },
     {
       "grupo": "Sócios",
@@ -6483,12 +6514,12 @@
     {
       "estado": "SP",
       "cliente": "EMBRAER",
-      "andamento": 705,
-      "entradas_mes": 13,
+      "andamento": 707,
+      "entradas_mes": 15,
       "saidas_mes": 1,
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 14,
-      "valor_causa": 124235396.96
+      "valor_causa": 125059908.04
     },
     {
       "estado": "SP",
@@ -8008,6 +8039,16 @@
       "numero_processo": "1000741-04.2026.5.02.0431",
       "cliente": "BRIDGESTONE",
       "profissional": "Guilherme Silva Morimoto(GSM)"
+    },
+    {
+      "numero_processo": "0011988-13.2026.5.15.0083",
+      "cliente": "EMBRAER",
+      "profissional": "Vanessa de Cassia Castrequini Rosa(VCR)"
+    },
+    {
+      "numero_processo": "0011982-06.2026.5.15.0083",
+      "cliente": "EMBRAER",
+      "profissional": "Anna Carolina Balbino Gatti Baani(ANB)"
     },
     {
       "numero_processo": "0010852-16.2026.5.03.0147",
