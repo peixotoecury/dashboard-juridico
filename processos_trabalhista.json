@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-08-19T15:45:25",
+  "atualizado_em": "2026-08-19T16:00:40",
   "kpis": {
-    "total_andamento": 8146,
+    "total_andamento": 8144,
     "entradas_hoje": 7,
-    "saidas_hoje": 11,
+    "saidas_hoje": 13,
     "entradas_ontem": 21,
     "saidas_ontem": 7,
     "entradas_mes": 175,
-    "saidas_mes": 157,
+    "saidas_mes": 159,
     "entradas_mes_anterior": 252,
     "saidas_mes_anterior": 261,
-    "valor_causa_total": 1739882591.5,
-    "saldo_mes": 18
+    "valor_causa_total": 1739031481.48,
+    "saldo_mes": 16
   },
   "serie_diaria": [
     {
@@ -312,7 +312,7 @@
     {
       "data": "2026-08-19",
       "entradas": 7,
-      "saidas": 11
+      "saidas": 13
     }
   ],
   "por_grupo": [
@@ -327,12 +327,12 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1775,
+      "andamento": 1773,
       "entradas_mes": 34,
-      "saidas_mes": 81,
+      "saidas_mes": 83,
       "entradas_mes_anterior": 44,
       "saidas_mes_anterior": 61,
-      "valor_causa": 292889446.15
+      "valor_causa": 292038336.13
     },
     {
       "nome": "Grupo B1",
@@ -428,12 +428,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 6333,
+      "andamento": 6331,
       "entradas_mes": 119,
-      "saidas_mes": 138,
+      "saidas_mes": 140,
       "entradas_mes_anterior": 166,
       "saidas_mes_anterior": 193,
-      "valor_causa": 1383803883.58
+      "valor_causa": 1382952773.56
     },
     {
       "nome": "MG",
@@ -669,7 +669,7 @@
       "saidas_mes": 41,
       "entradas_mes_anterior": 179,
       "saidas_mes_anterior": 75,
-      "valor_causa": 759324039.15
+      "valor_causa": 759352239.4
     },
     {
       "nome": "Sentença",
@@ -682,21 +682,21 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 3207,
+      "andamento": 3206,
       "entradas_mes": 1,
-      "saidas_mes": 50,
+      "saidas_mes": 51,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 50,
-      "valor_causa": 677668171.62
+      "valor_causa": 676947979.86
     },
     {
       "nome": "Execução",
-      "andamento": 1202,
+      "andamento": 1201,
       "entradas_mes": 5,
-      "saidas_mes": 55,
+      "saidas_mes": 56,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 82,
-      "valor_causa": 168338968.1
+      "valor_causa": 168179849.59
     }
   ],
   "por_fase_outras": 408,
@@ -844,12 +844,12 @@
     {
       "fase": "Execução",
       "grupo": "Grupo E1",
-      "andamento": 175,
+      "andamento": 174,
       "entradas_mes": 3,
-      "saidas_mes": 41,
+      "saidas_mes": 42,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 11,
-      "valor_causa": 19101738.09
+      "valor_causa": 18942619.58
     },
     {
       "fase": "Execução",
@@ -929,7 +929,7 @@
       "saidas_mes": 15,
       "entradas_mes_anterior": 30,
       "saidas_mes_anterior": 10,
-      "valor_causa": 159452962.36
+      "valor_causa": 159481162.61
     },
     {
       "fase": "Instrução",
@@ -1144,12 +1144,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo E1",
-      "andamento": 739,
+      "andamento": 738,
       "entradas_mes": 0,
-      "saidas_mes": 21,
+      "saidas_mes": 22,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 10,
-      "valor_causa": 103325444.32
+      "valor_causa": 102605252.56
     },
     {
       "fase": "Recurso",
@@ -1310,7 +1310,7 @@
       "saidas_mes": 2,
       "entradas_mes_anterior": 22,
       "saidas_mes_anterior": 0,
-      "valor_causa": 66802314.76
+      "valor_causa": 66830515.01
     },
     {
       "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
@@ -1512,12 +1512,12 @@
     },
     {
       "nome": "Tamires Lins Costa(TLI)",
-      "andamento": 204,
+      "andamento": 202,
       "entradas_mes": 2,
-      "saidas_mes": 12,
+      "saidas_mes": 14,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 9,
-      "valor_causa": 27648629.01
+      "valor_causa": 26769318.74
     },
     {
       "nome": "Thiago Frid Figueiredo Rossi(TFR)",
@@ -1747,17 +1747,17 @@
       "saidas_mes": 16,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 20,
-      "valor_causa": 134892100.82,
+      "valor_causa": 134920301.07,
       "alerta_entrada": false
     },
     {
       "nome": "MAHLE METAL - MOGI",
-      "andamento": 354,
+      "andamento": 352,
       "entradas_mes": 4,
-      "saidas_mes": 31,
+      "saidas_mes": 33,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 20,
-      "valor_causa": 66805306.35,
+      "valor_causa": 65925996.08,
       "alerta_entrada": true
     },
     {
@@ -2987,18 +2987,18 @@
       "saidas_mes": 15,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 19,
-      "valor_causa": 133916861.88,
+      "valor_causa": 133945062.13,
       "alerta_entrada": false
     },
     {
       "grupo": "Grupo E1",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 354,
+      "andamento": 352,
       "entradas_mes": 4,
-      "saidas_mes": 24,
+      "saidas_mes": 26,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 19,
-      "valor_causa": 66805306.35,
+      "valor_causa": 65925996.08,
       "alerta_entrada": true
     },
     {
@@ -4227,7 +4227,7 @@
       "saidas_mes": 2,
       "entradas_mes_anterior": 22,
       "saidas_mes_anterior": 0,
-      "valor_causa": 66802314.76
+      "valor_causa": 66830515.01
     },
     {
       "grupo": "Grupo E1",
@@ -4262,12 +4262,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Tamires Lins Costa(TLI)",
-      "andamento": 204,
+      "andamento": 202,
       "entradas_mes": 2,
-      "saidas_mes": 12,
+      "saidas_mes": 14,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 9,
-      "valor_causa": 27648629.01
+      "valor_causa": 26769318.74
     },
     {
       "grupo": "Grupo E1",
@@ -6519,7 +6519,7 @@
       "saidas_mes": 13,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 17,
-      "valor_causa": 118943123.19
+      "valor_causa": 118971323.44
     },
     {
       "estado": "SP",
@@ -6534,12 +6534,12 @@
     {
       "estado": "SP",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 353,
+      "andamento": 351,
       "entradas_mes": 4,
-      "saidas_mes": 31,
+      "saidas_mes": 33,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 20,
-      "valor_causa": 66805306.35
+      "valor_causa": 65925996.08
     },
     {
       "estado": "SP",
@@ -7995,12 +7995,12 @@
     },
     {
       "nome": "MAHLE METAL - MOGI",
-      "andamento": 354,
+      "andamento": 352,
       "entradas_mes": 4,
-      "saidas_mes": 31,
+      "saidas_mes": 33,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 20,
-      "valor_causa": 66805306.35,
+      "valor_causa": 65925996.08,
       "alerta_entrada": true
     },
     {
