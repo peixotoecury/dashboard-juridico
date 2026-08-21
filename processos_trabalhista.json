@@ -1,24 +1,19 @@
 {
-  "atualizado_em": "2026-08-20T18:15:27",
+  "atualizado_em": "2026-08-21T09:56:50",
   "kpis": {
-    "total_andamento": 8139,
-    "entradas_hoje": 11,
-    "saidas_hoje": 15,
-    "entradas_ontem": 13,
-    "saidas_ontem": 16,
-    "entradas_mes": 192,
-    "saidas_mes": 179,
+    "total_andamento": 8142,
+    "entradas_hoje": 6,
+    "saidas_hoje": 1,
+    "entradas_ontem": 11,
+    "saidas_ontem": 17,
+    "entradas_mes": 198,
+    "saidas_mes": 182,
     "entradas_mes_anterior": 252,
     "saidas_mes_anterior": 262,
-    "valor_causa_total": 1744092717.43,
-    "saldo_mes": 13
+    "valor_causa_total": 1743506178.43,
+    "saldo_mes": 16
   },
   "serie_diaria": [
-    {
-      "data": "2026-06-22",
-      "entradas": 28,
-      "saidas": 8
-    },
     {
       "data": "2026-06-23",
       "entradas": 18,
@@ -312,27 +307,32 @@
     {
       "data": "2026-08-20",
       "entradas": 11,
-      "saidas": 15
+      "saidas": 17
+    },
+    {
+      "data": "2026-08-21",
+      "entradas": 6,
+      "saidas": 1
     }
   ],
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2077,
-      "entradas_mes": 50,
-      "saidas_mes": 32,
+      "andamento": 2081,
+      "entradas_mes": 56,
+      "saidas_mes": 34,
       "entradas_mes_anterior": 93,
       "saidas_mes_anterior": 82,
-      "valor_causa": 445312473.39
+      "valor_causa": 444876584.39
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1769,
+      "andamento": 1768,
       "entradas_mes": 34,
-      "saidas_mes": 87,
+      "saidas_mes": 88,
       "entradas_mes_anterior": 44,
       "saidas_mes_anterior": 61,
-      "valor_causa": 291663015.3
+      "valor_causa": 291512365.3
     },
     {
       "nome": "Grupo B1",
@@ -428,12 +428,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 6322,
+      "andamento": 6319,
       "entradas_mes": 127,
-      "saidas_mes": 155,
+      "saidas_mes": 158,
       "entradas_mes_anterior": 166,
       "saidas_mes_anterior": 194,
-      "valor_causa": 1387739797.95
+      "valor_causa": 1387224664.5
     },
     {
       "nome": "MG",
@@ -442,7 +442,7 @@
       "saidas_mes": 10,
       "entradas_mes_anterior": 30,
       "saidas_mes_anterior": 29,
-      "valor_causa": 124644907.91
+      "valor_causa": 124573502.36
     },
     {
       "nome": "RS",
@@ -527,8 +527,8 @@
     },
     {
       "nome": "MT",
-      "andamento": 31,
-      "entradas_mes": 7,
+      "andamento": 37,
+      "entradas_mes": 13,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 3,
@@ -655,21 +655,21 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 402,
-      "entradas_mes": 26,
+      "andamento": 405,
+      "entradas_mes": 28,
       "saidas_mes": 3,
-      "entradas_mes_anterior": 46,
+      "entradas_mes_anterior": 47,
       "saidas_mes_anterior": 6,
-      "valor_causa": 89112266.51
+      "valor_causa": 89799405.49
     },
     {
       "nome": "Instrução",
-      "andamento": 2893,
-      "entradas_mes": 148,
-      "saidas_mes": 52,
-      "entradas_mes_anterior": 179,
+      "andamento": 2891,
+      "entradas_mes": 152,
+      "saidas_mes": 54,
+      "entradas_mes_anterior": 178,
       "saidas_mes_anterior": 75,
-      "valor_causa": 761958647.33
+      "valor_causa": 759517034.35
     },
     {
       "nome": "Sentença",
@@ -682,12 +682,12 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 3209,
+      "andamento": 3210,
       "entradas_mes": 5,
-      "saidas_mes": 51,
+      "saidas_mes": 52,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 51,
-      "valor_causa": 681000732.09
+      "valor_causa": 682076466.09
     },
     {
       "nome": "Execução",
@@ -699,17 +699,17 @@
       "valor_causa": 168203147.96
     }
   ],
-  "por_fase_outras": 411,
+  "por_fase_outras": 412,
   "por_fase_grupo": [
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo E2",
-      "andamento": 160,
-      "entradas_mes": 15,
+      "andamento": 163,
+      "entradas_mes": 17,
       "saidas_mes": 2,
-      "entradas_mes_anterior": 39,
+      "entradas_mes_anterior": 40,
       "saidas_mes_anterior": 4,
-      "valor_causa": 43062412.91
+      "valor_causa": 43749551.89
     },
     {
       "fase": "Ajuizamento",
@@ -904,22 +904,22 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 831,
-      "entradas_mes": 31,
-      "saidas_mes": 16,
-      "entradas_mes_anterior": 40,
+      "andamento": 830,
+      "entradas_mes": 35,
+      "saidas_mes": 18,
+      "entradas_mes_anterior": 39,
       "saidas_mes_anterior": 28,
-      "valor_causa": 156905406.27
+      "valor_causa": 155690177.29
     },
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 771,
+      "andamento": 770,
       "entradas_mes": 20,
       "saidas_mes": 18,
       "entradas_mes_anterior": 30,
       "saidas_mes_anterior": 10,
-      "valor_causa": 159053247.76
+      "valor_causa": 157826863.76
     },
     {
       "fase": "Instrução",
@@ -1014,12 +1014,12 @@
     {
       "fase": "Outras",
       "grupo": "Grupo E2",
-      "andamento": 130,
+      "andamento": 131,
       "entradas_mes": 3,
       "saidas_mes": 2,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 5,
-      "valor_causa": 5541421.07
+      "valor_causa": 5633622.07
     },
     {
       "fase": "Outras",
@@ -1136,15 +1136,15 @@
       "grupo": "Grupo E1",
       "andamento": 739,
       "entradas_mes": 0,
-      "saidas_mes": 22,
+      "saidas_mes": 23,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 10,
-      "valor_causa": 102879255.29
+      "valor_causa": 103954989.29
     },
     {
       "fase": "Recurso",
       "grupo": "Grupo E2",
-      "andamento": 575,
+      "andamento": 576,
       "entradas_mes": 0,
       "saidas_mes": 4,
       "entradas_mes_anterior": 1,
@@ -1295,12 +1295,12 @@
   "por_profissional": [
     {
       "nome": "Giulia Vendramini Milani(GVM)",
-      "andamento": 446,
+      "andamento": 445,
       "entradas_mes": 10,
       "saidas_mes": 3,
       "entradas_mes_anterior": 22,
       "saidas_mes_anterior": 0,
-      "valor_causa": 66898189.08
+      "valor_causa": 66542075.62
     },
     {
       "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
@@ -1315,19 +1315,19 @@
       "nome": "Rafael Yepez do Lago(RYL)",
       "andamento": 434,
       "entradas_mes": 11,
-      "saidas_mes": 4,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 15,
-      "valor_causa": 63931843.51
+      "valor_causa": 63636343.51
     },
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 417,
+      "andamento": 415,
       "entradas_mes": 9,
-      "saidas_mes": 12,
+      "saidas_mes": 13,
       "entradas_mes_anterior": 26,
       "saidas_mes_anterior": 22,
-      "valor_causa": 48513563.58
+      "valor_causa": 48373174.58
     },
     {
       "nome": "Jessica Cerqueira Silva(JQS)",
@@ -1474,6 +1474,15 @@
       "valor_causa": 24730351.7
     },
     {
+      "nome": "Rafael Camargo Felisbino(RCF)",
+      "andamento": 243,
+      "entradas_mes": 9,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 6,
+      "saidas_mes_anterior": 4,
+      "valor_causa": 54134503.72
+    },
+    {
       "nome": "Erik Mota Coppi(ECO)",
       "andamento": 240,
       "entradas_mes": 16,
@@ -1481,15 +1490,6 @@
       "entradas_mes_anterior": 14,
       "saidas_mes_anterior": 7,
       "valor_causa": 41194309.85
-    },
-    {
-      "nome": "Rafael Camargo Felisbino(RCF)",
-      "andamento": 237,
-      "entradas_mes": 3,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 6,
-      "saidas_mes_anterior": 4,
-      "valor_causa": 54134503.72
     },
     {
       "nome": "Vinícius Ronchi Arruda(VRO)",
@@ -1540,10 +1540,10 @@
       "nome": "Júlia Priego Lopes da Silva(JPL)",
       "andamento": 123,
       "entradas_mes": 3,
-      "saidas_mes": 11,
+      "saidas_mes": 12,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 15,
-      "valor_causa": 35504989.48
+      "valor_causa": 35710452.94
     },
     {
       "nome": "Sofia Freire (SOF)",
@@ -1721,12 +1721,12 @@
     },
     {
       "nome": "BP BIOENERGIA",
-      "andamento": 772,
+      "andamento": 770,
       "entradas_mes": 12,
-      "saidas_mes": 9,
+      "saidas_mes": 11,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 31,
-      "valor_causa": 213498142.07,
+      "valor_causa": 213133658.62,
       "alerta_entrada": false
     },
     {
@@ -1741,12 +1741,12 @@
     },
     {
       "nome": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 699,
+      "andamento": 698,
       "entradas_mes": 22,
-      "saidas_mes": 17,
+      "saidas_mes": 18,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 20,
-      "valor_causa": 135126559.09,
+      "valor_causa": 134975909.09,
       "alerta_entrada": false
     },
     {
@@ -1856,7 +1856,7 @@
       "saidas_mes": 4,
       "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 14,
-      "valor_causa": 26809313.21,
+      "valor_causa": 26737907.66,
       "alerta_entrada": false
     },
     {
@@ -2981,12 +2981,12 @@
     {
       "grupo": "Grupo E1",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 627,
+      "andamento": 626,
       "entradas_mes": 20,
-      "saidas_mes": 16,
+      "saidas_mes": 17,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 19,
-      "valor_causa": 134012736.2,
+      "valor_causa": 133862086.2,
       "alerta_entrada": false
     },
     {
@@ -3201,12 +3201,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "BP BIOENERGIA",
-      "andamento": 772,
+      "andamento": 770,
       "entradas_mes": 12,
-      "saidas_mes": 9,
+      "saidas_mes": 11,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 31,
-      "valor_causa": 213498142.07,
+      "valor_causa": 213133658.62,
       "alerta_entrada": false
     },
     {
@@ -3239,7 +3239,7 @@
       "saidas_mes": 4,
       "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 14,
-      "valor_causa": 26809313.21,
+      "valor_causa": 26737907.66,
       "alerta_entrada": false
     },
     {
@@ -3344,8 +3344,8 @@
     {
       "grupo": "Grupo E2",
       "cliente": "INPASA SINOP",
-      "andamento": 13,
-      "entradas_mes": 11,
+      "andamento": 19,
+      "entradas_mes": 17,
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
@@ -4254,12 +4254,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Giulia Vendramini Milani(GVM)",
-      "andamento": 446,
+      "andamento": 445,
       "entradas_mes": 10,
       "saidas_mes": 3,
       "entradas_mes_anterior": 22,
       "saidas_mes_anterior": 0,
-      "valor_causa": 66898189.08
+      "valor_causa": 66542075.62
     },
     {
       "grupo": "Grupo E1",
@@ -4316,10 +4316,10 @@
       "profissional": "Júlia Priego Lopes da Silva(JPL)",
       "andamento": 123,
       "entradas_mes": 3,
-      "saidas_mes": 11,
+      "saidas_mes": 12,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 15,
-      "valor_causa": 35504989.48
+      "valor_causa": 35710452.94
     },
     {
       "grupo": "Grupo E1",
@@ -4386,20 +4386,20 @@
       "profissional": "Rafael Yepez do Lago(RYL)",
       "andamento": 433,
       "entradas_mes": 10,
-      "saidas_mes": 4,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 15,
-      "valor_causa": 63775407.46
+      "valor_causa": 63479907.46
     },
     {
       "grupo": "Grupo E2",
       "profissional": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 417,
+      "andamento": 415,
       "entradas_mes": 9,
-      "saidas_mes": 12,
+      "saidas_mes": 13,
       "entradas_mes_anterior": 26,
       "saidas_mes_anterior": 22,
-      "valor_causa": 48513563.58
+      "valor_causa": 48373174.58
     },
     {
       "grupo": "Grupo E2",
@@ -4424,8 +4424,8 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Rafael Camargo Felisbino(RCF)",
-      "andamento": 102,
-      "entradas_mes": 3,
+      "andamento": 108,
+      "entradas_mes": 9,
       "saidas_mes": 0,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 1,
@@ -5221,7 +5221,7 @@
       "saidas_mes": 4,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 12,
-      "valor_causa": 14268261.17
+      "valor_causa": 14196855.62
     },
     {
       "estado": "MG",
@@ -5555,6 +5555,16 @@
     },
     {
       "estado": "MT",
+      "cliente": "INPASA SINOP",
+      "andamento": 12,
+      "entradas_mes": 11,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 963550.79
+    },
+    {
+      "estado": "MT",
       "cliente": "EUROCHEM FTO MATRIZ",
       "andamento": 11,
       "entradas_mes": 1,
@@ -5572,16 +5582,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 2,
       "valor_causa": 271205.34
-    },
-    {
-      "estado": "MT",
-      "cliente": "INPASA SINOP",
-      "andamento": 6,
-      "entradas_mes": 5,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 963550.79
     },
     {
       "estado": "MT",
@@ -6586,22 +6586,22 @@
     {
       "estado": "SP",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 599,
+      "andamento": 598,
       "entradas_mes": 14,
-      "saidas_mes": 14,
+      "saidas_mes": 15,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 17,
-      "valor_causa": 119038997.51
+      "valor_causa": 118888347.51
     },
     {
       "estado": "SP",
       "cliente": "BP BIOENERGIA",
-      "andamento": 434,
+      "andamento": 432,
       "entradas_mes": 5,
-      "saidas_mes": 5,
+      "saidas_mes": 7,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 21,
-      "valor_causa": 98402014.07
+      "valor_causa": 98037530.62
     },
     {
       "estado": "SP",
@@ -8097,8 +8097,8 @@
     },
     {
       "nome": "INPASA SINOP",
-      "andamento": 13,
-      "entradas_mes": 11,
+      "andamento": 19,
+      "entradas_mes": 17,
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
