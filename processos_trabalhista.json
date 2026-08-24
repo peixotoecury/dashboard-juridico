@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-08-24T16:24:59",
+  "atualizado_em": "2026-08-24T16:39:55",
   "kpis": {
     "total_andamento": 8123,
     "entradas_hoje": 8,
@@ -327,12 +327,12 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1771,
-      "entradas_mes": 36,
+      "andamento": 1772,
+      "entradas_mes": 37,
       "saidas_mes": 87,
       "entradas_mes_anterior": 44,
       "saidas_mes_anterior": 61,
-      "valor_causa": 291535356.6
+      "valor_causa": 291578030.42
     },
     {
       "nome": "Grupo B1",
@@ -408,12 +408,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 7,
-      "entradas_mes": 4,
+      "andamento": 6,
+      "entradas_mes": 3,
       "saidas_mes": 20,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
-      "valor_causa": 1159221.47
+      "valor_causa": 1116547.65
     },
     {
       "nome": "Sócios",
@@ -914,12 +914,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 775,
-      "entradas_mes": 22,
+      "andamento": 776,
+      "entradas_mes": 23,
       "saidas_mes": 16,
       "entradas_mes_anterior": 30,
       "saidas_mes_anterior": 10,
-      "valor_causa": 158291640.21
+      "valor_causa": 158334314.03
     },
     {
       "fase": "Instrução",
@@ -994,12 +994,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 4,
-      "entradas_mes": 4,
+      "andamento": 3,
+      "entradas_mes": 3,
       "saidas_mes": 3,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 510092.32
+      "valor_causa": 467418.5
     },
     {
       "fase": "Instrução",
@@ -2972,12 +2972,12 @@
     {
       "grupo": "Grupo E1",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 627,
-      "entradas_mes": 21,
+      "andamento": 628,
+      "entradas_mes": 22,
       "saidas_mes": 17,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 19,
-      "valor_causa": 134000670.15,
+      "valor_causa": 134043343.97,
       "alerta_entrada": false
     },
     {
@@ -3752,17 +3752,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 43673.82,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "BRIDGESTONE",
       "andamento": 1,
       "entradas_mes": 0,
@@ -3803,6 +3792,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 339954.62,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "SYNGENTA PROTEÇÃO DE",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1000.0,
       "alerta_entrada": false
     },
     {
@@ -4223,12 +4223,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Giulia Vendramini Milani(GVM)",
-      "andamento": 444,
-      "entradas_mes": 11,
+      "andamento": 445,
+      "entradas_mes": 12,
       "saidas_mes": 3,
       "entradas_mes_anterior": 22,
       "saidas_mes_anterior": 0,
-      "valor_causa": 66586304.81
+      "valor_causa": 66628978.63
     },
     {
       "grupo": "Grupo E1",
@@ -4489,16 +4489,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 122575.93
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Giulia Vendramini Milani(GVM)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 42673.82
     },
     {
       "grupo": "Sócios",
@@ -8065,11 +8055,6 @@
       "numero_processo": "0015776-90.2026.5.15.0000",
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "profissional": "Joice Ramos Miranda(JRM)"
-    },
-    {
-      "numero_processo": "0013184-36.2026.5.15.0077",
-      "cliente": "SYNGENTA PROTEÇÃO DE",
-      "profissional": "Giulia Vendramini Milani(GVM)"
     }
   ]
 }
