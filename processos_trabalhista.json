@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-08-24T12:39:54",
+  "atualizado_em": "2026-08-24T12:54:56",
   "kpis": {
-    "total_andamento": 8123,
+    "total_andamento": 8122,
     "entradas_hoje": 3,
-    "saidas_hoje": 9,
+    "saidas_hoje": 10,
     "entradas_ontem": 0,
     "saidas_ontem": 0,
     "entradas_mes": 204,
-    "saidas_mes": 207,
+    "saidas_mes": 208,
     "entradas_mes_anterior": 253,
     "saidas_mes_anterior": 262,
-    "valor_causa_total": 1739123131.15,
-    "saldo_mes": -3
+    "valor_causa_total": 1738603131.15,
+    "saldo_mes": -4
   },
   "serie_diaria": [
     {
@@ -312,18 +312,18 @@
     {
       "data": "2026-08-24",
       "entradas": 3,
-      "saidas": 9
+      "saidas": 10
     }
   ],
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2064,
+      "andamento": 2063,
       "entradas_mes": 63,
-      "saidas_mes": 58,
+      "saidas_mes": 59,
       "entradas_mes_anterior": 94,
       "saidas_mes_anterior": 82,
-      "valor_causa": 440557791.74
+      "valor_causa": 440037791.74
     },
     {
       "nome": "Grupo E1",
@@ -428,12 +428,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 6313,
+      "andamento": 6312,
       "entradas_mes": 130,
-      "saidas_mes": 167,
+      "saidas_mes": 168,
       "entradas_mes_anterior": 167,
       "saidas_mes_anterior": 194,
-      "valor_causa": 1384890170.61
+      "valor_causa": 1384370170.61
     },
     {
       "nome": "MG",
@@ -664,12 +664,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2892,
+      "andamento": 2891,
       "entradas_mes": 157,
-      "saidas_mes": 57,
+      "saidas_mes": 58,
       "entradas_mes_anterior": 178,
       "saidas_mes_anterior": 75,
-      "valor_causa": 760393783.01
+      "valor_causa": 759873783.01
     },
     {
       "nome": "Sentença",
@@ -904,12 +904,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 831,
+      "andamento": 830,
       "entradas_mes": 41,
-      "saidas_mes": 21,
+      "saidas_mes": 22,
       "entradas_mes_anterior": 39,
       "saidas_mes_anterior": 28,
-      "valor_causa": 156189395.43
+      "valor_causa": 155669395.43
     },
     {
       "fase": "Instrução",
@@ -1313,12 +1313,12 @@
     },
     {
       "nome": "Rafael Yepez do Lago(RYL)",
-      "andamento": 429,
+      "andamento": 428,
       "entradas_mes": 12,
-      "saidas_mes": 11,
+      "saidas_mes": 12,
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 15,
-      "valor_causa": 61561586.41
+      "valor_causa": 61041586.41
     },
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
@@ -3367,17 +3367,6 @@
     },
     {
       "grupo": "Grupo E2",
-      "cliente": "ITW PPF",
-      "andamento": 9,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 771658.31,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Grupo E2",
       "cliente": "MITRE VENDAS",
       "andamento": 9,
       "entradas_mes": 1,
@@ -3385,6 +3374,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 1972396.37,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Grupo E2",
+      "cliente": "ITW PPF",
+      "andamento": 8,
+      "entradas_mes": 1,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 251658.31,
       "alerta_entrada": false
     },
     {
@@ -4332,12 +4332,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Rafael Yepez do Lago(RYL)",
-      "andamento": 429,
+      "andamento": 428,
       "entradas_mes": 12,
-      "saidas_mes": 11,
+      "saidas_mes": 12,
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 15,
-      "valor_causa": 61561586.41
+      "valor_causa": 61041586.41
     },
     {
       "grupo": "Grupo E2",
@@ -6923,16 +6923,6 @@
     },
     {
       "estado": "SP",
-      "cliente": "ITW PPF",
-      "andamento": 6,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 719658.31
-    },
-    {
-      "estado": "SP",
       "cliente": "3CORP TECHNOLOGY",
       "andamento": 6,
       "entradas_mes": 0,
@@ -6950,6 +6940,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 378419.81
+    },
+    {
+      "estado": "SP",
+      "cliente": "ITW PPF",
+      "andamento": 5,
+      "entradas_mes": 1,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 199658.31
     },
     {
       "estado": "SP",
