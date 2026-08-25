@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-08-25T14:17:53",
+  "atualizado_em": "2026-08-25T14:34:22",
   "kpis": {
     "total_andamento": 8130,
     "entradas_hoje": 8,
@@ -10,7 +10,7 @@
     "saidas_mes": 216,
     "entradas_mes_anterior": 253,
     "saidas_mes_anterior": 262,
-    "valor_causa_total": 1739499311.0,
+    "valor_causa_total": 1739582433.87,
     "saldo_mes": 4
   },
   "serie_diaria": [
@@ -323,7 +323,7 @@
       "saidas_mes": 64,
       "entradas_mes_anterior": 94,
       "saidas_mes_anterior": 82,
-      "valor_causa": 439271987.98
+      "valor_causa": 439355110.85
     },
     {
       "nome": "Grupo E1",
@@ -442,7 +442,7 @@
       "saidas_mes": 20,
       "entradas_mes_anterior": 30,
       "saidas_mes_anterior": 29,
-      "valor_causa": 121094303.47
+      "valor_causa": 121177426.34
     },
     {
       "nome": "RS",
@@ -655,21 +655,21 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 401,
-      "entradas_mes": 29,
+      "andamento": 400,
+      "entradas_mes": 28,
       "saidas_mes": 6,
       "entradas_mes_anterior": 47,
       "saidas_mes_anterior": 6,
-      "valor_causa": 90219200.08
+      "valor_causa": 90165783.08
     },
     {
       "nome": "Instrução",
-      "andamento": 2901,
-      "entradas_mes": 172,
+      "andamento": 2902,
+      "entradas_mes": 173,
       "saidas_mes": 58,
       "entradas_mes_anterior": 178,
       "saidas_mes_anterior": 75,
-      "valor_causa": 761554991.41
+      "valor_causa": 761691531.28
     },
     {
       "nome": "Sentença",
@@ -783,16 +783,6 @@
     },
     {
       "fase": "Ajuizamento",
-      "grupo": "Grupo B3",
-      "andamento": 3,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 98520.0
-    },
-    {
-      "fase": "Ajuizamento",
       "grupo": "Sócios",
       "andamento": 2,
       "entradas_mes": 0,
@@ -800,6 +790,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
+    },
+    {
+      "fase": "Ajuizamento",
+      "grupo": "Grupo B3",
+      "andamento": 2,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 45103.0
     },
     {
       "fase": "Ajuizamento",
@@ -909,7 +909,7 @@
       "saidas_mes": 22,
       "entradas_mes_anterior": 39,
       "saidas_mes_anterior": 28,
-      "valor_causa": 155419827.38
+      "valor_causa": 155502950.25
     },
     {
       "fase": "Instrução",
@@ -953,6 +953,16 @@
     },
     {
       "fase": "Instrução",
+      "grupo": "Grupo B3",
+      "andamento": 129,
+      "entradas_mes": 16,
+      "saidas_mes": 5,
+      "entradas_mes_anterior": 22,
+      "saidas_mes_anterior": 2,
+      "valor_causa": 22534070.98
+    },
+    {
+      "fase": "Instrução",
       "grupo": "Grupo B2",
       "andamento": 128,
       "entradas_mes": 22,
@@ -960,16 +970,6 @@
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 3,
       "valor_causa": 27132024.14
-    },
-    {
-      "fase": "Instrução",
-      "grupo": "Grupo B3",
-      "andamento": 128,
-      "entradas_mes": 15,
-      "saidas_mes": 5,
-      "entradas_mes_anterior": 22,
-      "saidas_mes_anterior": 2,
-      "valor_causa": 22480653.98
     },
     {
       "fase": "Instrução",
@@ -1327,7 +1327,7 @@
       "saidas_mes": 18,
       "entradas_mes_anterior": 27,
       "saidas_mes_anterior": 22,
-      "valor_causa": 48180011.71
+      "valor_causa": 48263134.58
     },
     {
       "nome": "Jessica Cerqueira Silva(JQS)",
@@ -1421,12 +1421,12 @@
     },
     {
       "nome": "Beatriz Santiago de Souza(BSO)",
-      "andamento": 276,
-      "entradas_mes": 9,
+      "andamento": 278,
+      "entradas_mes": 10,
       "saidas_mes": 2,
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 4,
-      "valor_causa": 40668714.51
+      "valor_causa": 41184255.27
     },
     {
       "nome": "Rafael Rocha Ferreira(RFE)",
@@ -1439,12 +1439,12 @@
     },
     {
       "nome": "Juliana Perucci (JPE)",
-      "andamento": 258,
+      "andamento": 257,
       "entradas_mes": 6,
       "saidas_mes": 1,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 25,
-      "valor_causa": 33130951.48
+      "valor_causa": 32902808.16
     },
     {
       "nome": "Paloma da Silva Santos(PSI)",
@@ -1457,12 +1457,12 @@
     },
     {
       "nome": "Anna Carolina Balbino Gatti Baani(ANB)",
-      "andamento": 251,
-      "entradas_mes": 6,
+      "andamento": 252,
+      "entradas_mes": 7,
       "saidas_mes": 0,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 1,
-      "valor_causa": 57880552.05
+      "valor_causa": 58474870.5
     },
     {
       "nome": "Nicolau Rafael Guimarães Coelho(NRG)",
@@ -1610,12 +1610,12 @@
     },
     {
       "nome": "Luiz Vicente de Carvalho(LVC)",
-      "andamento": 4,
-      "entradas_mes": 4,
+      "andamento": 2,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 1768129.53
+      "valor_causa": 886413.64
     },
     {
       "nome": "Gabriel Neder De Donato(GND)",
@@ -1726,7 +1726,7 @@
       "saidas_mes": 28,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 31,
-      "valor_causa": 207428448.69,
+      "valor_causa": 207511571.56,
       "alerta_entrada": false
     },
     {
@@ -3206,7 +3206,7 @@
       "saidas_mes": 28,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 31,
-      "valor_causa": 207428448.69,
+      "valor_causa": 207511571.56,
       "alerta_entrada": false
     },
     {
@@ -4004,12 +4004,12 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Beatriz Santiago de Souza(BSO)",
-      "andamento": 276,
-      "entradas_mes": 9,
+      "andamento": 278,
+      "entradas_mes": 10,
       "saidas_mes": 2,
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 4,
-      "valor_causa": 40668714.51
+      "valor_causa": 41184255.27
     },
     {
       "grupo": "Grupo B1",
@@ -4024,12 +4024,12 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Juliana Perucci (JPE)",
-      "andamento": 250,
+      "andamento": 249,
       "entradas_mes": 5,
       "saidas_mes": 1,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 25,
-      "valor_causa": 31642416.61
+      "valor_causa": 31414273.29
     },
     {
       "grupo": "Grupo B1",
@@ -4072,16 +4072,6 @@
       "valor_causa": 0.0
     },
     {
-      "grupo": "Grupo B1",
-      "profissional": "Luiz Vicente de Carvalho(LVC)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 287397.44
-    },
-    {
       "grupo": "Grupo B2",
       "profissional": "Vanessa de Cassia Castrequini Rosa(VCR)",
       "andamento": 278,
@@ -4104,12 +4094,12 @@
     {
       "grupo": "Grupo B2",
       "profissional": "Anna Carolina Balbino Gatti Baani(ANB)",
-      "andamento": 168,
-      "entradas_mes": 5,
+      "andamento": 169,
+      "entradas_mes": 6,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 40536658.12
+      "valor_causa": 41130976.57
     },
     {
       "grupo": "Grupo B2",
@@ -4130,16 +4120,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 200000.0
-    },
-    {
-      "grupo": "Grupo B2",
-      "profissional": "Luiz Vicente de Carvalho(LVC)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 594318.45
     },
     {
       "grupo": "Grupo B3",
@@ -4419,7 +4399,7 @@
       "saidas_mes": 18,
       "entradas_mes_anterior": 27,
       "saidas_mes_anterior": 22,
-      "valor_causa": 48180011.71
+      "valor_causa": 48263134.58
     },
     {
       "grupo": "Grupo E2",
@@ -5211,7 +5191,7 @@
       "saidas_mes": 10,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 8,
-      "valor_causa": 82711536.89
+      "valor_causa": 82794659.76
     },
     {
       "estado": "MG",
