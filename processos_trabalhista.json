@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-08-25T10:01:22",
+  "atualizado_em": "2026-08-25T10:16:12",
   "kpis": {
     "total_andamento": 8124,
     "entradas_hoje": 0,
@@ -318,12 +318,12 @@
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2063,
-      "entradas_mes": 67,
+      "andamento": 2064,
+      "entradas_mes": 68,
       "saidas_mes": 63,
       "entradas_mes_anterior": 94,
       "saidas_mes_anterior": 82,
-      "valor_causa": 439293603.82
+      "valor_causa": 439329603.82
     },
     {
       "nome": "Grupo E1",
@@ -408,12 +408,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 6,
-      "entradas_mes": 3,
+      "andamento": 5,
+      "entradas_mes": 2,
       "saidas_mes": 20,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
-      "valor_causa": 1029971.72
+      "valor_causa": 993971.72
     },
     {
       "nome": "Sócios",
@@ -428,12 +428,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 6313,
-      "entradas_mes": 134,
+      "andamento": 6312,
+      "entradas_mes": 133,
       "saidas_mes": 171,
       "entradas_mes_anterior": 167,
       "saidas_mes_anterior": 194,
-      "valor_causa": 1384377600.62
+      "valor_causa": 1384341600.62
     },
     {
       "nome": "MG",
@@ -599,12 +599,12 @@
     },
     {
       "nome": "SE",
-      "andamento": 7,
-      "entradas_mes": 0,
+      "andamento": 8,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 958880.0
+      "valor_causa": 994880.0
     },
     {
       "nome": "RO",
@@ -664,12 +664,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2896,
-      "entradas_mes": 165,
+      "andamento": 2895,
+      "entradas_mes": 164,
       "saidas_mes": 58,
       "entradas_mes_anterior": 178,
       "saidas_mes_anterior": 75,
-      "valor_causa": 760048888.78
+      "valor_causa": 760012888.78
     },
     {
       "nome": "Sentença",
@@ -691,12 +691,12 @@
     },
     {
       "nome": "Execução",
-      "andamento": 1184,
-      "entradas_mes": 6,
+      "andamento": 1185,
+      "entradas_mes": 7,
       "saidas_mes": 79,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 82,
-      "valor_causa": 162592682.32
+      "valor_causa": 162628682.32
     }
   ],
   "por_fase_outras": 409,
@@ -814,12 +814,12 @@
     {
       "fase": "Execução",
       "grupo": "Grupo E2",
-      "andamento": 357,
-      "entradas_mes": 1,
+      "andamento": 358,
+      "entradas_mes": 2,
       "saidas_mes": 20,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 26,
-      "valor_causa": 48855770.75
+      "valor_causa": 48891770.75
     },
     {
       "fase": "Execução",
@@ -993,16 +993,6 @@
     },
     {
       "fase": "Instrução",
-      "grupo": "Sem grupo",
-      "andamento": 3,
-      "entradas_mes": 3,
-      "saidas_mes": 3,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 380842.57
-    },
-    {
-      "fase": "Instrução",
       "grupo": "Grupo A1",
       "andamento": 2,
       "entradas_mes": 0,
@@ -1010,6 +1000,16 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
+    },
+    {
+      "fase": "Instrução",
+      "grupo": "Sem grupo",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 3,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 344842.57
     },
     {
       "fase": "Outras",
@@ -3203,12 +3203,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "HERINGER",
-      "andamento": 322,
-      "entradas_mes": 7,
+      "andamento": 323,
+      "entradas_mes": 8,
       "saidas_mes": 10,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 15,
-      "valor_causa": 41781813.47,
+      "valor_causa": 41817813.47,
       "alerta_entrada": false
     },
     {
@@ -3806,17 +3806,6 @@
       "alerta_entrada": false
     },
     {
-      "grupo": "Sem grupo",
-      "cliente": "HERINGER",
-      "andamento": 1,
-      "entradas_mes": 2,
-      "saidas_mes": 1,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 36000.0,
-      "alerta_entrada": false
-    },
-    {
       "grupo": "Sócios",
       "cliente": "PEIXOTO E CURY",
       "andamento": 2,
@@ -4373,12 +4362,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Richard Ruan Leo da Silva(RRU)",
-      "andamento": 323,
-      "entradas_mes": 16,
+      "andamento": 324,
+      "entradas_mes": 17,
       "saidas_mes": 9,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 15,
-      "valor_causa": 35529701.73
+      "valor_causa": 35565701.73
     },
     {
       "grupo": "Grupo E2",
@@ -4479,16 +4468,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 1000.0
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Richard Ruan Leo da Silva(RRU)",
-      "andamento": 1,
-      "entradas_mes": 2,
-      "saidas_mes": 1,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 36000.0
     },
     {
       "grupo": "Sócios",
@@ -6475,12 +6454,12 @@
     {
       "estado": "SE",
       "cliente": "HERINGER",
-      "andamento": 6,
-      "entradas_mes": 0,
+      "andamento": 7,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 758880.0
+      "valor_causa": 794880.0
     },
     {
       "estado": "SE",
@@ -6615,12 +6594,12 @@
     {
       "estado": "SP",
       "cliente": "HERINGER",
-      "andamento": 102,
-      "entradas_mes": 2,
+      "andamento": 101,
+      "entradas_mes": 1,
       "saidas_mes": 2,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 5,
-      "valor_causa": 10717935.5
+      "valor_causa": 10681935.5
     },
     {
       "estado": "SP",
@@ -8030,11 +8009,6 @@
       "numero_processo": "1000741-04.2026.5.02.0431",
       "cliente": "BRIDGESTONE",
       "profissional": "Guilherme Silva Morimoto(GSM)"
-    },
-    {
-      "numero_processo": "0001066-43.2016.5.20.0011",
-      "cliente": "HERINGER",
-      "profissional": "Richard Ruan Leo da Silva(RRU)"
     },
     {
       "numero_processo": "1000003-42.2021.5.02.0382",
