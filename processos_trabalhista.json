@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-08-25T15:31:22",
+  "atualizado_em": "2026-08-25T15:46:14",
   "kpis": {
-    "total_andamento": 8131,
-    "entradas_hoje": 9,
+    "total_andamento": 8132,
+    "entradas_hoje": 10,
     "saidas_hoje": 1,
     "entradas_ontem": 11,
     "saidas_ontem": 16,
-    "entradas_mes": 221,
+    "entradas_mes": 222,
     "saidas_mes": 216,
     "entradas_mes_anterior": 253,
     "saidas_mes_anterior": 262,
-    "valor_causa_total": 1739804575.53,
-    "saldo_mes": 5
+    "valor_causa_total": 1740071933.6,
+    "saldo_mes": 6
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-08-25",
-      "entradas": 9,
+      "entradas": 10,
       "saidas": 1
     }
   ],
@@ -408,12 +408,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 9,
-      "entradas_mes": 6,
+      "andamento": 10,
+      "entradas_mes": 7,
       "saidas_mes": 20,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
-      "valor_causa": 1153971.72
+      "valor_causa": 1421329.79
     },
     {
       "nome": "Sócios",
@@ -428,12 +428,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 6317,
-      "entradas_mes": 139,
+      "andamento": 6318,
+      "entradas_mes": 140,
       "saidas_mes": 172,
       "entradas_mes_anterior": 167,
       "saidas_mes_anterior": 194,
-      "valor_causa": 1385455458.17
+      "valor_causa": 1385722816.24
     },
     {
       "nome": "MG",
@@ -664,12 +664,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2902,
-      "entradas_mes": 174,
+      "andamento": 2903,
+      "entradas_mes": 175,
       "saidas_mes": 58,
       "entradas_mes_anterior": 178,
       "saidas_mes_anterior": 75,
-      "valor_causa": 761563047.89
+      "valor_causa": 761830405.96
     },
     {
       "nome": "Sentença",
@@ -994,12 +994,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 6,
-      "entradas_mes": 6,
+      "andamento": 7,
+      "entradas_mes": 7,
       "saidas_mes": 3,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 504842.57
+      "valor_causa": 772200.64
     },
     {
       "fase": "Instrução",
@@ -1304,12 +1304,12 @@
     },
     {
       "nome": "Rafael Yepez do Lago(RYL)",
-      "andamento": 431,
-      "entradas_mes": 14,
+      "andamento": 430,
+      "entradas_mes": 13,
       "saidas_mes": 14,
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 15,
-      "valor_causa": 61013181.13
+      "valor_causa": 61115713.11
     },
     {
       "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
@@ -1358,12 +1358,12 @@
     },
     {
       "nome": "Mariana Borges de Menezes Fávaro(MBF)",
-      "andamento": 311,
-      "entradas_mes": 8,
+      "andamento": 312,
+      "entradas_mes": 9,
       "saidas_mes": 12,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 4,
-      "valor_causa": 44101031.98
+      "valor_causa": 44255858.07
     },
     {
       "nome": "Bianca Bolanhi Camacho(BBO)",
@@ -1430,12 +1430,12 @@
     },
     {
       "nome": "Rafael Rocha Ferreira(RFE)",
-      "andamento": 269,
-      "entradas_mes": 5,
+      "andamento": 270,
+      "entradas_mes": 6,
       "saidas_mes": 2,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 9,
-      "valor_causa": 74598402.74
+      "valor_causa": 74608402.74
     },
     {
       "nome": "Juliana Perucci (JPE)",
@@ -1712,12 +1712,12 @@
     },
     {
       "nome": "BP BIOENERGIA",
-      "andamento": 757,
-      "entradas_mes": 16,
+      "andamento": 758,
+      "entradas_mes": 17,
       "saidas_mes": 28,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 31,
-      "valor_causa": 207511571.56,
+      "valor_causa": 207778929.63,
       "alerta_entrada": false
     },
     {
@@ -3763,6 +3763,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "BP BIOENERGIA",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 267358.07,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "PEIXOTO E CURY",
       "andamento": 1,
       "entradas_mes": 0,
@@ -3803,17 +3814,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 1000.0,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "BP BIOENERGIA",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 0.0,
       "alerta_entrada": false
     },
     {
@@ -4443,13 +4443,13 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Rafael Yepez do Lago(RYL)",
-      "andamento": 2,
-      "entradas_mes": 2,
+      "profissional": "Mariana Borges de Menezes Fávaro(MBF)",
+      "andamento": 1,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 10000.0
+      "valor_causa": 154826.09
     },
     {
       "grupo": "Sem grupo",
@@ -4510,6 +4510,26 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Rafael Yepez do Lago(RYL)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 112531.98
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Rafael Rocha Ferreira(RFE)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 10000.0
     },
     {
       "grupo": "Sem grupo",
@@ -6556,12 +6576,12 @@
     {
       "estado": "SP",
       "cliente": "BP BIOENERGIA",
-      "andamento": 427,
-      "entradas_mes": 7,
+      "andamento": 428,
+      "entradas_mes": 8,
       "saidas_mes": 14,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 21,
-      "valor_causa": 95546040.87
+      "valor_causa": 95813398.94
     },
     {
       "estado": "SP",
@@ -8068,6 +8088,11 @@
   ],
   "sem_grupo_processos": [
     {
+      "numero_processo": "0011020-24.2026.5.15.0037",
+      "cliente": "BP BIOENERGIA",
+      "profissional": "Mariana Borges de Menezes Fávaro(MBF)"
+    },
+    {
       "numero_processo": "0011325-68.2026.5.15.0017",
       "cliente": "BP BIOENERGIA",
       "profissional": "Rafael Yepez do Lago(RYL)"
@@ -8085,7 +8110,7 @@
     {
       "numero_processo": "1011304-89.2026.5.02.0000",
       "cliente": "BRIDGESTONE",
-      "profissional": "Rafael Yepez do Lago(RYL)"
+      "profissional": "Rafael Rocha Ferreira(RFE)"
     },
     {
       "numero_processo": "0012059-15.2026.5.15.0083",
