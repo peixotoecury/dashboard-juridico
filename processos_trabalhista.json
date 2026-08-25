@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-08-25T11:01:17",
+  "atualizado_em": "2026-08-25T11:17:13",
   "kpis": {
-    "total_andamento": 8125,
+    "total_andamento": 8124,
     "entradas_hoje": 1,
     "saidas_hoje": 0,
     "entradas_ontem": 11,
-    "saidas_ontem": 15,
+    "saidas_ontem": 16,
     "entradas_mes": 213,
-    "saidas_mes": 214,
+    "saidas_mes": 215,
     "entradas_mes_anterior": 253,
     "saidas_mes_anterior": 262,
     "valor_causa_total": 1737824406.41,
-    "saldo_mes": -1
+    "saldo_mes": -2
   },
   "serie_diaria": [
     {
@@ -307,7 +307,7 @@
     {
       "data": "2026-08-24",
       "entradas": 11,
-      "saidas": 15
+      "saidas": 16
     },
     {
       "data": "2026-08-25",
@@ -336,9 +336,9 @@
     },
     {
       "nome": "Grupo B1",
-      "andamento": 1456,
+      "andamento": 1455,
       "entradas_mes": 43,
-      "saidas_mes": 9,
+      "saidas_mes": 10,
       "entradas_mes_anterior": 45,
       "saidas_mes_anterior": 56,
       "valor_causa": 306596206.76
@@ -428,9 +428,9 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 6312,
+      "andamento": 6311,
       "entradas_mes": 133,
-      "saidas_mes": 171,
+      "saidas_mes": 172,
       "entradas_mes_anterior": 167,
       "saidas_mes_anterior": 194,
       "valor_causa": 1384341600.62
@@ -691,9 +691,9 @@
     },
     {
       "nome": "Execução",
-      "andamento": 1186,
+      "andamento": 1185,
       "entradas_mes": 7,
-      "saidas_mes": 79,
+      "saidas_mes": 80,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 82,
       "valor_causa": 162645531.22
@@ -844,9 +844,9 @@
     {
       "fase": "Execução",
       "grupo": "Grupo B1",
-      "andamento": 168,
+      "andamento": 167,
       "entradas_mes": 0,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 29,
       "valor_causa": 16930232.11
@@ -1420,15 +1420,6 @@
       "valor_causa": 49713056.71
     },
     {
-      "nome": "Beatriz Santiago de Souza(BSO)",
-      "andamento": 270,
-      "entradas_mes": 9,
-      "saidas_mes": 1,
-      "entradas_mes_anterior": 9,
-      "saidas_mes_anterior": 4,
-      "valor_causa": 39055824.96
-    },
-    {
       "nome": "Rafael Rocha Ferreira(RFE)",
       "andamento": 269,
       "entradas_mes": 5,
@@ -1436,6 +1427,15 @@
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 9,
       "valor_causa": 74598402.74
+    },
+    {
+      "nome": "Beatriz Santiago de Souza(BSO)",
+      "andamento": 269,
+      "entradas_mes": 9,
+      "saidas_mes": 2,
+      "entradas_mes_anterior": 9,
+      "saidas_mes_anterior": 4,
+      "valor_causa": 39055824.96
     },
     {
       "nome": "Juliana Perucci (JPE)",
@@ -1711,9 +1711,9 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1457,
+      "andamento": 1456,
       "entradas_mes": 43,
-      "saidas_mes": 9,
+      "saidas_mes": 10,
       "entradas_mes_anterior": 45,
       "saidas_mes_anterior": 56,
       "valor_causa": 306940049.33,
@@ -2343,9 +2343,9 @@
     {
       "grupo": "Grupo B1",
       "cliente": "BRIDGESTONE",
-      "andamento": 1456,
+      "andamento": 1455,
       "entradas_mes": 43,
-      "saidas_mes": 9,
+      "saidas_mes": 10,
       "entradas_mes_anterior": 45,
       "saidas_mes_anterior": 56,
       "valor_causa": 306596206.76,
@@ -3981,16 +3981,6 @@
     },
     {
       "grupo": "Grupo B1",
-      "profissional": "Beatriz Santiago de Souza(BSO)",
-      "andamento": 270,
-      "entradas_mes": 9,
-      "saidas_mes": 1,
-      "entradas_mes_anterior": 9,
-      "saidas_mes_anterior": 4,
-      "valor_causa": 39055824.96
-    },
-    {
-      "grupo": "Grupo B1",
       "profissional": "Rafael Rocha Ferreira(RFE)",
       "andamento": 269,
       "entradas_mes": 5,
@@ -3998,6 +3988,16 @@
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 9,
       "valor_causa": 74598402.74
+    },
+    {
+      "grupo": "Grupo B1",
+      "profissional": "Beatriz Santiago de Souza(BSO)",
+      "andamento": 269,
+      "entradas_mes": 9,
+      "saidas_mes": 2,
+      "entradas_mes_anterior": 9,
+      "saidas_mes_anterior": 4,
+      "valor_causa": 39055824.96
     },
     {
       "grupo": "Grupo B1",
@@ -6504,9 +6504,9 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1432,
+      "andamento": 1431,
       "entradas_mes": 38,
-      "saidas_mes": 9,
+      "saidas_mes": 10,
       "entradas_mes_anterior": 45,
       "saidas_mes_anterior": 55,
       "valor_causa": 297678521.77
