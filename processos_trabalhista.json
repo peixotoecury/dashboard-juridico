@@ -1,24 +1,19 @@
 {
-  "atualizado_em": "2026-08-24T19:39:56",
+  "atualizado_em": "2026-08-25T10:01:22",
   "kpis": {
-    "total_andamento": 8126,
-    "entradas_hoje": 11,
-    "saidas_hoje": 13,
-    "entradas_ontem": 0,
-    "saidas_ontem": 0,
+    "total_andamento": 8124,
+    "entradas_hoje": 0,
+    "saidas_hoje": 0,
+    "entradas_ontem": 11,
+    "saidas_ontem": 15,
     "entradas_mes": 212,
-    "saidas_mes": 212,
+    "saidas_mes": 214,
     "entradas_mes_anterior": 253,
     "saidas_mes_anterior": 262,
-    "valor_causa_total": 1737959617.05,
-    "saldo_mes": 0
+    "valor_causa_total": 1737778797.31,
+    "saldo_mes": -2
   },
   "serie_diaria": [
-    {
-      "data": "2026-06-26",
-      "entradas": 8,
-      "saidas": 23
-    },
     {
       "data": "2026-06-27",
       "entradas": 0,
@@ -312,18 +307,23 @@
     {
       "data": "2026-08-24",
       "entradas": 11,
-      "saidas": 13
+      "saidas": 15
+    },
+    {
+      "data": "2026-08-25",
+      "entradas": 0,
+      "saidas": 0
     }
   ],
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2064,
+      "andamento": 2063,
       "entradas_mes": 67,
-      "saidas_mes": 62,
+      "saidas_mes": 63,
       "entradas_mes_anterior": 94,
       "saidas_mes_anterior": 82,
-      "valor_causa": 439315603.82
+      "valor_causa": 439293603.82
     },
     {
       "nome": "Grupo E1",
@@ -372,12 +372,12 @@
     },
     {
       "nome": "Grupo B3",
-      "andamento": 547,
+      "andamento": 546,
       "entradas_mes": 17,
-      "saidas_mes": 12,
+      "saidas_mes": 13,
       "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 10,
-      "valor_causa": 102285744.58
+      "valor_causa": 102126924.84
     },
     {
       "nome": "Grupo A3",
@@ -428,12 +428,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 6314,
+      "andamento": 6313,
       "entradas_mes": 134,
-      "saidas_mes": 170,
+      "saidas_mes": 171,
       "entradas_mes_anterior": 167,
       "saidas_mes_anterior": 194,
-      "valor_causa": 1384536420.36
+      "valor_causa": 1384377600.62
     },
     {
       "nome": "MG",
@@ -464,12 +464,12 @@
     },
     {
       "nome": "RJ",
-      "andamento": 209,
+      "andamento": 208,
       "entradas_mes": 1,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 7,
-      "valor_causa": 16057266.65
+      "valor_causa": 16035266.65
     },
     {
       "nome": "MS",
@@ -664,39 +664,39 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2899,
+      "andamento": 2896,
       "entradas_mes": 165,
       "saidas_mes": 58,
       "entradas_mes_anterior": 178,
       "saidas_mes_anterior": 75,
-      "valor_causa": 760368687.58
+      "valor_causa": 760048888.78
     },
     {
       "nome": "Sentença",
-      "andamento": 31,
+      "andamento": 30,
       "entradas_mes": 0,
-      "saidas_mes": 4,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 2,
-      "valor_causa": 33652786.01
+      "valor_causa": 33493966.27
     },
     {
       "nome": "Recurso",
-      "andamento": 3203,
+      "andamento": 3204,
       "entradas_mes": 5,
       "saidas_mes": 58,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 51,
-      "valor_causa": 681140931.29
+      "valor_causa": 681336965.4
     },
     {
       "nome": "Execução",
-      "andamento": 1183,
+      "andamento": 1184,
       "entradas_mes": 6,
-      "saidas_mes": 78,
+      "saidas_mes": 79,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 82,
-      "valor_causa": 162490917.63
+      "valor_causa": 162592682.32
     }
   ],
   "por_fase_outras": 409,
@@ -814,12 +814,12 @@
     {
       "fase": "Execução",
       "grupo": "Grupo E2",
-      "andamento": 356,
+      "andamento": 357,
       "entradas_mes": 1,
-      "saidas_mes": 19,
+      "saidas_mes": 20,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 26,
-      "valor_causa": 48754006.06
+      "valor_causa": 48855770.75
     },
     {
       "fase": "Execução",
@@ -904,12 +904,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 834,
+      "andamento": 831,
       "entradas_mes": 45,
       "saidas_mes": 22,
       "entradas_mes_anterior": 39,
       "saidas_mes_anterior": 28,
-      "valor_causa": 155905626.18
+      "valor_causa": 155585827.38
     },
     {
       "fase": "Instrução",
@@ -1144,12 +1144,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo E2",
-      "andamento": 571,
+      "andamento": 572,
       "entradas_mes": 0,
       "saidas_mes": 9,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 18,
-      "valor_causa": 184297787.03
+      "valor_causa": 184493821.14
     },
     {
       "fase": "Recurso",
@@ -1243,16 +1243,6 @@
     },
     {
       "fase": "Sentença",
-      "grupo": "Grupo B3",
-      "andamento": 4,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 804924.31
-    },
-    {
-      "fase": "Sentença",
       "grupo": "Grupo D1",
       "andamento": 3,
       "entradas_mes": 0,
@@ -1260,6 +1250,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 5253300.0
+    },
+    {
+      "fase": "Sentença",
+      "grupo": "Grupo B3",
+      "andamento": 3,
+      "entradas_mes": 0,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 646104.57
     },
     {
       "fase": "Sentença",
@@ -1304,7 +1304,7 @@
     },
     {
       "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 430,
+      "andamento": 429,
       "entradas_mes": 10,
       "saidas_mes": 10,
       "entradas_mes_anterior": 15,
@@ -1315,10 +1315,10 @@
       "nome": "Rafael Yepez do Lago(RYL)",
       "andamento": 428,
       "entradas_mes": 12,
-      "saidas_mes": 12,
+      "saidas_mes": 13,
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 15,
-      "valor_causa": 61041586.41
+      "valor_causa": 61019586.41
     },
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
@@ -1340,12 +1340,12 @@
     },
     {
       "nome": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 327,
+      "andamento": 326,
       "entradas_mes": 12,
-      "saidas_mes": 8,
+      "saidas_mes": 9,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 9,
-      "valor_causa": 58848070.19
+      "valor_causa": 58689250.45
     },
     {
       "nome": "Richard Ruan Leo da Silva(RRU)",
@@ -1403,7 +1403,7 @@
     },
     {
       "nome": "Vanessa de Cassia Castrequini Rosa(VCR)",
-      "andamento": 279,
+      "andamento": 278,
       "entradas_mes": 7,
       "saidas_mes": 1,
       "entradas_mes_anterior": 4,
@@ -1457,7 +1457,7 @@
     },
     {
       "nome": "Anna Carolina Balbino Gatti Baani(ANB)",
-      "andamento": 250,
+      "andamento": 251,
       "entradas_mes": 6,
       "saidas_mes": 0,
       "entradas_mes_anterior": 8,
@@ -1802,12 +1802,12 @@
     },
     {
       "nome": "CBC CARTUCHOS BRASIL",
-      "andamento": 224,
+      "andamento": 223,
       "entradas_mes": 14,
-      "saidas_mes": 6,
+      "saidas_mes": 7,
       "entradas_mes_anterior": 15,
       "saidas_mes_anterior": 7,
-      "valor_causa": 28436292.15,
+      "valor_causa": 28277472.41,
       "alerta_entrada": false
     },
     {
@@ -2351,7 +2351,7 @@
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 15,
       "valor_causa": 127159892.59,
-      "alerta_entrada": true
+      "alerta_entrada": false
     },
     {
       "grupo": "Grupo B2",
@@ -2389,12 +2389,12 @@
     {
       "grupo": "Grupo B3",
       "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 221,
+      "andamento": 220,
       "entradas_mes": 14,
-      "saidas_mes": 6,
+      "saidas_mes": 7,
       "entradas_mes_anterior": 15,
       "saidas_mes_anterior": 7,
-      "valor_causa": 28436292.15,
+      "valor_causa": 28277472.41,
       "alerta_entrada": false
     },
     {
@@ -3379,12 +3379,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "ITW PPF",
-      "andamento": 8,
+      "andamento": 7,
       "entradas_mes": 1,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 251658.31,
+      "valor_causa": 229658.31,
       "alerta_entrada": false
     },
     {
@@ -4043,7 +4043,7 @@
     {
       "grupo": "Grupo B2",
       "profissional": "Vanessa de Cassia Castrequini Rosa(VCR)",
-      "andamento": 279,
+      "andamento": 278,
       "entradas_mes": 7,
       "saidas_mes": 1,
       "entradas_mes_anterior": 4,
@@ -4063,7 +4063,7 @@
     {
       "grupo": "Grupo B2",
       "profissional": "Anna Carolina Balbino Gatti Baani(ANB)",
-      "andamento": 167,
+      "andamento": 168,
       "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
@@ -4093,12 +4093,12 @@
     {
       "grupo": "Grupo B3",
       "profissional": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 327,
+      "andamento": 326,
       "entradas_mes": 12,
-      "saidas_mes": 8,
+      "saidas_mes": 9,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 9,
-      "valor_causa": 58848070.19
+      "valor_causa": 58689250.45
     },
     {
       "grupo": "Grupo B3",
@@ -4345,15 +4345,15 @@
       "profissional": "Rafael Yepez do Lago(RYL)",
       "andamento": 428,
       "entradas_mes": 12,
-      "saidas_mes": 12,
+      "saidas_mes": 13,
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 15,
-      "valor_causa": 61041586.41
+      "valor_causa": 61019586.41
     },
     {
       "grupo": "Grupo E2",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 425,
+      "andamento": 424,
       "entradas_mes": 10,
       "saidas_mes": 10,
       "entradas_mes_anterior": 15,
@@ -5974,16 +5974,6 @@
     },
     {
       "estado": "RJ",
-      "cliente": "ITW PPF",
-      "andamento": 2,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 52000.0
-    },
-    {
-      "estado": "RJ",
       "cliente": "McCANN-ERICKSON",
       "andamento": 2,
       "entradas_mes": 0,
@@ -6091,6 +6081,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
+    },
+    {
+      "estado": "RJ",
+      "cliente": "ITW PPF",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 30000.0
     },
     {
       "estado": "RJ",
@@ -6585,12 +6585,12 @@
     {
       "estado": "SP",
       "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 213,
+      "andamento": 212,
       "entradas_mes": 14,
-      "saidas_mes": 6,
+      "saidas_mes": 7,
       "entradas_mes_anterior": 15,
       "saidas_mes_anterior": 7,
-      "valor_causa": 27195798.21
+      "valor_causa": 27036978.47
     },
     {
       "estado": "SP",
