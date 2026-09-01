@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-01T16:30:51",
+  "atualizado_em": "2026-09-01T16:45:24",
   "kpis": {
-    "total_andamento": 8148,
-    "entradas_hoje": 0,
+    "total_andamento": 8151,
+    "entradas_hoje": 3,
     "saidas_hoje": 8,
     "entradas_ontem": 19,
     "saidas_ontem": 9,
-    "entradas_mes": 0,
+    "entradas_mes": 3,
     "saidas_mes": 8,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 253,
-    "valor_causa_total": 1745919132.74,
-    "saldo_mes": -8
+    "valor_causa_total": 1746507538.28,
+    "saldo_mes": -5
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-09-01",
-      "entradas": 0,
+      "entradas": 3,
       "saidas": 8
     }
   ],
@@ -408,12 +408,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 6,
-      "entradas_mes": 0,
+      "andamento": 9,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 20,
-      "valor_causa": 719865.4
+      "valor_causa": 1308270.94
     },
     {
       "nome": "Sócios",
@@ -428,12 +428,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 6328,
-      "entradas_mes": 0,
+      "andamento": 6331,
+      "entradas_mes": 3,
       "saidas_mes": 8,
       "entradas_mes_anterior": 185,
       "saidas_mes_anterior": 203,
-      "valor_causa": 1387301303.12
+      "valor_causa": 1387889708.66
     },
     {
       "nome": "MG",
@@ -655,12 +655,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2910,
-      "entradas_mes": 0,
+      "andamento": 2913,
+      "entradas_mes": 3,
       "saidas_mes": 4,
       "entradas_mes_anterior": 216,
       "saidas_mes_anterior": 70,
-      "valor_causa": 766145759.57
+      "valor_causa": 766734165.11
     },
     {
       "nome": "Sentença",
@@ -984,6 +984,16 @@
     },
     {
       "fase": "Instrução",
+      "grupo": "Sem grupo",
+      "andamento": 5,
+      "entradas_mes": 3,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 3,
+      "saidas_mes_anterior": 3,
+      "valor_causa": 659141.79
+    },
+    {
+      "fase": "Instrução",
       "grupo": "Grupo A1",
       "andamento": 2,
       "entradas_mes": 0,
@@ -991,16 +1001,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
-    },
-    {
-      "fase": "Instrução",
-      "grupo": "Sem grupo",
-      "andamento": 2,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 3,
-      "saidas_mes_anterior": 3,
-      "valor_causa": 70736.25
     },
     {
       "fase": "Outras",
@@ -1295,12 +1295,12 @@
     },
     {
       "nome": "Rafael Yepez do Lago(RYL)",
-      "andamento": 437,
-      "entradas_mes": 0,
+      "andamento": 438,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 17,
-      "valor_causa": 61448280.71
+      "valor_causa": 61461769.67
     },
     {
       "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
@@ -1340,12 +1340,12 @@
     },
     {
       "nome": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 327,
-      "entradas_mes": 0,
+      "andamento": 328,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 13,
-      "valor_causa": 60594457.48
+      "valor_causa": 61168374.06
     },
     {
       "nome": "Mariana Borges de Menezes Fávaro(MBF)",
@@ -1403,12 +1403,12 @@
     },
     {
       "nome": "Tamara Silva Marcílio(TAM)",
-      "andamento": 278,
-      "entradas_mes": 0,
+      "andamento": 279,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 6,
-      "valor_causa": 49703799.74
+      "valor_causa": 49704799.74
     },
     {
       "nome": "Vanessa de Cassia Castrequini Rosa(VCR)",
@@ -1666,22 +1666,22 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1464,
-      "entradas_mes": 0,
+      "andamento": 1465,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 15,
-      "valor_causa": 307695403.01,
+      "valor_causa": 307696403.01,
       "alerta_entrada": false
     },
     {
       "nome": "BP BIOENERGIA",
-      "andamento": 763,
-      "entradas_mes": 0,
+      "andamento": 764,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 31,
-      "valor_causa": 208147451.75,
+      "valor_causa": 208160940.71,
       "alerta_entrada": false
     },
     {
@@ -1766,12 +1766,12 @@
     },
     {
       "nome": "CBC CARTUCHOS BRASIL",
-      "andamento": 223,
-      "entradas_mes": 0,
+      "andamento": 224,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 11,
-      "valor_causa": 28710507.64,
+      "valor_causa": 29284424.22,
       "alerta_entrada": false
     },
     {
@@ -3749,6 +3749,39 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "CBC CARTUCHOS BRASIL",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 573916.58,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "BP BIOENERGIA",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 13488.96,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "BRIDGESTONE",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1000.0,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "MULTICEL",
       "andamento": 1,
       "entradas_mes": 0,
@@ -4432,6 +4465,36 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
       "valor_causa": 69736.25
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Letícia Meneghini Fontes (LMI)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 573916.58
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Rafael Yepez do Lago(RYL)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 13488.96
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Tamara Silva Marcílio(TAM)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1000.0
     },
     {
       "grupo": "Sem grupo",
@@ -6468,12 +6531,12 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1439,
-      "entradas_mes": 0,
+      "andamento": 1440,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 51,
       "saidas_mes_anterior": 15,
-      "valor_causa": 298433875.45
+      "valor_causa": 298434875.45
     },
     {
       "estado": "SP",
@@ -6498,12 +6561,12 @@
     {
       "estado": "SP",
       "cliente": "BP BIOENERGIA",
-      "andamento": 430,
-      "entradas_mes": 0,
+      "andamento": 431,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 15,
-      "valor_causa": 95897694.08
+      "valor_causa": 95911183.04
     },
     {
       "estado": "SP",
@@ -6558,12 +6621,12 @@
     {
       "estado": "SP",
       "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 213,
-      "entradas_mes": 0,
+      "andamento": 214,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 10,
-      "valor_causa": 27485013.7
+      "valor_causa": 28058930.28
     },
     {
       "estado": "SP",
@@ -7948,6 +8011,21 @@
   ],
   "clientes_com_alerta": [],
   "sem_grupo_processos": [
+    {
+      "numero_processo": "0012548-72.2026.5.15.0044",
+      "cliente": "BP BIOENERGIA",
+      "profissional": "Rafael Yepez do Lago(RYL)"
+    },
+    {
+      "numero_processo": "1010386-85.2026.5.02.0000",
+      "cliente": "BRIDGESTONE",
+      "profissional": "Tamara Silva Marcílio(TAM)"
+    },
+    {
+      "numero_processo": "1001298-51.2026.5.02.0411",
+      "cliente": "CBC CARTUCHOS BRASIL",
+      "profissional": "Letícia Meneghini Fontes (LMI)"
+    },
     {
       "numero_processo": "1000003-42.2021.5.02.0382",
       "cliente": "LOJAS AMERICANAS",
