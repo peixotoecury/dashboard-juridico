@@ -3520,16 +3520,33 @@ body.role-manager .upload-bar {
       <div class="fg"><label>Status</label>
         <select class="fsel" id="tp-status" onchange="renderTransfPastas()">
           <option value="">Todos os status</option>
+          <option>Vencido</option>
+          <option>Fatal</option>
+          <option>D-1</option>
+          <option>D-2</option>
+          <option>Futuro</option>
         </select>
       </div>
       <div class="fg"><label>Situação da Pasta</label>
         <select class="fsel" id="tp-situacao" onchange="renderTransfPastas()">
           <option value="">Todas</option>
+          <option>Andamento</option>
+          <option>Encerrado</option>
         </select>
       </div>
       <div class="fg"><label>Grupo</label>
         <select class="fsel" id="tp-grupo" onchange="renderTransfPastas()">
           <option value="">Todos os grupos</option>
+          <option>Grupo A1</option>
+          <option>Grupo A2</option>
+          <option>Grupo A3</option>
+          <option>Grupo B1</option>
+          <option>Grupo B2</option>
+          <option>Grupo B3</option>
+          <option>Grupo C1</option>
+          <option>Grupo D1</option>
+          <option>Grupo E1</option>
+          <option>Grupo E2</option>
         </select>
       </div>
       <div class="srch-wrap">
@@ -3539,7 +3556,7 @@ body.role-manager .upload-bar {
       <button class="btn-limpar" onclick="V('tp-s').value='';V('tp-status').value='';V('tp-situacao').value='';V('tp-grupo').value='';renderTransfPastas()">✕ Limpar</button>
     </div>
     <div class="det-scroll" style="max-height:65vh;"><table>
-      <thead><tr><th>Data</th><th>Status</th><th>Situação da Pasta</th><th>Grupo</th><th>Processo</th><th>Cód. Processo</th><th>Cód. Agenda</th><th>Cód. Cliente</th><th>Resp. Solicitação</th><th>Resp. Atual</th><th>Transferir Para</th></tr></thead>
+      <thead><tr><th>Data</th><th>Status</th><th>Situação da Pasta</th><th>Grupo</th><th>Processo</th><th>Cód. Processo</th><th>Cód. Agenda</th><th>Cód. Cliente</th><th>Resp. Solicitação</th><th>Resp. Atual</th><th>Transferir Para</th><th>Solicitado por</th><th>Solicitado em</th></tr></thead>
       <tbody id="body-tp"></tbody>
     </table></div>
     <div class="pg-bar" id="pg-tp"></div>
@@ -7632,6 +7649,9 @@ window.enviarTransferencia = function(proc, cli, respAtual, tipo) {
 var S_TP = [];
 var TP_EMAIL_SUPORTE = 'suporte@legalmanager.com.br';
 var TP_EMAIL_CC = 'prazos.trabalhista@peixotoecury.com.br';
+var TP_STATUS_OPCOES = ['Vencido','Fatal','D-1','D-2','Futuro'];
+var TP_SITUACAO_OPCOES = ['Andamento','Encerrado'];
+var TP_GRUPO_OPCOES = ['Grupo A1','Grupo A2','Grupo A3','Grupo B1','Grupo B2','Grupo B3','Grupo C1','Grupo D1','Grupo E1','Grupo E2'];
 
 function _tpNorm(s){ return normTxt(s).replace(/ /g,''); }
 
@@ -7659,7 +7679,7 @@ function _tpParseData(v){
 function _tpMapRow(row){
   return {
     data:                    _tpParseData(_tpAcharCampo(row, ['data'])),
-    status:                  _tpAcharCampo(row, ['status']) || 'Pendente',
+    status:                  _tpAcharCampo(row, ['status']),
     situacao_pasta:          _tpAcharCampo(row, ['situacao_pasta','situacao da pasta']),
     grupo_processo:          _tpAcharCampo(row, ['grupo_processo','grupo']),
     numero_processo:         _tpAcharCampo(row, ['numero_processo','numero do processo','processo']),
@@ -7761,11 +7781,14 @@ window.uploadLoteTransfPastas = function(input){
       var wsName = wb.SheetNames[0];
       var rows = XLSX.utils.sheet_to_json(wb.Sheets[wsName], {defval:''});
       if(!rows.length){ alert('Planilha vazia.'); return; }
-      var mapeadas = rows.map(_tpMapRow).filter(function(r){ return r.numero_processo || r.transferir_para; });
-      if(!mapeadas.length){ alert('Não encontrei nenhuma linha com processo ou "transferir para" preenchidos.'); return; }
+      var CAMPOS_OBRIGATORIOS_LOTE = ['status','situacao_pasta','grupo_processo','numero_processo','codigo_processo','codigo_agenda','codigo_cliente','responsavel_solicitacao','responsavel_atual','transferir_para'];
+      var todas = rows.map(_tpMapRow);
+      var mapeadas = todas.filter(function(r){ return CAMPOS_OBRIGATORIOS_LOTE.every(function(c){ return !!r[c]; }); });
+      var incompletas = todas.length - mapeadas.length;
+      if(!mapeadas.length){ alert('Nenhuma linha tem todas as colunas obrigatórias preenchidas (data, status, situação da pasta, grupo, processo, código do processo, código da agenda, código do cliente, responsável pela solicitação, responsável atual e transferir para).'); return; }
       await _tpInsertLote(mapeadas);
       _tpEnviarEmailLote(mapeadas);
-      mostrarToast('✅ ' + mapeadas.length + ' solicitação(ões) registrada(s).', 3500);
+      mostrarToast('✅ ' + mapeadas.length + ' solicitação(ões) registrada(s).' + (incompletas ? ' ⚠️ '+incompletas+' linha(s) ignorada(s) por estar(em) incompleta(s).' : ''), 4500);
       await carregarTransfPastasSupabase();
     }catch(err){
       console.error('Upload lote Transferência de Pastas:', err);
@@ -7793,6 +7816,15 @@ window.abrirModalTransfPasta = function(){
       +'</div>';
   }
 
+  function campoSelect(label, id, opcoes, obrigatorio){
+    var req = obrigatorio ? ' <span style="color:red;">*</span>' : '';
+    var opts = '<option value="">Selecione...</option>' + opcoes.map(function(o){ return '<option value="'+o+'">'+o+'</option>'; }).join('');
+    return '<div style="margin-bottom:14px;">'
+      +'<label style="font-size:11px;font-weight:600;color:#333;display:block;margin-bottom:6px;">'+label+req+'</label>'
+      +'<select id="'+id+'" style="width:100%;border:1px solid #bbb;border-radius:6px;padding:8px;font-size:11px;box-sizing:border-box;">'+opts+'</select>'
+      +'</div>';
+  }
+
   var modal = document.createElement('div');
   modal.id = 'modal-transf-pasta';
   modal.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:9999;display:flex;align-items:center;justify-content:center;padding:20px;';
@@ -7802,14 +7834,14 @@ window.abrirModalTransfPasta = function(){
     +'<button onclick="document.getElementById(\'modal-transf-pasta\').remove()" style="background:rgba(255,255,255,.2);border:none;color:#fff;border-radius:6px;padding:4px 10px;cursor:pointer;font-size:16px;">✕</button>'
     +'</div>'
     +'<div style="padding:20px 24px;overflow-y:auto;flex:1;display:grid;grid-template-columns:1fr 1fr;gap:0 14px;">'
-    + campo('Data', 'tpm-data', 'date', hojeISO, false)
-    + campo('Status', 'tpm-status', 'text', 'Pendente', false)
-    + campo('Situação da Pasta', 'tpm-situacao', 'text', '', false)
-    + campo('Grupo', 'tpm-grupo', 'text', '', false)
+    + campo('Data', 'tpm-data', 'date', hojeISO, true)
+    + campoSelect('Status', 'tpm-status', TP_STATUS_OPCOES, true)
+    + campoSelect('Situação da Pasta', 'tpm-situacao', TP_SITUACAO_OPCOES, true)
+    + campoSelect('Grupo', 'tpm-grupo', TP_GRUPO_OPCOES, true)
     + campo('Número do Processo', 'tpm-processo', 'text', '', true)
-    + campo('Código do Processo', 'tpm-cod-processo', 'text', '', false)
-    + campo('Código da Agenda', 'tpm-cod-agenda', 'text', '', false)
-    + campo('Código do Cliente', 'tpm-cod-cliente', 'text', '', false)
+    + campo('Código do Processo', 'tpm-cod-processo', 'text', '', true)
+    + campo('Código da Agenda', 'tpm-cod-agenda', 'text', '', true)
+    + campo('Código do Cliente', 'tpm-cod-cliente', 'text', '', true)
     + campo('Responsável pela Solicitação', 'tpm-resp-solicitacao', 'text', sess.nome||'', true)
     + campo('Responsável Atual pela Pasta', 'tpm-resp-atual', 'text', '', true)
     + campo('Transferir Para', 'tpm-transferir-para', 'text', '', true)
@@ -7826,8 +7858,8 @@ window.abrirModalTransfPasta = function(){
 window.salvarTransfPasta = function(){
   function val(id){ var el=document.getElementById(id); return el ? el.value.trim() : ''; }
   var row = {
-    data:                    val('tpm-data') || new Date().toISOString().slice(0,10),
-    status:                  val('tpm-status') || 'Pendente',
+    data:                    val('tpm-data'),
+    status:                  val('tpm-status'),
     situacao_pasta:          val('tpm-situacao'),
     grupo_processo:          val('tpm-grupo'),
     numero_processo:         val('tpm-processo'),
@@ -7838,9 +7870,15 @@ window.salvarTransfPasta = function(){
     responsavel_atual:       val('tpm-resp-atual'),
     transferir_para:         val('tpm-transferir-para')
   };
-  if(!row.numero_processo){ alert('Informe o número do processo.'); return; }
-  if(!row.responsavel_atual){ alert('Informe o responsável atual pela pasta.'); return; }
-  if(!row.transferir_para){ alert('Informe pra quem vai transferir.'); return; }
+  var camposObrigatorios = [
+    ['data','Data'], ['status','Status'], ['situacao_pasta','Situação da Pasta'], ['grupo_processo','Grupo'],
+    ['numero_processo','Número do Processo'], ['codigo_processo','Código do Processo'], ['codigo_agenda','Código da Agenda'],
+    ['codigo_cliente','Código do Cliente'], ['responsavel_solicitacao','Responsável pela Solicitação'],
+    ['responsavel_atual','Responsável Atual pela Pasta'], ['transferir_para','Transferir Para']
+  ];
+  for(var i=0;i<camposObrigatorios.length;i++){
+    if(!row[camposObrigatorios[i][0]]){ alert('Preencha o campo "'+camposObrigatorios[i][1]+'".'); return; }
+  }
 
   _initSupabase();
   if(!supabaseClient){ alert('Não foi possível conectar ao banco. Tente novamente.'); return; }
@@ -7898,7 +7936,7 @@ function renderTransfPastas(){
   var bodyEl = V('body-tp');
   if(bodyEl) bodyEl.innerHTML = res.slice.length ? res.slice.map(function(r){ return '<tr>'
     +'<td class="td-mono">'+fmtDate(r.data)+'</td>'
-    +'<td>'+e(r.status)+'</td>'
+    +'<td>'+sBadge(r.status)+'</td>'
     +'<td class="td-clip-sm">'+e(r.situacao_pasta)+'</td>'
     +'<td class="td-clip-sm">'+e(r.grupo_processo)+'</td>'
     +'<td class="td-clip-sm proc-normal" title="'+e(r.numero_processo)+'">'+e(r.numero_processo)+'</td>'
@@ -7908,8 +7946,17 @@ function renderTransfPastas(){
     +'<td class="td-clip-sm">'+e(r.responsavel_solicitacao)+'</td>'
     +'<td class="td-clip-sm">'+e(r.responsavel_atual)+'</td>'
     +'<td class="td-clip-sm">'+e(r.transferir_para)+'</td>'
-    +'</tr>'; }).join('') : emptyR(11);
+    +'<td class="td-clip-sm" title="'+e(r.usuario_email)+'">'+e(r.usuario_nome||r.responsavel_solicitacao)+'</td>'
+    +'<td class="td-mono">'+_tpFmtDataHora(r.criado_em)+'</td>'
+    +'</tr>'; }).join('') : emptyR(13);
   renderPg('pg-tp',res.pg,res.pages,res.total,'tp',renderTransfPastas);
+}
+
+function _tpFmtDataHora(v){
+  if(!v) return '—';
+  var d = new Date(v);
+  if(isNaN(d)) return '—';
+  return d.toLocaleDateString('pt-BR') + ' ' + d.toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});
 }
 
 function exportarTransfPastasExcel(){
@@ -7925,7 +7972,10 @@ function exportarTransfPastasExcel(){
     'Código do Cliente': r.codigo_cliente,
     'Responsável pela Solicitação de Transferência de Pasta': r.responsavel_solicitacao,
     'Responsável Atual pela Pasta': r.responsavel_atual,
-    'Transferir Para': r.transferir_para
+    'Transferir Para': r.transferir_para,
+    'Solicitado por': r.usuario_nome,
+    'E-mail de quem solicitou': r.usuario_email,
+    'Solicitado em': _tpFmtDataHora(r.criado_em)
   };});
   var ws = XLSX.utils.json_to_sheet(linhas);
   var wb = XLSX.utils.book_new();
