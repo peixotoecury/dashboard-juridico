@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-09-01T15:45:28",
+  "atualizado_em": "2026-09-01T16:03:29",
   "kpis": {
     "total_andamento": 8148,
     "entradas_hoje": 0,
@@ -318,12 +318,12 @@
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2076,
+      "andamento": 2077,
       "entradas_mes": 0,
       "saidas_mes": 2,
-      "entradas_mes_anterior": 92,
+      "entradas_mes_anterior": 93,
       "saidas_mes_anterior": 74,
-      "valor_causa": 445601110.32
+      "valor_causa": 445621610.32
     },
     {
       "nome": "Grupo E1",
@@ -336,12 +336,12 @@
     },
     {
       "nome": "Grupo B1",
-      "andamento": 1462,
+      "andamento": 1463,
       "entradas_mes": 0,
       "saidas_mes": 0,
-      "entradas_mes_anterior": 54,
+      "entradas_mes_anterior": 55,
       "saidas_mes_anterior": 15,
-      "valor_causa": 306954855.01
+      "valor_causa": 307689933.71
     },
     {
       "nome": "Grupo B2",
@@ -408,12 +408,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 9,
+      "andamento": 7,
       "entradas_mes": 0,
       "saidas_mes": 0,
-      "entradas_mes_anterior": 6,
+      "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 20,
-      "valor_causa": 1480913.4
+      "valor_causa": 725334.7
     },
     {
       "nome": "Sócios",
@@ -895,12 +895,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 827,
+      "andamento": 828,
       "entradas_mes": 0,
       "saidas_mes": 1,
-      "entradas_mes_anterior": 61,
+      "entradas_mes_anterior": 62,
       "saidas_mes_anterior": 27,
-      "valor_causa": 159645042.82
+      "valor_causa": 159665542.82
     },
     {
       "fase": "Instrução",
@@ -915,12 +915,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B1",
-      "andamento": 447,
+      "andamento": 448,
       "entradas_mes": 0,
       "saidas_mes": 0,
-      "entradas_mes_anterior": 50,
+      "entradas_mes_anterior": 51,
       "saidas_mes_anterior": 6,
-      "valor_causa": 137994904.93
+      "valor_causa": 138729983.63
     },
     {
       "fase": "Instrução",
@@ -985,12 +985,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 5,
+      "andamento": 3,
       "entradas_mes": 0,
       "saidas_mes": 0,
-      "entradas_mes_anterior": 6,
+      "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 3,
-      "valor_causa": 831784.25
+      "valor_causa": 76205.55
     },
     {
       "fase": "Instrução",
@@ -2298,12 +2298,12 @@
     {
       "grupo": "Grupo B1",
       "cliente": "BRIDGESTONE",
-      "andamento": 1462,
+      "andamento": 1463,
       "entradas_mes": 0,
       "saidas_mes": 0,
-      "entradas_mes_anterior": 54,
+      "entradas_mes_anterior": 55,
       "saidas_mes_anterior": 15,
-      "valor_causa": 306954855.01,
+      "valor_causa": 307689933.71,
       "alerta_entrada": false
     },
     {
@@ -3167,12 +3167,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "HERINGER",
-      "andamento": 323,
+      "andamento": 324,
       "entradas_mes": 0,
       "saidas_mes": 0,
-      "entradas_mes_anterior": 9,
+      "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 11,
-      "valor_causa": 41818813.47,
+      "valor_causa": 41839313.47,
       "alerta_entrada": false
     },
     {
@@ -3716,17 +3716,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "BRIDGESTONE",
-      "andamento": 2,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 2,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 740548.0,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "andamento": 2,
       "entradas_mes": 0,
@@ -3734,17 +3723,6 @@
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
       "valor_causa": 70736.25,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "HERINGER",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 2,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 20500.0,
       "alerta_entrada": false
     },
     {
@@ -3767,6 +3745,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 2,
       "valor_causa": 0.0,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "BRIDGESTONE",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 5469.3,
       "alerta_entrada": false
     },
     {
@@ -3938,12 +3927,12 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Beatriz Santiago de Souza(BSO)",
-      "andamento": 283,
+      "andamento": 284,
       "entradas_mes": 0,
       "saidas_mes": 0,
-      "entradas_mes_anterior": 12,
+      "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 2,
-      "valor_causa": 41339540.67
+      "valor_causa": 42074619.37
     },
     {
       "grupo": "Grupo B1",
@@ -4358,12 +4347,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Richard Ruan Leo da Silva(RRU)",
-      "andamento": 330,
+      "andamento": 331,
       "entradas_mes": 0,
       "saidas_mes": 0,
-      "entradas_mes_anterior": 22,
+      "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 11,
-      "valor_causa": 36665718.23
+      "valor_causa": 36686218.23
     },
     {
       "grupo": "Grupo E2",
@@ -4427,16 +4416,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Richard Ruan Leo da Silva(RRU)",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 2,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 20500.0
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
       "andamento": 1,
       "entradas_mes": 0,
@@ -4474,16 +4453,6 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
       "valor_causa": 69736.25
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Beatriz Santiago de Souza(BSO)",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 735078.7
     },
     {
       "grupo": "Sem grupo",
@@ -8004,16 +7973,6 @@
       "numero_processo": "1001764-70.2026.5.02.0435",
       "cliente": "BRIDGESTONE",
       "profissional": "Nicolau Rafael Guimarães Coelho(NRG)"
-    },
-    {
-      "numero_processo": "1001655-68.2026.5.02.0431",
-      "cliente": "BRIDGESTONE",
-      "profissional": "Beatriz Santiago de Souza(BSO)"
-    },
-    {
-      "numero_processo": "0011369-48.2026.5.15.0030",
-      "cliente": "HERINGER",
-      "profissional": "Richard Ruan Leo da Silva(RRU)"
     },
     {
       "numero_processo": "1000003-42.2021.5.02.0382",
