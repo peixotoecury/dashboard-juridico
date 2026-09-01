@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-01T14:00:59",
+  "atualizado_em": "2026-09-01T14:15:36",
   "kpis": {
-    "total_andamento": 8144,
+    "total_andamento": 8142,
     "entradas_hoje": 0,
-    "saidas_hoje": 5,
+    "saidas_hoje": 7,
     "entradas_ontem": 12,
     "saidas_ontem": 9,
     "entradas_mes": 0,
-    "saidas_mes": 5,
+    "saidas_mes": 7,
     "entradas_mes_anterior": 271,
     "saidas_mes_anterior": 253,
-    "valor_causa_total": 1745691938.47,
-    "saldo_mes": -5
+    "valor_causa_total": 1745179069.51,
+    "saldo_mes": -7
   },
   "serie_diaria": [
     {
@@ -312,7 +312,7 @@
     {
       "data": "2026-09-01",
       "entradas": 0,
-      "saidas": 5
+      "saidas": 7
     }
   ],
   "por_grupo": [
@@ -327,12 +327,12 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1776,
+      "andamento": 1774,
       "entradas_mes": 0,
-      "saidas_mes": 3,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 46,
       "saidas_mes_anterior": 94,
-      "valor_causa": 290644954.45
+      "valor_causa": 290132085.49
     },
     {
       "nome": "Grupo B1",
@@ -428,12 +428,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 6325,
+      "andamento": 6323,
       "entradas_mes": 0,
-      "saidas_mes": 5,
+      "saidas_mes": 7,
       "entradas_mes_anterior": 179,
       "saidas_mes_anterior": 203,
-      "valor_causa": 1387102208.03
+      "valor_causa": 1386589339.07
     },
     {
       "nome": "MG",
@@ -655,12 +655,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2905,
+      "andamento": 2904,
       "entradas_mes": 0,
-      "saidas_mes": 3,
+      "saidas_mes": 4,
       "entradas_mes_anterior": 210,
       "saidas_mes_anterior": 70,
-      "valor_causa": 765646086.26
+      "valor_causa": 765386773.96
     },
     {
       "nome": "Sentença",
@@ -673,12 +673,12 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 3205,
+      "andamento": 3204,
       "entradas_mes": 0,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 67,
-      "valor_causa": 683264741.88
+      "valor_causa": 683011185.22
     },
     {
       "nome": "Execução",
@@ -905,12 +905,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 774,
+      "andamento": 773,
       "entradas_mes": 0,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 17,
-      "valor_causa": 156874642.34
+      "valor_causa": 156615330.04
     },
     {
       "fase": "Instrução",
@@ -1125,12 +1125,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo E1",
-      "andamento": 730,
+      "andamento": 729,
       "entradas_mes": 0,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 28,
-      "valor_causa": 103443886.95
+      "valor_causa": 103190330.29
     },
     {
       "fase": "Recurso",
@@ -1286,12 +1286,12 @@
   "por_profissional": [
     {
       "nome": "Giulia Vendramini Milani(GVM)",
-      "andamento": 443,
+      "andamento": 442,
       "entradas_mes": 0,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 6,
-      "valor_causa": 66278114.86
+      "valor_causa": 66018802.56
     },
     {
       "nome": "Rafael Yepez do Lago(RYL)",
@@ -1447,15 +1447,6 @@
       "valor_causa": 32902808.16
     },
     {
-      "nome": "Paloma da Silva Santos(PSI)",
-      "andamento": 247,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 7,
-      "saidas_mes_anterior": 34,
-      "valor_causa": 51462756.71
-    },
-    {
       "nome": "Rafael Camargo Felisbino(RCF)",
       "andamento": 246,
       "entradas_mes": 0,
@@ -1463,6 +1454,15 @@
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 0,
       "valor_causa": 106134503.72
+    },
+    {
+      "nome": "Paloma da Silva Santos(PSI)",
+      "andamento": 246,
+      "entradas_mes": 0,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 7,
+      "saidas_mes_anterior": 34,
+      "valor_causa": 51209200.05
     },
     {
       "nome": "Nicolau Rafael Guimarães Coelho(NRG)",
@@ -1696,22 +1696,22 @@
     },
     {
       "nome": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 699,
+      "andamento": 698,
       "entradas_mes": 0,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 28,
       "saidas_mes_anterior": 21,
-      "valor_causa": 135013568.91,
+      "valor_causa": 134754256.61,
       "alerta_entrada": false
     },
     {
       "nome": "MAHLE METAL - MOGI",
-      "andamento": 353,
+      "andamento": 352,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 35,
-      "valor_causa": 65659091.56,
+      "valor_causa": 65405534.9,
       "alerta_entrada": false
     },
     {
@@ -2936,23 +2936,23 @@
     {
       "grupo": "Grupo E1",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 627,
+      "andamento": 626,
       "entradas_mes": 0,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 26,
       "saidas_mes_anterior": 20,
-      "valor_causa": 133968593.72,
+      "valor_causa": 133709281.42,
       "alerta_entrada": false
     },
     {
       "grupo": "Grupo E1",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 353,
+      "andamento": 352,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 28,
-      "valor_causa": 65659091.56,
+      "valor_causa": 65405534.9,
       "alerta_entrada": false
     },
     {
@@ -4176,12 +4176,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Giulia Vendramini Milani(GVM)",
-      "andamento": 442,
+      "andamento": 441,
       "entradas_mes": 0,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 6,
-      "valor_causa": 66208378.61
+      "valor_causa": 65949066.31
     },
     {
       "grupo": "Grupo E1",
@@ -4196,12 +4196,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Paloma da Silva Santos(PSI)",
-      "andamento": 246,
+      "andamento": 245,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 25,
-      "valor_causa": 51462756.71
+      "valor_causa": 51209200.05
     },
     {
       "grupo": "Grupo E1",
@@ -6488,12 +6488,12 @@
     {
       "estado": "SP",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 600,
+      "andamento": 599,
       "entradas_mes": 0,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 20,
       "saidas_mes_anterior": 17,
-      "valor_causa": 118949007.33
+      "valor_causa": 118689695.03
     },
     {
       "estado": "SP",
@@ -6508,12 +6508,12 @@
     {
       "estado": "SP",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 352,
+      "andamento": 351,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 35,
-      "valor_causa": 65659091.56
+      "valor_causa": 65405534.9
     },
     {
       "estado": "SP",
