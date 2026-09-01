@@ -2791,6 +2791,7 @@ body.role-manager .upload-bar {
   <button class="nav-btn" id="nav-canceladas" onclick="switchTab('canceladas',this)">🚫 Redesignadas/Canceladas <span class="nb-cnt" id="nc-cancel">0</span></button>
   <button class="nav-btn" id="nav-baixados" onclick="switchTab('baixados',this)">✅ Baixados no Dia <span class="nb-cnt" id="nc-baixados">0</span></button>
   <button class="nav-btn" id="nav-controle-decisoes" onclick="switchTab('controle-decisoes',this)">📑 Controle de Decisões <span class="nb-cnt" id="nc-cd">0</span></button>
+  <button class="nav-btn" id="nav-transf-pastas" onclick="switchTab('transf-pastas',this)">🗂️ Transferência de Pastas <span class="nb-cnt" id="nc-tp">0</span></button>
   <button class="nav-btn" id="nav-quadro" style="display:none" onclick="switchTab('quadro',this)">📊 Quadro Geral <span class="nb-cnt" id="nc-quadro">0</span></button>
   <button class="nav-btn" id="nav-admin" onclick="switchTab('admin',this)" style="display:none">⚙️ Gestão de Usuários <span class="nb-cnt" id="nc-admin">0</span></button>
   <button class="nav-btn" id="nav-exposicao" onclick="switchTab('exposicao',this)">📈 Exposição por Grupo <span class="nb-cnt" id="nc-exposicao">0</span></button>
@@ -3487,6 +3488,61 @@ body.role-manager .upload-bar {
       <tbody id="body-cd"></tbody>
     </table></div>
     <div class="pg-bar" id="pg-cd"></div>
+  </div>
+</div>
+
+<!-- ═══ TRANSFERÊNCIA DE PASTAS ═══ -->
+<div class="page" id="page-transf-pastas">
+  <div class="det-card">
+    <div class="det-hdr" style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;">
+      <h2>🗂️ Transferência de Pastas <span class="det-cnt" id="ct-tp">0 registros</span></h2>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;">
+        <button type="button" style="background:#0E5E6F;color:#fff;border:none;border-radius:8px;padding:8px 16px;font-size:12px;font-weight:700;cursor:pointer;" onclick="abrirModalTransfPasta()">➕ Nova Solicitação</button>
+        <button type="button" style="background:#f0f6f8;border:1.5px solid #aecad6;color:#005070;border-radius:8px;padding:8px 16px;font-size:12px;font-weight:700;cursor:pointer;" onclick="exportarTransfPastasExcel()">📥 Exportar Excel</button>
+      </div>
+    </div>
+    <div style="margin:0 0 12px;background:#f0f7fb;border:1px solid #ccdde4;border-radius:8px;padding:10px 14px;font-size:11px;color:var(--gray3);">
+      ℹ️ Use pra pastas que precisam mudar de responsável mas não aparecem como prazo ativo no dashboard. Pode lançar uma solicitação por vez ou subir uma planilha com várias de uma vez. Toda solicitação avisa automaticamente o suporte do Legal Manager, com cópia pra controladoria.
+    </div>
+    <div style="margin-bottom:14px;background:#fafbfc;border:1px dashed #c3d0d6;border-radius:10px;padding:14px 18px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+      <span style="font-size:11px;font-weight:600;color:#006080;">📂 Solicitar em lote (planilha):</span>
+      <div class="upload-field" id="tp-uf1" style="min-width:240px;position:relative;">
+        <input type="file" accept=".xlsx,.xls,.csv" style="position:absolute;inset:0;opacity:0;cursor:pointer;width:100%;height:100%;" onchange="uploadLoteTransfPastas(this)">
+        <span class="uf-icon">🗂️</span>
+        <div class="uf-info">
+          <span class="uf-lbl">Transferência de Pastas</span>
+          <span class="uf-name" id="tp-uf1n">Escolher ficheiro</span>
+        </div>
+      </div>
+      <span style="font-size:10.5px;color:var(--gray3);">Colunas esperadas: data, status, situacao_pasta, grupo_processo, numero_processo, codigo_processo, codigo_agenda, codigo_cliente, responsável pela solicitação, responsável atual pela pasta, transferir para.</span>
+    </div>
+    <div class="det-filters">
+      <div class="fg"><label>Status</label>
+        <select class="fsel" id="tp-status" onchange="renderTransfPastas()">
+          <option value="">Todos os status</option>
+        </select>
+      </div>
+      <div class="fg"><label>Situação da Pasta</label>
+        <select class="fsel" id="tp-situacao" onchange="renderTransfPastas()">
+          <option value="">Todas</option>
+        </select>
+      </div>
+      <div class="fg"><label>Grupo</label>
+        <select class="fsel" id="tp-grupo" onchange="renderTransfPastas()">
+          <option value="">Todos os grupos</option>
+        </select>
+      </div>
+      <div class="srch-wrap">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input class="srch-in" id="tp-s" placeholder="Buscar processo, cliente ou responsável..." oninput="renderTransfPastas()">
+      </div>
+      <button class="btn-limpar" onclick="V('tp-s').value='';V('tp-status').value='';V('tp-situacao').value='';V('tp-grupo').value='';renderTransfPastas()">✕ Limpar</button>
+    </div>
+    <div class="det-scroll" style="max-height:65vh;"><table>
+      <thead><tr><th>Data</th><th>Status</th><th>Situação da Pasta</th><th>Grupo</th><th>Processo</th><th>Cód. Processo</th><th>Cód. Agenda</th><th>Cód. Cliente</th><th>Resp. Solicitação</th><th>Resp. Atual</th><th>Transferir Para</th></tr></thead>
+      <tbody id="body-tp"></tbody>
+    </table></div>
+    <div class="pg-bar" id="pg-tp"></div>
   </div>
 </div>
 
@@ -4863,6 +4919,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     carregarBaixadosSupabase();
     carregarControleDecisoesSupabase();
+    carregarTransfPastasSupabase();
 
     // Busca prazos do Supabase + audiências do GitHub em paralelo
     Promise.all([
@@ -7570,6 +7627,312 @@ window.enviarTransferencia = function(proc, cli, respAtual, tipo) {
     if(m) m.remove();
   }, 700);
 };
+
+// 🗂️ Transferência de Pastas (aba própria — só gestores) — pra pastas que não aparecem como prazo ativo
+var S_TP = [];
+var TP_EMAIL_SUPORTE = 'suporte@legalmanager.com.br';
+var TP_EMAIL_CC = 'prazos.trabalhista@peixotoecury.com.br';
+
+function _tpNorm(s){ return normTxt(s).replace(/ /g,''); }
+
+function _tpAcharCampo(row, candidatos){
+  var keys = Object.keys(row || {});
+  for (var i=0;i<candidatos.length;i++){
+    var alvo = _tpNorm(candidatos[i]);
+    for (var j=0;j<keys.length;j++){
+      if(_tpNorm(keys[j]) === alvo) return row[keys[j]];
+    }
+  }
+  return '';
+}
+
+function _tpParseData(v){
+  if(v instanceof Date && !isNaN(v)) return v.toISOString().slice(0,10);
+  var s = String(v||'').trim();
+  if(!s) return new Date().toISOString().slice(0,10);
+  var m = s.match(/^(\d{1,2})[\/\-](\d{1,2})[\/\-](\d{2,4})$/);
+  if(m){ var yy = m[3].length===2 ? ('20'+m[3]) : m[3]; return yy+'-'+m[2].padStart(2,'0')+'-'+m[1].padStart(2,'0'); }
+  if(/^\d{4}-\d{2}-\d{2}/.test(s)) return s.slice(0,10);
+  return new Date().toISOString().slice(0,10);
+}
+
+function _tpMapRow(row){
+  return {
+    data:                    _tpParseData(_tpAcharCampo(row, ['data'])),
+    status:                  _tpAcharCampo(row, ['status']) || 'Pendente',
+    situacao_pasta:          _tpAcharCampo(row, ['situacao_pasta','situacao da pasta']),
+    grupo_processo:          _tpAcharCampo(row, ['grupo_processo','grupo']),
+    numero_processo:         _tpAcharCampo(row, ['numero_processo','numero do processo','processo']),
+    codigo_processo:         _tpAcharCampo(row, ['codigo_processo','codigo do processo']),
+    codigo_agenda:           _tpAcharCampo(row, ['codigo_agenda','codigo da agenda']),
+    codigo_cliente:          _tpAcharCampo(row, ['codigo_cliente','codigo do cliente']),
+    responsavel_solicitacao: _tpAcharCampo(row, ['responsavel pela solicitacao de transferencia de pasta','responsavel pela solicitacao','responsavel_solicitacao']),
+    responsavel_atual:       _tpAcharCampo(row, ['responsavel atual pela pasta','responsavel_atual']),
+    transferir_para:         _tpAcharCampo(row, ['transferir para','transferir_para'])
+  };
+}
+
+function _tpEnviarEmailUnico(row){
+  var assunto = '🗂️ Transferência de Pasta — Processo ' + (row.numero_processo||'N/A');
+  var corpo = 'Solicitamos a transferência da pasta abaixo:\n\n'
+    + '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n'
+    + 'DATA: ' + (row.data||'—') + '\n'
+    + 'STATUS: ' + (row.status||'—') + '\n'
+    + 'SITUAÇÃO DA PASTA: ' + (row.situacao_pasta||'—') + '\n'
+    + 'GRUPO: ' + (row.grupo_processo||'—') + '\n'
+    + 'PROCESSO: ' + (row.numero_processo||'—') + '\n'
+    + 'CÓDIGO DO PROCESSO: ' + (row.codigo_processo||'—') + '\n'
+    + 'CÓDIGO DA AGENDA: ' + (row.codigo_agenda||'—') + '\n'
+    + 'CÓDIGO DO CLIENTE: ' + (row.codigo_cliente||'—') + '\n'
+    + 'RESPONSÁVEL PELA SOLICITAÇÃO: ' + (row.responsavel_solicitacao||'—') + '\n'
+    + 'RESPONSÁVEL ATUAL PELA PASTA: ' + (row.responsavel_atual||'—') + '\n'
+    + 'TRANSFERIR PARA: ' + (row.transferir_para||'—') + '\n'
+    + '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n'
+    + 'Atenciosamente,\nControladoria — Peixoto & Cury Advogados';
+  var mailto = 'mailto:' + encodeURIComponent(TP_EMAIL_SUPORTE)
+    + '?cc=' + encodeURIComponent(TP_EMAIL_CC)
+    + '&subject=' + encodeURIComponent(assunto)
+    + '&body=' + encodeURIComponent(corpo);
+  var link = document.createElement('a');
+  link.href = mailto;
+  document.body.appendChild(link);
+  link.click();
+  setTimeout(function(){ if(link.parentNode) link.parentNode.removeChild(link); }, 500);
+}
+
+function _tpEnviarEmailLote(rows){
+  var LIMITE = 1900;
+  function corpoCompleto(max){
+    var linhas = rows.slice(0, max).map(function(r,i){
+      return (i+1)+'. Processo '+(r.numero_processo||'—')+' | Grupo '+(r.grupo_processo||'—')+' | De: '+(r.responsavel_atual||'—')+' → Para: '+(r.transferir_para||'—');
+    }).join('\n');
+    var extra = rows.length>max ? '\n\n(+ '+(rows.length-max)+' solicitação(ões) — lista completa no dashboard, aba Transferência de Pastas.)' : '';
+    return 'Solicitação de transferência de pastas em lote (' + rows.length + ' processo(s)).\n\n' + linhas + extra + '\n\nAtenciosamente,\nControladoria — Peixoto & Cury Advogados';
+  }
+  var max = rows.length;
+  var corpo = corpoCompleto(max);
+  while(encodeURIComponent(corpo).length > LIMITE && max > 1){ max--; corpo = corpoCompleto(max); }
+  if(encodeURIComponent(corpo).length > LIMITE && navigator.clipboard){
+    navigator.clipboard.writeText(corpoCompleto(rows.length)).catch(function(){});
+    alert('📋 Lista grande: lista completa copiada para a área de transferência — cole no corpo do e-mail (Ctrl+V).');
+  }
+  var assunto = '🗂️ Transferência de Pastas — ' + rows.length + ' solicitação(ões) em lote';
+  var mailto = 'mailto:' + encodeURIComponent(TP_EMAIL_SUPORTE)
+    + '?cc=' + encodeURIComponent(TP_EMAIL_CC)
+    + '&subject=' + encodeURIComponent(assunto)
+    + '&body=' + encodeURIComponent(corpo);
+  var link = document.createElement('a');
+  link.href = mailto;
+  document.body.appendChild(link);
+  link.click();
+  setTimeout(function(){ if(link.parentNode) link.parentNode.removeChild(link); }, 500);
+}
+
+async function _tpInsertLote(rows){
+  _initSupabase();
+  var sess = window.SESSAO || window.sessao || window.usuarioLogado || {};
+  var agora = new Date().toISOString();
+  var payload = rows.map(function(r){
+    return Object.assign({}, r, {
+      usuario_nome:  sess.nome || '',
+      usuario_email: sess.email || (sess.login ? sess.login+'@peixotoecury.com.br' : ''),
+      criado_em:     agora
+    });
+  });
+  var LOTE = 500;
+  for(var i=0;i<payload.length;i+=LOTE){
+    var lote = payload.slice(i,i+LOTE);
+    var ins = await supabaseClient.from('transferencias_pastas').insert(lote);
+    if(ins.error) throw ins.error;
+  }
+}
+
+window.uploadLoteTransfPastas = function(input){
+  var file = input.files && input.files[0];
+  if(!file) return;
+  var nomeEl = document.getElementById('tp-uf1n');
+  if(nomeEl) nomeEl.textContent = file.name;
+  var reader = new FileReader();
+  reader.onload = async function(ev){
+    try{
+      _initSupabase();
+      if(!supabaseClient){ alert('Não foi possível conectar ao banco. Tente novamente.'); return; }
+      var wb = XLSX.read(ev.target.result, {type:'array', cellDates:true});
+      var wsName = wb.SheetNames[0];
+      var rows = XLSX.utils.sheet_to_json(wb.Sheets[wsName], {defval:''});
+      if(!rows.length){ alert('Planilha vazia.'); return; }
+      var mapeadas = rows.map(_tpMapRow).filter(function(r){ return r.numero_processo || r.transferir_para; });
+      if(!mapeadas.length){ alert('Não encontrei nenhuma linha com processo ou "transferir para" preenchidos.'); return; }
+      await _tpInsertLote(mapeadas);
+      _tpEnviarEmailLote(mapeadas);
+      mostrarToast('✅ ' + mapeadas.length + ' solicitação(ões) registrada(s).', 3500);
+      await carregarTransfPastasSupabase();
+    }catch(err){
+      console.error('Upload lote Transferência de Pastas:', err);
+      alert('Erro ao processar a planilha: ' + (err && err.message ? err.message : err));
+    } finally {
+      input.value = '';
+    }
+  };
+  reader.readAsArrayBuffer(file);
+};
+
+window.abrirModalTransfPasta = function(){
+  var old = document.getElementById('modal-transf-pasta');
+  if(old) old.remove();
+
+  var sess = window.SESSAO || window.sessao || window.usuarioLogado || {};
+  var hojeISO = new Date().toISOString().slice(0,10);
+
+  function campo(label, id, tipo, valor, obrigatorio){
+    tipo = tipo || 'text';
+    var req = obrigatorio ? ' <span style="color:red;">*</span>' : '';
+    return '<div style="margin-bottom:14px;">'
+      +'<label style="font-size:11px;font-weight:600;color:#333;display:block;margin-bottom:6px;">'+label+req+'</label>'
+      +'<input id="'+id+'" type="'+tipo+'" value="'+String(valor||'').replace(/"/g,'&quot;')+'" style="width:100%;border:1px solid #bbb;border-radius:6px;padding:8px;font-size:11px;box-sizing:border-box;">'
+      +'</div>';
+  }
+
+  var modal = document.createElement('div');
+  modal.id = 'modal-transf-pasta';
+  modal.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:9999;display:flex;align-items:center;justify-content:center;padding:20px;';
+  modal.innerHTML = '<div style="background:#fff;border-radius:12px;width:100%;max-width:620px;max-height:90vh;box-shadow:0 20px 60px rgba(0,0,0,.3);overflow:hidden;display:flex;flex-direction:column;">'
+    +'<div style="background:linear-gradient(90deg,#0E5E6F,#006080);padding:18px 24px;color:#fff;display:flex;justify-content:space-between;align-items:center;flex-shrink:0;">'
+    +'<div style="font-weight:600;font-size:15px;">🗂️ NOVA SOLICITAÇÃO — TRANSFERÊNCIA DE PASTA</div>'
+    +'<button onclick="document.getElementById(\'modal-transf-pasta\').remove()" style="background:rgba(255,255,255,.2);border:none;color:#fff;border-radius:6px;padding:4px 10px;cursor:pointer;font-size:16px;">✕</button>'
+    +'</div>'
+    +'<div style="padding:20px 24px;overflow-y:auto;flex:1;display:grid;grid-template-columns:1fr 1fr;gap:0 14px;">'
+    + campo('Data', 'tpm-data', 'date', hojeISO, false)
+    + campo('Status', 'tpm-status', 'text', 'Pendente', false)
+    + campo('Situação da Pasta', 'tpm-situacao', 'text', '', false)
+    + campo('Grupo', 'tpm-grupo', 'text', '', false)
+    + campo('Número do Processo', 'tpm-processo', 'text', '', true)
+    + campo('Código do Processo', 'tpm-cod-processo', 'text', '', false)
+    + campo('Código da Agenda', 'tpm-cod-agenda', 'text', '', false)
+    + campo('Código do Cliente', 'tpm-cod-cliente', 'text', '', false)
+    + campo('Responsável pela Solicitação', 'tpm-resp-solicitacao', 'text', sess.nome||'', true)
+    + campo('Responsável Atual pela Pasta', 'tpm-resp-atual', 'text', '', true)
+    + campo('Transferir Para', 'tpm-transferir-para', 'text', '', true)
+    +'</div>'
+    +'<div style="padding:14px 24px;border-top:1px solid #eee;display:flex;gap:10px;justify-content:flex-end;flex-shrink:0;">'
+    +'<button onclick="document.getElementById(\'modal-transf-pasta\').remove()" style="background:#f0f0f0;border:none;border-radius:6px;padding:10px 20px;cursor:pointer;font-size:12px;color:#666;font-weight:500;">Cancelar</button>'
+    +'<button onclick="window.salvarTransfPasta()" style="background:#0E5E6F;color:#fff;border:none;border-radius:6px;padding:10px 20px;cursor:pointer;font-size:12px;font-weight:600;">📧 Enviar Solicitação</button>'
+    +'</div></div>';
+  document.body.appendChild(modal);
+  modal.addEventListener('click', function(e){ if(e.target===this) this.remove(); });
+  setTimeout(function(){ var t=document.getElementById('tpm-processo'); if(t) t.focus(); }, 100);
+};
+
+window.salvarTransfPasta = function(){
+  function val(id){ var el=document.getElementById(id); return el ? el.value.trim() : ''; }
+  var row = {
+    data:                    val('tpm-data') || new Date().toISOString().slice(0,10),
+    status:                  val('tpm-status') || 'Pendente',
+    situacao_pasta:          val('tpm-situacao'),
+    grupo_processo:          val('tpm-grupo'),
+    numero_processo:         val('tpm-processo'),
+    codigo_processo:         val('tpm-cod-processo'),
+    codigo_agenda:           val('tpm-cod-agenda'),
+    codigo_cliente:          val('tpm-cod-cliente'),
+    responsavel_solicitacao: val('tpm-resp-solicitacao'),
+    responsavel_atual:       val('tpm-resp-atual'),
+    transferir_para:         val('tpm-transferir-para')
+  };
+  if(!row.numero_processo){ alert('Informe o número do processo.'); return; }
+  if(!row.responsavel_atual){ alert('Informe o responsável atual pela pasta.'); return; }
+  if(!row.transferir_para){ alert('Informe pra quem vai transferir.'); return; }
+
+  _initSupabase();
+  if(!supabaseClient){ alert('Não foi possível conectar ao banco. Tente novamente.'); return; }
+
+  var sess = window.SESSAO || window.sessao || window.usuarioLogado || {};
+  var payload = Object.assign({}, row, {
+    usuario_nome:  sess.nome || row.responsavel_solicitacao || '',
+    usuario_email: sess.email || (sess.login ? sess.login+'@peixotoecury.com.br' : ''),
+    criado_em:     new Date().toISOString()
+  });
+
+  supabaseClient.from('transferencias_pastas').insert([payload]).then(function(r){
+    if(r.error){ console.error('Transferência de Pastas Supabase:', r.error); alert('Erro ao salvar: '+r.error.message); return; }
+    _tpEnviarEmailUnico(row);
+    mostrarToast('✅ Solicitação de transferência registrada.', 3000);
+    var m = document.getElementById('modal-transf-pasta');
+    if(m) m.remove();
+    carregarTransfPastasSupabase();
+  });
+};
+
+async function carregarTransfPastasSupabase(){
+  _initSupabase();
+  if(!supabaseClient) return;
+  try{
+    var r = await supabaseClient.from('transferencias_pastas').select('*').order('criado_em', {ascending:false});
+    if(r.error){ console.warn('Carregar Transferência de Pastas:', r.error); return; }
+    S_TP = r.data || [];
+    var nc = document.getElementById('nc-tp'); if(nc) nc.textContent = S_TP.length;
+
+    [['tp-status','status'],['tp-situacao','situacao_pasta'],['tp-grupo','grupo_processo']].forEach(function(cfg){
+      var sel = document.getElementById(cfg[0]);
+      if(!sel) return;
+      var atuais = Array.from(sel.options).map(function(o){ return o.value; }).filter(Boolean);
+      var vistos = Array.from(new Set(S_TP.map(function(r){ return r[cfg[1]]; }).filter(Boolean))).sort();
+      vistos.forEach(function(v){ if(atuais.indexOf(v)===-1) sel.insertAdjacentHTML('beforeend','<option value="'+e(v)+'">'+e(v)+'</option>'); });
+    });
+
+    renderTransfPastas();
+  }catch(err){ console.warn('Carregar Transferência de Pastas (exceção):', err); }
+}
+
+function renderTransfPastas(){
+  var statusSel = (V('tp-status')||{}).value || '';
+  var situacaoSel = (V('tp-situacao')||{}).value || '';
+  var grupoSel = (V('tp-grupo')||{}).value || '';
+  var srch = ((V('tp-s')||{}).value || '').toLowerCase();
+  var data = S_TP.slice();
+  if(statusSel) data = data.filter(function(r){ return r.status===statusSel; });
+  if(situacaoSel) data = data.filter(function(r){ return r.situacao_pasta===situacaoSel; });
+  if(grupoSel) data = data.filter(function(r){ return r.grupo_processo===grupoSel; });
+  if(srch) data = data.filter(function(r){ return [r.numero_processo,r.responsavel_atual,r.transferir_para,r.responsavel_solicitacao].join(' ').toLowerCase().includes(srch); });
+  var ctEl = V('ct-tp'); if(ctEl) ctEl.textContent = data.length+' registros';
+  var res = pgSlice(data,'tp');
+  var bodyEl = V('body-tp');
+  if(bodyEl) bodyEl.innerHTML = res.slice.length ? res.slice.map(function(r){ return '<tr>'
+    +'<td class="td-mono">'+fmtDate(r.data)+'</td>'
+    +'<td>'+e(r.status)+'</td>'
+    +'<td class="td-clip-sm">'+e(r.situacao_pasta)+'</td>'
+    +'<td class="td-clip-sm">'+e(r.grupo_processo)+'</td>'
+    +'<td class="td-clip-sm proc-normal" title="'+e(r.numero_processo)+'">'+e(r.numero_processo)+'</td>'
+    +'<td class="td-clip-sm">'+e(r.codigo_processo)+'</td>'
+    +'<td class="td-clip-sm">'+e(r.codigo_agenda)+'</td>'
+    +'<td class="td-clip-sm">'+e(r.codigo_cliente)+'</td>'
+    +'<td class="td-clip-sm">'+e(r.responsavel_solicitacao)+'</td>'
+    +'<td class="td-clip-sm">'+e(r.responsavel_atual)+'</td>'
+    +'<td class="td-clip-sm">'+e(r.transferir_para)+'</td>'
+    +'</tr>'; }).join('') : emptyR(11);
+  renderPg('pg-tp',res.pg,res.pages,res.total,'tp',renderTransfPastas);
+}
+
+function exportarTransfPastasExcel(){
+  if(!S_TP.length){ alert('Nenhum registro para exportar.'); return; }
+  var linhas = S_TP.map(function(r){ return {
+    'Data': fmtDate(r.data),
+    'Status': r.status,
+    'Situação da Pasta': r.situacao_pasta,
+    'Grupo': r.grupo_processo,
+    'Número do Processo': r.numero_processo,
+    'Código do Processo': r.codigo_processo,
+    'Código da Agenda': r.codigo_agenda,
+    'Código do Cliente': r.codigo_cliente,
+    'Responsável pela Solicitação de Transferência de Pasta': r.responsavel_solicitacao,
+    'Responsável Atual pela Pasta': r.responsavel_atual,
+    'Transferir Para': r.transferir_para
+  };});
+  var ws = XLSX.utils.json_to_sheet(linhas);
+  var wb = XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(wb, ws, 'Transferencia_Pastas');
+  var dt = new Date().toLocaleDateString('pt-BR').replace(/\//g,'-');
+  XLSX.writeFile(wb, 'PC_Transferencia_Pastas_'+dt+'.xlsx');
+}
 
 // 🔴 Função para abrir modal de justificativa com grupo
 window.abrirModalJustificativaFatal = function(audId, processo, responsavel, grupo) {
@@ -13309,6 +13672,7 @@ document.addEventListener('DOMContentLoaded', function(){
   <button class="mn-btn" onclick="mobileSwitchTab('canceladas',this)"><span class="mn-icon">🚫</span>Redesig.</button>
   <button class="mn-btn" onclick="mobileSwitchTab('baixados',this)"><span class="mn-icon">✅</span>Baixados</button>
   <button class="mn-btn" onclick="mobileSwitchTab('controle-decisoes',this)"><span class="mn-icon">📑</span>Decisões</button>
+  <button class="mn-btn" onclick="mobileSwitchTab('transf-pastas',this)"><span class="mn-icon">🗂️</span>Transf. Pastas</button>
   <button class="mn-btn" onclick="mobileSwitchTab('exposicao',this)"><span class="mn-icon">📈</span>Exposição</button>
   <button class="mn-btn" onclick="mobileSwitchTab('meu-painel-only',this)"><span class="mn-icon">👤</span>Meu Painel</button>
 </div>
