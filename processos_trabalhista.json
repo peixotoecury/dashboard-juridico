@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-02T16:00:33",
+  "atualizado_em": "2026-09-02T16:15:26",
   "kpis": {
-    "total_andamento": 8161,
-    "entradas_hoje": 12,
+    "total_andamento": 8162,
+    "entradas_hoje": 13,
     "saidas_hoje": 2,
     "entradas_ontem": 4,
     "saidas_ontem": 10,
-    "entradas_mes": 16,
+    "entradas_mes": 17,
     "saidas_mes": 12,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 251,
     "valor_causa_total": 1748724381.38,
-    "saldo_mes": 4
+    "saldo_mes": 5
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-09-02",
-      "entradas": 12,
+      "entradas": 13,
       "saidas": 2
     }
   ],
@@ -381,8 +381,8 @@
     },
     {
       "nome": "Grupo A3",
-      "andamento": 153,
-      "entradas_mes": 0,
+      "andamento": 154,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
@@ -641,6 +641,15 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 500000.0
+    },
+    {
+      "nome": "AM",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 0.0
     }
   ],
   "por_fase": [
@@ -655,11 +664,11 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2922,
-      "entradas_mes": 16,
+      "andamento": 2923,
+      "entradas_mes": 17,
       "saidas_mes": 6,
       "entradas_mes_anterior": 216,
-      "saidas_mes_anterior": 70,
+      "saidas_mes_anterior": 68,
       "valor_causa": 768734880.83
     },
     {
@@ -673,21 +682,21 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 3203,
+      "andamento": 3199,
       "entradas_mes": 0,
       "saidas_mes": 3,
       "entradas_mes_anterior": 5,
-      "saidas_mes_anterior": 66,
-      "valor_causa": 682918780.02
+      "saidas_mes_anterior": 63,
+      "valor_causa": 682586398.41
     },
     {
       "nome": "Execução",
-      "andamento": 1183,
+      "andamento": 1187,
       "entradas_mes": 0,
       "saidas_mes": 3,
       "entradas_mes_anterior": 10,
-      "saidas_mes_anterior": 92,
-      "valor_causa": 161582384.21
+      "saidas_mes_anterior": 97,
+      "valor_causa": 161914765.82
     }
   ],
   "por_fase_outras": 411,
@@ -825,12 +834,12 @@
     {
       "fase": "Execução",
       "grupo": "Grupo E1",
-      "andamento": 183,
+      "andamento": 187,
       "entradas_mes": 0,
       "saidas_mes": 1,
       "entradas_mes_anterior": 8,
-      "saidas_mes_anterior": 44,
-      "valor_causa": 19889590.87
+      "saidas_mes_anterior": 48,
+      "valor_causa": 20221972.48
     },
     {
       "fase": "Execução",
@@ -879,7 +888,7 @@
       "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 6,
+      "saidas_mes_anterior": 7,
       "valor_causa": 377954.62
     },
     {
@@ -909,7 +918,7 @@
       "entradas_mes": 3,
       "saidas_mes": 4,
       "entradas_mes_anterior": 28,
-      "saidas_mes_anterior": 17,
+      "saidas_mes_anterior": 16,
       "valor_causa": 156927416.14
     },
     {
@@ -965,8 +974,8 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo A3",
-      "andamento": 81,
-      "entradas_mes": 0,
+      "andamento": 82,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
@@ -989,7 +998,7 @@
       "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
-      "saidas_mes_anterior": 3,
+      "saidas_mes_anterior": 2,
       "valor_causa": 70736.25
     },
     {
@@ -1125,12 +1134,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo E1",
-      "andamento": 729,
+      "andamento": 725,
       "entradas_mes": 0,
       "saidas_mes": 3,
       "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 27,
-      "valor_causa": 103348600.89
+      "saidas_mes_anterior": 24,
+      "valor_causa": 103016219.28
     },
     {
       "fase": "Recurso",
@@ -1538,8 +1547,8 @@
     },
     {
       "nome": "Sofia Freire (SOF)",
-      "andamento": 112,
-      "entradas_mes": 0,
+      "andamento": 113,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
@@ -2149,8 +2158,8 @@
     {
       "grupo": "Grupo A3",
       "cliente": "WHIRLPOOL S.A.",
-      "andamento": 88,
-      "entradas_mes": 0,
+      "andamento": 89,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
@@ -3875,8 +3884,8 @@
     {
       "grupo": "Grupo A3",
       "profissional": "Sofia Freire (SOF)",
-      "andamento": 111,
-      "entradas_mes": 0,
+      "andamento": 112,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
@@ -4633,6 +4642,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 276000.0
+    },
+    {
+      "estado": "AM",
+      "cliente": "WHIRLPOOL S.A.",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 0.0
     },
     {
       "estado": "BA",
