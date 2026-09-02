@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-02T19:00:29",
+  "atualizado_em": "2026-09-02T19:15:28",
   "kpis": {
-    "total_andamento": 7480,
+    "total_andamento": 7479,
     "entradas_hoje": 20,
-    "saidas_hoje": 4,
+    "saidas_hoje": 5,
     "entradas_ontem": 4,
     "saidas_ontem": 795,
     "entradas_mes": 24,
-    "saidas_mes": 799,
+    "saidas_mes": 800,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 232,
-    "valor_causa_total": 1650124649.76,
-    "saldo_mes": -775
+    "valor_causa_total": 1649815649.76,
+    "saldo_mes": -776
   },
   "serie_diaria": [
     {
@@ -312,18 +312,18 @@
     {
       "data": "2026-09-02",
       "entradas": 20,
-      "saidas": 4
+      "saidas": 5
     }
   ],
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2086,
+      "andamento": 2085,
       "entradas_mes": 13,
-      "saidas_mes": 6,
+      "saidas_mes": 7,
       "entradas_mes_anterior": 93,
       "saidas_mes_anterior": 74,
-      "valor_causa": 446649624.87
+      "valor_causa": 446340624.87
     },
     {
       "nome": "Grupo E1",
@@ -428,12 +428,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5751,
+      "andamento": 5750,
       "entradas_mes": 12,
-      "saidas_mes": 681,
+      "saidas_mes": 682,
       "entradas_mes_anterior": 185,
       "saidas_mes_anterior": 184,
-      "valor_causa": 1300814523.7
+      "valor_causa": 1300505523.7
     },
     {
       "nome": "MG",
@@ -691,12 +691,12 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2895,
+      "andamento": 2894,
       "entradas_mes": 0,
-      "saidas_mes": 349,
+      "saidas_mes": 350,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 54,
-      "valor_causa": 642776041.16
+      "valor_causa": 642467041.16
     },
     {
       "nome": "Execução",
@@ -1123,12 +1123,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo E2",
-      "andamento": 578,
+      "andamento": 577,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 10,
-      "valor_causa": 185002020.52
+      "valor_causa": 184693020.52
     },
     {
       "fase": "Recurso",
@@ -1309,12 +1309,12 @@
     },
     {
       "nome": "Mariana Borges de Menezes Fávaro(MBF)",
-      "andamento": 313,
+      "andamento": 312,
       "entradas_mes": 0,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 14,
-      "valor_causa": 44082389.35
+      "valor_causa": 43773389.35
     },
     {
       "nome": "Aline Ferreira Miron(ALF)",
@@ -1681,12 +1681,12 @@
     },
     {
       "nome": "BP BIOENERGIA",
-      "andamento": 763,
+      "andamento": 762,
       "entradas_mes": 3,
-      "saidas_mes": 3,
+      "saidas_mes": 4,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 31,
-      "valor_causa": 208529115.98,
+      "valor_causa": 208220115.98,
       "alerta_entrada": true
     },
     {
@@ -3084,12 +3084,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "BP BIOENERGIA",
-      "andamento": 762,
+      "andamento": 761,
       "entradas_mes": 2,
-      "saidas_mes": 3,
+      "saidas_mes": 4,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 31,
-      "valor_causa": 208477093.98,
+      "valor_causa": 208168093.98,
       "alerta_entrada": false
     },
     {
@@ -4276,12 +4276,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Mariana Borges de Menezes Fávaro(MBF)",
-      "andamento": 313,
+      "andamento": 312,
       "entradas_mes": 0,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 14,
-      "valor_causa": 44082389.35
+      "valor_causa": 43773389.35
     },
     {
       "grupo": "Grupo E2",
@@ -6388,12 +6388,12 @@
     {
       "estado": "SP",
       "cliente": "BP BIOENERGIA",
-      "andamento": 431,
+      "andamento": 430,
       "entradas_mes": 3,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 15,
-      "valor_causa": 96360483.24
+      "valor_causa": 96051483.24
     },
     {
       "estado": "SP",
@@ -7769,12 +7769,12 @@
   "clientes_com_alerta": [
     {
       "nome": "BP BIOENERGIA",
-      "andamento": 763,
+      "andamento": 762,
       "entradas_mes": 3,
-      "saidas_mes": 3,
+      "saidas_mes": 4,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 31,
-      "valor_causa": 208529115.98,
+      "valor_causa": 208220115.98,
       "alerta_entrada": true
     },
     {
