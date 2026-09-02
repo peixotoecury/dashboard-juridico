@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-02T09:42:58",
+  "atualizado_em": "2026-09-02T09:57:49",
   "kpis": {
-    "total_andamento": 8151,
-    "entradas_hoje": 1,
+    "total_andamento": 8153,
+    "entradas_hoje": 3,
     "saidas_hoje": 0,
     "entradas_ontem": 4,
     "saidas_ontem": 10,
-    "entradas_mes": 5,
+    "entradas_mes": 7,
     "saidas_mes": 10,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 252,
-    "valor_causa_total": 1746589027.55,
-    "saldo_mes": -5
+    "valor_causa_total": 1746644587.44,
+    "saldo_mes": -3
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-09-02",
-      "entradas": 1,
+      "entradas": 3,
       "saidas": 0
     }
   ],
@@ -408,12 +408,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 7,
-      "entradas_mes": 1,
+      "andamento": 9,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 20,
-      "valor_causa": 785345.75
+      "valor_causa": 840905.64
     },
     {
       "nome": "Sócios",
@@ -428,21 +428,21 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 6332,
-      "entradas_mes": 5,
+      "andamento": 6333,
+      "entradas_mes": 6,
       "saidas_mes": 9,
       "entradas_mes_anterior": 185,
       "saidas_mes_anterior": 202,
-      "valor_causa": 1387999653.65
+      "valor_causa": 1388026573.65
     },
     {
       "nome": "MG",
-      "andamento": 527,
-      "entradas_mes": 0,
+      "andamento": 528,
+      "entradas_mes": 1,
       "saidas_mes": 1,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 23,
-      "valor_causa": 121808994.52
+      "valor_causa": 121837634.41
     },
     {
       "nome": "RS",
@@ -646,21 +646,21 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 411,
+      "andamento": 412,
       "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 40,
       "saidas_mes_anterior": 7,
-      "valor_causa": 91875182.06
+      "valor_causa": 92138668.41
     },
     {
       "nome": "Instrução",
-      "andamento": 2913,
-      "entradas_mes": 5,
+      "andamento": 2914,
+      "entradas_mes": 7,
       "saidas_mes": 5,
       "entradas_mes_anterior": 216,
       "saidas_mes_anterior": 70,
-      "valor_causa": 766632385.77
+      "valor_causa": 766424459.31
     },
     {
       "nome": "Sentença",
@@ -695,12 +695,12 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo E2",
-      "andamento": 168,
+      "andamento": 169,
       "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 26,
       "saidas_mes_anterior": 6,
-      "valor_causa": 45783473.25
+      "valor_causa": 46046959.6
     },
     {
       "fase": "Ajuizamento",
@@ -895,12 +895,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 829,
+      "andamento": 828,
       "entradas_mes": 2,
       "saidas_mes": 2,
       "entradas_mes_anterior": 62,
       "saidas_mes_anterior": 27,
-      "valor_causa": 159700576.06
+      "valor_causa": 159437089.71
     },
     {
       "fase": "Instrução",
@@ -985,12 +985,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 3,
-      "entradas_mes": 1,
+      "andamento": 5,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 3,
-      "valor_causa": 136216.6
+      "valor_causa": 191776.49
     },
     {
       "fase": "Instrução",
@@ -1295,12 +1295,12 @@
     },
     {
       "nome": "Rafael Yepez do Lago(RYL)",
-      "andamento": 424,
-      "entradas_mes": 1,
+      "andamento": 425,
+      "entradas_mes": 2,
       "saidas_mes": 2,
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 17,
-      "valor_causa": 59225095.09
+      "valor_causa": 59253734.98
     },
     {
       "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
@@ -1547,12 +1547,12 @@
     },
     {
       "nome": "André Alessandro de Paula(AAP)",
-      "andamento": 79,
-      "entradas_mes": 0,
+      "andamento": 80,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 2,
-      "valor_causa": 17591172.96
+      "valor_causa": 17618092.96
     },
     {
       "nome": "Lucas Willott Pereira (LWP)",
@@ -1874,12 +1874,12 @@
     },
     {
       "nome": "DELL COMPUTADORES",
-      "andamento": 98,
-      "entradas_mes": 0,
+      "andamento": 99,
+      "entradas_mes": 1,
       "saidas_mes": 1,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 1,
-      "valor_causa": 16437254.04,
+      "valor_causa": 16464174.04,
       "alerta_entrada": false
     }
   ],
@@ -3778,6 +3778,28 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "DELL COMPUTADORES",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 26920.0,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "SISTENGE",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 28639.89,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "MULTICEL",
       "andamento": 1,
       "entradas_mes": 0,
@@ -4491,6 +4513,26 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 65480.35
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "André Alessandro de Paula(AAP)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 26920.0
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Rafael Yepez do Lago(RYL)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 28639.89
     },
     {
       "grupo": "Sem grupo",
@@ -5237,12 +5279,12 @@
     {
       "estado": "MG",
       "cliente": "SISTENGE",
-      "andamento": 12,
-      "entradas_mes": 0,
+      "andamento": 13,
+      "entradas_mes": 1,
       "saidas_mes": 1,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 1,
-      "valor_causa": 448683.12
+      "valor_causa": 477323.01
     },
     {
       "estado": "MG",
@@ -6657,12 +6699,12 @@
     {
       "estado": "SP",
       "cliente": "DELL COMPUTADORES",
-      "andamento": 94,
-      "entradas_mes": 0,
+      "andamento": 95,
+      "entradas_mes": 1,
       "saidas_mes": 1,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 1,
-      "valor_causa": 15659974.16
+      "valor_causa": 15686894.16
     },
     {
       "estado": "SP",
@@ -8013,6 +8055,11 @@
       "profissional": "Rafael Rocha Ferreira(RFE)"
     },
     {
+      "numero_processo": "0011899-74.2026.5.15.0152",
+      "cliente": "DELL COMPUTADORES",
+      "profissional": "André Alessandro de Paula(AAP)"
+    },
+    {
       "numero_processo": "1000003-42.2021.5.02.0382",
       "cliente": "LOJAS AMERICANAS",
       "profissional": "Jessica Cerqueira Silva(JQS)"
@@ -8031,6 +8078,11 @@
       "numero_processo": "1000930-65.2026.5.02.0080",
       "cliente": "PEIXOTO E CURY",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
+    },
+    {
+      "numero_processo": "0011680-58.2026.5.03.0164",
+      "cliente": "SISTENGE",
+      "profissional": "Rafael Yepez do Lago(RYL)"
     },
     {
       "numero_processo": "0011315-08.2026.5.15.0087",
