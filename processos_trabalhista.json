@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-02T09:57:49",
+  "atualizado_em": "2026-09-02T10:12:58",
   "kpis": {
-    "total_andamento": 8153,
-    "entradas_hoje": 3,
+    "total_andamento": 8155,
+    "entradas_hoje": 5,
     "saidas_hoje": 0,
     "entradas_ontem": 4,
     "saidas_ontem": 10,
-    "entradas_mes": 7,
+    "entradas_mes": 9,
     "saidas_mes": 10,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 252,
-    "valor_causa_total": 1746644587.44,
-    "saldo_mes": -3
+    "valor_causa_total": 1746893740.69,
+    "saldo_mes": -1
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-09-02",
-      "entradas": 3,
+      "entradas": 5,
       "saidas": 0
     }
   ],
@@ -408,12 +408,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 9,
-      "entradas_mes": 3,
+      "andamento": 11,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 20,
-      "valor_causa": 840905.64
+      "valor_causa": 1090058.89
     },
     {
       "nome": "Sócios",
@@ -428,12 +428,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 6333,
-      "entradas_mes": 6,
+      "andamento": 6334,
+      "entradas_mes": 7,
       "saidas_mes": 9,
       "entradas_mes_anterior": 185,
       "saidas_mes_anterior": 202,
-      "valor_causa": 1388026573.65
+      "valor_causa": 1388174592.98
     },
     {
       "nome": "MG",
@@ -482,12 +482,12 @@
     },
     {
       "nome": "GO",
-      "andamento": 101,
-      "entradas_mes": 0,
+      "andamento": 102,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 2,
-      "valor_causa": 8372113.51
+      "valor_causa": 8473247.43
     },
     {
       "nome": "BA",
@@ -655,12 +655,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2914,
-      "entradas_mes": 7,
+      "andamento": 2916,
+      "entradas_mes": 9,
       "saidas_mes": 5,
       "entradas_mes_anterior": 216,
       "saidas_mes_anterior": 70,
-      "valor_causa": 766424459.31
+      "valor_causa": 766673612.56
     },
     {
       "nome": "Sentença",
@@ -985,12 +985,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 5,
-      "entradas_mes": 3,
+      "andamento": 7,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 3,
-      "valor_causa": 191776.49
+      "valor_causa": 440929.74
     },
     {
       "fase": "Instrução",
@@ -1286,12 +1286,12 @@
   "por_profissional": [
     {
       "nome": "Giulia Vendramini Milani(GVM)",
-      "andamento": 443,
-      "entradas_mes": 0,
+      "andamento": 444,
+      "entradas_mes": 1,
       "saidas_mes": 3,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 6,
-      "valor_causa": 66046901.74
+      "valor_causa": 66148035.66
     },
     {
       "nome": "Rafael Yepez do Lago(RYL)",
@@ -1340,12 +1340,12 @@
     },
     {
       "nome": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 328,
-      "entradas_mes": 1,
+      "andamento": 329,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 13,
-      "valor_causa": 61168374.06
+      "valor_causa": 61316393.39
     },
     {
       "nome": "Mariana Borges de Menezes Fávaro(MBF)",
@@ -1784,12 +1784,12 @@
     },
     {
       "nome": "CBC CARTUCHOS BRASIL",
-      "andamento": 224,
-      "entradas_mes": 1,
+      "andamento": 225,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 11,
-      "valor_causa": 29284424.22,
+      "valor_causa": 29432443.55,
       "alerta_entrada": false
     },
     {
@@ -1814,12 +1814,12 @@
     },
     {
       "nome": "SYNGENTA SEEDS NIDER",
-      "andamento": 154,
-      "entradas_mes": 0,
+      "andamento": 155,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 22637683.17,
+      "valor_causa": 22738817.09,
       "alerta_entrada": false
     },
     {
@@ -3800,6 +3800,28 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "CBC CARTUCHOS BRASIL",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 148019.33,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "SYNGENTA SEEDS NIDER",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 101133.92,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "MULTICEL",
       "andamento": 1,
       "entradas_mes": 0,
@@ -4476,6 +4498,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Giulia Vendramini Milani(GVM)",
+      "andamento": 2,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 170870.17
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
       "andamento": 1,
       "entradas_mes": 0,
@@ -4493,16 +4525,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 9,
       "valor_causa": 0.0
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Giulia Vendramini Milani(GVM)",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 69736.25
     },
     {
       "grupo": "Sem grupo",
@@ -4533,6 +4555,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 28639.89
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Letícia Meneghini Fontes (LMI)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 148019.33
     },
     {
       "grupo": "Sem grupo",
@@ -5049,12 +5081,12 @@
     {
       "estado": "GO",
       "cliente": "SYNGENTA SEEDS NIDER",
-      "andamento": 28,
-      "entradas_mes": 0,
+      "andamento": 29,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 2914022.85
+      "valor_causa": 3015156.77
     },
     {
       "estado": "GO",
@@ -6659,12 +6691,12 @@
     {
       "estado": "SP",
       "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 214,
-      "entradas_mes": 1,
+      "andamento": 215,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 10,
-      "valor_causa": 28058930.28
+      "valor_causa": 28206949.61
     },
     {
       "estado": "SP",
@@ -8055,6 +8087,11 @@
       "profissional": "Rafael Rocha Ferreira(RFE)"
     },
     {
+      "numero_processo": "1001303-73.2026.5.02.0411",
+      "cliente": "CBC CARTUCHOS BRASIL",
+      "profissional": "Letícia Meneghini Fontes (LMI)"
+    },
+    {
       "numero_processo": "0011899-74.2026.5.15.0152",
       "cliente": "DELL COMPUTADORES",
       "profissional": "André Alessandro de Paula(AAP)"
@@ -8093,6 +8130,11 @@
       "numero_processo": "0015776-90.2026.5.15.0000",
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "profissional": "Joice Ramos Miranda(JRM)"
+    },
+    {
+      "numero_processo": "0001944-52.2026.5.18.0211",
+      "cliente": "SYNGENTA SEEDS NIDER",
+      "profissional": "Giulia Vendramini Milani(GVM)"
     }
   ]
 }
