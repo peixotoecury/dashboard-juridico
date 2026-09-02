@@ -1,7 +1,7 @@
 {
-  "atualizado_em": "2026-09-02T10:42:49",
+  "atualizado_em": "2026-09-02T10:57:49",
   "kpis": {
-    "total_andamento": 8155,
+    "total_andamento": 8156,
     "entradas_hoje": 5,
     "saidas_hoje": 0,
     "entradas_ontem": 4,
@@ -327,12 +327,12 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1777,
-      "entradas_mes": 0,
+      "andamento": 1778,
+      "entradas_mes": 1,
       "saidas_mes": 6,
       "entradas_mes_anterior": 50,
       "saidas_mes_anterior": 93,
-      "valor_causa": 290223632.7
+      "valor_causa": 290250552.7
     },
     {
       "nome": "Grupo B1",
@@ -409,11 +409,11 @@
     {
       "nome": "Sem grupo",
       "andamento": 9,
-      "entradas_mes": 3,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 20,
-      "valor_causa": 995938.65
+      "valor_causa": 969018.65
     },
     {
       "nome": "Sócios",
@@ -428,7 +428,7 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 6334,
+      "andamento": 6335,
       "entradas_mes": 7,
       "saidas_mes": 9,
       "entradas_mes_anterior": 185,
@@ -655,7 +655,7 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2916,
+      "andamento": 2917,
       "entradas_mes": 9,
       "saidas_mes": 5,
       "entradas_mes_anterior": 216,
@@ -905,12 +905,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 775,
-      "entradas_mes": 0,
+      "andamento": 776,
+      "entradas_mes": 1,
       "saidas_mes": 3,
       "entradas_mes_anterior": 28,
       "saidas_mes_anterior": 17,
-      "valor_causa": 156536995.66
+      "valor_causa": 156563915.66
     },
     {
       "fase": "Instrução",
@@ -986,11 +986,11 @@
       "fase": "Instrução",
       "grupo": "Sem grupo",
       "andamento": 5,
-      "entradas_mes": 3,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 3,
-      "valor_causa": 346809.5
+      "valor_causa": 319889.5
     },
     {
       "fase": "Instrução",
@@ -1637,6 +1637,15 @@
     },
     {
       "nome": "Vinicius da Silva Cerqueira(VSI) ; Antonio Carlos Aguiar(ACA)",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 0.0
+    },
+    {
+      "nome": "Luiz Vicente de Carvalho(LVC)",
       "andamento": 1,
       "entradas_mes": 0,
       "saidas_mes": 0,
@@ -3009,12 +3018,12 @@
     {
       "grupo": "Grupo E1",
       "cliente": "DELL COMPUTADORES",
-      "andamento": 98,
-      "entradas_mes": 0,
+      "andamento": 99,
+      "entradas_mes": 1,
       "saidas_mes": 1,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 1,
-      "valor_causa": 16437254.04,
+      "valor_causa": 16464174.04,
       "alerta_entrada": false
     },
     {
@@ -3756,6 +3765,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "PARANAPANEMA S/A",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 0.0,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "MAHLE THERMAL",
       "andamento": 1,
       "entradas_mes": 0,
@@ -3763,17 +3783,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 2,
       "valor_causa": 0.0,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "DELL COMPUTADORES",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 26920.0,
       "alerta_entrada": false
     },
     {
@@ -4297,12 +4306,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "André Alessandro de Paula(AAP)",
-      "andamento": 27,
-      "entradas_mes": 0,
+      "andamento": 28,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 2,
-      "valor_causa": 2148817.29
+      "valor_causa": 2175737.29
     },
     {
       "grupo": "Grupo E1",
@@ -4496,6 +4505,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Luiz Vicente de Carvalho(LVC)",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 0.0
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Paloma da Silva Santos(PSI)",
       "andamento": 1,
       "entradas_mes": 0,
@@ -4503,16 +4522,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 9,
       "valor_causa": 0.0
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "André Alessandro de Paula(AAP)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 26920.0
     },
     {
       "grupo": "Sem grupo",
@@ -7548,6 +7557,16 @@
     },
     {
       "estado": "SP",
+      "cliente": "PARANAPANEMA S/A",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 0.0
+    },
+    {
+      "estado": "SP",
       "cliente": "BP BUNGE",
       "andamento": 1,
       "entradas_mes": 0,
@@ -8045,11 +8064,6 @@
       "profissional": "Letícia Meneghini Fontes (LMI)"
     },
     {
-      "numero_processo": "0011899-74.2026.5.15.0152",
-      "cliente": "DELL COMPUTADORES",
-      "profissional": "André Alessandro de Paula(AAP)"
-    },
-    {
       "numero_processo": "1000003-42.2021.5.02.0382",
       "cliente": "LOJAS AMERICANAS",
       "profissional": "Jessica Cerqueira Silva(JQS)"
@@ -8063,6 +8077,11 @@
       "numero_processo": "1002426-59.2017.5.02.0464",
       "cliente": "MULTICEL",
       "profissional": "Luiz Vicente de Carvalho(LVC) ; Lisandra Melo Alves(LMS)"
+    },
+    {
+      "numero_processo": "0000260-75.2014.5.02.0432",
+      "cliente": "PARANAPANEMA S/A",
+      "profissional": "Luiz Vicente de Carvalho(LVC)"
     },
     {
       "numero_processo": "1000930-65.2026.5.02.0080",
