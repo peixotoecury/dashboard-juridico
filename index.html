@@ -6484,6 +6484,14 @@ window.DIVISAO_TRAB = {"geradoEm":"2026-09-03","arquivoFonte":"DIVISÃO TRABALHI
 
 var S_DIV = [];
 
+// Alguns registros do LM gravam só o nível de EQUIPE (ex. "Grupo C", "Grupo A") sem o
+// sub-grupo (C1, A1/A2/A3...) — não dá pra saber o sub-grupo exato nesses casos, então a
+// comparação de divergência é feita pela LETRA da equipe, não pela string exata do grupo.
+function _divEquipeLetra(g){
+  var m = String(g||'').match(/Grupo\s*([A-Za-z]+)/i);
+  return m ? m[1].toUpperCase() : '';
+}
+
 function calcularDivergenciasEquipe(){
   var fontes = [
     {arr: S.prazos||[], origem:'Prazo'},
@@ -6495,19 +6503,20 @@ function calcularDivergenciasEquipe(){
     f.arr.forEach(function(r){
       var grupoAtual = String(r.grupo_processo||'').trim();
       if(!grupoAtual) return;
+      var equipeAtual = _divEquipeLetra(grupoAtual);
       var sigla = String(r.matricula||'').trim().toUpperCase();
       var cliente = r.cliente||'';
       var tipos = [];
       var esperadoResp = null, esperadoCliente = null;
 
       var gResp = sigla ? window._divGruposEsperadosPorSigla(sigla) : null;
-      if(gResp && gResp.indexOf(grupoAtual)===-1){
+      if(gResp && gResp.map(_divEquipeLetra).indexOf(equipeAtual)===-1){
         tipos.push('Responsável fora da equipe');
         esperadoResp = gResp;
       }
 
       var gCli = cliente ? window._divGruposEsperadosPorCliente(cliente) : [];
-      if(gCli.length && gCli.indexOf(grupoAtual)===-1){
+      if(gCli.length && gCli.map(_divEquipeLetra).indexOf(equipeAtual)===-1){
         tipos.push('Cliente de outra equipe');
         esperadoCliente = gCli;
       }
