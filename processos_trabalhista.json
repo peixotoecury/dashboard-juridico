@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-09-03T15:00:36",
+  "atualizado_em": "2026-09-03T15:16:59",
   "kpis": {
     "total_andamento": 7480,
     "entradas_hoje": 3,
@@ -10,7 +10,7 @@
     "saidas_mes": 802,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 232,
-    "valor_causa_total": 1651897831.23,
+    "valor_causa_total": 1650462831.23,
     "saldo_mes": -775
   },
   "serie_diaria": [
@@ -323,7 +323,7 @@
       "saidas_mes": 8,
       "entradas_mes_anterior": 93,
       "saidas_mes_anterior": 74,
-      "valor_causa": 447330288.33
+      "valor_causa": 445895288.33
     },
     {
       "nome": "Grupo E1",
@@ -442,7 +442,7 @@
       "saidas_mes": 1,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 23,
-      "valor_causa": 123272634.41
+      "valor_causa": 121837634.41
     },
     {
       "nome": "RS",
@@ -678,7 +678,7 @@
       "saidas_mes": 143,
       "entradas_mes_anterior": 215,
       "saidas_mes_anterior": 64,
-      "valor_causa": 753825331.73
+      "valor_causa": 752390331.73
     },
     {
       "nome": "Sentença",
@@ -898,7 +898,7 @@
       "saidas_mes": 3,
       "entradas_mes_anterior": 62,
       "saidas_mes_anterior": 27,
-      "valor_causa": 161672394.77
+      "valor_causa": 160237394.77
     },
     {
       "fase": "Instrução",
@@ -1287,7 +1287,7 @@
       "saidas_mes": 2,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 12,
-      "valor_causa": 162111676.82
+      "valor_causa": 160676676.82
     },
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
@@ -1736,7 +1736,7 @@
       "saidas_mes": 0,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 12,
-      "valor_causa": 43324313.47,
+      "valor_causa": 41889313.47,
       "alerta_entrada": false
     },
     {
@@ -2082,17 +2082,6 @@
     },
     {
       "grupo": "Grupo A2",
-      "cliente": "MERCADO BITCOIN MB",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 0.0,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Grupo A2",
       "cliente": "EMPLAS",
       "andamento": 1,
       "entradas_mes": 0,
@@ -2100,6 +2089,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 664000.0,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Grupo A2",
+      "cliente": "MERCADO BITCOIN MB",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 0.0,
       "alerta_entrada": false
     },
     {
@@ -3078,7 +3078,7 @@
       "saidas_mes": 0,
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 11,
-      "valor_causa": 43324313.47,
+      "valor_causa": 41889313.47,
       "alerta_entrada": false
     },
     {
@@ -4198,7 +4198,7 @@
       "saidas_mes": 2,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 12,
-      "valor_causa": 161802956.57
+      "valor_causa": 160367956.57
     },
     {
       "grupo": "Grupo E2",
@@ -5020,7 +5020,7 @@
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 2,
-      "valor_causa": 9967314.67
+      "valor_causa": 8532314.67
     },
     {
       "estado": "MG",
@@ -7364,6 +7364,16 @@
     },
     {
       "estado": "SP",
+      "cliente": "EMPLAS",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 664000.0
+    },
+    {
+      "estado": "SP",
       "cliente": "MERCADO BITCOIN MB",
       "andamento": 1,
       "entradas_mes": 0,
@@ -7401,16 +7411,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 65000.0
-    },
-    {
-      "estado": "SP",
-      "cliente": "EMPLAS",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 664000.0
     },
     {
       "estado": "SP",
