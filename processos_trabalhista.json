@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-03T10:30:34",
+  "atualizado_em": "2026-09-03T10:45:35",
   "kpis": {
-    "total_andamento": 7479,
+    "total_andamento": 7477,
     "entradas_hoje": 0,
-    "saidas_hoje": 1,
+    "saidas_hoje": 2,
     "entradas_ontem": 20,
     "saidas_ontem": 5,
     "entradas_mes": 24,
-    "saidas_mes": 801,
+    "saidas_mes": 802,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 232,
-    "valor_causa_total": 1649815649.76,
-    "saldo_mes": -777
+    "valor_causa_total": 1649705315.42,
+    "saldo_mes": -778
   },
   "serie_diaria": [
     {
@@ -312,18 +312,18 @@
     {
       "data": "2026-09-03",
       "entradas": 0,
-      "saidas": 1
+      "saidas": 2
     }
   ],
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2085,
+      "andamento": 2084,
       "entradas_mes": 13,
-      "saidas_mes": 7,
+      "saidas_mes": 8,
       "entradas_mes_anterior": 93,
       "saidas_mes_anterior": 74,
-      "valor_causa": 446340624.87
+      "valor_causa": 446230290.53
     },
     {
       "nome": "Grupo E1",
@@ -417,7 +417,7 @@
     },
     {
       "nome": "Grupo D1",
-      "andamento": 3,
+      "andamento": 2,
       "entradas_mes": 0,
       "saidas_mes": 783,
       "entradas_mes_anterior": 3,
@@ -428,12 +428,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5750,
+      "andamento": 5748,
       "entradas_mes": 12,
-      "saidas_mes": 683,
+      "saidas_mes": 684,
       "entradas_mes_anterior": 185,
       "saidas_mes_anterior": 184,
-      "valor_causa": 1300505523.7
+      "valor_causa": 1300395189.36
     },
     {
       "nome": "MG",
@@ -673,12 +673,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2803,
+      "andamento": 2801,
       "entradas_mes": 24,
-      "saidas_mes": 142,
+      "saidas_mes": 143,
       "entradas_mes_anterior": 216,
       "saidas_mes_anterior": 64,
-      "valor_causa": 751834645.66
+      "valor_causa": 751724311.32
     },
     {
       "nome": "Sentença",
@@ -893,12 +893,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 839,
+      "andamento": 838,
       "entradas_mes": 13,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 62,
       "saidas_mes_anterior": 27,
-      "valor_causa": 160682731.31
+      "valor_causa": 160572396.97
     },
     {
       "fase": "Instrução",
@@ -993,7 +993,7 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo D1",
-      "andamento": 2,
+      "andamento": 1,
       "entradas_mes": 0,
       "saidas_mes": 136,
       "entradas_mes_anterior": 3,
@@ -1273,12 +1273,12 @@
     },
     {
       "nome": "Rafael Yepez do Lago(RYL)",
-      "andamento": 426,
+      "andamento": 425,
       "entradas_mes": 4,
-      "saidas_mes": 3,
+      "saidas_mes": 4,
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 17,
-      "valor_causa": 59708570.54
+      "valor_causa": 59598236.2
     },
     {
       "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
@@ -1614,15 +1614,6 @@
       "valor_causa": 0.0
     },
     {
-      "nome": "Jessica Cerqueira Silva(JQS)",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 436,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 0.0
-    },
-    {
       "nome": "Luiz Vicente de Carvalho(LVC)",
       "andamento": 1,
       "entradas_mes": 0,
@@ -1648,6 +1639,15 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 38000.0
+    },
+    {
+      "nome": "Jessica Cerqueira Silva(JQS)",
+      "andamento": 0,
+      "entradas_mes": 0,
+      "saidas_mes": 436,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 0.0
     },
     {
       "nome": "Natalia Bezerra Baliero(NBB)",
@@ -2819,17 +2819,6 @@
     },
     {
       "grupo": "Grupo D1",
-      "cliente": "UNILOG EXPRESS",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 0.0,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Grupo D1",
       "cliente": "B2W",
       "andamento": 1,
       "entradas_mes": 0,
@@ -3216,12 +3205,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "A. RAYMOND",
-      "andamento": 17,
+      "andamento": 16,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 2,
-      "valor_causa": 1647809.63,
+      "valor_causa": 1537475.29,
       "alerta_entrada": false
     },
     {
@@ -3589,6 +3578,17 @@
     },
     {
       "grupo": "Grupo E2",
+      "cliente": "INTEL SEMICONDUTORES",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 415500.0,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Grupo E2",
       "cliente": "LEONARDO WAISSMANN",
       "andamento": 1,
       "entradas_mes": 0,
@@ -3629,17 +3629,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 65000.0,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Grupo E2",
-      "cliente": "INTEL SEMICONDUTORES",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 415500.0,
       "alerta_entrada": false
     },
     {
@@ -4073,16 +4062,6 @@
       "valor_causa": 330970.85
     },
     {
-      "grupo": "Grupo D1",
-      "profissional": "Jessica Cerqueira Silva(JQS)",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 435,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 0.0
-    },
-    {
       "grupo": "Grupo E1",
       "profissional": "Giulia Vendramini Milani(GVM)",
       "andamento": 444,
@@ -4215,12 +4194,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Rafael Yepez do Lago(RYL)",
-      "andamento": 425,
+      "andamento": 424,
       "entradas_mes": 3,
-      "saidas_mes": 3,
+      "saidas_mes": 4,
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 17,
-      "valor_causa": 59656548.54
+      "valor_causa": 59546214.2
     },
     {
       "grupo": "Grupo E2",
@@ -5266,16 +5245,6 @@
     },
     {
       "estado": "MG",
-      "cliente": "HRZ ENERGIA",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 644064.82
-    },
-    {
-      "estado": "MG",
       "cliente": "INTEL SEMICONDUTORES",
       "andamento": 1,
       "entradas_mes": 0,
@@ -5283,6 +5252,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 415500.0
+    },
+    {
+      "estado": "MG",
+      "cliente": "HRZ ENERGIA",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 644064.82
     },
     {
       "estado": "MS",
@@ -6577,12 +6556,12 @@
     {
       "estado": "SP",
       "cliente": "A. RAYMOND",
-      "andamento": 16,
+      "andamento": 15,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 2,
-      "valor_causa": 1615809.63
+      "valor_causa": 1505475.29
     },
     {
       "estado": "SP",
@@ -7117,16 +7096,6 @@
     {
       "estado": "SP",
       "cliente": "JEMA PATRIMONIAL",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 0.0
-    },
-    {
-      "estado": "SP",
-      "cliente": "UNILOG EXPRESS",
       "andamento": 1,
       "entradas_mes": 0,
       "saidas_mes": 0,
