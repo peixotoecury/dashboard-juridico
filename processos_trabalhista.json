@@ -1,24 +1,19 @@
 {
-  "atualizado_em": "2026-09-02T19:30:34",
+  "atualizado_em": "2026-09-03T08:00:24",
   "kpis": {
     "total_andamento": 7479,
-    "entradas_hoje": 20,
-    "saidas_hoje": 5,
-    "entradas_ontem": 4,
-    "saidas_ontem": 795,
+    "entradas_hoje": 0,
+    "saidas_hoje": 1,
+    "entradas_ontem": 20,
+    "saidas_ontem": 5,
     "entradas_mes": 24,
-    "saidas_mes": 800,
+    "saidas_mes": 801,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 232,
     "valor_causa_total": 1649815649.76,
-    "saldo_mes": -776
+    "saldo_mes": -777
   },
   "serie_diaria": [
-    {
-      "data": "2026-07-05",
-      "entradas": 0,
-      "saidas": 0
-    },
     {
       "data": "2026-07-06",
       "entradas": 13,
@@ -313,6 +308,11 @@
       "data": "2026-09-02",
       "entradas": 20,
       "saidas": 5
+    },
+    {
+      "data": "2026-09-03",
+      "entradas": 0,
+      "saidas": 1
     }
   ],
   "por_grupo": [
@@ -329,7 +329,7 @@
       "nome": "Grupo E1",
       "andamento": 1778,
       "entradas_mes": 3,
-      "saidas_mes": 8,
+      "saidas_mes": 9,
       "entradas_mes_anterior": 50,
       "saidas_mes_anterior": 92,
       "valor_causa": 290383425.6
@@ -430,7 +430,7 @@
       "nome": "SP",
       "andamento": 5750,
       "entradas_mes": 12,
-      "saidas_mes": 682,
+      "saidas_mes": 683,
       "entradas_mes_anterior": 185,
       "saidas_mes_anterior": 184,
       "valor_causa": 1300505523.7
@@ -702,7 +702,7 @@
       "nome": "Execução",
       "andamento": 939,
       "entradas_mes": 0,
-      "saidas_mes": 295,
+      "saidas_mes": 296,
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 92,
       "valor_causa": 126103995.47
@@ -825,7 +825,7 @@
       "grupo": "Grupo E1",
       "andamento": 187,
       "entradas_mes": 0,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 48,
       "valor_causa": 20221972.48
@@ -1428,7 +1428,7 @@
       "nome": "Paloma da Silva Santos(PSI)",
       "andamento": 245,
       "entradas_mes": 0,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 33,
       "valor_causa": 51178666.68
@@ -1687,7 +1687,7 @@
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 31,
       "valor_causa": 208220115.98,
-      "alerta_entrada": true
+      "alerta_entrada": false
     },
     {
       "nome": "EMBRAER",
@@ -1723,7 +1723,7 @@
       "nome": "MAHLE METAL - MOGI",
       "andamento": 349,
       "entradas_mes": 0,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 33,
       "valor_causa": 65361147.13,
@@ -2877,7 +2877,7 @@
       "cliente": "MAHLE METAL - MOGI",
       "andamento": 349,
       "entradas_mes": 0,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 26,
       "valor_causa": 65361147.13,
@@ -4138,7 +4138,7 @@
       "profissional": "Paloma da Silva Santos(PSI)",
       "andamento": 244,
       "entradas_mes": 0,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 24,
       "valor_causa": 51178666.68
@@ -6400,7 +6400,7 @@
       "cliente": "MAHLE METAL - MOGI",
       "andamento": 348,
       "entradas_mes": 0,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 33,
       "valor_causa": 65361147.13
@@ -7767,16 +7767,6 @@
     }
   ],
   "clientes_com_alerta": [
-    {
-      "nome": "BP BIOENERGIA",
-      "andamento": 762,
-      "entradas_mes": 3,
-      "saidas_mes": 4,
-      "entradas_mes_anterior": 24,
-      "saidas_mes_anterior": 31,
-      "valor_causa": 208220115.98,
-      "alerta_entrada": true
-    },
     {
       "nome": "INPASA SINOP",
       "andamento": 34,
