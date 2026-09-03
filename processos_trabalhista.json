@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-03T15:46:00",
+  "atualizado_em": "2026-09-03T16:00:43",
   "kpis": {
-    "total_andamento": 7479,
-    "entradas_hoje": 3,
+    "total_andamento": 7480,
+    "entradas_hoje": 4,
     "saidas_hoje": 2,
     "entradas_ontem": 20,
     "saidas_ontem": 5,
-    "entradas_mes": 27,
+    "entradas_mes": 28,
     "saidas_mes": 802,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 233,
-    "valor_causa_total": 1649497162.44,
-    "saldo_mes": -775
+    "valor_causa_total": 1649549190.41,
+    "saldo_mes": -774
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-09-03",
-      "entradas": 3,
+      "entradas": 4,
       "saidas": 2
     }
   ],
@@ -399,12 +399,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 8,
-      "entradas_mes": 2,
+      "andamento": 9,
+      "entradas_mes": 3,
       "saidas_mes": 2,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 20,
-      "valor_causa": 431932.78
+      "valor_causa": 483960.75
     },
     {
       "nome": "Sócios",
@@ -509,12 +509,12 @@
     },
     {
       "nome": "MT",
-      "andamento": 49,
-      "entradas_mes": 7,
+      "andamento": 50,
+      "entradas_mes": 8,
       "saidas_mes": 0,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 0,
-      "valor_causa": 8301608.98
+      "valor_causa": 8353636.95
     },
     {
       "nome": "TO",
@@ -673,12 +673,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2801,
-      "entradas_mes": 27,
+      "andamento": 2802,
+      "entradas_mes": 28,
       "saidas_mes": 143,
       "entradas_mes_anterior": 215,
       "saidas_mes_anterior": 64,
-      "valor_causa": 751076457.53
+      "valor_causa": 751128485.5
     },
     {
       "nome": "Sentença",
@@ -973,12 +973,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 5,
-      "entradas_mes": 2,
+      "andamento": 6,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 2,
-      "valor_causa": 122758.25
+      "valor_causa": 174786.22
     },
     {
       "fase": "Instrução",
@@ -1489,12 +1489,12 @@
     },
     {
       "nome": "Júlia Priego Lopes da Silva(JPL)",
-      "andamento": 128,
-      "entradas_mes": 0,
+      "andamento": 129,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 12,
-      "valor_causa": 36505266.11
+      "valor_causa": 36557294.08
     },
     {
       "nome": "Sofia Freire (SOF)",
@@ -1701,12 +1701,12 @@
     },
     {
       "nome": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 700,
-      "entradas_mes": 2,
+      "andamento": 701,
+      "entradas_mes": 3,
       "saidas_mes": 3,
       "entradas_mes_anterior": 28,
       "saidas_mes_anterior": 21,
-      "valor_causa": 135089258.81,
+      "valor_causa": 135141286.78,
       "alerta_entrada": false
     },
     {
@@ -3623,12 +3623,12 @@
     {
       "grupo": "Sem grupo",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 3,
-      "entradas_mes": 1,
+      "andamento": 4,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
-      "valor_causa": 70736.25,
+      "valor_causa": 122764.22,
       "alerta_entrada": false
     },
     {
@@ -4349,6 +4349,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 52022.0
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Júlia Priego Lopes da Silva(JPL)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 52027.97
     },
     {
       "grupo": "Sem grupo",
@@ -5364,6 +5374,16 @@
     },
     {
       "estado": "MT",
+      "cliente": "SYNGENTA PROTEÇÃO DE",
+      "andamento": 4,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 494386.44
+    },
+    {
+      "estado": "MT",
       "cliente": "HERINGER",
       "andamento": 3,
       "entradas_mes": 0,
@@ -5371,16 +5391,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 99675.1
-    },
-    {
-      "estado": "MT",
-      "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 3,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 442358.47
     },
     {
       "estado": "MT",
@@ -7720,6 +7730,11 @@
       "numero_processo": "0011361-94.2026.5.15.0087",
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "profissional": "Giulia Vendramini Milani(GVM)"
+    },
+    {
+      "numero_processo": "0001189-66.2026.5.23.0121",
+      "cliente": "SYNGENTA PROTEÇÃO DE",
+      "profissional": "Júlia Priego Lopes da Silva(JPL)"
     },
     {
       "numero_processo": "0015776-90.2026.5.15.0000",
