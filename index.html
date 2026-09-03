@@ -2792,6 +2792,7 @@ body.role-manager .upload-bar {
   <button class="nav-btn" id="nav-baixados" onclick="switchTab('baixados',this)">✅ Baixados no Dia <span class="nb-cnt" id="nc-baixados">0</span></button>
   <button class="nav-btn" id="nav-controle-decisoes" onclick="switchTab('controle-decisoes',this)">📑 Controle de Decisões <span class="nb-cnt" id="nc-cd">0</span></button>
   <button class="nav-btn" id="nav-transf-pastas" onclick="switchTab('transf-pastas',this)">🗂️ Transferência de Pastas <span class="nb-cnt" id="nc-tp">0</span></button>
+  <button class="nav-btn" id="nav-divergencias" onclick="switchTab('divergencias',this)">⚠️ Divergências de Equipe <span class="nb-cnt" id="nc-div">0</span></button>
   <button class="nav-btn" id="nav-quadro" style="display:none" onclick="switchTab('quadro',this)">📊 Quadro Geral <span class="nb-cnt" id="nc-quadro">0</span></button>
   <button class="nav-btn" id="nav-admin" onclick="switchTab('admin',this)" style="display:none">⚙️ Gestão de Usuários <span class="nb-cnt" id="nc-admin">0</span></button>
   <button class="nav-btn" id="nav-exposicao" onclick="switchTab('exposicao',this)">📈 Exposição por Grupo <span class="nb-cnt" id="nc-exposicao">0</span></button>
@@ -3563,6 +3564,45 @@ body.role-manager .upload-bar {
   </div>
 </div>
 
+<!-- ═══ DIVERGÊNCIAS DE EQUIPE ═══ -->
+<div class="page" id="page-divergencias">
+  <div class="det-card">
+    <div class="det-hdr" style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;">
+      <h2>⚠️ Divergências de Equipe <span class="det-cnt" id="ct-dv">0 divergência(s)</span></h2>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;">
+        <button type="button" style="background:#f0f6f8;border:1.5px solid #aecad6;color:#005070;border-radius:8px;padding:8px 16px;font-size:12px;font-weight:700;cursor:pointer;" onclick="exportarDivergenciasExcel()">📥 Exportar Excel</button>
+      </div>
+    </div>
+    <div style="margin:0 0 12px;background:#f0f7fb;border:1px solid #ccdde4;border-radius:8px;padding:10px 14px;font-size:11px;color:var(--gray3);">
+      ℹ️ Compara todo Prazo/Agenda/Agenda Equipe ativo contra a planilha <strong>&quot;DIVISÃO TRABALHISTA&quot;</strong> (fonte: <span id="dv-fonte-arquivo">—</span>, gerada em <span id="dv-fonte-data">—</span>) e aponta quando o responsável cadastrado não pertence à equipe daquele grupo, ou quando o cliente do processo parece pertencer a outra equipe na planilha. É um alerta pra revisão manual caso a caso — nem toda divergência é necessariamente um erro (ex.: advogado que atua em mais de um grupo), mas vale conferir e, se for o caso, avisar a equipe responsável pelo botão "Notificar".
+    </div>
+    <div class="det-filters">
+      <div class="fg"><label>Tipo de Divergência</label>
+        <select class="fsel" id="dv-tipo" onchange="renderDivergenciasEquipe()">
+          <option value="">Todos os tipos</option>
+          <option value="Responsável fora da equipe">Responsável fora da equipe</option>
+          <option value="Cliente de outra equipe">Cliente de outra equipe</option>
+        </select>
+      </div>
+      <div class="fg"><label>Grupo no Sistema</label>
+        <select class="fsel" id="dv-grupo" onchange="renderDivergenciasEquipe()">
+          <option value="">Todos os grupos</option>
+        </select>
+      </div>
+      <div class="srch-wrap">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input class="srch-in" id="dv-s" placeholder="Buscar processo, cliente ou responsável..." oninput="renderDivergenciasEquipe()">
+      </div>
+      <button class="btn-limpar" onclick="V('dv-s').value='';V('dv-tipo').value='';V('dv-grupo').value='';renderDivergenciasEquipe()">✕ Limpar</button>
+    </div>
+    <div class="det-scroll" style="max-height:65vh;"><table>
+      <thead><tr><th>Origem</th><th>Tipo</th><th>Data</th><th>Status</th><th>Processo</th><th>Cliente</th><th>Responsável</th><th>Grupo no Sistema</th><th>Grupo Esperado</th><th>Tarefa</th><th>Ação</th></tr></thead>
+      <tbody id="body-dv"></tbody>
+    </table></div>
+    <div class="pg-bar" id="pg-dv"></div>
+  </div>
+</div>
+
 <!-- ═══ QUADRO GERAL ═══ -->
 <div class="page" id="page-quadro">
 
@@ -4036,6 +4076,7 @@ function switchTab(n, el) {
   V('fpanel').style.display = ['prazos','prazos-solo','agendas','equipe','vencidos-geral'].includes(n)?'':'none';
   if(n==='admin' && typeof window.renderAdmin === 'function') setTimeout(window.renderAdmin, 50);
   if(n==='exposicao' && typeof window.renderExposicaoGrupo === 'function') setTimeout(window.renderExposicaoGrupo, 50);
+  if(n==='divergencias' && typeof window.renderDivergenciasEquipe === 'function') setTimeout(window.renderDivergenciasEquipe, 50);
 }
 
 // ── CONTROLAR VISIBILIDADE DAS ABAS POR PERFIL ──
@@ -6027,6 +6068,7 @@ function renderAll() {
   renderRankTarefa();
   renderFataisRespTipo();
   renderExecTicker();
+  if(typeof window.renderDivergenciasEquipe === 'function') window.renderDivergenciasEquipe();
 
 }
 
@@ -6392,6 +6434,200 @@ window.gestorNomeMapeamento = {
   'Grupo E1': 'Keyla Moraes',
   'Grupo E2': 'Washington Soares'
 };
+
+// ⚠️ DIVERGÊNCIAS DE EQUIPE — comparação Prazos/Agendas/Agenda Equipe x planilha
+// "DIVISÃO TRABALHISTA - DD MM AAAA.xlsx" (pasta OneDrive "Pastas - Time B").
+// Reprocessar sempre que a usuária mandar uma versão mais nova dessa planilha:
+// rodar gerar_divisao_trabalhista_json.py (scratchpad) e colar o JSON compacto abaixo.
+window.DIVISAO_TRAB = {"geradoEm":"2026-09-03","arquivoFonte":"DIVISÃO TRABALHISTA - 03 09 2026.xlsx","porGrupo":{"Grupo A1":{"clientes":["ACCIONA CONSTRUCCION","CBC CARTUCHOS BRASIL","CTG - RIO PARANAPANE","EMBRAER","GRAMMER DO BRASIL","HERINGER","SYNGENTA PROTEÇÃO DE","THE LYCRA COMPANY","VIA APPIA CONCESSOES"],"siglas":["MNB","TCE"],"advogados":[{"nome":"Marina de Novaes Brechiani","sigla":"MNB"},{"nome":"Thais Catharine Cardozo","sigla":"TCE"}],"apoio":["Hanyelle Alves da Silva - Analista Jurídico","Giovanni Comunale - Estagiário","Jacqueline Jahel - Estagiária","Bianca Pimentel de Oliveira (BPO) - estagiária"]},"Grupo A2":{"clientes":["3CORP TECHNOLOGY","AAF BRASIL","EMPLAS","HUB SERVIÇOS","INFINITTO DESIGN - 2","IVANYRA CORREIA","LABORATÓRIO PRODUÇÃO","MARJAN INDUSTRIA","MERCADO BITCOIN MB","NATUREZA URBANA","PEIXOTO E CURY","SINTHORESP","SYNGENTA PROTEÇÃO DE","T4F ENTRETENIMENTO"],"siglas":["ARC","NBG"],"advogados":[{"nome":"Arthur Rodrigues Rios Toledo de Castro","sigla":"ARC"},{"nome":"Natália Biondi Gaggini Robles","sigla":"NBG"}],"apoio":["Tabata Neves Caramelli (TNE) - Estagiária","Breno Torquato (estagiário)"]},"Grupo A3":{"clientes":["AZEVEDO & TRAVASSOS","CEA MODAS","CORREIOS E TELEGRAFO","EDUARDO RUDGE","ELFER INDÚSTRIA","FELIPE GRANADO","FIS SOLUCÕES","GORDILHO NAPOLITANO","GUARUPART","INCOM INDUSTRIAL","MIGUEL MAQUINAS","PEIXOTO E CURY","RPMA","SINDIGÁS","TELEFONICA BRASIL","WHIRLPOOL S.A."],"siglas":["ARC","SOF","VSI"],"advogados":[{"nome":"André Alessandro de Paula","sigla":null},{"nome":"Arthur Rodrigues Rios Toledo de Castro","sigla":"ARC"},{"nome":"Rafael Camargo","sigla":null},{"nome":"Sofia Freire","sigla":"SOF"},{"nome":"Vinicius da Silva Cerqueira","sigla":"VSI"}],"apoio":["Chris Carvalho (CAR) - assistente","Aline Amorim Oliveira (AAO) - estagiária"]},"Grupo B1":{"clientes":["BRIDGESTONE"],"siglas":["BCF","BSO","GSM","JPE","NRG","RFE","SOF","TAM"],"advogados":[{"nome":"Beatriz Santiago de Souza","sigla":"BSO"},{"nome":"Bruna Cembranelli Fazenda","sigla":"BCF"},{"nome":"Guilherme Silva Morimoto","sigla":"GSM"},{"nome":"Juliana Perucci","sigla":"JPE"},{"nome":"Nicolau Rafael Guimarães Coelho","sigla":"NRG"},{"nome":"Rafael Rocha Ferreira","sigla":"RFE"},{"nome":"Sofia Freire","sigla":"SOF"},{"nome":"Tamara Silva Marcílio","sigla":"TAM"}],"apoio":["Cícera Gabriela (assistente)","Jennifer Nogueira (assistente)","Mariana Arruda Teberges (estagiária)","Evandro Vessoni (analista)","Raica Kwok (estagiária)"]},"Grupo B2":{"clientes":["ELEB","EMBRAER ESPECIAIS","EMBRAER PREVIDENCIÁRIO","EMBRAER REINTEGRADOS","HRZ ENERGIA"],"siglas":["ANB","BCF","NRG","VCR"],"advogados":[{"nome":"Anna Carolina Balbino Gatti Baani","sigla":"ANB"},{"nome":"Bruna Cembranelli Fazenda","sigla":"BCF"},{"nome":"Nicolau Rafael Guimarães Coelho","sigla":"NRG"},{"nome":"Vanessa de Cassia Castrequini Rosa","sigla":"VCR"}],"apoio":["Maria Carolina (analista)","Rafaella Wittmann (assistente)","Lucas Gusthavo (estagiário)","Geovanna Rodrigues (aprendiz)"]},"Grupo B3":{"clientes":["CBC CARTUCHOS BRASIL","CBC MONTENEGRO","FERRERO DO BRASIL","GRANOL","JEMA PATRIMONIAL","PATRICK EYD SABBAGH","T4F ENTRETENIMENTO","VLEAF PARTICIPAÇÕES","VORTTEXCO INFORMATIC","WICKBOLD"],"siglas":["ANB","GSM","JPE","LMI","NRG"],"advogados":[{"nome":"Anna Carolina Balbino Gatti Baani","sigla":"ANB"},{"nome":"Guilherme Silva Morimoto","sigla":"GSM"},{"nome":"Juliana Perucci","sigla":"JPE"},{"nome":"Letícia Meneghini Fontes","sigla":"LMI"},{"nome":"Nicolau Rafael Guimarães Coelho","sigla":"NRG"}],"apoio":["Brenna Malta (assistente)"]},"Grupo C1":{"clientes":["AGRIVALLE BRASIL","AZEVEDO & TRAVASSOS","CASA DO SABER","CATERPILLAR BRASIL","CEBRACE","COMPANHIA AIX","CTG - CHINA THREE","CTG - RIO PARANA 2","CTG - RIO PARANA 3","CTG - RIO PARANAPANE","CTG - RIO PARANÁ","ENERGISA EAC","ENERGISA ESS","FABIO CARAMURU CORRE","GDM SEMENTES MATRIZ","GRUPO TV1","HEWLETT-PACKARD - HP","HP - HPE","INTERSERVICE","JAYME BRENER","LAÉRCIO VALENTIM","MCCANN-ERICKSON","MULTICEL","PEDRO CURY","PEIXOTO E CURY","RPMA","SINDIGÁS","SOCIEDADE FOGAS","STELLA TONANNI","SYNGENTA PROTEÇÃO DE","SYNGENTA SEEDS NIDER","TELEFONICA BRASIL","UHE SÃO SIMÃO"],"siglas":["ECO","RCF","TFR","VSI"],"advogados":[{"nome":"Erik Mota Coppi","sigla":"ECO"},{"nome":"Rafael Camargo Felisbino","sigla":"RCF"},{"nome":"Thiago Frid Figueiredo Rossi","sigla":"TFR"},{"nome":"Vinicius da Silva Cerqueira","sigla":"VSI"}],"apoio":["Clayton Bufarele Narciso (CBN) - estagiário"]},"Grupo E1":{"clientes":["COLEGIO INOVATI","COLÉGIO VÉRTICE","COOPERATIVA AGRICOLA","CORREIOS E TELEGRAFO","DE NORA DO BRASIL","DELL COMPUTADORES","DIPAGRO","GRAMMER DO BRASIL","IPE REALTY","MAHLE METAL - MOGI","MAHLE METAL - SBC","MAHLE METAL - SSC","MAHLE METAL -FILTROS","MAHLE METAL- ITAJUBÁ","MAHLE METAL-JUNDIAÍ","MAHLE THERMAL","PEIXOTO E CURY","ROBERT BOSCH","SYNGENTA PROTEÇÃO DE","SYNGENTA SEEDS NIDER"],"siglas":["AAP","ALF","ARC","ECO","GVM","JPL","JQS","JRM","KBM","PSI","TLI","VRO","VSI"],"advogados":[{"nome":"Aline Ferreira Miron","sigla":"ALF"},{"nome":"André Alessandro de Paula","sigla":"AAP"},{"nome":"Arthur Rodrigues Rios Toledo de Castro","sigla":"ARC"},{"nome":"Erik Mota Coppi","sigla":"ECO"},{"nome":"Giulia Vendramini Milani","sigla":"GVM"},{"nome":"Jéssica Cerqueira","sigla":"JQS"},{"nome":"Joice Ramos Miranda","sigla":"JRM"},{"nome":"Júlia Priego Lopes da Silva","sigla":"JPL"},{"nome":"Keyla Maria Barbosa Silva Moraes","sigla":"KBM"},{"nome":"Paloma da Silva Santos","sigla":"PSI"},{"nome":"Tamires Lins Costa","sigla":"TLI"},{"nome":"Vinicius da Silva Cerqueira","sigla":"VSI"},{"nome":"Vinícius Ronchi Arruda","sigla":"VRO"}],"apoio":["Alícia Marcondes Hamati (ALH) - estagiária","Ellen Mary Maciel Silva (EMM) - estagiária","Larissa Lekich (LLL) - assistente","Nathalie Louise Dias (NLO) - (Adv trab e civel) relatórios","Matheus de Jesus Trindade (MJT) - Assistente eSocial","Gabriel Freitas de Oliveira (GFO) - Assistente eSocial"]},"Grupo E2":{"clientes":["A. RAYMOND","AKAMAI TECNOLOGIAS","ANTONIO C. AGUIAR","ARCHROMA - SPICE","BECTON DICKINSON BD","BP BIOENERGIA","BP BUNGE","BUNGE ALIMENTOS","CEPAM COMERCIO","DANILLA FOODS BRASIL","ECU LOGISTICS","ELETROBRAS","EUROCHEM FTO MATRIZ","EUROCHEM SALITRE","FABIO CARAMURU CORRE","FAMILIA ANGANUZZI","FEDERAL-MOGUL","FRANCISCO MARINS","GARANTIA REAL SERVIC","GRUPO BAND RADIO TV","GUILHERME PRIANTE","HERINGER","INPASA SINOP","INTEL SEMICONDUTORES","INTERNATIONAL PAPER","IPE REALTY","ITW CHEMICAL MATRIZ","ITW PPF","IVAN SEGURADO PINTO","JAMES ACACIO LOBO","L. SANT ANGELO","LEONARDO WAISSMANN","LOCALIZA RENT A CAR","MARCELO MENDES MOURA","MITRE VENDAS","MSA BRASIL","MULTICEL","NEO MULTIMERCADO","PEIXOTO E CURY","PILKINGTON (NSG)","RENATO THOMAZ PEREIR","ROYAL PRESTIGE - HY","SINDIGÁS","SISTENGE","STEELCORP CONSTRUCTI","SYNGENTA PROTEÇÃO DE","TENDA ATACADO","TV SBT CANAL 4","UBER DO BRASIL","VERZANI & SANDRINI","VITERRA AGRICULTURE","VITERRA RIO VERMELHO"],"siglas":["AAP","ARC","BBO","BTF","CAL","JRM","LWP","MBF","NBG","RCF","RRU","RYL","WSF"],"advogados":[{"nome":"André Alessandro de Paula","sigla":"AAP"},{"nome":"Arthur Rodrigues Rios Toledo de Castro","sigla":"ARC"},{"nome":"Bianca Bolanhi Camacho","sigla":"BBO"},{"nome":"Bruno Tanganelli Farah","sigla":"BTF"},{"nome":"Camila Alves Magalhães de Paula","sigla":"CAL"},{"nome":"Joice Ramos Miranda","sigla":"JRM"},{"nome":"Lucas Willott Pereira","sigla":"LWP"},{"nome":"Mariana Borges de Menezes Fávaro","sigla":"MBF"},{"nome":"Natália Biondi Gaggini Robles","sigla":"NBG"},{"nome":"Rafael Camargo Felisbino","sigla":"RCF"},{"nome":"Rafael Yepez do Lago","sigla":"RYL"},{"nome":"Richard Ruan Leo da Silva","sigla":"RRU"},{"nome":"Washington Soares Silva Filho","sigla":"WSF"}],"apoio":["Julio Cesar Valadares (JVC) - estagiário","Edjan Gonçalves dos Reis (EGR) - estagiário","Julio Cesar Ferreira Rodrigues (JUR) - estágiario","Giovanna Teixeira Franco (GIF) - assistente","Gabriela Pedroso (GSP) - estagiária","Brenda da Silva dos Santos (BSS) - estagiária","Karoline de Castro Torres (KTO) - estagiária","Amanda Mesquita Araujo (AML) - assistente"]}},"siglaParaGrupos":{"MNB":["Grupo A1"],"TCE":["Grupo A1"],"ARC":["Grupo A2","Grupo A3","Grupo E1","Grupo E2"],"NBG":["Grupo A2","Grupo E2"],"SOF":["Grupo A3","Grupo B1"],"VSI":["Grupo A3","Grupo C1","Grupo E1"],"BSO":["Grupo B1"],"BCF":["Grupo B1","Grupo B2"],"GSM":["Grupo B1","Grupo B3"],"JPE":["Grupo B1","Grupo B3"],"NRG":["Grupo B1","Grupo B2","Grupo B3"],"RFE":["Grupo B1"],"TAM":["Grupo B1"],"ANB":["Grupo B2","Grupo B3"],"VCR":["Grupo B2"],"LMI":["Grupo B3"],"ECO":["Grupo C1","Grupo E1"],"RCF":["Grupo C1","Grupo E2"],"TFR":["Grupo C1"],"ALF":["Grupo E1"],"AAP":["Grupo E1","Grupo E2"],"GVM":["Grupo E1"],"JQS":["Grupo E1"],"JRM":["Grupo E1","Grupo E2"],"JPL":["Grupo E1"],"KBM":["Grupo E1"],"PSI":["Grupo E1"],"TLI":["Grupo E1"],"VRO":["Grupo E1"],"BBO":["Grupo E2"],"BTF":["Grupo E2"],"CAL":["Grupo E2"],"LWP":["Grupo E2"],"MBF":["Grupo E2"],"RYL":["Grupo E2"],"RRU":["Grupo E2"],"WSF":["Grupo E2"]}};
+
+(function(){
+  var idx = null;
+  function buildIndex(){
+    if(idx) return idx;
+    var porGrupo = window.DIVISAO_TRAB.porGrupo || {};
+    var clienteList = [];
+    Object.keys(porGrupo).forEach(function(grupo){
+      var g = porGrupo[grupo];
+      (g.clientes||[]).forEach(function(c){ clienteList.push({norm: normTxt(c), grupo: grupo}); });
+    });
+    clienteList.sort(function(a,b){ return b.norm.length - a.norm.length; });
+    idx = { clienteList: clienteList, siglaParaGrupos: window.DIVISAO_TRAB.siglaParaGrupos||{} };
+    return idx;
+  }
+  var _clienteCache = {};
+  function gruposEsperadosPorCliente(clienteRaw){
+    var key = String(clienteRaw||'');
+    if(_clienteCache.hasOwnProperty(key)) return _clienteCache[key];
+    var norm = normTxt(clienteRaw);
+    var out = [];
+    if(norm.length >= 6){
+      var ix = buildIndex();
+      for(var i=0;i<ix.clienteList.length;i++){
+        var entry = ix.clienteList[i];
+        if(entry.norm.length < 6) continue;
+        if(norm.indexOf(entry.norm)===0 || entry.norm.indexOf(norm)===0){
+          if(out.indexOf(entry.grupo)===-1) out.push(entry.grupo);
+        }
+      }
+    }
+    _clienteCache[key] = out;
+    return out;
+  }
+  function gruposEsperadosPorSigla(sigla){
+    var ix = buildIndex();
+    return ix.siglaParaGrupos[String(sigla||'').trim().toUpperCase()] || null;
+  }
+  window._divGruposEsperadosPorCliente = gruposEsperadosPorCliente;
+  window._divGruposEsperadosPorSigla = gruposEsperadosPorSigla;
+})();
+
+var S_DIV = [];
+
+function calcularDivergenciasEquipe(){
+  var fontes = [
+    {arr: S.prazos||[], origem:'Prazo'},
+    {arr: S.agendas||[], origem:'Agenda'},
+    {arr: S.equipe||[], origem:'Agenda Equipe'}
+  ];
+  var out = [];
+  fontes.forEach(function(f){
+    f.arr.forEach(function(r){
+      var grupoAtual = String(r.grupo_processo||'').trim();
+      if(!grupoAtual) return;
+      var sigla = String(r.matricula||'').trim().toUpperCase();
+      var cliente = r.cliente||'';
+      var tipos = [];
+      var esperadoResp = null, esperadoCliente = null;
+
+      var gResp = sigla ? window._divGruposEsperadosPorSigla(sigla) : null;
+      if(gResp && gResp.indexOf(grupoAtual)===-1){
+        tipos.push('Responsável fora da equipe');
+        esperadoResp = gResp;
+      }
+
+      var gCli = cliente ? window._divGruposEsperadosPorCliente(cliente) : [];
+      if(gCli.length && gCli.indexOf(grupoAtual)===-1){
+        tipos.push('Cliente de outra equipe');
+        esperadoCliente = gCli;
+      }
+
+      if(tipos.length){
+        out.push({
+          origem: f.origem,
+          tipo: tipos.join(' + '),
+          data: r.data, status: r.status,
+          numero_processo: r.numero_processo,
+          cliente: cliente,
+          responsavel: r.responsavel, matricula: sigla,
+          grupo_atual: grupoAtual,
+          grupo_esperado: (esperadoResp||esperadoCliente||[]).join(' ou '),
+          descricao_tarefa: r.descricao_tarefa
+        });
+      }
+    });
+  });
+  return out;
+}
+
+function _dvFiltrar(){
+  var tipoSel = (V('dv-tipo')||{}).value || '';
+  var grupoSel = (V('dv-grupo')||{}).value || '';
+  var srch = ((V('dv-s')||{}).value || '').toLowerCase();
+  var data = S_DIV.slice();
+  if(tipoSel) data = data.filter(function(r){ return r.tipo.indexOf(tipoSel)!==-1; });
+  if(grupoSel) data = data.filter(function(r){ return r.grupo_atual===grupoSel; });
+  if(srch) data = data.filter(function(r){ return [r.numero_processo,r.cliente,r.responsavel].join(' ').toLowerCase().indexOf(srch)!==-1; });
+  return data;
+}
+
+function renderDivergenciasEquipe(){
+  S_DIV = calcularDivergenciasEquipe();
+  var nc = document.getElementById('nc-div'); if(nc) nc.textContent = S_DIV.length;
+  var fonteArq = document.getElementById('dv-fonte-arquivo'); if(fonteArq) fonteArq.textContent = (window.DIVISAO_TRAB||{}).arquivoFonte || '—';
+  var fonteData = document.getElementById('dv-fonte-data'); if(fonteData) fonteData.textContent = fmtDate((window.DIVISAO_TRAB||{}).geradoEm) || '—';
+
+  var data = _dvFiltrar();
+  var ctEl = V('ct-dv'); if(ctEl) ctEl.textContent = data.length+' divergência(s)';
+  var res = pgSlice(data,'dv');
+  var bodyEl = V('body-dv');
+  if(bodyEl) bodyEl.innerHTML = res.slice.length ? res.slice.map(function(r,i){
+    var idxGlobal = (res.pg-1)*PG+i;
+    return '<tr>'
+    +'<td>'+e(r.origem)+'</td>'
+    +'<td class="td-clip-sm" title="'+e(r.tipo)+'">'+e(r.tipo)+'</td>'
+    +'<td class="td-mono">'+fmtDate(r.data)+'</td>'
+    +'<td>'+sBadge(r.status)+'</td>'
+    +'<td class="td-clip-sm proc-normal" title="'+e(r.numero_processo)+'">'+e(r.numero_processo)+'</td>'
+    +'<td class="td-clip-sm" title="'+e(r.cliente)+'">'+e(r.cliente)+'</td>'
+    +'<td class="td-clip-sm">'+e(r.responsavel)+' ('+e(r.matricula)+')</td>'
+    +'<td class="td-clip-sm">'+e(r.grupo_atual)+'</td>'
+    +'<td class="td-clip-sm" style="color:#b02a2a;font-weight:600;">'+e(r.grupo_esperado||'—')+'</td>'
+    +'<td class="td-clip-sm" title="'+e(r.descricao_tarefa)+'">'+e(r.descricao_tarefa)+'</td>'
+    +'<td><button type="button" style="background:#f0f6f8;border:1.5px solid #aecad6;color:#005070;border-radius:6px;padding:4px 8px;font-size:10.5px;cursor:pointer;white-space:nowrap;" onclick="_divNotificarEquipe('+idxGlobal+')">📧 Notificar</button></td>'
+    +'</tr>'; }).join('') : emptyR(11);
+  renderPg('pg-dv',res.pg,res.pages,res.total,'dv',renderDivergenciasEquipe);
+
+  var selGrupo = V('dv-grupo');
+  if(selGrupo && selGrupo.options.length<=1){
+    var grupos = Array.from(new Set(S_DIV.map(function(r){return r.grupo_atual;}))).sort();
+    grupos.forEach(function(g){ var op=document.createElement('option'); op.textContent=g; selGrupo.appendChild(op); });
+  }
+}
+
+function _divNotificarEquipe(idxGlobal){
+  var data = _dvFiltrar();
+  var r = data[idxGlobal];
+  if(!r) return;
+  var grupoDestino = (r.grupo_esperado||'').split(' ou ')[0] || r.grupo_atual;
+  var cfg = window.emailMapeamento[grupoDestino] || window.emailMapeamento[r.grupo_atual] || { para:'', cc:'prazos.trabalhista@peixotoecury.com.br' };
+  if(!cfg.para){ alert('Não há coordenador mapeado para o grupo "'+grupoDestino+'" em window.emailMapeamento.'); return; }
+  var assunto = '⚠️ Divergência de Equipe — Processo ' + (r.numero_processo||'N/A');
+  var corpo = 'Prezados,\n\nIdentificamos uma possível divergência entre a planilha de Divisão Trabalhista e o cadastro deste item no sistema:\n\n'
+    + '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n'
+    + 'TIPO DE DIVERGÊNCIA: ' + r.tipo + '\n'
+    + 'ORIGEM: ' + r.origem + '\n'
+    + 'PROCESSO: ' + (r.numero_processo||'—') + '\n'
+    + 'CLIENTE: ' + (r.cliente||'—') + '\n'
+    + 'RESPONSÁVEL NO SISTEMA: ' + (r.responsavel||'—') + ' (' + (r.matricula||'—') + ')\n'
+    + 'GRUPO NO SISTEMA: ' + (r.grupo_atual||'—') + '\n'
+    + 'GRUPO ESPERADO (planilha Divisão Trabalhista): ' + (r.grupo_esperado||'—') + '\n'
+    + 'TAREFA: ' + (r.descricao_tarefa||'—') + '\n'
+    + '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n'
+    + 'Pedimos a gentileza de confirmar se o responsável/grupo cadastrado está correto e, se necessário, ajustar no sistema de origem.\n\n'
+    + 'Atenciosamente,\nControladoria — Peixoto & Cury Advogados';
+  var mailto = 'mailto:' + encodeURIComponent(cfg.para.split(';')[0].trim())
+    + '?cc=' + encodeURIComponent(cfg.cc||'prazos.trabalhista@peixotoecury.com.br')
+    + '&subject=' + encodeURIComponent(assunto)
+    + '&body=' + encodeURIComponent(corpo);
+  var link = document.createElement('a');
+  link.href = mailto;
+  document.body.appendChild(link);
+  link.click();
+  setTimeout(function(){ if(link.parentNode) link.parentNode.removeChild(link); }, 500);
+}
+
+function exportarDivergenciasExcel(){
+  if(!S_DIV.length){ alert('Nenhuma divergência para exportar.'); return; }
+  var linhas = S_DIV.map(function(r){ return {
+    'Origem': r.origem,
+    'Tipo de Divergência': r.tipo,
+    'Data': fmtDate(r.data),
+    'Status': r.status,
+    'Número do Processo': r.numero_processo,
+    'Cliente': r.cliente,
+    'Responsável': r.responsavel,
+    'Matrícula/Sigla': r.matricula,
+    'Grupo no Sistema': r.grupo_atual,
+    'Grupo Esperado (Divisão Trabalhista)': r.grupo_esperado,
+    'Tarefa': r.descricao_tarefa
+  };});
+  var ws = XLSX.utils.json_to_sheet(linhas);
+  var wb = XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(wb, ws, 'Divergencias_Equipe');
+  var dt = new Date().toLocaleDateString('pt-BR').replace(/\//g,'-');
+  XLSX.writeFile(wb, 'PC_Divergencias_Equipe_'+dt+'.xlsx');
+}
 
 // 📋 Função para enviar email de justificativa
 window.enviarEmailJustificativa = function(processo, grupo, campo6, campo4, campo5, campo7, campo8) {
@@ -13723,6 +13959,7 @@ document.addEventListener('DOMContentLoaded', function(){
   <button class="mn-btn" onclick="mobileSwitchTab('baixados',this)"><span class="mn-icon">✅</span>Baixados</button>
   <button class="mn-btn" onclick="mobileSwitchTab('controle-decisoes',this)"><span class="mn-icon">📑</span>Decisões</button>
   <button class="mn-btn" onclick="mobileSwitchTab('transf-pastas',this)"><span class="mn-icon">🗂️</span>Transf. Pastas</button>
+  <button class="mn-btn" onclick="mobileSwitchTab('divergencias',this)"><span class="mn-icon">⚠️</span>Divergências</button>
   <button class="mn-btn" onclick="mobileSwitchTab('exposicao',this)"><span class="mn-icon">📈</span>Exposição</button>
   <button class="mn-btn" onclick="mobileSwitchTab('meu-painel-only',this)"><span class="mn-icon">👤</span>Meu Painel</button>
 </div>
