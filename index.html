@@ -3581,6 +3581,7 @@ body.role-manager .upload-bar {
           <option value="">Todos os tipos</option>
           <option value="Responsável fora da equipe">Responsável fora da equipe</option>
           <option value="Cliente de outra equipe">Cliente de outra equipe</option>
+          <option value="Grupo não preenchido">Grupo não preenchido</option>
         </select>
       </div>
       <div class="fg"><label>Grupo no Sistema</label>
@@ -6497,23 +6498,29 @@ function calcularDivergenciasEquipe(){
   fontes.forEach(function(f){
     f.arr.forEach(function(r){
       var grupoAtual = String(r.grupo_processo||'').trim();
-      if(!grupoAtual) return;
-      var equipeAtual = _divEquipeLetra(grupoAtual);
       var sigla = String(r.matricula||'').trim().toUpperCase();
       var cliente = r.cliente||'';
       var tipos = [];
       var esperadoResp = null, esperadoCliente = null;
 
       var gResp = sigla ? window._divGruposEsperadosPorSigla(sigla) : null;
-      if(gResp && gResp.map(_divEquipeLetra).indexOf(equipeAtual)===-1){
-        tipos.push('Responsável fora da equipe');
-        esperadoResp = gResp;
-      }
-
       var gCli = cliente ? window._divGruposEsperadosPorCliente(cliente) : [];
-      if(gCli.length && gCli.map(_divEquipeLetra).indexOf(equipeAtual)===-1){
-        tipos.push('Cliente de outra equipe');
-        esperadoCliente = gCli;
+
+      if(!grupoAtual){
+        // Grupo em branco no cadastro: sinaliza se der pra inferir o grupo esperado
+        // (pelo responsável ou pelo cliente), em vez de simplesmente ignorar o registro.
+        if(gResp){ tipos.push('Grupo não preenchido'); esperadoResp = gResp; }
+        else if(gCli.length){ tipos.push('Grupo não preenchido'); esperadoCliente = gCli; }
+      } else {
+        var equipeAtual = _divEquipeLetra(grupoAtual);
+        if(gResp && gResp.map(_divEquipeLetra).indexOf(equipeAtual)===-1){
+          tipos.push('Responsável fora da equipe');
+          esperadoResp = gResp;
+        }
+        if(gCli.length && gCli.map(_divEquipeLetra).indexOf(equipeAtual)===-1){
+          tipos.push('Cliente de outra equipe');
+          esperadoCliente = gCli;
+        }
       }
 
       if(tipos.length){
@@ -6524,7 +6531,7 @@ function calcularDivergenciasEquipe(){
           numero_processo: r.numero_processo,
           cliente: cliente,
           responsavel: r.responsavel, matricula: sigla,
-          grupo_atual: grupoAtual,
+          grupo_atual: grupoAtual || '(vazio)',
           grupo_esperado: (esperadoResp||esperadoCliente||[]).join(' ou '),
           descricao_tarefa: r.descricao_tarefa
         });
