@@ -1,11 +1,11 @@
 {
-  "atualizado_em": "2026-09-03T18:30:28",
+  "atualizado_em": "2026-09-04T08:30:37",
   "kpis": {
     "total_andamento": 7482,
-    "entradas_hoje": 6,
-    "saidas_hoje": 2,
-    "entradas_ontem": 20,
-    "saidas_ontem": 5,
+    "entradas_hoje": 0,
+    "saidas_hoje": 0,
+    "entradas_ontem": 6,
+    "saidas_ontem": 2,
     "entradas_mes": 30,
     "saidas_mes": 802,
     "entradas_mes_anterior": 278,
@@ -14,11 +14,6 @@
     "saldo_mes": -772
   },
   "serie_diaria": [
-    {
-      "data": "2026-07-06",
-      "entradas": 13,
-      "saidas": 17
-    },
     {
       "data": "2026-07-07",
       "entradas": 16,
@@ -313,6 +308,11 @@
       "data": "2026-09-03",
       "entradas": 6,
       "saidas": 2
+    },
+    {
+      "data": "2026-09-04",
+      "entradas": 0,
+      "saidas": 0
     }
   ],
   "por_grupo": [
@@ -673,7 +673,7 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2802,
+      "andamento": 2801,
       "entradas_mes": 30,
       "saidas_mes": 143,
       "entradas_mes_anterior": 213,
@@ -691,7 +691,7 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2895,
+      "andamento": 2896,
       "entradas_mes": 0,
       "saidas_mes": 350,
       "entradas_mes_anterior": 6,
@@ -903,7 +903,7 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 777,
+      "andamento": 776,
       "entradas_mes": 5,
       "saidas_mes": 4,
       "entradas_mes_anterior": 26,
@@ -1113,7 +1113,7 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo E1",
-      "andamento": 724,
+      "andamento": 725,
       "entradas_mes": 0,
       "saidas_mes": 3,
       "entradas_mes_anterior": 0,
@@ -3237,17 +3237,6 @@
     },
     {
       "grupo": "Grupo E2",
-      "cliente": "MITRE VENDAS",
-      "andamento": 7,
-      "entradas_mes": 0,
-      "saidas_mes": 2,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 1627111.43,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Grupo E2",
       "cliente": "ITW PPF",
       "andamento": 7,
       "entradas_mes": 0,
@@ -3255,6 +3244,17 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 2,
       "valor_causa": 229658.31,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Grupo E2",
+      "cliente": "MITRE VENDAS",
+      "andamento": 7,
+      "entradas_mes": 0,
+      "saidas_mes": 2,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1627111.43,
       "alerta_entrada": false
     },
     {
