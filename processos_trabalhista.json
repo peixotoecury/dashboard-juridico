@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-08T09:30:23",
+  "atualizado_em": "2026-09-08T09:45:25",
   "kpis": {
-    "total_andamento": 7471,
+    "total_andamento": 7470,
     "entradas_hoje": 0,
-    "saidas_hoje": 0,
+    "saidas_hoje": 1,
     "entradas_ontem": 0,
     "saidas_ontem": 0,
     "entradas_mes": 31,
-    "saidas_mes": 813,
+    "saidas_mes": 814,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 234,
     "valor_causa_total": 1648969729.21,
-    "saldo_mes": -782
+    "saldo_mes": -783
   },
   "serie_diaria": [
     {
@@ -312,7 +312,7 @@
     {
       "data": "2026-09-08",
       "entradas": 0,
-      "saidas": 0
+      "saidas": 1
     }
   ],
   "por_grupo": [
@@ -363,9 +363,9 @@
     },
     {
       "nome": "Grupo B3",
-      "andamento": 549,
+      "andamento": 548,
       "entradas_mes": 2,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 18,
       "valor_causa": 104537503.14
@@ -455,9 +455,9 @@
     },
     {
       "nome": "PR",
-      "andamento": 229,
+      "andamento": 228,
       "entradas_mes": 1,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 2,
       "valor_causa": 41589245.38
@@ -673,7 +673,7 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2778,
+      "andamento": 2779,
       "entradas_mes": 30,
       "saidas_mes": 147,
       "entradas_mes_anterior": 211,
@@ -691,21 +691,21 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2910,
+      "andamento": 2908,
       "entradas_mes": 0,
       "saidas_mes": 351,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 54,
-      "valor_causa": 645459549.01
+      "valor_causa": 645255214.48
     },
     {
       "nome": "Execução",
       "andamento": 937,
       "entradas_mes": 1,
-      "saidas_mes": 302,
+      "saidas_mes": 303,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 92,
-      "valor_causa": 125824300.97
+      "valor_causa": 126028635.5
     }
   ],
   "por_fase_outras": 408,
@@ -833,19 +833,19 @@
     {
       "fase": "Execução",
       "grupo": "Grupo B1",
-      "andamento": 165,
+      "andamento": 166,
       "entradas_mes": 0,
       "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 4,
-      "valor_causa": 16909167.83
+      "valor_causa": 17113502.36
     },
     {
       "fase": "Execução",
       "grupo": "Grupo B3",
-      "andamento": 106,
+      "andamento": 105,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 7,
       "valor_causa": 20982754.19
@@ -913,7 +913,7 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B1",
-      "andamento": 447,
+      "andamento": 448,
       "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 52,
@@ -1103,12 +1103,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo B1",
-      "andamento": 838,
+      "andamento": 836,
       "entradas_mes": 0,
       "saidas_mes": 1,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 5,
-      "valor_causa": 154124183.38
+      "valor_causa": 153919848.85
     },
     {
       "fase": "Recurso",
@@ -1390,9 +1390,9 @@
     },
     {
       "nome": "Anna Carolina Balbino Gatti Baani(ANB)",
-      "andamento": 256,
+      "andamento": 255,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 0,
       "valor_causa": 60522159.24
@@ -2391,9 +2391,9 @@
     {
       "grupo": "Grupo B3",
       "cliente": "FERRERO DO BRASIL",
-      "andamento": 33,
+      "andamento": 32,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
       "valor_causa": 10075843.33,
@@ -3953,9 +3953,9 @@
     {
       "grupo": "Grupo B3",
       "profissional": "Anna Carolina Balbino Gatti Baani(ANB)",
-      "andamento": 86,
+      "andamento": 85,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 0,
       "valor_causa": 19306647.33
@@ -5614,16 +5614,6 @@
     },
     {
       "estado": "PR",
-      "cliente": "FERRERO DO BRASIL",
-      "andamento": 4,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 328689.95
-    },
-    {
-      "estado": "PR",
       "cliente": "EUROCHEM FTO MATRIZ",
       "andamento": 3,
       "entradas_mes": 0,
@@ -5631,6 +5621,16 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
       "valor_causa": 109523.33
+    },
+    {
+      "estado": "PR",
+      "cliente": "FERRERO DO BRASIL",
+      "andamento": 3,
+      "entradas_mes": 0,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 328689.95
     },
     {
       "estado": "PR",
