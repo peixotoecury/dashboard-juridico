@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-08T15:00:30",
+  "atualizado_em": "2026-09-08T15:15:32",
   "kpis": {
-    "total_andamento": 7471,
-    "entradas_hoje": 3,
+    "total_andamento": 7472,
+    "entradas_hoje": 4,
     "saidas_hoje": 3,
     "entradas_ontem": 0,
     "saidas_ontem": 0,
-    "entradas_mes": 34,
+    "entradas_mes": 35,
     "saidas_mes": 816,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 234,
-    "valor_causa_total": 1648879604.02,
-    "saldo_mes": -782
+    "valor_causa_total": 1648906598.79,
+    "saldo_mes": -781
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-09-08",
-      "entradas": 3,
+      "entradas": 4,
       "saidas": 3
     }
   ],
@@ -327,12 +327,12 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1776,
-      "entradas_mes": 6,
+      "andamento": 1777,
+      "entradas_mes": 7,
       "saidas_mes": 14,
       "entradas_mes_anterior": 50,
       "saidas_mes_anterior": 92,
-      "valor_causa": 290607361.51
+      "valor_causa": 290634356.28
     },
     {
       "nome": "Grupo B1",
@@ -428,12 +428,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5739,
-      "entradas_mes": 17,
+      "andamento": 5740,
+      "entradas_mes": 18,
       "saidas_mes": 697,
       "entradas_mes_anterior": 185,
       "saidas_mes_anterior": 185,
-      "valor_causa": 1299790684.47
+      "valor_causa": 1299817679.24
     },
     {
       "nome": "MG",
@@ -673,12 +673,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2772,
-      "entradas_mes": 32,
+      "andamento": 2773,
+      "entradas_mes": 33,
       "saidas_mes": 147,
       "entradas_mes_anterior": 211,
       "saidas_mes_anterior": 64,
-      "valor_causa": 747729383.14
+      "valor_causa": 747756377.91
     },
     {
       "nome": "Sentença",
@@ -903,12 +903,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 776,
-      "entradas_mes": 6,
+      "andamento": 777,
+      "entradas_mes": 7,
       "saidas_mes": 5,
       "entradas_mes_anterior": 26,
       "saidas_mes_anterior": 16,
-      "valor_causa": 157424367.22
+      "valor_causa": 157451361.99
     },
     {
       "fase": "Instrução",
@@ -1273,22 +1273,22 @@
   ],
   "por_profissional": [
     {
+      "nome": "Rafael Yepez do Lago(RYL)",
+      "andamento": 470,
+      "entradas_mes": 5,
+      "saidas_mes": 4,
+      "entradas_mes_anterior": 14,
+      "saidas_mes_anterior": 17,
+      "valor_causa": 53455592.86
+    },
+    {
       "nome": "Giulia Vendramini Milani(GVM)",
-      "andamento": 445,
-      "entradas_mes": 4,
+      "andamento": 446,
+      "entradas_mes": 5,
       "saidas_mes": 3,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 6,
-      "valor_causa": 65852643.68
-    },
-    {
-      "nome": "Rafael Yepez do Lago(RYL)",
-      "andamento": 427,
-      "entradas_mes": 5,
-      "saidas_mes": 4,
-      "entradas_mes_anterior": 16,
-      "saidas_mes_anterior": 17,
-      "valor_causa": 59799382.31
+      "valor_causa": 65879638.45
     },
     {
       "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
@@ -1327,12 +1327,12 @@
       "valor_causa": 43773389.35
     },
     {
-      "nome": "Aline Ferreira Miron(ALF)",
+      "nome": "Jessica Cerqueira Silva(JQS)",
       "andamento": 295,
       "entradas_mes": 0,
-      "saidas_mes": 2,
-      "entradas_mes_anterior": 3,
-      "saidas_mes_anterior": 4,
+      "saidas_mes": 436,
+      "entradas_mes_anterior": 4,
+      "saidas_mes_anterior": 0,
       "valor_causa": 32737819.94
     },
     {
@@ -1388,15 +1388,6 @@
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 2,
       "valor_causa": 74860999.07
-    },
-    {
-      "nome": "Richard Ruan Leo da Silva(RRU)",
-      "andamento": 274,
-      "entradas_mes": 3,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 21,
-      "saidas_mes_anterior": 12,
-      "valor_causa": 29174056.18
     },
     {
       "nome": "Anna Carolina Balbino Gatti Baani(ANB)",
@@ -1498,6 +1489,15 @@
       "valor_causa": 47771202.69
     },
     {
+      "nome": "Lucas Willott Pereira (LWP)",
+      "andamento": 150,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 4,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 25909579.17
+    },
+    {
       "nome": "Júlia Priego Lopes da Silva(JPL)",
       "andamento": 131,
       "entradas_mes": 2,
@@ -1505,6 +1505,15 @@
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 12,
       "valor_causa": 37170944.86
+    },
+    {
+      "nome": "Richard Ruan Leo da Silva(RRU)",
+      "andamento": 129,
+      "entradas_mes": 3,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 20,
+      "saidas_mes_anterior": 12,
+      "valor_causa": 16982566.4
     },
     {
       "nome": "Sofia Freire (SOF)",
@@ -1532,15 +1541,6 @@
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 0,
       "valor_causa": 7275114.5
-    },
-    {
-      "nome": "Lucas Willott Pereira (LWP)",
-      "andamento": 48,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 7374299.94
     },
     {
       "nome": "Natália Biondi Gaggini Robles(NBG)",
@@ -1651,12 +1651,12 @@
       "valor_causa": 38000.0
     },
     {
-      "nome": "Jessica Cerqueira Silva(JQS)",
+      "nome": "Aline Ferreira Miron(ALF)",
       "andamento": 0,
       "entradas_mes": 0,
-      "saidas_mes": 436,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 0,
+      "saidas_mes": 2,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 4,
       "valor_causa": 0.0
     },
     {
@@ -1711,12 +1711,12 @@
     },
     {
       "nome": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 702,
-      "entradas_mes": 4,
+      "andamento": 703,
+      "entradas_mes": 5,
       "saidas_mes": 3,
       "entradas_mes_anterior": 28,
       "saidas_mes_anterior": 21,
-      "valor_causa": 135460762.03,
+      "valor_causa": 135487756.8,
       "alerta_entrada": false
     },
     {
@@ -2852,12 +2852,12 @@
     {
       "grupo": "Grupo E1",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 629,
-      "entradas_mes": 3,
+      "andamento": 630,
+      "entradas_mes": 4,
       "saidas_mes": 3,
       "entradas_mes_anterior": 26,
       "saidas_mes_anterior": 20,
-      "valor_causa": 134379562.37,
+      "valor_causa": 134406557.14,
       "alerta_entrada": false
     },
     {
@@ -4074,21 +4074,21 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Giulia Vendramini Milani(GVM)",
-      "andamento": 442,
-      "entradas_mes": 2,
+      "andamento": 443,
+      "entradas_mes": 3,
       "saidas_mes": 3,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 6,
-      "valor_causa": 65674745.96
+      "valor_causa": 65701740.73
     },
     {
       "grupo": "Grupo E1",
-      "profissional": "Aline Ferreira Miron(ALF)",
+      "profissional": "Jessica Cerqueira Silva(JQS)",
       "andamento": 295,
       "entradas_mes": 0,
-      "saidas_mes": 2,
+      "saidas_mes": 0,
       "entradas_mes_anterior": 3,
-      "saidas_mes_anterior": 4,
+      "saidas_mes_anterior": 0,
       "valor_causa": 32737819.94
     },
     {
@@ -4204,12 +4204,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Rafael Yepez do Lago(RYL)",
-      "andamento": 426,
+      "andamento": 469,
       "entradas_mes": 4,
       "saidas_mes": 4,
-      "entradas_mes_anterior": 16,
+      "entradas_mes_anterior": 14,
       "saidas_mes_anterior": 17,
-      "valor_causa": 59747360.31
+      "valor_causa": 53403570.86
     },
     {
       "grupo": "Grupo E2",
@@ -4243,13 +4243,23 @@
     },
     {
       "grupo": "Grupo E2",
+      "profissional": "Lucas Willott Pereira (LWP)",
+      "andamento": 150,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 4,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 25909579.17
+    },
+    {
+      "grupo": "Grupo E2",
       "profissional": "Richard Ruan Leo da Silva(RRU)",
-      "andamento": 274,
+      "andamento": 129,
       "entradas_mes": 3,
       "saidas_mes": 0,
-      "entradas_mes_anterior": 20,
+      "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 11,
-      "valor_causa": 29174056.18
+      "valor_causa": 16982566.4
     },
     {
       "grupo": "Grupo E2",
@@ -4280,16 +4290,6 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
       "valor_causa": 16423861.42
-    },
-    {
-      "grupo": "Grupo E2",
-      "profissional": "Lucas Willott Pereira (LWP)",
-      "andamento": 48,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 7374299.94
     },
     {
       "grupo": "Grupo E2",
@@ -6326,12 +6326,12 @@
     {
       "estado": "SP",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 601,
-      "entradas_mes": 2,
+      "andamento": 602,
+      "entradas_mes": 3,
       "saidas_mes": 3,
       "entradas_mes_anterior": 20,
       "saidas_mes_anterior": 17,
-      "valor_causa": 119061198.25
+      "valor_causa": 119088193.02
     },
     {
       "estado": "SP",
