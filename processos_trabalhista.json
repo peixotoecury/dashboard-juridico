@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-09-08T17:15:31",
+  "atualizado_em": "2026-09-08T17:30:46",
   "kpis": {
     "total_andamento": 7473,
     "entradas_hoje": 7,
@@ -318,21 +318,21 @@
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2084,
-      "entradas_mes": 16,
+      "andamento": 2085,
+      "entradas_mes": 17,
       "saidas_mes": 11,
       "entradas_mes_anterior": 93,
       "saidas_mes_anterior": 74,
-      "valor_causa": 447244804.17
+      "valor_causa": 447246425.17
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1778,
-      "entradas_mes": 9,
+      "andamento": 1779,
+      "entradas_mes": 10,
       "saidas_mes": 15,
       "entradas_mes_anterior": 50,
       "saidas_mes_anterior": 92,
-      "valor_causa": 290883467.04
+      "valor_causa": 290935413.57
     },
     {
       "nome": "Grupo B1",
@@ -399,12 +399,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 10,
-      "entradas_mes": 4,
+      "andamento": 8,
+      "entradas_mes": 2,
       "saidas_mes": 2,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 20,
-      "valor_causa": 521724.78
+      "valor_causa": 468157.25
     },
     {
       "nome": "Sócios",
@@ -893,22 +893,22 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 824,
-      "entradas_mes": 15,
+      "andamento": 825,
+      "entradas_mes": 16,
       "saidas_mes": 4,
       "entradas_mes_anterior": 60,
       "saidas_mes_anterior": 27,
-      "valor_causa": 160851702.64
+      "valor_causa": 160853323.64
     },
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 779,
-      "entradas_mes": 9,
+      "andamento": 780,
+      "entradas_mes": 10,
       "saidas_mes": 5,
       "entradas_mes_anterior": 26,
       "saidas_mes_anterior": 16,
-      "valor_causa": 157748011.83
+      "valor_causa": 157799958.36
     },
     {
       "fase": "Instrução",
@@ -973,12 +973,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 6,
-      "entradas_mes": 3,
+      "andamento": 4,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 2,
-      "valor_causa": 176325.78
+      "valor_causa": 122758.25
     },
     {
       "fase": "Instrução",
@@ -1445,12 +1445,12 @@
     },
     {
       "nome": "Vinícius Ronchi Arruda(VRO)",
-      "andamento": 230,
-      "entradas_mes": 0,
+      "andamento": 231,
+      "entradas_mes": 1,
       "saidas_mes": 2,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 36,
-      "valor_causa": 33941268.29
+      "valor_causa": 33993214.82
     },
     {
       "nome": "Tamires Lins Costa(TLI)",
@@ -1597,15 +1597,6 @@
       "valor_causa": 0.0
     },
     {
-      "nome": "Luiz Vicente de Carvalho(LVC)",
-      "andamento": 2,
-      "entradas_mes": 1,
-      "saidas_mes": 1,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 51946.53
-    },
-    {
       "nome": "Bruno Tanganelli Farah(BTF)",
       "andamento": 1,
       "entradas_mes": 0,
@@ -1628,6 +1619,15 @@
       "andamento": 1,
       "entradas_mes": 0,
       "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 0.0
+    },
+    {
+      "nome": "Luiz Vicente de Carvalho(LVC)",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
@@ -2874,12 +2874,12 @@
     {
       "grupo": "Grupo E1",
       "cliente": "MAHLE METAL - SBC",
-      "andamento": 260,
-      "entradas_mes": 0,
+      "andamento": 261,
+      "entradas_mes": 1,
       "saidas_mes": 5,
       "entradas_mes_anterior": 14,
       "saidas_mes_anterior": 30,
-      "valor_causa": 21187981.93,
+      "valor_causa": 21239928.46,
       "alerta_entrada": false
     },
     {
@@ -3072,12 +3072,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "BP BIOENERGIA",
-      "andamento": 762,
-      "entradas_mes": 3,
+      "andamento": 763,
+      "entradas_mes": 4,
       "saidas_mes": 4,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 31,
-      "valor_causa": 209607755.98,
+      "valor_causa": 209609376.98,
       "alerta_entrada": false
     },
     {
@@ -3643,17 +3643,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "BP BIOENERGIA",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 53643.0,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "PEIXOTO E CURY",
       "andamento": 1,
       "entradas_mes": 0,
@@ -3687,13 +3676,13 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "MAHLE METAL - SBC",
+      "cliente": "BP BIOENERGIA",
       "andamento": 1,
       "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 10,
-      "valor_causa": 51946.53,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 52022.0,
       "alerta_entrada": false
     },
     {
@@ -4104,12 +4093,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Vinícius Ronchi Arruda(VRO)",
-      "andamento": 230,
-      "entradas_mes": 0,
+      "andamento": 231,
+      "entradas_mes": 1,
       "saidas_mes": 2,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 26,
-      "valor_causa": 33941268.29
+      "valor_causa": 33993214.82
     },
     {
       "grupo": "Grupo E1",
@@ -4224,12 +4213,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 372,
-      "entradas_mes": 1,
+      "andamento": 373,
+      "entradas_mes": 2,
       "saidas_mes": 2,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 19,
-      "valor_causa": 43267446.39
+      "valor_causa": 43269067.39
     },
     {
       "grupo": "Grupo E2",
@@ -4323,16 +4312,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Luiz Vicente de Carvalho(LVC)",
-      "andamento": 2,
-      "entradas_mes": 1,
-      "saidas_mes": 1,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 51946.53
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Giulia Vendramini Milani(GVM)",
       "andamento": 2,
       "entradas_mes": 1,
@@ -4353,6 +4332,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Luiz Vicente de Carvalho(LVC)",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 0.0
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Paloma da Silva Santos(PSI)",
       "andamento": 1,
       "entradas_mes": 0,
@@ -4370,16 +4359,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 52022.0
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 1621.0
     },
     {
       "grupo": "Sem grupo",
@@ -7721,16 +7700,6 @@
       "numero_processo": "0012312-06.2026.5.15.0082",
       "cliente": "BP BIOENERGIA",
       "profissional": "Rafael Yepez do Lago(RYL)"
-    },
-    {
-      "numero_processo": "0011132-23.2026.5.15.0027",
-      "cliente": "BP BIOENERGIA",
-      "profissional": "Camila Alves Magalhães de Paula(CAL)"
-    },
-    {
-      "numero_processo": "1001515-38.2026.5.02.0462",
-      "cliente": "MAHLE METAL - SBC",
-      "profissional": "Luiz Vicente de Carvalho(LVC)"
     },
     {
       "numero_processo": "1000555-17.2017.5.02.0521",
