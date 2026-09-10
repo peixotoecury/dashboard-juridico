@@ -1,24 +1,19 @@
 {
-  "atualizado_em": "2026-09-09T17:45:27",
+  "atualizado_em": "2026-09-10T08:45:51",
   "kpis": {
-    "total_andamento": 7450,
-    "entradas_hoje": 12,
-    "saidas_hoje": 7,
-    "entradas_ontem": 7,
-    "saidas_ontem": 5,
+    "total_andamento": 7449,
+    "entradas_hoje": 0,
+    "saidas_hoje": 1,
+    "entradas_ontem": 12,
+    "saidas_ontem": 8,
     "entradas_mes": 50,
-    "saidas_mes": 827,
+    "saidas_mes": 829,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 260,
     "valor_causa_total": 1651174811.26,
-    "saldo_mes": -777
+    "saldo_mes": -779
   },
   "serie_diaria": [
-    {
-      "data": "2026-07-12",
-      "entradas": 0,
-      "saidas": 0
-    },
     {
       "data": "2026-07-13",
       "entradas": 14,
@@ -312,7 +307,12 @@
     {
       "data": "2026-09-09",
       "entradas": 12,
-      "saidas": 7
+      "saidas": 8
+    },
+    {
+      "data": "2026-09-10",
+      "entradas": 0,
+      "saidas": 1
     }
   ],
   "por_grupo": [
@@ -327,9 +327,9 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1780,
+      "andamento": 1779,
       "entradas_mes": 12,
-      "saidas_mes": 16,
+      "saidas_mes": 17,
       "entradas_mes_anterior": 50,
       "saidas_mes_anterior": 92,
       "valor_causa": 290985704.25
@@ -419,7 +419,7 @@
       "nome": "Grupo D1",
       "andamento": 2,
       "entradas_mes": 0,
-      "saidas_mes": 783,
+      "saidas_mes": 784,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
       "valor_causa": 330970.85
@@ -428,9 +428,9 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5710,
+      "andamento": 5709,
       "entradas_mes": 24,
-      "saidas_mes": 707,
+      "saidas_mes": 709,
       "entradas_mes_anterior": 185,
       "saidas_mes_anterior": 211,
       "valor_causa": 1302133304.65
@@ -664,21 +664,21 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 406,
+      "andamento": 410,
       "entradas_mes": 0,
       "saidas_mes": 5,
-      "entradas_mes_anterior": 42,
+      "entradas_mes_anterior": 46,
       "saidas_mes_anterior": 6,
-      "valor_causa": 89289425.33
+      "valor_causa": 89941279.58
     },
     {
       "nome": "Instrução",
-      "andamento": 2772,
+      "andamento": 2766,
       "entradas_mes": 48,
-      "saidas_mes": 153,
-      "entradas_mes_anterior": 211,
+      "saidas_mes": 154,
+      "entradas_mes_anterior": 207,
       "saidas_mes_anterior": 72,
-      "valor_causa": 752019899.21
+      "valor_causa": 751368044.96
     },
     {
       "nome": "Sentença",
@@ -691,21 +691,21 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2912,
+      "andamento": 2914,
       "entradas_mes": 1,
       "saidas_mes": 354,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 57,
-      "valor_causa": 643103669.06
+      "valor_causa": 643328667.32
     },
     {
       "nome": "Execução",
-      "andamento": 936,
+      "andamento": 935,
       "entradas_mes": 1,
-      "saidas_mes": 305,
+      "saidas_mes": 306,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 93,
-      "valor_causa": 126297807.88
+      "valor_causa": 126072809.62
     }
   ],
   "por_fase_outras": 396,
@@ -713,12 +713,12 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo E2",
-      "andamento": 166,
+      "andamento": 170,
       "entradas_mes": 0,
       "saidas_mes": 0,
-      "entradas_mes_anterior": 26,
+      "entradas_mes_anterior": 30,
       "saidas_mes_anterior": 6,
-      "valor_causa": 43977343.05
+      "valor_causa": 44629197.3
     },
     {
       "fase": "Ajuizamento",
@@ -813,12 +813,12 @@
     {
       "fase": "Execução",
       "grupo": "Grupo E2",
-      "andamento": 356,
+      "andamento": 355,
       "entradas_mes": 1,
       "saidas_mes": 6,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 24,
-      "valor_causa": 48408021.39
+      "valor_causa": 48183023.13
     },
     {
       "fase": "Execução",
@@ -893,19 +893,19 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 829,
+      "andamento": 824,
       "entradas_mes": 22,
       "saidas_mes": 6,
-      "entradas_mes_anterior": 60,
+      "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 27,
-      "valor_causa": 161171178.83
+      "valor_causa": 160519324.58
     },
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 781,
+      "andamento": 780,
       "entradas_mes": 12,
-      "saidas_mes": 5,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 26,
       "saidas_mes_anterior": 16,
       "valor_causa": 157738412.7
@@ -1123,12 +1123,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo E2",
-      "andamento": 589,
+      "andamento": 591,
       "entradas_mes": 0,
       "saidas_mes": 1,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 10,
-      "valor_causa": 185463549.4
+      "valor_causa": 185688547.66
     },
     {
       "fase": "Recurso",
@@ -1283,9 +1283,9 @@
     },
     {
       "nome": "Giulia Vendramini Milani(GVM)",
-      "andamento": 446,
+      "andamento": 445,
       "entradas_mes": 5,
-      "saidas_mes": 3,
+      "saidas_mes": 4,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 6,
       "valor_causa": 65879638.45
@@ -1330,7 +1330,7 @@
       "nome": "Jessica Cerqueira Silva(JQS)",
       "andamento": 295,
       "entradas_mes": 0,
-      "saidas_mes": 436,
+      "saidas_mes": 437,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 0,
       "valor_causa": 32737819.94
@@ -1747,7 +1747,7 @@
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 12,
       "valor_causa": 42014149.23,
-      "alerta_entrada": true
+      "alerta_entrada": false
     },
     {
       "nome": "VITERRA RIO VERMELHO",
@@ -1791,9 +1791,9 @@
     },
     {
       "nome": "SYNGENTA SEEDS NIDER",
-      "andamento": 157,
+      "andamento": 156,
       "entradas_mes": 3,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
       "valor_causa": 23118198.65,
@@ -2832,7 +2832,7 @@
       "cliente": "B2W",
       "andamento": 1,
       "entradas_mes": 0,
-      "saidas_mes": 219,
+      "saidas_mes": 220,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 240813.71,
@@ -2896,9 +2896,9 @@
     {
       "grupo": "Grupo E1",
       "cliente": "SYNGENTA SEEDS NIDER",
-      "andamento": 152,
+      "andamento": 151,
       "entradas_mes": 3,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
       "valor_causa": 23118198.65,
@@ -4096,9 +4096,9 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Giulia Vendramini Milani(GVM)",
-      "andamento": 444,
+      "andamento": 443,
       "entradas_mes": 4,
-      "saidas_mes": 3,
+      "saidas_mes": 4,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 6,
       "valor_causa": 65773677.73
@@ -6498,9 +6498,9 @@
     {
       "estado": "SP",
       "cliente": "SYNGENTA SEEDS NIDER",
-      "andamento": 46,
+      "andamento": 45,
       "entradas_mes": 1,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
       "valor_causa": 4674377.65
@@ -7320,7 +7320,7 @@
       "cliente": "B2W",
       "andamento": 1,
       "entradas_mes": 0,
-      "saidas_mes": 210,
+      "saidas_mes": 211,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 240813.71
@@ -7738,20 +7738,10 @@
   ],
   "clientes_com_alerta": [
     {
-      "nome": "HERINGER",
-      "andamento": 330,
-      "entradas_mes": 5,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 11,
-      "saidas_mes_anterior": 12,
-      "valor_causa": 42014149.23,
-      "alerta_entrada": true
-    },
-    {
       "nome": "SYNGENTA SEEDS NIDER",
-      "andamento": 157,
+      "andamento": 156,
       "entradas_mes": 3,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
       "valor_causa": 23118198.65,
