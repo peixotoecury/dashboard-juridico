@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-10T11:45:23",
+  "atualizado_em": "2026-09-10T12:00:27",
   "kpis": {
-    "total_andamento": 7453,
-    "entradas_hoje": 4,
+    "total_andamento": 7456,
+    "entradas_hoje": 7,
     "saidas_hoje": 2,
     "entradas_ontem": 13,
     "saidas_ontem": 8,
-    "entradas_mes": 55,
+    "entradas_mes": 58,
     "saidas_mes": 830,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 259,
-    "valor_causa_total": 1651943988.07,
-    "saldo_mes": -775
+    "valor_causa_total": 1653777281.16,
+    "saldo_mes": -772
   },
   "serie_diaria": [
     {
@@ -311,19 +311,19 @@
     },
     {
       "data": "2026-09-10",
-      "entradas": 4,
+      "entradas": 7,
       "saidas": 2
     }
   ],
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2095,
-      "entradas_mes": 30,
+      "andamento": 2096,
+      "entradas_mes": 31,
       "saidas_mes": 14,
       "entradas_mes_anterior": 93,
       "saidas_mes_anterior": 74,
-      "valor_causa": 449515149.06
+      "valor_causa": 449563448.13
     },
     {
       "nome": "Grupo E1",
@@ -399,12 +399,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 10,
-      "entradas_mes": 4,
+      "andamento": 12,
+      "entradas_mes": 6,
       "saidas_mes": 2,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 20,
-      "valor_causa": 564201.6
+      "valor_causa": 2349195.62
     },
     {
       "nome": "Sócios",
@@ -428,12 +428,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5709,
-      "entradas_mes": 25,
+      "andamento": 5712,
+      "entradas_mes": 28,
       "saidas_mes": 710,
       "entradas_mes_anterior": 185,
       "saidas_mes_anterior": 210,
-      "valor_causa": 1302248450.85
+      "valor_causa": 1304081743.94
     },
     {
       "nome": "MG",
@@ -664,21 +664,21 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 410,
-      "entradas_mes": 0,
+      "andamento": 411,
+      "entradas_mes": 1,
       "saidas_mes": 5,
       "entradas_mes_anterior": 46,
       "saidas_mes_anterior": 6,
-      "valor_causa": 89941279.58
+      "valor_causa": 89993226.11
     },
     {
       "nome": "Instrução",
-      "andamento": 2771,
-      "entradas_mes": 53,
+      "andamento": 2773,
+      "entradas_mes": 55,
       "saidas_mes": 154,
       "entradas_mes_anterior": 207,
       "saidas_mes_anterior": 72,
-      "valor_causa": 752183865.77
+      "valor_causa": 753965212.33
     },
     {
       "nome": "Sentença",
@@ -743,12 +743,12 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo E1",
-      "andamento": 40,
-      "entradas_mes": 0,
+      "andamento": 41,
+      "entradas_mes": 1,
       "saidas_mes": 1,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 0,
-      "valor_causa": 9413541.77
+      "valor_causa": 9465488.3
     },
     {
       "fase": "Ajuizamento",
@@ -893,22 +893,22 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 831,
-      "entradas_mes": 29,
+      "andamento": 832,
+      "entradas_mes": 30,
       "saidas_mes": 6,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 27,
-      "valor_causa": 162493026.85
+      "valor_causa": 162541325.92
     },
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 779,
-      "entradas_mes": 11,
+      "andamento": 778,
+      "entradas_mes": 10,
       "saidas_mes": 6,
       "entradas_mes_anterior": 26,
       "saidas_mes_anterior": 16,
-      "valor_causa": 157703812.41
+      "valor_causa": 157651865.88
     },
     {
       "fase": "Instrução",
@@ -973,12 +973,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 6,
-      "entradas_mes": 3,
+      "andamento": 8,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 2,
-      "valor_causa": 218802.6
+      "valor_causa": 2003796.62
     },
     {
       "fase": "Instrução",
@@ -1336,6 +1336,15 @@
       "valor_causa": 32737819.94
     },
     {
+      "nome": "Beatriz Santiago de Souza(BSO)",
+      "andamento": 286,
+      "entradas_mes": 3,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 14,
+      "saidas_mes_anterior": 3,
+      "valor_causa": 43913381.76
+    },
+    {
       "nome": "Bruna Cembranelli Fazenda (BCF)",
       "andamento": 285,
       "entradas_mes": 0,
@@ -1343,15 +1352,6 @@
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 3,
       "valor_causa": 38357476.11
-    },
-    {
-      "nome": "Beatriz Santiago de Souza(BSO)",
-      "andamento": 283,
-      "entradas_mes": 0,
-      "saidas_mes": 1,
-      "entradas_mes_anterior": 14,
-      "saidas_mes_anterior": 3,
-      "valor_causa": 42080088.67
     },
     {
       "nome": "Tamara Silva Marcílio(TAM)",
@@ -1681,12 +1681,12 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1434,
-      "entradas_mes": 3,
+      "andamento": 1437,
+      "entradas_mes": 6,
       "saidas_mes": 7,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 41,
-      "valor_causa": 305673506.72,
+      "valor_causa": 307506799.81,
       "alerta_entrada": false
     },
     {
@@ -3105,12 +3105,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "EUROCHEM SALITRE",
-      "andamento": 153,
-      "entradas_mes": 2,
+      "andamento": 154,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 7,
-      "valor_causa": 27453751.13,
+      "valor_causa": 27502050.2,
       "alerta_entrada": false
     },
     {
@@ -3643,6 +3643,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "BRIDGESTONE",
+      "andamento": 3,
+      "entradas_mes": 3,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1833293.09,
+      "alerta_entrada": true
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "PEIXOTO E CURY",
       "andamento": 1,
       "entradas_mes": 0,
@@ -3694,17 +3705,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 47745.28,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "EUROCHEM SALITRE",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 48299.07,
       "alerta_entrada": false
     },
     {
@@ -4235,12 +4235,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 374,
-      "entradas_mes": 6,
+      "andamento": 375,
+      "entradas_mes": 7,
       "saidas_mes": 5,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 19,
-      "valor_causa": 43537419.38
+      "valor_causa": 43585718.45
     },
     {
       "grupo": "Grupo E2",
@@ -4334,6 +4334,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Beatriz Santiago de Souza(BSO)",
+      "andamento": 3,
+      "entradas_mes": 3,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1833293.09
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Giulia Vendramini Milani(GVM)",
       "andamento": 2,
       "entradas_mes": 1,
@@ -4381,16 +4391,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 9,
       "valor_causa": 0.0
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 48299.07
     },
     {
       "grupo": "Sem grupo",
@@ -6327,12 +6327,12 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1409,
-      "entradas_mes": 3,
+      "andamento": 1412,
+      "entradas_mes": 6,
       "saidas_mes": 7,
       "entradas_mes_anterior": 51,
       "saidas_mes_anterior": 41,
-      "valor_causa": 296411979.16
+      "valor_causa": 298245272.25
     },
     {
       "estado": "SP",
@@ -7764,14 +7764,24 @@
       "profissional": "Rafael Yepez do Lago(RYL)"
     },
     {
+      "numero_processo": "1001617-50.2026.5.02.0433",
+      "cliente": "BRIDGESTONE",
+      "profissional": "Beatriz Santiago de Souza(BSO)"
+    },
+    {
+      "numero_processo": "1001533-52.2026.5.02.0432",
+      "cliente": "BRIDGESTONE",
+      "profissional": "Beatriz Santiago de Souza(BSO)"
+    },
+    {
+      "numero_processo": "1001492-88.2026.5.02.0431",
+      "cliente": "BRIDGESTONE",
+      "profissional": "Beatriz Santiago de Souza(BSO)"
+    },
+    {
       "numero_processo": "0002640-86.2026.5.10.0801",
       "cliente": "EUROCHEM FTO MATRIZ",
       "profissional": "Rafael Yepez do Lago(RYL)"
-    },
-    {
-      "numero_processo": "0000718-12.2026.5.05.0037",
-      "cliente": "EUROCHEM SALITRE",
-      "profissional": "Camila Alves Magalhães de Paula(CAL)"
     },
     {
       "numero_processo": "1000555-17.2017.5.02.0521",
