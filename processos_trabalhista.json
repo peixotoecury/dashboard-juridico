@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-09-10T10:30:24",
+  "atualizado_em": "2026-09-10T10:45:21",
   "kpis": {
     "total_andamento": 7453,
     "entradas_hoje": 2,
@@ -318,12 +318,12 @@
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2090,
-      "entradas_mes": 25,
+      "andamento": 2091,
+      "entradas_mes": 26,
       "saidas_mes": 14,
       "entradas_mes_anterior": 93,
       "saidas_mes_anterior": 74,
-      "valor_causa": 448761964.33
+      "valor_causa": 448781964.33
     },
     {
       "nome": "Grupo E1",
@@ -399,12 +399,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 12,
-      "entradas_mes": 6,
+      "andamento": 11,
+      "entradas_mes": 5,
       "saidas_mes": 2,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 20,
-      "valor_causa": 1156187.9
+      "valor_causa": 1136187.9
     },
     {
       "nome": "Sócios",
@@ -893,12 +893,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 826,
-      "entradas_mes": 24,
+      "andamento": 827,
+      "entradas_mes": 25,
       "saidas_mes": 6,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 27,
-      "valor_causa": 161739842.12
+      "valor_causa": 161759842.12
     },
     {
       "fase": "Instrução",
@@ -973,12 +973,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 8,
-      "entradas_mes": 5,
+      "andamento": 7,
+      "entradas_mes": 4,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 2,
-      "valor_causa": 810788.9
+      "valor_causa": 790788.9
     },
     {
       "fase": "Instrução",
@@ -1553,12 +1553,12 @@
     },
     {
       "nome": "Richard Ruan Leo da Silva(RRU)",
-      "andamento": 17,
-      "entradas_mes": 5,
+      "andamento": 16,
+      "entradas_mes": 4,
       "saidas_mes": 0,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 6,
-      "valor_causa": 4047820.16
+      "valor_causa": 4027820.16
     },
     {
       "nome": "Keyla Maria Barbosa Silva Moraes(KBM)",
@@ -1568,6 +1568,15 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
       "valor_causa": 4000.0
+    },
+    {
+      "nome": "Bruno Tanganelli Farah(BTF)",
+      "andamento": 6,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 5,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 5340680.77
     },
     {
       "nome": "Juliana Pereira Nascimento(JPA)",
@@ -1586,15 +1595,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
-    },
-    {
-      "nome": "Bruno Tanganelli Farah(BTF)",
-      "andamento": 5,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 5,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 5320680.77
     },
     {
       "nome": "Poliana Banqueri da Silva Guimarães(PBS)",
@@ -3182,12 +3182,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "INPASA SINOP",
-      "andamento": 35,
-      "entradas_mes": 9,
+      "andamento": 36,
+      "entradas_mes": 10,
       "saidas_mes": 0,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 0,
-      "valor_causa": 8890005.76,
+      "valor_causa": 8910005.76,
       "alerta_entrada": false
     },
     {
@@ -3654,17 +3654,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "INPASA SINOP",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 478495.17,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "PEIXOTO E CURY",
       "andamento": 1,
       "entradas_mes": 0,
@@ -3727,6 +3716,17 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 1,
       "valor_causa": 161790.2,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "INPASA SINOP",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 458495.17,
       "alerta_entrada": false
     },
     {
@@ -4336,6 +4336,16 @@
     },
     {
       "grupo": "Grupo E2",
+      "profissional": "Bruno Tanganelli Farah(BTF)",
+      "andamento": 6,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 5,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 5340680.77
+    },
+    {
+      "grupo": "Grupo E2",
       "profissional": "Washington Soares Silva Filho(WSF)",
       "andamento": 5,
       "entradas_mes": 0,
@@ -4343,16 +4353,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
-    },
-    {
-      "grupo": "Grupo E2",
-      "profissional": "Bruno Tanganelli Farah(BTF)",
-      "andamento": 5,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 5,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 5320680.77
     },
     {
       "grupo": "Grupo E2",
@@ -4396,16 +4396,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Richard Ruan Leo da Silva(RRU)",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 478495.17
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Luiz Vicente de Carvalho(LVC)",
       "andamento": 1,
       "entradas_mes": 0,
@@ -4423,6 +4413,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 9,
       "valor_causa": 0.0
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Richard Ruan Leo da Silva(RRU)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 458495.17
     },
     {
       "grupo": "Sem grupo",
@@ -7804,11 +7804,6 @@
       "numero_processo": "0011190-20.2026.5.15.0126",
       "cliente": "HERINGER",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
-    },
-    {
-      "numero_processo": "0025589-77.2026.5.24.0005",
-      "cliente": "INPASA SINOP",
-      "profissional": "Richard Ruan Leo da Silva(RRU)"
     },
     {
       "numero_processo": "0001515-28.2026.5.09.0020",
