@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-09-10T12:00:27",
+  "atualizado_em": "2026-09-10T12:15:28",
   "kpis": {
     "total_andamento": 7456,
     "entradas_hoje": 7,
@@ -336,12 +336,12 @@
     },
     {
       "nome": "Grupo B1",
-      "andamento": 1434,
-      "entradas_mes": 3,
+      "andamento": 1435,
+      "entradas_mes": 4,
       "saidas_mes": 7,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 41,
-      "valor_causa": 305673506.72
+      "valor_causa": 306351633.96
     },
     {
       "nome": "Grupo B2",
@@ -399,12 +399,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 12,
-      "entradas_mes": 6,
+      "andamento": 11,
+      "entradas_mes": 5,
       "saidas_mes": 2,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 20,
-      "valor_causa": 2349195.62
+      "valor_causa": 1671068.38
     },
     {
       "nome": "Sócios",
@@ -913,12 +913,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B1",
-      "andamento": 428,
-      "entradas_mes": 3,
+      "andamento": 429,
+      "entradas_mes": 4,
       "saidas_mes": 3,
       "entradas_mes_anterior": 52,
       "saidas_mes_anterior": 14,
-      "valor_causa": 136351015.62
+      "valor_causa": 137029142.86
     },
     {
       "fase": "Instrução",
@@ -973,12 +973,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 8,
-      "entradas_mes": 5,
+      "andamento": 7,
+      "entradas_mes": 4,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 2,
-      "valor_causa": 2003796.62
+      "valor_causa": 1325669.38
     },
     {
       "fase": "Instrução",
@@ -2313,12 +2313,12 @@
     {
       "grupo": "Grupo B1",
       "cliente": "BRIDGESTONE",
-      "andamento": 1434,
-      "entradas_mes": 3,
+      "andamento": 1435,
+      "entradas_mes": 4,
       "saidas_mes": 7,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 41,
-      "valor_causa": 305673506.72,
+      "valor_causa": 306351633.96,
       "alerta_entrada": false
     },
     {
@@ -3588,6 +3588,17 @@
     },
     {
       "grupo": "Grupo E2",
+      "cliente": "VITERRA AGRICULTURE",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 70197.79,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Grupo E2",
       "cliente": "LEONARDO WAISSMANN",
       "andamento": 1,
       "entradas_mes": 0,
@@ -3606,17 +3617,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Grupo E2",
-      "cliente": "VITERRA AGRICULTURE",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 70197.79,
       "alerta_entrada": false
     },
     {
@@ -3644,13 +3644,13 @@
     {
       "grupo": "Sem grupo",
       "cliente": "BRIDGESTONE",
-      "andamento": 3,
-      "entradas_mes": 3,
+      "andamento": 2,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 1833293.09,
-      "alerta_entrada": true
+      "valor_causa": 1155165.85,
+      "alerta_entrada": false
     },
     {
       "grupo": "Sem grupo",
@@ -3855,12 +3855,12 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Beatriz Santiago de Souza(BSO)",
-      "andamento": 283,
-      "entradas_mes": 0,
+      "andamento": 284,
+      "entradas_mes": 1,
       "saidas_mes": 1,
       "entradas_mes_anterior": 14,
       "saidas_mes_anterior": 3,
-      "valor_causa": 42080088.67
+      "valor_causa": 42758215.91
     },
     {
       "grupo": "Grupo B1",
@@ -4334,16 +4334,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Beatriz Santiago de Souza(BSO)",
-      "andamento": 3,
-      "entradas_mes": 3,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 1833293.09
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Giulia Vendramini Milani(GVM)",
       "andamento": 2,
       "entradas_mes": 1,
@@ -4361,6 +4351,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 99767.28
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Beatriz Santiago de Souza(BSO)",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1155165.85
     },
     {
       "grupo": "Sem grupo",
@@ -7764,17 +7764,12 @@
       "profissional": "Rafael Yepez do Lago(RYL)"
     },
     {
-      "numero_processo": "1001617-50.2026.5.02.0433",
+      "numero_processo": "1001492-88.2026.5.02.0431",
       "cliente": "BRIDGESTONE",
       "profissional": "Beatriz Santiago de Souza(BSO)"
     },
     {
       "numero_processo": "1001533-52.2026.5.02.0432",
-      "cliente": "BRIDGESTONE",
-      "profissional": "Beatriz Santiago de Souza(BSO)"
-    },
-    {
-      "numero_processo": "1001492-88.2026.5.02.0431",
       "cliente": "BRIDGESTONE",
       "profissional": "Beatriz Santiago de Souza(BSO)"
     },
