@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-10T18:15:32",
+  "atualizado_em": "2026-09-10T18:30:37",
   "kpis": {
-    "total_andamento": 7457,
-    "entradas_hoje": 12,
+    "total_andamento": 7458,
+    "entradas_hoje": 13,
     "saidas_hoje": 4,
     "entradas_ontem": 13,
     "saidas_ontem": 8,
-    "entradas_mes": 63,
+    "entradas_mes": 64,
     "saidas_mes": 835,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 259,
     "valor_causa_total": 1654162489.89,
-    "saldo_mes": -772
+    "saldo_mes": -771
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-09-10",
-      "entradas": 12,
+      "entradas": 13,
       "saidas": 4
     }
   ],
@@ -336,8 +336,8 @@
     },
     {
       "nome": "Grupo B1",
-      "andamento": 1437,
-      "entradas_mes": 7,
+      "andamento": 1438,
+      "entradas_mes": 8,
       "saidas_mes": 8,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 41,
@@ -428,8 +428,8 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5714,
-      "entradas_mes": 33,
+      "andamento": 5715,
+      "entradas_mes": 34,
       "saidas_mes": 714,
       "entradas_mes_anterior": 185,
       "saidas_mes_anterior": 210,
@@ -673,8 +673,8 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2774,
-      "entradas_mes": 59,
+      "andamento": 2775,
+      "entradas_mes": 60,
       "saidas_mes": 157,
       "entradas_mes_anterior": 207,
       "saidas_mes_anterior": 72,
@@ -913,8 +913,8 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B1",
-      "andamento": 432,
-      "entradas_mes": 7,
+      "andamento": 433,
+      "entradas_mes": 8,
       "saidas_mes": 3,
       "entradas_mes_anterior": 52,
       "saidas_mes_anterior": 14,
@@ -1425,8 +1425,8 @@
     },
     {
       "nome": "Nicolau Rafael Guimarães Coelho(NRG)",
-      "andamento": 216,
-      "entradas_mes": 2,
+      "andamento": 217,
+      "entradas_mes": 3,
       "saidas_mes": 3,
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 27,
@@ -1661,8 +1661,8 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1437,
-      "entradas_mes": 7,
+      "andamento": 1438,
+      "entradas_mes": 8,
       "saidas_mes": 8,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 41,
@@ -2039,17 +2039,6 @@
     },
     {
       "grupo": "Grupo A2",
-      "cliente": "LABORATÓRIO PRODUÇÃO",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 10000.0,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Grupo A2",
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "andamento": 1,
       "entradas_mes": 0,
@@ -2079,6 +2068,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 664000.0,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Grupo A2",
+      "cliente": "LABORATÓRIO PRODUÇÃO",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 10000.0,
       "alerta_entrada": false
     },
     {
@@ -2293,8 +2293,8 @@
     {
       "grupo": "Grupo B1",
       "cliente": "BRIDGESTONE",
-      "andamento": 1437,
-      "entradas_mes": 7,
+      "andamento": 1438,
+      "entradas_mes": 8,
       "saidas_mes": 8,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 41,
@@ -3862,8 +3862,8 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Nicolau Rafael Guimarães Coelho(NRG)",
-      "andamento": 51,
-      "entradas_mes": 1,
+      "andamento": 52,
+      "entradas_mes": 2,
       "saidas_mes": 2,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 24,
@@ -6254,8 +6254,8 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1412,
-      "entradas_mes": 7,
+      "andamento": 1413,
+      "entradas_mes": 8,
       "saidas_mes": 8,
       "entradas_mes_anterior": 51,
       "saidas_mes_anterior": 41,
@@ -7173,16 +7173,6 @@
     },
     {
       "estado": "SP",
-      "cliente": "LABORATÓRIO PRODUÇÃO",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 10000.0
-    },
-    {
-      "estado": "SP",
       "cliente": "FEDERAL-MOGUL",
       "andamento": 1,
       "entradas_mes": 0,
@@ -7330,6 +7320,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 664000.0
+    },
+    {
+      "estado": "SP",
+      "cliente": "LABORATÓRIO PRODUÇÃO",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 10000.0
     },
     {
       "estado": "SP",
