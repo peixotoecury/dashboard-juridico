@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-10T15:00:21",
+  "atualizado_em": "2026-09-10T15:15:20",
   "kpis": {
-    "total_andamento": 7456,
-    "entradas_hoje": 9,
+    "total_andamento": 7457,
+    "entradas_hoje": 10,
     "saidas_hoje": 3,
     "entradas_ontem": 13,
     "saidas_ontem": 8,
-    "entradas_mes": 60,
+    "entradas_mes": 61,
     "saidas_mes": 833,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 259,
-    "valor_causa_total": 1653486974.33,
-    "saldo_mes": -773
+    "valor_causa_total": 1653534592.55,
+    "saldo_mes": -772
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-09-10",
-      "entradas": 9,
+      "entradas": 10,
       "saidas": 3
     }
   ],
@@ -336,12 +336,12 @@
     },
     {
       "nome": "Grupo B1",
-      "andamento": 1437,
-      "entradas_mes": 6,
+      "andamento": 1438,
+      "entradas_mes": 7,
       "saidas_mes": 7,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 41,
-      "valor_causa": 307506799.81
+      "valor_causa": 307699827.81
     },
     {
       "nome": "Grupo B2",
@@ -404,7 +404,7 @@
       "saidas_mes": 2,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 20,
-      "valor_causa": 891568.75
+      "valor_causa": 746158.97
     },
     {
       "nome": "Sócios",
@@ -428,12 +428,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5713,
-      "entradas_mes": 30,
+      "andamento": 5714,
+      "entradas_mes": 31,
       "saidas_mes": 712,
       "entradas_mes_anterior": 185,
       "saidas_mes_anterior": 210,
-      "valor_causa": 1304126439.31
+      "valor_causa": 1304174057.53
     },
     {
       "nome": "MG",
@@ -673,12 +673,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2773,
-      "entradas_mes": 57,
+      "andamento": 2774,
+      "entradas_mes": 58,
       "saidas_mes": 156,
       "entradas_mes_anterior": 207,
       "saidas_mes_anterior": 72,
-      "valor_causa": 753915719.21
+      "valor_causa": 753963337.43
     },
     {
       "nome": "Sentença",
@@ -913,12 +913,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B1",
-      "andamento": 431,
-      "entradas_mes": 6,
+      "andamento": 432,
+      "entradas_mes": 7,
       "saidas_mes": 3,
       "entradas_mes_anterior": 52,
       "saidas_mes_anterior": 14,
-      "valor_causa": 138184308.71
+      "valor_causa": 138377336.71
     },
     {
       "fase": "Instrução",
@@ -978,7 +978,7 @@
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 2,
-      "valor_causa": 546169.75
+      "valor_causa": 400759.97
     },
     {
       "fase": "Instrução",
@@ -1263,12 +1263,12 @@
     },
     {
       "nome": "Giulia Vendramini Milani(GVM)",
-      "andamento": 445,
-      "entradas_mes": 5,
+      "andamento": 446,
+      "entradas_mes": 6,
       "saidas_mes": 4,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 6,
-      "valor_causa": 65879638.45
+      "valor_causa": 65927256.67
     },
     {
       "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
@@ -1691,12 +1691,12 @@
     },
     {
       "nome": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 703,
-      "entradas_mes": 6,
+      "andamento": 704,
+      "entradas_mes": 7,
       "saidas_mes": 4,
       "entradas_mes_anterior": 28,
       "saidas_mes_anterior": 21,
-      "valor_causa": 135377467.44,
+      "valor_causa": 135425085.66,
       "alerta_entrada": false
     },
     {
@@ -2293,12 +2293,12 @@
     {
       "grupo": "Grupo B1",
       "cliente": "BRIDGESTONE",
-      "andamento": 1437,
-      "entradas_mes": 6,
+      "andamento": 1438,
+      "entradas_mes": 7,
       "saidas_mes": 7,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 41,
-      "valor_causa": 307506799.81,
+      "valor_causa": 307699827.81,
       "alerta_entrada": false
     },
     {
@@ -3591,12 +3591,12 @@
     {
       "grupo": "Sem grupo",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 3,
-      "entradas_mes": 1,
+      "andamento": 4,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
-      "valor_causa": 106960.72,
+      "valor_causa": 154578.94,
       "alerta_entrada": false
     },
     {
@@ -3652,17 +3652,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 47745.28,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "BRIDGESTONE",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 193028.0,
       "alerta_entrada": false
     },
     {
@@ -3834,12 +3823,12 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Tamara Silva Marcílio(TAM)",
-      "andamento": 279,
-      "entradas_mes": 1,
+      "andamento": 280,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 6,
-      "valor_causa": 49704799.74
+      "valor_causa": 49897827.74
     },
     {
       "grupo": "Grupo B1",
@@ -4294,12 +4283,12 @@
     {
       "grupo": "Sem grupo",
       "profissional": "Giulia Vendramini Milani(GVM)",
-      "andamento": 2,
-      "entradas_mes": 1,
+      "andamento": 3,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 105960.72
+      "valor_causa": 153578.94
     },
     {
       "grupo": "Sem grupo",
@@ -4340,16 +4329,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 9,
       "valor_causa": 0.0
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Tamara Silva Marcílio(TAM)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 193028.0
     },
     {
       "grupo": "Sem grupo",
@@ -6316,12 +6295,12 @@
     {
       "estado": "SP",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 603,
-      "entradas_mes": 4,
+      "andamento": 604,
+      "entradas_mes": 5,
       "saidas_mes": 3,
       "entradas_mes_anterior": 20,
       "saidas_mes_anterior": 17,
-      "valor_causa": 119260877.89
+      "valor_causa": 119308496.11
     },
     {
       "estado": "SP",
@@ -7713,11 +7692,6 @@
       "profissional": "Rafael Yepez do Lago(RYL)"
     },
     {
-      "numero_processo": "1001592-34.2026.5.02.0434",
-      "cliente": "BRIDGESTONE",
-      "profissional": "Tamara Silva Marcílio(TAM)"
-    },
-    {
       "numero_processo": "0002640-86.2026.5.10.0801",
       "cliente": "EUROCHEM FTO MATRIZ",
       "profissional": "Rafael Yepez do Lago(RYL)"
@@ -7754,6 +7728,11 @@
     },
     {
       "numero_processo": "0011361-94.2026.5.15.0087",
+      "cliente": "SYNGENTA PROTEÇÃO DE",
+      "profissional": "Giulia Vendramini Milani(GVM)"
+    },
+    {
+      "numero_processo": "0013263-74.2026.5.15.0122",
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "profissional": "Giulia Vendramini Milani(GVM)"
     },
