@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-11T12:45:27",
+  "atualizado_em": "2026-09-11T13:00:45",
   "kpis": {
-    "total_andamento": 7463,
+    "total_andamento": 7464,
     "entradas_hoje": 9,
     "saidas_hoje": 4,
-    "entradas_ontem": 13,
+    "entradas_ontem": 14,
     "saidas_ontem": 4,
-    "entradas_mes": 73,
+    "entradas_mes": 74,
     "saidas_mes": 839,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 259,
-    "valor_causa_total": 1658926767.7,
-    "saldo_mes": -766
+    "valor_causa_total": 1658927767.7,
+    "saldo_mes": -765
   },
   "serie_diaria": [
     {
@@ -306,7 +306,7 @@
     },
     {
       "data": "2026-09-10",
-      "entradas": 13,
+      "entradas": 14,
       "saidas": 4
     },
     {
@@ -336,12 +336,12 @@
     },
     {
       "nome": "Grupo B1",
-      "andamento": 1444,
-      "entradas_mes": 14,
+      "andamento": 1445,
+      "entradas_mes": 15,
       "saidas_mes": 8,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 41,
-      "valor_causa": 312383245.59
+      "valor_causa": 312496154.26
     },
     {
       "nome": "Grupo B2",
@@ -404,7 +404,7 @@
       "saidas_mes": 3,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 20,
-      "valor_causa": 824040.71
+      "valor_causa": 712132.04
     },
     {
       "nome": "Sócios",
@@ -428,12 +428,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5719,
-      "entradas_mes": 42,
+      "andamento": 5720,
+      "entradas_mes": 43,
       "saidas_mes": 718,
       "entradas_mes_anterior": 185,
       "saidas_mes_anterior": 210,
-      "valor_causa": 1306879706.18
+      "valor_causa": 1306880706.18
     },
     {
       "nome": "MG",
@@ -673,12 +673,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2780,
-      "entradas_mes": 68,
+      "andamento": 2781,
+      "entradas_mes": 69,
       "saidas_mes": 159,
       "entradas_mes_anterior": 207,
       "saidas_mes_anterior": 72,
-      "valor_causa": 759145935.33
+      "valor_causa": 759146935.33
     },
     {
       "nome": "Sentença",
@@ -913,12 +913,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B1",
-      "andamento": 438,
-      "entradas_mes": 13,
+      "andamento": 439,
+      "entradas_mes": 14,
       "saidas_mes": 3,
       "entradas_mes_anterior": 52,
       "saidas_mes_anterior": 14,
-      "valor_causa": 143177750.2
+      "valor_causa": 143290658.87
     },
     {
       "fase": "Instrução",
@@ -978,7 +978,7 @@
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 2,
-      "valor_causa": 478641.71
+      "valor_causa": 366733.04
     },
     {
       "fase": "Instrução",
@@ -1353,12 +1353,12 @@
     },
     {
       "nome": "Vanessa de Cassia Castrequini Rosa(VCR)",
-      "andamento": 278,
-      "entradas_mes": 0,
+      "andamento": 279,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 3,
-      "valor_causa": 43930987.65
+      "valor_causa": 43931987.65
     },
     {
       "nome": "Rafael Rocha Ferreira(RFE)",
@@ -1681,12 +1681,12 @@
     },
     {
       "nome": "EMBRAER",
-      "andamento": 723,
-      "entradas_mes": 1,
+      "andamento": 724,
+      "entradas_mes": 2,
       "saidas_mes": 1,
       "entradas_mes_anterior": 26,
       "saidas_mes_anterior": 9,
-      "valor_causa": 127668165.47,
+      "valor_causa": 127669165.47,
       "alerta_entrada": false
     },
     {
@@ -2293,12 +2293,12 @@
     {
       "grupo": "Grupo B1",
       "cliente": "BRIDGESTONE",
-      "andamento": 1444,
-      "entradas_mes": 14,
+      "andamento": 1445,
+      "entradas_mes": 15,
       "saidas_mes": 8,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 41,
-      "valor_causa": 312383245.59,
+      "valor_causa": 312496154.26,
       "alerta_entrada": false
     },
     {
@@ -3602,13 +3602,13 @@
     {
       "grupo": "Sem grupo",
       "cliente": "BRIDGESTONE",
-      "andamento": 3,
-      "entradas_mes": 3,
+      "andamento": 2,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 355883.46,
-      "alerta_entrada": true
+      "valor_causa": 242974.79,
+      "alerta_entrada": false
     },
     {
       "grupo": "Sem grupo",
@@ -3641,6 +3641,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 52022.0,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "EMBRAER",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1000.0,
       "alerta_entrada": false
     },
     {
@@ -3811,12 +3822,12 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Rafael Rocha Ferreira(RFE)",
-      "andamento": 273,
-      "entradas_mes": 2,
+      "andamento": 274,
+      "entradas_mes": 3,
       "saidas_mes": 1,
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 3,
-      "valor_causa": 74414136.74
+      "valor_causa": 74527045.41
     },
     {
       "grupo": "Grupo B1",
@@ -4270,16 +4281,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Rafael Rocha Ferreira(RFE)",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 242832.19
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
       "andamento": 1,
       "entradas_mes": 0,
@@ -4310,6 +4311,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Rafael Rocha Ferreira(RFE)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 129923.52
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Beatriz Santiago de Souza(BSO)",
       "andamento": 1,
       "entradas_mes": 1,
@@ -4317,6 +4328,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 113051.27
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Vanessa de Cassia Castrequini Rosa(VCR)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1000.0
     },
     {
       "grupo": "Sem grupo",
@@ -6263,12 +6284,12 @@
     {
       "estado": "SP",
       "cliente": "EMBRAER",
-      "andamento": 710,
-      "entradas_mes": 1,
+      "andamento": 711,
+      "entradas_mes": 2,
       "saidas_mes": 1,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 8,
-      "valor_causa": 127004648.46
+      "valor_causa": 127005648.46
     },
     {
       "estado": "SP",
@@ -7670,11 +7691,6 @@
       "profissional": "Rafael Yepez do Lago(RYL)"
     },
     {
-      "numero_processo": "1001651-28.2026.5.02.0432",
-      "cliente": "BRIDGESTONE",
-      "profissional": "Rafael Rocha Ferreira(RFE)"
-    },
-    {
       "numero_processo": "0011937-92.2026.5.15.0053",
       "cliente": "BRIDGESTONE",
       "profissional": "Rafael Rocha Ferreira(RFE)"
@@ -7683,6 +7699,11 @@
       "numero_processo": "1001748-22.2026.5.02.0434",
       "cliente": "BRIDGESTONE",
       "profissional": "Beatriz Santiago de Souza(BSO)"
+    },
+    {
+      "numero_processo": "0012048-80.2026.5.15.0084",
+      "cliente": "EMBRAER",
+      "profissional": "Vanessa de Cassia Castrequini Rosa(VCR)"
     },
     {
       "numero_processo": "1002426-59.2017.5.02.0464",
