@@ -1,24 +1,19 @@
 {
-  "atualizado_em": "2026-09-10T18:30:37",
+  "atualizado_em": "2026-09-11T09:15:26",
   "kpis": {
-    "total_andamento": 7458,
-    "entradas_hoje": 13,
-    "saidas_hoje": 4,
+    "total_andamento": 7457,
+    "entradas_hoje": 0,
+    "saidas_hoje": 1,
     "entradas_ontem": 13,
-    "saidas_ontem": 8,
+    "saidas_ontem": 4,
     "entradas_mes": 64,
-    "saidas_mes": 835,
+    "saidas_mes": 836,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 259,
     "valor_causa_total": 1654162489.89,
-    "saldo_mes": -771
+    "saldo_mes": -772
   },
   "serie_diaria": [
-    {
-      "data": "2026-07-13",
-      "entradas": 14,
-      "saidas": 10
-    },
     {
       "data": "2026-07-14",
       "entradas": 19,
@@ -313,6 +308,11 @@
       "data": "2026-09-10",
       "entradas": 13,
       "saidas": 4
+    },
+    {
+      "data": "2026-09-11",
+      "entradas": 0,
+      "saidas": 1
     }
   ],
   "por_grupo": [
@@ -399,9 +399,9 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 10,
+      "andamento": 9,
       "entradas_mes": 4,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 20,
       "valor_causa": 1154066.52
@@ -428,9 +428,9 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5715,
+      "andamento": 5714,
       "entradas_mes": 34,
-      "saidas_mes": 714,
+      "saidas_mes": 715,
       "entradas_mes_anterior": 185,
       "saidas_mes_anterior": 210,
       "valor_causa": 1304801954.87
@@ -700,9 +700,9 @@
     },
     {
       "nome": "Execução",
-      "andamento": 936,
+      "andamento": 935,
       "entradas_mes": 1,
-      "saidas_mes": 306,
+      "saidas_mes": 307,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 92,
       "valor_causa": 126072809.62
@@ -872,16 +872,6 @@
     },
     {
       "fase": "Execução",
-      "grupo": "Sem grupo",
-      "andamento": 2,
-      "entradas_mes": 0,
-      "saidas_mes": 2,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 7,
-      "valor_causa": 38000.0
-    },
-    {
-      "fase": "Execução",
       "grupo": "Grupo A2",
       "andamento": 1,
       "entradas_mes": 0,
@@ -889,6 +879,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 1025574.44
+    },
+    {
+      "fase": "Execução",
+      "grupo": "Sem grupo",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 3,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 7,
+      "valor_causa": 38000.0
     },
     {
       "fase": "Instrução",
@@ -1272,12 +1272,12 @@
     },
     {
       "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 416,
+      "andamento": 415,
       "entradas_mes": 2,
       "saidas_mes": 3,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 12,
-      "valor_causa": 160523517.11
+      "valor_causa": 160350259.87
     },
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
@@ -1407,9 +1407,9 @@
     },
     {
       "nome": "Paloma da Silva Santos(PSI)",
-      "andamento": 241,
+      "andamento": 240,
       "entradas_mes": 0,
-      "saidas_mes": 7,
+      "saidas_mes": 8,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 33,
       "valor_causa": 50819172.51
@@ -1443,12 +1443,12 @@
     },
     {
       "nome": "Bianca Bolanhi Camacho(BBO)",
-      "andamento": 179,
+      "andamento": 180,
       "entradas_mes": 4,
       "saidas_mes": 349,
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 6,
-      "valor_causa": 20194968.19
+      "valor_causa": 20368225.43
     },
     {
       "nome": "Thiago Frid Figueiredo Rossi(TFR)",
@@ -3623,17 +3623,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "MAHLE THERMAL",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 2,
-      "valor_causa": 0.0,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "BP BIOENERGIA",
       "andamento": 1,
       "entradas_mes": 1,
@@ -4162,12 +4151,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 411,
+      "andamento": 410,
       "entradas_mes": 2,
       "saidas_mes": 3,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 12,
-      "valor_causa": 160214796.86
+      "valor_causa": 160041539.62
     },
     {
       "grupo": "Grupo E2",
@@ -4192,12 +4181,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Bianca Bolanhi Camacho(BBO)",
-      "andamento": 179,
+      "andamento": 180,
       "entradas_mes": 4,
       "saidas_mes": 0,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 6,
-      "valor_causa": 20194968.19
+      "valor_causa": 20368225.43
     },
     {
       "grupo": "Grupo E2",
@@ -4317,16 +4306,6 @@
       "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 0.0
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Paloma da Silva Santos(PSI)",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 9,
       "valor_causa": 0.0
     },
     {
@@ -6404,9 +6383,9 @@
     {
       "estado": "SP",
       "cliente": "MAHLE THERMAL",
-      "andamento": 48,
+      "andamento": 47,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 10,
       "valor_causa": 6964385.58
@@ -7674,11 +7653,6 @@
       "numero_processo": "0002640-86.2026.5.10.0801",
       "cliente": "EUROCHEM FTO MATRIZ",
       "profissional": "Rafael Yepez do Lago(RYL)"
-    },
-    {
-      "numero_processo": "1000555-17.2017.5.02.0521",
-      "cliente": "MAHLE THERMAL",
-      "profissional": "Paloma da Silva Santos(PSI)"
     },
     {
       "numero_processo": "1002426-59.2017.5.02.0464",
