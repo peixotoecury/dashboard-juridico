@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-09-14T14:00:36",
+  "atualizado_em": "2026-09-14T14:15:29",
   "kpis": {
     "total_andamento": 7477,
     "entradas_hoje": 8,
@@ -345,12 +345,12 @@
     },
     {
       "nome": "Grupo B2",
-      "andamento": 748,
-      "entradas_mes": 4,
+      "andamento": 749,
+      "entradas_mes": 5,
       "saidas_mes": 2,
       "entradas_mes_anterior": 26,
       "saidas_mes_anterior": 9,
-      "valor_causa": 130560239.2
+      "valor_causa": 131038884.4
     },
     {
       "nome": "Grupo C",
@@ -399,12 +399,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 16,
-      "entradas_mes": 9,
+      "andamento": 15,
+      "entradas_mes": 8,
       "saidas_mes": 3,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 20,
-      "valor_causa": 1954170.04
+      "valor_causa": 1475524.84
     },
     {
       "nome": "Sócios",
@@ -932,6 +932,16 @@
     },
     {
       "fase": "Instrução",
+      "grupo": "Grupo B2",
+      "andamento": 129,
+      "entradas_mes": 5,
+      "saidas_mes": 2,
+      "entradas_mes_anterior": 25,
+      "saidas_mes_anterior": 2,
+      "valor_causa": 27630078.89
+    },
+    {
+      "fase": "Instrução",
       "grupo": "Grupo B3",
       "andamento": 129,
       "entradas_mes": 2,
@@ -939,16 +949,6 @@
       "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 7,
       "valor_causa": 23628572.28
-    },
-    {
-      "fase": "Instrução",
-      "grupo": "Grupo B2",
-      "andamento": 128,
-      "entradas_mes": 4,
-      "saidas_mes": 2,
-      "entradas_mes_anterior": 25,
-      "saidas_mes_anterior": 2,
-      "valor_causa": 27151433.69
     },
     {
       "fase": "Instrução",
@@ -973,12 +973,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 11,
-      "entradas_mes": 8,
+      "andamento": 10,
+      "entradas_mes": 7,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 2,
-      "valor_causa": 1586498.95
+      "valor_causa": 1107853.75
     },
     {
       "fase": "Instrução",
@@ -2304,12 +2304,12 @@
     {
       "grupo": "Grupo B2",
       "cliente": "EMBRAER",
-      "andamento": 724,
-      "entradas_mes": 4,
+      "andamento": 725,
+      "entradas_mes": 5,
       "saidas_mes": 2,
       "entradas_mes_anterior": 26,
       "saidas_mes_anterior": 9,
-      "valor_causa": 127850506.59,
+      "valor_causa": 128329151.79,
       "alerta_entrada": false
     },
     {
@@ -3591,12 +3591,12 @@
     {
       "grupo": "Sem grupo",
       "cliente": "EMBRAER",
-      "andamento": 6,
-      "entradas_mes": 6,
+      "andamento": 5,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 1347064.44,
+      "valor_causa": 868419.24,
       "alerta_entrada": true
     },
     {
@@ -3893,12 +3893,12 @@
     {
       "grupo": "Grupo B2",
       "profissional": "Vanessa de Cassia Castrequini Rosa(VCR)",
-      "andamento": 279,
-      "entradas_mes": 2,
+      "andamento": 280,
+      "entradas_mes": 3,
       "saidas_mes": 1,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 3,
-      "valor_causa": 43904081.43
+      "valor_causa": 44382726.63
     },
     {
       "grupo": "Grupo B2",
@@ -4282,16 +4282,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Vanessa de Cassia Castrequini Rosa(VCR)",
-      "andamento": 3,
-      "entradas_mes": 3,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 876737.55
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Bruna Cembranelli Fazenda (BCF)",
       "andamento": 3,
       "entradas_mes": 3,
@@ -4309,6 +4299,16 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
       "valor_causa": 105960.72
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Vanessa de Cassia Castrequini Rosa(VCR)",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 398092.35
     },
     {
       "grupo": "Sem grupo",
@@ -7740,11 +7740,6 @@
       "numero_processo": "0012200-51.2026.5.15.0045",
       "cliente": "EMBRAER",
       "profissional": "Bruna Cembranelli Fazenda (BCF)"
-    },
-    {
-      "numero_processo": "0012197-96.2026.5.15.0045",
-      "cliente": "EMBRAER",
-      "profissional": "Vanessa de Cassia Castrequini Rosa(VCR)"
     },
     {
       "numero_processo": "0012072-02.2016.5.15.0071",
