@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-14T14:45:27",
+  "atualizado_em": "2026-09-14T15:00:31",
   "kpis": {
-    "total_andamento": 7477,
-    "entradas_hoje": 8,
+    "total_andamento": 7478,
+    "entradas_hoje": 9,
     "saidas_hoje": 3,
     "entradas_ontem": 0,
     "saidas_ontem": 0,
-    "entradas_mes": 94,
+    "entradas_mes": 95,
     "saidas_mes": 848,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 259,
     "valor_causa_total": 1662080867.09,
-    "saldo_mes": -754
+    "saldo_mes": -753
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-09-14",
-      "entradas": 8,
+      "entradas": 9,
       "saidas": 3
     }
   ],
@@ -380,6 +380,15 @@
       "valor_causa": 129400103.84
     },
     {
+      "nome": "Grupo A1",
+      "andamento": 24,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 0.0
+    },
+    {
       "nome": "Grupo A2",
       "andamento": 24,
       "entradas_mes": 0,
@@ -387,15 +396,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 3,
       "valor_causa": 11609781.48
-    },
-    {
-      "nome": "Grupo A1",
-      "andamento": 23,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 0.0
     },
     {
       "nome": "Sem grupo",
@@ -500,8 +500,8 @@
     },
     {
       "nome": "—",
-      "andamento": 53,
-      "entradas_mes": 0,
+      "andamento": 54,
+      "entradas_mes": 1,
       "saidas_mes": 3,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
@@ -673,8 +673,8 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2787,
-      "entradas_mes": 88,
+      "andamento": 2788,
+      "entradas_mes": 89,
       "saidas_mes": 165,
       "entradas_mes_anterior": 207,
       "saidas_mes_anterior": 72,
@@ -983,8 +983,8 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo A1",
-      "andamento": 2,
-      "entradas_mes": 0,
+      "andamento": 3,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
@@ -1514,6 +1514,15 @@
       "valor_causa": 18591534.55
     },
     {
+      "nome": "Thais Catharine Cardozo Esteves(TCE)",
+      "andamento": 24,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 0.0
+    },
+    {
       "nome": "Natália Biondi Gaggini Robles(NBG)",
       "andamento": 24,
       "entradas_mes": 0,
@@ -1521,15 +1530,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 3,
       "valor_causa": 11572235.76
-    },
-    {
-      "nome": "Thais Catharine Cardozo Esteves(TCE)",
-      "andamento": 23,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 0.0
     },
     {
       "nome": "Richard Ruan Leo da Silva(RRU)",
@@ -1681,8 +1681,8 @@
     },
     {
       "nome": "EMBRAER",
-      "andamento": 731,
-      "entradas_mes": 10,
+      "andamento": 732,
+      "entradas_mes": 11,
       "saidas_mes": 2,
       "entradas_mes_anterior": 26,
       "saidas_mes_anterior": 9,
@@ -1907,6 +1907,17 @@
     },
     {
       "grupo": "Grupo A1",
+      "cliente": "EMBRAER",
+      "andamento": 2,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 0.0,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Grupo A1",
       "cliente": "CTG - RIO PARANAPANE",
       "andamento": 1,
       "entradas_mes": 0,
@@ -1941,17 +1952,6 @@
     {
       "grupo": "Grupo A1",
       "cliente": "GRAMMER DO BRASIL",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 0.0,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Grupo A1",
-      "cliente": "EMBRAER",
       "andamento": 1,
       "entradas_mes": 0,
       "saidas_mes": 0,
@@ -3703,8 +3703,8 @@
     {
       "grupo": "Grupo A1",
       "profissional": "Thais Catharine Cardozo Esteves(TCE)",
-      "andamento": 23,
-      "entradas_mes": 0,
+      "andamento": 24,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
@@ -7505,8 +7505,8 @@
     {
       "estado": "—",
       "cliente": "EMBRAER",
-      "andamento": 7,
-      "entradas_mes": 0,
+      "andamento": 8,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
