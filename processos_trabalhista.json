@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-14T16:45:27",
+  "atualizado_em": "2026-09-14T17:00:33",
   "kpis": {
-    "total_andamento": 7480,
+    "total_andamento": 7479,
     "entradas_hoje": 12,
-    "saidas_hoje": 3,
+    "saidas_hoje": 4,
     "entradas_ontem": 0,
     "saidas_ontem": 0,
     "entradas_mes": 98,
-    "saidas_mes": 849,
+    "saidas_mes": 850,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 259,
-    "valor_causa_total": 1662258159.24,
-    "saldo_mes": -751
+    "valor_causa_total": 1662228691.13,
+    "saldo_mes": -752
   },
   "serie_diaria": [
     {
@@ -312,18 +312,18 @@
     {
       "data": "2026-09-14",
       "entradas": 12,
-      "saidas": 3
+      "saidas": 4
     }
   ],
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2098,
+      "andamento": 2097,
       "entradas_mes": 38,
-      "saidas_mes": 19,
+      "saidas_mes": 20,
       "entradas_mes_anterior": 93,
       "saidas_mes_anterior": 74,
-      "valor_causa": 450343332.0
+      "valor_causa": 450313863.89
     },
     {
       "nome": "Grupo E1",
@@ -626,12 +626,12 @@
     },
     {
       "nome": "RN",
-      "andamento": 4,
+      "andamento": 3,
       "entradas_mes": 0,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 81783.54
+      "valor_causa": 52315.43
     },
     {
       "nome": "AC",
@@ -708,7 +708,7 @@
       "valor_causa": 126881257.68
     }
   ],
-  "por_fase_outras": 395,
+  "por_fase_outras": 394,
   "por_fase_grupo": [
     {
       "fase": "Ajuizamento",
@@ -993,12 +993,12 @@
     {
       "fase": "Outras",
       "grupo": "Grupo E2",
-      "andamento": 129,
+      "andamento": 128,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 5,
-      "valor_causa": 7199907.62
+      "valor_causa": 7170439.51
     },
     {
       "fase": "Outras",
@@ -1299,12 +1299,12 @@
     },
     {
       "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 298,
+      "andamento": 297,
       "entradas_mes": 1,
-      "saidas_mes": 4,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 11,
-      "valor_causa": 147601950.02
+      "valor_causa": 147572481.91
     },
     {
       "nome": "Jessica Cerqueira Silva(JQS)",
@@ -1671,12 +1671,12 @@
     },
     {
       "nome": "BP BIOENERGIA",
-      "andamento": 766,
+      "andamento": 765,
       "entradas_mes": 9,
-      "saidas_mes": 6,
+      "saidas_mes": 7,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 31,
-      "valor_causa": 210193280.85,
+      "valor_causa": 210163812.74,
       "alerta_entrada": false
     },
     {
@@ -3030,12 +3030,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "BP BIOENERGIA",
-      "andamento": 764,
+      "andamento": 763,
       "entradas_mes": 7,
-      "saidas_mes": 6,
+      "saidas_mes": 7,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 31,
-      "valor_causa": 209856206.2,
+      "valor_causa": 209826738.09,
       "alerta_entrada": false
     },
     {
@@ -4193,12 +4193,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 293,
+      "andamento": 292,
       "entradas_mes": 1,
-      "saidas_mes": 4,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 11,
-      "valor_causa": 147293229.77
+      "valor_causa": 147263761.66
     },
     {
       "grupo": "Grupo E2",
@@ -5911,16 +5911,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
-    },
-    {
-      "estado": "RN",
-      "cliente": "BP BIOENERGIA",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 29468.11
     },
     {
       "estado": "RN",
