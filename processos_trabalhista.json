@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-14T19:30:28",
+  "atualizado_em": "2026-09-14T19:45:27",
   "kpis": {
-    "total_andamento": 7479,
+    "total_andamento": 7477,
     "entradas_hoje": 14,
-    "saidas_hoje": 5,
+    "saidas_hoje": 7,
     "entradas_ontem": 0,
     "saidas_ontem": 0,
     "entradas_mes": 100,
-    "saidas_mes": 851,
+    "saidas_mes": 853,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 259,
-    "valor_causa_total": 1662261149.79,
-    "saldo_mes": -751
+    "valor_causa_total": 1662261149.77,
+    "saldo_mes": -753
   },
   "serie_diaria": [
     {
@@ -312,7 +312,7 @@
     {
       "data": "2026-09-14",
       "entradas": 14,
-      "saidas": 5
+      "saidas": 7
     }
   ],
   "por_grupo": [
@@ -327,12 +327,12 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1781,
+      "andamento": 1779,
       "entradas_mes": 20,
-      "saidas_mes": 23,
+      "saidas_mes": 25,
       "entradas_mes_anterior": 50,
       "saidas_mes_anterior": 92,
-      "valor_causa": 291920273.48
+      "valor_causa": 291920273.46
     },
     {
       "nome": "Grupo B1",
@@ -445,15 +445,6 @@
       "valor_causa": 122576118.92
     },
     {
-      "nome": "PR",
-      "andamento": 232,
-      "entradas_mes": 7,
-      "saidas_mes": 4,
-      "entradas_mes_anterior": 8,
-      "saidas_mes_anterior": 2,
-      "valor_causa": 44955591.93
-    },
-    {
       "nome": "RS",
       "andamento": 230,
       "entradas_mes": 0,
@@ -461,6 +452,15 @@
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 6,
       "valor_causa": 52996753.97
+    },
+    {
+      "nome": "PR",
+      "andamento": 230,
+      "entradas_mes": 7,
+      "saidas_mes": 6,
+      "entradas_mes_anterior": 8,
+      "saidas_mes_anterior": 2,
+      "valor_causa": 44955591.91
     },
     {
       "nome": "RJ",
@@ -673,12 +673,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2792,
+      "andamento": 2790,
       "entradas_mes": 94,
-      "saidas_mes": 166,
+      "saidas_mes": 168,
       "entradas_mes_anterior": 207,
       "saidas_mes_anterior": 72,
-      "valor_causa": 761795556.3
+      "valor_causa": 761795556.28
     },
     {
       "nome": "Sentença",
@@ -903,12 +903,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 782,
+      "andamento": 780,
       "entradas_mes": 19,
-      "saidas_mes": 10,
+      "saidas_mes": 12,
       "entradas_mes_anterior": 26,
       "saidas_mes_anterior": 16,
-      "valor_causa": 158584385.9
+      "valor_causa": 158584385.88
     },
     {
       "fase": "Instrução",
@@ -1254,12 +1254,12 @@
   "por_profissional": [
     {
       "nome": "Giulia Vendramini Milani(GVM)",
-      "andamento": 450,
+      "andamento": 448,
       "entradas_mes": 10,
-      "saidas_mes": 4,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 6,
-      "valor_causa": 66188244.85
+      "valor_causa": 66188244.83
     },
     {
       "nome": "Rafael Yepez do Lago(RYL)",
@@ -1691,12 +1691,12 @@
     },
     {
       "nome": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 708,
+      "andamento": 706,
       "entradas_mes": 13,
-      "saidas_mes": 6,
+      "saidas_mes": 8,
       "entradas_mes_anterior": 28,
       "saidas_mes_anterior": 21,
-      "valor_causa": 136819964.63,
+      "valor_causa": 136819964.61,
       "alerta_entrada": false
     },
     {
@@ -2810,12 +2810,12 @@
     {
       "grupo": "Grupo E1",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 635,
+      "andamento": 633,
       "entradas_mes": 12,
-      "saidas_mes": 6,
+      "saidas_mes": 8,
       "entradas_mes_anterior": 26,
       "saidas_mes_anterior": 20,
-      "valor_causa": 135738764.97,
+      "valor_causa": 135738764.95,
       "alerta_entrada": false
     },
     {
@@ -4055,12 +4055,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Giulia Vendramini Milani(GVM)",
-      "andamento": 447,
+      "andamento": 445,
       "entradas_mes": 8,
-      "saidas_mes": 4,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 6,
-      "valor_causa": 65910044.63
+      "valor_causa": 65910044.61
     },
     {
       "grupo": "Grupo E1",
@@ -5617,12 +5617,12 @@
     {
       "estado": "PR",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 14,
+      "andamento": 12,
       "entradas_mes": 2,
-      "saidas_mes": 1,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
-      "valor_causa": 3373414.38
+      "valor_causa": 3373414.36
     },
     {
       "estado": "PR",
