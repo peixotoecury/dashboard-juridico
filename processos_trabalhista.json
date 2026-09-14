@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-14T16:30:26",
+  "atualizado_em": "2026-09-14T16:45:27",
   "kpis": {
-    "total_andamento": 7478,
-    "entradas_hoje": 10,
+    "total_andamento": 7480,
+    "entradas_hoje": 12,
     "saidas_hoje": 3,
     "entradas_ontem": 0,
     "saidas_ontem": 0,
-    "entradas_mes": 96,
+    "entradas_mes": 98,
     "saidas_mes": 849,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 259,
-    "valor_causa_total": 1661800867.09,
-    "saldo_mes": -753
+    "valor_causa_total": 1662258159.24,
+    "saldo_mes": -751
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-09-14",
-      "entradas": 10,
+      "entradas": 12,
       "saidas": 3
     }
   ],
@@ -399,12 +399,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 9,
-      "entradas_mes": 2,
+      "andamento": 11,
+      "entradas_mes": 4,
       "saidas_mes": 3,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 20,
-      "valor_causa": 490429.34
+      "valor_causa": 947721.49
     },
     {
       "nome": "Sócios",
@@ -428,12 +428,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5728,
-      "entradas_mes": 55,
+      "andamento": 5729,
+      "entradas_mes": 56,
       "saidas_mes": 724,
       "entradas_mes_anterior": 185,
       "saidas_mes_anterior": 210,
-      "valor_causa": 1309098446.07
+      "valor_causa": 1309383498.72
     },
     {
       "nome": "MG",
@@ -445,6 +445,15 @@
       "valor_causa": 122524824.92
     },
     {
+      "nome": "PR",
+      "andamento": 231,
+      "entradas_mes": 6,
+      "saidas_mes": 4,
+      "entradas_mes_anterior": 8,
+      "saidas_mes_anterior": 2,
+      "valor_causa": 44904885.56
+    },
+    {
       "nome": "RS",
       "andamento": 230,
       "entradas_mes": 0,
@@ -452,15 +461,6 @@
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 6,
       "valor_causa": 52996753.97
-    },
-    {
-      "nome": "PR",
-      "andamento": 230,
-      "entradas_mes": 5,
-      "saidas_mes": 4,
-      "entradas_mes_anterior": 8,
-      "saidas_mes_anterior": 2,
-      "valor_causa": 44732646.06
     },
     {
       "nome": "RJ",
@@ -673,12 +673,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2788,
-      "entradas_mes": 90,
+      "andamento": 2790,
+      "entradas_mes": 92,
       "saidas_mes": 166,
       "entradas_mes_anterior": 207,
       "saidas_mes_anterior": 72,
-      "valor_causa": 761236263.78
+      "valor_causa": 761693555.93
     },
     {
       "nome": "Sentença",
@@ -973,12 +973,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 4,
-      "entradas_mes": 1,
+      "andamento": 6,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 2,
-      "valor_causa": 122758.25
+      "valor_causa": 580050.4
     },
     {
       "fase": "Instrução",
@@ -1254,12 +1254,12 @@
   "por_profissional": [
     {
       "nome": "Giulia Vendramini Milani(GVM)",
-      "andamento": 449,
-      "entradas_mes": 9,
+      "andamento": 450,
+      "entradas_mes": 10,
       "saidas_mes": 4,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 6,
-      "valor_causa": 66016005.35
+      "valor_causa": 66188244.85
     },
     {
       "nome": "Rafael Yepez do Lago(RYL)",
@@ -1551,12 +1551,12 @@
     },
     {
       "nome": "Bruno Tanganelli Farah(BTF)",
-      "andamento": 8,
-      "entradas_mes": 3,
+      "andamento": 9,
+      "entradas_mes": 4,
       "saidas_mes": 0,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 0,
-      "valor_causa": 7931923.01
+      "valor_causa": 8216975.66
     },
     {
       "nome": "Juliana Pereira Nascimento(JPA)",
@@ -1671,12 +1671,12 @@
     },
     {
       "nome": "BP BIOENERGIA",
-      "andamento": 765,
-      "entradas_mes": 8,
+      "andamento": 766,
+      "entradas_mes": 9,
       "saidas_mes": 6,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 31,
-      "valor_causa": 209908228.2,
+      "valor_causa": 210193280.85,
       "alerta_entrada": false
     },
     {
@@ -1771,12 +1771,12 @@
     },
     {
       "nome": "SYNGENTA SEEDS NIDER",
-      "andamento": 157,
-      "entradas_mes": 4,
+      "andamento": 158,
+      "entradas_mes": 5,
       "saidas_mes": 1,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 23119819.65,
+      "valor_causa": 23292059.15,
       "alerta_entrada": true
     },
     {
@@ -3601,6 +3601,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "BP BIOENERGIA",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 337074.65,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "PEIXOTO E CURY",
       "andamento": 1,
       "entradas_mes": 0,
@@ -3645,13 +3656,13 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "BP BIOENERGIA",
+      "cliente": "SYNGENTA SEEDS NIDER",
       "andamento": 1,
       "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 52022.0,
+      "valor_causa": 172239.5,
       "alerta_entrada": false
     },
     {
@@ -4272,12 +4283,12 @@
     {
       "grupo": "Sem grupo",
       "profissional": "Giulia Vendramini Milani(GVM)",
-      "andamento": 2,
-      "entradas_mes": 1,
+      "andamento": 3,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 105960.72
+      "valor_causa": 278200.22
     },
     {
       "grupo": "Sem grupo",
@@ -4328,6 +4339,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 52022.0
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Bruno Tanganelli Farah(BTF)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 285052.65
     },
     {
       "grupo": "Sem grupo",
@@ -5534,12 +5555,12 @@
     {
       "estado": "PR",
       "cliente": "SYNGENTA SEEDS NIDER",
-      "andamento": 17,
-      "entradas_mes": 0,
+      "andamento": 18,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 1052242.76
+      "valor_causa": 1224482.26
     },
     {
       "estado": "PR",
@@ -6294,12 +6315,12 @@
     {
       "estado": "SP",
       "cliente": "BP BIOENERGIA",
-      "andamento": 430,
-      "entradas_mes": 5,
+      "andamento": 431,
+      "entradas_mes": 6,
       "saidas_mes": 5,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 15,
-      "valor_causa": 97491145.24
+      "valor_causa": 97776197.89
     },
     {
       "estado": "SP",
@@ -7645,12 +7666,12 @@
   "clientes_com_alerta": [
     {
       "nome": "SYNGENTA SEEDS NIDER",
-      "andamento": 157,
-      "entradas_mes": 4,
+      "andamento": 158,
+      "entradas_mes": 5,
       "saidas_mes": 1,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 23119819.65,
+      "valor_causa": 23292059.15,
       "alerta_entrada": true
     },
     {
@@ -7669,6 +7690,11 @@
       "numero_processo": "0012312-06.2026.5.15.0082",
       "cliente": "BP BIOENERGIA",
       "profissional": "Rafael Yepez do Lago(RYL)"
+    },
+    {
+      "numero_processo": "0012378-83.2026.5.15.0082",
+      "cliente": "BP BIOENERGIA",
+      "profissional": "Bruno Tanganelli Farah(BTF)"
     },
     {
       "numero_processo": "0012072-02.2016.5.15.0071",
@@ -7709,6 +7735,11 @@
       "numero_processo": "0015776-90.2026.5.15.0000",
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "profissional": "Joice Ramos Miranda(JRM)"
+    },
+    {
+      "numero_processo": "0000555-16.2026.5.09.0459",
+      "cliente": "SYNGENTA SEEDS NIDER",
+      "profissional": "Giulia Vendramini Milani(GVM)"
     }
   ]
 }
