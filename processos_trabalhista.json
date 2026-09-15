@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-09-15T09:45:22",
+  "atualizado_em": "2026-09-15T10:00:26",
   "kpis": {
     "total_andamento": 7478,
     "entradas_hoje": 0,
@@ -327,12 +327,12 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1780,
-      "entradas_mes": 21,
+      "andamento": 1781,
+      "entradas_mes": 22,
       "saidas_mes": 25,
       "entradas_mes_anterior": 50,
       "saidas_mes_anterior": 92,
-      "valor_causa": 292092512.96
+      "valor_causa": 292143806.96
     },
     {
       "nome": "Grupo B1",
@@ -399,12 +399,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 10,
-      "entradas_mes": 3,
+      "andamento": 9,
+      "entradas_mes": 2,
       "saidas_mes": 3,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 20,
-      "valor_causa": 541723.34
+      "valor_causa": 490429.34
     },
     {
       "nome": "Sócios",
@@ -673,12 +673,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2791,
+      "andamento": 2785,
       "entradas_mes": 94,
       "saidas_mes": 168,
       "entradas_mes_anterior": 207,
       "saidas_mes_anterior": 71,
-      "valor_causa": 761795556.28
+      "valor_causa": 761495479.2
     },
     {
       "nome": "Sentença",
@@ -691,18 +691,18 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2921,
+      "andamento": 2927,
       "entradas_mes": 1,
       "saidas_mes": 359,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 57,
-      "valor_causa": 643753469.13
+      "valor_causa": 644053546.21
     },
     {
       "nome": "Execução",
       "andamento": 937,
       "entradas_mes": 1,
-      "saidas_mes": 311,
+      "saidas_mes": 310,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 92,
       "valor_causa": 126811715.97
@@ -855,7 +855,7 @@
       "grupo": "Grupo B2",
       "andamento": 101,
       "entradas_mes": 0,
-      "saidas_mes": 2,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
       "valor_causa": 15914323.9
@@ -903,17 +903,17 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 781,
-      "entradas_mes": 20,
+      "andamento": 782,
+      "entradas_mes": 21,
       "saidas_mes": 12,
       "entradas_mes_anterior": 26,
       "saidas_mes_anterior": 16,
-      "valor_causa": 158756625.38
+      "valor_causa": 158807919.38
     },
     {
       "fase": "Instrução",
       "grupo": "Grupo B1",
-      "andamento": 440,
+      "andamento": 437,
       "entradas_mes": 18,
       "saidas_mes": 4,
       "entradas_mes_anterior": 52,
@@ -943,12 +943,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B3",
-      "andamento": 129,
+      "andamento": 126,
       "entradas_mes": 2,
       "saidas_mes": 2,
       "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 7,
-      "valor_causa": 23628572.28
+      "valor_causa": 23328495.2
     },
     {
       "fase": "Instrução",
@@ -973,12 +973,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 5,
-      "entradas_mes": 2,
+      "andamento": 4,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 2,
-      "valor_causa": 174052.25
+      "valor_causa": 122758.25
     },
     {
       "fase": "Instrução",
@@ -1035,7 +1035,7 @@
       "grupo": "Grupo B2",
       "andamento": 36,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 5,
       "valor_causa": 3595481.17
@@ -1093,7 +1093,7 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo B1",
-      "andamento": 839,
+      "andamento": 842,
       "entradas_mes": 0,
       "saidas_mes": 4,
       "entradas_mes_anterior": 4,
@@ -1133,12 +1133,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo B3",
-      "andamento": 242,
+      "andamento": 245,
       "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 3,
-      "valor_causa": 58765615.2
+      "valor_causa": 59065692.28
     },
     {
       "fase": "Recurso",
@@ -2952,6 +2952,17 @@
     },
     {
       "grupo": "Grupo E1",
+      "cliente": "MAHLE METAL- ITAJUBÁ",
+      "andamento": 2,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 219319.75,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Grupo E1",
       "cliente": "DE NORA DO BRASIL",
       "andamento": 2,
       "entradas_mes": 0,
@@ -3003,17 +3014,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 243822.62,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Grupo E1",
-      "cliente": "MAHLE METAL- ITAJUBÁ",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 168025.75,
       "alerta_entrada": false
     },
     {
@@ -3656,17 +3656,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "MAHLE METAL- ITAJUBÁ",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 51294.0,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "MULTICEL",
       "andamento": 1,
       "entradas_mes": 0,
@@ -4053,12 +4042,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Paloma da Silva Santos(PSI)",
-      "andamento": 239,
-      "entradas_mes": 0,
+      "andamento": 240,
+      "entradas_mes": 1,
       "saidas_mes": 8,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 24,
-      "valor_causa": 50544231.82
+      "valor_causa": 50595525.82
     },
     {
       "grupo": "Grupo E1",
@@ -4282,16 +4271,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Paloma da Silva Santos(PSI)",
-      "andamento": 2,
-      "entradas_mes": 1,
-      "saidas_mes": 1,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 9,
-      "valor_causa": 51294.0
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Giulia Vendramini Milani(GVM)",
       "andamento": 2,
       "entradas_mes": 1,
@@ -4329,6 +4308,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 10,
       "valor_causa": 22272.09
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Paloma da Silva Santos(PSI)",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 9,
+      "valor_causa": 0.0
     },
     {
       "grupo": "Sem grupo",
@@ -7690,11 +7679,6 @@
       "numero_processo": "1001546-16.2021.5.02.0468",
       "cliente": "MAHLE METAL - SBC",
       "profissional": "Vinícius Ronchi Arruda(VRO)"
-    },
-    {
-      "numero_processo": "0011015-60.2026.5.03.0061",
-      "cliente": "MAHLE METAL- ITAJUBÁ",
-      "profissional": "Paloma da Silva Santos(PSI)"
     },
     {
       "numero_processo": "1002426-59.2017.5.02.0464",
