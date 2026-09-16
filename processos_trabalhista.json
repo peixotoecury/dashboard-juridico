@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-16T15:30:29",
+  "atualizado_em": "2026-09-16T15:45:30",
   "kpis": {
-    "total_andamento": 7475,
+    "total_andamento": 7474,
     "entradas_hoje": 4,
-    "saidas_hoje": 13,
+    "saidas_hoje": 14,
     "entradas_ontem": 13,
     "saidas_ontem": 8,
     "entradas_mes": 116,
-    "saidas_mes": 875,
+    "saidas_mes": 876,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 258,
     "valor_causa_total": 1672939409.79,
-    "saldo_mes": -759
+    "saldo_mes": -760
   },
   "serie_diaria": [
     {
@@ -312,15 +312,15 @@
     {
       "data": "2026-09-16",
       "entradas": 4,
-      "saidas": 13
+      "saidas": 14
     }
   ],
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2089,
+      "andamento": 2088,
       "entradas_mes": 45,
-      "saidas_mes": 35,
+      "saidas_mes": 36,
       "entradas_mes_anterior": 93,
       "saidas_mes_anterior": 74,
       "valor_causa": 449664984.36
@@ -428,9 +428,9 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5730,
+      "andamento": 5729,
       "entradas_mes": 69,
-      "saidas_mes": 739,
+      "saidas_mes": 740,
       "entradas_mes_anterior": 185,
       "saidas_mes_anterior": 209,
       "valor_causa": 1321144318.74
@@ -673,7 +673,7 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2782,
+      "andamento": 2781,
       "entradas_mes": 110,
       "saidas_mes": 172,
       "entradas_mes_anterior": 206,
@@ -893,7 +893,7 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 834,
+      "andamento": 833,
       "entradas_mes": 42,
       "saidas_mes": 10,
       "entradas_mes_anterior": 56,
@@ -995,7 +995,7 @@
       "grupo": "Grupo E2",
       "andamento": 125,
       "entradas_mes": 0,
-      "saidas_mes": 7,
+      "saidas_mes": 8,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 5,
       "valor_causa": 5420439.51
@@ -1307,15 +1307,6 @@
       "valor_causa": 32737819.94
     },
     {
-      "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 290,
-      "entradas_mes": 1,
-      "saidas_mes": 10,
-      "entradas_mes_anterior": 12,
-      "saidas_mes_anterior": 11,
-      "valor_causa": 145388425.23
-    },
-    {
       "nome": "Beatriz Santiago de Souza(BSO)",
       "andamento": 290,
       "entradas_mes": 9,
@@ -1323,6 +1314,15 @@
       "entradas_mes_anterior": 14,
       "saidas_mes_anterior": 3,
       "valor_causa": 44981703.74
+    },
+    {
+      "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
+      "andamento": 289,
+      "entradas_mes": 1,
+      "saidas_mes": 11,
+      "entradas_mes_anterior": 12,
+      "saidas_mes_anterior": 11,
+      "valor_causa": 145388425.23
     },
     {
       "nome": "Joice Ramos Miranda(JRM)",
@@ -1671,9 +1671,9 @@
     },
     {
       "nome": "BP BIOENERGIA",
-      "andamento": 761,
+      "andamento": 760,
       "entradas_mes": 11,
-      "saidas_mes": 13,
+      "saidas_mes": 14,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 31,
       "valor_causa": 208469814.76,
@@ -3041,9 +3041,9 @@
     {
       "grupo": "Grupo E2",
       "cliente": "BP BIOENERGIA",
-      "andamento": 761,
+      "andamento": 760,
       "entradas_mes": 11,
-      "saidas_mes": 13,
+      "saidas_mes": 14,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 31,
       "valor_causa": 208469814.76,
@@ -4150,9 +4150,9 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 285,
+      "andamento": 284,
       "entradas_mes": 1,
-      "saidas_mes": 10,
+      "saidas_mes": 11,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 11,
       "valor_causa": 145079704.98
@@ -6212,9 +6212,9 @@
     {
       "estado": "SP",
       "cliente": "BP BIOENERGIA",
-      "andamento": 429,
+      "andamento": 428,
       "entradas_mes": 7,
-      "saidas_mes": 8,
+      "saidas_mes": 9,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 15,
       "valor_causa": 97800848.63
