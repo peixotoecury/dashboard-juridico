@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-09-16T09:30:22",
+  "atualizado_em": "2026-09-16T09:45:24",
   "kpis": {
     "total_andamento": 7479,
     "entradas_hoje": 0,
@@ -336,7 +336,7 @@
     },
     {
       "nome": "Grupo B1",
-      "andamento": 1452,
+      "andamento": 1451,
       "entradas_mes": 23,
       "saidas_mes": 9,
       "entradas_mes_anterior": 56,
@@ -408,7 +408,7 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 2,
+      "andamento": 3,
       "entradas_mes": 0,
       "saidas_mes": 3,
       "entradas_mes_anterior": 1,
@@ -691,7 +691,7 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2932,
+      "andamento": 2933,
       "entradas_mes": 1,
       "saidas_mes": 362,
       "entradas_mes_anterior": 7,
@@ -700,7 +700,7 @@
     },
     {
       "nome": "Execução",
-      "andamento": 939,
+      "andamento": 938,
       "entradas_mes": 1,
       "saidas_mes": 311,
       "entradas_mes_anterior": 12,
@@ -833,7 +833,7 @@
     {
       "fase": "Execução",
       "grupo": "Grupo B1",
-      "andamento": 171,
+      "andamento": 170,
       "entradas_mes": 0,
       "saidas_mes": 1,
       "entradas_mes_anterior": 0,
@@ -1171,6 +1171,16 @@
       "valor_causa": 0.0
     },
     {
+      "fase": "Recurso",
+      "grupo": "Sem grupo",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 11,
+      "valor_causa": 0.0
+    },
+    {
       "fase": "Sentença",
       "grupo": "Grupo E2",
       "andamento": 19,
@@ -1378,7 +1388,7 @@
     },
     {
       "nome": "Juliana Perucci (JPE)",
-      "andamento": 248,
+      "andamento": 247,
       "entradas_mes": 2,
       "saidas_mes": 1,
       "entradas_mes_anterior": 6,
@@ -1395,6 +1405,15 @@
       "valor_causa": 30151197.9
     },
     {
+      "nome": "Paloma da Silva Santos(PSI)",
+      "andamento": 242,
+      "entradas_mes": 1,
+      "saidas_mes": 9,
+      "entradas_mes_anterior": 7,
+      "saidas_mes_anterior": 33,
+      "valor_causa": 50595525.82
+    },
+    {
       "nome": "Erik Mota Coppi(ECO)",
       "andamento": 241,
       "entradas_mes": 1,
@@ -1402,15 +1421,6 @@
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 2,
       "valor_causa": 40621384.85
-    },
-    {
-      "nome": "Paloma da Silva Santos(PSI)",
-      "andamento": 241,
-      "entradas_mes": 1,
-      "saidas_mes": 9,
-      "entradas_mes_anterior": 7,
-      "saidas_mes_anterior": 33,
-      "valor_causa": 50595525.82
     },
     {
       "nome": "Vinícius Ronchi Arruda(VRO)",
@@ -1641,7 +1651,7 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1452,
+      "andamento": 1451,
       "entradas_mes": 23,
       "saidas_mes": 9,
       "entradas_mes_anterior": 56,
@@ -1691,7 +1701,7 @@
     },
     {
       "nome": "MAHLE METAL - MOGI",
-      "andamento": 346,
+      "andamento": 347,
       "entradas_mes": 0,
       "saidas_mes": 7,
       "entradas_mes_anterior": 2,
@@ -2273,7 +2283,7 @@
     {
       "grupo": "Grupo B1",
       "cliente": "BRIDGESTONE",
-      "andamento": 1452,
+      "andamento": 1451,
       "entradas_mes": 23,
       "saidas_mes": 9,
       "entradas_mes_anterior": 56,
@@ -3592,6 +3602,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "MAHLE METAL - MOGI",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 7,
+      "valor_causa": 0.0,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "MULTICEL",
       "andamento": 1,
       "entradas_mes": 0,
@@ -3768,7 +3789,7 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Juliana Perucci (JPE)",
-      "andamento": 248,
+      "andamento": 247,
       "entradas_mes": 2,
       "saidas_mes": 1,
       "entradas_mes_anterior": 6,
@@ -4214,6 +4235,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 271174.53
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Paloma da Silva Santos(PSI)",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 9,
+      "valor_causa": 0.0
     },
     {
       "grupo": "Sem grupo",
@@ -6130,7 +6161,7 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1425,
+      "andamento": 1424,
       "entradas_mes": 21,
       "saidas_mes": 9,
       "entradas_mes_anterior": 51,
@@ -6170,7 +6201,7 @@
     {
       "estado": "SP",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 345,
+      "andamento": 346,
       "entradas_mes": 0,
       "saidas_mes": 7,
       "entradas_mes_anterior": 2,
@@ -7551,6 +7582,11 @@
     }
   ],
   "sem_grupo_processos": [
+    {
+      "numero_processo": "0000081-34.2013.5.15.0071",
+      "cliente": "MAHLE METAL - MOGI",
+      "profissional": "Paloma da Silva Santos(PSI)"
+    },
     {
       "numero_processo": "1002426-59.2017.5.02.0464",
       "cliente": "MULTICEL",
