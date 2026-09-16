@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-16T11:45:28",
+  "atualizado_em": "2026-09-16T12:00:24",
   "kpis": {
-    "total_andamento": 7476,
-    "entradas_hoje": 1,
+    "total_andamento": 7478,
+    "entradas_hoje": 3,
     "saidas_hoje": 10,
     "entradas_ontem": 13,
     "saidas_ontem": 8,
-    "entradas_mes": 114,
+    "entradas_mes": 116,
     "saidas_mes": 871,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 258,
-    "valor_causa_total": 1671851281.12,
-    "saldo_mes": -757
+    "valor_causa_total": 1672036830.5,
+    "saldo_mes": -755
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-09-16",
-      "entradas": 1,
+      "entradas": 3,
       "saidas": 10
     }
   ],
@@ -399,12 +399,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 4,
-      "entradas_mes": 0,
+      "andamento": 6,
+      "entradas_mes": 2,
       "saidas_mes": 3,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 20,
-      "valor_causa": 309174.53
+      "valor_causa": 494723.91
     },
     {
       "nome": "Sócios",
@@ -428,12 +428,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5730,
-      "entradas_mes": 66,
+      "andamento": 5732,
+      "entradas_mes": 68,
       "saidas_mes": 735,
       "entradas_mes_anterior": 185,
       "saidas_mes_anterior": 209,
-      "valor_causa": 1320004896.07
+      "valor_causa": 1320190445.45
     },
     {
       "nome": "MG",
@@ -673,12 +673,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2782,
-      "entradas_mes": 108,
+      "andamento": 2784,
+      "entradas_mes": 110,
       "saidas_mes": 171,
       "entradas_mes_anterior": 206,
       "saidas_mes_anterior": 71,
-      "valor_causa": 766877012.44
+      "valor_causa": 767062561.82
     },
     {
       "nome": "Sentença",
@@ -979,6 +979,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
+    },
+    {
+      "fase": "Instrução",
+      "grupo": "Sem grupo",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 2,
+      "valor_causa": 185549.38
     },
     {
       "fase": "Outras",
@@ -1352,21 +1362,21 @@
     },
     {
       "nome": "Rafael Rocha Ferreira(RFE)",
-      "andamento": 276,
-      "entradas_mes": 5,
+      "andamento": 277,
+      "entradas_mes": 6,
       "saidas_mes": 1,
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 3,
-      "valor_causa": 76756357.22
+      "valor_causa": 76917255.86
     },
     {
       "nome": "Lucas Willott Pereira (LWP)",
-      "andamento": 264,
-      "entradas_mes": 5,
+      "andamento": 265,
+      "entradas_mes": 6,
       "saidas_mes": 1,
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 0,
-      "valor_causa": 47472930.23
+      "valor_causa": 47497580.97
     },
     {
       "nome": "Anna Carolina Balbino Gatti Baani(ANB)",
@@ -1651,22 +1661,22 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1450,
-      "entradas_mes": 23,
+      "andamento": 1451,
+      "entradas_mes": 24,
       "saidas_mes": 10,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 41,
-      "valor_causa": 316900024.02,
+      "valor_causa": 317060922.66,
       "alerta_entrada": false
     },
     {
       "nome": "BP BIOENERGIA",
-      "andamento": 763,
-      "entradas_mes": 10,
+      "andamento": 764,
+      "entradas_mes": 11,
       "saidas_mes": 10,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 31,
-      "valor_causa": 208445164.02,
+      "valor_causa": 208469814.76,
       "alerta_entrada": false
     },
     {
@@ -3613,6 +3623,28 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "BRIDGESTONE",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 160898.64,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "BP BIOENERGIA",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 24650.74,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "MULTICEL",
       "andamento": 1,
       "entradas_mes": 0,
@@ -4245,6 +4277,26 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 271174.53
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Rafael Rocha Ferreira(RFE)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 160898.64
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Lucas Willott Pereira (LWP)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 24650.74
     },
     {
       "grupo": "Sem grupo",
@@ -6161,12 +6213,12 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1423,
-      "entradas_mes": 21,
+      "andamento": 1424,
+      "entradas_mes": 22,
       "saidas_mes": 10,
       "entradas_mes_anterior": 51,
       "saidas_mes_anterior": 41,
-      "valor_causa": 304918044.96
+      "valor_causa": 305078943.6
     },
     {
       "estado": "SP",
@@ -6191,12 +6243,12 @@
     {
       "estado": "SP",
       "cliente": "BP BIOENERGIA",
-      "andamento": 431,
-      "entradas_mes": 6,
+      "andamento": 432,
+      "entradas_mes": 7,
       "saidas_mes": 5,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 15,
-      "valor_causa": 97776197.89
+      "valor_causa": 97800848.63
     },
     {
       "estado": "SP",
@@ -7582,6 +7634,16 @@
     }
   ],
   "sem_grupo_processos": [
+    {
+      "numero_processo": "0011368-42.2026.5.15.0037",
+      "cliente": "BP BIOENERGIA",
+      "profissional": "Lucas Willott Pereira (LWP)"
+    },
+    {
+      "numero_processo": "1001806-25.2026.5.02.0434",
+      "cliente": "BRIDGESTONE",
+      "profissional": "Rafael Rocha Ferreira(RFE)"
+    },
     {
       "numero_processo": "0010008-14.2019.5.15.0071",
       "cliente": "MAHLE METAL - MOGI",
