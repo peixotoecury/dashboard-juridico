@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-16T14:45:31",
+  "atualizado_em": "2026-09-16T15:00:29",
   "kpis": {
-    "total_andamento": 7478,
+    "total_andamento": 7476,
     "entradas_hoje": 4,
-    "saidas_hoje": 11,
+    "saidas_hoje": 12,
     "entradas_ontem": 13,
     "saidas_ontem": 8,
     "entradas_mes": 116,
-    "saidas_mes": 872,
+    "saidas_mes": 874,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 258,
-    "valor_causa_total": 1672971409.79,
-    "saldo_mes": -756
+    "valor_causa_total": 1672939409.79,
+    "saldo_mes": -758
   },
   "serie_diaria": [
     {
@@ -302,7 +302,7 @@
     {
       "data": "2026-09-14",
       "entradas": 13,
-      "saidas": 7
+      "saidas": 8
     },
     {
       "data": "2026-09-15",
@@ -312,15 +312,15 @@
     {
       "data": "2026-09-16",
       "entradas": 4,
-      "saidas": 11
+      "saidas": 12
     }
   ],
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2091,
+      "andamento": 2090,
       "entradas_mes": 45,
-      "saidas_mes": 33,
+      "saidas_mes": 34,
       "entradas_mes_anterior": 93,
       "saidas_mes_anterior": 74,
       "valor_causa": 449664984.36
@@ -336,12 +336,12 @@
     },
     {
       "nome": "Grupo B1",
-      "andamento": 1450,
+      "andamento": 1449,
       "entradas_mes": 23,
-      "saidas_mes": 10,
+      "saidas_mes": 11,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 41,
-      "valor_causa": 316900024.02
+      "valor_causa": 316868024.02
     },
     {
       "nome": "Grupo B2",
@@ -428,12 +428,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5733,
+      "andamento": 5731,
       "entradas_mes": 69,
-      "saidas_mes": 736,
+      "saidas_mes": 738,
       "entradas_mes_anterior": 185,
       "saidas_mes_anterior": 209,
-      "valor_causa": 1321176318.74
+      "valor_causa": 1321144318.74
     },
     {
       "nome": "MG",
@@ -673,12 +673,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2783,
+      "andamento": 2782,
       "entradas_mes": 110,
-      "saidas_mes": 171,
+      "saidas_mes": 172,
       "entradas_mes_anterior": 206,
       "saidas_mes_anterior": 71,
-      "valor_causa": 767322286.39
+      "valor_causa": 767290286.39
     },
     {
       "nome": "Sentença",
@@ -708,7 +708,7 @@
       "valor_causa": 129918692.05
     }
   ],
-  "por_fase_outras": 394,
+  "por_fase_outras": 393,
   "por_fase_grupo": [
     {
       "fase": "Ajuizamento",
@@ -913,12 +913,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B1",
-      "andamento": 432,
+      "andamento": 431,
       "entradas_mes": 22,
-      "saidas_mes": 4,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 52,
       "saidas_mes_anterior": 14,
-      "valor_causa": 141723250.61
+      "valor_causa": 141691250.61
     },
     {
       "fase": "Instrução",
@@ -993,9 +993,9 @@
     {
       "fase": "Outras",
       "grupo": "Grupo E2",
-      "andamento": 127,
+      "andamento": 126,
       "entradas_mes": 0,
-      "saidas_mes": 5,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 5,
       "valor_causa": 5420439.51
@@ -1308,21 +1308,21 @@
     },
     {
       "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 292,
+      "andamento": 291,
       "entradas_mes": 1,
-      "saidas_mes": 8,
+      "saidas_mes": 9,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 11,
       "valor_causa": 145388425.23
     },
     {
       "nome": "Beatriz Santiago de Souza(BSO)",
-      "andamento": 291,
+      "andamento": 290,
       "entradas_mes": 9,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 14,
       "saidas_mes_anterior": 3,
-      "valor_causa": 45013703.74
+      "valor_causa": 44981703.74
     },
     {
       "nome": "Joice Ramos Miranda(JRM)",
@@ -1661,19 +1661,19 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1452,
+      "andamento": 1451,
       "entradas_mes": 25,
-      "saidas_mes": 10,
+      "saidas_mes": 11,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 41,
-      "valor_causa": 317375500.95,
+      "valor_causa": 317343500.95,
       "alerta_entrada": false
     },
     {
       "nome": "BP BIOENERGIA",
-      "andamento": 763,
+      "andamento": 762,
       "entradas_mes": 11,
-      "saidas_mes": 11,
+      "saidas_mes": 12,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 31,
       "valor_causa": 208469814.76,
@@ -2293,12 +2293,12 @@
     {
       "grupo": "Grupo B1",
       "cliente": "BRIDGESTONE",
-      "andamento": 1450,
+      "andamento": 1449,
       "entradas_mes": 23,
-      "saidas_mes": 10,
+      "saidas_mes": 11,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 41,
-      "valor_causa": 316900024.02,
+      "valor_causa": 316868024.02,
       "alerta_entrada": false
     },
     {
@@ -3041,9 +3041,9 @@
     {
       "grupo": "Grupo E2",
       "cliente": "BP BIOENERGIA",
-      "andamento": 763,
+      "andamento": 762,
       "entradas_mes": 11,
-      "saidas_mes": 11,
+      "saidas_mes": 12,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 31,
       "valor_causa": 208469814.76,
@@ -3780,12 +3780,12 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Beatriz Santiago de Souza(BSO)",
-      "andamento": 290,
+      "andamento": 289,
       "entradas_mes": 8,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 14,
       "saidas_mes_anterior": 3,
-      "valor_causa": 44699125.45
+      "valor_causa": 44667125.45
     },
     {
       "grupo": "Grupo B1",
@@ -4150,9 +4150,9 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 287,
+      "andamento": 286,
       "entradas_mes": 1,
-      "saidas_mes": 8,
+      "saidas_mes": 9,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 11,
       "valor_causa": 145079704.98
@@ -6182,12 +6182,12 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1425,
+      "andamento": 1424,
       "entradas_mes": 23,
-      "saidas_mes": 10,
+      "saidas_mes": 11,
       "entradas_mes_anterior": 51,
       "saidas_mes_anterior": 41,
-      "valor_causa": 305393521.89
+      "valor_causa": 305361521.89
     },
     {
       "estado": "SP",
@@ -6212,9 +6212,9 @@
     {
       "estado": "SP",
       "cliente": "BP BIOENERGIA",
-      "andamento": 431,
+      "andamento": 430,
       "entradas_mes": 7,
-      "saidas_mes": 6,
+      "saidas_mes": 7,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 15,
       "valor_causa": 97800848.63
