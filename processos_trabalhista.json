@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-16T17:15:31",
+  "atualizado_em": "2026-09-16T17:30:29",
   "kpis": {
-    "total_andamento": 7473,
-    "entradas_hoje": 5,
+    "total_andamento": 7475,
+    "entradas_hoje": 7,
     "saidas_hoje": 17,
     "entradas_ontem": 14,
     "saidas_ontem": 8,
-    "entradas_mes": 118,
+    "entradas_mes": 120,
     "saidas_mes": 879,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 258,
-    "valor_causa_total": 1673537850.15,
-    "saldo_mes": -761
+    "valor_causa_total": 1673837935.13,
+    "saldo_mes": -759
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-09-16",
-      "entradas": 5,
+      "entradas": 7,
       "saidas": 17
     }
   ],
@@ -399,12 +399,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 7,
-      "entradas_mes": 3,
+      "andamento": 9,
+      "entradas_mes": 5,
       "saidas_mes": 3,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 20,
-      "valor_causa": 1459651.46
+      "valor_causa": 1759736.44
     },
     {
       "nome": "Sócios",
@@ -428,12 +428,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5728,
-      "entradas_mes": 70,
+      "andamento": 5730,
+      "entradas_mes": 72,
       "saidas_mes": 742,
       "entradas_mes_anterior": 185,
       "saidas_mes_anterior": 209,
-      "valor_causa": 1321112885.37
+      "valor_causa": 1321412970.35
     },
     {
       "nome": "MG",
@@ -673,12 +673,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2762,
-      "entradas_mes": 112,
+      "andamento": 2764,
+      "entradas_mes": 114,
       "saidas_mes": 170,
       "entradas_mes_anterior": 206,
       "saidas_mes_anterior": 66,
-      "valor_causa": 765570844.45
+      "valor_causa": 765870929.43
     },
     {
       "nome": "Sentença",
@@ -972,6 +972,16 @@
     },
     {
       "fase": "Instrução",
+      "grupo": "Sem grupo",
+      "andamento": 5,
+      "entradas_mes": 5,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 2,
+      "valor_causa": 1450561.91
+    },
+    {
+      "fase": "Instrução",
       "grupo": "Grupo A1",
       "andamento": 4,
       "entradas_mes": 2,
@@ -979,16 +989,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
-    },
-    {
-      "fase": "Instrução",
-      "grupo": "Sem grupo",
-      "andamento": 3,
-      "entradas_mes": 3,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 2,
-      "valor_causa": 1150476.93
     },
     {
       "fase": "Outras",
@@ -1263,12 +1263,12 @@
     },
     {
       "nome": "Rafael Yepez do Lago(RYL)",
-      "andamento": 403,
-      "entradas_mes": 6,
+      "andamento": 404,
+      "entradas_mes": 7,
       "saidas_mes": 8,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 17,
-      "valor_causa": 43531676.36
+      "valor_causa": 43549622.97
     },
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
@@ -1352,6 +1352,15 @@
       "valor_causa": 122337279.2
     },
     {
+      "nome": "Tamara Silva Marcílio(TAM)",
+      "andamento": 282,
+      "entradas_mes": 5,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 11,
+      "saidas_mes_anterior": 6,
+      "valor_causa": 51950257.49
+    },
+    {
       "nome": "Vanessa de Cassia Castrequini Rosa(VCR)",
       "andamento": 281,
       "entradas_mes": 4,
@@ -1359,15 +1368,6 @@
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 3,
       "valor_causa": 44664142.72
-    },
-    {
-      "nome": "Tamara Silva Marcílio(TAM)",
-      "andamento": 281,
-      "entradas_mes": 4,
-      "saidas_mes": 1,
-      "entradas_mes_anterior": 11,
-      "saidas_mes_anterior": 6,
-      "valor_causa": 51668119.12
     },
     {
       "nome": "Rafael Rocha Ferreira(RFE)",
@@ -1661,12 +1661,12 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1451,
-      "entradas_mes": 25,
+      "andamento": 1452,
+      "entradas_mes": 26,
       "saidas_mes": 11,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 41,
-      "valor_causa": 317343500.95,
+      "valor_causa": 317625639.32,
       "alerta_entrada": false
     },
     {
@@ -3601,6 +3601,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "BRIDGESTONE",
+      "andamento": 3,
+      "entradas_mes": 3,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 757615.3,
+      "alerta_entrada": true
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "MAHLE METAL - MOGI",
       "andamento": 2,
       "entradas_mes": 0,
@@ -3608,17 +3619,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 7,
       "valor_causa": 0.0,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "BRIDGESTONE",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 475476.93,
       "alerta_entrada": false
     },
     {
@@ -3641,6 +3641,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 675000.0,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "A. RAYMOND",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 17946.61,
       "alerta_entrada": false
     },
     {
@@ -4297,6 +4308,26 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 675000.0
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Tamara Silva Marcílio(TAM)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 282138.37
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Rafael Yepez do Lago(RYL)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 17946.61
     },
     {
       "grupo": "Sem grupo",
@@ -6213,12 +6244,12 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1424,
-      "entradas_mes": 23,
+      "andamento": 1425,
+      "entradas_mes": 24,
       "saidas_mes": 11,
       "entradas_mes_anterior": 51,
       "saidas_mes_anterior": 41,
-      "valor_causa": 305361521.89
+      "valor_causa": 305643660.26
     },
     {
       "estado": "SP",
@@ -6463,12 +6494,12 @@
     {
       "estado": "SP",
       "cliente": "A. RAYMOND",
-      "andamento": 16,
-      "entradas_mes": 1,
+      "andamento": 17,
+      "entradas_mes": 2,
       "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 2,
-      "valor_causa": 1623518.64
+      "valor_causa": 1641465.25
     },
     {
       "estado": "SP",
@@ -7635,6 +7666,11 @@
   ],
   "sem_grupo_processos": [
     {
+      "numero_processo": "0012429-49.2026.5.15.0097",
+      "cliente": "A. RAYMOND",
+      "profissional": "Rafael Yepez do Lago(RYL)"
+    },
+    {
       "numero_processo": "1001806-25.2026.5.02.0434",
       "cliente": "BRIDGESTONE",
       "profissional": "Rafael Rocha Ferreira(RFE)"
@@ -7643,6 +7679,11 @@
       "numero_processo": "1001800-21.2026.5.02.0433",
       "cliente": "BRIDGESTONE",
       "profissional": "Beatriz Santiago de Souza(BSO)"
+    },
+    {
+      "numero_processo": "1001813-17.2026.5.02.0434",
+      "cliente": "BRIDGESTONE",
+      "profissional": "Tamara Silva Marcílio(TAM)"
     },
     {
       "numero_processo": "0010066-20.2023.5.03.0068",
