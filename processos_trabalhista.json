@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-16T13:45:24",
+  "atualizado_em": "2026-09-16T14:00:32",
   "kpis": {
-    "total_andamento": 7480,
+    "total_andamento": 7479,
     "entradas_hoje": 4,
     "saidas_hoje": 10,
     "entradas_ontem": 13,
     "saidas_ontem": 8,
-    "entradas_mes": 117,
+    "entradas_mes": 116,
     "saidas_mes": 871,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 258,
-    "valor_causa_total": 1673022703.79,
-    "saldo_mes": -754
+    "valor_causa_total": 1672971409.79,
+    "saldo_mes": -755
   },
   "serie_diaria": [
     {
@@ -301,7 +301,7 @@
     },
     {
       "data": "2026-09-14",
-      "entradas": 14,
+      "entradas": 13,
       "saidas": 7
     },
     {
@@ -327,12 +327,12 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1787,
-      "entradas_mes": 23,
+      "andamento": 1786,
+      "entradas_mes": 22,
       "saidas_mes": 25,
       "entradas_mes_anterior": 52,
       "saidas_mes_anterior": 92,
-      "valor_causa": 292944334.77
+      "valor_causa": 292893040.77
     },
     {
       "nome": "Grupo B1",
@@ -437,12 +437,12 @@
     },
     {
       "nome": "MG",
-      "andamento": 531,
-      "entradas_mes": 11,
+      "andamento": 530,
+      "entradas_mes": 10,
       "saidas_mes": 8,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 23,
-      "valor_causa": 120855485.64
+      "valor_causa": 120804191.64
     },
     {
       "nome": "RS",
@@ -673,12 +673,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2785,
-      "entradas_mes": 111,
+      "andamento": 2784,
+      "entradas_mes": 110,
       "saidas_mes": 171,
       "entradas_mes_anterior": 206,
       "saidas_mes_anterior": 71,
-      "valor_causa": 767377140.11
+      "valor_causa": 767325846.11
     },
     {
       "nome": "Sentença",
@@ -903,12 +903,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 783,
-      "entradas_mes": 21,
+      "andamento": 782,
+      "entradas_mes": 20,
       "saidas_mes": 12,
       "entradas_mes_anterior": 28,
       "saidas_mes_anterior": 16,
-      "valor_causa": 158640706.27
+      "valor_causa": 158589412.27
     },
     {
       "fase": "Instrução",
@@ -1326,12 +1326,12 @@
     },
     {
       "nome": "Joice Ramos Miranda(JRM)",
-      "andamento": 289,
+      "andamento": 288,
       "entradas_mes": 7,
       "saidas_mes": 2,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 2,
-      "valor_causa": 75549190.19
+      "valor_causa": 72349858.47
     },
     {
       "nome": "Bruna Cembranelli Fazenda (BCF)",
@@ -1415,15 +1415,6 @@
       "valor_causa": 31527181.96
     },
     {
-      "nome": "Paloma da Silva Santos(PSI)",
-      "andamento": 244,
-      "entradas_mes": 1,
-      "saidas_mes": 9,
-      "entradas_mes_anterior": 7,
-      "saidas_mes_anterior": 33,
-      "valor_causa": 51266820.82
-    },
-    {
       "nome": "Mariana Borges de Menezes Fávaro(MBF)",
       "andamento": 243,
       "entradas_mes": 0,
@@ -1431,6 +1422,15 @@
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 14,
       "valor_causa": 30069993.9
+    },
+    {
+      "nome": "Paloma da Silva Santos(PSI)",
+      "andamento": 243,
+      "entradas_mes": 0,
+      "saidas_mes": 9,
+      "entradas_mes_anterior": 7,
+      "saidas_mes_anterior": 33,
+      "valor_causa": 51215526.82
     },
     {
       "nome": "Erik Mota Coppi(ECO)",
@@ -1533,12 +1533,12 @@
     },
     {
       "nome": "Keyla Maria Barbosa Silva Moraes(KBM)",
-      "andamento": 11,
+      "andamento": 12,
       "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 4000.0
+      "valor_causa": 3203331.72
     },
     {
       "nome": "Bruno Tanganelli Farah(BTF)",
@@ -2963,17 +2963,6 @@
     },
     {
       "grupo": "Grupo E1",
-      "cliente": "MAHLE METAL- ITAJUBÁ",
-      "andamento": 2,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 219319.75,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Grupo E1",
       "cliente": "DE NORA DO BRASIL",
       "andamento": 2,
       "entradas_mes": 0,
@@ -3025,6 +3014,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 243822.62,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Grupo E1",
+      "cliente": "MAHLE METAL- ITAJUBÁ",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 168025.75,
       "alerta_entrada": false
     },
     {
@@ -4020,22 +4020,22 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Joice Ramos Miranda(JRM)",
-      "andamento": 289,
+      "andamento": 288,
       "entradas_mes": 7,
       "saidas_mes": 2,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 2,
-      "valor_causa": 75549190.19
+      "valor_causa": 72349858.47
     },
     {
       "grupo": "Grupo E1",
       "profissional": "Paloma da Silva Santos(PSI)",
-      "andamento": 242,
-      "entradas_mes": 1,
+      "andamento": 241,
+      "entradas_mes": 0,
       "saidas_mes": 8,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 24,
-      "valor_causa": 51266820.82
+      "valor_causa": 51215526.82
     },
     {
       "grupo": "Grupo E1",
@@ -4080,12 +4080,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Keyla Maria Barbosa Silva Moraes(KBM)",
-      "andamento": 11,
+      "andamento": 12,
       "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 4000.0
+      "valor_causa": 3203331.72
     },
     {
       "grupo": "Grupo E1",
@@ -5128,16 +5128,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 2353657.08
-    },
-    {
-      "estado": "MG",
-      "cliente": "MAHLE METAL- ITAJUBÁ",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 51294.0
     },
     {
       "estado": "MG",
