@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-18T09:30:23",
+  "atualizado_em": "2026-09-18T09:45:20",
   "kpis": {
-    "total_andamento": 7474,
-    "entradas_hoje": 3,
+    "total_andamento": 7476,
+    "entradas_hoje": 5,
     "saidas_hoje": 6,
     "entradas_ontem": 10,
     "saidas_ontem": 13,
-    "entradas_mes": 138,
+    "entradas_mes": 140,
     "saidas_mes": 899,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 258,
-    "valor_causa_total": 1674455904.13,
-    "saldo_mes": -761
+    "valor_causa_total": 1674637593.24,
+    "saldo_mes": -759
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-09-18",
-      "entradas": 3,
+      "entradas": 5,
       "saidas": 6
     }
   ],
@@ -399,12 +399,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 8,
-      "entradas_mes": 4,
+      "andamento": 10,
+      "entradas_mes": 6,
       "saidas_mes": 3,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 20,
-      "valor_causa": 1540223.45
+      "valor_causa": 1721912.56
     },
     {
       "nome": "Sócios",
@@ -428,12 +428,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5728,
-      "entradas_mes": 82,
+      "andamento": 5730,
+      "entradas_mes": 84,
       "saidas_mes": 755,
       "entradas_mes_anterior": 185,
       "saidas_mes_anterior": 209,
-      "valor_causa": 1321234348.59
+      "valor_causa": 1321416037.7
     },
     {
       "nome": "MG",
@@ -673,12 +673,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2760,
-      "entradas_mes": 132,
+      "andamento": 2761,
+      "entradas_mes": 133,
       "saidas_mes": 175,
       "entradas_mes_anterior": 206,
       "saidas_mes_anterior": 66,
-      "valor_causa": 764861119.21
+      "valor_causa": 765042808.32
     },
     {
       "nome": "Sentença",
@@ -708,7 +708,7 @@
       "valor_causa": 128369197.81
     }
   ],
-  "por_fase_outras": 397,
+  "por_fase_outras": 398,
   "por_fase_grupo": [
     {
       "fase": "Ajuizamento",
@@ -903,8 +903,8 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 745,
-      "entradas_mes": 20,
+      "andamento": 744,
+      "entradas_mes": 19,
       "saidas_mes": 11,
       "entradas_mes_anterior": 28,
       "saidas_mes_anterior": 11,
@@ -972,6 +972,16 @@
     },
     {
       "fase": "Instrução",
+      "grupo": "Sem grupo",
+      "andamento": 6,
+      "entradas_mes": 6,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 2,
+      "valor_causa": 1412738.03
+    },
+    {
+      "fase": "Instrução",
       "grupo": "Grupo A1",
       "andamento": 4,
       "entradas_mes": 2,
@@ -979,16 +989,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
-    },
-    {
-      "fase": "Instrução",
-      "grupo": "Sem grupo",
-      "andamento": 4,
-      "entradas_mes": 4,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 2,
-      "valor_causa": 1231048.92
     },
     {
       "fase": "Outras",
@@ -1023,8 +1023,8 @@
     {
       "fase": "Outras",
       "grupo": "Grupo E1",
-      "andamento": 51,
-      "entradas_mes": 0,
+      "andamento": 52,
+      "entradas_mes": 1,
       "saidas_mes": 5,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 20,
@@ -1434,12 +1434,12 @@
     },
     {
       "nome": "Vinícius Ronchi Arruda(VRO)",
-      "andamento": 236,
-      "entradas_mes": 4,
+      "andamento": 238,
+      "entradas_mes": 6,
       "saidas_mes": 2,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 36,
-      "valor_causa": 35198622.96
+      "valor_causa": 35380312.07
     },
     {
       "nome": "Mariana Borges de Menezes Fávaro(MBF)",
@@ -1750,12 +1750,12 @@
     },
     {
       "nome": "MAHLE METAL - SBC",
-      "andamento": 265,
-      "entradas_mes": 4,
+      "andamento": 267,
+      "entradas_mes": 6,
       "saidas_mes": 5,
       "entradas_mes_anterior": 14,
       "saidas_mes_anterior": 40,
-      "valor_causa": 21933073.0,
+      "valor_causa": 22114762.11,
       "alerta_entrada": false
     },
     {
@@ -3621,6 +3621,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "MAHLE METAL - SBC",
+      "andamento": 4,
+      "entradas_mes": 4,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 10,
+      "valor_causa": 669923.34,
+      "alerta_entrada": true
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "MAHLE METAL - MOGI",
       "andamento": 2,
       "entradas_mes": 0,
@@ -3628,17 +3639,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 7,
       "valor_causa": 0.0,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "MAHLE METAL - SBC",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 10,
-      "valor_causa": 488234.23,
       "alerta_entrada": false
     },
     {
@@ -4291,6 +4291,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Vinícius Ronchi Arruda(VRO)",
+      "andamento": 4,
+      "entradas_mes": 4,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 10,
+      "valor_causa": 669923.34
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Paloma da Silva Santos(PSI)",
       "andamento": 2,
       "entradas_mes": 0,
@@ -4298,16 +4308,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 9,
       "valor_causa": 0.0
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Vinícius Ronchi Arruda(VRO)",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 10,
-      "valor_causa": 488234.23
     },
     {
       "grupo": "Sem grupo",
@@ -6324,12 +6324,12 @@
     {
       "estado": "SP",
       "cliente": "MAHLE METAL - SBC",
-      "andamento": 265,
-      "entradas_mes": 4,
+      "andamento": 267,
+      "entradas_mes": 6,
       "saidas_mes": 5,
       "entradas_mes_anterior": 14,
       "saidas_mes_anterior": 40,
-      "valor_causa": 21933073.0
+      "valor_causa": 22114762.11
     },
     {
       "estado": "SP",
@@ -7706,12 +7706,22 @@
       "profissional": "Paloma da Silva Santos(PSI)"
     },
     {
-      "numero_processo": "1001585-55.2026.5.02.0462",
+      "numero_processo": "1001564-67.2026.5.02.0466",
       "cliente": "MAHLE METAL - SBC",
       "profissional": "Vinícius Ronchi Arruda(VRO)"
     },
     {
-      "numero_processo": "1001564-67.2026.5.02.0466",
+      "numero_processo": "1001594-17.2026.5.02.0462",
+      "cliente": "MAHLE METAL - SBC",
+      "profissional": "Vinícius Ronchi Arruda(VRO)"
+    },
+    {
+      "numero_processo": "1001612-41.2026.5.02.0461",
+      "cliente": "MAHLE METAL - SBC",
+      "profissional": "Vinícius Ronchi Arruda(VRO)"
+    },
+    {
+      "numero_processo": "1001585-55.2026.5.02.0462",
       "cliente": "MAHLE METAL - SBC",
       "profissional": "Vinícius Ronchi Arruda(VRO)"
     },
