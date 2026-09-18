@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-09-18T11:30:22",
+  "atualizado_em": "2026-09-18T11:45:21",
   "kpis": {
     "total_andamento": 7480,
     "entradas_hoje": 12,
@@ -318,12 +318,12 @@
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2082,
-      "entradas_mes": 53,
+      "andamento": 2083,
+      "entradas_mes": 54,
       "saidas_mes": 50,
       "entradas_mes_anterior": 93,
       "saidas_mes_anterior": 74,
-      "valor_causa": 448598095.77
+      "valor_causa": 448754625.23
     },
     {
       "nome": "Grupo E1",
@@ -399,12 +399,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 10,
-      "entradas_mes": 6,
+      "andamento": 9,
+      "entradas_mes": 5,
       "saidas_mes": 3,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 20,
-      "valor_causa": 2507315.34
+      "valor_causa": 2350785.88
     },
     {
       "nome": "Sócios",
@@ -893,12 +893,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 836,
-      "entradas_mes": 50,
+      "andamento": 837,
+      "entradas_mes": 51,
       "saidas_mes": 13,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 27,
-      "valor_causa": 164356260.85
+      "valor_causa": 164512790.31
     },
     {
       "fase": "Instrução",
@@ -973,12 +973,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 6,
-      "entradas_mes": 6,
+      "andamento": 5,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 2,
-      "valor_causa": 2198140.81
+      "valor_causa": 2041611.35
     },
     {
       "fase": "Instrução",
@@ -3160,12 +3160,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "INPASA SINOP",
-      "andamento": 39,
-      "entradas_mes": 13,
+      "andamento": 40,
+      "entradas_mes": 14,
       "saidas_mes": 0,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 0,
-      "valor_causa": 10047466.23,
+      "valor_causa": 10203995.69,
       "alerta_entrada": false
     },
     {
@@ -3654,17 +3654,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "INPASA SINOP",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 754262.4,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "PEIXOTO E CURY",
       "andamento": 1,
       "entradas_mes": 0,
@@ -3672,6 +3661,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 271174.53,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "INPASA SINOP",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 597732.94,
       "alerta_entrada": false
     },
     {
@@ -4263,12 +4263,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Richard Ruan Leo da Silva(RRU)",
-      "andamento": 15,
-      "entradas_mes": 4,
+      "andamento": 16,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 5,
-      "valor_causa": 2944054.61
+      "valor_causa": 3100584.07
     },
     {
       "grupo": "Grupo E2",
@@ -4322,16 +4322,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Richard Ruan Leo da Silva(RRU)",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 754262.4
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
       "andamento": 1,
       "entradas_mes": 0,
@@ -4339,6 +4329,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 271174.53
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Richard Ruan Leo da Silva(RRU)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 597732.94
     },
     {
       "grupo": "Sem grupo",
@@ -7703,11 +7703,6 @@
     },
     {
       "numero_processo": "0001264-08.2026.5.23.0121",
-      "cliente": "INPASA SINOP",
-      "profissional": "Richard Ruan Leo da Silva(RRU)"
-    },
-    {
-      "numero_processo": "0025665-50.2026.5.24.0022",
       "cliente": "INPASA SINOP",
       "profissional": "Richard Ruan Leo da Silva(RRU)"
     },
