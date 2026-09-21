@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-21T16:45:29",
+  "atualizado_em": "2026-09-21T17:00:35",
   "kpis": {
-    "total_andamento": 7469,
+    "total_andamento": 7466,
     "entradas_hoje": 18,
     "saidas_hoje": 18,
     "entradas_ontem": 0,
     "saidas_ontem": 0,
     "entradas_mes": 170,
-    "saidas_mes": 929,
+    "saidas_mes": 930,
     "entradas_mes_anterior": 278,
-    "saidas_mes_anterior": 261,
-    "valor_causa_total": 1693833733.77,
-    "saldo_mes": -759
+    "saidas_mes_anterior": 262,
+    "valor_causa_total": 1693597444.64,
+    "saldo_mes": -760
   },
   "serie_diaria": [
     {
@@ -192,7 +192,7 @@
     {
       "data": "2026-08-28",
       "entradas": 9,
-      "saidas": 6
+      "saidas": 7
     },
     {
       "data": "2026-08-29",
@@ -282,7 +282,7 @@
     {
       "data": "2026-09-15",
       "entradas": 14,
-      "saidas": 9
+      "saidas": 10
     },
     {
       "data": "2026-09-16",
@@ -336,12 +336,12 @@
     },
     {
       "nome": "Grupo B1",
-      "andamento": 1446,
-      "entradas_mes": 34,
-      "saidas_mes": 18,
+      "andamento": 1444,
+      "entradas_mes": 35,
+      "saidas_mes": 19,
       "entradas_mes_anterior": 56,
-      "saidas_mes_anterior": 44,
-      "valor_causa": 319366541.84
+      "saidas_mes_anterior": 45,
+      "valor_causa": 320194816.49
     },
     {
       "nome": "Grupo B2",
@@ -398,15 +398,6 @@
       "valor_causa": 11609781.48
     },
     {
-      "nome": "Sem grupo",
-      "andamento": 4,
-      "entradas_mes": 2,
-      "saidas_mes": 3,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 20,
-      "valor_causa": 1923394.93
-    },
-    {
       "nome": "Sócios",
       "andamento": 3,
       "entradas_mes": 0,
@@ -414,6 +405,15 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
+    },
+    {
+      "nome": "Sem grupo",
+      "andamento": 3,
+      "entradas_mes": 1,
+      "saidas_mes": 3,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 20,
+      "valor_causa": 858831.15
     },
     {
       "nome": "Grupo D1",
@@ -428,12 +428,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5718,
+      "andamento": 5715,
       "entradas_mes": 99,
-      "saidas_mes": 775,
+      "saidas_mes": 776,
       "entradas_mes_anterior": 185,
-      "saidas_mes_anterior": 212,
-      "valor_causa": 1330247191.95
+      "saidas_mes_anterior": 213,
+      "valor_causa": 1330010902.82
     },
     {
       "nome": "MG",
@@ -664,21 +664,21 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 404,
-      "entradas_mes": 7,
+      "andamento": 406,
+      "entradas_mes": 9,
       "saidas_mes": 6,
       "entradas_mes_anterior": 45,
       "saidas_mes_anterior": 6,
-      "valor_causa": 90502328.04
+      "valor_causa": 93801283.2
     },
     {
       "nome": "Instrução",
-      "andamento": 2772,
-      "entradas_mes": 160,
+      "andamento": 2770,
+      "entradas_mes": 158,
       "saidas_mes": 184,
       "entradas_mes_anterior": 205,
       "saidas_mes_anterior": 66,
-      "valor_causa": 783396381.13
+      "valor_causa": 780097425.97
     },
     {
       "nome": "Sentença",
@@ -700,12 +700,12 @@
     },
     {
       "nome": "Execução",
-      "andamento": 918,
+      "andamento": 915,
       "entradas_mes": 1,
-      "saidas_mes": 330,
+      "saidas_mes": 331,
       "entradas_mes_anterior": 13,
-      "saidas_mes_anterior": 93,
-      "valor_causa": 128307051.02
+      "saidas_mes_anterior": 94,
+      "valor_causa": 128070761.89
     }
   ],
   "por_fase_outras": 394,
@@ -733,12 +733,12 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo E1",
-      "andamento": 44,
-      "entradas_mes": 5,
+      "andamento": 46,
+      "entradas_mes": 7,
       "saidas_mes": 1,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 0,
-      "valor_causa": 10888564.25
+      "valor_causa": 14187519.41
     },
     {
       "fase": "Ajuizamento",
@@ -833,12 +833,12 @@
     {
       "fase": "Execução",
       "grupo": "Grupo B1",
-      "andamento": 157,
+      "andamento": 154,
       "entradas_mes": 0,
-      "saidas_mes": 7,
+      "saidas_mes": 8,
       "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 8,
-      "valor_causa": 19442171.35
+      "saidas_mes_anterior": 9,
+      "valor_causa": 19205882.22
     },
     {
       "fase": "Execução",
@@ -903,22 +903,22 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 747,
-      "entradas_mes": 24,
+      "andamento": 745,
+      "entradas_mes": 22,
       "saidas_mes": 13,
       "entradas_mes_anterior": 28,
       "saidas_mes_anterior": 11,
-      "valor_causa": 158013050.91
+      "valor_causa": 154714095.75
     },
     {
       "fase": "Instrução",
       "grupo": "Grupo B1",
-      "andamento": 440,
-      "entradas_mes": 34,
+      "andamento": 441,
+      "entradas_mes": 35,
       "saidas_mes": 6,
       "entradas_mes_anterior": 52,
       "saidas_mes_anterior": 14,
-      "valor_causa": 144163888.74
+      "valor_causa": 145228452.52
     },
     {
       "fase": "Instrução",
@@ -983,12 +983,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 2,
-      "entradas_mes": 2,
+      "andamento": 1,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 2,
-      "valor_causa": 1614220.4
+      "valor_causa": 549656.62
     },
     {
       "fase": "Outras",
@@ -1360,15 +1360,6 @@
       "valor_causa": 74752762.79
     },
     {
-      "nome": "Juliana Perucci (JPE)",
-      "andamento": 268,
-      "entradas_mes": 1,
-      "saidas_mes": 7,
-      "entradas_mes_anterior": 5,
-      "saidas_mes_anterior": 4,
-      "valor_causa": 32493344.61
-    },
-    {
       "nome": "Tamara Silva Marcílio(TAM)",
       "andamento": 266,
       "entradas_mes": 7,
@@ -1376,6 +1367,15 @@
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 6,
       "valor_causa": 51134625.81
+    },
+    {
+      "nome": "Juliana Perucci (JPE)",
+      "andamento": 265,
+      "entradas_mes": 1,
+      "saidas_mes": 8,
+      "entradas_mes_anterior": 5,
+      "saidas_mes_anterior": 5,
+      "valor_causa": 32257055.48
     },
     {
       "nome": "Anna Carolina Balbino Gatti Baani(ANB)",
@@ -1660,12 +1660,12 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1448,
+      "andamento": 1445,
       "entradas_mes": 36,
-      "saidas_mes": 18,
+      "saidas_mes": 19,
       "entradas_mes_anterior": 56,
-      "saidas_mes_anterior": 44,
-      "valor_causa": 320980762.24,
+      "saidas_mes_anterior": 45,
+      "valor_causa": 320744473.11,
       "alerta_entrada": false
     },
     {
@@ -2303,12 +2303,12 @@
     {
       "grupo": "Grupo B1",
       "cliente": "BRIDGESTONE",
-      "andamento": 1446,
-      "entradas_mes": 34,
-      "saidas_mes": 18,
+      "andamento": 1444,
+      "entradas_mes": 35,
+      "saidas_mes": 19,
       "entradas_mes_anterior": 56,
-      "saidas_mes_anterior": 44,
-      "valor_causa": 319366541.84,
+      "saidas_mes_anterior": 45,
+      "valor_causa": 320194816.49,
       "alerta_entrada": false
     },
     {
@@ -3622,17 +3622,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "BRIDGESTONE",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 1614220.4,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "PEIXOTO E CURY",
       "andamento": 1,
       "entradas_mes": 0,
@@ -3651,6 +3640,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 38000.0,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "BRIDGESTONE",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 549656.62,
       "alerta_entrada": false
     },
     {
@@ -3809,16 +3809,6 @@
     },
     {
       "grupo": "Grupo B1",
-      "profissional": "Juliana Perucci (JPE)",
-      "andamento": 268,
-      "entradas_mes": 1,
-      "saidas_mes": 7,
-      "entradas_mes_anterior": 5,
-      "saidas_mes_anterior": 4,
-      "valor_causa": 32493344.61
-    },
-    {
-      "grupo": "Grupo B1",
       "profissional": "Tamara Silva Marcílio(TAM)",
       "andamento": 266,
       "entradas_mes": 7,
@@ -3829,13 +3819,23 @@
     },
     {
       "grupo": "Grupo B1",
+      "profissional": "Juliana Perucci (JPE)",
+      "andamento": 265,
+      "entradas_mes": 1,
+      "saidas_mes": 8,
+      "entradas_mes_anterior": 5,
+      "saidas_mes_anterior": 5,
+      "valor_causa": 32257055.48
+    },
+    {
+      "grupo": "Grupo B1",
       "profissional": "Guilherme Silva Morimoto(GSM)",
-      "andamento": 229,
-      "entradas_mes": 6,
+      "andamento": 230,
+      "entradas_mes": 7,
       "saidas_mes": 3,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 4,
-      "valor_causa": 101929909.0
+      "valor_causa": 102994472.78
     },
     {
       "grupo": "Grupo B1",
@@ -4276,16 +4276,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 38000.0
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Guilherme Silva Morimoto(GSM)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 1064563.78
     },
     {
       "grupo": "Sem grupo",
@@ -6212,12 +6202,12 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1419,
+      "andamento": 1416,
       "entradas_mes": 32,
-      "saidas_mes": 18,
+      "saidas_mes": 19,
       "entradas_mes_anterior": 51,
-      "saidas_mes_anterior": 44,
-      "valor_causa": 308997783.17
+      "saidas_mes_anterior": 45,
+      "valor_causa": 308761494.04
     },
     {
       "estado": "SP",
@@ -7653,11 +7643,6 @@
     }
   ],
   "sem_grupo_processos": [
-    {
-      "numero_processo": "1001869-59.2026.5.02.0431",
-      "cliente": "BRIDGESTONE",
-      "profissional": "Guilherme Silva Morimoto(GSM)"
-    },
     {
       "numero_processo": "1001848-77.2026.5.02.0433",
       "cliente": "BRIDGESTONE",
