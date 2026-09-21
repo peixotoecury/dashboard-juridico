@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-21T16:30:27",
+  "atualizado_em": "2026-09-21T16:45:29",
   "kpis": {
-    "total_andamento": 7473,
+    "total_andamento": 7469,
     "entradas_hoje": 18,
     "saidas_hoje": 18,
     "entradas_ontem": 0,
     "saidas_ontem": 0,
     "entradas_mes": 170,
-    "saidas_mes": 927,
+    "saidas_mes": 929,
     "entradas_mes_anterior": 278,
-    "saidas_mes_anterior": 260,
+    "saidas_mes_anterior": 261,
     "valor_causa_total": 1693833733.77,
-    "saldo_mes": -757
+    "saldo_mes": -759
   },
   "serie_diaria": [
     {
@@ -207,7 +207,7 @@
     {
       "data": "2026-08-31",
       "entradas": 19,
-      "saidas": 9
+      "saidas": 10
     },
     {
       "data": "2026-09-01",
@@ -252,7 +252,7 @@
     {
       "data": "2026-09-09",
       "entradas": 13,
-      "saidas": 9
+      "saidas": 10
     },
     {
       "data": "2026-09-10",
@@ -282,7 +282,7 @@
     {
       "data": "2026-09-15",
       "entradas": 14,
-      "saidas": 8
+      "saidas": 9
     },
     {
       "data": "2026-09-16",
@@ -336,11 +336,11 @@
     },
     {
       "nome": "Grupo B1",
-      "andamento": 1450,
+      "andamento": 1446,
       "entradas_mes": 34,
-      "saidas_mes": 16,
+      "saidas_mes": 18,
       "entradas_mes_anterior": 56,
-      "saidas_mes_anterior": 43,
+      "saidas_mes_anterior": 44,
       "valor_causa": 319366541.84
     },
     {
@@ -428,11 +428,11 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5722,
+      "andamento": 5718,
       "entradas_mes": 99,
-      "saidas_mes": 773,
+      "saidas_mes": 775,
       "entradas_mes_anterior": 185,
-      "saidas_mes_anterior": 211,
+      "saidas_mes_anterior": 212,
       "valor_causa": 1330247191.95
     },
     {
@@ -700,11 +700,11 @@
     },
     {
       "nome": "Execução",
-      "andamento": 922,
+      "andamento": 918,
       "entradas_mes": 1,
-      "saidas_mes": 328,
+      "saidas_mes": 330,
       "entradas_mes_anterior": 13,
-      "saidas_mes_anterior": 92,
+      "saidas_mes_anterior": 93,
       "valor_causa": 128307051.02
     }
   ],
@@ -833,11 +833,11 @@
     {
       "fase": "Execução",
       "grupo": "Grupo B1",
-      "andamento": 161,
+      "andamento": 157,
       "entradas_mes": 0,
-      "saidas_mes": 5,
+      "saidas_mes": 7,
       "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 7,
+      "saidas_mes_anterior": 8,
       "valor_causa": 19442171.35
     },
     {
@@ -1351,15 +1351,6 @@
       "valor_causa": 44515334.76
     },
     {
-      "nome": "Juliana Perucci (JPE)",
-      "andamento": 272,
-      "entradas_mes": 1,
-      "saidas_mes": 5,
-      "entradas_mes_anterior": 5,
-      "saidas_mes_anterior": 3,
-      "valor_causa": 32493344.61
-    },
-    {
       "nome": "Rafael Rocha Ferreira(RFE)",
       "andamento": 272,
       "entradas_mes": 6,
@@ -1367,6 +1358,15 @@
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 3,
       "valor_causa": 74752762.79
+    },
+    {
+      "nome": "Juliana Perucci (JPE)",
+      "andamento": 268,
+      "entradas_mes": 1,
+      "saidas_mes": 7,
+      "entradas_mes_anterior": 5,
+      "saidas_mes_anterior": 4,
+      "valor_causa": 32493344.61
     },
     {
       "nome": "Tamara Silva Marcílio(TAM)",
@@ -1660,11 +1660,11 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1452,
+      "andamento": 1448,
       "entradas_mes": 36,
-      "saidas_mes": 16,
+      "saidas_mes": 18,
       "entradas_mes_anterior": 56,
-      "saidas_mes_anterior": 43,
+      "saidas_mes_anterior": 44,
       "valor_causa": 320980762.24,
       "alerta_entrada": false
     },
@@ -2303,11 +2303,11 @@
     {
       "grupo": "Grupo B1",
       "cliente": "BRIDGESTONE",
-      "andamento": 1450,
+      "andamento": 1446,
       "entradas_mes": 34,
-      "saidas_mes": 16,
+      "saidas_mes": 18,
       "entradas_mes_anterior": 56,
-      "saidas_mes_anterior": 43,
+      "saidas_mes_anterior": 44,
       "valor_causa": 319366541.84,
       "alerta_entrada": false
     },
@@ -3799,16 +3799,6 @@
     },
     {
       "grupo": "Grupo B1",
-      "profissional": "Juliana Perucci (JPE)",
-      "andamento": 272,
-      "entradas_mes": 1,
-      "saidas_mes": 5,
-      "entradas_mes_anterior": 5,
-      "saidas_mes_anterior": 3,
-      "valor_causa": 32493344.61
-    },
-    {
-      "grupo": "Grupo B1",
       "profissional": "Rafael Rocha Ferreira(RFE)",
       "andamento": 271,
       "entradas_mes": 5,
@@ -3816,6 +3806,16 @@
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 3,
       "valor_causa": 74203106.17
+    },
+    {
+      "grupo": "Grupo B1",
+      "profissional": "Juliana Perucci (JPE)",
+      "andamento": 268,
+      "entradas_mes": 1,
+      "saidas_mes": 7,
+      "entradas_mes_anterior": 5,
+      "saidas_mes_anterior": 4,
+      "valor_causa": 32493344.61
     },
     {
       "grupo": "Grupo B1",
@@ -6212,11 +6212,11 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1423,
+      "andamento": 1419,
       "entradas_mes": 32,
-      "saidas_mes": 16,
+      "saidas_mes": 18,
       "entradas_mes_anterior": 51,
-      "saidas_mes_anterior": 43,
+      "saidas_mes_anterior": 44,
       "valor_causa": 308997783.17
     },
     {
