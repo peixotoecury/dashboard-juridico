@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-21T17:15:29",
+  "atualizado_em": "2026-09-21T17:30:33",
   "kpis": {
     "total_andamento": 7461,
-    "entradas_hoje": 18,
+    "entradas_hoje": 20,
     "saidas_hoje": 19,
     "entradas_ontem": 0,
     "saidas_ontem": 0,
-    "entradas_mes": 170,
+    "entradas_mes": 172,
     "saidas_mes": 934,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 262,
-    "valor_causa_total": 1692889686.81,
-    "saldo_mes": -764
+    "valor_causa_total": 1692699022.68,
+    "saldo_mes": -762
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-09-21",
-      "entradas": 18,
+      "entradas": 20,
       "saidas": 19
     }
   ],
@@ -336,12 +336,12 @@
     },
     {
       "nome": "Grupo B1",
-      "andamento": 1441,
+      "andamento": 1439,
       "entradas_mes": 36,
       "saidas_mes": 22,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 45,
-      "valor_causa": 320214715.28
+      "valor_causa": 319591656.43
     },
     {
       "nome": "Grupo B2",
@@ -398,6 +398,15 @@
       "valor_causa": 11609781.48
     },
     {
+      "nome": "Sem grupo",
+      "andamento": 4,
+      "entradas_mes": 2,
+      "saidas_mes": 3,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 20,
+      "valor_causa": 741569.25
+    },
+    {
       "nome": "Sócios",
       "andamento": 3,
       "entradas_mes": 0,
@@ -405,15 +414,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
-    },
-    {
-      "nome": "Sem grupo",
-      "andamento": 2,
-      "entradas_mes": 0,
-      "saidas_mes": 3,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 20,
-      "valor_causa": 309174.53
     },
     {
       "nome": "Grupo D1",
@@ -429,11 +429,11 @@
     {
       "nome": "SP",
       "andamento": 5711,
-      "entradas_mes": 99,
+      "entradas_mes": 101,
       "saidas_mes": 779,
       "entradas_mes_anterior": 185,
       "saidas_mes_anterior": 213,
-      "valor_causa": 1329481144.99
+      "valor_causa": 1329290480.86
     },
     {
       "nome": "MG",
@@ -673,12 +673,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2769,
-      "entradas_mes": 158,
+      "andamento": 2771,
+      "entradas_mes": 160,
       "saidas_mes": 184,
       "entradas_mes_anterior": 205,
       "saidas_mes_anterior": 66,
-      "valor_causa": 780097425.97
+      "valor_causa": 780529820.69
     },
     {
       "nome": "Sentença",
@@ -700,12 +700,12 @@
     },
     {
       "nome": "Execução",
-      "andamento": 913,
+      "andamento": 911,
       "entradas_mes": 1,
       "saidas_mes": 333,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 94,
-      "valor_causa": 127842761.89
+      "valor_causa": 127219703.04
     }
   ],
   "por_fase_outras": 394,
@@ -833,12 +833,12 @@
     {
       "fase": "Execução",
       "grupo": "Grupo B1",
-      "andamento": 153,
+      "andamento": 151,
       "entradas_mes": 0,
       "saidas_mes": 9,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 9,
-      "valor_causa": 19155882.22
+      "valor_causa": 18532823.37
     },
     {
       "fase": "Execução",
@@ -979,6 +979,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
+    },
+    {
+      "fase": "Instrução",
+      "grupo": "Sem grupo",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 2,
+      "valor_causa": 432394.72
     },
     {
       "fase": "Outras",
@@ -1360,21 +1370,21 @@
     },
     {
       "nome": "Juliana Perucci (JPE)",
-      "andamento": 263,
+      "andamento": 261,
       "entradas_mes": 1,
       "saidas_mes": 10,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 5,
-      "valor_causa": 32165655.48
+      "valor_causa": 31542596.63
     },
     {
       "nome": "Anna Carolina Balbino Gatti Baani(ANB)",
-      "andamento": 256,
-      "entradas_mes": 2,
+      "andamento": 258,
+      "entradas_mes": 4,
       "saidas_mes": 2,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 0,
-      "valor_causa": 60922748.93
+      "valor_causa": 61355143.65
     },
     {
       "nome": "Rafael Camargo Felisbino(RCF)",
@@ -1650,12 +1660,12 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1441,
+      "andamento": 1439,
       "entradas_mes": 36,
       "saidas_mes": 22,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 45,
-      "valor_causa": 320214715.28,
+      "valor_causa": 319591656.43,
       "alerta_entrada": false
     },
     {
@@ -1789,6 +1799,16 @@
       "alerta_entrada": false
     },
     {
+      "nome": "T4F ENTRETENIMENTO",
+      "andamento": 104,
+      "entradas_mes": 2,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 2,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 11697854.56,
+      "alerta_entrada": false
+    },
+    {
       "nome": "EUROCHEM FTO MATRIZ",
       "andamento": 103,
       "entradas_mes": 6,
@@ -1797,16 +1817,6 @@
       "saidas_mes_anterior": 4,
       "valor_causa": 10508490.93,
       "alerta_entrada": true
-    },
-    {
-      "nome": "T4F ENTRETENIMENTO",
-      "andamento": 102,
-      "entradas_mes": 0,
-      "saidas_mes": 1,
-      "entradas_mes_anterior": 2,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 11265459.84,
-      "alerta_entrada": false
     },
     {
       "nome": "COMPANHIA AIX",
@@ -2293,12 +2303,12 @@
     {
       "grupo": "Grupo B1",
       "cliente": "BRIDGESTONE",
-      "andamento": 1441,
+      "andamento": 1439,
       "entradas_mes": 36,
       "saidas_mes": 22,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 45,
-      "valor_causa": 320214715.28,
+      "valor_causa": 319591656.43,
       "alerta_entrada": false
     },
     {
@@ -3612,6 +3622,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "T4F ENTRETENIMENTO",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 432394.72,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "PEIXOTO E CURY",
       "andamento": 1,
       "entradas_mes": 0,
@@ -3799,12 +3820,12 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Juliana Perucci (JPE)",
-      "andamento": 263,
+      "andamento": 261,
       "entradas_mes": 1,
       "saidas_mes": 10,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 5,
-      "valor_causa": 32165655.48
+      "valor_causa": 31542596.63
     },
     {
       "grupo": "Grupo B1",
@@ -4235,6 +4256,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Anna Carolina Balbino Gatti Baani(ANB)",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 432394.72
     },
     {
       "grupo": "Sem grupo",
@@ -6171,12 +6202,12 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1412,
+      "andamento": 1410,
       "entradas_mes": 32,
       "saidas_mes": 22,
       "entradas_mes_anterior": 51,
       "saidas_mes_anterior": 45,
-      "valor_causa": 308231736.21
+      "valor_causa": 307608677.36
     },
     {
       "estado": "SP",
@@ -6291,12 +6322,12 @@
     {
       "estado": "SP",
       "cliente": "T4F ENTRETENIMENTO",
-      "andamento": 82,
-      "entradas_mes": 0,
+      "andamento": 84,
+      "entradas_mes": 2,
       "saidas_mes": 1,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
-      "valor_causa": 9467598.21
+      "valor_causa": 9899992.93
     },
     {
       "estado": "SP",
@@ -7621,6 +7652,16 @@
       "numero_processo": "1000930-65.2026.5.02.0080",
       "cliente": "PEIXOTO E CURY",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
+    },
+    {
+      "numero_processo": "0012060-95.2026.5.15.0116",
+      "cliente": "T4F ENTRETENIMENTO",
+      "profissional": "Anna Carolina Balbino Gatti Baani(ANB)"
+    },
+    {
+      "numero_processo": "1001631-51.2026.5.02.0007",
+      "cliente": "T4F ENTRETENIMENTO",
+      "profissional": "Anna Carolina Balbino Gatti Baani(ANB)"
     }
   ]
 }
