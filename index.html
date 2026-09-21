@@ -3024,6 +3024,7 @@ body.role-manager .upload-bar {
         <div class="det-desc">Lista detalhada exclusivamente dos prazos fatais para acompanhamento operacional.</div>
       </div>
       <div style="display:flex;gap:8px;flex-wrap:wrap;">
+        <button type="button" style="background:#ffb300;color:#3e2723;border:none;border-radius:8px;padding:8px 14px;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap;" onclick="irParaJustificarD1()" title="Abre a lista de prazos D-1 (vencem hoje). Em cada um há o botão para justificar o FATAL de amanhã antecipadamente.">📝 Justificar D-1 que ficará FATAL amanhã</button>
         <button type="button" style="background:#c62828;color:#fff;border:none;border-radius:8px;padding:8px 14px;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap;" onclick="dispararAlertasFatais()">🔴 Alertas de Fatais (por responsável)</button>
         <button type="button" style="background:#5c0e0e;color:#fff;border:none;border-radius:8px;padding:8px 14px;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap;" onclick="dispararAlertaTodosFataisJunto()">📢 Alerta Único — Todos os Fatais</button>
         <button type="button" style="background:#fff;color:var(--teal);border:none;border-radius:8px;padding:8px 14px;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap;" onclick="dispararAlertasFataisD1()">📧 Alertas de Fatais + D-1 (por responsável)</button>
@@ -4068,6 +4069,19 @@ function ufDoProcesso(numero) {
 }
 
 // ── TABS ─────────────────────────────────────────────
+// Atalho: abre a aba Prazos já filtrada em D-1, onde cada linha tem o botão "Justificar o FATAL de amanhã".
+window.irParaJustificarD1 = function() {
+  var btn = document.getElementById('nav-prazos-solo');
+  if(btn) switchTab('prazos-solo', btn);
+  setTimeout(function() {
+    var st = document.getElementById('p2-st');
+    if(st) { st.value = 'D-1'; }
+    if(typeof renderPrazosSoloDet === 'function') renderPrazosSoloDet();
+    var body = document.getElementById('body-p2');
+    if(body && body.scrollIntoView) body.scrollIntoView({behavior:'smooth', block:'start'});
+  }, 150);
+};
+
 function switchTab(n, el) {
   document.querySelectorAll('.nav-btn').forEach(b=>b.classList.remove('active'));
   document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
