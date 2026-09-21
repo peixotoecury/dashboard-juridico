@@ -3880,6 +3880,7 @@ body.role-manager .upload-bar {
       </section>
 
       <section class="mp-only-section active" data-mp-only="resumo">
+        <div id="mp-only-d1"></div>
         <div class="mp-only-graphs">
           <div class="mp-only-box">
             <div class="mp-only-box-h"><h3>Distribuição dos meus itens</h3><span>visão geral</span></div>
@@ -11222,6 +11223,12 @@ document.addEventListener('DOMContentLoaded', function(){
       {h:'Status', v:r=>{const s=status(r);return `<span class="mp-only-status" style="${(statusEh(s, 'Fatal')||statusEh(s, 'Vencido'))?'background:#fdecea;color:#c62828;border:1px solid #ef9a9a;':''}">${s}</span>`;}},
       {h:'Justificativa', v:function(r){
         const s=status(r);
+        if(statusEh(s, 'D-1')){
+          const _p=txt(pick(r,['numero_processo','Número do Processo','Processo','processo']));
+          const _j=window.justificativas && window.justificativas[_p];
+          const _t=_j ? (_j.texto||'✅ Justificado') : '';
+          return `<div style="font-size:10px;color:${_t?'#2d7d46':'var(--gray4)'};max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:${_t?'600':'400'}" title="${e(_t)}">${_t?e(_t.slice(0,80)):'—'}</div>`;
+        }
         if(!statusEh(s, 'Fatal')&&!statusEh(s, 'Vencido')) return '<span style="color:var(--gray4);font-size:10px;">—</span>';
         const proc=txt(pick(r,['numero_processo','Número do Processo','Processo','processo']));
         const key='justif_'+btoa(unescape(encodeURIComponent(proc))).replace(/[^a-zA-Z0-9]/g,'').slice(0,20);
@@ -11249,6 +11256,12 @@ document.addEventListener('DOMContentLoaded', function(){
         const reagBtn=`<button onclick="window.abrirModalReagendamento('${procE}','${respE}','${grupo}')" style="display:block;margin-bottom:3px;background:#d84315;color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;width:100%;">📅 Reagendar</button>`;
         const transfBtn=`<button onclick="window.abrirModalTransferencia('${procE}','${cliE}','${respE}','prazo')" style="display:block;margin-bottom:3px;background:#1565C0;color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;width:100%;">📁 Transferir</button>`;
         if(s==='Fatal'||s==='Vencido') return `<div style="min-width:130px;display:flex;flex-direction:column;gap:3px;"><button onclick="abrirJustifSingle('${key}','${procEnc}','${cliEnc}','${tarefaEnc}','${statusStr}')" style="background:#c62828;color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;width:100%;display:block;margin-bottom:3px;">Justificar</button>${agendBtn}${reagBtn}${transfBtn}</div>`;
+        if(statusEh(s,'D-1')){
+          const audIdJ=proc+'_'+responsavel.replace(/\s+/g,'_');
+          const temJ=!!(window.justificativas&&(window.justificativas[proc]||window.justificativas[audIdJ]));
+          const justAntBtn=`<button onclick="window.abrirModalJustificativaFatal('${audIdJ.replace(/'/g,"\\'")}','${procE}','${respE}','${grupoE}',true)" style="display:block;margin-bottom:3px;background:${temJ?'#2d7d46':'#e65100'};color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;width:100%;" title="Justificativa do FATAL feita antecipadamente: este prazo vence hoje (D-1), não será cumprido hoje e ficará Fatal amanhã.">${temJ?'✏️ Editar justificativa do fatal (amanhã)':'📝 Justificar o FATAL de amanhã'}</button>`;
+          return `<div style="min-width:130px;display:flex;flex-direction:column;gap:3px;">${justAntBtn}${agendBtn}${reagBtn}${transfBtn}</div>`;
+        }
         return `<div style="min-width:130px;display:flex;flex-direction:column;gap:3px;">${agendBtn}${reagBtn}${transfBtn}</div>`;
       }}
     ];
@@ -11286,6 +11299,17 @@ document.addEventListener('DOMContentLoaded', function(){
 
     const resumo = document.getElementById('mp-only-resumo-tabelas');
     if(resumo) resumo.innerHTML = prazosHtml + agendasHtml + equipeHtml + audHtml;
+    // Painel D-1 (topo do Resumo): meus prazos que vencem hoje, com o botão de justificar o FATAL de amanhã
+    const d1Rows = d.prazos.filter(r => statusEh(status(r), 'D-1'));
+    const d1El = document.getElementById('mp-only-d1');
+    if(d1El){
+      d1El.innerHTML = d1Rows.length
+        ? `<div style="margin:0 0 16px;border:1px solid #ffb300;border-radius:10px;background:#fffdf5;padding:12px 14px;">
+            <div style="background:#fff8e1;border-left:5px solid #e65100;border-radius:6px;padding:10px 14px;font-size:12px;line-height:1.5;color:#5d4037;margin-bottom:10px;">
+              <strong>⚠️ Justificar o FATAL de amanhã:</strong> se algum prazo D-1 abaixo <strong>não for cumprido hoje</strong>, ele ficará <strong>FATAL amanhã</strong>. Use o botão <em>“Justificar o FATAL de amanhã”</em> para registrar a justificativa desde já (identificada como <strong>antecipada — D-1</strong>). O status do prazo não muda.
+            </div>` + table('🟠 Prazos D-1', d1Rows, prazoCols) + `</div>`
+        : '';
+    }
     const p = document.getElementById('mp-only-prazos'); if(p) p.innerHTML = prazosHtml;
     const a = document.getElementById('mp-only-agendas'); if(a) a.innerHTML = agendasHtml;
     const elEq2 = document.getElementById('mp-only-equipe'); if(elEq2) elEq2.innerHTML = equipeHtml;
