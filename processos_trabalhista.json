@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-21T12:45:29",
+  "atualizado_em": "2026-09-21T13:00:31",
   "kpis": {
-    "total_andamento": 7480,
-    "entradas_hoje": 8,
+    "total_andamento": 7481,
+    "entradas_hoje": 9,
     "saidas_hoje": 9,
     "entradas_ontem": 0,
     "saidas_ontem": 0,
-    "entradas_mes": 160,
+    "entradas_mes": 161,
     "saidas_mes": 915,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 258,
     "valor_causa_total": 1688510438.15,
-    "saldo_mes": -755
+    "saldo_mes": -754
   },
   "serie_diaria": [
     {
@@ -311,15 +311,15 @@
     },
     {
       "data": "2026-09-21",
-      "entradas": 8,
+      "entradas": 9,
       "saidas": 9
     }
   ],
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2080,
-      "entradas_mes": 62,
+      "andamento": 2081,
+      "entradas_mes": 63,
       "saidas_mes": 61,
       "entradas_mes_anterior": 93,
       "saidas_mes_anterior": 74,
@@ -428,8 +428,8 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5728,
-      "entradas_mes": 90,
+      "andamento": 5729,
+      "entradas_mes": 91,
       "saidas_mes": 763,
       "entradas_mes_anterior": 185,
       "saidas_mes_anterior": 209,
@@ -673,8 +673,8 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2771,
-      "entradas_mes": 154,
+      "andamento": 2772,
+      "entradas_mes": 155,
       "saidas_mes": 181,
       "entradas_mes_anterior": 205,
       "saidas_mes_anterior": 66,
@@ -893,8 +893,8 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 837,
-      "entradas_mes": 59,
+      "andamento": 838,
+      "entradas_mes": 60,
       "saidas_mes": 17,
       "entradas_mes_anterior": 55,
       "saidas_mes_anterior": 27,
@@ -1522,8 +1522,8 @@
     },
     {
       "nome": "Bruno Tanganelli Farah(BTF)",
-      "andamento": 11,
-      "entradas_mes": 6,
+      "andamento": 12,
+      "entradas_mes": 7,
       "saidas_mes": 0,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 0,
@@ -3195,13 +3195,13 @@
     {
       "grupo": "Grupo E2",
       "cliente": "A. RAYMOND",
-      "andamento": 18,
-      "entradas_mes": 2,
+      "andamento": 19,
+      "entradas_mes": 3,
       "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 2,
       "valor_causa": 1673465.25,
-      "alerta_entrada": false
+      "alerta_entrada": true
     },
     {
       "grupo": "Grupo E2",
@@ -4209,8 +4209,8 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Bruno Tanganelli Farah(BTF)",
-      "andamento": 11,
-      "entradas_mes": 6,
+      "andamento": 12,
+      "entradas_mes": 7,
       "saidas_mes": 0,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 0,
@@ -6421,8 +6421,8 @@
     {
       "estado": "SP",
       "cliente": "A. RAYMOND",
-      "andamento": 17,
-      "entradas_mes": 2,
+      "andamento": 18,
+      "entradas_mes": 3,
       "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 2,
@@ -7588,6 +7588,16 @@
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 4,
       "valor_causa": 10536844.48,
+      "alerta_entrada": true
+    },
+    {
+      "nome": "A. RAYMOND",
+      "andamento": 19,
+      "entradas_mes": 3,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 2,
+      "valor_causa": 1673465.25,
       "alerta_entrada": true
     }
   ],
