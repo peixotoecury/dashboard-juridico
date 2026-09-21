@@ -3024,7 +3024,6 @@ body.role-manager .upload-bar {
         <div class="det-desc">Lista detalhada exclusivamente dos prazos fatais para acompanhamento operacional.</div>
       </div>
       <div style="display:flex;gap:8px;flex-wrap:wrap;">
-        <button type="button" style="background:#ffb300;color:#3e2723;border:none;border-radius:8px;padding:8px 14px;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap;" onclick="irParaJustificarD1()" title="Vai ao painel Prazos D-1 (vencem hoje), onde fica o botão para justificar o FATAL de amanhã antecipadamente.">📝 Justificar D-1 que ficará FATAL amanhã</button>
         <button type="button" style="background:#c62828;color:#fff;border:none;border-radius:8px;padding:8px 14px;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap;" onclick="dispararAlertasFatais()">🔴 Alertas de Fatais (por responsável)</button>
         <button type="button" style="background:#5c0e0e;color:#fff;border:none;border-radius:8px;padding:8px 14px;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap;" onclick="dispararAlertaTodosFataisJunto()">📢 Alerta Único — Todos os Fatais</button>
         <button type="button" style="background:#fff;color:var(--teal);border:none;border-radius:8px;padding:8px 14px;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap;" onclick="dispararAlertasFataisD1()">📧 Alertas de Fatais + D-1 (por responsável)</button>
@@ -3057,7 +3056,7 @@ body.role-manager .upload-bar {
   <div class="det-card" id="painel-d1" style="margin-top:16px;">
     <div class="det-hdr" style="display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:10px;background:linear-gradient(90deg,#8a4b00,#e65100);">
       <div>
-        <h2>🟠 Prazos D-1 — vencem hoje <span class="det-cnt" id="ct-d1-det">0 registros</span></h2>
+        <h2>🟠 Prazos D-1 <span class="det-cnt" id="ct-d1-det">0 registros</span></h2>
         <div class="det-desc">Justificativa do FATAL de amanhã, feita antecipadamente.</div>
       </div>
     </div>
@@ -4100,15 +4099,6 @@ function ufDoProcesso(numero) {
 }
 
 // ── TABS ─────────────────────────────────────────────
-// Atalho: leva ao painel "Prazos D-1" (Dashboard Executivo), onde fica o botão "Justificar o FATAL de amanhã".
-window.irParaJustificarD1 = function() {
-  var painel = document.getElementById('painel-d1');
-  var pg = document.getElementById('page-prazos');
-  if(pg && !pg.classList.contains('active')) { var nb = document.getElementById('nav-prazos'); if(nb) switchTab('prazos', nb); }
-  if(typeof renderD1Painel === 'function') renderD1Painel();
-  setTimeout(function(){ if(painel && painel.scrollIntoView) painel.scrollIntoView({behavior:'smooth', block:'start'}); }, 150);
-};
-
 function switchTab(n, el) {
   document.querySelectorAll('.nav-btn').forEach(b=>b.classList.remove('active'));
   document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
