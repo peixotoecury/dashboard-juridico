@@ -8232,7 +8232,16 @@ function exportarTransfPastasExcel(){
 }
 
 // 🔴 Função para abrir modal de justificativa com grupo
-window.abrirModalJustificativaFatal = function(audId, processo, responsavel, grupo) {
+window.abrirModalJustificativaFatal = function(audId, processo, responsavel, grupo, antecipada) {
+  // antecipada = true: prazo em D-1 (vence hoje) que NÃO será cumprido hoje e ficará Fatal amanhã.
+  // Não altera a regra de status: é só uma justificativa registrada com antecedência (mesma tabela/fluxo do Fatal).
+  var _proxFatal = '';
+  if(antecipada) {
+    var _d0 = (typeof refHoje === 'function') ? refHoje() : new Date();
+    var _d = new Date(_d0.getTime());
+    do { _d.setDate(_d.getDate() + 1); } while(_d.getDay() === 0 || _d.getDay() === 6);
+    _proxFatal = ('0' + _d.getDate()).slice(-2) + '/' + ('0' + (_d.getMonth() + 1)).slice(-2) + '/' + _d.getFullYear();
+  }
   window.carregarJustificativa(audId, function(textoAtual) {
     // Parse dos dados salvos
     var dados = {
@@ -8254,19 +8263,24 @@ window.abrirModalJustificativaFatal = function(audId, processo, responsavel, gru
       });
     }
     
+    if(antecipada && !dados.campo4) dados.campo4 = _proxFatal;
     var modal = document.createElement('div');
     modal.id = 'modal-just-' + audId;
+    if(antecipada) modal.dataset.antecipada = '1';
     modal.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:9999;display:flex;align-items:center;justify-content:center;padding:20px;';
     modal.innerHTML = `<div style="background:white;border-radius:12px;width:100%;max-width:650px;max-height:90vh;overflow-y:auto;box-shadow:0 20px 60px rgba(0,0,0,.3);">
       <div style="background:linear-gradient(90deg, #003a50 0%, #006080 100%);padding:24px;border-radius:12px 12px 0 0;display:flex;align-items:center;justify-content:space-between;color:white;">
         <div>
-          <h2 style="margin:0;font-size:18px;font-weight:700;">JUSTIFICATIVA DO PRAZO FATAL</h2>
+          <h2 style="margin:0;font-size:18px;font-weight:700;">${antecipada ? 'JUSTIFICATIVA ANTECIPADA — PRAZO D-1' : 'JUSTIFICATIVA DO PRAZO FATAL'}</h2>
           <p style="margin:8px 0 0;font-size:12px;opacity:0.9;">Processo: <strong>${processo}</strong> | Grupo: <strong>${grupo || '?'}</strong></p>
         </div>
         <button onclick="document.getElementById('modal-just-${audId}').remove()" style="background:rgba(255,255,255,.2);border:none;color:white;width:36px;height:36px;border-radius:50%;cursor:pointer;font-size:20px;display:flex;align-items:center;justify-content:center;">✕</button>
       </div>
       
       <div style="padding:24px;display:flex;flex-direction:column;gap:16px;">
+        ${antecipada ? `<div style="background:#fff8e1;border:1px solid #ffb300;border-left:5px solid #e65100;border-radius:6px;padding:12px 14px;font-size:12px;line-height:1.5;color:#5d4037;">
+          <strong>⚠️ Justificativa antecipada (D-1).</strong> Este prazo vence <strong>hoje</strong> e <strong>não será cumprido hoje</strong>: ele ficará como <strong>FATAL amanhã (${_proxFatal})</strong>. Esta justificativa fica registrada desde já, com a indicação de que foi feita antecipadamente em D-1, e segue o mesmo fluxo de aprovação e e-mail da justificativa de fatal. <em>O status do prazo não muda</em> — se a peça for protocolada hoje, não é necessário justificar.
+        </div>` : ''}
         <div>
           <label style="display:block;margin-bottom:6px;font-size:12px;font-weight:700;color:#333;text-transform:uppercase;letter-spacing:.5px;">1. Número do processo *</label>
           <input type="text" id="campo1-${audId}" value="${processo}" style="width:100%;padding:10px;border:1px solid #ddd;border-radius:6px;font-size:12px;box-sizing:border-box;" readonly>
@@ -8328,6 +8342,12 @@ window.gravarJustificativaFatal = function(audId, processo, responsavel, grupo) 
   var campo6 = document.querySelector('input[name="just-' + audId + '"]:checked');
   var campo7 = document.getElementById('campo7-' + audId).value.trim();
   var campo8 = document.getElementById('campo8-' + audId).value.trim();
+  var _modalJ = document.getElementById('modal-just-' + audId);
+  var _antecipada = !!(_modalJ && _modalJ.dataset.antecipada === '1');
+  if(_antecipada && campo8.indexOf('JUSTIFICATIVA ANTECIPADA') === -1) {
+    var _h = new Date(); var _hoje = ('0' + _h.getDate()).slice(-2) + '/' + ('0' + (_h.getMonth() + 1)).slice(-2) + '/' + _h.getFullYear();
+    campo8 = '[JUSTIFICATIVA ANTECIPADA — registrada em ' + _hoje + ' (D-1): o prazo vence hoje e não será cumprido hoje; passará a Fatal em ' + campo4 + '.] ' + campo8;
+  }
   
   if(!campo4 || !campo5 || !campo6) {
     alert('Por favor, preencha todos os campos obrigatórios (*)');
@@ -10613,8 +10633,8 @@ document.addEventListener('DOMContentLoaded', function(){
       {h:'Cliente', v:r=>txt(pick(r,['cliente','Cliente']))},
       {h:'Tarefa', v:r=>txt(pick(r,['descricao_tarefa','Descrição','descrição','tarefa','Tarefa']))},
       {h:'Status', v:r=>{const s=status(r);return `<span class="mp-only-status" style="${(statusEh(s, 'Fatal')||statusEh(s, 'Vencido'))?'background:#fdecea;color:#c62828;border:1px solid #ef9a9a;':''}">${s}</span>`;}},
-      {h:'Justificativa', v:r=>{const s=status(r);if(!statusEh(s, 'Fatal')&&!statusEh(s, 'Vencido'))return '<span style="color:var(--gray4);font-size:10px;">—</span>';const proc=txt(pick(r,['numero_processo','Número do Processo','Processo','processo']));const key='justif-'+btoa(proc).replace(/[^a-z0-9]/gi,'');const just=(window._mpJustif&&window._mpJustif[key])?window._mpJustif[key]:((window.justificativas&&window.justificativas[proc])?(window.justificativas[proc].texto||'✅ Justificado'):'—');return `<div style="font-size:10px;color:${just==='—'?'var(--gray4)':'#c62828'};max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:${just==='—'?'400':'600'}">${e(just)}</div>`;}},
-      {h:'Ação', v:function(r){const s=status(r);const proc=txt(pick(r,['numero_processo','Número do Processo','Processo','processo']));const cli=txt(pick(r,['cliente','Cliente'])||'');const resp=r.responsavel||r['Responsável']||'';const grp=r.grupo_processo||r['Grupo Processo']||'';const procE=proc.replace(/'/g,"\\'");const cliE=cli.replace(/'/g,"\\'");const respE=resp.replace(/'/g,"\\'");const reagBtn=(s==='Fatal'||s==='Vencido'||s==='D-1'||s==='D-2'||s==='Futuro')?`<button onclick="window.abrirModalReagendamento('${procE}','${respE}','${grp}')" style="background:#d84315;color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;width:100%;display:block;margin-bottom:3px;">📅 Reagendar</button>`:'';const transfBtn=`<button onclick="window.abrirModalTransferencia('${procE}','${cliE}','${respE}','prazo')" style="background:#1565C0;color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;width:100%;display:block;">📁 Transferir</button>`;return `<div style="min-width:130px;display:flex;flex-direction:column;gap:3px;">${reagBtn}${transfBtn}</div>`;}}
+      {h:'Justificativa', v:r=>{const s=status(r);if(!statusEh(s, 'Fatal')&&!statusEh(s, 'Vencido')&&!statusEh(s, 'D-1'))return '<span style="color:var(--gray4);font-size:10px;">—</span>';const proc=txt(pick(r,['numero_processo','Número do Processo','Processo','processo']));const key='justif-'+btoa(proc).replace(/[^a-z0-9]/gi,'');const just=(window._mpJustif&&window._mpJustif[key])?window._mpJustif[key]:((window.justificativas&&window.justificativas[proc])?(window.justificativas[proc].texto||'✅ Justificado'):'—');return `<div style="font-size:10px;color:${just==='—'?'var(--gray4)':'#c62828'};max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:${just==='—'?'400':'600'}">${e(just)}</div>`;}},
+      {h:'Ação', v:function(r){const s=status(r);const proc=txt(pick(r,['numero_processo','Número do Processo','Processo','processo']));const cli=txt(pick(r,['cliente','Cliente'])||'');const resp=r.responsavel||r['Responsável']||'';const grp=r.grupo_processo||r['Grupo Processo']||'';const procE=proc.replace(/'/g,"\\'");const cliE=cli.replace(/'/g,"\\'");const respE=resp.replace(/'/g,"\\'");const reagBtn=(s==='Fatal'||s==='Vencido'||s==='D-1'||s==='D-2'||s==='Futuro')?`<button onclick="window.abrirModalReagendamento('${procE}','${respE}','${grp}')" style="background:#d84315;color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;width:100%;display:block;margin-bottom:3px;">📅 Reagendar</button>`:'';const transfBtn=`<button onclick="window.abrirModalTransferencia('${procE}','${cliE}','${respE}','prazo')" style="background:#1565C0;color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;width:100%;display:block;">📁 Transferir</button>`;const _audIdJ=proc+'_'+resp.replace(/\s+/g,'_');const _temJ=!!(window.justificativas&&(window.justificativas[proc]||window.justificativas[_audIdJ]));const justAntBtn=statusEh(s,'D-1')?`<button onclick="window.abrirModalJustificativaFatal('${_audIdJ.replace(/'/g,"\\'")}','${procE}','${respE}','${grp}',true)" style="background:${_temJ?'#2d7d46':'#e65100'};color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;width:100%;display:block;margin-bottom:3px;" title="Este prazo vence hoje (D-1) e não será cumprido hoje: ele ficará Fatal amanhã. Registra a justificativa antecipadamente.">${_temJ?'✏️ Editar justificativa (fica p/ amanhã)':'📝 Justificar — fica p/ amanhã (Fatal)'}</button>`:'';return `<div style="min-width:130px;display:flex;flex-direction:column;gap:3px;">${justAntBtn}${reagBtn}${transfBtn}</div>`;}}
     ];
     const agendaCols = [
       {h:'Data', v:r=>fmtD(pick(r,['data','Data']))},
