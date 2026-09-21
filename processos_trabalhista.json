@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-21T11:45:27",
+  "atualizado_em": "2026-09-21T12:00:52",
   "kpis": {
-    "total_andamento": 7478,
-    "entradas_hoje": 4,
+    "total_andamento": 7480,
+    "entradas_hoje": 6,
     "saidas_hoje": 7,
     "entradas_ontem": 0,
     "saidas_ontem": 0,
-    "entradas_mes": 156,
+    "entradas_mes": 158,
     "saidas_mes": 913,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 258,
-    "valor_causa_total": 1682232624.72,
-    "saldo_mes": -757
+    "valor_causa_total": 1688574500.22,
+    "saldo_mes": -755
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-09-21",
-      "entradas": 4,
+      "entradas": 6,
       "saidas": 7
     }
   ],
@@ -398,6 +398,15 @@
       "valor_causa": 11609781.48
     },
     {
+      "nome": "Sem grupo",
+      "andamento": 5,
+      "entradas_mes": 3,
+      "saidas_mes": 3,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 20,
+      "valor_causa": 6738588.03
+    },
+    {
       "nome": "Sócios",
       "andamento": 3,
       "entradas_mes": 0,
@@ -405,15 +414,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
-    },
-    {
-      "nome": "Sem grupo",
-      "andamento": 3,
-      "entradas_mes": 1,
-      "saidas_mes": 3,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 20,
-      "valor_causa": 396712.53
     },
     {
       "nome": "Grupo D1",
@@ -437,12 +437,12 @@
     },
     {
       "nome": "MG",
-      "andamento": 525,
-      "entradas_mes": 13,
+      "andamento": 527,
+      "entradas_mes": 15,
       "saidas_mes": 16,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 23,
-      "valor_causa": 122216808.86
+      "valor_causa": 128558684.36
     },
     {
       "nome": "RS",
@@ -673,12 +673,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2767,
-      "entradas_mes": 150,
+      "andamento": 2769,
+      "entradas_mes": 152,
       "saidas_mes": 181,
       "entradas_mes_anterior": 205,
       "saidas_mes_anterior": 66,
-      "valor_causa": 773276401.1
+      "valor_causa": 779618276.6
     },
     {
       "nome": "Sentença",
@@ -983,12 +983,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 1,
-      "entradas_mes": 1,
+      "andamento": 3,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 2,
-      "valor_causa": 87538.0
+      "valor_causa": 6429413.5
     },
     {
       "fase": "Outras",
@@ -1280,12 +1280,12 @@
     },
     {
       "nome": "Bianca Bolanhi Camacho(BBO)",
-      "andamento": 304,
-      "entradas_mes": 7,
+      "andamento": 305,
+      "entradas_mes": 8,
       "saidas_mes": 350,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 7,
-      "valor_causa": 33683553.95
+      "valor_causa": 33781211.09
     },
     {
       "nome": "Júlia Priego Lopes da Silva(JPL)",
@@ -1298,12 +1298,12 @@
     },
     {
       "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 291,
-      "entradas_mes": 3,
+      "andamento": 292,
+      "entradas_mes": 4,
       "saidas_mes": 13,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 11,
-      "valor_causa": 145862941.09
+      "valor_causa": 152107159.45
     },
     {
       "nome": "Bruna Cembranelli Fazenda (BCF)",
@@ -1720,12 +1720,12 @@
     },
     {
       "nome": "HERINGER",
-      "andamento": 332,
-      "entradas_mes": 9,
+      "andamento": 333,
+      "entradas_mes": 10,
       "saidas_mes": 2,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 12,
-      "valor_causa": 42789430.06,
+      "valor_causa": 42887087.2,
       "alerta_entrada": false
     },
     {
@@ -1780,12 +1780,12 @@
     },
     {
       "nome": "EUROCHEM SALITRE",
-      "andamento": 149,
-      "entradas_mes": 6,
+      "andamento": 150,
+      "entradas_mes": 7,
       "saidas_mes": 8,
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 7,
-      "valor_causa": 27590107.92,
+      "valor_causa": 33834326.28,
       "alerta_entrada": false
     },
     {
@@ -3622,6 +3622,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "HERINGER",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 185195.14,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "PEIXOTO E CURY",
       "andamento": 1,
       "entradas_mes": 0,
@@ -3644,13 +3655,13 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "HERINGER",
+      "cliente": "EUROCHEM SALITRE",
       "andamento": 1,
       "entradas_mes": 1,
       "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 87538.0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 6244218.36,
       "alerta_entrada": false
     },
     {
@@ -4260,12 +4271,22 @@
     {
       "grupo": "Sem grupo",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 1,
-      "entradas_mes": 0,
+      "andamento": 2,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 271174.53
+      "valor_causa": 6515392.89
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Bianca Bolanhi Camacho(BBO)",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 185195.14
     },
     {
       "grupo": "Sem grupo",
@@ -4276,16 +4297,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 38000.0
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Bianca Bolanhi Camacho(BBO)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 87538.0
     },
     {
       "grupo": "Sócios",
@@ -4902,22 +4913,22 @@
     {
       "estado": "MG",
       "cliente": "EUROCHEM SALITRE",
-      "andamento": 102,
-      "entradas_mes": 4,
+      "andamento": 103,
+      "entradas_mes": 5,
       "saidas_mes": 7,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 5,
-      "valor_causa": 15005071.87
+      "valor_causa": 21249290.23
     },
     {
       "estado": "MG",
       "cliente": "HERINGER",
-      "andamento": 42,
-      "entradas_mes": 1,
+      "andamento": 43,
+      "entradas_mes": 2,
       "saidas_mes": 1,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 2,
-      "valor_causa": 8532314.67
+      "valor_causa": 8629971.81
     },
     {
       "estado": "MG",
@@ -7614,7 +7625,17 @@
   ],
   "sem_grupo_processos": [
     {
+      "numero_processo": "0011175-28.2026.5.03.0080",
+      "cliente": "EUROCHEM SALITRE",
+      "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
+    },
+    {
       "numero_processo": "0025737-40.2026.5.24.0021",
+      "cliente": "HERINGER",
+      "profissional": "Bianca Bolanhi Camacho(BBO)"
+    },
+    {
+      "numero_processo": "0011443-57.2026.5.03.0153",
       "cliente": "HERINGER",
       "profissional": "Bianca Bolanhi Camacho(BBO)"
     },
