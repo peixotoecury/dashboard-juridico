@@ -3024,7 +3024,7 @@ body.role-manager .upload-bar {
         <div class="det-desc">Lista detalhada exclusivamente dos prazos fatais para acompanhamento operacional.</div>
       </div>
       <div style="display:flex;gap:8px;flex-wrap:wrap;">
-        <button type="button" style="background:#ffb300;color:#3e2723;border:none;border-radius:8px;padding:8px 14px;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap;" onclick="irParaJustificarD1()" title="Abre a lista de prazos D-1 (vencem hoje). Em cada um há o botão para justificar o FATAL de amanhã antecipadamente.">📝 Justificar D-1 que ficará FATAL amanhã</button>
+        <button type="button" style="background:#ffb300;color:#3e2723;border:none;border-radius:8px;padding:8px 14px;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap;" onclick="irParaJustificarD1()" title="Vai ao painel Prazos D-1 (vencem hoje), onde fica o botão para justificar o FATAL de amanhã antecipadamente.">📝 Justificar D-1 que ficará FATAL amanhã</button>
         <button type="button" style="background:#c62828;color:#fff;border:none;border-radius:8px;padding:8px 14px;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap;" onclick="dispararAlertasFatais()">🔴 Alertas de Fatais (por responsável)</button>
         <button type="button" style="background:#5c0e0e;color:#fff;border:none;border-radius:8px;padding:8px 14px;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap;" onclick="dispararAlertaTodosFataisJunto()">📢 Alerta Único — Todos os Fatais</button>
         <button type="button" style="background:#fff;color:var(--teal);border:none;border-radius:8px;padding:8px 14px;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap;" onclick="dispararAlertasFataisD1()">📧 Alertas de Fatais + D-1 (por responsável)</button>
@@ -3051,6 +3051,37 @@ body.role-manager .upload-bar {
       <tbody id="body-fatal"></tbody>
     </table></div>
     <div class="pg-bar" id="pg-fatal"></div>
+  </div>
+
+  <!-- PAINEL D-1: prazos que vencem hoje — justificar o FATAL de amanhã -->
+  <div class="det-card" id="painel-d1" style="margin-top:16px;">
+    <div class="det-hdr" style="display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:10px;background:linear-gradient(90deg,#8a4b00,#e65100);">
+      <div>
+        <h2>🟠 Prazos D-1 — vencem hoje <span class="det-cnt" id="ct-d1-det">0 registros</span></h2>
+        <div class="det-desc">Justificativa do FATAL de amanhã, feita antecipadamente.</div>
+      </div>
+    </div>
+    <div style="margin:12px 16px 0;background:#fff8e1;border:1px solid #ffb300;border-left:5px solid #e65100;border-radius:6px;padding:10px 14px;font-size:12px;line-height:1.5;color:#5d4037;">
+      <strong>⚠️ Como usar:</strong> estes prazos vencem <strong>hoje</strong>. Se algum <strong>não for cumprido hoje</strong>, ele ficará <strong>FATAL amanhã</strong> — clique em <em>“Justificar o FATAL de amanhã”</em> para registrar a justificativa desde já. Ela é a justificativa do fatal, identificada como <strong>antecipada (D-1)</strong>, e segue o mesmo fluxo de aprovação e e-mail. <em>O status do prazo não muda</em>; se a peça for protocolada hoje, não é preciso justificar.
+    </div>
+    <div class="det-filters">
+      <div class="srch-wrap">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input class="srch-in" id="d1-s" placeholder="Buscar prazo D-1 por processo, cliente, reclamante ou tarefa..." oninput="renderD1Painel()">
+      </div>
+      <div class="fg"><select class="fsel" id="d1-resp" onchange="renderD1Painel()"><option value="">Todos os responsáveis</option></select></div>
+      <div class="fg"><select class="fsel" id="d1-grupo" onchange="renderD1Painel()"><option value="">Todos os grupos</option></select></div>
+      <div class="fg"><select class="fsel" id="d1-uf" onchange="renderD1Painel()"><option value="">Todas as UF</option></select></div>
+      <div class="fg"><select class="fsel" id="d1-just" onchange="renderD1Painel()"><option value="">Todos</option><option value="sem">Sem justificativa</option><option value="com">Com justificativa</option></select></div>
+      <button class="btn-limpar" onclick="clearD1()">✕ Limpar</button>
+    </div>
+    <div class="det-scroll"><table>
+      <thead><tr>
+        <th>Responsável</th><th>Processo</th><th>UF</th><th>Cliente</th><th>Tarefa</th><th>Status</th><th>Grupo</th><th>Justificativa do fatal</th><th>Ação</th>
+      </tr></thead>
+      <tbody id="body-d1"></tbody>
+    </table></div>
+    <div class="pg-bar" id="pg-d1"></div>
   </div>
 
 
@@ -4069,17 +4100,13 @@ function ufDoProcesso(numero) {
 }
 
 // ── TABS ─────────────────────────────────────────────
-// Atalho: abre a aba Prazos já filtrada em D-1, onde cada linha tem o botão "Justificar o FATAL de amanhã".
+// Atalho: leva ao painel "Prazos D-1" (Dashboard Executivo), onde fica o botão "Justificar o FATAL de amanhã".
 window.irParaJustificarD1 = function() {
-  var btn = document.getElementById('nav-prazos-solo');
-  if(btn) switchTab('prazos-solo', btn);
-  setTimeout(function() {
-    var st = document.getElementById('p2-st');
-    if(st) { st.value = 'D-1'; }
-    if(typeof renderPrazosSoloDet === 'function') renderPrazosSoloDet();
-    var body = document.getElementById('body-p2');
-    if(body && body.scrollIntoView) body.scrollIntoView({behavior:'smooth', block:'start'});
-  }, 150);
+  var painel = document.getElementById('painel-d1');
+  var pg = document.getElementById('page-prazos');
+  if(pg && !pg.classList.contains('active')) { var nb = document.getElementById('nav-prazos'); if(nb) switchTab('prazos', nb); }
+  if(typeof renderD1Painel === 'function') renderD1Painel();
+  setTimeout(function(){ if(painel && painel.scrollIntoView) painel.scrollIntoView({behavior:'smooth', block:'start'}); }, 150);
 };
 
 function switchTab(n, el) {
@@ -5073,6 +5100,7 @@ function carregarJustificativasSupabase(tentativa){
           if(typeof renderFatais === 'function') {
             setTimeout(function(){
               renderFatais();
+              if(typeof renderD1Painel === 'function') renderD1Painel();
               console.log('✅ Tabela de fatais re-renderizada');
             }, 300);
           }
@@ -6074,6 +6102,7 @@ function renderAll() {
   renderResp(fe,'body-re','ct-re','re');
   renderGrupo(fe,'body-ge','ct-ge');
   renderFatais();
+  renderD1Painel();
   renderAgDet();
   renderEqDet();
   renderFataisXAud();
@@ -8390,6 +8419,9 @@ window.gravarJustificativaFatal = function(audId, processo, responsavel, grupo) 
   if(typeof renderFatais === 'function') {
     setTimeout(renderFatais, 300);
   }
+  if(typeof renderD1Painel === 'function') {
+    setTimeout(renderD1Painel, 350);
+  }
 };
 
 window.filtrarAgendas = function(status) {
@@ -8589,6 +8621,56 @@ window.carregarTodasJustificativas = function() {
 };
 
 // ── FATAIS DETAIL ────────────────────────────────────
+function clearD1() { ['d1-s','d1-resp','d1-grupo','d1-uf','d1-just'].forEach(id=>{const el=V(id);if(el)el.value='';}); renderD1Painel(); }
+
+// Painel "Prazos D-1": lista os prazos que vencem hoje e permite justificar, com antecedência, o FATAL de amanhã.
+// Só lê S.prazos (status já calculado); não altera a regra de status.
+function renderD1Painel() {
+  if(!V('body-d1')) return;
+  const base = applyGF(S.prazos).filter(r=>statusEh(r.status, 'D-1'));
+  const _fill = (id, vals, todos) => { const el=V(id); if(!el) return; const cur=el.value; el.innerHTML='<option value="">'+todos+'</option>'+vals.map(x=>`<option value="${e(x)}">${e(x)}</option>`).join(''); el.value = vals.includes(cur) ? cur : ''; };
+  _fill('d1-resp',  [...new Set(base.map(r=>r.responsavel).filter(Boolean))].sort(), 'Todos os responsáveis');
+  _fill('d1-grupo', [...new Set(base.map(r=>r.grupo_processo).filter(Boolean))].sort(), 'Todos os grupos');
+  _fill('d1-uf',    [...new Set(base.map(r=>ufDoProcesso(r.numero_processo)).filter(Boolean))].sort(), 'Todas as UF');
+  const srch=(V('d1-s')?.value||'').toLowerCase(), resp=V('d1-resp')?.value||'', grupo=V('d1-grupo')?.value||'', uf=V('d1-uf')?.value||'', jf=V('d1-just')?.value||'';
+  const temJ = r => !!(window.justificativas && (window.justificativas[r.numero_processo] || window.justificativas[(r.numero_processo||'')+'_'+(r.responsavel||'').replace(/\s+/g,'_')]));
+  let data=base;
+  if(resp)  data=data.filter(r=>r.responsavel===resp);
+  if(grupo) data=data.filter(r=>r.grupo_processo===grupo);
+  if(uf)    data=data.filter(r=>ufDoProcesso(r.numero_processo)===uf);
+  if(jf==='sem') data=data.filter(r=>!temJ(r));
+  if(jf==='com') data=data.filter(r=>temJ(r));
+  if(srch)  data=data.filter(r=>[r.responsavel,r.numero_processo,r.cliente,r.parte_principal,r.descricao_tarefa].join(' ').toLowerCase().includes(srch));
+  V('ct-d1-det').textContent = data.length + ' registros';
+  const {slice,pg,pages,total}=pgSlice(data,'d1');
+  V('body-d1').innerHTML = slice.length ? slice.map(r=>{
+    const audId = (r.numero_processo||'') + '_' + (r.responsavel||'').replace(/\s+/g,'_');
+    const obj = window.justificativas && (window.justificativas[r.numero_processo] || window.justificativas[audId]);
+    const st = (window.justificativasStatus && window.justificativasStatus[r.numero_processo]) || (obj ? 'pendente' : null);
+    const texto = obj ? (obj.texto||'') : '';
+    const prev = texto.length > 80 ? texto.slice(0,80)+'...' : texto;
+    const badge = !obj ? '—'
+      : st==='aprovada' ? `<span style="background:#e8f5e9;color:#2e7d32;padding:2px 6px;border-radius:8px;font-size:10px;font-weight:700;">✅ Aprovada</span>`
+      : st==='rejeitada' ? `<span style="background:#ffebee;color:#c62828;padding:2px 6px;border-radius:8px;font-size:10px;font-weight:700;">❌ Rejeitada</span>`
+      : `<span style="background:#fff3e0;color:#e65100;padding:2px 6px;border-radius:8px;font-size:10px;font-weight:700;">⏳ Pendente</span>`;
+    const abrir = `window.abrirModalJustificativaFatal('${e(audId)}','${e(r.numero_processo)}','${e(r.responsavel)}','${e(r.grupo_processo)}',true)`;
+    return `<tr data-aud-id="${e(audId)}">
+      <td class="td-clip-sm">${e(r.responsavel)}</td>
+      <td class="td-clip-sm proc-normal" title="${e(r.numero_processo)}">${e(r.numero_processo)}</td>
+      <td class="td-clip-sm">${e(ufDoProcesso(r.numero_processo))}</td>
+      <td class="td-clip-sm" title="${e(r.cliente)}">${e(r.cliente)}</td>
+      <td class="td-clip" style="max-width:220px" title="${e(r.descricao_tarefa)}">${e(r.descricao_tarefa)}</td>
+      <td>${sBadge(r.status)}</td>
+      <td class="td-clip-sm">${e(r.grupo_processo)}</td>
+      <td class="td-clip" style="max-width:220px;font-size:11px;"><div style="display:flex;flex-direction:column;gap:4px;">${badge}${obj?`<span style="font-size:10px;color:#555;cursor:pointer;" onclick="${abrir}" title="${e(prev)}">${e(prev)}</span>`:''}</div></td>
+      <td style="text-align:center;padding:4px;min-width:200px;">
+        <button style="background:${obj?'#2d7d46':'#e65100'};color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;width:100%;" onclick="${abrir}" title="Justificativa do FATAL feita antecipadamente: este prazo vence hoje (D-1), não será cumprido hoje e ficará Fatal amanhã.">${obj?'✏️ Editar justificativa do fatal (amanhã)':'📝 Justificar o FATAL de amanhã'}</button>
+      </td>
+    </tr>`;
+  }).join('') : emptyR(9);
+  renderPg('pg-d1',pg,pages,total,'d1',renderD1Painel);
+}
+
 function renderFatais() {
   const srch=(V('fatal-s')?.value||'').toLowerCase();
   const resp=V('fatal-resp')?.value||'';
@@ -8705,12 +8787,6 @@ function renderDetGeneric(baseData, bodyId, pgId, ctId, srchId, stId, pgKey, tip
     <td class="td-clip" style="max-width:220px" title="${e(r.descricao_tarefa)}">${e(r.descricao_tarefa)}</td>
     <td style="padding:4px;min-width:140px;">
       <div style="display:flex;flex-direction:column;gap:4px;">
-        ${(isPrazo && statusEh(r.status, 'D-1')) ? (function(){
-          const _aid = (r.numero_processo||'') + '_' + (r.responsavel||'').replace(/\s+/g,'_');
-          const _tem = !!(window.justificativas && (window.justificativas[r.numero_processo] || window.justificativas[_aid]));
-          return `<button style="background:${_tem?'#2d7d46':'#e65100'};color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;width:100%;"
-          onclick="window.abrirModalJustificativaFatal('${e(_aid)}','${e(r.numero_processo)}','${e(r.responsavel)}','${e(r.grupo_processo)}',true)" title="Justificativa do FATAL feita antecipadamente: este prazo vence hoje (D-1), não será cumprido hoje e ficará Fatal amanhã.">${_tem?'✏️ Editar justificativa do fatal (amanhã)':'📝 Justificar o FATAL de amanhã (fica p/ amanhã)'}</button>`;
-        })() : ''}
         <button style="background:#0E5E6F;color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;width:100%;"
           onclick="window.abrirModalAgendamento('${e(r.numero_processo)}','${e(r.cliente)}','${e(r.responsavel)}','${e(r.grupo_processo)}','${tipo==='agenda-equipe'?'Agenda Equipe':tipo==='prazo'?'Prazo':'Agenda'}','${e(r.data||'')}')" title="Incluir / Ajustar / Excluir agendamento">🗓 Agendamento</button>
         <button style="background:#d84315;color:white;border:none;padding:6px 10px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600;width:100%;"
