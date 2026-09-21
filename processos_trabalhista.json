@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-21T10:15:29",
+  "atualizado_em": "2026-09-21T10:30:36",
   "kpis": {
-    "total_andamento": 7475,
+    "total_andamento": 7474,
     "entradas_hoje": 0,
-    "saidas_hoje": 5,
+    "saidas_hoje": 6,
     "entradas_ontem": 0,
     "saidas_ontem": 0,
     "entradas_mes": 151,
-    "saidas_mes": 911,
+    "saidas_mes": 912,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 258,
-    "valor_causa_total": 1681234432.89,
-    "saldo_mes": -760
+    "valor_causa_total": 1681172282.89,
+    "saldo_mes": -761
   },
   "serie_diaria": [
     {
@@ -312,18 +312,18 @@
     {
       "data": "2026-09-21",
       "entradas": 0,
-      "saidas": 5
+      "saidas": 6
     }
   ],
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2079,
+      "andamento": 2078,
       "entradas_mes": 57,
-      "saidas_mes": 57,
+      "saidas_mes": 58,
       "entradas_mes_anterior": 93,
       "saidas_mes_anterior": 74,
-      "valor_causa": 449186150.07
+      "valor_causa": 449124000.07
     },
     {
       "nome": "Grupo E1",
@@ -481,15 +481,6 @@
       "valor_causa": 21497109.37
     },
     {
-      "nome": "GO",
-      "andamento": 99,
-      "entradas_mes": 2,
-      "saidas_mes": 4,
-      "entradas_mes_anterior": 12,
-      "saidas_mes_anterior": 2,
-      "valor_causa": 8484023.62
-    },
-    {
       "nome": "BA",
       "andamento": 99,
       "entradas_mes": 3,
@@ -497,6 +488,15 @@
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 5,
       "valor_causa": 12829255.87
+    },
+    {
+      "nome": "GO",
+      "andamento": 98,
+      "entradas_mes": 2,
+      "saidas_mes": 5,
+      "entradas_mes_anterior": 12,
+      "saidas_mes_anterior": 2,
+      "valor_causa": 8421873.62
     },
     {
       "nome": "—",
@@ -700,12 +700,12 @@
     },
     {
       "nome": "Execução",
-      "andamento": 935,
+      "andamento": 934,
       "entradas_mes": 1,
-      "saidas_mes": 320,
+      "saidas_mes": 321,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 90,
-      "valor_causa": 128781326.93
+      "valor_causa": 128719176.93
     }
   ],
   "por_fase_outras": 397,
@@ -813,12 +813,12 @@
     {
       "fase": "Execução",
       "grupo": "Grupo E2",
-      "andamento": 353,
+      "andamento": 352,
       "entradas_mes": 1,
-      "saidas_mes": 16,
+      "saidas_mes": 17,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 24,
-      "valor_causa": 48426971.31
+      "valor_causa": 48364821.31
     },
     {
       "fase": "Execução",
@@ -1252,12 +1252,12 @@
     },
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 384,
+      "andamento": 383,
       "entradas_mes": 14,
-      "saidas_mes": 18,
+      "saidas_mes": 19,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 19,
-      "valor_causa": 45656726.39
+      "valor_causa": 45594576.39
     },
     {
       "nome": "Letícia Meneghini Fontes (LMI)",
@@ -1790,12 +1790,12 @@
     },
     {
       "nome": "EUROCHEM FTO MATRIZ",
-      "andamento": 105,
+      "andamento": 104,
       "entradas_mes": 4,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 4,
-      "valor_causa": 10645846.19,
+      "valor_causa": 10583696.19,
       "alerta_entrada": false
     },
     {
@@ -3096,12 +3096,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "EUROCHEM FTO MATRIZ",
-      "andamento": 105,
+      "andamento": 104,
       "entradas_mes": 4,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 4,
-      "valor_causa": 10645846.19,
+      "valor_causa": 10583696.19,
       "alerta_entrada": false
     },
     {
@@ -4129,12 +4129,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 384,
+      "andamento": 383,
       "entradas_mes": 14,
-      "saidas_mes": 18,
+      "saidas_mes": 19,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 19,
-      "valor_causa": 45656726.39
+      "valor_causa": 45594576.39
     },
     {
       "grupo": "Grupo E2",
@@ -4731,12 +4731,12 @@
     {
       "estado": "GO",
       "cliente": "EUROCHEM FTO MATRIZ",
-      "andamento": 21,
+      "andamento": 20,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
-      "valor_causa": 1230693.14
+      "valor_causa": 1168543.14
     },
     {
       "estado": "GO",
