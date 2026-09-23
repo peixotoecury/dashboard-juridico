@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-23T20:00:29",
+  "atualizado_em": "2026-09-23T20:15:26",
   "kpis": {
-    "total_andamento": 7500,
+    "total_andamento": 7499,
     "entradas_hoje": 10,
-    "saidas_hoje": 2,
+    "saidas_hoje": 3,
     "entradas_ontem": 47,
     "saidas_ontem": 6,
     "entradas_mes": 237,
-    "saidas_mes": 959,
+    "saidas_mes": 960,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 263,
     "valor_causa_total": 1702154651.13,
-    "saldo_mes": -722
+    "saldo_mes": -723
   },
   "serie_diaria": [
     {
@@ -312,15 +312,15 @@
     {
       "data": "2026-09-23",
       "entradas": 10,
-      "saidas": 2
+      "saidas": 3
     }
   ],
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2086,
+      "andamento": 2085,
       "entradas_mes": 84,
-      "saidas_mes": 77,
+      "saidas_mes": 78,
       "entradas_mes_anterior": 93,
       "saidas_mes_anterior": 74,
       "valor_causa": 459026526.34
@@ -518,9 +518,9 @@
     },
     {
       "nome": "—",
-      "andamento": 60,
+      "andamento": 59,
       "entradas_mes": 7,
-      "saidas_mes": 3,
+      "saidas_mes": 4,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
       "valor_causa": 9541490.97
@@ -682,9 +682,9 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2811,
+      "andamento": 2810,
       "entradas_mes": 221,
-      "saidas_mes": 192,
+      "saidas_mes": 193,
       "entradas_mes_anterior": 205,
       "saidas_mes_anterior": 66,
       "valor_causa": 789830336.12
@@ -700,21 +700,21 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2950,
+      "andamento": 2949,
       "entradas_mes": 2,
       "saidas_mes": 378,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 46,
-      "valor_causa": 654432106.11
+      "valor_causa": 654295106.11
     },
     {
       "nome": "Execução",
-      "andamento": 907,
+      "andamento": 908,
       "entradas_mes": 1,
       "saidas_mes": 343,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 94,
-      "valor_causa": 129631022.54
+      "valor_causa": 129768022.54
     }
   ],
   "por_fase_outras": 398,
@@ -822,12 +822,12 @@
     {
       "fase": "Execução",
       "grupo": "Grupo E2",
-      "andamento": 348,
+      "andamento": 349,
       "entradas_mes": 1,
       "saidas_mes": 27,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 24,
-      "valor_causa": 51397217.72
+      "valor_causa": 51534217.72
     },
     {
       "fase": "Execução",
@@ -902,9 +902,9 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 848,
+      "andamento": 847,
       "entradas_mes": 80,
-      "saidas_mes": 19,
+      "saidas_mes": 20,
       "entradas_mes_anterior": 55,
       "saidas_mes_anterior": 27,
       "valor_causa": 175621830.4
@@ -1122,12 +1122,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo E2",
-      "andamento": 581,
+      "andamento": 580,
       "entradas_mes": 0,
       "saidas_mes": 11,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 10,
-      "valor_causa": 185182880.78
+      "valor_causa": 185045880.78
     },
     {
       "fase": "Recurso",
@@ -1297,15 +1297,6 @@
       "valor_causa": 32222150.16
     },
     {
-      "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 294,
-      "entradas_mes": 10,
-      "saidas_mes": 16,
-      "entradas_mes_anterior": 12,
-      "saidas_mes_anterior": 11,
-      "valor_causa": 156820437.54
-    },
-    {
       "nome": "Júlia Priego Lopes da Silva(JPL)",
       "andamento": 294,
       "entradas_mes": 0,
@@ -1313,6 +1304,15 @@
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 12,
       "valor_causa": 32737819.94
+    },
+    {
+      "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
+      "andamento": 293,
+      "entradas_mes": 10,
+      "saidas_mes": 17,
+      "entradas_mes_anterior": 12,
+      "saidas_mes_anterior": 11,
+      "valor_causa": 156820437.54
     },
     {
       "nome": "Beatriz Santiago de Souza(BSO)",
@@ -3400,17 +3400,6 @@
     },
     {
       "grupo": "Grupo E2",
-      "cliente": "NEO MULTIMERCADO",
-      "andamento": 2,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 0.0,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Grupo E2",
       "cliente": "JAMES ACACIO LOBO",
       "andamento": 1,
       "entradas_mes": 0,
@@ -3638,6 +3627,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 65000.0,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Grupo E2",
+      "cliente": "NEO MULTIMERCADO",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 0.0,
       "alerta_entrada": false
     },
     {
@@ -4233,9 +4233,9 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 289,
+      "andamento": 288,
       "entradas_mes": 10,
-      "saidas_mes": 16,
+      "saidas_mes": 17,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 11,
       "valor_causa": 156511717.29
@@ -7707,16 +7707,6 @@
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "andamento": 1,
       "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 0.0
-    },
-    {
-      "estado": "—",
-      "cliente": "NEO MULTIMERCADO",
-      "andamento": 1,
-      "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
