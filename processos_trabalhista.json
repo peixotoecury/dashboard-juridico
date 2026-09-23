@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-23T11:15:27",
+  "atualizado_em": "2026-09-23T11:30:26",
   "kpis": {
-    "total_andamento": 7480,
+    "total_andamento": 7483,
     "entradas_hoje": 0,
     "saidas_hoje": 0,
-    "entradas_ontem": 35,
+    "entradas_ontem": 38,
     "saidas_ontem": 6,
-    "entradas_mes": 215,
+    "entradas_mes": 218,
     "saidas_mes": 957,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 263,
-    "valor_causa_total": 1697454671.88,
-    "saldo_mes": -742
+    "valor_causa_total": 1698062777.06,
+    "saldo_mes": -739
   },
   "serie_diaria": [
     {
@@ -306,7 +306,7 @@
     },
     {
       "data": "2026-09-22",
-      "entradas": 35,
+      "entradas": 38,
       "saidas": 6
     },
     {
@@ -399,12 +399,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 5,
-      "entradas_mes": 3,
+      "andamento": 8,
+      "entradas_mes": 6,
       "saidas_mes": 3,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 20,
-      "valor_causa": 1601745.72
+      "valor_causa": 2209850.9
     },
     {
       "nome": "Sócios",
@@ -446,21 +446,21 @@
     },
     {
       "nome": "MG",
-      "andamento": 530,
-      "entradas_mes": 19,
+      "andamento": 532,
+      "entradas_mes": 21,
       "saidas_mes": 17,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 23,
-      "valor_causa": 130751566.12
+      "valor_causa": 131358671.3
     },
     {
       "nome": "PR",
-      "andamento": 231,
-      "entradas_mes": 9,
+      "andamento": 232,
+      "entradas_mes": 10,
       "saidas_mes": 7,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 2,
-      "valor_causa": 46521210.82
+      "valor_causa": 46522210.82
     },
     {
       "nome": "RS",
@@ -682,12 +682,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2799,
-      "entradas_mes": 202,
+      "andamento": 2802,
+      "entradas_mes": 205,
       "saidas_mes": 190,
       "entradas_mes_anterior": 205,
       "saidas_mes_anterior": 66,
-      "valor_causa": 785497790.87
+      "valor_causa": 786105896.05
     },
     {
       "nome": "Sentença",
@@ -981,6 +981,16 @@
     },
     {
       "fase": "Instrução",
+      "grupo": "Sem grupo",
+      "andamento": 6,
+      "entradas_mes": 6,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 2,
+      "valor_causa": 1900676.37
+    },
+    {
+      "fase": "Instrução",
       "grupo": "Grupo A1",
       "andamento": 4,
       "entradas_mes": 2,
@@ -988,16 +998,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
-    },
-    {
-      "fase": "Instrução",
-      "grupo": "Sem grupo",
-      "andamento": 3,
-      "entradas_mes": 3,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 2,
-      "valor_causa": 1292571.19
     },
     {
       "fase": "Outras",
@@ -1271,12 +1271,12 @@
     },
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 351,
-      "entradas_mes": 15,
+      "andamento": 352,
+      "entradas_mes": 16,
       "saidas_mes": 24,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 19,
-      "valor_causa": 47272291.02
+      "valor_causa": 47299396.2
     },
     {
       "nome": "Letícia Meneghini Fontes (LMI)",
@@ -1289,12 +1289,21 @@
     },
     {
       "nome": "Bianca Bolanhi Camacho(BBO)",
-      "andamento": 298,
-      "entradas_mes": 10,
+      "andamento": 299,
+      "entradas_mes": 11,
       "saidas_mes": 358,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 7,
-      "valor_causa": 32221150.16
+      "valor_causa": 32222150.16
+    },
+    {
+      "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
+      "andamento": 294,
+      "entradas_mes": 10,
+      "saidas_mes": 16,
+      "entradas_mes_anterior": 12,
+      "saidas_mes_anterior": 11,
+      "valor_causa": 156820437.54
     },
     {
       "nome": "Júlia Priego Lopes da Silva(JPL)",
@@ -1304,15 +1313,6 @@
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 12,
       "valor_causa": 32737819.94
-    },
-    {
-      "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 293,
-      "entradas_mes": 9,
-      "saidas_mes": 16,
-      "entradas_mes_anterior": 12,
-      "saidas_mes_anterior": 11,
-      "valor_causa": 156240437.54
     },
     {
       "nome": "Beatriz Santiago de Souza(BSO)",
@@ -1729,12 +1729,12 @@
     },
     {
       "nome": "HERINGER",
-      "andamento": 328,
-      "entradas_mes": 13,
+      "andamento": 329,
+      "entradas_mes": 14,
       "saidas_mes": 10,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 12,
-      "valor_causa": 43286812.04,
+      "valor_causa": 43287812.04,
       "alerta_entrada": true
     },
     {
@@ -1789,13 +1789,13 @@
     },
     {
       "nome": "EUROCHEM SALITRE",
-      "andamento": 150,
-      "entradas_mes": 9,
+      "andamento": 152,
+      "entradas_mes": 11,
       "saidas_mes": 10,
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 7,
-      "valor_causa": 35905813.19,
-      "alerta_entrada": false
+      "valor_causa": 36512918.37,
+      "alerta_entrada": true
     },
     {
       "nome": "CBC MONTENEGRO",
@@ -3642,6 +3642,28 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "EUROCHEM SALITRE",
+      "andamento": 3,
+      "entradas_mes": 3,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 706338.6,
+      "alerta_entrada": true
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "HERINGER",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 843316.84,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "PEIXOTO E CURY",
       "andamento": 1,
       "entradas_mes": 0,
@@ -3671,28 +3693,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 351020.93,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "EUROCHEM SALITRE",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 99233.42,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "HERINGER",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 842316.84,
       "alerta_entrada": false
     },
     {
@@ -4302,12 +4302,22 @@
     {
       "grupo": "Sem grupo",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 2,
-      "entradas_mes": 1,
+      "andamento": 3,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 1113491.37
+      "valor_causa": 1693491.37
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Camila Alves Magalhães de Paula(CAL)",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 126338.6
     },
     {
       "grupo": "Sem grupo",
@@ -4331,13 +4341,13 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Camila Alves Magalhães de Paula(CAL)",
+      "profissional": "Bianca Bolanhi Camacho(BBO)",
       "andamento": 1,
       "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 99233.42
+      "valor_causa": 1000.0
     },
     {
       "grupo": "Sócios",
@@ -4964,12 +4974,12 @@
     {
       "estado": "MG",
       "cliente": "EUROCHEM SALITRE",
-      "andamento": 104,
-      "entradas_mes": 7,
+      "andamento": 106,
+      "entradas_mes": 9,
       "saidas_mes": 8,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 5,
-      "valor_causa": 23370957.0
+      "valor_causa": 23978062.18
     },
     {
       "estado": "MG",
@@ -5534,12 +5544,12 @@
     {
       "estado": "PR",
       "cliente": "HERINGER",
-      "andamento": 47,
-      "entradas_mes": 0,
+      "andamento": 48,
+      "entradas_mes": 1,
       "saidas_mes": 2,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 1,
-      "valor_causa": 3388955.24
+      "valor_causa": 3389955.24
     },
     {
       "estado": "PR",
@@ -7695,12 +7705,12 @@
     },
     {
       "nome": "HERINGER",
-      "andamento": 328,
-      "entradas_mes": 13,
+      "andamento": 329,
+      "entradas_mes": 14,
       "saidas_mes": 10,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 12,
-      "valor_causa": 43286812.04,
+      "valor_causa": 43287812.04,
       "alerta_entrada": true
     },
     {
@@ -7711,6 +7721,16 @@
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
       "valor_causa": 23265694.76,
+      "alerta_entrada": true
+    },
+    {
+      "nome": "EUROCHEM SALITRE",
+      "andamento": 152,
+      "entradas_mes": 11,
+      "saidas_mes": 10,
+      "entradas_mes_anterior": 9,
+      "saidas_mes_anterior": 7,
+      "valor_causa": 36512918.37,
       "alerta_entrada": true
     },
     {
@@ -7749,6 +7769,21 @@
       "numero_processo": "0011144-08.2026.5.03.0080",
       "cliente": "EUROCHEM SALITRE",
       "profissional": "Camila Alves Magalhães de Paula(CAL)"
+    },
+    {
+      "numero_processo": "0011185-72.2026.5.03.0080",
+      "cliente": "EUROCHEM SALITRE",
+      "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
+    },
+    {
+      "numero_processo": "0012129-73.2026.5.03.0048",
+      "cliente": "EUROCHEM SALITRE",
+      "profissional": "Camila Alves Magalhães de Paula(CAL)"
+    },
+    {
+      "numero_processo": "0003640-29.2026.5.09.0000",
+      "cliente": "HERINGER",
+      "profissional": "Bianca Bolanhi Camacho(BBO)"
     },
     {
       "numero_processo": "0011380-03.2026.5.15.0087",
