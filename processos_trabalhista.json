@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-23T18:45:29",
+  "atualizado_em": "2026-09-23T19:00:33",
   "kpis": {
-    "total_andamento": 7494,
-    "entradas_hoje": 4,
+    "total_andamento": 7497,
+    "entradas_hoje": 7,
     "saidas_hoje": 2,
     "entradas_ontem": 47,
     "saidas_ontem": 6,
-    "entradas_mes": 231,
+    "entradas_mes": 234,
     "saidas_mes": 959,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 263,
-    "valor_causa_total": 1701687208.84,
-    "saldo_mes": -728
+    "valor_causa_total": 1702045421.34,
+    "saldo_mes": -725
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-09-23",
-      "entradas": 4,
+      "entradas": 7,
       "saidas": 2
     }
   ],
@@ -398,6 +398,15 @@
       "valor_causa": 11609781.48
     },
     {
+      "nome": "Sem grupo",
+      "andamento": 6,
+      "entradas_mes": 4,
+      "saidas_mes": 3,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 20,
+      "valor_causa": 1018407.96
+    },
+    {
       "nome": "Sócios",
       "andamento": 3,
       "entradas_mes": 0,
@@ -405,15 +414,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
-    },
-    {
-      "nome": "Sem grupo",
-      "andamento": 3,
-      "entradas_mes": 1,
-      "saidas_mes": 3,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 20,
-      "valor_causa": 660195.46
     },
     {
       "nome": "Grupo D1",
@@ -437,12 +437,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5726,
-      "entradas_mes": 135,
+      "andamento": 5727,
+      "entradas_mes": 136,
       "saidas_mes": 796,
       "entradas_mes_anterior": 185,
       "saidas_mes_anterior": 214,
-      "valor_causa": 1335680487.98
+      "valor_causa": 1335718300.48
     },
     {
       "nome": "MG",
@@ -590,12 +590,12 @@
     },
     {
       "nome": "CE",
-      "andamento": 9,
-      "entradas_mes": 2,
+      "andamento": 11,
+      "entradas_mes": 4,
       "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 679024.86
+      "valor_causa": 999424.86
     },
     {
       "nome": "PI",
@@ -682,12 +682,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2807,
-      "entradas_mes": 215,
+      "andamento": 2810,
+      "entradas_mes": 218,
       "saidas_mes": 192,
       "entradas_mes_anterior": 205,
       "saidas_mes_anterior": 66,
-      "valor_causa": 789440327.83
+      "valor_causa": 789798540.33
     },
     {
       "nome": "Sentença",
@@ -992,12 +992,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 1,
-      "entradas_mes": 1,
+      "andamento": 4,
+      "entradas_mes": 4,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 2,
-      "valor_causa": 351020.93
+      "valor_causa": 709233.43
     },
     {
       "fase": "Outras",
@@ -1451,12 +1451,12 @@
     },
     {
       "nome": "Tamires Lins Costa(TLI)",
-      "andamento": 213,
-      "entradas_mes": 2,
+      "andamento": 214,
+      "entradas_mes": 3,
       "saidas_mes": 5,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 15,
-      "valor_causa": 27144945.74
+      "valor_causa": 27182758.24
     },
     {
       "nome": "Nicolau Rafael Guimarães Coelho(NRG)",
@@ -1478,12 +1478,12 @@
     },
     {
       "nome": "Vinicius da Silva Cerqueira(VSI)",
-      "andamento": 161,
-      "entradas_mes": 9,
+      "andamento": 163,
+      "entradas_mes": 11,
       "saidas_mes": 0,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 0,
-      "valor_causa": 54292983.99
+      "valor_causa": 54613383.99
     },
     {
       "nome": "Sofia Freire (SOF)",
@@ -1719,12 +1719,12 @@
     },
     {
       "nome": "MAHLE METAL - MOGI",
-      "andamento": 351,
-      "entradas_mes": 5,
+      "andamento": 352,
+      "entradas_mes": 6,
       "saidas_mes": 10,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 33,
-      "valor_causa": 71072682.86,
+      "valor_causa": 71110495.36,
       "alerta_entrada": true
     },
     {
@@ -1809,12 +1809,12 @@
     },
     {
       "nome": "COMPANHIA AIX",
-      "andamento": 106,
-      "entradas_mes": 7,
+      "andamento": 108,
+      "entradas_mes": 9,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 25176855.57,
+      "valor_causa": 25497255.57,
       "alerta_entrada": true
     },
     {
@@ -3642,6 +3642,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "COMPANHIA AIX",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 320400.0,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "PEIXOTO E CURY",
       "andamento": 1,
       "entradas_mes": 0,
@@ -3671,6 +3682,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 351020.93,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "MAHLE METAL - MOGI",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 7,
+      "valor_causa": 37812.5,
       "alerta_entrada": false
     },
     {
@@ -4289,6 +4311,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Vinicius da Silva Cerqueira(VSI)",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 320400.0
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
       "andamento": 1,
       "entradas_mes": 0,
@@ -4316,6 +4348,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 351020.93
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Tamires Lins Costa(TLI)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 37812.5
     },
     {
       "grupo": "Sócios",
@@ -4541,6 +4583,16 @@
     },
     {
       "estado": "CE",
+      "cliente": "COMPANHIA AIX",
+      "andamento": 4,
+      "entradas_mes": 4,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 980247.88
+    },
+    {
+      "estado": "CE",
       "cliente": "SYNGENTA SEEDS NIDER",
       "andamento": 3,
       "entradas_mes": 0,
@@ -4558,16 +4610,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.01
-    },
-    {
-      "estado": "CE",
-      "cliente": "COMPANHIA AIX",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 659847.88
     },
     {
       "estado": "CE",
@@ -6282,12 +6324,12 @@
     {
       "estado": "SP",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 350,
-      "entradas_mes": 5,
+      "andamento": 351,
+      "entradas_mes": 6,
       "saidas_mes": 10,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 33,
-      "valor_causa": 71072682.86
+      "valor_causa": 71110495.36
     },
     {
       "estado": "SP",
@@ -7663,12 +7705,12 @@
     },
     {
       "nome": "MAHLE METAL - MOGI",
-      "andamento": 351,
-      "entradas_mes": 5,
+      "andamento": 352,
+      "entradas_mes": 6,
       "saidas_mes": 10,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 33,
-      "valor_causa": 71072682.86,
+      "valor_causa": 71110495.36,
       "alerta_entrada": true
     },
     {
@@ -7703,12 +7745,12 @@
     },
     {
       "nome": "COMPANHIA AIX",
-      "andamento": 106,
-      "entradas_mes": 7,
+      "andamento": 108,
+      "entradas_mes": 9,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 25176855.57,
+      "valor_causa": 25497255.57,
       "alerta_entrada": true
     },
     {
@@ -7733,6 +7775,21 @@
     }
   ],
   "sem_grupo_processos": [
+    {
+      "numero_processo": "0001511-75.2026.5.07.0010",
+      "cliente": "COMPANHIA AIX",
+      "profissional": "Vinicius da Silva Cerqueira(VSI)"
+    },
+    {
+      "numero_processo": "0001476-30.2026.5.07.0006",
+      "cliente": "COMPANHIA AIX",
+      "profissional": "Vinicius da Silva Cerqueira(VSI)"
+    },
+    {
+      "numero_processo": "0011875-95.2026.5.15.0071",
+      "cliente": "MAHLE METAL - MOGI",
+      "profissional": "Tamires Lins Costa(TLI)"
+    },
     {
       "numero_processo": "1002426-59.2017.5.02.0464",
       "cliente": "MULTICEL",
