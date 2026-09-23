@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-23T11:45:21",
+  "atualizado_em": "2026-09-23T12:00:23",
   "kpis": {
-    "total_andamento": 7486,
-    "entradas_hoje": 0,
+    "total_andamento": 7488,
+    "entradas_hoje": 1,
     "saidas_hoje": 0,
-    "entradas_ontem": 41,
+    "entradas_ontem": 42,
     "saidas_ontem": 6,
-    "entradas_mes": 221,
+    "entradas_mes": 223,
     "saidas_mes": 957,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 263,
-    "valor_causa_total": 1699120762.69,
-    "saldo_mes": -736
+    "valor_causa_total": 1699649281.29,
+    "saldo_mes": -734
   },
   "serie_diaria": [
     {
@@ -306,12 +306,12 @@
     },
     {
       "data": "2026-09-22",
-      "entradas": 41,
+      "entradas": 42,
       "saidas": 6
     },
     {
       "data": "2026-09-23",
-      "entradas": 0,
+      "entradas": 1,
       "saidas": 0
     }
   ],
@@ -327,8 +327,8 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1791,
-      "entradas_mes": 37,
+      "andamento": 1792,
+      "entradas_mes": 38,
       "saidas_mes": 38,
       "entradas_mes_anterior": 52,
       "saidas_mes_anterior": 92,
@@ -399,12 +399,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 11,
-      "entradas_mes": 9,
+      "andamento": 12,
+      "entradas_mes": 10,
       "saidas_mes": 3,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 20,
-      "valor_causa": 3267836.53
+      "valor_causa": 3796355.13
     },
     {
       "nome": "Sócios",
@@ -437,12 +437,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5720,
-      "entradas_mes": 127,
+      "andamento": 5722,
+      "entradas_mes": 129,
       "saidas_mes": 794,
       "entradas_mes_anterior": 185,
       "saidas_mes_anterior": 214,
-      "valor_causa": 1333141147.01
+      "valor_causa": 1333669665.61
     },
     {
       "nome": "MG",
@@ -682,12 +682,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2805,
-      "entradas_mes": 208,
+      "andamento": 2807,
+      "entradas_mes": 210,
       "saidas_mes": 190,
       "entradas_mes_anterior": 205,
       "saidas_mes_anterior": 66,
-      "valor_causa": 787163881.68
+      "valor_causa": 787692400.28
     },
     {
       "nome": "Sentença",
@@ -912,8 +912,8 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 749,
-      "entradas_mes": 28,
+      "andamento": 750,
+      "entradas_mes": 29,
       "saidas_mes": 14,
       "entradas_mes_anterior": 28,
       "saidas_mes_anterior": 11,
@@ -982,12 +982,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 9,
-      "entradas_mes": 9,
+      "andamento": 10,
+      "entradas_mes": 10,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 2,
-      "valor_causa": 2958662.0
+      "valor_causa": 3487180.6
     },
     {
       "fase": "Instrução",
@@ -1424,8 +1424,8 @@
     },
     {
       "nome": "Paloma da Silva Santos(PSI)",
-      "andamento": 244,
-      "entradas_mes": 5,
+      "andamento": 245,
+      "entradas_mes": 6,
       "saidas_mes": 11,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 33,
@@ -1576,6 +1576,15 @@
       "valor_causa": 0.0
     },
     {
+      "nome": "Luiz Vicente de Carvalho(LVC)",
+      "andamento": 2,
+      "entradas_mes": 1,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 528518.6
+    },
+    {
       "nome": "Gabriel Neder De Donato(GND)",
       "andamento": 1,
       "entradas_mes": 0,
@@ -1598,15 +1607,6 @@
       "andamento": 1,
       "entradas_mes": 0,
       "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 0.0
-    },
-    {
-      "nome": "Luiz Vicente de Carvalho(LVC)",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
@@ -1669,12 +1669,12 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1436,
-      "entradas_mes": 41,
+      "andamento": 1437,
+      "entradas_mes": 42,
       "saidas_mes": 29,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 45,
-      "valor_causa": 319268982.77,
+      "valor_causa": 319797501.37,
       "alerta_entrada": false
     },
     {
@@ -1719,8 +1719,8 @@
     },
     {
       "nome": "MAHLE METAL - MOGI",
-      "andamento": 350,
-      "entradas_mes": 4,
+      "andamento": 351,
+      "entradas_mes": 5,
       "saidas_mes": 10,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 33,
@@ -2862,8 +2862,8 @@
     {
       "grupo": "Grupo E1",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 350,
-      "entradas_mes": 4,
+      "andamento": 351,
+      "entradas_mes": 5,
       "saidas_mes": 10,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 26,
@@ -3653,6 +3653,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "BRIDGESTONE",
+      "andamento": 3,
+      "entradas_mes": 3,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1613609.4,
+      "alerta_entrada": true
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "HERINGER",
       "andamento": 2,
       "entradas_mes": 2,
@@ -3660,17 +3671,6 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 1,
       "valor_causa": 843316.84,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "BRIDGESTONE",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 1085090.8,
       "alerta_entrada": false
     },
     {
@@ -4104,8 +4104,8 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Paloma da Silva Santos(PSI)",
-      "andamento": 244,
-      "entradas_mes": 5,
+      "andamento": 245,
+      "entradas_mes": 6,
       "saidas_mes": 10,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 24,
@@ -4380,6 +4380,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 1000.0
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Luiz Vicente de Carvalho(LVC)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 528518.6
     },
     {
       "grupo": "Sem grupo",
@@ -6316,12 +6326,12 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1408,
-      "entradas_mes": 37,
+      "andamento": 1409,
+      "entradas_mes": 38,
       "saidas_mes": 28,
       "entradas_mes_anterior": 51,
       "saidas_mes_anterior": 45,
-      "valor_causa": 307642034.66
+      "valor_causa": 308170553.26
     },
     {
       "estado": "SP",
@@ -6356,8 +6366,8 @@
     {
       "estado": "SP",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 349,
-      "entradas_mes": 4,
+      "andamento": 350,
+      "entradas_mes": 5,
       "saidas_mes": 10,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 33,
@@ -7737,8 +7747,8 @@
     },
     {
       "nome": "MAHLE METAL - MOGI",
-      "andamento": 350,
-      "entradas_mes": 4,
+      "andamento": 351,
+      "entradas_mes": 5,
       "saidas_mes": 10,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 33,
@@ -7813,6 +7823,11 @@
       "profissional": "Guilherme Silva Morimoto(GSM)"
     },
     {
+      "numero_processo": "1001851-32.2026.5.02.0433",
+      "cliente": "BRIDGESTONE",
+      "profissional": "Luiz Vicente de Carvalho(LVC)"
+    },
+    {
       "numero_processo": "1001853-02.2026.5.02.0433",
       "cliente": "BRIDGESTONE",
       "profissional": "Guilherme Silva Morimoto(GSM)"
@@ -7823,14 +7838,14 @@
       "profissional": "Camila Alves Magalhães de Paula(CAL)"
     },
     {
-      "numero_processo": "0012129-73.2026.5.03.0048",
-      "cliente": "EUROCHEM SALITRE",
-      "profissional": "Camila Alves Magalhães de Paula(CAL)"
-    },
-    {
       "numero_processo": "0011185-72.2026.5.03.0080",
       "cliente": "EUROCHEM SALITRE",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
+    },
+    {
+      "numero_processo": "0012129-73.2026.5.03.0048",
+      "cliente": "EUROCHEM SALITRE",
+      "profissional": "Camila Alves Magalhães de Paula(CAL)"
     },
     {
       "numero_processo": "0003640-29.2026.5.09.0000",
