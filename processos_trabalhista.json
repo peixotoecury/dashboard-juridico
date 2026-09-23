@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-23T11:00:24",
+  "atualizado_em": "2026-09-23T11:15:27",
   "kpis": {
-    "total_andamento": 7478,
+    "total_andamento": 7480,
     "entradas_hoje": 0,
     "saidas_hoje": 0,
-    "entradas_ontem": 33,
+    "entradas_ontem": 35,
     "saidas_ontem": 6,
-    "entradas_mes": 213,
+    "entradas_mes": 215,
     "saidas_mes": 957,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 263,
-    "valor_causa_total": 1696513121.62,
-    "saldo_mes": -744
+    "valor_causa_total": 1697454671.88,
+    "saldo_mes": -742
   },
   "serie_diaria": [
     {
@@ -306,7 +306,7 @@
     },
     {
       "data": "2026-09-22",
-      "entradas": 33,
+      "entradas": 35,
       "saidas": 6
     },
     {
@@ -398,6 +398,15 @@
       "valor_causa": 11609781.48
     },
     {
+      "nome": "Sem grupo",
+      "andamento": 5,
+      "entradas_mes": 3,
+      "saidas_mes": 3,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 20,
+      "valor_causa": 1601745.72
+    },
+    {
       "nome": "Sócios",
       "andamento": 3,
       "entradas_mes": 0,
@@ -405,15 +414,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
-    },
-    {
-      "nome": "Sem grupo",
-      "andamento": 3,
-      "entradas_mes": 1,
-      "saidas_mes": 3,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 20,
-      "valor_causa": 660195.46
     },
     {
       "nome": "Grupo D1",
@@ -437,21 +437,21 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5716,
-      "entradas_mes": 123,
+      "andamento": 5717,
+      "entradas_mes": 124,
       "saidas_mes": 794,
       "entradas_mes_anterior": 185,
       "saidas_mes_anterior": 214,
-      "valor_causa": 1331213739.36
+      "valor_causa": 1332056056.2
     },
     {
       "nome": "MG",
-      "andamento": 529,
-      "entradas_mes": 18,
+      "andamento": 530,
+      "entradas_mes": 19,
       "saidas_mes": 17,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 23,
-      "valor_causa": 130652332.7
+      "valor_causa": 130751566.12
     },
     {
       "nome": "PR",
@@ -682,12 +682,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2797,
-      "entradas_mes": 200,
+      "andamento": 2799,
+      "entradas_mes": 202,
       "saidas_mes": 190,
       "entradas_mes_anterior": 205,
       "saidas_mes_anterior": 66,
-      "valor_causa": 784556240.61
+      "valor_causa": 785497790.87
     },
     {
       "nome": "Sentença",
@@ -992,12 +992,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 1,
-      "entradas_mes": 1,
+      "andamento": 3,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 2,
-      "valor_causa": 351020.93
+      "valor_causa": 1292571.19
     },
     {
       "fase": "Outras",
@@ -1271,12 +1271,12 @@
     },
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 350,
-      "entradas_mes": 14,
+      "andamento": 351,
+      "entradas_mes": 15,
       "saidas_mes": 24,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 19,
-      "valor_causa": 47173057.6
+      "valor_causa": 47272291.02
     },
     {
       "nome": "Letícia Meneghini Fontes (LMI)",
@@ -1307,12 +1307,12 @@
     },
     {
       "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 292,
-      "entradas_mes": 8,
+      "andamento": 293,
+      "entradas_mes": 9,
       "saidas_mes": 16,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 11,
-      "valor_causa": 155398120.7
+      "valor_causa": 156240437.54
     },
     {
       "nome": "Beatriz Santiago de Souza(BSO)",
@@ -1729,13 +1729,13 @@
     },
     {
       "nome": "HERINGER",
-      "andamento": 327,
-      "entradas_mes": 12,
+      "andamento": 328,
+      "entradas_mes": 13,
       "saidas_mes": 10,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 12,
-      "valor_causa": 42444495.2,
-      "alerta_entrada": false
+      "valor_causa": 43286812.04,
+      "alerta_entrada": true
     },
     {
       "nome": "VITERRA RIO VERMELHO",
@@ -1789,12 +1789,12 @@
     },
     {
       "nome": "EUROCHEM SALITRE",
-      "andamento": 149,
-      "entradas_mes": 8,
+      "andamento": 150,
+      "entradas_mes": 9,
       "saidas_mes": 10,
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 7,
-      "valor_causa": 35806579.77,
+      "valor_causa": 35905813.19,
       "alerta_entrada": false
     },
     {
@@ -3674,6 +3674,28 @@
       "alerta_entrada": false
     },
     {
+      "grupo": "Sem grupo",
+      "cliente": "EUROCHEM SALITRE",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 99233.42,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "HERINGER",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 842316.84,
+      "alerta_entrada": false
+    },
+    {
       "grupo": "Sócios",
       "cliente": "PEIXOTO E CURY",
       "andamento": 2,
@@ -4280,12 +4302,12 @@
     {
       "grupo": "Sem grupo",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 1,
-      "entradas_mes": 0,
+      "andamento": 2,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 271174.53
+      "valor_causa": 1113491.37
     },
     {
       "grupo": "Sem grupo",
@@ -4306,6 +4328,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 351020.93
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Camila Alves Magalhães de Paula(CAL)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 99233.42
     },
     {
       "grupo": "Sócios",
@@ -4932,12 +4964,12 @@
     {
       "estado": "MG",
       "cliente": "EUROCHEM SALITRE",
-      "andamento": 103,
-      "entradas_mes": 6,
+      "andamento": 104,
+      "entradas_mes": 7,
       "saidas_mes": 8,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 5,
-      "valor_causa": 23271723.58
+      "valor_causa": 23370957.0
     },
     {
       "estado": "MG",
@@ -6332,12 +6364,12 @@
     {
       "estado": "SP",
       "cliente": "HERINGER",
-      "andamento": 103,
-      "entradas_mes": 3,
+      "andamento": 104,
+      "entradas_mes": 4,
       "saidas_mes": 2,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 3,
-      "valor_causa": 11344124.88
+      "valor_causa": 12186441.72
     },
     {
       "estado": "SP",
@@ -7662,6 +7694,16 @@
       "alerta_entrada": true
     },
     {
+      "nome": "HERINGER",
+      "andamento": 328,
+      "entradas_mes": 13,
+      "saidas_mes": 10,
+      "entradas_mes_anterior": 11,
+      "saidas_mes_anterior": 12,
+      "valor_causa": 43286812.04,
+      "alerta_entrada": true
+    },
+    {
       "nome": "SYNGENTA SEEDS NIDER",
       "andamento": 157,
       "entradas_mes": 6,
@@ -7703,6 +7745,16 @@
     }
   ],
   "sem_grupo_processos": [
+    {
+      "numero_processo": "0011144-08.2026.5.03.0080",
+      "cliente": "EUROCHEM SALITRE",
+      "profissional": "Camila Alves Magalhães de Paula(CAL)"
+    },
+    {
+      "numero_processo": "0011380-03.2026.5.15.0087",
+      "cliente": "HERINGER",
+      "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
+    },
     {
       "numero_processo": "1002426-59.2017.5.02.0464",
       "cliente": "MULTICEL",
