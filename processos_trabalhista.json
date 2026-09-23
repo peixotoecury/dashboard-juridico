@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-23T11:30:26",
+  "atualizado_em": "2026-09-23T11:45:21",
   "kpis": {
-    "total_andamento": 7483,
+    "total_andamento": 7486,
     "entradas_hoje": 0,
     "saidas_hoje": 0,
-    "entradas_ontem": 38,
+    "entradas_ontem": 41,
     "saidas_ontem": 6,
-    "entradas_mes": 218,
+    "entradas_mes": 221,
     "saidas_mes": 957,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 263,
-    "valor_causa_total": 1698062777.06,
-    "saldo_mes": -739
+    "valor_causa_total": 1699120762.69,
+    "saldo_mes": -736
   },
   "serie_diaria": [
     {
@@ -306,7 +306,7 @@
     },
     {
       "data": "2026-09-22",
-      "entradas": 38,
+      "entradas": 41,
       "saidas": 6
     },
     {
@@ -399,12 +399,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 8,
-      "entradas_mes": 6,
+      "andamento": 11,
+      "entradas_mes": 9,
       "saidas_mes": 3,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 20,
-      "valor_causa": 2209850.9
+      "valor_causa": 3267836.53
     },
     {
       "nome": "Sócios",
@@ -437,12 +437,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5717,
-      "entradas_mes": 124,
+      "andamento": 5720,
+      "entradas_mes": 127,
       "saidas_mes": 794,
       "entradas_mes_anterior": 185,
       "saidas_mes_anterior": 214,
-      "valor_causa": 1332056056.2
+      "valor_causa": 1333141147.01
     },
     {
       "nome": "MG",
@@ -451,7 +451,7 @@
       "saidas_mes": 17,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 23,
-      "valor_causa": 131358671.3
+      "valor_causa": 131331566.12
     },
     {
       "nome": "PR",
@@ -682,12 +682,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2802,
-      "entradas_mes": 205,
+      "andamento": 2805,
+      "entradas_mes": 208,
       "saidas_mes": 190,
       "entradas_mes_anterior": 205,
       "saidas_mes_anterior": 66,
-      "valor_causa": 786105896.05
+      "valor_causa": 787163881.68
     },
     {
       "nome": "Sentença",
@@ -982,12 +982,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 6,
-      "entradas_mes": 6,
+      "andamento": 9,
+      "entradas_mes": 9,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 2,
-      "valor_causa": 1900676.37
+      "valor_causa": 2958662.0
     },
     {
       "fase": "Instrução",
@@ -1276,7 +1276,7 @@
       "saidas_mes": 24,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 19,
-      "valor_causa": 47299396.2
+      "valor_causa": 47272291.02
     },
     {
       "nome": "Letícia Meneghini Fontes (LMI)",
@@ -1352,12 +1352,12 @@
     },
     {
       "nome": "Guilherme Silva Morimoto(GSM)",
-      "andamento": 280,
-      "entradas_mes": 7,
+      "andamento": 282,
+      "entradas_mes": 9,
       "saidas_mes": 4,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 9,
-      "valor_causa": 124341095.46
+      "valor_causa": 125426186.26
     },
     {
       "nome": "Rafael Rocha Ferreira(RFE)",
@@ -1415,12 +1415,12 @@
     },
     {
       "nome": "Erik Mota Coppi(ECO)",
-      "andamento": 245,
-      "entradas_mes": 10,
+      "andamento": 246,
+      "entradas_mes": 11,
       "saidas_mes": 6,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 2,
-      "valor_causa": 43690486.48
+      "valor_causa": 43690486.49
     },
     {
       "nome": "Paloma da Silva Santos(PSI)",
@@ -1669,12 +1669,12 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1434,
-      "entradas_mes": 39,
+      "andamento": 1436,
+      "entradas_mes": 41,
       "saidas_mes": 29,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 45,
-      "valor_causa": 318183891.97,
+      "valor_causa": 319268982.77,
       "alerta_entrada": false
     },
     {
@@ -1794,7 +1794,7 @@
       "saidas_mes": 10,
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 7,
-      "valor_causa": 36512918.37,
+      "valor_causa": 36485813.19,
       "alerta_entrada": true
     },
     {
@@ -3648,7 +3648,7 @@
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 706338.6,
+      "valor_causa": 679233.42,
       "alerta_entrada": true
     },
     {
@@ -3660,6 +3660,17 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 1,
       "valor_causa": 843316.84,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "BRIDGESTONE",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1085090.8,
       "alerta_entrada": false
     },
     {
@@ -3693,6 +3704,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 351020.93,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "UHE SÃO SIMÃO",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 0.01,
       "alerta_entrada": false
     },
     {
@@ -4317,7 +4339,17 @@
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 126338.6
+      "valor_causa": 99233.42
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Guilherme Silva Morimoto(GSM)",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1085090.8
     },
     {
       "grupo": "Sem grupo",
@@ -4348,6 +4380,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 1000.0
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Erik Mota Coppi(ECO)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 0.01
     },
     {
       "grupo": "Sócios",
@@ -4979,7 +5021,7 @@
       "saidas_mes": 8,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 5,
-      "valor_causa": 23978062.18
+      "valor_causa": 23950957.0
     },
     {
       "estado": "MG",
@@ -6274,12 +6316,12 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1406,
-      "entradas_mes": 35,
+      "andamento": 1408,
+      "entradas_mes": 37,
       "saidas_mes": 28,
       "entradas_mes_anterior": 51,
       "saidas_mes_anterior": 45,
-      "valor_causa": 306556943.86
+      "valor_causa": 307642034.66
     },
     {
       "estado": "SP",
@@ -6643,6 +6685,16 @@
     },
     {
       "estado": "SP",
+      "cliente": "UHE SÃO SIMÃO",
+      "andamento": 7,
+      "entradas_mes": 1,
+      "saidas_mes": 2,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 2304274.16
+    },
+    {
+      "estado": "SP",
       "cliente": "STEELCORP CONSTRUCTI",
       "andamento": 6,
       "entradas_mes": 0,
@@ -6660,16 +6712,6 @@
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
       "valor_causa": 1655382.69
-    },
-    {
-      "estado": "SP",
-      "cliente": "UHE SÃO SIMÃO",
-      "andamento": 6,
-      "entradas_mes": 0,
-      "saidas_mes": 2,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 2304274.15
     },
     {
       "estado": "SP",
@@ -7730,7 +7772,7 @@
       "saidas_mes": 10,
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 7,
-      "valor_causa": 36512918.37,
+      "valor_causa": 36485813.19,
       "alerta_entrada": true
     },
     {
@@ -7766,7 +7808,22 @@
   ],
   "sem_grupo_processos": [
     {
+      "numero_processo": "1001866-04.2026.5.02.0432",
+      "cliente": "BRIDGESTONE",
+      "profissional": "Guilherme Silva Morimoto(GSM)"
+    },
+    {
+      "numero_processo": "1001853-02.2026.5.02.0433",
+      "cliente": "BRIDGESTONE",
+      "profissional": "Guilherme Silva Morimoto(GSM)"
+    },
+    {
       "numero_processo": "0011144-08.2026.5.03.0080",
+      "cliente": "EUROCHEM SALITRE",
+      "profissional": "Camila Alves Magalhães de Paula(CAL)"
+    },
+    {
+      "numero_processo": "0012129-73.2026.5.03.0048",
       "cliente": "EUROCHEM SALITRE",
       "profissional": "Camila Alves Magalhães de Paula(CAL)"
     },
@@ -7774,11 +7831,6 @@
       "numero_processo": "0011185-72.2026.5.03.0080",
       "cliente": "EUROCHEM SALITRE",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
-    },
-    {
-      "numero_processo": "0012129-73.2026.5.03.0048",
-      "cliente": "EUROCHEM SALITRE",
-      "profissional": "Camila Alves Magalhães de Paula(CAL)"
     },
     {
       "numero_processo": "0003640-29.2026.5.09.0000",
@@ -7804,6 +7856,11 @@
       "numero_processo": "1001556-56.2026.5.02.0057",
       "cliente": "TELEFONICA BRASIL",
       "profissional": "Thiago Frid Figueiredo Rossi(TFR)"
+    },
+    {
+      "numero_processo": "0011448-92.2026.5.15.0073",
+      "cliente": "UHE SÃO SIMÃO",
+      "profissional": "Erik Mota Coppi(ECO)"
     }
   ]
 }
