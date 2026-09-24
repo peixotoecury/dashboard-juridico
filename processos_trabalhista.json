@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-24T10:30:21",
+  "atualizado_em": "2026-09-24T10:45:22",
   "kpis": {
-    "total_andamento": 7496,
+    "total_andamento": 7497,
     "entradas_hoje": 0,
     "saidas_hoje": 3,
-    "entradas_ontem": 10,
+    "entradas_ontem": 11,
     "saidas_ontem": 4,
-    "entradas_mes": 237,
+    "entradas_mes": 238,
     "saidas_mes": 964,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 263,
-    "valor_causa_total": 1701744304.23,
-    "saldo_mes": -727
+    "valor_causa_total": 1702170448.51,
+    "saldo_mes": -726
   },
   "serie_diaria": [
     {
@@ -306,7 +306,7 @@
     },
     {
       "data": "2026-09-23",
-      "entradas": 10,
+      "entradas": 11,
       "saidas": 4
     },
     {
@@ -327,12 +327,12 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1793,
-      "entradas_mes": 40,
+      "andamento": 1795,
+      "entradas_mes": 42,
       "saidas_mes": 39,
       "entradas_mes_anterior": 52,
       "saidas_mes_anterior": 92,
-      "valor_causa": 299114538.26
+      "valor_causa": 299209792.78
     },
     {
       "nome": "Grupo B1",
@@ -398,15 +398,6 @@
       "valor_causa": 11609781.48
     },
     {
-      "nome": "Sem grupo",
-      "andamento": 4,
-      "entradas_mes": 2,
-      "saidas_mes": 3,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 20,
-      "valor_causa": 404429.05
-    },
-    {
       "nome": "Sócios",
       "andamento": 3,
       "entradas_mes": 0,
@@ -414,6 +405,15 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
+    },
+    {
+      "nome": "Sem grupo",
+      "andamento": 3,
+      "entradas_mes": 1,
+      "saidas_mes": 3,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 20,
+      "valor_causa": 735318.81
     },
     {
       "nome": "Grupo D1",
@@ -437,12 +437,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5728,
-      "entradas_mes": 139,
+      "andamento": 5729,
+      "entradas_mes": 140,
       "saidas_mes": 799,
       "entradas_mes_anterior": 185,
       "saidas_mes_anterior": 214,
-      "valor_causa": 1335578183.37
+      "valor_causa": 1336004327.65
     },
     {
       "nome": "MG",
@@ -682,12 +682,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2807,
-      "entradas_mes": 221,
+      "andamento": 2808,
+      "entradas_mes": 222,
       "saidas_mes": 194,
       "entradas_mes_anterior": 206,
       "saidas_mes_anterior": 66,
-      "valor_causa": 788235441.62
+      "valor_causa": 788661585.9
     },
     {
       "nome": "Sentença",
@@ -912,12 +912,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 751,
-      "entradas_mes": 31,
+      "andamento": 753,
+      "entradas_mes": 33,
       "saidas_mes": 14,
       "entradas_mes_anterior": 28,
       "saidas_mes_anterior": 11,
-      "valor_causa": 154718798.87
+      "valor_causa": 154814053.39
     },
     {
       "fase": "Instrução",
@@ -992,12 +992,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 2,
-      "entradas_mes": 2,
+      "andamento": 1,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 2,
-      "valor_causa": 95254.52
+      "valor_causa": 426144.28
     },
     {
       "fase": "Outras",
@@ -1280,12 +1280,12 @@
     },
     {
       "nome": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 331,
-      "entradas_mes": 9,
+      "andamento": 332,
+      "entradas_mes": 10,
       "saidas_mes": 5,
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 13,
-      "valor_causa": 60941442.14
+      "valor_causa": 61367586.42
     },
     {
       "nome": "Bianca Bolanhi Camacho(BBO)",
@@ -1759,12 +1759,12 @@
     },
     {
       "nome": "CBC CARTUCHOS BRASIL",
-      "andamento": 225,
-      "entradas_mes": 7,
+      "andamento": 226,
+      "entradas_mes": 8,
       "saidas_mes": 5,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 11,
-      "valor_causa": 28777295.13,
+      "valor_causa": 29203439.41,
       "alerta_entrada": false
     },
     {
@@ -2851,23 +2851,23 @@
     {
       "grupo": "Grupo E1",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 635,
-      "entradas_mes": 15,
+      "andamento": 636,
+      "entradas_mes": 16,
       "saidas_mes": 12,
       "entradas_mes_anterior": 28,
       "saidas_mes_anterior": 20,
-      "valor_causa": 135684650.72,
+      "valor_causa": 135762019.67,
       "alerta_entrada": false
     },
     {
       "grupo": "Grupo E1",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 352,
-      "entradas_mes": 7,
+      "andamento": 353,
+      "entradas_mes": 8,
       "saidas_mes": 11,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 26,
-      "valor_causa": 70951523.28,
+      "valor_causa": 70969408.85,
       "alerta_entrada": true
     },
     {
@@ -3664,24 +3664,13 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "MAHLE METAL - MOGI",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 7,
-      "valor_causa": 17885.57,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "SYNGENTA PROTEÇÃO DE",
+      "cliente": "CBC CARTUCHOS BRASIL",
       "andamento": 1,
       "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 77368.95,
+      "valor_causa": 426144.28,
       "alerta_entrada": false
     },
     {
@@ -4051,12 +4040,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Giulia Vendramini Milani(GVM)",
-      "andamento": 445,
-      "entradas_mes": 13,
+      "andamento": 446,
+      "entradas_mes": 14,
       "saidas_mes": 11,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 6,
-      "valor_causa": 65827076.54
+      "valor_causa": 65904445.49
     },
     {
       "grupo": "Grupo E1",
@@ -4081,12 +4070,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Paloma da Silva Santos(PSI)",
-      "andamento": 246,
-      "entradas_mes": 7,
+      "andamento": 247,
+      "entradas_mes": 8,
       "saidas_mes": 10,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 24,
-      "valor_causa": 54529263.23
+      "valor_causa": 54547148.8
     },
     {
       "grupo": "Grupo E1",
@@ -4320,23 +4309,13 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Paloma da Silva Santos(PSI)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 1,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 9,
-      "valor_causa": 17885.57
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Giulia Vendramini Milani(GVM)",
+      "profissional": "Letícia Meneghini Fontes (LMI)",
       "andamento": 1,
       "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 77368.95
+      "valor_causa": 426144.28
     },
     {
       "grupo": "Sócios",
@@ -6343,12 +6322,12 @@
     {
       "estado": "SP",
       "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 215,
-      "entradas_mes": 7,
+      "andamento": 216,
+      "entradas_mes": 8,
       "saidas_mes": 5,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 10,
-      "valor_causa": 27551801.19
+      "valor_causa": 27977945.47
     },
     {
       "estado": "SP",
@@ -7745,9 +7724,9 @@
   ],
   "sem_grupo_processos": [
     {
-      "numero_processo": "0011609-11.2026.5.15.0071",
-      "cliente": "MAHLE METAL - MOGI",
-      "profissional": "Paloma da Silva Santos(PSI)"
+      "numero_processo": "1001416-27.2026.5.02.0411",
+      "cliente": "CBC CARTUCHOS BRASIL",
+      "profissional": "Letícia Meneghini Fontes (LMI)"
     },
     {
       "numero_processo": "1002426-59.2017.5.02.0464",
@@ -7758,11 +7737,6 @@
       "numero_processo": "1000930-65.2026.5.02.0080",
       "cliente": "PEIXOTO E CURY",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
-    },
-    {
-      "numero_processo": "1003936-45.2026.5.02.0221",
-      "cliente": "SYNGENTA PROTEÇÃO DE",
-      "profissional": "Giulia Vendramini Milani(GVM)"
     }
   ]
 }
