@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-09-24T12:45:29",
+  "atualizado_em": "2026-09-24T13:00:31",
   "kpis": {
     "total_andamento": 7503,
     "entradas_hoje": 1,
@@ -700,21 +700,21 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2952,
+      "andamento": 2951,
       "entradas_mes": 2,
       "saidas_mes": 380,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 46,
-      "valor_causa": 657561480.21
+      "valor_causa": 657496959.62
     },
     {
       "nome": "Execução",
-      "andamento": 906,
+      "andamento": 907,
       "entradas_mes": 1,
       "saidas_mes": 345,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 94,
-      "valor_causa": 129571645.4
+      "valor_causa": 129636165.99
     }
   ],
   "por_fase_outras": 398,
@@ -832,12 +832,12 @@
     {
       "fase": "Execução",
       "grupo": "Grupo E1",
-      "andamento": 182,
+      "andamento": 183,
       "entradas_mes": 0,
       "saidas_mes": 10,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 47,
-      "valor_causa": 20450299.44
+      "valor_causa": 20514820.03
     },
     {
       "fase": "Execução",
@@ -1112,12 +1112,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo E1",
-      "andamento": 757,
+      "andamento": 756,
       "entradas_mes": 1,
       "saidas_mes": 9,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 13,
-      "valor_causa": 108803091.99
+      "valor_causa": 108738571.4
     },
     {
       "fase": "Recurso",
@@ -1719,8 +1719,8 @@
     },
     {
       "nome": "MAHLE METAL - MOGI",
-      "andamento": 353,
-      "entradas_mes": 8,
+      "andamento": 352,
+      "entradas_mes": 7,
       "saidas_mes": 11,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 33,
@@ -2862,8 +2862,8 @@
     {
       "grupo": "Grupo E1",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 353,
-      "entradas_mes": 8,
+      "andamento": 352,
+      "entradas_mes": 7,
       "saidas_mes": 11,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 26,
@@ -3073,6 +3073,17 @@
       "cliente": "DIPAGRO",
       "andamento": 1,
       "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 0.0,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Grupo E1",
+      "cliente": "MAHLE METAL -LIMEIRA",
+      "andamento": 1,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
@@ -6334,8 +6345,8 @@
     {
       "estado": "SP",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 352,
-      "entradas_mes": 8,
+      "andamento": 351,
+      "entradas_mes": 7,
       "saidas_mes": 11,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 33,
@@ -7383,6 +7394,16 @@
     },
     {
       "estado": "SP",
+      "cliente": "MAHLE METAL -LIMEIRA",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 0.0
+    },
+    {
+      "estado": "SP",
       "cliente": "BP BUNGE",
       "andamento": 1,
       "entradas_mes": 0,
@@ -7705,8 +7726,8 @@
     },
     {
       "nome": "MAHLE METAL - MOGI",
-      "andamento": 353,
-      "entradas_mes": 8,
+      "andamento": 352,
+      "entradas_mes": 7,
       "saidas_mes": 11,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 33,
