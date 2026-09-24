@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-24T10:45:22",
+  "atualizado_em": "2026-09-24T11:00:28",
   "kpis": {
-    "total_andamento": 7497,
+    "total_andamento": 7498,
     "entradas_hoje": 0,
     "saidas_hoje": 3,
-    "entradas_ontem": 11,
+    "entradas_ontem": 12,
     "saidas_ontem": 4,
-    "entradas_mes": 238,
+    "entradas_mes": 239,
     "saidas_mes": 964,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 263,
-    "valor_causa_total": 1702170448.51,
-    "saldo_mes": -726
+    "valor_causa_total": 1702240969.2,
+    "saldo_mes": -725
   },
   "serie_diaria": [
     {
@@ -306,7 +306,7 @@
     },
     {
       "data": "2026-09-23",
-      "entradas": 11,
+      "entradas": 12,
       "saidas": 4
     },
     {
@@ -398,6 +398,15 @@
       "valor_causa": 11609781.48
     },
     {
+      "nome": "Sem grupo",
+      "andamento": 4,
+      "entradas_mes": 2,
+      "saidas_mes": 3,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 20,
+      "valor_causa": 805839.5
+    },
+    {
       "nome": "Sócios",
       "andamento": 3,
       "entradas_mes": 0,
@@ -405,15 +414,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
-    },
-    {
-      "nome": "Sem grupo",
-      "andamento": 3,
-      "entradas_mes": 1,
-      "saidas_mes": 3,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 20,
-      "valor_causa": 735318.81
     },
     {
       "nome": "Grupo D1",
@@ -491,12 +491,12 @@
     },
     {
       "nome": "BA",
-      "andamento": 100,
-      "entradas_mes": 4,
+      "andamento": 101,
+      "entradas_mes": 5,
       "saidas_mes": 4,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 5,
-      "valor_causa": 12899776.56
+      "valor_causa": 12970297.25
     },
     {
       "nome": "GO",
@@ -682,12 +682,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2808,
-      "entradas_mes": 222,
+      "andamento": 2809,
+      "entradas_mes": 223,
       "saidas_mes": 194,
       "entradas_mes_anterior": 206,
       "saidas_mes_anterior": 66,
-      "valor_causa": 788661585.9
+      "valor_causa": 788732106.59
     },
     {
       "nome": "Sentença",
@@ -992,12 +992,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 1,
-      "entradas_mes": 1,
+      "andamento": 2,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 2,
-      "valor_causa": 426144.28
+      "valor_causa": 496664.97
     },
     {
       "fase": "Outras",
@@ -1289,12 +1289,12 @@
     },
     {
       "nome": "Bianca Bolanhi Camacho(BBO)",
-      "andamento": 299,
-      "entradas_mes": 11,
+      "andamento": 300,
+      "entradas_mes": 12,
       "saidas_mes": 358,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 7,
-      "valor_causa": 32222150.16
+      "valor_causa": 32292670.85
     },
     {
       "nome": "Júlia Priego Lopes da Silva(JPL)",
@@ -1729,12 +1729,12 @@
     },
     {
       "nome": "HERINGER",
-      "andamento": 329,
-      "entradas_mes": 14,
+      "andamento": 330,
+      "entradas_mes": 15,
       "saidas_mes": 10,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 12,
-      "valor_causa": 43287812.04,
+      "valor_causa": 43358332.73,
       "alerta_entrada": true
     },
     {
@@ -3664,6 +3664,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "HERINGER",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 70520.69,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "CBC CARTUCHOS BRASIL",
       "andamento": 1,
       "entradas_mes": 1,
@@ -4309,6 +4320,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Bianca Bolanhi Camacho(BBO)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 70520.69
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Letícia Meneghini Fontes (LMI)",
       "andamento": 1,
       "entradas_mes": 1,
@@ -4402,12 +4423,12 @@
     {
       "estado": "BA",
       "cliente": "HERINGER",
-      "andamento": 33,
-      "entradas_mes": 1,
+      "andamento": 34,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 2,
-      "valor_causa": 3722420.08
+      "valor_causa": 3792940.77
     },
     {
       "estado": "BA",
@@ -7663,12 +7684,12 @@
     },
     {
       "nome": "HERINGER",
-      "andamento": 329,
-      "entradas_mes": 14,
+      "andamento": 330,
+      "entradas_mes": 15,
       "saidas_mes": 10,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 12,
-      "valor_causa": 43287812.04,
+      "valor_causa": 43358332.73,
       "alerta_entrada": true
     },
     {
@@ -7727,6 +7748,11 @@
       "numero_processo": "1001416-27.2026.5.02.0411",
       "cliente": "CBC CARTUCHOS BRASIL",
       "profissional": "Letícia Meneghini Fontes (LMI)"
+    },
+    {
+      "numero_processo": "0000786-95.2026.5.05.0122",
+      "cliente": "HERINGER",
+      "profissional": "Bianca Bolanhi Camacho(BBO)"
     },
     {
       "numero_processo": "1002426-59.2017.5.02.0464",
