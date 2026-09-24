@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-24T10:15:26",
+  "atualizado_em": "2026-09-24T10:30:21",
   "kpis": {
-    "total_andamento": 7497,
+    "total_andamento": 7496,
     "entradas_hoje": 0,
-    "saidas_hoje": 2,
+    "saidas_hoje": 3,
     "entradas_ontem": 10,
     "saidas_ontem": 4,
     "entradas_mes": 237,
-    "saidas_mes": 963,
+    "saidas_mes": 964,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 263,
-    "valor_causa_total": 1701905304.23,
-    "saldo_mes": -726
+    "valor_causa_total": 1701744304.23,
+    "saldo_mes": -727
   },
   "serie_diaria": [
     {
@@ -312,27 +312,27 @@
     {
       "data": "2026-09-24",
       "entradas": 0,
-      "saidas": 2
+      "saidas": 3
     }
   ],
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2085,
+      "andamento": 2084,
       "entradas_mes": 84,
-      "saidas_mes": 78,
+      "saidas_mes": 79,
       "entradas_mes_anterior": 93,
       "saidas_mes_anterior": 74,
-      "valor_causa": 459026526.34
+      "valor_causa": 458865526.34
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1791,
-      "entradas_mes": 38,
+      "andamento": 1793,
+      "entradas_mes": 40,
       "saidas_mes": 39,
       "entradas_mes_anterior": 52,
       "saidas_mes_anterior": 92,
-      "valor_causa": 299062750.49
+      "valor_causa": 299114538.26
     },
     {
       "nome": "Grupo B1",
@@ -354,12 +354,12 @@
     },
     {
       "nome": "Grupo C",
-      "andamento": 666,
-      "entradas_mes": 29,
+      "andamento": 667,
+      "entradas_mes": 30,
       "saidas_mes": 6,
       "entradas_mes_anterior": 22,
       "saidas_mes_anterior": 1,
-      "valor_causa": 241566703.29
+      "valor_causa": 241917724.22
     },
     {
       "nome": "Grupo B3",
@@ -399,12 +399,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 7,
-      "entradas_mes": 5,
+      "andamento": 4,
+      "entradas_mes": 2,
       "saidas_mes": 3,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 20,
-      "valor_causa": 807237.75
+      "valor_causa": 404429.05
     },
     {
       "nome": "Sócios",
@@ -527,12 +527,12 @@
     },
     {
       "nome": "TO",
-      "andamento": 44,
+      "andamento": 43,
       "entradas_mes": 6,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 1,
-      "valor_causa": 17830434.41
+      "valor_causa": 17669434.41
     },
     {
       "nome": "SC",
@@ -700,12 +700,12 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2953,
+      "andamento": 2952,
       "entradas_mes": 2,
-      "saidas_mes": 379,
+      "saidas_mes": 380,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 46,
-      "valor_causa": 657722480.21
+      "valor_causa": 657561480.21
     },
     {
       "nome": "Execução",
@@ -912,12 +912,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 749,
-      "entradas_mes": 29,
+      "andamento": 751,
+      "entradas_mes": 31,
       "saidas_mes": 14,
       "entradas_mes_anterior": 28,
       "saidas_mes_anterior": 11,
-      "valor_causa": 154667011.1
+      "valor_causa": 154718798.87
     },
     {
       "fase": "Instrução",
@@ -932,12 +932,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo C",
-      "andamento": 398,
-      "entradas_mes": 28,
+      "andamento": 399,
+      "entradas_mes": 29,
       "saidas_mes": 4,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 0,
-      "valor_causa": 151949812.59
+      "valor_causa": 152300833.52
     },
     {
       "fase": "Instrução",
@@ -981,16 +981,6 @@
     },
     {
       "fase": "Instrução",
-      "grupo": "Sem grupo",
-      "andamento": 5,
-      "entradas_mes": 5,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 2,
-      "valor_causa": 498063.22
-    },
-    {
-      "fase": "Instrução",
       "grupo": "Grupo A1",
       "andamento": 4,
       "entradas_mes": 2,
@@ -998,6 +988,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
+    },
+    {
+      "fase": "Instrução",
+      "grupo": "Sem grupo",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 2,
+      "valor_causa": 95254.52
     },
     {
       "fase": "Outras",
@@ -1122,12 +1122,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo E2",
-      "andamento": 584,
+      "andamento": 583,
       "entradas_mes": 0,
-      "saidas_mes": 11,
+      "saidas_mes": 12,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 10,
-      "valor_causa": 187858186.78
+      "valor_causa": 187697186.78
     },
     {
       "fase": "Recurso",
@@ -1262,12 +1262,12 @@
     },
     {
       "nome": "Rafael Yepez do Lago(RYL)",
-      "andamento": 444,
+      "andamento": 443,
       "entradas_mes": 12,
-      "saidas_mes": 14,
+      "saidas_mes": 15,
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 17,
-      "valor_causa": 60048855.75
+      "valor_causa": 59887855.75
     },
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
@@ -1829,12 +1829,12 @@
     },
     {
       "nome": "EUROCHEM FTO MATRIZ",
-      "andamento": 102,
+      "andamento": 101,
       "entradas_mes": 6,
-      "saidas_mes": 5,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 4,
-      "valor_causa": 10447414.37,
+      "valor_causa": 10286414.37,
       "alerta_entrada": true
     },
     {
@@ -2466,12 +2466,12 @@
     {
       "grupo": "Grupo C",
       "cliente": "TELEFONICA BRASIL",
-      "andamento": 343,
-      "entradas_mes": 11,
+      "andamento": 344,
+      "entradas_mes": 12,
       "saidas_mes": 0,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 0,
-      "valor_causa": 182854880.08,
+      "valor_causa": 183205901.01,
       "alerta_entrada": true
     },
     {
@@ -2862,12 +2862,12 @@
     {
       "grupo": "Grupo E1",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 350,
-      "entradas_mes": 5,
+      "andamento": 352,
+      "entradas_mes": 7,
       "saidas_mes": 11,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 26,
-      "valor_causa": 70899735.51,
+      "valor_causa": 70951523.28,
       "alerta_entrada": true
     },
     {
@@ -3126,12 +3126,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "EUROCHEM FTO MATRIZ",
-      "andamento": 102,
+      "andamento": 101,
       "entradas_mes": 6,
-      "saidas_mes": 5,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 4,
-      "valor_causa": 10447414.37,
+      "valor_causa": 10286414.37,
       "alerta_entrada": true
     },
     {
@@ -3642,17 +3642,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "MAHLE METAL - MOGI",
-      "andamento": 3,
-      "entradas_mes": 3,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 7,
-      "valor_causa": 69673.34,
-      "alerta_entrada": true
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "PEIXOTO E CURY",
       "andamento": 1,
       "entradas_mes": 0,
@@ -3675,13 +3664,13 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "TELEFONICA BRASIL",
+      "cliente": "MAHLE METAL - MOGI",
       "andamento": 1,
       "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 351020.93,
+      "saidas_mes_anterior": 7,
+      "valor_causa": 17885.57,
       "alerta_entrada": false
     },
     {
@@ -4012,12 +4001,12 @@
     {
       "grupo": "Grupo C",
       "profissional": "Thiago Frid Figueiredo Rossi(TFR)",
-      "andamento": 172,
-      "entradas_mes": 5,
+      "andamento": 173,
+      "entradas_mes": 6,
       "saidas_mes": 0,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 0,
-      "valor_causa": 117272713.51
+      "valor_causa": 117623734.44
     },
     {
       "grupo": "Grupo C",
@@ -4092,12 +4081,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Paloma da Silva Santos(PSI)",
-      "andamento": 245,
-      "entradas_mes": 6,
+      "andamento": 246,
+      "entradas_mes": 7,
       "saidas_mes": 10,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 24,
-      "valor_causa": 54515287.96
+      "valor_causa": 54529263.23
     },
     {
       "grupo": "Grupo E1",
@@ -4112,12 +4101,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Tamires Lins Costa(TLI)",
-      "andamento": 212,
-      "entradas_mes": 2,
+      "andamento": 213,
+      "entradas_mes": 3,
       "saidas_mes": 6,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 15,
-      "valor_causa": 26971998.39
+      "valor_causa": 27009810.89
     },
     {
       "grupo": "Grupo E1",
@@ -4192,12 +4181,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Rafael Yepez do Lago(RYL)",
-      "andamento": 444,
+      "andamento": 443,
       "entradas_mes": 12,
-      "saidas_mes": 14,
+      "saidas_mes": 15,
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 17,
-      "valor_causa": 60048855.75
+      "valor_causa": 59887855.75
     },
     {
       "grupo": "Grupo E2",
@@ -4311,16 +4300,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Paloma da Silva Santos(PSI)",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 1,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 9,
-      "valor_causa": 31860.84
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
       "andamento": 1,
       "entradas_mes": 0,
@@ -4341,23 +4320,13 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Thiago Frid Figueiredo Rossi(TFR)",
+      "profissional": "Paloma da Silva Santos(PSI)",
       "andamento": 1,
       "entradas_mes": 1,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 351020.93
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Tamires Lins Costa(TLI)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 37812.5
+      "saidas_mes_anterior": 9,
+      "valor_causa": 17885.57
     },
     {
       "grupo": "Sem grupo",
@@ -7464,12 +7433,12 @@
     {
       "estado": "TO",
       "cliente": "EUROCHEM FTO MATRIZ",
-      "andamento": 10,
+      "andamento": 9,
       "entradas_mes": 4,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 418356.46
+      "valor_causa": 257356.46
     },
     {
       "estado": "TO",
@@ -7755,12 +7724,12 @@
     },
     {
       "nome": "EUROCHEM FTO MATRIZ",
-      "andamento": 102,
+      "andamento": 101,
       "entradas_mes": 6,
-      "saidas_mes": 5,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 4,
-      "valor_causa": 10447414.37,
+      "valor_causa": 10286414.37,
       "alerta_entrada": true
     },
     {
@@ -7775,16 +7744,6 @@
     }
   ],
   "sem_grupo_processos": [
-    {
-      "numero_processo": "0011875-95.2026.5.15.0071",
-      "cliente": "MAHLE METAL - MOGI",
-      "profissional": "Tamires Lins Costa(TLI)"
-    },
-    {
-      "numero_processo": "0011748-60.2026.5.15.0071",
-      "cliente": "MAHLE METAL - MOGI",
-      "profissional": "Paloma da Silva Santos(PSI)"
-    },
     {
       "numero_processo": "0011609-11.2026.5.15.0071",
       "cliente": "MAHLE METAL - MOGI",
@@ -7804,11 +7763,6 @@
       "numero_processo": "1003936-45.2026.5.02.0221",
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "profissional": "Giulia Vendramini Milani(GVM)"
-    },
-    {
-      "numero_processo": "1001556-56.2026.5.02.0057",
-      "cliente": "TELEFONICA BRASIL",
-      "profissional": "Thiago Frid Figueiredo Rossi(TFR)"
     }
   ]
 }
