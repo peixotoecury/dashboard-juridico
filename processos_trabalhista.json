@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-24T13:15:25",
+  "atualizado_em": "2026-09-24T13:30:28",
   "kpis": {
-    "total_andamento": 7503,
+    "total_andamento": 7505,
     "entradas_hoje": 1,
     "saidas_hoje": 5,
-    "entradas_ontem": 18,
+    "entradas_ontem": 20,
     "saidas_ontem": 4,
-    "entradas_mes": 246,
+    "entradas_mes": 248,
     "saidas_mes": 966,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 263,
-    "valor_causa_total": 1703987902.05,
-    "saldo_mes": -720
+    "valor_causa_total": 1704891013.75,
+    "saldo_mes": -718
   },
   "serie_diaria": [
     {
@@ -306,7 +306,7 @@
     },
     {
       "data": "2026-09-23",
-      "entradas": 18,
+      "entradas": 20,
       "saidas": 4
     },
     {
@@ -399,12 +399,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 8,
-      "entradas_mes": 6,
+      "andamento": 10,
+      "entradas_mes": 8,
       "saidas_mes": 3,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 20,
-      "valor_causa": 1579497.08
+      "valor_causa": 2482608.78
     },
     {
       "nome": "Sócios",
@@ -446,21 +446,21 @@
     },
     {
       "nome": "MG",
-      "andamento": 533,
-      "entradas_mes": 23,
+      "andamento": 534,
+      "entradas_mes": 24,
       "saidas_mes": 18,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 23,
-      "valor_causa": 131552333.78
+      "valor_causa": 131881920.2
     },
     {
       "nome": "PR",
-      "andamento": 233,
-      "entradas_mes": 11,
+      "andamento": 234,
+      "entradas_mes": 12,
       "saidas_mes": 7,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 2,
-      "valor_causa": 47147336.1
+      "valor_causa": 47720861.38
     },
     {
       "nome": "RS",
@@ -682,12 +682,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2814,
-      "entradas_mes": 229,
+      "andamento": 2816,
+      "entradas_mes": 231,
       "saidas_mes": 195,
       "entradas_mes_anterior": 206,
       "saidas_mes_anterior": 66,
-      "valor_causa": 790501267.63
+      "valor_causa": 791404379.33
     },
     {
       "nome": "Sentença",
@@ -982,12 +982,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 6,
-      "entradas_mes": 6,
+      "andamento": 8,
+      "entradas_mes": 8,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 2,
-      "valor_causa": 1270322.55
+      "valor_causa": 2173434.25
     },
     {
       "fase": "Instrução",
@@ -1271,12 +1271,12 @@
     },
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 352,
-      "entradas_mes": 19,
+      "andamento": 353,
+      "entradas_mes": 20,
       "saidas_mes": 25,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 19,
-      "valor_causa": 47478697.56
+      "valor_causa": 47808283.98
     },
     {
       "nome": "Letícia Meneghini Fontes (LMI)",
@@ -1415,12 +1415,12 @@
     },
     {
       "nome": "Erik Mota Coppi(ECO)",
-      "andamento": 247,
-      "entradas_mes": 12,
+      "andamento": 248,
+      "entradas_mes": 13,
       "saidas_mes": 6,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 2,
-      "valor_causa": 43690486.49
+      "valor_causa": 44264011.77
     },
     {
       "nome": "Paloma da Silva Santos(PSI)",
@@ -1789,12 +1789,12 @@
     },
     {
       "nome": "EUROCHEM SALITRE",
-      "andamento": 153,
-      "entradas_mes": 13,
+      "andamento": 154,
+      "entradas_mes": 14,
       "saidas_mes": 11,
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 7,
-      "valor_causa": 36655958.57,
+      "valor_causa": 36985544.99,
       "alerta_entrada": true
     },
     {
@@ -1809,12 +1809,12 @@
     },
     {
       "nome": "COMPANHIA AIX",
-      "andamento": 110,
-      "entradas_mes": 11,
+      "andamento": 111,
+      "entradas_mes": 12,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 26122380.85,
+      "valor_causa": 26695906.13,
       "alerta_entrada": true
     },
     {
@@ -3653,6 +3653,28 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "COMPANHIA AIX",
+      "andamento": 3,
+      "entradas_mes": 3,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1198650.56,
+      "alerta_entrada": true
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "EUROCHEM SALITRE",
+      "andamento": 3,
+      "entradas_mes": 3,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 496056.41,
+      "alerta_entrada": true
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "MULTICEL",
       "andamento": 2,
       "entradas_mes": 1,
@@ -3660,28 +3682,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 325000.0,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "COMPANHIA AIX",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 625125.28,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "EUROCHEM SALITRE",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 166469.99,
       "alerta_entrada": false
     },
     {
@@ -4323,12 +4323,22 @@
     {
       "grupo": "Sem grupo",
       "profissional": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 3,
-      "entradas_mes": 3,
+      "andamento": 4,
+      "entradas_mes": 4,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 358197.27
+      "valor_causa": 687783.69
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Erik Mota Coppi(ECO)",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 573525.28
     },
     {
       "grupo": "Sem grupo",
@@ -4359,16 +4369,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 625125.28
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Erik Mota Coppi(ECO)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 0.0
     },
     {
       "grupo": "Sem grupo",
@@ -5005,12 +5005,12 @@
     {
       "estado": "MG",
       "cliente": "EUROCHEM SALITRE",
-      "andamento": 106,
-      "entradas_mes": 10,
+      "andamento": 107,
+      "entradas_mes": 11,
       "saidas_mes": 9,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 5,
-      "valor_causa": 23979997.38
+      "valor_causa": 24309583.8
     },
     {
       "estado": "MG",
@@ -5565,12 +5565,12 @@
     {
       "estado": "PR",
       "cliente": "COMPANHIA AIX",
-      "andamento": 99,
-      "entradas_mes": 5,
+      "andamento": 100,
+      "entradas_mes": 6,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 23038068.9
+      "valor_causa": 23611594.18
     },
     {
       "estado": "PR",
@@ -7756,22 +7756,22 @@
     },
     {
       "nome": "EUROCHEM SALITRE",
-      "andamento": 153,
-      "entradas_mes": 13,
+      "andamento": 154,
+      "entradas_mes": 14,
       "saidas_mes": 11,
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 7,
-      "valor_causa": 36655958.57,
+      "valor_causa": 36985544.99,
       "alerta_entrada": true
     },
     {
       "nome": "COMPANHIA AIX",
-      "andamento": 110,
-      "entradas_mes": 11,
+      "andamento": 111,
+      "entradas_mes": 12,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 26122380.85,
+      "valor_causa": 26695906.13,
       "alerta_entrada": true
     },
     {
@@ -7817,12 +7817,22 @@
       "profissional": "Erik Mota Coppi(ECO)"
     },
     {
+      "numero_processo": "0000694-62.2026.5.09.0072",
+      "cliente": "COMPANHIA AIX",
+      "profissional": "Erik Mota Coppi(ECO)"
+    },
+    {
       "numero_processo": "0012286-80.2025.5.03.0048",
       "cliente": "EUROCHEM SALITRE",
       "profissional": "Camila Alves Magalhães de Paula(CAL)"
     },
     {
       "numero_processo": "0011770-53.2026.5.15.0125",
+      "cliente": "EUROCHEM SALITRE",
+      "profissional": "Camila Alves Magalhães de Paula(CAL)"
+    },
+    {
+      "numero_processo": "0011203-93.2026.5.03.0080",
       "cliente": "EUROCHEM SALITRE",
       "profissional": "Camila Alves Magalhães de Paula(CAL)"
     },
