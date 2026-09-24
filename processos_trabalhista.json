@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-24T11:00:28",
+  "atualizado_em": "2026-09-24T11:15:23",
   "kpis": {
-    "total_andamento": 7498,
+    "total_andamento": 7499,
     "entradas_hoje": 0,
     "saidas_hoje": 3,
-    "entradas_ontem": 12,
+    "entradas_ontem": 13,
     "saidas_ontem": 4,
-    "entradas_mes": 239,
+    "entradas_mes": 240,
     "saidas_mes": 964,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 263,
-    "valor_causa_total": 1702240969.2,
-    "saldo_mes": -725
+    "valor_causa_total": 1702797969.2,
+    "saldo_mes": -724
   },
   "serie_diaria": [
     {
@@ -306,7 +306,7 @@
     },
     {
       "data": "2026-09-23",
-      "entradas": 12,
+      "entradas": 13,
       "saidas": 4
     },
     {
@@ -399,12 +399,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 4,
-      "entradas_mes": 2,
+      "andamento": 5,
+      "entradas_mes": 3,
       "saidas_mes": 3,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 20,
-      "valor_causa": 805839.5
+      "valor_causa": 1362839.5
     },
     {
       "nome": "Sócios",
@@ -437,12 +437,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5729,
-      "entradas_mes": 140,
+      "andamento": 5730,
+      "entradas_mes": 141,
       "saidas_mes": 799,
       "entradas_mes_anterior": 185,
       "saidas_mes_anterior": 214,
-      "valor_causa": 1336004327.65
+      "valor_causa": 1336561327.65
     },
     {
       "nome": "MG",
@@ -682,12 +682,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2809,
-      "entradas_mes": 223,
+      "andamento": 2810,
+      "entradas_mes": 224,
       "saidas_mes": 194,
       "entradas_mes_anterior": 206,
       "saidas_mes_anterior": 66,
-      "valor_causa": 788732106.59
+      "valor_causa": 789289106.59
     },
     {
       "nome": "Sentença",
@@ -992,12 +992,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 2,
-      "entradas_mes": 2,
+      "andamento": 3,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 2,
-      "valor_causa": 496664.97
+      "valor_causa": 1053664.97
     },
     {
       "fase": "Outras",
@@ -1469,12 +1469,12 @@
     },
     {
       "nome": "Thiago Frid Figueiredo Rossi(TFR)",
-      "andamento": 173,
-      "entradas_mes": 6,
+      "andamento": 174,
+      "entradas_mes": 7,
       "saidas_mes": 0,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 0,
-      "valor_causa": 117623734.44
+      "valor_causa": 118180734.44
     },
     {
       "nome": "Vinicius da Silva Cerqueira(VSI)",
@@ -1709,12 +1709,12 @@
     },
     {
       "nome": "TELEFONICA BRASIL",
-      "andamento": 362,
-      "entradas_mes": 12,
+      "andamento": 363,
+      "entradas_mes": 13,
       "saidas_mes": 2,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 0,
-      "valor_causa": 188071211.88,
+      "valor_causa": 188628211.88,
       "alerta_entrada": true
     },
     {
@@ -3664,6 +3664,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "CBC CARTUCHOS BRASIL",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 426144.28,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "HERINGER",
       "andamento": 1,
       "entradas_mes": 1,
@@ -3675,13 +3686,13 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "CBC CARTUCHOS BRASIL",
+      "cliente": "TELEFONICA BRASIL",
       "andamento": 1,
       "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 426144.28,
+      "valor_causa": 557000.0,
       "alerta_entrada": false
     },
     {
@@ -4320,6 +4331,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Letícia Meneghini Fontes (LMI)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 426144.28
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Bianca Bolanhi Camacho(BBO)",
       "andamento": 1,
       "entradas_mes": 1,
@@ -4330,13 +4351,13 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Letícia Meneghini Fontes (LMI)",
+      "profissional": "Thiago Frid Figueiredo Rossi(TFR)",
       "andamento": 1,
       "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 426144.28
+      "valor_causa": 557000.0
     },
     {
       "grupo": "Sócios",
@@ -6333,12 +6354,12 @@
     {
       "estado": "SP",
       "cliente": "TELEFONICA BRASIL",
-      "andamento": 253,
-      "entradas_mes": 11,
+      "andamento": 254,
+      "entradas_mes": 12,
       "saidas_mes": 0,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 0,
-      "valor_causa": 162350777.56
+      "valor_causa": 162907777.56
     },
     {
       "estado": "SP",
@@ -7664,12 +7685,12 @@
   "clientes_com_alerta": [
     {
       "nome": "TELEFONICA BRASIL",
-      "andamento": 362,
-      "entradas_mes": 12,
+      "andamento": 363,
+      "entradas_mes": 13,
       "saidas_mes": 2,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 0,
-      "valor_causa": 188071211.88,
+      "valor_causa": 188628211.88,
       "alerta_entrada": true
     },
     {
@@ -7763,6 +7784,11 @@
       "numero_processo": "1000930-65.2026.5.02.0080",
       "cliente": "PEIXOTO E CURY",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
+    },
+    {
+      "numero_processo": "1001560-14.2026.5.02.0051",
+      "cliente": "TELEFONICA BRASIL",
+      "profissional": "Thiago Frid Figueiredo Rossi(TFR)"
     }
   ]
 }
