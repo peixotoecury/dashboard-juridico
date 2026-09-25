@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-25T15:45:32",
+  "atualizado_em": "2026-09-25T16:00:38",
   "kpis": {
-    "total_andamento": 7528,
+    "total_andamento": 7527,
     "entradas_hoje": 6,
-    "saidas_hoje": 2,
+    "saidas_hoje": 3,
     "entradas_ontem": 21,
     "saidas_ontem": 8,
     "entradas_mes": 275,
-    "saidas_mes": 971,
+    "saidas_mes": 972,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 263,
-    "valor_causa_total": 1715121992.74,
-    "saldo_mes": -696
+    "valor_causa_total": 1714868665.02,
+    "saldo_mes": -697
   },
   "serie_diaria": [
     {
@@ -312,7 +312,7 @@
     {
       "data": "2026-09-25",
       "entradas": 6,
-      "saidas": 2
+      "saidas": 3
     }
   ],
   "por_grupo": [
@@ -336,12 +336,12 @@
     },
     {
       "nome": "Grupo B1",
-      "andamento": 1440,
+      "andamento": 1439,
       "entradas_mes": 47,
-      "saidas_mes": 31,
+      "saidas_mes": 32,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 45,
-      "valor_causa": 322217525.96
+      "valor_causa": 321964198.24
     },
     {
       "nome": "Grupo B2",
@@ -437,12 +437,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5744,
+      "andamento": 5743,
       "entradas_mes": 160,
-      "saidas_mes": 805,
+      "saidas_mes": 806,
       "entradas_mes_anterior": 185,
       "saidas_mes_anterior": 214,
-      "valor_causa": 1346044083.49
+      "valor_causa": 1345790755.77
     },
     {
       "nome": "MG",
@@ -682,12 +682,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2836,
+      "andamento": 2832,
       "entradas_mes": 255,
-      "saidas_mes": 197,
+      "saidas_mes": 198,
       "entradas_mes_anterior": 206,
       "saidas_mes_anterior": 66,
-      "valor_causa": 802064313.12
+      "valor_causa": 800601142.48
     },
     {
       "nome": "Sentença",
@@ -700,12 +700,12 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2953,
+      "andamento": 2956,
       "entradas_mes": 3,
       "saidas_mes": 381,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 46,
-      "valor_causa": 656927097.18
+      "valor_causa": 658136940.1
     },
     {
       "nome": "Execução",
@@ -922,12 +922,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B1",
-      "andamento": 446,
+      "andamento": 442,
       "entradas_mes": 47,
-      "saidas_mes": 10,
+      "saidas_mes": 11,
       "entradas_mes_anterior": 52,
       "saidas_mes_anterior": 14,
-      "valor_causa": 147799758.68
+      "valor_causa": 146336588.04
     },
     {
       "fase": "Instrução",
@@ -1092,12 +1092,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo B1",
-      "andamento": 845,
+      "andamento": 848,
       "entradas_mes": 0,
       "saidas_mes": 9,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 8,
-      "valor_causa": 156709818.45
+      "valor_causa": 157919661.37
     },
     {
       "fase": "Recurso",
@@ -1359,15 +1359,6 @@
       "valor_causa": 75756357.71
     },
     {
-      "nome": "Tamara Silva Marcílio(TAM)",
-      "andamento": 267,
-      "entradas_mes": 10,
-      "saidas_mes": 3,
-      "entradas_mes_anterior": 11,
-      "saidas_mes_anterior": 6,
-      "valor_causa": 51130575.14
-    },
-    {
       "nome": "Rafael Camargo Felisbino(RCF)",
       "andamento": 266,
       "entradas_mes": 18,
@@ -1375,6 +1366,15 @@
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 0,
       "valor_causa": 110221113.48
+    },
+    {
+      "nome": "Tamara Silva Marcílio(TAM)",
+      "andamento": 266,
+      "entradas_mes": 10,
+      "saidas_mes": 4,
+      "entradas_mes_anterior": 11,
+      "saidas_mes_anterior": 6,
+      "valor_causa": 50877247.42
     },
     {
       "nome": "Anna Carolina Balbino Gatti Baani(ANB)",
@@ -1659,12 +1659,12 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1440,
+      "andamento": 1439,
       "entradas_mes": 47,
-      "saidas_mes": 31,
+      "saidas_mes": 32,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 45,
-      "valor_causa": 322217525.96,
+      "valor_causa": 321964198.24,
       "alerta_entrada": false
     },
     {
@@ -2302,12 +2302,12 @@
     {
       "grupo": "Grupo B1",
       "cliente": "BRIDGESTONE",
-      "andamento": 1440,
+      "andamento": 1439,
       "entradas_mes": 47,
-      "saidas_mes": 31,
+      "saidas_mes": 32,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 45,
-      "valor_causa": 322217525.96,
+      "valor_causa": 321964198.24,
       "alerta_entrada": false
     },
     {
@@ -3820,12 +3820,12 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Tamara Silva Marcílio(TAM)",
-      "andamento": 267,
+      "andamento": 266,
       "entradas_mes": 10,
-      "saidas_mes": 3,
+      "saidas_mes": 4,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 6,
-      "valor_causa": 51130575.14
+      "valor_causa": 50877247.42
     },
     {
       "grupo": "Grupo B1",
@@ -6232,12 +6232,12 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1412,
+      "andamento": 1411,
       "entradas_mes": 43,
-      "saidas_mes": 30,
+      "saidas_mes": 31,
       "entradas_mes_anterior": 51,
       "saidas_mes_anterior": 45,
-      "valor_causa": 310590577.85
+      "valor_causa": 310337250.13
     },
     {
       "estado": "SP",
