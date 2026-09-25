@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-25T17:15:26",
+  "atualizado_em": "2026-09-25T17:30:29",
   "kpis": {
-    "total_andamento": 7527,
+    "total_andamento": 7525,
     "entradas_hoje": 6,
-    "saidas_hoje": 3,
+    "saidas_hoje": 5,
     "entradas_ontem": 21,
     "saidas_ontem": 8,
     "entradas_mes": 275,
-    "saidas_mes": 972,
+    "saidas_mes": 974,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 263,
-    "valor_causa_total": 1714868665.02,
-    "saldo_mes": -697
+    "valor_causa_total": 1714753810.45,
+    "saldo_mes": -699
   },
   "serie_diaria": [
     {
@@ -312,7 +312,7 @@
     {
       "data": "2026-09-25",
       "entradas": 6,
-      "saidas": 3
+      "saidas": 5
     }
   ],
   "por_grupo": [
@@ -336,12 +336,12 @@
     },
     {
       "nome": "Grupo B1",
-      "andamento": 1439,
+      "andamento": 1437,
       "entradas_mes": 47,
-      "saidas_mes": 32,
+      "saidas_mes": 34,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 45,
-      "valor_causa": 321964198.24
+      "valor_causa": 321849343.67
     },
     {
       "nome": "Grupo B2",
@@ -437,12 +437,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5743,
+      "andamento": 5741,
       "entradas_mes": 160,
-      "saidas_mes": 806,
+      "saidas_mes": 808,
       "entradas_mes_anterior": 185,
       "saidas_mes_anterior": 214,
-      "valor_causa": 1345790755.77
+      "valor_causa": 1345675901.2
     },
     {
       "nome": "MG",
@@ -682,12 +682,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2830,
+      "andamento": 2829,
       "entradas_mes": 255,
-      "saidas_mes": 198,
+      "saidas_mes": 199,
       "entradas_mes_anterior": 206,
       "saidas_mes_anterior": 66,
-      "valor_causa": 800311641.17
+      "valor_causa": 800196786.6
     },
     {
       "nome": "Sentença",
@@ -700,9 +700,9 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2956,
+      "andamento": 2955,
       "entradas_mes": 3,
-      "saidas_mes": 381,
+      "saidas_mes": 382,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 46,
       "valor_causa": 656027844.6
@@ -922,12 +922,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B1",
-      "andamento": 440,
+      "andamento": 439,
       "entradas_mes": 47,
-      "saidas_mes": 11,
+      "saidas_mes": 12,
       "entradas_mes_anterior": 52,
       "saidas_mes_anterior": 14,
-      "valor_causa": 146047086.73
+      "valor_causa": 145932232.16
     },
     {
       "fase": "Instrução",
@@ -1092,9 +1092,9 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo B1",
-      "andamento": 848,
+      "andamento": 847,
       "entradas_mes": 0,
-      "saidas_mes": 9,
+      "saidas_mes": 10,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 8,
       "valor_causa": 155810565.87
@@ -1296,15 +1296,6 @@
       "valor_causa": 78043497.03
     },
     {
-      "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 294,
-      "entradas_mes": 11,
-      "saidas_mes": 17,
-      "entradas_mes_anterior": 12,
-      "saidas_mes_anterior": 11,
-      "valor_causa": 156986938.97
-    },
-    {
       "nome": "Júlia Priego Lopes da Silva(JPL)",
       "andamento": 294,
       "entradas_mes": 0,
@@ -1312,6 +1303,15 @@
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 12,
       "valor_causa": 32737819.94
+    },
+    {
+      "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
+      "andamento": 293,
+      "entradas_mes": 11,
+      "saidas_mes": 17,
+      "entradas_mes_anterior": 11,
+      "saidas_mes_anterior": 11,
+      "valor_causa": 156673638.97
     },
     {
       "nome": "Bruna Cembranelli Fazenda (BCF)",
@@ -1369,12 +1369,12 @@
     },
     {
       "nome": "Tamara Silva Marcílio(TAM)",
-      "andamento": 266,
+      "andamento": 264,
       "entradas_mes": 10,
-      "saidas_mes": 4,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 6,
-      "valor_causa": 50877247.42
+      "valor_causa": 50762392.85
     },
     {
       "nome": "Anna Carolina Balbino Gatti Baani(ANB)",
@@ -1522,12 +1522,12 @@
     },
     {
       "nome": "Bruno Tanganelli Farah(BTF)",
-      "andamento": 13,
+      "andamento": 14,
       "entradas_mes": 9,
       "saidas_mes": 0,
-      "entradas_mes_anterior": 4,
+      "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 0,
-      "valor_causa": 5582748.72
+      "valor_causa": 5896048.72
     },
     {
       "nome": "Keyla Maria Barbosa Silva Moraes(KBM)",
@@ -1659,12 +1659,12 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1439,
+      "andamento": 1437,
       "entradas_mes": 47,
-      "saidas_mes": 32,
+      "saidas_mes": 34,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 45,
-      "valor_causa": 321964198.24,
+      "valor_causa": 321849343.67,
       "alerta_entrada": false
     },
     {
@@ -2302,12 +2302,12 @@
     {
       "grupo": "Grupo B1",
       "cliente": "BRIDGESTONE",
-      "andamento": 1439,
+      "andamento": 1437,
       "entradas_mes": 47,
-      "saidas_mes": 32,
+      "saidas_mes": 34,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 45,
-      "valor_causa": 321964198.24,
+      "valor_causa": 321849343.67,
       "alerta_entrada": false
     },
     {
@@ -3820,12 +3820,12 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Tamara Silva Marcílio(TAM)",
-      "andamento": 266,
+      "andamento": 264,
       "entradas_mes": 10,
-      "saidas_mes": 4,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 6,
-      "valor_causa": 50877247.42
+      "valor_causa": 50762392.85
     },
     {
       "grupo": "Grupo B1",
@@ -4190,12 +4190,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 289,
+      "andamento": 288,
       "entradas_mes": 11,
       "saidas_mes": 17,
-      "entradas_mes_anterior": 12,
+      "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 11,
-      "valor_causa": 156678218.72
+      "valor_causa": 156364918.72
     },
     {
       "grupo": "Grupo E2",
@@ -4250,12 +4250,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Bruno Tanganelli Farah(BTF)",
-      "andamento": 13,
+      "andamento": 14,
       "entradas_mes": 9,
       "saidas_mes": 0,
-      "entradas_mes_anterior": 4,
+      "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 0,
-      "valor_causa": 5582748.72
+      "valor_causa": 5896048.72
     },
     {
       "grupo": "Grupo E2",
@@ -6232,12 +6232,12 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1411,
+      "andamento": 1409,
       "entradas_mes": 43,
-      "saidas_mes": 31,
+      "saidas_mes": 33,
       "entradas_mes_anterior": 51,
       "saidas_mes_anterior": 45,
-      "valor_causa": 310337250.13
+      "valor_causa": 310222395.56
     },
     {
       "estado": "SP",
