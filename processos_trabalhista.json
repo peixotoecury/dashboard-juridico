@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-09-25T11:45:25",
+  "atualizado_em": "2026-09-25T12:08:55",
   "kpis": {
     "total_andamento": 7525,
     "entradas_hoje": 2,
@@ -327,12 +327,12 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1800,
-      "entradas_mes": 47,
+      "andamento": 1802,
+      "entradas_mes": 49,
       "saidas_mes": 39,
       "entradas_mes_anterior": 52,
       "saidas_mes_anterior": 92,
-      "valor_causa": 300954129.88
+      "valor_causa": 301506592.73
     },
     {
       "nome": "Grupo B1",
@@ -399,12 +399,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 11,
-      "entradas_mes": 9,
+      "andamento": 9,
+      "entradas_mes": 7,
       "saidas_mes": 3,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 20,
-      "valor_causa": 7252143.4
+      "valor_causa": 6699680.55
     },
     {
       "nome": "Sócios",
@@ -673,21 +673,21 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 400,
-      "entradas_mes": 11,
+      "andamento": 401,
+      "entradas_mes": 12,
       "saidas_mes": 7,
       "entradas_mes_anterior": 44,
       "saidas_mes_anterior": 6,
-      "valor_causa": 87253831.46
+      "valor_causa": 87291643.96
     },
     {
       "nome": "Instrução",
-      "andamento": 2836,
-      "entradas_mes": 252,
+      "andamento": 2835,
+      "entradas_mes": 251,
       "saidas_mes": 196,
       "entradas_mes_anterior": 206,
       "saidas_mes_anterior": 66,
-      "valor_causa": 801053199.1
+      "valor_causa": 801015386.6
     },
     {
       "nome": "Sentença",
@@ -742,12 +742,12 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo E1",
-      "andamento": 48,
-      "entradas_mes": 9,
+      "andamento": 49,
+      "entradas_mes": 10,
       "saidas_mes": 1,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 0,
-      "valor_causa": 14219380.25
+      "valor_causa": 14257192.75
     },
     {
       "fase": "Ajuizamento",
@@ -912,12 +912,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 755,
-      "entradas_mes": 35,
+      "andamento": 756,
+      "entradas_mes": 36,
       "saidas_mes": 14,
       "entradas_mes_anterior": 28,
       "saidas_mes_anterior": 11,
-      "valor_causa": 156525328.05
+      "valor_causa": 157039978.4
     },
     {
       "fase": "Instrução",
@@ -982,12 +982,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 9,
-      "entradas_mes": 9,
+      "andamento": 7,
+      "entradas_mes": 7,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 2,
-      "valor_causa": 6942968.87
+      "valor_causa": 6390506.02
     },
     {
       "fase": "Instrução",
@@ -2851,23 +2851,23 @@
     {
       "grupo": "Grupo E1",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 638,
-      "entradas_mes": 18,
+      "andamento": 639,
+      "entradas_mes": 19,
       "saidas_mes": 12,
       "entradas_mes_anterior": 28,
       "saidas_mes_anterior": 20,
-      "valor_causa": 135967508.15,
+      "valor_causa": 136455471.0,
       "alerta_entrada": false
     },
     {
       "grupo": "Grupo E1",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 353,
-      "entradas_mes": 8,
+      "andamento": 354,
+      "entradas_mes": 9,
       "saidas_mes": 11,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 26,
-      "valor_causa": 71176996.07,
+      "valor_causa": 71241496.07,
       "alerta_entrada": true
     },
     {
@@ -3675,17 +3675,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 5214997.56,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "PEIXOTO E CURY",
       "andamento": 1,
       "entradas_mes": 0,
@@ -3719,17 +3708,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "MAHLE METAL - MOGI",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 7,
-      "valor_causa": 64500.0,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "EUROCHEM SALITRE",
       "andamento": 1,
       "entradas_mes": 1,
@@ -3737,6 +3715,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 260507.65,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "SYNGENTA PROTEÇÃO DE",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 4727034.71,
       "alerta_entrada": false
     },
     {
@@ -4106,12 +4095,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Giulia Vendramini Milani(GVM)",
-      "andamento": 447,
-      "entradas_mes": 15,
+      "andamento": 448,
+      "entradas_mes": 16,
       "saidas_mes": 11,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 6,
-      "valor_causa": 66015121.92
+      "valor_causa": 66079621.92
     },
     {
       "grupo": "Grupo E1",
@@ -4126,12 +4115,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Joice Ramos Miranda(JRM)",
-      "andamento": 290,
-      "entradas_mes": 8,
+      "andamento": 291,
+      "entradas_mes": 9,
       "saidas_mes": 3,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 2,
-      "valor_causa": 72618399.47
+      "valor_causa": 73106362.32
     },
     {
       "grupo": "Grupo E1",
@@ -4356,12 +4345,12 @@
     {
       "grupo": "Sem grupo",
       "profissional": "Joice Ramos Miranda(JRM)",
-      "andamento": 4,
-      "entradas_mes": 4,
+      "andamento": 3,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 5425097.56
+      "valor_causa": 4937134.71
     },
     {
       "grupo": "Sem grupo",
@@ -4392,16 +4381,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 44280.34
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Giulia Vendramini Milani(GVM)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 64500.0
     },
     {
       "grupo": "Sem grupo",
@@ -7900,11 +7879,6 @@
       "profissional": "Camila Alves Magalhães de Paula(CAL)"
     },
     {
-      "numero_processo": "0012303-54.2026.5.15.0014",
-      "cliente": "MAHLE METAL - MOGI",
-      "profissional": "Giulia Vendramini Milani(GVM)"
-    },
-    {
       "numero_processo": "0010948-89.2026.5.03.0063",
       "cliente": "MAHLE THERMAL",
       "profissional": "Joice Ramos Miranda(JRM)"
@@ -7926,11 +7900,6 @@
     },
     {
       "numero_processo": "1001838-45.2026.5.02.0720",
-      "cliente": "SYNGENTA PROTEÇÃO DE",
-      "profissional": "Joice Ramos Miranda(JRM)"
-    },
-    {
-      "numero_processo": "0011588-64.2026.5.15.0126",
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "profissional": "Joice Ramos Miranda(JRM)"
     }
