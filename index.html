@@ -6269,9 +6269,10 @@ function renderFataisRespTipo() {
   tbody.innerHTML = linhas.map(function(x, i) {
     var rowBg = i % 2 === 0 ? '#fff' : '#fafafa';
     return '<tr style="background:' + rowBg + ';">'
-      + '<td style="padding:7px 8px;font-weight:600;color:#1a2b3c;">' + e(x.resp) + '</td>'
+      + '<td style="padding:7px 8px;font-weight:600;color:#1a2b3c;white-space:nowrap;">' + e(x.resp) + '</td>'
       + '<td style="padding:7px 8px;">'
-        + '<span style="background:#ffebee;color:#b71c1c;border-radius:20px;padding:2px 10px;font-size:11px;font-weight:600;white-space:nowrap;">' + e(x.tarefa) + '</span>'
+        // descrição livre pode ser enorme: limita a largura e corta com reticências (texto completo no title)
+        + '<span title="' + e(x.tarefa) + '" style="display:inline-block;max-width:420px;overflow:hidden;text-overflow:ellipsis;vertical-align:middle;background:#ffebee;color:#b71c1c;border-radius:20px;padding:2px 10px;font-size:11px;font-weight:600;white-space:nowrap;">' + e(x.tarefa) + '</span>'
       + '</td>'
       + '<td class="td-mono proc-normal" style="padding:7px 8px;" title="' + e(x.processo) + '">' + e(x.processo) + '</td>'
       + '<td style="padding:7px 8px;color:#555;" title="' + e(x.cliente) + '">' + e(x.cliente) + '</td>'
