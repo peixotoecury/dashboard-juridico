@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-09-25T10:00:31",
+  "atualizado_em": "2026-09-25T10:15:30",
   "kpis": {
     "total_andamento": 7522,
     "entradas_hoje": 1,
@@ -318,12 +318,12 @@
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2093,
-      "entradas_mes": 95,
+      "andamento": 2094,
+      "entradas_mes": 96,
       "saidas_mes": 81,
       "entradas_mes_anterior": 93,
       "saidas_mes_anterior": 74,
-      "valor_causa": 460237074.2
+      "valor_causa": 460566660.62
     },
     {
       "nome": "Grupo E1",
@@ -399,12 +399,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 14,
-      "entradas_mes": 12,
+      "andamento": 13,
+      "entradas_mes": 11,
       "saidas_mes": 3,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 20,
-      "valor_causa": 7181866.39
+      "valor_causa": 6852279.97
     },
     {
       "nome": "Sócios",
@@ -902,12 +902,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 855,
-      "entradas_mes": 91,
+      "andamento": 856,
+      "entradas_mes": 92,
       "saidas_mes": 21,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 27,
-      "valor_causa": 176113381.2
+      "valor_causa": 176442967.62
     },
     {
       "fase": "Instrução",
@@ -982,12 +982,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 12,
-      "entradas_mes": 12,
+      "andamento": 11,
+      "entradas_mes": 11,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 2,
-      "valor_causa": 6872691.86
+      "valor_causa": 6543105.44
     },
     {
       "fase": "Instrução",
@@ -3126,12 +3126,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "EUROCHEM SALITRE",
-      "andamento": 154,
-      "entradas_mes": 14,
+      "andamento": 155,
+      "entradas_mes": 15,
       "saidas_mes": 11,
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 7,
-      "valor_causa": 36822460.0,
+      "valor_causa": 37152046.42,
       "alerta_entrada": true
     },
     {
@@ -3664,17 +3664,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "EUROCHEM SALITRE",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 590094.07,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "MAHLE THERMAL",
       "andamento": 2,
       "entradas_mes": 2,
@@ -3748,6 +3737,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 191327.18,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "EUROCHEM SALITRE",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 260507.65,
       "alerta_entrada": false
     },
     {
@@ -4257,12 +4257,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 353,
-      "entradas_mes": 20,
+      "andamento": 354,
+      "entradas_mes": 21,
       "saidas_mes": 25,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 19,
-      "valor_causa": 47645198.99
+      "valor_causa": 47974785.41
     },
     {
       "grupo": "Grupo E2",
@@ -4376,16 +4376,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 590094.07
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Giulia Vendramini Milani(GVM)",
       "andamento": 2,
       "entradas_mes": 2,
@@ -4453,6 +4443,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 9,
       "valor_causa": 207587.22
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Camila Alves Magalhães de Paula(CAL)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 260507.65
     },
     {
       "grupo": "Sócios",
@@ -7909,11 +7909,6 @@
       "numero_processo": "0010706-88.2026.5.03.0174",
       "cliente": "EUROCHEM FTO MATRIZ",
       "profissional": "Rafael Yepez do Lago(RYL)"
-    },
-    {
-      "numero_processo": "0011203-93.2026.5.03.0080",
-      "cliente": "EUROCHEM SALITRE",
-      "profissional": "Camila Alves Magalhães de Paula(CAL)"
     },
     {
       "numero_processo": "0000914-51.2026.5.05.0014",
