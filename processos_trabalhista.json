@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-28T15:45:37",
+  "atualizado_em": "2026-09-28T16:00:41",
   "kpis": {
-    "total_andamento": 7528,
-    "entradas_hoje": 10,
+    "total_andamento": 7531,
+    "entradas_hoje": 13,
     "saidas_hoje": 5,
     "entradas_ontem": 0,
     "saidas_ontem": 0,
-    "entradas_mes": 286,
+    "entradas_mes": 289,
     "saidas_mes": 982,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 263,
-    "valor_causa_total": 1717364992.47,
-    "saldo_mes": -696
+    "valor_causa_total": 1717904313.81,
+    "saldo_mes": -693
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-09-28",
-      "entradas": 10,
+      "entradas": 13,
       "saidas": 5
     }
   ],
@@ -399,12 +399,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 4,
-      "entradas_mes": 2,
+      "andamento": 7,
+      "entradas_mes": 5,
       "saidas_mes": 3,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 20,
-      "valor_causa": 459625.64
+      "valor_causa": 998946.98
     },
     {
       "nome": "Sócios",
@@ -437,21 +437,21 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5745,
-      "entradas_mes": 167,
+      "andamento": 5746,
+      "entradas_mes": 168,
       "saidas_mes": 811,
       "entradas_mes_anterior": 185,
       "saidas_mes_anterior": 214,
-      "valor_causa": 1347933183.82
+      "valor_causa": 1348209194.42
     },
     {
       "nome": "MG",
-      "andamento": 541,
-      "entradas_mes": 31,
+      "andamento": 542,
+      "entradas_mes": 32,
       "saidas_mes": 18,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 23,
-      "valor_causa": 132870323.41
+      "valor_causa": 133120624.65
     },
     {
       "nome": "PR",
@@ -491,12 +491,12 @@
     },
     {
       "nome": "BA",
-      "andamento": 103,
-      "entradas_mes": 7,
+      "andamento": 104,
+      "entradas_mes": 8,
       "saidas_mes": 4,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 5,
-      "valor_causa": 13287826.31
+      "valor_causa": 13300835.81
     },
     {
       "nome": "GO",
@@ -682,12 +682,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2839,
-      "entradas_mes": 265,
+      "andamento": 2842,
+      "entradas_mes": 268,
       "saidas_mes": 199,
       "entradas_mes_anterior": 206,
       "saidas_mes_anterior": 66,
-      "valor_causa": 802655368.75
+      "valor_causa": 803194690.09
     },
     {
       "nome": "Sentença",
@@ -981,6 +981,16 @@
     },
     {
       "fase": "Instrução",
+      "grupo": "Sem grupo",
+      "andamento": 5,
+      "entradas_mes": 5,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 2,
+      "valor_causa": 689772.45
+    },
+    {
+      "fase": "Instrução",
       "grupo": "Grupo A1",
       "andamento": 4,
       "entradas_mes": 2,
@@ -988,16 +998,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
-    },
-    {
-      "fase": "Instrução",
-      "grupo": "Sem grupo",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 2,
-      "valor_causa": 150451.11
     },
     {
       "fase": "Outras",
@@ -1253,12 +1253,12 @@
   "por_profissional": [
     {
       "nome": "Rafael Yepez do Lago(RYL)",
-      "andamento": 450,
-      "entradas_mes": 17,
+      "andamento": 451,
+      "entradas_mes": 18,
       "saidas_mes": 17,
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 17,
-      "valor_causa": 61989287.87
+      "valor_causa": 62002297.37
     },
     {
       "nome": "Giulia Vendramini Milani(GVM)",
@@ -1271,12 +1271,12 @@
     },
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 355,
-      "entradas_mes": 23,
+      "andamento": 356,
+      "entradas_mes": 24,
       "saidas_mes": 26,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 19,
-      "valor_causa": 47234822.91
+      "valor_causa": 47485124.15
     },
     {
       "nome": "Letícia Meneghini Fontes (LMI)",
@@ -1415,12 +1415,12 @@
     },
     {
       "nome": "Paloma da Silva Santos(PSI)",
-      "andamento": 247,
-      "entradas_mes": 9,
+      "andamento": 248,
+      "entradas_mes": 10,
       "saidas_mes": 11,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 33,
-      "valor_causa": 54685468.07
+      "valor_causa": 54961478.67
     },
     {
       "nome": "Erik Mota Coppi(ECO)",
@@ -1679,12 +1679,12 @@
     },
     {
       "nome": "BP BIOENERGIA",
-      "andamento": 748,
-      "entradas_mes": 15,
+      "andamento": 750,
+      "entradas_mes": 17,
       "saidas_mes": 30,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 31,
-      "valor_causa": 207423098.1,
+      "valor_causa": 207686408.84,
       "alerta_entrada": false
     },
     {
@@ -1719,12 +1719,12 @@
     },
     {
       "nome": "MAHLE METAL - MOGI",
-      "andamento": 355,
-      "entradas_mes": 10,
+      "andamento": 356,
+      "entradas_mes": 11,
       "saidas_mes": 11,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 33,
-      "valor_causa": 71264657.12,
+      "valor_causa": 71540667.72,
       "alerta_entrada": true
     },
     {
@@ -3653,6 +3653,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "BP BIOENERGIA",
+      "andamento": 3,
+      "entradas_mes": 3,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 412761.85,
+      "alerta_entrada": true
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "PEIXOTO E CURY",
       "andamento": 1,
       "entradas_mes": 0,
@@ -3686,13 +3697,13 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "BP BIOENERGIA",
+      "cliente": "MAHLE METAL - MOGI",
       "andamento": 1,
       "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 149451.11,
+      "saidas_mes_anterior": 7,
+      "valor_causa": 276010.6,
       "alerta_entrada": false
     },
     {
@@ -4311,6 +4322,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Camila Alves Magalhães de Paula(CAL)",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 399752.35
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
       "andamento": 1,
       "entradas_mes": 0,
@@ -4341,13 +4362,23 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Camila Alves Magalhães de Paula(CAL)",
+      "profissional": "Paloma da Silva Santos(PSI)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 9,
+      "valor_causa": 276010.6
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Rafael Yepez do Lago(RYL)",
       "andamento": 1,
       "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 149451.11
+      "valor_causa": 13009.5
     },
     {
       "grupo": "Sócios",
@@ -4454,12 +4485,12 @@
     {
       "estado": "BA",
       "cliente": "BP BIOENERGIA",
-      "andamento": 11,
-      "entradas_mes": 0,
+      "andamento": 12,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 347504.02
+      "valor_causa": 360513.52
     },
     {
       "estado": "BA",
@@ -4964,12 +4995,12 @@
     {
       "estado": "MG",
       "cliente": "BP BIOENERGIA",
-      "andamento": 215,
-      "entradas_mes": 6,
+      "andamento": 216,
+      "entradas_mes": 7,
       "saidas_mes": 3,
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 12,
-      "valor_causa": 81940861.9
+      "valor_causa": 82191163.14
     },
     {
       "estado": "MG",
@@ -6324,12 +6355,12 @@
     {
       "estado": "SP",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 354,
-      "entradas_mes": 10,
+      "andamento": 355,
+      "entradas_mes": 11,
       "saidas_mes": 11,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 33,
-      "valor_causa": 71264657.12
+      "valor_causa": 71540667.72
     },
     {
       "estado": "SP",
@@ -7705,12 +7736,12 @@
     },
     {
       "nome": "MAHLE METAL - MOGI",
-      "andamento": 355,
-      "entradas_mes": 10,
+      "andamento": 356,
+      "entradas_mes": 11,
       "saidas_mes": 11,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 33,
-      "valor_causa": 71264657.12,
+      "valor_causa": 71540667.72,
       "alerta_entrada": true
     },
     {
@@ -7806,14 +7837,29 @@
   ],
   "sem_grupo_processos": [
     {
+      "numero_processo": "0012158-26.2026.5.03.0048",
+      "cliente": "BP BIOENERGIA",
+      "profissional": "Camila Alves Magalhães de Paula(CAL)"
+    },
+    {
       "numero_processo": "0012220-66.2026.5.03.0048",
       "cliente": "BP BIOENERGIA",
       "profissional": "Camila Alves Magalhães de Paula(CAL)"
     },
     {
+      "numero_processo": "0000907-29.2026.5.05.0121",
+      "cliente": "BP BIOENERGIA",
+      "profissional": "Rafael Yepez do Lago(RYL)"
+    },
+    {
       "numero_processo": "0003841-21.2026.5.09.0000",
       "cliente": "HERINGER",
       "profissional": "Bianca Bolanhi Camacho(BBO)"
+    },
+    {
+      "numero_processo": "0012071-65.2026.5.15.0071",
+      "cliente": "MAHLE METAL - MOGI",
+      "profissional": "Paloma da Silva Santos(PSI)"
     },
     {
       "numero_processo": "1002426-59.2017.5.02.0464",
