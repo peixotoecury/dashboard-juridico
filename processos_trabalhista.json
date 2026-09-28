@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-28T17:15:32",
+  "atualizado_em": "2026-09-28T17:30:37",
   "kpis": {
-    "total_andamento": 7531,
-    "entradas_hoje": 14,
+    "total_andamento": 7534,
+    "entradas_hoje": 17,
     "saidas_hoje": 5,
     "entradas_ontem": 0,
     "saidas_ontem": 0,
-    "entradas_mes": 289,
+    "entradas_mes": 292,
     "saidas_mes": 982,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 263,
-    "valor_causa_total": 1717927003.96,
-    "saldo_mes": -693
+    "valor_causa_total": 1718216871.5,
+    "saldo_mes": -690
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-09-28",
-      "entradas": 14,
+      "entradas": 17,
       "saidas": 5
     }
   ],
@@ -399,12 +399,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 4,
-      "entradas_mes": 2,
+      "andamento": 7,
+      "entradas_mes": 5,
       "saidas_mes": 3,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 20,
-      "valor_causa": 332864.68
+      "valor_causa": 622732.22
     },
     {
       "nome": "Sócios",
@@ -437,12 +437,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5746,
-      "entradas_mes": 168,
+      "andamento": 5749,
+      "entradas_mes": 171,
       "saidas_mes": 811,
       "entradas_mes_anterior": 185,
       "saidas_mes_anterior": 214,
-      "valor_causa": 1348231884.57
+      "valor_causa": 1348521752.11
     },
     {
       "nome": "MG",
@@ -682,12 +682,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2842,
-      "entradas_mes": 268,
+      "andamento": 2845,
+      "entradas_mes": 271,
       "saidas_mes": 199,
       "entradas_mes_anterior": 206,
       "saidas_mes_anterior": 66,
-      "valor_causa": 803217380.24
+      "valor_causa": 803507247.78
     },
     {
       "nome": "Sentença",
@@ -981,6 +981,16 @@
     },
     {
       "fase": "Instrução",
+      "grupo": "Sem grupo",
+      "andamento": 5,
+      "entradas_mes": 5,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 2,
+      "valor_causa": 313557.69
+    },
+    {
+      "fase": "Instrução",
       "grupo": "Grupo A1",
       "andamento": 4,
       "entradas_mes": 2,
@@ -988,16 +998,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
-    },
-    {
-      "fase": "Instrução",
-      "grupo": "Sem grupo",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 2,
-      "valor_causa": 23690.15
     },
     {
       "fase": "Outras",
@@ -1262,12 +1262,12 @@
     },
     {
       "nome": "Giulia Vendramini Milani(GVM)",
-      "andamento": 446,
-      "entradas_mes": 16,
+      "andamento": 447,
+      "entradas_mes": 17,
       "saidas_mes": 12,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 6,
-      "valor_causa": 66554070.59
+      "valor_causa": 66667112.6
     },
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
@@ -1298,12 +1298,12 @@
     },
     {
       "nome": "Joice Ramos Miranda(JRM)",
-      "andamento": 295,
-      "entradas_mes": 12,
+      "andamento": 296,
+      "entradas_mes": 13,
       "saidas_mes": 4,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 2,
-      "valor_causa": 78526430.02
+      "valor_causa": 78569229.36
     },
     {
       "nome": "Júlia Priego Lopes da Silva(JPL)",
@@ -1415,12 +1415,12 @@
     },
     {
       "nome": "Paloma da Silva Santos(PSI)",
-      "andamento": 247,
-      "entradas_mes": 9,
+      "andamento": 248,
+      "entradas_mes": 10,
       "saidas_mes": 11,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 33,
-      "valor_causa": 54961478.67
+      "valor_causa": 55095504.86
     },
     {
       "nome": "Erik Mota Coppi(ECO)",
@@ -1699,12 +1699,12 @@
     },
     {
       "nome": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 712,
-      "entradas_mes": 22,
+      "andamento": 714,
+      "entradas_mes": 24,
       "saidas_mes": 13,
       "entradas_mes_anterior": 28,
       "saidas_mes_anterior": 21,
-      "valor_causa": 143178626.31,
+      "valor_causa": 143334467.66,
       "alerta_entrada": false
     },
     {
@@ -1719,12 +1719,12 @@
     },
     {
       "nome": "MAHLE METAL - MOGI",
-      "andamento": 357,
-      "entradas_mes": 12,
+      "andamento": 358,
+      "entradas_mes": 13,
       "saidas_mes": 11,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 33,
-      "valor_causa": 71563357.87,
+      "valor_causa": 71697384.06,
       "alerta_entrada": true
     },
     {
@@ -3642,6 +3642,28 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "MAHLE METAL - MOGI",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 7,
+      "valor_causa": 156716.34,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "SYNGENTA PROTEÇÃO DE",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 155841.35,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "PEIXOTO E CURY",
       "andamento": 1,
       "entradas_mes": 0,
@@ -3671,17 +3693,6 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 1,
       "valor_causa": 1000.0,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "MAHLE METAL - MOGI",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 7,
-      "valor_causa": 22690.15,
       "alerta_entrada": false
     },
     {
@@ -4330,6 +4341,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Paloma da Silva Santos(PSI)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 9,
+      "valor_causa": 134026.19
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Tamires Lins Costa(TLI)",
       "andamento": 1,
       "entradas_mes": 1,
@@ -4337,6 +4358,26 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 22690.15
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Giulia Vendramini Milani(GVM)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 113042.01
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Joice Ramos Miranda(JRM)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 42799.34
     },
     {
       "grupo": "Sócios",
@@ -6293,12 +6334,12 @@
     {
       "estado": "SP",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 610,
-      "entradas_mes": 15,
+      "andamento": 612,
+      "entradas_mes": 17,
       "saidas_mes": 9,
       "entradas_mes_anterior": 20,
       "saidas_mes_anterior": 17,
-      "valor_causa": 126968845.71
+      "valor_causa": 127124687.06
     },
     {
       "estado": "SP",
@@ -6313,12 +6354,12 @@
     {
       "estado": "SP",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 356,
-      "entradas_mes": 12,
+      "andamento": 357,
+      "entradas_mes": 13,
       "saidas_mes": 11,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 33,
-      "valor_causa": 71563357.87
+      "valor_causa": 71697384.06
     },
     {
       "estado": "SP",
@@ -7684,12 +7725,12 @@
     },
     {
       "nome": "MAHLE METAL - MOGI",
-      "andamento": 357,
-      "entradas_mes": 12,
+      "andamento": 358,
+      "entradas_mes": 13,
       "saidas_mes": 11,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 33,
-      "valor_causa": 71563357.87,
+      "valor_causa": 71697384.06,
       "alerta_entrada": true
     },
     {
@@ -7790,6 +7831,11 @@
       "profissional": "Bianca Bolanhi Camacho(BBO)"
     },
     {
+      "numero_processo": "0012082-94.2026.5.15.0071",
+      "cliente": "MAHLE METAL - MOGI",
+      "profissional": "Paloma da Silva Santos(PSI)"
+    },
+    {
       "numero_processo": "0012314-83.2026.5.15.0014",
       "cliente": "MAHLE METAL - MOGI",
       "profissional": "Tamires Lins Costa(TLI)"
@@ -7803,6 +7849,16 @@
       "numero_processo": "1000930-65.2026.5.02.0080",
       "cliente": "PEIXOTO E CURY",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
+    },
+    {
+      "numero_processo": "0011516-97.2026.5.15.0087",
+      "cliente": "SYNGENTA PROTEÇÃO DE",
+      "profissional": "Giulia Vendramini Milani(GVM)"
+    },
+    {
+      "numero_processo": "0011614-62.2026.5.15.0126",
+      "cliente": "SYNGENTA PROTEÇÃO DE",
+      "profissional": "Joice Ramos Miranda(JRM)"
     }
   ]
 }
