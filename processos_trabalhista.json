@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-28T10:00:30",
+  "atualizado_em": "2026-09-28T10:15:27",
   "kpis": {
-    "total_andamento": 7521,
-    "entradas_hoje": 0,
+    "total_andamento": 7522,
+    "entradas_hoje": 1,
     "saidas_hoje": 1,
     "entradas_ontem": 0,
     "saidas_ontem": 0,
-    "entradas_mes": 276,
+    "entradas_mes": 277,
     "saidas_mes": 979,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 263,
-    "valor_causa_total": 1714938260.53,
-    "saldo_mes": -703
+    "valor_causa_total": 1714939260.53,
+    "saldo_mes": -702
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-09-28",
-      "entradas": 0,
+      "entradas": 1,
       "saidas": 1
     }
   ],
@@ -408,12 +408,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 2,
-      "entradas_mes": 0,
+      "andamento": 3,
+      "entradas_mes": 1,
       "saidas_mes": 3,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 20,
-      "valor_causa": 309174.53
+      "valor_causa": 310174.53
     },
     {
       "nome": "Grupo D1",
@@ -455,12 +455,12 @@
     },
     {
       "nome": "PR",
-      "andamento": 234,
-      "entradas_mes": 12,
+      "andamento": 235,
+      "entradas_mes": 13,
       "saidas_mes": 7,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 2,
-      "valor_causa": 47720861.38
+      "valor_causa": 47721861.38
     },
     {
       "nome": "RS",
@@ -682,12 +682,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2830,
-      "entradas_mes": 256,
+      "andamento": 2831,
+      "entradas_mes": 257,
       "saidas_mes": 199,
       "entradas_mes_anterior": 206,
       "saidas_mes_anterior": 66,
-      "valor_causa": 800555431.68
+      "valor_causa": 800556431.68
     },
     {
       "nome": "Sentença",
@@ -990,6 +990,16 @@
       "valor_causa": 0.0
     },
     {
+      "fase": "Instrução",
+      "grupo": "Sem grupo",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 2,
+      "valor_causa": 1000.0
+    },
+    {
       "fase": "Outras",
       "grupo": "Grupo E2",
       "andamento": 124,
@@ -1279,12 +1289,12 @@
     },
     {
       "nome": "Bianca Bolanhi Camacho(BBO)",
-      "andamento": 300,
-      "entradas_mes": 12,
+      "andamento": 301,
+      "entradas_mes": 13,
       "saidas_mes": 358,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 7,
-      "valor_causa": 32292670.85
+      "valor_causa": 32293670.85
     },
     {
       "nome": "Joice Ramos Miranda(JRM)",
@@ -1719,12 +1729,12 @@
     },
     {
       "nome": "HERINGER",
-      "andamento": 332,
-      "entradas_mes": 17,
+      "andamento": 333,
+      "entradas_mes": 18,
       "saidas_mes": 10,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 12,
-      "valor_causa": 43686064.93,
+      "valor_causa": 43687064.93,
       "alerta_entrada": true
     },
     {
@@ -3664,6 +3674,17 @@
       "alerta_entrada": false
     },
     {
+      "grupo": "Sem grupo",
+      "cliente": "HERINGER",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 1000.0,
+      "alerta_entrada": false
+    },
+    {
       "grupo": "Sócios",
       "cliente": "PEIXOTO E CURY",
       "andamento": 2,
@@ -4296,6 +4317,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 38000.0
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Bianca Bolanhi Camacho(BBO)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1000.0
     },
     {
       "grupo": "Sócios",
@@ -5502,12 +5533,12 @@
     {
       "estado": "PR",
       "cliente": "HERINGER",
-      "andamento": 48,
-      "entradas_mes": 1,
+      "andamento": 49,
+      "entradas_mes": 2,
       "saidas_mes": 2,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 1,
-      "valor_causa": 3389955.24
+      "valor_causa": 3390955.24
     },
     {
       "estado": "PR",
@@ -7663,12 +7694,12 @@
     },
     {
       "nome": "HERINGER",
-      "andamento": 332,
-      "entradas_mes": 17,
+      "andamento": 333,
+      "entradas_mes": 18,
       "saidas_mes": 10,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 12,
-      "valor_causa": 43686064.93,
+      "valor_causa": 43687064.93,
       "alerta_entrada": true
     },
     {
@@ -7753,6 +7784,11 @@
     }
   ],
   "sem_grupo_processos": [
+    {
+      "numero_processo": "0003841-21.2026.5.09.0000",
+      "cliente": "HERINGER",
+      "profissional": "Bianca Bolanhi Camacho(BBO)"
+    },
     {
       "numero_processo": "1002426-59.2017.5.02.0464",
       "cliente": "MULTICEL",
