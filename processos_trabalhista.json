@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-28T18:30:24",
+  "atualizado_em": "2026-09-28T18:45:23",
   "kpis": {
-    "total_andamento": 7534,
+    "total_andamento": 7533,
     "entradas_hoje": 19,
-    "saidas_hoje": 7,
+    "saidas_hoje": 8,
     "entradas_ontem": 0,
     "saidas_ontem": 0,
     "entradas_mes": 294,
-    "saidas_mes": 984,
+    "saidas_mes": 985,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 263,
     "valor_causa_total": 1718536871.5,
-    "saldo_mes": -690
+    "saldo_mes": -691
   },
   "serie_diaria": [
     {
@@ -312,7 +312,7 @@
     {
       "data": "2026-09-28",
       "entradas": 19,
-      "saidas": 7
+      "saidas": 8
     }
   ],
   "por_grupo": [
@@ -327,9 +327,9 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1811,
+      "andamento": 1810,
       "entradas_mes": 60,
-      "saidas_mes": 42,
+      "saidas_mes": 43,
       "entradas_mes_anterior": 52,
       "saidas_mes_anterior": 92,
       "valor_causa": 308397338.44
@@ -437,9 +437,9 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5749,
+      "andamento": 5748,
       "entradas_mes": 173,
-      "saidas_mes": 813,
+      "saidas_mes": 814,
       "entradas_mes_anterior": 185,
       "saidas_mes_anterior": 214,
       "valor_causa": 1348841752.11
@@ -682,9 +682,9 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2845,
+      "andamento": 2844,
       "entradas_mes": 273,
-      "saidas_mes": 201,
+      "saidas_mes": 202,
       "entradas_mes_anterior": 206,
       "saidas_mes_anterior": 66,
       "valor_causa": 803827247.78
@@ -912,9 +912,9 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 764,
+      "andamento": 763,
       "entradas_mes": 46,
-      "saidas_mes": 15,
+      "saidas_mes": 16,
       "entradas_mes_anterior": 28,
       "saidas_mes_anterior": 11,
       "valor_causa": 163420826.41
@@ -1306,15 +1306,6 @@
       "valor_causa": 78569229.36
     },
     {
-      "nome": "Júlia Priego Lopes da Silva(JPL)",
-      "andamento": 293,
-      "entradas_mes": 0,
-      "saidas_mes": 3,
-      "entradas_mes_anterior": 3,
-      "saidas_mes_anterior": 12,
-      "valor_causa": 32737819.94
-    },
-    {
       "nome": "Beatriz Santiago de Souza(BSO)",
       "andamento": 293,
       "entradas_mes": 17,
@@ -1331,6 +1322,15 @@
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 11,
       "valor_causa": 157128019.21
+    },
+    {
+      "nome": "Júlia Priego Lopes da Silva(JPL)",
+      "andamento": 292,
+      "entradas_mes": 0,
+      "saidas_mes": 4,
+      "entradas_mes_anterior": 3,
+      "saidas_mes_anterior": 12,
+      "valor_causa": 32737819.94
     },
     {
       "nome": "Bruna Cembranelli Fazenda (BCF)",
@@ -2950,9 +2950,9 @@
     {
       "grupo": "Grupo E1",
       "cliente": "COLÉGIO VÉRTICE",
-      "andamento": 5,
+      "andamento": 4,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 378419.81,
@@ -4060,9 +4060,9 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Júlia Priego Lopes da Silva(JPL)",
-      "andamento": 293,
+      "andamento": 292,
       "entradas_mes": 0,
-      "saidas_mes": 3,
+      "saidas_mes": 4,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 12,
       "valor_causa": 32737819.94
@@ -6651,16 +6651,6 @@
     },
     {
       "estado": "SP",
-      "cliente": "COLÉGIO VÉRTICE",
-      "andamento": 5,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 378419.81
-    },
-    {
-      "estado": "SP",
       "cliente": "ITW PPF",
       "andamento": 5,
       "entradas_mes": 0,
@@ -6698,6 +6688,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 3863637.74
+    },
+    {
+      "estado": "SP",
+      "cliente": "COLÉGIO VÉRTICE",
+      "andamento": 4,
+      "entradas_mes": 0,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 378419.81
     },
     {
       "estado": "SP",
