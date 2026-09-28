@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-09-28T09:15:27",
+  "atualizado_em": "2026-09-28T09:30:35",
   "kpis": {
     "total_andamento": 7521,
     "entradas_hoje": 0,
@@ -318,12 +318,12 @@
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2095,
-      "entradas_mes": 99,
+      "andamento": 2096,
+      "entradas_mes": 100,
       "saidas_mes": 83,
       "entradas_mes_anterior": 93,
       "saidas_mes_anterior": 74,
-      "valor_causa": 460886453.53
+      "valor_causa": 461245098.61
     },
     {
       "nome": "Grupo E1",
@@ -408,12 +408,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 3,
-      "entradas_mes": 1,
+      "andamento": 2,
+      "entradas_mes": 0,
       "saidas_mes": 3,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 20,
-      "valor_causa": 667819.61
+      "valor_causa": 309174.53
     },
     {
       "nome": "Grupo D1",
@@ -902,12 +902,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 859,
-      "entradas_mes": 95,
+      "andamento": 860,
+      "entradas_mes": 96,
       "saidas_mes": 21,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 27,
-      "valor_causa": 176883760.53
+      "valor_causa": 177242405.61
     },
     {
       "fase": "Instrução",
@@ -988,16 +988,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
-    },
-    {
-      "fase": "Instrução",
-      "grupo": "Sem grupo",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 2,
-      "valor_causa": 358645.08
     },
     {
       "fase": "Outras",
@@ -3093,12 +3083,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "BP BIOENERGIA",
-      "andamento": 746,
-      "entradas_mes": 13,
+      "andamento": 747,
+      "entradas_mes": 14,
       "saidas_mes": 30,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 31,
-      "valor_causa": 206915001.91,
+      "valor_causa": 207273646.99,
       "alerta_entrada": false
     },
     {
@@ -3671,17 +3661,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 38000.0,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "BP BIOENERGIA",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 358645.08,
       "alerta_entrada": false
     },
     {
@@ -4271,12 +4250,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Bruno Tanganelli Farah(BTF)",
-      "andamento": 14,
-      "entradas_mes": 9,
+      "andamento": 15,
+      "entradas_mes": 10,
       "saidas_mes": 0,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 0,
-      "valor_causa": 5896048.72
+      "valor_causa": 6254693.8
     },
     {
       "grupo": "Grupo E2",
@@ -4317,16 +4296,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 38000.0
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Bruno Tanganelli Farah(BTF)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 358645.08
     },
     {
       "grupo": "Sócios",
@@ -7784,11 +7753,6 @@
     }
   ],
   "sem_grupo_processos": [
-    {
-      "numero_processo": "0010930-80.2026.5.03.0156",
-      "cliente": "BP BIOENERGIA",
-      "profissional": "Bruno Tanganelli Farah(BTF)"
-    },
     {
       "numero_processo": "1002426-59.2017.5.02.0464",
       "cliente": "MULTICEL",
