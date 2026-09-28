@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-28T08:45:26",
+  "atualizado_em": "2026-09-28T09:00:33",
   "kpis": {
-    "total_andamento": 7522,
+    "total_andamento": 7521,
     "entradas_hoje": 0,
-    "saidas_hoje": 0,
+    "saidas_hoje": 1,
     "entradas_ontem": 0,
     "saidas_ontem": 0,
     "entradas_mes": 276,
-    "saidas_mes": 978,
+    "saidas_mes": 979,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 263,
     "valor_causa_total": 1714938260.53,
-    "saldo_mes": -702
+    "saldo_mes": -703
   },
   "serie_diaria": [
     {
@@ -312,7 +312,7 @@
     {
       "data": "2026-09-28",
       "entradas": 0,
-      "saidas": 0
+      "saidas": 1
     }
   ],
   "por_grupo": [
@@ -327,9 +327,9 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1805,
+      "andamento": 1804,
       "entradas_mes": 52,
-      "saidas_mes": 40,
+      "saidas_mes": 41,
       "entradas_mes_anterior": 52,
       "saidas_mes_anterior": 92,
       "valor_causa": 306342006.87
@@ -446,9 +446,9 @@
     },
     {
       "nome": "MG",
-      "andamento": 541,
+      "andamento": 540,
       "entradas_mes": 30,
-      "saidas_mes": 17,
+      "saidas_mes": 18,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 23,
       "valor_causa": 132720872.3
@@ -691,9 +691,9 @@
     },
     {
       "nome": "Sentença",
-      "andamento": 33,
+      "andamento": 32,
       "entradas_mes": 0,
-      "saidas_mes": 5,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 4,
       "valor_causa": 28867235.32
@@ -1201,16 +1201,6 @@
     },
     {
       "fase": "Sentença",
-      "grupo": "Grupo E1",
-      "andamento": 5,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 306667.81
-    },
-    {
-      "fase": "Sentença",
       "grupo": "Grupo B3",
       "andamento": 5,
       "entradas_mes": 0,
@@ -1218,6 +1208,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
       "valor_causa": 762134.78
+    },
+    {
+      "fase": "Sentença",
+      "grupo": "Grupo E1",
+      "andamento": 4,
+      "entradas_mes": 0,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 306667.81
     },
     {
       "fase": "Sentença",
@@ -1297,15 +1297,6 @@
       "valor_causa": 32292670.85
     },
     {
-      "nome": "Joice Ramos Miranda(JRM)",
-      "andamento": 294,
-      "entradas_mes": 12,
-      "saidas_mes": 3,
-      "entradas_mes_anterior": 7,
-      "saidas_mes_anterior": 2,
-      "valor_causa": 78043497.03
-    },
-    {
       "nome": "Júlia Priego Lopes da Silva(JPL)",
       "andamento": 294,
       "entradas_mes": 0,
@@ -1313,6 +1304,15 @@
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 12,
       "valor_causa": 32737819.94
+    },
+    {
+      "nome": "Joice Ramos Miranda(JRM)",
+      "andamento": 293,
+      "entradas_mes": 12,
+      "saidas_mes": 4,
+      "entradas_mes_anterior": 7,
+      "saidas_mes_anterior": 2,
+      "valor_causa": 78043497.03
     },
     {
       "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
@@ -1779,9 +1779,9 @@
     },
     {
       "nome": "SYNGENTA SEEDS NIDER",
-      "andamento": 157,
+      "andamento": 156,
       "entradas_mes": 6,
-      "saidas_mes": 3,
+      "saidas_mes": 4,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
       "valor_causa": 23265694.76,
@@ -2895,9 +2895,9 @@
     {
       "grupo": "Grupo E1",
       "cliente": "SYNGENTA SEEDS NIDER",
-      "andamento": 152,
+      "andamento": 151,
       "entradas_mes": 6,
-      "saidas_mes": 3,
+      "saidas_mes": 4,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
       "valor_causa": 23265694.76,
@@ -4060,16 +4060,6 @@
     },
     {
       "grupo": "Grupo E1",
-      "profissional": "Joice Ramos Miranda(JRM)",
-      "andamento": 294,
-      "entradas_mes": 12,
-      "saidas_mes": 3,
-      "entradas_mes_anterior": 7,
-      "saidas_mes_anterior": 2,
-      "valor_causa": 78043497.03
-    },
-    {
-      "grupo": "Grupo E1",
       "profissional": "Júlia Priego Lopes da Silva(JPL)",
       "andamento": 294,
       "entradas_mes": 0,
@@ -4077,6 +4067,16 @@
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 12,
       "valor_causa": 32737819.94
+    },
+    {
+      "grupo": "Grupo E1",
+      "profissional": "Joice Ramos Miranda(JRM)",
+      "andamento": 293,
+      "entradas_mes": 12,
+      "saidas_mes": 4,
+      "entradas_mes_anterior": 7,
+      "saidas_mes_anterior": 2,
+      "valor_causa": 78043497.03
     },
     {
       "grupo": "Grupo E1",
@@ -4973,9 +4973,9 @@
     {
       "estado": "MG",
       "cliente": "SYNGENTA SEEDS NIDER",
-      "andamento": 43,
+      "andamento": 42,
       "entradas_mes": 1,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 1,
       "valor_causa": 3969087.84
@@ -7704,9 +7704,9 @@
     },
     {
       "nome": "SYNGENTA SEEDS NIDER",
-      "andamento": 157,
+      "andamento": 156,
       "entradas_mes": 6,
-      "saidas_mes": 3,
+      "saidas_mes": 4,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
       "valor_causa": 23265694.76,
