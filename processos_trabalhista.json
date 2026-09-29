@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-29T18:00:34",
+  "atualizado_em": "2026-09-29T18:15:30",
   "kpis": {
-    "total_andamento": 7543,
+    "total_andamento": 7541,
     "entradas_hoje": 13,
-    "saidas_hoje": 2,
+    "saidas_hoje": 4,
     "entradas_ontem": 19,
     "saidas_ontem": 8,
     "entradas_mes": 307,
-    "saidas_mes": 988,
+    "saidas_mes": 990,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 263,
-    "valor_causa_total": 1726053638.25,
-    "saldo_mes": -681
+    "valor_causa_total": 1725983704.79,
+    "saldo_mes": -683
   },
   "serie_diaria": [
     {
@@ -312,18 +312,18 @@
     {
       "data": "2026-09-29",
       "entradas": 13,
-      "saidas": 2
+      "saidas": 4
     }
   ],
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2102,
+      "andamento": 2100,
       "entradas_mes": 108,
-      "saidas_mes": 85,
+      "saidas_mes": 87,
       "entradas_mes_anterior": 93,
       "saidas_mes_anterior": 74,
-      "valor_causa": 463951555.25
+      "valor_causa": 463881621.79
     },
     {
       "nome": "Grupo E1",
@@ -437,12 +437,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5756,
+      "andamento": 5754,
       "entradas_mes": 184,
-      "saidas_mes": 817,
+      "saidas_mes": 819,
       "entradas_mes_anterior": 185,
       "saidas_mes_anterior": 214,
-      "valor_causa": 1353893054.31
+      "valor_causa": 1353823120.85
     },
     {
       "nome": "MG",
@@ -682,12 +682,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2836,
+      "andamento": 2835,
       "entradas_mes": 270,
-      "saidas_mes": 203,
+      "saidas_mes": 204,
       "entradas_mes_anterior": 206,
       "saidas_mes_anterior": 66,
-      "valor_causa": 811204381.58
+      "valor_causa": 811191248.12
     },
     {
       "nome": "Sentença",
@@ -709,12 +709,12 @@
     },
     {
       "nome": "Execução",
-      "andamento": 913,
+      "andamento": 912,
       "entradas_mes": 2,
-      "saidas_mes": 349,
+      "saidas_mes": 350,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 94,
-      "valor_causa": 132177780.85
+      "valor_causa": 132120980.85
     }
   ],
   "por_fase_outras": 399,
@@ -822,12 +822,12 @@
     {
       "fase": "Execução",
       "grupo": "Grupo E2",
-      "andamento": 347,
+      "andamento": 346,
       "entradas_mes": 1,
-      "saidas_mes": 31,
+      "saidas_mes": 32,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 24,
-      "valor_causa": 52071692.02
+      "valor_causa": 52014892.02
     },
     {
       "fase": "Execução",
@@ -902,12 +902,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 865,
+      "andamento": 864,
       "entradas_mes": 104,
-      "saidas_mes": 21,
+      "saidas_mes": 22,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 27,
-      "valor_causa": 180183083.8
+      "valor_causa": 180169950.34
     },
     {
       "fase": "Instrução",
@@ -1253,12 +1253,12 @@
   "por_profissional": [
     {
       "nome": "Rafael Yepez do Lago(RYL)",
-      "andamento": 452,
+      "andamento": 450,
       "entradas_mes": 19,
-      "saidas_mes": 18,
+      "saidas_mes": 20,
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 17,
-      "valor_causa": 61857944.46
+      "valor_causa": 61788011.0
     },
     {
       "nome": "Giulia Vendramini Milani(GVM)",
@@ -1739,12 +1739,12 @@
     },
     {
       "nome": "VITERRA RIO VERMELHO",
-      "andamento": 321,
+      "andamento": 319,
       "entradas_mes": 7,
-      "saidas_mes": 5,
+      "saidas_mes": 7,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 9,
-      "valor_causa": 44223233.67,
+      "valor_causa": 44153300.21,
       "alerta_entrada": false
     },
     {
@@ -3115,12 +3115,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "VITERRA RIO VERMELHO",
-      "andamento": 321,
+      "andamento": 319,
       "entradas_mes": 7,
-      "saidas_mes": 5,
+      "saidas_mes": 7,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 9,
-      "valor_causa": 44223233.67,
+      "valor_causa": 44153300.21,
       "alerta_entrada": false
     },
     {
@@ -4192,12 +4192,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Rafael Yepez do Lago(RYL)",
-      "andamento": 452,
+      "andamento": 450,
       "entradas_mes": 19,
-      "saidas_mes": 18,
+      "saidas_mes": 20,
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 17,
-      "valor_causa": 61857944.46
+      "valor_causa": 61788011.0
     },
     {
       "grupo": "Grupo E2",
@@ -6324,12 +6324,12 @@
     {
       "estado": "SP",
       "cliente": "VITERRA RIO VERMELHO",
-      "andamento": 303,
+      "andamento": 301,
       "entradas_mes": 5,
-      "saidas_mes": 3,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 8,
-      "valor_causa": 42961292.14
+      "valor_causa": 42891358.68
     },
     {
       "estado": "SP",
