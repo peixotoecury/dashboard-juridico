@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-29T13:30:34",
+  "atualizado_em": "2026-09-29T13:45:22",
   "kpis": {
-    "total_andamento": 7538,
-    "entradas_hoje": 6,
+    "total_andamento": 7539,
+    "entradas_hoje": 7,
     "saidas_hoje": 0,
     "entradas_ontem": 19,
     "saidas_ontem": 8,
-    "entradas_mes": 300,
+    "entradas_mes": 301,
     "saidas_mes": 986,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 263,
-    "valor_causa_total": 1723450824.19,
-    "saldo_mes": -686
+    "valor_causa_total": 1725237286.52,
+    "saldo_mes": -685
   },
   "serie_diaria": [
     {
@@ -311,19 +311,19 @@
     },
     {
       "data": "2026-09-29",
-      "entradas": 6,
+      "entradas": 7,
       "saidas": 0
     }
   ],
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2099,
-      "entradas_mes": 103,
+      "andamento": 2101,
+      "entradas_mes": 105,
       "saidas_mes": 83,
       "entradas_mes_anterior": 93,
       "saidas_mes_anterior": 74,
-      "valor_causa": 461657860.46
+      "valor_causa": 462334418.2
     },
     {
       "nome": "Grupo E1",
@@ -399,12 +399,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 8,
-      "entradas_mes": 6,
+      "andamento": 7,
+      "entradas_mes": 5,
       "saidas_mes": 3,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 20,
-      "valor_causa": 1484193.07
+      "valor_causa": 2594097.66
     },
     {
       "nome": "Sócios",
@@ -464,12 +464,12 @@
     },
     {
       "nome": "RS",
-      "andamento": 230,
-      "entradas_mes": 2,
+      "andamento": 231,
+      "entradas_mes": 3,
       "saidas_mes": 2,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 6,
-      "valor_causa": 53087454.14
+      "valor_causa": 54873916.47
     },
     {
       "nome": "RJ",
@@ -682,12 +682,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2847,
-      "entradas_mes": 278,
+      "andamento": 2848,
+      "entradas_mes": 279,
       "saidas_mes": 202,
       "entradas_mes_anterior": 206,
       "saidas_mes_anterior": 66,
-      "valor_causa": 811258118.29
+      "valor_causa": 813044580.62
     },
     {
       "nome": "Sentença",
@@ -902,12 +902,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 860,
-      "entradas_mes": 99,
+      "andamento": 862,
+      "entradas_mes": 101,
       "saidas_mes": 21,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 27,
-      "valor_causa": 177591916.64
+      "valor_causa": 178268474.38
     },
     {
       "fase": "Instrução",
@@ -982,12 +982,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 6,
-      "entradas_mes": 6,
+      "andamento": 5,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 2,
-      "valor_causa": 1175018.54
+      "valor_causa": 2284923.13
     },
     {
       "fase": "Instrução",
@@ -1325,12 +1325,12 @@
     },
     {
       "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 290,
-      "entradas_mes": 8,
+      "andamento": 291,
+      "entradas_mes": 9,
       "saidas_mes": 17,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 11,
-      "valor_causa": 155118527.07
+      "valor_causa": 156904989.4
     },
     {
       "nome": "Bruna Cembranelli Fazenda (BCF)",
@@ -1729,12 +1729,12 @@
     },
     {
       "nome": "HERINGER",
-      "andamento": 333,
-      "entradas_mes": 18,
+      "andamento": 334,
+      "entradas_mes": 19,
       "saidas_mes": 10,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 12,
-      "valor_causa": 43687064.93,
+      "valor_causa": 45473527.26,
       "alerta_entrada": true
     },
     {
@@ -3203,12 +3203,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "L. SANT ANGELO",
-      "andamento": 31,
-      "entradas_mes": 3,
+      "andamento": 33,
+      "entradas_mes": 5,
       "saidas_mes": 5,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 3,
-      "valor_causa": 4491054.28,
+      "valor_causa": 5167612.02,
       "alerta_entrada": false
     },
     {
@@ -3653,13 +3653,13 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "L. SANT ANGELO",
+      "cliente": "HERINGER",
       "andamento": 2,
       "entradas_mes": 2,
       "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 676557.74,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 1787462.33,
       "alerta_entrada": false
     },
     {
@@ -3682,17 +3682,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 38000.0,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "HERINGER",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 1000.0,
       "alerta_entrada": false
     },
     {
@@ -4235,12 +4224,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 355,
-      "entradas_mes": 24,
+      "andamento": 357,
+      "entradas_mes": 26,
       "saidas_mes": 26,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 19,
-      "valor_causa": 47485124.15
+      "valor_causa": 48161681.89
     },
     {
       "grupo": "Grupo E2",
@@ -4344,23 +4333,13 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 676557.74
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 1,
-      "entradas_mes": 0,
+      "andamento": 2,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 271174.53
+      "valor_causa": 2057636.86
     },
     {
       "grupo": "Sem grupo",
@@ -6037,12 +6016,12 @@
     {
       "estado": "RS",
       "cliente": "HERINGER",
-      "andamento": 48,
-      "entradas_mes": 0,
+      "andamento": 49,
+      "entradas_mes": 1,
       "saidas_mes": 2,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 2,
-      "valor_causa": 8510531.13
+      "valor_causa": 10296993.46
     },
     {
       "estado": "RS",
@@ -7778,12 +7757,12 @@
     },
     {
       "nome": "HERINGER",
-      "andamento": 333,
-      "entradas_mes": 18,
+      "andamento": 334,
+      "entradas_mes": 19,
       "saidas_mes": 10,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 12,
-      "valor_causa": 43687064.93,
+      "valor_causa": 45473527.26,
       "alerta_entrada": true
     },
     {
@@ -7874,14 +7853,9 @@
       "profissional": "Bianca Bolanhi Camacho(BBO)"
     },
     {
-      "numero_processo": "1001661-31.2026.5.02.0090",
-      "cliente": "L. SANT ANGELO",
-      "profissional": "Camila Alves Magalhães de Paula(CAL)"
-    },
-    {
-      "numero_processo": "1002385-33.2026.5.02.0608",
-      "cliente": "L. SANT ANGELO",
-      "profissional": "Camila Alves Magalhães de Paula(CAL)"
+      "numero_processo": "0020851-44.2026.5.04.0121",
+      "cliente": "HERINGER",
+      "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
     },
     {
       "numero_processo": "1002426-59.2017.5.02.0464",
