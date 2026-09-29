@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-29T16:15:31",
+  "atualizado_em": "2026-09-29T16:31:14",
   "kpis": {
-    "total_andamento": 7541,
-    "entradas_hoje": 11,
+    "total_andamento": 7542,
+    "entradas_hoje": 12,
     "saidas_hoje": 2,
     "entradas_ontem": 19,
     "saidas_ontem": 8,
-    "entradas_mes": 305,
+    "entradas_mes": 306,
     "saidas_mes": 988,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 263,
-    "valor_causa_total": 1725340488.85,
-    "saldo_mes": -683
+    "valor_causa_total": 1726019491.07,
+    "saldo_mes": -682
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-09-29",
-      "entradas": 11,
+      "entradas": 12,
       "saidas": 2
     }
   ],
@@ -398,6 +398,15 @@
       "valor_causa": 11609781.48
     },
     {
+      "nome": "Sem grupo",
+      "andamento": 4,
+      "entradas_mes": 2,
+      "saidas_mes": 3,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 20,
+      "valor_causa": 989176.75
+    },
+    {
       "nome": "Sócios",
       "andamento": 3,
       "entradas_mes": 0,
@@ -405,15 +414,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
-    },
-    {
-      "nome": "Sem grupo",
-      "andamento": 3,
-      "entradas_mes": 1,
-      "saidas_mes": 3,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 20,
-      "valor_causa": 310174.53
     },
     {
       "nome": "Grupo D1",
@@ -473,12 +473,12 @@
     },
     {
       "nome": "RJ",
-      "andamento": 114,
-      "entradas_mes": 2,
+      "andamento": 115,
+      "entradas_mes": 3,
       "saidas_mes": 108,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 1,
-      "valor_causa": 6998310.48
+      "valor_causa": 7677312.7
     },
     {
       "nome": "MS",
@@ -673,21 +673,21 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 404,
-      "entradas_mes": 20,
+      "andamento": 406,
+      "entradas_mes": 22,
       "saidas_mes": 10,
       "entradas_mes_anterior": 44,
       "saidas_mes_anterior": 6,
-      "valor_causa": 88986806.32
+      "valor_causa": 89332665.8
     },
     {
       "nome": "Instrução",
-      "andamento": 2844,
-      "entradas_mes": 277,
+      "andamento": 2843,
+      "entradas_mes": 276,
       "saidas_mes": 203,
       "entradas_mes_anterior": 206,
       "saidas_mes_anterior": 66,
-      "valor_causa": 811461894.8
+      "valor_causa": 811795037.54
     },
     {
       "nome": "Sentença",
@@ -742,12 +742,12 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo E1",
-      "andamento": 57,
-      "entradas_mes": 18,
+      "andamento": 59,
+      "entradas_mes": 20,
       "saidas_mes": 1,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 0,
-      "valor_causa": 16293268.31
+      "valor_causa": 16639127.79
     },
     {
       "fase": "Ajuizamento",
@@ -912,12 +912,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 756,
-      "entradas_mes": 39,
+      "andamento": 754,
+      "entradas_mes": 37,
       "saidas_mes": 16,
       "entradas_mes_anterior": 28,
       "saidas_mes_anterior": 11,
-      "valor_causa": 162017030.71
+      "valor_causa": 161671171.23
     },
     {
       "fase": "Instrução",
@@ -992,12 +992,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 1,
-      "entradas_mes": 1,
+      "andamento": 2,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 2,
-      "valor_causa": 1000.0
+      "valor_causa": 680002.22
     },
     {
       "fase": "Outras",
@@ -1424,12 +1424,12 @@
     },
     {
       "nome": "Erik Mota Coppi(ECO)",
-      "andamento": 244,
-      "entradas_mes": 13,
+      "andamento": 245,
+      "entradas_mes": 14,
       "saidas_mes": 10,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 2,
-      "valor_causa": 44132029.89
+      "valor_causa": 44811032.11
     },
     {
       "nome": "Vinícius Ronchi Arruda(VRO)",
@@ -3685,6 +3685,17 @@
       "alerta_entrada": false
     },
     {
+      "grupo": "Sem grupo",
+      "cliente": "McCANN-ERICKSON",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 679002.22,
+      "alerta_entrada": false
+    },
+    {
       "grupo": "Sócios",
       "cliente": "PEIXOTO E CURY",
       "andamento": 2,
@@ -4327,6 +4338,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 1000.0
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Erik Mota Coppi(ECO)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 679002.22
     },
     {
       "grupo": "Sócios",
@@ -5752,6 +5773,16 @@
     },
     {
       "estado": "RJ",
+      "cliente": "McCANN-ERICKSON",
+      "andamento": 3,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 724307.07
+    },
+    {
+      "estado": "RJ",
       "cliente": "WICKBOLD",
       "andamento": 2,
       "entradas_mes": 0,
@@ -5759,16 +5790,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 160000.0
-    },
-    {
-      "estado": "RJ",
-      "cliente": "McCANN-ERICKSON",
-      "andamento": 2,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 45304.85
     },
     {
       "estado": "RJ",
@@ -7773,6 +7794,11 @@
       "numero_processo": "1002426-59.2017.5.02.0464",
       "cliente": "MULTICEL",
       "profissional": "Luiz Vicente de Carvalho(LVC) ; Lisandra Melo Alves(LMS)"
+    },
+    {
+      "numero_processo": "0101281-74.2026.5.01.0053",
+      "cliente": "McCANN-ERICKSON",
+      "profissional": "Erik Mota Coppi(ECO)"
     },
     {
       "numero_processo": "1000930-65.2026.5.02.0080",
