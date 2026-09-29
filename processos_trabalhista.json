@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-29T18:15:30",
+  "atualizado_em": "2026-09-29T18:30:31",
   "kpis": {
-    "total_andamento": 7541,
+    "total_andamento": 7538,
     "entradas_hoje": 13,
-    "saidas_hoje": 4,
+    "saidas_hoje": 7,
     "entradas_ontem": 19,
     "saidas_ontem": 8,
     "entradas_mes": 307,
-    "saidas_mes": 990,
+    "saidas_mes": 993,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 263,
-    "valor_causa_total": 1725983704.79,
-    "saldo_mes": -683
+    "valor_causa_total": 1725645711.42,
+    "saldo_mes": -686
   },
   "serie_diaria": [
     {
@@ -312,18 +312,18 @@
     {
       "data": "2026-09-29",
       "entradas": 13,
-      "saidas": 4
+      "saidas": 7
     }
   ],
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2100,
+      "andamento": 2097,
       "entradas_mes": 108,
-      "saidas_mes": 87,
+      "saidas_mes": 90,
       "entradas_mes_anterior": 93,
       "saidas_mes_anterior": 74,
-      "valor_causa": 463881621.79
+      "valor_causa": 463543628.42
     },
     {
       "nome": "Grupo E1",
@@ -437,12 +437,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5754,
+      "andamento": 5751,
       "entradas_mes": 184,
-      "saidas_mes": 819,
+      "saidas_mes": 822,
       "entradas_mes_anterior": 185,
       "saidas_mes_anterior": 214,
-      "valor_causa": 1353823120.85
+      "valor_causa": 1353485127.48
     },
     {
       "nome": "MG",
@@ -700,21 +700,21 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2952,
+      "andamento": 2951,
       "entradas_mes": 3,
-      "saidas_mes": 386,
+      "saidas_mes": 387,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 46,
-      "valor_causa": 653906816.59
+      "valor_causa": 653671703.13
     },
     {
       "nome": "Execução",
-      "andamento": 912,
+      "andamento": 910,
       "entradas_mes": 2,
-      "saidas_mes": 350,
+      "saidas_mes": 352,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 94,
-      "valor_causa": 132120980.85
+      "valor_causa": 132018100.94
     }
   ],
   "por_fase_outras": 399,
@@ -822,12 +822,12 @@
     {
       "fase": "Execução",
       "grupo": "Grupo E2",
-      "andamento": 346,
+      "andamento": 344,
       "entradas_mes": 1,
-      "saidas_mes": 32,
+      "saidas_mes": 34,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 24,
-      "valor_causa": 52014892.02
+      "valor_causa": 51912012.11
     },
     {
       "fase": "Execução",
@@ -1122,12 +1122,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo E2",
-      "andamento": 583,
+      "andamento": 582,
       "entradas_mes": 0,
-      "saidas_mes": 13,
+      "saidas_mes": 14,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 10,
-      "valor_causa": 186806033.51
+      "valor_causa": 186570920.05
     },
     {
       "fase": "Recurso",
@@ -1253,12 +1253,12 @@
   "por_profissional": [
     {
       "nome": "Rafael Yepez do Lago(RYL)",
-      "andamento": 450,
+      "andamento": 448,
       "entradas_mes": 19,
-      "saidas_mes": 20,
+      "saidas_mes": 22,
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 17,
-      "valor_causa": 61788011.0
+      "valor_causa": 61685131.09
     },
     {
       "nome": "Giulia Vendramini Milani(GVM)",
@@ -1406,12 +1406,12 @@
     },
     {
       "nome": "Mariana Borges de Menezes Fávaro(MBF)",
-      "andamento": 252,
+      "andamento": 251,
       "entradas_mes": 3,
-      "saidas_mes": 5,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 14,
-      "valor_causa": 29392373.05
+      "valor_causa": 29157259.59
     },
     {
       "nome": "Paloma da Silva Santos(PSI)",
@@ -1739,12 +1739,12 @@
     },
     {
       "nome": "VITERRA RIO VERMELHO",
-      "andamento": 319,
+      "andamento": 316,
       "entradas_mes": 7,
-      "saidas_mes": 7,
+      "saidas_mes": 10,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 9,
-      "valor_causa": 44153300.21,
+      "valor_causa": 43815306.84,
       "alerta_entrada": false
     },
     {
@@ -3115,12 +3115,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "VITERRA RIO VERMELHO",
-      "andamento": 319,
+      "andamento": 316,
       "entradas_mes": 7,
-      "saidas_mes": 7,
+      "saidas_mes": 10,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 9,
-      "valor_causa": 44153300.21,
+      "valor_causa": 43815306.84,
       "alerta_entrada": false
     },
     {
@@ -4192,12 +4192,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Rafael Yepez do Lago(RYL)",
-      "andamento": 450,
+      "andamento": 448,
       "entradas_mes": 19,
-      "saidas_mes": 20,
+      "saidas_mes": 22,
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 17,
-      "valor_causa": 61788011.0
+      "valor_causa": 61685131.09
     },
     {
       "grupo": "Grupo E2",
@@ -4232,12 +4232,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Mariana Borges de Menezes Fávaro(MBF)",
-      "andamento": 252,
+      "andamento": 251,
       "entradas_mes": 3,
-      "saidas_mes": 5,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 14,
-      "valor_causa": 29392373.05
+      "valor_causa": 29157259.59
     },
     {
       "grupo": "Grupo E2",
@@ -6324,12 +6324,12 @@
     {
       "estado": "SP",
       "cliente": "VITERRA RIO VERMELHO",
-      "andamento": 301,
+      "andamento": 298,
       "entradas_mes": 5,
-      "saidas_mes": 5,
+      "saidas_mes": 8,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 8,
-      "valor_causa": 42891358.68
+      "valor_causa": 42553365.31
     },
     {
       "estado": "SP",
