@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-29T14:30:35",
+  "atualizado_em": "2026-09-29T14:45:32",
   "kpis": {
-    "total_andamento": 7541,
-    "entradas_hoje": 8,
+    "total_andamento": 7542,
+    "entradas_hoje": 9,
     "saidas_hoje": 0,
     "entradas_ontem": 19,
     "saidas_ontem": 8,
-    "entradas_mes": 302,
+    "entradas_mes": 303,
     "saidas_mes": 985,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 263,
-    "valor_causa_total": 1725363316.01,
-    "saldo_mes": -683
+    "valor_causa_total": 1725637961.22,
+    "saldo_mes": -682
   },
   "serie_diaria": [
     {
@@ -311,19 +311,19 @@
     },
     {
       "data": "2026-09-29",
-      "entradas": 8,
+      "entradas": 9,
       "saidas": 0
     }
   ],
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2102,
-      "entradas_mes": 106,
+      "andamento": 2103,
+      "entradas_mes": 107,
       "saidas_mes": 83,
       "entradas_mes_anterior": 93,
       "saidas_mes_anterior": 74,
-      "valor_causa": 462462565.29
+      "valor_causa": 464249027.62
     },
     {
       "nome": "Grupo E1",
@@ -404,7 +404,7 @@
       "saidas_mes": 3,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 20,
-      "valor_causa": 2222666.35
+      "valor_causa": 710849.23
     },
     {
       "nome": "Sócios",
@@ -437,12 +437,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5755,
-      "entradas_mes": 180,
+      "andamento": 5756,
+      "entradas_mes": 181,
       "saidas_mes": 814,
       "entradas_mes_anterior": 185,
       "saidas_mes_anterior": 214,
-      "valor_causa": 1353881734.29
+      "valor_causa": 1354156379.5
     },
     {
       "nome": "MG",
@@ -682,12 +682,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2849,
-      "entradas_mes": 280,
+      "andamento": 2850,
+      "entradas_mes": 281,
       "saidas_mes": 202,
       "entradas_mes_anterior": 206,
       "saidas_mes_anterior": 66,
-      "valor_causa": 813170610.11
+      "valor_causa": 813445255.32
     },
     {
       "nome": "Sentença",
@@ -902,12 +902,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 863,
-      "entradas_mes": 102,
+      "andamento": 864,
+      "entradas_mes": 103,
       "saidas_mes": 21,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 27,
-      "valor_causa": 178396621.47
+      "valor_causa": 180183083.8
     },
     {
       "fase": "Instrução",
@@ -997,7 +997,7 @@
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 2,
-      "valor_causa": 1913491.82
+      "valor_causa": 401674.7
     },
     {
       "fase": "Outras",
@@ -1361,12 +1361,12 @@
     },
     {
       "nome": "Rafael Rocha Ferreira(RFE)",
-      "andamento": 275,
-      "entradas_mes": 11,
+      "andamento": 276,
+      "entradas_mes": 12,
       "saidas_mes": 3,
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 3,
-      "valor_causa": 76092828.3
+      "valor_causa": 76367473.51
     },
     {
       "nome": "Rafael Camargo Felisbino(RCF)",
@@ -1669,12 +1669,12 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1443,
-      "entradas_mes": 54,
+      "andamento": 1444,
+      "entradas_mes": 55,
       "saidas_mes": 35,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 45,
-      "valor_causa": 320698592.81,
+      "valor_causa": 320973238.02,
       "alerta_entrada": false
     },
     {
@@ -3104,12 +3104,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "HERINGER",
-      "andamento": 331,
-      "entradas_mes": 17,
+      "andamento": 332,
+      "entradas_mes": 18,
       "saidas_mes": 10,
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 11,
-      "valor_causa": 43686064.93,
+      "valor_causa": 45472527.26,
       "alerta_entrada": true
     },
     {
@@ -3653,17 +3653,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "HERINGER",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 1787462.33,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "PEIXOTO E CURY",
       "andamento": 1,
       "entradas_mes": 0,
@@ -3682,6 +3671,28 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 38000.0,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "HERINGER",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 1000.0,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "BRIDGESTONE",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 274645.21,
       "alerta_entrada": false
     },
     {
@@ -4222,12 +4233,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 285,
-      "entradas_mes": 8,
+      "andamento": 286,
+      "entradas_mes": 9,
       "saidas_mes": 17,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 11,
-      "valor_causa": 154809806.82
+      "valor_causa": 156596269.15
     },
     {
       "grupo": "Grupo E2",
@@ -4312,12 +4323,12 @@
     {
       "grupo": "Sem grupo",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 2,
-      "entradas_mes": 1,
+      "andamento": 1,
+      "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 2057636.86
+      "valor_causa": 271174.53
     },
     {
       "grupo": "Sem grupo",
@@ -4338,6 +4349,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 1000.0
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Rafael Rocha Ferreira(RFE)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 274645.21
     },
     {
       "grupo": "Sem grupo",
@@ -5113,16 +5134,6 @@
     },
     {
       "estado": "MG",
-      "cliente": "SOCIEDADE FOGAS",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 0.0
-    },
-    {
-      "estado": "MG",
       "cliente": "A. RAYMOND",
       "andamento": 1,
       "entradas_mes": 0,
@@ -5130,6 +5141,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 32000.0
+    },
+    {
+      "estado": "MG",
+      "cliente": "SOCIEDADE FOGAS",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 0.0
     },
     {
       "estado": "MG",
@@ -6284,12 +6305,12 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1414,
-      "entradas_mes": 49,
+      "andamento": 1415,
+      "entradas_mes": 50,
       "saidas_mes": 34,
       "entradas_mes_anterior": 51,
       "saidas_mes_anterior": 45,
-      "valor_causa": 309014623.29
+      "valor_causa": 309289268.5
     },
     {
       "estado": "SP",
@@ -7796,6 +7817,11 @@
   ],
   "sem_grupo_processos": [
     {
+      "numero_processo": "1001960-52.2026.5.02.0431",
+      "cliente": "BRIDGESTONE",
+      "profissional": "Rafael Rocha Ferreira(RFE)"
+    },
+    {
       "numero_processo": "1001453-54.2026.5.02.0411",
       "cliente": "CBC CARTUCHOS BRASIL",
       "profissional": "Letícia Meneghini Fontes (LMI)"
@@ -7804,11 +7830,6 @@
       "numero_processo": "0003841-21.2026.5.09.0000",
       "cliente": "HERINGER",
       "profissional": "Bianca Bolanhi Camacho(BBO)"
-    },
-    {
-      "numero_processo": "0020851-44.2026.5.04.0121",
-      "cliente": "HERINGER",
-      "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
     },
     {
       "numero_processo": "1002426-59.2017.5.02.0464",
