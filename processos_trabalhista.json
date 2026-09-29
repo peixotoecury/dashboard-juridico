@@ -1,11 +1,11 @@
 {
-  "atualizado_em": "2026-09-28T18:45:23",
+  "atualizado_em": "2026-09-29T08:30:22",
   "kpis": {
     "total_andamento": 7533,
-    "entradas_hoje": 19,
-    "saidas_hoje": 8,
-    "entradas_ontem": 0,
-    "saidas_ontem": 0,
+    "entradas_hoje": 0,
+    "saidas_hoje": 0,
+    "entradas_ontem": 19,
+    "saidas_ontem": 8,
     "entradas_mes": 294,
     "saidas_mes": 985,
     "entradas_mes_anterior": 278,
@@ -14,11 +14,6 @@
     "saldo_mes": -691
   },
   "serie_diaria": [
-    {
-      "data": "2026-07-31",
-      "entradas": 7,
-      "saidas": 15
-    },
     {
       "data": "2026-08-01",
       "entradas": 0,
@@ -313,6 +308,11 @@
       "data": "2026-09-28",
       "entradas": 19,
       "saidas": 8
+    },
+    {
+      "data": "2026-09-29",
+      "entradas": 0,
+      "saidas": 0
     }
   ],
   "por_grupo": [
@@ -1835,7 +1835,7 @@
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 4,
       "valor_causa": 10152734.8,
-      "alerta_entrada": true
+      "alerta_entrada": false
     },
     {
       "nome": "DELL COMPUTADORES",
@@ -3132,7 +3132,7 @@
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 4,
       "valor_causa": 10152734.8,
-      "alerta_entrada": true
+      "alerta_entrada": false
     },
     {
       "grupo": "Grupo E2",
@@ -7719,16 +7719,6 @@
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
       "valor_causa": 11621455.01,
-      "alerta_entrada": true
-    },
-    {
-      "nome": "EUROCHEM FTO MATRIZ",
-      "andamento": 99,
-      "entradas_mes": 7,
-      "saidas_mes": 9,
-      "entradas_mes_anterior": 5,
-      "saidas_mes_anterior": 4,
-      "valor_causa": 10152734.8,
       "alerta_entrada": true
     },
     {
