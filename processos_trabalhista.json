@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-30T09:15:20",
+  "atualizado_em": "2026-09-30T09:30:21",
   "kpis": {
-    "total_andamento": 7535,
+    "total_andamento": 7534,
     "entradas_hoje": 1,
-    "saidas_hoje": 1,
+    "saidas_hoje": 2,
     "entradas_ontem": 13,
     "saidas_ontem": 10,
     "entradas_mes": 308,
-    "saidas_mes": 997,
+    "saidas_mes": 998,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 263,
-    "valor_causa_total": 1725127648.6,
-    "saldo_mes": -689
+    "valor_causa_total": 1725026642.2,
+    "saldo_mes": -690
   },
   "serie_diaria": [
     {
@@ -312,7 +312,7 @@
     {
       "data": "2026-09-30",
       "entradas": 1,
-      "saidas": 1
+      "saidas": 2
     }
   ],
   "por_grupo": [
@@ -327,21 +327,21 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1808,
+      "andamento": 1807,
       "entradas_mes": 60,
-      "saidas_mes": 45,
+      "saidas_mes": 46,
       "entradas_mes_anterior": 52,
       "saidas_mes_anterior": 92,
-      "valor_causa": 307832524.82
+      "valor_causa": 307731518.42
     },
     {
       "nome": "Grupo B1",
-      "andamento": 1443,
-      "entradas_mes": 55,
+      "andamento": 1444,
+      "entradas_mes": 56,
       "saidas_mes": 36,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 45,
-      "valor_causa": 320973238.02
+      "valor_causa": 321019988.82
     },
     {
       "nome": "Grupo B2",
@@ -399,12 +399,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 5,
-      "entradas_mes": 3,
+      "andamento": 4,
+      "entradas_mes": 2,
       "saidas_mes": 3,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 20,
-      "valor_causa": 1035927.55
+      "valor_causa": 989176.75
     },
     {
       "nome": "Sócios",
@@ -446,12 +446,12 @@
     },
     {
       "nome": "MG",
-      "andamento": 542,
+      "andamento": 541,
       "entradas_mes": 32,
-      "saidas_mes": 18,
+      "saidas_mes": 19,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 23,
-      "valor_causa": 133120624.65
+      "valor_causa": 133019618.25
     },
     {
       "nome": "PR",
@@ -700,12 +700,12 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2951,
+      "andamento": 2950,
       "entradas_mes": 3,
-      "saidas_mes": 388,
+      "saidas_mes": 389,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 46,
-      "valor_causa": 653524226.13
+      "valor_causa": 653423219.73
     },
     {
       "nome": "Execução",
@@ -922,12 +922,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B1",
-      "andamento": 445,
-      "entradas_mes": 55,
+      "andamento": 446,
+      "entradas_mes": 56,
       "saidas_mes": 13,
       "entradas_mes_anterior": 52,
       "saidas_mes_anterior": 14,
-      "valor_causa": 147588075.43
+      "valor_causa": 147634826.23
     },
     {
       "fase": "Instrução",
@@ -992,12 +992,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 3,
-      "entradas_mes": 3,
+      "andamento": 2,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 2,
-      "valor_causa": 726753.02
+      "valor_causa": 680002.22
     },
     {
       "fase": "Outras",
@@ -1112,12 +1112,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo E1",
-      "andamento": 755,
+      "andamento": 754,
       "entradas_mes": 2,
-      "saidas_mes": 11,
+      "saidas_mes": 12,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 13,
-      "valor_causa": 108286586.43
+      "valor_causa": 108185580.03
     },
     {
       "fase": "Recurso",
@@ -1298,12 +1298,12 @@
     },
     {
       "nome": "Joice Ramos Miranda(JRM)",
-      "andamento": 295,
+      "andamento": 294,
       "entradas_mes": 12,
-      "saidas_mes": 5,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 2,
-      "valor_causa": 74547787.77
+      "valor_causa": 74446781.37
     },
     {
       "nome": "Beatriz Santiago de Souza(BSO)",
@@ -1779,12 +1779,12 @@
     },
     {
       "nome": "SYNGENTA SEEDS NIDER",
-      "andamento": 158,
+      "andamento": 157,
       "entradas_mes": 8,
-      "saidas_mes": 4,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 23475794.76,
+      "valor_causa": 23374788.36,
       "alerta_entrada": true
     },
     {
@@ -2312,12 +2312,12 @@
     {
       "grupo": "Grupo B1",
       "cliente": "BRIDGESTONE",
-      "andamento": 1443,
-      "entradas_mes": 55,
+      "andamento": 1444,
+      "entradas_mes": 56,
       "saidas_mes": 36,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 45,
-      "valor_causa": 320973238.02,
+      "valor_causa": 321019988.82,
       "alerta_entrada": false
     },
     {
@@ -2895,12 +2895,12 @@
     {
       "grupo": "Grupo E1",
       "cliente": "SYNGENTA SEEDS NIDER",
-      "andamento": 153,
+      "andamento": 152,
       "entradas_mes": 8,
-      "saidas_mes": 4,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 23475794.76,
+      "valor_causa": 23374788.36,
       "alerta_entrada": true
     },
     {
@@ -3696,17 +3696,6 @@
       "alerta_entrada": false
     },
     {
-      "grupo": "Sem grupo",
-      "cliente": "BRIDGESTONE",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 46750.8,
-      "alerta_entrada": false
-    },
-    {
       "grupo": "Sócios",
       "cliente": "PEIXOTO E CURY",
       "andamento": 2,
@@ -3843,12 +3832,12 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Beatriz Santiago de Souza(BSO)",
-      "andamento": 291,
-      "entradas_mes": 17,
+      "andamento": 292,
+      "entradas_mes": 18,
       "saidas_mes": 7,
       "entradas_mes_anterior": 15,
       "saidas_mes_anterior": 3,
-      "valor_causa": 47285730.91
+      "valor_causa": 47332481.71
     },
     {
       "grupo": "Grupo B1",
@@ -4083,12 +4072,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Joice Ramos Miranda(JRM)",
-      "andamento": 295,
+      "andamento": 294,
       "entradas_mes": 12,
-      "saidas_mes": 5,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 2,
-      "valor_causa": 74547787.77
+      "valor_causa": 74446781.37
     },
     {
       "grupo": "Grupo E1",
@@ -4359,16 +4348,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 679002.22
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Beatriz Santiago de Souza(BSO)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 46750.8
     },
     {
       "grupo": "Sócios",
@@ -5015,12 +4994,12 @@
     {
       "estado": "MG",
       "cliente": "SYNGENTA SEEDS NIDER",
-      "andamento": 44,
+      "andamento": 43,
       "entradas_mes": 3,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 1,
-      "valor_causa": 4179187.84
+      "valor_causa": 4078181.44
     },
     {
       "estado": "MG",
@@ -7736,12 +7715,12 @@
     },
     {
       "nome": "SYNGENTA SEEDS NIDER",
-      "andamento": 158,
+      "andamento": 157,
       "entradas_mes": 8,
-      "saidas_mes": 4,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 23475794.76,
+      "valor_causa": 23374788.36,
       "alerta_entrada": true
     },
     {
@@ -7806,11 +7785,6 @@
     }
   ],
   "sem_grupo_processos": [
-    {
-      "numero_processo": "1001946-62.2026.5.02.0433",
-      "cliente": "BRIDGESTONE",
-      "profissional": "Beatriz Santiago de Souza(BSO)"
-    },
     {
       "numero_processo": "0003841-21.2026.5.09.0000",
       "cliente": "HERINGER",
