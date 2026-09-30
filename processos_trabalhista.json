@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-30T16:45:21",
+  "atualizado_em": "2026-09-30T17:00:22",
   "kpis": {
-    "total_andamento": 7544,
+    "total_andamento": 7543,
     "entradas_hoje": 12,
-    "saidas_hoje": 2,
+    "saidas_hoje": 3,
     "entradas_ontem": 13,
     "saidas_ontem": 10,
     "entradas_mes": 319,
-    "saidas_mes": 998,
+    "saidas_mes": 999,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 264,
     "valor_causa_total": 1729379358.23,
-    "saldo_mes": -679
+    "saldo_mes": -680
   },
   "serie_diaria": [
     {
@@ -312,7 +312,7 @@
     {
       "data": "2026-09-30",
       "entradas": 12,
-      "saidas": 2
+      "saidas": 3
     }
   ],
   "por_grupo": [
@@ -345,9 +345,9 @@
     },
     {
       "nome": "Grupo B2",
-      "andamento": 754,
+      "andamento": 753,
       "entradas_mes": 22,
-      "saidas_mes": 12,
+      "saidas_mes": 13,
       "entradas_mes_anterior": 26,
       "saidas_mes_anterior": 11,
       "valor_causa": 137911362.41
@@ -437,9 +437,9 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5750,
+      "andamento": 5749,
       "entradas_mes": 188,
-      "saidas_mes": 826,
+      "saidas_mes": 827,
       "entradas_mes_anterior": 185,
       "saidas_mes_anterior": 215,
       "valor_causa": 1356027917.5
@@ -673,9 +673,9 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 403,
+      "andamento": 402,
       "entradas_mes": 28,
-      "saidas_mes": 9,
+      "saidas_mes": 10,
       "entradas_mes_anterior": 42,
       "saidas_mes_anterior": 6,
       "valor_causa": 88080438.63
@@ -732,9 +732,9 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo B2",
-      "andamento": 102,
+      "andamento": 101,
       "entradas_mes": 0,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
       "valor_causa": 15504536.74
@@ -1333,15 +1333,6 @@
       "valor_causa": 32420930.84
     },
     {
-      "nome": "Bruna Cembranelli Fazenda (BCF)",
-      "andamento": 288,
-      "entradas_mes": 10,
-      "saidas_mes": 8,
-      "entradas_mes_anterior": 10,
-      "saidas_mes_anterior": 5,
-      "valor_causa": 38842002.9
-    },
-    {
       "nome": "Guilherme Silva Morimoto(GSM)",
       "andamento": 288,
       "entradas_mes": 14,
@@ -1349,6 +1340,15 @@
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 9,
       "valor_causa": 127378456.71
+    },
+    {
+      "nome": "Bruna Cembranelli Fazenda (BCF)",
+      "andamento": 287,
+      "entradas_mes": 10,
+      "saidas_mes": 9,
+      "entradas_mes_anterior": 10,
+      "saidas_mes_anterior": 5,
+      "valor_causa": 38842002.9
     },
     {
       "nome": "Vanessa de Cassia Castrequini Rosa(VCR)",
@@ -1689,9 +1689,9 @@
     },
     {
       "nome": "EMBRAER",
-      "andamento": 734,
+      "andamento": 733,
       "entradas_mes": 24,
-      "saidas_mes": 12,
+      "saidas_mes": 13,
       "entradas_mes_anterior": 26,
       "saidas_mes_anterior": 11,
       "valor_causa": 135845694.62,
@@ -2323,9 +2323,9 @@
     {
       "grupo": "Grupo B2",
       "cliente": "EMBRAER",
-      "andamento": 731,
+      "andamento": 730,
       "entradas_mes": 22,
-      "saidas_mes": 12,
+      "saidas_mes": 13,
       "entradas_mes_anterior": 26,
       "saidas_mes_anterior": 11,
       "valor_causa": 135845694.62,
@@ -3933,9 +3933,9 @@
     {
       "grupo": "Grupo B2",
       "profissional": "Bruna Cembranelli Fazenda (BCF)",
-      "andamento": 218,
+      "andamento": 217,
       "entradas_mes": 10,
-      "saidas_mes": 8,
+      "saidas_mes": 9,
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 5,
       "valor_causa": 27219621.31
@@ -4564,16 +4564,6 @@
     },
     {
       "estado": "BA",
-      "cliente": "EUROCHEM FTO MATRIZ",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 83102.76
-    },
-    {
-      "estado": "BA",
       "cliente": "ROBERT BOSCH",
       "andamento": 1,
       "entradas_mes": 0,
@@ -4591,6 +4581,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
+    },
+    {
+      "estado": "BA",
+      "cliente": "EUROCHEM FTO MATRIZ",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 83102.76
     },
     {
       "estado": "CE",
@@ -6305,9 +6305,9 @@
     {
       "estado": "SP",
       "cliente": "EMBRAER",
-      "andamento": 716,
+      "andamento": 715,
       "entradas_mes": 19,
-      "saidas_mes": 12,
+      "saidas_mes": 13,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 10,
       "valor_causa": 135182177.61
