@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-30T13:15:22",
+  "atualizado_em": "2026-09-30T14:45:06",
   "kpis": {
-    "total_andamento": 7540,
-    "entradas_hoje": 8,
+    "total_andamento": 7543,
+    "entradas_hoje": 11,
     "saidas_hoje": 2,
     "entradas_ontem": 13,
     "saidas_ontem": 10,
-    "entradas_mes": 315,
+    "entradas_mes": 318,
     "saidas_mes": 998,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 264,
-    "valor_causa_total": 1728497134.43,
-    "saldo_mes": -683
+    "valor_causa_total": 1728778239.43,
+    "saldo_mes": -680
   },
   "serie_diaria": [
     {
@@ -311,19 +311,19 @@
     },
     {
       "data": "2026-09-30",
-      "entradas": 8,
+      "entradas": 11,
       "saidas": 2
     }
   ],
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2101,
-      "entradas_mes": 113,
+      "andamento": 2104,
+      "entradas_mes": 116,
       "saidas_mes": 91,
       "entradas_mes_anterior": 93,
       "saidas_mes_anterior": 74,
-      "valor_causa": 466939261.89
+      "valor_causa": 467220366.89
     },
     {
       "nome": "Grupo E1",
@@ -437,21 +437,21 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5749,
-      "entradas_mes": 187,
+      "andamento": 5750,
+      "entradas_mes": 188,
       "saidas_mes": 826,
       "entradas_mes_anterior": 185,
       "saidas_mes_anterior": 215,
-      "valor_causa": 1355886812.5
+      "valor_causa": 1356027917.5
     },
     {
       "nome": "MG",
-      "andamento": 542,
-      "entradas_mes": 33,
+      "andamento": 544,
+      "entradas_mes": 35,
       "saidas_mes": 19,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 23,
-      "valor_causa": 133019618.25
+      "valor_causa": 133159618.25
     },
     {
       "nome": "PR",
@@ -682,12 +682,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2847,
-      "entradas_mes": 278,
+      "andamento": 2849,
+      "entradas_mes": 281,
       "saidas_mes": 207,
       "entradas_mes_anterior": 208,
       "saidas_mes_anterior": 66,
-      "valor_causa": 815884870.88
+      "valor_causa": 816140331.03
     },
     {
       "nome": "Sentença",
@@ -700,12 +700,12 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2951,
+      "andamento": 2952,
       "entradas_mes": 3,
       "saidas_mes": 389,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 46,
-      "valor_causa": 653583219.73
+      "valor_causa": 653608864.58
     },
     {
       "nome": "Execução",
@@ -902,12 +902,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 866,
-      "entradas_mes": 109,
+      "andamento": 869,
+      "entradas_mes": 112,
       "saidas_mes": 23,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 27,
-      "valor_causa": 183510282.41
+      "valor_causa": 183791387.41
     },
     {
       "fase": "Instrução",
@@ -952,12 +952,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B3",
-      "andamento": 136,
+      "andamento": 135,
       "entradas_mes": 16,
       "saidas_mes": 5,
       "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 7,
-      "valor_causa": 26066589.18
+      "valor_causa": 26040944.33
     },
     {
       "fase": "Instrução",
@@ -1142,12 +1142,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo B3",
-      "andamento": 243,
+      "andamento": 244,
       "entradas_mes": 1,
       "saidas_mes": 1,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 3,
-      "valor_causa": 60232861.1
+      "valor_causa": 60258505.95
     },
     {
       "fase": "Recurso",
@@ -1271,12 +1271,12 @@
     },
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 357,
-      "entradas_mes": 26,
+      "andamento": 360,
+      "entradas_mes": 29,
       "saidas_mes": 26,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 19,
-      "valor_causa": 48161681.89
+      "valor_causa": 48442786.89
     },
     {
       "nome": "Letícia Meneghini Fontes (LMI)",
@@ -1778,6 +1778,16 @@
       "alerta_entrada": false
     },
     {
+      "nome": "EUROCHEM SALITRE",
+      "andamento": 159,
+      "entradas_mes": 19,
+      "saidas_mes": 11,
+      "entradas_mes_anterior": 9,
+      "saidas_mes_anterior": 7,
+      "valor_causa": 37693659.07,
+      "alerta_entrada": true
+    },
+    {
       "nome": "SYNGENTA SEEDS NIDER",
       "andamento": 157,
       "entradas_mes": 8,
@@ -1785,16 +1795,6 @@
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
       "valor_causa": 23374788.36,
-      "alerta_entrada": true
-    },
-    {
-      "nome": "EUROCHEM SALITRE",
-      "andamento": 156,
-      "entradas_mes": 16,
-      "saidas_mes": 11,
-      "entradas_mes_anterior": 9,
-      "saidas_mes_anterior": 7,
-      "valor_causa": 37412554.07,
       "alerta_entrada": true
     },
     {
@@ -3126,12 +3126,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "EUROCHEM SALITRE",
-      "andamento": 156,
-      "entradas_mes": 16,
+      "andamento": 159,
+      "entradas_mes": 19,
       "saidas_mes": 11,
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 7,
-      "valor_causa": 37412554.07,
+      "valor_causa": 37693659.07,
       "alerta_entrada": true
     },
     {
@@ -4202,12 +4202,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 357,
-      "entradas_mes": 26,
+      "andamento": 360,
+      "entradas_mes": 29,
       "saidas_mes": 26,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 19,
-      "valor_causa": 48161681.89
+      "valor_causa": 48442786.89
     },
     {
       "grupo": "Grupo E2",
@@ -4974,12 +4974,12 @@
     {
       "estado": "MG",
       "cliente": "EUROCHEM SALITRE",
-      "andamento": 107,
-      "entradas_mes": 11,
+      "andamento": 109,
+      "entradas_mes": 13,
       "saidas_mes": 9,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 5,
-      "valor_causa": 24309583.8
+      "valor_causa": 24449583.8
     },
     {
       "estado": "MG",
@@ -6574,12 +6574,12 @@
     {
       "estado": "SP",
       "cliente": "EUROCHEM SALITRE",
-      "andamento": 11,
-      "entradas_mes": 1,
+      "andamento": 12,
+      "entradas_mes": 2,
       "saidas_mes": 1,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 2756463.31
+      "valor_causa": 2897568.31
     },
     {
       "estado": "SP",
@@ -7714,6 +7714,16 @@
       "alerta_entrada": true
     },
     {
+      "nome": "EUROCHEM SALITRE",
+      "andamento": 159,
+      "entradas_mes": 19,
+      "saidas_mes": 11,
+      "entradas_mes_anterior": 9,
+      "saidas_mes_anterior": 7,
+      "valor_causa": 37693659.07,
+      "alerta_entrada": true
+    },
+    {
       "nome": "SYNGENTA SEEDS NIDER",
       "andamento": 157,
       "entradas_mes": 8,
@@ -7721,16 +7731,6 @@
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
       "valor_causa": 23374788.36,
-      "alerta_entrada": true
-    },
-    {
-      "nome": "EUROCHEM SALITRE",
-      "andamento": 156,
-      "entradas_mes": 16,
-      "saidas_mes": 11,
-      "entradas_mes_anterior": 9,
-      "saidas_mes_anterior": 7,
-      "valor_causa": 37412554.07,
       "alerta_entrada": true
     },
     {
