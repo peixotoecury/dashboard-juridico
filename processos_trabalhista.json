@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-09-30T17:15:24",
+  "atualizado_em": "2026-09-30T17:30:26",
   "kpis": {
-    "total_andamento": 7543,
+    "total_andamento": 7541,
     "entradas_hoje": 12,
     "saidas_hoje": 3,
     "entradas_ontem": 13,
     "saidas_ontem": 10,
     "entradas_mes": 319,
-    "saidas_mes": 999,
+    "saidas_mes": 1001,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 264,
-    "valor_causa_total": 1729379358.23,
-    "saldo_mes": -680
+    "valor_causa_total": 1729333749.13,
+    "saldo_mes": -682
   },
   "serie_diaria": [
     {
@@ -282,7 +282,7 @@
     {
       "data": "2026-09-24",
       "entradas": 21,
-      "saidas": 9
+      "saidas": 11
     },
     {
       "data": "2026-09-25",
@@ -354,12 +354,12 @@
     },
     {
       "nome": "Grupo C",
-      "andamento": 671,
+      "andamento": 669,
       "entradas_mes": 38,
-      "saidas_mes": 10,
+      "saidas_mes": 12,
       "entradas_mes_anterior": 22,
       "saidas_mes_anterior": 1,
-      "valor_causa": 244989590.58
+      "valor_causa": 244943981.48
     },
     {
       "nome": "Grupo B3",
@@ -500,12 +500,12 @@
     },
     {
       "nome": "GO",
-      "andamento": 97,
+      "andamento": 95,
       "entradas_mes": 8,
-      "saidas_mes": 12,
+      "saidas_mes": 14,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 2,
-      "valor_causa": 8532358.0
+      "valor_causa": 8486748.9
     },
     {
       "nome": "MT",
@@ -682,12 +682,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2849,
+      "andamento": 2847,
       "entradas_mes": 282,
-      "saidas_mes": 207,
+      "saidas_mes": 209,
       "entradas_mes_anterior": 208,
       "saidas_mes_anterior": 66,
-      "valor_causa": 816497261.24
+      "valor_causa": 816451652.14
     },
     {
       "nome": "Sentença",
@@ -932,12 +932,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo C",
-      "andamento": 405,
+      "andamento": 403,
       "entradas_mes": 37,
-      "saidas_mes": 6,
+      "saidas_mes": 8,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 0,
-      "valor_causa": 155463918.08
+      "valor_causa": 155418308.98
     },
     {
       "fase": "Instrução",
@@ -1424,12 +1424,12 @@
     },
     {
       "nome": "Erik Mota Coppi(ECO)",
-      "andamento": 246,
+      "andamento": 244,
       "entradas_mes": 15,
-      "saidas_mes": 10,
+      "saidas_mes": 12,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 2,
-      "valor_causa": 44812032.11
+      "valor_causa": 44766423.01
     },
     {
       "nome": "Vinícius Ronchi Arruda(VRO)",
@@ -2499,12 +2499,12 @@
     {
       "grupo": "Grupo C",
       "cliente": "UHE SÃO SIMÃO",
-      "andamento": 32,
+      "andamento": 30,
       "entradas_mes": 6,
-      "saidas_mes": 8,
+      "saidas_mes": 10,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 0,
-      "valor_causa": 4401217.49,
+      "valor_causa": 4355608.39,
       "alerta_entrada": false
     },
     {
@@ -4013,12 +4013,12 @@
     {
       "grupo": "Grupo C",
       "profissional": "Erik Mota Coppi(ECO)",
-      "andamento": 229,
+      "andamento": 227,
       "entradas_mes": 13,
-      "saidas_mes": 10,
+      "saidas_mes": 12,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 1,
-      "valor_causa": 44133029.89
+      "valor_causa": 44087420.79
     },
     {
       "grupo": "Grupo C",
@@ -4864,16 +4864,6 @@
     },
     {
       "estado": "GO",
-      "cliente": "UHE SÃO SIMÃO",
-      "andamento": 16,
-      "entradas_mes": 5,
-      "saidas_mes": 5,
-      "entradas_mes_anterior": 10,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 815076.28
-    },
-    {
-      "estado": "GO",
       "cliente": "EUROCHEM FTO MATRIZ",
       "andamento": 15,
       "entradas_mes": 0,
@@ -4881,6 +4871,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
       "valor_causa": 954171.41
+    },
+    {
+      "estado": "GO",
+      "cliente": "UHE SÃO SIMÃO",
+      "andamento": 14,
+      "entradas_mes": 5,
+      "saidas_mes": 7,
+      "entradas_mes_anterior": 10,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 769467.18
     },
     {
       "estado": "GO",
