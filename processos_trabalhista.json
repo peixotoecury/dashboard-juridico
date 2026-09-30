@@ -1,24 +1,19 @@
 {
-  "atualizado_em": "2026-09-29T20:15:28",
+  "atualizado_em": "2026-09-30T08:00:34",
   "kpis": {
-    "total_andamento": 7536,
-    "entradas_hoje": 13,
-    "saidas_hoje": 9,
-    "entradas_ontem": 19,
-    "saidas_ontem": 8,
+    "total_andamento": 7535,
+    "entradas_hoje": 0,
+    "saidas_hoje": 0,
+    "entradas_ontem": 13,
+    "saidas_ontem": 10,
     "entradas_mes": 307,
-    "saidas_mes": 995,
+    "saidas_mes": 996,
     "entradas_mes_anterior": 278,
     "saidas_mes_anterior": 263,
-    "valor_causa_total": 1725498234.42,
-    "saldo_mes": -688
+    "valor_causa_total": 1725181345.32,
+    "saldo_mes": -689
   },
   "serie_diaria": [
-    {
-      "data": "2026-08-01",
-      "entradas": 0,
-      "saidas": 0
-    },
     {
       "data": "2026-08-02",
       "entradas": 0,
@@ -312,7 +307,12 @@
     {
       "data": "2026-09-29",
       "entradas": 13,
-      "saidas": 9
+      "saidas": 10
+    },
+    {
+      "data": "2026-09-30",
+      "entradas": 0,
+      "saidas": 0
     }
   ],
   "por_grupo": [
@@ -327,12 +327,12 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1810,
+      "andamento": 1809,
       "entradas_mes": 60,
-      "saidas_mes": 43,
+      "saidas_mes": 44,
       "entradas_mes_anterior": 52,
       "saidas_mes_anterior": 92,
-      "valor_causa": 308249861.44
+      "valor_causa": 307932972.34
     },
     {
       "nome": "Grupo B1",
@@ -437,12 +437,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5749,
+      "andamento": 5748,
       "entradas_mes": 184,
-      "saidas_mes": 824,
+      "saidas_mes": 825,
       "entradas_mes_anterior": 185,
       "saidas_mes_anterior": 214,
-      "valor_causa": 1353337650.48
+      "valor_causa": 1353020761.38
     },
     {
       "nome": "MG",
@@ -682,12 +682,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2833,
+      "andamento": 2831,
       "entradas_mes": 270,
-      "saidas_mes": 205,
+      "saidas_mes": 206,
       "entradas_mes_anterior": 206,
       "saidas_mes_anterior": 66,
-      "valor_causa": 811191248.12
+      "valor_causa": 810819057.62
     },
     {
       "nome": "Sentença",
@@ -709,12 +709,12 @@
     },
     {
       "nome": "Execução",
-      "andamento": 910,
+      "andamento": 911,
       "entradas_mes": 2,
       "saidas_mes": 352,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 94,
-      "valor_causa": 132018100.94
+      "valor_causa": 132073402.34
     }
   ],
   "por_fase_outras": 399,
@@ -822,12 +822,12 @@
     {
       "fase": "Execução",
       "grupo": "Grupo E2",
-      "andamento": 344,
+      "andamento": 345,
       "entradas_mes": 1,
       "saidas_mes": 34,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 24,
-      "valor_causa": 51912012.11
+      "valor_causa": 51967313.51
     },
     {
       "fase": "Execução",
@@ -902,22 +902,22 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 862,
+      "andamento": 861,
       "entradas_mes": 104,
       "saidas_mes": 23,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 27,
-      "valor_causa": 180169950.34
+      "valor_causa": 180114648.94
     },
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 747,
+      "andamento": 746,
       "entradas_mes": 30,
-      "saidas_mes": 16,
+      "saidas_mes": 17,
       "entradas_mes_anterior": 28,
       "saidas_mes_anterior": 11,
-      "valor_causa": 161214287.28
+      "valor_causa": 160897398.18
     },
     {
       "fase": "Instrução",
@@ -1306,15 +1306,6 @@
       "valor_causa": 74648235.29
     },
     {
-      "nome": "Júlia Priego Lopes da Silva(JPL)",
-      "andamento": 292,
-      "entradas_mes": 0,
-      "saidas_mes": 4,
-      "entradas_mes_anterior": 3,
-      "saidas_mes_anterior": 12,
-      "valor_causa": 32737819.94
-    },
-    {
       "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
       "andamento": 291,
       "entradas_mes": 10,
@@ -1322,6 +1313,15 @@
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 11,
       "valor_causa": 156880017.03
+    },
+    {
+      "nome": "Júlia Priego Lopes da Silva(JPL)",
+      "andamento": 291,
+      "entradas_mes": 0,
+      "saidas_mes": 5,
+      "entradas_mes_anterior": 3,
+      "saidas_mes_anterior": 12,
+      "valor_causa": 32420930.84
     },
     {
       "nome": "Beatriz Santiago de Souza(BSO)",
@@ -1839,12 +1839,12 @@
     },
     {
       "nome": "DELL COMPUTADORES",
-      "andamento": 97,
+      "andamento": 96,
       "entradas_mes": 2,
-      "saidas_mes": 4,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 1,
-      "valor_causa": 16457109.88,
+      "valor_causa": 16140220.78,
       "alerta_entrada": false
     },
     {
@@ -2906,12 +2906,12 @@
     {
       "grupo": "Grupo E1",
       "cliente": "DELL COMPUTADORES",
-      "andamento": 97,
+      "andamento": 96,
       "entradas_mes": 2,
-      "saidas_mes": 4,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 1,
-      "valor_causa": 16457109.88,
+      "valor_causa": 16140220.78,
       "alerta_entrada": false
     },
     {
@@ -4082,12 +4082,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Júlia Priego Lopes da Silva(JPL)",
-      "andamento": 292,
+      "andamento": 291,
       "entradas_mes": 0,
-      "saidas_mes": 4,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 12,
-      "valor_causa": 32737819.94
+      "valor_causa": 32420930.84
     },
     {
       "grupo": "Grupo E1",
@@ -6384,12 +6384,12 @@
     {
       "estado": "SP",
       "cliente": "DELL COMPUTADORES",
-      "andamento": 93,
+      "andamento": 92,
       "entradas_mes": 2,
-      "saidas_mes": 4,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 1,
-      "valor_causa": 15679830.0
+      "valor_causa": 15362940.9
     },
     {
       "estado": "SP",
