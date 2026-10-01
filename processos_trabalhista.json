@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-01T16:45:26",
+  "atualizado_em": "2026-10-01T17:00:34",
   "kpis": {
-    "total_andamento": 7540,
-    "entradas_hoje": 8,
+    "total_andamento": 7541,
+    "entradas_hoje": 10,
     "saidas_hoje": 6,
     "entradas_ontem": 13,
     "saidas_ontem": 3,
-    "entradas_mes": 8,
+    "entradas_mes": 10,
     "saidas_mes": 6,
     "entradas_mes_anterior": 320,
-    "saidas_mes_anterior": 1005,
-    "valor_causa_total": 1734011690.37,
-    "saldo_mes": 2
+    "saidas_mes_anterior": 1006,
+    "valor_causa_total": 1734388130.65,
+    "saldo_mes": 4
   },
   "serie_diaria": [
     {
@@ -202,7 +202,7 @@
     {
       "data": "2026-09-09",
       "entradas": 13,
-      "saidas": 12
+      "saidas": 13
     },
     {
       "data": "2026-09-10",
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-10-01",
-      "entradas": 8,
+      "entradas": 10,
       "saidas": 6
     }
   ],
@@ -345,12 +345,12 @@
     },
     {
       "nome": "Grupo B2",
-      "andamento": 747,
+      "andamento": 746,
       "entradas_mes": 0,
       "saidas_mes": 2,
       "entradas_mes_anterior": 22,
-      "saidas_mes_anterior": 17,
-      "valor_causa": 137740734.2
+      "saidas_mes_anterior": 18,
+      "valor_causa": 137737174.48
     },
     {
       "nome": "Grupo C",
@@ -399,12 +399,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 5,
-      "entradas_mes": 2,
+      "andamento": 7,
+      "entradas_mes": 4,
       "saidas_mes": 1,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 3,
-      "valor_causa": 3312979.48
+      "valor_causa": 3692979.48
     },
     {
       "nome": "Sócios",
@@ -438,11 +438,11 @@
     {
       "nome": "SP",
       "andamento": 5746,
-      "entradas_mes": 5,
+      "entradas_mes": 6,
       "saidas_mes": 5,
       "entradas_mes_anterior": 189,
-      "saidas_mes_anterior": 831,
-      "valor_causa": 1358116930.26
+      "saidas_mes_anterior": 832,
+      "valor_causa": 1358493370.54
     },
     {
       "nome": "MG",
@@ -455,8 +455,8 @@
     },
     {
       "nome": "PR",
-      "andamento": 235,
-      "entradas_mes": 0,
+      "andamento": 236,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 7,
@@ -673,8 +673,8 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 399,
-      "entradas_mes": 1,
+      "andamento": 400,
+      "entradas_mes": 2,
       "saidas_mes": 2,
       "entradas_mes_anterior": 28,
       "saidas_mes_anterior": 10,
@@ -682,12 +682,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2853,
-      "entradas_mes": 7,
+      "andamento": 2854,
+      "entradas_mes": 8,
       "saidas_mes": 0,
       "entradas_mes_anterior": 283,
       "saidas_mes_anterior": 209,
-      "valor_causa": 819281256.28
+      "valor_causa": 819661256.28
     },
     {
       "nome": "Sentença",
@@ -717,7 +717,7 @@
       "valor_causa": 131830604.49
     }
   ],
-  "por_fase_outras": 395,
+  "por_fase_outras": 394,
   "por_fase_grupo": [
     {
       "fase": "Ajuizamento",
@@ -801,6 +801,16 @@
     },
     {
       "fase": "Ajuizamento",
+      "grupo": "Sem grupo",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 2418775.2
+    },
+    {
+      "fase": "Ajuizamento",
       "grupo": "Grupo B3",
       "andamento": 1,
       "entradas_mes": 0,
@@ -808,16 +818,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
-    },
-    {
-      "fase": "Ajuizamento",
-      "grupo": "Sem grupo",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 1,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 2418775.2
     },
     {
       "fase": "Execução",
@@ -992,12 +992,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 3,
-      "entradas_mes": 1,
+      "andamento": 4,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
-      "valor_causa": 856204.28
+      "valor_causa": 1236204.28
     },
     {
       "fase": "Outras",
@@ -1042,12 +1042,12 @@
     {
       "fase": "Outras",
       "grupo": "Grupo B2",
-      "andamento": 34,
+      "andamento": 33,
       "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 10,
-      "valor_causa": 3380473.42
+      "saidas_mes_anterior": 11,
+      "valor_causa": 3376913.7
     },
     {
       "fase": "Outras",
@@ -1352,12 +1352,12 @@
     },
     {
       "nome": "Vanessa de Cassia Castrequini Rosa(VCR)",
-      "andamento": 278,
+      "andamento": 277,
       "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 6,
-      "saidas_mes_anterior": 5,
-      "valor_causa": 44699504.22
+      "saidas_mes_anterior": 6,
+      "valor_causa": 44695944.5
     },
     {
       "nome": "Rafael Rocha Ferreira(RFE)",
@@ -1496,12 +1496,12 @@
     },
     {
       "nome": "André Alessandro de Paula(AAP)",
-      "andamento": 80,
-      "entradas_mes": 0,
+      "andamento": 81,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 3,
-      "valor_causa": 18973026.24
+      "valor_causa": 19353026.24
     },
     {
       "nome": "Thais Catharine Cardozo Esteves(TCE)",
@@ -1550,8 +1550,8 @@
     },
     {
       "nome": "Poliana Banqueri da Silva Guimarães(PBS)",
-      "andamento": 5,
-      "entradas_mes": 1,
+      "andamento": 6,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
@@ -1680,12 +1680,12 @@
     },
     {
       "nome": "EMBRAER",
-      "andamento": 727,
+      "andamento": 726,
       "entradas_mes": 0,
       "saidas_mes": 2,
       "entradas_mes_anterior": 24,
-      "saidas_mes_anterior": 17,
-      "valor_causa": 135675066.41,
+      "saidas_mes_anterior": 18,
+      "valor_causa": 135671506.69,
       "alerta_entrada": false
     },
     {
@@ -1730,12 +1730,12 @@
     },
     {
       "nome": "VITERRA RIO VERMELHO",
-      "andamento": 316,
-      "entradas_mes": 0,
+      "andamento": 317,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 10,
-      "valor_causa": 43815306.84,
+      "valor_causa": 44195306.84,
       "alerta_entrada": false
     },
     {
@@ -2303,12 +2303,12 @@
     {
       "grupo": "Grupo B2",
       "cliente": "EMBRAER",
-      "andamento": 724,
+      "andamento": 723,
       "entradas_mes": 0,
       "saidas_mes": 2,
       "entradas_mes_anterior": 22,
-      "saidas_mes_anterior": 17,
-      "valor_causa": 135675066.41,
+      "saidas_mes_anterior": 18,
+      "valor_causa": 135671506.69,
       "alerta_entrada": false
     },
     {
@@ -3633,6 +3633,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "SMARTFIT ESCOLA",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 2418775.2,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "HERINGER",
       "andamento": 1,
       "entradas_mes": 0,
@@ -3677,13 +3688,13 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "SMARTFIT ESCOLA",
+      "cliente": "VITERRA RIO VERMELHO",
       "andamento": 1,
       "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 2418775.2,
+      "valor_causa": 380000.0,
       "alerta_entrada": false
     },
     {
@@ -3903,12 +3914,12 @@
     {
       "grupo": "Grupo B2",
       "profissional": "Vanessa de Cassia Castrequini Rosa(VCR)",
-      "andamento": 278,
+      "andamento": 277,
       "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 6,
-      "saidas_mes_anterior": 5,
-      "valor_causa": 44699504.22
+      "saidas_mes_anterior": 6,
+      "valor_causa": 44695944.5
     },
     {
       "grupo": "Grupo B2",
@@ -4302,6 +4313,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Poliana Banqueri da Silva Guimarães(PBS)",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 2418775.2
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Bianca Bolanhi Camacho(BBO)",
       "andamento": 1,
       "entradas_mes": 0,
@@ -4342,13 +4363,13 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Poliana Banqueri da Silva Guimarães(PBS)",
+      "profissional": "André Alessandro de Paula(AAP)",
       "andamento": 1,
       "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 2418775.2
+      "valor_causa": 380000.0
     },
     {
       "grupo": "Sócios",
@@ -5713,6 +5734,16 @@
       "valor_causa": 0.0
     },
     {
+      "estado": "PR",
+      "cliente": "SMARTFIT ESCOLA",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 0.0
+    },
+    {
       "estado": "RJ",
       "cliente": "TELEFONICA BRASIL",
       "andamento": 46,
@@ -6285,12 +6316,12 @@
     {
       "estado": "SP",
       "cliente": "EMBRAER",
-      "andamento": 709,
+      "andamento": 708,
       "entradas_mes": 0,
       "saidas_mes": 2,
       "entradas_mes_anterior": 19,
-      "saidas_mes_anterior": 17,
-      "valor_causa": 135011549.4
+      "saidas_mes_anterior": 18,
+      "valor_causa": 135007989.68
     },
     {
       "estado": "SP",
@@ -6325,12 +6356,12 @@
     {
       "estado": "SP",
       "cliente": "VITERRA RIO VERMELHO",
-      "andamento": 298,
-      "entradas_mes": 0,
+      "andamento": 299,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 8,
-      "valor_causa": 42553365.31
+      "valor_causa": 42933365.31
     },
     {
       "estado": "SP",
@@ -7720,6 +7751,16 @@
       "numero_processo": "0001305-77.2026.5.09.0019",
       "cliente": "SMARTFIT ESCOLA",
       "profissional": "Poliana Banqueri da Silva Guimarães(PBS)"
+    },
+    {
+      "numero_processo": "001197.2026.09.003/0",
+      "cliente": "SMARTFIT ESCOLA",
+      "profissional": "Poliana Banqueri da Silva Guimarães(PBS)"
+    },
+    {
+      "numero_processo": "0011276-25.2026.5.15.0050",
+      "cliente": "VITERRA RIO VERMELHO",
+      "profissional": "André Alessandro de Paula(AAP)"
     }
   ]
 }
