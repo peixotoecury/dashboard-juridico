@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-01T10:00:28",
+  "atualizado_em": "2026-10-01T10:15:22",
   "kpis": {
-    "total_andamento": 7542,
-    "entradas_hoje": 0,
+    "total_andamento": 7544,
+    "entradas_hoje": 2,
     "saidas_hoje": 0,
     "entradas_ontem": 13,
     "saidas_ontem": 3,
-    "entradas_mes": 0,
+    "entradas_mes": 2,
     "saidas_mes": 0,
     "entradas_mes_anterior": 320,
     "saidas_mes_anterior": 1001,
-    "valor_causa_total": 1729746255.13,
-    "saldo_mes": 0
+    "valor_causa_total": 1729942689.66,
+    "saldo_mes": 2
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-10-01",
-      "entradas": 0,
+      "entradas": 2,
       "saidas": 0
     }
   ],
@@ -363,12 +363,12 @@
     },
     {
       "nome": "Grupo B3",
-      "andamento": 555,
-      "entradas_mes": 0,
+      "andamento": 556,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 11,
-      "valor_causa": 107231350.24
+      "valor_causa": 107333187.73
     },
     {
       "nome": "Grupo A3",
@@ -399,12 +399,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 4,
-      "entradas_mes": 0,
+      "andamento": 5,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 3,
-      "valor_causa": 989176.75
+      "valor_causa": 1083773.79
     },
     {
       "nome": "Sócios",
@@ -437,12 +437,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5750,
-      "entradas_mes": 0,
+      "andamento": 5752,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 189,
       "saidas_mes_anterior": 827,
-      "valor_causa": 1356440423.5
+      "valor_causa": 1356636858.03
     },
     {
       "nome": "MG",
@@ -682,12 +682,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2848,
-      "entradas_mes": 0,
+      "andamento": 2850,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 283,
       "saidas_mes_anterior": 209,
-      "valor_causa": 816864158.14
+      "valor_causa": 817060592.67
     },
     {
       "nome": "Sentença",
@@ -952,12 +952,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B3",
-      "andamento": 134,
-      "entradas_mes": 0,
+      "andamento": 135,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 5,
-      "valor_causa": 25796755.74
+      "valor_causa": 25898593.23
     },
     {
       "fase": "Instrução",
@@ -992,12 +992,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 2,
-      "entradas_mes": 0,
+      "andamento": 3,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
-      "valor_causa": 680002.22
+      "valor_causa": 774599.26
     },
     {
       "fase": "Outras",
@@ -1280,12 +1280,12 @@
     },
     {
       "nome": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 333,
-      "entradas_mes": 0,
+      "andamento": 335,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 7,
-      "valor_causa": 60990532.08
+      "valor_causa": 61186966.61
     },
     {
       "nome": "Bianca Bolanhi Camacho(BBO)",
@@ -1750,12 +1750,12 @@
     },
     {
       "nome": "CBC CARTUCHOS BRASIL",
-      "andamento": 227,
-      "entradas_mes": 0,
+      "andamento": 229,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 7,
-      "valor_causa": 28826385.07,
+      "valor_causa": 29022819.6,
       "alerta_entrada": false
     },
     {
@@ -2336,12 +2336,12 @@
     {
       "grupo": "Grupo B3",
       "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 224,
-      "entradas_mes": 0,
+      "andamento": 225,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 7,
-      "valor_causa": 28826385.07,
+      "valor_causa": 28928222.56,
       "alerta_entrada": false
     },
     {
@@ -3687,6 +3687,17 @@
       "alerta_entrada": false
     },
     {
+      "grupo": "Sem grupo",
+      "cliente": "CBC CARTUCHOS BRASIL",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 94597.04,
+      "alerta_entrada": false
+    },
+    {
       "grupo": "Sócios",
       "cliente": "PEIXOTO E CURY",
       "andamento": 2,
@@ -3943,12 +3954,12 @@
     {
       "grupo": "Grupo B3",
       "profissional": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 333,
-      "entradas_mes": 0,
+      "andamento": 334,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 7,
-      "valor_causa": 60990532.08
+      "valor_causa": 61092369.57
     },
     {
       "grupo": "Grupo B3",
@@ -4339,6 +4350,16 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
       "valor_causa": 679002.22
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Letícia Meneghini Fontes (LMI)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 94597.04
     },
     {
       "grupo": "Sócios",
@@ -6345,12 +6366,12 @@
     {
       "estado": "SP",
       "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 217,
-      "entradas_mes": 0,
+      "andamento": 219,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 7,
-      "valor_causa": 27600891.13
+      "valor_causa": 27797325.66
     },
     {
       "estado": "SP",
@@ -7675,6 +7696,11 @@
   ],
   "clientes_com_alerta": [],
   "sem_grupo_processos": [
+    {
+      "numero_processo": "1001464-83.2026.5.02.0411",
+      "cliente": "CBC CARTUCHOS BRASIL",
+      "profissional": "Letícia Meneghini Fontes (LMI)"
+    },
     {
       "numero_processo": "0003841-21.2026.5.09.0000",
       "cliente": "HERINGER",
