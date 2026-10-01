@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-01T13:30:24",
+  "atualizado_em": "2026-10-01T13:45:21",
   "kpis": {
-    "total_andamento": 7543,
+    "total_andamento": 7542,
     "entradas_hoje": 3,
-    "saidas_hoje": 2,
+    "saidas_hoje": 3,
     "entradas_ontem": 13,
     "saidas_ontem": 3,
     "entradas_mes": 3,
-    "saidas_mes": 2,
+    "saidas_mes": 3,
     "entradas_mes_anterior": 320,
     "saidas_mes_anterior": 1001,
-    "valor_causa_total": 1731632998.34,
-    "saldo_mes": 1
+    "valor_causa_total": 1731361823.81,
+    "saldo_mes": 0
   },
   "serie_diaria": [
     {
@@ -312,7 +312,7 @@
     {
       "data": "2026-10-01",
       "entradas": 3,
-      "saidas": 2
+      "saidas": 3
     }
   ],
   "por_grupo": [
@@ -398,15 +398,6 @@
       "valor_causa": 11609781.48
     },
     {
-      "nome": "Sem grupo",
-      "andamento": 4,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 2,
-      "saidas_mes_anterior": 3,
-      "valor_causa": 989176.75
-    },
-    {
       "nome": "Sócios",
       "andamento": 3,
       "entradas_mes": 0,
@@ -414,6 +405,15 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
+    },
+    {
+      "nome": "Sem grupo",
+      "andamento": 3,
+      "entradas_mes": 0,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 2,
+      "saidas_mes_anterior": 3,
+      "valor_causa": 718002.22
     },
     {
       "nome": "Grupo D1",
@@ -437,12 +437,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5752,
+      "andamento": 5751,
       "entradas_mes": 3,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 189,
       "saidas_mes_anterior": 827,
-      "valor_causa": 1358343215.49
+      "valor_causa": 1358072040.96
     },
     {
       "nome": "MG",
@@ -673,12 +673,12 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 400,
+      "andamento": 399,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 28,
       "saidas_mes_anterior": 10,
-      "valor_causa": 87898183.96
+      "valor_causa": 87627009.43
     },
     {
       "nome": "Instrução",
@@ -798,16 +798,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
-    },
-    {
-      "fase": "Ajuizamento",
-      "grupo": "Sem grupo",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 271174.53
     },
     {
       "fase": "Ajuizamento",
@@ -1307,12 +1297,12 @@
     },
     {
       "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 294,
+      "andamento": 293,
       "entradas_mes": 1,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 18,
-      "valor_causa": 159164661.94
+      "valor_causa": 158893487.41
     },
     {
       "nome": "Beatriz Santiago de Souza(BSO)",
@@ -3644,17 +3634,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "PEIXOTO E CURY",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 271174.53,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "MULTICEL",
       "andamento": 1,
       "entradas_mes": 0,
@@ -4302,16 +4281,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 271174.53
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Luiz Vicente de Carvalho(LVC) ; Lisandra Melo Alves(LMS)",
       "andamento": 1,
       "entradas_mes": 0,
@@ -4654,16 +4623,6 @@
     },
     {
       "estado": "DF",
-      "cliente": "3CORP TECHNOLOGY",
-      "andamento": 2,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 335583.85
-    },
-    {
-      "estado": "DF",
       "cliente": "TELEFONICA BRASIL",
       "andamento": 2,
       "entradas_mes": 0,
@@ -4681,6 +4640,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 8332199.03
+    },
+    {
+      "estado": "DF",
+      "cliente": "3CORP TECHNOLOGY",
+      "andamento": 2,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 335583.85
     },
     {
       "estado": "DF",
@@ -6585,12 +6554,12 @@
     {
       "estado": "SP",
       "cliente": "PEIXOTO E CURY",
-      "andamento": 10,
+      "andamento": 9,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 482314.33
+      "valor_causa": 211139.8
     },
     {
       "estado": "SP",
@@ -7689,11 +7658,6 @@
       "numero_processo": "0101281-74.2026.5.01.0053",
       "cliente": "McCANN-ERICKSON",
       "profissional": "Erik Mota Coppi(ECO)"
-    },
-    {
-      "numero_processo": "1000930-65.2026.5.02.0080",
-      "cliente": "PEIXOTO E CURY",
-      "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
     }
   ]
 }
