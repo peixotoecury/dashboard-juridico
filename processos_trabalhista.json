@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-01T13:15:23",
+  "atualizado_em": "2026-10-01T13:30:24",
   "kpis": {
-    "total_andamento": 7544,
+    "total_andamento": 7543,
     "entradas_hoje": 3,
-    "saidas_hoje": 1,
+    "saidas_hoje": 2,
     "entradas_ontem": 13,
     "saidas_ontem": 3,
     "entradas_mes": 3,
-    "saidas_mes": 1,
+    "saidas_mes": 2,
     "entradas_mes_anterior": 320,
     "saidas_mes_anterior": 1001,
-    "valor_causa_total": 1731649047.12,
-    "saldo_mes": 2
+    "valor_causa_total": 1731632998.34,
+    "saldo_mes": 1
   },
   "serie_diaria": [
     {
@@ -312,7 +312,7 @@
     {
       "data": "2026-10-01",
       "entradas": 3,
-      "saidas": 1
+      "saidas": 2
     }
   ],
   "por_grupo": [
@@ -327,12 +327,12 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1807,
+      "andamento": 1806,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 60,
       "saidas_mes_anterior": 46,
-      "valor_causa": 307731518.42
+      "valor_causa": 307715469.64
     },
     {
       "nome": "Grupo B1",
@@ -446,12 +446,12 @@
     },
     {
       "nome": "MG",
-      "andamento": 545,
+      "andamento": 544,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 36,
       "saidas_mes_anterior": 19,
-      "valor_causa": 133760737.05
+      "valor_causa": 133744688.27
     },
     {
       "nome": "PR",
@@ -700,12 +700,12 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2954,
+      "andamento": 2953,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 389,
-      "valor_causa": 654083606.03
+      "valor_causa": 654067557.25
     },
     {
       "nome": "Execução",
@@ -1112,12 +1112,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo E1",
-      "andamento": 753,
+      "andamento": 752,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 12,
-      "valor_causa": 108243223.83
+      "valor_causa": 108227175.05
     },
     {
       "fase": "Recurso",
@@ -1253,12 +1253,12 @@
   "por_profissional": [
     {
       "nome": "Giulia Vendramini Milani(GVM)",
-      "andamento": 446,
+      "andamento": 445,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 12,
-      "valor_causa": 65861071.96
+      "valor_causa": 65845023.18
     },
     {
       "nome": "Rafael Yepez do Lago(RYL)",
@@ -1780,12 +1780,12 @@
     },
     {
       "nome": "SYNGENTA SEEDS NIDER",
-      "andamento": 157,
+      "andamento": 156,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 5,
-      "valor_causa": 23374788.36,
+      "valor_causa": 23358739.58,
       "alerta_entrada": false
     },
     {
@@ -2886,12 +2886,12 @@
     {
       "grupo": "Grupo E1",
       "cliente": "SYNGENTA SEEDS NIDER",
-      "andamento": 152,
+      "andamento": 151,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 5,
-      "valor_causa": 23374788.36,
+      "valor_causa": 23358739.58,
       "alerta_entrada": false
     },
     {
@@ -4053,12 +4053,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Giulia Vendramini Milani(GVM)",
-      "andamento": 446,
+      "andamento": 445,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 12,
-      "valor_causa": 65861071.96
+      "valor_causa": 65845023.18
     },
     {
       "grupo": "Grupo E1",
@@ -4985,12 +4985,12 @@
     {
       "estado": "MG",
       "cliente": "SYNGENTA SEEDS NIDER",
-      "andamento": 43,
+      "andamento": 42,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 3,
-      "valor_causa": 4078181.44
+      "valor_causa": 4062132.66
     },
     {
       "estado": "MG",
@@ -6514,16 +6514,6 @@
     },
     {
       "estado": "SP",
-      "cliente": "A. RAYMOND",
-      "andamento": 18,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 3,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 1641465.25
-    },
-    {
-      "estado": "SP",
       "cliente": "MULTICEL",
       "andamento": 18,
       "entradas_mes": 0,
@@ -6531,6 +6521,16 @@
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 0,
       "valor_causa": 2157310.5
+    },
+    {
+      "estado": "SP",
+      "cliente": "A. RAYMOND",
+      "andamento": 18,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 3,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 1641465.25
     },
     {
       "estado": "SP",
