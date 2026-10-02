@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-02T13:15:22",
+  "atualizado_em": "2026-10-02T13:30:22",
   "kpis": {
     "total_andamento": 7552,
     "entradas_hoje": 8,
@@ -327,12 +327,12 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1809,
-      "entradas_mes": 7,
+      "andamento": 1810,
+      "entradas_mes": 8,
       "saidas_mes": 5,
       "entradas_mes_anterior": 60,
       "saidas_mes_anterior": 46,
-      "valor_causa": 308286253.34
+      "valor_causa": 308289516.03
     },
     {
       "nome": "Grupo B1",
@@ -398,15 +398,6 @@
       "valor_causa": 11571274.22
     },
     {
-      "nome": "Sem grupo",
-      "andamento": 4,
-      "entradas_mes": 1,
-      "saidas_mes": 1,
-      "entradas_mes_anterior": 2,
-      "saidas_mes_anterior": 3,
-      "valor_causa": 721264.91
-    },
-    {
       "nome": "Sócios",
       "andamento": 3,
       "entradas_mes": 0,
@@ -414,6 +405,15 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
+    },
+    {
+      "nome": "Sem grupo",
+      "andamento": 3,
+      "entradas_mes": 0,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 2,
+      "saidas_mes_anterior": 3,
+      "valor_causa": 718002.22
     },
     {
       "nome": "Grupo D1",
@@ -902,12 +902,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 761,
-      "entradas_mes": 7,
+      "andamento": 762,
+      "entradas_mes": 8,
       "saidas_mes": 0,
       "entradas_mes_anterior": 30,
       "saidas_mes_anterior": 18,
-      "valor_causa": 163239081.94
+      "valor_causa": 163242344.63
     },
     {
       "fase": "Instrução",
@@ -982,12 +982,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 3,
-      "entradas_mes": 1,
+      "andamento": 2,
+      "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
-      "valor_causa": 683264.91
+      "valor_causa": 680002.22
     },
     {
       "fase": "Outras",
@@ -2985,6 +2985,17 @@
     },
     {
       "grupo": "Grupo E1",
+      "cliente": "MAHLE METAL- ITAJUBÁ",
+      "andamento": 2,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 171288.44,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Grupo E1",
       "cliente": "DE NORA DO BRASIL",
       "andamento": 2,
       "entradas_mes": 0,
@@ -3036,17 +3047,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 243822.62,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Grupo E1",
-      "cliente": "MAHLE METAL- ITAJUBÁ",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 168025.75,
       "alerta_entrada": false
     },
     {
@@ -3666,17 +3666,6 @@
       "alerta_entrada": false
     },
     {
-      "grupo": "Sem grupo",
-      "cliente": "MAHLE METAL- ITAJUBÁ",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 3262.69,
-      "alerta_entrada": false
-    },
-    {
       "grupo": "Sócios",
       "cliente": "PEIXOTO E CURY",
       "andamento": 2,
@@ -4073,12 +4062,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Paloma da Silva Santos(PSI)",
-      "andamento": 246,
-      "entradas_mes": 0,
+      "andamento": 247,
+      "entradas_mes": 1,
       "saidas_mes": 2,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 10,
-      "valor_causa": 54993148.66
+      "valor_causa": 54996411.35
     },
     {
       "grupo": "Grupo E1",
@@ -4319,16 +4308,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 38000.0
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Paloma da Silva Santos(PSI)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 3262.69
     },
     {
       "grupo": "Sócios",
@@ -7700,11 +7679,6 @@
       "numero_processo": "0003841-21.2026.5.09.0000",
       "cliente": "HERINGER",
       "profissional": "Bianca Bolanhi Camacho(BBO)"
-    },
-    {
-      "numero_processo": "0011084-92.2026.5.03.0061",
-      "cliente": "MAHLE METAL- ITAJUBÁ",
-      "profissional": "Paloma da Silva Santos(PSI)"
     },
     {
       "numero_processo": "1002426-59.2017.5.02.0464",
