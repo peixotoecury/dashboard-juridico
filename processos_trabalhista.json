@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-06T16:15:24",
+  "atualizado_em": "2026-10-06T16:30:58",
   "kpis": {
-    "total_andamento": 7578,
-    "entradas_hoje": 13,
+    "total_andamento": 7579,
+    "entradas_hoje": 14,
     "saidas_hoje": 1,
     "entradas_ontem": 13,
     "saidas_ontem": 2,
-    "entradas_mes": 60,
+    "entradas_mes": 61,
     "saidas_mes": 17,
     "entradas_mes_anterior": 320,
     "saidas_mes_anterior": 1008,
-    "valor_causa_total": 1747021255.18,
-    "saldo_mes": 43
+    "valor_causa_total": 1747234666.98,
+    "saldo_mes": 44
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-10-06",
-      "entradas": 13,
+      "entradas": 14,
       "saidas": 1
     }
   ],
@@ -399,12 +399,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 5,
-      "entradas_mes": 2,
+      "andamento": 6,
+      "entradas_mes": 3,
       "saidas_mes": 1,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 3,
-      "valor_causa": 1026419.18
+      "valor_causa": 1239830.98
     },
     {
       "nome": "Sócios",
@@ -437,12 +437,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5759,
-      "entradas_mes": 28,
+      "andamento": 5760,
+      "entradas_mes": 29,
       "saidas_mes": 14,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 833,
-      "valor_causa": 1364105073.09
+      "valor_causa": 1364318484.89
     },
     {
       "nome": "MG",
@@ -673,12 +673,12 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 401,
-      "entradas_mes": 3,
+      "andamento": 402,
+      "entradas_mes": 4,
       "saidas_mes": 2,
       "entradas_mes_anterior": 28,
       "saidas_mes_anterior": 10,
-      "valor_causa": 90224739.72
+      "valor_causa": 90228002.41
     },
     {
       "nome": "Instrução",
@@ -687,7 +687,7 @@
       "saidas_mes": 5,
       "entradas_mes_anterior": 283,
       "saidas_mes_anterior": 209,
-      "valor_causa": 824853595.8
+      "valor_causa": 825063744.91
     },
     {
       "nome": "Sentença",
@@ -709,15 +709,15 @@
     },
     {
       "nome": "Execução",
-      "andamento": 909,
+      "andamento": 907,
       "entradas_mes": 0,
       "saidas_mes": 4,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 353,
-      "valor_causa": 131473218.3
+      "valor_causa": 131405178.26
     }
   ],
-  "por_fase_outras": 398,
+  "por_fase_outras": 400,
   "por_fase_grupo": [
     {
       "fase": "Ajuizamento",
@@ -742,12 +742,12 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo E1",
-      "andamento": 56,
-      "entradas_mes": 1,
+      "andamento": 57,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 0,
-      "valor_causa": 15412635.69
+      "valor_causa": 15415898.38
     },
     {
       "fase": "Ajuizamento",
@@ -852,12 +852,12 @@
     {
       "fase": "Execução",
       "grupo": "Grupo B2",
-      "andamento": 95,
+      "andamento": 93,
       "entradas_mes": 0,
       "saidas_mes": 2,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 15285121.28
+      "valor_causa": 15217081.24
     },
     {
       "fase": "Execução",
@@ -902,12 +902,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 759,
-      "entradas_mes": 8,
+      "andamento": 758,
+      "entradas_mes": 7,
       "saidas_mes": 1,
       "entradas_mes_anterior": 31,
       "saidas_mes_anterior": 18,
-      "valor_causa": 162535122.08
+      "valor_causa": 162531859.39
     },
     {
       "fase": "Instrução",
@@ -971,6 +971,16 @@
     },
     {
       "fase": "Instrução",
+      "grupo": "Sem grupo",
+      "andamento": 5,
+      "entradas_mes": 3,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 2,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1201830.98
+    },
+    {
+      "fase": "Instrução",
       "grupo": "Grupo A1",
       "andamento": 4,
       "entradas_mes": 0,
@@ -978,16 +988,6 @@
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
-    },
-    {
-      "fase": "Instrução",
-      "grupo": "Sem grupo",
-      "andamento": 4,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 2,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 988419.18
     },
     {
       "fase": "Outras",
@@ -1032,12 +1032,12 @@
     {
       "fase": "Outras",
       "grupo": "Grupo B2",
-      "andamento": 36,
+      "andamento": 38,
       "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 12,
-      "valor_causa": 3741049.21
+      "valor_causa": 3809089.25
     },
     {
       "fase": "Outras",
@@ -1261,12 +1261,12 @@
     },
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 360,
-      "entradas_mes": 1,
+      "andamento": 361,
+      "entradas_mes": 2,
       "saidas_mes": 2,
       "entradas_mes_anterior": 31,
       "saidas_mes_anterior": 26,
-      "valor_causa": 49272342.93
+      "valor_causa": 49485754.73
     },
     {
       "nome": "Letícia Meneghini Fontes (LMI)",
@@ -3634,6 +3634,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "L. SANT ANGELO",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 213411.8,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "HERINGER",
       "andamento": 1,
       "entradas_mes": 0,
@@ -4300,6 +4311,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Camila Alves Magalhães de Paula(CAL)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 213411.8
     },
     {
       "grupo": "Sem grupo",
@@ -6486,12 +6507,12 @@
     {
       "estado": "SP",
       "cliente": "L. SANT ANGELO",
-      "andamento": 33,
-      "entradas_mes": 0,
+      "andamento": 34,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 5,
-      "valor_causa": 5167612.02
+      "valor_causa": 5381023.82
     },
     {
       "estado": "SP",
@@ -7731,6 +7752,11 @@
       "numero_processo": "0003841-21.2026.5.09.0000",
       "cliente": "HERINGER",
       "profissional": "Bianca Bolanhi Camacho(BBO)"
+    },
+    {
+      "numero_processo": "1001623-46.2026.5.02.0081",
+      "cliente": "L. SANT ANGELO",
+      "profissional": "Camila Alves Magalhães de Paula(CAL)"
     },
     {
       "numero_processo": "0012008-94.2026.5.15.0053",
