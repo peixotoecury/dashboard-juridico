@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-06T14:00:52",
+  "atualizado_em": "2026-10-06T14:15:27",
   "kpis": {
-    "total_andamento": 7576,
-    "entradas_hoje": 9,
+    "total_andamento": 7577,
+    "entradas_hoje": 10,
     "saidas_hoje": 0,
     "entradas_ontem": 13,
     "saidas_ontem": 2,
-    "entradas_mes": 56,
+    "entradas_mes": 57,
     "saidas_mes": 16,
     "entradas_mes_anterior": 320,
     "saidas_mes_anterior": 1007,
-    "valor_causa_total": 1746325684.91,
-    "saldo_mes": 40
+    "valor_causa_total": 1746447255.18,
+    "saldo_mes": 41
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-10-06",
-      "entradas": 9,
+      "entradas": 10,
       "saidas": 0
     }
   ],
@@ -399,12 +399,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 10,
-      "entradas_mes": 7,
+      "andamento": 11,
+      "entradas_mes": 8,
       "saidas_mes": 1,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 3,
-      "valor_causa": 1955819.18
+      "valor_causa": 2077389.45
     },
     {
       "nome": "Sócios",
@@ -509,12 +509,12 @@
     },
     {
       "nome": "MT",
-      "andamento": 63,
-      "entradas_mes": 1,
+      "andamento": 64,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 22,
       "saidas_mes_anterior": 2,
-      "valor_causa": 9384445.77
+      "valor_causa": 9506016.04
     },
     {
       "nome": "—",
@@ -682,12 +682,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2877,
-      "entradas_mes": 51,
+      "andamento": 2878,
+      "entradas_mes": 52,
       "saidas_mes": 4,
       "entradas_mes_anterior": 283,
       "saidas_mes_anterior": 209,
-      "valor_causa": 824158025.53
+      "valor_causa": 824279595.8
     },
     {
       "nome": "Sentença",
@@ -972,12 +972,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 9,
-      "entradas_mes": 7,
+      "andamento": 10,
+      "entradas_mes": 8,
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
-      "valor_causa": 1917819.18
+      "valor_causa": 2039389.45
     },
     {
       "fase": "Instrução",
@@ -1512,6 +1512,15 @@
       "valor_causa": 11533728.5
     },
     {
+      "nome": "Richard Ruan Leo da Silva(RRU)",
+      "andamento": 21,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 9,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 4369631.67
+    },
+    {
       "nome": "Bruno Tanganelli Farah(BTF)",
       "andamento": 21,
       "entradas_mes": 2,
@@ -1519,15 +1528,6 @@
       "entradas_mes_anterior": 14,
       "saidas_mes_anterior": 0,
       "valor_causa": 8430687.37
-    },
-    {
-      "nome": "Richard Ruan Leo da Silva(RRU)",
-      "andamento": 20,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 9,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 4248061.4
     },
     {
       "nome": "Keyla Maria Barbosa Silva Moraes(KBM)",
@@ -3645,6 +3645,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "INPASA SINOP",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 121570.27,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "HERINGER",
       "andamento": 1,
       "entradas_mes": 0,
@@ -4321,6 +4332,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 929400.0
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Richard Ruan Leo da Silva(RRU)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 121570.27
     },
     {
       "grupo": "Sem grupo",
@@ -5357,12 +5378,12 @@
     {
       "estado": "MT",
       "cliente": "INPASA SINOP",
-      "andamento": 36,
-      "entradas_mes": 0,
+      "andamento": 37,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 0,
-      "valor_causa": 5855365.06
+      "valor_causa": 5976935.33
     },
     {
       "estado": "MT",
@@ -7759,6 +7780,11 @@
       "profissional": "Vinicius da Silva Cerqueira(VSI)"
     },
     {
+      "numero_processo": "0001518-55.2026.5.07.0014",
+      "cliente": "COMPANHIA AIX",
+      "profissional": "Vinicius da Silva Cerqueira(VSI)"
+    },
+    {
       "numero_processo": "0001491-75.2026.5.07.0013",
       "cliente": "COMPANHIA AIX",
       "profissional": "Vinicius da Silva Cerqueira(VSI)"
@@ -7769,14 +7795,14 @@
       "profissional": "Vinicius da Silva Cerqueira(VSI)"
     },
     {
-      "numero_processo": "0001518-55.2026.5.07.0014",
-      "cliente": "COMPANHIA AIX",
-      "profissional": "Vinicius da Silva Cerqueira(VSI)"
-    },
-    {
       "numero_processo": "0003841-21.2026.5.09.0000",
       "cliente": "HERINGER",
       "profissional": "Bianca Bolanhi Camacho(BBO)"
+    },
+    {
+      "numero_processo": "0001366-30.2026.5.23.0121",
+      "cliente": "INPASA SINOP",
+      "profissional": "Richard Ruan Leo da Silva(RRU)"
     },
     {
       "numero_processo": "0012008-94.2026.5.15.0053",
