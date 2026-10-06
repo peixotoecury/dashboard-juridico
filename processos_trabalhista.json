@@ -1,16 +1,16 @@
 {
-  "atualizado_em": "2026-10-06T10:00:22",
+  "atualizado_em": "2026-10-06T10:15:26",
   "kpis": {
-    "total_andamento": 7567,
+    "total_andamento": 7566,
     "entradas_hoje": 0,
     "saidas_hoje": 0,
     "entradas_ontem": 12,
     "saidas_ontem": 2,
     "entradas_mes": 46,
     "saidas_mes": 16,
-    "entradas_mes_anterior": 321,
+    "entradas_mes_anterior": 320,
     "saidas_mes_anterior": 1007,
-    "valor_causa_total": 1742350573.79,
+    "valor_causa_total": 1742255073.79,
     "saldo_mes": 30
   },
   "serie_diaria": [
@@ -241,7 +241,7 @@
     },
     {
       "data": "2026-09-22",
-      "entradas": 47,
+      "entradas": 46,
       "saidas": 6
     },
     {
@@ -327,12 +327,12 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1810,
+      "andamento": 1809,
       "entradas_mes": 9,
       "saidas_mes": 7,
-      "entradas_mes_anterior": 61,
+      "entradas_mes_anterior": 60,
       "saidas_mes_anterior": 46,
-      "valor_causa": 308029874.65
+      "valor_causa": 307934374.65
     },
     {
       "nome": "Grupo B1",
@@ -437,12 +437,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5758,
+      "andamento": 5757,
       "entradas_mes": 24,
       "saidas_mes": 13,
-      "entradas_mes_anterior": 191,
+      "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 832,
-      "valor_causa": 1361250170.57
+      "valor_causa": 1361154670.57
     },
     {
       "nome": "MG",
@@ -673,21 +673,21 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 402,
+      "andamento": 401,
       "entradas_mes": 3,
       "saidas_mes": 2,
-      "entradas_mes_anterior": 29,
+      "entradas_mes_anterior": 28,
       "saidas_mes_anterior": 10,
-      "valor_causa": 90320239.72
+      "valor_causa": 90224739.72
     },
     {
       "nome": "Instrução",
-      "andamento": 2873,
+      "andamento": 2872,
       "entradas_mes": 43,
       "saidas_mes": 4,
       "entradas_mes_anterior": 283,
       "saidas_mes_anterior": 209,
-      "valor_causa": 822719856.67
+      "valor_causa": 822657025.19
     },
     {
       "nome": "Sentença",
@@ -709,12 +709,12 @@
     },
     {
       "nome": "Execução",
-      "andamento": 911,
+      "andamento": 912,
       "entradas_mes": 0,
       "saidas_mes": 4,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 353,
-      "valor_causa": 131988196.93
+      "valor_causa": 132051028.41
     }
   ],
   "por_fase_outras": 393,
@@ -742,12 +742,12 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo E1",
-      "andamento": 57,
+      "andamento": 56,
       "entradas_mes": 1,
       "saidas_mes": 0,
-      "entradas_mes_anterior": 26,
+      "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 0,
-      "valor_causa": 15508135.69
+      "valor_causa": 15412635.69
     },
     {
       "fase": "Ajuizamento",
@@ -852,12 +852,12 @@
     {
       "fase": "Execução",
       "grupo": "Grupo B2",
-      "andamento": 98,
+      "andamento": 99,
       "entradas_mes": 0,
       "saidas_mes": 2,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 15800099.91
+      "valor_causa": 15862931.39
     },
     {
       "fase": "Execução",
@@ -942,12 +942,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B2",
-      "andamento": 140,
+      "andamento": 139,
       "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 22,
       "saidas_mes_anterior": 2,
-      "valor_causa": 35437285.83
+      "valor_causa": 35374454.35
     },
     {
       "fase": "Instrução",
@@ -1404,15 +1404,6 @@
       "valor_causa": 33714173.88
     },
     {
-      "nome": "Paloma da Silva Santos(PSI)",
-      "andamento": 249,
-      "entradas_mes": 2,
-      "saidas_mes": 2,
-      "entradas_mes_anterior": 12,
-      "saidas_mes_anterior": 11,
-      "valor_causa": 55235078.42
-    },
-    {
       "nome": "Erik Mota Coppi(ECO)",
       "andamento": 248,
       "entradas_mes": 4,
@@ -1420,6 +1411,15 @@
       "entradas_mes_anterior": 15,
       "saidas_mes_anterior": 12,
       "valor_causa": 45665648.29
+    },
+    {
+      "nome": "Paloma da Silva Santos(PSI)",
+      "andamento": 248,
+      "entradas_mes": 2,
+      "saidas_mes": 2,
+      "entradas_mes_anterior": 11,
+      "saidas_mes_anterior": 11,
+      "valor_causa": 55139578.42
     },
     {
       "nome": "Vinícius Ronchi Arruda(VRO)",
@@ -2941,17 +2941,6 @@
     },
     {
       "grupo": "Grupo E1",
-      "cliente": "MAHLE - COMPRESSORES",
-      "andamento": 3,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 3,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 753639.34,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Grupo E1",
       "cliente": "PEIXOTO E CURY",
       "andamento": 2,
       "entradas_mes": 0,
@@ -3003,6 +2992,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 627758.89,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Grupo E1",
+      "cliente": "MAHLE - COMPRESSORES",
+      "andamento": 2,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 2,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 658139.34,
       "alerta_entrada": false
     },
     {
@@ -4084,12 +4084,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Paloma da Silva Santos(PSI)",
-      "andamento": 248,
+      "andamento": 247,
       "entradas_mes": 1,
       "saidas_mes": 2,
-      "entradas_mes_anterior": 12,
+      "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 10,
-      "valor_causa": 55035724.94
+      "valor_causa": 54940224.94
     },
     {
       "grupo": "Grupo E1",
@@ -6765,16 +6765,6 @@
     },
     {
       "estado": "SP",
-      "cliente": "MAHLE - COMPRESSORES",
-      "andamento": 4,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 3,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 862702.82
-    },
-    {
-      "estado": "SP",
       "cliente": "CTG - RIO PARANÁ",
       "andamento": 3,
       "entradas_mes": 0,
@@ -6842,6 +6832,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 670000.0
+    },
+    {
+      "estado": "SP",
+      "cliente": "MAHLE - COMPRESSORES",
+      "andamento": 3,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 2,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 767202.82
     },
     {
       "estado": "SP",
