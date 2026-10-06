@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-06T10:15:26",
+  "atualizado_em": "2026-10-06T10:30:20",
   "kpis": {
-    "total_andamento": 7566,
+    "total_andamento": 7567,
     "entradas_hoje": 0,
     "saidas_hoje": 0,
-    "entradas_ontem": 12,
+    "entradas_ontem": 13,
     "saidas_ontem": 2,
-    "entradas_mes": 46,
+    "entradas_mes": 47,
     "saidas_mes": 16,
     "entradas_mes_anterior": 320,
     "saidas_mes_anterior": 1007,
-    "valor_causa_total": 1742255073.79,
-    "saldo_mes": 30
+    "valor_causa_total": 1742265628.79,
+    "saldo_mes": 31
   },
   "serie_diaria": [
     {
@@ -306,7 +306,7 @@
     },
     {
       "data": "2026-10-05",
-      "entradas": 12,
+      "entradas": 13,
       "saidas": 2
     },
     {
@@ -399,12 +399,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 5,
-      "entradas_mes": 2,
+      "andamento": 6,
+      "entradas_mes": 3,
       "saidas_mes": 1,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 3,
-      "valor_causa": 1026419.18
+      "valor_causa": 1036974.18
     },
     {
       "nome": "Sócios",
@@ -437,12 +437,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5757,
-      "entradas_mes": 24,
+      "andamento": 5758,
+      "entradas_mes": 25,
       "saidas_mes": 13,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 832,
-      "valor_causa": 1361154670.57
+      "valor_causa": 1361165225.57
     },
     {
       "nome": "MG",
@@ -687,7 +687,7 @@
       "saidas_mes": 4,
       "entradas_mes_anterior": 283,
       "saidas_mes_anterior": 209,
-      "valor_causa": 822657025.19
+      "valor_causa": 820437674.56
     },
     {
       "nome": "Sentença",
@@ -700,12 +700,12 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2956,
-      "entradas_mes": 0,
+      "andamento": 2957,
+      "entradas_mes": 1,
       "saidas_mes": 6,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 389,
-      "valor_causa": 658714519.81
+      "valor_causa": 660944425.44
     },
     {
       "nome": "Execução",
@@ -932,12 +932,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B3",
-      "andamento": 144,
-      "entradas_mes": 10,
+      "andamento": 143,
+      "entradas_mes": 9,
       "saidas_mes": 0,
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 5,
-      "valor_causa": 29156419.39
+      "valor_causa": 26926513.76
     },
     {
       "fase": "Instrução",
@@ -971,6 +971,16 @@
     },
     {
       "fase": "Instrução",
+      "grupo": "Sem grupo",
+      "andamento": 5,
+      "entradas_mes": 3,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 2,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 998974.18
+    },
+    {
+      "fase": "Instrução",
       "grupo": "Grupo A1",
       "andamento": 4,
       "entradas_mes": 0,
@@ -978,16 +988,6 @@
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
-    },
-    {
-      "fase": "Instrução",
-      "grupo": "Sem grupo",
-      "andamento": 4,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 2,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 988419.18
     },
     {
       "fase": "Outras",
@@ -1132,12 +1132,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo B3",
-      "andamento": 245,
-      "entradas_mes": 0,
+      "andamento": 246,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 1,
-      "valor_causa": 60502694.54
+      "valor_causa": 62732600.17
     },
     {
       "fase": "Recurso",
@@ -1296,6 +1296,15 @@
       "valor_causa": 75344982.26
     },
     {
+      "nome": "Beatriz Santiago de Souza(BSO)",
+      "andamento": 294,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 19,
+      "saidas_mes_anterior": 7,
+      "valor_causa": 48631989.96
+    },
+    {
       "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
       "andamento": 293,
       "entradas_mes": 2,
@@ -1303,15 +1312,6 @@
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 18,
       "valor_causa": 157039920.24
-    },
-    {
-      "nome": "Beatriz Santiago de Souza(BSO)",
-      "andamento": 293,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 19,
-      "saidas_mes_anterior": 7,
-      "valor_causa": 48621434.96
     },
     {
       "nome": "Júlia Priego Lopes da Silva(JPL)",
@@ -1650,12 +1650,12 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1445,
-      "entradas_mes": 1,
+      "andamento": 1446,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 36,
-      "valor_causa": 322716259.75,
+      "valor_causa": 322726814.75,
       "alerta_entrada": false
     },
     {
@@ -3634,6 +3634,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "BRIDGESTONE",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 10555.0,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "HERINGER",
       "andamento": 1,
       "entradas_mes": 0,
@@ -4300,6 +4311,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Beatriz Santiago de Souza(BSO)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 10555.0
     },
     {
       "grupo": "Sem grupo",
@@ -6296,12 +6317,12 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1417,
-      "entradas_mes": 1,
+      "andamento": 1418,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 52,
       "saidas_mes_anterior": 35,
-      "valor_causa": 311066215.23
+      "valor_causa": 311076770.23
     },
     {
       "estado": "SP",
@@ -7727,6 +7748,11 @@
     }
   ],
   "sem_grupo_processos": [
+    {
+      "numero_processo": "1001439-23.2026.5.02.0362",
+      "cliente": "BRIDGESTONE",
+      "profissional": "Beatriz Santiago de Souza(BSO)"
+    },
     {
       "numero_processo": "0003841-21.2026.5.09.0000",
       "cliente": "HERINGER",
