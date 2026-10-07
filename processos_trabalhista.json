@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-07T13:16:17",
+  "atualizado_em": "2026-10-07T13:31:17",
   "kpis": {
-    "total_andamento": 7580,
-    "entradas_hoje": 8,
+    "total_andamento": 7581,
+    "entradas_hoje": 9,
     "saidas_hoje": 1,
     "entradas_ontem": 14,
     "saidas_ontem": 2,
-    "entradas_mes": 69,
+    "entradas_mes": 70,
     "saidas_mes": 19,
     "entradas_mes_anterior": 320,
     "saidas_mes_anterior": 1013,
-    "valor_causa_total": 1747924161.71,
-    "saldo_mes": 50
+    "valor_causa_total": 1748074045.87,
+    "saldo_mes": 51
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-10-07",
-      "entradas": 8,
+      "entradas": 9,
       "saidas": 1
     }
   ],
@@ -327,12 +327,12 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1813,
-      "entradas_mes": 14,
+      "andamento": 1814,
+      "entradas_mes": 15,
       "saidas_mes": 8,
       "entradas_mes_anterior": 60,
       "saidas_mes_anterior": 46,
-      "valor_causa": 308495399.8
+      "valor_causa": 309032130.68
     },
     {
       "nome": "Grupo B1",
@@ -404,7 +404,7 @@
       "saidas_mes": 1,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 3,
-      "valor_causa": 1595648.13
+      "valor_causa": 1208801.41
     },
     {
       "nome": "Sócios",
@@ -554,12 +554,12 @@
     },
     {
       "nome": "DF",
-      "andamento": 27,
-      "entradas_mes": 0,
+      "andamento": 28,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 16212999.07
+      "valor_causa": 16362883.23
     },
     {
       "nome": "ES",
@@ -682,12 +682,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2864,
-      "entradas_mes": 61,
+      "andamento": 2865,
+      "entradas_mes": 62,
       "saidas_mes": 6,
       "entradas_mes_anterior": 277,
       "saidas_mes_anterior": 203,
-      "valor_causa": 826347720.13
+      "valor_causa": 826497604.29
     },
     {
       "nome": "Sentença",
@@ -912,12 +912,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 756,
-      "entradas_mes": 12,
+      "andamento": 757,
+      "entradas_mes": 13,
       "saidas_mes": 2,
       "entradas_mes_anterior": 30,
       "saidas_mes_anterior": 12,
-      "valor_causa": 162191615.89
+      "valor_causa": 162728346.77
     },
     {
       "fase": "Instrução",
@@ -987,7 +987,7 @@
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
-      "valor_causa": 1448584.65
+      "valor_causa": 1061737.93
     },
     {
       "fase": "Instrução",
@@ -1514,12 +1514,12 @@
     },
     {
       "nome": "Natália Biondi Gaggini Robles(NBG)",
-      "andamento": 24,
-      "entradas_mes": 0,
+      "andamento": 25,
+      "entradas_mes": 1,
       "saidas_mes": 1,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 1,
-      "valor_causa": 11533728.5
+      "valor_causa": 11683612.66
     },
     {
       "nome": "Richard Ruan Leo da Silva(RRU)",
@@ -2853,12 +2853,12 @@
     {
       "grupo": "Grupo E1",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 359,
-      "entradas_mes": 2,
+      "andamento": 360,
+      "entradas_mes": 3,
       "saidas_mes": 2,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 10,
-      "valor_causa": 72409081.21,
+      "valor_causa": 72945812.09,
       "alerta_entrada": false
     },
     {
@@ -3644,17 +3644,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "MAHLE METAL - MOGI",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 736084.36,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "BP BIOENERGIA",
       "andamento": 1,
       "entradas_mes": 1,
@@ -3662,6 +3651,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 32498.07,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "3CORP TECHNOLOGY",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 149884.16,
       "alerta_entrada": false
     },
     {
@@ -3695,6 +3695,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 38000.0,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "MAHLE METAL - MOGI",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 199353.48,
       "alerta_entrada": false
     },
     {
@@ -4105,12 +4116,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Paloma da Silva Santos(PSI)",
-      "andamento": 250,
-      "entradas_mes": 4,
+      "andamento": 251,
+      "entradas_mes": 5,
       "saidas_mes": 2,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 10,
-      "valor_causa": 55593905.22
+      "valor_causa": 56130636.1
     },
     {
       "grupo": "Grupo E1",
@@ -4324,16 +4335,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Paloma da Silva Santos(PSI)",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 736084.36
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Lucas Willott Pereira (LWP)",
       "andamento": 1,
       "entradas_mes": 1,
@@ -4341,6 +4342,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 32498.07
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Natália Biondi Gaggini Robles(NBG)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 149884.16
     },
     {
       "grupo": "Sem grupo",
@@ -4371,6 +4382,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 38000.0
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Paloma da Silva Santos(PSI)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 199353.48
     },
     {
       "grupo": "Sem grupo",
@@ -4666,6 +4687,16 @@
     },
     {
       "estado": "DF",
+      "cliente": "3CORP TECHNOLOGY",
+      "andamento": 3,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 485468.01
+    },
+    {
+      "estado": "DF",
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "andamento": 3,
       "entradas_mes": 0,
@@ -4713,16 +4744,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 8332199.03
-    },
-    {
-      "estado": "DF",
-      "cliente": "3CORP TECHNOLOGY",
-      "andamento": 2,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 335583.85
     },
     {
       "estado": "DF",
@@ -7759,6 +7780,11 @@
   ],
   "sem_grupo_processos": [
     {
+      "numero_processo": "0001253-90.2026.5.10.0007",
+      "cliente": "3CORP TECHNOLOGY",
+      "profissional": "Natália Biondi Gaggini Robles(NBG)"
+    },
+    {
       "numero_processo": "0024708-14.2026.5.24.0066",
       "cliente": "BP BIOENERGIA",
       "profissional": "Lucas Willott Pereira (LWP)"
@@ -7772,11 +7798,6 @@
       "numero_processo": "0012008-94.2026.5.15.0053",
       "cliente": "MAHLE - COMPRESSORES",
       "profissional": "Tamires Lins Costa(TLI)"
-    },
-    {
-      "numero_processo": "0012154-81.2026.5.15.0071",
-      "cliente": "MAHLE METAL - MOGI",
-      "profissional": "Paloma da Silva Santos(PSI)"
     },
     {
       "numero_processo": "0011838-68.2026.5.15.0071",
