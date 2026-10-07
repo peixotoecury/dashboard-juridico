@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-07T16:01:18",
+  "atualizado_em": "2026-10-07T16:16:24",
   "kpis": {
     "total_andamento": 7580,
     "entradas_hoje": 12,
@@ -363,12 +363,12 @@
     },
     {
       "nome": "Grupo B3",
-      "andamento": 566,
-      "entradas_mes": 12,
+      "andamento": 565,
+      "entradas_mes": 11,
       "saidas_mes": 1,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 11,
-      "valor_causa": 110783506.11
+      "valor_causa": 110736338.18
     },
     {
       "nome": "Grupo A3",
@@ -399,12 +399,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 5,
-      "entradas_mes": 2,
+      "andamento": 6,
+      "entradas_mes": 3,
       "saidas_mes": 1,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 3,
-      "valor_causa": 1026419.18
+      "valor_causa": 1073587.11
     },
     {
       "nome": "Sócios",
@@ -942,12 +942,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B3",
-      "andamento": 141,
-      "entradas_mes": 11,
+      "andamento": 140,
+      "entradas_mes": 10,
       "saidas_mes": 1,
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 5,
-      "valor_causa": 26934862.81
+      "valor_causa": 26887694.88
     },
     {
       "fase": "Instrução",
@@ -992,12 +992,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 3,
-      "entradas_mes": 1,
+      "andamento": 4,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
-      "valor_causa": 879355.7
+      "valor_causa": 926523.63
     },
     {
       "fase": "Outras",
@@ -2336,12 +2336,12 @@
     {
       "grupo": "Grupo B3",
       "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 231,
-      "entradas_mes": 8,
+      "andamento": 230,
+      "entradas_mes": 7,
       "saidas_mes": 1,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 7,
-      "valor_causa": 29491395.85,
+      "valor_causa": 29444227.92,
       "alerta_entrada": true
     },
     {
@@ -3644,6 +3644,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "CBC CARTUCHOS BRASIL",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 47167.93,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "HERINGER",
       "andamento": 1,
       "entradas_mes": 0,
@@ -3954,12 +3965,12 @@
     {
       "grupo": "Grupo B3",
       "profissional": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 342,
-      "entradas_mes": 10,
+      "andamento": 341,
+      "entradas_mes": 9,
       "saidas_mes": 1,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 7,
-      "valor_causa": 64076257.09
+      "valor_causa": 64029089.16
     },
     {
       "grupo": "Grupo B3",
@@ -4310,6 +4321,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Letícia Meneghini Fontes (LMI)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 47167.93
     },
     {
       "grupo": "Sem grupo",
@@ -7747,6 +7768,11 @@
     }
   ],
   "sem_grupo_processos": [
+    {
+      "numero_processo": "1001504-65.2026.5.02.0411",
+      "cliente": "CBC CARTUCHOS BRASIL",
+      "profissional": "Letícia Meneghini Fontes (LMI)"
+    },
     {
       "numero_processo": "0003841-21.2026.5.09.0000",
       "cliente": "HERINGER",
