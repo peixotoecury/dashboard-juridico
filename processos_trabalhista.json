@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-07T11:16:19",
+  "atualizado_em": "2026-10-07T11:31:19",
   "kpis": {
-    "total_andamento": 7581,
+    "total_andamento": 7580,
     "entradas_hoje": 8,
-    "saidas_hoje": 0,
+    "saidas_hoje": 1,
     "entradas_ontem": 14,
     "saidas_ontem": 2,
     "entradas_mes": 69,
-    "saidas_mes": 18,
+    "saidas_mes": 19,
     "entradas_mes_anterior": 320,
     "saidas_mes_anterior": 1013,
-    "valor_causa_total": 1748469065.18,
-    "saldo_mes": 51
+    "valor_causa_total": 1747924161.71,
+    "saldo_mes": 50
   },
   "serie_diaria": [
     {
@@ -312,7 +312,7 @@
     {
       "data": "2026-10-07",
       "entradas": 8,
-      "saidas": 0
+      "saidas": 1
     }
   ],
   "por_grupo": [
@@ -327,12 +327,12 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1810,
-      "entradas_mes": 10,
-      "saidas_mes": 7,
+      "andamento": 1812,
+      "entradas_mes": 13,
+      "saidas_mes": 8,
       "entradas_mes_anterior": 60,
       "saidas_mes_anterior": 46,
-      "valor_causa": 308124582.03
+      "valor_causa": 308336305.73
     },
     {
       "nome": "Grupo B1",
@@ -399,12 +399,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 12,
-      "entradas_mes": 9,
+      "andamento": 9,
+      "entradas_mes": 6,
       "saidas_mes": 1,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 3,
-      "valor_causa": 4874427.65
+      "valor_causa": 4117800.48
     },
     {
       "nome": "Sócios",
@@ -437,12 +437,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5761,
+      "andamento": 5760,
       "entradas_mes": 36,
-      "saidas_mes": 15,
+      "saidas_mes": 16,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 838,
-      "valor_causa": 1365520385.02
+      "valor_causa": 1364975481.55
     },
     {
       "nome": "MG",
@@ -682,12 +682,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2865,
+      "andamento": 2864,
       "entradas_mes": 61,
-      "saidas_mes": 5,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 277,
       "saidas_mes_anterior": 203,
-      "valor_causa": 826892623.6
+      "valor_causa": 826347720.13
     },
     {
       "nome": "Sentença",
@@ -912,12 +912,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 753,
-      "entradas_mes": 8,
-      "saidas_mes": 1,
+      "andamento": 755,
+      "entradas_mes": 11,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 30,
       "saidas_mes_anterior": 12,
-      "valor_causa": 161820798.12
+      "valor_causa": 162032521.82
     },
     {
       "fase": "Instrução",
@@ -982,12 +982,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 10,
-      "entradas_mes": 8,
+      "andamento": 7,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
-      "valor_causa": 4727364.17
+      "valor_causa": 3970737.0
     },
     {
       "fase": "Instrução",
@@ -1252,15 +1252,6 @@
   ],
   "por_profissional": [
     {
-      "nome": "Giulia Vendramini Milani(GVM)",
-      "andamento": 448,
-      "entradas_mes": 5,
-      "saidas_mes": 2,
-      "entradas_mes_anterior": 17,
-      "saidas_mes_anterior": 12,
-      "valor_causa": 65675213.7
-    },
-    {
       "nome": "Rafael Yepez do Lago(RYL)",
       "andamento": 448,
       "entradas_mes": 1,
@@ -1268,6 +1259,15 @@
       "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 22,
       "valor_causa": 61163221.85
+    },
+    {
+      "nome": "Giulia Vendramini Milani(GVM)",
+      "andamento": 447,
+      "entradas_mes": 5,
+      "saidas_mes": 3,
+      "entradas_mes_anterior": 17,
+      "saidas_mes_anterior": 12,
+      "valor_causa": 65130310.23
     },
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
@@ -1690,12 +1690,12 @@
     },
     {
       "nome": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 719,
+      "andamento": 718,
       "entradas_mes": 8,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 14,
-      "valor_causa": 143630534.96,
+      "valor_causa": 143085631.49,
       "alerta_entrada": false
     },
     {
@@ -2842,23 +2842,23 @@
     {
       "grupo": "Grupo E1",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 646,
-      "entradas_mes": 6,
-      "saidas_mes": 2,
+      "andamento": 647,
+      "entradas_mes": 8,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 14,
-      "valor_causa": 142204047.68,
+      "valor_causa": 142111392.55,
       "alerta_entrada": false
     },
     {
       "grupo": "Grupo E1",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 358,
-      "entradas_mes": 1,
+      "andamento": 359,
+      "entradas_mes": 2,
       "saidas_mes": 2,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 10,
-      "valor_causa": 72104702.38,
+      "valor_causa": 72409081.21,
       "alerta_entrada": false
     },
     {
@@ -3645,23 +3645,12 @@
     {
       "grupo": "Sem grupo",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 3,
-      "entradas_mes": 3,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 1040463.19,
-      "alerta_entrada": true
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "SYNGENTA PROTEÇÃO DE",
       "andamento": 2,
       "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 452248.34,
+      "valor_causa": 736084.36,
       "alerta_entrada": false
     },
     {
@@ -4109,11 +4098,11 @@
       "grupo": "Grupo E1",
       "profissional": "Giulia Vendramini Milani(GVM)",
       "andamento": 447,
-      "entradas_mes": 4,
-      "saidas_mes": 2,
+      "entradas_mes": 5,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 12,
-      "valor_causa": 65283283.28
+      "valor_causa": 65130310.23
     },
     {
       "grupo": "Grupo E1",
@@ -4138,12 +4127,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Paloma da Silva Santos(PSI)",
-      "andamento": 248,
-      "entradas_mes": 2,
+      "andamento": 249,
+      "entradas_mes": 3,
       "saidas_mes": 2,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 10,
-      "valor_causa": 55130432.32
+      "valor_causa": 55434811.15
     },
     {
       "grupo": "Grupo E1",
@@ -4158,12 +4147,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Tamires Lins Costa(TLI)",
-      "andamento": 220,
-      "entradas_mes": 0,
+      "andamento": 221,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 5,
-      "valor_causa": 27886253.6
+      "valor_causa": 27946571.52
     },
     {
       "grupo": "Grupo E1",
@@ -4358,32 +4347,12 @@
     {
       "grupo": "Sem grupo",
       "profissional": "Paloma da Silva Santos(PSI)",
-      "andamento": 4,
-      "entradas_mes": 4,
+      "andamento": 3,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
-      "valor_causa": 1199557.26
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Tamires Lins Costa(TLI)",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 169381.4
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Giulia Vendramini Milani(GVM)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 391930.42
+      "valor_causa": 895178.43
     },
     {
       "grupo": "Sem grupo",
@@ -4434,6 +4403,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 38000.0
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Tamires Lins Costa(TLI)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 109063.48
     },
     {
       "grupo": "Sócios",
@@ -6400,12 +6379,12 @@
     {
       "estado": "SP",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 615,
+      "andamento": 614,
       "entradas_mes": 6,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 10,
-      "valor_causa": 127049340.4
+      "valor_causa": 126504436.93
     },
     {
       "estado": "SP",
@@ -7832,11 +7811,6 @@
       "profissional": "Tamires Lins Costa(TLI)"
     },
     {
-      "numero_processo": "0012152-14.2026.5.15.0071",
-      "cliente": "MAHLE METAL - MOGI",
-      "profissional": "Paloma da Silva Santos(PSI)"
-    },
-    {
       "numero_processo": "0012154-81.2026.5.15.0071",
       "cliente": "MAHLE METAL - MOGI",
       "profissional": "Paloma da Silva Santos(PSI)"
@@ -7855,16 +7829,6 @@
       "numero_processo": "0101281-74.2026.5.01.0053",
       "cliente": "McCANN-ERICKSON",
       "profissional": "Erik Mota Coppi(ECO)"
-    },
-    {
-      "numero_processo": "0012732-97.2026.5.15.0021",
-      "cliente": "SYNGENTA PROTEÇÃO DE",
-      "profissional": "Tamires Lins Costa(TLI)"
-    },
-    {
-      "numero_processo": "0013912-77.2026.5.15.0077",
-      "cliente": "SYNGENTA PROTEÇÃO DE",
-      "profissional": "Giulia Vendramini Milani(GVM)"
     },
     {
       "numero_processo": "0012115-71.2026.5.15.0043",
