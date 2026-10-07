@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-07T13:46:15",
+  "atualizado_em": "2026-10-07T14:01:17",
   "kpis": {
-    "total_andamento": 7581,
+    "total_andamento": 7580,
     "entradas_hoje": 10,
-    "saidas_hoje": 2,
+    "saidas_hoje": 3,
     "entradas_ontem": 14,
     "saidas_ontem": 2,
     "entradas_mes": 71,
-    "saidas_mes": 20,
+    "saidas_mes": 21,
     "entradas_mes_anterior": 320,
     "saidas_mes_anterior": 1013,
     "valor_causa_total": 1747801958.42,
-    "saldo_mes": 51
+    "saldo_mes": 50
   },
   "serie_diaria": [
     {
@@ -312,7 +312,7 @@
     {
       "data": "2026-10-07",
       "entradas": 10,
-      "saidas": 2
+      "saidas": 3
     }
   ],
   "por_grupo": [
@@ -327,12 +327,12 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1814,
-      "entradas_mes": 15,
+      "andamento": 1815,
+      "entradas_mes": 16,
       "saidas_mes": 8,
       "entradas_mes_anterior": 60,
       "saidas_mes_anterior": 46,
-      "valor_causa": 309032130.68
+      "valor_causa": 309077301.86
     },
     {
       "nome": "Grupo B1",
@@ -354,9 +354,9 @@
     },
     {
       "nome": "Grupo C",
-      "andamento": 689,
+      "andamento": 688,
       "entradas_mes": 20,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 39,
       "saidas_mes_anterior": 12,
       "valor_causa": 249325454.13
@@ -399,12 +399,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 8,
-      "entradas_mes": 5,
+      "andamento": 7,
+      "entradas_mes": 4,
       "saidas_mes": 1,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 3,
-      "valor_causa": 1253972.59
+      "valor_causa": 1208801.41
     },
     {
       "nome": "Sócios",
@@ -500,9 +500,9 @@
     },
     {
       "nome": "GO",
-      "andamento": 94,
+      "andamento": 93,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 15,
       "valor_causa": 8273074.3
@@ -682,9 +682,9 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2865,
+      "andamento": 2864,
       "entradas_mes": 63,
-      "saidas_mes": 7,
+      "saidas_mes": 8,
       "entradas_mes_anterior": 277,
       "saidas_mes_anterior": 203,
       "valor_causa": 826225516.84
@@ -912,12 +912,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 757,
-      "entradas_mes": 13,
+      "andamento": 758,
+      "entradas_mes": 14,
       "saidas_mes": 2,
       "entradas_mes_anterior": 30,
       "saidas_mes_anterior": 12,
-      "valor_causa": 162728346.77
+      "valor_causa": 162773517.95
     },
     {
       "fase": "Instrução",
@@ -932,9 +932,9 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo C",
-      "andamento": 423,
+      "andamento": 422,
       "entradas_mes": 20,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 38,
       "saidas_mes_anterior": 8,
       "valor_causa": 159799781.63
@@ -982,12 +982,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 6,
-      "entradas_mes": 4,
+      "andamento": 5,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
-      "valor_causa": 1106909.11
+      "valor_causa": 1061737.93
     },
     {
       "fase": "Instrução",
@@ -1424,9 +1424,9 @@
     },
     {
       "nome": "Erik Mota Coppi(ECO)",
-      "andamento": 248,
+      "andamento": 247,
       "entradas_mes": 4,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 15,
       "saidas_mes_anterior": 12,
       "valor_causa": 45665648.29
@@ -2490,9 +2490,9 @@
     {
       "grupo": "Grupo C",
       "cliente": "UHE SÃO SIMÃO",
-      "andamento": 30,
+      "andamento": 29,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 10,
       "valor_causa": 4355608.39,
@@ -2853,12 +2853,12 @@
     {
       "grupo": "Grupo E1",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 360,
-      "entradas_mes": 3,
+      "andamento": 361,
+      "entradas_mes": 4,
       "saidas_mes": 2,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 10,
-      "valor_causa": 72945812.09,
+      "valor_causa": 72990983.27,
       "alerta_entrada": false
     },
     {
@@ -3644,17 +3644,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "MAHLE METAL - MOGI",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 244524.66,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "BP BIOENERGIA",
       "andamento": 1,
       "entradas_mes": 1,
@@ -3706,6 +3695,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 38000.0,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "MAHLE METAL - MOGI",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 199353.48,
       "alerta_entrada": false
     },
     {
@@ -4026,9 +4026,9 @@
     {
       "grupo": "Grupo C",
       "profissional": "Erik Mota Coppi(ECO)",
-      "andamento": 231,
+      "andamento": 230,
       "entradas_mes": 4,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 12,
       "valor_causa": 44986646.07
@@ -4116,12 +4116,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Paloma da Silva Santos(PSI)",
-      "andamento": 251,
-      "entradas_mes": 5,
+      "andamento": 252,
+      "entradas_mes": 6,
       "saidas_mes": 2,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 10,
-      "valor_causa": 56130636.1
+      "valor_causa": 56175807.28
     },
     {
       "grupo": "Grupo E1",
@@ -4335,16 +4335,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Paloma da Silva Santos(PSI)",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 244524.66
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Lucas Willott Pereira (LWP)",
       "andamento": 1,
       "entradas_mes": 1,
@@ -4392,6 +4382,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 38000.0
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Paloma da Silva Santos(PSI)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 199353.48
     },
     {
       "grupo": "Sem grupo",
@@ -4908,9 +4908,9 @@
     {
       "estado": "GO",
       "cliente": "UHE SÃO SIMÃO",
-      "andamento": 14,
+      "andamento": 13,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 7,
       "valor_causa": 769467.18
@@ -7808,11 +7808,6 @@
       "numero_processo": "0012008-94.2026.5.15.0053",
       "cliente": "MAHLE - COMPRESSORES",
       "profissional": "Tamires Lins Costa(TLI)"
-    },
-    {
-      "numero_processo": "0012158-21.2026.5.15.0071",
-      "cliente": "MAHLE METAL - MOGI",
-      "profissional": "Paloma da Silva Santos(PSI)"
     },
     {
       "numero_processo": "0011838-68.2026.5.15.0071",
