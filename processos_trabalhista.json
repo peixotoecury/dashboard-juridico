@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-07T11:01:18",
+  "atualizado_em": "2026-10-07T11:16:19",
   "kpis": {
     "total_andamento": 7581,
     "entradas_hoje": 8,
@@ -327,12 +327,12 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1809,
-      "entradas_mes": 9,
+      "andamento": 1810,
+      "entradas_mes": 10,
       "saidas_mes": 7,
       "entradas_mes_anterior": 60,
       "saidas_mes_anterior": 46,
-      "valor_causa": 307934374.65
+      "valor_causa": 308124582.03
     },
     {
       "nome": "Grupo B1",
@@ -399,12 +399,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 13,
-      "entradas_mes": 10,
+      "andamento": 12,
+      "entradas_mes": 9,
       "saidas_mes": 1,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 3,
-      "valor_causa": 5064635.03
+      "valor_causa": 4874427.65
     },
     {
       "nome": "Sócios",
@@ -673,21 +673,21 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 401,
-      "entradas_mes": 4,
+      "andamento": 402,
+      "entradas_mes": 5,
       "saidas_mes": 3,
       "entradas_mes_anterior": 29,
       "saidas_mes_anterior": 10,
-      "valor_causa": 90228002.41
+      "valor_causa": 90337065.89
     },
     {
       "nome": "Instrução",
-      "andamento": 2867,
-      "entradas_mes": 62,
+      "andamento": 2865,
+      "entradas_mes": 61,
       "saidas_mes": 5,
       "entradas_mes_anterior": 277,
       "saidas_mes_anterior": 203,
-      "valor_causa": 827048260.18
+      "valor_causa": 826892623.6
     },
     {
       "nome": "Sentença",
@@ -700,12 +700,12 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2970,
+      "andamento": 2971,
       "entradas_mes": 1,
       "saidas_mes": 3,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 389,
-      "valor_causa": 662951042.58
+      "valor_causa": 662997615.68
     },
     {
       "nome": "Execução",
@@ -810,6 +810,16 @@
       "valor_causa": 0.0
     },
     {
+      "fase": "Ajuizamento",
+      "grupo": "Sem grupo",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 109063.48
+    },
+    {
       "fase": "Execução",
       "grupo": "Grupo E2",
       "andamento": 344,
@@ -902,12 +912,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 752,
-      "entradas_mes": 7,
+      "andamento": 753,
+      "entradas_mes": 8,
       "saidas_mes": 1,
       "entradas_mes_anterior": 30,
       "saidas_mes_anterior": 12,
-      "valor_causa": 161630590.74
+      "valor_causa": 161820798.12
     },
     {
       "fase": "Instrução",
@@ -932,12 +942,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B3",
-      "andamento": 143,
+      "andamento": 142,
       "entradas_mes": 10,
       "saidas_mes": 0,
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 5,
-      "valor_causa": 27117322.36
+      "valor_causa": 27070749.26
     },
     {
       "fase": "Instrução",
@@ -972,12 +982,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 12,
-      "entradas_mes": 10,
+      "andamento": 10,
+      "entradas_mes": 8,
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
-      "valor_causa": 5026635.03
+      "valor_causa": 4727364.17
     },
     {
       "fase": "Instrução",
@@ -1132,12 +1142,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo B3",
-      "andamento": 246,
+      "andamento": 247,
       "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 1,
-      "valor_causa": 62732600.17
+      "valor_causa": 62779173.27
     },
     {
       "fase": "Recurso",
@@ -2843,12 +2853,12 @@
     {
       "grupo": "Grupo E1",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 357,
-      "entradas_mes": 0,
+      "andamento": 358,
+      "entradas_mes": 1,
       "saidas_mes": 2,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 10,
-      "valor_causa": 71914495.0,
+      "valor_causa": 72104702.38,
       "alerta_entrada": false
     },
     {
@@ -3635,12 +3645,12 @@
     {
       "grupo": "Sem grupo",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 4,
-      "entradas_mes": 4,
+      "andamento": 3,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 1230670.57,
+      "valor_causa": 1040463.19,
       "alerta_entrada": true
     },
     {
@@ -3656,17 +3666,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "BRIDGESTONE",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 2363058.28,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "SYNGENTA SEEDS NIDER",
       "andamento": 1,
       "entradas_mes": 1,
@@ -3674,6 +3673,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 159094.07,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "BRIDGESTONE",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 2363058.28,
       "alerta_entrada": false
     },
     {
@@ -4128,12 +4138,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Paloma da Silva Santos(PSI)",
-      "andamento": 247,
-      "entradas_mes": 1,
+      "andamento": 248,
+      "entradas_mes": 2,
       "saidas_mes": 2,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 10,
-      "valor_causa": 54940224.94
+      "valor_causa": 55130432.32
     },
     {
       "grupo": "Grupo E1",
@@ -4348,12 +4358,12 @@
     {
       "grupo": "Sem grupo",
       "profissional": "Paloma da Silva Santos(PSI)",
-      "andamento": 5,
-      "entradas_mes": 5,
+      "andamento": 4,
+      "entradas_mes": 4,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
-      "valor_causa": 1389764.64
+      "valor_causa": 1199557.26
     },
     {
       "grupo": "Sem grupo",
@@ -7820,11 +7830,6 @@
       "numero_processo": "0012008-94.2026.5.15.0053",
       "cliente": "MAHLE - COMPRESSORES",
       "profissional": "Tamires Lins Costa(TLI)"
-    },
-    {
-      "numero_processo": "0011780-65.2026.5.15.0071",
-      "cliente": "MAHLE METAL - MOGI",
-      "profissional": "Paloma da Silva Santos(PSI)"
     },
     {
       "numero_processo": "0012152-14.2026.5.15.0071",
