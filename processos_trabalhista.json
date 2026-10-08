@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-08T10:32:24",
+  "atualizado_em": "2026-10-08T10:47:30",
   "kpis": {
-    "total_andamento": 7584,
+    "total_andamento": 7583,
     "entradas_hoje": 4,
-    "saidas_hoje": 1,
+    "saidas_hoje": 2,
     "entradas_ontem": 12,
     "saidas_ontem": 4,
     "entradas_mes": 77,
-    "saidas_mes": 24,
+    "saidas_mes": 25,
     "entradas_mes_anterior": 320,
     "saidas_mes_anterior": 1013,
     "valor_causa_total": 1748240880.75,
-    "saldo_mes": 53
+    "saldo_mes": 52
   },
   "serie_diaria": [
     {
@@ -312,7 +312,7 @@
     {
       "data": "2026-10-08",
       "entradas": 4,
-      "saidas": 1
+      "saidas": 2
     }
   ],
   "por_grupo": [
@@ -328,8 +328,8 @@
     {
       "nome": "Grupo E1",
       "andamento": 1815,
-      "entradas_mes": 16,
-      "saidas_mes": 8,
+      "entradas_mes": 17,
+      "saidas_mes": 9,
       "entradas_mes_anterior": 60,
       "saidas_mes_anterior": 46,
       "valor_causa": 309077301.86
@@ -399,8 +399,8 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 10,
-      "entradas_mes": 7,
+      "andamento": 9,
+      "entradas_mes": 6,
       "saidas_mes": 1,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 3,
@@ -437,9 +437,9 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5763,
+      "andamento": 5762,
       "entradas_mes": 42,
-      "saidas_mes": 20,
+      "saidas_mes": 21,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 838,
       "valor_causa": 1365126964.37
@@ -700,9 +700,9 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2972,
+      "andamento": 2971,
       "entradas_mes": 1,
-      "saidas_mes": 4,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 389,
       "valor_causa": 662718201.5
@@ -912,8 +912,8 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 757,
-      "entradas_mes": 14,
+      "andamento": 758,
+      "entradas_mes": 15,
       "saidas_mes": 1,
       "entradas_mes_anterior": 28,
       "saidas_mes_anterior": 10,
@@ -982,8 +982,8 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 8,
-      "entradas_mes": 6,
+      "andamento": 7,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
@@ -1112,9 +1112,9 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo E1",
-      "andamento": 758,
+      "andamento": 757,
       "entradas_mes": 0,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 8,
       "valor_causa": 109392543.67
@@ -1415,9 +1415,9 @@
     },
     {
       "nome": "Paloma da Silva Santos(PSI)",
-      "andamento": 254,
+      "andamento": 253,
       "entradas_mes": 8,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 11,
       "valor_causa": 56375160.76
@@ -1710,9 +1710,9 @@
     },
     {
       "nome": "MAHLE METAL - MOGI",
-      "andamento": 363,
+      "andamento": 362,
       "entradas_mes": 6,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 10,
       "valor_causa": 73190336.75,
@@ -2854,8 +2854,8 @@
       "grupo": "Grupo E1",
       "cliente": "MAHLE METAL - MOGI",
       "andamento": 361,
-      "entradas_mes": 4,
-      "saidas_mes": 2,
+      "entradas_mes": 5,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 10,
       "valor_causa": 72990983.27,
@@ -3644,17 +3644,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "MAHLE METAL - MOGI",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 199353.48,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "BRIDGESTONE",
       "andamento": 2,
       "entradas_mes": 2,
@@ -3717,6 +3706,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 38000.0,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "MAHLE METAL - MOGI",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 199353.48,
       "alerta_entrada": false
     },
     {
@@ -4128,8 +4128,8 @@
       "grupo": "Grupo E1",
       "profissional": "Paloma da Silva Santos(PSI)",
       "andamento": 252,
-      "entradas_mes": 6,
-      "saidas_mes": 2,
+      "entradas_mes": 7,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 10,
       "valor_causa": 56175807.28
@@ -4346,16 +4346,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Paloma da Silva Santos(PSI)",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 199353.48
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Letícia Meneghini Fontes (LMI)",
       "andamento": 1,
       "entradas_mes": 1,
@@ -4423,6 +4413,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 38000.0
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Paloma da Silva Santos(PSI)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 199353.48
     },
     {
       "grupo": "Sem grupo",
@@ -6419,9 +6419,9 @@
     {
       "estado": "SP",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 362,
+      "andamento": 361,
       "entradas_mes": 6,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 10,
       "valor_causa": 73190336.75
@@ -7780,9 +7780,9 @@
   "clientes_com_alerta": [
     {
       "nome": "MAHLE METAL - MOGI",
-      "andamento": 363,
+      "andamento": 362,
       "entradas_mes": 6,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 10,
       "valor_causa": 73190336.75,
@@ -7844,11 +7844,6 @@
       "numero_processo": "0012008-94.2026.5.15.0053",
       "cliente": "MAHLE - COMPRESSORES",
       "profissional": "Tamires Lins Costa(TLI)"
-    },
-    {
-      "numero_processo": "0011378-33.2026.5.15.0087",
-      "cliente": "MAHLE METAL - MOGI",
-      "profissional": "Paloma da Silva Santos(PSI)"
     },
     {
       "numero_processo": "0011838-68.2026.5.15.0071",
