@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-08T13:02:33",
+  "atualizado_em": "2026-10-08T13:17:29",
   "kpis": {
-    "total_andamento": 7585,
-    "entradas_hoje": 9,
+    "total_andamento": 7588,
+    "entradas_hoje": 12,
     "saidas_hoje": 2,
     "entradas_ontem": 12,
     "saidas_ontem": 4,
-    "entradas_mes": 82,
+    "entradas_mes": 85,
     "saidas_mes": 28,
     "entradas_mes_anterior": 320,
     "saidas_mes_anterior": 1013,
-    "valor_causa_total": 1749918963.43,
-    "saldo_mes": 54
+    "valor_causa_total": 1751804163.43,
+    "saldo_mes": 57
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-10-08",
-      "entradas": 9,
+      "entradas": 12,
       "saidas": 2
     }
   ],
@@ -399,12 +399,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 11,
-      "entradas_mes": 8,
+      "andamento": 14,
+      "entradas_mes": 11,
       "saidas_mes": 1,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 3,
-      "valor_causa": 2751669.79
+      "valor_causa": 4636869.79
     },
     {
       "nome": "Sócios",
@@ -437,12 +437,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5761,
-      "entradas_mes": 44,
+      "andamento": 5762,
+      "entradas_mes": 45,
       "saidas_mes": 24,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 838,
-      "valor_causa": 1366705115.61
+      "valor_causa": 1367243315.61
     },
     {
       "nome": "MG",
@@ -455,12 +455,12 @@
     },
     {
       "nome": "PR",
-      "andamento": 243,
-      "entradas_mes": 8,
+      "andamento": 245,
+      "entradas_mes": 10,
       "saidas_mes": 0,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 7,
-      "valor_causa": 51593275.1
+      "valor_causa": 52940275.1
     },
     {
       "nome": "RS",
@@ -682,12 +682,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2872,
-      "entradas_mes": 74,
+      "andamento": 2875,
+      "entradas_mes": 77,
       "saidas_mes": 8,
       "entradas_mes_anterior": 275,
       "saidas_mes_anterior": 201,
-      "valor_causa": 828621936.03
+      "valor_causa": 830507136.03
     },
     {
       "nome": "Sentença",
@@ -982,12 +982,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 9,
-      "entradas_mes": 7,
+      "andamento": 12,
+      "entradas_mes": 10,
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
-      "valor_causa": 2604606.31
+      "valor_causa": 4489806.31
     },
     {
       "fase": "Instrução",
@@ -1424,12 +1424,12 @@
     },
     {
       "nome": "Erik Mota Coppi(ECO)",
-      "andamento": 249,
-      "entradas_mes": 6,
+      "andamento": 252,
+      "entradas_mes": 9,
       "saidas_mes": 1,
       "entradas_mes_anterior": 15,
       "saidas_mes_anterior": 12,
-      "valor_causa": 45708648.29
+      "valor_causa": 47593848.29
     },
     {
       "nome": "Vinícius Ronchi Arruda(VRO)",
@@ -1790,12 +1790,12 @@
     },
     {
       "nome": "COMPANHIA AIX",
-      "andamento": 133,
-      "entradas_mes": 21,
+      "andamento": 136,
+      "entradas_mes": 24,
       "saidas_mes": 0,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 0,
-      "valor_causa": 30874931.41,
+      "valor_causa": 32760131.41,
       "alerta_entrada": true
     },
     {
@@ -3644,6 +3644,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "COMPANHIA AIX",
+      "andamento": 5,
+      "entradas_mes": 5,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1928200.0,
+      "alerta_entrada": true
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "TELEFONICA BRASIL",
       "andamento": 2,
       "entradas_mes": 2,
@@ -3651,17 +3662,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 1578151.24,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "COMPANHIA AIX",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 43000.0,
       "alerta_entrada": false
     },
     {
@@ -4358,12 +4358,12 @@
     {
       "grupo": "Sem grupo",
       "profissional": "Erik Mota Coppi(ECO)",
-      "andamento": 3,
-      "entradas_mes": 2,
+      "andamento": 6,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 722002.22
+      "valor_causa": 2607202.22
     },
     {
       "grupo": "Sem grupo",
@@ -5640,12 +5640,12 @@
     {
       "estado": "PR",
       "cliente": "COMPANHIA AIX",
-      "andamento": 104,
-      "entradas_mes": 4,
+      "andamento": 106,
+      "entradas_mes": 6,
       "saidas_mes": 0,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 0,
-      "valor_causa": 24625219.46
+      "valor_causa": 25972219.46
     },
     {
       "estado": "PR",
@@ -6929,6 +6929,16 @@
     },
     {
       "estado": "SP",
+      "cliente": "COMPANHIA AIX",
+      "andamento": 3,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 855200.0
+    },
+    {
+      "estado": "SP",
       "cliente": "MAHLE - COMPRESSORES",
       "andamento": 3,
       "entradas_mes": 1,
@@ -7116,16 +7126,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 627758.89
-    },
-    {
-      "estado": "SP",
-      "cliente": "COMPANHIA AIX",
-      "andamento": 2,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 317000.0
     },
     {
       "estado": "SP",
@@ -7831,12 +7831,12 @@
     },
     {
       "nome": "COMPANHIA AIX",
-      "andamento": 133,
-      "entradas_mes": 21,
+      "andamento": 136,
+      "entradas_mes": 24,
       "saidas_mes": 0,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 0,
-      "valor_causa": 30874931.41,
+      "valor_causa": 32760131.41,
       "alerta_entrada": true
     }
   ],
@@ -7853,6 +7853,21 @@
     },
     {
       "numero_processo": "0001529-38.2026.5.09.0658",
+      "cliente": "COMPANHIA AIX",
+      "profissional": "Erik Mota Coppi(ECO)"
+    },
+    {
+      "numero_processo": "0001528-53.2026.5.09.0658",
+      "cliente": "COMPANHIA AIX",
+      "profissional": "Erik Mota Coppi(ECO)"
+    },
+    {
+      "numero_processo": "0001516-54.2026.5.09.0071",
+      "cliente": "COMPANHIA AIX",
+      "profissional": "Erik Mota Coppi(ECO)"
+    },
+    {
+      "numero_processo": "0000840-41.2026.5.09.0125",
       "cliente": "COMPANHIA AIX",
       "profissional": "Erik Mota Coppi(ECO)"
     },
