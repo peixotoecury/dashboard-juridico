@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-09T10:45:27",
+  "atualizado_em": "2026-10-09T11:00:31",
   "kpis": {
     "total_andamento": 7594,
     "entradas_hoje": 3,
@@ -318,12 +318,12 @@
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2113,
-      "entradas_mes": 13,
+      "andamento": 2114,
+      "entradas_mes": 14,
       "saidas_mes": 6,
       "entradas_mes_anterior": 117,
       "saidas_mes_anterior": 91,
-      "valor_causa": 470287578.46
+      "valor_causa": 470467578.46
     },
     {
       "nome": "Grupo E1",
@@ -399,12 +399,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 14,
-      "entradas_mes": 11,
+      "andamento": 13,
+      "entradas_mes": 10,
       "saidas_mes": 1,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 3,
-      "valor_causa": 3141365.65
+      "valor_causa": 2961365.65
     },
     {
       "nome": "Sócios",
@@ -673,21 +673,21 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 402,
-      "entradas_mes": 7,
+      "andamento": 403,
+      "entradas_mes": 8,
       "saidas_mes": 3,
       "entradas_mes_anterior": 29,
       "saidas_mes_anterior": 10,
-      "valor_causa": 90504387.34
+      "valor_causa": 90549558.52
     },
     {
       "nome": "Instrução",
-      "andamento": 2878,
-      "entradas_mes": 82,
+      "andamento": 2877,
+      "entradas_mes": 81,
       "saidas_mes": 7,
       "entradas_mes_anterior": 275,
       "saidas_mes_anterior": 201,
-      "valor_causa": 831834671.42
+      "valor_causa": 831789500.24
     },
     {
       "nome": "Sentença",
@@ -742,12 +742,12 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo E1",
-      "andamento": 59,
-      "entradas_mes": 4,
+      "andamento": 60,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 0,
-      "valor_causa": 15780595.13
+      "valor_causa": 15825766.31
     },
     {
       "fase": "Ajuizamento",
@@ -902,22 +902,22 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 863,
-      "entradas_mes": 11,
+      "andamento": 864,
+      "entradas_mes": 12,
       "saidas_mes": 3,
       "entradas_mes_anterior": 107,
       "saidas_mes_anterior": 23,
-      "valor_causa": 185697592.95
+      "valor_causa": 185877592.95
     },
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 756,
-      "entradas_mes": 15,
+      "andamento": 755,
+      "entradas_mes": 14,
       "saidas_mes": 0,
       "entradas_mes_anterior": 28,
       "saidas_mes_anterior": 10,
-      "valor_causa": 162322963.3
+      "valor_causa": 162277792.12
     },
     {
       "fase": "Instrução",
@@ -982,12 +982,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 12,
-      "entradas_mes": 10,
+      "andamento": 11,
+      "entradas_mes": 9,
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
-      "valor_causa": 2994302.17
+      "valor_causa": 2814302.17
     },
     {
       "fase": "Instrução",
@@ -3095,12 +3095,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "HERINGER",
-      "andamento": 332,
-      "entradas_mes": 1,
+      "andamento": 333,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 11,
-      "valor_causa": 45473527.26,
+      "valor_causa": 45653527.26,
       "alerta_entrada": false
     },
     {
@@ -3666,17 +3666,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "HERINGER",
-      "andamento": 2,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 181000.0,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "TELEFONICA BRASIL",
       "andamento": 1,
       "entradas_mes": 1,
@@ -3706,6 +3695,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 122000.0,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "HERINGER",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1000.0,
       "alerta_entrada": false
     },
     {
@@ -4328,6 +4328,16 @@
     },
     {
       "grupo": "Grupo E2",
+      "profissional": "Bruno Tanganelli Farah(BTF)",
+      "andamento": 22,
+      "entradas_mes": 3,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 14,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 8610687.37
+    },
+    {
+      "grupo": "Grupo E2",
       "profissional": "Richard Ruan Leo da Silva(RRU)",
       "andamento": 21,
       "entradas_mes": 1,
@@ -4335,16 +4345,6 @@
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 0,
       "valor_causa": 4369631.67
-    },
-    {
-      "grupo": "Grupo E2",
-      "profissional": "Bruno Tanganelli Farah(BTF)",
-      "andamento": 21,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 14,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 8430687.37
     },
     {
       "grupo": "Grupo E2",
@@ -4405,16 +4405,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 12478.97
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Bruno Tanganelli Farah(BTF)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 180000.0
     },
     {
       "grupo": "Sem grupo",
@@ -7881,11 +7871,6 @@
       "numero_processo": "0001007-20.2026.5.09.0073",
       "cliente": "COMPANHIA AIX",
       "profissional": "Erik Mota Coppi(ECO)"
-    },
-    {
-      "numero_processo": "0000692-19.2022.5.17.0005",
-      "cliente": "HERINGER",
-      "profissional": "Bruno Tanganelli Farah(BTF)"
     },
     {
       "numero_processo": "0003841-21.2026.5.09.0000",
