@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-09T10:00:32",
+  "atualizado_em": "2026-10-09T10:15:27",
   "kpis": {
-    "total_andamento": 7590,
+    "total_andamento": 7591,
     "entradas_hoje": 0,
     "saidas_hoje": 0,
-    "entradas_ontem": 15,
+    "entradas_ontem": 16,
     "saidas_ontem": 3,
-    "entradas_mes": 88,
+    "entradas_mes": 89,
     "saidas_mes": 29,
     "entradas_mes_anterior": 320,
     "saidas_mes_anterior": 1013,
-    "valor_causa_total": 1752964152.86,
-    "saldo_mes": 59
+    "valor_causa_total": 1753144152.86,
+    "saldo_mes": 60
   },
   "serie_diaria": [
     {
@@ -306,7 +306,7 @@
     },
     {
       "data": "2026-10-08",
-      "entradas": 15,
+      "entradas": 16,
       "saidas": 3
     },
     {
@@ -399,12 +399,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 10,
-      "entradas_mes": 7,
+      "andamento": 11,
+      "entradas_mes": 8,
       "saidas_mes": 1,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 3,
-      "valor_causa": 2710530.81
+      "valor_causa": 2890530.81
     },
     {
       "nome": "Sócios",
@@ -563,12 +563,12 @@
     },
     {
       "nome": "ES",
-      "andamento": 25,
-      "entradas_mes": 0,
+      "andamento": 26,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 3,
-      "valor_causa": 3514827.14
+      "valor_causa": 3694827.14
     },
     {
       "nome": "MA",
@@ -682,12 +682,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2876,
-      "entradas_mes": 80,
+      "andamento": 2877,
+      "entradas_mes": 81,
       "saidas_mes": 7,
       "entradas_mes_anterior": 275,
       "saidas_mes_anterior": 201,
-      "valor_causa": 831768533.33
+      "valor_causa": 831948533.33
     },
     {
       "nome": "Sentença",
@@ -982,12 +982,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 8,
-      "entradas_mes": 6,
+      "andamento": 9,
+      "entradas_mes": 7,
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
-      "valor_causa": 2563467.33
+      "valor_causa": 2743467.33
     },
     {
       "fase": "Instrução",
@@ -1522,6 +1522,15 @@
       "valor_causa": 11683612.66
     },
     {
+      "nome": "Bruno Tanganelli Farah(BTF)",
+      "andamento": 22,
+      "entradas_mes": 3,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 14,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 8610687.37
+    },
+    {
       "nome": "Richard Ruan Leo da Silva(RRU)",
       "andamento": 21,
       "entradas_mes": 1,
@@ -1529,15 +1538,6 @@
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 0,
       "valor_causa": 4369631.67
-    },
-    {
-      "nome": "Bruno Tanganelli Farah(BTF)",
-      "andamento": 21,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 14,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 8430687.37
     },
     {
       "nome": "Keyla Maria Barbosa Silva Moraes(KBM)",
@@ -1720,12 +1720,12 @@
     },
     {
       "nome": "HERINGER",
-      "andamento": 334,
-      "entradas_mes": 1,
+      "andamento": 335,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 11,
-      "valor_causa": 45474527.26,
+      "valor_causa": 45654527.26,
       "alerta_entrada": false
     },
     {
@@ -3655,6 +3655,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "HERINGER",
+      "andamento": 2,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 181000.0,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "CBC CARTUCHOS BRASIL",
       "andamento": 1,
       "entradas_mes": 1,
@@ -3684,17 +3695,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 12478.97,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "HERINGER",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 1000.0,
       "alerta_entrada": false
     },
     {
@@ -4397,6 +4397,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Bruno Tanganelli Farah(BTF)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 180000.0
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Bianca Bolanhi Camacho(BBO)",
       "andamento": 1,
       "entradas_mes": 0,
@@ -4850,12 +4860,12 @@
     {
       "estado": "ES",
       "cliente": "HERINGER",
-      "andamento": 16,
-      "entradas_mes": 0,
+      "andamento": 17,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 3379200.22
+      "valor_causa": 3559200.22
     },
     {
       "estado": "ES",
@@ -7835,6 +7845,11 @@
       "numero_processo": "0001007-20.2026.5.09.0073",
       "cliente": "COMPANHIA AIX",
       "profissional": "Erik Mota Coppi(ECO)"
+    },
+    {
+      "numero_processo": "0000692-19.2022.5.17.0005",
+      "cliente": "HERINGER",
+      "profissional": "Bruno Tanganelli Farah(BTF)"
     },
     {
       "numero_processo": "0003841-21.2026.5.09.0000",
