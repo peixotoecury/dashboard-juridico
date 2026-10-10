@@ -1,24 +1,19 @@
 {
-  "atualizado_em": "2026-10-09T20:00:30",
+  "atualizado_em": "2026-10-10T08:00:23",
   "kpis": {
-    "total_andamento": 7595,
-    "entradas_hoje": 6,
-    "saidas_hoje": 1,
-    "entradas_ontem": 16,
-    "saidas_ontem": 3,
+    "total_andamento": 7593,
+    "entradas_hoje": 0,
+    "saidas_hoje": 0,
+    "entradas_ontem": 6,
+    "saidas_ontem": 1,
     "entradas_mes": 95,
     "saidas_mes": 30,
     "entradas_mes_anterior": 320,
-    "saidas_mes_anterior": 1013,
-    "valor_causa_total": 1753563421.74,
+    "saidas_mes_anterior": 1015,
+    "valor_causa_total": 1753389529.07,
     "saldo_mes": 65
   },
   "serie_diaria": [
-    {
-      "data": "2026-08-11",
-      "entradas": 4,
-      "saidas": 4
-    },
     {
       "data": "2026-08-12",
       "entradas": 13,
@@ -232,12 +227,12 @@
     {
       "data": "2026-09-23",
       "entradas": 20,
-      "saidas": 6
+      "saidas": 7
     },
     {
       "data": "2026-09-24",
       "entradas": 21,
-      "saidas": 12
+      "saidas": 13
     },
     {
       "data": "2026-09-25",
@@ -313,17 +308,22 @@
       "data": "2026-10-09",
       "entradas": 6,
       "saidas": 1
+    },
+    {
+      "data": "2026-10-10",
+      "entradas": 0,
+      "saidas": 0
     }
   ],
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2115,
+      "andamento": 2113,
       "entradas_mes": 15,
       "saidas_mes": 6,
       "entradas_mes_anterior": 117,
-      "saidas_mes_anterior": 91,
-      "valor_causa": 470467578.46
+      "saidas_mes_anterior": 93,
+      "valor_causa": 470293685.79
     },
     {
       "nome": "Grupo E1",
@@ -446,12 +446,12 @@
     },
     {
       "nome": "MG",
-      "andamento": 546,
+      "andamento": 544,
       "entradas_mes": 3,
       "saidas_mes": 2,
       "entradas_mes_anterior": 36,
-      "saidas_mes_anterior": 19,
-      "valor_causa": 133871316.36
+      "saidas_mes_anterior": 21,
+      "valor_causa": 133697423.69
     },
     {
       "nome": "PR",
@@ -700,7 +700,7 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2969,
+      "andamento": 2970,
       "entradas_mes": 1,
       "saidas_mes": 5,
       "entradas_mes_anterior": 3,
@@ -709,12 +709,12 @@
     },
     {
       "nome": "Execução",
-      "andamento": 910,
+      "andamento": 907,
       "entradas_mes": 0,
       "saidas_mes": 4,
       "entradas_mes_anterior": 2,
-      "saidas_mes_anterior": 354,
-      "valor_causa": 129130228.28
+      "saidas_mes_anterior": 356,
+      "valor_causa": 128956335.61
     }
   ],
   "por_fase_outras": 404,
@@ -822,17 +822,17 @@
     {
       "fase": "Execução",
       "grupo": "Grupo E2",
-      "andamento": 344,
+      "andamento": 342,
       "entradas_mes": 0,
       "saidas_mes": 1,
       "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 34,
-      "valor_causa": 51896329.11
+      "saidas_mes_anterior": 36,
+      "valor_causa": 51722436.44
     },
     {
       "fase": "Execução",
       "grupo": "Grupo E1",
-      "andamento": 192,
+      "andamento": 191,
       "entradas_mes": 0,
       "saidas_mes": 1,
       "entradas_mes_anterior": 1,
@@ -1112,7 +1112,7 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo E1",
-      "andamento": 754,
+      "andamento": 755,
       "entradas_mes": 0,
       "saidas_mes": 3,
       "entradas_mes_anterior": 2,
@@ -1271,12 +1271,12 @@
     },
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 358,
+      "andamento": 357,
       "entradas_mes": 2,
       "saidas_mes": 2,
       "entradas_mes_anterior": 30,
-      "saidas_mes_anterior": 26,
-      "valor_causa": 49451154.44
+      "saidas_mes_anterior": 27,
+      "valor_causa": 49354554.44
     },
     {
       "nome": "Letícia Meneghini Fontes (LMI)",
@@ -1432,15 +1432,6 @@
       "valor_causa": 56375160.76
     },
     {
-      "nome": "Lucas Willott Pereira (LWP)",
-      "andamento": 233,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 2,
-      "saidas_mes_anterior": 9,
-      "valor_causa": 27794040.03
-    },
-    {
       "nome": "Vinícius Ronchi Arruda(VRO)",
       "andamento": 233,
       "entradas_mes": 2,
@@ -1448,6 +1439,15 @@
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 3,
       "valor_causa": 40549460.18
+    },
+    {
+      "nome": "Lucas Willott Pereira (LWP)",
+      "andamento": 232,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 2,
+      "saidas_mes_anterior": 10,
+      "valor_causa": 27716747.36
     },
     {
       "nome": "Tamires Lins Costa(TLI)",
@@ -1670,12 +1670,12 @@
     },
     {
       "nome": "BP BIOENERGIA",
-      "andamento": 754,
+      "andamento": 752,
       "entradas_mes": 4,
       "saidas_mes": 3,
       "entradas_mes_anterior": 20,
-      "saidas_mes_anterior": 31,
-      "valor_causa": 210436991.96,
+      "saidas_mes_anterior": 33,
+      "valor_causa": 210263099.29,
       "alerta_entrada": false
     },
     {
@@ -1716,7 +1716,7 @@
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 10,
       "valor_causa": 73190336.75,
-      "alerta_entrada": true
+      "alerta_entrada": false
     },
     {
       "nome": "HERINGER",
@@ -3073,12 +3073,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "BP BIOENERGIA",
-      "andamento": 754,
+      "andamento": 752,
       "entradas_mes": 4,
       "saidas_mes": 3,
       "entradas_mes_anterior": 20,
-      "saidas_mes_anterior": 31,
-      "valor_causa": 210436991.96,
+      "saidas_mes_anterior": 33,
+      "valor_causa": 210263099.29,
       "alerta_entrada": false
     },
     {
@@ -4226,12 +4226,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 358,
+      "andamento": 357,
       "entradas_mes": 2,
       "saidas_mes": 2,
       "entradas_mes_anterior": 30,
-      "saidas_mes_anterior": 26,
-      "valor_causa": 49451154.44
+      "saidas_mes_anterior": 27,
+      "valor_causa": 49354554.44
     },
     {
       "grupo": "Grupo E2",
@@ -4266,12 +4266,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Lucas Willott Pereira (LWP)",
-      "andamento": 233,
+      "andamento": 232,
       "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
-      "saidas_mes_anterior": 9,
-      "valor_causa": 27794040.03
+      "saidas_mes_anterior": 10,
+      "valor_causa": 27716747.36
     },
     {
       "grupo": "Grupo E2",
@@ -5028,12 +5028,12 @@
     {
       "estado": "MG",
       "cliente": "BP BIOENERGIA",
-      "andamento": 217,
+      "andamento": 215,
       "entradas_mes": 2,
       "saidas_mes": 1,
       "entradas_mes_anterior": 7,
-      "saidas_mes_anterior": 3,
-      "valor_causa": 82314528.54
+      "saidas_mes_anterior": 5,
+      "valor_causa": 82140635.87
     },
     {
       "estado": "MG",
@@ -7747,16 +7747,6 @@
     }
   ],
   "clientes_com_alerta": [
-    {
-      "nome": "MAHLE METAL - MOGI",
-      "andamento": 362,
-      "entradas_mes": 6,
-      "saidas_mes": 3,
-      "entradas_mes_anterior": 13,
-      "saidas_mes_anterior": 10,
-      "valor_causa": 73190336.75,
-      "alerta_entrada": true
-    },
     {
       "nome": "VITERRA RIO VERMELHO",
       "andamento": 318,
