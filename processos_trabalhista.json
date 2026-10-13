@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-13T16:15:31",
+  "atualizado_em": "2026-10-13T16:30:29",
   "kpis": {
-    "total_andamento": 7589,
-    "entradas_hoje": 16,
+    "total_andamento": 7593,
+    "entradas_hoje": 20,
     "saidas_hoje": 8,
     "entradas_ontem": 0,
     "saidas_ontem": 2,
-    "entradas_mes": 111,
+    "entradas_mes": 115,
     "saidas_mes": 48,
     "entradas_mes_anterior": 320,
     "saidas_mes_anterior": 1018,
-    "valor_causa_total": 1754943308.58,
-    "saldo_mes": 63
+    "valor_causa_total": 1755444557.53,
+    "saldo_mes": 67
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-10-13",
-      "entradas": 16,
+      "entradas": 20,
       "saidas": 8
     }
   ],
@@ -399,12 +399,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 9,
-      "entradas_mes": 7,
+      "andamento": 13,
+      "entradas_mes": 11,
       "saidas_mes": 1,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 3,
-      "valor_causa": 1703142.74
+      "valor_causa": 2204391.69
     },
     {
       "nome": "Sócios",
@@ -446,12 +446,12 @@
     },
     {
       "nome": "MG",
-      "andamento": 543,
-      "entradas_mes": 3,
+      "andamento": 545,
+      "entradas_mes": 5,
       "saidas_mes": 3,
       "entradas_mes_anterior": 36,
       "saidas_mes_anterior": 21,
-      "valor_causa": 133611231.19
+      "valor_causa": 133692480.14
     },
     {
       "nome": "PR",
@@ -553,6 +553,15 @@
       "valor_causa": 4151465.81
     },
     {
+      "nome": "ES",
+      "andamento": 28,
+      "entradas_mes": 3,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 3,
+      "saidas_mes_anterior": 3,
+      "valor_causa": 4114827.14
+    },
+    {
       "nome": "DF",
       "andamento": 28,
       "entradas_mes": 1,
@@ -560,15 +569,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 16362883.23
-    },
-    {
-      "nome": "ES",
-      "andamento": 26,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 3,
-      "saidas_mes_anterior": 3,
-      "valor_causa": 3694827.14
     },
     {
       "nome": "MA",
@@ -682,12 +682,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2880,
-      "entradas_mes": 98,
+      "andamento": 2884,
+      "entradas_mes": 102,
       "saidas_mes": 9,
       "entradas_mes_anterior": 269,
       "saidas_mes_anterior": 201,
-      "valor_causa": 831125279.0
+      "valor_causa": 831626527.95
     },
     {
       "nome": "Sentença",
@@ -972,12 +972,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 8,
-      "entradas_mes": 7,
+      "andamento": 12,
+      "entradas_mes": 11,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 1665142.74
+      "valor_causa": 2166391.69
     },
     {
       "fase": "Instrução",
@@ -1261,12 +1261,12 @@
     },
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 355,
-      "entradas_mes": 2,
+      "andamento": 357,
+      "entradas_mes": 4,
       "saidas_mes": 3,
       "entradas_mes_anterior": 30,
       "saidas_mes_anterior": 27,
-      "valor_causa": 49245284.45
+      "valor_causa": 49326533.4
     },
     {
       "nome": "Letícia Meneghini Fontes (LMI)",
@@ -1369,12 +1369,12 @@
     },
     {
       "nome": "Rafael Camargo Felisbino(RCF)",
-      "andamento": 269,
-      "entradas_mes": 8,
+      "andamento": 271,
+      "entradas_mes": 10,
       "saidas_mes": 2,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 1,
-      "valor_causa": 109090583.9
+      "valor_causa": 109510583.9
     },
     {
       "nome": "Anna Carolina Balbino Gatti Baani(ANB)",
@@ -1719,12 +1719,12 @@
     },
     {
       "nome": "HERINGER",
-      "andamento": 339,
-      "entradas_mes": 6,
+      "andamento": 341,
+      "entradas_mes": 8,
       "saidas_mes": 0,
       "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 11,
-      "valor_causa": 45654527.26,
+      "valor_causa": 46074527.26,
       "alerta_entrada": false
     },
     {
@@ -1769,12 +1769,12 @@
     },
     {
       "nome": "EUROCHEM SALITRE",
-      "andamento": 160,
-      "entradas_mes": 0,
+      "andamento": 162,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 20,
       "saidas_mes_anterior": 11,
-      "valor_causa": 38294777.87,
+      "valor_causa": 38376026.82,
       "alerta_entrada": false
     },
     {
@@ -3643,6 +3643,28 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "HERINGER",
+      "andamento": 3,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 421000.0,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "EUROCHEM SALITRE",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 81248.95,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "BRIDGESTONE",
       "andamento": 1,
       "entradas_mes": 1,
@@ -3683,17 +3705,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 436301.85,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "HERINGER",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 1000.0,
       "alerta_entrada": false
     },
     {
@@ -4333,6 +4344,26 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Rafael Camargo Felisbino(RCF)",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 420000.0
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Camila Alves Magalhães de Paula(CAL)",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 81248.95
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Rafael Rocha Ferreira(RFE)",
       "andamento": 1,
       "entradas_mes": 1,
@@ -4806,12 +4837,12 @@
     {
       "estado": "ES",
       "cliente": "HERINGER",
-      "andamento": 17,
-      "entradas_mes": 1,
+      "andamento": 19,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 3559200.22
+      "valor_causa": 3979200.22
     },
     {
       "estado": "ES",
@@ -5016,12 +5047,12 @@
     {
       "estado": "MG",
       "cliente": "EUROCHEM SALITRE",
-      "andamento": 110,
-      "entradas_mes": 0,
+      "andamento": 112,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 14,
       "saidas_mes_anterior": 9,
-      "valor_causa": 25050702.6
+      "valor_causa": 25131951.55
     },
     {
       "estado": "MG",
@@ -7776,6 +7807,26 @@
       "numero_processo": "0011626-76.2026.5.15.0126",
       "cliente": "EUROCHEM FTO MATRIZ",
       "profissional": "Rafael Yepez do Lago(RYL)"
+    },
+    {
+      "numero_processo": "0010940-40.2026.5.03.0184",
+      "cliente": "EUROCHEM SALITRE",
+      "profissional": "Camila Alves Magalhães de Paula(CAL)"
+    },
+    {
+      "numero_processo": "0011248-97.2026.5.03.0080",
+      "cliente": "EUROCHEM SALITRE",
+      "profissional": "Camila Alves Magalhães de Paula(CAL)"
+    },
+    {
+      "numero_processo": "0001774-74.2025.5.17.0007",
+      "cliente": "HERINGER",
+      "profissional": "Rafael Camargo Felisbino(RCF)"
+    },
+    {
+      "numero_processo": "0000090-79.2023.5.17.0009",
+      "cliente": "HERINGER",
+      "profissional": "Rafael Camargo Felisbino(RCF)"
     },
     {
       "numero_processo": "0003841-21.2026.5.09.0000",
