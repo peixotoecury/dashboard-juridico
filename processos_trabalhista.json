@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-13T11:00:35",
+  "atualizado_em": "2026-10-13T11:15:27",
   "kpis": {
     "total_andamento": 7576,
     "entradas_hoje": 0,
@@ -327,12 +327,12 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1809,
-      "entradas_mes": 19,
+      "andamento": 1811,
+      "entradas_mes": 21,
       "saidas_mes": 17,
       "entradas_mes_anterior": 60,
       "saidas_mes_anterior": 46,
-      "valor_causa": 308855761.59
+      "valor_causa": 309164178.55
     },
     {
       "nome": "Grupo B1",
@@ -354,21 +354,21 @@
     },
     {
       "nome": "Grupo C",
-      "andamento": 697,
+      "andamento": 698,
       "entradas_mes": 29,
       "saidas_mes": 2,
-      "entradas_mes_anterior": 39,
+      "entradas_mes_anterior": 40,
       "saidas_mes_anterior": 12,
-      "valor_causa": 254133870.1
+      "valor_causa": 254812872.32
     },
     {
       "nome": "Grupo B3",
-      "andamento": 568,
-      "entradas_mes": 14,
+      "andamento": 569,
+      "entradas_mes": 15,
       "saidas_mes": 1,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 11,
-      "valor_causa": 110877651.99
+      "valor_causa": 110924819.92
     },
     {
       "nome": "Grupo A3",
@@ -398,15 +398,6 @@
       "valor_causa": 11721158.38
     },
     {
-      "nome": "Sem grupo",
-      "andamento": 6,
-      "entradas_mes": 3,
-      "saidas_mes": 1,
-      "entradas_mes_anterior": 2,
-      "saidas_mes_anterior": 3,
-      "valor_causa": 1073587.11
-    },
-    {
       "nome": "Sócios",
       "andamento": 3,
       "entradas_mes": 0,
@@ -414,6 +405,15 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
+    },
+    {
+      "nome": "Sem grupo",
+      "andamento": 2,
+      "entradas_mes": 0,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 3,
+      "valor_causa": 39000.0
     },
     {
       "nome": "Grupo D1",
@@ -673,8 +673,8 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 406,
-      "entradas_mes": 8,
+      "andamento": 407,
+      "entradas_mes": 9,
       "saidas_mes": 4,
       "entradas_mes_anterior": 34,
       "saidas_mes_anterior": 10,
@@ -682,8 +682,8 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2868,
-      "entradas_mes": 83,
+      "andamento": 2867,
+      "entradas_mes": 82,
       "saidas_mes": 9,
       "entradas_mes_anterior": 269,
       "saidas_mes_anterior": 201,
@@ -742,12 +742,12 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo E1",
-      "andamento": 60,
-      "entradas_mes": 5,
+      "andamento": 62,
+      "entradas_mes": 7,
       "saidas_mes": 0,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 0,
-      "valor_causa": 15825766.31
+      "valor_causa": 15934829.79
     },
     {
       "fase": "Ajuizamento",
@@ -808,16 +808,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
-    },
-    {
-      "fase": "Ajuizamento",
-      "grupo": "Sem grupo",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 1,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 109063.48
     },
     {
       "fase": "Execução",
@@ -917,7 +907,7 @@
       "saidas_mes": 1,
       "entradas_mes_anterior": 28,
       "saidas_mes_anterior": 10,
-      "valor_causa": 162171568.72
+      "valor_causa": 162370922.2
     },
     {
       "fase": "Instrução",
@@ -932,22 +922,22 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo C",
-      "andamento": 431,
+      "andamento": 432,
       "entradas_mes": 29,
       "saidas_mes": 2,
-      "entradas_mes_anterior": 38,
+      "entradas_mes_anterior": 39,
       "saidas_mes_anterior": 8,
-      "valor_causa": 164608197.6
+      "valor_causa": 165287199.82
     },
     {
       "fase": "Instrução",
       "grupo": "Grupo B3",
-      "andamento": 143,
-      "entradas_mes": 13,
+      "andamento": 144,
+      "entradas_mes": 14,
       "saidas_mes": 1,
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 5,
-      "valor_causa": 27029008.69
+      "valor_causa": 27076176.62
     },
     {
       "fase": "Instrução",
@@ -992,12 +982,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 4,
-      "entradas_mes": 2,
+      "andamento": 1,
+      "entradas_mes": 0,
       "saidas_mes": 0,
-      "entradas_mes_anterior": 2,
+      "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 926523.63
+      "valor_causa": 1000.0
     },
     {
       "fase": "Outras",
@@ -2334,12 +2324,12 @@
     {
       "grupo": "Grupo B3",
       "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 232,
-      "entradas_mes": 9,
+      "andamento": 233,
+      "entradas_mes": 10,
       "saidas_mes": 1,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 7,
-      "valor_causa": 29573062.76,
+      "valor_causa": 29620230.69,
       "alerta_entrada": true
     },
     {
@@ -2499,12 +2489,12 @@
     {
       "grupo": "Grupo C",
       "cliente": "McCANN-ERICKSON",
-      "andamento": 15,
+      "andamento": 16,
       "entradas_mes": 0,
       "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
+      "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
-      "valor_causa": 6323652.27,
+      "valor_causa": 7002654.49,
       "alerta_entrada": false
     },
     {
@@ -2851,12 +2841,12 @@
     {
       "grupo": "Grupo E1",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 360,
-      "entradas_mes": 5,
+      "andamento": 361,
+      "entradas_mes": 6,
       "saidas_mes": 4,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 10,
-      "valor_causa": 72937906.27,
+      "valor_causa": 73137259.75,
       "alerta_entrada": false
     },
     {
@@ -2949,6 +2939,17 @@
     },
     {
       "grupo": "Grupo E1",
+      "cliente": "MAHLE - COMPRESSORES",
+      "andamento": 3,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 2,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 767202.82,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Grupo E1",
       "cliente": "PEIXOTO E CURY",
       "andamento": 2,
       "entradas_mes": 0,
@@ -3011,17 +3012,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 627758.89,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Grupo E1",
-      "cliente": "MAHLE - COMPRESSORES",
-      "andamento": 2,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 2,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 658139.34,
       "alerta_entrada": false
     },
     {
@@ -3642,17 +3632,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 47167.93,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "HERINGER",
       "andamento": 1,
       "entradas_mes": 0,
@@ -3664,17 +3643,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "McCANN-ERICKSON",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 679002.22,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "MULTICEL",
       "andamento": 1,
       "entradas_mes": 0,
@@ -3682,28 +3650,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 38000.0,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "MAHLE METAL - MOGI",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 199353.48,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "MAHLE - COMPRESSORES",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 109063.48,
       "alerta_entrada": false
     },
     {
@@ -3963,12 +3909,12 @@
     {
       "grupo": "Grupo B3",
       "profissional": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 343,
-      "entradas_mes": 11,
+      "andamento": 344,
+      "entradas_mes": 12,
       "saidas_mes": 1,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 7,
-      "valor_causa": 64157924.0
+      "valor_causa": 64205091.93
     },
     {
       "grupo": "Grupo B3",
@@ -4013,12 +3959,12 @@
     {
       "grupo": "Grupo C",
       "profissional": "Erik Mota Coppi(ECO)",
-      "andamento": 237,
+      "andamento": 238,
       "entradas_mes": 11,
       "saidas_mes": 1,
-      "entradas_mes_anterior": 13,
+      "entradas_mes_anterior": 14,
       "saidas_mes_anterior": 12,
-      "valor_causa": 48216910.8
+      "valor_causa": 48895913.02
     },
     {
       "grupo": "Grupo C",
@@ -4103,12 +4049,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Paloma da Silva Santos(PSI)",
-      "andamento": 253,
-      "entradas_mes": 7,
+      "andamento": 254,
+      "entradas_mes": 8,
       "saidas_mes": 3,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 10,
-      "valor_causa": 56175807.28
+      "valor_causa": 56375160.76
     },
     {
       "grupo": "Grupo E1",
@@ -4123,12 +4069,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Tamires Lins Costa(TLI)",
-      "andamento": 221,
-      "entradas_mes": 1,
+      "andamento": 222,
+      "entradas_mes": 2,
       "saidas_mes": 5,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 5,
-      "valor_causa": 28189260.13
+      "valor_causa": 28298323.61
     },
     {
       "grupo": "Grupo E1",
@@ -4322,16 +4268,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 47167.93
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Bianca Bolanhi Camacho(BBO)",
       "andamento": 1,
       "entradas_mes": 0,
@@ -4342,16 +4278,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Erik Mota Coppi(ECO)",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 679002.22
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Luiz Vicente de Carvalho(LVC) ; Lisandra Melo Alves(LMS)",
       "andamento": 1,
       "entradas_mes": 0,
@@ -4359,26 +4285,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 38000.0
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Paloma da Silva Santos(PSI)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 199353.48
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Tamires Lins Costa(TLI)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 109063.48
     },
     {
       "grupo": "Sócios",
@@ -7737,34 +7643,14 @@
   ],
   "sem_grupo_processos": [
     {
-      "numero_processo": "1001504-65.2026.5.02.0411",
-      "cliente": "CBC CARTUCHOS BRASIL",
-      "profissional": "Letícia Meneghini Fontes (LMI)"
-    },
-    {
       "numero_processo": "0003841-21.2026.5.09.0000",
       "cliente": "HERINGER",
       "profissional": "Bianca Bolanhi Camacho(BBO)"
     },
     {
-      "numero_processo": "0012008-94.2026.5.15.0053",
-      "cliente": "MAHLE - COMPRESSORES",
-      "profissional": "Tamires Lins Costa(TLI)"
-    },
-    {
-      "numero_processo": "0011838-68.2026.5.15.0071",
-      "cliente": "MAHLE METAL - MOGI",
-      "profissional": "Paloma da Silva Santos(PSI)"
-    },
-    {
       "numero_processo": "1002426-59.2017.5.02.0464",
       "cliente": "MULTICEL",
       "profissional": "Luiz Vicente de Carvalho(LVC) ; Lisandra Melo Alves(LMS)"
-    },
-    {
-      "numero_processo": "0101281-74.2026.5.01.0053",
-      "cliente": "McCANN-ERICKSON",
-      "profissional": "Erik Mota Coppi(ECO)"
     }
   ]
 }
