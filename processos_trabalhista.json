@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-13T16:45:28",
+  "atualizado_em": "2026-10-13T17:00:32",
   "kpis": {
-    "total_andamento": 7594,
-    "entradas_hoje": 21,
+    "total_andamento": 7596,
+    "entradas_hoje": 23,
     "saidas_hoje": 8,
     "entradas_ontem": 0,
     "saidas_ontem": 2,
-    "entradas_mes": 116,
+    "entradas_mes": 118,
     "saidas_mes": 48,
     "entradas_mes_anterior": 320,
     "saidas_mes_anterior": 1018,
-    "valor_causa_total": 1755456601.86,
-    "saldo_mes": 68
+    "valor_causa_total": 1759391452.41,
+    "saldo_mes": 70
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-10-13",
-      "entradas": 21,
+      "entradas": 23,
       "saidas": 8
     }
   ],
@@ -399,12 +399,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 14,
-      "entradas_mes": 12,
+      "andamento": 16,
+      "entradas_mes": 14,
       "saidas_mes": 1,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 3,
-      "valor_causa": 2216436.02
+      "valor_causa": 6151286.57
     },
     {
       "nome": "Sócios",
@@ -455,12 +455,12 @@
     },
     {
       "nome": "PR",
-      "andamento": 247,
-      "entradas_mes": 12,
+      "andamento": 248,
+      "entradas_mes": 13,
       "saidas_mes": 0,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 7,
-      "valor_causa": 54242339.83
+      "valor_causa": 54312489.83
     },
     {
       "nome": "RS",
@@ -500,12 +500,12 @@
     },
     {
       "nome": "GO",
-      "andamento": 96,
-      "entradas_mes": 3,
+      "andamento": 97,
+      "entradas_mes": 4,
       "saidas_mes": 1,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 15,
-      "valor_causa": 8362484.74
+      "valor_causa": 12227185.29
     },
     {
       "nome": "MT",
@@ -682,12 +682,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2885,
-      "entradas_mes": 103,
+      "andamento": 2886,
+      "entradas_mes": 105,
       "saidas_mes": 9,
       "entradas_mes_anterior": 269,
       "saidas_mes_anterior": 201,
-      "valor_causa": 831638572.28
+      "valor_causa": 835573422.83
     },
     {
       "nome": "Sentença",
@@ -700,7 +700,7 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2969,
+      "andamento": 2970,
       "entradas_mes": 1,
       "saidas_mes": 10,
       "entradas_mes_anterior": 3,
@@ -932,7 +932,7 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B3",
-      "andamento": 145,
+      "andamento": 144,
       "entradas_mes": 15,
       "saidas_mes": 1,
       "entradas_mes_anterior": 16,
@@ -961,6 +961,16 @@
     },
     {
       "fase": "Instrução",
+      "grupo": "Sem grupo",
+      "andamento": 15,
+      "entradas_mes": 14,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 6113286.57
+    },
+    {
+      "fase": "Instrução",
       "grupo": "Grupo A2",
       "andamento": 14,
       "entradas_mes": 1,
@@ -968,16 +978,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
       "valor_causa": 7720799.28
-    },
-    {
-      "fase": "Instrução",
-      "grupo": "Sem grupo",
-      "andamento": 13,
-      "entradas_mes": 12,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 2178436.02
     },
     {
       "fase": "Instrução",
@@ -1132,7 +1132,7 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo B3",
-      "andamento": 248,
+      "andamento": 249,
       "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
@@ -1287,6 +1287,15 @@
       "valor_causa": 59174322.48
     },
     {
+      "nome": "Bianca Bolanhi Camacho(BBO)",
+      "andamento": 300,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 13,
+      "saidas_mes_anterior": 359,
+      "valor_causa": 33750005.02
+    },
+    {
       "nome": "Joice Ramos Miranda(JRM)",
       "andamento": 299,
       "entradas_mes": 4,
@@ -1294,15 +1303,6 @@
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 6,
       "valor_causa": 75459193.45
-    },
-    {
-      "nome": "Bianca Bolanhi Camacho(BBO)",
-      "andamento": 299,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 13,
-      "saidas_mes_anterior": 359,
-      "valor_causa": 33679855.02
     },
     {
       "nome": "Tamara Silva Marcílio(TAM)",
@@ -1386,6 +1386,15 @@
       "valor_causa": 64871603.63
     },
     {
+      "nome": "Erik Mota Coppi(ECO)",
+      "andamento": 256,
+      "entradas_mes": 13,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 15,
+      "saidas_mes_anterior": 12,
+      "valor_causa": 52793092.57
+    },
+    {
       "nome": "Mariana Borges de Menezes Fávaro(MBF)",
       "andamento": 256,
       "entradas_mes": 1,
@@ -1393,15 +1402,6 @@
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 6,
       "valor_causa": 33772982.58
-    },
-    {
-      "nome": "Erik Mota Coppi(ECO)",
-      "andamento": 255,
-      "entradas_mes": 12,
-      "saidas_mes": 1,
-      "entradas_mes_anterior": 15,
-      "saidas_mes_anterior": 12,
-      "valor_causa": 48928392.02
     },
     {
       "nome": "Paloma da Silva Santos(PSI)",
@@ -1719,12 +1719,12 @@
     },
     {
       "nome": "HERINGER",
-      "andamento": 341,
-      "entradas_mes": 8,
+      "andamento": 342,
+      "entradas_mes": 9,
       "saidas_mes": 0,
       "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 11,
-      "valor_causa": 46074527.26,
+      "valor_causa": 46144677.26,
       "alerta_entrada": false
     },
     {
@@ -3632,6 +3632,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "HERINGER",
+      "andamento": 4,
+      "entradas_mes": 3,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 491150.0,
+      "alerta_entrada": true
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "EMBRAER",
       "andamento": 3,
       "entradas_mes": 3,
@@ -3640,17 +3651,6 @@
       "saidas_mes_anterior": 0,
       "valor_causa": 765016.82,
       "alerta_entrada": true
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "HERINGER",
-      "andamento": 3,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 421000.0,
-      "alerta_entrada": false
     },
     {
       "grupo": "Sem grupo",
@@ -3665,6 +3665,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "UHE SÃO SIMÃO",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 3897179.55,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "BRIDGESTONE",
       "andamento": 1,
       "entradas_mes": 1,
@@ -3672,17 +3683,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 9760.0,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "UHE SÃO SIMÃO",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 32479.0,
       "alerta_entrada": false
     },
     {
@@ -4354,6 +4354,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Erik Mota Coppi(ECO)",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 3897179.55
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Rafael Camargo Felisbino(RCF)",
       "andamento": 2,
       "entradas_mes": 2,
@@ -4364,6 +4374,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Bianca Bolanhi Camacho(BBO)",
+      "andamento": 2,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 71150.0
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Rafael Rocha Ferreira(RFE)",
       "andamento": 1,
       "entradas_mes": 1,
@@ -4371,16 +4391,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 9760.0
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Erik Mota Coppi(ECO)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 32479.0
     },
     {
       "grupo": "Sem grupo",
@@ -4401,16 +4411,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 436301.85
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Bianca Bolanhi Camacho(BBO)",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 1000.0
     },
     {
       "grupo": "Sem grupo",
@@ -4927,12 +4927,12 @@
     {
       "estado": "GO",
       "cliente": "UHE SÃO SIMÃO",
-      "andamento": 14,
-      "entradas_mes": 1,
+      "andamento": 15,
+      "entradas_mes": 2,
       "saidas_mes": 1,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 7,
-      "valor_causa": 801946.18
+      "valor_causa": 4666646.73
     },
     {
       "estado": "GO",
@@ -5627,12 +5627,12 @@
     {
       "estado": "PR",
       "cliente": "HERINGER",
-      "andamento": 49,
-      "entradas_mes": 0,
+      "andamento": 50,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 2,
-      "valor_causa": 3390955.24
+      "valor_causa": 3461105.24
     },
     {
       "estado": "PR",
@@ -7834,6 +7834,11 @@
       "profissional": "Rafael Camargo Felisbino(RCF)"
     },
     {
+      "numero_processo": "0001097-57.2026.5.09.0322",
+      "cliente": "HERINGER",
+      "profissional": "Bianca Bolanhi Camacho(BBO)"
+    },
+    {
       "numero_processo": "0003841-21.2026.5.09.0000",
       "cliente": "HERINGER",
       "profissional": "Bianca Bolanhi Camacho(BBO)"
@@ -7845,6 +7850,11 @@
     },
     {
       "numero_processo": "0001209-71.2026.5.18.0129",
+      "cliente": "UHE SÃO SIMÃO",
+      "profissional": "Erik Mota Coppi(ECO)"
+    },
+    {
+      "numero_processo": "0000944-69.2026.5.18.0129",
       "cliente": "UHE SÃO SIMÃO",
       "profissional": "Erik Mota Coppi(ECO)"
     }
