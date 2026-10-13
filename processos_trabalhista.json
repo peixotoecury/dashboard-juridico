@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-13T12:30:31",
+  "atualizado_em": "2026-10-13T12:45:28",
   "kpis": {
-    "total_andamento": 7578,
-    "entradas_hoje": 2,
+    "total_andamento": 7580,
+    "entradas_hoje": 4,
     "saidas_hoje": 8,
     "entradas_ontem": 0,
     "saidas_ontem": 2,
-    "entradas_mes": 97,
+    "entradas_mes": 99,
     "saidas_mes": 48,
     "entradas_mes_anterior": 320,
     "saidas_mes_anterior": 1015,
-    "valor_causa_total": 1753392307.35,
-    "saldo_mes": 49
+    "valor_causa_total": 1753500108.8,
+    "saldo_mes": 51
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-10-13",
-      "entradas": 2,
+      "entradas": 4,
       "saidas": 8
     }
   ],
@@ -399,12 +399,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 4,
-      "entradas_mes": 2,
+      "andamento": 6,
+      "entradas_mes": 4,
       "saidas_mes": 1,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 3,
-      "valor_causa": 2175061.61
+      "valor_causa": 2282863.06
     },
     {
       "nome": "Sócios",
@@ -437,12 +437,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5751,
-      "entradas_mes": 52,
+      "andamento": 5752,
+      "entradas_mes": 53,
       "saidas_mes": 42,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 838,
-      "valor_causa": 1367500520.21
+      "valor_causa": 1367608321.66
     },
     {
       "nome": "MG",
@@ -518,8 +518,8 @@
     },
     {
       "nome": "—",
-      "andamento": 59,
-      "entradas_mes": 0,
+      "andamento": 60,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 4,
@@ -682,12 +682,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2869,
-      "entradas_mes": 84,
+      "andamento": 2871,
+      "entradas_mes": 86,
       "saidas_mes": 9,
       "entradas_mes_anterior": 269,
       "saidas_mes_anterior": 201,
-      "valor_causa": 830343759.15
+      "valor_causa": 830451560.6
     },
     {
       "nome": "Sentença",
@@ -711,7 +711,7 @@
       "nome": "Execução",
       "andamento": 901,
       "entradas_mes": 0,
-      "saidas_mes": 12,
+      "saidas_mes": 11,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 356,
       "valor_causa": 128020076.34
@@ -854,7 +854,7 @@
       "grupo": "Grupo B2",
       "andamento": 92,
       "entradas_mes": 0,
-      "saidas_mes": 3,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 15091830.44
@@ -971,6 +971,16 @@
     },
     {
       "fase": "Instrução",
+      "grupo": "Sem grupo",
+      "andamento": 5,
+      "entradas_mes": 4,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 2244863.06
+    },
+    {
+      "fase": "Instrução",
       "grupo": "Grupo A1",
       "andamento": 4,
       "entradas_mes": 0,
@@ -978,16 +988,6 @@
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
-    },
-    {
-      "fase": "Instrução",
-      "grupo": "Sem grupo",
-      "andamento": 3,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 2137061.61
     },
     {
       "fase": "Outras",
@@ -1034,7 +1034,7 @@
       "grupo": "Grupo B2",
       "andamento": 37,
       "entradas_mes": 0,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 12,
       "valor_causa": 3735551.29
@@ -1306,12 +1306,12 @@
     },
     {
       "nome": "Tamara Silva Marcílio(TAM)",
-      "andamento": 296,
-      "entradas_mes": 2,
+      "andamento": 297,
+      "entradas_mes": 3,
       "saidas_mes": 1,
       "entradas_mes_anterior": 21,
       "saidas_mes_anterior": 7,
-      "valor_causa": 79885353.05
+      "valor_causa": 79993154.5
     },
     {
       "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
@@ -1566,6 +1566,15 @@
       "valor_causa": 0.0
     },
     {
+      "nome": "—",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 0.0
+    },
+    {
       "nome": "Lucas Diniz Almeida(LDI)",
       "andamento": 1,
       "entradas_mes": 0,
@@ -1659,12 +1668,12 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1444,
-      "entradas_mes": 8,
+      "andamento": 1445,
+      "entradas_mes": 9,
       "saidas_mes": 2,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 42,
-      "valor_causa": 325389777.25,
+      "valor_causa": 325497578.7,
       "alerta_entrada": false
     },
     {
@@ -1719,8 +1728,8 @@
     },
     {
       "nome": "HERINGER",
-      "andamento": 335,
-      "entradas_mes": 2,
+      "andamento": 336,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 11,
@@ -3644,12 +3653,23 @@
     {
       "grupo": "Sem grupo",
       "cliente": "HERINGER",
-      "andamento": 1,
-      "entradas_mes": 0,
+      "andamento": 2,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
       "valor_causa": 1000.0,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "BRIDGESTONE",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 107801.45,
       "alerta_entrada": false
     },
     {
@@ -4296,6 +4316,26 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 678892.01
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Tamara Silva Marcílio(TAM)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 107801.45
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Sem grupo",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 0.0
     },
     {
       "grupo": "Sem grupo",
@@ -5431,6 +5471,16 @@
     },
     {
       "estado": "PE",
+      "cliente": "BP BIOENERGIA",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 132134.99
+    },
+    {
+      "estado": "PE",
       "cliente": "ROBERT BOSCH",
       "andamento": 1,
       "entradas_mes": 0,
@@ -5458,16 +5508,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 334620.03
-    },
-    {
-      "estado": "PE",
-      "cliente": "BP BIOENERGIA",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 132134.99
     },
     {
       "estado": "PI",
@@ -6262,12 +6302,12 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1416,
-      "entradas_mes": 8,
+      "andamento": 1417,
+      "entradas_mes": 9,
       "saidas_mes": 2,
       "entradas_mes_anterior": 52,
       "saidas_mes_anterior": 41,
-      "valor_causa": 313739732.73
+      "valor_causa": 313847534.18
     },
     {
       "estado": "SP",
@@ -7531,6 +7571,16 @@
     },
     {
       "estado": "—",
+      "cliente": "HERINGER",
+      "andamento": 2,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 0.0
+    },
+    {
+      "estado": "—",
       "cliente": "BP BIOENERGIA",
       "andamento": 2,
       "entradas_mes": 0,
@@ -7631,16 +7681,6 @@
     },
     {
       "estado": "—",
-      "cliente": "HERINGER",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 0.0
-    },
-    {
-      "estado": "—",
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "andamento": 1,
       "entradas_mes": 0,
@@ -7674,6 +7714,11 @@
   ],
   "sem_grupo_processos": [
     {
+      "numero_processo": "1002067-96.2026.5.02.0431",
+      "cliente": "BRIDGESTONE",
+      "profissional": "Tamara Silva Marcílio(TAM)"
+    },
+    {
       "numero_processo": "0011493-46.2026.5.15.0025",
       "cliente": "EMBRAER",
       "profissional": "Anna Carolina Balbino Gatti Baani(ANB)"
@@ -7682,6 +7727,11 @@
       "numero_processo": "0013403-47.2026.5.15.0013",
       "cliente": "EMBRAER",
       "profissional": "Vanessa de Cassia Castrequini Rosa(VCR)"
+    },
+    {
+      "numero_processo": "14152.157521/2022-22",
+      "cliente": "HERINGER",
+      "profissional": ""
     },
     {
       "numero_processo": "0003841-21.2026.5.09.0000",
