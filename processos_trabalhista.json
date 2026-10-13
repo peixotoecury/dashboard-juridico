@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-13T15:30:37",
+  "atualizado_em": "2026-10-13T15:45:30",
   "kpis": {
     "total_andamento": 7589,
     "entradas_hoje": 16,
@@ -354,12 +354,12 @@
     },
     {
       "nome": "Grupo C",
-      "andamento": 698,
-      "entradas_mes": 29,
+      "andamento": 699,
+      "entradas_mes": 30,
       "saidas_mes": 2,
       "entradas_mes_anterior": 40,
       "saidas_mes_anterior": 12,
-      "valor_causa": 254812872.32
+      "valor_causa": 254939723.05
     },
     {
       "nome": "Grupo B3",
@@ -399,12 +399,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 11,
-      "entradas_mes": 9,
+      "andamento": 10,
+      "entradas_mes": 8,
       "saidas_mes": 1,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 3,
-      "valor_causa": 1937794.92
+      "valor_causa": 1810944.19
     },
     {
       "nome": "Sócios",
@@ -922,12 +922,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo C",
-      "andamento": 432,
-      "entradas_mes": 29,
+      "andamento": 433,
+      "entradas_mes": 30,
       "saidas_mes": 2,
       "entradas_mes_anterior": 39,
       "saidas_mes_anterior": 8,
-      "valor_causa": 165287199.82
+      "valor_causa": 165414050.55
     },
     {
       "fase": "Instrução",
@@ -972,12 +972,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 10,
-      "entradas_mes": 9,
+      "andamento": 9,
+      "entradas_mes": 8,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 1899794.92
+      "valor_causa": 1772944.19
     },
     {
       "fase": "Instrução",
@@ -2631,6 +2631,17 @@
     },
     {
       "grupo": "Grupo C",
+      "cliente": "CASA DO SABER",
+      "andamento": 2,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 362753.96,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Grupo C",
       "cliente": "SINDIGÁS",
       "andamento": 2,
       "entradas_mes": 0,
@@ -2759,17 +2770,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 1000000.0,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Grupo C",
-      "cliente": "CASA DO SABER",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 235903.23,
       "alerta_entrada": false
     },
     {
@@ -3654,17 +3654,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "CASA DO SABER",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 126850.73,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "UHE SÃO SIMÃO",
       "andamento": 1,
       "entradas_mes": 1,
@@ -4055,12 +4044,12 @@
     {
       "grupo": "Grupo C",
       "profissional": "Rafael Camargo Felisbino(RCF)",
-      "andamento": 132,
-      "entradas_mes": 2,
+      "andamento": 133,
+      "entradas_mes": 3,
       "saidas_mes": 1,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
-      "valor_causa": 29925620.33
+      "valor_causa": 30052471.06
     },
     {
       "grupo": "Grupo C",
@@ -4361,16 +4350,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 9760.0
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Rafael Camargo Felisbino(RCF)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 126850.73
     },
     {
       "grupo": "Sem grupo",
@@ -6956,16 +6935,6 @@
     },
     {
       "estado": "SP",
-      "cliente": "CASA DO SABER",
-      "andamento": 2,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 362753.96
-    },
-    {
-      "estado": "SP",
       "cliente": "MAHLE METAL-JUNDIAÍ",
       "andamento": 2,
       "entradas_mes": 1,
@@ -6973,6 +6942,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 304140.54
+    },
+    {
+      "estado": "SP",
+      "cliente": "CASA DO SABER",
+      "andamento": 2,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 362753.96
     },
     {
       "estado": "SP",
@@ -7792,11 +7771,6 @@
       "numero_processo": "1002065-17.2026.5.02.0435",
       "cliente": "BRIDGESTONE",
       "profissional": "Rafael Rocha Ferreira(RFE)"
-    },
-    {
-      "numero_processo": "1001225-47.2026.5.02.0066",
-      "cliente": "CASA DO SABER",
-      "profissional": "Rafael Camargo Felisbino(RCF)"
     },
     {
       "numero_processo": "0012278-25.2026.5.15.0084",
