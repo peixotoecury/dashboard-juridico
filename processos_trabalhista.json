@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-13T16:30:29",
+  "atualizado_em": "2026-10-13T16:45:28",
   "kpis": {
-    "total_andamento": 7593,
-    "entradas_hoje": 20,
+    "total_andamento": 7594,
+    "entradas_hoje": 21,
     "saidas_hoje": 8,
     "entradas_ontem": 0,
     "saidas_ontem": 2,
-    "entradas_mes": 115,
+    "entradas_mes": 116,
     "saidas_mes": 48,
     "entradas_mes_anterior": 320,
     "saidas_mes_anterior": 1018,
-    "valor_causa_total": 1755444557.53,
-    "saldo_mes": 67
+    "valor_causa_total": 1755456601.86,
+    "saldo_mes": 68
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-10-13",
-      "entradas": 20,
+      "entradas": 21,
       "saidas": 8
     }
   ],
@@ -399,12 +399,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 13,
-      "entradas_mes": 11,
+      "andamento": 14,
+      "entradas_mes": 12,
       "saidas_mes": 1,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 3,
-      "valor_causa": 2204391.69
+      "valor_causa": 2216436.02
     },
     {
       "nome": "Sócios",
@@ -446,12 +446,12 @@
     },
     {
       "nome": "MG",
-      "andamento": 545,
-      "entradas_mes": 5,
+      "andamento": 546,
+      "entradas_mes": 6,
       "saidas_mes": 3,
       "entradas_mes_anterior": 36,
       "saidas_mes_anterior": 21,
-      "valor_causa": 133692480.14
+      "valor_causa": 133704524.47
     },
     {
       "nome": "PR",
@@ -682,12 +682,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2884,
-      "entradas_mes": 102,
+      "andamento": 2885,
+      "entradas_mes": 103,
       "saidas_mes": 9,
       "entradas_mes_anterior": 269,
       "saidas_mes_anterior": 201,
-      "valor_causa": 831626527.95
+      "valor_causa": 831638572.28
     },
     {
       "nome": "Sentença",
@@ -972,12 +972,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 12,
-      "entradas_mes": 11,
+      "andamento": 13,
+      "entradas_mes": 12,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 2166391.69
+      "valor_causa": 2178436.02
     },
     {
       "fase": "Instrução",
@@ -1261,12 +1261,12 @@
     },
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 357,
-      "entradas_mes": 4,
+      "andamento": 358,
+      "entradas_mes": 5,
       "saidas_mes": 3,
       "entradas_mes_anterior": 30,
       "saidas_mes_anterior": 27,
-      "valor_causa": 49326533.4
+      "valor_causa": 49338577.73
     },
     {
       "nome": "Letícia Meneghini Fontes (LMI)",
@@ -1769,12 +1769,12 @@
     },
     {
       "nome": "EUROCHEM SALITRE",
-      "andamento": 162,
-      "entradas_mes": 2,
+      "andamento": 163,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 20,
       "saidas_mes_anterior": 11,
-      "valor_causa": 38376026.82,
+      "valor_causa": 38388071.15,
       "alerta_entrada": false
     },
     {
@@ -3655,13 +3655,13 @@
     {
       "grupo": "Sem grupo",
       "cliente": "EUROCHEM SALITRE",
-      "andamento": 2,
-      "entradas_mes": 2,
+      "andamento": 3,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 81248.95,
-      "alerta_entrada": false
+      "valor_causa": 93293.28,
+      "alerta_entrada": true
     },
     {
       "grupo": "Sem grupo",
@@ -4344,6 +4344,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Camila Alves Magalhães de Paula(CAL)",
+      "andamento": 3,
+      "entradas_mes": 3,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 93293.28
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Rafael Camargo Felisbino(RCF)",
       "andamento": 2,
       "entradas_mes": 2,
@@ -4351,16 +4361,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 420000.0
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 81248.95
     },
     {
       "grupo": "Sem grupo",
@@ -5047,12 +5047,12 @@
     {
       "estado": "MG",
       "cliente": "EUROCHEM SALITRE",
-      "andamento": 112,
-      "entradas_mes": 2,
+      "andamento": 113,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 14,
       "saidas_mes_anterior": 9,
-      "valor_causa": 25131951.55
+      "valor_causa": 25143995.88
     },
     {
       "estado": "MG",
@@ -7809,12 +7809,17 @@
       "profissional": "Rafael Yepez do Lago(RYL)"
     },
     {
-      "numero_processo": "0010940-40.2026.5.03.0184",
+      "numero_processo": "0011248-97.2026.5.03.0080",
       "cliente": "EUROCHEM SALITRE",
       "profissional": "Camila Alves Magalhães de Paula(CAL)"
     },
     {
-      "numero_processo": "0011248-97.2026.5.03.0080",
+      "numero_processo": "0011255-89.2026.5.03.0080",
+      "cliente": "EUROCHEM SALITRE",
+      "profissional": "Camila Alves Magalhães de Paula(CAL)"
+    },
+    {
+      "numero_processo": "0010940-40.2026.5.03.0184",
       "cliente": "EUROCHEM SALITRE",
       "profissional": "Camila Alves Magalhães de Paula(CAL)"
     },
