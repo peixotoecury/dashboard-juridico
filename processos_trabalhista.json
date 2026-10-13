@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-13T10:00:36",
+  "atualizado_em": "2026-10-13T10:15:31",
   "kpis": {
-    "total_andamento": 7580,
+    "total_andamento": 7578,
     "entradas_hoje": 0,
-    "saidas_hoje": 5,
+    "saidas_hoje": 6,
     "entradas_ontem": 0,
     "saidas_ontem": 2,
     "entradas_mes": 95,
-    "saidas_mes": 44,
+    "saidas_mes": 46,
     "entradas_mes_anterior": 320,
     "saidas_mes_anterior": 1015,
-    "valor_causa_total": 1751548850.65,
-    "saldo_mes": 51
+    "valor_causa_total": 1751539896.25,
+    "saldo_mes": 49
   },
   "serie_diaria": [
     {
@@ -287,7 +287,7 @@
     {
       "data": "2026-10-08",
       "entradas": 16,
-      "saidas": 3
+      "saidas": 4
     },
     {
       "data": "2026-10-09",
@@ -312,7 +312,7 @@
     {
       "data": "2026-10-13",
       "entradas": 0,
-      "saidas": 5
+      "saidas": 6
     }
   ],
   "por_grupo": [
@@ -336,18 +336,18 @@
     },
     {
       "nome": "Grupo B1",
-      "andamento": 1445,
+      "andamento": 1444,
       "entradas_mes": 8,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 42,
-      "valor_causa": 325398731.65
+      "valor_causa": 325389777.25
     },
     {
       "nome": "Grupo B2",
-      "andamento": 743,
+      "andamento": 742,
       "entradas_mes": 1,
-      "saidas_mes": 5,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 22,
       "saidas_mes_anterior": 19,
       "valor_causa": 138233499.88
@@ -437,12 +437,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5753,
+      "andamento": 5751,
       "entradas_mes": 50,
-      "saidas_mes": 38,
+      "saidas_mes": 40,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 838,
-      "valor_causa": 1365657063.51
+      "valor_causa": 1365648109.11
     },
     {
       "nome": "MG",
@@ -682,12 +682,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2869,
+      "andamento": 2868,
       "entradas_mes": 83,
-      "saidas_mes": 8,
+      "saidas_mes": 9,
       "entradas_mes_anterior": 269,
       "saidas_mes_anterior": 201,
-      "valor_causa": 828216651.94
+      "valor_causa": 828207697.54
     },
     {
       "nome": "Sentença",
@@ -709,9 +709,9 @@
     },
     {
       "nome": "Execução",
-      "andamento": 900,
+      "andamento": 899,
       "entradas_mes": 0,
-      "saidas_mes": 11,
+      "saidas_mes": 12,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 356,
       "valor_causa": 128020076.34
@@ -862,9 +862,9 @@
     {
       "fase": "Execução",
       "grupo": "Grupo B2",
-      "andamento": 93,
+      "andamento": 92,
       "entradas_mes": 0,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 15091830.44
@@ -922,12 +922,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B1",
-      "andamento": 443,
+      "andamento": 442,
       "entradas_mes": 8,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 13,
-      "valor_causa": 150171057.6
+      "valor_causa": 150162103.2
     },
     {
       "fase": "Instrução",
@@ -1316,21 +1316,21 @@
     },
     {
       "nome": "Bruna Cembranelli Fazenda (BCF)",
-      "andamento": 297,
+      "andamento": 296,
       "entradas_mes": 2,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 14,
       "saidas_mes_anterior": 9,
       "valor_causa": 50778082.66
     },
     {
       "nome": "Tamara Silva Marcílio(TAM)",
-      "andamento": 297,
+      "andamento": 296,
       "entradas_mes": 2,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 21,
       "saidas_mes_anterior": 7,
-      "valor_causa": 79894307.45
+      "valor_causa": 79885353.05
     },
     {
       "nome": "Rafael Rocha Ferreira(RFE)",
@@ -1669,12 +1669,12 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1445,
+      "andamento": 1444,
       "entradas_mes": 8,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 42,
-      "valor_causa": 325398731.65,
+      "valor_causa": 325389777.25,
       "alerta_entrada": false
     },
     {
@@ -1689,9 +1689,9 @@
     },
     {
       "nome": "EMBRAER",
-      "andamento": 723,
+      "andamento": 722,
       "entradas_mes": 1,
-      "saidas_mes": 5,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 19,
       "valor_causa": 136167832.09,
@@ -2301,20 +2301,20 @@
     {
       "grupo": "Grupo B1",
       "cliente": "BRIDGESTONE",
-      "andamento": 1445,
+      "andamento": 1444,
       "entradas_mes": 8,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 42,
-      "valor_causa": 325398731.65,
+      "valor_causa": 325389777.25,
       "alerta_entrada": false
     },
     {
       "grupo": "Grupo B2",
       "cliente": "EMBRAER",
-      "andamento": 720,
+      "andamento": 719,
       "entradas_mes": 1,
-      "saidas_mes": 5,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 22,
       "saidas_mes_anterior": 19,
       "valor_causa": 136167832.09,
@@ -3864,12 +3864,12 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Tamara Silva Marcílio(TAM)",
-      "andamento": 297,
+      "andamento": 296,
       "entradas_mes": 2,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 21,
       "saidas_mes_anterior": 7,
-      "valor_causa": 79894307.45
+      "valor_causa": 79885353.05
     },
     {
       "grupo": "Grupo B1",
@@ -3944,9 +3944,9 @@
     {
       "grupo": "Grupo B2",
       "profissional": "Bruna Cembranelli Fazenda (BCF)",
-      "andamento": 215,
+      "andamento": 214,
       "entradas_mes": 0,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 9,
       "valor_causa": 27052623.64
@@ -6346,19 +6346,19 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1417,
+      "andamento": 1416,
       "entradas_mes": 8,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 52,
       "saidas_mes_anterior": 41,
-      "valor_causa": 313748687.13
+      "valor_causa": 313739732.73
     },
     {
       "estado": "SP",
       "cliente": "EMBRAER",
-      "andamento": 706,
+      "andamento": 705,
       "entradas_mes": 1,
-      "saidas_mes": 5,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 18,
       "valor_causa": 135717989.68
