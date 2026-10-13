@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-13T18:00:31",
+  "atualizado_em": "2026-10-13T18:15:29",
   "kpis": {
-    "total_andamento": 7602,
-    "entradas_hoje": 29,
+    "total_andamento": 7604,
+    "entradas_hoje": 31,
     "saidas_hoje": 8,
     "entradas_ontem": 0,
     "saidas_ontem": 2,
-    "entradas_mes": 124,
+    "entradas_mes": 126,
     "saidas_mes": 48,
     "entradas_mes_anterior": 320,
     "saidas_mes_anterior": 1018,
-    "valor_causa_total": 1760482352.41,
-    "saldo_mes": 76
+    "valor_causa_total": 1760614552.41,
+    "saldo_mes": 78
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-10-13",
-      "entradas": 29,
+      "entradas": 31,
       "saidas": 8
     }
   ],
@@ -389,6 +389,15 @@
       "valor_causa": 0.0
     },
     {
+      "nome": "Sem grupo",
+      "andamento": 24,
+      "entradas_mes": 22,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 3,
+      "valor_causa": 7374386.57
+    },
+    {
       "nome": "Grupo A2",
       "andamento": 24,
       "entradas_mes": 1,
@@ -396,15 +405,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
       "valor_causa": 11721158.38
-    },
-    {
-      "nome": "Sem grupo",
-      "andamento": 22,
-      "entradas_mes": 20,
-      "saidas_mes": 1,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 3,
-      "valor_causa": 7242186.57
     },
     {
       "nome": "Sócios",
@@ -545,21 +545,21 @@
     },
     {
       "nome": "CE",
-      "andamento": 34,
-      "entradas_mes": 23,
+      "andamento": 35,
+      "entradas_mes": 24,
       "saidas_mes": 1,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 1,
-      "valor_causa": 5242365.81
+      "valor_causa": 5324565.81
     },
     {
       "nome": "ES",
-      "andamento": 28,
-      "entradas_mes": 3,
+      "andamento": 29,
+      "entradas_mes": 4,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 3,
-      "valor_causa": 4114827.14
+      "valor_causa": 4164827.14
     },
     {
       "nome": "DF",
@@ -682,12 +682,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2892,
-      "entradas_mes": 111,
+      "andamento": 2894,
+      "entradas_mes": 113,
       "saidas_mes": 9,
       "entradas_mes_anterior": 269,
       "saidas_mes_anterior": 201,
-      "valor_causa": 836664322.83
+      "valor_causa": 836796522.83
     },
     {
       "nome": "Sentença",
@@ -962,12 +962,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 21,
-      "entradas_mes": 20,
+      "andamento": 23,
+      "entradas_mes": 22,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 7204186.57
+      "valor_causa": 7336386.57
     },
     {
       "fase": "Instrução",
@@ -1369,12 +1369,12 @@
     },
     {
       "nome": "Rafael Camargo Felisbino(RCF)",
-      "andamento": 271,
-      "entradas_mes": 10,
+      "andamento": 272,
+      "entradas_mes": 11,
       "saidas_mes": 2,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 1,
-      "valor_causa": 109510583.9
+      "valor_causa": 109560583.9
     },
     {
       "nome": "Anna Carolina Balbino Gatti Baani(ANB)",
@@ -1387,12 +1387,12 @@
     },
     {
       "nome": "Erik Mota Coppi(ECO)",
-      "andamento": 262,
-      "entradas_mes": 19,
+      "andamento": 263,
+      "entradas_mes": 20,
       "saidas_mes": 1,
       "entradas_mes_anterior": 15,
       "saidas_mes_anterior": 12,
-      "valor_causa": 53883992.57
+      "valor_causa": 53966192.57
     },
     {
       "nome": "Mariana Borges de Menezes Fávaro(MBF)",
@@ -1719,12 +1719,12 @@
     },
     {
       "nome": "HERINGER",
-      "andamento": 342,
-      "entradas_mes": 9,
+      "andamento": 343,
+      "entradas_mes": 10,
       "saidas_mes": 0,
       "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 11,
-      "valor_causa": 46144677.26,
+      "valor_causa": 46194677.26,
       "alerta_entrada": false
     },
     {
@@ -1789,12 +1789,12 @@
     },
     {
       "nome": "COMPANHIA AIX",
-      "andamento": 144,
-      "entradas_mes": 32,
+      "andamento": 145,
+      "entradas_mes": 33,
       "saidas_mes": 0,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 0,
-      "valor_causa": 35153096.14,
+      "valor_causa": 35235296.14,
       "alerta_entrada": true
     },
     {
@@ -3633,23 +3633,23 @@
     {
       "grupo": "Sem grupo",
       "cliente": "COMPANHIA AIX",
-      "andamento": 6,
-      "entradas_mes": 6,
+      "andamento": 7,
+      "entradas_mes": 7,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 1090900.0,
+      "valor_causa": 1173100.0,
       "alerta_entrada": true
     },
     {
       "grupo": "Sem grupo",
       "cliente": "HERINGER",
-      "andamento": 4,
-      "entradas_mes": 3,
+      "andamento": 5,
+      "entradas_mes": 4,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 491150.0,
+      "valor_causa": 541150.0,
       "alerta_entrada": true
     },
     {
@@ -4346,12 +4346,12 @@
     {
       "grupo": "Sem grupo",
       "profissional": "Erik Mota Coppi(ECO)",
-      "andamento": 8,
-      "entradas_mes": 8,
+      "andamento": 9,
+      "entradas_mes": 9,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 4988079.55
+      "valor_causa": 5070279.55
     },
     {
       "grupo": "Sem grupo",
@@ -4365,6 +4365,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Rafael Camargo Felisbino(RCF)",
+      "andamento": 3,
+      "entradas_mes": 3,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 470000.0
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Camila Alves Magalhães de Paula(CAL)",
       "andamento": 3,
       "entradas_mes": 3,
@@ -4372,16 +4382,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 93293.28
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Rafael Camargo Felisbino(RCF)",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 420000.0
     },
     {
       "grupo": "Sem grupo",
@@ -4658,12 +4658,12 @@
     {
       "estado": "CE",
       "cliente": "COMPANHIA AIX",
-      "andamento": 28,
-      "entradas_mes": 23,
+      "andamento": 29,
+      "entradas_mes": 24,
       "saidas_mes": 0,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 0,
-      "valor_causa": 5236547.88
+      "valor_causa": 5318747.88
     },
     {
       "estado": "CE",
@@ -4848,12 +4848,12 @@
     {
       "estado": "ES",
       "cliente": "HERINGER",
-      "andamento": 19,
-      "entradas_mes": 3,
+      "andamento": 20,
+      "entradas_mes": 4,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 3979200.22
+      "valor_causa": 4029200.22
     },
     {
       "estado": "ES",
@@ -7779,12 +7779,12 @@
     },
     {
       "nome": "COMPANHIA AIX",
-      "andamento": 144,
-      "entradas_mes": 32,
+      "andamento": 145,
+      "entradas_mes": 33,
       "saidas_mes": 0,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 0,
-      "valor_causa": 35153096.14,
+      "valor_causa": 35235296.14,
       "alerta_entrada": true
     }
   ],
@@ -7821,6 +7821,11 @@
     },
     {
       "numero_processo": "0001532-45.2026.5.07.0012",
+      "cliente": "COMPANHIA AIX",
+      "profissional": "Erik Mota Coppi(ECO)"
+    },
+    {
+      "numero_processo": "0001580-37.2026.5.07.0001",
       "cliente": "COMPANHIA AIX",
       "profissional": "Erik Mota Coppi(ECO)"
     },
@@ -7878,6 +7883,11 @@
       "numero_processo": "0001097-57.2026.5.09.0322",
       "cliente": "HERINGER",
       "profissional": "Bianca Bolanhi Camacho(BBO)"
+    },
+    {
+      "numero_processo": "0000739-86.2019.5.17.0008",
+      "cliente": "HERINGER",
+      "profissional": "Rafael Camargo Felisbino(RCF)"
     },
     {
       "numero_processo": "0003841-21.2026.5.09.0000",
