@@ -1,7 +1,7 @@
 {
-  "atualizado_em": "2026-10-13T14:15:28",
+  "atualizado_em": "2026-10-13T14:30:31",
   "kpis": {
-    "total_andamento": 7589,
+    "total_andamento": 7588,
     "entradas_hoje": 13,
     "saidas_hoje": 8,
     "entradas_ontem": 0,
@@ -9,8 +9,8 @@
     "entradas_mes": 108,
     "saidas_mes": 48,
     "entradas_mes_anterior": 320,
-    "saidas_mes_anterior": 1015,
-    "valor_causa_total": 1754475879.64,
+    "saidas_mes_anterior": 1016,
+    "valor_causa_total": 1754415104.28,
     "saldo_mes": 60
   },
   "serie_diaria": [
@@ -172,7 +172,7 @@
     {
       "data": "2026-09-15",
       "entradas": 13,
-      "saidas": 12
+      "saidas": 13
     },
     {
       "data": "2026-09-16",
@@ -345,12 +345,12 @@
     },
     {
       "nome": "Grupo B2",
-      "andamento": 741,
+      "andamento": 740,
       "entradas_mes": 2,
       "saidas_mes": 8,
       "entradas_mes_anterior": 22,
-      "saidas_mes_anterior": 19,
-      "valor_causa": 139407018.97
+      "saidas_mes_anterior": 20,
+      "valor_causa": 139346243.61
     },
     {
       "nome": "Grupo C",
@@ -437,12 +437,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5758,
+      "andamento": 5757,
       "entradas_mes": 59,
       "saidas_mes": 42,
       "entradas_mes_anterior": 190,
-      "saidas_mes_anterior": 838,
-      "valor_causa": 1368584092.5
+      "saidas_mes_anterior": 839,
+      "valor_causa": 1368523317.14
     },
     {
       "nome": "MG",
@@ -682,12 +682,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2880,
+      "andamento": 2878,
       "entradas_mes": 95,
       "saidas_mes": 9,
       "entradas_mes_anterior": 269,
       "saidas_mes_anterior": 201,
-      "valor_causa": 831427331.44
+      "valor_causa": 830380029.06
     },
     {
       "nome": "Sentença",
@@ -700,12 +700,12 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2967,
+      "andamento": 2969,
       "entradas_mes": 1,
       "saidas_mes": 10,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 389,
-      "valor_causa": 662211566.75
+      "valor_causa": 663258869.13
     },
     {
       "nome": "Execução",
@@ -717,7 +717,7 @@
       "valor_causa": 128020076.34
     }
   ],
-  "por_fase_outras": 403,
+  "por_fase_outras": 402,
   "por_fase_grupo": [
     {
       "fase": "Ajuizamento",
@@ -902,12 +902,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 753,
+      "andamento": 751,
       "entradas_mes": 14,
       "saidas_mes": 1,
       "entradas_mes_anterior": 28,
       "saidas_mes_anterior": 10,
-      "valor_causa": 162370922.2
+      "valor_causa": 161323619.82
     },
     {
       "fase": "Instrução",
@@ -1032,12 +1032,12 @@
     {
       "fase": "Outras",
       "grupo": "Grupo B2",
-      "andamento": 37,
+      "andamento": 36,
       "entradas_mes": 0,
       "saidas_mes": 3,
       "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 12,
-      "valor_causa": 3735551.29
+      "saidas_mes_anterior": 13,
+      "valor_causa": 3674775.93
     },
     {
       "fase": "Outras",
@@ -1102,12 +1102,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo E1",
-      "andamento": 750,
+      "andamento": 752,
       "entradas_mes": 0,
       "saidas_mes": 6,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 8,
-      "valor_causa": 108990759.82
+      "valor_causa": 110038062.2
     },
     {
       "fase": "Recurso",
@@ -1243,12 +1243,12 @@
   "por_profissional": [
     {
       "nome": "Rafael Yepez do Lago(RYL)",
-      "andamento": 448,
+      "andamento": 447,
       "entradas_mes": 4,
       "saidas_mes": 5,
       "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 22,
-      "valor_causa": 59616795.52
+      "valor_causa": 59188164.42
     },
     {
       "nome": "Giulia Vendramini Milani(GVM)",
@@ -1261,12 +1261,12 @@
     },
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 354,
+      "andamento": 355,
       "entradas_mes": 2,
       "saidas_mes": 3,
       "entradas_mes_anterior": 30,
       "saidas_mes_anterior": 27,
-      "valor_causa": 48816653.35
+      "valor_causa": 49245284.45
     },
     {
       "nome": "Letícia Meneghini Fontes (LMI)",
@@ -1305,15 +1305,6 @@
       "valor_causa": 33679855.02
     },
     {
-      "nome": "Bruna Cembranelli Fazenda (BCF)",
-      "andamento": 297,
-      "entradas_mes": 5,
-      "saidas_mes": 5,
-      "entradas_mes_anterior": 14,
-      "saidas_mes_anterior": 9,
-      "valor_causa": 51259448.97
-    },
-    {
       "nome": "Tamara Silva Marcílio(TAM)",
       "andamento": 297,
       "entradas_mes": 3,
@@ -1321,6 +1312,15 @@
       "entradas_mes_anterior": 21,
       "saidas_mes_anterior": 7,
       "valor_causa": 79993154.5
+    },
+    {
+      "nome": "Bruna Cembranelli Fazenda (BCF)",
+      "andamento": 296,
+      "entradas_mes": 5,
+      "saidas_mes": 5,
+      "entradas_mes_anterior": 14,
+      "saidas_mes_anterior": 10,
+      "valor_causa": 51198673.61
     },
     {
       "nome": "Rafael Rocha Ferreira(RFE)",
@@ -1679,12 +1679,12 @@
     },
     {
       "nome": "EMBRAER",
-      "andamento": 725,
+      "andamento": 724,
       "entradas_mes": 6,
       "saidas_mes": 8,
       "entradas_mes_anterior": 24,
-      "saidas_mes_anterior": 19,
-      "valor_causa": 138785260.01,
+      "saidas_mes_anterior": 20,
+      "valor_causa": 138724484.65,
       "alerta_entrada": false
     },
     {
@@ -2302,12 +2302,12 @@
     {
       "grupo": "Grupo B2",
       "cliente": "EMBRAER",
-      "andamento": 718,
+      "andamento": 717,
       "entradas_mes": 2,
       "saidas_mes": 8,
       "entradas_mes_anterior": 22,
-      "saidas_mes_anterior": 19,
-      "valor_causa": 137341351.18,
+      "saidas_mes_anterior": 20,
+      "valor_causa": 137280575.82,
       "alerta_entrada": false
     },
     {
@@ -3923,12 +3923,12 @@
     {
       "grupo": "Grupo B2",
       "profissional": "Bruna Cembranelli Fazenda (BCF)",
-      "andamento": 212,
+      "andamento": 211,
       "entradas_mes": 0,
       "saidas_mes": 5,
       "entradas_mes_anterior": 10,
-      "saidas_mes_anterior": 9,
-      "valor_causa": 26768973.13
+      "saidas_mes_anterior": 10,
+      "valor_causa": 26708197.77
     },
     {
       "grupo": "Grupo B2",
@@ -4193,22 +4193,22 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Rafael Yepez do Lago(RYL)",
-      "andamento": 448,
+      "andamento": 447,
       "entradas_mes": 4,
       "saidas_mes": 5,
       "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 22,
-      "valor_causa": 59616795.52
+      "valor_causa": 59188164.42
     },
     {
       "grupo": "Grupo E2",
       "profissional": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 354,
+      "andamento": 355,
       "entradas_mes": 2,
       "saidas_mes": 3,
       "entradas_mes_anterior": 30,
       "saidas_mes_anterior": 27,
-      "valor_causa": 48816653.35
+      "valor_causa": 49245284.45
     },
     {
       "grupo": "Grupo E2",
@@ -6345,12 +6345,12 @@
     {
       "estado": "SP",
       "cliente": "EMBRAER",
-      "andamento": 708,
+      "andamento": 707,
       "entradas_mes": 6,
       "saidas_mes": 8,
       "entradas_mes_anterior": 19,
-      "saidas_mes_anterior": 18,
-      "valor_causa": 138335417.6
+      "saidas_mes_anterior": 19,
+      "valor_causa": 138274642.24
     },
     {
       "estado": "SP",
