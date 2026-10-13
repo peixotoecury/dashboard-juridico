@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-13T13:30:42",
+  "atualizado_em": "2026-10-13T13:45:29",
   "kpis": {
-    "total_andamento": 7584,
-    "entradas_hoje": 8,
+    "total_andamento": 7585,
+    "entradas_hoje": 9,
     "saidas_hoje": 8,
     "entradas_ontem": 0,
     "saidas_ontem": 2,
-    "entradas_mes": 103,
+    "entradas_mes": 104,
     "saidas_mes": 48,
     "entradas_mes_anterior": 320,
     "saidas_mes_anterior": 1015,
-    "valor_causa_total": 1753626959.53,
-    "saldo_mes": 55
+    "valor_causa_total": 1753701102.82,
+    "saldo_mes": 56
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-10-13",
-      "entradas": 8,
+      "entradas": 9,
       "saidas": 8
     }
   ],
@@ -399,12 +399,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 6,
-      "entradas_mes": 4,
+      "andamento": 7,
+      "entradas_mes": 5,
       "saidas_mes": 1,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 3,
-      "valor_causa": 2409713.79
+      "valor_causa": 2483857.08
     },
     {
       "nome": "Sócios",
@@ -437,12 +437,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5753,
-      "entradas_mes": 54,
+      "andamento": 5754,
+      "entradas_mes": 55,
       "saidas_mes": 42,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 838,
-      "valor_causa": 1367735172.39
+      "valor_causa": 1367809315.68
     },
     {
       "nome": "MG",
@@ -682,12 +682,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2875,
-      "entradas_mes": 90,
+      "andamento": 2876,
+      "entradas_mes": 91,
       "saidas_mes": 9,
       "entradas_mes_anterior": 269,
       "saidas_mes_anterior": 201,
-      "valor_causa": 830578411.33
+      "valor_causa": 830652554.62
     },
     {
       "nome": "Sentença",
@@ -972,12 +972,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 5,
-      "entradas_mes": 4,
+      "andamento": 6,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 2371713.79
+      "valor_causa": 2445857.08
     },
     {
       "fase": "Instrução",
@@ -1270,12 +1270,12 @@
     },
     {
       "nome": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 344,
-      "entradas_mes": 12,
+      "andamento": 345,
+      "entradas_mes": 13,
       "saidas_mes": 1,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 7,
-      "valor_causa": 64205091.93
+      "valor_causa": 64279235.22
     },
     {
       "nome": "Beatriz Santiago de Souza(BSO)",
@@ -1749,12 +1749,12 @@
     },
     {
       "nome": "CBC CARTUCHOS BRASIL",
-      "andamento": 236,
-      "entradas_mes": 10,
+      "andamento": 237,
+      "entradas_mes": 11,
       "saidas_mes": 1,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 7,
-      "valor_causa": 29620230.69,
+      "valor_causa": 29694373.98,
       "alerta_entrada": true
     },
     {
@@ -3654,6 +3654,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "CBC CARTUCHOS BRASIL",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 74143.29,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "CASA DO SABER",
       "andamento": 1,
       "entradas_mes": 1,
@@ -4328,6 +4339,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 107801.45
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Letícia Meneghini Fontes (LMI)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 74143.29
     },
     {
       "grupo": "Sem grupo",
@@ -6384,12 +6405,12 @@
     {
       "estado": "SP",
       "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 226,
-      "entradas_mes": 10,
+      "andamento": 227,
+      "entradas_mes": 11,
       "saidas_mes": 1,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 7,
-      "valor_causa": 28394736.75
+      "valor_causa": 28468880.04
     },
     {
       "estado": "SP",
@@ -7695,12 +7716,12 @@
   "clientes_com_alerta": [
     {
       "nome": "CBC CARTUCHOS BRASIL",
-      "andamento": 236,
-      "entradas_mes": 10,
+      "andamento": 237,
+      "entradas_mes": 11,
       "saidas_mes": 1,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 7,
-      "valor_causa": 29620230.69,
+      "valor_causa": 29694373.98,
       "alerta_entrada": true
     },
     {
@@ -7724,6 +7745,11 @@
       "numero_processo": "1001225-47.2026.5.02.0066",
       "cliente": "CASA DO SABER",
       "profissional": "Rafael Camargo Felisbino(RCF)"
+    },
+    {
+      "numero_processo": "1001545-32.2026.5.02.0411",
+      "cliente": "CBC CARTUCHOS BRASIL",
+      "profissional": "Letícia Meneghini Fontes (LMI)"
     },
     {
       "numero_processo": "0011493-46.2026.5.15.0025",
