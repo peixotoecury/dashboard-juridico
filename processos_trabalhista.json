@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-13T10:15:31",
+  "atualizado_em": "2026-10-13T10:31:59",
   "kpis": {
-    "total_andamento": 7578,
+    "total_andamento": 7577,
     "entradas_hoje": 0,
-    "saidas_hoje": 6,
+    "saidas_hoje": 7,
     "entradas_ontem": 0,
     "saidas_ontem": 2,
     "entradas_mes": 95,
-    "saidas_mes": 46,
+    "saidas_mes": 47,
     "entradas_mes_anterior": 320,
     "saidas_mes_anterior": 1015,
-    "valor_causa_total": 1751539896.25,
-    "saldo_mes": 49
+    "valor_causa_total": 1751466358.29,
+    "saldo_mes": 48
   },
   "serie_diaria": [
     {
@@ -312,7 +312,7 @@
     {
       "data": "2026-10-13",
       "entradas": 0,
-      "saidas": 6
+      "saidas": 7
     }
   ],
   "por_grupo": [
@@ -345,12 +345,12 @@
     },
     {
       "nome": "Grupo B2",
-      "andamento": 742,
+      "andamento": 741,
       "entradas_mes": 1,
-      "saidas_mes": 6,
+      "saidas_mes": 7,
       "entradas_mes_anterior": 22,
       "saidas_mes_anterior": 19,
-      "valor_causa": 138233499.88
+      "valor_causa": 138159961.92
     },
     {
       "nome": "Grupo C",
@@ -437,12 +437,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5751,
+      "andamento": 5750,
       "entradas_mes": 50,
-      "saidas_mes": 40,
+      "saidas_mes": 41,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 838,
-      "valor_causa": 1365648109.11
+      "valor_causa": 1365574571.15
     },
     {
       "nome": "MG",
@@ -717,7 +717,7 @@
       "valor_causa": 128020076.34
     }
   ],
-  "por_fase_outras": 405,
+  "por_fase_outras": 404,
   "por_fase_grupo": [
     {
       "fase": "Ajuizamento",
@@ -1042,12 +1042,12 @@
     {
       "fase": "Outras",
       "grupo": "Grupo B2",
-      "andamento": 39,
+      "andamento": 38,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 12,
-      "valor_causa": 4019201.8
+      "valor_causa": 3945663.84
     },
     {
       "fase": "Outras",
@@ -1315,15 +1315,6 @@
       "valor_causa": 75309958.78
     },
     {
-      "nome": "Bruna Cembranelli Fazenda (BCF)",
-      "andamento": 296,
-      "entradas_mes": 2,
-      "saidas_mes": 3,
-      "entradas_mes_anterior": 14,
-      "saidas_mes_anterior": 9,
-      "valor_causa": 50778082.66
-    },
-    {
       "nome": "Tamara Silva Marcílio(TAM)",
       "andamento": 296,
       "entradas_mes": 2,
@@ -1331,6 +1322,15 @@
       "entradas_mes_anterior": 21,
       "saidas_mes_anterior": 7,
       "valor_causa": 79885353.05
+    },
+    {
+      "nome": "Bruna Cembranelli Fazenda (BCF)",
+      "andamento": 295,
+      "entradas_mes": 2,
+      "saidas_mes": 4,
+      "entradas_mes_anterior": 14,
+      "saidas_mes_anterior": 9,
+      "valor_causa": 50704544.7
     },
     {
       "nome": "Rafael Rocha Ferreira(RFE)",
@@ -1689,12 +1689,12 @@
     },
     {
       "nome": "EMBRAER",
-      "andamento": 722,
+      "andamento": 721,
       "entradas_mes": 1,
-      "saidas_mes": 6,
+      "saidas_mes": 7,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 19,
-      "valor_causa": 136167832.09,
+      "valor_causa": 136094294.13,
       "alerta_entrada": false
     },
     {
@@ -2312,12 +2312,12 @@
     {
       "grupo": "Grupo B2",
       "cliente": "EMBRAER",
-      "andamento": 719,
+      "andamento": 718,
       "entradas_mes": 1,
-      "saidas_mes": 6,
+      "saidas_mes": 7,
       "entradas_mes_anterior": 22,
       "saidas_mes_anterior": 19,
-      "valor_causa": 136167832.09,
+      "valor_causa": 136094294.13,
       "alerta_entrada": false
     },
     {
@@ -3944,12 +3944,12 @@
     {
       "grupo": "Grupo B2",
       "profissional": "Bruna Cembranelli Fazenda (BCF)",
-      "andamento": 214,
+      "andamento": 213,
       "entradas_mes": 0,
-      "saidas_mes": 3,
+      "saidas_mes": 4,
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 9,
-      "valor_causa": 27052623.64
+      "valor_causa": 26979085.68
     },
     {
       "grupo": "Grupo B2",
@@ -6356,12 +6356,12 @@
     {
       "estado": "SP",
       "cliente": "EMBRAER",
-      "andamento": 705,
+      "andamento": 704,
       "entradas_mes": 1,
-      "saidas_mes": 6,
+      "saidas_mes": 7,
       "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 18,
-      "valor_causa": 135717989.68
+      "valor_causa": 135644451.72
     },
     {
       "estado": "SP",
