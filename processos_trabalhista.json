@@ -1,24 +1,19 @@
 {
-  "atualizado_em": "2026-10-12T09:45:21",
+  "atualizado_em": "2026-10-13T09:11:04",
   "kpis": {
-    "total_andamento": 7586,
+    "total_andamento": 7583,
     "entradas_hoje": 0,
-    "saidas_hoje": 0,
+    "saidas_hoje": 2,
     "entradas_ontem": 0,
     "saidas_ontem": 2,
     "entradas_mes": 95,
-    "saidas_mes": 37,
+    "saidas_mes": 41,
     "entradas_mes_anterior": 320,
     "saidas_mes_anterior": 1015,
-    "valor_causa_total": 1751601927.65,
-    "saldo_mes": 58
+    "valor_causa_total": 1751548850.65,
+    "saldo_mes": 54
   },
   "serie_diaria": [
-    {
-      "data": "2026-08-14",
-      "entradas": 12,
-      "saidas": 3
-    },
     {
       "data": "2026-08-15",
       "entradas": 0,
@@ -312,7 +307,12 @@
     {
       "data": "2026-10-12",
       "entradas": 0,
-      "saidas": 0
+      "saidas": 2
+    },
+    {
+      "data": "2026-10-13",
+      "entradas": 0,
+      "saidas": 2
     }
   ],
   "por_grupo": [
@@ -320,19 +320,19 @@
       "nome": "Grupo E2",
       "andamento": 2107,
       "entradas_mes": 15,
-      "saidas_mes": 12,
+      "saidas_mes": 13,
       "entradas_mes_anterior": 117,
       "saidas_mes_anterior": 93,
       "valor_causa": 468592276.87
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1815,
+      "andamento": 1812,
       "entradas_mes": 19,
-      "saidas_mes": 11,
+      "saidas_mes": 14,
       "entradas_mes_anterior": 60,
       "saidas_mes_anterior": 46,
-      "valor_causa": 308908838.59
+      "valor_causa": 308855761.59
     },
     {
       "nome": "Grupo B1",
@@ -437,12 +437,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5759,
+      "andamento": 5756,
       "entradas_mes": 50,
-      "saidas_mes": 31,
+      "saidas_mes": 35,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 838,
-      "valor_causa": 1365710140.51
+      "valor_causa": 1365657063.51
     },
     {
       "nome": "MG",
@@ -682,12 +682,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2870,
+      "andamento": 2869,
       "entradas_mes": 83,
-      "saidas_mes": 7,
+      "saidas_mes": 8,
       "entradas_mes_anterior": 269,
       "saidas_mes_anterior": 201,
-      "valor_causa": 828269728.94
+      "valor_causa": 828216651.94
     },
     {
       "nome": "Sentença",
@@ -702,16 +702,16 @@
       "nome": "Recurso",
       "andamento": 2970,
       "entradas_mes": 1,
-      "saidas_mes": 7,
+      "saidas_mes": 8,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 389,
       "valor_causa": 662211566.75
     },
     {
       "nome": "Execução",
-      "andamento": 903,
+      "andamento": 901,
       "entradas_mes": 0,
-      "saidas_mes": 8,
+      "saidas_mes": 10,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 356,
       "valor_causa": 128020076.34
@@ -832,9 +832,9 @@
     {
       "fase": "Execução",
       "grupo": "Grupo E1",
-      "andamento": 191,
+      "andamento": 189,
       "entradas_mes": 0,
-      "saidas_mes": 1,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 9,
       "valor_causa": 20912838.19
@@ -912,12 +912,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 754,
+      "andamento": 753,
       "entradas_mes": 14,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 28,
       "saidas_mes_anterior": 10,
-      "valor_causa": 162224645.72
+      "valor_causa": 162171568.72
     },
     {
       "fase": "Instrução",
@@ -1124,7 +1124,7 @@
       "grupo": "Grupo E2",
       "andamento": 591,
       "entradas_mes": 0,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 14,
       "valor_causa": 187393818.75
@@ -1381,7 +1381,7 @@
       "nome": "Rafael Camargo Felisbino(RCF)",
       "andamento": 264,
       "entradas_mes": 3,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 1,
       "valor_causa": 108963733.17
@@ -1451,12 +1451,12 @@
     },
     {
       "nome": "Tamires Lins Costa(TLI)",
-      "andamento": 228,
+      "andamento": 225,
       "entradas_mes": 2,
-      "saidas_mes": 0,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 5,
-      "valor_causa": 28351400.61
+      "valor_causa": 28298323.61
     },
     {
       "nome": "Nicolau Rafael Guimarães Coelho(NRG)",
@@ -1710,12 +1710,12 @@
     },
     {
       "nome": "MAHLE METAL - MOGI",
-      "andamento": 362,
+      "andamento": 361,
       "entradas_mes": 6,
-      "saidas_mes": 3,
+      "saidas_mes": 4,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 10,
-      "valor_causa": 73190336.75,
+      "valor_causa": 73137259.75,
       "alerta_entrada": false
     },
     {
@@ -1740,9 +1740,9 @@
     },
     {
       "nome": "MAHLE METAL - SBC",
-      "andamento": 270,
+      "andamento": 268,
       "entradas_mes": 1,
-      "saidas_mes": 0,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 7,
       "valor_causa": 23271825.08,
@@ -2842,20 +2842,20 @@
     {
       "grupo": "Grupo E1",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 361,
+      "andamento": 360,
       "entradas_mes": 5,
-      "saidas_mes": 3,
+      "saidas_mes": 4,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 10,
-      "valor_causa": 72990983.27,
+      "valor_causa": 72937906.27,
       "alerta_entrada": false
     },
     {
       "grupo": "Grupo E1",
       "cliente": "MAHLE METAL - SBC",
-      "andamento": 270,
+      "andamento": 268,
       "entradas_mes": 1,
-      "saidas_mes": 0,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 7,
       "valor_causa": 23271825.08,
@@ -3284,7 +3284,7 @@
       "cliente": "GRUPO BAND RADIO TV",
       "andamento": 6,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 1500000.0,
@@ -4136,12 +4136,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Tamires Lins Costa(TLI)",
-      "andamento": 227,
+      "andamento": 224,
       "entradas_mes": 1,
-      "saidas_mes": 0,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 5,
-      "valor_causa": 28242337.13
+      "valor_causa": 28189260.13
     },
     {
       "grupo": "Grupo E1",
@@ -4278,7 +4278,7 @@
       "profissional": "Rafael Camargo Felisbino(RCF)",
       "andamento": 130,
       "entradas_mes": 1,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 0,
       "valor_causa": 79037112.84
@@ -6398,12 +6398,12 @@
     {
       "estado": "SP",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 361,
+      "andamento": 360,
       "entradas_mes": 6,
-      "saidas_mes": 3,
+      "saidas_mes": 4,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 10,
-      "valor_causa": 73190336.75
+      "valor_causa": 73137259.75
     },
     {
       "estado": "SP",
@@ -6418,9 +6418,9 @@
     {
       "estado": "SP",
       "cliente": "MAHLE METAL - SBC",
-      "andamento": 270,
+      "andamento": 268,
       "entradas_mes": 1,
-      "saidas_mes": 0,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 7,
       "valor_causa": 23271825.08
@@ -7080,7 +7080,7 @@
       "cliente": "GRUPO BAND RADIO TV",
       "andamento": 2,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 1500000.0
