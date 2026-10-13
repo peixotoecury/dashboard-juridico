@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-13T13:15:28",
+  "atualizado_em": "2026-10-13T13:30:42",
   "kpis": {
-    "total_andamento": 7581,
-    "entradas_hoje": 5,
+    "total_andamento": 7584,
+    "entradas_hoje": 8,
     "saidas_hoje": 8,
     "entradas_ontem": 0,
     "saidas_ontem": 2,
-    "entradas_mes": 100,
+    "entradas_mes": 103,
     "saidas_mes": 48,
     "entradas_mes_anterior": 320,
     "saidas_mes_anterior": 1015,
-    "valor_causa_total": 1753500108.8,
-    "saldo_mes": 52
+    "valor_causa_total": 1753626959.53,
+    "saldo_mes": 55
   },
   "serie_diaria": [
     {
@@ -311,15 +311,15 @@
     },
     {
       "data": "2026-10-13",
-      "entradas": 5,
+      "entradas": 8,
       "saidas": 8
     }
   ],
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2111,
-      "entradas_mes": 19,
+      "andamento": 2113,
+      "entradas_mes": 21,
       "saidas_mes": 13,
       "entradas_mes_anterior": 117,
       "saidas_mes_anterior": 93,
@@ -399,12 +399,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 5,
-      "entradas_mes": 3,
+      "andamento": 6,
+      "entradas_mes": 4,
       "saidas_mes": 1,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 3,
-      "valor_causa": 2282863.06
+      "valor_causa": 2409713.79
     },
     {
       "nome": "Sócios",
@@ -437,12 +437,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5752,
-      "entradas_mes": 53,
+      "andamento": 5753,
+      "entradas_mes": 54,
       "saidas_mes": 42,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 838,
-      "valor_causa": 1367608321.66
+      "valor_causa": 1367735172.39
     },
     {
       "nome": "MG",
@@ -518,8 +518,8 @@
     },
     {
       "nome": "—",
-      "andamento": 61,
-      "entradas_mes": 2,
+      "andamento": 63,
+      "entradas_mes": 4,
       "saidas_mes": 0,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 4,
@@ -682,12 +682,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2872,
-      "entradas_mes": 87,
+      "andamento": 2875,
+      "entradas_mes": 90,
       "saidas_mes": 9,
       "entradas_mes_anterior": 269,
       "saidas_mes_anterior": 201,
-      "valor_causa": 830451560.6
+      "valor_causa": 830578411.33
     },
     {
       "nome": "Sentença",
@@ -892,8 +892,8 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 861,
-      "entradas_mes": 16,
+      "andamento": 863,
+      "entradas_mes": 18,
       "saidas_mes": 3,
       "entradas_mes_anterior": 101,
       "saidas_mes_anterior": 23,
@@ -972,12 +972,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 4,
-      "entradas_mes": 3,
+      "andamento": 5,
+      "entradas_mes": 4,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 2244863.06
+      "valor_causa": 2371713.79
     },
     {
       "fase": "Instrução",
@@ -1369,12 +1369,12 @@
     },
     {
       "nome": "Rafael Camargo Felisbino(RCF)",
-      "andamento": 266,
-      "entradas_mes": 5,
+      "andamento": 269,
+      "entradas_mes": 8,
       "saidas_mes": 2,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 1,
-      "valor_causa": 108963733.17
+      "valor_causa": 109090583.9
     },
     {
       "nome": "Anna Carolina Balbino Gatti Baani(ANB)",
@@ -1719,8 +1719,8 @@
     },
     {
       "nome": "HERINGER",
-      "andamento": 337,
-      "entradas_mes": 4,
+      "andamento": 339,
+      "entradas_mes": 6,
       "saidas_mes": 0,
       "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 11,
@@ -3083,8 +3083,8 @@
     {
       "grupo": "Grupo E2",
       "cliente": "HERINGER",
-      "andamento": 335,
-      "entradas_mes": 4,
+      "andamento": 337,
+      "entradas_mes": 6,
       "saidas_mes": 0,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 11,
@@ -3650,6 +3650,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 107801.45,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "CASA DO SABER",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 126850.73,
       "alerta_entrada": false
     },
     {
@@ -4231,8 +4242,8 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Rafael Camargo Felisbino(RCF)",
-      "andamento": 132,
-      "entradas_mes": 3,
+      "andamento": 134,
+      "entradas_mes": 5,
       "saidas_mes": 1,
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 0,
@@ -4317,6 +4328,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 107801.45
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Rafael Camargo Felisbino(RCF)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 126850.73
     },
     {
       "grupo": "Sem grupo",
@@ -6872,6 +6893,16 @@
     },
     {
       "estado": "SP",
+      "cliente": "CASA DO SABER",
+      "andamento": 2,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 362753.96
+    },
+    {
+      "estado": "SP",
       "cliente": "ELETROBRAS",
       "andamento": 2,
       "entradas_mes": 0,
@@ -7312,16 +7343,6 @@
     },
     {
       "estado": "SP",
-      "cliente": "CASA DO SABER",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 235903.23
-    },
-    {
-      "estado": "SP",
       "cliente": "ENERGISA ESS",
       "andamento": 1,
       "entradas_mes": 0,
@@ -7522,6 +7543,16 @@
     },
     {
       "estado": "—",
+      "cliente": "HERINGER",
+      "andamento": 5,
+      "entradas_mes": 4,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 0.0
+    },
+    {
+      "estado": "—",
       "cliente": "LOCALIZA RENT A CAR",
       "andamento": 4,
       "entradas_mes": 0,
@@ -7535,16 +7566,6 @@
       "cliente": "CBC CARTUCHOS BRASIL",
       "andamento": 4,
       "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 0.0
-    },
-    {
-      "estado": "—",
-      "cliente": "HERINGER",
-      "andamento": 3,
-      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
@@ -7698,6 +7719,11 @@
       "numero_processo": "1002067-96.2026.5.02.0431",
       "cliente": "BRIDGESTONE",
       "profissional": "Tamara Silva Marcílio(TAM)"
+    },
+    {
+      "numero_processo": "1001225-47.2026.5.02.0066",
+      "cliente": "CASA DO SABER",
+      "profissional": "Rafael Camargo Felisbino(RCF)"
     },
     {
       "numero_processo": "0011493-46.2026.5.15.0025",
