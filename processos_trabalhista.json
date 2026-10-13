@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-13T12:15:24",
+  "atualizado_em": "2026-10-13T12:30:31",
   "kpis": {
     "total_andamento": 7578,
     "entradas_hoje": 2,
@@ -673,7 +673,7 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 407,
+      "andamento": 406,
       "entradas_mes": 9,
       "saidas_mes": 4,
       "entradas_mes_anterior": 34,
@@ -700,7 +700,7 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2966,
+      "andamento": 2967,
       "entradas_mes": 1,
       "saidas_mes": 10,
       "entradas_mes_anterior": 3,
@@ -732,7 +732,7 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo B2",
-      "andamento": 95,
+      "andamento": 94,
       "entradas_mes": 0,
       "saidas_mes": 2,
       "entradas_mes_anterior": 0,
@@ -1122,7 +1122,7 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo B2",
-      "andamento": 378,
+      "andamento": 379,
       "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
@@ -4279,16 +4279,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Vanessa de Cassia Castrequini Rosa(VCR)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 678892.01
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Anna Carolina Balbino Gatti Baani(ANB)",
       "andamento": 1,
       "entradas_mes": 1,
@@ -4296,6 +4286,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 1457169.6
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Vanessa de Cassia Castrequini Rosa(VCR)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 678892.01
     },
     {
       "grupo": "Sem grupo",
@@ -7674,14 +7674,14 @@
   ],
   "sem_grupo_processos": [
     {
-      "numero_processo": "0013403-47.2026.5.15.0013",
-      "cliente": "EMBRAER",
-      "profissional": "Vanessa de Cassia Castrequini Rosa(VCR)"
-    },
-    {
       "numero_processo": "0011493-46.2026.5.15.0025",
       "cliente": "EMBRAER",
       "profissional": "Anna Carolina Balbino Gatti Baani(ANB)"
+    },
+    {
+      "numero_processo": "0013403-47.2026.5.15.0013",
+      "cliente": "EMBRAER",
+      "profissional": "Vanessa de Cassia Castrequini Rosa(VCR)"
     },
     {
       "numero_processo": "0003841-21.2026.5.09.0000",
