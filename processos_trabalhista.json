@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-14T15:00:26",
+  "atualizado_em": "2026-10-14T15:15:23",
   "kpis": {
-    "total_andamento": 7595,
+    "total_andamento": 7594,
     "entradas_hoje": 1,
-    "saidas_hoje": 12,
+    "saidas_hoje": 13,
     "entradas_ontem": 34,
     "saidas_ontem": 8,
     "entradas_mes": 130,
-    "saidas_mes": 60,
+    "saidas_mes": 61,
     "entradas_mes_anterior": 320,
     "saidas_mes_anterior": 1018,
     "valor_causa_total": 1759882784.31,
-    "saldo_mes": 70
+    "saldo_mes": 69
   },
   "serie_diaria": [
     {
@@ -312,7 +312,7 @@
     {
       "data": "2026-10-14",
       "entradas": 1,
-      "saidas": 12
+      "saidas": 13
     }
   ],
   "por_grupo": [
@@ -327,9 +327,9 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1806,
+      "andamento": 1805,
       "entradas_mes": 21,
-      "saidas_mes": 22,
+      "saidas_mes": 23,
       "entradas_mes_anterior": 60,
       "saidas_mes_anterior": 46,
       "valor_causa": 309040285.46
@@ -354,12 +354,12 @@
     },
     {
       "nome": "Grupo C",
-      "andamento": 705,
-      "entradas_mes": 37,
+      "andamento": 706,
+      "entradas_mes": 38,
       "saidas_mes": 3,
       "entradas_mes_anterior": 40,
       "saidas_mes_anterior": 12,
-      "valor_causa": 259789602.6
+      "valor_causa": 259861619.6
     },
     {
       "nome": "Grupo B3",
@@ -399,12 +399,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 5,
-      "entradas_mes": 3,
+      "andamento": 4,
+      "entradas_mes": 2,
       "saidas_mes": 1,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 3,
-      "valor_causa": 331417.0
+      "valor_causa": 259400.0
     },
     {
       "nome": "Sócios",
@@ -437,9 +437,9 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5746,
+      "andamento": 5745,
       "entradas_mes": 61,
-      "saidas_mes": 52,
+      "saidas_mes": 53,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 841,
       "valor_causa": 1368215257.34
@@ -682,27 +682,27 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2882,
+      "andamento": 2881,
       "entradas_mes": 117,
       "saidas_mes": 14,
-      "entradas_mes_anterior": 269,
+      "entradas_mes_anterior": 268,
       "saidas_mes_anterior": 201,
-      "valor_causa": 833202085.61
+      "valor_causa": 833171463.95
     },
     {
       "nome": "Sentença",
-      "andamento": 32,
+      "andamento": 33,
       "entradas_mes": 0,
       "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
+      "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 6,
-      "valor_causa": 28887555.87
+      "valor_causa": 28918177.53
     },
     {
       "nome": "Recurso",
-      "andamento": 2973,
+      "andamento": 2972,
       "entradas_mes": 1,
-      "saidas_mes": 13,
+      "saidas_mes": 14,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 389,
       "valor_causa": 666139715.99
@@ -913,11 +913,11 @@
       "fase": "Instrução",
       "grupo": "Grupo C",
       "andamento": 439,
-      "entradas_mes": 37,
+      "entradas_mes": 38,
       "saidas_mes": 3,
-      "entradas_mes_anterior": 39,
+      "entradas_mes_anterior": 38,
       "saidas_mes_anterior": 8,
-      "valor_causa": 170263930.1
+      "valor_causa": 170305325.44
     },
     {
       "fase": "Instrução",
@@ -982,12 +982,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 4,
-      "entradas_mes": 3,
+      "andamento": 3,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 293417.0
+      "valor_causa": 221400.0
     },
     {
       "fase": "Outras",
@@ -1102,9 +1102,9 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo E1",
-      "andamento": 750,
+      "andamento": 749,
       "entradas_mes": 0,
-      "saidas_mes": 9,
+      "saidas_mes": 10,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 8,
       "valor_causa": 110352976.5
@@ -1211,6 +1211,16 @@
     },
     {
       "fase": "Sentença",
+      "grupo": "Grupo C",
+      "andamento": 2,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 181368.95
+    },
+    {
+      "fase": "Sentença",
       "grupo": "Grupo A2",
       "andamento": 1,
       "entradas_mes": 0,
@@ -1228,16 +1238,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 25300000.0
-    },
-    {
-      "fase": "Sentença",
-      "grupo": "Grupo C",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 150747.29
     }
   ],
   "por_profissional": [
@@ -1405,9 +1405,9 @@
     },
     {
       "nome": "Paloma da Silva Santos(PSI)",
-      "andamento": 248,
+      "andamento": 247,
       "entradas_mes": 8,
-      "saidas_mes": 6,
+      "saidas_mes": 7,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 11,
       "valor_causa": 56275160.76
@@ -1709,9 +1709,9 @@
     },
     {
       "nome": "MAHLE METAL - MOGI",
-      "andamento": 358,
+      "andamento": 357,
       "entradas_mes": 6,
-      "saidas_mes": 7,
+      "saidas_mes": 8,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 10,
       "valor_causa": 73037259.75,
@@ -2456,12 +2456,12 @@
     {
       "grupo": "Grupo C",
       "cliente": "COMPANHIA AIX",
-      "andamento": 143,
-      "entradas_mes": 31,
+      "andamento": 144,
+      "entradas_mes": 32,
       "saidas_mes": 0,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 0,
-      "valor_causa": 35014896.14,
+      "valor_causa": 35086913.14,
       "alerta_entrada": true
     },
     {
@@ -2841,9 +2841,9 @@
     {
       "grupo": "Grupo E1",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 358,
+      "andamento": 357,
       "entradas_mes": 6,
-      "saidas_mes": 7,
+      "saidas_mes": 8,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 10,
       "valor_causa": 73037259.75,
@@ -3633,13 +3633,13 @@
     {
       "grupo": "Sem grupo",
       "cliente": "COMPANHIA AIX",
-      "andamento": 3,
-      "entradas_mes": 3,
+      "andamento": 2,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 292417.0,
-      "alerta_entrada": true
+      "valor_causa": 220400.0,
+      "alerta_entrada": false
     },
     {
       "grupo": "Sem grupo",
@@ -3970,12 +3970,12 @@
     {
       "grupo": "Grupo C",
       "profissional": "Erik Mota Coppi(ECO)",
-      "andamento": 245,
-      "entradas_mes": 18,
+      "andamento": 246,
+      "entradas_mes": 19,
       "saidas_mes": 1,
       "entradas_mes_anterior": 14,
       "saidas_mes_anterior": 12,
-      "valor_causa": 53745792.57
+      "valor_causa": 53817809.57
     },
     {
       "grupo": "Grupo C",
@@ -4060,9 +4060,9 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Paloma da Silva Santos(PSI)",
-      "andamento": 248,
+      "andamento": 247,
       "entradas_mes": 8,
-      "saidas_mes": 6,
+      "saidas_mes": 7,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 10,
       "valor_causa": 56275160.76
@@ -4280,12 +4280,12 @@
     {
       "grupo": "Sem grupo",
       "profissional": "Erik Mota Coppi(ECO)",
-      "andamento": 3,
-      "entradas_mes": 3,
+      "andamento": 2,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 292417.0
+      "valor_causa": 220400.0
     },
     {
       "grupo": "Sem grupo",
@@ -6292,9 +6292,9 @@
     {
       "estado": "SP",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 357,
+      "andamento": 356,
       "entradas_mes": 6,
-      "saidas_mes": 7,
+      "saidas_mes": 8,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 10,
       "valor_causa": 73037259.75
@@ -7670,11 +7670,6 @@
     },
     {
       "numero_processo": "0001573-45.2026.5.07.0001",
-      "cliente": "COMPANHIA AIX",
-      "profissional": "Erik Mota Coppi(ECO)"
-    },
-    {
-      "numero_processo": "0001551-36.2026.5.07.0017",
       "cliente": "COMPANHIA AIX",
       "profissional": "Erik Mota Coppi(ECO)"
     },
