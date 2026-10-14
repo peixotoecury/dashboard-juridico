@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-14T09:30:39",
+  "atualizado_em": "2026-10-14T09:45:27",
   "kpis": {
-    "total_andamento": 7607,
+    "total_andamento": 7602,
     "entradas_hoje": 0,
-    "saidas_hoje": 0,
+    "saidas_hoje": 5,
     "entradas_ontem": 34,
     "saidas_ontem": 8,
     "entradas_mes": 129,
-    "saidas_mes": 48,
+    "saidas_mes": 53,
     "entradas_mes_anterior": 320,
     "saidas_mes_anterior": 1018,
     "valor_causa_total": 1760686569.41,
-    "saldo_mes": 81
+    "saldo_mes": 76
   },
   "serie_diaria": [
     {
@@ -312,7 +312,7 @@
     {
       "data": "2026-10-14",
       "entradas": 0,
-      "saidas": 0
+      "saidas": 5
     }
   ],
   "por_grupo": [
@@ -363,9 +363,9 @@
     },
     {
       "nome": "Grupo B3",
-      "andamento": 570,
+      "andamento": 565,
       "entradas_mes": 16,
-      "saidas_mes": 1,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 11,
       "valor_causa": 110998963.21
@@ -437,9 +437,9 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5757,
+      "andamento": 5753,
       "entradas_mes": 61,
-      "saidas_mes": 42,
+      "saidas_mes": 46,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 841,
       "valor_causa": 1369019042.44
@@ -518,9 +518,9 @@
     },
     {
       "nome": "—",
-      "andamento": 63,
+      "andamento": 62,
       "entradas_mes": 4,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 4,
       "valor_causa": 9541490.97
@@ -682,9 +682,9 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2895,
+      "andamento": 2894,
       "entradas_mes": 116,
-      "saidas_mes": 9,
+      "saidas_mes": 10,
       "entradas_mes_anterior": 269,
       "saidas_mes_anterior": 201,
       "valor_causa": 836431353.44
@@ -717,7 +717,7 @@
       "valor_causa": 128020076.34
     }
   ],
-  "por_fase_outras": 400,
+  "por_fase_outras": 396,
   "por_fase_grupo": [
     {
       "fase": "Ajuizamento",
@@ -932,9 +932,9 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B3",
-      "andamento": 144,
+      "andamento": 143,
       "entradas_mes": 15,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 5,
       "valor_causa": 27150319.91
@@ -1012,9 +1012,9 @@
     {
       "fase": "Outras",
       "grupo": "Grupo B3",
-      "andamento": 66,
+      "andamento": 62,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 4,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 174669.73
@@ -1441,9 +1441,9 @@
     },
     {
       "nome": "Nicolau Rafael Guimarães Coelho(NRG)",
-      "andamento": 210,
+      "andamento": 205,
       "entradas_mes": 0,
-      "saidas_mes": 3,
+      "saidas_mes": 8,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 6,
       "valor_causa": 28530573.0
@@ -1749,9 +1749,9 @@
     },
     {
       "nome": "CBC CARTUCHOS BRASIL",
-      "andamento": 237,
+      "andamento": 232,
       "entradas_mes": 11,
-      "saidas_mes": 1,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 7,
       "valor_causa": 29694373.98,
@@ -2324,9 +2324,9 @@
     {
       "grupo": "Grupo B3",
       "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 234,
+      "andamento": 229,
       "entradas_mes": 11,
-      "saidas_mes": 1,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 7,
       "valor_causa": 29694373.98,
@@ -4006,9 +4006,9 @@
     {
       "grupo": "Grupo B3",
       "profissional": "Nicolau Rafael Guimarães Coelho(NRG)",
-      "andamento": 83,
+      "andamento": 78,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 3168706.0
@@ -6448,9 +6448,9 @@
     {
       "estado": "SP",
       "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 227,
+      "andamento": 223,
       "entradas_mes": 11,
-      "saidas_mes": 1,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 7,
       "valor_causa": 28468880.04
@@ -7627,8 +7627,8 @@
     },
     {
       "estado": "—",
-      "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 4,
+      "cliente": "BRIDGESTONE",
+      "andamento": 3,
       "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
@@ -7637,10 +7637,10 @@
     },
     {
       "estado": "—",
-      "cliente": "BRIDGESTONE",
+      "cliente": "CBC CARTUCHOS BRASIL",
       "andamento": 3,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
@@ -7759,9 +7759,9 @@
   "clientes_com_alerta": [
     {
       "nome": "CBC CARTUCHOS BRASIL",
-      "andamento": 237,
+      "andamento": 232,
       "entradas_mes": 11,
-      "saidas_mes": 1,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 7,
       "valor_causa": 29694373.98,
