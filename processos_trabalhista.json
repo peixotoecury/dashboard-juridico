@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-14T16:30:47",
+  "atualizado_em": "2026-10-14T16:45:25",
   "kpis": {
-    "total_andamento": 7594,
-    "entradas_hoje": 1,
+    "total_andamento": 7596,
+    "entradas_hoje": 3,
     "saidas_hoje": 13,
     "entradas_ontem": 34,
     "saidas_ontem": 8,
-    "entradas_mes": 130,
+    "entradas_mes": 132,
     "saidas_mes": 61,
     "entradas_mes_anterior": 320,
     "saidas_mes_anterior": 1018,
-    "valor_causa_total": 1759882784.31,
-    "saldo_mes": 69
+    "valor_causa_total": 1760116484.31,
+    "saldo_mes": 71
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-10-14",
-      "entradas": 1,
+      "entradas": 3,
       "saidas": 13
     }
   ],
@@ -398,6 +398,15 @@
       "valor_causa": 11721158.38
     },
     {
+      "nome": "Sem grupo",
+      "andamento": 4,
+      "entradas_mes": 2,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 3,
+      "valor_causa": 272700.0
+    },
+    {
       "nome": "Sócios",
       "andamento": 3,
       "entradas_mes": 0,
@@ -414,15 +423,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 302895.71
-    },
-    {
-      "nome": "Sem grupo",
-      "andamento": 2,
-      "entradas_mes": 0,
-      "saidas_mes": 1,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 3,
-      "valor_causa": 39000.0
     },
     {
       "nome": "Grupo D1",
@@ -446,12 +446,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5745,
-      "entradas_mes": 61,
+      "andamento": 5746,
+      "entradas_mes": 62,
       "saidas_mes": 53,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 841,
-      "valor_causa": 1368215257.34
+      "valor_causa": 1368285757.34
     },
     {
       "nome": "MG",
@@ -554,12 +554,12 @@
     },
     {
       "nome": "CE",
-      "andamento": 36,
-      "entradas_mes": 25,
+      "andamento": 37,
+      "entradas_mes": 26,
       "saidas_mes": 1,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 1,
-      "valor_causa": 5396582.81
+      "valor_causa": 5559782.81
     },
     {
       "nome": "ES",
@@ -691,12 +691,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2879,
-      "entradas_mes": 117,
+      "andamento": 2880,
+      "entradas_mes": 119,
       "saidas_mes": 14,
       "entradas_mes_anterior": 268,
       "saidas_mes_anterior": 201,
-      "valor_causa": 832928921.2
+      "valor_causa": 832958098.55
     },
     {
       "nome": "Sentença",
@@ -709,12 +709,12 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2973,
+      "andamento": 2974,
       "entradas_mes": 1,
       "saidas_mes": 14,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 389,
-      "valor_causa": 666055014.89
+      "valor_causa": 666259537.54
     },
     {
       "nome": "Execução",
@@ -921,12 +921,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo C",
-      "andamento": 440,
+      "andamento": 439,
       "entradas_mes": 39,
       "saidas_mes": 3,
       "entradas_mes_anterior": 38,
       "saidas_mes_anterior": 8,
-      "valor_causa": 170443525.44
+      "valor_causa": 170239002.79
     },
     {
       "fase": "Instrução",
@@ -990,6 +990,16 @@
     },
     {
       "fase": "Instrução",
+      "grupo": "Sem grupo",
+      "andamento": 3,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 234700.0
+    },
+    {
+      "fase": "Instrução",
       "grupo": "Grupo C1",
       "andamento": 1,
       "entradas_mes": 1,
@@ -997,16 +1007,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 82200.0
-    },
-    {
-      "fase": "Instrução",
-      "grupo": "Sem grupo",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 1000.0
     },
     {
       "fase": "Outras",
@@ -1171,12 +1171,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo C",
-      "andamento": 133,
+      "andamento": 134,
       "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
-      "valor_causa": 67989275.07
+      "valor_causa": 68193797.72
     },
     {
       "fase": "Recurso",
@@ -1335,12 +1335,12 @@
     },
     {
       "nome": "Tamara Silva Marcílio(TAM)",
-      "andamento": 297,
-      "entradas_mes": 3,
+      "andamento": 298,
+      "entradas_mes": 4,
       "saidas_mes": 1,
       "entradas_mes_anterior": 21,
       "saidas_mes_anterior": 7,
-      "valor_causa": 79993154.5
+      "valor_causa": 80063654.5
     },
     {
       "nome": "Rafael Rocha Ferreira(RFE)",
@@ -1406,6 +1406,15 @@
       "valor_causa": 109559583.9
     },
     {
+      "nome": "Erik Mota Coppi(ECO)",
+      "andamento": 265,
+      "entradas_mes": 22,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 15,
+      "saidas_mes_anterior": 12,
+      "valor_causa": 54201409.57
+    },
+    {
       "nome": "Anna Carolina Balbino Gatti Baani(ANB)",
       "andamento": 264,
       "entradas_mes": 4,
@@ -1413,15 +1422,6 @@
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 4,
       "valor_causa": 64871603.63
-    },
-    {
-      "nome": "Erik Mota Coppi(ECO)",
-      "andamento": 264,
-      "entradas_mes": 21,
-      "saidas_mes": 1,
-      "entradas_mes_anterior": 15,
-      "saidas_mes_anterior": 12,
-      "valor_causa": 54038209.57
     },
     {
       "nome": "Mariana Borges de Menezes Fávaro(MBF)",
@@ -1688,12 +1688,12 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1446,
-      "entradas_mes": 10,
+      "andamento": 1447,
+      "entradas_mes": 11,
       "saidas_mes": 2,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 42,
-      "valor_causa": 325507338.7,
+      "valor_causa": 325577838.7,
       "alerta_entrada": false
     },
     {
@@ -1818,12 +1818,12 @@
     },
     {
       "nome": "COMPANHIA AIX",
-      "andamento": 146,
-      "entradas_mes": 34,
+      "andamento": 147,
+      "entradas_mes": 35,
       "saidas_mes": 0,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 0,
-      "valor_causa": 35307313.14,
+      "valor_causa": 35470513.14,
       "alerta_entrada": true
     },
     {
@@ -3683,6 +3683,28 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "BRIDGESTONE",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 70500.0,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "COMPANHIA AIX",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 163200.0,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "HERINGER",
       "andamento": 1,
       "entradas_mes": 0,
@@ -4339,6 +4361,26 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Tamara Silva Marcílio(TAM)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 70500.0
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Erik Mota Coppi(ECO)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 163200.0
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Bianca Bolanhi Camacho(BBO)",
       "andamento": 1,
       "entradas_mes": 0,
@@ -4582,12 +4624,12 @@
     {
       "estado": "CE",
       "cliente": "COMPANHIA AIX",
-      "andamento": 30,
-      "entradas_mes": 25,
+      "andamento": 31,
+      "entradas_mes": 26,
       "saidas_mes": 0,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 0,
-      "valor_causa": 5390764.88
+      "valor_causa": 5553964.88
     },
     {
       "estado": "CE",
@@ -6302,12 +6344,12 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1418,
-      "entradas_mes": 10,
+      "andamento": 1419,
+      "entradas_mes": 11,
       "saidas_mes": 2,
       "entradas_mes_anterior": 52,
       "saidas_mes_anterior": 41,
-      "valor_causa": 313857294.18
+      "valor_causa": 313927794.18
     },
     {
       "estado": "SP",
@@ -7703,16 +7745,26 @@
     },
     {
       "nome": "COMPANHIA AIX",
-      "andamento": 146,
-      "entradas_mes": 34,
+      "andamento": 147,
+      "entradas_mes": 35,
       "saidas_mes": 0,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 0,
-      "valor_causa": 35307313.14,
+      "valor_causa": 35470513.14,
       "alerta_entrada": true
     }
   ],
   "sem_grupo_processos": [
+    {
+      "numero_processo": "1002034-06.2026.5.02.0432",
+      "cliente": "BRIDGESTONE",
+      "profissional": "Tamara Silva Marcílio(TAM)"
+    },
+    {
+      "numero_processo": "0001554-88.2026.5.07.0017",
+      "cliente": "COMPANHIA AIX",
+      "profissional": "Erik Mota Coppi(ECO)"
+    },
     {
       "numero_processo": "0003841-21.2026.5.09.0000",
       "cliente": "HERINGER",
