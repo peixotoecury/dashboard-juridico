@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-14T15:15:23",
+  "atualizado_em": "2026-10-14T15:30:29",
   "kpis": {
     "total_andamento": 7594,
     "entradas_hoje": 1,
@@ -355,11 +355,11 @@
     {
       "nome": "Grupo C",
       "andamento": 706,
-      "entradas_mes": 38,
+      "entradas_mes": 39,
       "saidas_mes": 3,
       "entradas_mes_anterior": 40,
       "saidas_mes_anterior": 12,
-      "valor_causa": 259861619.6
+      "valor_causa": 259779123.89
     },
     {
       "nome": "Grupo B3",
@@ -398,15 +398,6 @@
       "valor_causa": 11721158.38
     },
     {
-      "nome": "Sem grupo",
-      "andamento": 4,
-      "entradas_mes": 2,
-      "saidas_mes": 1,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 3,
-      "valor_causa": 259400.0
-    },
-    {
       "nome": "Sócios",
       "andamento": 3,
       "entradas_mes": 0,
@@ -414,6 +405,24 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
+    },
+    {
+      "nome": "Grupo C1",
+      "andamento": 2,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 302895.71
+    },
+    {
+      "nome": "Sem grupo",
+      "andamento": 2,
+      "entradas_mes": 0,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 3,
+      "valor_causa": 39000.0
     },
     {
       "nome": "Grupo D1",
@@ -682,12 +691,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2881,
+      "andamento": 2880,
       "entradas_mes": 117,
       "saidas_mes": 14,
       "entradas_mes_anterior": 268,
       "saidas_mes_anterior": 201,
-      "valor_causa": 833171463.95
+      "valor_causa": 833061696.9
     },
     {
       "nome": "Sentença",
@@ -700,12 +709,12 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2972,
+      "andamento": 2973,
       "entradas_mes": 1,
       "saidas_mes": 14,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 389,
-      "valor_causa": 666139715.99
+      "valor_causa": 666249483.04
     },
     {
       "nome": "Execução",
@@ -912,22 +921,22 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo C",
-      "andamento": 439,
-      "entradas_mes": 38,
+      "andamento": 440,
+      "entradas_mes": 39,
       "saidas_mes": 3,
       "entradas_mes_anterior": 38,
       "saidas_mes_anterior": 8,
-      "valor_causa": 170305325.44
+      "valor_causa": 170443525.44
     },
     {
       "fase": "Instrução",
       "grupo": "Grupo B1",
-      "andamento": 434,
+      "andamento": 433,
       "entradas_mes": 10,
       "saidas_mes": 1,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 13,
-      "valor_causa": 147586793.85
+      "valor_causa": 147477026.8
     },
     {
       "fase": "Instrução",
@@ -981,13 +990,23 @@
     },
     {
       "fase": "Instrução",
+      "grupo": "Grupo C1",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 82200.0
+    },
+    {
+      "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 3,
-      "entradas_mes": 2,
+      "andamento": 1,
+      "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 221400.0
+      "valor_causa": 1000.0
     },
     {
       "fase": "Outras",
@@ -1002,12 +1021,12 @@
     {
       "fase": "Outras",
       "grupo": "Grupo C",
-      "andamento": 71,
+      "andamento": 70,
       "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 313695.71
+      "valor_causa": 93000.0
     },
     {
       "fase": "Outras",
@@ -1071,6 +1090,16 @@
     },
     {
       "fase": "Outras",
+      "grupo": "Grupo C1",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 220695.71
+    },
+    {
+      "fase": "Outras",
       "grupo": "Sócios",
       "andamento": 1,
       "entradas_mes": 0,
@@ -1092,12 +1121,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo B1",
-      "andamento": 853,
+      "andamento": 854,
       "entradas_mes": 0,
       "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 15,
-      "valor_causa": 159876513.19
+      "valor_causa": 159986280.24
     },
     {
       "fase": "Recurso",
@@ -2445,23 +2474,23 @@
     {
       "grupo": "Grupo C",
       "cliente": "TELEFONICA BRASIL",
-      "andamento": 348,
+      "andamento": 347,
       "entradas_mes": 3,
       "saidas_mes": 2,
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 1,
-      "valor_causa": 187033697.3,
+      "valor_causa": 186813001.59,
       "alerta_entrada": false
     },
     {
       "grupo": "Grupo C",
       "cliente": "COMPANHIA AIX",
-      "andamento": 144,
-      "entradas_mes": 32,
+      "andamento": 145,
+      "entradas_mes": 33,
       "saidas_mes": 0,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 0,
-      "valor_causa": 35086913.14,
+      "valor_causa": 35225113.14,
       "alerta_entrada": true
     },
     {
@@ -2825,6 +2854,28 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 78500.0,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Grupo C1",
+      "cliente": "TELEFONICA BRASIL",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 220695.71,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Grupo C1",
+      "cliente": "COMPANHIA AIX",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 82200.0,
       "alerta_entrada": false
     },
     {
@@ -3632,17 +3683,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "COMPANHIA AIX",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 220400.0,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "HERINGER",
       "andamento": 1,
       "entradas_mes": 0,
@@ -3970,12 +4010,12 @@
     {
       "grupo": "Grupo C",
       "profissional": "Erik Mota Coppi(ECO)",
-      "andamento": 246,
-      "entradas_mes": 19,
+      "andamento": 247,
+      "entradas_mes": 20,
       "saidas_mes": 1,
       "entradas_mes_anterior": 14,
       "saidas_mes_anterior": 12,
-      "valor_causa": 53817809.57
+      "valor_causa": 53956009.57
     },
     {
       "grupo": "Grupo C",
@@ -3990,12 +4030,12 @@
     {
       "grupo": "Grupo C",
       "profissional": "Vinicius da Silva Cerqueira(VSI)",
-      "andamento": 144,
+      "andamento": 143,
       "entradas_mes": 15,
       "saidas_mes": 0,
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 0,
-      "valor_causa": 57996264.18
+      "valor_causa": 57775568.47
     },
     {
       "grupo": "Grupo C",
@@ -4026,6 +4066,26 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
+    },
+    {
+      "grupo": "Grupo C1",
+      "profissional": "Vinicius da Silva Cerqueira(VSI)",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 220695.71
+    },
+    {
+      "grupo": "Grupo C1",
+      "profissional": "Erik Mota Coppi(ECO)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 82200.0
     },
     {
       "grupo": "Grupo E1",
@@ -4276,16 +4336,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Erik Mota Coppi(ECO)",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 220400.0
     },
     {
       "grupo": "Sem grupo",
@@ -7663,16 +7713,6 @@
     }
   ],
   "sem_grupo_processos": [
-    {
-      "numero_processo": "0001580-37.2026.5.07.0001",
-      "cliente": "COMPANHIA AIX",
-      "profissional": "Erik Mota Coppi(ECO)"
-    },
-    {
-      "numero_processo": "0001573-45.2026.5.07.0001",
-      "cliente": "COMPANHIA AIX",
-      "profissional": "Erik Mota Coppi(ECO)"
-    },
     {
       "numero_processo": "0003841-21.2026.5.09.0000",
       "cliente": "HERINGER",
