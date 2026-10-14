@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-14T17:15:28",
+  "atualizado_em": "2026-10-14T17:30:36",
   "kpis": {
-    "total_andamento": 7600,
+    "total_andamento": 7594,
     "entradas_hoje": 8,
-    "saidas_hoje": 14,
+    "saidas_hoje": 20,
     "entradas_ontem": 34,
     "saidas_ontem": 8,
     "entradas_mes": 137,
-    "saidas_mes": 62,
+    "saidas_mes": 68,
     "entradas_mes_anterior": 320,
     "saidas_mes_anterior": 1018,
-    "valor_causa_total": 1763623579.27,
-    "saldo_mes": 75
+    "valor_causa_total": 1762300352.48,
+    "saldo_mes": 69
   },
   "serie_diaria": [
     {
@@ -312,7 +312,7 @@
     {
       "data": "2026-10-14",
       "entradas": 8,
-      "saidas": 14
+      "saidas": 20
     }
   ],
   "por_grupo": [
@@ -336,12 +336,12 @@
     },
     {
       "nome": "Grupo B1",
-      "andamento": 1446,
+      "andamento": 1440,
       "entradas_mes": 10,
-      "saidas_mes": 2,
+      "saidas_mes": 8,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 42,
-      "valor_causa": 325507338.7
+      "valor_causa": 324184111.91
     },
     {
       "nome": "Grupo B2",
@@ -446,12 +446,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5750,
+      "andamento": 5744,
       "entradas_mes": 67,
-      "saidas_mes": 54,
+      "saidas_mes": 60,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 841,
-      "valor_causa": 1371792852.3
+      "valor_causa": 1370469625.51
     },
     {
       "nome": "MG",
@@ -718,12 +718,12 @@
     },
     {
       "nome": "Execução",
-      "andamento": 907,
+      "andamento": 901,
       "entradas_mes": 0,
-      "saidas_mes": 11,
+      "saidas_mes": 17,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 356,
-      "valor_causa": 128473258.43
+      "valor_causa": 127150031.64
     }
   ],
   "por_fase_outras": 396,
@@ -841,12 +841,12 @@
     {
       "fase": "Execução",
       "grupo": "Grupo B1",
-      "andamento": 159,
+      "andamento": 153,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 14,
-      "valor_causa": 18371275.51
+      "valor_causa": 17048048.72
     },
     {
       "fase": "Execução",
@@ -1308,12 +1308,12 @@
     },
     {
       "nome": "Beatriz Santiago de Souza(BSO)",
-      "andamento": 302,
+      "andamento": 300,
       "entradas_mes": 2,
-      "saidas_mes": 1,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 8,
-      "valor_causa": 59174322.48
+      "valor_causa": 58783771.54
     },
     {
       "nome": "Bianca Bolanhi Camacho(BBO)",
@@ -1343,15 +1343,6 @@
       "valor_causa": 80223495.37
     },
     {
-      "nome": "Rafael Rocha Ferreira(RFE)",
-      "andamento": 295,
-      "entradas_mes": 4,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 13,
-      "saidas_mes_anterior": 6,
-      "valor_causa": 85365675.06
-    },
-    {
       "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
       "andamento": 294,
       "entradas_mes": 3,
@@ -1368,6 +1359,15 @@
       "entradas_mes_anterior": 14,
       "saidas_mes_anterior": 12,
       "valor_causa": 50837511.99
+    },
+    {
+      "nome": "Rafael Rocha Ferreira(RFE)",
+      "andamento": 293,
+      "entradas_mes": 4,
+      "saidas_mes": 2,
+      "entradas_mes_anterior": 13,
+      "saidas_mes_anterior": 6,
+      "valor_causa": 84850065.21
     },
     {
       "nome": "Júlia Priego Lopes da Silva(JPL)",
@@ -1389,12 +1389,12 @@
     },
     {
       "nome": "Guilherme Silva Morimoto(GSM)",
-      "andamento": 276,
+      "andamento": 275,
       "entradas_mes": 1,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 4,
-      "valor_causa": 69682105.88
+      "valor_causa": 69632105.88
     },
     {
       "nome": "Rafael Camargo Felisbino(RCF)",
@@ -1479,12 +1479,12 @@
     },
     {
       "nome": "Thais Amaral Rocca(TAR)",
-      "andamento": 197,
+      "andamento": 196,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 30666263.77
+      "valor_causa": 30299197.77
     },
     {
       "nome": "Thiago Frid Figueiredo Rossi(TFR)",
@@ -1688,12 +1688,12 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1450,
+      "andamento": 1444,
       "entradas_mes": 14,
-      "saidas_mes": 2,
+      "saidas_mes": 8,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 42,
-      "valor_causa": 328073994.28,
+      "valor_causa": 326750767.49,
       "alerta_entrada": false
     },
     {
@@ -2320,12 +2320,12 @@
     {
       "grupo": "Grupo B1",
       "cliente": "BRIDGESTONE",
-      "andamento": 1446,
+      "andamento": 1440,
       "entradas_mes": 10,
-      "saidas_mes": 2,
+      "saidas_mes": 8,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 42,
-      "valor_causa": 325507338.7,
+      "valor_causa": 324184111.91,
       "alerta_entrada": false
     },
     {
@@ -3884,12 +3884,12 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Beatriz Santiago de Souza(BSO)",
-      "andamento": 302,
+      "andamento": 300,
       "entradas_mes": 2,
-      "saidas_mes": 1,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 8,
-      "valor_causa": 59174322.48
+      "valor_causa": 58783771.54
     },
     {
       "grupo": "Grupo B1",
@@ -3904,32 +3904,32 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Rafael Rocha Ferreira(RFE)",
-      "andamento": 294,
+      "andamento": 292,
       "entradas_mes": 3,
-      "saidas_mes": 0,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 6,
-      "valor_causa": 83238262.82
+      "valor_causa": 82722652.97
     },
     {
       "grupo": "Grupo B1",
       "profissional": "Guilherme Silva Morimoto(GSM)",
-      "andamento": 223,
+      "andamento": 222,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 4,
-      "valor_causa": 47553382.17
+      "valor_causa": 47503382.17
     },
     {
       "grupo": "Grupo B1",
       "profissional": "Thais Amaral Rocca(TAR)",
-      "andamento": 197,
+      "andamento": 196,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 30666263.77
+      "valor_causa": 30299197.77
     },
     {
       "grupo": "Grupo B1",
@@ -6406,12 +6406,12 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1422,
+      "andamento": 1416,
       "entradas_mes": 14,
-      "saidas_mes": 2,
+      "saidas_mes": 8,
       "entradas_mes_anterior": 52,
       "saidas_mes_anterior": 41,
-      "valor_causa": 316423949.76
+      "valor_causa": 315100722.97
     },
     {
       "estado": "SP",
@@ -7823,11 +7823,6 @@
       "profissional": "Tamara Silva Marcílio(TAM)"
     },
     {
-      "numero_processo": "1002091-27.2026.5.02.0431",
-      "cliente": "BRIDGESTONE",
-      "profissional": "Tamara Silva Marcílio(TAM)"
-    },
-    {
       "numero_processo": "1002088-72.2026.5.02.0431",
       "cliente": "BRIDGESTONE",
       "profissional": "Guilherme Silva Morimoto(GSM)"
@@ -7836,6 +7831,11 @@
       "numero_processo": "1002026-60.2025.5.02.0433",
       "cliente": "BRIDGESTONE",
       "profissional": "Rafael Rocha Ferreira(RFE)"
+    },
+    {
+      "numero_processo": "1002091-27.2026.5.02.0431",
+      "cliente": "BRIDGESTONE",
+      "profissional": "Tamara Silva Marcílio(TAM)"
     },
     {
       "numero_processo": "0001554-88.2026.5.07.0017",
