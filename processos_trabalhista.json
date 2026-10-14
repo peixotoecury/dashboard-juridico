@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-14T13:15:27",
+  "atualizado_em": "2026-10-14T13:30:33",
   "kpis": {
-    "total_andamento": 7600,
+    "total_andamento": 7599,
     "entradas_hoje": 1,
-    "saidas_hoje": 8,
+    "saidas_hoje": 9,
     "entradas_ontem": 34,
     "saidas_ontem": 8,
     "entradas_mes": 130,
-    "saidas_mes": 56,
+    "saidas_mes": 57,
     "entradas_mes_anterior": 320,
     "saidas_mes_anterior": 1018,
     "valor_causa_total": 1760664297.32,
-    "saldo_mes": 74
+    "saldo_mes": 73
   },
   "serie_diaria": [
     {
@@ -312,7 +312,7 @@
     {
       "data": "2026-10-14",
       "entradas": 1,
-      "saidas": 8
+      "saidas": 9
     }
   ],
   "por_grupo": [
@@ -354,9 +354,9 @@
     },
     {
       "nome": "Grupo C",
-      "andamento": 701,
+      "andamento": 700,
       "entradas_mes": 32,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 40,
       "saidas_mes_anterior": 12,
       "valor_causa": 258836902.6
@@ -554,9 +554,9 @@
     },
     {
       "nome": "ES",
-      "andamento": 32,
+      "andamento": 31,
       "entradas_mes": 7,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 3,
       "valor_causa": 4164827.14
@@ -682,9 +682,9 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2889,
+      "andamento": 2888,
       "entradas_mes": 117,
-      "saidas_mes": 11,
+      "saidas_mes": 12,
       "entradas_mes_anterior": 269,
       "saidas_mes_anterior": 201,
       "valor_causa": 835324315.12
@@ -922,9 +922,9 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo C",
-      "andamento": 435,
+      "andamento": 434,
       "entradas_mes": 32,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 39,
       "saidas_mes_anterior": 8,
       "valor_causa": 169311230.1
@@ -1359,15 +1359,6 @@
       "valor_causa": 45871161.91
     },
     {
-      "nome": "Rafael Camargo Felisbino(RCF)",
-      "andamento": 275,
-      "entradas_mes": 14,
-      "saidas_mes": 2,
-      "entradas_mes_anterior": 18,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 109560583.9
-    },
-    {
       "nome": "Guilherme Silva Morimoto(GSM)",
       "andamento": 275,
       "entradas_mes": 0,
@@ -1375,6 +1366,15 @@
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 4,
       "valor_causa": 69473203.41
+    },
+    {
+      "nome": "Rafael Camargo Felisbino(RCF)",
+      "andamento": 274,
+      "entradas_mes": 14,
+      "saidas_mes": 3,
+      "entradas_mes_anterior": 18,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 109560583.9
     },
     {
       "nome": "Anna Carolina Balbino Gatti Baani(ANB)",
@@ -1699,9 +1699,9 @@
     },
     {
       "nome": "TELEFONICA BRASIL",
-      "andamento": 367,
+      "andamento": 366,
       "entradas_mes": 3,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 3,
       "valor_causa": 191899008.17,
@@ -2445,9 +2445,9 @@
     {
       "grupo": "Grupo C",
       "cliente": "TELEFONICA BRASIL",
-      "andamento": 349,
+      "andamento": 348,
       "entradas_mes": 3,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 1,
       "valor_causa": 187033697.3,
@@ -4000,9 +4000,9 @@
     {
       "grupo": "Grupo C",
       "profissional": "Rafael Camargo Felisbino(RCF)",
-      "andamento": 133,
+      "andamento": 132,
       "entradas_mes": 3,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
       "valor_causa": 30052471.06
@@ -4732,9 +4732,9 @@
     {
       "estado": "ES",
       "cliente": "TELEFONICA BRASIL",
-      "andamento": 5,
+      "andamento": 4,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
       "valor_causa": 0.0
