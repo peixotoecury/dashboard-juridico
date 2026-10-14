@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-14T14:15:23",
+  "atualizado_em": "2026-10-14T14:30:33",
   "kpis": {
-    "total_andamento": 7598,
+    "total_andamento": 7597,
     "entradas_hoje": 1,
-    "saidas_hoje": 9,
+    "saidas_hoje": 10,
     "entradas_ontem": 34,
     "saidas_ontem": 8,
     "entradas_mes": 130,
-    "saidas_mes": 57,
+    "saidas_mes": 58,
     "entradas_mes_anterior": 320,
     "saidas_mes_anterior": 1018,
-    "valor_causa_total": 1760663297.32,
-    "saldo_mes": 73
+    "valor_causa_total": 1759984405.31,
+    "saldo_mes": 72
   },
   "serie_diaria": [
     {
@@ -312,7 +312,7 @@
     {
       "data": "2026-10-14",
       "entradas": 1,
-      "saidas": 9
+      "saidas": 10
     }
   ],
   "por_grupo": [
@@ -345,21 +345,21 @@
     },
     {
       "nome": "Grupo B2",
-      "andamento": 742,
+      "andamento": 741,
       "entradas_mes": 6,
-      "saidas_mes": 8,
+      "saidas_mes": 9,
       "entradas_mes_anterior": 22,
       "saidas_mes_anterior": 22,
-      "valor_causa": 140428990.82
+      "valor_causa": 139750098.81
     },
     {
       "nome": "Grupo C",
-      "andamento": 701,
-      "entradas_mes": 33,
+      "andamento": 702,
+      "entradas_mes": 34,
       "saidas_mes": 3,
       "entradas_mes_anterior": 40,
       "saidas_mes_anterior": 12,
-      "valor_causa": 259146602.6
+      "valor_causa": 259288802.6
     },
     {
       "nome": "Grupo B3",
@@ -399,12 +399,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 9,
-      "entradas_mes": 7,
+      "andamento": 8,
+      "entradas_mes": 6,
       "saidas_mes": 1,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 3,
-      "valor_causa": 974417.0
+      "valor_causa": 832217.0
     },
     {
       "nome": "Sócios",
@@ -437,12 +437,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5749,
+      "andamento": 5748,
       "entradas_mes": 61,
-      "saidas_mes": 49,
+      "saidas_mes": 50,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 841,
-      "valor_causa": 1368995770.35
+      "valor_causa": 1368316878.34
     },
     {
       "nome": "MG",
@@ -682,12 +682,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2885,
+      "andamento": 2884,
       "entradas_mes": 117,
-      "saidas_mes": 12,
+      "saidas_mes": 13,
       "entradas_mes_anterior": 269,
       "saidas_mes_anterior": 201,
-      "valor_causa": 835021420.51
+      "valor_causa": 834342528.5
     },
     {
       "nome": "Sentença",
@@ -911,6 +911,16 @@
     },
     {
       "fase": "Instrução",
+      "grupo": "Grupo C",
+      "andamento": 436,
+      "entradas_mes": 34,
+      "saidas_mes": 3,
+      "entradas_mes_anterior": 39,
+      "saidas_mes_anterior": 8,
+      "valor_causa": 169763130.1
+    },
+    {
+      "fase": "Instrução",
       "grupo": "Grupo B1",
       "andamento": 435,
       "entradas_mes": 10,
@@ -921,26 +931,6 @@
     },
     {
       "fase": "Instrução",
-      "grupo": "Grupo C",
-      "andamento": 435,
-      "entradas_mes": 33,
-      "saidas_mes": 3,
-      "entradas_mes_anterior": 39,
-      "saidas_mes_anterior": 8,
-      "valor_causa": 169620930.1
-    },
-    {
-      "fase": "Instrução",
-      "grupo": "Grupo B2",
-      "andamento": 143,
-      "entradas_mes": 6,
-      "saidas_mes": 1,
-      "entradas_mes_anterior": 22,
-      "saidas_mes_anterior": 2,
-      "valor_causa": 38275532.78
-    },
-    {
-      "fase": "Instrução",
       "grupo": "Grupo B3",
       "andamento": 143,
       "entradas_mes": 15,
@@ -948,6 +938,16 @@
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 5,
       "valor_causa": 27150319.91
+    },
+    {
+      "fase": "Instrução",
+      "grupo": "Grupo B2",
+      "andamento": 142,
+      "entradas_mes": 6,
+      "saidas_mes": 2,
+      "entradas_mes_anterior": 22,
+      "saidas_mes_anterior": 2,
+      "valor_causa": 37596640.77
     },
     {
       "fase": "Instrução",
@@ -972,12 +972,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 8,
-      "entradas_mes": 7,
+      "andamento": 7,
+      "entradas_mes": 6,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 936417.0
+      "valor_causa": 794217.0
     },
     {
       "fase": "Instrução",
@@ -1351,12 +1351,12 @@
     },
     {
       "nome": "Vanessa de Cassia Castrequini Rosa(VCR)",
-      "andamento": 278,
+      "andamento": 277,
       "entradas_mes": 2,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 7,
-      "valor_causa": 45871161.91
+      "valor_causa": 45192269.9
     },
     {
       "nome": "Guilherme Silva Morimoto(GSM)",
@@ -1679,12 +1679,12 @@
     },
     {
       "nome": "EMBRAER",
-      "andamento": 722,
+      "andamento": 721,
       "entradas_mes": 6,
-      "saidas_mes": 8,
+      "saidas_mes": 9,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 22,
-      "valor_causa": 138363323.03,
+      "valor_causa": 137684431.02,
       "alerta_entrada": false
     },
     {
@@ -2302,12 +2302,12 @@
     {
       "grupo": "Grupo B2",
       "cliente": "EMBRAER",
-      "andamento": 719,
+      "andamento": 718,
       "entradas_mes": 6,
-      "saidas_mes": 8,
+      "saidas_mes": 9,
       "entradas_mes_anterior": 22,
       "saidas_mes_anterior": 22,
-      "valor_causa": 138363323.03,
+      "valor_causa": 137684431.02,
       "alerta_entrada": false
     },
     {
@@ -2456,12 +2456,12 @@
     {
       "grupo": "Grupo C",
       "cliente": "COMPANHIA AIX",
-      "andamento": 139,
-      "entradas_mes": 27,
+      "andamento": 140,
+      "entradas_mes": 28,
       "saidas_mes": 0,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 0,
-      "valor_causa": 34371896.14,
+      "valor_causa": 34514096.14,
       "alerta_entrada": true
     },
     {
@@ -3633,12 +3633,12 @@
     {
       "grupo": "Sem grupo",
       "cliente": "COMPANHIA AIX",
-      "andamento": 7,
-      "entradas_mes": 7,
+      "andamento": 6,
+      "entradas_mes": 6,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 935417.0,
+      "valor_causa": 793217.0,
       "alerta_entrada": true
     },
     {
@@ -3880,12 +3880,12 @@
     {
       "grupo": "Grupo B2",
       "profissional": "Vanessa de Cassia Castrequini Rosa(VCR)",
-      "andamento": 278,
+      "andamento": 277,
       "entradas_mes": 2,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 7,
-      "valor_causa": 45871161.91
+      "valor_causa": 45192269.9
     },
     {
       "grupo": "Grupo B2",
@@ -3970,12 +3970,12 @@
     {
       "grupo": "Grupo C",
       "profissional": "Erik Mota Coppi(ECO)",
-      "andamento": 241,
-      "entradas_mes": 14,
+      "andamento": 242,
+      "entradas_mes": 15,
       "saidas_mes": 1,
       "entradas_mes_anterior": 14,
       "saidas_mes_anterior": 12,
-      "valor_causa": 53102792.57
+      "valor_causa": 53244992.57
     },
     {
       "grupo": "Grupo C",
@@ -4280,12 +4280,12 @@
     {
       "grupo": "Sem grupo",
       "profissional": "Erik Mota Coppi(ECO)",
-      "andamento": 7,
-      "entradas_mes": 7,
+      "andamento": 6,
+      "entradas_mes": 6,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 935417.0
+      "valor_causa": 793217.0
     },
     {
       "grupo": "Sem grupo",
@@ -6262,12 +6262,12 @@
     {
       "estado": "SP",
       "cliente": "EMBRAER",
-      "andamento": 705,
+      "andamento": 704,
       "entradas_mes": 6,
-      "saidas_mes": 8,
+      "saidas_mes": 9,
       "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 21,
-      "valor_causa": 137913480.62
+      "valor_causa": 137234588.61
     },
     {
       "estado": "SP",
@@ -7663,11 +7663,6 @@
     }
   ],
   "sem_grupo_processos": [
-    {
-      "numero_processo": "0001507-44.2026.5.07.0008",
-      "cliente": "COMPANHIA AIX",
-      "profissional": "Erik Mota Coppi(ECO)"
-    },
     {
       "numero_processo": "0001564-80.2026.5.07.0002",
       "cliente": "COMPANHIA AIX",
