@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-15T12:45:30",
+  "atualizado_em": "2026-10-15T13:00:32",
   "kpis": {
-    "total_andamento": 7608,
-    "entradas_hoje": 18,
+    "total_andamento": 7609,
+    "entradas_hoje": 19,
     "saidas_hoje": 0,
     "entradas_ontem": 8,
     "saidas_ontem": 24,
-    "entradas_mes": 155,
+    "entradas_mes": 156,
     "saidas_mes": 72,
     "entradas_mes_anterior": 320,
     "saidas_mes_anterior": 1018,
-    "valor_causa_total": 1763580964.06,
-    "saldo_mes": 83
+    "valor_causa_total": 1763702146.1,
+    "saldo_mes": 84
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-10-15",
-      "entradas": 18,
+      "entradas": 19,
       "saidas": 0
     }
   ],
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 22,
-      "entradas_mes": 20,
+      "andamento": 23,
+      "entradas_mes": 21,
       "saidas_mes": 1,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 3,
-      "valor_causa": 6448643.67
+      "valor_causa": 6569825.71
     },
     {
       "nome": "Sócios",
@@ -473,12 +473,12 @@
     },
     {
       "nome": "MG",
-      "andamento": 548,
-      "entradas_mes": 8,
+      "andamento": 549,
+      "entradas_mes": 9,
       "saidas_mes": 3,
       "entradas_mes_anterior": 36,
       "saidas_mes_anterior": 21,
-      "valor_causa": 134068747.4
+      "valor_causa": 134189929.44
     },
     {
       "nome": "PR",
@@ -709,12 +709,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2901,
-      "entradas_mes": 142,
+      "andamento": 2902,
+      "entradas_mes": 143,
       "saidas_mes": 16,
       "entradas_mes_anterior": 268,
       "saidas_mes_anterior": 201,
-      "valor_causa": 840786342.05
+      "valor_causa": 840907524.09
     },
     {
       "nome": "Sentença",
@@ -1039,12 +1039,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 21,
-      "entradas_mes": 20,
+      "andamento": 22,
+      "entradas_mes": 21,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 6410643.67
+      "valor_causa": 6531825.71
     },
     {
       "fase": "Instrução",
@@ -1523,12 +1523,12 @@
     },
     {
       "nome": "Mariana Borges de Menezes Fávaro(MBF)",
-      "andamento": 256,
-      "entradas_mes": 1,
+      "andamento": 257,
+      "entradas_mes": 2,
       "saidas_mes": 2,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 6,
-      "valor_causa": 33772982.58
+      "valor_causa": 33894164.62
     },
     {
       "nome": "Paloma da Silva Santos(PSI)",
@@ -1796,12 +1796,12 @@
     },
     {
       "nome": "BP BIOENERGIA",
-      "andamento": 754,
-      "entradas_mes": 7,
+      "andamento": 755,
+      "entradas_mes": 8,
       "saidas_mes": 4,
       "entradas_mes_anterior": 20,
       "saidas_mes_anterior": 33,
-      "valor_causa": 210996004.32,
+      "valor_causa": 211117186.36,
       "alerta_entrada": false
     },
     {
@@ -3825,6 +3825,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "BP BIOENERGIA",
+      "andamento": 3,
+      "entradas_mes": 3,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 455686.31,
+      "alerta_entrada": true
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "MAHLE METAL - MOGI",
       "andamento": 2,
       "entradas_mes": 2,
@@ -3832,17 +3843,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 277412.74,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "BP BIOENERGIA",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 334504.27,
       "alerta_entrada": false
     },
     {
@@ -4699,6 +4699,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Mariana Borges de Menezes Fávaro(MBF)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 121182.04
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
       "andamento": 1,
       "entradas_mes": 1,
@@ -5342,12 +5352,12 @@
     {
       "estado": "MG",
       "cliente": "BP BIOENERGIA",
-      "andamento": 215,
-      "entradas_mes": 2,
+      "andamento": 216,
+      "entradas_mes": 3,
       "saidas_mes": 1,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 5,
-      "valor_causa": 82140635.87
+      "valor_causa": 82261817.91
     },
     {
       "estado": "MG",
@@ -8087,6 +8097,11 @@
       "numero_processo": "0012701-32.2026.5.15.0133",
       "cliente": "BP BIOENERGIA",
       "profissional": "Rafael Yepez do Lago(RYL)"
+    },
+    {
+      "numero_processo": "0010975-84.2026.5.03.0156",
+      "cliente": "BP BIOENERGIA",
+      "profissional": "Mariana Borges de Menezes Fávaro(MBF)"
     },
     {
       "numero_processo": "0012287-34.2026.5.15.0133",
