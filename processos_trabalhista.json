@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-15T11:45:29",
+  "atualizado_em": "2026-10-15T12:00:38",
   "kpis": {
-    "total_andamento": 7599,
-    "entradas_hoje": 9,
+    "total_andamento": 7601,
+    "entradas_hoje": 11,
     "saidas_hoje": 0,
     "entradas_ontem": 8,
     "saidas_ontem": 24,
-    "entradas_mes": 146,
+    "entradas_mes": 148,
     "saidas_mes": 72,
     "entradas_mes_anterior": 320,
     "saidas_mes_anterior": 1018,
-    "valor_causa_total": 1761707471.6,
-    "saldo_mes": 74
+    "valor_causa_total": 1761959634.75,
+    "saldo_mes": 76
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-10-15",
-      "entradas": 9,
+      "entradas": 11,
       "saidas": 0
     }
   ],
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 13,
-      "entradas_mes": 11,
+      "andamento": 15,
+      "entradas_mes": 13,
       "saidas_mes": 1,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 3,
-      "valor_causa": 4575151.21
+      "valor_causa": 4827314.36
     },
     {
       "nome": "Sócios",
@@ -464,12 +464,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5747,
-      "entradas_mes": 74,
+      "andamento": 5749,
+      "entradas_mes": 76,
       "saidas_mes": 64,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 841,
-      "valor_causa": 1369307169.63
+      "valor_causa": 1369559332.78
     },
     {
       "nome": "MG",
@@ -709,12 +709,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2892,
-      "entradas_mes": 133,
+      "andamento": 2894,
+      "entradas_mes": 135,
       "saidas_mes": 16,
       "entradas_mes_anterior": 268,
       "saidas_mes_anterior": 201,
-      "valor_causa": 838912849.59
+      "valor_causa": 839165012.74
     },
     {
       "nome": "Sentença",
@@ -1049,12 +1049,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 12,
-      "entradas_mes": 11,
+      "andamento": 14,
+      "entradas_mes": 13,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 4537151.21
+      "valor_causa": 4789314.36
     },
     {
       "fase": "Instrução",
@@ -1532,12 +1532,12 @@
     },
     {
       "nome": "Paloma da Silva Santos(PSI)",
-      "andamento": 248,
-      "entradas_mes": 9,
+      "andamento": 249,
+      "entradas_mes": 10,
       "saidas_mes": 7,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 11,
-      "valor_causa": 56355596.02
+      "valor_causa": 56552573.5
     },
     {
       "nome": "Lucas Willott Pereira (LWP)",
@@ -1693,6 +1693,15 @@
       "valor_causa": 0.0
     },
     {
+      "nome": "Luiz Vicente de Carvalho(LVC)",
+      "andamento": 2,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 55185.67
+    },
+    {
       "nome": "Lucas Diniz Almeida(LDI)",
       "andamento": 1,
       "entradas_mes": 0,
@@ -1708,15 +1717,6 @@
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 0.0
-    },
-    {
-      "nome": "Luiz Vicente de Carvalho(LVC)",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 1,
       "valor_causa": 0.0
     },
     {
@@ -1836,12 +1836,12 @@
     },
     {
       "nome": "MAHLE METAL - MOGI",
-      "andamento": 358,
-      "entradas_mes": 7,
+      "andamento": 359,
+      "entradas_mes": 8,
       "saidas_mes": 8,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 10,
-      "valor_causa": 73117695.01,
+      "valor_causa": 73314672.49,
       "alerta_entrada": false
     },
     {
@@ -1866,12 +1866,12 @@
     },
     {
       "nome": "MAHLE METAL - SBC",
-      "andamento": 264,
-      "entradas_mes": 1,
+      "andamento": 265,
+      "entradas_mes": 2,
       "saidas_mes": 6,
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 7,
-      "valor_causa": 23249552.99,
+      "valor_causa": 23304738.66,
       "alerta_entrada": false
     },
     {
@@ -3825,6 +3825,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "MAHLE METAL - MOGI",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 277412.74,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "TELEFONICA BRASIL",
       "andamento": 1,
       "entradas_mes": 1,
@@ -3847,17 +3858,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "MAHLE METAL - MOGI",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 80435.26,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "MAHLE - COMPRESSORES",
       "andamento": 1,
       "entradas_mes": 1,
@@ -3876,6 +3876,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 28500.0,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "MAHLE METAL - SBC",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 55185.67,
       "alerta_entrada": false
     },
     {
@@ -4556,6 +4567,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Paloma da Silva Santos(PSI)",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 277412.74
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Rafael Rocha Ferreira(RFE)",
       "andamento": 1,
       "entradas_mes": 1,
@@ -4606,16 +4627,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Paloma da Silva Santos(PSI)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 80435.26
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Tamires Lins Costa(TLI)",
       "andamento": 1,
       "entradas_mes": 1,
@@ -4633,6 +4644,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 28500.0
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Luiz Vicente de Carvalho(LVC)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 55185.67
     },
     {
       "grupo": "Sem grupo",
@@ -6639,12 +6660,12 @@
     {
       "estado": "SP",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 357,
-      "entradas_mes": 7,
+      "andamento": 358,
+      "entradas_mes": 8,
       "saidas_mes": 8,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 10,
-      "valor_causa": 73117695.01
+      "valor_causa": 73314672.49
     },
     {
       "estado": "SP",
@@ -6659,12 +6680,12 @@
     {
       "estado": "SP",
       "cliente": "MAHLE METAL - SBC",
-      "andamento": 264,
-      "entradas_mes": 1,
+      "andamento": 265,
+      "entradas_mes": 2,
       "saidas_mes": 6,
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 7,
-      "valor_causa": 23249552.99
+      "valor_causa": 23304738.66
     },
     {
       "estado": "SP",
@@ -8049,6 +8070,16 @@
       "numero_processo": "0011798-86.2026.5.15.0071",
       "cliente": "MAHLE METAL - MOGI",
       "profissional": "Paloma da Silva Santos(PSI)"
+    },
+    {
+      "numero_processo": "0012208-47.2026.5.15.0071",
+      "cliente": "MAHLE METAL - MOGI",
+      "profissional": "Paloma da Silva Santos(PSI)"
+    },
+    {
+      "numero_processo": "1001703-22.2026.5.02.0465",
+      "cliente": "MAHLE METAL - SBC",
+      "profissional": "Luiz Vicente de Carvalho(LVC)"
     },
     {
       "numero_processo": "1002426-59.2017.5.02.0464",
