@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-15T17:30:27",
+  "atualizado_em": "2026-10-15T17:45:28",
   "kpis": {
-    "total_andamento": 7608,
+    "total_andamento": 7606,
     "entradas_hoje": 21,
-    "saidas_hoje": 0,
+    "saidas_hoje": 2,
     "entradas_ontem": 8,
     "saidas_ontem": 24,
     "entradas_mes": 158,
-    "saidas_mes": 72,
+    "saidas_mes": 74,
     "entradas_mes_anterior": 320,
     "saidas_mes_anterior": 1021,
-    "valor_causa_total": 1763140837.22,
-    "saldo_mes": 86
+    "valor_causa_total": 1762815268.59,
+    "saldo_mes": 84
   },
   "serie_diaria": [
     {
@@ -312,7 +312,7 @@
     {
       "data": "2026-10-15",
       "entradas": 21,
-      "saidas": 0
+      "saidas": 2
     }
   ],
   "por_grupo": [
@@ -327,12 +327,12 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1813,
-      "entradas_mes": 31,
+      "andamento": 1814,
+      "entradas_mes": 32,
       "saidas_mes": 25,
       "entradas_mes_anterior": 60,
       "saidas_mes_anterior": 46,
-      "valor_causa": 311564658.25
+      "valor_causa": 311564658.26
     },
     {
       "nome": "Grupo B1",
@@ -381,12 +381,12 @@
     },
     {
       "nome": "Grupo C3",
-      "andamento": 182,
+      "andamento": 180,
       "entradas_mes": 3,
-      "saidas_mes": 0,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 2,
-      "valor_causa": 34945280.95
+      "valor_causa": 34619712.32
     },
     {
       "nome": "Grupo A3",
@@ -416,15 +416,6 @@
       "valor_causa": 11721158.38
     },
     {
-      "nome": "Sem grupo",
-      "andamento": 4,
-      "entradas_mes": 2,
-      "saidas_mes": 1,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 3,
-      "valor_causa": 344000.01
-    },
-    {
       "nome": "Sócios",
       "andamento": 3,
       "entradas_mes": 0,
@@ -432,6 +423,15 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
+    },
+    {
+      "nome": "Sem grupo",
+      "andamento": 3,
+      "entradas_mes": 1,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 3,
+      "valor_causa": 344000.0
     },
     {
       "nome": "Grupo C",
@@ -464,12 +464,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5753,
+      "andamento": 5752,
       "entradas_mes": 81,
-      "saidas_mes": 64,
+      "saidas_mes": 65,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 842,
-      "valor_causa": 1369725580.61
+      "valor_causa": 1369400011.98
     },
     {
       "nome": "MG",
@@ -509,9 +509,9 @@
     },
     {
       "nome": "RJ",
-      "andamento": 114,
+      "andamento": 113,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 109,
       "valor_causa": 7677312.7
@@ -709,12 +709,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2900,
+      "andamento": 2898,
       "entradas_mes": 145,
-      "saidas_mes": 17,
+      "saidas_mes": 19,
       "entradas_mes_anterior": 268,
       "saidas_mes_anterior": 204,
-      "valor_causa": 840246215.21
+      "valor_causa": 839920646.58
     },
     {
       "nome": "Sentença",
@@ -959,12 +959,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 754,
-      "entradas_mes": 24,
+      "andamento": 755,
+      "entradas_mes": 25,
       "saidas_mes": 6,
       "entradas_mes_anterior": 28,
       "saidas_mes_anterior": 10,
-      "valor_causa": 163309185.22
+      "valor_causa": 163309185.23
     },
     {
       "fase": "Instrução",
@@ -989,12 +989,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo C3",
-      "andamento": 170,
+      "andamento": 168,
       "entradas_mes": 3,
-      "saidas_mes": 0,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 2,
-      "valor_causa": 32680195.16
+      "valor_causa": 32354626.53
     },
     {
       "fase": "Instrução",
@@ -1059,12 +1059,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 3,
-      "entradas_mes": 2,
+      "andamento": 2,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 306000.01
+      "valor_causa": 306000.0
     },
     {
       "fase": "Instrução",
@@ -1496,12 +1496,12 @@
     },
     {
       "nome": "Rafael Camargo Felisbino(RCF)",
-      "andamento": 272,
+      "andamento": 270,
       "entradas_mes": 15,
-      "saidas_mes": 3,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 3,
-      "valor_causa": 110100658.9
+      "valor_causa": 109775090.27
     },
     {
       "nome": "Erik Mota Coppi(ECO)",
@@ -1826,12 +1826,12 @@
     },
     {
       "nome": "TELEFONICA BRASIL",
-      "andamento": 364,
+      "andamento": 362,
       "entradas_mes": 5,
-      "saidas_mes": 2,
+      "saidas_mes": 4,
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 6,
-      "valor_causa": 192956103.36,
+      "valor_causa": 192630534.73,
       "alerta_entrada": false
     },
     {
@@ -2858,12 +2858,12 @@
     {
       "grupo": "Grupo C3",
       "cliente": "TELEFONICA BRASIL",
-      "andamento": 149,
+      "andamento": 147,
       "entradas_mes": 2,
-      "saidas_mes": 0,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 2,
-      "valor_causa": 30301528.86,
+      "valor_causa": 29975960.23,
       "alerta_entrada": false
     },
     {
@@ -3001,12 +3001,12 @@
     {
       "grupo": "Grupo E1",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 654,
-      "entradas_mes": 16,
+      "andamento": 655,
+      "entradas_mes": 17,
       "saidas_mes": 4,
       "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 14,
-      "valor_causa": 144253167.59,
+      "valor_causa": 144253167.6,
       "alerta_entrada": false
     },
     {
@@ -3814,17 +3814,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 0.01,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "HERINGER",
       "andamento": 1,
       "entradas_mes": 0,
@@ -4212,12 +4201,12 @@
     {
       "grupo": "Grupo C3",
       "profissional": "Rafael Camargo Felisbino(RCF)",
-      "andamento": 110,
+      "andamento": 108,
       "entradas_mes": 3,
-      "saidas_mes": 0,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 2,
-      "valor_causa": 18548295.7
+      "valor_causa": 18222727.07
     },
     {
       "grupo": "Grupo C3",
@@ -4252,12 +4241,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Joice Ramos Miranda(JRM)",
-      "andamento": 305,
-      "entradas_mes": 10,
+      "andamento": 306,
+      "entradas_mes": 11,
       "saidas_mes": 3,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 6,
-      "valor_causa": 77357233.58
+      "valor_causa": 77357233.59
     },
     {
       "grupo": "Grupo E1",
@@ -4498,16 +4487,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 305000.0
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Joice Ramos Miranda(JRM)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 0.01
     },
     {
       "grupo": "Sem grupo",
@@ -5914,9 +5893,9 @@
     {
       "estado": "RJ",
       "cliente": "TELEFONICA BRASIL",
-      "andamento": 45,
+      "andamento": 44,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
       "valor_causa": 612049.11
@@ -6544,12 +6523,12 @@
     {
       "estado": "SP",
       "cliente": "TELEFONICA BRASIL",
-      "andamento": 257,
+      "andamento": 256,
       "entradas_mes": 4,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 15,
       "saidas_mes_anterior": 2,
-      "valor_causa": 166694594.04
+      "valor_causa": 166369025.41
     },
     {
       "estado": "SP",
@@ -7899,11 +7878,6 @@
       "numero_processo": "1002426-59.2017.5.02.0464",
       "cliente": "MULTICEL",
       "profissional": "Luiz Vicente de Carvalho(LVC) ; Lisandra Melo Alves(LMS)"
-    },
-    {
-      "numero_processo": "0020686-31.2026.5.04.0821",
-      "cliente": "SYNGENTA PROTEÇÃO DE",
-      "profissional": "Joice Ramos Miranda(JRM)"
     }
   ]
 }
