@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-15T10:45:34",
+  "atualizado_em": "2026-10-15T11:00:33",
   "kpis": {
-    "total_andamento": 7592,
-    "entradas_hoje": 2,
+    "total_andamento": 7593,
+    "entradas_hoje": 3,
     "saidas_hoje": 0,
     "entradas_ontem": 8,
     "saidas_ontem": 24,
-    "entradas_mes": 139,
+    "entradas_mes": 140,
     "saidas_mes": 72,
     "entradas_mes_anterior": 320,
     "saidas_mes_anterior": 1018,
-    "valor_causa_total": 1759955154.24,
-    "saldo_mes": 67
+    "valor_causa_total": 1760148210.14,
+    "saldo_mes": 68
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-10-15",
-      "entradas": 2,
+      "entradas": 3,
       "saidas": 0
     }
   ],
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 6,
-      "entradas_mes": 4,
+      "andamento": 7,
+      "entradas_mes": 5,
       "saidas_mes": 1,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 3,
-      "valor_causa": 2822833.85
+      "valor_causa": 3015889.75
     },
     {
       "nome": "Sócios",
@@ -464,12 +464,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5741,
-      "entradas_mes": 68,
+      "andamento": 5742,
+      "entradas_mes": 69,
       "saidas_mes": 64,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 841,
-      "valor_causa": 1367583352.27
+      "valor_causa": 1367776408.17
     },
     {
       "nome": "MG",
@@ -709,12 +709,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2885,
-      "entradas_mes": 126,
+      "andamento": 2886,
+      "entradas_mes": 127,
       "saidas_mes": 16,
       "entradas_mes_anterior": 268,
       "saidas_mes_anterior": 201,
-      "valor_causa": 837160532.23
+      "valor_causa": 837353588.13
     },
     {
       "nome": "Sentença",
@@ -1049,12 +1049,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 5,
-      "entradas_mes": 4,
+      "andamento": 6,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 2784833.85
+      "valor_causa": 2977889.75
     },
     {
       "fase": "Instrução",
@@ -1414,6 +1414,15 @@
       "valor_causa": 75613358.89
     },
     {
+      "nome": "Beatriz Santiago de Souza(BSO)",
+      "andamento": 300,
+      "entradas_mes": 3,
+      "saidas_mes": 4,
+      "entradas_mes_anterior": 12,
+      "saidas_mes_anterior": 8,
+      "valor_causa": 58976827.44
+    },
+    {
       "nome": "Bianca Bolanhi Camacho(BBO)",
       "andamento": 300,
       "entradas_mes": 2,
@@ -1421,15 +1430,6 @@
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 359,
       "valor_causa": 33750005.02
-    },
-    {
-      "nome": "Beatriz Santiago de Souza(BSO)",
-      "andamento": 299,
-      "entradas_mes": 2,
-      "saidas_mes": 4,
-      "entradas_mes_anterior": 12,
-      "saidas_mes_anterior": 8,
-      "valor_causa": 58783771.54
     },
     {
       "nome": "Tamara Silva Marcílio(TAM)",
@@ -1786,12 +1786,12 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1441,
-      "entradas_mes": 14,
+      "andamento": 1442,
+      "entradas_mes": 15,
       "saidas_mes": 11,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 42,
-      "valor_causa": 323760087.02,
+      "valor_causa": 323953142.92,
       "alerta_entrada": false
     },
     {
@@ -3804,12 +3804,12 @@
     {
       "grupo": "Sem grupo",
       "cliente": "BRIDGESTONE",
-      "andamento": 1,
-      "entradas_mes": 1,
+      "andamento": 2,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 2127412.24,
+      "valor_causa": 2320468.14,
       "alerta_entrada": false
     },
     {
@@ -4550,6 +4550,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 104407.23
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Beatriz Santiago de Souza(BSO)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 193055.9
     },
     {
       "grupo": "Sem grupo",
@@ -6516,12 +6526,12 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1413,
-      "entradas_mes": 14,
+      "andamento": 1414,
+      "entradas_mes": 15,
       "saidas_mes": 11,
       "entradas_mes_anterior": 52,
       "saidas_mes_anterior": 41,
-      "valor_causa": 312110042.5
+      "valor_causa": 312303098.4
     },
     {
       "estado": "SP",
@@ -7931,6 +7941,11 @@
       "numero_processo": "1002026-60.2025.5.02.0433",
       "cliente": "BRIDGESTONE",
       "profissional": "Rafael Rocha Ferreira(RFE)"
+    },
+    {
+      "numero_processo": "1001950-93.2026.5.02.0435",
+      "cliente": "BRIDGESTONE",
+      "profissional": "Beatriz Santiago de Souza(BSO)"
     },
     {
       "numero_processo": "1001554-91.2026.5.02.0411",
