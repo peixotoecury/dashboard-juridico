@@ -1,7 +1,7 @@
 {
-  "atualizado_em": "2026-10-15T17:15:41",
+  "atualizado_em": "2026-10-15T17:30:27",
   "kpis": {
-    "total_andamento": 7609,
+    "total_andamento": 7608,
     "entradas_hoje": 21,
     "saidas_hoje": 0,
     "entradas_ontem": 8,
@@ -9,7 +9,7 @@
     "entradas_mes": 158,
     "saidas_mes": 72,
     "entradas_mes_anterior": 320,
-    "saidas_mes_anterior": 1020,
+    "saidas_mes_anterior": 1021,
     "valor_causa_total": 1763140837.22,
     "saldo_mes": 86
   },
@@ -162,7 +162,7 @@
     {
       "data": "2026-09-15",
       "entradas": 13,
-      "saidas": 14
+      "saidas": 15
     },
     {
       "data": "2026-09-16",
@@ -336,12 +336,12 @@
     },
     {
       "nome": "Grupo B1",
-      "andamento": 1443,
-      "entradas_mes": 16,
+      "andamento": 1445,
+      "entradas_mes": 18,
       "saidas_mes": 11,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 42,
-      "valor_causa": 324013788.01
+      "valor_causa": 324406840.46
     },
     {
       "nome": "Grupo B2",
@@ -381,11 +381,11 @@
     },
     {
       "nome": "Grupo C3",
-      "andamento": 183,
+      "andamento": 182,
       "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
-      "saidas_mes_anterior": 1,
+      "saidas_mes_anterior": 2,
       "valor_causa": 34945280.95
     },
     {
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 6,
-      "entradas_mes": 4,
+      "andamento": 4,
+      "entradas_mes": 2,
       "saidas_mes": 1,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 3,
-      "valor_causa": 737052.46
+      "valor_causa": 344000.01
     },
     {
       "nome": "Sócios",
@@ -581,11 +581,11 @@
     },
     {
       "nome": "ES",
-      "andamento": 31,
+      "andamento": 30,
       "entradas_mes": 7,
       "saidas_mes": 1,
       "entradas_mes_anterior": 3,
-      "saidas_mes_anterior": 3,
+      "saidas_mes_anterior": 4,
       "valor_causa": 4164827.14
     },
     {
@@ -709,11 +709,11 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2901,
+      "andamento": 2900,
       "entradas_mes": 145,
       "saidas_mes": 17,
       "entradas_mes_anterior": 268,
-      "saidas_mes_anterior": 203,
+      "saidas_mes_anterior": 204,
       "valor_causa": 840246215.21
     },
     {
@@ -969,12 +969,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B1",
-      "andamento": 437,
-      "entradas_mes": 16,
+      "andamento": 439,
+      "entradas_mes": 18,
       "saidas_mes": 1,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 13,
-      "valor_causa": 149983464.16
+      "valor_causa": 150376516.61
     },
     {
       "fase": "Instrução",
@@ -989,11 +989,11 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo C3",
-      "andamento": 171,
+      "andamento": 170,
       "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
-      "saidas_mes_anterior": 1,
+      "saidas_mes_anterior": 2,
       "valor_causa": 32680195.16
     },
     {
@@ -1048,16 +1048,6 @@
     },
     {
       "fase": "Instrução",
-      "grupo": "Sem grupo",
-      "andamento": 5,
-      "entradas_mes": 4,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 699052.46
-    },
-    {
-      "fase": "Instrução",
       "grupo": "Grupo A1",
       "andamento": 4,
       "entradas_mes": 0,
@@ -1065,6 +1055,16 @@
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
+    },
+    {
+      "fase": "Instrução",
+      "grupo": "Sem grupo",
+      "andamento": 3,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 306000.01
     },
     {
       "fase": "Instrução",
@@ -1496,11 +1496,11 @@
     },
     {
       "nome": "Rafael Camargo Felisbino(RCF)",
-      "andamento": 273,
+      "andamento": 272,
       "entradas_mes": 15,
       "saidas_mes": 3,
       "entradas_mes_anterior": 18,
-      "saidas_mes_anterior": 2,
+      "saidas_mes_anterior": 3,
       "valor_causa": 110100658.9
     },
     {
@@ -1826,11 +1826,11 @@
     },
     {
       "nome": "TELEFONICA BRASIL",
-      "andamento": 365,
+      "andamento": 364,
       "entradas_mes": 5,
       "saidas_mes": 2,
       "entradas_mes_anterior": 16,
-      "saidas_mes_anterior": 5,
+      "saidas_mes_anterior": 6,
       "valor_causa": 192956103.36,
       "alerta_entrada": false
     },
@@ -2418,12 +2418,12 @@
     {
       "grupo": "Grupo B1",
       "cliente": "BRIDGESTONE",
-      "andamento": 1443,
-      "entradas_mes": 16,
+      "andamento": 1445,
+      "entradas_mes": 18,
       "saidas_mes": 11,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 42,
-      "valor_causa": 324013788.01,
+      "valor_causa": 324406840.46,
       "alerta_entrada": false
     },
     {
@@ -2858,11 +2858,11 @@
     {
       "grupo": "Grupo C3",
       "cliente": "TELEFONICA BRASIL",
-      "andamento": 150,
+      "andamento": 149,
       "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 1,
+      "saidas_mes_anterior": 2,
       "valor_causa": 30301528.86,
       "alerta_entrada": false
     },
@@ -3803,17 +3803,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "BRIDGESTONE",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 393052.45,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "BP BIOENERGIA",
       "andamento": 1,
       "entradas_mes": 1,
@@ -3983,22 +3972,22 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Beatriz Santiago de Souza(BSO)",
-      "andamento": 300,
-      "entradas_mes": 3,
+      "andamento": 301,
+      "entradas_mes": 4,
       "saidas_mes": 4,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 8,
-      "valor_causa": 58976827.44
+      "valor_causa": 59319085.81
     },
     {
       "grupo": "Grupo B1",
       "profissional": "Tamara Silva Marcílio(TAM)",
-      "andamento": 299,
-      "entradas_mes": 6,
+      "andamento": 300,
+      "entradas_mes": 7,
       "saidas_mes": 1,
       "entradas_mes_anterior": 21,
       "saidas_mes_anterior": 7,
-      "valor_causa": 78153881.1
+      "valor_causa": 78204675.18
     },
     {
       "grupo": "Grupo B1",
@@ -4223,11 +4212,11 @@
     {
       "grupo": "Grupo C3",
       "profissional": "Rafael Camargo Felisbino(RCF)",
-      "andamento": 111,
+      "andamento": 110,
       "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
-      "saidas_mes_anterior": 1,
+      "saidas_mes_anterior": 2,
       "valor_causa": 18548295.7
     },
     {
@@ -4499,26 +4488,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Beatriz Santiago de Souza(BSO)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 342258.37
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Tamara Silva Marcílio(TAM)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 50794.08
     },
     {
       "grupo": "Sem grupo",
@@ -4985,11 +4954,11 @@
     {
       "estado": "ES",
       "cliente": "TELEFONICA BRASIL",
-      "andamento": 4,
+      "andamento": 3,
       "entradas_mes": 0,
       "saidas_mes": 1,
       "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 1,
+      "saidas_mes_anterior": 2,
       "valor_causa": 0.0
     },
     {
@@ -7920,16 +7889,6 @@
       "numero_processo": "0012287-34.2026.5.15.0133",
       "cliente": "BP BIOENERGIA",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
-    },
-    {
-      "numero_processo": "0012086-88.2026.5.15.0053",
-      "cliente": "BRIDGESTONE",
-      "profissional": "Beatriz Santiago de Souza(BSO)"
-    },
-    {
-      "numero_processo": "1001496-44.2026.5.02.0361",
-      "cliente": "BRIDGESTONE",
-      "profissional": "Tamara Silva Marcílio(TAM)"
     },
     {
       "numero_processo": "0003841-21.2026.5.09.0000",
