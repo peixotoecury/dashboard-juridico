@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-15T10:30:28",
+  "atualizado_em": "2026-10-15T10:45:34",
   "kpis": {
-    "total_andamento": 7590,
-    "entradas_hoje": 0,
+    "total_andamento": 7592,
+    "entradas_hoje": 2,
     "saidas_hoje": 0,
     "entradas_ontem": 8,
     "saidas_ontem": 24,
-    "entradas_mes": 137,
+    "entradas_mes": 139,
     "saidas_mes": 72,
     "entradas_mes_anterior": 320,
     "saidas_mes_anterior": 1018,
-    "valor_causa_total": 1759309672.01,
-    "saldo_mes": 65
+    "valor_causa_total": 1759955154.24,
+    "saldo_mes": 67
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-10-15",
-      "entradas": 0,
+      "entradas": 2,
       "saidas": 0
     }
   ],
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 4,
-      "entradas_mes": 2,
+      "andamento": 6,
+      "entradas_mes": 4,
       "saidas_mes": 1,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 3,
-      "valor_causa": 2177351.62
+      "valor_causa": 2822833.85
     },
     {
       "nome": "Sócios",
@@ -464,12 +464,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5740,
-      "entradas_mes": 67,
+      "andamento": 5741,
+      "entradas_mes": 68,
       "saidas_mes": 64,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 841,
-      "valor_causa": 1367478945.04
+      "valor_causa": 1367583352.27
     },
     {
       "nome": "MG",
@@ -491,12 +491,12 @@
     },
     {
       "nome": "RS",
-      "andamento": 234,
-      "entradas_mes": 3,
+      "andamento": 235,
+      "entradas_mes": 4,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 2,
-      "valor_causa": 57480615.06
+      "valor_causa": 58021690.06
     },
     {
       "nome": "RJ",
@@ -709,12 +709,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2883,
-      "entradas_mes": 124,
+      "andamento": 2885,
+      "entradas_mes": 126,
       "saidas_mes": 16,
       "entradas_mes_anterior": 268,
       "saidas_mes_anterior": 201,
-      "valor_causa": 836515050.0
+      "valor_causa": 837160532.23
     },
     {
       "nome": "Sentença",
@@ -1048,6 +1048,16 @@
     },
     {
       "fase": "Instrução",
+      "grupo": "Sem grupo",
+      "andamento": 5,
+      "entradas_mes": 4,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 2784833.85
+    },
+    {
+      "fase": "Instrução",
       "grupo": "Grupo A1",
       "andamento": 4,
       "entradas_mes": 0,
@@ -1055,16 +1065,6 @@
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
-    },
-    {
-      "fase": "Instrução",
-      "grupo": "Sem grupo",
-      "andamento": 3,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 2139351.62
     },
     {
       "fase": "Instrução",
@@ -1370,7 +1370,7 @@
   "por_profissional": [
     {
       "nome": "Rafael Yepez do Lago(RYL)",
-      "andamento": 448,
+      "andamento": 449,
       "entradas_mes": 5,
       "saidas_mes": 5,
       "entradas_mes_anterior": 19,
@@ -1379,16 +1379,16 @@
     },
     {
       "nome": "Giulia Vendramini Milani(GVM)",
-      "andamento": 445,
+      "andamento": 444,
       "entradas_mes": 5,
       "saidas_mes": 4,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 12,
-      "valor_causa": 64847635.77
+      "valor_causa": 64702788.71
     },
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 358,
+      "andamento": 357,
       "entradas_mes": 5,
       "saidas_mes": 3,
       "entradas_mes_anterior": 30,
@@ -1397,12 +1397,21 @@
     },
     {
       "nome": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 345,
-      "entradas_mes": 13,
+      "andamento": 346,
+      "entradas_mes": 14,
       "saidas_mes": 1,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 7,
-      "valor_causa": 64279235.22
+      "valor_causa": 64383642.45
+    },
+    {
+      "nome": "Joice Ramos Miranda(JRM)",
+      "andamento": 300,
+      "entradas_mes": 5,
+      "saidas_mes": 3,
+      "entradas_mes_anterior": 12,
+      "saidas_mes_anterior": 6,
+      "valor_causa": 75613358.89
     },
     {
       "nome": "Bianca Bolanhi Camacho(BBO)",
@@ -1412,15 +1421,6 @@
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 359,
       "valor_causa": 33750005.02
-    },
-    {
-      "nome": "Joice Ramos Miranda(JRM)",
-      "andamento": 299,
-      "entradas_mes": 5,
-      "saidas_mes": 3,
-      "entradas_mes_anterior": 12,
-      "saidas_mes_anterior": 6,
-      "valor_causa": 75468511.83
     },
     {
       "nome": "Beatriz Santiago de Souza(BSO)",
@@ -1486,6 +1486,15 @@
       "valor_causa": 45192269.9
     },
     {
+      "nome": "Rafael Camargo Felisbino(RCF)",
+      "andamento": 274,
+      "entradas_mes": 15,
+      "saidas_mes": 3,
+      "entradas_mes_anterior": 18,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 110100658.9
+    },
+    {
       "nome": "Guilherme Silva Morimoto(GSM)",
       "andamento": 274,
       "entradas_mes": 1,
@@ -1493,15 +1502,6 @@
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 4,
       "valor_causa": 69555644.21
-    },
-    {
-      "nome": "Rafael Camargo Felisbino(RCF)",
-      "andamento": 273,
-      "entradas_mes": 14,
-      "saidas_mes": 3,
-      "entradas_mes_anterior": 18,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 109559583.9
     },
     {
       "nome": "Erik Mota Coppi(ECO)",
@@ -1826,12 +1826,12 @@
     },
     {
       "nome": "TELEFONICA BRASIL",
-      "andamento": 366,
-      "entradas_mes": 4,
+      "andamento": 367,
+      "entradas_mes": 5,
       "saidas_mes": 2,
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 3,
-      "valor_causa": 192898008.17,
+      "valor_causa": 193439083.17,
       "alerta_entrada": false
     },
     {
@@ -1876,12 +1876,12 @@
     },
     {
       "nome": "CBC CARTUCHOS BRASIL",
-      "andamento": 232,
-      "entradas_mes": 11,
+      "andamento": 233,
+      "entradas_mes": 12,
       "saidas_mes": 6,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 7,
-      "valor_causa": 29694373.98,
+      "valor_causa": 29798781.21,
       "alerta_entrada": true
     },
     {
@@ -3825,6 +3825,28 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "TELEFONICA BRASIL",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 541075.0,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "CBC CARTUCHOS BRASIL",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 104407.23,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "HERINGER",
       "andamento": 1,
       "entradas_mes": 0,
@@ -4242,22 +4264,22 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Giulia Vendramini Milani(GVM)",
-      "andamento": 445,
+      "andamento": 444,
       "entradas_mes": 5,
       "saidas_mes": 4,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 12,
-      "valor_causa": 64847635.77
+      "valor_causa": 64702788.71
     },
     {
       "grupo": "Grupo E1",
       "profissional": "Joice Ramos Miranda(JRM)",
-      "andamento": 298,
+      "andamento": 299,
       "entradas_mes": 4,
       "saidas_mes": 3,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 6,
-      "valor_causa": 75457572.45
+      "valor_causa": 75602419.51
     },
     {
       "grupo": "Grupo E1",
@@ -4372,7 +4394,7 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Rafael Yepez do Lago(RYL)",
-      "andamento": 448,
+      "andamento": 449,
       "entradas_mes": 5,
       "saidas_mes": 5,
       "entradas_mes_anterior": 19,
@@ -4382,7 +4404,7 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 358,
+      "andamento": 357,
       "entradas_mes": 5,
       "saidas_mes": 3,
       "entradas_mes_anterior": 30,
@@ -4508,6 +4530,26 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 10939.38
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Rafael Camargo Felisbino(RCF)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 541075.0
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Letícia Meneghini Fontes (LMI)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 104407.23
     },
     {
       "grupo": "Sem grupo",
@@ -6174,12 +6216,12 @@
     {
       "estado": "RS",
       "cliente": "TELEFONICA BRASIL",
-      "andamento": 22,
-      "entradas_mes": 0,
+      "andamento": 23,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 4199204.19
+      "valor_causa": 4740279.19
     },
     {
       "estado": "RS",
@@ -6554,12 +6596,12 @@
     {
       "estado": "SP",
       "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 223,
-      "entradas_mes": 11,
+      "andamento": 224,
+      "entradas_mes": 12,
       "saidas_mes": 5,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 7,
-      "valor_causa": 28468880.04
+      "valor_causa": 28573287.27
     },
     {
       "estado": "SP",
@@ -7865,12 +7907,12 @@
   "clientes_com_alerta": [
     {
       "nome": "CBC CARTUCHOS BRASIL",
-      "andamento": 232,
-      "entradas_mes": 11,
+      "andamento": 233,
+      "entradas_mes": 12,
       "saidas_mes": 6,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 7,
-      "valor_causa": 29694373.98,
+      "valor_causa": 29798781.21,
       "alerta_entrada": true
     },
     {
@@ -7891,6 +7933,11 @@
       "profissional": "Rafael Rocha Ferreira(RFE)"
     },
     {
+      "numero_processo": "1001554-91.2026.5.02.0411",
+      "cliente": "CBC CARTUCHOS BRASIL",
+      "profissional": "Letícia Meneghini Fontes (LMI)"
+    },
+    {
       "numero_processo": "0003841-21.2026.5.09.0000",
       "cliente": "HERINGER",
       "profissional": "Bianca Bolanhi Camacho(BBO)"
@@ -7904,6 +7951,11 @@
       "numero_processo": "0010017-18.2026.5.15.0495",
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "profissional": "Joice Ramos Miranda(JRM)"
+    },
+    {
+      "numero_processo": "0020716-86.2019.5.04.0732",
+      "cliente": "TELEFONICA BRASIL",
+      "profissional": "Rafael Camargo Felisbino(RCF)"
     }
   ]
 }
