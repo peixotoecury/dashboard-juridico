@@ -1,11 +1,11 @@
 {
-  "atualizado_em": "2026-10-14T19:15:33",
+  "atualizado_em": "2026-10-15T08:15:30",
   "kpis": {
     "total_andamento": 7590,
-    "entradas_hoje": 8,
-    "saidas_hoje": 24,
-    "entradas_ontem": 34,
-    "saidas_ontem": 8,
+    "entradas_hoje": 0,
+    "saidas_hoje": 0,
+    "entradas_ontem": 8,
+    "saidas_ontem": 24,
     "entradas_mes": 137,
     "saidas_mes": 72,
     "entradas_mes_anterior": 320,
@@ -14,11 +14,6 @@
     "saldo_mes": 65
   },
   "serie_diaria": [
-    {
-      "data": "2026-08-16",
-      "entradas": 0,
-      "saidas": 3
-    },
     {
       "data": "2026-08-17",
       "entradas": 22,
@@ -313,6 +308,11 @@
       "data": "2026-10-14",
       "entradas": 8,
       "saidas": 24
+    },
+    {
+      "data": "2026-10-15",
+      "entradas": 0,
+      "saidas": 0
     }
   ],
   "por_grupo": [
@@ -3260,7 +3260,7 @@
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 11,
       "valor_causa": 46193677.26,
-      "alerta_entrada": true
+      "alerta_entrada": false
     },
     {
       "grupo": "Grupo E2",
