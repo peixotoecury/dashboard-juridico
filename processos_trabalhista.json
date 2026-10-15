@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-15T15:45:34",
+  "atualizado_em": "2026-10-15T16:00:36",
   "kpis": {
     "total_andamento": 7609,
     "entradas_hoje": 19,
@@ -318,21 +318,21 @@
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2126,
-      "entradas_mes": 34,
+      "andamento": 2127,
+      "entradas_mes": 35,
       "saidas_mes": 13,
       "entradas_mes_anterior": 117,
       "saidas_mes_anterior": 93,
-      "valor_causa": 470372223.15
+      "valor_causa": 470396512.77
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1804,
-      "entradas_mes": 22,
+      "andamento": 1805,
+      "entradas_mes": 23,
       "saidas_mes": 25,
       "entradas_mes_anterior": 60,
       "saidas_mes_anterior": 46,
-      "valor_causa": 309051224.84
+      "valor_causa": 309131660.1
     },
     {
       "nome": "Grupo B1",
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 16,
-      "entradas_mes": 14,
+      "andamento": 14,
+      "entradas_mes": 12,
       "saidas_mes": 1,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 3,
-      "valor_causa": 3411108.83
+      "valor_causa": 3306383.95
     },
     {
       "nome": "Sócios",
@@ -949,22 +949,22 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 877,
-      "entradas_mes": 31,
+      "andamento": 878,
+      "entradas_mes": 32,
       "saidas_mes": 3,
       "entradas_mes_anterior": 101,
       "saidas_mes_anterior": 23,
-      "valor_causa": 184253480.29
+      "valor_causa": 184277769.91
     },
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 746,
-      "entradas_mes": 15,
+      "andamento": 747,
+      "entradas_mes": 16,
       "saidas_mes": 5,
       "entradas_mes_anterior": 28,
       "saidas_mes_anterior": 10,
-      "valor_causa": 160895751.81
+      "valor_causa": 160976187.07
     },
     {
       "fase": "Instrução",
@@ -1038,16 +1038,6 @@
     },
     {
       "fase": "Instrução",
-      "grupo": "Sem grupo",
-      "andamento": 15,
-      "entradas_mes": 14,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 3373108.83
-    },
-    {
-      "fase": "Instrução",
       "grupo": "Grupo A2",
       "andamento": 14,
       "entradas_mes": 1,
@@ -1055,6 +1045,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
       "valor_causa": 7720799.28
+    },
+    {
+      "fase": "Instrução",
+      "grupo": "Sem grupo",
+      "andamento": 13,
+      "entradas_mes": 12,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 3268383.95
     },
     {
       "fase": "Instrução",
@@ -3012,12 +3012,12 @@
     {
       "grupo": "Grupo E1",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 356,
-      "entradas_mes": 5,
+      "andamento": 357,
+      "entradas_mes": 6,
       "saidas_mes": 8,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 10,
-      "valor_causa": 73037259.75,
+      "valor_causa": 73117695.01,
       "alerta_entrada": false
     },
     {
@@ -3276,12 +3276,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "EUROCHEM SALITRE",
-      "andamento": 163,
-      "entradas_mes": 3,
+      "andamento": 164,
+      "entradas_mes": 4,
       "saidas_mes": 0,
       "entradas_mes_anterior": 20,
       "saidas_mes_anterior": 11,
-      "valor_causa": 38388071.15,
+      "valor_causa": 38412360.77,
       "alerta_entrada": false
     },
     {
@@ -3814,17 +3814,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "MAHLE METAL - MOGI",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 277412.74,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "BRIDGESTONE",
       "andamento": 2,
       "entradas_mes": 2,
@@ -3869,6 +3858,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "MAHLE METAL - MOGI",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 196977.48,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "MAHLE METAL - SBC",
       "andamento": 1,
       "entradas_mes": 1,
@@ -3876,17 +3876,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 55185.67,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "EUROCHEM SALITRE",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 24289.62,
       "alerta_entrada": false
     },
     {
@@ -4338,12 +4327,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Paloma da Silva Santos(PSI)",
-      "andamento": 246,
-      "entradas_mes": 7,
+      "andamento": 247,
+      "entradas_mes": 8,
       "saidas_mes": 7,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 10,
-      "valor_causa": 56275160.76
+      "valor_causa": 56355596.02
     },
     {
       "grupo": "Grupo E1",
@@ -4448,12 +4437,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 357,
-      "entradas_mes": 5,
+      "andamento": 358,
+      "entradas_mes": 6,
       "saidas_mes": 3,
       "entradas_mes_anterior": 30,
       "saidas_mes_anterior": 27,
-      "valor_causa": 49338577.73
+      "valor_causa": 49362867.35
     },
     {
       "grupo": "Grupo E2",
@@ -4567,16 +4556,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Paloma da Silva Santos(PSI)",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 277412.74
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Rafael Yepez do Lago(RYL)",
       "andamento": 2,
       "entradas_mes": 2,
@@ -4594,6 +4573,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 37767.7
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Paloma da Silva Santos(PSI)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 196977.48
     },
     {
       "grupo": "Sem grupo",
@@ -4634,16 +4623,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 529549.66
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 24289.62
     },
     {
       "grupo": "Sem grupo",
@@ -8057,11 +8036,6 @@
       "profissional": "Rafael Yepez do Lago(RYL)"
     },
     {
-      "numero_processo": "0011276-65.2026.5.03.0080",
-      "cliente": "EUROCHEM SALITRE",
-      "profissional": "Camila Alves Magalhães de Paula(CAL)"
-    },
-    {
       "numero_processo": "0003841-21.2026.5.09.0000",
       "cliente": "HERINGER",
       "profissional": "Bianca Bolanhi Camacho(BBO)"
@@ -8070,11 +8044,6 @@
       "numero_processo": "0011957-60.2026.5.15.0093",
       "cliente": "MAHLE - COMPRESSORES",
       "profissional": "Tamires Lins Costa(TLI)"
-    },
-    {
-      "numero_processo": "0011798-86.2026.5.15.0071",
-      "cliente": "MAHLE METAL - MOGI",
-      "profissional": "Paloma da Silva Santos(PSI)"
     },
     {
       "numero_processo": "0012208-47.2026.5.15.0071",
