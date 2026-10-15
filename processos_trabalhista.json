@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-15T12:00:38",
+  "atualizado_em": "2026-10-15T12:15:32",
   "kpis": {
-    "total_andamento": 7601,
-    "entradas_hoje": 11,
+    "total_andamento": 7604,
+    "entradas_hoje": 14,
     "saidas_hoje": 0,
     "entradas_ontem": 8,
     "saidas_ontem": 24,
-    "entradas_mes": 148,
+    "entradas_mes": 151,
     "saidas_mes": 72,
     "entradas_mes_anterior": 320,
     "saidas_mes_anterior": 1018,
-    "valor_causa_total": 1761959634.75,
-    "saldo_mes": 76
+    "valor_causa_total": 1762882236.86,
+    "saldo_mes": 79
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-10-15",
-      "entradas": 11,
+      "entradas": 14,
       "saidas": 0
     }
   ],
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 15,
-      "entradas_mes": 13,
+      "andamento": 18,
+      "entradas_mes": 16,
       "saidas_mes": 1,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 3,
-      "valor_causa": 4827314.36
+      "valor_causa": 5749916.47
     },
     {
       "nome": "Sócios",
@@ -464,12 +464,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5749,
-      "entradas_mes": 76,
+      "andamento": 5751,
+      "entradas_mes": 78,
       "saidas_mes": 64,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 841,
-      "valor_causa": 1369559332.78
+      "valor_causa": 1369952385.23
     },
     {
       "nome": "MG",
@@ -527,12 +527,12 @@
     },
     {
       "nome": "GO",
-      "andamento": 97,
-      "entradas_mes": 4,
+      "andamento": 98,
+      "entradas_mes": 5,
       "saidas_mes": 1,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 15,
-      "valor_causa": 12227185.29
+      "valor_causa": 12756734.95
     },
     {
       "nome": "MT",
@@ -709,12 +709,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2894,
-      "entradas_mes": 135,
+      "andamento": 2897,
+      "entradas_mes": 138,
       "saidas_mes": 16,
       "entradas_mes_anterior": 268,
       "saidas_mes_anterior": 201,
-      "valor_causa": 839165012.74
+      "valor_causa": 840087614.85
     },
     {
       "nome": "Sentença",
@@ -1038,6 +1038,16 @@
     },
     {
       "fase": "Instrução",
+      "grupo": "Sem grupo",
+      "andamento": 17,
+      "entradas_mes": 16,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 5711916.47
+    },
+    {
+      "fase": "Instrução",
       "grupo": "Grupo A2",
       "andamento": 14,
       "entradas_mes": 1,
@@ -1045,16 +1055,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
       "valor_causa": 7720799.28
-    },
-    {
-      "fase": "Instrução",
-      "grupo": "Sem grupo",
-      "andamento": 14,
-      "entradas_mes": 13,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 4789314.36
     },
     {
       "fase": "Instrução",
@@ -1379,12 +1379,12 @@
     },
     {
       "nome": "Giulia Vendramini Milani(GVM)",
-      "andamento": 444,
-      "entradas_mes": 5,
+      "andamento": 445,
+      "entradas_mes": 6,
       "saidas_mes": 4,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 12,
-      "valor_causa": 64702788.71
+      "valor_causa": 65232338.37
     },
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
@@ -1415,21 +1415,21 @@
     },
     {
       "nome": "Beatriz Santiago de Souza(BSO)",
-      "andamento": 300,
-      "entradas_mes": 3,
+      "andamento": 301,
+      "entradas_mes": 4,
       "saidas_mes": 4,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 8,
-      "valor_causa": 58976827.44
+      "valor_causa": 59319085.81
     },
     {
       "nome": "Tamara Silva Marcílio(TAM)",
-      "andamento": 300,
-      "entradas_mes": 6,
+      "andamento": 301,
+      "entradas_mes": 7,
       "saidas_mes": 1,
       "entradas_mes_anterior": 21,
       "saidas_mes_anterior": 7,
-      "valor_causa": 80284140.46
+      "valor_causa": 80334934.54
     },
     {
       "nome": "Bianca Bolanhi Camacho(BBO)",
@@ -1786,12 +1786,12 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1443,
-      "entradas_mes": 16,
+      "andamento": 1445,
+      "entradas_mes": 18,
       "saidas_mes": 11,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 42,
-      "valor_causa": 324013788.01,
+      "valor_causa": 324406840.46,
       "alerta_entrada": false
     },
     {
@@ -1806,12 +1806,12 @@
     },
     {
       "nome": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 721,
-      "entradas_mes": 12,
+      "andamento": 722,
+      "entradas_mes": 13,
       "saidas_mes": 4,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 14,
-      "valor_causa": 144305895.59,
+      "valor_causa": 144835445.25,
       "alerta_entrada": false
     },
     {
@@ -3804,23 +3804,23 @@
     {
       "grupo": "Sem grupo",
       "cliente": "BRIDGESTONE",
-      "andamento": 3,
-      "entradas_mes": 3,
+      "andamento": 5,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 2381113.23,
+      "valor_causa": 2774165.68,
       "alerta_entrada": true
     },
     {
       "grupo": "Sem grupo",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 3,
-      "entradas_mes": 3,
+      "andamento": 4,
+      "entradas_mes": 4,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 1362852.79,
+      "valor_causa": 1892402.45,
       "alerta_entrada": true
     },
     {
@@ -4567,6 +4567,26 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Beatriz Santiago de Souza(BSO)",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 535314.27
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Tamara Silva Marcílio(TAM)",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 111439.17
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Paloma da Silva Santos(PSI)",
       "andamento": 2,
       "entradas_mes": 2,
@@ -4607,26 +4627,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Beatriz Santiago de Souza(BSO)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 193055.9
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Tamara Silva Marcílio(TAM)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 60645.09
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Tamires Lins Costa(TLI)",
       "andamento": 1,
       "entradas_mes": 1,
@@ -4654,6 +4654,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
       "valor_causa": 55185.67
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Giulia Vendramini Milani(GVM)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 529549.66
     },
     {
       "grupo": "Sem grupo",
@@ -5190,12 +5200,12 @@
     {
       "estado": "GO",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 10,
-      "entradas_mes": 1,
+      "andamento": 11,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 1072897.88
+      "valor_causa": 1602447.54
     },
     {
       "estado": "GO",
@@ -6620,12 +6630,12 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1415,
-      "entradas_mes": 16,
+      "andamento": 1417,
+      "entradas_mes": 18,
       "saidas_mes": 11,
       "entradas_mes_anterior": 52,
       "saidas_mes_anterior": 41,
-      "valor_causa": 312363743.49
+      "valor_causa": 312756795.94
     },
     {
       "estado": "SP",
@@ -8047,6 +8057,16 @@
       "profissional": "Tamara Silva Marcílio(TAM)"
     },
     {
+      "numero_processo": "1001496-44.2026.5.02.0361",
+      "cliente": "BRIDGESTONE",
+      "profissional": "Tamara Silva Marcílio(TAM)"
+    },
+    {
+      "numero_processo": "0012086-88.2026.5.15.0053",
+      "cliente": "BRIDGESTONE",
+      "profissional": "Beatriz Santiago de Souza(BSO)"
+    },
+    {
       "numero_processo": "1001554-91.2026.5.02.0411",
       "cliente": "CBC CARTUCHOS BRASIL",
       "profissional": "Letícia Meneghini Fontes (LMI)"
@@ -8100,6 +8120,11 @@
       "numero_processo": "0011720-62.2026.5.15.0081",
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "profissional": "Joice Ramos Miranda(JRM)"
+    },
+    {
+      "numero_processo": "0002272-79.2026.5.18.0211",
+      "cliente": "SYNGENTA PROTEÇÃO DE",
+      "profissional": "Giulia Vendramini Milani(GVM)"
     },
     {
       "numero_processo": "0020716-86.2019.5.04.0732",
