@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-15T15:30:27",
+  "atualizado_em": "2026-10-15T15:45:34",
   "kpis": {
     "total_andamento": 7609,
     "entradas_hoje": 19,
@@ -336,12 +336,12 @@
     },
     {
       "nome": "Grupo B1",
-      "andamento": 1442,
-      "entradas_mes": 15,
+      "andamento": 1443,
+      "entradas_mes": 16,
       "saidas_mes": 11,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 42,
-      "valor_causa": 323953142.92
+      "valor_causa": 324013788.01
     },
     {
       "nome": "Grupo B2",
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 17,
-      "entradas_mes": 15,
+      "andamento": 16,
+      "entradas_mes": 14,
       "saidas_mes": 1,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 3,
-      "valor_causa": 3471753.92
+      "valor_causa": 3411108.83
     },
     {
       "nome": "Sócios",
@@ -969,12 +969,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B1",
-      "andamento": 436,
-      "entradas_mes": 15,
+      "andamento": 437,
+      "entradas_mes": 16,
       "saidas_mes": 1,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 13,
-      "valor_causa": 149922819.07
+      "valor_causa": 149983464.16
     },
     {
       "fase": "Instrução",
@@ -1039,12 +1039,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 16,
-      "entradas_mes": 15,
+      "andamento": 15,
+      "entradas_mes": 14,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 3433753.92
+      "valor_causa": 3373108.83
     },
     {
       "fase": "Instrução",
@@ -2418,12 +2418,12 @@
     {
       "grupo": "Grupo B1",
       "cliente": "BRIDGESTONE",
-      "andamento": 1442,
-      "entradas_mes": 15,
+      "andamento": 1443,
+      "entradas_mes": 16,
       "saidas_mes": 11,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 42,
-      "valor_causa": 323953142.92,
+      "valor_causa": 324013788.01,
       "alerta_entrada": false
     },
     {
@@ -3814,17 +3814,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "BRIDGESTONE",
-      "andamento": 3,
-      "entradas_mes": 3,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 453697.54,
-      "alerta_entrada": true
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "MAHLE METAL - MOGI",
       "andamento": 2,
       "entradas_mes": 2,
@@ -3832,6 +3821,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 277412.74,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "BRIDGESTONE",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 393052.45,
       "alerta_entrada": false
     },
     {
@@ -4048,12 +4048,12 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Tamara Silva Marcílio(TAM)",
-      "andamento": 299,
-      "entradas_mes": 5,
+      "andamento": 300,
+      "entradas_mes": 6,
       "saidas_mes": 1,
       "entradas_mes_anterior": 21,
       "saidas_mes_anterior": 7,
-      "valor_causa": 80223495.37
+      "valor_causa": 80284140.46
     },
     {
       "grupo": "Grupo B1",
@@ -4567,16 +4567,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Tamara Silva Marcílio(TAM)",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 111439.17
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Paloma da Silva Santos(PSI)",
       "andamento": 2,
       "entradas_mes": 2,
@@ -4624,6 +4614,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 342258.37
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Tamara Silva Marcílio(TAM)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 50794.08
     },
     {
       "grupo": "Sem grupo",
@@ -8040,11 +8040,6 @@
       "numero_processo": "0012287-34.2026.5.15.0133",
       "cliente": "BP BIOENERGIA",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
-    },
-    {
-      "numero_processo": "1001942-28.2026.5.02.0432",
-      "cliente": "BRIDGESTONE",
-      "profissional": "Tamara Silva Marcílio(TAM)"
     },
     {
       "numero_processo": "0012086-88.2026.5.15.0053",
