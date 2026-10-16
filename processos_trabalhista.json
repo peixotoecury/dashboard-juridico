@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-16T13:00:33",
+  "atualizado_em": "2026-10-16T13:15:30",
   "kpis": {
-    "total_andamento": 7614,
-    "entradas_hoje": 6,
+    "total_andamento": 7616,
+    "entradas_hoje": 8,
     "saidas_hoje": 1,
     "entradas_ontem": 25,
     "saidas_ontem": 2,
-    "entradas_mes": 168,
+    "entradas_mes": 170,
     "saidas_mes": 75,
     "entradas_mes_anterior": 320,
     "saidas_mes_anterior": 1022,
-    "valor_causa_total": 1765387626.76,
-    "saldo_mes": 93
+    "valor_causa_total": 1765847831.68,
+    "saldo_mes": 95
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-10-16",
-      "entradas": 6,
+      "entradas": 8,
       "saidas": 1
     }
   ],
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 11,
-      "entradas_mes": 9,
+      "andamento": 13,
+      "entradas_mes": 11,
       "saidas_mes": 1,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 3,
-      "valor_causa": 3438117.13
+      "valor_causa": 3898322.05
     },
     {
       "nome": "Sócios",
@@ -473,12 +473,12 @@
     },
     {
       "nome": "MG",
-      "andamento": 551,
-      "entradas_mes": 12,
+      "andamento": 552,
+      "entradas_mes": 13,
       "saidas_mes": 3,
       "entradas_mes_anterior": 36,
       "saidas_mes_anterior": 22,
-      "valor_causa": 135058841.44
+      "valor_causa": 135495733.98
     },
     {
       "nome": "PR",
@@ -518,12 +518,12 @@
     },
     {
       "nome": "BA",
-      "andamento": 104,
-      "entradas_mes": 0,
+      "andamento": 105,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 4,
-      "valor_causa": 13362681.2
+      "valor_causa": 13385993.58
     },
     {
       "nome": "GO",
@@ -709,12 +709,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2904,
-      "entradas_mes": 154,
+      "andamento": 2906,
+      "entradas_mes": 156,
       "saidas_mes": 19,
       "entradas_mes_anterior": 268,
       "saidas_mes_anterior": 204,
-      "valor_causa": 843189802.51
+      "valor_causa": 843650007.43
     },
     {
       "nome": "Sentença",
@@ -1049,12 +1049,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 10,
-      "entradas_mes": 9,
+      "andamento": 12,
+      "entradas_mes": 11,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 3400117.13
+      "valor_causa": 3860322.05
     },
     {
       "fase": "Instrução",
@@ -1388,12 +1388,12 @@
     },
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 359,
-      "entradas_mes": 8,
+      "andamento": 360,
+      "entradas_mes": 9,
       "saidas_mes": 3,
       "entradas_mes_anterior": 30,
       "saidas_mes_anterior": 28,
-      "valor_causa": 50231779.35
+      "valor_causa": 50255091.73
     },
     {
       "nome": "Letícia Meneghini Fontes (LMI)",
@@ -1442,12 +1442,12 @@
     },
     {
       "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 297,
-      "entradas_mes": 6,
+      "andamento": 298,
+      "entradas_mes": 7,
       "saidas_mes": 2,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 18,
-      "valor_causa": 159008379.94
+      "valor_causa": 159445272.48
     },
     {
       "nome": "Bruna Cembranelli Fazenda (BCF)",
@@ -1896,12 +1896,12 @@
     },
     {
       "nome": "EUROCHEM SALITRE",
-      "andamento": 165,
-      "entradas_mes": 5,
+      "andamento": 167,
+      "entradas_mes": 7,
       "saidas_mes": 0,
       "entradas_mes_anterior": 20,
       "saidas_mes_anterior": 11,
-      "valor_causa": 38412360.77,
+      "valor_causa": 38872565.69,
       "alerta_entrada": false
     },
     {
@@ -3814,6 +3814,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "EUROCHEM SALITRE",
+      "andamento": 3,
+      "entradas_mes": 3,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 460204.92,
+      "alerta_entrada": true
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "VITERRA RIO VERMELHO",
       "andamento": 2,
       "entradas_mes": 2,
@@ -3832,17 +3843,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 65356.55,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "EUROCHEM SALITRE",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 0.0,
       "alerta_entrada": false
     },
     {
@@ -4525,12 +4525,22 @@
     {
       "grupo": "Sem grupo",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 2,
-      "entradas_mes": 2,
+      "andamento": 3,
+      "entradas_mes": 3,
       "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 1692578.03
+      "valor_causa": 2129470.57
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Camila Alves Magalhães de Paula(CAL)",
+      "andamento": 3,
+      "entradas_mes": 3,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 928224.38
     },
     {
       "grupo": "Sem grupo",
@@ -4541,16 +4551,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 275105.74
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 904912.0
     },
     {
       "grupo": "Sem grupo",
@@ -4686,6 +4686,16 @@
     },
     {
       "estado": "BA",
+      "cliente": "EUROCHEM SALITRE",
+      "andamento": 34,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 3,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 3746700.91
+    },
+    {
+      "estado": "BA",
       "cliente": "HERINGER",
       "andamento": 34,
       "entradas_mes": 0,
@@ -4693,16 +4703,6 @@
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
       "valor_causa": 3792940.77
-    },
-    {
-      "estado": "BA",
-      "cliente": "EUROCHEM SALITRE",
-      "andamento": 33,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 3,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 3723388.53
     },
     {
       "estado": "BA",
@@ -5227,12 +5227,12 @@
     {
       "estado": "MG",
       "cliente": "EUROCHEM SALITRE",
-      "andamento": 115,
-      "entradas_mes": 5,
+      "andamento": 116,
+      "entradas_mes": 6,
       "saidas_mes": 0,
       "entradas_mes_anterior": 14,
       "saidas_mes_anterior": 9,
-      "valor_causa": 25168285.5
+      "valor_causa": 25605178.04
     },
     {
       "estado": "MG",
@@ -7979,14 +7979,14 @@
       "profissional": "Mariana Borges de Menezes Fávaro(MBF)"
     },
     {
-      "numero_processo": "0011209-23.2026.5.03.0041",
-      "cliente": "BP BIOENERGIA",
-      "profissional": "Camila Alves Magalhães de Paula(CAL)"
-    },
-    {
       "numero_processo": "0010986-16.2026.5.03.0156",
       "cliente": "BP BIOENERGIA",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
+    },
+    {
+      "numero_processo": "0011209-23.2026.5.03.0041",
+      "cliente": "BP BIOENERGIA",
+      "profissional": "Camila Alves Magalhães de Paula(CAL)"
     },
     {
       "numero_processo": "1001676-48.2026.5.02.0462",
@@ -8000,6 +8000,16 @@
     },
     {
       "numero_processo": "0011260-14.2026.5.03.0080",
+      "cliente": "EUROCHEM SALITRE",
+      "profissional": "Camila Alves Magalhães de Paula(CAL)"
+    },
+    {
+      "numero_processo": "0011294-86.2026.5.03.0080",
+      "cliente": "EUROCHEM SALITRE",
+      "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
+    },
+    {
+      "numero_processo": "0001006-60.2026.5.05.0133",
       "cliente": "EUROCHEM SALITRE",
       "profissional": "Camila Alves Magalhães de Paula(CAL)"
     },
