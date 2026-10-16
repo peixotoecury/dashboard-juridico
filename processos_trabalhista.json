@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-16T14:15:33",
+  "atualizado_em": "2026-10-16T14:30:31",
   "kpis": {
-    "total_andamento": 7620,
-    "entradas_hoje": 12,
+    "total_andamento": 7622,
+    "entradas_hoje": 14,
     "saidas_hoje": 1,
     "entradas_ontem": 25,
     "saidas_ontem": 2,
-    "entradas_mes": 174,
+    "entradas_mes": 176,
     "saidas_mes": 75,
     "entradas_mes_anterior": 320,
     "saidas_mes_anterior": 1022,
-    "valor_causa_total": 1766196969.5,
-    "saldo_mes": 99
+    "valor_causa_total": 1766850135.87,
+    "saldo_mes": 101
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-10-16",
-      "entradas": 12,
+      "entradas": 14,
       "saidas": 1
     }
   ],
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 17,
-      "entradas_mes": 15,
+      "andamento": 19,
+      "entradas_mes": 17,
       "saidas_mes": 1,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 3,
-      "valor_causa": 4247459.87
+      "valor_causa": 4900626.24
     },
     {
       "nome": "Sócios",
@@ -464,21 +464,21 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5759,
-      "entradas_mes": 89,
+      "andamento": 5760,
+      "entradas_mes": 90,
       "saidas_mes": 66,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 842,
-      "valor_causa": 1371133461.58
+      "valor_causa": 1371563088.77
     },
     {
       "nome": "MG",
-      "andamento": 552,
-      "entradas_mes": 13,
+      "andamento": 553,
+      "entradas_mes": 14,
       "saidas_mes": 3,
       "entradas_mes_anterior": 36,
       "saidas_mes_anterior": 22,
-      "valor_causa": 135495733.98
+      "valor_causa": 135719273.16
     },
     {
       "nome": "PR",
@@ -709,12 +709,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2910,
-      "entradas_mes": 160,
+      "andamento": 2912,
+      "entradas_mes": 162,
       "saidas_mes": 19,
       "entradas_mes_anterior": 268,
       "saidas_mes_anterior": 204,
-      "valor_causa": 843999145.25
+      "valor_causa": 844652311.62
     },
     {
       "nome": "Sentença",
@@ -1039,12 +1039,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 16,
-      "entradas_mes": 15,
+      "andamento": 18,
+      "entradas_mes": 17,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 4209459.87
+      "valor_causa": 4862626.24
     },
     {
       "fase": "Instrução",
@@ -1478,12 +1478,12 @@
     },
     {
       "nome": "Vanessa de Cassia Castrequini Rosa(VCR)",
-      "andamento": 277,
-      "entradas_mes": 2,
+      "andamento": 278,
+      "entradas_mes": 3,
       "saidas_mes": 1,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 7,
-      "valor_causa": 45192269.9
+      "valor_causa": 45621897.09
     },
     {
       "nome": "Guilherme Silva Morimoto(GSM)",
@@ -1523,12 +1523,12 @@
     },
     {
       "nome": "Mariana Borges de Menezes Fávaro(MBF)",
-      "andamento": 258,
-      "entradas_mes": 3,
+      "andamento": 259,
+      "entradas_mes": 4,
       "saidas_mes": 2,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 6,
-      "valor_causa": 34102001.71
+      "valor_causa": 34325540.89
     },
     {
       "nome": "Paloma da Silva Santos(PSI)",
@@ -1796,12 +1796,12 @@
     },
     {
       "nome": "BP BIOENERGIA",
-      "andamento": 757,
-      "entradas_mes": 12,
+      "andamento": 758,
+      "entradas_mes": 13,
       "saidas_mes": 5,
       "entradas_mes_anterior": 20,
       "saidas_mes_anterior": 34,
-      "valor_causa": 213095754.52,
+      "valor_causa": 213319293.7,
       "alerta_entrada": false
     },
     {
@@ -1816,12 +1816,12 @@
     },
     {
       "nome": "EMBRAER",
-      "andamento": 721,
-      "entradas_mes": 6,
+      "andamento": 722,
+      "entradas_mes": 7,
       "saidas_mes": 9,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 22,
-      "valor_causa": 137684431.02,
+      "valor_causa": 138114058.21,
       "alerta_entrada": false
     },
     {
@@ -3804,12 +3804,12 @@
     {
       "grupo": "Sem grupo",
       "cliente": "BP BIOENERGIA",
-      "andamento": 4,
-      "entradas_mes": 4,
+      "andamento": 5,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 2805327.12,
+      "valor_causa": 3028866.3,
       "alerta_entrada": true
     },
     {
@@ -3887,6 +3887,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 30003.43,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "EMBRAER",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 429627.19,
       "alerta_entrada": false
     },
     {
@@ -4587,6 +4598,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Mariana Borges de Menezes Fávaro(MBF)",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 431376.27
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Erik Mota Coppi(ECO)",
       "andamento": 2,
       "entradas_mes": 2,
@@ -4607,16 +4628,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Mariana Borges de Menezes Fávaro(MBF)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 207837.09
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Tamara Silva Marcílio(TAM)",
       "andamento": 1,
       "entradas_mes": 1,
@@ -4624,6 +4635,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 253327.72
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Vanessa de Cassia Castrequini Rosa(VCR)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 429627.19
     },
     {
       "grupo": "Sem grupo",
@@ -5260,12 +5281,12 @@
     {
       "estado": "MG",
       "cliente": "BP BIOENERGIA",
-      "andamento": 217,
-      "entradas_mes": 5,
+      "andamento": 218,
+      "entradas_mes": 6,
       "saidas_mes": 1,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 6,
-      "valor_causa": 83130729.91
+      "valor_causa": 83354269.09
     },
     {
       "estado": "MG",
@@ -6600,12 +6621,12 @@
     {
       "estado": "SP",
       "cliente": "EMBRAER",
-      "andamento": 704,
-      "entradas_mes": 6,
+      "andamento": 705,
+      "entradas_mes": 7,
       "saidas_mes": 9,
       "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 21,
-      "valor_causa": 137234588.61
+      "valor_causa": 137664215.8
     },
     {
       "estado": "SP",
@@ -8032,6 +8053,11 @@
       "profissional": "Camila Alves Magalhães de Paula(CAL)"
     },
     {
+      "numero_processo": "0010982-76.2026.5.03.0156",
+      "cliente": "BP BIOENERGIA",
+      "profissional": "Mariana Borges de Menezes Fávaro(MBF)"
+    },
+    {
       "numero_processo": "1001676-48.2026.5.02.0462",
       "cliente": "BRIDGESTONE",
       "profissional": "Tamara Silva Marcílio(TAM)"
@@ -8055,6 +8081,11 @@
       "numero_processo": "0001599-98.2026.5.07.0015",
       "cliente": "COMPANHIA AIX",
       "profissional": "Erik Mota Coppi(ECO)"
+    },
+    {
+      "numero_processo": "0014027-96.2026.5.15.0013",
+      "cliente": "EMBRAER",
+      "profissional": "Vanessa de Cassia Castrequini Rosa(VCR)"
     },
     {
       "numero_processo": "0002944-82.2026.5.10.0802",
