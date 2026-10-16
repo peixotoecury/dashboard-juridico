@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-16T13:30:41",
+  "atualizado_em": "2026-10-16T13:45:32",
   "kpis": {
-    "total_andamento": 7616,
-    "entradas_hoje": 8,
+    "total_andamento": 7617,
+    "entradas_hoje": 9,
     "saidas_hoje": 1,
     "entradas_ontem": 25,
     "saidas_ontem": 2,
-    "entradas_mes": 170,
+    "entradas_mes": 171,
     "saidas_mes": 75,
     "entradas_mes_anterior": 320,
     "saidas_mes_anterior": 1022,
-    "valor_causa_total": 1765847831.68,
-    "saldo_mes": 95
+    "valor_causa_total": 1765912270.77,
+    "saldo_mes": 96
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-10-16",
-      "entradas": 8,
+      "entradas": 9,
       "saidas": 1
     }
   ],
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 13,
-      "entradas_mes": 11,
+      "andamento": 14,
+      "entradas_mes": 12,
       "saidas_mes": 1,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 3,
-      "valor_causa": 3898322.05
+      "valor_causa": 3962761.14
     },
     {
       "nome": "Sócios",
@@ -482,12 +482,12 @@
     },
     {
       "nome": "PR",
-      "andamento": 250,
-      "entradas_mes": 15,
+      "andamento": 251,
+      "entradas_mes": 16,
       "saidas_mes": 0,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 7,
-      "valor_causa": 54340989.84
+      "valor_causa": 54405428.93
     },
     {
       "nome": "RS",
@@ -709,12 +709,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2906,
-      "entradas_mes": 156,
+      "andamento": 2907,
+      "entradas_mes": 157,
       "saidas_mes": 19,
       "entradas_mes_anterior": 268,
       "saidas_mes_anterior": 204,
-      "valor_causa": 843650007.43
+      "valor_causa": 843714446.52
     },
     {
       "nome": "Sentença",
@@ -1049,12 +1049,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 12,
-      "entradas_mes": 11,
+      "andamento": 13,
+      "entradas_mes": 12,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 3860322.05
+      "valor_causa": 3924761.14
     },
     {
       "fase": "Instrução",
@@ -1370,12 +1370,12 @@
   "por_profissional": [
     {
       "nome": "Rafael Yepez do Lago(RYL)",
-      "andamento": 453,
-      "entradas_mes": 9,
+      "andamento": 454,
+      "entradas_mes": 10,
       "saidas_mes": 5,
       "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 22,
-      "valor_causa": 59941859.5
+      "valor_causa": 60006298.59
     },
     {
       "nome": "Giulia Vendramini Milani(GVM)",
@@ -1935,6 +1935,16 @@
       "alerta_entrada": false
     },
     {
+      "nome": "EUROCHEM FTO MATRIZ",
+      "andamento": 105,
+      "entradas_mes": 5,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 8,
+      "saidas_mes_anterior": 9,
+      "valor_causa": 10834693.0,
+      "alerta_entrada": false
+    },
+    {
       "nome": "T4F ENTRETENIMENTO",
       "andamento": 104,
       "entradas_mes": 1,
@@ -1942,16 +1952,6 @@
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 3,
       "valor_causa": 11633933.98,
-      "alerta_entrada": false
-    },
-    {
-      "nome": "EUROCHEM FTO MATRIZ",
-      "andamento": 104,
-      "entradas_mes": 4,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 8,
-      "saidas_mes_anterior": 9,
-      "valor_causa": 10770253.91,
       "alerta_entrada": false
     },
     {
@@ -3858,6 +3858,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "EUROCHEM FTO MATRIZ",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 64439.09,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "HERINGER",
       "andamento": 1,
       "entradas_mes": 0,
@@ -4534,6 +4545,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Rafael Yepez do Lago(RYL)",
+      "andamento": 3,
+      "entradas_mes": 3,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 339544.83
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Camila Alves Magalhães de Paula(CAL)",
       "andamento": 3,
       "entradas_mes": 3,
@@ -4541,16 +4562,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 928224.38
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Rafael Yepez do Lago(RYL)",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 275105.74
     },
     {
       "grupo": "Sem grupo",
@@ -5867,12 +5878,12 @@
     {
       "estado": "PR",
       "cliente": "EUROCHEM FTO MATRIZ",
-      "andamento": 4,
-      "entradas_mes": 1,
+      "andamento": 5,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 138023.33
+      "valor_causa": 202462.42
     },
     {
       "estado": "PR",
@@ -7997,6 +8008,11 @@
       "numero_processo": "1001556-61.2026.5.02.0411",
       "cliente": "CBC CARTUCHOS BRASIL",
       "profissional": "Letícia Meneghini Fontes (LMI)"
+    },
+    {
+      "numero_processo": "0002944-82.2026.5.10.0802",
+      "cliente": "EUROCHEM FTO MATRIZ",
+      "profissional": "Rafael Yepez do Lago(RYL)"
     },
     {
       "numero_processo": "0011260-14.2026.5.03.0080",
