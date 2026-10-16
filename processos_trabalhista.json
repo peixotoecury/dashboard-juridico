@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-16T12:00:42",
+  "atualizado_em": "2026-10-16T12:15:34",
   "kpis": {
-    "total_andamento": 7607,
+    "total_andamento": 7610,
     "entradas_hoje": 1,
     "saidas_hoje": 1,
-    "entradas_ontem": 22,
+    "entradas_ontem": 25,
     "saidas_ontem": 2,
-    "entradas_mes": 160,
+    "entradas_mes": 163,
     "saidas_mes": 75,
     "entradas_mes_anterior": 320,
     "saidas_mes_anterior": 1021,
-    "valor_causa_total": 1762089866.18,
-    "saldo_mes": 85
+    "valor_causa_total": 1764057549.95,
+    "saldo_mes": 88
   },
   "serie_diaria": [
     {
@@ -306,7 +306,7 @@
     },
     {
       "data": "2026-10-15",
-      "entradas": 22,
+      "entradas": 25,
       "saidas": 2
     },
     {
@@ -416,6 +416,15 @@
       "valor_causa": 11721158.38
     },
     {
+      "nome": "Sem grupo",
+      "andamento": 6,
+      "entradas_mes": 4,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 3,
+      "valor_causa": 2072040.32
+    },
+    {
       "nome": "Sócios",
       "andamento": 3,
       "entradas_mes": 0,
@@ -423,15 +432,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
-    },
-    {
-      "nome": "Sem grupo",
-      "andamento": 3,
-      "entradas_mes": 1,
-      "saidas_mes": 1,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 3,
-      "valor_causa": 104356.55
     },
     {
       "nome": "Grupo C",
@@ -464,12 +464,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5753,
-      "entradas_mes": 83,
+      "andamento": 5756,
+      "entradas_mes": 86,
       "saidas_mes": 66,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 842,
-      "valor_causa": 1368674609.57
+      "valor_causa": 1370642293.34
     },
     {
       "nome": "MG",
@@ -709,12 +709,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2896,
-      "entradas_mes": 146,
+      "andamento": 2899,
+      "entradas_mes": 149,
       "saidas_mes": 19,
       "entradas_mes_anterior": 268,
       "saidas_mes_anterior": 204,
-      "valor_causa": 839856041.93
+      "valor_causa": 841823725.7
     },
     {
       "nome": "Sentença",
@@ -1048,6 +1048,16 @@
     },
     {
       "fase": "Instrução",
+      "grupo": "Sem grupo",
+      "andamento": 5,
+      "entradas_mes": 4,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 2034040.32
+    },
+    {
+      "fase": "Instrução",
       "grupo": "Grupo A1",
       "andamento": 4,
       "entradas_mes": 0,
@@ -1055,16 +1065,6 @@
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
-    },
-    {
-      "fase": "Instrução",
-      "grupo": "Sem grupo",
-      "andamento": 2,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 66356.55
     },
     {
       "fase": "Instrução",
@@ -1370,12 +1370,12 @@
   "por_profissional": [
     {
       "nome": "Rafael Yepez do Lago(RYL)",
-      "andamento": 451,
-      "entradas_mes": 7,
+      "andamento": 453,
+      "entradas_mes": 9,
       "saidas_mes": 5,
       "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 22,
-      "valor_causa": 59666753.76
+      "valor_causa": 59941859.5
     },
     {
       "nome": "Giulia Vendramini Milani(GVM)",
@@ -1442,12 +1442,12 @@
     },
     {
       "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 295,
-      "entradas_mes": 4,
+      "andamento": 296,
+      "entradas_mes": 5,
       "saidas_mes": 2,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 18,
-      "valor_causa": 157315801.91
+      "valor_causa": 159008379.94
     },
     {
       "nome": "Bruna Cembranelli Fazenda (BCF)",
@@ -1796,12 +1796,12 @@
     },
     {
       "nome": "BP BIOENERGIA",
-      "andamento": 754,
-      "entradas_mes": 8,
+      "andamento": 755,
+      "entradas_mes": 9,
       "saidas_mes": 5,
       "entradas_mes_anterior": 20,
       "saidas_mes_anterior": 33,
-      "valor_causa": 210326427.4,
+      "valor_causa": 212019005.43,
       "alerta_entrada": false
     },
     {
@@ -1856,13 +1856,13 @@
     },
     {
       "nome": "VITERRA RIO VERMELHO",
-      "andamento": 313,
-      "entradas_mes": 4,
+      "andamento": 315,
+      "entradas_mes": 6,
       "saidas_mes": 7,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 10,
-      "valor_causa": 42340966.0,
-      "alerta_entrada": false
+      "valor_causa": 42616071.74,
+      "alerta_entrada": true
     },
     {
       "nome": "MAHLE METAL - SBC",
@@ -3803,6 +3803,28 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "VITERRA RIO VERMELHO",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 275105.74,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "BP BIOENERGIA",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1692578.03,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "CBC CARTUCHOS BRASIL",
       "andamento": 1,
       "entradas_mes": 1,
@@ -4477,6 +4499,26 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Rafael Yepez do Lago(RYL)",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 275105.74
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1692578.03
     },
     {
       "grupo": "Sem grupo",
@@ -6483,12 +6525,12 @@
     {
       "estado": "SP",
       "cliente": "BP BIOENERGIA",
-      "andamento": 416,
-      "entradas_mes": 3,
+      "andamento": 417,
+      "entradas_mes": 4,
       "saidas_mes": 3,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 26,
-      "valor_causa": 98753733.29
+      "valor_causa": 100446311.32
     },
     {
       "estado": "SP",
@@ -6503,12 +6545,12 @@
     {
       "estado": "SP",
       "cliente": "VITERRA RIO VERMELHO",
-      "andamento": 295,
-      "entradas_mes": 4,
+      "andamento": 297,
+      "entradas_mes": 6,
       "saidas_mes": 7,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 8,
-      "valor_causa": 41079024.47
+      "valor_causa": 41354130.21
     },
     {
       "estado": "SP",
@@ -7843,6 +7885,16 @@
   ],
   "clientes_com_alerta": [
     {
+      "nome": "VITERRA RIO VERMELHO",
+      "andamento": 315,
+      "entradas_mes": 6,
+      "saidas_mes": 7,
+      "entradas_mes_anterior": 7,
+      "saidas_mes_anterior": 10,
+      "valor_causa": 42616071.74,
+      "alerta_entrada": true
+    },
+    {
       "nome": "CBC CARTUCHOS BRASIL",
       "andamento": 234,
       "entradas_mes": 13,
@@ -7865,6 +7917,11 @@
   ],
   "sem_grupo_processos": [
     {
+      "numero_processo": "0012541-07.2026.5.15.0133",
+      "cliente": "BP BIOENERGIA",
+      "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
+    },
+    {
       "numero_processo": "1001556-61.2026.5.02.0411",
       "cliente": "CBC CARTUCHOS BRASIL",
       "profissional": "Letícia Meneghini Fontes (LMI)"
@@ -7878,6 +7935,16 @@
       "numero_processo": "1002426-59.2017.5.02.0464",
       "cliente": "MULTICEL",
       "profissional": "Luiz Vicente de Carvalho(LVC) ; Lisandra Melo Alves(LMS)"
+    },
+    {
+      "numero_processo": "0011307-41.2026.5.15.0019",
+      "cliente": "VITERRA RIO VERMELHO",
+      "profissional": "Rafael Yepez do Lago(RYL)"
+    },
+    {
+      "numero_processo": "0011285-22.2026.5.15.0103",
+      "cliente": "VITERRA RIO VERMELHO",
+      "profissional": "Rafael Yepez do Lago(RYL)"
     }
   ]
 }
