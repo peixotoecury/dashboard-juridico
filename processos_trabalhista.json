@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-16T13:45:32",
+  "atualizado_em": "2026-10-16T14:00:38",
   "kpis": {
-    "total_andamento": 7617,
-    "entradas_hoje": 9,
+    "total_andamento": 7620,
+    "entradas_hoje": 12,
     "saidas_hoje": 1,
     "entradas_ontem": 25,
     "saidas_ontem": 2,
-    "entradas_mes": 171,
+    "entradas_mes": 174,
     "saidas_mes": 75,
     "entradas_mes_anterior": 320,
     "saidas_mes_anterior": 1022,
-    "valor_causa_total": 1765912270.77,
-    "saldo_mes": 96
+    "valor_causa_total": 1766196969.5,
+    "saldo_mes": 99
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-10-16",
-      "entradas": 9,
+      "entradas": 12,
       "saidas": 1
     }
   ],
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 14,
-      "entradas_mes": 12,
+      "andamento": 17,
+      "entradas_mes": 15,
       "saidas_mes": 1,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 3,
-      "valor_causa": 3962761.14
+      "valor_causa": 4247459.87
     },
     {
       "nome": "Sócios",
@@ -464,12 +464,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5758,
-      "entradas_mes": 88,
+      "andamento": 5759,
+      "entradas_mes": 89,
       "saidas_mes": 66,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 842,
-      "valor_causa": 1371103458.15
+      "valor_causa": 1371133461.58
     },
     {
       "nome": "MG",
@@ -572,12 +572,12 @@
     },
     {
       "nome": "CE",
-      "andamento": 37,
-      "entradas_mes": 26,
+      "andamento": 39,
+      "entradas_mes": 28,
       "saidas_mes": 1,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 1,
-      "valor_causa": 5559782.81
+      "valor_causa": 5814478.11
     },
     {
       "nome": "ES",
@@ -709,12 +709,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2907,
-      "entradas_mes": 157,
+      "andamento": 2910,
+      "entradas_mes": 160,
       "saidas_mes": 19,
       "entradas_mes_anterior": 268,
       "saidas_mes_anterior": 204,
-      "valor_causa": 843714446.52
+      "valor_causa": 843999145.25
     },
     {
       "nome": "Sentença",
@@ -1038,6 +1038,16 @@
     },
     {
       "fase": "Instrução",
+      "grupo": "Sem grupo",
+      "andamento": 16,
+      "entradas_mes": 15,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 4209459.87
+    },
+    {
+      "fase": "Instrução",
       "grupo": "Grupo A2",
       "andamento": 14,
       "entradas_mes": 1,
@@ -1045,16 +1055,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
       "valor_causa": 7720799.28
-    },
-    {
-      "fase": "Instrução",
-      "grupo": "Sem grupo",
-      "andamento": 13,
-      "entradas_mes": 12,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 3924761.14
     },
     {
       "fase": "Instrução",
@@ -1388,12 +1388,12 @@
     },
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 360,
-      "entradas_mes": 9,
+      "andamento": 361,
+      "entradas_mes": 10,
       "saidas_mes": 3,
       "entradas_mes_anterior": 30,
       "saidas_mes_anterior": 28,
-      "valor_causa": 50255091.73
+      "valor_causa": 50285095.16
     },
     {
       "nome": "Letícia Meneghini Fontes (LMI)",
@@ -1505,12 +1505,12 @@
     },
     {
       "nome": "Erik Mota Coppi(ECO)",
-      "andamento": 266,
-      "entradas_mes": 23,
+      "andamento": 268,
+      "entradas_mes": 25,
       "saidas_mes": 1,
       "entradas_mes_anterior": 15,
       "saidas_mes_anterior": 12,
-      "valor_causa": 54446109.57
+      "valor_causa": 54700804.87
     },
     {
       "nome": "Anna Carolina Balbino Gatti Baani(ANB)",
@@ -1916,12 +1916,12 @@
     },
     {
       "nome": "COMPANHIA AIX",
-      "andamento": 147,
-      "entradas_mes": 35,
+      "andamento": 149,
+      "entradas_mes": 37,
       "saidas_mes": 0,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 0,
-      "valor_causa": 35470513.14,
+      "valor_causa": 35725208.44,
       "alerta_entrada": true
     },
     {
@@ -3836,6 +3836,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "COMPANHIA AIX",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 254695.3,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "CBC CARTUCHOS BRASIL",
       "andamento": 1,
       "entradas_mes": 1,
@@ -3865,6 +3876,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 64439.09,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "CEPAM COMERCIO",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 30003.43,
       "alerta_entrada": false
     },
     {
@@ -4535,6 +4557,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Camila Alves Magalhães de Paula(CAL)",
+      "andamento": 4,
+      "entradas_mes": 4,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 958227.81
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
       "andamento": 3,
       "entradas_mes": 3,
@@ -4555,13 +4587,13 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 3,
-      "entradas_mes": 3,
+      "profissional": "Erik Mota Coppi(ECO)",
+      "andamento": 2,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 928224.38
+      "valor_causa": 254695.3
     },
     {
       "grupo": "Sem grupo",
@@ -4838,12 +4870,12 @@
     {
       "estado": "CE",
       "cliente": "COMPANHIA AIX",
-      "andamento": 31,
-      "entradas_mes": 26,
+      "andamento": 33,
+      "entradas_mes": 28,
       "saidas_mes": 0,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 0,
-      "valor_causa": 5553964.88
+      "valor_causa": 5808660.18
     },
     {
       "estado": "CE",
@@ -6728,12 +6760,12 @@
     {
       "estado": "SP",
       "cliente": "CEPAM COMERCIO",
-      "andamento": 41,
-      "entradas_mes": 0,
+      "andamento": 42,
+      "entradas_mes": 1,
       "saidas_mes": 1,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 2,
-      "valor_causa": 7240089.71
+      "valor_causa": 7270093.14
     },
     {
       "estado": "SP",
@@ -7969,12 +8001,12 @@
     },
     {
       "nome": "COMPANHIA AIX",
-      "andamento": 147,
-      "entradas_mes": 35,
+      "andamento": 149,
+      "entradas_mes": 37,
       "saidas_mes": 0,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 0,
-      "valor_causa": 35470513.14,
+      "valor_causa": 35725208.44,
       "alerta_entrada": true
     }
   ],
@@ -8008,6 +8040,21 @@
       "numero_processo": "1001556-61.2026.5.02.0411",
       "cliente": "CBC CARTUCHOS BRASIL",
       "profissional": "Letícia Meneghini Fontes (LMI)"
+    },
+    {
+      "numero_processo": "1001647-78.2026.5.02.0015",
+      "cliente": "CEPAM COMERCIO",
+      "profissional": "Camila Alves Magalhães de Paula(CAL)"
+    },
+    {
+      "numero_processo": "0001602-89.2026.5.07.0003",
+      "cliente": "COMPANHIA AIX",
+      "profissional": "Erik Mota Coppi(ECO)"
+    },
+    {
+      "numero_processo": "0001599-98.2026.5.07.0015",
+      "cliente": "COMPANHIA AIX",
+      "profissional": "Erik Mota Coppi(ECO)"
     },
     {
       "numero_processo": "0002944-82.2026.5.10.0802",
