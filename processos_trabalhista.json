@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-19T13:00:39",
+  "atualizado_em": "2026-10-19T13:15:31",
   "kpis": {
-    "total_andamento": 7633,
-    "entradas_hoje": 0,
+    "total_andamento": 7636,
+    "entradas_hoje": 2,
     "saidas_hoje": 3,
     "entradas_ontem": 0,
     "saidas_ontem": 0,
-    "entradas_mes": 195,
+    "entradas_mes": 198,
     "saidas_mes": 80,
     "entradas_mes_anterior": 320,
     "saidas_mes_anterior": 1024,
-    "valor_causa_total": 1768772480.72,
-    "saldo_mes": 115
+    "valor_causa_total": 1769634434.84,
+    "saldo_mes": 118
   },
   "serie_diaria": [
     {
@@ -296,7 +296,7 @@
     },
     {
       "data": "2026-10-16",
-      "entradas": 33,
+      "entradas": 34,
       "saidas": 2
     },
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-10-19",
-      "entradas": 0,
+      "entradas": 2,
       "saidas": 3
     }
   ],
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 17,
-      "entradas_mes": 15,
+      "andamento": 20,
+      "entradas_mes": 18,
       "saidas_mes": 1,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 3,
-      "valor_causa": 2135491.53
+      "valor_causa": 2997445.65
     },
     {
       "nome": "Sócios",
@@ -464,21 +464,21 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5768,
-      "entradas_mes": 104,
+      "andamento": 5770,
+      "entradas_mes": 106,
       "saidas_mes": 69,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 844,
-      "valor_causa": 1372179757.6
+      "valor_causa": 1372955423.19
     },
     {
       "nome": "MG",
-      "andamento": 553,
-      "entradas_mes": 16,
+      "andamento": 554,
+      "entradas_mes": 17,
       "saidas_mes": 5,
       "entradas_mes_anterior": 36,
       "saidas_mes_anterior": 22,
-      "valor_causa": 136418739.25
+      "valor_causa": 136505027.78
     },
     {
       "nome": "PR",
@@ -709,12 +709,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2911,
-      "entradas_mes": 169,
+      "andamento": 2914,
+      "entradas_mes": 172,
       "saidas_mes": 20,
       "entradas_mes_anterior": 268,
       "saidas_mes_anterior": 205,
-      "valor_causa": 844501533.64
+      "valor_causa": 845363487.76
     },
     {
       "nome": "Sentença",
@@ -1039,12 +1039,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 16,
-      "entradas_mes": 15,
+      "andamento": 19,
+      "entradas_mes": 18,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 2097491.53
+      "valor_causa": 2959445.65
     },
     {
       "fase": "Instrução",
@@ -1388,12 +1388,12 @@
     },
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 360,
-      "entradas_mes": 10,
+      "andamento": 362,
+      "entradas_mes": 12,
       "saidas_mes": 4,
       "entradas_mes_anterior": 30,
       "saidas_mes_anterior": 28,
-      "valor_causa": 50231661.94
+      "valor_causa": 50363624.9
     },
     {
       "nome": "Letícia Meneghini Fontes (LMI)",
@@ -1442,12 +1442,12 @@
     },
     {
       "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 298,
-      "entradas_mes": 8,
+      "andamento": 299,
+      "entradas_mes": 9,
       "saidas_mes": 2,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 18,
-      "valor_causa": 159725576.45
+      "valor_causa": 160455567.61
     },
     {
       "nome": "Bruna Cembranelli Fazenda (BCF)",
@@ -1796,12 +1796,12 @@
     },
     {
       "nome": "BP BIOENERGIA",
-      "andamento": 754,
-      "entradas_mes": 13,
+      "andamento": 757,
+      "entradas_mes": 16,
       "saidas_mes": 6,
       "entradas_mes_anterior": 20,
       "saidas_mes_anterior": 36,
-      "valor_causa": 212910806.91,
+      "valor_causa": 213772761.03,
       "alerta_entrada": false
     },
     {
@@ -3825,6 +3825,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "BP BIOENERGIA",
+      "andamento": 3,
+      "entradas_mes": 3,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 861954.12,
+      "alerta_entrada": true
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "SYNGENTA SEEDS NIDER",
       "andamento": 2,
       "entradas_mes": 2,
@@ -4545,6 +4556,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Camila Alves Magalhães de Paula(CAL)",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 131962.96
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Beatriz Santiago de Souza(BSO)",
       "andamento": 1,
       "entradas_mes": 1,
@@ -4622,6 +4643,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 534689.17
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 729991.16
     },
     {
       "grupo": "Sem grupo",
@@ -5268,12 +5299,12 @@
     {
       "estado": "MG",
       "cliente": "BP BIOENERGIA",
-      "andamento": 218,
-      "entradas_mes": 6,
+      "andamento": 219,
+      "entradas_mes": 7,
       "saidas_mes": 1,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 6,
-      "valor_causa": 83513391.02
+      "valor_causa": 83599679.55
     },
     {
       "estado": "MG",
@@ -6628,12 +6659,12 @@
     {
       "estado": "SP",
       "cliente": "BP BIOENERGIA",
-      "andamento": 414,
-      "entradas_mes": 5,
+      "andamento": 416,
+      "entradas_mes": 7,
       "saidas_mes": 4,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 28,
-      "valor_causa": 100086539.69
+      "valor_causa": 100862205.28
     },
     {
       "estado": "SP",
@@ -8009,6 +8040,21 @@
     }
   ],
   "sem_grupo_processos": [
+    {
+      "numero_processo": "0012361-85.2026.5.03.0048",
+      "cliente": "BP BIOENERGIA",
+      "profissional": "Camila Alves Magalhães de Paula(CAL)"
+    },
+    {
+      "numero_processo": "0012537-67.2026.5.15.0133",
+      "cliente": "BP BIOENERGIA",
+      "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
+    },
+    {
+      "numero_processo": "0010115-71.2026.5.15.0052",
+      "cliente": "BP BIOENERGIA",
+      "profissional": "Camila Alves Magalhães de Paula(CAL)"
+    },
     {
       "numero_processo": "0000708-42.2014.5.02.0434",
       "cliente": "BRIDGESTONE",
