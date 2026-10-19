@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-19T11:31:45",
+  "atualizado_em": "2026-10-19T11:45:28",
   "kpis": {
-    "total_andamento": 7632,
+    "total_andamento": 7633,
     "entradas_hoje": 0,
     "saidas_hoje": 3,
     "entradas_ontem": 0,
     "saidas_ontem": 0,
-    "entradas_mes": 194,
+    "entradas_mes": 195,
     "saidas_mes": 80,
     "entradas_mes_anterior": 320,
     "saidas_mes_anterior": 1024,
-    "valor_causa_total": 1768739069.76,
-    "saldo_mes": 114
+    "valor_causa_total": 1768772480.72,
+    "saldo_mes": 115
   },
   "serie_diaria": [
     {
@@ -296,7 +296,7 @@
     },
     {
       "data": "2026-10-16",
-      "entradas": 32,
+      "entradas": 33,
       "saidas": 2
     },
     {
@@ -318,12 +318,12 @@
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2137,
-      "entradas_mes": 52,
+      "andamento": 2138,
+      "entradas_mes": 53,
       "saidas_mes": 16,
       "entradas_mes_anterior": 117,
       "saidas_mes_anterior": 96,
-      "valor_causa": 473687819.81
+      "valor_causa": 473793707.69
     },
     {
       "nome": "Grupo E1",
@@ -422,7 +422,7 @@
       "saidas_mes": 1,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 3,
-      "valor_causa": 2614978.17
+      "valor_causa": 2542501.25
     },
     {
       "nome": "Sócios",
@@ -464,12 +464,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5767,
-      "entradas_mes": 103,
+      "andamento": 5768,
+      "entradas_mes": 104,
       "saidas_mes": 69,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 844,
-      "valor_causa": 1372146346.64
+      "valor_causa": 1372179757.6
     },
     {
       "nome": "MG",
@@ -709,12 +709,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2910,
-      "entradas_mes": 168,
+      "andamento": 2911,
+      "entradas_mes": 169,
       "saidas_mes": 20,
       "entradas_mes_anterior": 268,
       "saidas_mes_anterior": 205,
-      "valor_causa": 844468122.68
+      "valor_causa": 844501533.64
     },
     {
       "nome": "Sentença",
@@ -949,12 +949,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 882,
-      "entradas_mes": 44,
+      "andamento": 883,
+      "entradas_mes": 45,
       "saidas_mes": 3,
       "entradas_mes_anterior": 101,
       "saidas_mes_anterior": 24,
-      "valor_causa": 187408761.65
+      "valor_causa": 187514649.53
     },
     {
       "fase": "Instrução",
@@ -1044,7 +1044,7 @@
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 2576978.17
+      "valor_causa": 2504501.25
     },
     {
       "fase": "Instrução",
@@ -1460,12 +1460,12 @@
     },
     {
       "nome": "Rafael Rocha Ferreira(RFE)",
-      "andamento": 292,
-      "entradas_mes": 4,
+      "andamento": 293,
+      "entradas_mes": 5,
       "saidas_mes": 3,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 6,
-      "valor_causa": 81935846.41
+      "valor_causa": 81969257.37
     },
     {
       "nome": "Júlia Priego Lopes da Silva(JPL)",
@@ -1786,12 +1786,12 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1448,
-      "entradas_mes": 21,
+      "andamento": 1449,
+      "entradas_mes": 22,
       "saidas_mes": 11,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 42,
-      "valor_causa": 324361312.4,
+      "valor_causa": 324394723.36,
       "alerta_entrada": false
     },
     {
@@ -3309,12 +3309,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "INPASA SINOP",
-      "andamento": 56,
-      "entradas_mes": 2,
+      "andamento": 57,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 28,
       "saidas_mes_anterior": 0,
-      "valor_causa": 11732960.77,
+      "valor_causa": 11838848.65,
       "alerta_entrada": false
     },
     {
@@ -3815,13 +3815,13 @@
     {
       "grupo": "Sem grupo",
       "cliente": "BRIDGESTONE",
-      "andamento": 2,
-      "entradas_mes": 2,
+      "andamento": 3,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 147527.84,
-      "alerta_entrada": false
+      "valor_causa": 180938.8,
+      "alerta_entrada": true
     },
     {
       "grupo": "Sem grupo",
@@ -3832,17 +3832,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 775093.74,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "INPASA SINOP",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 105887.88,
       "alerta_entrada": false
     },
     {
@@ -4507,12 +4496,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Richard Ruan Leo da Silva(RRU)",
-      "andamento": 22,
-      "entradas_mes": 2,
+      "andamento": 23,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 0,
-      "valor_causa": 4629549.15
+      "valor_causa": 4735437.03
     },
     {
       "grupo": "Grupo E2",
@@ -4556,16 +4545,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Richard Ruan Leo da Silva(RRU)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 105887.88
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Beatriz Santiago de Souza(BSO)",
       "andamento": 1,
       "entradas_mes": 1,
@@ -4606,16 +4585,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Giulia Vendramini Milani(GVM)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 534689.17
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Tamara Silva Marcílio(TAM)",
       "andamento": 1,
       "entradas_mes": 1,
@@ -4633,6 +4602,26 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.01
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Rafael Rocha Ferreira(RFE)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 33410.96
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Giulia Vendramini Milani(GVM)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 534689.17
     },
     {
       "grupo": "Sem grupo",
@@ -6609,12 +6598,12 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1420,
-      "entradas_mes": 21,
+      "andamento": 1421,
+      "entradas_mes": 22,
       "saidas_mes": 11,
       "entradas_mes_anterior": 52,
       "saidas_mes_anterior": 41,
-      "valor_causa": 312711267.88
+      "valor_causa": 312744678.84
     },
     {
       "estado": "SP",
@@ -8031,6 +8020,11 @@
       "profissional": "Tamara Silva Marcílio(TAM)"
     },
     {
+      "numero_processo": "1002112-03.2026.5.02.0431",
+      "cliente": "BRIDGESTONE",
+      "profissional": "Rafael Rocha Ferreira(RFE)"
+    },
+    {
       "numero_processo": "1001556-61.2026.5.02.0411",
       "cliente": "CBC CARTUCHOS BRASIL",
       "profissional": "Letícia Meneghini Fontes (LMI)"
@@ -8079,11 +8073,6 @@
       "numero_processo": "0003841-21.2026.5.09.0000",
       "cliente": "HERINGER",
       "profissional": "Bianca Bolanhi Camacho(BBO)"
-    },
-    {
-      "numero_processo": "0001402-67.2026.5.18.0103",
-      "cliente": "INPASA SINOP",
-      "profissional": "Richard Ruan Leo da Silva(RRU)"
     },
     {
       "numero_processo": "0012222-31.2026.5.15.0071",
