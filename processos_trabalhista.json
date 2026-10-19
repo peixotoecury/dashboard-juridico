@@ -1,16 +1,16 @@
 {
-  "atualizado_em": "2026-10-19T09:45:29",
+  "atualizado_em": "2026-10-19T10:00:36",
   "kpis": {
     "total_andamento": 7619,
     "entradas_hoje": 0,
-    "saidas_hoje": 0,
+    "saidas_hoje": 1,
     "entradas_ontem": 0,
     "saidas_ontem": 0,
-    "entradas_mes": 178,
-    "saidas_mes": 77,
+    "entradas_mes": 179,
+    "saidas_mes": 78,
     "entradas_mes_anterior": 320,
     "saidas_mes_anterior": 1024,
-    "valor_causa_total": 1766056277.02,
+    "valor_causa_total": 1766246834.5,
     "saldo_mes": 101
   },
   "serie_diaria": [
@@ -296,7 +296,7 @@
     },
     {
       "data": "2026-10-16",
-      "entradas": 16,
+      "entradas": 17,
       "saidas": 2
     },
     {
@@ -312,7 +312,7 @@
     {
       "data": "2026-10-19",
       "entradas": 0,
-      "saidas": 0
+      "saidas": 1
     }
   ],
   "por_grupo": [
@@ -327,12 +327,12 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1816,
+      "andamento": 1815,
       "entradas_mes": 34,
-      "saidas_mes": 25,
+      "saidas_mes": 26,
       "entradas_mes_anterior": 60,
       "saidas_mes_anterior": 46,
-      "valor_causa": 311580658.26
+      "valor_causa": 311511298.26
     },
     {
       "nome": "Grupo B1",
@@ -416,6 +416,15 @@
       "valor_causa": 11721158.38
     },
     {
+      "nome": "Sem grupo",
+      "andamento": 4,
+      "entradas_mes": 2,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 3,
+      "valor_causa": 364274.03
+    },
+    {
       "nome": "Sócios",
       "andamento": 3,
       "entradas_mes": 0,
@@ -423,15 +432,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
-    },
-    {
-      "nome": "Sem grupo",
-      "andamento": 3,
-      "entradas_mes": 1,
-      "saidas_mes": 1,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 3,
-      "valor_causa": 104356.55
     },
     {
       "nome": "Grupo C",
@@ -473,12 +473,12 @@
     },
     {
       "nome": "MG",
-      "andamento": 553,
+      "andamento": 552,
       "entradas_mes": 15,
-      "saidas_mes": 4,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 36,
       "saidas_mes_anterior": 22,
-      "valor_causa": 135953410.08
+      "valor_causa": 135884050.08
     },
     {
       "nome": "PR",
@@ -500,12 +500,12 @@
     },
     {
       "nome": "MS",
-      "andamento": 115,
-      "entradas_mes": 1,
+      "andamento": 116,
+      "entradas_mes": 2,
       "saidas_mes": 1,
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 4,
-      "valor_causa": 21991540.19
+      "valor_causa": 22251457.67
     },
     {
       "nome": "RJ",
@@ -709,12 +709,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2894,
-      "entradas_mes": 152,
+      "andamento": 2895,
+      "entradas_mes": 153,
       "saidas_mes": 19,
       "entradas_mes_anterior": 268,
       "saidas_mes_anterior": 205,
-      "valor_causa": 841560013.51
+      "valor_causa": 841819930.99
     },
     {
       "nome": "Sentença",
@@ -744,7 +744,7 @@
       "valor_causa": 127242933.88
     }
   ],
-  "por_fase_outras": 398,
+  "por_fase_outras": 397,
   "por_fase_grupo": [
     {
       "fase": "Ajuizamento",
@@ -1059,12 +1059,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 2,
-      "entradas_mes": 1,
+      "andamento": 3,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 66356.55
+      "valor_causa": 326274.03
     },
     {
       "fase": "Instrução",
@@ -1109,12 +1109,12 @@
     {
       "fase": "Outras",
       "grupo": "Grupo E1",
-      "andamento": 53,
+      "andamento": 52,
       "entradas_mes": 0,
-      "saidas_mes": 7,
+      "saidas_mes": 8,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 19,
-      "valor_causa": 717520.74
+      "valor_causa": 648160.74
     },
     {
       "fase": "Outras",
@@ -1379,12 +1379,12 @@
     },
     {
       "nome": "Giulia Vendramini Milani(GVM)",
-      "andamento": 447,
+      "andamento": 446,
       "entradas_mes": 8,
-      "saidas_mes": 4,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 12,
-      "valor_causa": 65259277.75
+      "valor_causa": 65189917.75
     },
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
@@ -1639,6 +1639,15 @@
       "valor_causa": 11683612.66
     },
     {
+      "nome": "Richard Ruan Leo da Silva(RRU)",
+      "andamento": 22,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 9,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 4629549.15
+    },
+    {
       "nome": "Bruno Tanganelli Farah(BTF)",
       "andamento": 21,
       "entradas_mes": 2,
@@ -1646,15 +1655,6 @@
       "entradas_mes_anterior": 14,
       "saidas_mes_anterior": 0,
       "valor_causa": 8430687.37
-    },
-    {
-      "nome": "Richard Ruan Leo da Silva(RRU)",
-      "andamento": 21,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 9,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 4369631.67
     },
     {
       "nome": "Keyla Maria Barbosa Silva Moraes(KBM)",
@@ -1906,12 +1906,12 @@
     },
     {
       "nome": "SYNGENTA SEEDS NIDER",
-      "andamento": 155,
+      "andamento": 154,
       "entradas_mes": 2,
-      "saidas_mes": 4,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 5,
-      "valor_causa": 23450569.78,
+      "valor_causa": 23381209.78,
       "alerta_entrada": false
     },
     {
@@ -3045,12 +3045,12 @@
     {
       "grupo": "Grupo E1",
       "cliente": "SYNGENTA SEEDS NIDER",
-      "andamento": 150,
+      "andamento": 149,
       "entradas_mes": 2,
-      "saidas_mes": 4,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 5,
-      "valor_causa": 23450569.78,
+      "valor_causa": 23381209.78,
       "alerta_entrada": false
     },
     {
@@ -3814,6 +3814,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "INPASA SINOP",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 259917.48,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "HERINGER",
       "andamento": 1,
       "entradas_mes": 0,
@@ -4231,12 +4242,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Giulia Vendramini Milani(GVM)",
-      "andamento": 447,
+      "andamento": 446,
       "entradas_mes": 8,
-      "saidas_mes": 4,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 12,
-      "valor_causa": 65259277.75
+      "valor_causa": 65189917.75
     },
     {
       "grupo": "Grupo E1",
@@ -4487,6 +4498,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 65356.55
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Richard Ruan Leo da Silva(RRU)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 259917.48
     },
     {
       "grupo": "Sem grupo",
@@ -5153,12 +5174,12 @@
     {
       "estado": "MG",
       "cliente": "SYNGENTA SEEDS NIDER",
-      "andamento": 41,
+      "andamento": 40,
       "entradas_mes": 0,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 3,
-      "valor_causa": 3975940.16
+      "valor_causa": 3906580.16
     },
     {
       "estado": "MG",
@@ -5423,12 +5444,12 @@
     {
       "estado": "MS",
       "cliente": "INPASA SINOP",
-      "andamento": 13,
-      "entradas_mes": 0,
+      "andamento": 14,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 0,
-      "valor_causa": 4664786.16
+      "valor_causa": 4924703.64
     },
     {
       "estado": "MS",
@@ -7873,6 +7894,11 @@
       "numero_processo": "0003841-21.2026.5.09.0000",
       "cliente": "HERINGER",
       "profissional": "Bianca Bolanhi Camacho(BBO)"
+    },
+    {
+      "numero_processo": "0025907-12.2026.5.24.0021",
+      "cliente": "INPASA SINOP",
+      "profissional": "Richard Ruan Leo da Silva(RRU)"
     },
     {
       "numero_processo": "1002426-59.2017.5.02.0464",
