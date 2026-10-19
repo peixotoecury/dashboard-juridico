@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-19T16:30:48",
+  "atualizado_em": "2026-10-19T16:45:32",
   "kpis": {
     "total_andamento": 7640,
     "entradas_hoje": 11,
@@ -336,12 +336,12 @@
     },
     {
       "nome": "Grupo B1",
-      "andamento": 1447,
-      "entradas_mes": 20,
+      "andamento": 1448,
+      "entradas_mes": 21,
       "saidas_mes": 11,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 42,
-      "valor_causa": 324291673.26
+      "valor_causa": 324361312.4
     },
     {
       "nome": "Grupo B2",
@@ -363,12 +363,12 @@
     },
     {
       "nome": "Grupo C1",
-      "andamento": 305,
-      "entradas_mes": 21,
+      "andamento": 306,
+      "entradas_mes": 22,
       "saidas_mes": 0,
       "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 1,
-      "valor_causa": 179156432.32
+      "valor_causa": 179156432.33
     },
     {
       "nome": "Grupo C2",
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 13,
-      "entradas_mes": 11,
+      "andamento": 11,
+      "entradas_mes": 9,
       "saidas_mes": 1,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 3,
-      "valor_causa": 5171979.6
+      "valor_causa": 5102340.45
     },
     {
       "nome": "Sócios",
@@ -969,22 +969,22 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B1",
-      "andamento": 441,
-      "entradas_mes": 20,
+      "andamento": 442,
+      "entradas_mes": 21,
       "saidas_mes": 1,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 13,
-      "valor_causa": 150261349.41
+      "valor_causa": 150330988.55
     },
     {
       "fase": "Instrução",
       "grupo": "Grupo C1",
-      "andamento": 184,
-      "entradas_mes": 21,
+      "andamento": 185,
+      "entradas_mes": 22,
       "saidas_mes": 0,
       "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 1,
-      "valor_causa": 106029357.94
+      "valor_causa": 106029357.95
     },
     {
       "fase": "Instrução",
@@ -1049,12 +1049,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 12,
-      "entradas_mes": 11,
+      "andamento": 10,
+      "entradas_mes": 9,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 5133979.6
+      "valor_causa": 5064340.45
     },
     {
       "fase": "Instrução",
@@ -2418,12 +2418,12 @@
     {
       "grupo": "Grupo B1",
       "cliente": "BRIDGESTONE",
-      "andamento": 1447,
-      "entradas_mes": 20,
+      "andamento": 1448,
+      "entradas_mes": 21,
       "saidas_mes": 11,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 42,
-      "valor_causa": 324291673.26,
+      "valor_causa": 324361312.4,
       "alerta_entrada": false
     },
     {
@@ -2605,12 +2605,12 @@
     {
       "grupo": "Grupo C1",
       "cliente": "COMPANHIA AIX",
-      "andamento": 106,
-      "entradas_mes": 18,
+      "andamento": 107,
+      "entradas_mes": 19,
       "saidas_mes": 0,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 0,
-      "valor_causa": 21366168.69,
+      "valor_causa": 21366168.7,
       "alerta_entrada": true
     },
     {
@@ -3814,28 +3814,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "COMPANHIA AIX",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 0.02,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "BRIDGESTONE",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 103050.1,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "TELEFONICA BRASIL",
       "andamento": 2,
       "entradas_mes": 2,
@@ -3854,6 +3832,28 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 65356.55,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "COMPANHIA AIX",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 0.01,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "BRIDGESTONE",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 33410.96,
       "alerta_entrada": false
     },
     {
@@ -4026,12 +4026,12 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Tamara Silva Marcílio(TAM)",
-      "andamento": 300,
-      "entradas_mes": 8,
+      "andamento": 301,
+      "entradas_mes": 9,
       "saidas_mes": 1,
       "entradas_mes_anterior": 21,
       "saidas_mes_anterior": 7,
-      "valor_causa": 77289245.73
+      "valor_causa": 77358884.87
     },
     {
       "grupo": "Grupo B1",
@@ -4236,12 +4236,12 @@
     {
       "grupo": "Grupo C1",
       "profissional": "Erik Mota Coppi(ECO)",
-      "andamento": 4,
-      "entradas_mes": 4,
+      "andamento": 5,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 662595.3
+      "valor_causa": 662595.31
     },
     {
       "grupo": "Grupo C2",
@@ -4535,16 +4535,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Erik Mota Coppi(ECO)",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 0.02
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Camila Alves Magalhães de Paula(CAL)",
       "andamento": 2,
       "entradas_mes": 2,
@@ -4575,13 +4565,13 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Tamara Silva Marcílio(TAM)",
+      "profissional": "Erik Mota Coppi(ECO)",
       "andamento": 1,
       "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 69639.14
+      "valor_causa": 0.01
     },
     {
       "grupo": "Sem grupo",
@@ -8035,11 +8025,6 @@
       "profissional": "Camila Alves Magalhães de Paula(CAL)"
     },
     {
-      "numero_processo": "1002065-26.2026.5.02.0432",
-      "cliente": "BRIDGESTONE",
-      "profissional": "Tamara Silva Marcílio(TAM)"
-    },
-    {
       "numero_processo": "1002112-03.2026.5.02.0431",
       "cliente": "BRIDGESTONE",
       "profissional": "Rafael Rocha Ferreira(RFE)"
@@ -8048,11 +8033,6 @@
       "numero_processo": "1001556-61.2026.5.02.0411",
       "cliente": "CBC CARTUCHOS BRASIL",
       "profissional": "Letícia Meneghini Fontes (LMI)"
-    },
-    {
-      "numero_processo": "1001996-51.2026.5.02.0704",
-      "cliente": "COMPANHIA AIX",
-      "profissional": "Erik Mota Coppi(ECO)"
     },
     {
       "numero_processo": "1001804-89.2026.5.02.0067",
