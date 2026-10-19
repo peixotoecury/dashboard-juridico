@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-19T15:15:29",
+  "atualizado_em": "2026-10-19T15:30:46",
   "kpis": {
     "total_andamento": 7639,
     "entradas_hoje": 10,
@@ -318,12 +318,12 @@
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2137,
-      "entradas_mes": 54,
+      "andamento": 2138,
+      "entradas_mes": 55,
       "saidas_mes": 18,
       "entradas_mes_anterior": 117,
       "saidas_mes_anterior": 96,
-      "valor_causa": 473468854.82
+      "valor_causa": 473544252.18
     },
     {
       "nome": "Grupo E1",
@@ -354,12 +354,12 @@
     },
     {
       "nome": "Grupo B3",
-      "andamento": 571,
-      "entradas_mes": 23,
+      "andamento": 572,
+      "entradas_mes": 24,
       "saidas_mes": 7,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 11,
-      "valor_causa": 111712595.03
+      "valor_causa": 111766737.95
     },
     {
       "nome": "Grupo C1",
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 21,
-      "entradas_mes": 19,
+      "andamento": 19,
+      "entradas_mes": 17,
       "saidas_mes": 1,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 3,
-      "valor_causa": 6447061.23
+      "valor_causa": 6317520.95
     },
     {
       "nome": "Sócios",
@@ -949,12 +949,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 883,
-      "entradas_mes": 46,
+      "andamento": 884,
+      "entradas_mes": 47,
       "saidas_mes": 4,
       "entradas_mes_anterior": 101,
       "saidas_mes_anterior": 24,
-      "valor_causa": 187189796.66
+      "valor_causa": 187265194.02
     },
     {
       "fase": "Instrução",
@@ -999,12 +999,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B3",
-      "andamento": 151,
-      "entradas_mes": 22,
+      "andamento": 152,
+      "entradas_mes": 23,
       "saidas_mes": 2,
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 5,
-      "valor_causa": 28091121.2
+      "valor_causa": 28145264.12
     },
     {
       "fase": "Instrução",
@@ -1039,12 +1039,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 20,
-      "entradas_mes": 19,
+      "andamento": 18,
+      "entradas_mes": 17,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 6409061.23
+      "valor_causa": 6279520.95
     },
     {
       "fase": "Instrução",
@@ -2451,12 +2451,12 @@
     {
       "grupo": "Grupo B3",
       "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 235,
-      "entradas_mes": 18,
+      "andamento": 236,
+      "entradas_mes": 19,
       "saidas_mes": 7,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 7,
-      "valor_causa": 30408005.8,
+      "valor_causa": 30462148.72,
       "alerta_entrada": true
     },
     {
@@ -3320,12 +3320,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "SISTENGE",
-      "andamento": 49,
-      "entradas_mes": 3,
+      "andamento": 50,
+      "entradas_mes": 4,
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 4,
-      "valor_causa": 2638345.18,
+      "valor_causa": 2713742.54,
       "alerta_entrada": true
     },
     {
@@ -3814,17 +3814,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 119499.47,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "SYNGENTA SEEDS NIDER",
       "andamento": 2,
       "entradas_mes": 2,
@@ -3858,17 +3847,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "SISTENGE",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 108895.58,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "VITERRA RIO VERMELHO",
       "andamento": 2,
       "entradas_mes": 2,
@@ -3876,6 +3854,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 103255.2,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "CBC CARTUCHOS BRASIL",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 65356.55,
       "alerta_entrada": false
     },
     {
@@ -3909,6 +3898,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.01,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "SISTENGE",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 33498.22,
       "alerta_entrada": false
     },
     {
@@ -4191,12 +4191,12 @@
     {
       "grupo": "Grupo B3",
       "profissional": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 351,
-      "entradas_mes": 20,
+      "andamento": 352,
+      "entradas_mes": 21,
       "saidas_mes": 2,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 7,
-      "valor_causa": 64992867.04
+      "valor_causa": 65047009.96
     },
     {
       "grupo": "Grupo B3",
@@ -4481,12 +4481,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 360,
-      "entradas_mes": 10,
+      "andamento": 361,
+      "entradas_mes": 11,
       "saidas_mes": 4,
       "entradas_mes_anterior": 30,
       "saidas_mes_anterior": 28,
-      "valor_causa": 50231661.94
+      "valor_causa": 50307059.3
     },
     {
       "grupo": "Grupo E2",
@@ -4591,22 +4591,12 @@
     {
       "grupo": "Sem grupo",
       "profissional": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 5,
-      "entradas_mes": 5,
+      "andamento": 4,
+      "entradas_mes": 4,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 280096.67
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 119499.47
+      "valor_causa": 204699.31
     },
     {
       "grupo": "Sem grupo",
@@ -4627,6 +4617,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 103255.2
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Letícia Meneghini Fontes (LMI)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 65356.55
     },
     {
       "grupo": "Sem grupo",
@@ -8145,11 +8145,6 @@
       "profissional": "Letícia Meneghini Fontes (LMI)"
     },
     {
-      "numero_processo": "1001565-23.2026.5.02.0411",
-      "cliente": "CBC CARTUCHOS BRASIL",
-      "profissional": "Letícia Meneghini Fontes (LMI)"
-    },
-    {
       "numero_processo": "1001804-89.2026.5.02.0067",
       "cliente": "COMPANHIA AIX",
       "profissional": "Erik Mota Coppi(ECO)"
@@ -8178,11 +8173,6 @@
       "numero_processo": "1002426-59.2017.5.02.0464",
       "cliente": "MULTICEL",
       "profissional": "Luiz Vicente de Carvalho(LVC) ; Lisandra Melo Alves(LMS)"
-    },
-    {
-      "numero_processo": "0001433-54.2026.5.19.0008",
-      "cliente": "SISTENGE",
-      "profissional": "Camila Alves Magalhães de Paula(CAL)"
     },
     {
       "numero_processo": "0001364-25.2026.5.19.0007",
