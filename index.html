@@ -5055,6 +5055,27 @@ document.addEventListener('DOMContentLoaded', function(){
 });
 
 // ✅ CARREGAR JUSTIFICATIVAS DO SUPABASE
+// ── Leitura paginada do Supabase ─────────────────────────────────────────────
+// O Supabase devolve no máximo 1000 linhas por consulta. Quando uma tabela passa
+// disso (justificativas chegou a 1009 em out/2026), as linhas excedentes somem
+// em silêncio: prazos justificados apareciam como "SEM justificativa". Esta
+// função busca de 1000 em 1000 até acabar e devolve {data, error} como o client.
+window._selectTodasSupabase = async function(tabela, colunas, ordem, asc){
+  var tam = 1000, ini = 0, todas = [];
+  while (true) {
+    var q = supabaseClient.from(tabela).select(colunas || '*');
+    if (ordem) q = q.order(ordem, {ascending: !!asc});
+    q = q.order('id', {ascending: true});  // desempate estável entre páginas
+    var r = await q.range(ini, ini + tam - 1);
+    if (r.error) return { data: todas.length ? todas : null, error: r.error };
+    var lote = r.data || [];
+    todas = todas.concat(lote);
+    if (lote.length < tam) break;
+    ini += tam;
+  }
+  return { data: todas, error: null };
+};
+
 function carregarJustificativasSupabase(tentativa){
   tentativa = (tentativa || 0);
   try {
@@ -5066,9 +5087,7 @@ function carregarJustificativasSupabase(tentativa){
       return;
     }
     
-    supabaseClient
-      .from('justificativas')
-      .select('numero_processo, justificativa_texto')
+    window._selectTodasSupabase('justificativas', 'numero_processo, justificativa_texto', 'atualizado_em', true)
       .then(function(result){
         if(result.error) {
           console.log('❌ Erro ao carregar justificativas:', result.error);
@@ -8577,7 +8596,7 @@ window.carregarJustificativasDoSupabase = function() {
   _initSupabase();
   if(!supabaseClient) return;
   window._detectarColunasSupabase();
-  supabaseClient.from('justificativas').select('numero_processo,status,justificativa_texto,usuario_nome,equipe')
+  window._selectTodasSupabase('justificativas', 'numero_processo,status,justificativa_texto,usuario_nome,equipe', 'atualizado_em', true)
     .then(function(result) {
       if(result.error || !result.data) return;
       result.data.forEach(function(r) {
@@ -9690,9 +9709,9 @@ async function exportarExcel() {
     try {
       V('ov').style.display = 'flex';
       const [jRes, rRes, tRes] = await Promise.all([
-        supabaseClient.from('justificativas').select('*').order('atualizado_em', {ascending: false}),
-        supabaseClient.from('reagendamentos').select('*').order('criado_em', {ascending: false}),
-        supabaseClient.from('transferencias').select('*').order('criado_em', {ascending: false})
+        window._selectTodasSupabase('justificativas', '*', 'atualizado_em', false),
+        window._selectTodasSupabase('reagendamentos', '*', 'criado_em', false),
+        window._selectTodasSupabase('transferencias', '*', 'criado_em', false)
       ]);
       if (jRes.data) {
         _justRows = jRes.data;
@@ -9724,7 +9743,7 @@ async function exportarFormatoOriginal() {
     _initSupabase();
     var justMap = {};
     if (supabaseClient) {
-      var jRes = await supabaseClient.from('justificativas').select('numero_processo, justificativa_texto, usuario_nome, atualizado_em');
+      var jRes = await window._selectTodasSupabase('justificativas', 'numero_processo, justificativa_texto, usuario_nome, atualizado_em', 'atualizado_em', true);
       if (jRes.data && jRes.data.length) {
         jRes.data.forEach(function(j) {
           justMap[j.numero_processo] = {
@@ -9762,9 +9781,9 @@ async function exportarJustificativasReagendamentos() {
   V('ov').style.display = 'flex';
   try {
     var [justResult, reagResult, transfResult] = await Promise.all([
-      supabaseClient.from('justificativas').select('*').order('atualizado_em', {ascending: false}),
-      supabaseClient.from('reagendamentos').select('*').order('criado_em', {ascending: false}),
-      supabaseClient.from('transferencias').select('*').order('criado_em', {ascending: false})
+      window._selectTodasSupabase('justificativas', '*', 'atualizado_em', false),
+      window._selectTodasSupabase('reagendamentos', '*', 'criado_em', false),
+      window._selectTodasSupabase('transferencias', '*', 'criado_em', false)
     ]);
     var wb = XLSX.utils.book_new();
     var justData = (justResult.data || []).map(function(r) {
