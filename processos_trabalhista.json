@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-19T15:00:24",
+  "atualizado_em": "2026-10-19T15:15:29",
   "kpis": {
-    "total_andamento": 7640,
+    "total_andamento": 7639,
     "entradas_hoje": 10,
-    "saidas_hoje": 7,
+    "saidas_hoje": 8,
     "entradas_ontem": 0,
     "saidas_ontem": 0,
     "entradas_mes": 206,
-    "saidas_mes": 84,
+    "saidas_mes": 85,
     "entradas_mes_anterior": 320,
     "saidas_mes_anterior": 1024,
-    "valor_causa_total": 1773050878.25,
-    "saldo_mes": 122
+    "valor_causa_total": 1772710944.94,
+    "saldo_mes": 121
   },
   "serie_diaria": [
     {
@@ -312,27 +312,27 @@
     {
       "data": "2026-10-19",
       "entradas": 10,
-      "saidas": 7
+      "saidas": 8
     }
   ],
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2136,
-      "entradas_mes": 53,
+      "andamento": 2137,
+      "entradas_mes": 54,
       "saidas_mes": 18,
       "entradas_mes_anterior": 117,
       "saidas_mes_anterior": 96,
-      "valor_causa": 473267744.82
+      "valor_causa": 473468854.82
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1812,
+      "andamento": 1811,
       "entradas_mes": 34,
-      "saidas_mes": 29,
+      "saidas_mes": 30,
       "entradas_mes_anterior": 60,
       "saidas_mes_anterior": 46,
-      "valor_causa": 311504489.03
+      "valor_causa": 311164555.72
     },
     {
       "nome": "Grupo B1",
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 22,
-      "entradas_mes": 20,
+      "andamento": 21,
+      "entradas_mes": 19,
       "saidas_mes": 1,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 3,
-      "valor_causa": 6648171.23
+      "valor_causa": 6447061.23
     },
     {
       "nome": "Sócios",
@@ -473,12 +473,12 @@
     },
     {
       "nome": "MG",
-      "andamento": 555,
+      "andamento": 554,
       "entradas_mes": 18,
-      "saidas_mes": 5,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 36,
       "saidas_mes_anterior": 22,
-      "valor_causa": 136544265.91
+      "valor_causa": 136204332.6
     },
     {
       "nome": "PR",
@@ -709,12 +709,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2920,
+      "andamento": 2919,
       "entradas_mes": 180,
-      "saidas_mes": 22,
+      "saidas_mes": 23,
       "entradas_mes_anterior": 268,
       "saidas_mes_anterior": 205,
-      "valor_causa": 848814344.9
+      "valor_causa": 848474411.59
     },
     {
       "nome": "Sentença",
@@ -949,22 +949,22 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 882,
-      "entradas_mes": 45,
+      "andamento": 883,
+      "entradas_mes": 46,
       "saidas_mes": 4,
       "entradas_mes_anterior": 101,
       "saidas_mes_anterior": 24,
-      "valor_causa": 186988686.66
+      "valor_causa": 187189796.66
     },
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 744,
+      "andamento": 743,
       "entradas_mes": 19,
-      "saidas_mes": 8,
+      "saidas_mes": 9,
       "entradas_mes_anterior": 28,
       "saidas_mes_anterior": 10,
-      "valor_causa": 161840250.49
+      "valor_causa": 161500317.18
     },
     {
       "fase": "Instrução",
@@ -1039,12 +1039,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 21,
-      "entradas_mes": 20,
+      "andamento": 20,
+      "entradas_mes": 19,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 6610171.23
+      "valor_causa": 6409061.23
     },
     {
       "fase": "Instrução",
@@ -1406,12 +1406,12 @@
     },
     {
       "nome": "Joice Ramos Miranda(JRM)",
-      "andamento": 305,
+      "andamento": 304,
       "entradas_mes": 10,
-      "saidas_mes": 3,
+      "saidas_mes": 4,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 6,
-      "valor_causa": 76368258.78
+      "valor_causa": 76028325.47
     },
     {
       "nome": "Beatriz Santiago de Souza(BSO)",
@@ -1806,12 +1806,12 @@
     },
     {
       "nome": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 725,
+      "andamento": 724,
       "entradas_mes": 17,
-      "saidas_mes": 5,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 14,
-      "valor_causa": 145209020.18,
+      "valor_causa": 144869086.87,
       "alerta_entrada": false
     },
     {
@@ -3001,12 +3001,12 @@
     {
       "grupo": "Grupo E1",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 654,
+      "andamento": 653,
       "entradas_mes": 17,
-      "saidas_mes": 5,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 14,
-      "valor_causa": 144234781.24,
+      "valor_causa": 143894847.93,
       "alerta_entrada": false
     },
     {
@@ -3320,13 +3320,13 @@
     {
       "grupo": "Grupo E2",
       "cliente": "SISTENGE",
-      "andamento": 48,
-      "entradas_mes": 2,
+      "andamento": 49,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 4,
-      "valor_causa": 2437235.18,
-      "alerta_entrada": false
+      "valor_causa": 2638345.18,
+      "alerta_entrada": true
     },
     {
       "grupo": "Grupo E2",
@@ -3814,17 +3814,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "SISTENGE",
-      "andamento": 3,
-      "entradas_mes": 3,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 310005.58,
-      "alerta_entrada": true
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "CBC CARTUCHOS BRASIL",
       "andamento": 2,
       "entradas_mes": 2,
@@ -3865,6 +3854,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 3567929.64,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "SISTENGE",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 108895.58,
       "alerta_entrada": false
     },
     {
@@ -4351,12 +4351,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Joice Ramos Miranda(JRM)",
-      "andamento": 304,
+      "andamento": 303,
       "entradas_mes": 9,
-      "saidas_mes": 3,
+      "saidas_mes": 4,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 6,
-      "valor_causa": 76127854.21
+      "valor_causa": 75787920.9
     },
     {
       "grupo": "Grupo E1",
@@ -4471,12 +4471,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Rafael Yepez do Lago(RYL)",
-      "andamento": 454,
-      "entradas_mes": 11,
+      "andamento": 455,
+      "entradas_mes": 12,
       "saidas_mes": 5,
       "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 23,
-      "valor_causa": 59613219.76
+      "valor_causa": 59814329.76
     },
     {
       "grupo": "Grupo E2",
@@ -4600,16 +4600,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Rafael Yepez do Lago(RYL)",
-      "andamento": 3,
-      "entradas_mes": 3,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 304365.2
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Letícia Meneghini Fontes (LMI)",
       "andamento": 2,
       "entradas_mes": 2,
@@ -4627,6 +4617,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 3567929.64
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Rafael Yepez do Lago(RYL)",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 103255.2
     },
     {
       "grupo": "Sem grupo",
@@ -5393,12 +5393,12 @@
     {
       "estado": "MG",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 32,
+      "andamento": 31,
       "entradas_mes": 1,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 1639993.06
+      "valor_causa": 1300059.75
     },
     {
       "estado": "MG",
@@ -8183,11 +8183,6 @@
       "numero_processo": "0001433-54.2026.5.19.0008",
       "cliente": "SISTENGE",
       "profissional": "Camila Alves Magalhães de Paula(CAL)"
-    },
-    {
-      "numero_processo": "0012832-74.2025.5.15.0122",
-      "cliente": "SISTENGE",
-      "profissional": "Rafael Yepez do Lago(RYL)"
     },
     {
       "numero_processo": "0001364-25.2026.5.19.0007",
