@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-19T16:00:36",
+  "atualizado_em": "2026-10-19T16:15:33",
   "kpis": {
     "total_andamento": 7639,
     "entradas_hoje": 10,
@@ -318,21 +318,21 @@
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2140,
-      "entradas_mes": 57,
+      "andamento": 2142,
+      "entradas_mes": 59,
       "saidas_mes": 18,
       "entradas_mes_anterior": 117,
       "saidas_mes_anterior": 96,
-      "valor_causa": 473616988.53
+      "valor_causa": 473720243.73
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1812,
-      "entradas_mes": 35,
+      "andamento": 1814,
+      "entradas_mes": 37,
       "saidas_mes": 30,
       "entradas_mes_anterior": 60,
       "saidas_mes_anterior": 46,
-      "valor_causa": 311404960.29
+      "valor_causa": 312134105.53
     },
     {
       "nome": "Grupo B1",
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 16,
-      "entradas_mes": 14,
+      "andamento": 12,
+      "entradas_mes": 10,
       "saidas_mes": 1,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 3,
-      "valor_causa": 6004380.03
+      "valor_causa": 5171979.59
     },
     {
       "nome": "Sócios",
@@ -949,22 +949,22 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 886,
-      "entradas_mes": 49,
+      "andamento": 888,
+      "entradas_mes": 51,
       "saidas_mes": 4,
       "entradas_mes_anterior": 101,
       "saidas_mes_anterior": 24,
-      "valor_causa": 187337930.37
+      "valor_causa": 187441185.57
     },
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 744,
-      "entradas_mes": 20,
+      "andamento": 746,
+      "entradas_mes": 22,
       "saidas_mes": 9,
       "entradas_mes_anterior": 28,
       "saidas_mes_anterior": 10,
-      "valor_causa": 161740721.75
+      "valor_causa": 162469866.99
     },
     {
       "fase": "Instrução",
@@ -1038,16 +1038,6 @@
     },
     {
       "fase": "Instrução",
-      "grupo": "Sem grupo",
-      "andamento": 15,
-      "entradas_mes": 14,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 5966380.03
-    },
-    {
-      "fase": "Instrução",
       "grupo": "Grupo A2",
       "andamento": 14,
       "entradas_mes": 1,
@@ -1055,6 +1045,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
       "valor_causa": 7720799.28
+    },
+    {
+      "fase": "Instrução",
+      "grupo": "Sem grupo",
+      "andamento": 11,
+      "entradas_mes": 10,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 5133979.59
     },
     {
       "fase": "Instrução",
@@ -3012,23 +3012,23 @@
     {
       "grupo": "Grupo E1",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 359,
-      "entradas_mes": 8,
+      "andamento": 360,
+      "entradas_mes": 9,
       "saidas_mes": 8,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 10,
-      "valor_causa": 73239501.11,
+      "valor_causa": 73967646.35,
       "alerta_entrada": false
     },
     {
       "grupo": "Grupo E1",
       "cliente": "MAHLE METAL - SBC",
-      "andamento": 265,
-      "entradas_mes": 2,
+      "andamento": 266,
+      "entradas_mes": 3,
       "saidas_mes": 6,
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 7,
-      "valor_causa": 23304738.66,
+      "valor_causa": 23305738.66,
       "alerta_entrada": false
     },
     {
@@ -3265,13 +3265,13 @@
     {
       "grupo": "Grupo E2",
       "cliente": "VITERRA RIO VERMELHO",
-      "andamento": 315,
-      "entradas_mes": 6,
+      "andamento": 317,
+      "entradas_mes": 8,
       "saidas_mes": 7,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 10,
-      "valor_causa": 42616071.74,
-      "alerta_entrada": false
+      "valor_causa": 42719326.94,
+      "alerta_entrada": true
     },
     {
       "grupo": "Grupo E2",
@@ -3836,17 +3836,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "VITERRA RIO VERMELHO",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 103255.2,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "CBC CARTUCHOS BRASIL",
       "andamento": 1,
       "entradas_mes": 1,
@@ -3854,28 +3843,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 65356.55,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "MAHLE METAL - MOGI",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 728145.24,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "MAHLE METAL - SBC",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 1000.0,
       "alerta_entrada": false
     },
     {
@@ -4349,12 +4316,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Paloma da Silva Santos(PSI)",
-      "andamento": 250,
-      "entradas_mes": 11,
+      "andamento": 251,
+      "entradas_mes": 12,
       "saidas_mes": 7,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 10,
-      "valor_causa": 56532587.79
+      "valor_causa": 56533587.79
     },
     {
       "grupo": "Grupo E1",
@@ -4369,12 +4336,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Tamires Lins Costa(TLI)",
-      "andamento": 226,
-      "entradas_mes": 3,
+      "andamento": 227,
+      "entradas_mes": 4,
       "saidas_mes": 5,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 5,
-      "valor_causa": 28336091.31
+      "valor_causa": 29064236.55
     },
     {
       "grupo": "Grupo E1",
@@ -4449,12 +4416,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Rafael Yepez do Lago(RYL)",
-      "andamento": 455,
-      "entradas_mes": 12,
+      "andamento": 457,
+      "entradas_mes": 14,
       "saidas_mes": 5,
       "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 23,
-      "valor_causa": 59814329.76
+      "valor_causa": 59917584.96
     },
     {
       "grupo": "Grupo E2",
@@ -4588,16 +4555,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Rafael Yepez do Lago(RYL)",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 103255.2
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Letícia Meneghini Fontes (LMI)",
       "andamento": 1,
       "entradas_mes": 1,
@@ -4605,26 +4562,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 65356.55
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Tamires Lins Costa(TLI)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 728145.24
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Paloma da Silva Santos(PSI)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 1000.0
     },
     {
       "grupo": "Sem grupo",
@@ -8123,16 +8060,6 @@
       "profissional": "Bianca Bolanhi Camacho(BBO)"
     },
     {
-      "numero_processo": "0012222-31.2026.5.15.0071",
-      "cliente": "MAHLE METAL - MOGI",
-      "profissional": "Tamires Lins Costa(TLI)"
-    },
-    {
-      "numero_processo": "1013506-39.2026.5.02.0000",
-      "cliente": "MAHLE METAL - SBC",
-      "profissional": "Paloma da Silva Santos(PSI)"
-    },
-    {
       "numero_processo": "1002426-59.2017.5.02.0464",
       "cliente": "MULTICEL",
       "profissional": "Luiz Vicente de Carvalho(LVC) ; Lisandra Melo Alves(LMS)"
@@ -8151,16 +8078,6 @@
       "numero_processo": "0010710-30.2026.5.15.0033",
       "cliente": "TELEFONICA BRASIL",
       "profissional": "Thiago Frid Figueiredo Rossi(TFR)"
-    },
-    {
-      "numero_processo": "0011020-28.2026.5.15.0068",
-      "cliente": "VITERRA RIO VERMELHO",
-      "profissional": "Rafael Yepez do Lago(RYL)"
-    },
-    {
-      "numero_processo": "0011338-65.2026.5.15.0050",
-      "cliente": "VITERRA RIO VERMELHO",
-      "profissional": "Rafael Yepez do Lago(RYL)"
     }
   ]
 }
