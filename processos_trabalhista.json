@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-20T15:30:25",
+  "atualizado_em": "2026-10-20T15:45:28",
   "kpis": {
     "total_andamento": 7659,
     "entradas_hoje": 19,
-    "saidas_hoje": 4,
+    "saidas_hoje": 5,
     "entradas_ontem": 13,
     "saidas_ontem": 10,
     "entradas_mes": 228,
-    "saidas_mes": 90,
+    "saidas_mes": 91,
     "entradas_mes_anterior": 320,
     "saidas_mes_anterior": 1023,
-    "valor_causa_total": 1775613331.75,
-    "saldo_mes": 138
+    "valor_causa_total": 1775554342.45,
+    "saldo_mes": 137
   },
   "serie_diaria": [
     {
@@ -312,27 +312,27 @@
     {
       "data": "2026-10-20",
       "entradas": 19,
-      "saidas": 4
+      "saidas": 5
     }
   ],
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2150,
+      "andamento": 2149,
       "entradas_mes": 68,
-      "saidas_mes": 20,
+      "saidas_mes": 21,
       "entradas_mes_anterior": 118,
       "saidas_mes_anterior": 96,
-      "valor_causa": 477128469.42
+      "valor_causa": 476978421.21
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1815,
+      "andamento": 1816,
       "entradas_mes": 40,
       "saidas_mes": 33,
       "entradas_mes_anterior": 60,
       "saidas_mes_anterior": 46,
-      "valor_causa": 309022476.0
+      "valor_causa": 309113534.91
     },
     {
       "nome": "Grupo B1",
@@ -475,10 +475,10 @@
       "nome": "SP",
       "andamento": 5788,
       "entradas_mes": 129,
-      "saidas_mes": 77,
+      "saidas_mes": 78,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 843,
-      "valor_causa": 1379445535.63
+      "valor_causa": 1379386546.33
     },
     {
       "nome": "MG",
@@ -736,21 +736,21 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2975,
+      "andamento": 2974,
       "entradas_mes": 4,
-      "saidas_mes": 17,
+      "saidas_mes": 18,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 388,
-      "valor_causa": 663586852.78
+      "valor_causa": 663436804.57
     },
     {
       "nome": "Execução",
-      "andamento": 905,
+      "andamento": 906,
       "entradas_mes": 2,
       "saidas_mes": 20,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 357,
-      "valor_causa": 127365963.81
+      "valor_causa": 127457022.72
     }
   ],
   "por_fase_outras": 399,
@@ -868,12 +868,12 @@
     {
       "fase": "Execução",
       "grupo": "Grupo E1",
-      "andamento": 193,
+      "andamento": 194,
       "entradas_mes": 1,
       "saidas_mes": 4,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 9,
-      "valor_causa": 20431033.2
+      "valor_causa": 20522092.11
     },
     {
       "fase": "Execução",
@@ -1208,12 +1208,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo E2",
-      "andamento": 593,
+      "andamento": 592,
       "entradas_mes": 3,
-      "saidas_mes": 5,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 14,
-      "valor_causa": 187347468.02
+      "valor_causa": 187197419.81
     },
     {
       "fase": "Recurso",
@@ -1530,12 +1530,12 @@
     },
     {
       "nome": "Lucas Willott Pereira (LWP)",
-      "andamento": 231,
+      "andamento": 230,
       "entradas_mes": 2,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 11,
-      "valor_causa": 27586205.14
+      "valor_causa": 27436156.93
     },
     {
       "nome": "Vinícius Ronchi Arruda(VRO)",
@@ -1548,12 +1548,12 @@
     },
     {
       "nome": "Tamires Lins Costa(TLI)",
-      "andamento": 227,
+      "andamento": 228,
       "entradas_mes": 4,
       "saidas_mes": 5,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 5,
-      "valor_causa": 29242787.18
+      "valor_causa": 29333846.09
     },
     {
       "nome": "Nicolau Rafael Guimarães Coelho(NRG)",
@@ -1776,12 +1776,12 @@
     },
     {
       "nome": "BP BIOENERGIA",
-      "andamento": 763,
+      "andamento": 762,
       "entradas_mes": 19,
-      "saidas_mes": 6,
+      "saidas_mes": 7,
       "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 36,
-      "valor_causa": 215441348.18,
+      "valor_causa": 215291299.97,
       "alerta_entrada": false
     },
     {
@@ -1816,12 +1816,12 @@
     },
     {
       "nome": "MAHLE METAL - MOGI",
-      "andamento": 363,
+      "andamento": 364,
       "entradas_mes": 11,
       "saidas_mes": 9,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 10,
-      "valor_causa": 73541662.38,
+      "valor_causa": 73632721.29,
       "alerta_entrada": false
     },
     {
@@ -3003,12 +3003,12 @@
     {
       "grupo": "Grupo E1",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 363,
+      "andamento": 364,
       "entradas_mes": 11,
       "saidas_mes": 9,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 10,
-      "valor_causa": 73541662.38,
+      "valor_causa": 73632721.29,
       "alerta_entrada": false
     },
     {
@@ -3234,12 +3234,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "BP BIOENERGIA",
-      "andamento": 763,
+      "andamento": 762,
       "entradas_mes": 19,
-      "saidas_mes": 6,
+      "saidas_mes": 7,
       "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 36,
-      "valor_causa": 215441348.18,
+      "valor_causa": 215291299.97,
       "alerta_entrada": false
     },
     {
@@ -4260,12 +4260,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Tamires Lins Costa(TLI)",
-      "andamento": 227,
+      "andamento": 228,
       "entradas_mes": 4,
       "saidas_mes": 5,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 5,
-      "valor_causa": 29242787.18
+      "valor_causa": 29333846.09
     },
     {
       "grupo": "Grupo E1",
@@ -4390,12 +4390,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Lucas Willott Pereira (LWP)",
-      "andamento": 231,
+      "andamento": 230,
       "entradas_mes": 2,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 11,
-      "valor_causa": 27586205.14
+      "valor_causa": 27436156.93
     },
     {
       "grupo": "Grupo E2",
@@ -6442,22 +6442,22 @@
     {
       "estado": "SP",
       "cliente": "BP BIOENERGIA",
-      "andamento": 421,
+      "andamento": 420,
       "entradas_mes": 9,
-      "saidas_mes": 4,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 14,
       "saidas_mes_anterior": 28,
-      "valor_causa": 102325473.28
+      "valor_causa": 102175425.07
     },
     {
       "estado": "SP",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 362,
+      "andamento": 363,
       "entradas_mes": 11,
       "saidas_mes": 9,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 10,
-      "valor_causa": 73541662.38
+      "valor_causa": 73632721.29
     },
     {
       "estado": "SP",
