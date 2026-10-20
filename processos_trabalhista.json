@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-20T17:30:49",
+  "atualizado_em": "2026-10-20T17:45:25",
   "kpis": {
-    "total_andamento": 7657,
+    "total_andamento": 7656,
     "entradas_hoje": 19,
-    "saidas_hoje": 8,
+    "saidas_hoje": 9,
     "entradas_ontem": 13,
     "saidas_ontem": 10,
     "entradas_mes": 228,
-    "saidas_mes": 94,
+    "saidas_mes": 95,
     "entradas_mes_anterior": 320,
     "saidas_mes_anterior": 1023,
-    "valor_causa_total": 1775347053.98,
-    "saldo_mes": 134
+    "valor_causa_total": 1775252053.98,
+    "saldo_mes": 133
   },
   "serie_diaria": [
     {
@@ -312,18 +312,18 @@
     {
       "data": "2026-10-20",
       "entradas": 19,
-      "saidas": 8
+      "saidas": 9
     }
   ],
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2147,
+      "andamento": 2146,
       "entradas_mes": 68,
-      "saidas_mes": 23,
+      "saidas_mes": 24,
       "entradas_mes_anterior": 118,
       "saidas_mes_anterior": 96,
-      "valor_causa": 476829341.41
+      "valor_causa": 476734341.41
     },
     {
       "nome": "Grupo E1",
@@ -482,12 +482,12 @@
     },
     {
       "nome": "MG",
-      "andamento": 555,
+      "andamento": 554,
       "entradas_mes": 20,
-      "saidas_mes": 7,
+      "saidas_mes": 8,
       "entradas_mes_anterior": 36,
       "saidas_mes_anterior": 22,
-      "valor_causa": 137558162.35
+      "valor_causa": 137463162.35
     },
     {
       "nome": "PR",
@@ -718,12 +718,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2934,
-      "entradas_mes": 200,
+      "andamento": 2933,
+      "entradas_mes": 199,
       "saidas_mes": 25,
       "entradas_mes_anterior": 268,
       "saidas_mes_anterior": 205,
-      "valor_causa": 851774772.35
+      "valor_causa": 851774772.34
     },
     {
       "nome": "Sentença",
@@ -736,21 +736,21 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2974,
+      "andamento": 2973,
       "entradas_mes": 4,
-      "saidas_mes": 18,
+      "saidas_mes": 19,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 388,
-      "valor_causa": 663436804.57
+      "valor_causa": 663341804.57
     },
     {
       "nome": "Execução",
-      "andamento": 905,
-      "entradas_mes": 2,
+      "andamento": 906,
+      "entradas_mes": 3,
       "saidas_mes": 22,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 357,
-      "valor_causa": 127337921.63
+      "valor_causa": 127337921.64
     }
   ],
   "por_fase_outras": 399,
@@ -868,12 +868,12 @@
     {
       "fase": "Execução",
       "grupo": "Grupo E1",
-      "andamento": 195,
-      "entradas_mes": 1,
+      "andamento": 196,
+      "entradas_mes": 2,
       "saidas_mes": 4,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 9,
-      "valor_causa": 20877684.76
+      "valor_causa": 20877684.77
     },
     {
       "fase": "Execução",
@@ -958,12 +958,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 747,
-      "entradas_mes": 23,
+      "andamento": 746,
+      "entradas_mes": 22,
       "saidas_mes": 9,
       "entradas_mes_anterior": 28,
       "saidas_mes_anterior": 10,
-      "valor_causa": 159998507.5
+      "valor_causa": 159998507.49
     },
     {
       "fase": "Instrução",
@@ -1208,12 +1208,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo E2",
-      "andamento": 592,
+      "andamento": 591,
       "entradas_mes": 3,
-      "saidas_mes": 6,
+      "saidas_mes": 7,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 14,
-      "valor_causa": 187197419.81
+      "valor_causa": 187102419.81
     },
     {
       "fase": "Recurso",
@@ -1431,12 +1431,12 @@
     },
     {
       "nome": "Bianca Bolanhi Camacho(BBO)",
-      "andamento": 299,
+      "andamento": 298,
       "entradas_mes": 2,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 359,
-      "valor_causa": 33661817.64
+      "valor_causa": 33566817.64
     },
     {
       "nome": "Rafael Rocha Ferreira(RFE)",
@@ -1826,12 +1826,12 @@
     },
     {
       "nome": "HERINGER",
-      "andamento": 345,
+      "andamento": 344,
       "entradas_mes": 14,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 11,
-      "valor_causa": 46364833.72,
+      "valor_causa": 46269833.72,
       "alerta_entrada": false
     },
     {
@@ -3245,12 +3245,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "HERINGER",
-      "andamento": 344,
+      "andamento": 343,
       "entradas_mes": 14,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 11,
-      "valor_causa": 46364833.72,
+      "valor_causa": 46269833.72,
       "alerta_entrada": false
     },
     {
@@ -4360,12 +4360,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Bianca Bolanhi Camacho(BBO)",
-      "andamento": 299,
+      "andamento": 298,
       "entradas_mes": 2,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 10,
-      "valor_causa": 33661817.64
+      "valor_causa": 33566817.64
     },
     {
       "grupo": "Grupo E2",
@@ -5102,12 +5102,12 @@
     {
       "estado": "MG",
       "cliente": "HERINGER",
-      "andamento": 42,
+      "andamento": 41,
       "entradas_mes": 0,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 1,
-      "valor_causa": 8541784.43
+      "valor_causa": 8446784.43
     },
     {
       "estado": "MG",
