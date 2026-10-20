@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-20T11:30:36",
+  "atualizado_em": "2026-10-20T11:45:30",
   "kpis": {
-    "total_andamento": 7645,
-    "entradas_hoje": 5,
-    "saidas_hoje": 1,
+    "total_andamento": 7647,
+    "entradas_hoje": 8,
+    "saidas_hoje": 2,
     "entradas_ontem": 13,
     "saidas_ontem": 10,
-    "entradas_mes": 214,
-    "saidas_mes": 87,
+    "entradas_mes": 217,
+    "saidas_mes": 88,
     "entradas_mes_anterior": 320,
     "saidas_mes_anterior": 1023,
-    "valor_causa_total": 1772447957.89,
-    "saldo_mes": 127
+    "valor_causa_total": 1772700382.85,
+    "saldo_mes": 129
   },
   "serie_diaria": [
     {
@@ -311,19 +311,19 @@
     },
     {
       "data": "2026-10-20",
-      "entradas": 5,
-      "saidas": 1
+      "entradas": 8,
+      "saidas": 2
     }
   ],
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2145,
+      "andamento": 2144,
       "entradas_mes": 62,
-      "saidas_mes": 18,
+      "saidas_mes": 19,
       "entradas_mes_anterior": 117,
       "saidas_mes_anterior": 96,
-      "valor_causa": 474582197.85
+      "valor_causa": 474534697.85
     },
     {
       "nome": "Grupo E1",
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 9,
-      "entradas_mes": 7,
+      "andamento": 12,
+      "entradas_mes": 10,
       "saidas_mes": 1,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 3,
-      "valor_causa": 3023992.21
+      "valor_causa": 3323917.17
     },
     {
       "nome": "Sócios",
@@ -464,12 +464,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5777,
-      "entradas_mes": 118,
-      "saidas_mes": 74,
+      "andamento": 5779,
+      "entradas_mes": 121,
+      "saidas_mes": 75,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 843,
-      "valor_causa": 1377923379.58
+      "valor_causa": 1378175804.54
     },
     {
       "nome": "MG",
@@ -709,12 +709,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2925,
-      "entradas_mes": 188,
-      "saidas_mes": 24,
+      "andamento": 2927,
+      "entradas_mes": 191,
+      "saidas_mes": 25,
       "entradas_mes_anterior": 268,
       "saidas_mes_anterior": 205,
-      "valor_causa": 848194715.54
+      "valor_causa": 848447140.5
     },
     {
       "nome": "Sentença",
@@ -949,12 +949,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 890,
+      "andamento": 889,
       "entradas_mes": 54,
-      "saidas_mes": 4,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 101,
       "saidas_mes_anterior": 24,
-      "valor_causa": 188303139.69
+      "valor_causa": 188255639.69
     },
     {
       "fase": "Instrução",
@@ -1049,12 +1049,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 8,
-      "entradas_mes": 7,
+      "andamento": 11,
+      "entradas_mes": 10,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 2985992.21
+      "valor_causa": 3285917.17
     },
     {
       "fase": "Instrução",
@@ -1423,15 +1423,6 @@
       "valor_causa": 72828993.75
     },
     {
-      "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 300,
-      "entradas_mes": 10,
-      "saidas_mes": 2,
-      "entradas_mes_anterior": 11,
-      "saidas_mes_anterior": 18,
-      "valor_causa": 160643081.27
-    },
-    {
       "nome": "Tamara Silva Marcílio(TAM)",
       "andamento": 300,
       "entradas_mes": 9,
@@ -1450,13 +1441,22 @@
       "valor_causa": 33750005.02
     },
     {
+      "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
+      "andamento": 299,
+      "entradas_mes": 10,
+      "saidas_mes": 3,
+      "entradas_mes_anterior": 11,
+      "saidas_mes_anterior": 18,
+      "valor_causa": 160595581.27
+    },
+    {
       "nome": "Rafael Rocha Ferreira(RFE)",
-      "andamento": 294,
-      "entradas_mes": 6,
+      "andamento": 295,
+      "entradas_mes": 7,
       "saidas_mes": 3,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 6,
-      "valor_causa": 82012432.2
+      "valor_causa": 82067046.13
     },
     {
       "nome": "Bruna Cembranelli Fazenda (BCF)",
@@ -1532,12 +1532,12 @@
     },
     {
       "nome": "Paloma da Silva Santos(PSI)",
-      "andamento": 251,
-      "entradas_mes": 12,
+      "andamento": 253,
+      "entradas_mes": 14,
       "saidas_mes": 7,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 11,
-      "valor_causa": 56533587.79
+      "valor_causa": 56778898.82
     },
     {
       "nome": "Lucas Willott Pereira (LWP)",
@@ -1786,22 +1786,22 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1454,
-      "entradas_mes": 26,
+      "andamento": 1455,
+      "entradas_mes": 27,
       "saidas_mes": 11,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 41,
-      "valor_causa": 325490966.85,
+      "valor_causa": 325545580.78,
       "alerta_entrada": false
     },
     {
       "nome": "BP BIOENERGIA",
-      "andamento": 757,
+      "andamento": 760,
       "entradas_mes": 16,
       "saidas_mes": 6,
-      "entradas_mes_anterior": 20,
+      "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 36,
-      "valor_causa": 213772761.03,
+      "valor_causa": 214664761.03,
       "alerta_entrada": false
     },
     {
@@ -1836,12 +1836,12 @@
     },
     {
       "nome": "MAHLE METAL - MOGI",
-      "andamento": 360,
-      "entradas_mes": 9,
+      "andamento": 362,
+      "entradas_mes": 11,
       "saidas_mes": 8,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 10,
-      "valor_causa": 73967646.35,
+      "valor_causa": 74212957.38,
       "alerta_entrada": false
     },
     {
@@ -1976,12 +1976,12 @@
     },
     {
       "nome": "PILKINGTON (NSG)",
-      "andamento": 77,
+      "andamento": 76,
       "entradas_mes": 2,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 1,
-      "valor_causa": 12046404.33,
+      "valor_causa": 11998904.33,
       "alerta_entrada": false
     }
   ],
@@ -3243,12 +3243,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "BP BIOENERGIA",
-      "andamento": 757,
+      "andamento": 760,
       "entradas_mes": 16,
       "saidas_mes": 6,
-      "entradas_mes_anterior": 20,
+      "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 36,
-      "valor_causa": 213772761.03,
+      "valor_causa": 214664761.03,
       "alerta_entrada": false
     },
     {
@@ -3298,12 +3298,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "PILKINGTON (NSG)",
-      "andamento": 77,
+      "andamento": 76,
       "entradas_mes": 2,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 1,
-      "valor_causa": 12046404.33,
+      "valor_causa": 11998904.33,
       "alerta_entrada": false
     },
     {
@@ -3397,12 +3397,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "MULTICEL",
-      "andamento": 13,
+      "andamento": 10,
       "entradas_mes": 0,
       "saidas_mes": 2,
-      "entradas_mes_anterior": 3,
+      "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 1460775.66,
+      "valor_causa": 568775.66,
       "alerta_entrada": false
     },
     {
@@ -3804,12 +3804,12 @@
     {
       "grupo": "Sem grupo",
       "cliente": "BRIDGESTONE",
-      "andamento": 3,
-      "entradas_mes": 3,
+      "andamento": 4,
+      "entradas_mes": 4,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 1058531.48,
+      "valor_causa": 1113145.41,
       "alerta_entrada": true
     },
     {
@@ -3821,6 +3821,17 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
       "valor_causa": 451071.12,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "MAHLE METAL - MOGI",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 245311.03,
       "alerta_entrada": false
     },
     {
@@ -4424,12 +4435,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 294,
+      "andamento": 293,
       "entradas_mes": 8,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 18,
-      "valor_causa": 159981129.35
+      "valor_causa": 159933629.35
     },
     {
       "grupo": "Grupo E2",
@@ -4513,6 +4524,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Rafael Rocha Ferreira(RFE)",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 97788.76
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
       "andamento": 2,
       "entradas_mes": 2,
@@ -4520,6 +4541,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 624406.2
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Paloma da Silva Santos(PSI)",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 245311.03
     },
     {
       "grupo": "Sem grupo",
@@ -4533,13 +4564,13 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Rafael Rocha Ferreira(RFE)",
+      "profissional": "Guilherme Silva Morimoto(GSM)",
       "andamento": 1,
       "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 43174.83
+      "valor_causa": 302356.65
     },
     {
       "grupo": "Sem grupo",
@@ -4550,16 +4581,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 713000.0
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Guilherme Silva Morimoto(GSM)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 302356.65
     },
     {
       "grupo": "Sem grupo",
@@ -6546,12 +6567,12 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1426,
-      "entradas_mes": 26,
+      "andamento": 1427,
+      "entradas_mes": 27,
       "saidas_mes": 11,
       "entradas_mes_anterior": 52,
       "saidas_mes_anterior": 40,
-      "valor_causa": 313840922.33
+      "valor_causa": 313895536.26
     },
     {
       "estado": "SP",
@@ -6576,22 +6597,22 @@
     {
       "estado": "SP",
       "cliente": "BP BIOENERGIA",
-      "andamento": 416,
+      "andamento": 419,
       "entradas_mes": 7,
       "saidas_mes": 4,
-      "entradas_mes_anterior": 11,
+      "entradas_mes_anterior": 14,
       "saidas_mes_anterior": 28,
-      "valor_causa": 100862205.28
+      "valor_causa": 101754205.28
     },
     {
       "estado": "SP",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 359,
-      "entradas_mes": 9,
+      "andamento": 361,
+      "entradas_mes": 11,
       "saidas_mes": 8,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 10,
-      "valor_causa": 73967646.35
+      "valor_causa": 74212957.38
     },
     {
       "estado": "SP",
@@ -6676,12 +6697,12 @@
     {
       "estado": "SP",
       "cliente": "PILKINGTON (NSG)",
-      "andamento": 66,
+      "andamento": 65,
       "entradas_mes": 2,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 9350087.17
+      "valor_causa": 9302587.17
     },
     {
       "estado": "SP",
@@ -6805,16 +6826,6 @@
     },
     {
       "estado": "SP",
-      "cliente": "MULTICEL",
-      "andamento": 15,
-      "entradas_mes": 0,
-      "saidas_mes": 2,
-      "entradas_mes_anterior": 3,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 1610017.06
-    },
-    {
-      "estado": "SP",
       "cliente": "FERRERO DO BRASIL",
       "andamento": 14,
       "entradas_mes": 0,
@@ -6862,6 +6873,16 @@
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 1,
       "valor_causa": 2897568.31
+    },
+    {
+      "estado": "SP",
+      "cliente": "MULTICEL",
+      "andamento": 12,
+      "entradas_mes": 0,
+      "saidas_mes": 2,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 718017.06
     },
     {
       "estado": "SP",
@@ -7983,14 +8004,19 @@
       "profissional": "Rafael Rocha Ferreira(RFE)"
     },
     {
-      "numero_processo": "1002085-08.2026.5.02.0435",
-      "cliente": "BRIDGESTONE",
-      "profissional": "Beatriz Santiago de Souza(BSO)"
-    },
-    {
       "numero_processo": "1002060-95.2026.5.02.0434",
       "cliente": "BRIDGESTONE",
       "profissional": "Guilherme Silva Morimoto(GSM)"
+    },
+    {
+      "numero_processo": "1002059-13.2026.5.02.0434",
+      "cliente": "BRIDGESTONE",
+      "profissional": "Rafael Rocha Ferreira(RFE)"
+    },
+    {
+      "numero_processo": "1002085-08.2026.5.02.0435",
+      "cliente": "BRIDGESTONE",
+      "profissional": "Beatriz Santiago de Souza(BSO)"
     },
     {
       "numero_processo": "1001556-61.2026.5.02.0411",
@@ -8016,6 +8042,16 @@
       "numero_processo": "1001637-30.2026.5.02.0372",
       "cliente": "IPE REALTY",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
+    },
+    {
+      "numero_processo": "1001765-71.2026.5.02.0462",
+      "cliente": "MAHLE METAL - MOGI",
+      "profissional": "Paloma da Silva Santos(PSI)"
+    },
+    {
+      "numero_processo": "0012234-45.2026.5.15.0071",
+      "cliente": "MAHLE METAL - MOGI",
+      "profissional": "Paloma da Silva Santos(PSI)"
     },
     {
       "numero_processo": "1002426-59.2017.5.02.0464",
