@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-20T11:00:27",
+  "atualizado_em": "2026-10-20T11:15:35",
   "kpis": {
-    "total_andamento": 7639,
-    "entradas_hoje": 1,
+    "total_andamento": 7642,
+    "entradas_hoje": 2,
     "saidas_hoje": 1,
-    "entradas_ontem": 11,
+    "entradas_ontem": 13,
     "saidas_ontem": 10,
-    "entradas_mes": 208,
+    "entradas_mes": 211,
     "saidas_mes": 87,
     "entradas_mes_anterior": 320,
     "saidas_mes_anterior": 1023,
-    "valor_causa_total": 1769528322.23,
-    "saldo_mes": 121
+    "valor_causa_total": 1771258266.16,
+    "saldo_mes": 124
   },
   "serie_diaria": [
     {
@@ -306,12 +306,12 @@
     },
     {
       "data": "2026-10-19",
-      "entradas": 11,
+      "entradas": 13,
       "saidas": 10
     },
     {
       "data": "2026-10-20",
-      "entradas": 1,
+      "entradas": 2,
       "saidas": 1
     }
   ],
@@ -416,6 +416,15 @@
       "valor_causa": 11721158.38
     },
     {
+      "nome": "Sem grupo",
+      "andamento": 6,
+      "entradas_mes": 4,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 3,
+      "valor_causa": 1834300.48
+    },
+    {
       "nome": "Sócios",
       "andamento": 3,
       "entradas_mes": 0,
@@ -423,15 +432,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
-    },
-    {
-      "nome": "Sem grupo",
-      "andamento": 3,
-      "entradas_mes": 1,
-      "saidas_mes": 1,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 3,
-      "valor_causa": 104356.55
     },
     {
       "nome": "Grupo C",
@@ -464,21 +464,21 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5772,
-      "entradas_mes": 113,
+      "andamento": 5774,
+      "entradas_mes": 115,
       "saidas_mes": 74,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 843,
-      "valor_causa": 1376240441.9
+      "valor_causa": 1376733687.85
     },
     {
       "nome": "MG",
-      "andamento": 554,
-      "entradas_mes": 18,
+      "andamento": 555,
+      "entradas_mes": 19,
       "saidas_mes": 6,
       "entradas_mes_anterior": 36,
       "saidas_mes_anterior": 22,
-      "valor_causa": 136204332.6
+      "valor_causa": 137441030.58
     },
     {
       "nome": "PR",
@@ -709,12 +709,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2919,
-      "entradas_mes": 182,
+      "andamento": 2922,
+      "entradas_mes": 185,
       "saidas_mes": 24,
       "entradas_mes_anterior": 268,
       "saidas_mes_anterior": 205,
-      "valor_causa": 845275079.88
+      "valor_causa": 847005023.81
     },
     {
       "nome": "Sentença",
@@ -1048,6 +1048,16 @@
     },
     {
       "fase": "Instrução",
+      "grupo": "Sem grupo",
+      "andamento": 5,
+      "entradas_mes": 4,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1796300.48
+    },
+    {
+      "fase": "Instrução",
       "grupo": "Grupo A1",
       "andamento": 4,
       "entradas_mes": 0,
@@ -1055,16 +1065,6 @@
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
-    },
-    {
-      "fase": "Instrução",
-      "grupo": "Sem grupo",
-      "andamento": 2,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 66356.55
     },
     {
       "fase": "Instrução",
@@ -1442,21 +1442,21 @@
     },
     {
       "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 298,
-      "entradas_mes": 8,
+      "andamento": 299,
+      "entradas_mes": 9,
       "saidas_mes": 2,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 18,
-      "valor_causa": 160018675.07
+      "valor_causa": 160468746.19
     },
     {
       "nome": "Rafael Rocha Ferreira(RFE)",
-      "andamento": 293,
-      "entradas_mes": 5,
+      "andamento": 294,
+      "entradas_mes": 6,
       "saidas_mes": 3,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 6,
-      "valor_causa": 81969257.37
+      "valor_causa": 82012432.2
     },
     {
       "nome": "Bruna Cembranelli Fazenda (BCF)",
@@ -1640,12 +1640,12 @@
     },
     {
       "nome": "Bruno Tanganelli Farah(BTF)",
-      "andamento": 22,
-      "entradas_mes": 2,
+      "andamento": 23,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 15,
       "saidas_mes_anterior": 0,
-      "valor_causa": 8500593.86
+      "valor_causa": 9737291.84
     },
     {
       "nome": "Richard Ruan Leo da Silva(RRU)",
@@ -1786,12 +1786,12 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1451,
-      "entradas_mes": 23,
+      "andamento": 1452,
+      "entradas_mes": 24,
       "saidas_mes": 11,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 41,
-      "valor_causa": 324432435.37,
+      "valor_causa": 324475610.2,
       "alerta_entrada": false
     },
     {
@@ -1846,12 +1846,12 @@
     },
     {
       "nome": "HERINGER",
-      "andamento": 346,
-      "entradas_mes": 13,
+      "andamento": 347,
+      "entradas_mes": 14,
       "saidas_mes": 0,
       "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 11,
-      "valor_causa": 46194677.26,
+      "valor_causa": 46644748.38,
       "alerta_entrada": false
     },
     {
@@ -1896,12 +1896,12 @@
     },
     {
       "nome": "EUROCHEM SALITRE",
-      "andamento": 167,
-      "entradas_mes": 8,
+      "andamento": 168,
+      "entradas_mes": 9,
       "saidas_mes": 1,
       "entradas_mes_anterior": 20,
       "saidas_mes_anterior": 11,
-      "valor_causa": 38888374.03,
+      "valor_causa": 40125072.01,
       "alerta_entrada": false
     },
     {
@@ -3803,6 +3803,39 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "HERINGER",
+      "andamento": 2,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 451071.12,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "EUROCHEM SALITRE",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1236697.98,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "BRIDGESTONE",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 43174.83,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "CBC CARTUCHOS BRASIL",
       "andamento": 1,
       "entradas_mes": 1,
@@ -3810,17 +3843,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 65356.55,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "HERINGER",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 1000.0,
       "alerta_entrada": false
     },
     {
@@ -4477,6 +4499,36 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 450071.12
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Bruno Tanganelli Farah(BTF)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1236697.98
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Rafael Rocha Ferreira(RFE)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 43174.83
     },
     {
       "grupo": "Sem grupo",
@@ -5143,12 +5195,12 @@
     {
       "estado": "MG",
       "cliente": "EUROCHEM SALITRE",
-      "andamento": 116,
-      "entradas_mes": 7,
+      "andamento": 117,
+      "entradas_mes": 8,
       "saidas_mes": 1,
       "entradas_mes_anterior": 14,
       "saidas_mes_anterior": 9,
-      "valor_causa": 25620986.38
+      "valor_causa": 26857684.36
     },
     {
       "estado": "MG",
@@ -6463,12 +6515,12 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1423,
-      "entradas_mes": 23,
+      "andamento": 1424,
+      "entradas_mes": 24,
       "saidas_mes": 11,
       "entradas_mes_anterior": 52,
       "saidas_mes_anterior": 40,
-      "valor_causa": 312782390.85
+      "valor_causa": 312825565.68
     },
     {
       "estado": "SP",
@@ -6563,12 +6615,12 @@
     {
       "estado": "SP",
       "cliente": "HERINGER",
-      "andamento": 105,
-      "entradas_mes": 1,
+      "andamento": 106,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 3,
-      "valor_causa": 12323446.64
+      "valor_causa": 12773517.76
     },
     {
       "estado": "SP",
@@ -7895,9 +7947,24 @@
   ],
   "sem_grupo_processos": [
     {
+      "numero_processo": "1002056-58.2026.5.02.0434",
+      "cliente": "BRIDGESTONE",
+      "profissional": "Rafael Rocha Ferreira(RFE)"
+    },
+    {
       "numero_processo": "1001556-61.2026.5.02.0411",
       "cliente": "CBC CARTUCHOS BRASIL",
       "profissional": "Letícia Meneghini Fontes (LMI)"
+    },
+    {
+      "numero_processo": "0011282-72.2026.5.03.0080",
+      "cliente": "EUROCHEM SALITRE",
+      "profissional": "Bruno Tanganelli Farah(BTF)"
+    },
+    {
+      "numero_processo": "0000950-85.2026.5.20.0011",
+      "cliente": "HERINGER",
+      "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
     },
     {
       "numero_processo": "0003841-21.2026.5.09.0000",
