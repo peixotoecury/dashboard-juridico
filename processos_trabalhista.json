@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-20T11:15:35",
+  "atualizado_em": "2026-10-20T11:30:36",
   "kpis": {
-    "total_andamento": 7642,
-    "entradas_hoje": 2,
+    "total_andamento": 7645,
+    "entradas_hoje": 5,
     "saidas_hoje": 1,
     "entradas_ontem": 13,
     "saidas_ontem": 10,
-    "entradas_mes": 211,
+    "entradas_mes": 214,
     "saidas_mes": 87,
     "entradas_mes_anterior": 320,
     "saidas_mes_anterior": 1023,
-    "valor_causa_total": 1771258266.16,
-    "saldo_mes": 124
+    "valor_causa_total": 1772447957.89,
+    "saldo_mes": 127
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-10-20",
-      "entradas": 2,
+      "entradas": 5,
       "saidas": 1
     }
   ],
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 6,
-      "entradas_mes": 4,
+      "andamento": 9,
+      "entradas_mes": 7,
       "saidas_mes": 1,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 3,
-      "valor_causa": 1834300.48
+      "valor_causa": 3023992.21
     },
     {
       "nome": "Sócios",
@@ -464,12 +464,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5774,
-      "entradas_mes": 115,
+      "andamento": 5777,
+      "entradas_mes": 118,
       "saidas_mes": 74,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 843,
-      "valor_causa": 1376733687.85
+      "valor_causa": 1377923379.58
     },
     {
       "nome": "MG",
@@ -709,12 +709,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2922,
-      "entradas_mes": 185,
+      "andamento": 2925,
+      "entradas_mes": 188,
       "saidas_mes": 24,
       "entradas_mes_anterior": 268,
       "saidas_mes_anterior": 205,
-      "valor_causa": 847005023.81
+      "valor_causa": 848194715.54
     },
     {
       "nome": "Sentença",
@@ -727,7 +727,7 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2973,
+      "andamento": 2972,
       "entradas_mes": 4,
       "saidas_mes": 17,
       "entradas_mes_anterior": 3,
@@ -736,7 +736,7 @@
     },
     {
       "nome": "Execução",
-      "andamento": 905,
+      "andamento": 906,
       "entradas_mes": 2,
       "saidas_mes": 19,
       "entradas_mes_anterior": 2,
@@ -859,7 +859,7 @@
     {
       "fase": "Execução",
       "grupo": "Grupo E1",
-      "andamento": 193,
+      "andamento": 194,
       "entradas_mes": 1,
       "saidas_mes": 3,
       "entradas_mes_anterior": 1,
@@ -1049,12 +1049,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 5,
-      "entradas_mes": 4,
+      "andamento": 8,
+      "entradas_mes": 7,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 1796300.48
+      "valor_causa": 2985992.21
     },
     {
       "fase": "Instrução",
@@ -1209,7 +1209,7 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo E1",
-      "andamento": 748,
+      "andamento": 747,
       "entradas_mes": 0,
       "saidas_mes": 9,
       "entradas_mes_anterior": 2,
@@ -1405,6 +1405,15 @@
       "valor_causa": 65112366.51
     },
     {
+      "nome": "Beatriz Santiago de Souza(BSO)",
+      "andamento": 304,
+      "entradas_mes": 6,
+      "saidas_mes": 4,
+      "entradas_mes_anterior": 12,
+      "saidas_mes_anterior": 8,
+      "valor_causa": 59916918.61
+    },
+    {
       "nome": "Joice Ramos Miranda(JRM)",
       "andamento": 303,
       "entradas_mes": 10,
@@ -1414,13 +1423,13 @@
       "valor_causa": 72828993.75
     },
     {
-      "nome": "Beatriz Santiago de Souza(BSO)",
-      "andamento": 303,
-      "entradas_mes": 5,
-      "saidas_mes": 4,
-      "entradas_mes_anterior": 12,
-      "saidas_mes_anterior": 8,
-      "valor_causa": 59203918.61
+      "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
+      "andamento": 300,
+      "entradas_mes": 10,
+      "saidas_mes": 2,
+      "entradas_mes_anterior": 11,
+      "saidas_mes_anterior": 18,
+      "valor_causa": 160643081.27
     },
     {
       "nome": "Tamara Silva Marcílio(TAM)",
@@ -1439,15 +1448,6 @@
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 359,
       "valor_causa": 33750005.02
-    },
-    {
-      "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 299,
-      "entradas_mes": 9,
-      "saidas_mes": 2,
-      "entradas_mes_anterior": 11,
-      "saidas_mes_anterior": 18,
-      "valor_causa": 160468746.19
     },
     {
       "nome": "Rafael Rocha Ferreira(RFE)",
@@ -1477,6 +1477,15 @@
       "valor_causa": 32315613.44
     },
     {
+      "nome": "Guilherme Silva Morimoto(GSM)",
+      "andamento": 279,
+      "entradas_mes": 2,
+      "saidas_mes": 2,
+      "entradas_mes_anterior": 5,
+      "saidas_mes_anterior": 3,
+      "valor_causa": 75627928.18
+    },
+    {
       "nome": "Vanessa de Cassia Castrequini Rosa(VCR)",
       "andamento": 278,
       "entradas_mes": 3,
@@ -1484,15 +1493,6 @@
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 7,
       "valor_causa": 45621897.09
-    },
-    {
-      "nome": "Guilherme Silva Morimoto(GSM)",
-      "andamento": 278,
-      "entradas_mes": 1,
-      "saidas_mes": 2,
-      "entradas_mes_anterior": 5,
-      "saidas_mes_anterior": 3,
-      "valor_causa": 75325571.53
     },
     {
       "nome": "Erik Mota Coppi(ECO)",
@@ -1786,12 +1786,12 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1452,
-      "entradas_mes": 24,
+      "andamento": 1454,
+      "entradas_mes": 26,
       "saidas_mes": 11,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 41,
-      "valor_causa": 324475610.2,
+      "valor_causa": 325490966.85,
       "alerta_entrada": false
     },
     {
@@ -3803,6 +3803,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "BRIDGESTONE",
+      "andamento": 3,
+      "entradas_mes": 3,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1058531.48,
+      "alerta_entrada": true
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "HERINGER",
       "andamento": 2,
       "entradas_mes": 1,
@@ -3825,13 +3836,13 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "BRIDGESTONE",
+      "cliente": "IPE REALTY",
       "andamento": 1,
       "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 43174.83,
+      "valor_causa": 174335.08,
       "alerta_entrada": false
     },
     {
@@ -4503,12 +4514,12 @@
     {
       "grupo": "Sem grupo",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 1,
-      "entradas_mes": 1,
+      "andamento": 2,
+      "entradas_mes": 2,
       "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 450071.12
+      "valor_causa": 624406.2
     },
     {
       "grupo": "Sem grupo",
@@ -4529,6 +4540,26 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 43174.83
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Beatriz Santiago de Souza(BSO)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 713000.0
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Guilherme Silva Morimoto(GSM)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 302356.65
     },
     {
       "grupo": "Sem grupo",
@@ -6515,12 +6546,12 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1424,
-      "entradas_mes": 24,
+      "andamento": 1426,
+      "entradas_mes": 26,
       "saidas_mes": 11,
       "entradas_mes_anterior": 52,
       "saidas_mes_anterior": 40,
-      "valor_causa": 312825565.68
+      "valor_causa": 313840922.33
     },
     {
       "estado": "SP",
@@ -6874,6 +6905,16 @@
     },
     {
       "estado": "SP",
+      "cliente": "IPE REALTY",
+      "andamento": 7,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 1829717.77
+    },
+    {
+      "estado": "SP",
       "cliente": "MITRE VENDAS",
       "andamento": 7,
       "entradas_mes": 0,
@@ -6891,16 +6932,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 3809650.95
-    },
-    {
-      "estado": "SP",
-      "cliente": "IPE REALTY",
-      "andamento": 6,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 1655382.69
     },
     {
       "estado": "SP",
@@ -7952,6 +7983,16 @@
       "profissional": "Rafael Rocha Ferreira(RFE)"
     },
     {
+      "numero_processo": "1002085-08.2026.5.02.0435",
+      "cliente": "BRIDGESTONE",
+      "profissional": "Beatriz Santiago de Souza(BSO)"
+    },
+    {
+      "numero_processo": "1002060-95.2026.5.02.0434",
+      "cliente": "BRIDGESTONE",
+      "profissional": "Guilherme Silva Morimoto(GSM)"
+    },
+    {
       "numero_processo": "1001556-61.2026.5.02.0411",
       "cliente": "CBC CARTUCHOS BRASIL",
       "profissional": "Letícia Meneghini Fontes (LMI)"
@@ -7970,6 +8011,11 @@
       "numero_processo": "0003841-21.2026.5.09.0000",
       "cliente": "HERINGER",
       "profissional": "Bianca Bolanhi Camacho(BBO)"
+    },
+    {
+      "numero_processo": "1001637-30.2026.5.02.0372",
+      "cliente": "IPE REALTY",
+      "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
     },
     {
       "numero_processo": "1002426-59.2017.5.02.0464",
