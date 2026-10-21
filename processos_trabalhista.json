@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-21T12:45:32",
+  "atualizado_em": "2026-10-21T13:30:32",
   "kpis": {
     "total_andamento": 7662,
     "entradas_hoje": 12,
@@ -10,7 +10,7 @@
     "saidas_mes": 101,
     "entradas_mes_anterior": 320,
     "saidas_mes_anterior": 1023,
-    "valor_causa_total": 1776865903.73,
+    "valor_causa_total": 1777022416.09,
     "saldo_mes": 139
   },
   "serie_diaria": [
@@ -318,12 +318,12 @@
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2147,
-      "entradas_mes": 73,
+      "andamento": 2149,
+      "entradas_mes": 75,
       "saidas_mes": 28,
       "entradas_mes_anterior": 118,
       "saidas_mes_anterior": 96,
-      "valor_causa": 477523982.99
+      "valor_causa": 477680495.35
     },
     {
       "nome": "Grupo E1",
@@ -425,15 +425,6 @@
       "valor_causa": 0.0
     },
     {
-      "nome": "Sem grupo",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 1,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 3,
-      "valor_causa": 0.0
-    },
-    {
       "nome": "Grupo D1",
       "andamento": 0,
       "entradas_mes": 0,
@@ -459,6 +450,15 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
       "valor_causa": 0.0
+    },
+    {
+      "nome": "Sem grupo",
+      "andamento": 0,
+      "entradas_mes": 0,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 3,
+      "valor_causa": 0.0
     }
   ],
   "por_estado": [
@@ -469,7 +469,7 @@
       "saidas_mes": 81,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 843,
-      "valor_causa": 1380422868.44
+      "valor_causa": 1380579380.8
     },
     {
       "nome": "MG",
@@ -700,21 +700,21 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 416,
-      "entradas_mes": 21,
+      "andamento": 417,
+      "entradas_mes": 22,
       "saidas_mes": 6,
       "entradas_mes_anterior": 34,
       "saidas_mes_anterior": 10,
-      "valor_causa": 94886197.11
+      "valor_causa": 94973736.52
     },
     {
       "nome": "Instrução",
-      "andamento": 2925,
-      "entradas_mes": 204,
+      "andamento": 2924,
+      "entradas_mes": 203,
       "saidas_mes": 27,
       "entradas_mes_anterior": 268,
       "saidas_mes_anterior": 205,
-      "valor_causa": 843864293.11
+      "valor_causa": 843933266.06
     },
     {
       "nome": "Sentença",
@@ -749,12 +749,12 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo E2",
-      "andamento": 169,
-      "entradas_mes": 2,
+      "andamento": 170,
+      "entradas_mes": 3,
       "saidas_mes": 2,
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 1,
-      "valor_causa": 40545295.13
+      "valor_causa": 40632834.54
     },
     {
       "fase": "Ajuizamento",
@@ -939,12 +939,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 894,
-      "entradas_mes": 61,
+      "andamento": 895,
+      "entradas_mes": 62,
       "saidas_mes": 7,
       "entradas_mes_anterior": 102,
       "saidas_mes_anterior": 24,
-      "valor_causa": 191144553.12
+      "valor_causa": 191213526.07
     },
     {
       "fase": "Instrução",
@@ -1043,16 +1043,6 @@
       "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 0.0
-    },
-    {
-      "fase": "Instrução",
-      "grupo": "Sem grupo",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
     },
@@ -1372,7 +1362,7 @@
       "saidas_mes": 4,
       "entradas_mes_anterior": 30,
       "saidas_mes_anterior": 28,
-      "valor_causa": 51349970.3
+      "valor_causa": 51506482.66
     },
     {
       "nome": "Letícia Meneghini Fontes (LMI)",
@@ -3305,12 +3295,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "L. SANT ANGELO",
-      "andamento": 34,
-      "entradas_mes": 1,
+      "andamento": 36,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 5,
-      "valor_causa": 5381023.82,
+      "valor_causa": 5537536.18,
       "alerta_entrada": false
     },
     {
@@ -3750,17 +3740,6 @@
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
-      "valor_causa": 0.0,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "L. SANT ANGELO",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
       "valor_causa": 0.0,
       "alerta_entrada": false
     },
@@ -4291,12 +4270,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 368,
-      "entradas_mes": 18,
+      "andamento": 370,
+      "entradas_mes": 20,
       "saidas_mes": 4,
       "entradas_mes_anterior": 30,
       "saidas_mes_anterior": 28,
-      "valor_causa": 51349970.3
+      "valor_causa": 51506482.66
     },
     {
       "grupo": "Grupo E2",
@@ -4383,16 +4362,6 @@
       "profissional": "Natália Biondi Gaggini Robles(NBG)",
       "andamento": 1,
       "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 0.0
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 2,
-      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
@@ -6548,7 +6517,7 @@
       "saidas_mes": 0,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 5,
-      "valor_causa": 5381023.82
+      "valor_causa": 5537536.18
     },
     {
       "estado": "SP",
@@ -7813,16 +7782,5 @@
       "alerta_entrada": true
     }
   ],
-  "sem_grupo_processos": [
-    {
-      "numero_processo": "1001669-35.2026.5.02.0081",
-      "cliente": "L. SANT ANGELO",
-      "profissional": "Camila Alves Magalhães de Paula(CAL)"
-    },
-    {
-      "numero_processo": "1001787-95.2026.5.02.0053",
-      "cliente": "L. SANT ANGELO",
-      "profissional": "Camila Alves Magalhães de Paula(CAL)"
-    }
-  ]
+  "sem_grupo_processos": []
 }
