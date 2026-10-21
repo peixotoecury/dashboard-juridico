@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-21T11:45:33",
+  "atualizado_em": "2026-10-21T12:30:25",
   "kpis": {
-    "total_andamento": 7660,
-    "entradas_hoje": 10,
+    "total_andamento": 7662,
+    "entradas_hoje": 12,
     "saidas_hoje": 2,
     "entradas_ontem": 19,
     "saidas_ontem": 13,
-    "entradas_mes": 238,
+    "entradas_mes": 240,
     "saidas_mes": 101,
     "entradas_mes_anterior": 320,
     "saidas_mes_anterior": 1023,
-    "valor_causa_total": 1776718528.98,
-    "saldo_mes": 137
+    "valor_causa_total": 1776865903.73,
+    "saldo_mes": 139
   },
   "serie_diaria": [
     {
@@ -311,28 +311,28 @@
     },
     {
       "data": "2026-10-21",
-      "entradas": 10,
+      "entradas": 12,
       "saidas": 2
     }
   ],
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2146,
-      "entradas_mes": 72,
+      "andamento": 2147,
+      "entradas_mes": 73,
       "saidas_mes": 28,
       "entradas_mes_anterior": 118,
       "saidas_mes_anterior": 96,
-      "valor_causa": 477212682.99
+      "valor_causa": 477523982.99
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1821,
-      "entradas_mes": 44,
+      "andamento": 1822,
+      "entradas_mes": 45,
       "saidas_mes": 34,
       "entradas_mes_anterior": 60,
       "saidas_mes_anterior": 46,
-      "valor_causa": 310526454.02
+      "valor_causa": 310596628.77
     },
     {
       "nome": "Grupo B1",
@@ -431,7 +431,7 @@
       "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 3,
-      "valor_causa": 311300.0
+      "valor_causa": 77200.0
     },
     {
       "nome": "Grupo D1",
@@ -464,12 +464,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5793,
-      "entradas_mes": 136,
+      "andamento": 5795,
+      "entradas_mes": 138,
       "saidas_mes": 81,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 843,
-      "valor_causa": 1380275493.69
+      "valor_causa": 1380422868.44
     },
     {
       "nome": "MG",
@@ -700,21 +700,21 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 415,
-      "entradas_mes": 20,
+      "andamento": 416,
+      "entradas_mes": 21,
       "saidas_mes": 6,
       "entradas_mes_anterior": 34,
       "saidas_mes_anterior": 10,
-      "valor_causa": 94574897.11
+      "valor_causa": 94886197.11
     },
     {
       "nome": "Instrução",
-      "andamento": 2927,
-      "entradas_mes": 203,
+      "andamento": 2925,
+      "entradas_mes": 204,
       "saidas_mes": 27,
       "entradas_mes_anterior": 268,
       "saidas_mes_anterior": 205,
-      "valor_causa": 845515439.38
+      "valor_causa": 843864293.11
     },
     {
       "nome": "Sentença",
@@ -727,12 +727,12 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2980,
+      "andamento": 2983,
       "entradas_mes": 4,
       "saidas_mes": 20,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 388,
-      "valor_causa": 670410500.29
+      "valor_causa": 671897721.31
     },
     {
       "nome": "Execução",
@@ -749,12 +749,12 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo E2",
-      "andamento": 168,
-      "entradas_mes": 1,
+      "andamento": 169,
+      "entradas_mes": 2,
       "saidas_mes": 2,
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 1,
-      "valor_causa": 40233995.13
+      "valor_causa": 40545295.13
     },
     {
       "fase": "Ajuizamento",
@@ -949,22 +949,22 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 747,
-      "entradas_mes": 23,
+      "andamento": 748,
+      "entradas_mes": 24,
       "saidas_mes": 9,
       "entradas_mes_anterior": 28,
       "saidas_mes_anterior": 10,
-      "valor_causa": 160450011.99
+      "valor_causa": 160520186.74
     },
     {
       "fase": "Instrução",
       "grupo": "Grupo B1",
-      "andamento": 445,
+      "andamento": 442,
       "entradas_mes": 30,
       "saidas_mes": 1,
       "entradas_mes_anterior": 56,
       "saidas_mes_anterior": 13,
-      "valor_causa": 145345012.72
+      "valor_causa": 143857791.7
     },
     {
       "fase": "Instrução",
@@ -1054,7 +1054,7 @@
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 311300.0
+      "valor_causa": 77200.0
     },
     {
       "fase": "Outras",
@@ -1169,12 +1169,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo B1",
-      "andamento": 859,
+      "andamento": 862,
       "entradas_mes": 0,
       "saidas_mes": 2,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 14,
-      "valor_causa": 163833710.67
+      "valor_causa": 165320931.69
     },
     {
       "fase": "Recurso",
@@ -1492,6 +1492,15 @@
       "valor_causa": 64871603.63
     },
     {
+      "nome": "Paloma da Silva Santos(PSI)",
+      "andamento": 257,
+      "entradas_mes": 17,
+      "saidas_mes": 8,
+      "entradas_mes_anterior": 11,
+      "saidas_mes_anterior": 11,
+      "valor_causa": 57059411.05
+    },
+    {
       "nome": "Mariana Borges de Menezes Fávaro(MBF)",
       "andamento": 256,
       "entradas_mes": 3,
@@ -1499,15 +1508,6 @@
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 6,
       "valor_causa": 34098546.67
-    },
-    {
-      "nome": "Paloma da Silva Santos(PSI)",
-      "andamento": 255,
-      "entradas_mes": 15,
-      "saidas_mes": 8,
-      "entradas_mes_anterior": 11,
-      "saidas_mes_anterior": 11,
-      "valor_causa": 56912036.3
     },
     {
       "nome": "Vinícius Ronchi Arruda(VRO)",
@@ -1778,13 +1778,13 @@
     },
     {
       "nome": "MAHLE METAL - MOGI",
-      "andamento": 367,
-      "entradas_mes": 13,
+      "andamento": 369,
+      "entradas_mes": 15,
       "saidas_mes": 9,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 10,
-      "valor_causa": 74864336.43,
-      "alerta_entrada": false
+      "valor_causa": 75011711.18,
+      "alerta_entrada": true
     },
     {
       "nome": "TELEFONICA BRASIL",
@@ -2964,13 +2964,13 @@
     {
       "grupo": "Grupo E1",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 367,
-      "entradas_mes": 13,
+      "andamento": 368,
+      "entradas_mes": 14,
       "saidas_mes": 9,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 10,
-      "valor_causa": 74864336.43,
-      "alerta_entrada": false
+      "valor_causa": 74934511.18,
+      "alerta_entrada": true
     },
     {
       "grupo": "Grupo E1",
@@ -3228,12 +3228,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "EUROCHEM SALITRE",
-      "andamento": 170,
-      "entradas_mes": 10,
+      "andamento": 171,
+      "entradas_mes": 11,
       "saidas_mes": 1,
       "entradas_mes_anterior": 21,
       "saidas_mes_anterior": 11,
-      "valor_causa": 40356589.57,
+      "valor_causa": 40667889.57,
       "alerta_entrada": false
     },
     {
@@ -3766,13 +3766,13 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "EUROCHEM SALITRE",
+      "cliente": "MAHLE METAL - MOGI",
       "andamento": 1,
       "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 311300.0,
+      "valor_causa": 77200.0,
       "alerta_entrada": false
     },
     {
@@ -4192,12 +4192,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Paloma da Silva Santos(PSI)",
-      "andamento": 255,
-      "entradas_mes": 15,
+      "andamento": 256,
+      "entradas_mes": 16,
       "saidas_mes": 8,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 10,
-      "valor_causa": 56912036.3
+      "valor_causa": 56982211.05
     },
     {
       "grupo": "Grupo E1",
@@ -4372,12 +4372,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Bruno Tanganelli Farah(BTF)",
-      "andamento": 47,
-      "entradas_mes": 8,
+      "andamento": 48,
+      "entradas_mes": 9,
       "saidas_mes": 0,
       "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 0,
-      "valor_causa": 14689828.75
+      "valor_causa": 15001128.75
     },
     {
       "grupo": "Grupo E2",
@@ -4411,13 +4411,13 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Bruno Tanganelli Farah(BTF)",
+      "profissional": "Paloma da Silva Santos(PSI)",
       "andamento": 1,
       "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 311300.0
+      "saidas_mes_anterior": 1,
+      "valor_causa": 77200.0
     },
     {
       "grupo": "Sócios",
@@ -6414,12 +6414,12 @@
     {
       "estado": "SP",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 366,
-      "entradas_mes": 13,
+      "andamento": 368,
+      "entradas_mes": 15,
       "saidas_mes": 9,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 10,
-      "valor_causa": 74864336.43
+      "valor_causa": 75011711.18
     },
     {
       "estado": "SP",
@@ -7774,6 +7774,16 @@
   ],
   "clientes_com_alerta": [
     {
+      "nome": "MAHLE METAL - MOGI",
+      "andamento": 369,
+      "entradas_mes": 15,
+      "saidas_mes": 9,
+      "entradas_mes_anterior": 13,
+      "saidas_mes_anterior": 10,
+      "valor_causa": 75011711.18,
+      "alerta_entrada": true
+    },
+    {
       "nome": "VITERRA RIO VERMELHO",
       "andamento": 317,
       "entradas_mes": 8,
@@ -7826,11 +7836,6 @@
   ],
   "sem_grupo_processos": [
     {
-      "numero_processo": "0011317-32.2026.5.03.0080",
-      "cliente": "EUROCHEM SALITRE",
-      "profissional": "Bruno Tanganelli Farah(BTF)"
-    },
-    {
       "numero_processo": "1001669-35.2026.5.02.0081",
       "cliente": "L. SANT ANGELO",
       "profissional": "Camila Alves Magalhães de Paula(CAL)"
@@ -7839,6 +7844,11 @@
       "numero_processo": "1001787-95.2026.5.02.0053",
       "cliente": "L. SANT ANGELO",
       "profissional": "Camila Alves Magalhães de Paula(CAL)"
+    },
+    {
+      "numero_processo": "0012543-43.2026.5.15.0014",
+      "cliente": "MAHLE METAL - MOGI",
+      "profissional": "Paloma da Silva Santos(PSI)"
     }
   ]
 }
