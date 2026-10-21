@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-21T08:30:22",
+  "atualizado_em": "2026-10-21T08:45:31",
   "kpis": {
-    "total_andamento": 7652,
-    "entradas_hoje": 0,
+    "total_andamento": 7653,
+    "entradas_hoje": 1,
     "saidas_hoje": 0,
     "entradas_ontem": 19,
     "saidas_ontem": 13,
-    "entradas_mes": 228,
+    "entradas_mes": 229,
     "saidas_mes": 99,
     "entradas_mes_anterior": 320,
     "saidas_mes_anterior": 1023,
-    "valor_causa_total": 1775014650.46,
-    "saldo_mes": 129
+    "valor_causa_total": 1775054440.74,
+    "saldo_mes": 130
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-10-21",
-      "entradas": 0,
+      "entradas": 1,
       "saidas": 0
     }
   ],
@@ -426,12 +426,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 1,
-      "entradas_mes": 1,
+      "andamento": 2,
+      "entradas_mes": 2,
       "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 3,
-      "valor_causa": 232473.71
+      "valor_causa": 272263.99
     },
     {
       "nome": "GS",
@@ -653,12 +653,12 @@
     },
     {
       "nome": "PE",
-      "andamento": 6,
-      "entradas_mes": 0,
+      "andamento": 7,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 2637804.66
+      "valor_causa": 2677594.94
     },
     {
       "nome": "RO",
@@ -718,12 +718,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2931,
-      "entradas_mes": 198,
+      "andamento": 2932,
+      "entradas_mes": 199,
       "saidas_mes": 26,
       "entradas_mes_anterior": 268,
       "saidas_mes_anterior": 205,
-      "valor_causa": 851626753.01
+      "valor_causa": 851666543.29
     },
     {
       "nome": "Sentença",
@@ -1058,12 +1058,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 1,
-      "entradas_mes": 1,
+      "andamento": 2,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 232473.71
+      "valor_causa": 272263.99
     },
     {
       "fase": "Outras",
@@ -1602,12 +1602,12 @@
     },
     {
       "nome": "Bruno Tanganelli Farah(BTF)",
-      "andamento": 45,
-      "entradas_mes": 6,
+      "andamento": 46,
+      "entradas_mes": 7,
       "saidas_mes": 0,
       "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 0,
-      "valor_causa": 14402822.38
+      "valor_causa": 14442612.66
     },
     {
       "nome": "Thais Catharine Cardozo Esteves(TCE)",
@@ -1876,12 +1876,12 @@
     },
     {
       "nome": "EUROCHEM SALITRE",
-      "andamento": 169,
-      "entradas_mes": 9,
+      "andamento": 170,
+      "entradas_mes": 10,
       "saidas_mes": 1,
       "entradas_mes_anterior": 21,
       "saidas_mes_anterior": 11,
-      "valor_causa": 40316799.29,
+      "valor_causa": 40356589.57,
       "alerta_entrada": false
     },
     {
@@ -3804,6 +3804,17 @@
       "alerta_entrada": false
     },
     {
+      "grupo": "Sem grupo",
+      "cliente": "EUROCHEM SALITRE",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 39790.28,
+      "alerta_entrada": false
+    },
+    {
       "grupo": "Sócios",
       "cliente": "PEIXOTO E CURY",
       "andamento": 2,
@@ -4446,6 +4457,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 232473.71
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Bruno Tanganelli Farah(BTF)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 39790.28
     },
     {
       "grupo": "Sócios",
@@ -5561,6 +5582,16 @@
     },
     {
       "estado": "PE",
+      "cliente": "EUROCHEM SALITRE",
+      "andamento": 2,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 79580.56
+    },
+    {
+      "estado": "PE",
       "cliente": "BRIDGESTONE",
       "andamento": 2,
       "entradas_mes": 0,
@@ -5588,16 +5619,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
-    },
-    {
-      "estado": "PE",
-      "cliente": "EUROCHEM SALITRE",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 39790.28
     },
     {
       "estado": "PE",
@@ -7853,6 +7874,11 @@
     }
   ],
   "sem_grupo_processos": [
+    {
+      "numero_processo": "0001010-63.2026.5.06.0103",
+      "cliente": "EUROCHEM SALITRE",
+      "profissional": "Bruno Tanganelli Farah(BTF)"
+    },
     {
       "numero_processo": "1001678-41.2026.5.02.0034",
       "cliente": "INTEL SEMICONDUTORES",
