@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-21T10:30:39",
+  "atualizado_em": "2026-10-21T10:45:28",
   "kpis": {
     "total_andamento": 7655,
     "entradas_hoje": 5,
@@ -327,12 +327,12 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1818,
-      "entradas_mes": 41,
+      "andamento": 1820,
+      "entradas_mes": 43,
       "saidas_mes": 34,
       "entradas_mes_anterior": 60,
       "saidas_mes_anterior": 46,
-      "valor_causa": 309620372.37
+      "valor_causa": 310496394.86
     },
     {
       "nome": "Grupo B1",
@@ -426,12 +426,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 3,
-      "entradas_mes": 3,
+      "andamento": 1,
+      "entradas_mes": 1,
       "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 3,
-      "valor_causa": 1108496.2
+      "valor_causa": 232473.71
     },
     {
       "nome": "Grupo D1",
@@ -700,21 +700,21 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 414,
-      "entradas_mes": 19,
+      "andamento": 415,
+      "entradas_mes": 20,
       "saidas_mes": 6,
       "entradas_mes_anterior": 34,
       "saidas_mes_anterior": 10,
-      "valor_causa": 94126972.83
+      "valor_causa": 94574897.11
     },
     {
       "nome": "Instrução",
-      "andamento": 2932,
-      "entradas_mes": 200,
+      "andamento": 2931,
+      "entradas_mes": 199,
       "saidas_mes": 27,
       "entradas_mes_anterior": 268,
       "saidas_mes_anterior": 205,
-      "valor_causa": 852489766.0
+      "valor_causa": 852041841.72
     },
     {
       "nome": "Sentença",
@@ -769,12 +769,12 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo E1",
-      "andamento": 71,
-      "entradas_mes": 16,
+      "andamento": 72,
+      "entradas_mes": 17,
       "saidas_mes": 0,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 0,
-      "valor_causa": 17484515.61
+      "valor_causa": 17932439.89
     },
     {
       "fase": "Ajuizamento",
@@ -949,12 +949,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 746,
-      "entradas_mes": 22,
+      "andamento": 747,
+      "entradas_mes": 23,
       "saidas_mes": 9,
       "entradas_mes_anterior": 28,
       "saidas_mes_anterior": 10,
-      "valor_causa": 159998507.49
+      "valor_causa": 160426605.7
     },
     {
       "fase": "Instrução",
@@ -1049,12 +1049,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 3,
-      "entradas_mes": 3,
+      "andamento": 1,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 1108496.2
+      "valor_causa": 232473.71
     },
     {
       "fase": "Outras",
@@ -2964,12 +2964,12 @@
     {
       "grupo": "Grupo E1",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 365,
-      "entradas_mes": 11,
+      "andamento": 367,
+      "entradas_mes": 13,
       "saidas_mes": 9,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 10,
-      "valor_causa": 73988313.94,
+      "valor_causa": 74864336.43,
       "alerta_entrada": false
     },
     {
@@ -3755,17 +3755,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "MAHLE METAL - MOGI",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 876022.49,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "INTEL SEMICONDUTORES",
       "andamento": 1,
       "entradas_mes": 1,
@@ -4192,12 +4181,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Paloma da Silva Santos(PSI)",
-      "andamento": 253,
-      "entradas_mes": 13,
+      "andamento": 255,
+      "entradas_mes": 15,
       "saidas_mes": 8,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 10,
-      "valor_causa": 56036013.81
+      "valor_causa": 56912036.3
     },
     {
       "grupo": "Grupo E1",
@@ -4398,16 +4387,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Paloma da Silva Santos(PSI)",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 876022.49
     },
     {
       "grupo": "Sem grupo",
@@ -7829,16 +7808,6 @@
       "numero_processo": "1001678-41.2026.5.02.0034",
       "cliente": "INTEL SEMICONDUTORES",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
-    },
-    {
-      "numero_processo": "0011883-72.2026.5.15.0071",
-      "cliente": "MAHLE METAL - MOGI",
-      "profissional": "Paloma da Silva Santos(PSI)"
-    },
-    {
-      "numero_processo": "0012167-80.2026.5.15.0071",
-      "cliente": "MAHLE METAL - MOGI",
-      "profissional": "Paloma da Silva Santos(PSI)"
     }
   ]
 }
