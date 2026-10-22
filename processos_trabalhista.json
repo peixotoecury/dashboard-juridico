@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-22T12:45:33",
+  "atualizado_em": "2026-10-22T13:00:29",
   "kpis": {
-    "total_andamento": 7665,
-    "entradas_hoje": 9,
+    "total_andamento": 7666,
+    "entradas_hoje": 10,
     "saidas_hoje": 0,
     "entradas_ontem": 14,
     "saidas_ontem": 7,
-    "entradas_mes": 251,
+    "entradas_mes": 252,
     "saidas_mes": 108,
     "entradas_mes_anterior": 319,
     "saidas_mes_anterior": 1023,
-    "valor_causa_total": 1778520987.67,
-    "saldo_mes": 143
+    "valor_causa_total": 1778528113.07,
+    "saldo_mes": 144
   },
   "serie_diaria": [
     {
@@ -311,19 +311,19 @@
     },
     {
       "data": "2026-10-22",
-      "entradas": 9,
+      "entradas": 10,
       "saidas": 0
     }
   ],
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2154,
-      "entradas_mes": 80,
+      "andamento": 2155,
+      "entradas_mes": 81,
       "saidas_mes": 28,
       "entradas_mes_anterior": 118,
       "saidas_mes_anterior": 96,
-      "valor_causa": 478076520.04
+      "valor_causa": 478326829.93
     },
     {
       "nome": "Grupo E1",
@@ -422,7 +422,7 @@
       "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 3,
-      "valor_causa": 794991.18
+      "valor_causa": 551806.69
     },
     {
       "nome": "Sócios",
@@ -482,12 +482,12 @@
     },
     {
       "nome": "PR",
-      "andamento": 252,
-      "entradas_mes": 17,
+      "andamento": 253,
+      "entradas_mes": 18,
       "saidas_mes": 0,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 7,
-      "valor_causa": 54866028.93
+      "valor_causa": 54873154.33
     },
     {
       "nome": "RS",
@@ -709,12 +709,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2923,
-      "entradas_mes": 210,
+      "andamento": 2924,
+      "entradas_mes": 211,
       "saidas_mes": 27,
       "entradas_mes_anterior": 267,
       "saidas_mes_anterior": 205,
-      "valor_causa": 842279474.29
+      "valor_causa": 842286599.69
     },
     {
       "nome": "Sentença",
@@ -939,12 +939,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 899,
-      "entradas_mes": 67,
+      "andamento": 900,
+      "entradas_mes": 68,
       "saidas_mes": 7,
       "entradas_mes_anterior": 102,
       "saidas_mes_anterior": 24,
-      "valor_causa": 191508942.9
+      "valor_causa": 191759252.79
     },
     {
       "fase": "Instrução",
@@ -1044,7 +1044,7 @@
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 794991.18
+      "valor_causa": 551806.69
     },
     {
       "fase": "Instrução",
@@ -1349,12 +1349,12 @@
     },
     {
       "nome": "Rafael Yepez do Lago(RYL)",
-      "andamento": 460,
-      "entradas_mes": 18,
+      "andamento": 461,
+      "entradas_mes": 19,
       "saidas_mes": 6,
       "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 23,
-      "valor_causa": 60155084.96
+      "valor_causa": 60162210.36
     },
     {
       "nome": "Giulia Vendramini Milani(GVM)",
@@ -1888,12 +1888,12 @@
     },
     {
       "nome": "EUROCHEM FTO MATRIZ",
-      "andamento": 106,
-      "entradas_mes": 6,
+      "andamento": 107,
+      "entradas_mes": 7,
       "saidas_mes": 0,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 9,
-      "valor_causa": 10846193.0,
+      "valor_causa": 10853318.4,
       "alerta_entrada": false
     },
     {
@@ -3195,12 +3195,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "BP BIOENERGIA",
-      "andamento": 761,
-      "entradas_mes": 22,
+      "andamento": 762,
+      "entradas_mes": 23,
       "saidas_mes": 11,
       "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 36,
-      "valor_causa": 215613422.74,
+      "valor_causa": 215863732.63,
       "alerta_entrada": false
     },
     {
@@ -3756,13 +3756,24 @@
     {
       "grupo": "Sem grupo",
       "cliente": "BP BIOENERGIA",
-      "andamento": 3,
-      "entradas_mes": 3,
+      "andamento": 2,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 773409.89,
-      "alerta_entrada": true
+      "valor_causa": 523100.0,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "EUROCHEM FTO MATRIZ",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 7125.4,
+      "alerta_entrada": false
     },
     {
       "grupo": "Sem grupo",
@@ -4312,12 +4323,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 370,
-      "entradas_mes": 21,
+      "andamento": 371,
+      "entradas_mes": 22,
       "saidas_mes": 4,
       "entradas_mes_anterior": 29,
       "saidas_mes_anterior": 28,
-      "valor_causa": 51220886.96
+      "valor_causa": 51471196.85
     },
     {
       "grupo": "Grupo E2",
@@ -4412,12 +4423,22 @@
     {
       "grupo": "Sem grupo",
       "profissional": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 4,
-      "entradas_mes": 4,
+      "andamento": 3,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 794991.18
+      "valor_causa": 544681.29
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Rafael Yepez do Lago(RYL)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 7125.4
     },
     {
       "grupo": "Sócios",
@@ -5683,6 +5704,16 @@
     },
     {
       "estado": "PR",
+      "cliente": "EUROCHEM FTO MATRIZ",
+      "andamento": 6,
+      "entradas_mes": 3,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 209587.82
+    },
+    {
+      "estado": "PR",
       "cliente": "BRIDGESTONE",
       "andamento": 6,
       "entradas_mes": 0,
@@ -5690,16 +5721,6 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
       "valor_causa": 2736526.5
-    },
-    {
-      "estado": "PR",
-      "cliente": "EUROCHEM FTO MATRIZ",
-      "andamento": 5,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 202462.42
     },
     {
       "estado": "PR",
@@ -7861,14 +7882,14 @@
       "profissional": "Camila Alves Magalhães de Paula(CAL)"
     },
     {
-      "numero_processo": "0011471-79.2026.5.15.0027",
+      "numero_processo": "0011532-37.2026.5.15.0027",
       "cliente": "BP BIOENERGIA",
       "profissional": "Camila Alves Magalhães de Paula(CAL)"
     },
     {
-      "numero_processo": "0011532-37.2026.5.15.0027",
-      "cliente": "BP BIOENERGIA",
-      "profissional": "Camila Alves Magalhães de Paula(CAL)"
+      "numero_processo": "0003064-31.2026.5.10.0801",
+      "cliente": "EUROCHEM FTO MATRIZ",
+      "profissional": "Rafael Yepez do Lago(RYL)"
     },
     {
       "numero_processo": "0000835-75.2026.5.05.0401",
