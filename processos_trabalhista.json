@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-22T10:15:30",
+  "atualizado_em": "2026-10-22T10:30:36",
   "kpis": {
-    "total_andamento": 7659,
-    "entradas_hoje": 0,
+    "total_andamento": 7660,
+    "entradas_hoje": 1,
     "saidas_hoje": 0,
     "entradas_ontem": 14,
     "saidas_ontem": 7,
-    "entradas_mes": 242,
+    "entradas_mes": 243,
     "saidas_mes": 106,
     "entradas_mes_anterior": 319,
     "saidas_mes_anterior": 1023,
     "valor_causa_total": 1777329971.8,
-    "saldo_mes": 136
+    "saldo_mes": 137
   },
   "serie_diaria": [
     {
@@ -311,15 +311,15 @@
     },
     {
       "data": "2026-10-22",
-      "entradas": 0,
+      "entradas": 1,
       "saidas": 0
     }
   ],
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2149,
-      "entradas_mes": 75,
+      "andamento": 2150,
+      "entradas_mes": 76,
       "saidas_mes": 28,
       "entradas_mes_anterior": 118,
       "saidas_mes_anterior": 96,
@@ -464,8 +464,8 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5792,
-      "entradas_mes": 138,
+      "andamento": 5793,
+      "entradas_mes": 139,
       "saidas_mes": 85,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 843,
@@ -709,8 +709,8 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2916,
-      "entradas_mes": 202,
+      "andamento": 2917,
+      "entradas_mes": 203,
       "saidas_mes": 28,
       "entradas_mes_anterior": 267,
       "saidas_mes_anterior": 205,
@@ -939,8 +939,8 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 894,
-      "entradas_mes": 62,
+      "andamento": 895,
+      "entradas_mes": 63,
       "saidas_mes": 7,
       "entradas_mes_anterior": 102,
       "saidas_mes_anterior": 24,
@@ -1339,8 +1339,8 @@
     },
     {
       "nome": "Rafael Yepez do Lago(RYL)",
-      "andamento": 457,
-      "entradas_mes": 15,
+      "andamento": 458,
+      "entradas_mes": 16,
       "saidas_mes": 6,
       "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 23,
@@ -1420,12 +1420,12 @@
     },
     {
       "nome": "Bruna Cembranelli Fazenda (BCF)",
-      "andamento": 290,
+      "andamento": 289,
       "entradas_mes": 4,
       "saidas_mes": 5,
-      "entradas_mes_anterior": 14,
+      "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 12,
-      "valor_causa": 50096595.32
+      "valor_causa": 49672925.83
     },
     {
       "nome": "Júlia Priego Lopes da Silva(JPL)",
@@ -1671,21 +1671,21 @@
       "valor_causa": 0.0
     },
     {
+      "nome": "Juliana Perucci (JPE)",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 14,
+      "valor_causa": 423669.49
+    },
+    {
       "nome": "Jessica Cerqueira Silva(JQS)",
       "andamento": 0,
       "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 437,
-      "valor_causa": 0.0
-    },
-    {
-      "nome": "Juliana Perucci (JPE)",
-      "andamento": 0,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 14,
       "valor_causa": 0.0
     },
     {
@@ -3316,6 +3316,17 @@
     },
     {
       "grupo": "Grupo E2",
+      "cliente": "A. RAYMOND",
+      "andamento": 20,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 3,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 1673465.25,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Grupo E2",
       "cliente": "FRANCISCO MARINS",
       "andamento": 19,
       "entradas_mes": 0,
@@ -3323,17 +3334,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 1317893.54,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Grupo E2",
-      "cliente": "A. RAYMOND",
-      "andamento": 19,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 3,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 1673465.25,
       "alerta_entrada": false
     },
     {
@@ -3920,12 +3920,12 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Bruna Cembranelli Fazenda (BCF)",
-      "andamento": 80,
+      "andamento": 79,
       "entradas_mes": 2,
       "saidas_mes": 0,
-      "entradas_mes_anterior": 4,
+      "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 23376945.35
+      "valor_causa": 22953275.86
     },
     {
       "grupo": "Grupo B1",
@@ -3936,6 +3936,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 947093.22
+    },
+    {
+      "grupo": "Grupo B1",
+      "profissional": "Juliana Perucci (JPE)",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 14,
+      "valor_causa": 423669.49
     },
     {
       "grupo": "Grupo B2",
@@ -4260,8 +4270,8 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Rafael Yepez do Lago(RYL)",
-      "andamento": 457,
-      "entradas_mes": 15,
+      "andamento": 458,
+      "entradas_mes": 16,
       "saidas_mes": 6,
       "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 23,
@@ -6571,6 +6581,16 @@
     },
     {
       "estado": "SP",
+      "cliente": "A. RAYMOND",
+      "andamento": 19,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 3,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 1641465.25
+    },
+    {
+      "estado": "SP",
       "cliente": "ITW CHEMICAL MATRIZ",
       "andamento": 18,
       "entradas_mes": 0,
@@ -6578,16 +6598,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 1654665.03
-    },
-    {
-      "estado": "SP",
-      "cliente": "A. RAYMOND",
-      "andamento": 18,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 3,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 1641465.25
     },
     {
       "estado": "SP",
