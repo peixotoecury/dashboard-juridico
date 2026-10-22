@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-22T12:15:23",
+  "atualizado_em": "2026-10-22T12:30:31",
   "kpis": {
-    "total_andamento": 7661,
-    "entradas_hoje": 4,
+    "total_andamento": 7664,
+    "entradas_hoje": 7,
     "saidas_hoje": 0,
     "entradas_ontem": 14,
     "saidas_ontem": 7,
-    "entradas_mes": 246,
+    "entradas_mes": 249,
     "saidas_mes": 107,
     "entradas_mes_anterior": 319,
     "saidas_mes_anterior": 1023,
-    "valor_causa_total": 1777585971.8,
-    "saldo_mes": 139
+    "valor_causa_total": 1778335306.38,
+    "saldo_mes": 142
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-10-22",
-      "entradas": 4,
+      "entradas": 7,
       "saidas": 0
     }
   ],
@@ -416,6 +416,15 @@
       "valor_causa": 11721158.38
     },
     {
+      "nome": "Sem grupo",
+      "andamento": 3,
+      "entradas_mes": 3,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 3,
+      "valor_causa": 749334.58
+    },
+    {
       "nome": "Sócios",
       "andamento": 3,
       "entradas_mes": 0,
@@ -450,35 +459,26 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
       "valor_causa": 0.0
-    },
-    {
-      "nome": "Sem grupo",
-      "andamento": 0,
-      "entradas_mes": 0,
-      "saidas_mes": 1,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 3,
-      "valor_causa": 0.0
     }
   ],
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5794,
-      "entradas_mes": 142,
+      "andamento": 5796,
+      "entradas_mes": 144,
       "saidas_mes": 86,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 843,
-      "valor_causa": 1380583553.09
+      "valor_causa": 1381192862.98
     },
     {
       "nome": "MG",
-      "andamento": 552,
-      "entradas_mes": 21,
+      "andamento": 553,
+      "entradas_mes": 22,
       "saidas_mes": 11,
       "entradas_mes_anterior": 36,
       "saidas_mes_anterior": 22,
-      "valor_causa": 137626598.19
+      "valor_causa": 137766622.88
     },
     {
       "nome": "PR",
@@ -709,12 +709,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2918,
-      "entradas_mes": 205,
+      "andamento": 2921,
+      "entradas_mes": 208,
       "saidas_mes": 27,
       "entradas_mes_anterior": 267,
       "saidas_mes_anterior": 205,
-      "valor_causa": 841344458.42
+      "valor_causa": 842093793.0
     },
     {
       "nome": "Sentença",
@@ -1047,6 +1047,16 @@
       "valor_causa": 0.0
     },
     {
+      "fase": "Instrução",
+      "grupo": "Sem grupo",
+      "andamento": 3,
+      "entradas_mes": 3,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 749334.58
+    },
+    {
       "fase": "Outras",
       "grupo": "Grupo E2",
       "andamento": 131,
@@ -1357,12 +1367,12 @@
     },
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 369,
-      "entradas_mes": 20,
+      "andamento": 372,
+      "entradas_mes": 23,
       "saidas_mes": 4,
       "entradas_mes_anterior": 29,
       "saidas_mes_anterior": 28,
-      "valor_causa": 51080862.27
+      "valor_causa": 51830196.85
     },
     {
       "nome": "Letícia Meneghini Fontes (LMI)",
@@ -1738,12 +1748,12 @@
     },
     {
       "nome": "BP BIOENERGIA",
-      "andamento": 760,
-      "entradas_mes": 21,
+      "andamento": 763,
+      "entradas_mes": 24,
       "saidas_mes": 11,
       "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 36,
-      "valor_causa": 215473398.05,
+      "valor_causa": 216222732.63,
       "alerta_entrada": false
     },
     {
@@ -3744,6 +3754,17 @@
       "alerta_entrada": false
     },
     {
+      "grupo": "Sem grupo",
+      "cliente": "BP BIOENERGIA",
+      "andamento": 3,
+      "entradas_mes": 3,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 749334.58,
+      "alerta_entrada": true
+    },
+    {
       "grupo": "Sócios",
       "cliente": "PEIXOTO E CURY",
       "andamento": 2,
@@ -4378,6 +4399,16 @@
       "valor_causa": 0.0
     },
     {
+      "grupo": "Sem grupo",
+      "profissional": "Camila Alves Magalhães de Paula(CAL)",
+      "andamento": 3,
+      "entradas_mes": 3,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 749334.58
+    },
+    {
       "grupo": "Sócios",
       "profissional": "Poliana Banqueri da Silva Guimarães(PBS)",
       "andamento": 3,
@@ -5002,12 +5033,12 @@
     {
       "estado": "MG",
       "cliente": "BP BIOENERGIA",
-      "andamento": 220,
-      "entradas_mes": 8,
+      "andamento": 221,
+      "entradas_mes": 9,
       "saidas_mes": 1,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 6,
-      "valor_causa": 83804998.7
+      "valor_causa": 83945023.39
     },
     {
       "estado": "MG",
@@ -6372,12 +6403,12 @@
     {
       "estado": "SP",
       "cliente": "BP BIOENERGIA",
-      "andamento": 421,
-      "entradas_mes": 11,
+      "andamento": 423,
+      "entradas_mes": 13,
       "saidas_mes": 6,
       "entradas_mes_anterior": 14,
       "saidas_mes_anterior": 28,
-      "valor_causa": 102431425.07
+      "valor_causa": 103040734.96
     },
     {
       "estado": "SP",
@@ -7812,5 +7843,21 @@
       "alerta_entrada": true
     }
   ],
-  "sem_grupo_processos": []
+  "sem_grupo_processos": [
+    {
+      "numero_processo": "0011471-79.2026.5.15.0027",
+      "cliente": "BP BIOENERGIA",
+      "profissional": "Camila Alves Magalhães de Paula(CAL)"
+    },
+    {
+      "numero_processo": "0012280-39.2026.5.03.0048",
+      "cliente": "BP BIOENERGIA",
+      "profissional": "Camila Alves Magalhães de Paula(CAL)"
+    },
+    {
+      "numero_processo": "0011524-60.2026.5.15.0027",
+      "cliente": "BP BIOENERGIA",
+      "profissional": "Camila Alves Magalhães de Paula(CAL)"
+    }
+  ]
 }
