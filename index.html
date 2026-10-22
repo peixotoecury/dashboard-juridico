@@ -3016,6 +3016,34 @@ body.role-manager .upload-bar {
 
 
 
+  <!-- PAINEL VENCIDOS: prazos com status Vencido (22/10/2026) -->
+  <div class="det-card" id="painel-venc" style="margin-bottom:16px;">
+    <div class="det-hdr" style="display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:10px;background:linear-gradient(90deg,#4a0000,#7b0000);">
+      <div>
+        <h2>⚫ Prazos Vencidos <span class="det-cnt" id="ct-venc-det">0 registros</span></h2>
+        <div class="det-desc">Prazos que já passaram do fatal e continuam em aberto no LM. Também entram nas cobranças de Fatais.</div>
+      </div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;">
+        <button type="button" style="background:#fff;color:#7b0000;border:none;border-radius:8px;padding:8px 14px;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap;" onclick="dispararAlertasFataisD1(getPrazosVencidos(),'Cobrança de Prazos Vencidos')">📧 Cobrar vencidos (por responsável)</button>
+        <button type="button" style="background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.4);border-radius:8px;padding:8px 14px;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap;" onclick="abrirDashboardFataisD1PorGrupo(getPrazosVencidos(),'Cobrança de Prazos Vencidos por Grupo')">📁 Vencidos por grupo</button>
+      </div>
+    </div>
+    <div class="det-filters">
+      <div class="srch-wrap">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input class="srch-in" id="venc-s" placeholder="Buscar prazo vencido por processo, cliente, reclamante ou tarefa..." oninput="renderVencidosPrazo()">
+      </div>
+      <div class="fg"><select class="fsel" id="venc-grupo" onchange="renderVencidosPrazo()"><option value="">Todos os grupos</option></select></div>
+      <button class="btn-limpar" onclick="V('venc-s').value='';V('venc-grupo').value='';renderVencidosPrazo()">✕ Limpar</button>
+    </div>
+    <div class="det-scroll"><table>
+      <thead><tr>
+        <th>Responsável</th><th>Processo</th><th>Cliente</th><th>Tarefa</th><th>Data</th><th>Dias úteis de atraso</th><th>Grupo</th>
+      </tr></thead>
+      <tbody id="body-venc"></tbody>
+    </table></div>
+  </div>
+
   <!-- Fatais detail -->
   <div class="det-card">
     <div class="det-hdr" style="display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:10px;">
@@ -3050,34 +3078,6 @@ body.role-manager .upload-bar {
       <tbody id="body-fatal"></tbody>
     </table></div>
     <div class="pg-bar" id="pg-fatal"></div>
-  </div>
-
-  <!-- PAINEL VENCIDOS: prazos com status Vencido (22/10/2026) -->
-  <div class="det-card" id="painel-venc" style="margin-top:16px;">
-    <div class="det-hdr" style="display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:10px;background:linear-gradient(90deg,#4a0000,#7b0000);">
-      <div>
-        <h2>⚫ Prazos Vencidos <span class="det-cnt" id="ct-venc-det">0 registros</span></h2>
-        <div class="det-desc">Prazos que já passaram do fatal e continuam em aberto no LM. Também entram nas cobranças de Fatais.</div>
-      </div>
-      <div style="display:flex;gap:8px;flex-wrap:wrap;">
-        <button type="button" style="background:#fff;color:#7b0000;border:none;border-radius:8px;padding:8px 14px;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap;" onclick="dispararAlertasFataisD1(getPrazosVencidos(),'Cobrança de Prazos Vencidos')">📧 Cobrar vencidos (por responsável)</button>
-        <button type="button" style="background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.4);border-radius:8px;padding:8px 14px;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap;" onclick="abrirDashboardFataisD1PorGrupo(getPrazosVencidos(),'Cobrança de Prazos Vencidos por Grupo')">📁 Vencidos por grupo</button>
-      </div>
-    </div>
-    <div class="det-filters">
-      <div class="srch-wrap">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-        <input class="srch-in" id="venc-s" placeholder="Buscar prazo vencido por processo, cliente, reclamante ou tarefa..." oninput="renderVencidosPrazo()">
-      </div>
-      <div class="fg"><select class="fsel" id="venc-grupo" onchange="renderVencidosPrazo()"><option value="">Todos os grupos</option></select></div>
-      <button class="btn-limpar" onclick="V('venc-s').value='';V('venc-grupo').value='';renderVencidosPrazo()">✕ Limpar</button>
-    </div>
-    <div class="det-scroll"><table>
-      <thead><tr>
-        <th>Responsável</th><th>Processo</th><th>Cliente</th><th>Tarefa</th><th>Data</th><th>Dias úteis de atraso</th><th>Grupo</th>
-      </tr></thead>
-      <tbody id="body-venc"></tbody>
-    </table></div>
   </div>
 
   <!-- PAINEL D-1: prazos que vencem hoje — justificar o FATAL de amanhã -->
