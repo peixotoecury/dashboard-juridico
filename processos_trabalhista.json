@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-22T18:07:26",
+  "atualizado_em": "2026-10-22T18:15:28",
   "kpis": {
     "total_andamento": 7660,
     "entradas_hoje": 10,
@@ -700,21 +700,21 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 418,
-      "entradas_mes": 27,
+      "andamento": 419,
+      "entradas_mes": 28,
       "saidas_mes": 9,
       "entradas_mes_anterior": 34,
       "saidas_mes_anterior": 10,
-      "valor_causa": 96043611.82
+      "valor_causa": 96115201.83
     },
     {
       "nome": "Instrução",
-      "andamento": 2920,
-      "entradas_mes": 208,
+      "andamento": 2919,
+      "entradas_mes": 207,
       "saidas_mes": 27,
       "entradas_mes_anterior": 267,
       "saidas_mes_anterior": 205,
-      "valor_causa": 841614605.71
+      "valor_causa": 841543015.7
     },
     {
       "nome": "Sentença",
@@ -769,12 +769,12 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo E1",
-      "andamento": 75,
-      "entradas_mes": 21,
+      "andamento": 76,
+      "entradas_mes": 22,
       "saidas_mes": 1,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 0,
-      "valor_causa": 19286488.64
+      "valor_causa": 19358078.65
     },
     {
       "fase": "Ajuizamento",
@@ -949,12 +949,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 740,
-      "entradas_mes": 21,
+      "andamento": 739,
+      "entradas_mes": 20,
       "saidas_mes": 9,
       "entradas_mes_anterior": 28,
       "saidas_mes_anterior": 10,
-      "valor_causa": 158705437.92
+      "valor_causa": 158633847.91
     },
     {
       "fase": "Instrução",
@@ -1768,13 +1768,13 @@
     },
     {
       "nome": "MAHLE METAL - MOGI",
-      "andamento": 369,
-      "entradas_mes": 15,
+      "andamento": 368,
+      "entradas_mes": 14,
       "saidas_mes": 10,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 10,
-      "valor_causa": 75011711.18,
-      "alerta_entrada": true
+      "valor_causa": 74940121.17,
+      "alerta_entrada": false
     },
     {
       "nome": "TELEFONICA BRASIL",
@@ -1808,12 +1808,12 @@
     },
     {
       "nome": "MAHLE METAL - SBC",
-      "andamento": 264,
-      "entradas_mes": 3,
+      "andamento": 265,
+      "entradas_mes": 4,
       "saidas_mes": 7,
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 7,
-      "valor_causa": 23071238.19,
+      "valor_causa": 23142828.2,
       "alerta_entrada": false
     },
     {
@@ -2954,23 +2954,23 @@
     {
       "grupo": "Grupo E1",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 369,
-      "entradas_mes": 15,
+      "andamento": 368,
+      "entradas_mes": 14,
       "saidas_mes": 10,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 10,
-      "valor_causa": 75011711.18,
-      "alerta_entrada": true
+      "valor_causa": 74940121.17,
+      "alerta_entrada": false
     },
     {
       "grupo": "Grupo E1",
       "cliente": "MAHLE METAL - SBC",
-      "andamento": 264,
-      "entradas_mes": 3,
+      "andamento": 265,
+      "entradas_mes": 4,
       "saidas_mes": 7,
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 7,
-      "valor_causa": 23071238.19,
+      "valor_causa": 23142828.2,
       "alerta_entrada": false
     },
     {
@@ -6382,12 +6382,12 @@
     {
       "estado": "SP",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 368,
-      "entradas_mes": 15,
+      "andamento": 367,
+      "entradas_mes": 14,
       "saidas_mes": 10,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 10,
-      "valor_causa": 75011711.18
+      "valor_causa": 74940121.17
     },
     {
       "estado": "SP",
@@ -6402,12 +6402,12 @@
     {
       "estado": "SP",
       "cliente": "MAHLE METAL - SBC",
-      "andamento": 264,
-      "entradas_mes": 3,
+      "andamento": 265,
+      "entradas_mes": 4,
       "saidas_mes": 7,
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 7,
-      "valor_causa": 23071238.19
+      "valor_causa": 23142828.2
     },
     {
       "estado": "SP",
@@ -7741,16 +7741,6 @@
     }
   ],
   "clientes_com_alerta": [
-    {
-      "nome": "MAHLE METAL - MOGI",
-      "andamento": 369,
-      "entradas_mes": 15,
-      "saidas_mes": 10,
-      "entradas_mes_anterior": 13,
-      "saidas_mes_anterior": 10,
-      "valor_causa": 75011711.18,
-      "alerta_entrada": true
-    },
     {
       "nome": "VITERRA RIO VERMELHO",
       "andamento": 317,
