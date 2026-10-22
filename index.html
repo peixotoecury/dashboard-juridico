@@ -3024,9 +3024,9 @@ body.role-manager .upload-bar {
         <div class="det-desc">Lista detalhada exclusivamente dos prazos fatais para acompanhamento operacional.</div>
       </div>
       <div style="display:flex;gap:8px;flex-wrap:wrap;">
-        <button type="button" style="background:#c62828;color:#fff;border:none;border-radius:8px;padding:8px 14px;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap;" onclick="dispararAlertasFatais()">🔴 Alertas de Fatais (por responsável)</button>
-        <button type="button" style="background:#5c0e0e;color:#fff;border:none;border-radius:8px;padding:8px 14px;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap;" onclick="dispararAlertaTodosFataisJunto()">📢 Alerta Único — Todos os Fatais</button>
-        <button type="button" style="background:#fff;color:var(--teal);border:none;border-radius:8px;padding:8px 14px;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap;" onclick="dispararAlertasFataisD1()">📧 Alertas de Fatais + D-1 (por responsável)</button>
+        <button type="button" style="background:#c62828;color:#fff;border:none;border-radius:8px;padding:8px 14px;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap;" onclick="dispararAlertasFatais()">🔴 Alertas de Vencidos + Fatais (por responsável)</button>
+        <button type="button" style="background:#5c0e0e;color:#fff;border:none;border-radius:8px;padding:8px 14px;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap;" onclick="dispararAlertaTodosFataisJunto()">📢 Alerta Único — Vencidos + Fatais</button>
+        <button type="button" style="background:#fff;color:var(--teal);border:none;border-radius:8px;padding:8px 14px;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap;" onclick="dispararAlertasFataisD1()">📧 Alertas de Vencidos + Fatais + D-1 (por responsável)</button>
         <button type="button" style="background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.4);border-radius:8px;padding:8px 14px;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap;" onclick="abrirDashboardFataisD1PorGrupo()">📁 Alertas por grupo</button>
         <button type="button" style="background:#8a4b00;color:#fff;border:none;border-radius:8px;padding:8px 14px;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap;" onclick="abrirDashboardFataisSemJustificativaPorGrupo()">📭 Fatais sem justificativa (por grupo)</button>
         <button type="button" style="background:#0E5E6F;color:#fff;border:none;border-radius:8px;padding:8px 14px;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap;" onclick="dispararAlertasDecisao()">📑 Alertas de Decisão <span class="nb-cnt" id="nc-decisoes">0</span></button>
@@ -3050,6 +3050,34 @@ body.role-manager .upload-bar {
       <tbody id="body-fatal"></tbody>
     </table></div>
     <div class="pg-bar" id="pg-fatal"></div>
+  </div>
+
+  <!-- PAINEL VENCIDOS: prazos com status Vencido (22/10/2026) -->
+  <div class="det-card" id="painel-venc" style="margin-top:16px;">
+    <div class="det-hdr" style="display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:10px;background:linear-gradient(90deg,#4a0000,#7b0000);">
+      <div>
+        <h2>⚫ Prazos Vencidos <span class="det-cnt" id="ct-venc-det">0 registros</span></h2>
+        <div class="det-desc">Prazos que já passaram do fatal e continuam em aberto no LM. Também entram nas cobranças de Fatais.</div>
+      </div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;">
+        <button type="button" style="background:#fff;color:#7b0000;border:none;border-radius:8px;padding:8px 14px;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap;" onclick="dispararAlertasFataisD1(getPrazosVencidos(),'Cobrança de Prazos Vencidos')">📧 Cobrar vencidos (por responsável)</button>
+        <button type="button" style="background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.4);border-radius:8px;padding:8px 14px;font-size:11px;font-weight:800;cursor:pointer;white-space:nowrap;" onclick="abrirDashboardFataisD1PorGrupo(getPrazosVencidos(),'Cobrança de Prazos Vencidos por Grupo')">📁 Vencidos por grupo</button>
+      </div>
+    </div>
+    <div class="det-filters">
+      <div class="srch-wrap">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input class="srch-in" id="venc-s" placeholder="Buscar prazo vencido por processo, cliente, reclamante ou tarefa..." oninput="renderVencidosPrazo()">
+      </div>
+      <div class="fg"><select class="fsel" id="venc-grupo" onchange="renderVencidosPrazo()"><option value="">Todos os grupos</option></select></div>
+      <button class="btn-limpar" onclick="V('venc-s').value='';V('venc-grupo').value='';renderVencidosPrazo()">✕ Limpar</button>
+    </div>
+    <div class="det-scroll"><table>
+      <thead><tr>
+        <th>Responsável</th><th>Processo</th><th>Cliente</th><th>Tarefa</th><th>Data</th><th>Dias úteis de atraso</th><th>Grupo</th>
+      </tr></thead>
+      <tbody id="body-venc"></tbody>
+    </table></div>
   </div>
 
   <!-- PAINEL D-1: prazos que vencem hoje — justificar o FATAL de amanhã -->
@@ -3577,6 +3605,7 @@ body.role-manager .upload-bar {
           <option>Grupo B3</option>
           <option>Grupo C1</option>
           <option>Grupo C2</option>
+          <option>Grupo C3</option>
           <option>Grupo E1</option>
           <option>Grupo E2</option>
         </select>
@@ -6470,6 +6499,7 @@ window.emailMapeamento = {
   'Grupo C':  { para: 'rafael.camargo@peixotoecury.com.br', cc: 'prazos.trabalhista@peixotoecury.com.br' },
   'Grupo C1': { para: 'rafael.camargo@peixotoecury.com.br', cc: 'prazos.trabalhista@peixotoecury.com.br' },
   'Grupo C2': { para: 'rafael.camargo@peixotoecury.com.br', cc: 'prazos.trabalhista@peixotoecury.com.br' },
+  'Grupo C3': { para: 'rafael.camargo@peixotoecury.com.br', cc: 'prazos.trabalhista@peixotoecury.com.br' },
   'Grupo E1': { para: 'keyla.moraes@peixotoecury.com.br', cc: 'prazos.trabalhista@peixotoecury.com.br' },
   'Grupo E2': { para: 'washington.soares@peixotoecury.com.br', cc: 'prazos.trabalhista@peixotoecury.com.br' }
 };
@@ -6484,6 +6514,7 @@ window.gestorNomeMapeamento = {
   'Grupo C':  'Rafael Camargo Felisbino',
   'Grupo C1': 'Rafael Camargo Felisbino',
   'Grupo C2': 'Rafael Camargo Felisbino',
+  'Grupo C3': 'Rafael Camargo Felisbino',
   'Grupo E1': 'Keyla Moraes',
   'Grupo E2': 'Washington Soares'
 };
@@ -6751,13 +6782,29 @@ function emailIndividualPorPrazo(r){
   return loginKey ? loginKey + '@peixotoecury.com.br' : '';
 }
 
+// Prazos com status Vencido também entram nas cobranças (pedido 22/10/2026)
+var _ORD_ALERTA = { 'Vencido': 0, 'Fatal': 1, 'D-1': 2, 'D-2': 3, 'Futuro': 4 };
+function _ordAlerta(r){ var s = String(r.status||'').trim(); return (s in _ORD_ALERTA) ? _ORD_ALERTA[s] : 9; }
+function _resumoAlerta(rows){
+  var v = rows.filter(function(r){ return statusEh(r.status, 'Vencido'); }).length;
+  var f = rows.filter(function(r){ return statusEh(r.status, 'Fatal'); }).length;
+  var d = rows.filter(function(r){ return statusEh(r.status, 'D-1'); }).length;
+  var p = [];
+  if(v) p.push(v + ' vencido(s)');
+  if(f) p.push(f + ' fatal(is)');
+  if(d) p.push(d + ' D-1');
+  return p.join(' · ') || '0';
+}
+function getPrazosVencidos(){
+  return (S.prazos || []).filter(function(r){ return statusEh(r.status, 'Vencido'); });
+}
 function getPrazosFataisED1(){
-  return (S.prazos || []).filter(function(r){ return statusEh(r.status, 'Fatal') || statusEh(r.status, 'D-1'); });
+  return (S.prazos || []).filter(function(r){ return statusEh(r.status, 'Vencido') || statusEh(r.status, 'Fatal') || statusEh(r.status, 'D-1'); });
 }
 
 function montarCorpoAlertaPrazo(rows, maxItens){
   var ordenadas = rows.slice().sort(function(a,b){
-    return String(a.status||'').localeCompare(String(b.status||'')) || String(a.data||'').localeCompare(String(b.data||''));
+    return (_ordAlerta(a) - _ordAlerta(b)) || String(a.data||'').localeCompare(String(b.data||''));
   });
   var cortadas = maxItens ? ordenadas.slice(0, maxItens) : ordenadas;
   var linhas = cortadas.map(function(r, i){
@@ -6771,7 +6818,7 @@ function montarCorpoAlertaPrazo(rows, maxItens){
   var aviso = restantes > 0
     ? '\n\n[+ ' + restantes + ' pendência(s) adicional(is) não incluída(s) por limite de tamanho do e-mail — texto completo copiado para a área de transferência, cole no corpo deste e-mail.]'
     : '';
-  return 'Prezados,\n\nSeguem os prazos FATAIS e D-1 pendentes de conclusão imediata, a partir da base sincronizada:\n\n'
+  return 'Prezados,\n\nSeguem os prazos VENCIDOS, FATAIS e D-1 pendentes de conclusão imediata, a partir da base sincronizada:\n\n'
     + linhas + aviso
     + '\n\nFavor regularizar com urgência.\n\nControladoria Jurídica — Peixoto & Cury Advogados';
 }
@@ -6779,9 +6826,7 @@ function montarCorpoAlertaPrazo(rows, maxItens){
 var LIMITE_TAMANHO_MAILTO_PRAZO = 1950;
 
 function montarMailtoAlertaPrazo(toAddr, ccAddr, rows, maxItens){
-  var qtdFatal = rows.filter(function(r){ return statusEh(r.status, 'Fatal'); }).length;
-  var qtdD1 = rows.filter(function(r){ return statusEh(r.status, 'D-1'); }).length;
-  var assunto = '🔴 Alerta de Prazos — ' + qtdFatal + ' Fatal(is) + ' + qtdD1 + ' D-1';
+  var assunto = '🔴 Alerta de Prazos — ' + _resumoAlerta(rows).replace(/ · /g, ' + ');
   var corpo = montarCorpoAlertaPrazo(rows, maxItens);
   var to = String(toAddr||'').replace(/\s*;\s*/g, ',');
   var cc = String(ccAddr||'').replace(/\s*;\s*/g, ',');
@@ -6818,10 +6863,11 @@ function ccParaResponsavel(rows){
 window.__alertasPrazoPorResp = {};
 window.__alertasPrazoPorGrupo = {};
 
-function dispararAlertasFataisD1(){
-  var pendentes = getPrazosFataisED1();
+function dispararAlertasFataisD1(lista, titulo){
+  var pendentes = Array.isArray(lista) ? lista : getPrazosFataisED1();
+  titulo = titulo || 'Alertas de Prazos — Vencidos, Fatais e D-1';
   if(!pendentes.length){
-    alert('Nenhum prazo Fatal ou D-1 encontrado. 🎉');
+    alert(Array.isArray(lista) ? 'Nenhum prazo encontrado. 🎉' : 'Nenhum prazo Vencido, Fatal ou D-1 encontrado. 🎉');
     return;
   }
 
@@ -6836,24 +6882,20 @@ function dispararAlertasFataisD1(){
   window.__alertasPrazoPorResp = agrupado;
 
   var total = pendentes.length;
-  var totalFatal = pendentes.filter(function(r){ return statusEh(r.status, 'Fatal'); }).length;
-  var totalD1 = pendentes.filter(function(r){ return statusEh(r.status, 'D-1'); }).length;
 
   var cards = nomes.map(function(nome){
     var rows = agrupado[nome];
-    var fatalQ = rows.filter(function(r){ return statusEh(r.status, 'Fatal'); }).length;
-    var d1Q = rows.filter(function(r){ return statusEh(r.status, 'D-1'); }).length;
     var grupos = Array.from(new Set(rows.map(function(r){ return r.grupo_processo; }).filter(Boolean)));
     var email = emailIndividualPorPrazo(rows[0]);
     var semEmail = !email;
-    var preview = rows.slice(0,4).map(function(r){
+    var preview = rows.slice().sort(function(a,b){ return _ordAlerta(a) - _ordAlerta(b); }).slice(0,4).map(function(r){
       return '<li><b>[' + e(r.status) + ']</b> ' + e(r.data||'-') + ' · ' + e(r.numero_processo||'-') + '<br><span>' + e(r.cliente||r.parte_principal||'-') + ' · ' + e(r.descricao_tarefa||'-') + '</span></li>';
     }).join('');
     var mais = rows.length > 4 ? '<div class="alerta-card-mais">+ ' + (rows.length-4) + ' pendência(s) neste e-mail</div>' : '';
     return '<div class="alerta-card-email">'
       + '<div class="alerta-card-top"><div>'
       + '<div class="alerta-card-email-destino">' + e(nome) + (semEmail ? ' <span style="color:#c62828;font-weight:700;">(e-mail não encontrado)</span>' : '') + '</div>'
-      + '<div class="alerta-card-meta">' + fatalQ + ' fatal(is) · ' + d1Q + ' D-1 · Grupo(s): ' + e(grupos.join(', ')||'-') + '</div>'
+      + '<div class="alerta-card-meta">' + _resumoAlerta(rows) + ' · Grupo(s): ' + e(grupos.join(', ')||'-') + '</div>'
       + '</div><div class="alerta-card-count">' + rows.length + '</div></div>'
       + '<ul class="alerta-card-lista">' + preview + '</ul>' + mais
       + '<div class="alerta-card-actions">'
@@ -6870,8 +6912,8 @@ function dispararAlertasFataisD1(){
     '<div class="alertas-designacao-box" role="dialog" aria-modal="true">'
     + '<div class="alertas-designacao-header"><div>'
     + '<div class="alertas-designacao-kicker">Controladoria Jurídica</div>'
-    + '<h2>Alertas de Prazos — Fatais e D-1</h2>'
-    + '<p>' + total + ' prazo(s) (' + totalFatal + ' fatal, ' + totalD1 + ' D-1), organizados em ' + nomes.length + ' responsável(is).</p>'
+    + '<h2>' + e(titulo) + '</h2>'
+    + '<p>' + total + ' prazo(s) (' + _resumoAlerta(pendentes) + '), organizados em ' + nomes.length + ' responsável(is).</p>'
     + '</div><button type="button" class="alertas-designacao-close" onclick="fecharPainelAlertasFataisD1()">×</button></div>'
     + '<div class="alertas-designacao-info">Clique em <b>“Abrir e-mail deste responsável”</b> para notificar cada responsável individualmente — cópia automática para o coordenador do grupo e para <b>prazos.trabalhista@peixotoecury.com.br</b>. Para um e-mail único por grupo, use <b>“Alertas por grupo”</b>.</div>'
     + '<div class="alertas-designacao-lista">' + cards + '</div>'
@@ -6899,10 +6941,11 @@ function copiarCorpoAlertaPrazoResp(nome){
   navigator.clipboard?.writeText(corpo).then(function(){ alert('Texto do alerta copiado.'); }).catch(function(){ alert(corpo); });
 }
 
-function abrirDashboardFataisD1PorGrupo(){
-  var pendentes = getPrazosFataisED1();
+function abrirDashboardFataisD1PorGrupo(lista, titulo){
+  var pendentes = Array.isArray(lista) ? lista : getPrazosFataisED1();
+  titulo = titulo || 'Alertas de Vencidos, Fatais e D-1 por Grupo';
   if(!pendentes.length){
-    alert('Nenhum prazo Fatal ou D-1 encontrado. 🎉');
+    alert(Array.isArray(lista) ? 'Nenhum prazo encontrado. 🎉' : 'Nenhum prazo Vencido, Fatal ou D-1 encontrado. 🎉');
     return;
   }
 
@@ -6918,12 +6961,10 @@ function abrirDashboardFataisD1PorGrupo(){
 
   var cards = gruposOrdenados.map(function(g){
     var rows = gruposMap[g];
-    var fatalQ = rows.filter(function(r){ return statusEh(r.status, 'Fatal'); }).length;
-    var d1Q = rows.filter(function(r){ return statusEh(r.status, 'D-1'); }).length;
     var cfg = window.emailMapeamento[g] || { para:'', cc:'prazos.trabalhista@peixotoecury.com.br' };
     var coordNome = (window.gestorNomeMapeamento && window.gestorNomeMapeamento[g]) || '-';
     var semCoord = !cfg.para;
-    var preview = rows.slice(0,5).map(function(r){
+    var preview = rows.slice().sort(function(a,b){ return _ordAlerta(a) - _ordAlerta(b); }).slice(0,5).map(function(r){
       return '<li><b>[' + e(r.status) + ']</b> ' + e(r.data||'-') + ' · ' + e(r.numero_processo||'-') + '<br><span>' + e(r.responsavel||'-') + ' · ' + e(r.cliente||r.parte_principal||'-') + '</span></li>';
     }).join('');
     var mais = rows.length > 5 ? '<div class="alerta-card-mais">+ ' + (rows.length-5) + ' pendência(s) neste grupo</div>' : '';
@@ -6932,7 +6973,7 @@ function abrirDashboardFataisD1PorGrupo(){
       + '<div class="designacao-grupo-nome">' + e(g) + '</div>'
       + '<div class="designacao-grupo-meta">Coordenador: ' + e(coordNome) + (semCoord ? ' <span style="color:#c62828;">(e-mail não mapeado)</span>' : '') + '</div>'
       + '</div><div class="designacao-grupo-count">' + rows.length + '</div></div>'
-      + '<div class="designacao-grupo-meta">' + fatalQ + ' fatal(is) · ' + d1Q + ' D-1</div>'
+      + '<div class="designacao-grupo-meta">' + _resumoAlerta(rows) + '</div>'
       + '<ul class="designacao-mini-list">' + preview + '</ul>' + mais
       + '<div class="alerta-card-actions">'
       + '<button type="button" class="alerta-btn-primary" ' + (semCoord?'disabled':'') + ' onclick="abrirEmailAlertaPrazoGrupo(\'' + g.replace(/'/g,"\\'") + '\')">Abrir e-mail do grupo</button>'
@@ -6947,7 +6988,7 @@ function abrirDashboardFataisD1PorGrupo(){
     '<div class="alertas-designacao-box" role="dialog" aria-modal="true">'
     + '<div class="alertas-designacao-header"><div>'
     + '<div class="alertas-designacao-kicker">Controladoria Jurídica</div>'
-    + '<h2>Alertas de Fatais/D-1 por Grupo</h2>'
+    + '<h2>' + e(titulo) + '</h2>'
     + '<p>Um e-mail por grupo, endereçado ao coordenador, com cópia para prazos.trabalhista@peixotoecury.com.br.</p>'
     + '</div><button type="button" class="alertas-designacao-close" onclick="fecharDashboardFataisD1PorGrupo()">×</button></div>'
     + '<div class="alertas-designacao-lista">' + cards + '</div>'
@@ -7113,7 +7154,8 @@ function depoisDas16hBrasilia(){
 }
 
 function getPrazosFataisApenas(){
-  return (S.prazos || []).filter(function(r){ return statusEh(r.status, 'Fatal'); });
+  // inclui os Vencidos: também precisam ser cobrados (pedido 22/10/2026)
+  return (S.prazos || []).filter(function(r){ return statusEh(r.status, 'Fatal') || statusEh(r.status, 'Vencido'); });
 }
 
 function montarCorpoAlertaFatal(rows, maxItens){
@@ -7130,13 +7172,13 @@ function montarCorpoAlertaFatal(rows, maxItens){
   var aviso = restantes > 0
     ? '\n\n[+ ' + restantes + ' pendência(s) adicional(is) não incluída(s) por limite de tamanho do e-mail — texto completo copiado para a área de transferência, cole no corpo deste e-mail.]'
     : '';
-  return 'Prezados,\n\nSeguem os prazos FATAIS pendentes de conclusão imediata, a partir da base sincronizada:\n\n'
+  return 'Prezados,\n\nSeguem os prazos VENCIDOS e FATAIS pendentes de conclusão imediata, a partir da base sincronizada:\n\n'
     + linhas + aviso
     + '\n\nFavor regularizar com urgência.\n\nControladoria Jurídica — Peixoto & Cury Advogados';
 }
 
 function montarMailtoAlertaFatal(toAddr, ccAddr, rows, maxItens){
-  var assunto = '🔴 Alerta de Prazos FATAIS — ' + rows.length + ' Fatal(is)';
+  var assunto = '🔴 Alerta de Prazos VENCIDOS e FATAIS — ' + _resumoAlerta(rows).replace(/ · /g, ' + ');
   var corpo = montarCorpoAlertaFatal(rows, maxItens);
   var to = String(toAddr||'').replace(/\s*;\s*/g, ',');
   var cc = String(ccAddr||'').replace(/\s*;\s*/g, ',');
@@ -7174,7 +7216,7 @@ window.__alertasFatalPorResp = {};
 function dispararAlertasFatais(){
   var pendentes = getPrazosFataisApenas();
   if(!pendentes.length){
-    alert('Nenhum prazo Fatal encontrado. 🎉');
+    alert('Nenhum prazo Vencido ou Fatal encontrado. 🎉');
     return;
   }
 
@@ -7205,7 +7247,7 @@ function dispararAlertasFatais(){
     return '<div class="alerta-card-email">'
       + '<div class="alerta-card-top"><div>'
       + '<div class="alerta-card-email-destino">' + e(nome) + (semEmail ? ' <span style="color:#c62828;font-weight:700;">(e-mail não encontrado)</span>' : '') + '</div>'
-      + '<div class="alerta-card-meta">' + rows.length + ' fatal(is) · Grupo(s): ' + e(grupos.join(', ')||'-') + '</div>'
+      + '<div class="alerta-card-meta">' + _resumoAlerta(rows) + ' · Grupo(s): ' + e(grupos.join(', ')||'-') + '</div>'
       + '</div><div class="alerta-card-count">' + rows.length + '</div></div>'
       + '<ul class="alerta-card-lista">' + preview + '</ul>' + mais
       + '<div class="alerta-card-actions">'
@@ -7222,8 +7264,8 @@ function dispararAlertasFatais(){
     '<div class="alertas-designacao-box" role="dialog" aria-modal="true">'
     + '<div class="alertas-designacao-header"><div>'
     + '<div class="alertas-designacao-kicker">Controladoria Jurídica</div>'
-    + '<h2>Alertas de Prazos — Fatais</h2>'
-    + '<p>' + total + ' prazo(s) fatal(is), organizados em ' + nomes.length + ' responsável(is).</p>'
+    + '<h2>Alertas de Prazos — Vencidos e Fatais</h2>'
+    + '<p>' + total + ' prazo(s) (' + _resumoAlerta(pendentes) + '), organizados em ' + nomes.length + ' responsável(is).</p>'
     + '</div><button type="button" class="alertas-designacao-close" onclick="fecharPainelAlertasFatais()">×</button></div>'
     + avisoCC
     + '<div class="alertas-designacao-info">Clique em <b>“Abrir e-mail deste responsável”</b> para notificar cada responsável individualmente — cópia automática para o coordenador do grupo e para <b>prazos.trabalhista@peixotoecury.com.br</b>.</div>'
@@ -7278,13 +7320,13 @@ function montarCorpoAlertaTodosFatais(rows, maxItens){
   var aviso = restantes > 0
     ? '\n\n[+ ' + restantes + ' pendência(s) adicional(is) não incluída(s) por limite de tamanho do e-mail — texto completo copiado para a área de transferência, cole no corpo deste e-mail.]'
     : '';
-  return 'Prezados,\n\nSeguem TODOS os prazos FATAIS pendentes de conclusão imediata, consolidados em um único e-mail para os responsáveis e coordenadores envolvidos:\n\n'
+  return 'Prezados,\n\nSeguem TODOS os prazos VENCIDOS e FATAIS pendentes de conclusão imediata, consolidados em um único e-mail para os responsáveis e coordenadores envolvidos:\n\n'
     + linhas + aviso
     + '\n\nFavor regularizar com urgência.\n\nControladoria Jurídica — Peixoto & Cury Advogados';
 }
 
 function montarMailtoAlertaTodosFatais(toAddr, ccAddr, rows, maxItens){
-  var assunto = '🔴 Alerta de Prazos FATAIS — TODOS OS RESPONSÁVEIS (' + rows.length + ' fatal(is))';
+  var assunto = '🔴 Alerta de Prazos VENCIDOS e FATAIS — TODOS OS RESPONSÁVEIS (' + _resumoAlerta(rows) + ')';
   var corpo = montarCorpoAlertaTodosFatais(rows, maxItens);
   var to = String(toAddr||'').replace(/\s*;\s*/g, ',');
   var cc = String(ccAddr||'').replace(/\s*;\s*/g, ',');
@@ -7322,7 +7364,7 @@ window.__alertaTodosFataisRows = [];
 function dispararAlertaTodosFataisJunto(){
   var pendentes = getPrazosFataisApenas();
   if(!pendentes.length){
-    alert('Nenhum prazo Fatal encontrado. 🎉');
+    alert('Nenhum prazo Vencido ou Fatal encontrado. 🎉');
     return;
   }
   window.__alertaTodosFataisRows = pendentes;
@@ -7345,7 +7387,7 @@ function dispararAlertaTodosFataisJunto(){
 
   var card = '<div class="designacao-grupo-card designacao-critico">'
     + '<div class="designacao-grupo-top"><div>'
-    + '<div class="designacao-grupo-nome">Todos os Responsáveis com Fatal</div>'
+    + '<div class="designacao-grupo-nome">Todos os Responsáveis com Vencido ou Fatal</div>'
     + '<div class="designacao-grupo-meta">' + responsaveis.length + ' responsável(is) · ' + gruposEnvolvidos.length + ' grupo(s)' + (semEmailCount ? ' · <span style="color:#c62828;">' + semEmailCount + ' sem e-mail mapeado</span>' : '') + '</div>'
     + '</div><div class="designacao-grupo-count">' + pendentes.length + '</div></div>'
     + '<ul class="designacao-mini-list">' + preview + '</ul>' + mais
@@ -7362,8 +7404,8 @@ function dispararAlertaTodosFataisJunto(){
     '<div class="alertas-designacao-box" role="dialog" aria-modal="true">'
     + '<div class="alertas-designacao-header"><div>'
     + '<div class="alertas-designacao-kicker">Controladoria Jurídica</div>'
-    + '<h2>Alerta Único — Todos os Fatais</h2>'
-    + '<p>' + pendentes.length + ' prazo(s) fatal(is) em um único e-mail, para todos os responsáveis com CC aos coordenadores.</p>'
+    + '<h2>Alerta Único — Todos os Vencidos e Fatais</h2>'
+    + '<p>' + pendentes.length + ' prazo(s) (' + _resumoAlerta(pendentes) + ') em um único e-mail, para todos os responsáveis com CC aos coordenadores.</p>'
     + '</div><button type="button" class="alertas-designacao-close" onclick="fecharPainelAlertaTodosFatais()">×</button></div>'
     + avisoCC
     + '<div class="alertas-designacao-info">Um único e-mail para <b>todos os responsáveis</b> com fatal, com cópia automática para o(s) coordenador(es) de cada grupo envolvido e para <b>prazos.trabalhista@peixotoecury.com.br</b>.</div>'
@@ -7403,6 +7445,7 @@ window.reagendamentoMapeamento = {
   'Grupo B3': { email: 'nicolau.coelho@peixotoecury.com.br', cc: 'prazos.trabalhista@peixotoecury.com.br' },
   'Grupo C1': { email: 'rafael.camargo@peixotoecury.com.br', cc: 'prazos.trabalhista@peixotoecury.com.br' },
   'Grupo C2': { email: 'rafael.camargo@peixotoecury.com.br', cc: 'prazos.trabalhista@peixotoecury.com.br' },
+  'Grupo C3': { email: 'rafael.camargo@peixotoecury.com.br', cc: 'prazos.trabalhista@peixotoecury.com.br' },
   'Grupo C': { email: 'rafael.camargo@peixotoecury.com.br', cc: 'prazos.trabalhista@peixotoecury.com.br' },
   'Grupo D1': { email: 'andre.alessandro@peixotoecury.com.br', cc: 'prazos.trabalhista@peixotoecury.com.br' },
   'Grupo D': { email: 'andre.alessandro@peixotoecury.com.br', cc: 'prazos.trabalhista@peixotoecury.com.br' },
@@ -7956,7 +7999,7 @@ var TP_EMAIL_SUPORTE = 'suporte@legalmanager.com.br';
 var TP_EMAIL_CC = 'prazos.trabalhista@peixotoecury.com.br';
 var TP_STATUS_OPCOES = ['Vencido','Fatal','D-1','D-2','Futuro'];
 var TP_SITUACAO_OPCOES = ['Andamento','Encerrado'];
-var TP_GRUPO_OPCOES = ['Grupo A1','Grupo A2','Grupo A3','Grupo B1','Grupo B2','Grupo B3','Grupo C1','Grupo C2','Grupo E1','Grupo E2'];
+var TP_GRUPO_OPCOES = ['Grupo A1','Grupo A2','Grupo A3','Grupo B1','Grupo B2','Grupo B3','Grupo C1','Grupo C2','Grupo C3','Grupo E1','Grupo E2'];
 
 function _tpNorm(s){ return normTxt(s).replace(/ /g,''); }
 
@@ -8686,6 +8729,24 @@ function renderD1Painel() {
   renderPg('pg-d1',pg,pages,total,'d1',renderD1Painel);
 }
 
+function renderVencidosPrazo(){
+  if(!V('body-venc')) return;
+  const srch=(V('venc-s')?.value||'').toLowerCase();
+  const grupo=V('venc-grupo')?.value||'';
+  const base=applyGF(S.prazos).filter(r=>statusEh(r.status, 'Vencido'));
+  const gs=[...new Set(base.map(r=>r.grupo_processo).filter(Boolean))].sort();
+  V('venc-grupo').innerHTML='<option value="">Todos os grupos</option>'+gs.map(x=>`<option value="${e(x)}"${x===grupo?' selected':''}>${e(x)}</option>`).join('');
+  let data=base;
+  if(grupo) data=data.filter(r=>r.grupo_processo===grupo);
+  if(srch)  data=data.filter(r=>[r.responsavel,r.numero_processo,r.cliente,r.parte_principal,r.descricao_tarefa].join(' ').toLowerCase().includes(srch));
+  data=data.slice().sort((a,b)=>String(a.data||'').localeCompare(String(b.data||'')));
+  V('ct-venc-det').textContent=data.length+' registros';
+  const hoje=refHoje();
+  const atraso=r=>{const m=String(r.data||'').match(/^(\d{4})-(\d{2})-(\d{2})/)||String(r.data||'').match(/^(\d{2})\/(\d{2})\/(\d{4})/);if(!m)return '—';
+    const d=m[1].length===4?new Date(+m[1],+m[2]-1,+m[3]):new Date(+m[3],+m[2]-1,+m[1]);const n=-diasUteisDiff(d,hoje)-1;return n>0?n:'—';};
+  V('body-venc').innerHTML=data.length?data.map(r=>`<tr><td>${e(r.responsavel||'—')}</td><td>${e(r.numero_processo||'—')}</td><td>${e(r.cliente||r.parte_principal||'—')}</td><td>${e(r.descricao_tarefa||'—')}</td><td>${e(r.data||'—')}</td><td style="text-align:center;font-weight:700;color:#7b0000;">${atraso(r)}</td><td>${e(r.grupo_processo||'—')}</td></tr>`).join('')
+    :'<tr><td colspan="7" style="text-align:center;color:#2e7d32;padding:18px;">Nenhum prazo vencido. 🎉</td></tr>';
+}
 function renderFatais() {
   const srch=(V('fatal-s')?.value||'').toLowerCase();
   const resp=V('fatal-resp')?.value||'';
@@ -8697,6 +8758,7 @@ function renderFatais() {
   if(uf)    data=data.filter(r=>ufDoProcesso(r.numero_processo)===uf);
   if(srch)  data=data.filter(r=>[r.responsavel,r.numero_processo,r.cliente,r.parte_principal,r.descricao_tarefa].join(' ').toLowerCase().includes(srch));
   V('ct-fatal-det').textContent=data.length+' registros';
+  try{ renderVencidosPrazo(); }catch(_e){}
   const {slice,pg,pages,total}=pgSlice(data,'fatal');
   V('body-fatal').innerHTML=slice.length?slice.map((r,idx)=>{
     const audId = r.numero_processo + '_' + (r.responsavel || '').replace(/\s+/g, '_');
@@ -10308,7 +10370,7 @@ renderAll = function() {
 
 <script>
 const PC_PROFISSIONAIS = [{"matricula": "AAO", "nome": "Aline Amorim Oliveira ", "login": "aline.oliveira@peixotoecury.com.br", "grupo": "Grupo A3", "coordenador": "sofia.freire@peixotoecury.com.br"}, {"matricula": "ABR", "nome": "Aline Cunha de Oliveira Borges", "login": "aline.borges@peixotoecury.com.br", "grupo": "Grupo B1", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "ALF", "nome": "Aline Ferreira Miron", "login": "aline.miron@peixotoecury.com.br", "grupo": "Grupo E1", "coordenador": "keyla.moraes@peixotoecury.com.br"}, {"matricula": "ALH", "nome": "Alícia Marcondes Hamati", "login": "alicia.hamati@peixotoecury.com.br", "grupo": "Grupo A3", "coordenador": "sofia.freire@peixotoecury.com.br"}, {"matricula": "AML", "nome": "Amanda Mesquita de Lima Araujo ", "login": "amanda.araujo@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "ANB", "nome": "Anna Carolina Balbino Gatti Baani", "login": "annacarolina.baani@peixotoecury.com.br", "grupo": "Grupo B2", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "ARC", "nome": "Arthur Rodrigues Rios Toledo de Castro", "login": "arthur.castro@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "ATC", "nome": "Ana Julia Thomaz Carmona ", "login": "anajulia.carmona@peixotoecury.com.br", "grupo": "Grupo A1", "coordenador": "natalia.gaggini@peixotoecury.com.br"}, {"matricula": "BBO", "nome": "Bianca Bolanhi Camacho", "login": "bianca.camacho@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "BCF", "nome": "Bruna Cembranelli Fazenda ", "login": "bruna.fazenda@peixotoecury.com.br", "grupo": "Grupo B2", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "BFM", "nome": "Brenna Braga Freitas Malta", "login": "brenna.malta@peixotoecury.com.br", "grupo": "Grupo B3", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "BSO", "nome": "Beatriz Santiago de Souza", "login": "beatriz.souza@peixotoecury.com.br", "grupo": "Grupo B1", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "BSS", "nome": "Brenda da Silva dos Santos", "login": "brenda.santos@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "CAL", "nome": "Camila Alves Magalhães de Paula", "login": "camila.paula@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "CAR", "nome": "Chris Carvalho", "login": "chris.carvalho@peixotoecury.com.br", "grupo": "Grupo A3", "coordenador": "sofia.freire@peixotoecury.com.br"}, {"matricula": "CGV", "nome": "Cícera Gabriela Ferreira Vicente", "login": "cicera.vicente@peixotoecury.com.br", "grupo": "Grupo B1", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "DJE", "nome": "Diana de Jesus Santos", "login": "diana.santos@peixotoecury.com.br", "grupo": "Grupo E1", "coordenador": "keyla.moraes@peixotoecury.com.br"}, {"matricula": "DPR", "nome": "Daniela Prandi Pedro Ricca ", "login": "daniela.ricca@peixotoecury.com.br", "grupo": "Grupo E1", "coordenador": "keyla.moraes@peixotoecury.com.br"}, {"matricula": "ECO", "nome": "Erik Mota Coppi", "login": "erik.coppi@peixotoecury.com.br", "grupo": "Grupo C", "coordenador": "sofia.freire@peixotoecury.com.br"}, {"matricula": "EMM", "nome": "Ellen Mary Maciel Silva", "login": "ellenmary.silva@peixotoecury.com.br", "grupo": "Grupo E1", "coordenador": "keyla.moraes@peixotoecury.com.br"}, {"matricula": "EVV", "nome": "Evandro Vecchio Vessoni", "login": "evandro.vessoni@peixotoecury.com.br", "grupo": "Grupo B1", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "EYN", "nome": "Erick Yuji Nakama", "login": "erick.nakama@peixotoecury.com.br", "grupo": "Grupo A2", "coordenador": "natalia.gaggini@peixotoecury.com.br"}, {"matricula": "FFI", "nome": "Fabiano Fritz Ferreira Filho", "login": "fabiano.filho@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "FLS", "nome": "Fabrício Lima da Silva", "login": "fabricio.silva@peixotoecury.com.br", "grupo": "Grupo E1", "coordenador": "keyla.moraes@peixotoecury.com.br"}, {"matricula": "GFO", "nome": "Gabriel Fretas de Oliveira", "login": "gabriel.oliveira@peixotoecury.com.br", "grupo": "Grupo E1", "coordenador": "keyla.moraes@peixotoecury.com.br"}, {"matricula": "GIF", "nome": "Giovanna Teixeira Franco", "login": "giovanna.teixeira@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "GIO", "nome": "Giovanni Comunale Oliveira", "login": "giovanni.oliveira@peixotoecury.com.br", "grupo": "Grupo A1", "coordenador": "natalia.gaggini@peixotoecury.com.br"}, {"matricula": "GMG", "nome": "Giovanna Malheiros Gatto", "login": "giovanna.gatto@peixotoecury.com.br", "grupo": "Grupo B1", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "GSF", "nome": "Gisela da Silva Freire", "login": "gisela.freire@peixotoecury.com.br", "grupo": "Sócios", "coordenador": "gisela.freire@peixotoecury.com.br"}, {"matricula": "GSI", "nome": "Geovanna Rodrigues Silva", "login": "geovanna.rodrigues@peixotoecury.com.br", "grupo": "Grupo B2", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "GSM", "nome": "Guilherme Silva Morimoto", "login": "guilherme.morimoto@peixotoecury.com.br", "grupo": "Grupo B1", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "GSP", "nome": "Gabriela de Souza Pedroso", "login": "gabriela.pedroso@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "GVM", "nome": "Giulia Vendramini Milani", "login": "giulia.milani@peixotoecury.com.br", "grupo": "Grupo E1", "coordenador": "keyla.moraes@peixotoecury.com.br"}, {"matricula": "HAS", "nome": "Hanyelle Alves da Silva", "login": "hanyelle.silva@peixotoecury.com.br", "grupo": "Grupo A1", "coordenador": "natalia.gaggini@peixotoecury.com.br"}, {"matricula": "HRP", "nome": "Henrique Remorini Pantuzo", "login": "henrique.pantuzo@peixotoecury.com.br", "grupo": "Grupo A1", "coordenador": "natalia.gaggini@peixotoecury.com.br"}, {"matricula": "IGA", "nome": "Isadora Silva Gagliardi", "login": "isadora.gagliardi@peixotoecury.com.br", "grupo": "Grupo B2", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "JJM", "nome": "Jaqueline Jahel Moraes", "login": "jaqueline.moraes@peixotoecury.com.br", "grupo": "Grupo A1", "coordenador": "natalia.gaggini@peixotoecury.com.br"}, {"matricula": "JJS", "nome": "Jenifer de Jesus Silva", "login": "jenifer.silva@peixotoecury.com.br", "grupo": "Grupo B1", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "JLM", "nome": "Juan Leonardo Ikier Moraes", "login": "juanleonardo.moraes@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "JPE", "nome": "Juliana Perucci ", "login": "juliana.perucci@peixotoecury.com.br", "grupo": "Grupo B1", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "JPL", "nome": "Júlia Priego Lopes da Silva", "login": "julia.priego@peixotoecury.com.br", "grupo": "Grupo E1", "coordenador": "keyla.moraes@peixotoecury.com.br"}, {"matricula": "JQS", "nome": "Jessica Cerqueira Silva", "login": "jessica.cerqueira@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "JRM", "nome": "Joice Ramos Miranda", "login": "joice.miranda@peixotoecury.com.br", "grupo": "Grupo E1", "coordenador": "keyla.moraes@peixotoecury.com.br"}, {"matricula": "JRT", "nome": "Jackeline Romeu Torres", "login": "jackeline.torres@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "KBM", "nome": "Keyla Maria Barbosa Silva Moraes", "login": "keyla.moraes@peixotoecury.com.br", "grupo": "Grupo E1", "coordenador": "keyla.moraes@peixotoecury.com.br"}, {"matricula": "KTO", "nome": "Karoline de Castro Torres", "login": "karoline.torres@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "LCG", "nome": "Lorena Rodrigues Costa Gonçalves", "login": "lorena.goncalves@peixotoecury.com.br", "grupo": "Grupo B1", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "LLL", "nome": "Larissa Lekich Lobenwein", "login": "larissa.lekich@peixotoecury.com.br", "grupo": "Grupo E1", "coordenador": "keyla.moraes@peixotoecury.com.br"}, {"matricula": "LMI", "nome": "Letícia Meneghini Fontes ", "login": "leticia.fontes@peixotoecury.com.br", "grupo": "Grupo B3", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "LPJ", "nome": "Leonardo Pereira de Jesus", "login": "leonardo.jesus@peixotoecury.com.br", "grupo": "Grupo E1", "coordenador": "keyla.moraes@peixotoecury.com.br"}, {"matricula": "MBF", "nome": "Mariana Borges de Menezes Fávaro", "login": "mariana.favaro@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "MCD", "nome": "Maria Carolina Silva Santos Dias", "login": "mariacarolina.dias@peixotoecury.com.br", "grupo": "Grupo B2", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "MJT", "nome": "Matheus de Jesus Trindade ", "login": "matheus.trindade@peixotoecury.com.br", "grupo": "Grupo E1", "coordenador": "keyla.moraes@peixotoecury.com.br"}, {"matricula": "MNB", "nome": "Marina de Novaes Brechiani", "login": "marina.brechiani@peixotoecury.com.br", "grupo": "Grupo A1", "coordenador": "natalia.gaggini@peixotoecury.com.br"}, {"matricula": "MTM", "nome": "Marcel Tadeu Matos Alves da Silva", "login": "marcel.alves@peixotoecury.com.br", "grupo": "Sócios", "coordenador": "antoniocarlos.aguiar@peixotoecury.com.br, marcel.alves@peixotoecury.com.br, poliana.banqueri@peixotoecury.com.br"}, {"matricula": "NBB", "nome": "Natalia Bezerra Baliero", "login": "natalia.baliero@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "NBG", "nome": "Natália Biondi Gaggini Robles", "login": "natalia.gaggini@peixotoecury.com.br", "grupo": "Grupo A2", "coordenador": "natalia.gaggini@peixotoecury.com.br"}, {"matricula": "NLO", "nome": "Nathalie Louise dos Santos Rodrigues Dias ", "login": "nathalie.louise@peixotoecury.com.br", "grupo": "Grupo E1", "coordenador": "keyla.moraes@peixotoecury.com.br"}, {"matricula": "NRG", "nome": "Nicolau Rafael Guimarães Coelho", "login": "nicolau.coelho@peixotoecury.com.br", "grupo": "Grupo B1, B2 e B3", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "PBS", "nome": "Poliana Banqueri da Silva Guimarães", "login": "poliana.banqueri@peixotoecury.com.br", "grupo": "Sócios", "coordenador": "antoniocarlos.aguiar@peixotoecury.com.br, marcel.alves@peixotoecury.com.br, poliana.banqueri@peixotoecury.com.br"}, {"matricula": "PSI", "nome": "Paloma da Silva Santos", "login": "paloma.santos@peixotoecury.com.br", "grupo": "Grupo E1", "coordenador": "keyla.moraes@peixotoecury.com.br"}, {"matricula": "RCF", "nome": "Rafael Camargo Felisbino", "login": "rafael.camargo@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "RFE", "nome": "Rafael Rocha Ferreira", "login": "rafael.ferreira@peixotoecury.com.br", "grupo": "Grupo B1", "coordenador": "sofia.freire@peixotoecury.com.br"}, {"matricula": "RFK", "nome": "Raica Fernandes Kwok", "login": "raica.kwok@peixotoecury.com.br", "grupo": "Grupo B3", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "RRU", "nome": "Richard Ruan Leo da Silva", "login": "richard.silva@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "RSN", "nome": "Rodrigo Souichi Nishijima", "login": "rodrigo.nishijima@peixotoecury.com.br", "grupo": "Grupo B1", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "RWD", "nome": "Rafaella Wittmann Domenicis", "login": "rafaella.domenicis@peixotoecury.com.br", "grupo": "Grupo B2", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "RYL", "nome": "Rafael Yepez do Lago", "login": "rafael.lago@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "SOF", "nome": "Sofia Freire ", "login": "sofia.freire@peixotoecury.com.br", "grupo": "Grupo A3", "coordenador": "sofia.freire@peixotoecury.com.br"}, {"matricula": "TCE", "nome": "Thais Catharine Cardozo Esteves", "login": "thais.esteves@peixotoecury.com.br", "grupo": "Grupo A1", "coordenador": "natalia.gaggini@peixotoecury.com.br"}, {"matricula": "TCO", "nome": "Tamires Lins Costa", "login": "tamireslins.costa@peixotoecury.com.br", "grupo": "Grupo E1", "coordenador": "keyla.moraes@peixotoecury.com.br"}, {"matricula": "TFR", "nome": "Thiago Frid Figueiredo Rossi", "login": "thiago.rossi@peixotoecury.com.br", "grupo": "Grupo C", "coordenador": "sofia.freire@peixotoecury.com.br"}, {"matricula": "TNE", "nome": "Tabata Neves Caramelli", "login": "tabata.caramelli@peixotoecury.com.br", "grupo": "Grupo A2", "coordenador": "natalia.gaggini@peixotoecury.com.br"}, {"matricula": "KNM", "nome": "Karine Nitopi Monteiro", "login": "karine.monteiro@peixotoecury.com.br", "grupo": "Grupo A2", "coordenador": "natalia.gaggini@peixotoecury.com.br"}, {"matricula": "VAR", "nome": "Vitoria Araujo Carvalho", "login": "vitoria.carvalho@peixotoecury.com.br", "grupo": "Grupo B1", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "VCR", "nome": "Vanessa de Cassia Castrequini Rosa", "login": "vanessa.rosa@peixotoecury.com.br", "grupo": "Grupo B2", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "VGA", "nome": "Vinicius Ferreira Garcia", "login": "vinicius.garcia@peixotoecury.com.br", "grupo": "Grupo A1", "coordenador": "natalia.gaggini@peixotoecury.com.br"}, {"matricula": "VRO", "nome": "Vinícius Ronchi Arruda", "login": "vinicius.ronchi@peixotoecury.com.br", "grupo": "Grupo E1", "coordenador": "keyla.moraes@peixotoecury.com.br"}, {"matricula": "VSI", "nome": "Vinicius da Silva Cerqueira", "login": "vinicius.dasilva@peixotoecury.com.br", "grupo": "Grupo C", "coordenador": "sofia.freire@peixotoecury.com.br"}, {"matricula": "WSF", "nome": "Washington Soares Silva Filho", "login": "washington.soares@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "JCV", "nome": "Julio Cesar Valadares dos Santos", "login": "juliocesar.santos@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "BPO", "nome": "Bianca Pimentel de Oliveira", "login": "bianca.oliveira@peixotoecury.com.br", "grupo": "Grupo A1", "coordenador": "natalia.gaggini@peixotoecury.com.br"}, {"matricula": "BTO", "nome": "Breno Athaide Torquato", "login": "breno.torquato@peixotoecury.com.br", "grupo": "Grupo A1", "coordenador": "natalia.gaggini@peixotoecury.com.br"}, {"matricula": "JUR", "nome": "Julio Cesar Ferreira Rodrigues", "login": "juliocesar.rodrigues@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "JNO", "nome": "Jennifer Nogueira", "login": "jennifer.nogueira@peixotoecury.com.br", "grupo": "Grupo B1", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "LUC", "nome": "Lucas Gusthavo Caliman", "login": "lucas.caliman@peixotoecury.com.br", "grupo": "Grupo B2", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "LUN", "nome": "Luna Martins Coelho", "login": "luna.coelho@peixotoecury.com.br", "grupo": "Grupo B2", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "TAR", "nome": "Thais Amaral Rocca", "login": "thais.rocca@peixotoecury.com.br", "grupo": "Grupo B1", "coordenador": "nicolau.coelho@peixotoecury.com.br"}, {"matricula": "LWP", "nome": "Lucas Willott Pereira", "login": "lucas.pereira@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "BTF", "nome": "Bruno Tanganelli Farah", "login": "bruno.farah@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "EGR", "nome": "Edjan Goncalves dos Reis", "login": "edjan.reis@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "GBR", "nome": "Gabriel Lopes de Brito", "login": "gabriel.brito@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "LSC", "nome": "Lucas Santos de Carvalho", "login": "lucas.carvalho@peixotoecury.com.br", "grupo": "Grupo E2", "coordenador": "washington.soares@peixotoecury.com.br"}, {"matricula": "NFS", "nome": "Natalia Santos", "login": "natalia.santos@peixotoecury.com.br", "grupo": "Grupo E1", "coordenador": "keyla.moraes@peixotoecury.com.br"}];
-const PC_GRUPOS_VALIDOS = ["Grupo A1", "Grupo A2", "Grupo A3", "Grupo B1", "Grupo B1, B2 e B3", "Grupo B2", "Grupo B3", "Grupo C", "Grupo C1", "Grupo C2", "Grupo E1", "Grupo E2", "Sócios"];
+const PC_GRUPOS_VALIDOS = ["Grupo A1", "Grupo A2", "Grupo A3", "Grupo B1", "Grupo B1, B2 e B3", "Grupo B2", "Grupo B3", "Grupo C", "Grupo C1", "Grupo C2", "Grupo C3", "Grupo E1", "Grupo E2", "Sócios"];
 const SUPABASE_URL = 'https://rpibvjcnrseuugpkfmdj.supabase.co';
 const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJwaWJ2amNucnNldXVncGtmbWRqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODE1NTc3MTcsImV4cCI6MjA5NzEzMzcxN30.ecihol8JESMH7cgFSvWKIzp-OwoPRFqdK3aCDwpCeg8';
 
@@ -10582,7 +10644,9 @@ document.addEventListener('DOMContentLoaded', function(){
     const vals = fields.map(low).filter(Boolean);
     return toks.some(t => vals.some(v => {
       if(v === t) return true;
-      if(v.includes(t)) return true;
+      // Só permite val conter token se o token for substancial (≥5 chars) — sigla curta (ex: "luc") casava
+      // dentro de qualquer nome ("LUCas Willott", "LUCas Santos") e o Meu Painel mostrava tarefas de outras pessoas
+      if(t.length >= 5 && v.includes(t)) return true;
       // Só permite token conter val se val for substancial (≥5 chars) — evita siglas de 3 chars batendo como substring no login
       if(v.length >= 5 && t.includes(v)) return true;
       return false;
