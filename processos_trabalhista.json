@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-23T08:30:21",
+  "atualizado_em": "2026-10-23T08:45:23",
   "kpis": {
     "total_andamento": 7666,
     "entradas_hoje": 0,
-    "saidas_hoje": 0,
+    "saidas_hoje": 1,
     "entradas_ontem": 18,
     "saidas_ontem": 8,
     "entradas_mes": 260,
-    "saidas_mes": 116,
+    "saidas_mes": 117,
     "entradas_mes_anterior": 319,
-    "saidas_mes_anterior": 1023,
-    "valor_causa_total": 1783264089.17,
-    "saldo_mes": 144
+    "saidas_mes_anterior": 1022,
+    "valor_causa_total": 1783569844.68,
+    "saldo_mes": 143
   },
   "serie_diaria": [
     {
@@ -152,7 +152,7 @@
     {
       "data": "2026-09-21",
       "entradas": 29,
-      "saidas": 31
+      "saidas": 30
     },
     {
       "data": "2026-09-22",
@@ -312,27 +312,27 @@
     {
       "data": "2026-10-23",
       "entradas": 0,
-      "saidas": 0
+      "saidas": 1
     }
   ],
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2155,
+      "andamento": 2154,
       "entradas_mes": 85,
-      "saidas_mes": 32,
+      "saidas_mes": 33,
       "entradas_mes_anterior": 118,
       "saidas_mes_anterior": 96,
-      "valor_causa": 477998066.13
+      "valor_causa": 477864418.91
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1816,
+      "andamento": 1817,
       "entradas_mes": 46,
       "saidas_mes": 42,
       "entradas_mes_anterior": 60,
-      "saidas_mes_anterior": 46,
-      "valor_causa": 310242314.42
+      "saidas_mes_anterior": 45,
+      "valor_causa": 310681717.15
     },
     {
       "nome": "Grupo B1",
@@ -464,21 +464,21 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5794,
+      "andamento": 5795,
       "entradas_mes": 150,
       "saidas_mes": 94,
       "entradas_mes_anterior": 190,
-      "saidas_mes_anterior": 843,
-      "valor_causa": 1380785980.27
+      "saidas_mes_anterior": 842,
+      "valor_causa": 1381225383.0
     },
     {
       "nome": "MG",
-      "andamento": 553,
+      "andamento": 552,
       "entradas_mes": 22,
-      "saidas_mes": 11,
+      "saidas_mes": 12,
       "entradas_mes_anterior": 36,
       "saidas_mes_anterior": 22,
-      "valor_causa": 137766622.88
+      "valor_causa": 137632975.66
     },
     {
       "nome": "PR",
@@ -729,10 +729,10 @@
       "nome": "Recurso",
       "andamento": 2985,
       "entradas_mes": 6,
-      "saidas_mes": 21,
+      "saidas_mes": 22,
       "entradas_mes_anterior": 3,
-      "saidas_mes_anterior": 388,
-      "valor_causa": 673112787.72
+      "saidas_mes_anterior": 387,
+      "valor_causa": 673418543.23
     },
     {
       "nome": "Execução",
@@ -1179,22 +1179,22 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo E1",
-      "andamento": 750,
+      "andamento": 751,
       "entradas_mes": 0,
       "saidas_mes": 10,
       "entradas_mes_anterior": 2,
-      "saidas_mes_anterior": 8,
-      "valor_causa": 110519456.83
+      "saidas_mes_anterior": 7,
+      "valor_causa": 110958859.56
     },
     {
       "fase": "Recurso",
       "grupo": "Grupo E2",
-      "andamento": 592,
+      "andamento": 591,
       "entradas_mes": 3,
-      "saidas_mes": 8,
+      "saidas_mes": 9,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 14,
-      "valor_causa": 187334937.11
+      "valor_causa": 187201289.89
     },
     {
       "fase": "Recurso",
@@ -1367,12 +1367,12 @@
     },
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 373,
+      "andamento": 372,
       "entradas_mes": 25,
-      "saidas_mes": 5,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 29,
       "saidas_mes_anterior": 28,
-      "valor_causa": 51435878.14
+      "valor_causa": 51302230.92
     },
     {
       "nome": "Letícia Meneghini Fontes (LMI)",
@@ -1493,12 +1493,12 @@
     },
     {
       "nome": "Paloma da Silva Santos(PSI)",
-      "andamento": 259,
+      "andamento": 260,
       "entradas_mes": 18,
       "saidas_mes": 8,
       "entradas_mes_anterior": 11,
-      "saidas_mes_anterior": 11,
-      "valor_causa": 57209411.05
+      "saidas_mes_anterior": 10,
+      "valor_causa": 57648813.78
     },
     {
       "nome": "Mariana Borges de Menezes Fávaro(MBF)",
@@ -1748,12 +1748,12 @@
     },
     {
       "nome": "BP BIOENERGIA",
-      "andamento": 762,
+      "andamento": 761,
       "entradas_mes": 25,
-      "saidas_mes": 13,
+      "saidas_mes": 14,
       "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 36,
-      "valor_causa": 216162622.04,
+      "valor_causa": 216028974.82,
       "alerta_entrada": false
     },
     {
@@ -1778,12 +1778,12 @@
     },
     {
       "nome": "MAHLE METAL - MOGI",
-      "andamento": 367,
+      "andamento": 368,
       "entradas_mes": 14,
       "saidas_mes": 11,
       "entradas_mes_anterior": 13,
-      "saidas_mes_anterior": 10,
-      "valor_causa": 75012921.17,
+      "saidas_mes_anterior": 9,
+      "valor_causa": 75452323.9,
       "alerta_entrada": false
     },
     {
@@ -2964,12 +2964,12 @@
     {
       "grupo": "Grupo E1",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 366,
+      "andamento": 367,
       "entradas_mes": 13,
       "saidas_mes": 11,
       "entradas_mes_anterior": 13,
-      "saidas_mes_anterior": 10,
-      "valor_causa": 74862921.17,
+      "saidas_mes_anterior": 9,
+      "valor_causa": 75302323.9,
       "alerta_entrada": false
     },
     {
@@ -3195,12 +3195,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "BP BIOENERGIA",
-      "andamento": 762,
+      "andamento": 761,
       "entradas_mes": 25,
-      "saidas_mes": 13,
+      "saidas_mes": 14,
       "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 36,
-      "valor_causa": 216162622.04,
+      "valor_causa": 216028974.82,
       "alerta_entrada": false
     },
     {
@@ -4257,12 +4257,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Paloma da Silva Santos(PSI)",
-      "andamento": 258,
+      "andamento": 259,
       "entradas_mes": 17,
       "saidas_mes": 8,
       "entradas_mes_anterior": 11,
-      "saidas_mes_anterior": 10,
-      "valor_causa": 57059411.05
+      "saidas_mes_anterior": 9,
+      "valor_causa": 57498813.78
     },
     {
       "grupo": "Grupo E1",
@@ -4367,12 +4367,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 373,
+      "andamento": 372,
       "entradas_mes": 25,
-      "saidas_mes": 5,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 29,
       "saidas_mes_anterior": 28,
-      "valor_causa": 51435878.14
+      "valor_causa": 51302230.92
     },
     {
       "grupo": "Grupo E2",
@@ -5149,12 +5149,12 @@
     {
       "estado": "MG",
       "cliente": "BP BIOENERGIA",
-      "andamento": 221,
+      "andamento": 220,
       "entradas_mes": 9,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 6,
-      "valor_causa": 83945023.39
+      "valor_causa": 83811376.17
     },
     {
       "estado": "MG",
@@ -6539,12 +6539,12 @@
     {
       "estado": "SP",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 366,
+      "andamento": 367,
       "entradas_mes": 14,
       "saidas_mes": 11,
       "entradas_mes_anterior": 13,
-      "saidas_mes_anterior": 10,
-      "valor_causa": 75012921.17
+      "saidas_mes_anterior": 9,
+      "valor_causa": 75452323.9
     },
     {
       "estado": "SP",
