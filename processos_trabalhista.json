@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-23T18:00:23",
+  "atualizado_em": "2026-10-23T18:15:29",
   "kpis": {
-    "total_andamento": 7659,
-    "entradas_hoje": 8,
+    "total_andamento": 7661,
+    "entradas_hoje": 10,
     "saidas_hoje": 17,
     "entradas_ontem": 20,
     "saidas_ontem": 8,
-    "entradas_mes": 269,
+    "entradas_mes": 271,
     "saidas_mes": 133,
     "entradas_mes_anterior": 319,
     "saidas_mes_anterior": 1022,
-    "valor_causa_total": 1785761669.41,
-    "saldo_mes": 136
+    "valor_causa_total": 1785791669.42,
+    "saldo_mes": 138
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-10-23",
-      "entradas": 8,
+      "entradas": 10,
       "saidas": 17
     }
   ],
@@ -336,12 +336,12 @@
     },
     {
       "nome": "Grupo B1",
-      "andamento": 1454,
-      "entradas_mes": 31,
+      "andamento": 1455,
+      "entradas_mes": 32,
       "saidas_mes": 14,
       "entradas_mes_anterior": 55,
       "saidas_mes_anterior": 41,
-      "valor_causa": 325916487.71
+      "valor_causa": 325982313.88
     },
     {
       "nome": "Grupo B2",
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 5,
-      "entradas_mes": 5,
+      "andamento": 6,
+      "entradas_mes": 6,
       "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 3,
-      "valor_causa": 1307169.69
+      "valor_causa": 1271343.53
     },
     {
       "nome": "Sócios",
@@ -464,12 +464,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5799,
-      "entradas_mes": 158,
+      "andamento": 5800,
+      "entradas_mes": 159,
       "saidas_mes": 98,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 842,
-      "valor_causa": 1383440290.69
+      "valor_causa": 1383440290.7
     },
     {
       "nome": "MG",
@@ -482,12 +482,12 @@
     },
     {
       "nome": "PR",
-      "andamento": 253,
-      "entradas_mes": 18,
+      "andamento": 254,
+      "entradas_mes": 19,
       "saidas_mes": 0,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 7,
-      "valor_causa": 54873154.33
+      "valor_causa": 54903154.33
     },
     {
       "nome": "RS",
@@ -709,12 +709,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2931,
-      "entradas_mes": 225,
+      "andamento": 2933,
+      "entradas_mes": 227,
       "saidas_mes": 32,
       "entradas_mes_anterior": 267,
       "saidas_mes_anterior": 205,
-      "valor_causa": 853934066.4
+      "valor_causa": 853964066.41
     },
     {
       "nome": "Sentença",
@@ -959,12 +959,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B1",
-      "andamento": 439,
-      "entradas_mes": 31,
+      "andamento": 440,
+      "entradas_mes": 32,
       "saidas_mes": 1,
       "entradas_mes_anterior": 55,
       "saidas_mes_anterior": 13,
-      "valor_causa": 143326416.62
+      "valor_causa": 143392242.79
     },
     {
       "fase": "Instrução",
@@ -1039,12 +1039,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 5,
-      "entradas_mes": 5,
+      "andamento": 6,
+      "entradas_mes": 6,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 1307169.69
+      "valor_causa": 1271343.53
     },
     {
       "fase": "Instrução",
@@ -1466,12 +1466,12 @@
     },
     {
       "nome": "Erik Mota Coppi(ECO)",
-      "andamento": 274,
-      "entradas_mes": 30,
+      "andamento": 276,
+      "entradas_mes": 32,
       "saidas_mes": 1,
       "entradas_mes_anterior": 15,
       "saidas_mes_anterior": 12,
-      "valor_causa": 55325221.28
+      "valor_causa": 55355221.29
     },
     {
       "nome": "Rafael Camargo Felisbino(RCF)",
@@ -1858,12 +1858,12 @@
     },
     {
       "nome": "COMPANHIA AIX",
-      "andamento": 154,
-      "entradas_mes": 42,
+      "andamento": 156,
+      "entradas_mes": 44,
       "saidas_mes": 0,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 0,
-      "valor_causa": 36314608.46,
+      "valor_causa": 36344608.47,
       "alerta_entrada": true
     },
     {
@@ -2370,12 +2370,12 @@
     {
       "grupo": "Grupo B1",
       "cliente": "BRIDGESTONE",
-      "andamento": 1454,
-      "entradas_mes": 31,
+      "andamento": 1455,
+      "entradas_mes": 32,
       "saidas_mes": 14,
       "entradas_mes_anterior": 55,
       "saidas_mes_anterior": 41,
-      "valor_causa": 325916487.71,
+      "valor_causa": 325982313.88,
       "alerta_entrada": false
     },
     {
@@ -3766,14 +3766,14 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "BRIDGESTONE",
-      "andamento": 2,
-      "entradas_mes": 2,
+      "cliente": "COMPANHIA AIX",
+      "andamento": 3,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 684789.44,
-      "alerta_entrada": false
+      "valor_causa": 30000.01,
+      "alerta_entrada": true
     },
     {
       "grupo": "Sem grupo",
@@ -3788,13 +3788,13 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "COMPANHIA AIX",
+      "cliente": "BRIDGESTONE",
       "andamento": 1,
       "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 0.0,
+      "valor_causa": 618963.27,
       "alerta_entrada": false
     },
     {
@@ -3945,12 +3945,12 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Beatriz Santiago de Souza(BSO)",
-      "andamento": 305,
-      "entradas_mes": 7,
+      "andamento": 306,
+      "entradas_mes": 8,
       "saidas_mes": 5,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 8,
-      "valor_causa": 60423375.88
+      "valor_causa": 60489202.05
     },
     {
       "grupo": "Grupo B1",
@@ -4444,6 +4444,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Erik Mota Coppi(ECO)",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 30000.01
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Joice Ramos Miranda(JRM)",
       "andamento": 1,
       "entradas_mes": 1,
@@ -4471,16 +4481,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 618963.27
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Beatriz Santiago de Souza(BSO)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 65826.17
     },
     {
       "grupo": "Sem grupo",
@@ -5697,12 +5697,12 @@
     {
       "estado": "PR",
       "cliente": "COMPANHIA AIX",
-      "andamento": 109,
-      "entradas_mes": 9,
+      "andamento": 110,
+      "entradas_mes": 10,
       "saidas_mes": 0,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 0,
-      "valor_causa": 27734884.19
+      "valor_causa": 27764884.19
     },
     {
       "estado": "PR",
@@ -6846,6 +6846,16 @@
     },
     {
       "estado": "SP",
+      "cliente": "COMPANHIA AIX",
+      "andamento": 6,
+      "entradas_mes": 4,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 855200.03
+    },
+    {
+      "estado": "SP",
       "cliente": "STEELCORP CONSTRUCTI",
       "andamento": 6,
       "entradas_mes": 0,
@@ -6863,16 +6873,6 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 3,
       "valor_causa": 2263510.48
-    },
-    {
-      "estado": "SP",
-      "cliente": "COMPANHIA AIX",
-      "andamento": 5,
-      "entradas_mes": 3,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 855200.02
     },
     {
       "estado": "SP",
@@ -7908,12 +7908,12 @@
     },
     {
       "nome": "COMPANHIA AIX",
-      "andamento": 154,
-      "entradas_mes": 42,
+      "andamento": 156,
+      "entradas_mes": 44,
       "saidas_mes": 0,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 0,
-      "valor_causa": 36314608.46,
+      "valor_causa": 36344608.47,
       "alerta_entrada": true
     },
     {
@@ -7954,14 +7954,19 @@
       "profissional": "Rafael Rocha Ferreira(RFE)"
     },
     {
-      "numero_processo": "1002102-53.2026.5.02.0432",
-      "cliente": "BRIDGESTONE",
-      "profissional": "Beatriz Santiago de Souza(BSO)"
-    },
-    {
       "numero_processo": "0001607-78.2026.5.07.0014",
       "cliente": "COMPANHIA AIX",
       "profissional": "Vinicius da Silva Cerqueira(VSI)"
+    },
+    {
+      "numero_processo": "0001683-94.2026.5.09.0128",
+      "cliente": "COMPANHIA AIX",
+      "profissional": "Erik Mota Coppi(ECO)"
+    },
+    {
+      "numero_processo": "1001842-15.2026.5.02.0031",
+      "cliente": "COMPANHIA AIX",
+      "profissional": "Erik Mota Coppi(ECO)"
     },
     {
       "numero_processo": "1002027-29.2026.5.02.0718",
