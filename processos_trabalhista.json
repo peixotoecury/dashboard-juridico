@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-23T16:44:32",
+  "atualizado_em": "2026-10-23T16:45:21",
   "kpis": {
-    "total_andamento": 7657,
+    "total_andamento": 7656,
     "entradas_hoje": 4,
-    "saidas_hoje": 15,
+    "saidas_hoje": 16,
     "entradas_ontem": 20,
     "saidas_ontem": 8,
     "entradas_mes": 265,
-    "saidas_mes": 131,
+    "saidas_mes": 132,
     "entradas_mes_anterior": 319,
     "saidas_mes_anterior": 1022,
-    "valor_causa_total": 1784527138.0,
-    "saldo_mes": 134
+    "valor_causa_total": 1784511453.43,
+    "saldo_mes": 133
   },
   "serie_diaria": [
     {
@@ -312,18 +312,18 @@
     {
       "data": "2026-10-23",
       "entradas": 4,
-      "saidas": 15
+      "saidas": 16
     }
   ],
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2144,
+      "andamento": 2143,
       "entradas_mes": 88,
-      "saidas_mes": 46,
+      "saidas_mes": 47,
       "entradas_mes_anterior": 118,
       "saidas_mes_anterior": 96,
-      "valor_causa": 477451617.83
+      "valor_causa": 477435933.26
     },
     {
       "nome": "Grupo E1",
@@ -518,12 +518,12 @@
     },
     {
       "nome": "BA",
-      "andamento": 102,
+      "andamento": 101,
       "entradas_mes": 1,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 4,
-      "valor_causa": 13255070.25
+      "valor_causa": 13239385.68
     },
     {
       "nome": "GO",
@@ -700,12 +700,12 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 414,
+      "andamento": 413,
       "entradas_mes": 27,
-      "saidas_mes": 11,
+      "saidas_mes": 12,
       "entradas_mes_anterior": 34,
       "saidas_mes_anterior": 10,
-      "valor_causa": 91635547.05
+      "valor_causa": 91619862.48
     },
     {
       "nome": "Instrução",
@@ -749,12 +749,12 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo E2",
-      "andamento": 166,
+      "andamento": 165,
       "entradas_mes": 3,
-      "saidas_mes": 6,
+      "saidas_mes": 7,
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 1,
-      "valor_causa": 39779988.86
+      "valor_causa": 39764304.29
     },
     {
       "fase": "Ajuizamento",
@@ -1367,12 +1367,12 @@
     },
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 365,
+      "andamento": 364,
       "entradas_mes": 25,
-      "saidas_mes": 12,
+      "saidas_mes": 13,
       "entradas_mes_anterior": 29,
       "saidas_mes_anterior": 28,
-      "valor_causa": 50996065.62
+      "valor_causa": 50980381.05
     },
     {
       "nome": "Letícia Meneghini Fontes (LMI)",
@@ -1848,12 +1848,12 @@
     },
     {
       "nome": "EUROCHEM SALITRE",
-      "andamento": 168,
+      "andamento": 167,
       "entradas_mes": 12,
-      "saidas_mes": 5,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 21,
       "saidas_mes_anterior": 11,
-      "valor_causa": 40031989.11,
+      "valor_causa": 40016304.54,
       "alerta_entrada": false
     },
     {
@@ -3239,12 +3239,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "EUROCHEM SALITRE",
-      "andamento": 168,
+      "andamento": 167,
       "entradas_mes": 12,
-      "saidas_mes": 5,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 21,
       "saidas_mes_anterior": 11,
-      "valor_causa": 40031989.11,
+      "valor_causa": 40016304.54,
       "alerta_entrada": false
     },
     {
@@ -4323,12 +4323,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 365,
+      "andamento": 364,
       "entradas_mes": 25,
-      "saidas_mes": 12,
+      "saidas_mes": 13,
       "entradas_mes_anterior": 29,
       "saidas_mes_anterior": 28,
-      "valor_causa": 50996065.62
+      "valor_causa": 50980381.05
     },
     {
       "grupo": "Grupo E2",
@@ -4524,16 +4524,6 @@
     },
     {
       "estado": "BA",
-      "cliente": "EUROCHEM SALITRE",
-      "andamento": 34,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 3,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 3746700.91
-    },
-    {
-      "estado": "BA",
       "cliente": "HERINGER",
       "andamento": 34,
       "entradas_mes": 0,
@@ -4541,6 +4531,16 @@
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
       "valor_causa": 3792940.77
+    },
+    {
+      "estado": "BA",
+      "cliente": "EUROCHEM SALITRE",
+      "andamento": 33,
+      "entradas_mes": 1,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 3,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 3731016.34
     },
     {
       "estado": "BA",
