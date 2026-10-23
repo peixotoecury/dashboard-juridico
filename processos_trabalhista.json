@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-23T13:32:31",
+  "atualizado_em": "2026-10-23T13:45:21",
   "kpis": {
     "total_andamento": 7663,
     "entradas_hoje": 1,
@@ -363,12 +363,12 @@
     },
     {
       "nome": "Grupo C1",
-      "andamento": 311,
-      "entradas_mes": 27,
+      "andamento": 312,
+      "entradas_mes": 28,
       "saidas_mes": 0,
       "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 1,
-      "valor_causa": 183219978.37
+      "valor_causa": 183348778.37
     },
     {
       "nome": "Grupo C2",
@@ -416,15 +416,6 @@
       "valor_causa": 11721158.38
     },
     {
-      "nome": "Sem grupo",
-      "andamento": 4,
-      "entradas_mes": 4,
-      "saidas_mes": 1,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 3,
-      "valor_causa": 533358.51
-    },
-    {
       "nome": "Sócios",
       "andamento": 3,
       "entradas_mes": 0,
@@ -432,6 +423,15 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
+    },
+    {
+      "nome": "Sem grupo",
+      "andamento": 3,
+      "entradas_mes": 3,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 3,
+      "valor_causa": 404558.51
     },
     {
       "nome": "Grupo D1",
@@ -969,12 +969,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo C1",
-      "andamento": 189,
-      "entradas_mes": 26,
+      "andamento": 190,
+      "entradas_mes": 27,
       "saidas_mes": 0,
       "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 1,
-      "valor_causa": 109632303.99
+      "valor_causa": 109761103.99
     },
     {
       "fase": "Instrução",
@@ -1049,12 +1049,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 4,
-      "entradas_mes": 4,
+      "andamento": 3,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 533358.51
+      "valor_causa": 404558.51
     },
     {
       "fase": "Outras",
@@ -1466,12 +1466,12 @@
     },
     {
       "nome": "Erik Mota Coppi(ECO)",
-      "andamento": 273,
-      "entradas_mes": 29,
+      "andamento": 274,
+      "entradas_mes": 30,
       "saidas_mes": 1,
       "entradas_mes_anterior": 15,
       "saidas_mes_anterior": 12,
-      "valor_causa": 55196421.28
+      "valor_causa": 55325221.28
     },
     {
       "nome": "Rafael Camargo Felisbino(RCF)",
@@ -1556,12 +1556,12 @@
     },
     {
       "nome": "Vinicius da Silva Cerqueira(VSI)",
-      "andamento": 180,
-      "entradas_mes": 17,
+      "andamento": 179,
+      "entradas_mes": 16,
       "saidas_mes": 0,
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 1,
-      "valor_causa": 63916365.71
+      "valor_causa": 63787565.71
     },
     {
       "nome": "Sofia Freire (SOF)",
@@ -2535,12 +2535,12 @@
     {
       "grupo": "Grupo C1",
       "cliente": "COMPANHIA AIX",
-      "andamento": 109,
-      "entradas_mes": 21,
+      "andamento": 110,
+      "entradas_mes": 22,
       "saidas_mes": 0,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 0,
-      "valor_causa": 21826768.71,
+      "valor_causa": 21955568.71,
       "alerta_entrada": true
     },
     {
@@ -3767,12 +3767,12 @@
     {
       "grupo": "Sem grupo",
       "cliente": "COMPANHIA AIX",
-      "andamento": 2,
-      "entradas_mes": 2,
+      "andamento": 1,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 274900.0,
+      "valor_causa": 146100.0,
       "alerta_entrada": false
     },
     {
@@ -4124,12 +4124,12 @@
     {
       "grupo": "Grupo C1",
       "profissional": "Erik Mota Coppi(ECO)",
-      "andamento": 8,
-      "entradas_mes": 8,
+      "andamento": 9,
+      "entradas_mes": 9,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 1158211.71
+      "valor_causa": 1287011.71
     },
     {
       "grupo": "Grupo C2",
@@ -4434,12 +4434,12 @@
     {
       "grupo": "Sem grupo",
       "profissional": "Vinicius da Silva Cerqueira(VSI)",
-      "andamento": 2,
-      "entradas_mes": 2,
+      "andamento": 1,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 274900.0
+      "valor_causa": 146100.0
     },
     {
       "grupo": "Sem grupo",
@@ -7897,11 +7897,6 @@
     }
   ],
   "sem_grupo_processos": [
-    {
-      "numero_processo": "0001594-03.2026.5.07.0007",
-      "cliente": "COMPANHIA AIX",
-      "profissional": "Vinicius da Silva Cerqueira(VSI)"
-    },
     {
       "numero_processo": "0001607-78.2026.5.07.0014",
       "cliente": "COMPANHIA AIX",
