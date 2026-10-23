@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-23T11:00:21",
+  "atualizado_em": "2026-10-23T13:32:31",
   "kpis": {
-    "total_andamento": 7666,
+    "total_andamento": 7663,
     "entradas_hoje": 1,
-    "saidas_hoje": 3,
+    "saidas_hoje": 6,
     "entradas_ontem": 19,
     "saidas_ontem": 8,
     "entradas_mes": 262,
-    "saidas_mes": 119,
+    "saidas_mes": 122,
     "entradas_mes_anterior": 319,
     "saidas_mes_anterior": 1022,
-    "valor_causa_total": 1783511929.2,
-    "saldo_mes": 143
+    "valor_causa_total": 1782756445.62,
+    "saldo_mes": 140
   },
   "serie_diaria": [
     {
@@ -312,18 +312,18 @@
     {
       "data": "2026-10-23",
       "entradas": 1,
-      "saidas": 3
+      "saidas": 6
     }
   ],
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2153,
+      "andamento": 2150,
       "entradas_mes": 85,
-      "saidas_mes": 34,
+      "saidas_mes": 37,
       "entradas_mes_anterior": 118,
       "saidas_mes_anterior": 96,
-      "valor_causa": 477728711.03
+      "valor_causa": 476973227.45
     },
     {
       "nome": "Grupo E1",
@@ -354,21 +354,21 @@
     },
     {
       "nome": "Grupo B3",
-      "andamento": 575,
-      "entradas_mes": 29,
+      "andamento": 577,
+      "entradas_mes": 31,
       "saidas_mes": 9,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 11,
-      "valor_causa": 113396781.62
+      "valor_causa": 113535052.59
     },
     {
       "nome": "Grupo C1",
-      "andamento": 310,
-      "entradas_mes": 26,
+      "andamento": 311,
+      "entradas_mes": 27,
       "saidas_mes": 0,
       "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 1,
-      "valor_causa": 183184961.98
+      "valor_causa": 183219978.37
     },
     {
       "nome": "Grupo C2",
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 7,
-      "entradas_mes": 7,
+      "andamento": 4,
+      "entradas_mes": 4,
       "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 3,
-      "valor_causa": 706645.87
+      "valor_causa": 533358.51
     },
     {
       "nome": "Sócios",
@@ -464,18 +464,18 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5795,
+      "andamento": 5794,
       "entradas_mes": 152,
-      "saidas_mes": 96,
+      "saidas_mes": 97,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 842,
-      "valor_causa": 1381167467.52
+      "valor_causa": 1380567467.52
     },
     {
       "nome": "MG",
-      "andamento": 552,
+      "andamento": 551,
       "entradas_mes": 22,
-      "saidas_mes": 12,
+      "saidas_mes": 13,
       "entradas_mes_anterior": 36,
       "saidas_mes_anterior": 22,
       "valor_causa": 137632975.66
@@ -608,12 +608,12 @@
     },
     {
       "nome": "PA",
-      "andamento": 15,
+      "andamento": 14,
       "entradas_mes": 1,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
-      "valor_causa": 7611406.18
+      "valor_causa": 7455922.6
     },
     {
       "nome": "AL",
@@ -700,21 +700,21 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 419,
-      "entradas_mes": 28,
-      "saidas_mes": 9,
+      "andamento": 415,
+      "entradas_mes": 27,
+      "saidas_mes": 10,
       "entradas_mes_anterior": 34,
       "saidas_mes_anterior": 10,
-      "valor_causa": 96115201.83
+      "valor_causa": 91676549.25
     },
     {
       "nome": "Instrução",
       "andamento": 2928,
-      "entradas_mes": 217,
-      "saidas_mes": 28,
+      "entradas_mes": 218,
+      "saidas_mes": 29,
       "entradas_mes_anterior": 267,
       "saidas_mes_anterior": 205,
-      "valor_causa": 847421979.07
+      "valor_causa": 851266248.07
     },
     {
       "nome": "Sentença",
@@ -727,12 +727,12 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2984,
+      "andamento": 2985,
       "entradas_mes": 6,
-      "saidas_mes": 23,
+      "saidas_mes": 24,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 387,
-      "valor_causa": 673282835.35
+      "valor_causa": 673121735.35
     },
     {
       "nome": "Execução",
@@ -749,32 +749,32 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo E2",
-      "andamento": 168,
+      "andamento": 167,
       "entradas_mes": 3,
-      "saidas_mes": 4,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 1,
-      "valor_causa": 39976474.64
+      "valor_causa": 39820991.06
     },
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo B2",
-      "andamento": 93,
+      "andamento": 91,
       "entradas_mes": 0,
       "saidas_mes": 2,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 2,
-      "valor_causa": 15081786.14
+      "valor_causa": 10999617.14
     },
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo E1",
-      "andamento": 76,
-      "entradas_mes": 22,
+      "andamento": 75,
+      "entradas_mes": 21,
       "saidas_mes": 1,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 0,
-      "valor_causa": 19358078.65
+      "valor_causa": 19157078.65
     },
     {
       "fase": "Ajuizamento",
@@ -939,9 +939,9 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 904,
+      "andamento": 902,
       "entradas_mes": 72,
-      "saidas_mes": 7,
+      "saidas_mes": 8,
       "entradas_mes_anterior": 102,
       "saidas_mes_anterior": 24,
       "valor_causa": 192311059.48
@@ -949,12 +949,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 738,
-      "entradas_mes": 20,
+      "andamento": 739,
+      "entradas_mes": 21,
       "saidas_mes": 10,
       "entradas_mes_anterior": 28,
       "saidas_mes_anterior": 10,
-      "valor_causa": 158568165.41
+      "valor_causa": 158769165.41
     },
     {
       "fase": "Instrução",
@@ -969,12 +969,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo C1",
-      "andamento": 188,
-      "entradas_mes": 25,
+      "andamento": 189,
+      "entradas_mes": 26,
       "saidas_mes": 0,
       "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 1,
-      "valor_causa": 109597287.6
+      "valor_causa": 109632303.99
     },
     {
       "fase": "Instrução",
@@ -989,22 +989,22 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B3",
-      "andamento": 151,
-      "entradas_mes": 26,
+      "andamento": 153,
+      "entradas_mes": 28,
       "saidas_mes": 3,
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 5,
-      "valor_causa": 27996718.34
+      "valor_causa": 28134989.31
     },
     {
       "fase": "Instrução",
       "grupo": "Grupo B2",
-      "andamento": 145,
+      "andamento": 146,
       "entradas_mes": 9,
       "saidas_mes": 2,
       "entradas_mes_anterior": 22,
       "saidas_mes_anterior": 2,
-      "valor_causa": 38480801.74
+      "valor_causa": 42124070.74
     },
     {
       "fase": "Instrução",
@@ -1038,16 +1038,6 @@
     },
     {
       "fase": "Instrução",
-      "grupo": "Sem grupo",
-      "andamento": 7,
-      "entradas_mes": 7,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 706645.87
-    },
-    {
-      "fase": "Instrução",
       "grupo": "Grupo A1",
       "andamento": 4,
       "entradas_mes": 0,
@@ -1055,6 +1045,16 @@
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
+    },
+    {
+      "fase": "Instrução",
+      "grupo": "Sem grupo",
+      "andamento": 4,
+      "entradas_mes": 4,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 533358.51
     },
     {
       "fase": "Outras",
@@ -1191,20 +1191,20 @@
       "grupo": "Grupo E2",
       "andamento": 590,
       "entradas_mes": 3,
-      "saidas_mes": 10,
+      "saidas_mes": 11,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 14,
-      "valor_causa": 187065582.01
+      "valor_causa": 186465582.01
     },
     {
       "fase": "Recurso",
       "grupo": "Grupo B2",
-      "andamento": 380,
+      "andamento": 381,
       "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 3,
-      "valor_causa": 68666227.15
+      "valor_causa": 69105127.15
     },
     {
       "fase": "Recurso",
@@ -1349,12 +1349,12 @@
     },
     {
       "nome": "Rafael Yepez do Lago(RYL)",
-      "andamento": 461,
+      "andamento": 460,
       "entradas_mes": 19,
-      "saidas_mes": 7,
+      "saidas_mes": 8,
       "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 23,
-      "valor_causa": 60150616.68
+      "valor_causa": 59995133.1
     },
     {
       "nome": "Giulia Vendramini Milani(GVM)",
@@ -1367,9 +1367,9 @@
     },
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 370,
+      "andamento": 369,
       "entradas_mes": 25,
-      "saidas_mes": 7,
+      "saidas_mes": 8,
       "entradas_mes_anterior": 29,
       "saidas_mes_anterior": 28,
       "valor_causa": 51101756.82
@@ -1475,12 +1475,12 @@
     },
     {
       "nome": "Rafael Camargo Felisbino(RCF)",
-      "andamento": 269,
+      "andamento": 268,
       "entradas_mes": 15,
-      "saidas_mes": 7,
+      "saidas_mes": 8,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 3,
-      "valor_causa": 109287127.4
+      "valor_causa": 108687127.4
     },
     {
       "nome": "Anna Carolina Balbino Gatti Baani(ANB)",
@@ -1748,12 +1748,12 @@
     },
     {
       "nome": "BP BIOENERGIA",
-      "andamento": 760,
+      "andamento": 759,
       "entradas_mes": 25,
-      "saidas_mes": 15,
+      "saidas_mes": 16,
       "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 36,
-      "valor_causa": 215893266.94,
+      "valor_causa": 215293266.94,
       "alerta_entrada": false
     },
     {
@@ -1848,9 +1848,9 @@
     },
     {
       "nome": "EUROCHEM SALITRE",
-      "andamento": 171,
+      "andamento": 170,
       "entradas_mes": 12,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 21,
       "saidas_mes_anterior": 11,
       "valor_causa": 40109470.86,
@@ -1888,12 +1888,12 @@
     },
     {
       "nome": "EUROCHEM FTO MATRIZ",
-      "andamento": 106,
+      "andamento": 105,
       "entradas_mes": 7,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 9,
-      "valor_causa": 10776958.5,
+      "valor_causa": 10621474.92,
       "alerta_entrada": false
     },
     {
@@ -2403,23 +2403,23 @@
     {
       "grupo": "Grupo B3",
       "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 237,
-      "entradas_mes": 21,
+      "andamento": 238,
+      "entradas_mes": 22,
       "saidas_mes": 8,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 7,
-      "valor_causa": 30503426.64,
+      "valor_causa": 30511697.61,
       "alerta_entrada": true
     },
     {
       "grupo": "Grupo B3",
       "cliente": "CBC MONTENEGRO",
-      "andamento": 132,
-      "entradas_mes": 4,
+      "andamento": 133,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
-      "valor_causa": 33748422.35,
+      "valor_causa": 33878422.35,
       "alerta_entrada": true
     },
     {
@@ -2542,6 +2542,17 @@
       "saidas_mes_anterior": 0,
       "valor_causa": 21826768.71,
       "alerta_entrada": true
+    },
+    {
+      "grupo": "Grupo C1",
+      "cliente": "MARICY SICHERO",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 35016.39,
+      "alerta_entrada": false
     },
     {
       "grupo": "Grupo C2",
@@ -3195,12 +3206,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "BP BIOENERGIA",
-      "andamento": 760,
+      "andamento": 759,
       "entradas_mes": 25,
-      "saidas_mes": 15,
+      "saidas_mes": 16,
       "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 36,
-      "valor_causa": 215893266.94,
+      "valor_causa": 215293266.94,
       "alerta_entrada": false
     },
     {
@@ -3228,9 +3239,9 @@
     {
       "grupo": "Grupo E2",
       "cliente": "EUROCHEM SALITRE",
-      "andamento": 171,
+      "andamento": 170,
       "entradas_mes": 12,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 21,
       "saidas_mes_anterior": 11,
       "valor_causa": 40109470.86,
@@ -3239,12 +3250,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "EUROCHEM FTO MATRIZ",
-      "andamento": 106,
+      "andamento": 105,
       "entradas_mes": 7,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 9,
-      "valor_causa": 10776958.5,
+      "valor_causa": 10621474.92,
       "alerta_entrada": false
     },
     {
@@ -3766,28 +3777,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "CBC MONTENEGRO",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 130000.0,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 8270.97,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "MAHLE METAL - MOGI",
       "andamento": 1,
       "entradas_mes": 1,
@@ -3795,17 +3784,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 150000.0,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "MARICY SICHERO",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 35016.39,
       "alerta_entrada": false
     },
     {
@@ -4066,12 +4044,12 @@
     {
       "grupo": "Grupo B3",
       "profissional": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 355,
-      "entradas_mes": 25,
+      "andamento": 357,
+      "entradas_mes": 27,
       "saidas_mes": 3,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 7,
-      "valor_causa": 66526186.54
+      "valor_causa": 66664457.51
     },
     {
       "grupo": "Grupo B3",
@@ -4146,12 +4124,12 @@
     {
       "grupo": "Grupo C1",
       "profissional": "Erik Mota Coppi(ECO)",
-      "andamento": 7,
-      "entradas_mes": 7,
+      "andamento": 8,
+      "entradas_mes": 8,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 1123195.32
+      "valor_causa": 1158211.71
     },
     {
       "grupo": "Grupo C2",
@@ -4346,19 +4324,19 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Rafael Yepez do Lago(RYL)",
-      "andamento": 461,
+      "andamento": 460,
       "entradas_mes": 19,
-      "saidas_mes": 7,
+      "saidas_mes": 8,
       "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 23,
-      "valor_causa": 60150616.68
+      "valor_causa": 59995133.1
     },
     {
       "grupo": "Grupo E2",
       "profissional": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 370,
+      "andamento": 369,
       "entradas_mes": 25,
-      "saidas_mes": 7,
+      "saidas_mes": 8,
       "entradas_mes_anterior": 29,
       "saidas_mes_anterior": 28,
       "valor_causa": 51101756.82
@@ -4406,12 +4384,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Rafael Camargo Felisbino(RCF)",
-      "andamento": 138,
+      "andamento": 137,
       "entradas_mes": 11,
-      "saidas_mes": 3,
+      "saidas_mes": 4,
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 0,
-      "valor_causa": 78981149.97
+      "valor_causa": 78381149.97
     },
     {
       "grupo": "Grupo E2",
@@ -4455,16 +4433,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 138270.97
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Vinicius da Silva Cerqueira(VSI)",
       "andamento": 2,
       "entradas_mes": 2,
@@ -4482,16 +4450,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
       "valor_causa": 150000.0
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Erik Mota Coppi(ECO)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 35016.39
     },
     {
       "grupo": "Sem grupo",
@@ -5138,9 +5096,9 @@
     {
       "estado": "MG",
       "cliente": "EUROCHEM SALITRE",
-      "andamento": 119,
+      "andamento": 118,
       "entradas_mes": 9,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 15,
       "saidas_mes_anterior": 9,
       "valor_causa": 27360711.64
@@ -5568,12 +5526,12 @@
     {
       "estado": "PA",
       "cliente": "EUROCHEM FTO MATRIZ",
-      "andamento": 12,
+      "andamento": 11,
       "entradas_mes": 1,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
-      "valor_causa": 1318501.42
+      "valor_causa": 1163017.84
     },
     {
       "estado": "PA",
@@ -6508,12 +6466,12 @@
     {
       "estado": "SP",
       "cliente": "BP BIOENERGIA",
-      "andamento": 421,
+      "andamento": 420,
       "entradas_mes": 14,
-      "saidas_mes": 9,
+      "saidas_mes": 10,
       "entradas_mes_anterior": 14,
       "saidas_mes_anterior": 28,
-      "valor_causa": 102844916.49
+      "valor_causa": 102244916.49
     },
     {
       "estado": "SP",
@@ -7940,16 +7898,6 @@
   ],
   "sem_grupo_processos": [
     {
-      "numero_processo": "1001597-28.2026.5.02.0411",
-      "cliente": "CBC CARTUCHOS BRASIL",
-      "profissional": "Letícia Meneghini Fontes (LMI)"
-    },
-    {
-      "numero_processo": "0021502-44.2026.5.04.0261",
-      "cliente": "CBC MONTENEGRO",
-      "profissional": "Letícia Meneghini Fontes (LMI)"
-    },
-    {
       "numero_processo": "0001594-03.2026.5.07.0007",
       "cliente": "COMPANHIA AIX",
       "profissional": "Vinicius da Silva Cerqueira(VSI)"
@@ -7963,11 +7911,6 @@
       "numero_processo": "1001754-36.2026.5.02.0464",
       "cliente": "MAHLE METAL - MOGI",
       "profissional": "Paloma da Silva Santos(PSI)"
-    },
-    {
-      "numero_processo": "1001652-34.2026.5.02.0037",
-      "cliente": "MARICY SICHERO",
-      "profissional": "Erik Mota Coppi(ECO)"
     },
     {
       "numero_processo": "1002027-29.2026.5.02.0718",
