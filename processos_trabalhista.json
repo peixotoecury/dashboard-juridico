@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-26T14:30:32",
+  "atualizado_em": "2026-10-26T14:45:37",
   "kpis": {
-    "total_andamento": 7657,
-    "entradas_hoje": 6,
+    "total_andamento": 7658,
+    "entradas_hoje": 7,
     "saidas_hoje": 7,
     "entradas_ontem": 0,
     "saidas_ontem": 0,
-    "entradas_mes": 278,
+    "entradas_mes": 279,
     "saidas_mes": 144,
     "entradas_mes_anterior": 319,
     "saidas_mes_anterior": 1022,
-    "valor_causa_total": 1785818355.89,
-    "saldo_mes": 134
+    "valor_causa_total": 1785819355.89,
+    "saldo_mes": 135
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-10-26",
-      "entradas": 6,
+      "entradas": 7,
       "saidas": 7
     }
   ],
@@ -327,12 +327,12 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1815,
-      "entradas_mes": 47,
+      "andamento": 1816,
+      "entradas_mes": 48,
       "saidas_mes": 45,
       "entradas_mes_anterior": 60,
       "saidas_mes_anterior": 45,
-      "valor_causa": 310801764.88
+      "valor_causa": 311244244.58
     },
     {
       "nome": "Grupo B1",
@@ -422,7 +422,7 @@
       "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 3,
-      "valor_causa": 580938.21
+      "valor_causa": 139458.51
     },
     {
       "nome": "Sócios",
@@ -464,12 +464,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5797,
-      "entradas_mes": 164,
+      "andamento": 5798,
+      "entradas_mes": 165,
       "saidas_mes": 106,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 842,
-      "valor_causa": 1383134920.58
+      "valor_causa": 1383135920.58
     },
     {
       "nome": "MG",
@@ -709,12 +709,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2930,
-      "entradas_mes": 233,
+      "andamento": 2931,
+      "entradas_mes": 234,
       "saidas_mes": 37,
       "entradas_mes_anterior": 267,
       "saidas_mes_anterior": 205,
-      "valor_causa": 854435857.25
+      "valor_causa": 854436857.25
     },
     {
       "nome": "Sentença",
@@ -949,12 +949,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 739,
-      "entradas_mes": 22,
+      "andamento": 740,
+      "entradas_mes": 23,
       "saidas_mes": 11,
       "entradas_mes_anterior": 28,
       "saidas_mes_anterior": 10,
-      "valor_causa": 159000337.96
+      "valor_causa": 159442817.66
     },
     {
       "fase": "Instrução",
@@ -1054,7 +1054,7 @@
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 580938.21
+      "valor_causa": 139458.51
     },
     {
       "fase": "Outras",
@@ -1340,12 +1340,12 @@
   "por_profissional": [
     {
       "nome": "Nicolau Rafael Guimarães Coelho(NRG)",
-      "andamento": 502,
-      "entradas_mes": 10,
+      "andamento": 503,
+      "entradas_mes": 11,
       "saidas_mes": 8,
       "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 6,
-      "valor_causa": 100011337.05
+      "valor_causa": 100012337.05
     },
     {
       "nome": "Rafael Yepez do Lago(RYL)",
@@ -1738,12 +1738,12 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1457,
-      "entradas_mes": 35,
+      "andamento": 1458,
+      "entradas_mes": 36,
       "saidas_mes": 15,
       "entradas_mes_anterior": 55,
       "saidas_mes_anterior": 41,
-      "valor_causa": 326813054.93,
+      "valor_causa": 326814054.93,
       "alerta_entrada": false
     },
     {
@@ -2964,12 +2964,12 @@
     {
       "grupo": "Grupo E1",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 652,
-      "entradas_mes": 19,
+      "andamento": 653,
+      "entradas_mes": 20,
       "saidas_mes": 9,
       "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 14,
-      "valor_causa": 140866422.4,
+      "valor_causa": 141308902.1,
       "alerta_entrada": false
     },
     {
@@ -3766,17 +3766,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 550938.21,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "COMPANHIA AIX",
       "andamento": 2,
       "entradas_mes": 2,
@@ -3784,6 +3773,28 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 30000.0,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "SYNGENTA PROTEÇÃO DE",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 108458.51,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "BRIDGESTONE",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1000.0,
       "alerta_entrada": false
     },
     {
@@ -4193,12 +4204,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Joice Ramos Miranda(JRM)",
-      "andamento": 302,
-      "entradas_mes": 8,
+      "andamento": 303,
+      "entradas_mes": 9,
       "saidas_mes": 5,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 6,
-      "valor_causa": 72903662.23
+      "valor_causa": 73346141.93
     },
     {
       "grupo": "Grupo E1",
@@ -4423,12 +4434,12 @@
     {
       "grupo": "Sem grupo",
       "profissional": "Joice Ramos Miranda(JRM)",
-      "andamento": 2,
-      "entradas_mes": 2,
+      "andamento": 1,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 550938.21
+      "valor_causa": 108458.51
     },
     {
       "grupo": "Sem grupo",
@@ -4449,6 +4460,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 30000.0
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Nicolau Rafael Guimarães Coelho(NRG)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1000.0
     },
     {
       "grupo": "Sócios",
@@ -6415,12 +6436,12 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1430,
-      "entradas_mes": 35,
+      "andamento": 1431,
+      "entradas_mes": 36,
       "saidas_mes": 15,
       "entradas_mes_anterior": 52,
       "saidas_mes_anterior": 40,
-      "valor_causa": 315220031.82
+      "valor_causa": 315221031.82
     },
     {
       "estado": "SP",
@@ -7867,6 +7888,11 @@
   ],
   "sem_grupo_processos": [
     {
+      "numero_processo": "1001814-08.2026.5.02.0044",
+      "cliente": "BRIDGESTONE",
+      "profissional": "Nicolau Rafael Guimarães Coelho(NRG)"
+    },
+    {
       "numero_processo": "0001607-78.2026.5.07.0014",
       "cliente": "COMPANHIA AIX",
       "profissional": "Vinicius da Silva Cerqueira(VSI)"
@@ -7878,11 +7904,6 @@
     },
     {
       "numero_processo": "1002027-29.2026.5.02.0718",
-      "cliente": "SYNGENTA PROTEÇÃO DE",
-      "profissional": "Joice Ramos Miranda(JRM)"
-    },
-    {
-      "numero_processo": "0011649-42.2026.5.15.0087",
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "profissional": "Joice Ramos Miranda(JRM)"
     }
