@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-26T16:15:28",
+  "atualizado_em": "2026-10-26T16:30:26",
   "kpis": {
-    "total_andamento": 7658,
+    "total_andamento": 7657,
     "entradas_hoje": 9,
-    "saidas_hoje": 9,
+    "saidas_hoje": 10,
     "entradas_ontem": 0,
     "saidas_ontem": 0,
     "entradas_mes": 281,
-    "saidas_mes": 146,
+    "saidas_mes": 147,
     "entradas_mes_anterior": 319,
     "saidas_mes_anterior": 1022,
-    "valor_causa_total": 1786091171.21,
-    "saldo_mes": 135
+    "valor_causa_total": 1785032194.65,
+    "saldo_mes": 134
   },
   "serie_diaria": [
     {
@@ -312,7 +312,7 @@
     {
       "data": "2026-10-26",
       "entradas": 9,
-      "saidas": 9
+      "saidas": 10
     }
   ],
   "por_grupo": [
@@ -327,12 +327,12 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1815,
+      "andamento": 1814,
       "entradas_mes": 48,
-      "saidas_mes": 46,
+      "saidas_mes": 47,
       "entradas_mes_anterior": 60,
       "saidas_mes_anterior": 45,
-      "valor_causa": 311166241.24
+      "valor_causa": 310107264.68
     },
     {
       "nome": "Grupo B1",
@@ -363,12 +363,12 @@
     },
     {
       "nome": "Grupo C1",
-      "andamento": 315,
-      "entradas_mes": 31,
+      "andamento": 316,
+      "entradas_mes": 32,
       "saidas_mes": 0,
       "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 1,
-      "valor_causa": 185301102.12
+      "valor_causa": 185651969.29
     },
     {
       "nome": "Grupo C2",
@@ -416,15 +416,6 @@
       "valor_causa": 11721158.38
     },
     {
-      "nome": "Sem grupo",
-      "andamento": 4,
-      "entradas_mes": 4,
-      "saidas_mes": 1,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 3,
-      "valor_causa": 489325.68
-    },
-    {
       "nome": "Sócios",
       "andamento": 3,
       "entradas_mes": 0,
@@ -432,6 +423,15 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
+    },
+    {
+      "nome": "Sem grupo",
+      "andamento": 3,
+      "entradas_mes": 3,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 3,
+      "valor_causa": 138458.51
     },
     {
       "nome": "Grupo D1",
@@ -464,12 +464,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5798,
+      "andamento": 5797,
       "entradas_mes": 167,
-      "saidas_mes": 108,
+      "saidas_mes": 109,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 842,
-      "valor_causa": 1383407735.9
+      "valor_causa": 1382348759.34
     },
     {
       "nome": "MG",
@@ -709,12 +709,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2930,
+      "andamento": 2929,
       "entradas_mes": 235,
-      "saidas_mes": 38,
+      "saidas_mes": 39,
       "entradas_mes_anterior": 267,
       "saidas_mes_anterior": 205,
-      "valor_causa": 854353855.96
+      "valor_causa": 853294879.4
     },
     {
       "nome": "Sentença",
@@ -949,12 +949,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 739,
+      "andamento": 738,
       "entradas_mes": 23,
-      "saidas_mes": 11,
+      "saidas_mes": 12,
       "entradas_mes_anterior": 28,
       "saidas_mes_anterior": 10,
-      "valor_causa": 159364814.32
+      "valor_causa": 158305837.76
     },
     {
       "fase": "Instrução",
@@ -969,12 +969,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo C1",
-      "andamento": 193,
-      "entradas_mes": 30,
+      "andamento": 194,
+      "entradas_mes": 31,
       "saidas_mes": 0,
       "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 1,
-      "valor_causa": 111713427.74
+      "valor_causa": 112064294.91
     },
     {
       "fase": "Instrução",
@@ -1049,12 +1049,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 4,
-      "entradas_mes": 4,
+      "andamento": 3,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 489325.68
+      "valor_causa": 138458.51
     },
     {
       "fase": "Outras",
@@ -1430,12 +1430,12 @@
     },
     {
       "nome": "Júlia Priego Lopes da Silva(JPL)",
-      "andamento": 288,
+      "andamento": 287,
       "entradas_mes": 2,
-      "saidas_mes": 6,
+      "saidas_mes": 7,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 5,
-      "valor_causa": 32396785.99
+      "valor_causa": 31337809.43
     },
     {
       "nome": "Bruna Cembranelli Fazenda (BCF)",
@@ -1908,12 +1908,12 @@
     },
     {
       "nome": "DELL COMPUTADORES",
-      "andamento": 92,
+      "andamento": 91,
       "entradas_mes": 0,
-      "saidas_mes": 4,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 5,
-      "valor_causa": 16062511.92,
+      "valor_causa": 15003535.36,
       "alerta_entrada": false
     },
     {
@@ -2524,12 +2524,12 @@
     {
       "grupo": "Grupo C1",
       "cliente": "TELEFONICA BRASIL",
-      "andamento": 203,
-      "entradas_mes": 7,
+      "andamento": 204,
+      "entradas_mes": 8,
       "saidas_mes": 0,
       "entradas_mes_anterior": 15,
       "saidas_mes_anterior": 1,
-      "valor_causa": 163310517.01,
+      "valor_causa": 163661384.18,
       "alerta_entrada": false
     },
     {
@@ -3019,12 +3019,12 @@
     {
       "grupo": "Grupo E1",
       "cliente": "DELL COMPUTADORES",
-      "andamento": 92,
+      "andamento": 91,
       "entradas_mes": 0,
-      "saidas_mes": 4,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 5,
-      "valor_causa": 16062511.92,
+      "valor_causa": 15003535.36,
       "alerta_entrada": false
     },
     {
@@ -3787,17 +3787,6 @@
       "alerta_entrada": false
     },
     {
-      "grupo": "Sem grupo",
-      "cliente": "TELEFONICA BRASIL",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 350867.17,
-      "alerta_entrada": false
-    },
-    {
       "grupo": "Sócios",
       "cliente": "PEIXOTO E CURY",
       "andamento": 2,
@@ -4114,12 +4103,12 @@
     {
       "grupo": "Grupo C1",
       "profissional": "Rafael Camargo Felisbino(RCF)",
-      "andamento": 21,
-      "entradas_mes": 1,
+      "andamento": 22,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 12045250.36
+      "valor_causa": 12396117.53
     },
     {
       "grupo": "Grupo C1",
@@ -4214,12 +4203,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Júlia Priego Lopes da Silva(JPL)",
-      "andamento": 288,
+      "andamento": 287,
       "entradas_mes": 2,
-      "saidas_mes": 6,
+      "saidas_mes": 7,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 5,
-      "valor_causa": 32396785.99
+      "valor_causa": 31337809.43
     },
     {
       "grupo": "Grupo E1",
@@ -4460,16 +4449,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Rafael Camargo Felisbino(RCF)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 350867.17
     },
     {
       "grupo": "Sócios",
@@ -6546,12 +6525,12 @@
     {
       "estado": "SP",
       "cliente": "DELL COMPUTADORES",
-      "andamento": 88,
+      "andamento": 87,
       "entradas_mes": 0,
-      "saidas_mes": 4,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 5,
-      "valor_causa": 15285232.04
+      "valor_causa": 14226255.48
     },
     {
       "estado": "SP",
@@ -7901,11 +7880,6 @@
       "numero_processo": "1002027-29.2026.5.02.0718",
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "profissional": "Joice Ramos Miranda(JRM)"
-    },
-    {
-      "numero_processo": "1001758-43.2026.5.02.0086",
-      "cliente": "TELEFONICA BRASIL",
-      "profissional": "Rafael Camargo Felisbino(RCF)"
     }
   ]
 }
