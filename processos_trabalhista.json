@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-26T14:45:37",
+  "atualizado_em": "2026-10-26T15:00:45",
   "kpis": {
-    "total_andamento": 7658,
+    "total_andamento": 7657,
     "entradas_hoje": 7,
-    "saidas_hoje": 7,
+    "saidas_hoje": 8,
     "entradas_ontem": 0,
     "saidas_ontem": 0,
     "entradas_mes": 279,
-    "saidas_mes": 144,
+    "saidas_mes": 145,
     "entradas_mes_anterior": 319,
     "saidas_mes_anterior": 1022,
-    "valor_causa_total": 1785819355.89,
-    "saldo_mes": 135
+    "valor_causa_total": 1785798025.32,
+    "saldo_mes": 134
   },
   "serie_diaria": [
     {
@@ -312,18 +312,18 @@
     {
       "data": "2026-10-26",
       "entradas": 7,
-      "saidas": 7
+      "saidas": 8
     }
   ],
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2137,
+      "andamento": 2136,
       "entradas_mes": 91,
-      "saidas_mes": 56,
+      "saidas_mes": 57,
       "entradas_mes_anterior": 118,
       "saidas_mes_anterior": 96,
-      "valor_causa": 476727189.7
+      "valor_causa": 476705859.13
     },
     {
       "nome": "Grupo E1",
@@ -336,12 +336,12 @@
     },
     {
       "nome": "Grupo B1",
-      "andamento": 1457,
-      "entradas_mes": 35,
+      "andamento": 1458,
+      "entradas_mes": 36,
       "saidas_mes": 15,
       "entradas_mes_anterior": 55,
       "saidas_mes_anterior": 41,
-      "valor_causa": 326813054.93
+      "valor_causa": 326814054.93
     },
     {
       "nome": "Grupo B2",
@@ -416,15 +416,6 @@
       "valor_causa": 11721158.38
     },
     {
-      "nome": "Sem grupo",
-      "andamento": 4,
-      "entradas_mes": 4,
-      "saidas_mes": 1,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 3,
-      "valor_causa": 139458.51
-    },
-    {
       "nome": "Sócios",
       "andamento": 3,
       "entradas_mes": 0,
@@ -432,6 +423,15 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
+    },
+    {
+      "nome": "Sem grupo",
+      "andamento": 3,
+      "entradas_mes": 3,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 3,
+      "valor_causa": 138458.51
     },
     {
       "nome": "Grupo D1",
@@ -464,12 +464,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5798,
+      "andamento": 5797,
       "entradas_mes": 165,
-      "saidas_mes": 106,
+      "saidas_mes": 107,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 842,
-      "valor_causa": 1383135920.58
+      "valor_causa": 1383114590.01
     },
     {
       "nome": "MG",
@@ -709,12 +709,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2931,
+      "andamento": 2930,
       "entradas_mes": 234,
-      "saidas_mes": 37,
+      "saidas_mes": 38,
       "entradas_mes_anterior": 267,
       "saidas_mes_anterior": 205,
-      "valor_causa": 854436857.25
+      "valor_causa": 854415526.68
     },
     {
       "nome": "Sentença",
@@ -939,12 +939,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 899,
+      "andamento": 898,
       "entradas_mes": 77,
-      "saidas_mes": 14,
+      "saidas_mes": 15,
       "entradas_mes_anterior": 102,
       "saidas_mes_anterior": 24,
-      "valor_causa": 192891364.02
+      "valor_causa": 192870033.45
     },
     {
       "fase": "Instrução",
@@ -959,12 +959,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B1",
-      "andamento": 440,
-      "entradas_mes": 35,
+      "andamento": 441,
+      "entradas_mes": 36,
       "saidas_mes": 2,
       "entradas_mes_anterior": 55,
       "saidas_mes_anterior": 13,
-      "valor_causa": 143926642.14
+      "valor_causa": 143927642.14
     },
     {
       "fase": "Instrução",
@@ -1049,12 +1049,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 4,
-      "entradas_mes": 4,
+      "andamento": 3,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 139458.51
+      "valor_causa": 138458.51
     },
     {
       "fase": "Outras",
@@ -1502,12 +1502,12 @@
     },
     {
       "nome": "Mariana Borges de Menezes Fávaro(MBF)",
-      "andamento": 256,
+      "andamento": 255,
       "entradas_mes": 4,
-      "saidas_mes": 5,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 6,
-      "valor_causa": 34219751.85
+      "valor_causa": 34198421.28
     },
     {
       "nome": "Vinícius Ronchi Arruda(VRO)",
@@ -1748,12 +1748,12 @@
     },
     {
       "nome": "BP BIOENERGIA",
-      "andamento": 761,
+      "andamento": 760,
       "entradas_mes": 27,
-      "saidas_mes": 16,
+      "saidas_mes": 17,
       "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 36,
-      "valor_causa": 215756143.33,
+      "valor_causa": 215734812.76,
       "alerta_entrada": false
     },
     {
@@ -2370,12 +2370,12 @@
     {
       "grupo": "Grupo B1",
       "cliente": "BRIDGESTONE",
-      "andamento": 1457,
-      "entradas_mes": 35,
+      "andamento": 1458,
+      "entradas_mes": 36,
       "saidas_mes": 15,
       "entradas_mes_anterior": 55,
       "saidas_mes_anterior": 41,
-      "valor_causa": 326813054.93,
+      "valor_causa": 326814054.93,
       "alerta_entrada": false
     },
     {
@@ -3206,12 +3206,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "BP BIOENERGIA",
-      "andamento": 761,
+      "andamento": 760,
       "entradas_mes": 27,
-      "saidas_mes": 16,
+      "saidas_mes": 17,
       "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 36,
-      "valor_causa": 215756143.33,
+      "valor_causa": 215734812.76,
       "alerta_entrada": false
     },
     {
@@ -3787,17 +3787,6 @@
       "alerta_entrada": false
     },
     {
-      "grupo": "Sem grupo",
-      "cliente": "BRIDGESTONE",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 1000.0,
-      "alerta_entrada": false
-    },
-    {
       "grupo": "Sócios",
       "cliente": "PEIXOTO E CURY",
       "andamento": 2,
@@ -3924,12 +3913,12 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Nicolau Rafael Guimarães Coelho(NRG)",
-      "andamento": 347,
-      "entradas_mes": 10,
+      "andamento": 348,
+      "entradas_mes": 11,
       "saidas_mes": 0,
       "entradas_mes_anterior": 21,
       "saidas_mes_anterior": 3,
-      "valor_causa": 72637257.99
+      "valor_causa": 72638257.99
     },
     {
       "grupo": "Grupo B1",
@@ -4364,12 +4353,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Mariana Borges de Menezes Fávaro(MBF)",
-      "andamento": 256,
+      "andamento": 255,
       "entradas_mes": 4,
-      "saidas_mes": 5,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 6,
-      "valor_causa": 34219751.85
+      "valor_causa": 34198421.28
     },
     {
       "grupo": "Grupo E2",
@@ -4460,16 +4449,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 30000.0
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Nicolau Rafael Guimarães Coelho(NRG)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 1000.0
     },
     {
       "grupo": "Sócios",
@@ -6466,12 +6445,12 @@
     {
       "estado": "SP",
       "cliente": "BP BIOENERGIA",
-      "andamento": 421,
+      "andamento": 420,
       "entradas_mes": 15,
-      "saidas_mes": 10,
+      "saidas_mes": 11,
       "entradas_mes_anterior": 14,
       "saidas_mes_anterior": 28,
-      "valor_causa": 102307916.49
+      "valor_causa": 102286585.92
     },
     {
       "estado": "SP",
@@ -7887,11 +7866,6 @@
     }
   ],
   "sem_grupo_processos": [
-    {
-      "numero_processo": "1001814-08.2026.5.02.0044",
-      "cliente": "BRIDGESTONE",
-      "profissional": "Nicolau Rafael Guimarães Coelho(NRG)"
-    },
     {
       "numero_processo": "0001607-78.2026.5.07.0014",
       "cliente": "COMPANHIA AIX",
