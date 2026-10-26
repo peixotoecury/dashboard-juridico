@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-26T09:00:26",
+  "atualizado_em": "2026-10-26T10:30:12",
   "kpis": {
-    "total_andamento": 7654,
+    "total_andamento": 7655,
     "entradas_hoje": 0,
     "saidas_hoje": 3,
     "entradas_ontem": 0,
     "saidas_ontem": 0,
-    "entradas_mes": 271,
+    "entradas_mes": 272,
     "saidas_mes": 140,
     "entradas_mes_anterior": 319,
     "saidas_mes_anterior": 1022,
-    "valor_causa_total": 1784747441.06,
-    "saldo_mes": 131
+    "valor_causa_total": 1784844531.65,
+    "saldo_mes": 132
   },
   "serie_diaria": [
     {
@@ -296,7 +296,7 @@
     },
     {
       "data": "2026-10-23",
-      "entradas": 10,
+      "entradas": 11,
       "saidas": 21
     },
     {
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 6,
-      "entradas_mes": 6,
+      "andamento": 7,
+      "entradas_mes": 7,
       "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 3,
-      "valor_causa": 1271343.53
+      "valor_causa": 1368434.12
     },
     {
       "nome": "Sócios",
@@ -464,12 +464,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5795,
-      "entradas_mes": 159,
+      "andamento": 5796,
+      "entradas_mes": 160,
       "saidas_mes": 103,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 842,
-      "valor_causa": 1382396062.34
+      "valor_causa": 1382493152.93
     },
     {
       "nome": "MG",
@@ -709,12 +709,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2929,
-      "entradas_mes": 226,
+      "andamento": 2930,
+      "entradas_mes": 227,
       "saidas_mes": 33,
       "entradas_mes_anterior": 267,
       "saidas_mes_anterior": 205,
-      "valor_causa": 853661284.12
+      "valor_causa": 853758374.71
     },
     {
       "nome": "Sentença",
@@ -727,7 +727,7 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2984,
+      "andamento": 2983,
       "entradas_mes": 6,
       "saidas_mes": 27,
       "entradas_mes_anterior": 3,
@@ -736,7 +736,7 @@
     },
     {
       "nome": "Execução",
-      "andamento": 899,
+      "andamento": 900,
       "entradas_mes": 6,
       "saidas_mes": 36,
       "entradas_mes_anterior": 2,
@@ -869,7 +869,7 @@
     {
       "fase": "Execução",
       "grupo": "Grupo B1",
-      "andamento": 153,
+      "andamento": 154,
       "entradas_mes": 0,
       "saidas_mes": 11,
       "entradas_mes_anterior": 0,
@@ -1039,12 +1039,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 6,
-      "entradas_mes": 6,
+      "andamento": 7,
+      "entradas_mes": 7,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 1271343.53
+      "valor_causa": 1368434.12
     },
     {
       "fase": "Instrução",
@@ -1169,7 +1169,7 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo B1",
-      "andamento": 861,
+      "andamento": 860,
       "entradas_mes": 0,
       "saidas_mes": 2,
       "entradas_mes_anterior": 0,
@@ -1583,12 +1583,12 @@
     },
     {
       "nome": "Bruno Tanganelli Farah(BTF)",
-      "andamento": 48,
-      "entradas_mes": 9,
+      "andamento": 49,
+      "entradas_mes": 10,
       "saidas_mes": 0,
       "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 0,
-      "valor_causa": 15001128.75
+      "valor_causa": 15098219.34
     },
     {
       "nome": "Thais Catharine Cardozo Esteves(TCE)",
@@ -3809,6 +3809,17 @@
       "alerta_entrada": false
     },
     {
+      "grupo": "Sem grupo",
+      "cliente": "ITW CHEMICAL MATRIZ",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 97090.59,
+      "alerta_entrada": false
+    },
+    {
       "grupo": "Sócios",
       "cliente": "PEIXOTO E CURY",
       "andamento": 2,
@@ -4491,6 +4502,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 513921.74
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Bruno Tanganelli Farah(BTF)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 97090.59
     },
     {
       "grupo": "Sócios",
@@ -6707,12 +6728,12 @@
     {
       "estado": "SP",
       "cliente": "ITW CHEMICAL MATRIZ",
-      "andamento": 17,
-      "entradas_mes": 0,
+      "andamento": 18,
+      "entradas_mes": 1,
       "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 1576134.73
+      "valor_causa": 1673225.32
     },
     {
       "estado": "SP",
@@ -7927,6 +7948,11 @@
       "numero_processo": "1001842-15.2026.5.02.0031",
       "cliente": "COMPANHIA AIX",
       "profissional": "Erik Mota Coppi(ECO)"
+    },
+    {
+      "numero_processo": "0011797-79.2026.5.15.0046",
+      "cliente": "ITW CHEMICAL MATRIZ",
+      "profissional": "Bruno Tanganelli Farah(BTF)"
     },
     {
       "numero_processo": "1002027-29.2026.5.02.0718",
