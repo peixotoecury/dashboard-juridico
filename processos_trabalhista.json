@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-27T10:45:25",
+  "atualizado_em": "2026-10-27T11:00:25",
   "kpis": {
-    "total_andamento": 7655,
-    "entradas_hoje": 1,
+    "total_andamento": 7657,
+    "entradas_hoje": 3,
     "saidas_hoje": 0,
     "entradas_ontem": 10,
     "saidas_ontem": 14,
-    "entradas_mes": 283,
+    "entradas_mes": 285,
     "saidas_mes": 151,
     "entradas_mes_anterior": 319,
     "saidas_mes_anterior": 1022,
-    "valor_causa_total": 1784021622.52,
-    "saldo_mes": 132
+    "valor_causa_total": 1785080925.6,
+    "saldo_mes": 134
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-10-27",
-      "entradas": 1,
+      "entradas": 3,
       "saidas": 0
     }
   ],
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 5,
-      "entradas_mes": 5,
+      "andamento": 7,
+      "entradas_mes": 7,
       "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 3,
-      "valor_causa": 642091.55
+      "valor_causa": 1701394.63
     },
     {
       "nome": "Sócios",
@@ -464,12 +464,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5795,
-      "entradas_mes": 169,
+      "andamento": 5797,
+      "entradas_mes": 171,
       "saidas_mes": 113,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 842,
-      "valor_causa": 1381338187.21
+      "valor_causa": 1382397490.29
     },
     {
       "nome": "MG",
@@ -709,12 +709,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2930,
-      "entradas_mes": 237,
+      "andamento": 2932,
+      "entradas_mes": 239,
       "saidas_mes": 40,
       "entradas_mes_anterior": 267,
       "saidas_mes_anterior": 205,
-      "valor_causa": 852606419.78
+      "valor_causa": 853665722.86
     },
     {
       "nome": "Sentença",
@@ -1039,12 +1039,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 5,
-      "entradas_mes": 5,
+      "andamento": 7,
+      "entradas_mes": 7,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 642091.55
+      "valor_causa": 1701394.63
     },
     {
       "fase": "Instrução",
@@ -1349,12 +1349,12 @@
     },
     {
       "nome": "Rafael Yepez do Lago(RYL)",
-      "andamento": 452,
-      "entradas_mes": 22,
+      "andamento": 453,
+      "entradas_mes": 23,
       "saidas_mes": 20,
       "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 23,
-      "valor_causa": 59881057.48
+      "valor_causa": 60621538.84
     },
     {
       "nome": "Giulia Vendramini Milani(GVM)",
@@ -1448,12 +1448,12 @@
     },
     {
       "nome": "Guilherme Silva Morimoto(GSM)",
-      "andamento": 282,
-      "entradas_mes": 4,
+      "andamento": 283,
+      "entradas_mes": 5,
       "saidas_mes": 3,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 3,
-      "valor_causa": 78214533.62
+      "valor_causa": 78533355.34
     },
     {
       "nome": "Vanessa de Cassia Castrequini Rosa(VCR)",
@@ -1738,22 +1738,22 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1458,
-      "entradas_mes": 37,
+      "andamento": 1459,
+      "entradas_mes": 38,
       "saidas_mes": 16,
       "entradas_mes_anterior": 55,
       "saidas_mes_anterior": 41,
-      "valor_causa": 326610321.77,
+      "valor_causa": 326929143.49,
       "alerta_entrada": false
     },
     {
       "nome": "BP BIOENERGIA",
-      "andamento": 762,
-      "entradas_mes": 29,
+      "andamento": 763,
+      "entradas_mes": 30,
       "saidas_mes": 17,
       "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 36,
-      "valor_causa": 216238445.8,
+      "valor_causa": 216978927.16,
       "alerta_entrada": false
     },
     {
@@ -3755,6 +3755,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "BP BIOENERGIA",
+      "andamento": 3,
+      "entradas_mes": 3,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1244114.4,
+      "alerta_entrada": true
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "COMPANHIA AIX",
       "andamento": 2,
       "entradas_mes": 2,
@@ -3766,17 +3777,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "BP BIOENERGIA",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 503633.04,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "andamento": 1,
       "entradas_mes": 1,
@@ -3784,6 +3784,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 108458.51,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "BRIDGESTONE",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 318821.72,
       "alerta_entrada": false
     },
     {
@@ -4132,16 +4143,6 @@
     },
     {
       "grupo": "Grupo C2",
-      "profissional": "Natália Biondi Gaggini Robles(NBG)",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 0.0
-    },
-    {
-      "grupo": "Grupo C2",
       "profissional": "Rafael Camargo Felisbino(RCF)",
       "andamento": 1,
       "entradas_mes": 0,
@@ -4149,6 +4150,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 38000.0
+    },
+    {
+      "grupo": "Grupo C2",
+      "profissional": "Natália Biondi Gaggini Robles(NBG)",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 0.0
     },
     {
       "grupo": "Grupo C3",
@@ -4422,6 +4433,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Rafael Yepez do Lago(RYL)",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 861931.36
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Joice Ramos Miranda(JRM)",
       "andamento": 1,
       "entradas_mes": 1,
@@ -4462,13 +4483,13 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Rafael Yepez do Lago(RYL)",
+      "profissional": "Guilherme Silva Morimoto(GSM)",
       "andamento": 1,
       "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 121450.0
+      "valor_causa": 318821.72
     },
     {
       "grupo": "Sócios",
@@ -6435,12 +6456,12 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1431,
-      "entradas_mes": 37,
+      "andamento": 1432,
+      "entradas_mes": 38,
       "saidas_mes": 16,
       "entradas_mes_anterior": 52,
       "saidas_mes_anterior": 40,
-      "valor_causa": 315017298.66
+      "valor_causa": 315336120.38
     },
     {
       "estado": "SP",
@@ -6465,12 +6486,12 @@
     {
       "estado": "SP",
       "cliente": "BP BIOENERGIA",
-      "andamento": 422,
-      "entradas_mes": 17,
+      "andamento": 423,
+      "entradas_mes": 18,
       "saidas_mes": 11,
       "entradas_mes_anterior": 14,
       "saidas_mes_anterior": 28,
-      "valor_causa": 102790218.96
+      "valor_causa": 103530700.32
     },
     {
       "estado": "SP",
@@ -7895,6 +7916,16 @@
       "numero_processo": "0012508-73.2026.5.15.0082",
       "cliente": "BP BIOENERGIA",
       "profissional": "Rafael Yepez do Lago(RYL)"
+    },
+    {
+      "numero_processo": "0012903-65.2026.5.15.0082",
+      "cliente": "BP BIOENERGIA",
+      "profissional": "Rafael Yepez do Lago(RYL)"
+    },
+    {
+      "numero_processo": "0012277-02.2026.5.15.0129",
+      "cliente": "BRIDGESTONE",
+      "profissional": "Guilherme Silva Morimoto(GSM)"
     },
     {
       "numero_processo": "0001683-94.2026.5.09.0128",
