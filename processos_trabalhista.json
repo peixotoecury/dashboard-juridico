@@ -1,24 +1,19 @@
 {
-  "atualizado_em": "2026-10-26T17:30:33",
+  "atualizado_em": "2026-10-27T08:00:31",
   "kpis": {
-    "total_andamento": 7654,
-    "entradas_hoje": 9,
-    "saidas_hoje": 13,
-    "entradas_ontem": 0,
-    "saidas_ontem": 0,
+    "total_andamento": 7653,
+    "entradas_hoje": 0,
+    "saidas_hoje": 0,
+    "entradas_ontem": 9,
+    "saidas_ontem": 14,
     "entradas_mes": 281,
-    "saidas_mes": 150,
+    "saidas_mes": 151,
     "entradas_mes_anterior": 319,
     "saidas_mes_anterior": 1022,
-    "valor_causa_total": 1783742004.7,
-    "saldo_mes": 131
+    "valor_causa_total": 1783517989.48,
+    "saldo_mes": 130
   },
   "serie_diaria": [
-    {
-      "data": "2026-08-28",
-      "entradas": 9,
-      "saidas": 8
-    },
     {
       "data": "2026-08-29",
       "entradas": 0,
@@ -312,7 +307,12 @@
     {
       "data": "2026-10-26",
       "entradas": 9,
-      "saidas": 13
+      "saidas": 14
+    },
+    {
+      "data": "2026-10-27",
+      "entradas": 0,
+      "saidas": 0
     }
   ],
   "por_grupo": [
@@ -336,12 +336,12 @@
     },
     {
       "nome": "Grupo B1",
-      "andamento": 1459,
+      "andamento": 1458,
       "entradas_mes": 37,
-      "saidas_mes": 15,
+      "saidas_mes": 16,
       "entradas_mes_anterior": 55,
       "saidas_mes_anterior": 41,
-      "valor_causa": 326834336.99
+      "valor_causa": 326610321.77
     },
     {
       "nome": "Grupo B2",
@@ -464,12 +464,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5794,
+      "andamento": 5793,
       "entradas_mes": 167,
-      "saidas_mes": 112,
+      "saidas_mes": 113,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 842,
-      "valor_causa": 1381058569.39
+      "valor_causa": 1380834554.17
     },
     {
       "nome": "MG",
@@ -736,12 +736,12 @@
     },
     {
       "nome": "Execução",
-      "andamento": 901,
+      "andamento": 900,
       "entradas_mes": 6,
-      "saidas_mes": 38,
+      "saidas_mes": 39,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 357,
-      "valor_causa": 128484514.61
+      "valor_causa": 128260499.39
     }
   ],
   "por_fase_outras": 398,
@@ -869,12 +869,12 @@
     {
       "fase": "Execução",
       "grupo": "Grupo B1",
-      "andamento": 157,
+      "andamento": 156,
       "entradas_mes": 0,
-      "saidas_mes": 11,
+      "saidas_mes": 12,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 14,
-      "valor_causa": 17899364.62
+      "valor_causa": 17675349.4
     },
     {
       "fase": "Execução",
@@ -1349,12 +1349,12 @@
     },
     {
       "nome": "Rafael Yepez do Lago(RYL)",
-      "andamento": 450,
+      "andamento": 451,
       "entradas_mes": 21,
       "saidas_mes": 20,
       "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 23,
-      "valor_causa": 59679607.48
+      "valor_causa": 59759607.48
     },
     {
       "nome": "Giulia Vendramini Milani(GVM)",
@@ -1403,12 +1403,12 @@
     },
     {
       "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 302,
+      "andamento": 301,
       "entradas_mes": 14,
       "saidas_mes": 5,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 18,
-      "valor_causa": 161218015.22
+      "valor_causa": 161138015.22
     },
     {
       "nome": "Rafael Rocha Ferreira(RFE)",
@@ -1448,12 +1448,12 @@
     },
     {
       "nome": "Guilherme Silva Morimoto(GSM)",
-      "andamento": 283,
+      "andamento": 282,
       "entradas_mes": 4,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 3,
-      "valor_causa": 78438548.84
+      "valor_causa": 78214533.62
     },
     {
       "nome": "Vanessa de Cassia Castrequini Rosa(VCR)",
@@ -1738,12 +1738,12 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1459,
+      "andamento": 1458,
       "entradas_mes": 37,
-      "saidas_mes": 15,
+      "saidas_mes": 16,
       "entradas_mes_anterior": 55,
       "saidas_mes_anterior": 41,
-      "valor_causa": 326834336.99,
+      "valor_causa": 326610321.77,
       "alerta_entrada": false
     },
     {
@@ -2370,12 +2370,12 @@
     {
       "grupo": "Grupo B1",
       "cliente": "BRIDGESTONE",
-      "andamento": 1459,
+      "andamento": 1458,
       "entradas_mes": 37,
-      "saidas_mes": 15,
+      "saidas_mes": 16,
       "entradas_mes_anterior": 55,
       "saidas_mes_anterior": 41,
-      "valor_causa": 326834336.99,
+      "valor_causa": 326610321.77,
       "alerta_entrada": false
     },
     {
@@ -2854,12 +2854,12 @@
     {
       "grupo": "Grupo C3",
       "cliente": "SINDIGÁS",
-      "andamento": 2,
+      "andamento": 3,
       "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 0.0,
+      "valor_causa": 1000.0,
       "alerta_entrada": false
     },
     {
@@ -2871,17 +2871,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 362753.96,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Grupo C3",
-      "cliente": "PEIXOTO E CURY",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 1000.0,
       "alerta_entrada": false
     },
     {
@@ -3943,12 +3932,12 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Guilherme Silva Morimoto(GSM)",
-      "andamento": 231,
+      "andamento": 230,
       "entradas_mes": 4,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 3,
-      "valor_causa": 56518727.6
+      "valor_causa": 56294712.38
     },
     {
       "grupo": "Grupo B1",
@@ -4313,12 +4302,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Rafael Yepez do Lago(RYL)",
-      "andamento": 450,
+      "andamento": 451,
       "entradas_mes": 21,
       "saidas_mes": 20,
       "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 23,
-      "valor_causa": 59679607.48
+      "valor_causa": 59759607.48
     },
     {
       "grupo": "Grupo E2",
@@ -4333,12 +4322,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 298,
+      "andamento": 297,
       "entradas_mes": 14,
       "saidas_mes": 4,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 18,
-      "valor_causa": 161180469.5
+      "valor_causa": 161100469.5
     },
     {
       "grupo": "Grupo E2",
@@ -6415,12 +6404,12 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1432,
+      "andamento": 1431,
       "entradas_mes": 37,
-      "saidas_mes": 15,
+      "saidas_mes": 16,
       "entradas_mes_anterior": 52,
       "saidas_mes_anterior": 40,
-      "valor_causa": 315241313.88
+      "valor_causa": 315017298.66
     },
     {
       "estado": "SP",
@@ -6734,16 +6723,6 @@
     },
     {
       "estado": "SP",
-      "cliente": "PEIXOTO E CURY",
-      "andamento": 9,
-      "entradas_mes": 0,
-      "saidas_mes": 1,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 211139.8
-    },
-    {
-      "estado": "SP",
       "cliente": "SOCIEDADE FOGAS",
       "andamento": 9,
       "entradas_mes": 0,
@@ -6761,6 +6740,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
       "valor_causa": 794811.51
+    },
+    {
+      "estado": "SP",
+      "cliente": "PEIXOTO E CURY",
+      "andamento": 8,
+      "entradas_mes": 0,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 210139.8
     },
     {
       "estado": "SP",
@@ -6864,6 +6853,16 @@
     },
     {
       "estado": "SP",
+      "cliente": "SINDIGÁS",
+      "andamento": 4,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1000.0
+    },
+    {
+      "estado": "SP",
       "cliente": "ITW PPF",
       "andamento": 4,
       "entradas_mes": 0,
@@ -6931,16 +6930,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 1939470.07
-    },
-    {
-      "estado": "SP",
-      "cliente": "SINDIGÁS",
-      "andamento": 3,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 0.0
     },
     {
       "estado": "SP",
