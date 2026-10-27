@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-27T11:00:25",
+  "atualizado_em": "2026-10-27T11:15:30",
   "kpis": {
-    "total_andamento": 7657,
-    "entradas_hoje": 3,
+    "total_andamento": 7658,
+    "entradas_hoje": 4,
     "saidas_hoje": 0,
     "entradas_ontem": 10,
     "saidas_ontem": 14,
-    "entradas_mes": 285,
+    "entradas_mes": 286,
     "saidas_mes": 151,
     "entradas_mes_anterior": 319,
     "saidas_mes_anterior": 1022,
-    "valor_causa_total": 1785080925.6,
-    "saldo_mes": 134
+    "valor_causa_total": 1785152142.54,
+    "saldo_mes": 135
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-10-27",
-      "entradas": 3,
+      "entradas": 4,
       "saidas": 0
     }
   ],
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 7,
-      "entradas_mes": 7,
+      "andamento": 8,
+      "entradas_mes": 8,
       "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 3,
-      "valor_causa": 1701394.63
+      "valor_causa": 1772611.57
     },
     {
       "nome": "Sócios",
@@ -464,12 +464,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5797,
-      "entradas_mes": 171,
+      "andamento": 5798,
+      "entradas_mes": 172,
       "saidas_mes": 113,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 842,
-      "valor_causa": 1382397490.29
+      "valor_causa": 1382468707.23
     },
     {
       "nome": "MG",
@@ -709,12 +709,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2932,
-      "entradas_mes": 239,
+      "andamento": 2933,
+      "entradas_mes": 240,
       "saidas_mes": 40,
       "entradas_mes_anterior": 267,
       "saidas_mes_anterior": 205,
-      "valor_causa": 853665722.86
+      "valor_causa": 853736939.8
     },
     {
       "nome": "Sentença",
@@ -1039,12 +1039,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 7,
-      "entradas_mes": 7,
+      "andamento": 8,
+      "entradas_mes": 8,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 1701394.63
+      "valor_causa": 1772611.57
     },
     {
       "fase": "Instrução",
@@ -1349,12 +1349,12 @@
     },
     {
       "nome": "Rafael Yepez do Lago(RYL)",
-      "andamento": 453,
-      "entradas_mes": 23,
+      "andamento": 454,
+      "entradas_mes": 24,
       "saidas_mes": 20,
       "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 23,
-      "valor_causa": 60621538.84
+      "valor_causa": 60718629.43
     },
     {
       "nome": "Giulia Vendramini Milani(GVM)",
@@ -1385,12 +1385,12 @@
     },
     {
       "nome": "Beatriz Santiago de Souza(BSO)",
-      "andamento": 307,
-      "entradas_mes": 9,
+      "andamento": 308,
+      "entradas_mes": 10,
       "saidas_mes": 5,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 8,
-      "valor_causa": 60559202.05
+      "valor_causa": 60630418.99
     },
     {
       "nome": "Joice Ramos Miranda(JRM)",
@@ -1583,12 +1583,12 @@
     },
     {
       "nome": "Bruno Tanganelli Farah(BTF)",
-      "andamento": 50,
-      "entradas_mes": 11,
+      "andamento": 49,
+      "entradas_mes": 10,
       "saidas_mes": 0,
       "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 0,
-      "valor_causa": 15453035.95
+      "valor_causa": 15355945.36
     },
     {
       "nome": "Thais Catharine Cardozo Esteves(TCE)",
@@ -1738,12 +1738,12 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1459,
-      "entradas_mes": 38,
+      "andamento": 1460,
+      "entradas_mes": 39,
       "saidas_mes": 16,
       "entradas_mes_anterior": 55,
       "saidas_mes_anterior": 41,
-      "valor_causa": 326929143.49,
+      "valor_causa": 327000360.43,
       "alerta_entrada": false
     },
     {
@@ -3777,6 +3777,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "BRIDGESTONE",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 390038.66,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "andamento": 1,
       "entradas_mes": 1,
@@ -3784,17 +3795,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 108458.51,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "BRIDGESTONE",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 318821.72,
       "alerta_entrada": false
     },
     {
@@ -4324,12 +4324,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Rafael Yepez do Lago(RYL)",
-      "andamento": 451,
-      "entradas_mes": 21,
+      "andamento": 452,
+      "entradas_mes": 22,
       "saidas_mes": 20,
       "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 23,
-      "valor_causa": 59759607.48
+      "valor_causa": 59856698.07
     },
     {
       "grupo": "Grupo E2",
@@ -4404,12 +4404,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Bruno Tanganelli Farah(BTF)",
-      "andamento": 50,
-      "entradas_mes": 11,
+      "andamento": 49,
+      "entradas_mes": 10,
       "saidas_mes": 0,
       "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 0,
-      "valor_causa": 15453035.95
+      "valor_causa": 15355945.36
     },
     {
       "grupo": "Grupo E2",
@@ -4480,6 +4480,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 382183.04
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Beatriz Santiago de Souza(BSO)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 71216.94
     },
     {
       "grupo": "Sem grupo",
@@ -6456,12 +6466,12 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1432,
-      "entradas_mes": 38,
+      "andamento": 1433,
+      "entradas_mes": 39,
       "saidas_mes": 16,
       "entradas_mes_anterior": 52,
       "saidas_mes_anterior": 40,
-      "valor_causa": 315336120.38
+      "valor_causa": 315407337.32
     },
     {
       "estado": "SP",
@@ -7921,6 +7931,11 @@
       "numero_processo": "0012903-65.2026.5.15.0082",
       "cliente": "BP BIOENERGIA",
       "profissional": "Rafael Yepez do Lago(RYL)"
+    },
+    {
+      "numero_processo": "1002143-20.2026.5.02.0432",
+      "cliente": "BRIDGESTONE",
+      "profissional": "Beatriz Santiago de Souza(BSO)"
     },
     {
       "numero_processo": "0012277-02.2026.5.15.0129",
