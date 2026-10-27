@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-27T11:15:30",
+  "atualizado_em": "2026-10-27T11:30:27",
   "kpis": {
-    "total_andamento": 7658,
-    "entradas_hoje": 4,
+    "total_andamento": 7660,
+    "entradas_hoje": 6,
     "saidas_hoje": 0,
     "entradas_ontem": 10,
     "saidas_ontem": 14,
-    "entradas_mes": 286,
+    "entradas_mes": 288,
     "saidas_mes": 151,
     "entradas_mes_anterior": 319,
     "saidas_mes_anterior": 1022,
-    "valor_causa_total": 1785152142.54,
-    "saldo_mes": 135
+    "valor_causa_total": 1785360773.86,
+    "saldo_mes": 137
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-10-27",
-      "entradas": 4,
+      "entradas": 6,
       "saidas": 0
     }
   ],
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 8,
-      "entradas_mes": 8,
+      "andamento": 10,
+      "entradas_mes": 10,
       "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 3,
-      "valor_causa": 1772611.57
+      "valor_causa": 1981242.89
     },
     {
       "nome": "Sócios",
@@ -464,12 +464,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5798,
-      "entradas_mes": 172,
+      "andamento": 5800,
+      "entradas_mes": 174,
       "saidas_mes": 113,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 842,
-      "valor_causa": 1382468707.23
+      "valor_causa": 1382677338.55
     },
     {
       "nome": "MG",
@@ -709,12 +709,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2933,
-      "entradas_mes": 240,
+      "andamento": 2935,
+      "entradas_mes": 242,
       "saidas_mes": 40,
       "entradas_mes_anterior": 267,
       "saidas_mes_anterior": 205,
-      "valor_causa": 853736939.8
+      "valor_causa": 853945571.12
     },
     {
       "nome": "Sentença",
@@ -1039,12 +1039,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 8,
-      "entradas_mes": 8,
+      "andamento": 10,
+      "entradas_mes": 10,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 1772611.57
+      "valor_causa": 1981242.89
     },
     {
       "fase": "Instrução",
@@ -1412,12 +1412,12 @@
     },
     {
       "nome": "Rafael Rocha Ferreira(RFE)",
-      "andamento": 297,
-      "entradas_mes": 10,
+      "andamento": 298,
+      "entradas_mes": 11,
       "saidas_mes": 4,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 6,
-      "valor_causa": 82586843.81
+      "valor_causa": 82630753.41
     },
     {
       "nome": "Bianca Bolanhi Camacho(BBO)",
@@ -1519,6 +1519,15 @@
       "valor_causa": 40120044.5
     },
     {
+      "nome": "Tamires Lins Costa(TLI)",
+      "andamento": 228,
+      "entradas_mes": 7,
+      "saidas_mes": 9,
+      "entradas_mes_anterior": 6,
+      "saidas_mes_anterior": 5,
+      "valor_causa": 29837275.2
+    },
+    {
       "nome": "Lucas Willott Pereira (LWP)",
       "andamento": 227,
       "entradas_mes": 2,
@@ -1526,15 +1535,6 @@
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 11,
       "valor_causa": 27198936.84
-    },
-    {
-      "nome": "Tamires Lins Costa(TLI)",
-      "andamento": 227,
-      "entradas_mes": 6,
-      "saidas_mes": 9,
-      "entradas_mes_anterior": 6,
-      "saidas_mes_anterior": 5,
-      "valor_causa": 29672553.48
     },
     {
       "nome": "Thais Amaral Rocca(TAR)",
@@ -1738,12 +1738,12 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1460,
-      "entradas_mes": 39,
+      "andamento": 1461,
+      "entradas_mes": 40,
       "saidas_mes": 16,
       "entradas_mes_anterior": 55,
       "saidas_mes_anterior": 41,
-      "valor_causa": 327000360.43,
+      "valor_causa": 327044270.03,
       "alerta_entrada": false
     },
     {
@@ -3766,6 +3766,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "BRIDGESTONE",
+      "andamento": 3,
+      "entradas_mes": 3,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 433948.26,
+      "alerta_entrada": true
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "COMPANHIA AIX",
       "andamento": 2,
       "entradas_mes": 2,
@@ -3777,17 +3788,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "BRIDGESTONE",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 390038.66,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "andamento": 1,
       "entradas_mes": 1,
@@ -3795,6 +3795,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 108458.51,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "MAHLE - COMPRESSORES",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 164721.72,
       "alerta_entrada": false
     },
     {
@@ -4500,6 +4511,26 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 318821.72
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Rafael Rocha Ferreira(RFE)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 43909.6
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Tamires Lins Costa(TLI)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 164721.72
     },
     {
       "grupo": "Sócios",
@@ -6466,12 +6497,12 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1433,
-      "entradas_mes": 39,
+      "andamento": 1434,
+      "entradas_mes": 40,
       "saidas_mes": 16,
       "entradas_mes_anterior": 52,
       "saidas_mes_anterior": 40,
-      "valor_causa": 315407337.32
+      "valor_causa": 315451246.92
     },
     {
       "estado": "SP",
@@ -6905,6 +6936,16 @@
     },
     {
       "estado": "SP",
+      "cliente": "MAHLE - COMPRESSORES",
+      "andamento": 5,
+      "entradas_mes": 3,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 2,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 969692.24
+    },
+    {
+      "estado": "SP",
       "cliente": "AKAMAI TECNOLOGIAS",
       "andamento": 4,
       "entradas_mes": 0,
@@ -6942,16 +6983,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
-    },
-    {
-      "estado": "SP",
-      "cliente": "MAHLE - COMPRESSORES",
-      "andamento": 4,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 2,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 804970.52
     },
     {
       "estado": "SP",
@@ -7914,6 +7945,16 @@
       "saidas_mes_anterior": 1,
       "valor_causa": 12246207.41,
       "alerta_entrada": true
+    },
+    {
+      "nome": "MAHLE - COMPRESSORES",
+      "andamento": 5,
+      "entradas_mes": 3,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 2,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 969692.24,
+      "alerta_entrada": true
     }
   ],
   "sem_grupo_processos": [
@@ -7943,6 +7984,11 @@
       "profissional": "Guilherme Silva Morimoto(GSM)"
     },
     {
+      "numero_processo": "1002121-53.2026.5.02.0434",
+      "cliente": "BRIDGESTONE",
+      "profissional": "Rafael Rocha Ferreira(RFE)"
+    },
+    {
       "numero_processo": "0001683-94.2026.5.09.0128",
       "cliente": "COMPANHIA AIX",
       "profissional": "Erik Mota Coppi(ECO)"
@@ -7951,6 +7997,11 @@
       "numero_processo": "0001607-78.2026.5.07.0014",
       "cliente": "COMPANHIA AIX",
       "profissional": "Vinicius da Silva Cerqueira(VSI)"
+    },
+    {
+      "numero_processo": "0011956-60.2026.5.15.0001",
+      "cliente": "MAHLE - COMPRESSORES",
+      "profissional": "Tamires Lins Costa(TLI)"
     },
     {
       "numero_processo": "1002027-29.2026.5.02.0718",
