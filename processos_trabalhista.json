@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-27T17:15:28",
+  "atualizado_em": "2026-10-27T17:30:37",
   "kpis": {
-    "total_andamento": 7659,
+    "total_andamento": 7658,
     "entradas_hoje": 9,
     "saidas_hoje": 3,
     "entradas_ontem": 10,
     "saidas_ontem": 15,
     "entradas_mes": 291,
-    "saidas_mes": 155,
+    "saidas_mes": 156,
     "entradas_mes_anterior": 319,
     "saidas_mes_anterior": 1022,
-    "valor_causa_total": 1784175500.05,
-    "saldo_mes": 136
+    "valor_causa_total": 1784150163.43,
+    "saldo_mes": 135
   },
   "serie_diaria": [
     {
@@ -182,7 +182,7 @@
     {
       "data": "2026-10-01",
       "entradas": 16,
-      "saidas": 6
+      "saidas": 7
     },
     {
       "data": "2026-10-02",
@@ -327,12 +327,12 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1813,
-      "entradas_mes": 50,
+      "andamento": 1814,
+      "entradas_mes": 51,
       "saidas_mes": 50,
       "entradas_mes_anterior": 60,
       "saidas_mes_anterior": 45,
-      "valor_causa": 308263652.23
+      "valor_causa": 308477502.87
     },
     {
       "nome": "Grupo B1",
@@ -408,21 +408,21 @@
     },
     {
       "nome": "Grupo A2",
-      "andamento": 24,
+      "andamento": 23,
       "entradas_mes": 1,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
-      "valor_causa": 11721158.38
+      "valor_causa": 11695821.76
     },
     {
       "nome": "Sem grupo",
-      "andamento": 5,
-      "entradas_mes": 5,
+      "andamento": 4,
+      "entradas_mes": 4,
       "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 3,
-      "valor_causa": 395716.99
+      "valor_causa": 181866.35
     },
     {
       "nome": "Sócios",
@@ -464,12 +464,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5798,
+      "andamento": 5797,
       "entradas_mes": 176,
-      "saidas_mes": 117,
+      "saidas_mes": 118,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 842,
-      "valor_causa": 1381455801.13
+      "valor_causa": 1381430464.51
     },
     {
       "nome": "MG",
@@ -709,12 +709,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2925,
+      "andamento": 2915,
       "entradas_mes": 243,
-      "saidas_mes": 42,
+      "saidas_mes": 43,
       "entradas_mes_anterior": 267,
       "saidas_mes_anterior": 205,
-      "valor_causa": 851511813.97
+      "valor_causa": 846563818.19
     },
     {
       "nome": "Sentença",
@@ -727,12 +727,12 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2987,
+      "andamento": 2996,
       "entradas_mes": 6,
       "saidas_mes": 29,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 387,
-      "valor_causa": 673459459.93
+      "valor_causa": 678382119.09
     },
     {
       "nome": "Execução",
@@ -959,22 +959,22 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 736,
-      "entradas_mes": 23,
+      "andamento": 737,
+      "entradas_mes": 24,
       "saidas_mes": 13,
       "entradas_mes_anterior": 28,
       "saidas_mes_anterior": 10,
-      "valor_causa": 157000790.89
+      "valor_causa": 157214641.53
     },
     {
       "fase": "Instrução",
       "grupo": "Grupo B1",
-      "andamento": 436,
+      "andamento": 427,
       "entradas_mes": 40,
       "saidas_mes": 3,
       "entradas_mes_anterior": 55,
       "saidas_mes_anterior": 13,
-      "valor_causa": 142543796.3
+      "valor_causa": 137621137.14
     },
     {
       "fase": "Instrução",
@@ -1039,22 +1039,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo A2",
-      "andamento": 14,
+      "andamento": 13,
       "entradas_mes": 1,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
-      "valor_causa": 7720799.28
-    },
-    {
-      "fase": "Instrução",
-      "grupo": "Sem grupo",
-      "andamento": 5,
-      "entradas_mes": 5,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 395716.99
+      "valor_causa": 7695462.66
     },
     {
       "fase": "Instrução",
@@ -1065,6 +1055,16 @@
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
+    },
+    {
+      "fase": "Instrução",
+      "grupo": "Sem grupo",
+      "andamento": 4,
+      "entradas_mes": 4,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 181866.35
     },
     {
       "fase": "Outras",
@@ -1179,12 +1179,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo B1",
-      "andamento": 866,
+      "andamento": 875,
       "entradas_mes": 0,
       "saidas_mes": 2,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 14,
-      "valor_causa": 166735974.97
+      "valor_causa": 171658634.13
     },
     {
       "fase": "Recurso",
@@ -1611,12 +1611,12 @@
     },
     {
       "nome": "Natália Biondi Gaggini Robles(NBG)",
-      "andamento": 25,
+      "andamento": 24,
       "entradas_mes": 1,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 1,
-      "valor_causa": 11683612.66
+      "valor_causa": 11658276.04
     },
     {
       "nome": "Keyla Maria Barbosa Silva Moraes(KBM)",
@@ -2177,17 +2177,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 1025000.0,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Grupo A2",
-      "cliente": "AAF BRASIL",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 25336.62,
       "alerta_entrada": false
     },
     {
@@ -2963,12 +2952,12 @@
     {
       "grupo": "Grupo E1",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 651,
-      "entradas_mes": 20,
+      "andamento": 652,
+      "entradas_mes": 21,
       "saidas_mes": 11,
       "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 14,
-      "valor_causa": 141230898.76,
+      "valor_causa": 141444749.4,
       "alerta_entrada": false
     },
     {
@@ -3765,17 +3754,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 322309.15,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "COMPANHIA AIX",
       "andamento": 2,
       "entradas_mes": 2,
@@ -3783,6 +3761,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 30000.0,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "SYNGENTA PROTEÇÃO DE",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 108458.51,
       "alerta_entrada": false
     },
     {
@@ -3833,12 +3822,12 @@
     {
       "grupo": "Grupo A2",
       "profissional": "Natália Biondi Gaggini Robles(NBG)",
-      "andamento": 23,
+      "andamento": 22,
       "entradas_mes": 1,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
-      "valor_causa": 11683612.66
+      "valor_causa": 11658276.04
     },
     {
       "grupo": "Grupo A2",
@@ -4223,12 +4212,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Júlia Priego Lopes da Silva(JPL)",
-      "andamento": 287,
-      "entradas_mes": 3,
+      "andamento": 288,
+      "entradas_mes": 4,
       "saidas_mes": 8,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 5,
-      "valor_causa": 30181980.38
+      "valor_causa": 30395831.02
     },
     {
       "grupo": "Grupo E1",
@@ -4469,16 +4458,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 43407.84
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Júlia Priego Lopes da Silva(JPL)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 213850.64
     },
     {
       "grupo": "Sócios",
@@ -7584,16 +7563,6 @@
     },
     {
       "estado": "SP",
-      "cliente": "AAF BRASIL",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 25336.62
-    },
-    {
-      "estado": "SP",
       "cliente": "NEO MULTIMERCADO",
       "andamento": 1,
       "entradas_mes": 0,
@@ -7925,11 +7894,6 @@
       "numero_processo": "1002027-29.2026.5.02.0718",
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "profissional": "Joice Ramos Miranda(JRM)"
-    },
-    {
-      "numero_processo": "1001343-77.2025.5.02.0221",
-      "cliente": "SYNGENTA PROTEÇÃO DE",
-      "profissional": "Júlia Priego Lopes da Silva(JPL)"
     }
   ]
 }
