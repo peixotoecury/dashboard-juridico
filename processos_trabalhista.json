@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-28T14:31:33",
+  "atualizado_em": "2026-10-28T14:46:26",
   "kpis": {
-    "total_andamento": 7667,
+    "total_andamento": 7665,
     "entradas_hoje": 9,
-    "saidas_hoje": 1,
+    "saidas_hoje": 3,
     "entradas_ontem": 10,
     "saidas_ontem": 3,
     "entradas_mes": 301,
-    "saidas_mes": 158,
+    "saidas_mes": 160,
     "entradas_mes_anterior": 319,
     "saidas_mes_anterior": 1022,
-    "valor_causa_total": 1785257184.48,
-    "saldo_mes": 143
+    "valor_causa_total": 1785175036.76,
+    "saldo_mes": 141
   },
   "serie_diaria": [
     {
@@ -312,7 +312,7 @@
     {
       "data": "2026-10-28",
       "entradas": 9,
-      "saidas": 1
+      "saidas": 3
     }
   ],
   "por_grupo": [
@@ -372,12 +372,12 @@
     },
     {
       "nome": "Grupo C2",
-      "andamento": 224,
+      "andamento": 222,
       "entradas_mes": 21,
-      "saidas_mes": 1,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 15,
       "saidas_mes_anterior": 0,
-      "valor_causa": 46919033.28
+      "valor_causa": 46836885.56
     },
     {
       "nome": "Grupo C3",
@@ -527,12 +527,12 @@
     },
     {
       "nome": "GO",
-      "andamento": 98,
+      "andamento": 96,
       "entradas_mes": 8,
-      "saidas_mes": 4,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 15,
-      "valor_causa": 13453040.85
+      "valor_causa": 13370893.13
     },
     {
       "nome": "MT",
@@ -709,21 +709,21 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2920,
+      "andamento": 2919,
       "entradas_mes": 253,
-      "saidas_mes": 45,
+      "saidas_mes": 46,
       "entradas_mes_anterior": 267,
       "saidas_mes_anterior": 205,
-      "valor_causa": 847253254.73
+      "valor_causa": 847201728.67
     },
     {
       "nome": "Sentença",
-      "andamento": 33,
+      "andamento": 32,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 6,
-      "valor_causa": 28918177.53
+      "valor_causa": 28887555.87
     },
     {
       "nome": "Recurso",
@@ -1019,12 +1019,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo C2",
-      "andamento": 88,
+      "andamento": 87,
       "entradas_mes": 21,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 0,
-      "valor_causa": 32512376.64
+      "valor_causa": 32460850.58
     },
     {
       "fase": "Instrução",
@@ -1318,16 +1318,6 @@
     },
     {
       "fase": "Sentença",
-      "grupo": "Grupo C2",
-      "andamento": 2,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 181368.95
-    },
-    {
-      "fase": "Sentença",
       "grupo": "Grupo A2",
       "andamento": 1,
       "entradas_mes": 0,
@@ -1345,6 +1335,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 25300000.0
+    },
+    {
+      "fase": "Sentença",
+      "grupo": "Grupo C2",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 150747.29
     }
   ],
   "por_profissional": [
@@ -1512,12 +1512,12 @@
     },
     {
       "nome": "Erik Mota Coppi(ECO)",
-      "andamento": 249,
+      "andamento": 247,
       "entradas_mes": 18,
-      "saidas_mes": 2,
+      "saidas_mes": 4,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 12,
-      "valor_causa": 47334319.75
+      "valor_causa": 47252172.03
     },
     {
       "nome": "Vinícius Ronchi Arruda(VRO)",
@@ -2578,12 +2578,12 @@
     {
       "grupo": "Grupo C2",
       "cliente": "UHE SÃO SIMÃO",
-      "andamento": 31,
+      "andamento": 29,
       "entradas_mes": 2,
-      "saidas_mes": 0,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 0,
-      "valor_causa": 8252787.94,
+      "valor_causa": 8170640.22,
       "alerta_entrada": false
     },
     {
@@ -4111,12 +4111,12 @@
     {
       "grupo": "Grupo C2",
       "profissional": "Erik Mota Coppi(ECO)",
-      "andamento": 205,
+      "andamento": 203,
       "entradas_mes": 16,
-      "saidas_mes": 1,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 0,
-      "valor_causa": 40344507.0
+      "valor_causa": 40262359.28
     },
     {
       "grupo": "Grupo C2",
@@ -4932,16 +4932,6 @@
     },
     {
       "estado": "GO",
-      "cliente": "UHE SÃO SIMÃO",
-      "andamento": 15,
-      "entradas_mes": 2,
-      "saidas_mes": 1,
-      "entradas_mes_anterior": 5,
-      "saidas_mes_anterior": 7,
-      "valor_causa": 4666646.73
-    },
-    {
-      "estado": "GO",
       "cliente": "EUROCHEM FTO MATRIZ",
       "andamento": 13,
       "entradas_mes": 1,
@@ -4949,6 +4939,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 6,
       "valor_causa": 1280778.57
+    },
+    {
+      "estado": "GO",
+      "cliente": "UHE SÃO SIMÃO",
+      "andamento": 13,
+      "entradas_mes": 2,
+      "saidas_mes": 3,
+      "entradas_mes_anterior": 5,
+      "saidas_mes_anterior": 7,
+      "valor_causa": 4584499.01
     },
     {
       "estado": "GO",
