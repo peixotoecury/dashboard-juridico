@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-28T11:01:28",
+  "atualizado_em": "2026-10-28T11:16:29",
   "kpis": {
-    "total_andamento": 7659,
-    "entradas_hoje": 2,
+    "total_andamento": 7661,
+    "entradas_hoje": 4,
     "saidas_hoje": 1,
     "entradas_ontem": 10,
     "saidas_ontem": 3,
-    "entradas_mes": 294,
+    "entradas_mes": 296,
     "saidas_mes": 158,
     "entradas_mes_anterior": 319,
     "saidas_mes_anterior": 1022,
-    "valor_causa_total": 1784254446.58,
-    "saldo_mes": 136
+    "valor_causa_total": 1784292968.21,
+    "saldo_mes": 138
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-10-28",
-      "entradas": 2,
+      "entradas": 4,
       "saidas": 1
     }
   ],
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 7,
-      "entradas_mes": 7,
+      "andamento": 9,
+      "entradas_mes": 9,
       "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 3,
-      "valor_causa": 407719.57
+      "valor_causa": 446241.2
     },
     {
       "nome": "Sócios",
@@ -464,12 +464,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5797,
-      "entradas_mes": 177,
+      "andamento": 5798,
+      "entradas_mes": 178,
       "saidas_mes": 119,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 842,
-      "valor_causa": 1381386464.85
+      "valor_causa": 1381391132.24
     },
     {
       "nome": "MG",
@@ -482,12 +482,12 @@
     },
     {
       "nome": "PR",
-      "andamento": 253,
-      "entradas_mes": 19,
+      "andamento": 254,
+      "entradas_mes": 20,
       "saidas_mes": 1,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 7,
-      "valor_causa": 54903154.33
+      "valor_causa": 54937008.57
     },
     {
       "nome": "RS",
@@ -709,12 +709,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2913,
-      "entradas_mes": 246,
+      "andamento": 2915,
+      "entradas_mes": 248,
       "saidas_mes": 45,
       "entradas_mes_anterior": 267,
       "saidas_mes_anterior": 205,
-      "valor_causa": 846325035.97
+      "valor_causa": 846363557.6
     },
     {
       "nome": "Sentença",
@@ -1049,12 +1049,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 7,
-      "entradas_mes": 7,
+      "andamento": 9,
+      "entradas_mes": 9,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 407719.57
+      "valor_causa": 446241.2
     },
     {
       "fase": "Instrução",
@@ -1368,12 +1368,12 @@
     },
     {
       "nome": "Giulia Vendramini Milani(GVM)",
-      "andamento": 443,
-      "entradas_mes": 13,
+      "andamento": 444,
+      "entradas_mes": 14,
       "saidas_mes": 13,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 12,
-      "valor_causa": 66977734.73
+      "valor_causa": 67011588.97
     },
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
@@ -1404,12 +1404,12 @@
     },
     {
       "nome": "Joice Ramos Miranda(JRM)",
-      "andamento": 304,
-      "entradas_mes": 10,
+      "andamento": 305,
+      "entradas_mes": 11,
       "saidas_mes": 5,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 6,
-      "valor_causa": 73454600.44
+      "valor_causa": 73459267.83
     },
     {
       "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
@@ -1768,12 +1768,12 @@
     },
     {
       "nome": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 724,
-      "entradas_mes": 22,
+      "andamento": 725,
+      "entradas_mes": 23,
       "saidas_mes": 11,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 14,
-      "valor_causa": 142527446.85,
+      "valor_causa": 142561301.09,
       "alerta_entrada": false
     },
     {
@@ -1878,12 +1878,12 @@
     },
     {
       "nome": "SYNGENTA SEEDS NIDER",
-      "andamento": 153,
-      "entradas_mes": 4,
+      "andamento": 154,
+      "entradas_mes": 5,
       "saidas_mes": 8,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 5,
-      "valor_causa": 23948644.19,
+      "valor_causa": 23953311.58,
       "alerta_entrada": false
     },
     {
@@ -3754,6 +3754,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "SYNGENTA PROTEÇÃO DE",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 142312.75,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "COMPANHIA AIX",
       "andamento": 2,
       "entradas_mes": 2,
@@ -3761,17 +3772,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 30000.0,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 108458.51,
       "alerta_entrada": false
     },
     {
@@ -3794,6 +3794,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 31570.41,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "SYNGENTA SEEDS NIDER",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 4667.39,
       "alerta_entrada": false
     },
     {
@@ -4464,6 +4475,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Joice Ramos Miranda(JRM)",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 113125.9
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Vinicius da Silva Cerqueira(VSI)",
       "andamento": 2,
       "entradas_mes": 2,
@@ -4484,16 +4505,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Joice Ramos Miranda(JRM)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 108458.51
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Rafael Yepez do Lago(RYL)",
       "andamento": 1,
       "entradas_mes": 1,
@@ -4501,6 +4512,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 31570.41
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Giulia Vendramini Milani(GVM)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 33854.24
     },
     {
       "grupo": "Sem grupo",
@@ -5066,16 +5087,6 @@
     },
     {
       "estado": "GO",
-      "cliente": "INPASA SINOP",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 105887.88
-    },
-    {
-      "estado": "GO",
       "cliente": "LOCALIZA RENT A CAR",
       "andamento": 1,
       "entradas_mes": 0,
@@ -5093,6 +5104,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
       "valor_causa": 24534.57
+    },
+    {
+      "estado": "GO",
+      "cliente": "INPASA SINOP",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 105887.88
     },
     {
       "estado": "MA",
@@ -5767,12 +5788,12 @@
     {
       "estado": "PR",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 14,
-      "entradas_mes": 2,
+      "andamento": 15,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 3,
-      "valor_causa": 3531981.11
+      "valor_causa": 3565835.35
     },
     {
       "estado": "PR",
@@ -6627,12 +6648,12 @@
     {
       "estado": "SP",
       "cliente": "SYNGENTA SEEDS NIDER",
-      "andamento": 45,
-      "entradas_mes": 1,
+      "andamento": 46,
+      "entradas_mes": 2,
       "saidas_mes": 2,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 1,
-      "valor_causa": 4708286.33
+      "valor_causa": 4712953.72
     },
     {
       "estado": "SP",
@@ -7961,6 +7982,16 @@
     {
       "numero_processo": "1002027-29.2026.5.02.0718",
       "cliente": "SYNGENTA PROTEÇÃO DE",
+      "profissional": "Joice Ramos Miranda(JRM)"
+    },
+    {
+      "numero_processo": "0003183-89.2026.5.10.0801",
+      "cliente": "SYNGENTA PROTEÇÃO DE",
+      "profissional": "Giulia Vendramini Milani(GVM)"
+    },
+    {
+      "numero_processo": "0012428-95.2026.5.15.0022",
+      "cliente": "SYNGENTA SEEDS NIDER",
       "profissional": "Joice Ramos Miranda(JRM)"
     }
   ]
