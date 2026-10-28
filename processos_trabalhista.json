@@ -1,11 +1,11 @@
 {
-  "atualizado_em": "2026-10-27T20:15:30",
+  "atualizado_em": "2026-10-28T08:16:21",
   "kpis": {
     "total_andamento": 7658,
-    "entradas_hoje": 9,
-    "saidas_hoje": 3,
-    "entradas_ontem": 10,
-    "saidas_ontem": 15,
+    "entradas_hoje": 0,
+    "saidas_hoje": 0,
+    "entradas_ontem": 9,
+    "saidas_ontem": 3,
     "entradas_mes": 291,
     "saidas_mes": 156,
     "entradas_mes_anterior": 319,
@@ -14,11 +14,6 @@
     "saldo_mes": 135
   },
   "serie_diaria": [
-    {
-      "data": "2026-08-29",
-      "entradas": 0,
-      "saidas": 0
-    },
     {
       "data": "2026-08-30",
       "entradas": 0,
@@ -313,6 +308,11 @@
       "data": "2026-10-27",
       "entradas": 9,
       "saidas": 3
+    },
+    {
+      "data": "2026-10-28",
+      "entradas": 0,
+      "saidas": 0
     }
   ],
   "por_grupo": [
@@ -3479,17 +3479,6 @@
     },
     {
       "grupo": "Grupo E2",
-      "cliente": "INTEL SEMICONDUTORES",
-      "andamento": 2,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 647973.71,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Grupo E2",
       "cliente": "ARCHROMA - SPICE",
       "andamento": 2,
       "entradas_mes": 0,
@@ -3519,6 +3508,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Grupo E2",
+      "cliente": "INTEL SEMICONDUTORES",
+      "andamento": 2,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 647973.71,
       "alerta_entrada": false
     },
     {
@@ -7213,16 +7213,6 @@
     },
     {
       "estado": "SP",
-      "cliente": "INTEL SEMICONDUTORES",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 232473.71
-    },
-    {
-      "estado": "SP",
       "cliente": "CBC MONTENEGRO",
       "andamento": 1,
       "entradas_mes": 0,
@@ -7580,6 +7570,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 78500.0
+    },
+    {
+      "estado": "SP",
+      "cliente": "INTEL SEMICONDUTORES",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 232473.71
     },
     {
       "estado": "TO",
