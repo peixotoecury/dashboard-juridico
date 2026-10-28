@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-28T13:31:22",
+  "atualizado_em": "2026-10-28T13:46:27",
   "kpis": {
     "total_andamento": 7667,
     "entradas_hoje": 9,
@@ -354,12 +354,12 @@
     },
     {
       "nome": "Grupo B3",
-      "andamento": 580,
-      "entradas_mes": 34,
+      "andamento": 581,
+      "entradas_mes": 35,
       "saidas_mes": 9,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 11,
-      "valor_causa": 113854690.36
+      "valor_causa": 113976790.36
     },
     {
       "nome": "Grupo C1",
@@ -416,15 +416,6 @@
       "valor_causa": 11695821.76
     },
     {
-      "nome": "Sem grupo",
-      "andamento": 4,
-      "entradas_mes": 4,
-      "saidas_mes": 1,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 3,
-      "valor_causa": 260558.51
-    },
-    {
       "nome": "Sócios",
       "andamento": 3,
       "entradas_mes": 0,
@@ -432,6 +423,15 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
+    },
+    {
+      "nome": "Sem grupo",
+      "andamento": 3,
+      "entradas_mes": 3,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 3,
+      "valor_causa": 138458.51
     },
     {
       "nome": "Grupo D1",
@@ -999,12 +999,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B3",
-      "andamento": 156,
-      "entradas_mes": 31,
+      "andamento": 157,
+      "entradas_mes": 32,
       "saidas_mes": 3,
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 5,
-      "valor_causa": 28454627.08
+      "valor_causa": 28576727.08
     },
     {
       "fase": "Instrução",
@@ -1059,12 +1059,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 4,
-      "entradas_mes": 4,
+      "andamento": 3,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 260558.51
+      "valor_causa": 138458.51
     },
     {
       "fase": "Outras",
@@ -2413,12 +2413,12 @@
     {
       "grupo": "Grupo B3",
       "cliente": "CBC MONTENEGRO",
-      "andamento": 134,
-      "entradas_mes": 6,
+      "andamento": 135,
+      "entradas_mes": 7,
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
-      "valor_causa": 34057705.16,
+      "valor_causa": 34179805.16,
       "alerta_entrada": true
     },
     {
@@ -3775,17 +3775,6 @@
       "alerta_entrada": false
     },
     {
-      "grupo": "Sem grupo",
-      "cliente": "CBC MONTENEGRO",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 122100.0,
-      "alerta_entrada": false
-    },
-    {
       "grupo": "Sócios",
       "cliente": "PEIXOTO E CURY",
       "andamento": 2,
@@ -4032,12 +4021,12 @@
     {
       "grupo": "Grupo B3",
       "profissional": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 360,
-      "entradas_mes": 30,
+      "andamento": 361,
+      "entradas_mes": 31,
       "saidas_mes": 3,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 7,
-      "valor_causa": 66984095.28
+      "valor_causa": 67106195.28
     },
     {
       "grupo": "Grupo B3",
@@ -4448,16 +4437,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 108458.51
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 122100.0
     },
     {
       "grupo": "Sócios",
@@ -7875,11 +7854,6 @@
     }
   ],
   "sem_grupo_processos": [
-    {
-      "numero_processo": "0021548-33.2026.5.04.0261",
-      "cliente": "CBC MONTENEGRO",
-      "profissional": "Letícia Meneghini Fontes (LMI)"
-    },
     {
       "numero_processo": "0001683-94.2026.5.09.0128",
       "cliente": "COMPANHIA AIX",
