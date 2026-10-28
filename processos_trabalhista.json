@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-28T15:16:29",
+  "atualizado_em": "2026-10-28T15:31:33",
   "kpis": {
-    "total_andamento": 7665,
+    "total_andamento": 7662,
     "entradas_hoje": 9,
-    "saidas_hoje": 3,
+    "saidas_hoje": 6,
     "entradas_ontem": 10,
     "saidas_ontem": 3,
     "entradas_mes": 301,
-    "saidas_mes": 160,
+    "saidas_mes": 163,
     "entradas_mes_anterior": 319,
     "saidas_mes_anterior": 1022,
-    "valor_causa_total": 1785175036.76,
-    "saldo_mes": 141
+    "valor_causa_total": 1785071801.99,
+    "saldo_mes": 138
   },
   "serie_diaria": [
     {
@@ -312,7 +312,7 @@
     {
       "data": "2026-10-28",
       "entradas": 9,
-      "saidas": 3
+      "saidas": 6
     }
   ],
   "por_grupo": [
@@ -372,12 +372,12 @@
     },
     {
       "nome": "Grupo C2",
-      "andamento": 222,
+      "andamento": 219,
       "entradas_mes": 21,
-      "saidas_mes": 3,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 15,
       "saidas_mes_anterior": 0,
-      "valor_causa": 46836885.56
+      "valor_causa": 46733650.79
     },
     {
       "nome": "Grupo C3",
@@ -527,12 +527,12 @@
     },
     {
       "nome": "GO",
-      "andamento": 96,
+      "andamento": 93,
       "entradas_mes": 8,
-      "saidas_mes": 6,
+      "saidas_mes": 9,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 15,
-      "valor_causa": 13370893.13
+      "valor_causa": 13267658.36
     },
     {
       "nome": "MT",
@@ -700,21 +700,21 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 415,
-      "entradas_mes": 32,
-      "saidas_mes": 15,
-      "entradas_mes_anterior": 34,
+      "andamento": 406,
+      "entradas_mes": 31,
+      "saidas_mes": 13,
+      "entradas_mes_anterior": 31,
       "saidas_mes_anterior": 10,
-      "valor_causa": 91023709.57
+      "valor_causa": 89970353.16
     },
     {
       "nome": "Instrução",
-      "andamento": 2916,
-      "entradas_mes": 251,
-      "saidas_mes": 46,
-      "entradas_mes_anterior": 267,
+      "andamento": 2922,
+      "entradas_mes": 252,
+      "saidas_mes": 51,
+      "entradas_mes_anterior": 270,
       "saidas_mes_anterior": 205,
-      "valor_causa": 846672297.48
+      "valor_causa": 847622419.12
     },
     {
       "nome": "Sentença",
@@ -769,12 +769,12 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo E1",
-      "andamento": 77,
-      "entradas_mes": 24,
-      "saidas_mes": 2,
-      "entradas_mes_anterior": 25,
+      "andamento": 68,
+      "entradas_mes": 23,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 22,
       "saidas_mes_anterior": 0,
-      "valor_causa": 19503558.05
+      "valor_causa": 18450201.64
     },
     {
       "fase": "Ajuizamento",
@@ -959,12 +959,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 738,
-      "entradas_mes": 27,
-      "saidas_mes": 13,
-      "entradas_mes_anterior": 28,
+      "andamento": 747,
+      "entradas_mes": 28,
+      "saidas_mes": 15,
+      "entradas_mes_anterior": 31,
       "saidas_mes_anterior": 10,
-      "valor_causa": 156796183.81
+      "valor_causa": 157849540.22
     },
     {
       "fase": "Instrução",
@@ -1019,12 +1019,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo C2",
-      "andamento": 87,
+      "andamento": 84,
       "entradas_mes": 21,
-      "saidas_mes": 2,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 0,
-      "valor_causa": 32460850.58
+      "valor_causa": 32357615.81
     },
     {
       "fase": "Instrução",
@@ -1449,21 +1449,21 @@
     },
     {
       "nome": "Bruna Cembranelli Fazenda (BCF)",
-      "andamento": 287,
+      "andamento": 286,
       "entradas_mes": 4,
       "saidas_mes": 6,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 12,
-      "valor_causa": 49383328.36
+      "valor_causa": 49238938.53
     },
     {
       "nome": "Guilherme Silva Morimoto(GSM)",
-      "andamento": 283,
+      "andamento": 284,
       "entradas_mes": 5,
       "saidas_mes": 3,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 3,
-      "valor_causa": 78533355.34
+      "valor_causa": 78677745.17
     },
     {
       "nome": "Vanessa de Cassia Castrequini Rosa(VCR)",
@@ -1512,12 +1512,12 @@
     },
     {
       "nome": "Erik Mota Coppi(ECO)",
-      "andamento": 247,
+      "andamento": 244,
       "entradas_mes": 18,
-      "saidas_mes": 4,
+      "saidas_mes": 7,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 12,
-      "valor_causa": 47252172.03
+      "valor_causa": 47148937.26
     },
     {
       "nome": "Vinícius Ronchi Arruda(VRO)",
@@ -2578,12 +2578,12 @@
     {
       "grupo": "Grupo C2",
       "cliente": "UHE SÃO SIMÃO",
-      "andamento": 29,
+      "andamento": 26,
       "entradas_mes": 2,
-      "saidas_mes": 2,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 0,
-      "valor_causa": 8170640.22,
+      "valor_causa": 8067405.45,
       "alerta_entrada": false
     },
     {
@@ -3931,12 +3931,12 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Guilherme Silva Morimoto(GSM)",
-      "andamento": 231,
+      "andamento": 232,
       "entradas_mes": 5,
       "saidas_mes": 3,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 3,
-      "valor_causa": 56613534.1
+      "valor_causa": 56757923.93
     },
     {
       "grupo": "Grupo B1",
@@ -3951,12 +3951,12 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Bruna Cembranelli Fazenda (BCF)",
-      "andamento": 76,
+      "andamento": 75,
       "entradas_mes": 2,
       "saidas_mes": 1,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 22663678.39
+      "valor_causa": 22519288.56
     },
     {
       "grupo": "Grupo B1",
@@ -4111,12 +4111,12 @@
     {
       "grupo": "Grupo C2",
       "profissional": "Erik Mota Coppi(ECO)",
-      "andamento": 203,
+      "andamento": 200,
       "entradas_mes": 16,
-      "saidas_mes": 3,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 0,
-      "valor_causa": 40262359.28
+      "valor_causa": 40159124.51
     },
     {
       "grupo": "Grupo C2",
@@ -4942,16 +4942,6 @@
     },
     {
       "estado": "GO",
-      "cliente": "UHE SÃO SIMÃO",
-      "andamento": 13,
-      "entradas_mes": 2,
-      "saidas_mes": 3,
-      "entradas_mes_anterior": 5,
-      "saidas_mes_anterior": 7,
-      "valor_causa": 4584499.01
-    },
-    {
-      "estado": "GO",
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "andamento": 11,
       "entradas_mes": 2,
@@ -4959,6 +4949,16 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
       "valor_causa": 1602447.54
+    },
+    {
+      "estado": "GO",
+      "cliente": "UHE SÃO SIMÃO",
+      "andamento": 10,
+      "entradas_mes": 2,
+      "saidas_mes": 6,
+      "entradas_mes_anterior": 5,
+      "saidas_mes_anterior": 7,
+      "valor_causa": 4481264.24
     },
     {
       "estado": "GO",
@@ -5312,16 +5312,6 @@
     },
     {
       "estado": "MG",
-      "cliente": "MAHLE METAL- ITAJUBÁ",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 3262.69
-    },
-    {
-      "estado": "MG",
       "cliente": "SOCIEDADE FOGAS",
       "andamento": 1,
       "entradas_mes": 0,
@@ -5339,6 +5329,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 2353657.08
+    },
+    {
+      "estado": "MG",
+      "cliente": "MAHLE METAL- ITAJUBÁ",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 3262.69
     },
     {
       "estado": "MS",
