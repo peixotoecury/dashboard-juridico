@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-28T15:01:26",
+  "atualizado_em": "2026-10-28T15:16:29",
   "kpis": {
     "total_andamento": 7665,
     "entradas_hoje": 9,
@@ -700,21 +700,21 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 414,
-      "entradas_mes": 31,
+      "andamento": 415,
+      "entradas_mes": 32,
       "saidas_mes": 15,
       "entradas_mes_anterior": 34,
       "saidas_mes_anterior": 10,
-      "valor_causa": 90858987.85
+      "valor_causa": 91023709.57
     },
     {
       "nome": "Instrução",
-      "andamento": 2918,
-      "entradas_mes": 253,
+      "andamento": 2916,
+      "entradas_mes": 251,
       "saidas_mes": 46,
       "entradas_mes_anterior": 267,
       "saidas_mes_anterior": 205,
-      "valor_causa": 847016302.01
+      "valor_causa": 846672297.48
     },
     {
       "nome": "Sentença",
@@ -727,12 +727,12 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2987,
-      "entradas_mes": 6,
+      "andamento": 2988,
+      "entradas_mes": 7,
       "saidas_mes": 29,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 387,
-      "valor_causa": 677413312.58
+      "valor_causa": 677592595.39
     },
     {
       "nome": "Execução",
@@ -769,12 +769,12 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo E1",
-      "andamento": 76,
-      "entradas_mes": 23,
+      "andamento": 77,
+      "entradas_mes": 24,
       "saidas_mes": 2,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 0,
-      "valor_causa": 19338836.33
+      "valor_causa": 19503558.05
     },
     {
       "fase": "Ajuizamento",
@@ -959,12 +959,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 739,
-      "entradas_mes": 28,
+      "andamento": 738,
+      "entradas_mes": 27,
       "saidas_mes": 13,
       "entradas_mes_anterior": 28,
       "saidas_mes_anterior": 10,
-      "valor_causa": 156960905.53
+      "valor_causa": 156796183.81
     },
     {
       "fase": "Instrução",
@@ -999,12 +999,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B3",
-      "andamento": 156,
-      "entradas_mes": 32,
+      "andamento": 155,
+      "entradas_mes": 31,
       "saidas_mes": 3,
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 5,
-      "valor_causa": 28391300.42
+      "valor_causa": 28212017.61
     },
     {
       "fase": "Instrução",
@@ -1219,12 +1219,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo B3",
-      "andamento": 251,
-      "entradas_mes": 3,
+      "andamento": 252,
+      "entradas_mes": 4,
       "saidas_mes": 1,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 1,
-      "valor_causa": 64050471.56
+      "valor_causa": 64229754.37
     },
     {
       "fase": "Recurso",
@@ -3721,17 +3721,6 @@
     },
     {
       "grupo": "Grupo E2",
-      "cliente": "UBER DO BRASIL",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 65000.0,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Grupo E2",
       "cliente": "NEO MULTIMERCADO",
       "andamento": 1,
       "entradas_mes": 0,
@@ -3750,6 +3739,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
       "valor_causa": 1000000.0,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Grupo E2",
+      "cliente": "UBER DO BRASIL",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 65000.0,
       "alerta_entrada": false
     },
     {
@@ -7512,16 +7512,6 @@
     },
     {
       "estado": "SP",
-      "cliente": "UBER DO BRASIL",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 65000.0
-    },
-    {
-      "estado": "SP",
       "cliente": "NEO MULTIMERCADO",
       "andamento": 1,
       "entradas_mes": 0,
@@ -7559,6 +7549,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 232473.71
+    },
+    {
+      "estado": "SP",
+      "cliente": "UBER DO BRASIL",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 65000.0
     },
     {
       "estado": "TO",
