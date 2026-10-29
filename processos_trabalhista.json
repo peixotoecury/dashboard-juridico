@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-29T15:45:24",
+  "atualizado_em": "2026-10-29T16:00:24",
   "kpis": {
-    "total_andamento": 7630,
-    "entradas_hoje": 7,
+    "total_andamento": 7634,
+    "entradas_hoje": 11,
     "saidas_hoje": 28,
     "entradas_ontem": 9,
     "saidas_ontem": 14,
-    "entradas_mes": 308,
+    "entradas_mes": 312,
     "saidas_mes": 200,
     "entradas_mes_anterior": 319,
     "saidas_mes_anterior": 1023,
-    "valor_causa_total": 1781944270.21,
-    "saldo_mes": 108
+    "valor_causa_total": 1782734901.82,
+    "saldo_mes": 112
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-10-29",
-      "entradas": 7,
+      "entradas": 11,
       "saidas": 28
     }
   ],
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 4,
-      "entradas_mes": 4,
+      "andamento": 8,
+      "entradas_mes": 8,
       "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 3,
-      "valor_causa": 152458.51
+      "valor_causa": 943090.12
     },
     {
       "nome": "Sócios",
@@ -464,12 +464,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5775,
-      "entradas_mes": 185,
+      "andamento": 5778,
+      "entradas_mes": 188,
       "saidas_mes": 148,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 843,
-      "valor_causa": 1379424536.57
+      "valor_causa": 1380175168.18
     },
     {
       "nome": "MG",
@@ -482,12 +482,12 @@
     },
     {
       "nome": "PR",
-      "andamento": 255,
-      "entradas_mes": 21,
+      "andamento": 256,
+      "entradas_mes": 22,
       "saidas_mes": 1,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 7,
-      "valor_causa": 54951008.57
+      "valor_causa": 54991008.57
     },
     {
       "nome": "RS",
@@ -700,7 +700,7 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 408,
+      "andamento": 407,
       "entradas_mes": 33,
       "saidas_mes": 13,
       "entradas_mes_anterior": 31,
@@ -709,12 +709,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2913,
-      "entradas_mes": 257,
+      "andamento": 2917,
+      "entradas_mes": 261,
       "saidas_mes": 64,
       "entradas_mes_anterior": 269,
       "saidas_mes_anterior": 205,
-      "valor_causa": 847230760.05
+      "valor_causa": 848021391.66
     },
     {
       "nome": "Sentença",
@@ -727,7 +727,7 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2974,
+      "andamento": 2975,
       "entradas_mes": 7,
       "saidas_mes": 40,
       "entradas_mes_anterior": 4,
@@ -759,7 +759,7 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo B2",
-      "andamento": 90,
+      "andamento": 89,
       "entradas_mes": 0,
       "saidas_mes": 2,
       "entradas_mes_anterior": 0,
@@ -1048,6 +1048,16 @@
     },
     {
       "fase": "Instrução",
+      "grupo": "Sem grupo",
+      "andamento": 8,
+      "entradas_mes": 8,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 943090.12
+    },
+    {
+      "fase": "Instrução",
       "grupo": "Grupo A1",
       "andamento": 4,
       "entradas_mes": 0,
@@ -1055,16 +1065,6 @@
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
-    },
-    {
-      "fase": "Instrução",
-      "grupo": "Sem grupo",
-      "andamento": 4,
-      "entradas_mes": 4,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 152458.51
     },
     {
       "fase": "Outras",
@@ -1209,7 +1209,7 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo B2",
-      "andamento": 382,
+      "andamento": 383,
       "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
@@ -1467,12 +1467,21 @@
     },
     {
       "nome": "Vanessa de Cassia Castrequini Rosa(VCR)",
-      "andamento": 280,
-      "entradas_mes": 5,
+      "andamento": 281,
+      "entradas_mes": 6,
       "saidas_mes": 1,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 7,
-      "valor_causa": 46076430.87
+      "valor_causa": 46594530.87
+    },
+    {
+      "nome": "Anna Carolina Balbino Gatti Baani(ANB)",
+      "andamento": 268,
+      "entradas_mes": 8,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 8,
+      "saidas_mes_anterior": 4,
+      "valor_causa": 65734944.23
     },
     {
       "nome": "Rafael Camargo Felisbino(RCF)",
@@ -1482,15 +1491,6 @@
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 3,
       "valor_causa": 109037994.57
-    },
-    {
-      "nome": "Anna Carolina Balbino Gatti Baani(ANB)",
-      "andamento": 267,
-      "entradas_mes": 7,
-      "saidas_mes": 1,
-      "entradas_mes_anterior": 8,
-      "saidas_mes_anterior": 4,
-      "valor_causa": 65502412.62
     },
     {
       "nome": "Paloma da Silva Santos(PSI)",
@@ -1548,12 +1548,12 @@
     },
     {
       "nome": "Vinicius da Silva Cerqueira(VSI)",
-      "andamento": 206,
-      "entradas_mes": 31,
+      "andamento": 208,
+      "entradas_mes": 33,
       "saidas_mes": 0,
       "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 1,
-      "valor_causa": 71101103.71
+      "valor_causa": 71141103.71
     },
     {
       "nome": "Thais Amaral Rocca(TAR)",
@@ -1768,12 +1768,12 @@
     },
     {
       "nome": "EMBRAER",
-      "andamento": 726,
-      "entradas_mes": 10,
+      "andamento": 728,
+      "entradas_mes": 12,
       "saidas_mes": 9,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 22,
-      "valor_causa": 138656130.89,
+      "valor_causa": 139406762.5,
       "alerta_entrada": false
     },
     {
@@ -1788,8 +1788,8 @@
     },
     {
       "nome": "TELEFONICA BRASIL",
-      "andamento": 368,
-      "entradas_mes": 11,
+      "andamento": 369,
+      "entradas_mes": 12,
       "saidas_mes": 4,
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 6,
@@ -1868,12 +1868,12 @@
     },
     {
       "nome": "COMPANHIA AIX",
-      "andamento": 157,
-      "entradas_mes": 45,
+      "andamento": 158,
+      "entradas_mes": 46,
       "saidas_mes": 0,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 0,
-      "valor_causa": 36358608.47,
+      "valor_causa": 36398608.47,
       "alerta_entrada": true
     },
     {
@@ -3777,13 +3777,24 @@
     {
       "grupo": "Sem grupo",
       "cliente": "COMPANHIA AIX",
-      "andamento": 3,
-      "entradas_mes": 3,
+      "andamento": 4,
+      "entradas_mes": 4,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 44000.0,
+      "valor_causa": 84000.0,
       "alerta_entrada": true
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "EMBRAER",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 750631.61,
+      "alerta_entrada": false
     },
     {
       "grupo": "Sem grupo",
@@ -3794,6 +3805,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 108458.51,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "TELEFONICA BRASIL",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 0.0,
       "alerta_entrada": false
     },
     {
@@ -4443,12 +4465,12 @@
     {
       "grupo": "Sem grupo",
       "profissional": "Vinicius da Silva Cerqueira(VSI)",
-      "andamento": 3,
-      "entradas_mes": 3,
+      "andamento": 5,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 44000.0
+      "valor_causa": 84000.0
     },
     {
       "grupo": "Sem grupo",
@@ -4459,6 +4481,26 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 108458.51
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Vanessa de Cassia Castrequini Rosa(VCR)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 518100.0
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Anna Carolina Balbino Gatti Baani(ANB)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 232531.61
     },
     {
       "grupo": "Sócios",
@@ -5594,16 +5636,6 @@
     },
     {
       "estado": "PE",
-      "cliente": "BP BIOENERGIA",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 132134.99
-    },
-    {
-      "estado": "PE",
       "cliente": "ROBERT BOSCH",
       "andamento": 1,
       "entradas_mes": 0,
@@ -5631,6 +5663,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 203296.71
+    },
+    {
+      "estado": "PE",
+      "cliente": "BP BIOENERGIA",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 132134.99
     },
     {
       "estado": "PI",
@@ -5675,12 +5717,12 @@
     {
       "estado": "PR",
       "cliente": "COMPANHIA AIX",
-      "andamento": 111,
-      "entradas_mes": 11,
+      "andamento": 112,
+      "entradas_mes": 12,
       "saidas_mes": 0,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 0,
-      "valor_causa": 27778884.19
+      "valor_causa": 27818884.19
     },
     {
       "estado": "PR",
@@ -6445,12 +6487,12 @@
     {
       "estado": "SP",
       "cliente": "EMBRAER",
-      "andamento": 709,
-      "entradas_mes": 10,
+      "andamento": 711,
+      "entradas_mes": 12,
       "saidas_mes": 9,
       "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 21,
-      "valor_causa": 138206288.48
+      "valor_causa": 138956920.09
     },
     {
       "estado": "SP",
@@ -6505,8 +6547,8 @@
     {
       "estado": "SP",
       "cliente": "TELEFONICA BRASIL",
-      "andamento": 261,
-      "entradas_mes": 9,
+      "andamento": 262,
+      "entradas_mes": 10,
       "saidas_mes": 2,
       "entradas_mes_anterior": 15,
       "saidas_mes_anterior": 2,
@@ -7846,12 +7888,12 @@
     },
     {
       "nome": "COMPANHIA AIX",
-      "andamento": 157,
-      "entradas_mes": 45,
+      "andamento": 158,
+      "entradas_mes": 46,
       "saidas_mes": 0,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 0,
-      "valor_causa": 36358608.47,
+      "valor_causa": 36398608.47,
       "alerta_entrada": true
     },
     {
@@ -7912,9 +7954,29 @@
       "profissional": "Vinicius da Silva Cerqueira(VSI)"
     },
     {
+      "numero_processo": "0001102-64.2026.5.09.0133",
+      "cliente": "COMPANHIA AIX",
+      "profissional": "Vinicius da Silva Cerqueira(VSI)"
+    },
+    {
+      "numero_processo": "0012340-18.2026.5.15.0132",
+      "cliente": "EMBRAER",
+      "profissional": "Vanessa de Cassia Castrequini Rosa(VCR)"
+    },
+    {
+      "numero_processo": "0012660-38.2026.5.15.0045",
+      "cliente": "EMBRAER",
+      "profissional": "Anna Carolina Balbino Gatti Baani(ANB)"
+    },
+    {
       "numero_processo": "1002027-29.2026.5.02.0718",
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "profissional": "Joice Ramos Miranda(JRM)"
+    },
+    {
+      "numero_processo": "1001747-36.2026.5.02.0014",
+      "cliente": "TELEFONICA BRASIL",
+      "profissional": "Vinicius da Silva Cerqueira(VSI)"
     }
   ]
 }
