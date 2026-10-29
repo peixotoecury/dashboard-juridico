@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-29T18:00:19",
+  "atualizado_em": "2026-10-29T18:15:25",
   "kpis": {
-    "total_andamento": 7626,
+    "total_andamento": 7624,
     "entradas_hoje": 12,
-    "saidas_hoje": 37,
+    "saidas_hoje": 39,
     "entradas_ontem": 9,
     "saidas_ontem": 14,
     "entradas_mes": 313,
-    "saidas_mes": 209,
+    "saidas_mes": 211,
     "entradas_mes_anterior": 319,
     "saidas_mes_anterior": 1023,
-    "valor_causa_total": 1782436562.22,
-    "saldo_mes": 104
+    "valor_causa_total": 1782326383.47,
+    "saldo_mes": 102
   },
   "serie_diaria": [
     {
@@ -312,7 +312,7 @@
     {
       "data": "2026-10-29",
       "entradas": 12,
-      "saidas": 37
+      "saidas": 39
     }
   ],
   "por_grupo": [
@@ -327,12 +327,12 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1804,
+      "andamento": 1802,
       "entradas_mes": 56,
-      "saidas_mes": 66,
+      "saidas_mes": 68,
       "entradas_mes_anterior": 60,
       "saidas_mes_anterior": 45,
-      "valor_causa": 308936691.1
+      "valor_causa": 308750757.9
     },
     {
       "nome": "Grupo B1",
@@ -363,12 +363,12 @@
     },
     {
       "nome": "Grupo C1",
-      "andamento": 318,
-      "entradas_mes": 35,
+      "andamento": 319,
+      "entradas_mes": 36,
       "saidas_mes": 0,
       "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 1,
-      "valor_causa": 184592166.82
+      "valor_causa": 184667921.27
     },
     {
       "nome": "Grupo C2",
@@ -417,8 +417,8 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 5,
-      "entradas_mes": 5,
+      "andamento": 4,
+      "entradas_mes": 4,
       "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 3,
@@ -464,12 +464,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5772,
+      "andamento": 5771,
       "entradas_mes": 188,
-      "saidas_mes": 154,
+      "saidas_mes": 155,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 843,
-      "valor_causa": 1379987497.57
+      "valor_causa": 1379972130.87
     },
     {
       "nome": "MG",
@@ -500,12 +500,12 @@
     },
     {
       "nome": "MS",
-      "andamento": 117,
+      "andamento": 116,
       "entradas_mes": 4,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 4,
-      "valor_causa": 22787066.71
+      "valor_causa": 22692254.66
     },
     {
       "nome": "RJ",
@@ -709,12 +709,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2914,
+      "andamento": 2912,
       "entradas_mes": 261,
-      "saidas_mes": 67,
+      "saidas_mes": 69,
       "entradas_mes_anterior": 269,
       "saidas_mes_anterior": 205,
-      "valor_causa": 847413332.72
+      "valor_causa": 847303153.97
     },
     {
       "nome": "Sentença",
@@ -959,12 +959,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 740,
+      "andamento": 738,
       "entradas_mes": 26,
-      "saidas_mes": 20,
+      "saidas_mes": 22,
       "entradas_mes_anterior": 31,
       "saidas_mes_anterior": 10,
-      "valor_causa": 157080983.25
+      "valor_causa": 156895050.05
     },
     {
       "fase": "Instrução",
@@ -979,12 +979,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo C1",
-      "andamento": 196,
-      "entradas_mes": 34,
+      "andamento": 197,
+      "entradas_mes": 35,
       "saidas_mes": 0,
       "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 1,
-      "valor_causa": 111004492.44
+      "valor_causa": 111080246.89
     },
     {
       "fase": "Instrução",
@@ -1048,16 +1048,6 @@
     },
     {
       "fase": "Instrução",
-      "grupo": "Sem grupo",
-      "andamento": 5,
-      "entradas_mes": 5,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 370990.12
-    },
-    {
-      "fase": "Instrução",
       "grupo": "Grupo A1",
       "andamento": 4,
       "entradas_mes": 0,
@@ -1065,6 +1055,16 @@
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
+    },
+    {
+      "fase": "Instrução",
+      "grupo": "Sem grupo",
+      "andamento": 4,
+      "entradas_mes": 4,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 370990.12
     },
     {
       "fase": "Outras",
@@ -1368,12 +1368,12 @@
     },
     {
       "nome": "Giulia Vendramini Milani(GVM)",
-      "andamento": 432,
+      "andamento": 431,
       "entradas_mes": 16,
-      "saidas_mes": 26,
+      "saidas_mes": 27,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 12,
-      "valor_causa": 66838460.62
+      "valor_causa": 66747339.47
     },
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
@@ -1394,15 +1394,6 @@
       "valor_causa": 66971122.77
     },
     {
-      "nome": "Joice Ramos Miranda(JRM)",
-      "andamento": 307,
-      "entradas_mes": 12,
-      "saidas_mes": 5,
-      "entradas_mes_anterior": 12,
-      "saidas_mes_anterior": 6,
-      "valor_causa": 74069143.4
-    },
-    {
       "nome": "Beatriz Santiago de Souza(BSO)",
       "andamento": 307,
       "entradas_mes": 11,
@@ -1410,6 +1401,15 @@
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 8,
       "valor_causa": 60589570.83
+    },
+    {
+      "nome": "Joice Ramos Miranda(JRM)",
+      "andamento": 306,
+      "entradas_mes": 12,
+      "saidas_mes": 6,
+      "entradas_mes_anterior": 12,
+      "saidas_mes_anterior": 6,
+      "valor_causa": 73974331.35
     },
     {
       "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
@@ -1553,7 +1553,7 @@
       "saidas_mes": 0,
       "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 1,
-      "valor_causa": 71171103.71
+      "valor_causa": 71246858.16
     },
     {
       "nome": "Thais Amaral Rocca(TAR)",
@@ -1778,12 +1778,12 @@
     },
     {
       "nome": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 718,
+      "andamento": 716,
       "entradas_mes": 24,
-      "saidas_mes": 19,
+      "saidas_mes": 21,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 14,
-      "valor_causa": 142908611.38,
+      "valor_causa": 142722678.18,
       "alerta_entrada": false
     },
     {
@@ -1793,7 +1793,7 @@
       "saidas_mes": 4,
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 6,
-      "valor_causa": 203501655.28,
+      "valor_causa": 203577409.73,
       "alerta_entrada": false
     },
     {
@@ -2523,12 +2523,12 @@
     {
       "grupo": "Grupo C1",
       "cliente": "TELEFONICA BRASIL",
-      "andamento": 203,
-      "entradas_mes": 8,
+      "andamento": 204,
+      "entradas_mes": 9,
       "saidas_mes": 0,
       "entradas_mes_anterior": 15,
       "saidas_mes_anterior": 1,
-      "valor_causa": 162517581.71,
+      "valor_causa": 162593336.16,
       "alerta_entrada": false
     },
     {
@@ -2952,12 +2952,12 @@
     {
       "grupo": "Grupo E1",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 646,
+      "andamento": 644,
       "entradas_mes": 23,
-      "saidas_mes": 19,
+      "saidas_mes": 21,
       "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 14,
-      "valor_causa": 141825913.93,
+      "valor_causa": 141639980.73,
       "alerta_entrada": false
     },
     {
@@ -3808,17 +3808,6 @@
       "alerta_entrada": false
     },
     {
-      "grupo": "Sem grupo",
-      "cliente": "TELEFONICA BRASIL",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 0.0,
-      "alerta_entrada": false
-    },
-    {
       "grupo": "Sócios",
       "cliente": "PEIXOTO E CURY",
       "andamento": 2,
@@ -4115,12 +4104,12 @@
     {
       "grupo": "Grupo C1",
       "profissional": "Vinicius da Silva Cerqueira(VSI)",
-      "andamento": 154,
-      "entradas_mes": 26,
+      "andamento": 155,
+      "entradas_mes": 27,
       "saidas_mes": 0,
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 1,
-      "valor_causa": 59231696.09
+      "valor_causa": 59307450.54
     },
     {
       "grupo": "Grupo C1",
@@ -4225,22 +4214,22 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Giulia Vendramini Milani(GVM)",
-      "andamento": 432,
+      "andamento": 431,
       "entradas_mes": 16,
-      "saidas_mes": 26,
+      "saidas_mes": 27,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 12,
-      "valor_causa": 66838460.62
+      "valor_causa": 66747339.47
     },
     {
       "grupo": "Grupo E1",
       "profissional": "Joice Ramos Miranda(JRM)",
-      "andamento": 306,
+      "andamento": 305,
       "entradas_mes": 11,
-      "saidas_mes": 5,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 6,
-      "valor_causa": 73960684.89
+      "valor_causa": 73865872.84
     },
     {
       "grupo": "Grupo E1",
@@ -4465,8 +4454,8 @@
     {
       "grupo": "Sem grupo",
       "profissional": "Vinicius da Silva Cerqueira(VSI)",
-      "andamento": 3,
-      "entradas_mes": 3,
+      "andamento": 2,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
@@ -5447,12 +5436,12 @@
     {
       "estado": "MS",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 5,
+      "andamento": 4,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 1,
-      "valor_causa": 322582.21
+      "valor_causa": 227770.16
     },
     {
       "estado": "MS",
@@ -6487,12 +6476,12 @@
     {
       "estado": "SP",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 612,
+      "andamento": 611,
       "entradas_mes": 16,
-      "saidas_mes": 15,
+      "saidas_mes": 16,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 10,
-      "valor_causa": 128962814.45
+      "valor_causa": 128871693.3
     },
     {
       "estado": "SP",
@@ -6542,7 +6531,7 @@
       "saidas_mes": 2,
       "entradas_mes_anterior": 15,
       "saidas_mes_anterior": 2,
-      "valor_causa": 172240145.96
+      "valor_causa": 172315900.41
     },
     {
       "estado": "SP",
@@ -7947,11 +7936,6 @@
       "numero_processo": "1002027-29.2026.5.02.0718",
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "profissional": "Joice Ramos Miranda(JRM)"
-    },
-    {
-      "numero_processo": "1001747-36.2026.5.02.0014",
-      "cliente": "TELEFONICA BRASIL",
-      "profissional": "Vinicius da Silva Cerqueira(VSI)"
     }
   ]
 }
