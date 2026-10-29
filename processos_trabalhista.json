@@ -1,7 +1,7 @@
 {
-  "atualizado_em": "2026-10-29T12:45:56",
+  "atualizado_em": "2026-10-29T13:01:06",
   "kpis": {
-    "total_andamento": 7635,
+    "total_andamento": 7634,
     "entradas_hoje": 6,
     "saidas_hoje": 25,
     "entradas_ontem": 9,
@@ -9,7 +9,7 @@
     "entradas_mes": 307,
     "saidas_mes": 197,
     "entradas_mes_anterior": 319,
-    "saidas_mes_anterior": 1022,
+    "saidas_mes_anterior": 1023,
     "valor_causa_total": 1782470116.24,
     "saldo_mes": 110
   },
@@ -22,7 +22,7 @@
     {
       "data": "2026-09-01",
       "entradas": 4,
-      "saidas": 797
+      "saidas": 798
     },
     {
       "data": "2026-09-02",
@@ -318,12 +318,12 @@
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2137,
-      "entradas_mes": 98,
+      "andamento": 2138,
+      "entradas_mes": 99,
       "saidas_mes": 63,
       "entradas_mes_anterior": 118,
       "saidas_mes_anterior": 96,
-      "valor_causa": 477418738.36
+      "valor_causa": 477670503.51
     },
     {
       "nome": "Grupo E1",
@@ -336,11 +336,11 @@
     },
     {
       "nome": "Grupo B1",
-      "andamento": 1437,
+      "andamento": 1436,
       "entradas_mes": 42,
       "saidas_mes": 42,
       "entradas_mes_anterior": 55,
-      "saidas_mes_anterior": 41,
+      "saidas_mes_anterior": 42,
       "valor_causa": 324249395.48
     },
     {
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 5,
-      "entradas_mes": 5,
+      "andamento": 4,
+      "entradas_mes": 4,
       "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 3,
-      "valor_causa": 918332.7
+      "valor_causa": 666567.55
     },
     {
       "nome": "Sócios",
@@ -464,11 +464,11 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5779,
+      "andamento": 5778,
       "entradas_mes": 185,
       "saidas_mes": 147,
       "entradas_mes_anterior": 190,
-      "saidas_mes_anterior": 842,
+      "saidas_mes_anterior": 843,
       "valor_causa": 1379424536.57
     },
     {
@@ -727,11 +727,11 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2977,
+      "andamento": 2976,
       "entradas_mes": 7,
       "saidas_mes": 39,
       "entradas_mes_anterior": 3,
-      "saidas_mes_anterior": 387,
+      "saidas_mes_anterior": 388,
       "valor_causa": 677148373.27
     },
     {
@@ -949,12 +949,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 902,
-      "entradas_mes": 83,
+      "andamento": 903,
+      "entradas_mes": 84,
       "saidas_mes": 17,
       "entradas_mes_anterior": 102,
       "saidas_mes_anterior": 24,
-      "valor_causa": 194633521.11
+      "valor_causa": 194885286.26
     },
     {
       "fase": "Instrução",
@@ -1048,16 +1048,6 @@
     },
     {
       "fase": "Instrução",
-      "grupo": "Sem grupo",
-      "andamento": 5,
-      "entradas_mes": 5,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 918332.7
-    },
-    {
-      "fase": "Instrução",
       "grupo": "Grupo A1",
       "andamento": 4,
       "entradas_mes": 0,
@@ -1065,6 +1055,16 @@
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
+    },
+    {
+      "fase": "Instrução",
+      "grupo": "Sem grupo",
+      "andamento": 4,
+      "entradas_mes": 4,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 666567.55
     },
     {
       "fase": "Outras",
@@ -1179,11 +1179,11 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo B1",
-      "andamento": 856,
+      "andamento": 855,
       "entradas_mes": 0,
       "saidas_mes": 8,
       "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 14,
+      "saidas_mes_anterior": 15,
       "valor_causa": 169320481.62
     },
     {
@@ -1350,11 +1350,11 @@
   "por_profissional": [
     {
       "nome": "Nicolau Rafael Guimarães Coelho(NRG)",
-      "andamento": 490,
+      "andamento": 489,
       "entradas_mes": 12,
       "saidas_mes": 22,
       "entradas_mes_anterior": 23,
-      "saidas_mes_anterior": 6,
+      "saidas_mes_anterior": 7,
       "valor_causa": 99179887.29
     },
     {
@@ -1748,11 +1748,11 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1437,
+      "andamento": 1436,
       "entradas_mes": 42,
       "saidas_mes": 42,
       "entradas_mes_anterior": 55,
-      "saidas_mes_anterior": 41,
+      "saidas_mes_anterior": 42,
       "valor_causa": 324249395.48,
       "alerta_entrada": false
     },
@@ -2369,11 +2369,11 @@
     {
       "grupo": "Grupo B1",
       "cliente": "BRIDGESTONE",
-      "andamento": 1437,
+      "andamento": 1436,
       "entradas_mes": 42,
       "saidas_mes": 42,
       "entradas_mes_anterior": 55,
-      "saidas_mes_anterior": 41,
+      "saidas_mes_anterior": 42,
       "valor_causa": 324249395.48,
       "alerta_entrada": false
     },
@@ -3534,6 +3534,17 @@
     },
     {
       "grupo": "Grupo E2",
+      "cliente": "THIRA PARTNERS",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 460400.5,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Grupo E2",
       "cliente": "JAMES ACACIO LOBO",
       "andamento": 1,
       "entradas_mes": 0,
@@ -3764,17 +3775,6 @@
       "alerta_entrada": false
     },
     {
-      "grupo": "Grupo E2",
-      "cliente": "THIRA PARTNERS",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 208635.35,
-      "alerta_entrada": false
-    },
-    {
       "grupo": "Sem grupo",
       "cliente": "COMPANHIA AIX",
       "andamento": 2,
@@ -3805,17 +3805,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 528109.04,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "THIRA PARTNERS",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 251765.15,
       "alerta_entrada": false
     },
     {
@@ -3945,11 +3934,11 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Nicolau Rafael Guimarães Coelho(NRG)",
-      "andamento": 335,
+      "andamento": 334,
       "entradas_mes": 12,
       "saidas_mes": 14,
       "entradas_mes_anterior": 21,
-      "saidas_mes_anterior": 3,
+      "saidas_mes_anterior": 4,
       "valor_causa": 71805808.23
     },
     {
@@ -4375,12 +4364,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 298,
-      "entradas_mes": 15,
+      "andamento": 299,
+      "entradas_mes": 16,
       "saidas_mes": 4,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 18,
-      "valor_causa": 161309104.85
+      "valor_causa": 161560870.0
     },
     {
       "grupo": "Grupo E2",
@@ -4491,16 +4480,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 528109.04
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 1,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 251765.15
     },
     {
       "grupo": "Sócios",
@@ -4826,16 +4805,6 @@
     },
     {
       "estado": "DF",
-      "cliente": "TELEFONICA BRASIL",
-      "andamento": 2,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 2968401.54
-    },
-    {
-      "estado": "DF",
       "cliente": "SYNGENTA SEEDS NIDER",
       "andamento": 2,
       "entradas_mes": 0,
@@ -4843,6 +4812,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 8332199.03
+    },
+    {
+      "estado": "DF",
+      "cliente": "TELEFONICA BRASIL",
+      "andamento": 2,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 2968401.54
     },
     {
       "estado": "DF",
@@ -6106,16 +6085,6 @@
     },
     {
       "estado": "RN",
-      "cliente": "COMPANHIA AIX",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 52315.43
-    },
-    {
-      "estado": "RN",
       "cliente": "TELEFONICA BRASIL",
       "andamento": 1,
       "entradas_mes": 1,
@@ -6123,6 +6092,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 5000000.0
+    },
+    {
+      "estado": "RN",
+      "cliente": "COMPANHIA AIX",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 52315.43
     },
     {
       "estado": "RO",
@@ -6477,11 +6456,11 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1412,
+      "andamento": 1411,
       "entradas_mes": 42,
       "saidas_mes": 40,
       "entradas_mes_anterior": 52,
-      "saidas_mes_anterior": 40,
+      "saidas_mes_anterior": 41,
       "valor_causa": 312656372.37
     },
     {
@@ -7957,11 +7936,6 @@
       "numero_processo": "1002027-29.2026.5.02.0718",
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "profissional": "Joice Ramos Miranda(JRM)"
-    },
-    {
-      "numero_processo": "1001620-83.2026.5.02.0019",
-      "cliente": "THIRA PARTNERS",
-      "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
     }
   ]
 }
