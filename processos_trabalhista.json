@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-29T11:30:25",
+  "atualizado_em": "2026-10-29T11:45:20",
   "kpis": {
-    "total_andamento": 7638,
+    "total_andamento": 7637,
     "entradas_hoje": 6,
-    "saidas_hoje": 22,
+    "saidas_hoje": 23,
     "entradas_ontem": 9,
     "saidas_ontem": 14,
     "entradas_mes": 307,
-    "saidas_mes": 194,
+    "saidas_mes": 195,
     "entradas_mes_anterior": 319,
     "saidas_mes_anterior": 1022,
     "valor_causa_total": 1783050203.79,
-    "saldo_mes": 113
+    "saldo_mes": 112
   },
   "serie_diaria": [
     {
@@ -312,7 +312,7 @@
     {
       "data": "2026-10-29",
       "entradas": 6,
-      "saidas": 22
+      "saidas": 23
     }
   ],
   "por_grupo": [
@@ -327,18 +327,18 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1814,
-      "entradas_mes": 55,
+      "andamento": 1815,
+      "entradas_mes": 56,
       "saidas_mes": 55,
       "entradas_mes_anterior": 60,
       "saidas_mes_anterior": 45,
-      "valor_causa": 308938398.47
+      "valor_causa": 309141695.18
     },
     {
       "nome": "Grupo B1",
-      "andamento": 1437,
+      "andamento": 1436,
       "entradas_mes": 41,
-      "saidas_mes": 41,
+      "saidas_mes": 42,
       "entradas_mes_anterior": 55,
       "saidas_mes_anterior": 41,
       "valor_causa": 324248395.48
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 9,
-      "entradas_mes": 9,
+      "andamento": 8,
+      "entradas_mes": 8,
       "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 3,
-      "valor_causa": 1418803.66
+      "valor_causa": 1215506.95
     },
     {
       "nome": "Sócios",
@@ -464,9 +464,9 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5780,
+      "andamento": 5779,
       "entradas_mes": 185,
-      "saidas_mes": 146,
+      "saidas_mes": 147,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 842,
       "valor_causa": 1379424536.57
@@ -727,9 +727,9 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2979,
+      "andamento": 2978,
       "entradas_mes": 7,
-      "saidas_mes": 38,
+      "saidas_mes": 39,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 387,
       "valor_causa": 677148373.27
@@ -959,12 +959,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 744,
-      "entradas_mes": 26,
+      "andamento": 745,
+      "entradas_mes": 27,
       "saidas_mes": 16,
       "entradas_mes_anterior": 31,
       "saidas_mes_anterior": 10,
-      "valor_causa": 157394737.47
+      "valor_causa": 157598034.18
     },
     {
       "fase": "Instrução",
@@ -1049,12 +1049,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 9,
-      "entradas_mes": 9,
+      "andamento": 8,
+      "entradas_mes": 8,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 1418803.66
+      "valor_causa": 1215506.95
     },
     {
       "fase": "Instrução",
@@ -1179,9 +1179,9 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo B1",
-      "andamento": 857,
+      "andamento": 856,
       "entradas_mes": 0,
-      "saidas_mes": 7,
+      "saidas_mes": 8,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 14,
       "valor_causa": 169320481.62
@@ -1458,9 +1458,9 @@
     },
     {
       "nome": "Guilherme Silva Morimoto(GSM)",
-      "andamento": 283,
+      "andamento": 282,
       "entradas_mes": 5,
-      "saidas_mes": 4,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 3,
       "valor_causa": 77030947.14
@@ -1748,9 +1748,9 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1438,
+      "andamento": 1437,
       "entradas_mes": 42,
-      "saidas_mes": 41,
+      "saidas_mes": 42,
       "entradas_mes_anterior": 55,
       "saidas_mes_anterior": 41,
       "valor_causa": 324249395.48,
@@ -2369,9 +2369,9 @@
     {
       "grupo": "Grupo B1",
       "cliente": "BRIDGESTONE",
-      "andamento": 1437,
+      "andamento": 1436,
       "entradas_mes": 41,
-      "saidas_mes": 41,
+      "saidas_mes": 42,
       "entradas_mes_anterior": 55,
       "saidas_mes_anterior": 41,
       "valor_causa": 324248395.48,
@@ -3192,6 +3192,17 @@
       "alerta_entrada": false
     },
     {
+      "grupo": "Grupo E1",
+      "cliente": "KWS VEGETAIS",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 203296.71,
+      "alerta_entrada": false
+    },
+    {
       "grupo": "Grupo E2",
       "cliente": "BP BIOENERGIA",
       "andamento": 763,
@@ -3798,17 +3809,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "KWS VEGETAIS",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 203296.71,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "EMBRAER",
       "andamento": 1,
       "entradas_mes": 1,
@@ -3986,9 +3986,9 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Guilherme Silva Morimoto(GSM)",
-      "andamento": 231,
+      "andamento": 230,
       "entradas_mes": 5,
-      "saidas_mes": 4,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 3,
       "valor_causa": 55111125.9
@@ -4316,12 +4316,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Keyla Maria Barbosa Silva Moraes(KBM)",
-      "andamento": 12,
-      "entradas_mes": 0,
+      "andamento": 13,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 3203331.72
+      "valor_causa": 3406628.43
     },
     {
       "grupo": "Grupo E1",
@@ -4512,16 +4512,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 1000.0
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Keyla Maria Barbosa Silva Moraes(KBM)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 203296.71
     },
     {
       "grupo": "Sem grupo",
@@ -6518,9 +6508,9 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1413,
+      "andamento": 1412,
       "entradas_mes": 42,
-      "saidas_mes": 39,
+      "saidas_mes": 40,
       "entradas_mes_anterior": 52,
       "saidas_mes_anterior": 40,
       "valor_causa": 312656372.37
@@ -8005,22 +7995,17 @@
       "profissional": "Camila Alves Magalhães de Paula(CAL)"
     },
     {
-      "numero_processo": "0000556-29.2026.5.06.0412",
-      "cliente": "KWS VEGETAIS",
-      "profissional": "Keyla Maria Barbosa Silva Moraes(KBM)"
-    },
-    {
       "numero_processo": "1002027-29.2026.5.02.0718",
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "profissional": "Joice Ramos Miranda(JRM)"
     },
     {
-      "numero_processo": "1001620-83.2026.5.02.0019",
+      "numero_processo": "1001318-73.2026.5.02.0045",
       "cliente": "THIRA PARTNERS",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
     },
     {
-      "numero_processo": "1001318-73.2026.5.02.0045",
+      "numero_processo": "1001620-83.2026.5.02.0019",
       "cliente": "THIRA PARTNERS",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
     }
