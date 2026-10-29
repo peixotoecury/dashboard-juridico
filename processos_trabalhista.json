@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-29T11:45:20",
+  "atualizado_em": "2026-10-29T12:00:30",
   "kpis": {
-    "total_andamento": 7637,
+    "total_andamento": 7636,
     "entradas_hoje": 6,
-    "saidas_hoje": 23,
+    "saidas_hoje": 24,
     "entradas_ontem": 9,
     "saidas_ontem": 14,
     "entradas_mes": 307,
-    "saidas_mes": 195,
+    "saidas_mes": 196,
     "entradas_mes_anterior": 319,
     "saidas_mes_anterior": 1022,
-    "valor_causa_total": 1783050203.79,
-    "saldo_mes": 112
+    "valor_causa_total": 1782470116.24,
+    "saldo_mes": 111
   },
   "serie_diaria": [
     {
@@ -312,18 +312,18 @@
     {
       "data": "2026-10-29",
       "entradas": 6,
-      "saidas": 23
+      "saidas": 24
     }
   ],
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2137,
+      "andamento": 2136,
       "entradas_mes": 97,
-      "saidas_mes": 62,
+      "saidas_mes": 63,
       "entradas_mes_anterior": 118,
       "saidas_mes_anterior": 96,
-      "valor_causa": 477790190.56
+      "valor_causa": 477210103.01
     },
     {
       "nome": "Grupo E1",
@@ -473,12 +473,12 @@
     },
     {
       "nome": "MG",
-      "andamento": 549,
+      "andamento": 548,
       "entradas_mes": 26,
-      "saidas_mes": 19,
+      "saidas_mes": 20,
       "entradas_mes_anterior": 36,
       "saidas_mes_anterior": 22,
-      "valor_causa": 138071499.76
+      "valor_causa": 137491412.21
     },
     {
       "nome": "PR",
@@ -736,12 +736,12 @@
     },
     {
       "nome": "Execução",
-      "andamento": 906,
+      "andamento": 905,
       "entradas_mes": 6,
-      "saidas_mes": 50,
+      "saidas_mes": 51,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 357,
-      "valor_causa": 128943316.27
+      "valor_causa": 128363228.72
     }
   ],
   "por_fase_outras": 398,
@@ -859,12 +859,12 @@
     {
       "fase": "Execução",
       "grupo": "Grupo E2",
-      "andamento": 333,
+      "andamento": 332,
       "entradas_mes": 3,
-      "saidas_mes": 18,
+      "saidas_mes": 19,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 37,
-      "valor_causa": 51445603.8
+      "valor_causa": 50865516.25
     },
     {
       "fase": "Execução",
@@ -1493,15 +1493,6 @@
       "valor_causa": 65502412.62
     },
     {
-      "nome": "Mariana Borges de Menezes Fávaro(MBF)",
-      "andamento": 255,
-      "entradas_mes": 5,
-      "saidas_mes": 7,
-      "entradas_mes_anterior": 3,
-      "saidas_mes_anterior": 6,
-      "valor_causa": 34580604.32
-    },
-    {
       "nome": "Paloma da Silva Santos(PSI)",
       "andamento": 255,
       "entradas_mes": 15,
@@ -1509,6 +1500,15 @@
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 10,
       "valor_causa": 56651579.51
+    },
+    {
+      "nome": "Mariana Borges de Menezes Fávaro(MBF)",
+      "andamento": 254,
+      "entradas_mes": 5,
+      "saidas_mes": 8,
+      "entradas_mes_anterior": 3,
+      "saidas_mes_anterior": 6,
+      "valor_causa": 34000516.77
     },
     {
       "nome": "Erik Mota Coppi(ECO)",
@@ -1758,12 +1758,12 @@
     },
     {
       "nome": "BP BIOENERGIA",
-      "andamento": 763,
+      "andamento": 762,
       "entradas_mes": 31,
-      "saidas_mes": 18,
+      "saidas_mes": 19,
       "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 36,
-      "valor_causa": 216993927.16,
+      "valor_causa": 216413839.61,
       "alerta_entrada": false
     },
     {
@@ -3205,12 +3205,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "BP BIOENERGIA",
-      "andamento": 763,
+      "andamento": 762,
       "entradas_mes": 31,
-      "saidas_mes": 18,
+      "saidas_mes": 19,
       "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 36,
-      "valor_causa": 216993927.16,
+      "valor_causa": 216413839.61,
       "alerta_entrada": false
     },
     {
@@ -4406,12 +4406,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Mariana Borges de Menezes Fávaro(MBF)",
-      "andamento": 255,
+      "andamento": 254,
       "entradas_mes": 5,
-      "saidas_mes": 7,
+      "saidas_mes": 8,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 6,
-      "valor_causa": 34580604.32
+      "valor_causa": 34000516.77
     },
     {
       "grupo": "Grupo E2",
@@ -5158,12 +5158,12 @@
     {
       "estado": "MG",
       "cliente": "BP BIOENERGIA",
-      "andamento": 220,
+      "andamento": 219,
       "entradas_mes": 10,
-      "saidas_mes": 3,
+      "saidas_mes": 4,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 6,
-      "valor_causa": 83826376.17
+      "valor_causa": 83246288.62
     },
     {
       "estado": "MG",
