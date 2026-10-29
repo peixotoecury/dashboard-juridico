@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-29T16:30:29",
+  "atualizado_em": "2026-10-29T16:45:22",
   "kpis": {
-    "total_andamento": 7633,
-    "entradas_hoje": 11,
-    "saidas_hoje": 29,
+    "total_andamento": 7632,
+    "entradas_hoje": 12,
+    "saidas_hoje": 31,
     "entradas_ontem": 9,
     "saidas_ontem": 14,
-    "entradas_mes": 312,
-    "saidas_mes": 201,
+    "entradas_mes": 313,
+    "saidas_mes": 203,
     "entradas_mes_anterior": 319,
     "saidas_mes_anterior": 1023,
-    "valor_causa_total": 1782602156.82,
-    "saldo_mes": 111
+    "valor_causa_total": 1782613210.95,
+    "saldo_mes": 110
   },
   "serie_diaria": [
     {
@@ -311,8 +311,8 @@
     },
     {
       "data": "2026-10-29",
-      "entradas": 11,
-      "saidas": 29
+      "entradas": 12,
+      "saidas": 31
     }
   ],
   "por_grupo": [
@@ -327,12 +327,12 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1811,
+      "andamento": 1809,
       "entradas_mes": 56,
-      "saidas_mes": 59,
+      "saidas_mes": 61,
       "entradas_mes_anterior": 60,
       "saidas_mes_anterior": 45,
-      "valor_causa": 309129958.19
+      "valor_causa": 309111012.32
     },
     {
       "nome": "Grupo B1",
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 8,
-      "entradas_mes": 8,
+      "andamento": 9,
+      "entradas_mes": 9,
       "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 3,
-      "valor_causa": 943090.12
+      "valor_causa": 973090.12
     },
     {
       "nome": "Sócios",
@@ -464,12 +464,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5777,
+      "andamento": 5775,
       "entradas_mes": 188,
-      "saidas_mes": 149,
+      "saidas_mes": 151,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 843,
-      "valor_causa": 1380042423.18
+      "valor_causa": 1380023477.31
     },
     {
       "nome": "MG",
@@ -482,12 +482,12 @@
     },
     {
       "nome": "PR",
-      "andamento": 256,
-      "entradas_mes": 22,
+      "andamento": 257,
+      "entradas_mes": 23,
       "saidas_mes": 1,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 7,
-      "valor_causa": 54991008.57
+      "valor_causa": 55021008.57
     },
     {
       "nome": "RS",
@@ -710,11 +710,11 @@
     {
       "nome": "Instrução",
       "andamento": 2916,
-      "entradas_mes": 261,
-      "saidas_mes": 65,
+      "entradas_mes": 262,
+      "saidas_mes": 66,
       "entradas_mes_anterior": 269,
       "saidas_mes_anterior": 205,
-      "valor_causa": 847888646.66
+      "valor_causa": 847918646.66
     },
     {
       "nome": "Sentença",
@@ -744,7 +744,7 @@
       "valor_causa": 128436006.32
     }
   ],
-  "por_fase_outras": 398,
+  "por_fase_outras": 397,
   "por_fase_grupo": [
     {
       "fase": "Ajuizamento",
@@ -959,9 +959,9 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 743,
+      "andamento": 742,
       "entradas_mes": 27,
-      "saidas_mes": 18,
+      "saidas_mes": 19,
       "entradas_mes_anterior": 31,
       "saidas_mes_anterior": 10,
       "valor_causa": 157586297.19
@@ -1049,12 +1049,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 8,
-      "entradas_mes": 8,
+      "andamento": 9,
+      "entradas_mes": 9,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 943090.12
+      "valor_causa": 973090.12
     },
     {
       "fase": "Instrução",
@@ -1099,12 +1099,12 @@
     {
       "fase": "Outras",
       "grupo": "Grupo E1",
-      "andamento": 53,
+      "andamento": 52,
       "entradas_mes": 1,
-      "saidas_mes": 19,
+      "saidas_mes": 20,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 19,
-      "valor_causa": 648160.74
+      "valor_causa": 629214.87
     },
     {
       "fase": "Outras",
@@ -1368,12 +1368,12 @@
     },
     {
       "nome": "Giulia Vendramini Milani(GVM)",
-      "andamento": 439,
+      "andamento": 437,
       "entradas_mes": 16,
-      "saidas_mes": 19,
+      "saidas_mes": 21,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 12,
-      "valor_causa": 67031727.71
+      "valor_causa": 67012781.84
     },
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
@@ -1700,6 +1700,15 @@
       "valor_causa": 283292.82
     },
     {
+      "nome": "Luiz Vicente de Carvalho(LVC)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 30000.0
+    },
+    {
       "nome": "Jessica Cerqueira Silva(JQS)",
       "andamento": 0,
       "entradas_mes": 0,
@@ -1715,15 +1724,6 @@
       "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 7,
-      "valor_causa": 0.0
-    },
-    {
-      "nome": "Luiz Vicente de Carvalho(LVC)",
-      "andamento": 0,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 1,
       "valor_causa": 0.0
     },
     {
@@ -1778,12 +1778,12 @@
     },
     {
       "nome": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 724,
+      "andamento": 722,
       "entradas_mes": 24,
-      "saidas_mes": 13,
+      "saidas_mes": 15,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 14,
-      "valor_causa": 143032962.8,
+      "valor_causa": 143014016.93,
       "alerta_entrada": false
     },
     {
@@ -1868,12 +1868,12 @@
     },
     {
       "nome": "COMPANHIA AIX",
-      "andamento": 158,
-      "entradas_mes": 46,
+      "andamento": 159,
+      "entradas_mes": 47,
       "saidas_mes": 0,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 0,
-      "valor_causa": 36398608.47,
+      "valor_causa": 36428608.47,
       "alerta_entrada": true
     },
     {
@@ -2952,12 +2952,12 @@
     {
       "grupo": "Grupo E1",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 652,
+      "andamento": 650,
       "entradas_mes": 23,
-      "saidas_mes": 13,
+      "saidas_mes": 15,
       "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 14,
-      "valor_causa": 141950265.35,
+      "valor_causa": 141931319.48,
       "alerta_entrada": false
     },
     {
@@ -3777,12 +3777,12 @@
     {
       "grupo": "Sem grupo",
       "cliente": "COMPANHIA AIX",
-      "andamento": 4,
-      "entradas_mes": 4,
+      "andamento": 5,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 84000.0,
+      "valor_causa": 114000.0,
       "alerta_entrada": true
     },
     {
@@ -4225,12 +4225,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Giulia Vendramini Milani(GVM)",
-      "andamento": 439,
+      "andamento": 437,
       "entradas_mes": 16,
-      "saidas_mes": 19,
+      "saidas_mes": 21,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 12,
-      "valor_causa": 67031727.71
+      "valor_causa": 67012781.84
     },
     {
       "grupo": "Grupo E1",
@@ -4501,6 +4501,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 232531.61
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Luiz Vicente de Carvalho(LVC)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 30000.0
     },
     {
       "grupo": "Sócios",
@@ -5717,12 +5727,12 @@
     {
       "estado": "PR",
       "cliente": "COMPANHIA AIX",
-      "andamento": 112,
-      "entradas_mes": 12,
+      "andamento": 113,
+      "entradas_mes": 13,
       "saidas_mes": 0,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 0,
-      "valor_causa": 27818884.19
+      "valor_causa": 27848884.19
     },
     {
       "estado": "PR",
@@ -6497,12 +6507,12 @@
     {
       "estado": "SP",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 616,
+      "andamento": 614,
       "entradas_mes": 16,
-      "saidas_mes": 11,
+      "saidas_mes": 13,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 10,
-      "valor_causa": 129015412.55
+      "valor_causa": 128996466.68
     },
     {
       "estado": "SP",
@@ -7888,12 +7898,12 @@
     },
     {
       "nome": "COMPANHIA AIX",
-      "andamento": 158,
-      "entradas_mes": 46,
+      "andamento": 159,
+      "entradas_mes": 47,
       "saidas_mes": 0,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 0,
-      "valor_causa": 36398608.47,
+      "valor_causa": 36428608.47,
       "alerta_entrada": true
     },
     {
@@ -7957,6 +7967,11 @@
       "numero_processo": "0001102-64.2026.5.09.0133",
       "cliente": "COMPANHIA AIX",
       "profissional": "Vinicius da Silva Cerqueira(VSI)"
+    },
+    {
+      "numero_processo": "0001101-79.2026.5.09.0133",
+      "cliente": "COMPANHIA AIX",
+      "profissional": "Luiz Vicente de Carvalho(LVC)"
     },
     {
       "numero_processo": "0012340-18.2026.5.15.0132",
