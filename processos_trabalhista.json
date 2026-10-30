@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-30T09:15:21",
+  "atualizado_em": "2026-10-30T09:30:22",
   "kpis": {
-    "total_andamento": 7622,
+    "total_andamento": 7621,
     "entradas_hoje": 0,
-    "saidas_hoje": 1,
+    "saidas_hoje": 2,
     "entradas_ontem": 12,
     "saidas_ontem": 40,
     "entradas_mes": 313,
-    "saidas_mes": 213,
+    "saidas_mes": 214,
     "entradas_mes_anterior": 319,
     "saidas_mes_anterior": 1023,
-    "valor_causa_total": 1781745491.81,
-    "saldo_mes": 100
+    "valor_causa_total": 1781728397.11,
+    "saldo_mes": 99
   },
   "serie_diaria": [
     {
@@ -312,18 +312,18 @@
     {
       "data": "2026-10-30",
       "entradas": 0,
-      "saidas": 1
+      "saidas": 2
     }
   ],
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2138,
+      "andamento": 2137,
       "entradas_mes": 100,
-      "saidas_mes": 64,
+      "saidas_mes": 65,
       "entradas_mes_anterior": 118,
       "saidas_mes_anterior": 96,
-      "valor_causa": 477670503.51
+      "valor_causa": 477653408.81
     },
     {
       "nome": "Grupo E1",
@@ -464,12 +464,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5770,
+      "andamento": 5769,
       "entradas_mes": 188,
-      "saidas_mes": 156,
+      "saidas_mes": 157,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 843,
-      "valor_causa": 1379391239.21
+      "valor_causa": 1379374144.51
     },
     {
       "nome": "MG",
@@ -700,8 +700,8 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 407,
-      "entradas_mes": 33,
+      "andamento": 406,
+      "entradas_mes": 32,
       "saidas_mes": 13,
       "entradas_mes_anterior": 31,
       "saidas_mes_anterior": 10,
@@ -710,11 +710,11 @@
     {
       "nome": "Instrução",
       "andamento": 2911,
-      "entradas_mes": 261,
-      "saidas_mes": 70,
+      "entradas_mes": 262,
+      "saidas_mes": 71,
       "entradas_mes_anterior": 269,
       "saidas_mes_anterior": 205,
-      "valor_causa": 846722262.31
+      "valor_causa": 846705167.61
     },
     {
       "nome": "Sentença",
@@ -769,8 +769,8 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo E1",
-      "andamento": 70,
-      "entradas_mes": 25,
+      "andamento": 69,
+      "entradas_mes": 24,
       "saidas_mes": 0,
       "entradas_mes_anterior": 22,
       "saidas_mes_anterior": 0,
@@ -949,18 +949,18 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 903,
+      "andamento": 902,
       "entradas_mes": 85,
-      "saidas_mes": 17,
+      "saidas_mes": 18,
       "entradas_mes_anterior": 101,
       "saidas_mes_anterior": 24,
-      "valor_causa": 194865286.26
+      "valor_causa": 194848191.56
     },
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 737,
-      "entradas_mes": 26,
+      "andamento": 738,
+      "entradas_mes": 27,
       "saidas_mes": 23,
       "entradas_mes_anterior": 31,
       "saidas_mes_anterior": 10,
@@ -1413,12 +1413,12 @@
     },
     {
       "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 302,
+      "andamento": 301,
       "entradas_mes": 16,
-      "saidas_mes": 6,
+      "saidas_mes": 7,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 18,
-      "valor_causa": 161598415.72
+      "valor_causa": 161581321.02
     },
     {
       "nome": "Bianca Bolanhi Camacho(BBO)",
@@ -3402,17 +3402,6 @@
     },
     {
       "grupo": "Grupo E2",
-      "cliente": "IPE REALTY",
-      "andamento": 6,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 1829717.77,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Grupo E2",
       "cliente": "GRUPO BAND RADIO TV",
       "andamento": 6,
       "entradas_mes": 0,
@@ -3420,6 +3409,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 1500000.0,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Grupo E2",
+      "cliente": "IPE REALTY",
+      "andamento": 5,
+      "entradas_mes": 1,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 1812623.07,
       "alerta_entrada": false
     },
     {
@@ -4353,12 +4353,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 298,
+      "andamento": 297,
       "entradas_mes": 16,
-      "saidas_mes": 5,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 18,
-      "valor_causa": 161560870.0
+      "valor_causa": 161543775.3
     },
     {
       "grupo": "Grupo E2",
@@ -6794,16 +6794,6 @@
     },
     {
       "estado": "SP",
-      "cliente": "IPE REALTY",
-      "andamento": 7,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 1829717.77
-    },
-    {
-      "estado": "SP",
       "cliente": "MITRE VENDAS",
       "andamento": 7,
       "entradas_mes": 0,
@@ -6831,6 +6821,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 3809650.95
+    },
+    {
+      "estado": "SP",
+      "cliente": "IPE REALTY",
+      "andamento": 6,
+      "entradas_mes": 1,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 1812623.07
     },
     {
       "estado": "SP",
