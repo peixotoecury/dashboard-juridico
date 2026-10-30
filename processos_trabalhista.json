@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-30T10:15:24",
+  "atualizado_em": "2026-10-30T10:30:20",
   "kpis": {
-    "total_andamento": 7621,
+    "total_andamento": 7620,
     "entradas_hoje": 0,
-    "saidas_hoje": 2,
+    "saidas_hoje": 3,
     "entradas_ontem": 12,
     "saidas_ontem": 40,
     "entradas_mes": 313,
-    "saidas_mes": 214,
+    "saidas_mes": 215,
     "entradas_mes_anterior": 319,
     "saidas_mes_anterior": 1023,
-    "valor_causa_total": 1781897741.36,
-    "saldo_mes": 99
+    "valor_causa_total": 1781867541.36,
+    "saldo_mes": 98
   },
   "serie_diaria": [
     {
@@ -312,7 +312,7 @@
     {
       "data": "2026-10-30",
       "entradas": 0,
-      "saidas": 2
+      "saidas": 3
     }
   ],
   "por_grupo": [
@@ -354,12 +354,12 @@
     },
     {
       "nome": "Grupo B3",
-      "andamento": 579,
+      "andamento": 578,
       "entradas_mes": 35,
-      "saidas_mes": 11,
+      "saidas_mes": 12,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 11,
-      "valor_causa": 113841717.85
+      "valor_causa": 113811517.85
     },
     {
       "nome": "Grupo C1",
@@ -482,12 +482,12 @@
     },
     {
       "nome": "PR",
-      "andamento": 256,
+      "andamento": 255,
       "entradas_mes": 23,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 7,
-      "valor_causa": 54949255.25
+      "valor_causa": 54919055.25
     },
     {
       "nome": "RS",
@@ -727,12 +727,12 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2969,
+      "andamento": 2968,
       "entradas_mes": 8,
-      "saidas_mes": 44,
+      "saidas_mes": 45,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 388,
-      "valor_causa": 677313968.08
+      "valor_causa": 677283768.08
     },
     {
       "nome": "Execução",
@@ -1219,12 +1219,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo B3",
-      "andamento": 251,
+      "andamento": 250,
       "entradas_mes": 4,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 1,
-      "valor_causa": 64227426.86
+      "valor_causa": 64197226.86
     },
     {
       "fase": "Recurso",
@@ -1475,15 +1475,6 @@
       "valor_causa": 46594530.87
     },
     {
-      "nome": "Anna Carolina Balbino Gatti Baani(ANB)",
-      "andamento": 268,
-      "entradas_mes": 8,
-      "saidas_mes": 1,
-      "entradas_mes_anterior": 8,
-      "saidas_mes_anterior": 4,
-      "valor_causa": 65734944.23
-    },
-    {
       "nome": "Rafael Camargo Felisbino(RCF)",
       "andamento": 268,
       "entradas_mes": 16,
@@ -1491,6 +1482,15 @@
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 3,
       "valor_causa": 109037994.57
+    },
+    {
+      "nome": "Anna Carolina Balbino Gatti Baani(ANB)",
+      "andamento": 267,
+      "entradas_mes": 8,
+      "saidas_mes": 2,
+      "entradas_mes_anterior": 8,
+      "saidas_mes_anterior": 4,
+      "valor_causa": 65704744.23
     },
     {
       "nome": "Paloma da Silva Santos(PSI)",
@@ -2446,12 +2446,12 @@
     {
       "grupo": "Grupo B3",
       "cliente": "FERRERO DO BRASIL",
-      "andamento": 36,
+      "andamento": 35,
       "entradas_mes": 3,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 1,
-      "valor_causa": 12246207.41,
+      "valor_causa": 12216007.41,
       "alerta_entrada": true
     },
     {
@@ -4053,12 +4053,12 @@
     {
       "grupo": "Grupo B3",
       "profissional": "Anna Carolina Balbino Gatti Baani(ANB)",
-      "andamento": 89,
+      "andamento": 88,
       "entradas_mes": 4,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 4,
-      "valor_causa": 21782067.84
+      "valor_causa": 21751867.84
     },
     {
       "grupo": "Grupo B3",
@@ -5755,12 +5755,12 @@
     {
       "estado": "PR",
       "cliente": "FERRERO DO BRASIL",
-      "andamento": 4,
+      "andamento": 3,
       "entradas_mes": 1,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
-      "valor_causa": 609136.45
+      "valor_causa": 578936.45
     },
     {
       "estado": "PR",
@@ -7876,12 +7876,12 @@
     },
     {
       "nome": "FERRERO DO BRASIL",
-      "andamento": 37,
+      "andamento": 36,
       "entradas_mes": 3,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 1,
-      "valor_causa": 12246207.41,
+      "valor_causa": 12216007.41,
       "alerta_entrada": true
     },
     {
