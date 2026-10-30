@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-30T16:30:25",
+  "atualizado_em": "2026-10-30T16:45:24",
   "kpis": {
-    "total_andamento": 7618,
+    "total_andamento": 7617,
     "entradas_hoje": 7,
-    "saidas_hoje": 7,
+    "saidas_hoje": 8,
     "entradas_ontem": 16,
     "saidas_ontem": 40,
     "entradas_mes": 324,
-    "saidas_mes": 222,
+    "saidas_mes": 223,
     "entradas_mes_anterior": 319,
     "saidas_mes_anterior": 1024,
-    "valor_causa_total": 1782353879.28,
-    "saldo_mes": 102
+    "valor_causa_total": 1782024562.8,
+    "saldo_mes": 101
   },
   "serie_diaria": [
     {
@@ -312,7 +312,7 @@
     {
       "data": "2026-10-30",
       "entradas": 7,
-      "saidas": 7
+      "saidas": 8
     }
   ],
   "por_grupo": [
@@ -327,12 +327,12 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1805,
+      "andamento": 1804,
       "entradas_mes": 60,
-      "saidas_mes": 69,
+      "saidas_mes": 70,
       "entradas_mes_anterior": 60,
       "saidas_mes_anterior": 45,
-      "valor_causa": 309380908.44
+      "valor_causa": 309051591.96
     },
     {
       "nome": "Grupo B1",
@@ -363,12 +363,12 @@
     },
     {
       "nome": "Grupo C1",
-      "andamento": 320,
-      "entradas_mes": 37,
+      "andamento": 319,
+      "entradas_mes": 36,
       "saidas_mes": 0,
       "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 1,
-      "valor_causa": 184768121.27
+      "valor_causa": 184667921.27
     },
     {
       "nome": "Grupo C2",
@@ -416,6 +416,15 @@
       "valor_causa": 11695821.76
     },
     {
+      "nome": "Sem grupo",
+      "andamento": 4,
+      "entradas_mes": 4,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 3,
+      "valor_causa": 238658.51
+    },
+    {
       "nome": "Sócios",
       "andamento": 3,
       "entradas_mes": 0,
@@ -423,15 +432,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
-    },
-    {
-      "nome": "Sem grupo",
-      "andamento": 3,
-      "entradas_mes": 3,
-      "saidas_mes": 1,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 3,
-      "valor_causa": 138458.51
     },
     {
       "nome": "Grupo D1",
@@ -464,12 +464,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5767,
+      "andamento": 5766,
       "entradas_mes": 197,
-      "saidas_mes": 162,
+      "saidas_mes": 163,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 844,
-      "valor_causa": 1380064730.68
+      "valor_causa": 1379735414.2
     },
     {
       "nome": "MG",
@@ -727,12 +727,12 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2961,
+      "andamento": 2960,
       "entradas_mes": 8,
-      "saidas_mes": 46,
+      "saidas_mes": 47,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 388,
-      "valor_causa": 675875673.87
+      "valor_causa": 675546357.39
     },
     {
       "nome": "Execução",
@@ -979,12 +979,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo C1",
-      "andamento": 198,
-      "entradas_mes": 36,
+      "andamento": 197,
+      "entradas_mes": 35,
       "saidas_mes": 0,
       "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 1,
-      "valor_causa": 111180446.89
+      "valor_causa": 111080246.89
     },
     {
       "fase": "Instrução",
@@ -1059,12 +1059,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 3,
-      "entradas_mes": 3,
+      "andamento": 4,
+      "entradas_mes": 4,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 138458.51
+      "valor_causa": 238658.51
     },
     {
       "fase": "Outras",
@@ -1189,12 +1189,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo E1",
-      "andamento": 744,
+      "andamento": 743,
       "entradas_mes": 1,
-      "saidas_mes": 18,
+      "saidas_mes": 19,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 7,
-      "valor_causa": 111304158.84
+      "valor_causa": 110974842.36
     },
     {
       "fase": "Recurso",
@@ -1368,12 +1368,12 @@
     },
     {
       "nome": "Giulia Vendramini Milani(GVM)",
-      "andamento": 432,
+      "andamento": 431,
       "entradas_mes": 18,
-      "saidas_mes": 28,
+      "saidas_mes": 29,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 12,
-      "valor_causa": 67007225.55
+      "valor_causa": 66677909.07
     },
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
@@ -1778,12 +1778,12 @@
     },
     {
       "nome": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 716,
+      "andamento": 715,
       "entradas_mes": 25,
-      "saidas_mes": 22,
+      "saidas_mes": 23,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 14,
-      "valor_causa": 142960138.8,
+      "valor_causa": 142630822.32,
       "alerta_entrada": false
     },
     {
@@ -2534,12 +2534,12 @@
     {
       "grupo": "Grupo C1",
       "cliente": "COMPANHIA AIX",
-      "andamento": 115,
-      "entradas_mes": 27,
+      "andamento": 114,
+      "entradas_mes": 26,
       "saidas_mes": 0,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 0,
-      "valor_causa": 22139768.72,
+      "valor_causa": 22039568.72,
       "alerta_entrada": true
     },
     {
@@ -2952,12 +2952,12 @@
     {
       "grupo": "Grupo E1",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 644,
+      "andamento": 643,
       "entradas_mes": 24,
-      "saidas_mes": 22,
+      "saidas_mes": 23,
       "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 14,
-      "valor_causa": 141877441.35,
+      "valor_causa": 141548124.87,
       "alerta_entrada": false
     },
     {
@@ -3777,13 +3777,13 @@
     {
       "grupo": "Sem grupo",
       "cliente": "COMPANHIA AIX",
-      "andamento": 2,
-      "entradas_mes": 2,
+      "andamento": 3,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 30000.0,
-      "alerta_entrada": false
+      "valor_causa": 130200.0,
+      "alerta_entrada": true
     },
     {
       "grupo": "Sem grupo",
@@ -4093,12 +4093,12 @@
     {
       "grupo": "Grupo C1",
       "profissional": "Vinicius da Silva Cerqueira(VSI)",
-      "andamento": 156,
-      "entradas_mes": 28,
+      "andamento": 155,
+      "entradas_mes": 27,
       "saidas_mes": 0,
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 1,
-      "valor_causa": 59407650.54
+      "valor_causa": 59307450.54
     },
     {
       "grupo": "Grupo C1",
@@ -4203,12 +4203,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Giulia Vendramini Milani(GVM)",
-      "andamento": 432,
+      "andamento": 431,
       "entradas_mes": 18,
-      "saidas_mes": 28,
+      "saidas_mes": 29,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 12,
-      "valor_causa": 67007225.55
+      "valor_causa": 66677909.07
     },
     {
       "grupo": "Grupo E1",
@@ -4453,12 +4453,12 @@
     {
       "grupo": "Sem grupo",
       "profissional": "Vinicius da Silva Cerqueira(VSI)",
-      "andamento": 2,
-      "entradas_mes": 2,
+      "andamento": 3,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 30000.0
+      "valor_causa": 130200.0
     },
     {
       "grupo": "Sem grupo",
@@ -6485,12 +6485,12 @@
     {
       "estado": "SP",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 611,
+      "andamento": 610,
       "entradas_mes": 17,
-      "saidas_mes": 17,
+      "saidas_mes": 18,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 10,
-      "valor_causa": 129109153.92
+      "valor_causa": 128779837.44
     },
     {
       "estado": "SP",
@@ -7943,6 +7943,11 @@
     },
     {
       "numero_processo": "0001683-94.2026.5.09.0128",
+      "cliente": "COMPANHIA AIX",
+      "profissional": "Vinicius da Silva Cerqueira(VSI)"
+    },
+    {
+      "numero_processo": "0101442-05.2026.5.01.0047",
       "cliente": "COMPANHIA AIX",
       "profissional": "Vinicius da Silva Cerqueira(VSI)"
     },
