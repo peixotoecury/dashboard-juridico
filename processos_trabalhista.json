@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-30T10:45:24",
+  "atualizado_em": "2026-10-30T11:00:19",
   "kpis": {
-    "total_andamento": 7621,
+    "total_andamento": 7624,
     "entradas_hoje": 1,
     "saidas_hoje": 3,
-    "entradas_ontem": 12,
+    "entradas_ontem": 15,
     "saidas_ontem": 40,
-    "entradas_mes": 314,
+    "entradas_mes": 317,
     "saidas_mes": 215,
     "entradas_mes_anterior": 319,
     "saidas_mes_anterior": 1023,
-    "valor_causa_total": 1781867541.36,
-    "saldo_mes": 99
+    "valor_causa_total": 1782538974.85,
+    "saldo_mes": 102
   },
   "serie_diaria": [
     {
@@ -306,7 +306,7 @@
     },
     {
       "data": "2026-10-29",
-      "entradas": 12,
+      "entradas": 15,
       "saidas": 40
     },
     {
@@ -416,6 +416,15 @@
       "valor_causa": 11695821.76
     },
     {
+      "nome": "Sem grupo",
+      "andamento": 6,
+      "entradas_mes": 6,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 3,
+      "valor_causa": 809892.0
+    },
+    {
       "nome": "Sócios",
       "andamento": 3,
       "entradas_mes": 0,
@@ -423,15 +432,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
-    },
-    {
-      "nome": "Sem grupo",
-      "andamento": 3,
-      "entradas_mes": 3,
-      "saidas_mes": 1,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 3,
-      "valor_causa": 138458.51
     },
     {
       "nome": "Grupo D1",
@@ -464,12 +464,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5770,
-      "entradas_mes": 189,
+      "andamento": 5773,
+      "entradas_mes": 192,
       "saidas_mes": 157,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 843,
-      "valor_causa": 1379543488.76
+      "valor_causa": 1380214922.25
     },
     {
       "nome": "MG",
@@ -709,12 +709,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2912,
-      "entradas_mes": 263,
+      "andamento": 2915,
+      "entradas_mes": 266,
       "saidas_mes": 71,
       "entradas_mes_anterior": 269,
       "saidas_mes_anterior": 205,
-      "valor_causa": 846874511.86
+      "valor_causa": 847545945.35
     },
     {
       "nome": "Sentença",
@@ -1048,6 +1048,16 @@
     },
     {
       "fase": "Instrução",
+      "grupo": "Sem grupo",
+      "andamento": 6,
+      "entradas_mes": 6,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 809892.0
+    },
+    {
+      "fase": "Instrução",
       "grupo": "Grupo A1",
       "andamento": 4,
       "entradas_mes": 0,
@@ -1055,16 +1065,6 @@
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
-    },
-    {
-      "fase": "Instrução",
-      "grupo": "Sem grupo",
-      "andamento": 3,
-      "entradas_mes": 3,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 138458.51
     },
     {
       "fase": "Outras",
@@ -1368,12 +1368,12 @@
     },
     {
       "nome": "Giulia Vendramini Milani(GVM)",
-      "andamento": 430,
-      "entradas_mes": 16,
+      "andamento": 432,
+      "entradas_mes": 18,
       "saidas_mes": 28,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 12,
-      "valor_causa": 66335792.06
+      "valor_causa": 67007225.55
     },
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
@@ -1494,8 +1494,8 @@
     },
     {
       "nome": "Paloma da Silva Santos(PSI)",
-      "andamento": 255,
-      "entradas_mes": 15,
+      "andamento": 256,
+      "entradas_mes": 16,
       "saidas_mes": 10,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 10,
@@ -1778,12 +1778,12 @@
     },
     {
       "nome": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 715,
-      "entradas_mes": 24,
+      "andamento": 716,
+      "entradas_mes": 25,
       "saidas_mes": 22,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 14,
-      "valor_causa": 142311130.77,
+      "valor_causa": 142960138.8,
       "alerta_entrada": false
     },
     {
@@ -1798,8 +1798,8 @@
     },
     {
       "nome": "MAHLE METAL - MOGI",
-      "andamento": 365,
-      "entradas_mes": 13,
+      "andamento": 366,
+      "entradas_mes": 14,
       "saidas_mes": 13,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 9,
@@ -1878,12 +1878,12 @@
     },
     {
       "nome": "SYNGENTA SEEDS NIDER",
-      "andamento": 149,
-      "entradas_mes": 5,
+      "andamento": 150,
+      "entradas_mes": 6,
       "saidas_mes": 13,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 5,
-      "valor_causa": 23792634.26,
+      "valor_causa": 23815059.72,
       "alerta_entrada": false
     },
     {
@@ -3776,6 +3776,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "SYNGENTA PROTEÇÃO DE",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 757466.54,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "COMPANHIA AIX",
       "andamento": 2,
       "entradas_mes": 2,
@@ -3787,13 +3798,24 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "SYNGENTA PROTEÇÃO DE",
+      "cliente": "SYNGENTA SEEDS NIDER",
       "andamento": 1,
       "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 108458.51,
+      "valor_causa": 22425.46,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "MAHLE METAL - MOGI",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 0.0,
       "alerta_entrada": false
     },
     {
@@ -4462,6 +4484,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Giulia Vendramini Milani(GVM)",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 671433.49
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Vinícius Ronchi Arruda(VRO)",
       "andamento": 1,
       "entradas_mes": 1,
@@ -4469,6 +4501,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 108458.51
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Paloma da Silva Santos(PSI)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 0.0
     },
     {
       "grupo": "Sócios",
@@ -6465,12 +6507,12 @@
     {
       "estado": "SP",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 610,
-      "entradas_mes": 16,
+      "andamento": 611,
+      "entradas_mes": 17,
       "saidas_mes": 17,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 10,
-      "valor_causa": 128460145.89
+      "valor_causa": 129109153.92
     },
     {
       "estado": "SP",
@@ -6485,8 +6527,8 @@
     {
       "estado": "SP",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 364,
-      "entradas_mes": 13,
+      "andamento": 365,
+      "entradas_mes": 14,
       "saidas_mes": 13,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 9,
@@ -6595,12 +6637,12 @@
     {
       "estado": "SP",
       "cliente": "SYNGENTA SEEDS NIDER",
-      "andamento": 46,
-      "entradas_mes": 2,
+      "andamento": 47,
+      "entradas_mes": 3,
       "saidas_mes": 2,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 1,
-      "valor_causa": 4712953.72
+      "valor_causa": 4735379.18
     },
     {
       "estado": "SP",
@@ -7917,9 +7959,24 @@
       "profissional": "Vinicius da Silva Cerqueira(VSI)"
     },
     {
+      "numero_processo": "0012339-22.2026.5.15.0071",
+      "cliente": "MAHLE METAL - MOGI",
+      "profissional": "Paloma da Silva Santos(PSI)"
+    },
+    {
       "numero_processo": "1002027-29.2026.5.02.0718",
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "profissional": "Vinícius Ronchi Arruda(VRO)"
+    },
+    {
+      "numero_processo": "0013014-90.2026.5.15.0133",
+      "cliente": "SYNGENTA PROTEÇÃO DE",
+      "profissional": "Giulia Vendramini Milani(GVM)"
+    },
+    {
+      "numero_processo": "0012324-78.2026.5.15.0095",
+      "cliente": "SYNGENTA SEEDS NIDER",
+      "profissional": "Giulia Vendramini Milani(GVM)"
     }
   ]
 }
