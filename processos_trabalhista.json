@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-10-30T11:00:19",
+  "atualizado_em": "2026-10-30T11:15:26",
   "kpis": {
-    "total_andamento": 7624,
-    "entradas_hoje": 1,
+    "total_andamento": 7626,
+    "entradas_hoje": 2,
     "saidas_hoje": 3,
-    "entradas_ontem": 15,
+    "entradas_ontem": 16,
     "saidas_ontem": 40,
-    "entradas_mes": 317,
+    "entradas_mes": 319,
     "saidas_mes": 215,
     "entradas_mes_anterior": 319,
     "saidas_mes_anterior": 1023,
-    "valor_causa_total": 1782538974.85,
-    "saldo_mes": 102
+    "valor_causa_total": 1783506972.25,
+    "saldo_mes": 104
   },
   "serie_diaria": [
     {
@@ -306,12 +306,12 @@
     },
     {
       "data": "2026-10-29",
-      "entradas": 15,
+      "entradas": 16,
       "saidas": 40
     },
     {
       "data": "2026-10-30",
-      "entradas": 1,
+      "entradas": 2,
       "saidas": 3
     }
   ],
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 6,
-      "entradas_mes": 6,
+      "andamento": 8,
+      "entradas_mes": 8,
       "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 3,
-      "valor_causa": 809892.0
+      "valor_causa": 1777889.4
     },
     {
       "nome": "Sócios",
@@ -464,12 +464,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5773,
-      "entradas_mes": 192,
+      "andamento": 5775,
+      "entradas_mes": 194,
       "saidas_mes": 157,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 843,
-      "valor_causa": 1380214922.25
+      "valor_causa": 1381182919.65
     },
     {
       "nome": "MG",
@@ -709,12 +709,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2915,
-      "entradas_mes": 266,
+      "andamento": 2917,
+      "entradas_mes": 268,
       "saidas_mes": 71,
       "entradas_mes_anterior": 269,
       "saidas_mes_anterior": 205,
-      "valor_causa": 847545945.35
+      "valor_causa": 848513942.75
     },
     {
       "nome": "Sentença",
@@ -1049,12 +1049,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 6,
-      "entradas_mes": 6,
+      "andamento": 8,
+      "entradas_mes": 8,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 809892.0
+      "valor_causa": 1777889.4
     },
     {
       "fase": "Instrução",
@@ -1499,7 +1499,7 @@
       "saidas_mes": 10,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 10,
-      "valor_causa": 56651579.51
+      "valor_causa": 56938010.43
     },
     {
       "nome": "Mariana Borges de Menezes Fávaro(MBF)",
@@ -1529,6 +1529,15 @@
       "valor_causa": 40429503.01
     },
     {
+      "nome": "Tamires Lins Costa(TLI)",
+      "andamento": 228,
+      "entradas_mes": 8,
+      "saidas_mes": 10,
+      "entradas_mes_anterior": 6,
+      "saidas_mes_anterior": 5,
+      "valor_causa": 29785440.07
+    },
+    {
       "nome": "Lucas Willott Pereira (LWP)",
       "andamento": 227,
       "entradas_mes": 2,
@@ -1536,15 +1545,6 @@
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 11,
       "valor_causa": 27198936.84
-    },
-    {
-      "nome": "Tamires Lins Costa(TLI)",
-      "andamento": 227,
-      "entradas_mes": 7,
-      "saidas_mes": 10,
-      "entradas_mes_anterior": 6,
-      "saidas_mes_anterior": 5,
-      "valor_causa": 29701606.53
     },
     {
       "nome": "Vinicius da Silva Cerqueira(VSI)",
@@ -1593,12 +1593,12 @@
     },
     {
       "nome": "Bruno Tanganelli Farah(BTF)",
-      "andamento": 50,
-      "entradas_mes": 11,
+      "andamento": 51,
+      "entradas_mes": 12,
       "saidas_mes": 0,
       "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 0,
-      "valor_causa": 15491678.01
+      "valor_causa": 16089410.95
     },
     {
       "nome": "Thais Catharine Cardozo Esteves(TCE)",
@@ -1803,7 +1803,7 @@
       "saidas_mes": 13,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 9,
-      "valor_causa": 74526264.38,
+      "valor_causa": 74812695.3,
       "alerta_entrada": false
     },
     {
@@ -3798,6 +3798,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "INPASA SINOP",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 597732.94,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "SYNGENTA SEEDS NIDER",
       "andamento": 1,
       "entradas_mes": 1,
@@ -3815,7 +3826,18 @@
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 0.0,
+      "valor_causa": 286430.92,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "MAHLE THERMAL",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 83833.54,
       "alerta_entrada": false
     },
     {
@@ -4504,13 +4526,33 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Bruno Tanganelli Farah(BTF)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 597732.94
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Paloma da Silva Santos(PSI)",
       "andamento": 1,
       "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
-      "valor_causa": 0.0
+      "valor_causa": 286430.92
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Tamires Lins Costa(TLI)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 83833.54
     },
     {
       "grupo": "Sócios",
@@ -6532,7 +6574,7 @@
       "saidas_mes": 13,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 9,
-      "valor_causa": 74526264.38
+      "valor_causa": 74812695.3
     },
     {
       "estado": "SP",
@@ -6647,12 +6689,12 @@
     {
       "estado": "SP",
       "cliente": "MAHLE THERMAL",
-      "andamento": 45,
-      "entradas_mes": 1,
+      "andamento": 46,
+      "entradas_mes": 2,
       "saidas_mes": 2,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 2,
-      "valor_causa": 6823487.52
+      "valor_causa": 6907321.06
     },
     {
       "estado": "SP",
@@ -7655,6 +7697,16 @@
       "valor_causa": 65000.0
     },
     {
+      "estado": "SP",
+      "cliente": "INPASA SINOP",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 597732.94
+    },
+    {
       "estado": "TO",
       "cliente": "BP BIOENERGIA",
       "andamento": 23,
@@ -7959,9 +8011,19 @@
       "profissional": "Vinicius da Silva Cerqueira(VSI)"
     },
     {
+      "numero_processo": "0013088-35.2026.5.15.0137",
+      "cliente": "INPASA SINOP",
+      "profissional": "Bruno Tanganelli Farah(BTF)"
+    },
+    {
       "numero_processo": "0012339-22.2026.5.15.0071",
       "cliente": "MAHLE METAL - MOGI",
       "profissional": "Paloma da Silva Santos(PSI)"
+    },
+    {
+      "numero_processo": "1002392-92.2026.5.02.0521",
+      "cliente": "MAHLE THERMAL",
+      "profissional": "Tamires Lins Costa(TLI)"
     },
     {
       "numero_processo": "1002027-29.2026.5.02.0718",
