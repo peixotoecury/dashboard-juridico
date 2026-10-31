@@ -1,24 +1,19 @@
 {
-  "atualizado_em": "2026-10-30T20:00:23",
+  "atualizado_em": "2026-10-31T08:00:23",
   "kpis": {
-    "total_andamento": 7618,
-    "entradas_hoje": 8,
-    "saidas_hoje": 8,
-    "entradas_ontem": 16,
-    "saidas_ontem": 40,
+    "total_andamento": 7617,
+    "entradas_hoje": 0,
+    "saidas_hoje": 0,
+    "entradas_ontem": 8,
+    "saidas_ontem": 9,
     "entradas_mes": 325,
-    "saidas_mes": 223,
+    "saidas_mes": 224,
     "entradas_mes_anterior": 319,
     "saidas_mes_anterior": 1024,
-    "valor_causa_total": 1782024562.8,
-    "saldo_mes": 102
+    "valor_causa_total": 1781935912.8,
+    "saldo_mes": 101
   },
   "serie_diaria": [
-    {
-      "data": "2026-09-01",
-      "entradas": 4,
-      "saidas": 798
-    },
     {
       "data": "2026-09-02",
       "entradas": 20,
@@ -312,18 +307,23 @@
     {
       "data": "2026-10-30",
       "entradas": 8,
-      "saidas": 8
+      "saidas": 9
+    },
+    {
+      "data": "2026-10-31",
+      "entradas": 0,
+      "saidas": 0
     }
   ],
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2138,
+      "andamento": 2137,
       "entradas_mes": 105,
-      "saidas_mes": 69,
+      "saidas_mes": 70,
       "entradas_mes_anterior": 118,
       "saidas_mes_anterior": 96,
-      "valor_causa": 478085817.97
+      "valor_causa": 477997167.97
     },
     {
       "nome": "Grupo E1",
@@ -464,12 +464,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5766,
+      "andamento": 5765,
       "entradas_mes": 197,
-      "saidas_mes": 163,
+      "saidas_mes": 164,
       "entradas_mes_anterior": 190,
       "saidas_mes_anterior": 844,
-      "valor_causa": 1379735414.2
+      "valor_causa": 1379646764.2
     },
     {
       "nome": "MG",
@@ -727,12 +727,12 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2960,
+      "andamento": 2959,
       "entradas_mes": 8,
-      "saidas_mes": 47,
+      "saidas_mes": 48,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 388,
-      "valor_causa": 675546357.39
+      "valor_causa": 675457707.39
     },
     {
       "nome": "Execução",
@@ -1199,12 +1199,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo E2",
-      "andamento": 586,
+      "andamento": 585,
       "entradas_mes": 3,
-      "saidas_mes": 16,
+      "saidas_mes": 17,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 14,
-      "valor_causa": 186114345.67
+      "valor_causa": 186025695.67
     },
     {
       "fase": "Recurso",
@@ -1584,12 +1584,12 @@
     },
     {
       "nome": "André Alessandro de Paula(AAP)",
-      "andamento": 80,
+      "andamento": 79,
       "entradas_mes": 1,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 3,
-      "valor_causa": 18215662.14
+      "valor_causa": 18127012.14
     },
     {
       "nome": "Bruno Tanganelli Farah(BTF)",
@@ -1818,12 +1818,12 @@
     },
     {
       "nome": "VITERRA RIO VERMELHO",
-      "andamento": 317,
+      "andamento": 316,
       "entradas_mes": 10,
-      "saidas_mes": 9,
+      "saidas_mes": 10,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 10,
-      "valor_causa": 43066177.87,
+      "valor_causa": 42977527.87,
       "alerta_entrada": false
     },
     {
@@ -3227,12 +3227,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "VITERRA RIO VERMELHO",
-      "andamento": 317,
+      "andamento": 316,
       "entradas_mes": 10,
-      "saidas_mes": 9,
+      "saidas_mes": 10,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 10,
-      "valor_causa": 43066177.87,
+      "valor_causa": 42977527.87,
       "alerta_entrada": false
     },
     {
@@ -4413,12 +4413,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "André Alessandro de Paula(AAP)",
-      "andamento": 53,
+      "andamento": 52,
       "entradas_mes": 1,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 16047989.01
+      "valor_causa": 15959339.01
     },
     {
       "grupo": "Grupo E2",
@@ -6515,12 +6515,12 @@
     {
       "estado": "SP",
       "cliente": "VITERRA RIO VERMELHO",
-      "andamento": 299,
+      "andamento": 298,
       "entradas_mes": 10,
-      "saidas_mes": 9,
+      "saidas_mes": 10,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 8,
-      "valor_causa": 41804236.34
+      "valor_causa": 41715586.34
     },
     {
       "estado": "SP",
