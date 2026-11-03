@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-03T15:45:22",
+  "atualizado_em": "2026-11-03T16:00:24",
   "kpis": {
-    "total_andamento": 7619,
+    "total_andamento": 7617,
     "entradas_hoje": 3,
-    "saidas_hoje": 1,
+    "saidas_hoje": 3,
     "entradas_ontem": 0,
     "saidas_ontem": 0,
     "entradas_mes": 3,
-    "saidas_mes": 1,
+    "saidas_mes": 3,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 224,
-    "valor_causa_total": 1781626429.39,
-    "saldo_mes": 2
+    "valor_causa_total": 1781396195.44,
+    "saldo_mes": 0
   },
   "serie_diaria": [
     {
@@ -312,7 +312,7 @@
     {
       "data": "2026-11-03",
       "entradas": 3,
-      "saidas": 1
+      "saidas": 3
     }
   ],
   "por_grupo": [
@@ -327,12 +327,12 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1804,
+      "andamento": 1802,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 60,
       "saidas_mes_anterior": 70,
-      "valor_causa": 309051591.96
+      "valor_causa": 308821358.01
     },
     {
       "nome": "Grupo B1",
@@ -446,12 +446,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5765,
+      "andamento": 5763,
       "entradas_mes": 1,
-      "saidas_mes": 1,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 164,
-      "valor_causa": 1379089050.41
+      "valor_causa": 1378858816.46
     },
     {
       "nome": "MG",
@@ -691,12 +691,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2918,
+      "andamento": 2916,
       "entradas_mes": 3,
-      "saidas_mes": 1,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 273,
       "saidas_mes_anterior": 74,
-      "valor_causa": 848470636.38
+      "valor_causa": 848240402.43
     },
     {
       "nome": "Sentença",
@@ -941,12 +941,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 740,
+      "andamento": 738,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 31,
       "saidas_mes_anterior": 23,
-      "valor_causa": 157525200.59
+      "valor_causa": 157294966.64
     },
     {
       "fase": "Instrução",
@@ -1512,12 +1512,12 @@
     },
     {
       "nome": "Tamires Lins Costa(TLI)",
-      "andamento": 228,
+      "andamento": 227,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 10,
-      "valor_causa": 29785440.07
+      "valor_causa": 29625206.12
     },
     {
       "nome": "Lucas Willott Pereira (LWP)",
@@ -1530,12 +1530,12 @@
     },
     {
       "nome": "Vinicius da Silva Cerqueira(VSI)",
-      "andamento": 210,
+      "andamento": 209,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 35,
       "saidas_mes_anterior": 0,
-      "valor_causa": 71347058.16
+      "valor_causa": 71277058.16
     },
     {
       "nome": "Thais Amaral Rocca(TAR)",
@@ -1774,12 +1774,12 @@
     },
     {
       "nome": "MAHLE METAL - SBC",
-      "andamento": 265,
+      "andamento": 264,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 10,
-      "valor_causa": 23381703.38,
+      "valor_causa": 23221469.43,
       "alerta_entrada": false
     },
     {
@@ -2920,12 +2920,12 @@
     {
       "grupo": "Grupo E1",
       "cliente": "MAHLE METAL - SBC",
-      "andamento": 265,
+      "andamento": 264,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 10,
-      "valor_causa": 23381703.38,
+      "valor_causa": 23221469.43,
       "alerta_entrada": false
     },
     {
@@ -2986,12 +2986,12 @@
     {
       "grupo": "Grupo E1",
       "cliente": "CORREIOS E TELEGRAFO",
-      "andamento": 7,
+      "andamento": 6,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 3452573.72,
+      "valor_causa": 3382573.72,
       "alerta_entrada": false
     },
     {
@@ -4210,12 +4210,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Tamires Lins Costa(TLI)",
-      "andamento": 228,
+      "andamento": 227,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 10,
-      "valor_causa": 29785440.07
+      "valor_causa": 29625206.12
     },
     {
       "grupo": "Grupo E1",
@@ -4249,16 +4249,6 @@
     },
     {
       "grupo": "Grupo E1",
-      "profissional": "Vinicius da Silva Cerqueira(VSI)",
-      "andamento": 7,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 3452573.72
-    },
-    {
-      "grupo": "Grupo E1",
       "profissional": "Juliana Pereira Nascimento(JPA)",
       "andamento": 6,
       "entradas_mes": 0,
@@ -4266,6 +4256,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 2467604.23
+    },
+    {
+      "grupo": "Grupo E1",
+      "profissional": "Vinicius da Silva Cerqueira(VSI)",
+      "andamento": 6,
+      "entradas_mes": 0,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 3382573.72
     },
     {
       "grupo": "Grupo E1",
@@ -6492,12 +6492,12 @@
     {
       "estado": "SP",
       "cliente": "MAHLE METAL - SBC",
-      "andamento": 265,
+      "andamento": 264,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 10,
-      "valor_causa": 23381703.38
+      "valor_causa": 23221469.43
     },
     {
       "estado": "SP",
@@ -6981,16 +6981,6 @@
     },
     {
       "estado": "SP",
-      "cliente": "CORREIOS E TELEGRAFO",
-      "andamento": 3,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 670000.0
-    },
-    {
-      "estado": "SP",
       "cliente": "MAHLE METAL -LIMEIRA",
       "andamento": 3,
       "entradas_mes": 0,
@@ -7188,6 +7178,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 59557.62
+    },
+    {
+      "estado": "SP",
+      "cliente": "CORREIOS E TELEGRAFO",
+      "andamento": 2,
+      "entradas_mes": 0,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 600000.0
     },
     {
       "estado": "SP",
