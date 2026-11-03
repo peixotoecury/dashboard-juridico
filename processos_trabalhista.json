@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-02T20:00:18",
+  "atualizado_em": "2026-11-03T08:00:24",
   "kpis": {
     "total_andamento": 7617,
     "entradas_hoje": 0,
@@ -14,11 +14,6 @@
     "saldo_mes": 0
   },
   "serie_diaria": [
-    {
-      "data": "2026-09-04",
-      "entradas": 1,
-      "saidas": 9
-    },
     {
       "data": "2026-09-05",
       "entradas": 0,
@@ -311,6 +306,11 @@
     },
     {
       "data": "2026-11-02",
+      "entradas": 0,
+      "saidas": 0
+    },
+    {
+      "data": "2026-11-03",
       "entradas": 0,
       "saidas": 0
     }
@@ -3656,17 +3656,6 @@
     },
     {
       "grupo": "Grupo E2",
-      "cliente": "BP BUNGE",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 400000.0,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Grupo E2",
       "cliente": "LEONARDO WAISSMANN",
       "andamento": 1,
       "entradas_mes": 0,
@@ -3718,6 +3707,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 65000.0,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Grupo E2",
+      "cliente": "BP BUNGE",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 400000.0,
       "alerta_entrada": false
     },
     {
@@ -7480,16 +7480,6 @@
     },
     {
       "estado": "SP",
-      "cliente": "BP BUNGE",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 400000.0
-    },
-    {
-      "estado": "SP",
       "cliente": "MERCADO BITCOIN MB",
       "andamento": 1,
       "entradas_mes": 0,
@@ -7587,6 +7577,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 800000.0
+    },
+    {
+      "estado": "SP",
+      "cliente": "BP BUNGE",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 400000.0
     },
     {
       "estado": "TO",
