@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-03T16:00:24",
+  "atualizado_em": "2026-11-03T16:15:33",
   "kpis": {
-    "total_andamento": 7617,
-    "entradas_hoje": 3,
+    "total_andamento": 7618,
+    "entradas_hoje": 4,
     "saidas_hoje": 3,
     "entradas_ontem": 0,
     "saidas_ontem": 0,
-    "entradas_mes": 3,
+    "entradas_mes": 4,
     "saidas_mes": 3,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 224,
-    "valor_causa_total": 1781396195.44,
-    "saldo_mes": 0
+    "valor_causa_total": 1781611195.44,
+    "saldo_mes": 1
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-11-03",
-      "entradas": 3,
+      "entradas": 4,
       "saidas": 3
     }
   ],
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 5,
-      "entradas_mes": 1,
+      "andamento": 6,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 1,
-      "valor_causa": 283983.6
+      "valor_causa": 498983.6
     },
     {
       "nome": "Sócios",
@@ -446,12 +446,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5763,
-      "entradas_mes": 1,
+      "andamento": 5764,
+      "entradas_mes": 2,
       "saidas_mes": 3,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 164,
-      "valor_causa": 1378858816.46
+      "valor_causa": 1379073816.46
     },
     {
       "nome": "MG",
@@ -691,12 +691,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2916,
-      "entradas_mes": 3,
+      "andamento": 2917,
+      "entradas_mes": 4,
       "saidas_mes": 3,
       "entradas_mes_anterior": 273,
       "saidas_mes_anterior": 74,
-      "valor_causa": 848240402.43
+      "valor_causa": 848455402.43
     },
     {
       "nome": "Sentença",
@@ -1031,12 +1031,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 5,
-      "entradas_mes": 1,
+      "andamento": 6,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 0,
-      "valor_causa": 283983.6
+      "valor_causa": 498983.6
     },
     {
       "fase": "Instrução",
@@ -1431,12 +1431,12 @@
     },
     {
       "nome": "Bruna Cembranelli Fazenda (BCF)",
-      "andamento": 283,
-      "entradas_mes": 0,
+      "andamento": 284,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 7,
-      "valor_causa": 47597163.96
+      "valor_causa": 47812163.96
     },
     {
       "nome": "Guilherme Silva Morimoto(GSM)",
@@ -1714,12 +1714,12 @@
     },
     {
       "nome": "EMBRAER",
-      "andamento": 725,
-      "entradas_mes": 0,
+      "andamento": 726,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 12,
-      "valor_causa": 138882851.95,
+      "valor_causa": 139097851.95,
       "alerta_entrada": false
     },
     {
@@ -3754,6 +3754,17 @@
       "alerta_entrada": false
     },
     {
+      "grupo": "Sem grupo",
+      "cliente": "EMBRAER",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 215000.0,
+      "alerta_entrada": false
+    },
+    {
       "grupo": "Sócios",
       "cliente": "PEIXOTO E CURY",
       "andamento": 2,
@@ -4436,6 +4447,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 45325.09
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Bruna Cembranelli Fazenda (BCF)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 215000.0
     },
     {
       "grupo": "Sócios",
@@ -6442,12 +6463,12 @@
     {
       "estado": "SP",
       "cliente": "EMBRAER",
-      "andamento": 707,
-      "entradas_mes": 0,
+      "andamento": 708,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 12,
-      "valor_causa": 138433009.54
+      "valor_causa": 138648009.54
     },
     {
       "estado": "SP",
@@ -7861,6 +7882,11 @@
       "numero_processo": "0101442-05.2026.5.01.0047",
       "cliente": "COMPANHIA AIX",
       "profissional": "Vinicius da Silva Cerqueira(VSI)"
+    },
+    {
+      "numero_processo": "0012477-97.2026.5.15.0132",
+      "cliente": "EMBRAER",
+      "profissional": "Bruna Cembranelli Fazenda (BCF)"
     },
     {
       "numero_processo": "1002027-29.2026.5.02.0718",
