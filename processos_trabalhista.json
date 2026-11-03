@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-03T09:00:22",
+  "atualizado_em": "2026-11-03T09:15:21",
   "kpis": {
-    "total_andamento": 7619,
+    "total_andamento": 7618,
     "entradas_hoje": 2,
-    "saidas_hoje": 0,
+    "saidas_hoje": 1,
     "entradas_ontem": 0,
     "saidas_ontem": 0,
     "entradas_mes": 2,
-    "saidas_mes": 0,
+    "saidas_mes": 1,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 224,
-    "valor_causa_total": 1782184143.18,
-    "saldo_mes": 2
+    "valor_causa_total": 1781581104.3,
+    "saldo_mes": 1
   },
   "serie_diaria": [
     {
@@ -312,7 +312,7 @@
     {
       "data": "2026-11-03",
       "entradas": 2,
-      "saidas": 0
+      "saidas": 1
     }
   ],
   "por_grupo": [
@@ -354,12 +354,12 @@
     },
     {
       "nome": "Grupo B3",
-      "andamento": 578,
+      "andamento": 577,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 35,
       "saidas_mes_anterior": 12,
-      "valor_causa": 113811517.85
+      "valor_causa": 113208478.97
     },
     {
       "nome": "Grupo C1",
@@ -446,12 +446,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5765,
+      "andamento": 5764,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 164,
-      "valor_causa": 1379646764.2
+      "valor_causa": 1379043725.32
     },
     {
       "nome": "MG",
@@ -691,12 +691,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2919,
+      "andamento": 2918,
       "entradas_mes": 2,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 273,
       "saidas_mes_anterior": 74,
-      "valor_causa": 849028350.17
+      "valor_causa": 848425311.29
     },
     {
       "nome": "Sentença",
@@ -709,21 +709,21 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2959,
+      "andamento": 2958,
       "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 48,
-      "valor_causa": 675457707.39
+      "valor_causa": 675381807.39
     },
     {
       "nome": "Execução",
-      "andamento": 908,
+      "andamento": 909,
       "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 50,
-      "valor_causa": 128627574.12
+      "valor_causa": 128703474.12
     }
   ],
   "por_fase_outras": 395,
@@ -871,12 +871,12 @@
     {
       "fase": "Execução",
       "grupo": "Grupo B3",
-      "andamento": 106,
+      "andamento": 107,
       "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
-      "valor_causa": 20598213.87
+      "valor_causa": 20674113.87
     },
     {
       "fase": "Execução",
@@ -981,12 +981,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B3",
-      "andamento": 154,
+      "andamento": 153,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 31,
       "saidas_mes_anterior": 4,
-      "valor_causa": 28079272.61
+      "valor_causa": 27476233.73
     },
     {
       "fase": "Instrução",
@@ -1201,12 +1201,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo B3",
-      "andamento": 250,
+      "andamento": 249,
       "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 3,
-      "valor_causa": 64197226.86
+      "valor_causa": 64121326.86
     },
     {
       "fase": "Recurso",
@@ -1467,12 +1467,12 @@
     },
     {
       "nome": "Anna Carolina Balbino Gatti Baani(ANB)",
-      "andamento": 267,
+      "andamento": 266,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 2,
-      "valor_causa": 65704744.23
+      "valor_causa": 65101705.35
     },
     {
       "nome": "Paloma da Silva Santos(PSI)",
@@ -2392,12 +2392,12 @@
     {
       "grupo": "Grupo B3",
       "cliente": "FERRERO DO BRASIL",
-      "andamento": 35,
+      "andamento": 34,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 12216007.41,
+      "valor_causa": 11612968.53,
       "alerta_entrada": false
     },
     {
@@ -3062,17 +3062,6 @@
     },
     {
       "grupo": "Grupo E1",
-      "cliente": "DE NORA DO BRASIL",
-      "andamento": 2,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 627758.89,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Grupo E1",
       "cliente": "MAHLE METAL -FILTROS",
       "andamento": 2,
       "entradas_mes": 0,
@@ -3080,6 +3069,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 331734.05,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Grupo E1",
+      "cliente": "DE NORA DO BRASIL",
+      "andamento": 2,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 627758.89,
       "alerta_entrada": false
     },
     {
@@ -4010,12 +4010,12 @@
     {
       "grupo": "Grupo B3",
       "profissional": "Anna Carolina Balbino Gatti Baani(ANB)",
-      "andamento": 88,
+      "andamento": 87,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 2,
-      "valor_causa": 21751867.84
+      "valor_causa": 21148828.96
     },
     {
       "grupo": "Grupo B3",
@@ -6691,16 +6691,6 @@
     },
     {
       "estado": "SP",
-      "cliente": "FERRERO DO BRASIL",
-      "andamento": 14,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 7462120.95
-    },
-    {
-      "estado": "SP",
       "cliente": "CTG - RIO PARANAPANE",
       "andamento": 14,
       "entradas_mes": 0,
@@ -6708,6 +6698,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 6150132.9
+    },
+    {
+      "estado": "SP",
+      "cliente": "FERRERO DO BRASIL",
+      "andamento": 13,
+      "entradas_mes": 0,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 6859082.07
     },
     {
       "estado": "SP",
@@ -7181,16 +7181,6 @@
     },
     {
       "estado": "SP",
-      "cliente": "DE NORA DO BRASIL",
-      "andamento": 2,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 627758.89
-    },
-    {
-      "estado": "SP",
       "cliente": "AZEVEDO & TRAVASSOS",
       "andamento": 2,
       "entradas_mes": 0,
@@ -7208,6 +7198,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 331734.05
+    },
+    {
+      "estado": "SP",
+      "cliente": "DE NORA DO BRASIL",
+      "andamento": 2,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 627758.89
     },
     {
       "estado": "SP",
