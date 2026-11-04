@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-04T13:45:27",
+  "atualizado_em": "2026-11-04T14:00:28",
   "kpis": {
-    "total_andamento": 7613,
+    "total_andamento": 7611,
     "entradas_hoje": 3,
-    "saidas_hoje": 10,
+    "saidas_hoje": 12,
     "entradas_ontem": 9,
     "saidas_ontem": 5,
     "entradas_mes": 12,
-    "saidas_mes": 15,
+    "saidas_mes": 17,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 225,
-    "valor_causa_total": 1781370360.17,
-    "saldo_mes": -3
+    "valor_causa_total": 1781157985.17,
+    "saldo_mes": -5
   },
   "serie_diaria": [
     {
@@ -312,18 +312,18 @@
     {
       "data": "2026-11-04",
       "entradas": 3,
-      "saidas": 10
+      "saidas": 12
     }
   ],
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2136,
+      "andamento": 2134,
       "entradas_mes": 4,
-      "saidas_mes": 5,
+      "saidas_mes": 7,
       "entradas_mes_anterior": 105,
       "saidas_mes_anterior": 70,
-      "valor_causa": 478135002.19
+      "valor_causa": 477922627.19
     },
     {
       "nome": "Grupo E1",
@@ -446,12 +446,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5762,
+      "andamento": 5760,
       "entradas_mes": 10,
-      "saidas_mes": 12,
+      "saidas_mes": 14,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 165,
-      "valor_causa": 1378858346.18
+      "valor_causa": 1378645971.18
     },
     {
       "nome": "MG",
@@ -718,12 +718,12 @@
     },
     {
       "nome": "Execução",
-      "andamento": 909,
+      "andamento": 907,
       "entradas_mes": 0,
-      "saidas_mes": 3,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 49,
-      "valor_causa": 128555472.0
+      "valor_causa": 128343097.0
     }
   ],
   "por_fase_outras": 394,
@@ -841,12 +841,12 @@
     {
       "fase": "Execução",
       "grupo": "Grupo E2",
-      "andamento": 333,
+      "andamento": 331,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 19,
-      "valor_causa": 51105016.25
+      "valor_causa": 50892641.25
     },
     {
       "fase": "Execução",
@@ -1485,12 +1485,12 @@
     },
     {
       "nome": "Mariana Borges de Menezes Fávaro(MBF)",
-      "andamento": 254,
+      "andamento": 253,
       "entradas_mes": 0,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 8,
-      "valor_causa": 35766243.74
+      "valor_causa": 35649243.74
     },
     {
       "nome": "Erik Mota Coppi(ECO)",
@@ -1521,12 +1521,12 @@
     },
     {
       "nome": "Lucas Willott Pereira (LWP)",
-      "andamento": 224,
+      "andamento": 223,
       "entradas_mes": 0,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 7,
-      "valor_causa": 27086950.41
+      "valor_causa": 26991575.41
     },
     {
       "nome": "Vinicius da Silva Cerqueira(VSI)",
@@ -1704,12 +1704,12 @@
     },
     {
       "nome": "BP BIOENERGIA",
-      "andamento": 758,
+      "andamento": 756,
       "entradas_mes": 1,
-      "saidas_mes": 3,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 32,
       "saidas_mes_anterior": 22,
-      "valor_causa": 216134009.44,
+      "valor_causa": 215921634.44,
       "alerta_entrada": false
     },
     {
@@ -3151,12 +3151,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "BP BIOENERGIA",
-      "andamento": 758,
+      "andamento": 756,
       "entradas_mes": 1,
-      "saidas_mes": 3,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 32,
       "saidas_mes_anterior": 22,
-      "valor_causa": 216134009.44,
+      "valor_causa": 215921634.44,
       "alerta_entrada": false
     },
     {
@@ -4330,22 +4330,22 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Mariana Borges de Menezes Fávaro(MBF)",
-      "andamento": 254,
+      "andamento": 253,
       "entradas_mes": 0,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 8,
-      "valor_causa": 35766243.74
+      "valor_causa": 35649243.74
     },
     {
       "grupo": "Grupo E2",
       "profissional": "Lucas Willott Pereira (LWP)",
-      "andamento": 224,
+      "andamento": 223,
       "entradas_mes": 0,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 7,
-      "valor_causa": 27086950.41
+      "valor_causa": 26991575.41
     },
     {
       "grupo": "Grupo E2",
@@ -6462,12 +6462,12 @@
     {
       "estado": "SP",
       "cliente": "BP BIOENERGIA",
-      "andamento": 421,
+      "andamento": 419,
       "entradas_mes": 1,
-      "saidas_mes": 2,
+      "saidas_mes": 4,
       "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 13,
-      "valor_causa": 103250870.15
+      "valor_causa": 103038495.15
     },
     {
       "estado": "SP",
