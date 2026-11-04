@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-04T18:00:23",
+  "atualizado_em": "2026-11-04T18:15:28",
   "kpis": {
-    "total_andamento": 7611,
+    "total_andamento": 7610,
     "entradas_hoje": 7,
-    "saidas_hoje": 16,
+    "saidas_hoje": 17,
     "entradas_ontem": 9,
     "saidas_ontem": 5,
     "entradas_mes": 16,
-    "saidas_mes": 21,
+    "saidas_mes": 22,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 225,
     "valor_causa_total": 1781342853.86,
-    "saldo_mes": -5
+    "saldo_mes": -6
   },
   "serie_diaria": [
     {
@@ -312,7 +312,7 @@
     {
       "data": "2026-11-04",
       "entradas": 7,
-      "saidas": 16
+      "saidas": 17
     }
   ],
   "por_grupo": [
@@ -327,9 +327,9 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1797,
+      "andamento": 1796,
       "entradas_mes": 3,
-      "saidas_mes": 10,
+      "saidas_mes": 11,
       "entradas_mes_anterior": 60,
       "saidas_mes_anterior": 70,
       "valor_causa": 308482249.44
@@ -509,9 +509,9 @@
     },
     {
       "nome": "GO",
-      "andamento": 92,
+      "andamento": 91,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 10,
       "valor_causa": 13198742.69
@@ -709,7 +709,7 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2955,
+      "andamento": 2954,
       "entradas_mes": 0,
       "saidas_mes": 5,
       "entradas_mes_anterior": 8,
@@ -1083,7 +1083,7 @@
       "grupo": "Grupo E1",
       "andamento": 51,
       "entradas_mes": 0,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 21,
       "valor_causa": 629214.87
@@ -1171,7 +1171,7 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo E1",
-      "andamento": 740,
+      "andamento": 739,
       "entradas_mes": 0,
       "saidas_mes": 4,
       "entradas_mes_anterior": 1,
@@ -1350,9 +1350,9 @@
     },
     {
       "nome": "Giulia Vendramini Milani(GVM)",
-      "andamento": 429,
+      "andamento": 428,
       "entradas_mes": 1,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 29,
       "valor_causa": 66420895.76
@@ -1724,9 +1724,9 @@
     },
     {
       "nome": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 715,
+      "andamento": 714,
       "entradas_mes": 2,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 23,
       "valor_causa": 142910710.53,
@@ -2898,9 +2898,9 @@
     {
       "grupo": "Grupo E1",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 643,
+      "andamento": 642,
       "entradas_mes": 2,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 23,
       "valor_causa": 141828013.08,
@@ -4160,9 +4160,9 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Giulia Vendramini Milani(GVM)",
-      "andamento": 429,
+      "andamento": 428,
       "entradas_mes": 1,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 29,
       "valor_causa": 66420895.76
@@ -4941,16 +4941,6 @@
     },
     {
       "estado": "GO",
-      "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 11,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 2,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 1602447.54
-    },
-    {
-      "estado": "GO",
       "cliente": "UHE SÃO SIMÃO",
       "andamento": 10,
       "entradas_mes": 0,
@@ -4958,6 +4948,16 @@
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 6,
       "valor_causa": 4481264.24
+    },
+    {
+      "estado": "GO",
+      "cliente": "SYNGENTA PROTEÇÃO DE",
+      "andamento": 10,
+      "entradas_mes": 0,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 2,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1602447.54
     },
     {
       "estado": "GO",
