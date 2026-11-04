@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-04T16:00:23",
+  "atualizado_em": "2026-11-04T16:15:23",
   "kpis": {
-    "total_andamento": 7609,
-    "entradas_hoje": 5,
+    "total_andamento": 7610,
+    "entradas_hoje": 6,
     "saidas_hoje": 16,
     "entradas_ontem": 9,
     "saidas_ontem": 5,
-    "entradas_mes": 14,
+    "entradas_mes": 15,
     "saidas_mes": 21,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 225,
-    "valor_causa_total": 1781331691.8,
-    "saldo_mes": -7
+    "valor_causa_total": 1781342853.86,
+    "saldo_mes": -6
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-11-04",
-      "entradas": 5,
+      "entradas": 6,
       "saidas": 16
     }
   ],
@@ -327,12 +327,12 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1794,
-      "entradas_mes": 0,
+      "andamento": 1795,
+      "entradas_mes": 1,
       "saidas_mes": 10,
       "entradas_mes_anterior": 60,
       "saidas_mes_anterior": 70,
-      "valor_causa": 308144000.68
+      "valor_causa": 308397487.38
     },
     {
       "nome": "Grupo B1",
@@ -422,7 +422,7 @@
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 494965.72
+      "valor_causa": 252641.08
     },
     {
       "nome": "Sócios",
@@ -446,12 +446,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5759,
-      "entradas_mes": 12,
+      "andamento": 5760,
+      "entradas_mes": 13,
       "saidas_mes": 17,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 165,
-      "valor_causa": 1378865685.63
+      "valor_causa": 1378876847.69
     },
     {
       "nome": "MG",
@@ -691,12 +691,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2914,
-      "entradas_mes": 13,
+      "andamento": 2915,
+      "entradas_mes": 14,
       "saidas_mes": 8,
       "entradas_mes_anterior": 272,
       "saidas_mes_anterior": 75,
-      "valor_causa": 848421696.89
+      "valor_causa": 848432858.95
     },
     {
       "nome": "Sentença",
@@ -941,12 +941,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 733,
-      "entradas_mes": 0,
+      "andamento": 734,
+      "entradas_mes": 1,
       "saidas_mes": 2,
       "entradas_mes_anterior": 30,
       "saidas_mes_anterior": 23,
-      "valor_causa": 156732003.61
+      "valor_causa": 156985490.31
     },
     {
       "fase": "Instrução",
@@ -1036,7 +1036,7 @@
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 494965.72
+      "valor_causa": 252641.08
     },
     {
       "fase": "Instrução",
@@ -1512,12 +1512,12 @@
     },
     {
       "nome": "Tamires Lins Costa(TLI)",
-      "andamento": 226,
-      "entradas_mes": 0,
+      "andamento": 227,
+      "entradas_mes": 1,
       "saidas_mes": 4,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 10,
-      "valor_causa": 29477204.0
+      "valor_causa": 29488366.06
     },
     {
       "nome": "Lucas Willott Pereira (LWP)",
@@ -1774,12 +1774,12 @@
     },
     {
       "nome": "MAHLE METAL - SBC",
-      "andamento": 265,
-      "entradas_mes": 0,
+      "andamento": 266,
+      "entradas_mes": 1,
       "saidas_mes": 2,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 10,
-      "valor_causa": 24009074.51,
+      "valor_causa": 24020236.57,
       "alerta_entrada": false
     },
     {
@@ -2898,12 +2898,12 @@
     {
       "grupo": "Grupo E1",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 641,
-      "entradas_mes": 0,
+      "andamento": 642,
+      "entradas_mes": 1,
       "saidas_mes": 2,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 23,
-      "valor_causa": 141500926.38,
+      "valor_causa": 141754413.08,
       "alerta_entrada": false
     },
     {
@@ -3723,12 +3723,12 @@
     {
       "grupo": "Sem grupo",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 3,
-      "entradas_mes": 2,
+      "andamento": 2,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 435545.21,
+      "valor_causa": 182058.51,
       "alerta_entrada": false
     },
     {
@@ -3751,6 +3751,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 29420.51,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "MAHLE METAL - SBC",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 11162.06,
       "alerta_entrada": false
     },
     {
@@ -4170,12 +4181,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Joice Ramos Miranda(JRM)",
-      "andamento": 306,
-      "entradas_mes": 0,
+      "andamento": 307,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 6,
-      "valor_causa": 74149287.66
+      "valor_causa": 74402774.36
     },
     {
       "grupo": "Grupo E1",
@@ -4439,6 +4450,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Tamires Lins Costa(TLI)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 11162.06
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Giulia Vendramini Milani(GVM)",
       "andamento": 1,
       "entradas_mes": 1,
@@ -4446,16 +4467,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 73600.0
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Joice Ramos Miranda(JRM)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 253486.7
     },
     {
       "grupo": "Sócios",
@@ -6512,12 +6523,12 @@
     {
       "estado": "SP",
       "cliente": "MAHLE METAL - SBC",
-      "andamento": 265,
-      "entradas_mes": 0,
+      "andamento": 266,
+      "entradas_mes": 1,
       "saidas_mes": 2,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 10,
-      "valor_causa": 24009074.51
+      "valor_causa": 24020236.57
     },
     {
       "estado": "SP",
@@ -7874,6 +7885,11 @@
       "profissional": "Vinicius da Silva Cerqueira(VSI)"
     },
     {
+      "numero_processo": "1001904-26.2026.5.02.0461",
+      "cliente": "MAHLE METAL - SBC",
+      "profissional": "Tamires Lins Costa(TLI)"
+    },
+    {
       "numero_processo": "0011291-78.2026.5.15.0119",
       "cliente": "PILKINGTON (NSG)",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
@@ -7887,11 +7903,6 @@
       "numero_processo": "0011687-54.2026.5.15.0087",
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "profissional": "Giulia Vendramini Milani(GVM)"
-    },
-    {
-      "numero_processo": "0011682-32.2026.5.15.0087",
-      "cliente": "SYNGENTA PROTEÇÃO DE",
-      "profissional": "Joice Ramos Miranda(JRM)"
     }
   ]
 }
