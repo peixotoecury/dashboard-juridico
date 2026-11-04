@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-04T16:30:25",
+  "atualizado_em": "2026-11-04T16:45:26",
   "kpis": {
     "total_andamento": 7610,
     "entradas_hoje": 6,
@@ -327,12 +327,12 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1796,
-      "entradas_mes": 2,
+      "andamento": 1797,
+      "entradas_mes": 3,
       "saidas_mes": 10,
       "entradas_mes_anterior": 60,
       "saidas_mes_anterior": 70,
-      "valor_causa": 308471087.38
+      "valor_causa": 308482249.44
     },
     {
       "nome": "Grupo B1",
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 5,
-      "entradas_mes": 2,
+      "andamento": 4,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 179041.08
+      "valor_causa": 167879.02
     },
     {
       "nome": "Sócios",
@@ -682,21 +682,21 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 408,
-      "entradas_mes": 1,
+      "andamento": 409,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 33,
       "saidas_mes_anterior": 13,
-      "valor_causa": 90473723.79
+      "valor_causa": 90484885.85
     },
     {
       "nome": "Instrução",
-      "andamento": 2915,
-      "entradas_mes": 14,
+      "andamento": 2914,
+      "entradas_mes": 13,
       "saidas_mes": 8,
       "entradas_mes_anterior": 272,
       "saidas_mes_anterior": 75,
-      "valor_causa": 848432858.95
+      "valor_causa": 848421696.89
     },
     {
       "nome": "Sentença",
@@ -751,12 +751,12 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo E1",
-      "andamento": 70,
-      "entradas_mes": 0,
+      "andamento": 71,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 0,
-      "valor_causa": 18893129.25
+      "valor_causa": 18904291.31
     },
     {
       "fase": "Ajuizamento",
@@ -1030,16 +1030,6 @@
     },
     {
       "fase": "Instrução",
-      "grupo": "Sem grupo",
-      "andamento": 5,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 3,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 179041.08
-    },
-    {
-      "fase": "Instrução",
       "grupo": "Grupo A1",
       "andamento": 4,
       "entradas_mes": 0,
@@ -1047,6 +1037,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
+    },
+    {
+      "fase": "Instrução",
+      "grupo": "Sem grupo",
+      "andamento": 4,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 3,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 167879.02
     },
     {
       "fase": "Outras",
@@ -2920,12 +2920,12 @@
     {
       "grupo": "Grupo E1",
       "cliente": "MAHLE METAL - SBC",
-      "andamento": 265,
-      "entradas_mes": 0,
+      "andamento": 266,
+      "entradas_mes": 1,
       "saidas_mes": 2,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 10,
-      "valor_causa": 24009074.51,
+      "valor_causa": 24020236.57,
       "alerta_entrada": false
     },
     {
@@ -3754,17 +3754,6 @@
       "alerta_entrada": false
     },
     {
-      "grupo": "Sem grupo",
-      "cliente": "MAHLE METAL - SBC",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 11162.06,
-      "alerta_entrada": false
-    },
-    {
       "grupo": "Sócios",
       "cliente": "PEIXOTO E CURY",
       "andamento": 2,
@@ -4221,12 +4210,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Tamires Lins Costa(TLI)",
-      "andamento": 226,
-      "entradas_mes": 0,
+      "andamento": 227,
+      "entradas_mes": 1,
       "saidas_mes": 4,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 10,
-      "valor_causa": 29477204.0
+      "valor_causa": 29488366.06
     },
     {
       "grupo": "Grupo E1",
@@ -4447,16 +4436,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
       "valor_causa": 29420.51
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Tamires Lins Costa(TLI)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 11162.06
     },
     {
       "grupo": "Sócios",
@@ -7873,11 +7852,6 @@
       "numero_processo": "0001683-94.2026.5.09.0128",
       "cliente": "COMPANHIA AIX",
       "profissional": "Vinicius da Silva Cerqueira(VSI)"
-    },
-    {
-      "numero_processo": "1001904-26.2026.5.02.0461",
-      "cliente": "MAHLE METAL - SBC",
-      "profissional": "Tamires Lins Costa(TLI)"
     },
     {
       "numero_processo": "0011291-78.2026.5.15.0119",
