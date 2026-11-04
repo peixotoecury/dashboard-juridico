@@ -1,24 +1,19 @@
 {
-  "atualizado_em": "2026-11-03T20:15:22",
+  "atualizado_em": "2026-11-04T08:00:23",
   "kpis": {
-    "total_andamento": 7623,
-    "entradas_hoje": 9,
-    "saidas_hoje": 3,
-    "entradas_ontem": 0,
-    "saidas_ontem": 0,
+    "total_andamento": 7621,
+    "entradas_hoje": 0,
+    "saidas_hoje": 0,
+    "entradas_ontem": 9,
+    "saidas_ontem": 5,
     "entradas_mes": 9,
-    "saidas_mes": 3,
+    "saidas_mes": 5,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 224,
-    "valor_causa_total": 1782022890.77,
-    "saldo_mes": 6
+    "valor_causa_total": 1781899557.25,
+    "saldo_mes": 4
   },
   "serie_diaria": [
-    {
-      "data": "2026-09-05",
-      "entradas": 0,
-      "saidas": 0
-    },
     {
       "data": "2026-09-06",
       "entradas": 0,
@@ -312,7 +307,12 @@
     {
       "data": "2026-11-03",
       "entradas": 9,
-      "saidas": 3
+      "saidas": 5
+    },
+    {
+      "data": "2026-11-04",
+      "entradas": 0,
+      "saidas": 0
     }
   ],
   "por_grupo": [
@@ -327,18 +327,18 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1802,
+      "andamento": 1801,
       "entradas_mes": 0,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 60,
       "saidas_mes_anterior": 70,
-      "valor_causa": 308821358.01
+      "valor_causa": 308698024.49
     },
     {
       "nome": "Grupo B1",
-      "andamento": 1430,
+      "andamento": 1429,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 42,
       "valor_causa": 323685336.84
@@ -446,12 +446,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5769,
+      "andamento": 5767,
       "entradas_mes": 7,
-      "saidas_mes": 3,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 164,
-      "valor_causa": 1379485511.79
+      "valor_causa": 1379362178.27
     },
     {
       "nome": "MG",
@@ -691,12 +691,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2920,
+      "andamento": 2919,
       "entradas_mes": 9,
       "saidas_mes": 3,
       "entradas_mes_anterior": 272,
       "saidas_mes_anterior": 74,
-      "valor_causa": 848686415.24
+      "valor_causa": 848530838.55
     },
     {
       "nome": "Sentença",
@@ -711,19 +711,19 @@
       "nome": "Recurso",
       "andamento": 2960,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 48,
-      "valor_causa": 675478656.37
+      "valor_causa": 675634233.06
     },
     {
       "nome": "Execução",
-      "andamento": 909,
+      "andamento": 908,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 49,
-      "valor_causa": 128703474.12
+      "valor_causa": 128580140.6
     }
   ],
   "por_fase_outras": 395,
@@ -851,12 +851,12 @@
     {
       "fase": "Execução",
       "grupo": "Grupo E1",
-      "andamento": 196,
+      "andamento": 195,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 7,
-      "valor_causa": 20806370.62
+      "valor_causa": 20683037.1
     },
     {
       "fase": "Execução",
@@ -941,12 +941,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 736,
+      "andamento": 735,
       "entradas_mes": 0,
       "saidas_mes": 2,
       "entradas_mes_anterior": 30,
       "saidas_mes_anterior": 23,
-      "valor_causa": 157114284.12
+      "valor_causa": 156958707.43
     },
     {
       "fase": "Instrução",
@@ -1161,9 +1161,9 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo B1",
-      "andamento": 848,
+      "andamento": 847,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 8,
       "valor_causa": 168168073.56
@@ -1171,12 +1171,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo E1",
-      "andamento": 745,
+      "andamento": 746,
       "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 19,
-      "valor_causa": 111071691.34
+      "valor_causa": 111227268.03
     },
     {
       "fase": "Recurso",
@@ -1332,9 +1332,9 @@
   "por_profissional": [
     {
       "nome": "Nicolau Rafael Guimarães Coelho(NRG)",
-      "andamento": 488,
+      "andamento": 487,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 22,
       "valor_causa": 99043468.17
@@ -1512,12 +1512,12 @@
     },
     {
       "nome": "Tamires Lins Costa(TLI)",
-      "andamento": 227,
+      "andamento": 226,
       "entradas_mes": 0,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 10,
-      "valor_causa": 29625206.12
+      "valor_causa": 29501872.6
     },
     {
       "nome": "Lucas Willott Pereira (LWP)",
@@ -1694,9 +1694,9 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1430,
+      "andamento": 1429,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 42,
       "valor_causa": 323685336.84,
@@ -1774,12 +1774,12 @@
     },
     {
       "nome": "MAHLE METAL - SBC",
-      "andamento": 266,
+      "andamento": 265,
       "entradas_mes": 0,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 10,
-      "valor_causa": 24132408.03,
+      "valor_causa": 24009074.51,
       "alerta_entrada": false
     },
     {
@@ -2315,9 +2315,9 @@
     {
       "grupo": "Grupo B1",
       "cliente": "BRIDGESTONE",
-      "andamento": 1430,
+      "andamento": 1429,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 42,
       "valor_causa": 323685336.84,
@@ -2920,12 +2920,12 @@
     {
       "grupo": "Grupo E1",
       "cliente": "MAHLE METAL - SBC",
-      "andamento": 266,
+      "andamento": 265,
       "entradas_mes": 0,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 10,
-      "valor_causa": 24132408.03,
+      "valor_causa": 24009074.51,
       "alerta_entrada": false
     },
     {
@@ -3880,9 +3880,9 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Nicolau Rafael Guimarães Coelho(NRG)",
-      "andamento": 333,
+      "andamento": 332,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 14,
       "valor_causa": 71669389.11
@@ -4210,12 +4210,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Tamires Lins Costa(TLI)",
-      "andamento": 227,
+      "andamento": 226,
       "entradas_mes": 0,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 10,
-      "valor_causa": 29625206.12
+      "valor_causa": 29501872.6
     },
     {
       "grupo": "Grupo E1",
@@ -6432,9 +6432,9 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1405,
+      "andamento": 1404,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 40,
       "valor_causa": 312092313.73
@@ -6492,12 +6492,12 @@
     {
       "estado": "SP",
       "cliente": "MAHLE METAL - SBC",
-      "andamento": 266,
+      "andamento": 265,
       "entradas_mes": 0,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 10,
-      "valor_causa": 24132408.03
+      "valor_causa": 24009074.51
     },
     {
       "estado": "SP",
