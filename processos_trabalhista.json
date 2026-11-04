@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-04T09:15:19",
+  "atualizado_em": "2026-11-04T09:30:21",
   "kpis": {
     "total_andamento": 7623,
     "entradas_hoje": 2,
@@ -336,12 +336,12 @@
     },
     {
       "nome": "Grupo B1",
-      "andamento": 1430,
-      "entradas_mes": 1,
+      "andamento": 1431,
+      "entradas_mes": 2,
       "saidas_mes": 1,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 42,
-      "valor_causa": 323743480.21
+      "valor_causa": 323803923.23
     },
     {
       "nome": "Grupo B2",
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 5,
-      "entradas_mes": 2,
+      "andamento": 4,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 244226.62
+      "valor_causa": 183783.6
     },
     {
       "nome": "Sócios",
@@ -682,21 +682,21 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 407,
-      "entradas_mes": 0,
+      "andamento": 408,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 33,
       "saidas_mes_anterior": 13,
-      "valor_causa": 90413280.77
+      "valor_causa": 90473723.79
     },
     {
       "nome": "Instrução",
-      "andamento": 2921,
-      "entradas_mes": 11,
+      "andamento": 2920,
+      "entradas_mes": 10,
       "saidas_mes": 3,
       "entradas_mes_anterior": 272,
       "saidas_mes_anterior": 74,
-      "valor_causa": 848649424.94
+      "valor_causa": 848588981.92
     },
     {
       "nome": "Sentença",
@@ -821,12 +821,12 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo B1",
-      "andamento": 1,
-      "entradas_mes": 0,
+      "andamento": 2,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 38122.12
+      "valor_causa": 98565.14
     },
     {
       "fase": "Ajuizamento",
@@ -1030,16 +1030,6 @@
     },
     {
       "fase": "Instrução",
-      "grupo": "Sem grupo",
-      "andamento": 5,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 3,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 244226.62
-    },
-    {
-      "fase": "Instrução",
       "grupo": "Grupo A1",
       "andamento": 4,
       "entradas_mes": 0,
@@ -1047,6 +1037,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
+    },
+    {
+      "fase": "Instrução",
+      "grupo": "Sem grupo",
+      "andamento": 4,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 3,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 183783.6
     },
     {
       "fase": "Outras",
@@ -2315,12 +2315,12 @@
     {
       "grupo": "Grupo B1",
       "cliente": "BRIDGESTONE",
-      "andamento": 1430,
-      "entradas_mes": 1,
+      "andamento": 1431,
+      "entradas_mes": 2,
       "saidas_mes": 1,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 42,
-      "valor_causa": 323743480.21,
+      "valor_causa": 323803923.23,
       "alerta_entrada": false
     },
     {
@@ -3754,17 +3754,6 @@
       "alerta_entrada": false
     },
     {
-      "grupo": "Sem grupo",
-      "cliente": "BRIDGESTONE",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 60443.02,
-      "alerta_entrada": false
-    },
-    {
       "grupo": "Sócios",
       "cliente": "PEIXOTO E CURY",
       "andamento": 2,
@@ -3911,12 +3900,12 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Rafael Rocha Ferreira(RFE)",
-      "andamento": 292,
-      "entradas_mes": 0,
+      "andamento": 293,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 9,
-      "valor_causa": 82355974.81
+      "valor_causa": 82416417.83
     },
     {
       "grupo": "Grupo B1",
@@ -4447,16 +4436,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 45325.09
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Rafael Rocha Ferreira(RFE)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 60443.02
     },
     {
       "grupo": "Sócios",
@@ -7864,11 +7843,6 @@
     }
   ],
   "sem_grupo_processos": [
-    {
-      "numero_processo": "1002185-63.2026.5.02.0434",
-      "cliente": "BRIDGESTONE",
-      "profissional": "Rafael Rocha Ferreira(RFE)"
-    },
     {
       "numero_processo": "1001653-61.2026.5.02.0411",
       "cliente": "CBC CARTUCHOS BRASIL",
