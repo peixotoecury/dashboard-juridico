@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-05T10:00:23",
+  "atualizado_em": "2026-11-05T10:15:22",
   "kpis": {
-    "total_andamento": 7615,
-    "entradas_hoje": 0,
+    "total_andamento": 7616,
+    "entradas_hoje": 1,
     "saidas_hoje": 0,
     "entradas_ontem": 13,
     "saidas_ontem": 18,
-    "entradas_mes": 22,
+    "entradas_mes": 23,
     "saidas_mes": 23,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 225,
-    "valor_causa_total": 1781951245.59,
-    "saldo_mes": -1
+    "valor_causa_total": 1784358182.19,
+    "saldo_mes": 0
   },
   "serie_diaria": [
     {
@@ -311,15 +311,15 @@
     },
     {
       "data": "2026-11-05",
-      "entradas": 0,
+      "entradas": 1,
       "saidas": 0
     }
   ],
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2134,
-      "entradas_mes": 5,
+      "andamento": 2135,
+      "entradas_mes": 6,
       "saidas_mes": 8,
       "entradas_mes_anterior": 105,
       "saidas_mes_anterior": 70,
@@ -422,7 +422,7 @@
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 791684.75
+      "valor_causa": 3198621.35
     },
     {
       "nome": "Sócios",
@@ -451,7 +451,7 @@
       "saidas_mes": 18,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 165,
-      "valor_causa": 1379210939.42
+      "valor_causa": 1381617876.02
     },
     {
       "nome": "MG",
@@ -509,8 +509,8 @@
     },
     {
       "nome": "GO",
-      "andamento": 91,
-      "entradas_mes": 0,
+      "andamento": 92,
+      "entradas_mes": 1,
       "saidas_mes": 1,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 10,
@@ -696,7 +696,7 @@
       "saidas_mes": 8,
       "entradas_mes_anterior": 270,
       "saidas_mes_anterior": 75,
-      "valor_causa": 848518866.27
+      "valor_causa": 850925802.87
     },
     {
       "nome": "Sentença",
@@ -726,7 +726,7 @@
       "valor_causa": 128281675.18
     }
   ],
-  "por_fase_outras": 395,
+  "por_fase_outras": 396,
   "por_fase_grupo": [
     {
       "fase": "Ajuizamento",
@@ -1036,7 +1036,7 @@
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 791684.75
+      "valor_causa": 3198621.35
     },
     {
       "fase": "Instrução",
@@ -1051,8 +1051,8 @@
     {
       "fase": "Outras",
       "grupo": "Grupo E2",
-      "andamento": 130,
-      "entradas_mes": 1,
+      "andamento": 131,
+      "entradas_mes": 2,
       "saidas_mes": 1,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 4,
@@ -1391,7 +1391,7 @@
       "saidas_mes": 0,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 7,
-      "valor_causa": 60316555.0
+      "valor_causa": 62723491.6
     },
     {
       "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
@@ -1458,8 +1458,8 @@
     },
     {
       "nome": "Rafael Camargo Felisbino(RCF)",
-      "andamento": 269,
-      "entradas_mes": 1,
+      "andamento": 270,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 8,
@@ -1699,7 +1699,7 @@
       "saidas_mes": 1,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 43,
-      "valor_causa": 323970813.06,
+      "valor_causa": 326377749.66,
       "alerta_entrada": false
     },
     {
@@ -2017,17 +2017,6 @@
     },
     {
       "grupo": "Grupo A2",
-      "cliente": "SINTHORESP",
-      "andamento": 2,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 6263083.13,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Grupo A2",
       "cliente": "IVANYRA CORREIA",
       "andamento": 2,
       "entradas_mes": 0,
@@ -2035,6 +2024,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 2025574.44,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Grupo A2",
+      "cliente": "SINTHORESP",
+      "andamento": 2,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 6263083.13,
       "alerta_entrada": false
     },
     {
@@ -3217,8 +3217,8 @@
     {
       "grupo": "Grupo E2",
       "cliente": "INPASA SINOP",
-      "andamento": 64,
-      "entradas_mes": 3,
+      "andamento": 65,
+      "entradas_mes": 4,
       "saidas_mes": 0,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 0,
@@ -3739,7 +3739,7 @@
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 167889.83,
+      "valor_causa": 2574826.43,
       "alerta_entrada": true
     },
     {
@@ -4372,8 +4372,8 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Rafael Camargo Felisbino(RCF)",
-      "andamento": 138,
-      "entradas_mes": 1,
+      "andamento": 139,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 4,
@@ -4497,7 +4497,7 @@
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 0.0
+      "valor_causa": 2406936.6
     },
     {
       "grupo": "Sócios",
@@ -5053,6 +5053,16 @@
     },
     {
       "estado": "GO",
+      "cliente": "INPASA SINOP",
+      "andamento": 2,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 105887.88
+    },
+    {
+      "estado": "GO",
       "cliente": "LOCALIZA RENT A CAR",
       "andamento": 1,
       "entradas_mes": 0,
@@ -5070,16 +5080,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 24534.57
-    },
-    {
-      "estado": "GO",
-      "cliente": "INPASA SINOP",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 105887.88
     },
     {
       "estado": "MA",
@@ -6499,7 +6499,7 @@
       "saidas_mes": 1,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 41,
-      "valor_causa": 312377789.95
+      "valor_causa": 314784726.55
     },
     {
       "estado": "SP",
@@ -7113,16 +7113,6 @@
     },
     {
       "estado": "SP",
-      "cliente": "SINTHORESP",
-      "andamento": 2,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 6263083.13
-    },
-    {
-      "estado": "SP",
       "cliente": "GORDILHO NAPOLITANO",
       "andamento": 2,
       "entradas_mes": 0,
@@ -7240,6 +7230,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 600000.0
+    },
+    {
+      "estado": "SP",
+      "cliente": "SINTHORESP",
+      "andamento": 2,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 6263083.13
     },
     {
       "estado": "SP",
@@ -7905,8 +7905,8 @@
   "clientes_com_alerta": [
     {
       "nome": "INPASA SINOP",
-      "andamento": 65,
-      "entradas_mes": 4,
+      "andamento": 66,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 0,
