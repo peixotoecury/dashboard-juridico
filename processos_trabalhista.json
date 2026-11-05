@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-05T16:00:20",
+  "atualizado_em": "2026-11-05T16:15:19",
   "kpis": {
-    "total_andamento": 7615,
-    "entradas_hoje": 9,
+    "total_andamento": 7616,
+    "entradas_hoje": 10,
     "saidas_hoje": 9,
     "entradas_ontem": 13,
     "saidas_ontem": 18,
-    "entradas_mes": 31,
+    "entradas_mes": 32,
     "saidas_mes": 32,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 225,
-    "valor_causa_total": 1783795143.91,
-    "saldo_mes": -1
+    "valor_causa_total": 1783988599.62,
+    "saldo_mes": 0
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-11-05",
-      "entradas": 9,
+      "entradas": 10,
       "saidas": 9
     }
   ],
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 5,
-      "entradas_mes": 2,
+      "andamento": 6,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 413711.42
+      "valor_causa": 607167.13
     },
     {
       "nome": "Sócios",
@@ -455,12 +455,12 @@
     },
     {
       "nome": "MG",
-      "andamento": 541,
-      "entradas_mes": 0,
+      "andamento": 542,
+      "entradas_mes": 1,
       "saidas_mes": 4,
       "entradas_mes_anterior": 26,
       "saidas_mes_anterior": 23,
-      "valor_causa": 136836378.23
+      "valor_causa": 137029833.94
     },
     {
       "nome": "PR",
@@ -682,12 +682,12 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 417,
-      "entradas_mes": 9,
+      "andamento": 418,
+      "entradas_mes": 10,
       "saidas_mes": 0,
       "entradas_mes_anterior": 35,
       "saidas_mes_anterior": 13,
-      "valor_causa": 94221861.08
+      "valor_causa": 94415316.79
     },
     {
       "nome": "Instrução",
@@ -830,6 +830,16 @@
     },
     {
       "fase": "Ajuizamento",
+      "grupo": "Sem grupo",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 439288.11
+    },
+    {
+      "fase": "Ajuizamento",
       "grupo": "Grupo B3",
       "andamento": 1,
       "entradas_mes": 0,
@@ -837,16 +847,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
-    },
-    {
-      "fase": "Ajuizamento",
-      "grupo": "Sem grupo",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 245832.4
     },
     {
       "fase": "Execução",
@@ -1351,12 +1351,12 @@
     },
     {
       "nome": "Rafael Yepez do Lago(RYL)",
-      "andamento": 455,
-      "entradas_mes": 0,
+      "andamento": 456,
+      "entradas_mes": 1,
       "saidas_mes": 1,
       "entradas_mes_anterior": 26,
       "saidas_mes_anterior": 21,
-      "valor_causa": 60500628.2
+      "valor_causa": 60694083.91
     },
     {
       "nome": "Giulia Vendramini Milani(GVM)",
@@ -1774,12 +1774,12 @@
     },
     {
       "nome": "VITERRA RIO VERMELHO",
-      "andamento": 316,
-      "entradas_mes": 0,
+      "andamento": 317,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 10,
-      "valor_causa": 42977527.87,
+      "valor_causa": 43170983.58,
       "alerta_entrada": false
     },
     {
@@ -3754,6 +3754,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "ROBERT BOSCH",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 245832.4,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "PILKINGTON (NSG)",
       "andamento": 1,
       "entradas_mes": 1,
@@ -3765,13 +3776,13 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "ROBERT BOSCH",
+      "cliente": "VITERRA RIO VERMELHO",
       "andamento": 1,
       "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 245832.4,
+      "valor_causa": 193455.71,
       "alerta_entrada": false
     },
     {
@@ -4450,6 +4461,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "André Alessandro de Paula(AAP)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 245832.4
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
       "andamento": 1,
       "entradas_mes": 1,
@@ -4460,13 +4481,13 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "André Alessandro de Paula(AAP)",
+      "profissional": "Rafael Yepez do Lago(RYL)",
       "andamento": 1,
       "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 245832.4
+      "valor_causa": 193455.71
     },
     {
       "grupo": "Sócios",
@@ -5162,6 +5183,16 @@
     },
     {
       "estado": "MG",
+      "cliente": "VITERRA RIO VERMELHO",
+      "andamento": 12,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1357096.79
+    },
+    {
+      "estado": "MG",
       "cliente": "SISTENGE",
       "andamento": 12,
       "entradas_mes": 0,
@@ -5169,16 +5200,6 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
       "valor_causa": 516781.21
-    },
-    {
-      "estado": "MG",
-      "cliente": "VITERRA RIO VERMELHO",
-      "andamento": 11,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 1163641.08
     },
     {
       "estado": "MG",
@@ -7908,6 +7929,11 @@
       "numero_processo": "1002027-29.2026.5.02.0718",
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "profissional": "Vinícius Ronchi Arruda(VRO)"
+    },
+    {
+      "numero_processo": "0010177-98.2018.5.15.0050",
+      "cliente": "VITERRA RIO VERMELHO",
+      "profissional": "Rafael Yepez do Lago(RYL)"
     }
   ]
 }
