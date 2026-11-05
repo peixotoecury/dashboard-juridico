@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-05T15:00:42",
+  "atualizado_em": "2026-11-05T15:15:19",
   "kpis": {
     "total_andamento": 7614,
     "entradas_hoje": 8,
@@ -336,12 +336,12 @@
     },
     {
       "nome": "Grupo B1",
-      "andamento": 1430,
-      "entradas_mes": 3,
+      "andamento": 1431,
+      "entradas_mes": 4,
       "saidas_mes": 2,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 43,
-      "valor_causa": 323762954.16
+      "valor_causa": 326169890.76
     },
     {
       "nome": "Grupo B2",
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 6,
-      "entradas_mes": 3,
+      "andamento": 5,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 2704785.82
+      "valor_causa": 297849.22
     },
     {
       "nome": "Sócios",
@@ -446,12 +446,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5756,
-      "entradas_mes": 17,
+      "andamento": 5755,
+      "entradas_mes": 16,
       "saidas_mes": 25,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 165,
-      "valor_causa": 1380852820.48
+      "valor_causa": 1380671204.58
     },
     {
       "nome": "MG",
@@ -518,12 +518,12 @@
     },
     {
       "nome": "MT",
-      "andamento": 64,
-      "entradas_mes": 1,
+      "andamento": 65,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 3,
-      "valor_causa": 9835997.72
+      "valor_causa": 10017613.62
     },
     {
       "nome": "—",
@@ -682,21 +682,21 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 414,
-      "entradas_mes": 6,
+      "andamento": 415,
+      "entradas_mes": 7,
       "saidas_mes": 0,
       "entradas_mes_anterior": 35,
       "saidas_mes_anterior": 13,
-      "valor_causa": 91439121.88
+      "valor_causa": 93846058.48
     },
     {
       "nome": "Instrução",
-      "andamento": 2909,
-      "entradas_mes": 15,
+      "andamento": 2908,
+      "entradas_mes": 14,
       "saidas_mes": 9,
       "entradas_mes_anterior": 270,
       "saidas_mes_anterior": 75,
-      "valor_causa": 849296658.08
+      "valor_causa": 846889721.48
     },
     {
       "nome": "Sentença",
@@ -801,12 +801,12 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo B1",
-      "andamento": 3,
-      "entradas_mes": 2,
+      "andamento": 4,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 136484.77
+      "valor_causa": 2543421.37
     },
     {
       "fase": "Ajuizamento",
@@ -1031,12 +1031,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 6,
-      "entradas_mes": 3,
+      "andamento": 5,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 2704785.82
+      "valor_causa": 297849.22
     },
     {
       "fase": "Instrução",
@@ -2315,12 +2315,12 @@
     {
       "grupo": "Grupo B1",
       "cliente": "BRIDGESTONE",
-      "andamento": 1430,
-      "entradas_mes": 3,
+      "andamento": 1431,
+      "entradas_mes": 4,
       "saidas_mes": 2,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 43,
-      "valor_causa": 323762954.16,
+      "valor_causa": 326169890.76,
       "alerta_entrada": false
     },
     {
@@ -3733,17 +3733,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "BRIDGESTONE",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 2536906.8,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "andamento": 1,
       "entradas_mes": 0,
@@ -3762,6 +3751,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 29420.51,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "BRIDGESTONE",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 129970.2,
       "alerta_entrada": false
     },
     {
@@ -3901,12 +3901,12 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Beatriz Santiago de Souza(BSO)",
-      "andamento": 303,
-      "entradas_mes": 0,
+      "andamento": 304,
+      "entradas_mes": 1,
       "saidas_mes": 1,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 7,
-      "valor_causa": 60238666.3
+      "valor_causa": 62645602.9
     },
     {
       "grupo": "Grupo B1",
@@ -4457,16 +4457,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 129970.2
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Beatriz Santiago de Souza(BSO)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 2406936.6
     },
     {
       "grupo": "Sócios",
@@ -5463,12 +5453,12 @@
     {
       "estado": "MT",
       "cliente": "INPASA SINOP",
-      "andamento": 39,
-      "entradas_mes": 1,
+      "andamento": 40,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
-      "valor_causa": 6291564.95
+      "valor_causa": 6473180.85
     },
     {
       "estado": "MT",
@@ -7242,16 +7232,6 @@
     },
     {
       "estado": "SP",
-      "cliente": "INPASA SINOP",
-      "andamento": 2,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 779348.84
-    },
-    {
-      "estado": "SP",
       "cliente": "HEWLETT-PACKARD - HP",
       "andamento": 2,
       "entradas_mes": 0,
@@ -7592,6 +7572,16 @@
     },
     {
       "estado": "SP",
+      "cliente": "INPASA SINOP",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 597732.94
+    },
+    {
+      "estado": "SP",
       "cliente": "COLEGIO INOVATI",
       "andamento": 1,
       "entradas_mes": 0,
@@ -7888,11 +7878,6 @@
       "numero_processo": "1002209-88.2026.5.02.0435",
       "cliente": "BRIDGESTONE",
       "profissional": "Guilherme Silva Morimoto(GSM)"
-    },
-    {
-      "numero_processo": "1002181-32.2026.5.02.0432",
-      "cliente": "BRIDGESTONE",
-      "profissional": "Beatriz Santiago de Souza(BSO)"
     },
     {
       "numero_processo": "0001607-78.2026.5.07.0014",
