@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-05T09:45:22",
+  "atualizado_em": "2026-11-05T10:00:23",
   "kpis": {
-    "total_andamento": 7614,
+    "total_andamento": 7615,
     "entradas_hoje": 0,
     "saidas_hoje": 0,
-    "entradas_ontem": 12,
+    "entradas_ontem": 13,
     "saidas_ontem": 18,
-    "entradas_mes": 21,
+    "entradas_mes": 22,
     "saidas_mes": 23,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 225,
     "valor_causa_total": 1781951245.59,
-    "saldo_mes": -2
+    "saldo_mes": -1
   },
   "serie_diaria": [
     {
@@ -306,7 +306,7 @@
     },
     {
       "data": "2026-11-04",
-      "entradas": 12,
+      "entradas": 13,
       "saidas": 18
     },
     {
@@ -417,8 +417,8 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 9,
-      "entradas_mes": 6,
+      "andamento": 10,
+      "entradas_mes": 7,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
@@ -446,8 +446,8 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5762,
-      "entradas_mes": 16,
+      "andamento": 5763,
+      "entradas_mes": 17,
       "saidas_mes": 18,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 165,
@@ -691,8 +691,8 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2916,
-      "entradas_mes": 18,
+      "andamento": 2917,
+      "entradas_mes": 19,
       "saidas_mes": 8,
       "entradas_mes_anterior": 270,
       "saidas_mes_anterior": 75,
@@ -1031,8 +1031,8 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 9,
-      "entradas_mes": 6,
+      "andamento": 10,
+      "entradas_mes": 7,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
@@ -1386,8 +1386,8 @@
     },
     {
       "nome": "Beatriz Santiago de Souza(BSO)",
-      "andamento": 304,
-      "entradas_mes": 0,
+      "andamento": 305,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 7,
@@ -1694,8 +1694,8 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1432,
-      "entradas_mes": 4,
+      "andamento": 1433,
+      "entradas_mes": 5,
       "saidas_mes": 1,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 43,
@@ -3734,13 +3734,13 @@
     {
       "grupo": "Sem grupo",
       "cliente": "BRIDGESTONE",
-      "andamento": 2,
-      "entradas_mes": 2,
+      "andamento": 3,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 167889.83,
-      "alerta_entrada": false
+      "alerta_entrada": true
     },
     {
       "grupo": "Sem grupo",
@@ -4488,6 +4488,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 129970.2
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Beatriz Santiago de Souza(BSO)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 0.0
     },
     {
       "grupo": "Sócios",
@@ -6484,8 +6494,8 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1407,
-      "entradas_mes": 4,
+      "andamento": 1408,
+      "entradas_mes": 5,
       "saidas_mes": 1,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 41,
@@ -7914,6 +7924,11 @@
       "numero_processo": "1002209-88.2026.5.02.0435",
       "cliente": "BRIDGESTONE",
       "profissional": "Guilherme Silva Morimoto(GSM)"
+    },
+    {
+      "numero_processo": "1002181-32.2026.5.02.0432",
+      "cliente": "BRIDGESTONE",
+      "profissional": "Beatriz Santiago de Souza(BSO)"
     },
     {
       "numero_processo": "0001607-78.2026.5.07.0014",
