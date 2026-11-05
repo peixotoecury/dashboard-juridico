@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-05T15:45:21",
+  "atualizado_em": "2026-11-05T16:00:20",
   "kpis": {
-    "total_andamento": 7614,
-    "entradas_hoje": 8,
+    "total_andamento": 7615,
+    "entradas_hoje": 9,
     "saidas_hoje": 9,
     "entradas_ontem": 13,
     "saidas_ontem": 18,
-    "entradas_mes": 30,
+    "entradas_mes": 31,
     "saidas_mes": 32,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 225,
-    "valor_causa_total": 1783549311.51,
-    "saldo_mes": -2
+    "valor_causa_total": 1783795143.91,
+    "saldo_mes": -1
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-11-05",
-      "entradas": 8,
+      "entradas": 9,
       "saidas": 9
     }
   ],
@@ -363,12 +363,12 @@
     },
     {
       "nome": "Grupo C1",
-      "andamento": 322,
+      "andamento": 321,
       "entradas_mes": 2,
       "saidas_mes": 0,
-      "entradas_mes_anterior": 37,
+      "entradas_mes_anterior": 36,
       "saidas_mes_anterior": 0,
-      "valor_causa": 185042421.27
+      "valor_causa": 184691554.1
     },
     {
       "nome": "Grupo C2",
@@ -381,12 +381,12 @@
     },
     {
       "nome": "Grupo C3",
-      "andamento": 181,
+      "andamento": 182,
       "entradas_mes": 0,
       "saidas_mes": 0,
-      "entradas_mes_anterior": 3,
+      "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 2,
-      "valor_causa": 35763514.79
+      "valor_causa": 36114381.96
     },
     {
       "nome": "Grupo A3",
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 4,
-      "entradas_mes": 1,
+      "andamento": 5,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 167879.02
+      "valor_causa": 413711.42
     },
     {
       "nome": "Sócios",
@@ -446,12 +446,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5755,
-      "entradas_mes": 16,
+      "andamento": 5756,
+      "entradas_mes": 17,
       "saidas_mes": 25,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 165,
-      "valor_causa": 1380671204.58
+      "valor_causa": 1380917036.98
     },
     {
       "nome": "MG",
@@ -682,12 +682,12 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 416,
-      "entradas_mes": 8,
+      "andamento": 417,
+      "entradas_mes": 9,
       "saidas_mes": 0,
       "entradas_mes_anterior": 35,
       "saidas_mes_anterior": 13,
-      "valor_causa": 93976028.68
+      "valor_causa": 94221861.08
     },
     {
       "nome": "Instrução",
@@ -839,6 +839,16 @@
       "valor_causa": 0.0
     },
     {
+      "fase": "Ajuizamento",
+      "grupo": "Sem grupo",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 245832.4
+    },
+    {
       "fase": "Execução",
       "grupo": "Grupo E2",
       "andamento": 334,
@@ -961,22 +971,22 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo C1",
-      "andamento": 198,
+      "andamento": 197,
       "entradas_mes": 0,
       "saidas_mes": 0,
-      "entradas_mes_anterior": 36,
+      "entradas_mes_anterior": 35,
       "saidas_mes_anterior": 0,
-      "valor_causa": 111180446.89
+      "valor_causa": 110829579.72
     },
     {
       "fase": "Instrução",
       "grupo": "Grupo C3",
-      "andamento": 169,
+      "andamento": 170,
       "entradas_mes": 0,
       "saidas_mes": 0,
-      "entradas_mes_anterior": 3,
+      "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 2,
-      "valor_causa": 33498429.0
+      "valor_causa": 33849296.17
     },
     {
       "fase": "Instrução",
@@ -1566,12 +1576,12 @@
     },
     {
       "nome": "André Alessandro de Paula(AAP)",
-      "andamento": 79,
-      "entradas_mes": 0,
+      "andamento": 80,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 2,
-      "valor_causa": 18127012.14
+      "valor_causa": 18372844.54
     },
     {
       "nome": "Bruno Tanganelli Farah(BTF)",
@@ -1794,12 +1804,12 @@
     },
     {
       "nome": "ROBERT BOSCH",
-      "andamento": 187,
-      "entradas_mes": 0,
+      "andamento": 188,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
-      "valor_causa": 14130649.45,
+      "valor_causa": 14376481.85,
       "alerta_entrada": false
     },
     {
@@ -2469,12 +2479,12 @@
     {
       "grupo": "Grupo C1",
       "cliente": "TELEFONICA BRASIL",
-      "andamento": 204,
+      "andamento": 203,
       "entradas_mes": 0,
       "saidas_mes": 0,
-      "entradas_mes_anterior": 9,
+      "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 0,
-      "valor_causa": 162593336.16,
+      "valor_causa": 162242468.99,
       "alerta_entrada": false
     },
     {
@@ -2766,12 +2776,12 @@
     {
       "grupo": "Grupo C3",
       "cliente": "TELEFONICA BRASIL",
-      "andamento": 148,
+      "andamento": 149,
       "entradas_mes": 0,
       "saidas_mes": 0,
-      "entradas_mes_anterior": 2,
+      "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 2,
-      "valor_causa": 31119762.7,
+      "valor_causa": 31470629.87,
       "alerta_entrada": false
     },
     {
@@ -3754,6 +3764,17 @@
       "alerta_entrada": false
     },
     {
+      "grupo": "Sem grupo",
+      "cliente": "ROBERT BOSCH",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 245832.4,
+      "alerta_entrada": false
+    },
+    {
       "grupo": "Sócios",
       "cliente": "PEIXOTO E CURY",
       "andamento": 2,
@@ -4070,12 +4091,12 @@
     {
       "grupo": "Grupo C1",
       "profissional": "Rafael Camargo Felisbino(RCF)",
-      "andamento": 21,
+      "andamento": 20,
       "entradas_mes": 0,
       "saidas_mes": 0,
-      "entradas_mes_anterior": 2,
+      "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 11252315.06
+      "valor_causa": 10901447.89
     },
     {
       "grupo": "Grupo C1",
@@ -4130,12 +4151,12 @@
     {
       "grupo": "Grupo C3",
       "profissional": "Rafael Camargo Felisbino(RCF)",
-      "andamento": 109,
+      "andamento": 110,
       "entradas_mes": 0,
       "saidas_mes": 0,
-      "entradas_mes_anterior": 3,
+      "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 2,
-      "valor_causa": 19366529.54
+      "valor_causa": 19717396.71
     },
     {
       "grupo": "Grupo C3",
@@ -4436,6 +4457,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
       "valor_causa": 29420.51
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "André Alessandro de Paula(AAP)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 245832.4
     },
     {
       "grupo": "Sócios",
@@ -6522,12 +6553,12 @@
     {
       "estado": "SP",
       "cliente": "ROBERT BOSCH",
-      "andamento": 183,
-      "entradas_mes": 0,
+      "andamento": 184,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
-      "valor_causa": 14130649.45
+      "valor_causa": 14376481.85
     },
     {
       "estado": "SP",
@@ -7867,6 +7898,11 @@
       "numero_processo": "0011291-78.2026.5.15.0119",
       "cliente": "PILKINGTON (NSG)",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
+    },
+    {
+      "numero_processo": "0012324-84.2026.5.15.0093",
+      "cliente": "ROBERT BOSCH",
+      "profissional": "André Alessandro de Paula(AAP)"
     },
     {
       "numero_processo": "1002027-29.2026.5.02.0718",
