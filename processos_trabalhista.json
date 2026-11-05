@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-05T17:30:30",
+  "atualizado_em": "2026-11-05T17:45:17",
   "kpis": {
-    "total_andamento": 7617,
-    "entradas_hoje": 11,
+    "total_andamento": 7620,
+    "entradas_hoje": 14,
     "saidas_hoje": 9,
     "entradas_ontem": 13,
     "saidas_ontem": 18,
-    "entradas_mes": 33,
+    "entradas_mes": 36,
     "saidas_mes": 32,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 225,
-    "valor_causa_total": 1784169155.98,
-    "saldo_mes": 1
+    "valor_causa_total": 1786451219.42,
+    "saldo_mes": 4
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-11-05",
-      "entradas": 11,
+      "entradas": 14,
       "saidas": 9
     }
   ],
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 6,
-      "entradas_mes": 3,
+      "andamento": 9,
+      "entradas_mes": 6,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 607167.13
+      "valor_causa": 2889230.57
     },
     {
       "nome": "Sócios",
@@ -446,12 +446,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5756,
-      "entradas_mes": 17,
+      "andamento": 5758,
+      "entradas_mes": 19,
       "saidas_mes": 25,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 165,
-      "valor_causa": 1380917036.98
+      "valor_causa": 1381900975.38
     },
     {
       "nome": "MG",
@@ -473,12 +473,12 @@
     },
     {
       "nome": "RS",
-      "andamento": 239,
-      "entradas_mes": 0,
+      "andamento": 240,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 1,
-      "valor_causa": 56691639.81
+      "valor_causa": 57989764.85
     },
     {
       "nome": "MS",
@@ -682,21 +682,21 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 419,
-      "entradas_mes": 11,
+      "andamento": 420,
+      "entradas_mes": 12,
       "saidas_mes": 0,
       "entradas_mes_anterior": 35,
       "saidas_mes_anterior": 13,
-      "valor_causa": 94595873.15
+      "valor_causa": 95893998.19
     },
     {
       "nome": "Instrução",
-      "andamento": 2906,
-      "entradas_mes": 13,
+      "andamento": 2908,
+      "entradas_mes": 15,
       "saidas_mes": 9,
       "entradas_mes_anterior": 270,
       "saidas_mes_anterior": 75,
-      "valor_causa": 846607016.21
+      "valor_causa": 847590954.61
     },
     {
       "nome": "Sentença",
@@ -709,21 +709,21 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2950,
+      "andamento": 2949,
       "entradas_mes": 0,
       "saidas_mes": 9,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 48,
-      "valor_causa": 675524193.55
+      "valor_causa": 675441294.82
     },
     {
       "nome": "Execução",
-      "andamento": 908,
+      "andamento": 909,
       "entradas_mes": 0,
       "saidas_mes": 8,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 49,
-      "valor_causa": 128837024.94
+      "valor_causa": 128919923.67
     }
   ],
   "por_fase_outras": 403,
@@ -810,6 +810,16 @@
     },
     {
       "fase": "Ajuizamento",
+      "grupo": "Sem grupo",
+      "andamento": 3,
+      "entradas_mes": 3,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 1737413.15
+    },
+    {
+      "fase": "Ajuizamento",
       "grupo": "Sócios",
       "andamento": 2,
       "entradas_mes": 0,
@@ -827,16 +837,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
       "valor_causa": 0.0
-    },
-    {
-      "fase": "Ajuizamento",
-      "grupo": "Sem grupo",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 439288.11
     },
     {
       "fase": "Ajuizamento",
@@ -891,12 +891,12 @@
     {
       "fase": "Execução",
       "grupo": "Grupo B2",
-      "andamento": 89,
+      "andamento": 90,
       "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
-      "valor_causa": 14765379.28
+      "valor_causa": 14848278.01
     },
     {
       "fase": "Execução",
@@ -1040,6 +1040,16 @@
     },
     {
       "fase": "Instrução",
+      "grupo": "Sem grupo",
+      "andamento": 6,
+      "entradas_mes": 3,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 3,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1151817.42
+    },
+    {
+      "fase": "Instrução",
       "grupo": "Grupo A1",
       "andamento": 4,
       "entradas_mes": 0,
@@ -1047,16 +1057,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
-    },
-    {
-      "fase": "Instrução",
-      "grupo": "Sem grupo",
-      "andamento": 4,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 3,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 167879.02
     },
     {
       "fase": "Outras",
@@ -1201,12 +1201,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo B2",
-      "andamento": 383,
+      "andamento": 382,
       "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 69016163.4
+      "valor_causa": 68933264.67
     },
     {
       "fase": "Recurso",
@@ -1342,21 +1342,21 @@
   "por_profissional": [
     {
       "nome": "Nicolau Rafael Guimarães Coelho(NRG)",
-      "andamento": 486,
-      "entradas_mes": 0,
+      "andamento": 487,
+      "entradas_mes": 1,
       "saidas_mes": 2,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 22,
-      "valor_causa": 99043468.17
+      "valor_causa": 99713282.72
     },
     {
       "nome": "Rafael Yepez do Lago(RYL)",
-      "andamento": 456,
-      "entradas_mes": 1,
+      "andamento": 457,
+      "entradas_mes": 2,
       "saidas_mes": 1,
       "entradas_mes_anterior": 26,
       "saidas_mes_anterior": 21,
-      "valor_causa": 60694083.91
+      "valor_causa": 61008207.76
     },
     {
       "nome": "Giulia Vendramini Milani(GVM)",
@@ -1395,6 +1395,15 @@
       "valor_causa": 74402774.36
     },
     {
+      "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
+      "andamento": 304,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 17,
+      "saidas_mes_anterior": 7,
+      "valor_causa": 161274274.06
+    },
+    {
       "nome": "Beatriz Santiago de Souza(BSO)",
       "andamento": 304,
       "entradas_mes": 1,
@@ -1402,15 +1411,6 @@
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 7,
       "valor_causa": 62645602.9
-    },
-    {
-      "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 303,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 17,
-      "saidas_mes_anterior": 7,
-      "valor_causa": 159976149.02
     },
     {
       "nome": "Bianca Bolanhi Camacho(BBO)",
@@ -1724,13 +1724,13 @@
     },
     {
       "nome": "EMBRAER",
-      "andamento": 727,
-      "entradas_mes": 3,
+      "andamento": 728,
+      "entradas_mes": 4,
       "saidas_mes": 1,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 12,
-      "valor_causa": 139390391.02,
-      "alerta_entrada": false
+      "valor_causa": 140060205.57,
+      "alerta_entrada": true
     },
     {
       "nome": "SYNGENTA PROTEÇÃO DE",
@@ -1764,22 +1764,22 @@
     },
     {
       "nome": "HERINGER",
-      "andamento": 340,
-      "entradas_mes": 0,
+      "andamento": 341,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 14,
       "saidas_mes_anterior": 5,
-      "valor_causa": 46094080.47,
+      "valor_causa": 47392205.51,
       "alerta_entrada": false
     },
     {
       "nome": "VITERRA RIO VERMELHO",
-      "andamento": 317,
-      "entradas_mes": 1,
+      "andamento": 318,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 10,
-      "valor_causa": 43170983.58,
+      "valor_causa": 43485107.43,
       "alerta_entrada": false
     },
     {
@@ -3743,6 +3743,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "VITERRA RIO VERMELHO",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 507579.56,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "andamento": 1,
       "entradas_mes": 0,
@@ -3776,13 +3787,24 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "VITERRA RIO VERMELHO",
+      "cliente": "EMBRAER",
       "andamento": 1,
       "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 193455.71,
+      "valor_causa": 669814.55,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "HERINGER",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1298125.04,
       "alerta_entrada": false
     },
     {
@@ -4451,6 +4473,26 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 1327545.55
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Rafael Yepez do Lago(RYL)",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 507579.56
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Vinícius Ronchi Arruda(VRO)",
       "andamento": 1,
       "entradas_mes": 0,
@@ -4471,23 +4513,13 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 29420.51
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Rafael Yepez do Lago(RYL)",
+      "profissional": "Nicolau Rafael Guimarães Coelho(NRG)",
       "andamento": 1,
       "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 193455.71
+      "valor_causa": 669814.55
     },
     {
       "grupo": "Sócios",
@@ -6174,12 +6206,12 @@
     {
       "estado": "RS",
       "cliente": "HERINGER",
-      "andamento": 49,
-      "entradas_mes": 0,
+      "andamento": 50,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 10296993.46
+      "valor_causa": 11595118.5
     },
     {
       "estado": "RS",
@@ -6494,12 +6526,12 @@
     {
       "estado": "SP",
       "cliente": "EMBRAER",
-      "andamento": 710,
-      "entradas_mes": 3,
+      "andamento": 711,
+      "entradas_mes": 4,
       "saidas_mes": 0,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 12,
-      "valor_causa": 138940548.61
+      "valor_causa": 139610363.16
     },
     {
       "estado": "SP",
@@ -6534,12 +6566,12 @@
     {
       "estado": "SP",
       "cliente": "VITERRA RIO VERMELHO",
-      "andamento": 298,
-      "entradas_mes": 0,
+      "andamento": 299,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 10,
-      "valor_causa": 41715586.34
+      "valor_causa": 42029710.19
     },
     {
       "estado": "SP",
@@ -7894,6 +7926,16 @@
   ],
   "clientes_com_alerta": [
     {
+      "nome": "EMBRAER",
+      "andamento": 728,
+      "entradas_mes": 4,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 13,
+      "saidas_mes_anterior": 12,
+      "valor_causa": 140060205.57,
+      "alerta_entrada": true
+    },
+    {
       "nome": "INPASA SINOP",
       "andamento": 73,
       "entradas_mes": 12,
@@ -7916,6 +7958,16 @@
       "profissional": "Vinicius da Silva Cerqueira(VSI)"
     },
     {
+      "numero_processo": "0013011-71.2026.5.15.0025",
+      "cliente": "EMBRAER",
+      "profissional": "Nicolau Rafael Guimarães Coelho(NRG)"
+    },
+    {
+      "numero_processo": "0020965-80.2026.5.04.0121",
+      "cliente": "HERINGER",
+      "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
+    },
+    {
       "numero_processo": "0011291-78.2026.5.15.0119",
       "cliente": "PILKINGTON (NSG)",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
@@ -7932,6 +7984,11 @@
     },
     {
       "numero_processo": "0010177-98.2018.5.15.0050",
+      "cliente": "VITERRA RIO VERMELHO",
+      "profissional": "Rafael Yepez do Lago(RYL)"
+    },
+    {
+      "numero_processo": "0011405-26.2026.5.15.0019",
       "cliente": "VITERRA RIO VERMELHO",
       "profissional": "Rafael Yepez do Lago(RYL)"
     }
