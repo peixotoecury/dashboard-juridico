@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-06T09:15:20",
+  "atualizado_em": "2026-11-06T09:30:22",
   "kpis": {
-    "total_andamento": 7619,
-    "entradas_hoje": 1,
+    "total_andamento": 7620,
+    "entradas_hoje": 2,
     "saidas_hoje": 2,
     "entradas_ontem": 14,
     "saidas_ontem": 9,
-    "entradas_mes": 37,
+    "entradas_mes": 38,
     "saidas_mes": 34,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 225,
-    "valor_causa_total": 1786288327.5,
-    "saldo_mes": 3
+    "valor_causa_total": 1786344897.47,
+    "saldo_mes": 4
   },
   "serie_diaria": [
     {
@@ -311,19 +311,19 @@
     },
     {
       "data": "2026-11-06",
-      "entradas": 1,
+      "entradas": 2,
       "saidas": 2
     }
   ],
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2144,
-      "entradas_mes": 16,
+      "andamento": 2145,
+      "entradas_mes": 17,
       "saidas_mes": 9,
       "entradas_mes_anterior": 105,
       "saidas_mes_anterior": 70,
-      "valor_causa": 478225504.13
+      "valor_causa": 478282074.1
     },
     {
       "nome": "Grupo E1",
@@ -446,12 +446,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5757,
-      "entradas_mes": 20,
+      "andamento": 5758,
+      "entradas_mes": 21,
       "saidas_mes": 27,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 165,
-      "valor_causa": 1381738083.46
+      "valor_causa": 1381794653.43
     },
     {
       "nome": "MG",
@@ -682,12 +682,12 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 422,
-      "entradas_mes": 14,
+      "andamento": 423,
+      "entradas_mes": 15,
       "saidas_mes": 0,
       "entradas_mes_anterior": 35,
       "saidas_mes_anterior": 13,
-      "valor_causa": 96594340.38
+      "valor_causa": 96650910.35
     },
     {
       "nome": "Instrução",
@@ -731,12 +731,12 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo E2",
-      "andamento": 170,
-      "entradas_mes": 3,
+      "andamento": 171,
+      "entradas_mes": 4,
       "saidas_mes": 0,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 9,
-      "valor_causa": 39636650.26
+      "valor_causa": 39693220.23
     },
     {
       "fase": "Ajuizamento",
@@ -1368,6 +1368,15 @@
       "valor_causa": 66243830.5
     },
     {
+      "nome": "Camila Alves Magalhães de Paula(CAL)",
+      "andamento": 361,
+      "entradas_mes": 4,
+      "saidas_mes": 2,
+      "entradas_mes_anterior": 26,
+      "saidas_mes_anterior": 17,
+      "valor_causa": 50750288.05
+    },
+    {
       "nome": "Letícia Meneghini Fontes (LMI)",
       "andamento": 360,
       "entradas_mes": 1,
@@ -1375,15 +1384,6 @@
       "entradas_mes_anterior": 31,
       "saidas_mes_anterior": 5,
       "valor_causa": 67016447.86
-    },
-    {
-      "nome": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 360,
-      "entradas_mes": 3,
-      "saidas_mes": 2,
-      "entradas_mes_anterior": 26,
-      "saidas_mes_anterior": 17,
-      "valor_causa": 50693718.08
     },
     {
       "nome": "Joice Ramos Miranda(JRM)",
@@ -1395,6 +1395,15 @@
       "valor_causa": 74402774.36
     },
     {
+      "nome": "Beatriz Santiago de Souza(BSO)",
+      "andamento": 305,
+      "entradas_mes": 1,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 12,
+      "saidas_mes_anterior": 7,
+      "valor_causa": 63335602.9
+    },
+    {
       "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
       "andamento": 304,
       "entradas_mes": 2,
@@ -1402,15 +1411,6 @@
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 7,
       "valor_causa": 161274274.06
-    },
-    {
-      "nome": "Beatriz Santiago de Souza(BSO)",
-      "andamento": 304,
-      "entradas_mes": 1,
-      "saidas_mes": 1,
-      "entradas_mes_anterior": 12,
-      "saidas_mes_anterior": 7,
-      "valor_causa": 62645602.9
     },
     {
       "nome": "Bianca Bolanhi Camacho(BBO)",
@@ -1423,12 +1423,12 @@
     },
     {
       "nome": "Rafael Rocha Ferreira(RFE)",
-      "andamento": 294,
+      "andamento": 293,
       "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 9,
-      "valor_causa": 82454337.46
+      "valor_causa": 81764337.46
     },
     {
       "nome": "Bruna Cembranelli Fazenda (BCF)",
@@ -1814,12 +1814,12 @@
     },
     {
       "nome": "EUROCHEM SALITRE",
-      "andamento": 165,
-      "entradas_mes": 1,
+      "andamento": 166,
+      "entradas_mes": 2,
       "saidas_mes": 1,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 9,
-      "valor_causa": 39886362.19,
+      "valor_causa": 39942932.16,
       "alerta_entrada": false
     },
     {
@@ -3194,12 +3194,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "EUROCHEM SALITRE",
-      "andamento": 165,
-      "entradas_mes": 1,
+      "andamento": 166,
+      "entradas_mes": 2,
       "saidas_mes": 1,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 9,
-      "valor_causa": 39886362.19,
+      "valor_causa": 39942932.16,
       "alerta_entrada": false
     },
     {
@@ -3933,22 +3933,22 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Beatriz Santiago de Souza(BSO)",
-      "andamento": 304,
+      "andamento": 305,
       "entradas_mes": 1,
       "saidas_mes": 1,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 7,
-      "valor_causa": 62645602.9
+      "valor_causa": 63335602.9
     },
     {
       "grupo": "Grupo B1",
       "profissional": "Rafael Rocha Ferreira(RFE)",
-      "andamento": 294,
+      "andamento": 293,
       "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 9,
-      "valor_causa": 82454337.46
+      "valor_causa": 81764337.46
     },
     {
       "grupo": "Grupo B1",
@@ -4343,12 +4343,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 360,
-      "entradas_mes": 3,
+      "andamento": 361,
+      "entradas_mes": 4,
       "saidas_mes": 2,
       "entradas_mes_anterior": 26,
       "saidas_mes_anterior": 17,
-      "valor_causa": 50693718.08
+      "valor_causa": 50750288.05
     },
     {
       "grupo": "Grupo E2",
@@ -6764,6 +6764,16 @@
     },
     {
       "estado": "SP",
+      "cliente": "EUROCHEM SALITRE",
+      "andamento": 14,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 2426247.21
+    },
+    {
+      "estado": "SP",
       "cliente": "FERRERO DO BRASIL",
       "andamento": 13,
       "entradas_mes": 0,
@@ -6781,16 +6791,6 @@
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
       "valor_causa": 3649955.14
-    },
-    {
-      "estado": "SP",
-      "cliente": "EUROCHEM SALITRE",
-      "andamento": 13,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 2369677.24
     },
     {
       "estado": "SP",
