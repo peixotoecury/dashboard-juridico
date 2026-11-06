@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-06T09:45:22",
+  "atualizado_em": "2026-11-06T10:00:22",
   "kpis": {
-    "total_andamento": 7623,
-    "entradas_hoje": 3,
+    "total_andamento": 7625,
+    "entradas_hoje": 4,
     "saidas_hoje": 2,
-    "entradas_ontem": 16,
+    "entradas_ontem": 17,
     "saidas_ontem": 9,
-    "entradas_mes": 41,
+    "entradas_mes": 43,
     "saidas_mes": 34,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 225,
-    "valor_causa_total": 1786930390.25,
-    "saldo_mes": 7
+    "valor_causa_total": 1787076244.71,
+    "saldo_mes": 9
   },
   "serie_diaria": [
     {
@@ -306,12 +306,12 @@
     },
     {
       "data": "2026-11-05",
-      "entradas": 16,
+      "entradas": 17,
       "saidas": 9
     },
     {
       "data": "2026-11-06",
-      "entradas": 3,
+      "entradas": 4,
       "saidas": 2
     }
   ],
@@ -327,12 +327,12 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1786,
-      "entradas_mes": 3,
+      "andamento": 1787,
+      "entradas_mes": 4,
       "saidas_mes": 21,
       "entradas_mes_anterior": 60,
       "saidas_mes_anterior": 70,
-      "valor_causa": 307586249.04
+      "valor_causa": 307832081.44
     },
     {
       "nome": "Grupo B1",
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 10,
-      "entradas_mes": 7,
+      "andamento": 11,
+      "entradas_mes": 8,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 2767812.12
+      "valor_causa": 2667834.18
     },
     {
       "nome": "Sócios",
@@ -446,12 +446,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5759,
-      "entradas_mes": 22,
+      "andamento": 5761,
+      "entradas_mes": 24,
       "saidas_mes": 27,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 165,
-      "valor_causa": 1382090832.66
+      "valor_causa": 1382236687.12
     },
     {
       "nome": "MG",
@@ -691,12 +691,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2909,
-      "entradas_mes": 16,
+      "andamento": 2911,
+      "entradas_mes": 18,
       "saidas_mes": 9,
       "entradas_mes_anterior": 270,
       "saidas_mes_anterior": 75,
-      "valor_causa": 847469536.16
+      "valor_causa": 847615390.62
     },
     {
       "nome": "Sentença",
@@ -751,12 +751,12 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo E1",
-      "andamento": 71,
-      "entradas_mes": 1,
+      "andamento": 72,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 0,
-      "valor_causa": 18904291.31
+      "valor_causa": 19150123.71
     },
     {
       "fase": "Ajuizamento",
@@ -810,16 +810,6 @@
     },
     {
       "fase": "Ajuizamento",
-      "grupo": "Sem grupo",
-      "andamento": 3,
-      "entradas_mes": 3,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 1737413.15
-    },
-    {
-      "fase": "Ajuizamento",
       "grupo": "Sócios",
       "andamento": 2,
       "entradas_mes": 0,
@@ -837,6 +827,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
       "valor_causa": 0.0
+    },
+    {
+      "fase": "Ajuizamento",
+      "grupo": "Sem grupo",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 1491580.75
     },
     {
       "fase": "Ajuizamento",
@@ -1041,12 +1041,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 7,
-      "entradas_mes": 4,
+      "andamento": 9,
+      "entradas_mes": 6,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 1030398.97
+      "valor_causa": 1176253.43
     },
     {
       "fase": "Instrução",
@@ -1369,12 +1369,12 @@
     },
     {
       "nome": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 360,
-      "entradas_mes": 1,
+      "andamento": 361,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 31,
       "saidas_mes_anterior": 5,
-      "valor_causa": 67016447.86
+      "valor_causa": 67051947.86
     },
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
@@ -1395,6 +1395,15 @@
       "valor_causa": 74402774.36
     },
     {
+      "nome": "Beatriz Santiago de Souza(BSO)",
+      "andamento": 306,
+      "entradas_mes": 2,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 12,
+      "saidas_mes_anterior": 7,
+      "valor_causa": 63445957.36
+    },
+    {
       "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
       "andamento": 305,
       "entradas_mes": 3,
@@ -1402,15 +1411,6 @@
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 7,
       "valor_causa": 161526490.93
-    },
-    {
-      "nome": "Beatriz Santiago de Souza(BSO)",
-      "andamento": 305,
-      "entradas_mes": 1,
-      "saidas_mes": 1,
-      "entradas_mes_anterior": 12,
-      "saidas_mes_anterior": 7,
-      "valor_causa": 63335602.9
     },
     {
       "nome": "Bianca Bolanhi Camacho(BBO)",
@@ -1704,12 +1704,12 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1433,
-      "entradas_mes": 6,
+      "andamento": 1434,
+      "entradas_mes": 7,
       "saidas_mes": 2,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 43,
-      "valor_causa": 326336957.64,
+      "valor_causa": 326447312.1,
       "alerta_entrada": false
     },
     {
@@ -1794,12 +1794,12 @@
     },
     {
       "nome": "CBC CARTUCHOS BRASIL",
-      "andamento": 242,
-      "entradas_mes": 1,
+      "andamento": 243,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 10,
-      "valor_causa": 30562305.15,
+      "valor_causa": 30597805.15,
       "alerta_entrada": false
     },
     {
@@ -2941,12 +2941,12 @@
     {
       "grupo": "Grupo E1",
       "cliente": "ROBERT BOSCH",
-      "andamento": 187,
-      "entradas_mes": 0,
+      "andamento": 188,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
-      "valor_causa": 14130649.45,
+      "valor_causa": 14376481.85,
       "alerta_entrada": false
     },
     {
@@ -3776,17 +3776,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "ROBERT BOSCH",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 245832.4,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "PILKINGTON (NSG)",
       "andamento": 1,
       "entradas_mes": 1,
@@ -3805,6 +3794,28 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 296179.23,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "BRIDGESTONE",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 110354.46,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "CBC CARTUCHOS BRASIL",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 35500.0,
       "alerta_entrada": false
     },
     {
@@ -4274,12 +4285,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "André Alessandro de Paula(AAP)",
-      "andamento": 26,
-      "entradas_mes": 0,
+      "andamento": 27,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 2167673.13
+      "valor_causa": 2413505.53
     },
     {
       "grupo": "Grupo E1",
@@ -4503,16 +4514,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "André Alessandro de Paula(AAP)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 245832.4
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Anna Carolina Balbino Gatti Baani(ANB)",
       "andamento": 1,
       "entradas_mes": 1,
@@ -4520,6 +4521,26 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 296179.23
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Beatriz Santiago de Souza(BSO)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 110354.46
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Letícia Meneghini Fontes (LMI)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 35500.0
     },
     {
       "grupo": "Sócios",
@@ -6516,12 +6537,12 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1407,
-      "entradas_mes": 5,
+      "andamento": 1408,
+      "entradas_mes": 6,
       "saidas_mes": 2,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 41,
-      "valor_causa": 314706837.85
+      "valor_causa": 314817192.31
     },
     {
       "estado": "SP",
@@ -6596,12 +6617,12 @@
     {
       "estado": "SP",
       "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 233,
-      "entradas_mes": 1,
+      "andamento": 234,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 9,
-      "valor_causa": 29336811.21
+      "valor_causa": 29372311.21
     },
     {
       "estado": "SP",
@@ -7948,6 +7969,16 @@
   ],
   "sem_grupo_processos": [
     {
+      "numero_processo": "1002211-67.2026.5.02.0432",
+      "cliente": "BRIDGESTONE",
+      "profissional": "Beatriz Santiago de Souza(BSO)"
+    },
+    {
+      "numero_processo": "1000965-51.2016.5.02.0411",
+      "cliente": "CBC CARTUCHOS BRASIL",
+      "profissional": "Letícia Meneghini Fontes (LMI)"
+    },
+    {
       "numero_processo": "0001607-78.2026.5.07.0014",
       "cliente": "COMPANHIA AIX",
       "profissional": "Vinicius da Silva Cerqueira(VSI)"
@@ -7976,11 +8007,6 @@
       "numero_processo": "0011291-78.2026.5.15.0119",
       "cliente": "PILKINGTON (NSG)",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
-    },
-    {
-      "numero_processo": "0012324-84.2026.5.15.0093",
-      "cliente": "ROBERT BOSCH",
-      "profissional": "André Alessandro de Paula(AAP)"
     },
     {
       "numero_processo": "1002027-29.2026.5.02.0718",
