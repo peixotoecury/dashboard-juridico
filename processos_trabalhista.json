@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-06T10:30:19",
+  "atualizado_em": "2026-11-06T10:45:18",
   "kpis": {
     "total_andamento": 7627,
     "entradas_hoje": 6,
@@ -345,12 +345,12 @@
     },
     {
       "nome": "Grupo B2",
-      "andamento": 747,
-      "entradas_mes": 4,
+      "andamento": 748,
+      "entradas_mes": 5,
       "saidas_mes": 1,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 12,
-      "valor_causa": 142125873.36
+      "valor_causa": 142422052.59
     },
     {
       "nome": "Grupo B3",
@@ -363,12 +363,12 @@
     },
     {
       "nome": "Grupo C1",
-      "andamento": 321,
-      "entradas_mes": 2,
+      "andamento": 322,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 36,
       "saidas_mes_anterior": 0,
-      "valor_causa": 184691554.1
+      "valor_causa": 185662915.78
     },
     {
       "nome": "Grupo C2",
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 10,
-      "entradas_mes": 7,
+      "andamento": 8,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 2344464.2
+      "valor_causa": 1076923.29
     },
     {
       "nome": "Sócios",
@@ -682,21 +682,21 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 424,
-      "entradas_mes": 16,
+      "andamento": 426,
+      "entradas_mes": 18,
       "saidas_mes": 0,
       "entradas_mes_anterior": 35,
       "saidas_mes_anterior": 13,
-      "valor_causa": 96808675.17
+      "valor_causa": 98076216.08
     },
     {
       "nome": "Instrução",
-      "andamento": 2912,
-      "entradas_mes": 19,
+      "andamento": 2910,
+      "entradas_mes": 17,
       "saidas_mes": 9,
       "entradas_mes_anterior": 270,
       "saidas_mes_anterior": 75,
-      "valor_causa": 848783601.39
+      "valor_causa": 847516060.48
     },
     {
       "nome": "Sentença",
@@ -741,12 +741,12 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo B2",
-      "andamento": 89,
-      "entradas_mes": 1,
+      "andamento": 90,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 2,
-      "valor_causa": 11669431.69
+      "valor_causa": 11965610.92
     },
     {
       "fase": "Ajuizamento",
@@ -761,12 +761,12 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo C1",
-      "andamento": 35,
-      "entradas_mes": 2,
+      "andamento": 36,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 18261720.3
+      "valor_causa": 19233081.98
     },
     {
       "fase": "Ajuizamento",
@@ -1031,12 +1031,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 10,
-      "entradas_mes": 7,
+      "andamento": 8,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 2344464.2
+      "valor_causa": 1076923.29
     },
     {
       "fase": "Instrução",
@@ -2326,12 +2326,12 @@
     {
       "grupo": "Grupo B2",
       "cliente": "EMBRAER",
-      "andamento": 724,
-      "entradas_mes": 4,
+      "andamento": 725,
+      "entradas_mes": 5,
       "saidas_mes": 1,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 12,
-      "valor_causa": 140060205.57,
+      "valor_causa": 140356384.8,
       "alerta_entrada": true
     },
     {
@@ -2469,12 +2469,12 @@
     {
       "grupo": "Grupo C1",
       "cliente": "TELEFONICA BRASIL",
-      "andamento": 203,
-      "entradas_mes": 0,
+      "andamento": 204,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 0,
-      "valor_causa": 162242468.99,
+      "valor_causa": 163213830.67,
       "alerta_entrada": false
     },
     {
@@ -3766,17 +3766,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "EMBRAER",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 296179.23,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "HERINGER",
       "andamento": 1,
       "entradas_mes": 1,
@@ -3784,17 +3773,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 252216.87,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "TELEFONICA BRASIL",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 971361.68,
       "alerta_entrada": false
     },
     {
@@ -4035,12 +4013,12 @@
     {
       "grupo": "Grupo B2",
       "profissional": "Anna Carolina Balbino Gatti Baani(ANB)",
-      "andamento": 180,
-      "entradas_mes": 1,
+      "andamento": 181,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 0,
-      "valor_causa": 44044876.39
+      "valor_causa": 44341055.62
     },
     {
       "grupo": "Grupo B2",
@@ -4105,12 +4083,12 @@
     {
       "grupo": "Grupo C1",
       "profissional": "Vinicius da Silva Cerqueira(VSI)",
-      "andamento": 158,
-      "entradas_mes": 2,
+      "andamento": 159,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 28,
       "saidas_mes_anterior": 0,
-      "valor_causa": 59681950.54
+      "valor_causa": 60653312.22
     },
     {
       "grupo": "Grupo C1",
@@ -4465,12 +4443,12 @@
     {
       "grupo": "Sem grupo",
       "profissional": "Vinicius da Silva Cerqueira(VSI)",
-      "andamento": 3,
-      "entradas_mes": 1,
+      "andamento": 2,
+      "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
-      "valor_causa": 1001361.68
+      "valor_causa": 30000.0
     },
     {
       "grupo": "Sem grupo",
@@ -4501,16 +4479,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
       "valor_causa": 29420.51
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Anna Carolina Balbino Gatti Baani(ANB)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 296179.23
     },
     {
       "grupo": "Sem grupo",
@@ -7984,11 +7952,6 @@
       "profissional": "Vinicius da Silva Cerqueira(VSI)"
     },
     {
-      "numero_processo": "0011921-38.2026.5.15.0151",
-      "cliente": "EMBRAER",
-      "profissional": "Anna Carolina Balbino Gatti Baani(ANB)"
-    },
-    {
       "numero_processo": "0001885-06.2026.5.17.0013",
       "cliente": "HERINGER",
       "profissional": "Bruno Tanganelli Farah(BTF)"
@@ -8002,11 +7965,6 @@
       "numero_processo": "1002027-29.2026.5.02.0718",
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "profissional": "Vinícius Ronchi Arruda(VRO)"
-    },
-    {
-      "numero_processo": "1001824-78.2026.5.02.0003",
-      "cliente": "TELEFONICA BRASIL",
-      "profissional": "Vinicius da Silva Cerqueira(VSI)"
     }
   ]
 }
