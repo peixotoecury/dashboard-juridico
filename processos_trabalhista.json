@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-06T08:30:19",
+  "atualizado_em": "2026-11-06T08:45:18",
   "kpis": {
     "total_andamento": 7618,
     "entradas_hoje": 0,
@@ -345,12 +345,12 @@
     },
     {
       "nome": "Grupo B2",
-      "andamento": 746,
-      "entradas_mes": 3,
+      "andamento": 747,
+      "entradas_mes": 4,
       "saidas_mes": 1,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 12,
-      "valor_causa": 141456058.81
+      "valor_causa": 142125873.36
     },
     {
       "nome": "Grupo B3",
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 9,
-      "entradas_mes": 6,
+      "andamento": 8,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 2889230.57
+      "valor_causa": 2219416.02
     },
     {
       "nome": "Sócios",
@@ -682,21 +682,21 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 420,
-      "entradas_mes": 12,
+      "andamento": 421,
+      "entradas_mes": 13,
       "saidas_mes": 0,
       "entradas_mes_anterior": 35,
       "saidas_mes_anterior": 13,
-      "valor_causa": 95893998.19
+      "valor_causa": 96563812.74
     },
     {
       "nome": "Instrução",
-      "andamento": 2908,
-      "entradas_mes": 15,
+      "andamento": 2907,
+      "entradas_mes": 14,
       "saidas_mes": 9,
       "entradas_mes_anterior": 270,
       "saidas_mes_anterior": 75,
-      "valor_causa": 847590954.61
+      "valor_causa": 846921140.06
     },
     {
       "nome": "Sentença",
@@ -741,12 +741,12 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo B2",
-      "andamento": 88,
-      "entradas_mes": 0,
+      "andamento": 89,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 2,
-      "valor_causa": 10999617.14
+      "valor_causa": 11669431.69
     },
     {
       "fase": "Ajuizamento",
@@ -1041,12 +1041,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 6,
-      "entradas_mes": 3,
+      "andamento": 5,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 1151817.42
+      "valor_causa": 482002.87
     },
     {
       "fase": "Instrução",
@@ -2336,13 +2336,13 @@
     {
       "grupo": "Grupo B2",
       "cliente": "EMBRAER",
-      "andamento": 723,
-      "entradas_mes": 3,
+      "andamento": 724,
+      "entradas_mes": 4,
       "saidas_mes": 1,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 12,
-      "valor_causa": 139390391.02,
-      "alerta_entrada": false
+      "valor_causa": 140060205.57,
+      "alerta_entrada": true
     },
     {
       "grupo": "Grupo B2",
@@ -3787,17 +3787,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "EMBRAER",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 669814.55,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "HERINGER",
       "andamento": 1,
       "entradas_mes": 1,
@@ -4044,12 +4033,12 @@
     {
       "grupo": "Grupo B2",
       "profissional": "Nicolau Rafael Guimarães Coelho(NRG)",
-      "andamento": 76,
-      "entradas_mes": 0,
+      "andamento": 77,
+      "entradas_mes": 1,
       "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 3,
-      "valor_causa": 24205373.06
+      "valor_causa": 24875187.61
     },
     {
       "grupo": "Grupo B3",
@@ -4510,16 +4499,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 245832.4
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Nicolau Rafael Guimarães Coelho(NRG)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 669814.55
     },
     {
       "grupo": "Sócios",
@@ -7956,11 +7935,6 @@
       "numero_processo": "0001683-94.2026.5.09.0128",
       "cliente": "COMPANHIA AIX",
       "profissional": "Vinicius da Silva Cerqueira(VSI)"
-    },
-    {
-      "numero_processo": "0013011-71.2026.5.15.0025",
-      "cliente": "EMBRAER",
-      "profissional": "Nicolau Rafael Guimarães Coelho(NRG)"
     },
     {
       "numero_processo": "0020965-80.2026.5.04.0121",
