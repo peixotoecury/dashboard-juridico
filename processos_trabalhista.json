@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-06T11:15:27",
+  "atualizado_em": "2026-11-06T11:30:24",
   "kpis": {
     "total_andamento": 7627,
     "entradas_hoje": 6,
@@ -354,12 +354,12 @@
     },
     {
       "nome": "Grupo B3",
-      "andamento": 578,
-      "entradas_mes": 1,
+      "andamento": 579,
+      "entradas_mes": 2,
       "saidas_mes": 1,
       "entradas_mes_anterior": 35,
       "saidas_mes_anterior": 12,
-      "valor_causa": 113253804.06
+      "valor_causa": 113289304.06
     },
     {
       "nome": "Grupo C1",
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 7,
-      "entradas_mes": 4,
+      "andamento": 6,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 824706.42
+      "valor_causa": 789206.42
     },
     {
       "nome": "Sócios",
@@ -691,12 +691,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2910,
-      "entradas_mes": 16,
+      "andamento": 2909,
+      "entradas_mes": 15,
       "saidas_mes": 9,
       "entradas_mes_anterior": 270,
       "saidas_mes_anterior": 75,
-      "valor_causa": 847378343.61
+      "valor_causa": 847342843.61
     },
     {
       "nome": "Sentença",
@@ -718,12 +718,12 @@
     },
     {
       "nome": "Execução",
-      "andamento": 909,
-      "entradas_mes": 1,
+      "andamento": 910,
+      "entradas_mes": 2,
       "saidas_mes": 10,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 49,
-      "valor_causa": 128919959.82
+      "valor_causa": 128955459.82
     }
   ],
   "por_fase_outras": 403,
@@ -871,12 +871,12 @@
     {
       "fase": "Execução",
       "grupo": "Grupo B3",
-      "andamento": 107,
-      "entradas_mes": 0,
+      "andamento": 108,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
-      "valor_causa": 20674113.87
+      "valor_causa": 20709613.87
     },
     {
       "fase": "Execução",
@@ -1031,12 +1031,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 7,
-      "entradas_mes": 4,
+      "andamento": 6,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 824706.42
+      "valor_causa": 789206.42
     },
     {
       "fase": "Instrução",
@@ -2359,12 +2359,12 @@
     {
       "grupo": "Grupo B3",
       "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 239,
-      "entradas_mes": 1,
+      "andamento": 240,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 10,
-      "valor_causa": 30562305.15,
+      "valor_causa": 30597805.15,
       "alerta_entrada": false
     },
     {
@@ -3744,17 +3744,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 546472.94,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "andamento": 1,
       "entradas_mes": 0,
@@ -3762,6 +3751,17 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
       "valor_causa": 108458.51,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "CBC CARTUCHOS BRASIL",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 510972.94,
       "alerta_entrada": false
     },
     {
@@ -4033,12 +4033,12 @@
     {
       "grupo": "Grupo B3",
       "profissional": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 360,
-      "entradas_mes": 1,
+      "andamento": 361,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 31,
       "saidas_mes_anterior": 5,
-      "valor_causa": 67016447.86
+      "valor_causa": 67051947.86
     },
     {
       "grupo": "Grupo B3",
@@ -4452,16 +4452,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 546472.94
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Vinícius Ronchi Arruda(VRO)",
       "andamento": 1,
       "entradas_mes": 0,
@@ -4469,6 +4459,16 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
       "valor_causa": 108458.51
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Letícia Meneghini Fontes (LMI)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 510972.94
     },
     {
       "grupo": "Sem grupo",
@@ -7933,11 +7933,6 @@
     },
     {
       "numero_processo": "1001672-67.2026.5.02.0411",
-      "cliente": "CBC CARTUCHOS BRASIL",
-      "profissional": "Letícia Meneghini Fontes (LMI)"
-    },
-    {
-      "numero_processo": "1000965-51.2016.5.02.0411",
       "cliente": "CBC CARTUCHOS BRASIL",
       "profissional": "Letícia Meneghini Fontes (LMI)"
     },
