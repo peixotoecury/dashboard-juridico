@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-09T15:00:22",
+  "atualizado_em": "2026-11-09T15:15:22",
   "kpis": {
-    "total_andamento": 7620,
+    "total_andamento": 7619,
     "entradas_hoje": 3,
-    "saidas_hoje": 5,
+    "saidas_hoje": 6,
     "entradas_ontem": 0,
     "saidas_ontem": 0,
     "entradas_mes": 54,
-    "saidas_mes": 47,
+    "saidas_mes": 48,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 225,
-    "valor_causa_total": 1789189161.49,
-    "saldo_mes": 7
+    "valor_causa_total": 1789126292.87,
+    "saldo_mes": 6
   },
   "serie_diaria": [
     {
@@ -312,7 +312,7 @@
     {
       "data": "2026-11-09",
       "entradas": 3,
-      "saidas": 5
+      "saidas": 6
     }
   ],
   "por_grupo": [
@@ -354,12 +354,12 @@
     },
     {
       "nome": "Grupo B3",
-      "andamento": 583,
+      "andamento": 582,
       "entradas_mes": 6,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 35,
       "saidas_mes_anterior": 12,
-      "valor_causa": 114111279.56
+      "valor_causa": 114048410.94
     },
     {
       "nome": "Grupo C1",
@@ -446,12 +446,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5754,
+      "andamento": 5753,
       "entradas_mes": 32,
-      "saidas_mes": 39,
+      "saidas_mes": 40,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 165,
-      "valor_causa": 1384443911.94
+      "valor_causa": 1384381043.32
     },
     {
       "nome": "MG",
@@ -700,12 +700,12 @@
     },
     {
       "nome": "Sentença",
-      "andamento": 31,
+      "andamento": 30,
       "entradas_mes": 0,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
-      "valor_causa": 28843740.73
+      "valor_causa": 28780872.11
     },
     {
       "nome": "Recurso",
@@ -1280,16 +1280,6 @@
     },
     {
       "fase": "Sentença",
-      "grupo": "Grupo B3",
-      "andamento": 5,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 762134.78
-    },
-    {
-      "fase": "Sentença",
       "grupo": "Grupo E1",
       "andamento": 4,
       "entradas_mes": 0,
@@ -1297,6 +1287,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 306667.81
+    },
+    {
+      "fase": "Sentença",
+      "grupo": "Grupo B3",
+      "andamento": 4,
+      "entradas_mes": 0,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 699266.16
     },
     {
       "fase": "Sentença",
@@ -1359,12 +1359,12 @@
     },
     {
       "nome": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 365,
+      "andamento": 364,
       "entradas_mes": 6,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 31,
       "saidas_mes_anterior": 5,
-      "valor_causa": 67873923.36
+      "valor_causa": 67811054.74
     },
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
@@ -1784,12 +1784,12 @@
     },
     {
       "nome": "CBC CARTUCHOS BRASIL",
-      "andamento": 247,
+      "andamento": 246,
       "entradas_mes": 6,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 10,
-      "valor_causa": 31419780.65,
+      "valor_causa": 31356912.03,
       "alerta_entrada": false
     },
     {
@@ -2359,12 +2359,12 @@
     {
       "grupo": "Grupo B3",
       "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 244,
+      "andamento": 243,
       "entradas_mes": 6,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 10,
-      "valor_causa": 31419780.65,
+      "valor_causa": 31356912.03,
       "alerta_entrada": false
     },
     {
@@ -4022,12 +4022,12 @@
     {
       "grupo": "Grupo B3",
       "profissional": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 365,
+      "andamento": 364,
       "entradas_mes": 6,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 31,
       "saidas_mes_anterior": 5,
-      "valor_causa": 67873923.36
+      "valor_causa": 67811054.74
     },
     {
       "grupo": "Grupo B3",
@@ -6544,12 +6544,12 @@
     {
       "estado": "SP",
       "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 237,
+      "andamento": 236,
       "entradas_mes": 5,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 9,
-      "valor_causa": 30134286.71
+      "valor_causa": 30071418.09
     },
     {
       "estado": "SP",
