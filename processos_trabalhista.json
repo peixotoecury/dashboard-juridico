@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-10T10:30:14",
+  "atualizado_em": "2026-11-10T10:45:16",
   "kpis": {
-    "total_andamento": 7621,
-    "entradas_hoje": 4,
+    "total_andamento": 7622,
+    "entradas_hoje": 5,
     "saidas_hoje": 2,
     "entradas_ontem": 6,
     "saidas_ontem": 9,
-    "entradas_mes": 61,
+    "entradas_mes": 62,
     "saidas_mes": 53,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 224,
     "valor_causa_total": 1788159894.84,
-    "saldo_mes": 8
+    "saldo_mes": 9
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-11-10",
-      "entradas": 4,
+      "entradas": 5,
       "saidas": 2
     }
   ],
@@ -363,8 +363,8 @@
     },
     {
       "nome": "Grupo C1",
-      "andamento": 324,
-      "entradas_mes": 5,
+      "andamento": 325,
+      "entradas_mes": 6,
       "saidas_mes": 0,
       "entradas_mes_anterior": 36,
       "saidas_mes_anterior": 0,
@@ -446,8 +446,8 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5755,
-      "entradas_mes": 38,
+      "andamento": 5756,
+      "entradas_mes": 39,
       "saidas_mes": 44,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 164,
@@ -726,7 +726,7 @@
       "valor_causa": 129627921.49
     }
   ],
-  "por_fase_outras": 405,
+  "por_fase_outras": 406,
   "por_fase_grupo": [
     {
       "fase": "Ajuizamento",
@@ -1120,6 +1120,16 @@
     },
     {
       "fase": "Outras",
+      "grupo": "Grupo C1",
+      "andamento": 3,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 220695.71
+    },
+    {
+      "fase": "Outras",
       "grupo": "Grupo A2",
       "andamento": 3,
       "entradas_mes": 0,
@@ -1127,16 +1137,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
-    },
-    {
-      "fase": "Outras",
-      "grupo": "Grupo C1",
-      "andamento": 2,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 220695.71
     },
     {
       "fase": "Outras",
@@ -1494,8 +1494,8 @@
     },
     {
       "nome": "Erik Mota Coppi(ECO)",
-      "andamento": 244,
-      "entradas_mes": 1,
+      "andamento": 245,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 8,
@@ -1724,8 +1724,8 @@
     },
     {
       "nome": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 708,
-      "entradas_mes": 3,
+      "andamento": 709,
+      "entradas_mes": 4,
       "saidas_mes": 8,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 23,
@@ -2501,6 +2501,17 @@
     },
     {
       "grupo": "Grupo C1",
+      "cliente": "SYNGENTA PROTEÇÃO DE",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 0.0,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Grupo C1",
       "cliente": "MARICY SICHERO",
       "andamento": 1,
       "entradas_mes": 0,
@@ -2508,17 +2519,6 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
       "valor_causa": 35016.39,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Grupo C1",
-      "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 0.0,
       "alerta_entrada": false
     },
     {
@@ -4113,8 +4113,8 @@
     {
       "grupo": "Grupo C1",
       "profissional": "Erik Mota Coppi(ECO)",
-      "andamento": 3,
-      "entradas_mes": 1,
+      "andamento": 4,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
@@ -6495,8 +6495,8 @@
     {
       "estado": "SP",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 605,
-      "entradas_mes": 3,
+      "andamento": 606,
+      "entradas_mes": 4,
       "saidas_mes": 6,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 18,
