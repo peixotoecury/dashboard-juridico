@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-10T09:15:13",
+  "atualizado_em": "2026-11-10T09:30:13",
   "kpis": {
-    "total_andamento": 7619,
+    "total_andamento": 7620,
     "entradas_hoje": 3,
     "saidas_hoje": 2,
-    "entradas_ontem": 4,
+    "entradas_ontem": 5,
     "saidas_ontem": 9,
-    "entradas_mes": 58,
+    "entradas_mes": 59,
     "saidas_mes": 53,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 224,
-    "valor_causa_total": 1788441354.65,
-    "saldo_mes": 5
+    "valor_causa_total": 1788492148.73,
+    "saldo_mes": 6
   },
   "serie_diaria": [
     {
@@ -306,7 +306,7 @@
     },
     {
       "data": "2026-11-09",
-      "entradas": 4,
+      "entradas": 5,
       "saidas": 9
     },
     {
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 6,
-      "entradas_mes": 3,
+      "andamento": 7,
+      "entradas_mes": 4,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 1816778.0
+      "valor_causa": 1867572.08
     },
     {
       "nome": "Sócios",
@@ -446,12 +446,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5754,
-      "entradas_mes": 36,
+      "andamento": 5755,
+      "entradas_mes": 37,
       "saidas_mes": 44,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 164,
-      "valor_causa": 1386114880.3
+      "valor_causa": 1386165674.38
     },
     {
       "nome": "MG",
@@ -691,12 +691,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2887,
-      "entradas_mes": 15,
+      "andamento": 2888,
+      "entradas_mes": 16,
       "saidas_mes": 18,
       "entradas_mes_anterior": 270,
       "saidas_mes_anterior": 75,
-      "valor_causa": 841918216.15
+      "valor_causa": 841969010.23
     },
     {
       "nome": "Sentença",
@@ -1031,12 +1031,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 6,
-      "entradas_mes": 3,
+      "andamento": 7,
+      "entradas_mes": 4,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 1816778.0
+      "valor_causa": 1867572.08
     },
     {
       "fase": "Instrução",
@@ -1431,12 +1431,12 @@
     },
     {
       "nome": "Guilherme Silva Morimoto(GSM)",
-      "andamento": 285,
-      "entradas_mes": 2,
+      "andamento": 286,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 4,
-      "valor_causa": 77295522.38
+      "valor_causa": 77346316.46
     },
     {
       "nome": "Júlia Priego Lopes da Silva(JPL)",
@@ -1694,12 +1694,12 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1426,
-      "entradas_mes": 9,
+      "andamento": 1427,
+      "entradas_mes": 10,
       "saidas_mes": 10,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 42,
-      "valor_causa": 326339996.9,
+      "valor_causa": 326390790.98,
       "alerta_entrada": false
     },
     {
@@ -3744,6 +3744,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "BRIDGESTONE",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 149058.08,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "andamento": 1,
       "entradas_mes": 0,
@@ -3773,17 +3784,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 29420.51,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "BRIDGESTONE",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 98264.0,
       "alerta_entrada": false
     },
     {
@@ -4479,6 +4479,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 98264.0
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Guilherme Silva Morimoto(GSM)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 50794.08
     },
     {
       "grupo": "Sócios",
@@ -6485,12 +6495,12 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1400,
-      "entradas_mes": 8,
+      "andamento": 1401,
+      "entradas_mes": 9,
       "saidas_mes": 10,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 40,
-      "valor_causa": 314709877.11
+      "valor_causa": 314760671.19
     },
     {
       "estado": "SP",
@@ -7925,6 +7935,11 @@
       "numero_processo": "1002299-11.2026.5.02.0431",
       "cliente": "BRIDGESTONE",
       "profissional": "Rafael Rocha Ferreira(RFE)"
+    },
+    {
+      "numero_processo": "1001653-17.2026.5.02.0361",
+      "cliente": "BRIDGESTONE",
+      "profissional": "Guilherme Silva Morimoto(GSM)"
     },
     {
       "numero_processo": "0001607-78.2026.5.07.0014",
