@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-10T08:45:14",
+  "atualizado_em": "2026-11-10T09:00:13",
   "kpis": {
-    "total_andamento": 7619,
-    "entradas_hoje": 1,
-    "saidas_hoje": 0,
+    "total_andamento": 7618,
+    "entradas_hoje": 2,
+    "saidas_hoje": 2,
     "entradas_ontem": 4,
     "saidas_ontem": 9,
-    "entradas_mes": 56,
-    "saidas_mes": 51,
+    "entradas_mes": 57,
+    "saidas_mes": 53,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 224,
-    "valor_causa_total": 1787496579.85,
-    "saldo_mes": 5
+    "valor_causa_total": 1788112354.65,
+    "saldo_mes": 4
   },
   "serie_diaria": [
     {
@@ -311,28 +311,28 @@
     },
     {
       "data": "2026-11-10",
-      "entradas": 1,
-      "saidas": 0
+      "entradas": 2,
+      "saidas": 2
     }
   ],
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2150,
+      "andamento": 2148,
       "entradas_mes": 23,
-      "saidas_mes": 10,
+      "saidas_mes": 12,
       "entradas_mes_anterior": 105,
       "saidas_mes_anterior": 70,
-      "valor_causa": 480968592.01
+      "valor_causa": 480823941.01
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1783,
-      "entradas_mes": 4,
+      "andamento": 1784,
+      "entradas_mes": 5,
       "saidas_mes": 25,
       "entradas_mes_anterior": 60,
       "saidas_mes_anterior": 70,
-      "valor_causa": 307738102.0
+      "valor_causa": 308498527.8
     },
     {
       "nome": "Grupo B1",
@@ -446,12 +446,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5754,
-      "entradas_mes": 34,
-      "saidas_mes": 42,
+      "andamento": 5753,
+      "entradas_mes": 35,
+      "saidas_mes": 44,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 164,
-      "valor_causa": 1385170105.5
+      "valor_causa": 1385785880.3
     },
     {
       "nome": "MG",
@@ -682,21 +682,21 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 432,
-      "entradas_mes": 26,
+      "andamento": 433,
+      "entradas_mes": 27,
       "saidas_mes": 1,
       "entradas_mes_anterior": 35,
       "saidas_mes_anterior": 13,
-      "valor_causa": 97004724.36
+      "valor_causa": 97765150.16
     },
     {
       "nome": "Instrução",
-      "andamento": 2888,
+      "andamento": 2887,
       "entradas_mes": 15,
-      "saidas_mes": 17,
+      "saidas_mes": 18,
       "entradas_mes_anterior": 270,
       "saidas_mes_anterior": 75,
-      "valor_causa": 841970867.15
+      "valor_causa": 841918216.15
     },
     {
       "nome": "Sentença",
@@ -718,12 +718,12 @@
     },
     {
       "nome": "Execução",
-      "andamento": 914,
+      "andamento": 913,
       "entradas_mes": 3,
-      "saidas_mes": 10,
+      "saidas_mes": 11,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 48,
-      "valor_causa": 129719921.49
+      "valor_causa": 129627921.49
     }
   ],
   "por_fase_outras": 404,
@@ -751,12 +751,12 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo E1",
-      "andamento": 72,
-      "entradas_mes": 2,
+      "andamento": 73,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 0,
-      "valor_causa": 19150123.71
+      "valor_causa": 19910549.51
     },
     {
       "fase": "Ajuizamento",
@@ -841,12 +841,12 @@
     {
       "fase": "Execução",
       "grupo": "Grupo E2",
-      "andamento": 337,
+      "andamento": 336,
       "entradas_mes": 2,
-      "saidas_mes": 3,
+      "saidas_mes": 4,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 19,
-      "valor_causa": 52296795.3
+      "valor_causa": 52204795.3
     },
     {
       "fase": "Execução",
@@ -931,12 +931,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 894,
+      "andamento": 893,
       "entradas_mes": 4,
-      "saidas_mes": 4,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 88,
       "saidas_mes_anterior": 21,
-      "valor_causa": 193068062.0
+      "valor_causa": 193015411.0
     },
     {
       "fase": "Instrução",
@@ -1368,12 +1368,12 @@
     },
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 360,
+      "andamento": 358,
       "entradas_mes": 5,
-      "saidas_mes": 2,
+      "saidas_mes": 4,
       "entradas_mes_anterior": 26,
       "saidas_mes_anterior": 17,
-      "valor_causa": 50370358.02
+      "valor_causa": 50225707.02
     },
     {
       "nome": "Joice Ramos Miranda(JRM)",
@@ -1485,12 +1485,12 @@
     },
     {
       "nome": "Paloma da Silva Santos(PSI)",
-      "andamento": 249,
-      "entradas_mes": 0,
+      "andamento": 250,
+      "entradas_mes": 1,
       "saidas_mes": 6,
       "entradas_mes_anterior": 15,
       "saidas_mes_anterior": 10,
-      "valor_causa": 56348491.82
+      "valor_causa": 57108917.62
     },
     {
       "nome": "Erik Mota Coppi(ECO)",
@@ -1704,12 +1704,12 @@
     },
     {
       "nome": "BP BIOENERGIA",
-      "andamento": 757,
+      "andamento": 755,
       "entradas_mes": 4,
-      "saidas_mes": 7,
+      "saidas_mes": 9,
       "entradas_mes_anterior": 32,
       "saidas_mes_anterior": 22,
-      "valor_causa": 218165260.63,
+      "valor_causa": 218020609.63,
       "alerta_entrada": false
     },
     {
@@ -1744,12 +1744,12 @@
     },
     {
       "nome": "MAHLE METAL - MOGI",
-      "andamento": 356,
-      "entradas_mes": 0,
+      "andamento": 357,
+      "entradas_mes": 1,
       "saidas_mes": 8,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 13,
-      "valor_causa": 72938797.95,
+      "valor_causa": 73699223.75,
       "alerta_entrada": false
     },
     {
@@ -2920,12 +2920,12 @@
     {
       "grupo": "Grupo E1",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 356,
-      "entradas_mes": 0,
+      "andamento": 357,
+      "entradas_mes": 1,
       "saidas_mes": 8,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 13,
-      "valor_causa": 72938797.95,
+      "valor_causa": 73699223.75,
       "alerta_entrada": false
     },
     {
@@ -3162,12 +3162,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "BP BIOENERGIA",
-      "andamento": 756,
+      "andamento": 754,
       "entradas_mes": 3,
-      "saidas_mes": 7,
+      "saidas_mes": 9,
       "entradas_mes_anterior": 32,
       "saidas_mes_anterior": 22,
-      "valor_causa": 216614625.65,
+      "valor_causa": 216469974.65,
       "alerta_entrada": false
     },
     {
@@ -4223,12 +4223,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Paloma da Silva Santos(PSI)",
-      "andamento": 249,
-      "entradas_mes": 0,
+      "andamento": 250,
+      "entradas_mes": 1,
       "saidas_mes": 6,
       "entradas_mes_anterior": 15,
       "saidas_mes_anterior": 10,
-      "valor_causa": 56348491.82
+      "valor_causa": 57108917.62
     },
     {
       "grupo": "Grupo E1",
@@ -4333,12 +4333,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 360,
+      "andamento": 358,
       "entradas_mes": 5,
-      "saidas_mes": 2,
+      "saidas_mes": 4,
       "entradas_mes_anterior": 26,
       "saidas_mes_anterior": 17,
-      "valor_causa": 50370358.02
+      "valor_causa": 50225707.02
     },
     {
       "grupo": "Grupo E2",
@@ -6515,22 +6515,22 @@
     {
       "estado": "SP",
       "cliente": "BP BIOENERGIA",
-      "andamento": 421,
+      "andamento": 419,
       "entradas_mes": 3,
-      "saidas_mes": 4,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 13,
-      "valor_causa": 105239130.13
+      "valor_causa": 105094479.13
     },
     {
       "estado": "SP",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 355,
-      "entradas_mes": 0,
+      "andamento": 356,
+      "entradas_mes": 1,
       "saidas_mes": 8,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 13,
-      "valor_causa": 72938797.95
+      "valor_causa": 73699223.75
     },
     {
       "estado": "SP",
