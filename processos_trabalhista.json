@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-10T09:00:13",
+  "atualizado_em": "2026-11-10T09:15:13",
   "kpis": {
-    "total_andamento": 7618,
-    "entradas_hoje": 2,
+    "total_andamento": 7619,
+    "entradas_hoje": 3,
     "saidas_hoje": 2,
     "entradas_ontem": 4,
     "saidas_ontem": 9,
-    "entradas_mes": 57,
+    "entradas_mes": 58,
     "saidas_mes": 53,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 224,
-    "valor_causa_total": 1788112354.65,
-    "saldo_mes": 4
+    "valor_causa_total": 1788441354.65,
+    "saldo_mes": 5
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-11-10",
-      "entradas": 2,
+      "entradas": 3,
       "saidas": 2
     }
   ],
@@ -327,12 +327,12 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1784,
-      "entradas_mes": 5,
+      "andamento": 1785,
+      "entradas_mes": 6,
       "saidas_mes": 25,
       "entradas_mes_anterior": 60,
       "saidas_mes_anterior": 70,
-      "valor_causa": 308498527.8
+      "valor_causa": 308827527.8
     },
     {
       "nome": "Grupo B1",
@@ -446,12 +446,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5753,
-      "entradas_mes": 35,
+      "andamento": 5754,
+      "entradas_mes": 36,
       "saidas_mes": 44,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 164,
-      "valor_causa": 1385785880.3
+      "valor_causa": 1386114880.3
     },
     {
       "nome": "MG",
@@ -682,12 +682,12 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 433,
-      "entradas_mes": 27,
+      "andamento": 434,
+      "entradas_mes": 28,
       "saidas_mes": 1,
       "entradas_mes_anterior": 35,
       "saidas_mes_anterior": 13,
-      "valor_causa": 97765150.16
+      "valor_causa": 98094150.16
     },
     {
       "nome": "Instrução",
@@ -751,12 +751,12 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo E1",
-      "andamento": 73,
-      "entradas_mes": 3,
+      "andamento": 74,
+      "entradas_mes": 4,
       "saidas_mes": 0,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 0,
-      "valor_causa": 19910549.51
+      "valor_causa": 20239549.51
     },
     {
       "fase": "Ajuizamento",
@@ -1512,12 +1512,12 @@
     },
     {
       "nome": "Tamires Lins Costa(TLI)",
-      "andamento": 226,
-      "entradas_mes": 1,
+      "andamento": 227,
+      "entradas_mes": 2,
       "saidas_mes": 6,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 10,
-      "valor_causa": 29294946.5
+      "valor_causa": 29623946.5
     },
     {
       "nome": "Lucas Willott Pereira (LWP)",
@@ -2975,12 +2975,12 @@
     {
       "grupo": "Grupo E1",
       "cliente": "MAHLE THERMAL",
-      "andamento": 46,
-      "entradas_mes": 0,
+      "andamento": 47,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 2,
-      "valor_causa": 6907321.06,
+      "valor_causa": 7236321.06,
       "alerta_entrada": false
     },
     {
@@ -4232,6 +4232,16 @@
     },
     {
       "grupo": "Grupo E1",
+      "profissional": "Tamires Lins Costa(TLI)",
+      "andamento": 227,
+      "entradas_mes": 2,
+      "saidas_mes": 6,
+      "entradas_mes_anterior": 8,
+      "saidas_mes_anterior": 10,
+      "valor_causa": 29623946.5
+    },
+    {
+      "grupo": "Grupo E1",
       "profissional": "Vinícius Ronchi Arruda(VRO)",
       "andamento": 226,
       "entradas_mes": 0,
@@ -4239,16 +4249,6 @@
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 6,
       "valor_causa": 39902890.81
-    },
-    {
-      "grupo": "Grupo E1",
-      "profissional": "Tamires Lins Costa(TLI)",
-      "andamento": 226,
-      "entradas_mes": 1,
-      "saidas_mes": 6,
-      "entradas_mes_anterior": 8,
-      "saidas_mes_anterior": 10,
-      "valor_causa": 29294946.5
     },
     {
       "grupo": "Grupo E1",
@@ -6634,6 +6634,16 @@
     },
     {
       "estado": "SP",
+      "cliente": "MAHLE THERMAL",
+      "andamento": 47,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 2,
+      "saidas_mes_anterior": 2,
+      "valor_causa": 7236321.06
+    },
+    {
+      "estado": "SP",
       "cliente": "SYNGENTA SEEDS NIDER",
       "andamento": 46,
       "entradas_mes": 0,
@@ -6641,16 +6651,6 @@
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 2,
       "valor_causa": 4713837.38
-    },
-    {
-      "estado": "SP",
-      "cliente": "MAHLE THERMAL",
-      "andamento": 46,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 2,
-      "saidas_mes_anterior": 2,
-      "valor_causa": 6907321.06
     },
     {
       "estado": "SP",
