@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-11T13:00:28",
+  "atualizado_em": "2026-11-11T13:15:33",
   "kpis": {
     "total_andamento": 7642,
     "entradas_hoje": 1,
@@ -363,12 +363,12 @@
     },
     {
       "nome": "Grupo C1",
-      "andamento": 327,
-      "entradas_mes": 8,
+      "andamento": 328,
+      "entradas_mes": 9,
       "saidas_mes": 0,
       "entradas_mes_anterior": 36,
       "saidas_mes_anterior": 0,
-      "valor_causa": 185853620.78
+      "valor_causa": 185893620.78
     },
     {
       "nome": "Grupo C2",
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 15,
-      "entradas_mes": 12,
+      "andamento": 14,
+      "entradas_mes": 11,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 2799935.33
+      "valor_causa": 2759935.33
     },
     {
       "nome": "Sócios",
@@ -691,12 +691,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2897,
-      "entradas_mes": 29,
+      "andamento": 2896,
+      "entradas_mes": 28,
       "saidas_mes": 17,
       "entradas_mes_anterior": 270,
       "saidas_mes_anterior": 75,
-      "valor_causa": 843456064.94
+      "valor_causa": 843416064.94
     },
     {
       "nome": "Sentença",
@@ -718,12 +718,12 @@
     },
     {
       "nome": "Execução",
-      "andamento": 918,
-      "entradas_mes": 5,
+      "andamento": 919,
+      "entradas_mes": 6,
       "saidas_mes": 11,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 48,
-      "valor_causa": 131024078.47
+      "valor_causa": 131064078.47
     }
   ],
   "por_fase_outras": 405,
@@ -900,6 +900,16 @@
     },
     {
       "fase": "Execução",
+      "grupo": "Grupo C1",
+      "andamento": 3,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 373141.59
+    },
+    {
+      "fase": "Execução",
       "grupo": "Grupo C3",
       "andamento": 2,
       "entradas_mes": 0,
@@ -907,16 +917,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 63329.08
-    },
-    {
-      "fase": "Execução",
-      "grupo": "Grupo C1",
-      "andamento": 2,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 333141.59
     },
     {
       "fase": "Execução",
@@ -1021,12 +1021,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 15,
-      "entradas_mes": 12,
+      "andamento": 14,
+      "entradas_mes": 11,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 2799935.33
+      "valor_causa": 2759935.33
     },
     {
       "fase": "Instrução",
@@ -2491,12 +2491,12 @@
     {
       "grupo": "Grupo C1",
       "cliente": "COMPANHIA AIX",
-      "andamento": 120,
-      "entradas_mes": 5,
+      "andamento": 121,
+      "entradas_mes": 6,
       "saidas_mes": 0,
       "entradas_mes_anterior": 27,
       "saidas_mes_anterior": 0,
-      "valor_causa": 22604773.72,
+      "valor_causa": 22644773.72,
       "alerta_entrada": false
     },
     {
@@ -3755,17 +3755,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "COMPANHIA AIX",
-      "andamento": 3,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 2,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 70000.0,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "BP BIOENERGIA",
       "andamento": 3,
       "entradas_mes": 3,
@@ -3785,6 +3774,17 @@
       "saidas_mes_anterior": 0,
       "valor_causa": 681567.82,
       "alerta_entrada": true
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "COMPANHIA AIX",
+      "andamento": 2,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 2,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 30000.0,
+      "alerta_entrada": false
     },
     {
       "grupo": "Sem grupo",
@@ -4116,12 +4116,12 @@
     {
       "grupo": "Grupo C1",
       "profissional": "Vinicius da Silva Cerqueira(VSI)",
-      "andamento": 162,
-      "entradas_mes": 6,
+      "andamento": 163,
+      "entradas_mes": 7,
       "saidas_mes": 0,
       "entradas_mes_anterior": 28,
       "saidas_mes_anterior": 0,
-      "valor_causa": 60844017.22
+      "valor_causa": 60884017.22
     },
     {
       "grupo": "Grupo C1",
@@ -4476,12 +4476,12 @@
     {
       "grupo": "Sem grupo",
       "profissional": "Vinicius da Silva Cerqueira(VSI)",
-      "andamento": 3,
-      "entradas_mes": 1,
+      "andamento": 2,
+      "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
-      "valor_causa": 70000.0
+      "valor_causa": 30000.0
     },
     {
       "grupo": "Sem grupo",
@@ -4555,6 +4555,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Beatriz Santiago de Souza(BSO)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 545244.44
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Nicolau Rafael Guimarães Coelho(NRG)",
       "andamento": 1,
       "entradas_mes": 1,
@@ -4572,16 +4582,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 19903.52
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Beatriz Santiago de Souza(BSO)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 545244.44
     },
     {
       "grupo": "Sócios",
@@ -8060,14 +8060,14 @@
       "profissional": "Bruna Cembranelli Fazenda (BCF)"
     },
     {
-      "numero_processo": "1002161-35.2026.5.02.0434",
-      "cliente": "BRIDGESTONE",
-      "profissional": "Nicolau Rafael Guimarães Coelho(NRG)"
-    },
-    {
       "numero_processo": "1002293-04.2026.5.02.0431",
       "cliente": "BRIDGESTONE",
       "profissional": "Beatriz Santiago de Souza(BSO)"
+    },
+    {
+      "numero_processo": "1002161-35.2026.5.02.0434",
+      "cliente": "BRIDGESTONE",
+      "profissional": "Nicolau Rafael Guimarães Coelho(NRG)"
     },
     {
       "numero_processo": "0001607-78.2026.5.07.0014",
@@ -8076,11 +8076,6 @@
     },
     {
       "numero_processo": "0001683-94.2026.5.09.0128",
-      "cliente": "COMPANHIA AIX",
-      "profissional": "Vinicius da Silva Cerqueira(VSI)"
-    },
-    {
-      "numero_processo": "0001789-56.2026.5.09.0128",
       "cliente": "COMPANHIA AIX",
       "profissional": "Vinicius da Silva Cerqueira(VSI)"
     },
