@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-11T12:00:21",
+  "atualizado_em": "2026-11-11T12:15:24",
   "kpis": {
     "total_andamento": 7642,
     "entradas_hoje": 1,
@@ -318,12 +318,12 @@
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2155,
-      "entradas_mes": 30,
+      "andamento": 2156,
+      "entradas_mes": 31,
       "saidas_mes": 12,
       "entradas_mes_anterior": 105,
       "saidas_mes_anterior": 70,
-      "valor_causa": 480730599.65
+      "valor_causa": 485130350.98
     },
     {
       "nome": "Grupo E1",
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 19,
-      "entradas_mes": 16,
+      "andamento": 18,
+      "entradas_mes": 15,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 7317657.51
+      "valor_causa": 2917906.18
     },
     {
       "nome": "Sócios",
@@ -682,21 +682,21 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 438,
-      "entradas_mes": 32,
+      "andamento": 439,
+      "entradas_mes": 33,
       "saidas_mes": 1,
       "entradas_mes_anterior": 35,
       "saidas_mes_anterior": 13,
-      "valor_causa": 96735682.62
+      "valor_causa": 101135433.95
     },
     {
       "nome": "Instrução",
-      "andamento": 2901,
-      "entradas_mes": 33,
+      "andamento": 2900,
+      "entradas_mes": 32,
       "saidas_mes": 17,
       "entradas_mes_anterior": 270,
       "saidas_mes_anterior": 75,
-      "valor_causa": 847973787.12
+      "valor_causa": 843574035.79
     },
     {
       "nome": "Sentença",
@@ -731,12 +731,12 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo E2",
-      "andamento": 180,
-      "entradas_mes": 13,
+      "andamento": 181,
+      "entradas_mes": 14,
       "saidas_mes": 0,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 9,
-      "valor_causa": 41980125.42
+      "valor_causa": 46379876.75
     },
     {
       "fase": "Ajuizamento",
@@ -1021,12 +1021,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 19,
-      "entradas_mes": 16,
+      "andamento": 18,
+      "entradas_mes": 15,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 7317657.51
+      "valor_causa": 2917906.18
     },
     {
       "fase": "Instrução",
@@ -3217,13 +3217,13 @@
     {
       "grupo": "Grupo E2",
       "cliente": "EUROCHEM FTO MATRIZ",
-      "andamento": 104,
-      "entradas_mes": 4,
+      "andamento": 105,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 10,
-      "valor_causa": 10518115.68,
-      "alerta_entrada": false
+      "valor_causa": 14917867.01,
+      "alerta_entrada": true
     },
     {
       "grupo": "Grupo E2",
@@ -3788,17 +3788,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "EUROCHEM FTO MATRIZ",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 4457722.18,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "PILKINGTON (NSG)",
       "andamento": 1,
       "entradas_mes": 1,
@@ -3817,6 +3806,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 49563.0,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "EUROCHEM FTO MATRIZ",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 57970.85,
       "alerta_entrada": false
     },
     {
@@ -4437,12 +4437,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Bruno Tanganelli Farah(BTF)",
-      "andamento": 60,
-      "entradas_mes": 6,
+      "andamento": 61,
+      "entradas_mes": 7,
       "saidas_mes": 0,
       "entradas_mes_anterior": 14,
       "saidas_mes_anterior": 0,
-      "valor_causa": 17613965.47
+      "valor_causa": 22013716.8
     },
     {
       "grupo": "Grupo E2",
@@ -4593,16 +4593,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 545244.44
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Bruno Tanganelli Farah(BTF)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 4399751.33
     },
     {
       "grupo": "Sócios",
@@ -8119,11 +8109,6 @@
       "numero_processo": "0000868-58.2026.5.05.0371",
       "cliente": "EUROCHEM FTO MATRIZ",
       "profissional": "Rafael Yepez do Lago(RYL)"
-    },
-    {
-      "numero_processo": "0011364-06.2026.5.03.0080",
-      "cliente": "EUROCHEM FTO MATRIZ",
-      "profissional": "Bruno Tanganelli Farah(BTF)"
     },
     {
       "numero_processo": "0012710-60.2026.5.15.0014",
