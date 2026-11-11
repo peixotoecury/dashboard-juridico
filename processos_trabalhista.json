@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-11T10:00:26",
+  "atualizado_em": "2026-11-11T10:15:19",
   "kpis": {
-    "total_andamento": 7639,
-    "entradas_hoje": 0,
+    "total_andamento": 7641,
+    "entradas_hoje": 1,
     "saidas_hoje": 0,
-    "entradas_ontem": 21,
+    "entradas_ontem": 22,
     "saidas_ontem": 3,
-    "entradas_mes": 79,
+    "entradas_mes": 81,
     "saidas_mes": 53,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 224,
-    "valor_causa_total": 1787842123.11,
-    "saldo_mes": 26
+    "valor_causa_total": 1787988121.39,
+    "saldo_mes": 28
   },
   "serie_diaria": [
     {
@@ -306,24 +306,24 @@
     },
     {
       "data": "2026-11-10",
-      "entradas": 21,
+      "entradas": 22,
       "saidas": 3
     },
     {
       "data": "2026-11-11",
-      "entradas": 0,
+      "entradas": 1,
       "saidas": 0
     }
   ],
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2149,
-      "entradas_mes": 24,
+      "andamento": 2150,
+      "entradas_mes": 25,
       "saidas_mes": 12,
       "entradas_mes_anterior": 105,
       "saidas_mes_anterior": 70,
-      "valor_causa": 480362154.52
+      "valor_causa": 480370966.27
     },
     {
       "nome": "Grupo E1",
@@ -408,12 +408,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 22,
-      "entradas_mes": 19,
+      "andamento": 23,
+      "entradas_mes": 20,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 3140353.03
+      "valor_causa": 3277539.56
     },
     {
       "nome": "Grupo A2",
@@ -446,12 +446,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5767,
-      "entradas_mes": 50,
+      "andamento": 5769,
+      "entradas_mes": 52,
       "saidas_mes": 44,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 164,
-      "valor_causa": 1384971248.75
+      "valor_causa": 1385117247.03
     },
     {
       "nome": "MG",
@@ -682,21 +682,21 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 434,
-      "entradas_mes": 28,
+      "andamento": 435,
+      "entradas_mes": 29,
       "saidas_mes": 1,
       "entradas_mes_anterior": 35,
       "saidas_mes_anterior": 13,
-      "valor_causa": 96894369.9
+      "valor_causa": 96903181.65
     },
     {
       "nome": "Instrução",
-      "andamento": 2904,
-      "entradas_mes": 34,
+      "andamento": 2905,
+      "entradas_mes": 35,
       "saidas_mes": 17,
       "entradas_mes_anterior": 270,
       "saidas_mes_anterior": 75,
-      "valor_causa": 843040476.98
+      "valor_causa": 843177663.51
     },
     {
       "nome": "Sentença",
@@ -731,12 +731,12 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo E2",
-      "andamento": 175,
-      "entradas_mes": 8,
+      "andamento": 176,
+      "entradas_mes": 9,
       "saidas_mes": 0,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 9,
-      "valor_causa": 41627839.76
+      "valor_causa": 41636651.51
     },
     {
       "fase": "Ajuizamento",
@@ -1021,12 +1021,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 22,
-      "entradas_mes": 19,
+      "andamento": 23,
+      "entradas_mes": 20,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 3140353.03
+      "valor_causa": 3277539.56
     },
     {
       "fase": "Instrução",
@@ -1341,12 +1341,12 @@
     },
     {
       "nome": "Rafael Yepez do Lago(RYL)",
-      "andamento": 465,
-      "entradas_mes": 8,
+      "andamento": 466,
+      "entradas_mes": 9,
       "saidas_mes": 1,
       "entradas_mes_anterior": 27,
       "saidas_mes_anterior": 21,
-      "valor_causa": 61513049.59
+      "valor_causa": 61639144.35
     },
     {
       "nome": "Giulia Vendramini Milani(GVM)",
@@ -1476,12 +1476,12 @@
     },
     {
       "nome": "Mariana Borges de Menezes Fávaro(MBF)",
-      "andamento": 255,
-      "entradas_mes": 2,
+      "andamento": 256,
+      "entradas_mes": 3,
       "saidas_mes": 2,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 8,
-      "valor_causa": 35674214.96
+      "valor_causa": 35694118.48
     },
     {
       "nome": "Paloma da Silva Santos(PSI)",
@@ -1704,12 +1704,12 @@
     },
     {
       "nome": "BP BIOENERGIA",
-      "andamento": 757,
-      "entradas_mes": 6,
+      "andamento": 759,
+      "entradas_mes": 8,
       "saidas_mes": 9,
       "entradas_mes_anterior": 32,
       "saidas_mes_anterior": 22,
-      "valor_causa": 217395580.85,
+      "valor_causa": 217541579.13,
       "alerta_entrada": false
     },
     {
@@ -3173,12 +3173,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "BP BIOENERGIA",
-      "andamento": 754,
-      "entradas_mes": 3,
+      "andamento": 755,
+      "entradas_mes": 4,
       "saidas_mes": 9,
       "entradas_mes_anterior": 32,
       "saidas_mes_anterior": 22,
-      "valor_causa": 215819974.65,
+      "valor_causa": 215828786.4,
       "alerta_entrada": false
     },
     {
@@ -3766,6 +3766,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "BP BIOENERGIA",
+      "andamento": 4,
+      "entradas_mes": 4,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1712792.73,
+      "alerta_entrada": true
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "andamento": 3,
       "entradas_mes": 2,
@@ -3774,17 +3785,6 @@
       "saidas_mes_anterior": 0,
       "valor_causa": 266203.73,
       "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "BP BIOENERGIA",
-      "andamento": 3,
-      "entradas_mes": 3,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 1575606.2,
-      "alerta_entrada": true
     },
     {
       "grupo": "Sem grupo",
@@ -4407,12 +4407,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Mariana Borges de Menezes Fávaro(MBF)",
-      "andamento": 253,
-      "entradas_mes": 0,
+      "andamento": 254,
+      "entradas_mes": 1,
       "saidas_mes": 2,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 8,
-      "valor_causa": 35649243.74
+      "valor_causa": 35658055.49
     },
     {
       "grupo": "Grupo E2",
@@ -4487,12 +4487,12 @@
     {
       "grupo": "Sem grupo",
       "profissional": "Rafael Yepez do Lago(RYL)",
-      "andamento": 6,
-      "entradas_mes": 6,
+      "andamento": 7,
+      "entradas_mes": 7,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 407991.77
+      "valor_causa": 534086.53
     },
     {
       "grupo": "Sem grupo",
@@ -4522,7 +4522,7 @@
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 24971.22
+      "valor_causa": 36062.99
     },
     {
       "grupo": "Sem grupo",
@@ -4576,16 +4576,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Nicolau Rafael Guimarães Coelho(NRG)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 135323.38
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Giulia Vendramini Milani(GVM)",
       "andamento": 1,
       "entradas_mes": 1,
@@ -4593,6 +4583,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 1000.0
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Nicolau Rafael Guimarães Coelho(NRG)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 135323.38
     },
     {
       "grupo": "Sócios",
@@ -6639,12 +6639,12 @@
     {
       "estado": "SP",
       "cliente": "BP BIOENERGIA",
-      "andamento": 420,
-      "entradas_mes": 4,
+      "andamento": 422,
+      "entradas_mes": 6,
       "saidas_mes": 6,
       "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 13,
-      "valor_causa": 104453290.88
+      "valor_causa": 104599289.16
     },
     {
       "estado": "SP",
@@ -8061,7 +8061,12 @@
       "profissional": "Mariana Borges de Menezes Fávaro(MBF)"
     },
     {
-      "numero_processo": "0013398-29.2026.5.15.0044",
+      "numero_processo": "0012601-77.2026.5.15.0133",
+      "cliente": "BP BIOENERGIA",
+      "profissional": "Rafael Yepez do Lago(RYL)"
+    },
+    {
+      "numero_processo": "0013397-44.2026.5.15.0044",
       "cliente": "BP BIOENERGIA",
       "profissional": "Mariana Borges de Menezes Fávaro(MBF)"
     },
