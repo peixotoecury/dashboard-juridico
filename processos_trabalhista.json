@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-11T10:15:19",
+  "atualizado_em": "2026-11-11T10:30:22",
   "kpis": {
     "total_andamento": 7641,
     "entradas_hoje": 1,
@@ -682,21 +682,21 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 435,
-      "entradas_mes": 29,
+      "andamento": 434,
+      "entradas_mes": 28,
       "saidas_mes": 1,
       "entradas_mes_anterior": 35,
       "saidas_mes_anterior": 13,
-      "valor_causa": 96903181.65
+      "valor_causa": 96392208.71
     },
     {
       "nome": "Instrução",
       "andamento": 2905,
-      "entradas_mes": 35,
+      "entradas_mes": 36,
       "saidas_mes": 17,
       "entradas_mes_anterior": 270,
       "saidas_mes_anterior": 75,
-      "valor_causa": 843177663.51
+      "valor_causa": 843553672.12
     },
     {
       "nome": "Sentença",
@@ -709,12 +709,12 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2950,
+      "andamento": 2951,
       "entradas_mes": 1,
       "saidas_mes": 16,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 48,
-      "valor_causa": 678414136.83
+      "valor_causa": 678549101.16
     },
     {
       "nome": "Execução",
@@ -811,12 +811,12 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo B3",
-      "andamento": 5,
-      "entradas_mes": 4,
+      "andamento": 4,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 821975.5
+      "valor_causa": 311002.56
     },
     {
       "fase": "Ajuizamento",
@@ -951,12 +951,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B1",
-      "andamento": 406,
+      "andamento": 405,
       "entradas_mes": 3,
       "saidas_mes": 5,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 14,
-      "valor_causa": 132136960.73
+      "valor_causa": 132001996.4
     },
     {
       "fase": "Instrução",
@@ -981,12 +981,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B3",
-      "andamento": 153,
-      "entradas_mes": 1,
+      "andamento": 154,
+      "entradas_mes": 2,
       "saidas_mes": 1,
       "entradas_mes_anterior": 31,
       "saidas_mes_anterior": 4,
-      "valor_causa": 27195572.31
+      "valor_causa": 27706545.25
     },
     {
       "fase": "Instrução",
@@ -1161,12 +1161,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo B1",
-      "andamento": 847,
+      "andamento": 848,
       "entradas_mes": 1,
       "saidas_mes": 5,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 8,
-      "valor_causa": 171310098.05
+      "valor_causa": 171445062.38
     },
     {
       "fase": "Recurso",
@@ -1744,12 +1744,12 @@
     },
     {
       "nome": "MAHLE METAL - MOGI",
-      "andamento": 357,
+      "andamento": 356,
       "entradas_mes": 1,
       "saidas_mes": 8,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 13,
-      "valor_causa": 72938797.95,
+      "valor_causa": 72873099.16,
       "alerta_entrada": false
     },
     {
@@ -2931,12 +2931,12 @@
     {
       "grupo": "Grupo E1",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 357,
+      "andamento": 356,
       "entradas_mes": 1,
       "saidas_mes": 8,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 13,
-      "valor_causa": 72938797.95,
+      "valor_causa": 72873099.16,
       "alerta_entrada": false
     },
     {
@@ -3040,6 +3040,17 @@
     },
     {
       "grupo": "Grupo E1",
+      "cliente": "MAHLE METAL - SSC",
+      "andamento": 3,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 905667.83,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Grupo E1",
       "cliente": "MAHLE METAL -LIMEIRA",
       "andamento": 3,
       "entradas_mes": 0,
@@ -3058,17 +3069,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Grupo E1",
-      "cliente": "MAHLE METAL - SSC",
-      "andamento": 2,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 839969.04,
       "alerta_entrada": false
     },
     {
@@ -6649,12 +6649,12 @@
     {
       "estado": "SP",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 356,
+      "andamento": 355,
       "entradas_mes": 1,
       "saidas_mes": 8,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 13,
-      "valor_causa": 72938797.95
+      "valor_causa": 72873099.16
     },
     {
       "estado": "SP",
@@ -7158,6 +7158,16 @@
     },
     {
       "estado": "SP",
+      "cliente": "MAHLE METAL - SSC",
+      "andamento": 3,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 905667.83
+    },
+    {
+      "estado": "SP",
       "cliente": "VORTTEXCO INFORMATIC",
       "andamento": 3,
       "entradas_mes": 0,
@@ -7275,16 +7285,6 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
       "valor_causa": 362753.96
-    },
-    {
-      "estado": "SP",
-      "cliente": "MAHLE METAL - SSC",
-      "andamento": 2,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 839969.04
     },
     {
       "estado": "SP",
