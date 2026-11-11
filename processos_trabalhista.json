@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-11T09:15:19",
+  "atualizado_em": "2026-11-11T09:30:20",
   "kpis": {
-    "total_andamento": 7633,
+    "total_andamento": 7635,
     "entradas_hoje": 0,
     "saidas_hoje": 0,
-    "entradas_ontem": 15,
+    "entradas_ontem": 17,
     "saidas_ontem": 3,
-    "entradas_mes": 73,
+    "entradas_mes": 75,
     "saidas_mes": 53,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 224,
-    "valor_causa_total": 1787412944.5,
-    "saldo_mes": 20
+    "valor_causa_total": 1787649689.72,
+    "saldo_mes": 22
   },
   "serie_diaria": [
     {
@@ -306,7 +306,7 @@
     },
     {
       "data": "2026-11-10",
-      "entradas": 15,
+      "entradas": 17,
       "saidas": 3
     },
     {
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 16,
-      "entradas_mes": 13,
+      "andamento": 18,
+      "entradas_mes": 15,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 2711174.42
+      "valor_causa": 2947919.64
     },
     {
       "nome": "Sócios",
@@ -446,12 +446,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5762,
-      "entradas_mes": 45,
+      "andamento": 5763,
+      "entradas_mes": 46,
       "saidas_mes": 44,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 164,
-      "valor_causa": 1384622070.14
+      "valor_causa": 1384778815.36
     },
     {
       "nome": "MG",
@@ -464,12 +464,12 @@
     },
     {
       "nome": "PR",
-      "andamento": 255,
-      "entradas_mes": 2,
+      "andamento": 256,
+      "entradas_mes": 3,
       "saidas_mes": 1,
       "entradas_mes_anterior": 22,
       "saidas_mes_anterior": 3,
-      "valor_causa": 52486425.81
+      "valor_causa": 52566425.81
     },
     {
       "nome": "RS",
@@ -691,12 +691,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2899,
-      "entradas_mes": 28,
+      "andamento": 2901,
+      "entradas_mes": 30,
       "saidas_mes": 17,
       "entradas_mes_anterior": 270,
       "saidas_mes_anterior": 75,
-      "valor_causa": 842691298.37
+      "valor_causa": 842928043.59
     },
     {
       "nome": "Sentença",
@@ -1021,12 +1021,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 16,
-      "entradas_mes": 13,
+      "andamento": 18,
+      "entradas_mes": 15,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 2711174.42
+      "valor_causa": 2947919.64
     },
     {
       "fase": "Instrução",
@@ -1376,6 +1376,15 @@
       "valor_causa": 50150309.66
     },
     {
+      "nome": "Joice Ramos Miranda(JRM)",
+      "andamento": 307,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 11,
+      "saidas_mes_anterior": 6,
+      "valor_causa": 74149406.64
+    },
+    {
       "nome": "Beatriz Santiago de Souza(BSO)",
       "andamento": 307,
       "entradas_mes": 3,
@@ -1383,15 +1392,6 @@
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 7,
       "valor_causa": 63880847.34
-    },
-    {
-      "nome": "Joice Ramos Miranda(JRM)",
-      "andamento": 306,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 11,
-      "saidas_mes_anterior": 6,
-      "valor_causa": 73992661.42
     },
     {
       "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
@@ -1530,12 +1530,12 @@
     },
     {
       "nome": "Vinicius da Silva Cerqueira(VSI)",
-      "andamento": 215,
-      "entradas_mes": 6,
+      "andamento": 216,
+      "entradas_mes": 7,
       "saidas_mes": 1,
       "entradas_mes_anterior": 35,
       "saidas_mes_anterior": 0,
-      "valor_causa": 72673424.84
+      "valor_causa": 72753424.84
     },
     {
       "nome": "Thais Amaral Rocca(TAR)",
@@ -1724,12 +1724,12 @@
     },
     {
       "nome": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 710,
-      "entradas_mes": 4,
+      "andamento": 711,
+      "entradas_mes": 5,
       "saidas_mes": 7,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 23,
-      "valor_causa": 142323532.33,
+      "valor_causa": 142480277.55,
       "alerta_entrada": false
     },
     {
@@ -1803,6 +1803,16 @@
       "alerta_entrada": false
     },
     {
+      "nome": "COMPANHIA AIX",
+      "andamento": 166,
+      "entradas_mes": 6,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 48,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 37033813.47,
+      "alerta_entrada": false
+    },
+    {
       "nome": "EUROCHEM SALITRE",
       "andamento": 166,
       "entradas_mes": 2,
@@ -1810,16 +1820,6 @@
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 9,
       "valor_causa": 39942932.16,
-      "alerta_entrada": false
-    },
-    {
-      "nome": "COMPANHIA AIX",
-      "andamento": 165,
-      "entradas_mes": 5,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 48,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 36953813.47,
       "alerta_entrada": false
     },
     {
@@ -3744,6 +3744,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "COMPANHIA AIX",
+      "andamento": 5,
+      "entradas_mes": 3,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 2,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 130000.0,
+      "alerta_entrada": true
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "EUROCHEM FTO MATRIZ",
       "andamento": 5,
       "entradas_mes": 5,
@@ -3752,17 +3763,6 @@
       "saidas_mes_anterior": 0,
       "valor_causa": 401444.76,
       "alerta_entrada": true
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "COMPANHIA AIX",
-      "andamento": 4,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 2,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 50000.0,
-      "alerta_entrada": false
     },
     {
       "grupo": "Sem grupo",
@@ -3777,6 +3777,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "SYNGENTA PROTEÇÃO DE",
+      "andamento": 2,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 265203.73,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "BRIDGESTONE",
       "andamento": 2,
       "entradas_mes": 2,
@@ -3784,17 +3795,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 546244.44,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 108458.51,
       "alerta_entrada": false
     },
     {
@@ -4464,6 +4464,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Vinicius da Silva Cerqueira(VSI)",
+      "andamento": 5,
+      "entradas_mes": 3,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 2,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 130000.0
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Rafael Yepez do Lago(RYL)",
       "andamento": 5,
       "entradas_mes": 5,
@@ -4471,16 +4481,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 401444.76
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Vinicius da Silva Cerqueira(VSI)",
-      "andamento": 4,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 2,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 50000.0
     },
     {
       "grupo": "Sem grupo",
@@ -4531,6 +4531,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 545244.44
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Joice Ramos Miranda(JRM)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 156745.22
     },
     {
       "grupo": "Sócios",
@@ -5777,12 +5787,12 @@
     {
       "estado": "PR",
       "cliente": "COMPANHIA AIX",
-      "andamento": 115,
-      "entradas_mes": 2,
+      "andamento": 116,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 0,
-      "valor_causa": 27868884.19
+      "valor_causa": 27948884.19
     },
     {
       "estado": "PR",
@@ -6567,12 +6577,12 @@
     {
       "estado": "SP",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 607,
-      "entradas_mes": 4,
+      "andamento": 608,
+      "entradas_mes": 5,
       "saidas_mes": 5,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 18,
-      "valor_causa": 128472547.45
+      "valor_causa": 128629292.67
     },
     {
       "estado": "SP",
@@ -8029,6 +8039,11 @@
       "profissional": "Vinicius da Silva Cerqueira(VSI)"
     },
     {
+      "numero_processo": "0001789-56.2026.5.09.0128",
+      "cliente": "COMPANHIA AIX",
+      "profissional": "Vinicius da Silva Cerqueira(VSI)"
+    },
+    {
       "numero_processo": "0000877-66.2026.5.09.0643",
       "cliente": "COMPANHIA AIX",
       "profissional": "Vinicius da Silva Cerqueira(VSI)"
@@ -8067,6 +8082,11 @@
       "numero_processo": "1002027-29.2026.5.02.0718",
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "profissional": "Vinícius Ronchi Arruda(VRO)"
+    },
+    {
+      "numero_processo": "0011569-78.2026.5.15.0087",
+      "cliente": "SYNGENTA PROTEÇÃO DE",
+      "profissional": "Joice Ramos Miranda(JRM)"
     }
   ]
 }
