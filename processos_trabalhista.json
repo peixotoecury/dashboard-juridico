@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-11T15:15:37",
+  "atualizado_em": "2026-11-11T15:30:37",
   "kpis": {
-    "total_andamento": 7642,
+    "total_andamento": 7641,
     "entradas_hoje": 1,
-    "saidas_hoje": 0,
+    "saidas_hoje": 1,
     "entradas_ontem": 24,
     "saidas_ontem": 3,
     "entradas_mes": 83,
-    "saidas_mes": 53,
+    "saidas_mes": 54,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 224,
     "valor_causa_total": 1792890094.97,
-    "saldo_mes": 30
+    "saldo_mes": 29
   },
   "serie_diaria": [
     {
@@ -312,15 +312,15 @@
     {
       "data": "2026-11-11",
       "entradas": 1,
-      "saidas": 0
+      "saidas": 1
     }
   ],
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2159,
+      "andamento": 2158,
       "entradas_mes": 34,
-      "saidas_mes": 12,
+      "saidas_mes": 13,
       "entradas_mes_anterior": 105,
       "saidas_mes_anterior": 70,
       "valor_causa": 485320963.6
@@ -455,9 +455,9 @@
     },
     {
       "nome": "MG",
-      "andamento": 547,
+      "andamento": 546,
       "entradas_mes": 7,
-      "saidas_mes": 5,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 26,
       "saidas_mes_anterior": 23,
       "valor_causa": 141736478.51
@@ -726,7 +726,7 @@
       "valor_causa": 131199401.85
     }
   ],
-  "por_fase_outras": 405,
+  "por_fase_outras": 404,
   "por_fase_grupo": [
     {
       "fase": "Ajuizamento",
@@ -1051,9 +1051,9 @@
     {
       "fase": "Outras",
       "grupo": "Grupo E2",
-      "andamento": 138,
+      "andamento": 137,
       "entradas_mes": 9,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 4,
       "valor_causa": 5254337.42
@@ -1476,9 +1476,9 @@
     },
     {
       "nome": "Mariana Borges de Menezes Fávaro(MBF)",
-      "andamento": 256,
+      "andamento": 255,
       "entradas_mes": 3,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 8,
       "valor_causa": 35694118.48
@@ -1704,9 +1704,9 @@
     },
     {
       "nome": "BP BIOENERGIA",
-      "andamento": 759,
+      "andamento": 758,
       "entradas_mes": 8,
-      "saidas_mes": 9,
+      "saidas_mes": 10,
       "entradas_mes_anterior": 32,
       "saidas_mes_anterior": 22,
       "valor_causa": 217541579.13,
@@ -3173,9 +3173,9 @@
     {
       "grupo": "Grupo E2",
       "cliente": "BP BIOENERGIA",
-      "andamento": 757,
+      "andamento": 756,
       "entradas_mes": 6,
-      "saidas_mes": 9,
+      "saidas_mes": 10,
       "entradas_mes_anterior": 32,
       "saidas_mes_anterior": 22,
       "valor_causa": 215971040.63,
@@ -4374,9 +4374,9 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Mariana Borges de Menezes Fávaro(MBF)",
-      "andamento": 255,
+      "andamento": 254,
       "entradas_mes": 2,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 8,
       "valor_causa": 35674214.96
@@ -5136,9 +5136,9 @@
     {
       "estado": "MG",
       "cliente": "BP BIOENERGIA",
-      "andamento": 217,
+      "andamento": 216,
       "entradas_mes": 1,
-      "saidas_mes": 3,
+      "saidas_mes": 4,
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 4,
       "valor_causa": 83289279.83
@@ -5495,16 +5495,6 @@
     },
     {
       "estado": "MS",
-      "cliente": "SYNGENTA SEEDS NIDER",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 105972.3
-    },
-    {
-      "estado": "MS",
       "cliente": "SISTENGE",
       "andamento": 1,
       "entradas_mes": 0,
@@ -5512,6 +5502,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 280978.55
+    },
+    {
+      "estado": "MS",
+      "cliente": "SYNGENTA SEEDS NIDER",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 105972.3
     },
     {
       "estado": "MT",
