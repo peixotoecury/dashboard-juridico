@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-11T09:45:20",
+  "atualizado_em": "2026-11-11T10:00:26",
   "kpis": {
-    "total_andamento": 7636,
+    "total_andamento": 7639,
     "entradas_hoje": 0,
     "saidas_hoje": 0,
-    "entradas_ontem": 18,
+    "entradas_ontem": 21,
     "saidas_ontem": 3,
-    "entradas_mes": 76,
+    "entradas_mes": 79,
     "saidas_mes": 53,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 224,
-    "valor_causa_total": 1787699252.72,
-    "saldo_mes": 23
+    "valor_causa_total": 1787842123.11,
+    "saldo_mes": 26
   },
   "serie_diaria": [
     {
@@ -306,7 +306,7 @@
     },
     {
       "data": "2026-11-10",
-      "entradas": 18,
+      "entradas": 21,
       "saidas": 3
     },
     {
@@ -407,6 +407,15 @@
       "valor_causa": 0.0
     },
     {
+      "nome": "Sem grupo",
+      "andamento": 22,
+      "entradas_mes": 19,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 3,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 3140353.03
+    },
+    {
       "nome": "Grupo A2",
       "andamento": 21,
       "entradas_mes": 0,
@@ -414,15 +423,6 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 2,
       "valor_causa": 10695821.76
-    },
-    {
-      "nome": "Sem grupo",
-      "andamento": 19,
-      "entradas_mes": 16,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 3,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 2997482.64
     },
     {
       "nome": "Sócios",
@@ -446,12 +446,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5764,
-      "entradas_mes": 47,
+      "andamento": 5767,
+      "entradas_mes": 50,
       "saidas_mes": 44,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 164,
-      "valor_causa": 1384828378.36
+      "valor_causa": 1384971248.75
     },
     {
       "nome": "MG",
@@ -691,12 +691,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2902,
-      "entradas_mes": 31,
+      "andamento": 2904,
+      "entradas_mes": 34,
       "saidas_mes": 17,
       "entradas_mes_anterior": 270,
       "saidas_mes_anterior": 75,
-      "valor_causa": 842977606.59
+      "valor_causa": 843040476.98
     },
     {
       "nome": "Sentença",
@@ -709,12 +709,12 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2949,
+      "andamento": 2950,
       "entradas_mes": 1,
       "saidas_mes": 16,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 48,
-      "valor_causa": 678334136.83
+      "valor_causa": 678414136.83
     },
     {
       "nome": "Execução",
@@ -951,12 +951,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B1",
-      "andamento": 407,
+      "andamento": 406,
       "entradas_mes": 3,
       "saidas_mes": 5,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 14,
-      "valor_causa": 132216960.73
+      "valor_causa": 132136960.73
     },
     {
       "fase": "Instrução",
@@ -1021,12 +1021,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 19,
-      "entradas_mes": 16,
+      "andamento": 22,
+      "entradas_mes": 19,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 2997482.64
+      "valor_causa": 3140353.03
     },
     {
       "fase": "Instrução",
@@ -1161,12 +1161,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo B1",
-      "andamento": 846,
+      "andamento": 847,
       "entradas_mes": 1,
       "saidas_mes": 5,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 8,
-      "valor_causa": 171230098.05
+      "valor_causa": 171310098.05
     },
     {
       "fase": "Recurso",
@@ -1332,30 +1332,30 @@
   "por_profissional": [
     {
       "nome": "Nicolau Rafael Guimarães Coelho(NRG)",
-      "andamento": 479,
-      "entradas_mes": 2,
+      "andamento": 480,
+      "entradas_mes": 3,
       "saidas_mes": 9,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 22,
-      "valor_causa": 99528838.53
+      "valor_causa": 99664161.91
     },
     {
       "nome": "Rafael Yepez do Lago(RYL)",
-      "andamento": 464,
-      "entradas_mes": 7,
+      "andamento": 465,
+      "entradas_mes": 8,
       "saidas_mes": 1,
       "entradas_mes_anterior": 27,
       "saidas_mes_anterior": 21,
-      "valor_causa": 61506502.58
+      "valor_causa": 61513049.59
     },
     {
       "nome": "Giulia Vendramini Milani(GVM)",
-      "andamento": 424,
-      "entradas_mes": 1,
+      "andamento": 425,
+      "entradas_mes": 2,
       "saidas_mes": 7,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 29,
-      "valor_causa": 66222288.7
+      "valor_causa": 66223288.7
     },
     {
       "nome": "Letícia Meneghini Fontes (LMI)",
@@ -1694,12 +1694,12 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1429,
-      "entradas_mes": 12,
+      "andamento": 1430,
+      "entradas_mes": 13,
       "saidas_mes": 10,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 42,
-      "valor_causa": 326826680.96,
+      "valor_causa": 326962004.34,
       "alerta_entrada": false
     },
     {
@@ -1724,12 +1724,12 @@
     },
     {
       "nome": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 711,
-      "entradas_mes": 5,
+      "andamento": 712,
+      "entradas_mes": 6,
       "saidas_mes": 7,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 23,
-      "valor_causa": 142480277.55,
+      "valor_causa": 142481277.55,
       "alerta_entrada": false
     },
     {
@@ -1764,12 +1764,12 @@
     },
     {
       "nome": "VITERRA RIO VERMELHO",
-      "andamento": 318,
-      "entradas_mes": 2,
+      "andamento": 319,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 10,
-      "valor_causa": 43485107.43,
+      "valor_causa": 43491654.44,
       "alerta_entrada": false
     },
     {
@@ -3766,6 +3766,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "SYNGENTA PROTEÇÃO DE",
+      "andamento": 3,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 266203.73,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "BP BIOENERGIA",
       "andamento": 3,
       "entradas_mes": 3,
@@ -3777,25 +3788,14 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 2,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 265203.73,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "BRIDGESTONE",
-      "andamento": 2,
-      "entradas_mes": 2,
+      "andamento": 3,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 546244.44,
-      "alerta_entrada": false
+      "valor_causa": 681567.82,
+      "alerta_entrada": true
     },
     {
       "grupo": "Sem grupo",
@@ -3817,6 +3817,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 49563.0,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "VITERRA RIO VERMELHO",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 6547.01,
       "alerta_entrada": false
     },
     {
@@ -4475,6 +4486,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Rafael Yepez do Lago(RYL)",
+      "andamento": 6,
+      "entradas_mes": 6,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 407991.77
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Vinicius da Silva Cerqueira(VSI)",
       "andamento": 5,
       "entradas_mes": 3,
@@ -4482,16 +4503,6 @@
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
       "valor_causa": 130000.0
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Rafael Yepez do Lago(RYL)",
-      "andamento": 5,
-      "entradas_mes": 5,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 401444.76
     },
     {
       "grupo": "Sem grupo",
@@ -4562,6 +4573,26 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 156745.22
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Nicolau Rafael Guimarães Coelho(NRG)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 135323.38
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Giulia Vendramini Milani(GVM)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1000.0
     },
     {
       "grupo": "Sócios",
@@ -6578,12 +6609,12 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1403,
-      "entradas_mes": 11,
+      "andamento": 1404,
+      "entradas_mes": 12,
       "saidas_mes": 10,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 40,
-      "valor_causa": 315196561.17
+      "valor_causa": 315331884.55
     },
     {
       "estado": "SP",
@@ -6598,12 +6629,12 @@
     {
       "estado": "SP",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 608,
-      "entradas_mes": 5,
+      "andamento": 609,
+      "entradas_mes": 6,
       "saidas_mes": 5,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 18,
-      "valor_causa": 128629292.67
+      "valor_causa": 128630292.67
     },
     {
       "estado": "SP",
@@ -6628,12 +6659,12 @@
     {
       "estado": "SP",
       "cliente": "VITERRA RIO VERMELHO",
-      "andamento": 300,
-      "entradas_mes": 2,
+      "andamento": 301,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 10,
-      "valor_causa": 42223165.9
+      "valor_causa": 42229712.91
     },
     {
       "estado": "SP",
@@ -8045,6 +8076,11 @@
       "profissional": "Beatriz Santiago de Souza(BSO)"
     },
     {
+      "numero_processo": "1002161-35.2026.5.02.0434",
+      "cliente": "BRIDGESTONE",
+      "profissional": "Nicolau Rafael Guimarães Coelho(NRG)"
+    },
+    {
       "numero_processo": "0001607-78.2026.5.07.0014",
       "cliente": "COMPANHIA AIX",
       "profissional": "Vinicius da Silva Cerqueira(VSI)"
@@ -8113,6 +8149,16 @@
       "numero_processo": "0011569-78.2026.5.15.0087",
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "profissional": "Joice Ramos Miranda(JRM)"
+    },
+    {
+      "numero_processo": "1002115-21.2026.5.02.0701",
+      "cliente": "SYNGENTA PROTEÇÃO DE",
+      "profissional": "Giulia Vendramini Milani(GVM)"
+    },
+    {
+      "numero_processo": "0011446-90.2026.5.15.0019",
+      "cliente": "VITERRA RIO VERMELHO",
+      "profissional": "Rafael Yepez do Lago(RYL)"
     }
   ]
 }
