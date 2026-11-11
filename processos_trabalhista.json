@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-11T08:15:19",
+  "atualizado_em": "2026-11-11T08:30:18",
   "kpis": {
-    "total_andamento": 7624,
+    "total_andamento": 7626,
     "entradas_hoje": 0,
     "saidas_hoje": 0,
-    "entradas_ontem": 6,
+    "entradas_ontem": 8,
     "saidas_ontem": 3,
-    "entradas_mes": 64,
+    "entradas_mes": 66,
     "saidas_mes": 53,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 224,
-    "valor_causa_total": 1786966528.52,
-    "saldo_mes": 11
+    "valor_causa_total": 1787186146.63,
+    "saldo_mes": 13
   },
   "serie_diaria": [
     {
@@ -306,7 +306,7 @@
     },
     {
       "data": "2026-11-10",
-      "entradas": 6,
+      "entradas": 8,
       "saidas": 3
     },
     {
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 7,
-      "entradas_mes": 4,
+      "andamento": 9,
+      "entradas_mes": 6,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 2264758.44
+      "valor_causa": 2484376.55
     },
     {
       "nome": "Sócios",
@@ -446,21 +446,21 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5758,
-      "entradas_mes": 41,
+      "andamento": 5759,
+      "entradas_mes": 42,
       "saidas_mes": 44,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 164,
-      "valor_causa": 1384451840.66
+      "valor_causa": 1384460652.41
     },
     {
       "nome": "MG",
-      "andamento": 543,
-      "entradas_mes": 3,
+      "andamento": 544,
+      "entradas_mes": 4,
       "saidas_mes": 5,
       "entradas_mes_anterior": 26,
       "saidas_mes_anterior": 23,
-      "valor_causa": 137022473.94
+      "valor_causa": 137233280.3
     },
     {
       "nome": "PR",
@@ -691,12 +691,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2890,
-      "entradas_mes": 19,
+      "andamento": 2892,
+      "entradas_mes": 21,
       "saidas_mes": 17,
       "entradas_mes_anterior": 270,
       "saidas_mes_anterior": 75,
-      "valor_causa": 842244882.39
+      "valor_causa": 842464500.5
     },
     {
       "nome": "Sentença",
@@ -1031,12 +1031,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 7,
-      "entradas_mes": 4,
+      "andamento": 9,
+      "entradas_mes": 6,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 2264758.44
+      "valor_causa": 2484376.55
     },
     {
       "fase": "Instrução",
@@ -1341,12 +1341,12 @@
     },
     {
       "nome": "Rafael Yepez do Lago(RYL)",
-      "andamento": 459,
-      "entradas_mes": 2,
+      "andamento": 460,
+      "entradas_mes": 3,
       "saidas_mes": 1,
       "entradas_mes_anterior": 27,
       "saidas_mes_anterior": 21,
-      "valor_causa": 61105057.82
+      "valor_causa": 61315864.18
     },
     {
       "nome": "Giulia Vendramini Milani(GVM)",
@@ -1476,12 +1476,12 @@
     },
     {
       "nome": "Mariana Borges de Menezes Fávaro(MBF)",
-      "andamento": 253,
-      "entradas_mes": 0,
+      "andamento": 254,
+      "entradas_mes": 1,
       "saidas_mes": 2,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 8,
-      "valor_causa": 35649243.74
+      "valor_causa": 35658055.49
     },
     {
       "nome": "Paloma da Silva Santos(PSI)",
@@ -1704,12 +1704,12 @@
     },
     {
       "nome": "BP BIOENERGIA",
-      "andamento": 755,
-      "entradas_mes": 4,
+      "andamento": 756,
+      "entradas_mes": 5,
       "saidas_mes": 9,
       "entradas_mes_anterior": 32,
       "saidas_mes_anterior": 22,
-      "valor_causa": 217370609.63,
+      "valor_causa": 217379421.38,
       "alerta_entrada": false
     },
     {
@@ -1854,12 +1854,12 @@
     },
     {
       "nome": "EUROCHEM FTO MATRIZ",
-      "andamento": 100,
-      "entradas_mes": 0,
+      "andamento": 101,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 10,
-      "valor_causa": 10174641.77,
+      "valor_causa": 10385448.13,
       "alerta_entrada": false
     },
     {
@@ -3755,6 +3755,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "BP BIOENERGIA",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1559446.73,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "BRIDGESTONE",
       "andamento": 2,
       "entradas_mes": 2,
@@ -3777,17 +3788,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "BP BIOENERGIA",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 1550634.98,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "PILKINGTON (NSG)",
       "andamento": 1,
       "entradas_mes": 1,
@@ -3795,6 +3795,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 29420.51,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "EUROCHEM FTO MATRIZ",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 210806.36,
       "alerta_entrada": false
     },
     {
@@ -4502,6 +4513,26 @@
       "valor_causa": 545244.44
     },
     {
+      "grupo": "Sem grupo",
+      "profissional": "Rafael Yepez do Lago(RYL)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 210806.36
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Mariana Borges de Menezes Fávaro(MBF)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 8811.75
+    },
+    {
       "grupo": "Sócios",
       "profissional": "Poliana Banqueri da Silva Guimarães(PBS)",
       "andamento": 3,
@@ -5175,6 +5206,16 @@
     },
     {
       "estado": "MG",
+      "cliente": "EUROCHEM FTO MATRIZ",
+      "andamento": 25,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 1562216.14
+    },
+    {
+      "estado": "MG",
       "cliente": "LOCALIZA RENT A CAR",
       "andamento": 24,
       "entradas_mes": 0,
@@ -5182,16 +5223,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
-    },
-    {
-      "estado": "MG",
-      "cliente": "EUROCHEM FTO MATRIZ",
-      "andamento": 24,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 1351409.78
     },
     {
       "estado": "MG",
@@ -6536,12 +6567,12 @@
     {
       "estado": "SP",
       "cliente": "BP BIOENERGIA",
-      "andamento": 419,
-      "entradas_mes": 3,
+      "andamento": 420,
+      "entradas_mes": 4,
       "saidas_mes": 6,
       "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 13,
-      "valor_causa": 104444479.13
+      "valor_causa": 104453290.88
     },
     {
       "estado": "SP",
@@ -7943,6 +7974,11 @@
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
     },
     {
+      "numero_processo": "0013398-29.2026.5.15.0044",
+      "cliente": "BP BIOENERGIA",
+      "profissional": "Mariana Borges de Menezes Fávaro(MBF)"
+    },
+    {
       "numero_processo": "1014460-85.2026.5.02.0000",
       "cliente": "BRIDGESTONE",
       "profissional": "Bruna Cembranelli Fazenda (BCF)"
@@ -7961,6 +7997,11 @@
       "numero_processo": "0001683-94.2026.5.09.0128",
       "cliente": "COMPANHIA AIX",
       "profissional": "Vinicius da Silva Cerqueira(VSI)"
+    },
+    {
+      "numero_processo": "0011409-10.2026.5.03.0080",
+      "cliente": "EUROCHEM FTO MATRIZ",
+      "profissional": "Rafael Yepez do Lago(RYL)"
     },
     {
       "numero_processo": "0011291-78.2026.5.15.0119",
