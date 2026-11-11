@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-11T12:45:26",
+  "atualizado_em": "2026-11-11T13:00:28",
   "kpis": {
     "total_andamento": 7642,
     "entradas_hoje": 1,
@@ -363,12 +363,12 @@
     },
     {
       "nome": "Grupo C1",
-      "andamento": 326,
-      "entradas_mes": 7,
+      "andamento": 327,
+      "entradas_mes": 8,
       "saidas_mes": 0,
       "entradas_mes_anterior": 36,
       "saidas_mes_anterior": 0,
-      "valor_causa": 185813620.78
+      "valor_causa": 185853620.78
     },
     {
       "nome": "Grupo C2",
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 16,
-      "entradas_mes": 13,
+      "andamento": 15,
+      "entradas_mes": 12,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 2839935.33
+      "valor_causa": 2799935.33
     },
     {
       "nome": "Sócios",
@@ -682,21 +682,21 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 440,
-      "entradas_mes": 34,
+      "andamento": 441,
+      "entradas_mes": 35,
       "saidas_mes": 1,
       "entradas_mes_anterior": 35,
       "saidas_mes_anterior": 13,
-      "valor_causa": 101193404.8
+      "valor_causa": 101233404.8
     },
     {
       "nome": "Instrução",
-      "andamento": 2898,
-      "entradas_mes": 30,
+      "andamento": 2897,
+      "entradas_mes": 29,
       "saidas_mes": 17,
       "entradas_mes_anterior": 270,
       "saidas_mes_anterior": 75,
-      "valor_causa": 843496064.94
+      "valor_causa": 843456064.94
     },
     {
       "nome": "Sentença",
@@ -761,12 +761,12 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo C1",
-      "andamento": 37,
-      "entradas_mes": 4,
+      "andamento": 38,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 19363786.98
+      "valor_causa": 19403786.98
     },
     {
       "fase": "Ajuizamento",
@@ -1021,12 +1021,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 16,
-      "entradas_mes": 13,
+      "andamento": 15,
+      "entradas_mes": 12,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 2839935.33
+      "valor_causa": 2799935.33
     },
     {
       "fase": "Instrução",
@@ -1754,12 +1754,12 @@
     },
     {
       "nome": "HERINGER",
-      "andamento": 342,
+      "andamento": 343,
       "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 14,
       "saidas_mes_anterior": 5,
-      "valor_causa": 47644422.38,
+      "valor_causa": 49050106.55,
       "alerta_entrada": false
     },
     {
@@ -1844,12 +1844,12 @@
     },
     {
       "nome": "EUROCHEM FTO MATRIZ",
-      "andamento": 106,
+      "andamento": 105,
       "entradas_mes": 6,
       "saidas_mes": 0,
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 10,
-      "valor_causa": 14975837.86,
+      "valor_causa": 13570153.69,
       "alerta_entrada": true
     },
     {
@@ -2491,12 +2491,12 @@
     {
       "grupo": "Grupo C1",
       "cliente": "COMPANHIA AIX",
-      "andamento": 119,
-      "entradas_mes": 4,
+      "andamento": 120,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 27,
       "saidas_mes_anterior": 0,
-      "valor_causa": 22564773.72,
+      "valor_causa": 22604773.72,
       "alerta_entrada": false
     },
     {
@@ -3184,12 +3184,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "HERINGER",
-      "andamento": 341,
+      "andamento": 342,
       "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 14,
       "saidas_mes_anterior": 5,
-      "valor_causa": 47644422.38,
+      "valor_causa": 49050106.55,
       "alerta_entrada": false
     },
     {
@@ -3217,12 +3217,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "EUROCHEM FTO MATRIZ",
-      "andamento": 106,
+      "andamento": 105,
       "entradas_mes": 6,
       "saidas_mes": 0,
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 10,
-      "valor_causa": 14975837.86,
+      "valor_causa": 13570153.69,
       "alerta_entrada": true
     },
     {
@@ -3744,17 +3744,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "COMPANHIA AIX",
-      "andamento": 4,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 2,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 110000.0,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "andamento": 3,
       "entradas_mes": 2,
@@ -3762,6 +3751,17 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
       "valor_causa": 266203.73,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "COMPANHIA AIX",
+      "andamento": 3,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 2,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 70000.0,
       "alerta_entrada": false
     },
     {
@@ -4116,12 +4116,12 @@
     {
       "grupo": "Grupo C1",
       "profissional": "Vinicius da Silva Cerqueira(VSI)",
-      "andamento": 161,
-      "entradas_mes": 5,
+      "andamento": 162,
+      "entradas_mes": 6,
       "saidas_mes": 0,
       "entradas_mes_anterior": 28,
       "saidas_mes_anterior": 0,
-      "valor_causa": 60804017.22
+      "valor_causa": 60844017.22
     },
     {
       "grupo": "Grupo C1",
@@ -4476,12 +4476,12 @@
     {
       "grupo": "Sem grupo",
       "profissional": "Vinicius da Silva Cerqueira(VSI)",
-      "andamento": 4,
-      "entradas_mes": 2,
+      "andamento": 3,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
-      "valor_causa": 110000.0
+      "valor_causa": 70000.0
     },
     {
       "grupo": "Sem grupo",
@@ -6698,12 +6698,12 @@
     {
       "estado": "SP",
       "cliente": "HERINGER",
-      "andamento": 106,
+      "andamento": 107,
       "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
-      "valor_causa": 12773517.76
+      "valor_causa": 14179201.93
     },
     {
       "estado": "SP",
@@ -6867,16 +6867,6 @@
     },
     {
       "estado": "SP",
-      "cliente": "EUROCHEM FTO MATRIZ",
-      "andamento": 14,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 3,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 3707925.99
-    },
-    {
-      "estado": "SP",
       "cliente": "EUROCHEM SALITRE",
       "andamento": 14,
       "entradas_mes": 2,
@@ -6894,6 +6884,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 6859082.07
+    },
+    {
+      "estado": "SP",
+      "cliente": "EUROCHEM FTO MATRIZ",
+      "andamento": 13,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 3,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 2302241.82
     },
     {
       "estado": "SP",
@@ -8019,12 +8019,12 @@
   "clientes_com_alerta": [
     {
       "nome": "EUROCHEM FTO MATRIZ",
-      "andamento": 106,
+      "andamento": 105,
       "entradas_mes": 6,
       "saidas_mes": 0,
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 10,
-      "valor_causa": 14975837.86,
+      "valor_causa": 13570153.69,
       "alerta_entrada": true
     },
     {
@@ -8076,11 +8076,6 @@
     },
     {
       "numero_processo": "0001683-94.2026.5.09.0128",
-      "cliente": "COMPANHIA AIX",
-      "profissional": "Vinicius da Silva Cerqueira(VSI)"
-    },
-    {
-      "numero_processo": "0000878-51.2026.5.09.0643",
       "cliente": "COMPANHIA AIX",
       "profissional": "Vinicius da Silva Cerqueira(VSI)"
     },
