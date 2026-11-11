@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-11T14:45:24",
+  "atualizado_em": "2026-11-11T15:00:25",
   "kpis": {
     "total_andamento": 7642,
     "entradas_hoje": 1,
@@ -327,12 +327,12 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1788,
-      "entradas_mes": 9,
+      "andamento": 1789,
+      "entradas_mes": 10,
       "saidas_mes": 24,
       "entradas_mes_anterior": 60,
       "saidas_mes_anterior": 70,
-      "valor_causa": 308045709.87
+      "valor_causa": 308095272.87
     },
     {
       "nome": "Grupo B1",
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 10,
-      "entradas_mes": 7,
+      "andamento": 9,
+      "entradas_mes": 6,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 2460319.72
+      "valor_causa": 2410756.72
     },
     {
       "nome": "Sócios",
@@ -682,21 +682,21 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 444,
-      "entradas_mes": 38,
+      "andamento": 445,
+      "entradas_mes": 39,
       "saidas_mes": 1,
       "entradas_mes_anterior": 35,
       "saidas_mes_anterior": 13,
-      "valor_causa": 101397697.03
+      "valor_causa": 101447260.03
     },
     {
       "nome": "Instrução",
-      "andamento": 2892,
-      "entradas_mes": 24,
+      "andamento": 2891,
+      "entradas_mes": 23,
       "saidas_mes": 17,
       "entradas_mes_anterior": 270,
       "saidas_mes_anterior": 75,
-      "valor_causa": 843116449.33
+      "valor_causa": 843066886.33
     },
     {
       "nome": "Sentença",
@@ -751,12 +751,12 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo E1",
-      "andamento": 76,
-      "entradas_mes": 6,
+      "andamento": 77,
+      "entradas_mes": 7,
       "saidas_mes": 0,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 0,
-      "valor_causa": 19307868.93
+      "valor_causa": 19357431.93
     },
     {
       "fase": "Ajuizamento",
@@ -1031,12 +1031,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 10,
-      "entradas_mes": 7,
+      "andamento": 9,
+      "entradas_mes": 6,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 2460319.72
+      "valor_causa": 2410756.72
     },
     {
       "fase": "Instrução",
@@ -3040,6 +3040,17 @@
     },
     {
       "grupo": "Grupo E1",
+      "cliente": "MAHLE METAL -LIMEIRA",
+      "andamento": 4,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 213953.15,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Grupo E1",
       "cliente": "MAHLE METAL - SSC",
       "andamento": 3,
       "entradas_mes": 0,
@@ -3047,17 +3058,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 905667.83,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Grupo E1",
-      "cliente": "MAHLE METAL -LIMEIRA",
-      "andamento": 3,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 164390.15,
       "alerta_entrada": false
     },
     {
@@ -3798,17 +3798,6 @@
       "alerta_entrada": false
     },
     {
-      "grupo": "Sem grupo",
-      "cliente": "MAHLE METAL -LIMEIRA",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 49563.0,
-      "alerta_entrada": false
-    },
-    {
       "grupo": "Sócios",
       "cliente": "PEIXOTO E CURY",
       "andamento": 2,
@@ -4255,12 +4244,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Tamires Lins Costa(TLI)",
-      "andamento": 227,
-      "entradas_mes": 2,
+      "andamento": 228,
+      "entradas_mes": 3,
       "saidas_mes": 6,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 10,
-      "valor_causa": 29294946.5
+      "valor_causa": 29344509.5
     },
     {
       "grupo": "Grupo E1",
@@ -4491,16 +4480,6 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
       "valor_causa": 108458.51
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Tamires Lins Costa(TLI)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 49563.0
     },
     {
       "grupo": "Sem grupo",
@@ -8032,11 +8011,6 @@
       "numero_processo": "0001683-94.2026.5.09.0128",
       "cliente": "COMPANHIA AIX",
       "profissional": "Vinicius da Silva Cerqueira(VSI)"
-    },
-    {
-      "numero_processo": "0012710-60.2026.5.15.0014",
-      "cliente": "MAHLE METAL -LIMEIRA",
-      "profissional": "Tamires Lins Costa(TLI)"
     },
     {
       "numero_processo": "0011291-78.2026.5.15.0119",
