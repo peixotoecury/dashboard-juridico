@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-11T09:00:19",
+  "atualizado_em": "2026-11-11T09:15:19",
   "kpis": {
-    "total_andamento": 7630,
+    "total_andamento": 7633,
     "entradas_hoje": 0,
     "saidas_hoje": 0,
-    "entradas_ontem": 12,
+    "entradas_ontem": 15,
     "saidas_ontem": 3,
-    "entradas_mes": 70,
+    "entradas_mes": 73,
     "saidas_mes": 53,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 224,
-    "valor_causa_total": 1787272259.78,
-    "saldo_mes": 17
+    "valor_causa_total": 1787412944.5,
+    "saldo_mes": 20
   },
   "serie_diaria": [
     {
@@ -306,7 +306,7 @@
     },
     {
       "data": "2026-11-10",
-      "entradas": 12,
+      "entradas": 15,
       "saidas": 3
     },
     {
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 13,
-      "entradas_mes": 10,
+      "andamento": 16,
+      "entradas_mes": 13,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 2570489.7
+      "valor_causa": 2711174.42
     },
     {
       "nome": "Sócios",
@@ -446,12 +446,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5761,
-      "entradas_mes": 44,
+      "andamento": 5762,
+      "entradas_mes": 45,
       "saidas_mes": 44,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 164,
-      "valor_causa": 1384501385.42
+      "valor_causa": 1384622070.14
     },
     {
       "nome": "MG",
@@ -464,12 +464,12 @@
     },
     {
       "nome": "PR",
-      "andamento": 253,
-      "entradas_mes": 0,
+      "andamento": 255,
+      "entradas_mes": 2,
       "saidas_mes": 1,
       "entradas_mes_anterior": 22,
       "saidas_mes_anterior": 3,
-      "valor_causa": 52466425.81
+      "valor_causa": 52486425.81
     },
     {
       "nome": "RS",
@@ -691,12 +691,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2896,
-      "entradas_mes": 25,
+      "andamento": 2899,
+      "entradas_mes": 28,
       "saidas_mes": 17,
       "entradas_mes_anterior": 270,
       "saidas_mes_anterior": 75,
-      "valor_causa": 842550613.65
+      "valor_causa": 842691298.37
     },
     {
       "nome": "Sentença",
@@ -1021,12 +1021,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 13,
-      "entradas_mes": 10,
+      "andamento": 16,
+      "entradas_mes": 13,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 2570489.7
+      "valor_causa": 2711174.42
     },
     {
       "fase": "Instrução",
@@ -1341,12 +1341,12 @@
     },
     {
       "nome": "Rafael Yepez do Lago(RYL)",
-      "andamento": 463,
-      "entradas_mes": 6,
+      "andamento": 464,
+      "entradas_mes": 7,
       "saidas_mes": 1,
       "entradas_mes_anterior": 27,
       "saidas_mes_anterior": 21,
-      "valor_causa": 61385817.86
+      "valor_causa": 61506502.58
     },
     {
       "nome": "Giulia Vendramini Milani(GVM)",
@@ -1530,12 +1530,12 @@
     },
     {
       "nome": "Vinicius da Silva Cerqueira(VSI)",
-      "andamento": 213,
-      "entradas_mes": 4,
+      "andamento": 215,
+      "entradas_mes": 6,
       "saidas_mes": 1,
       "entradas_mes_anterior": 35,
       "saidas_mes_anterior": 0,
-      "valor_causa": 72653424.84
+      "valor_causa": 72673424.84
     },
     {
       "nome": "Thais Amaral Rocca(TAR)",
@@ -1814,12 +1814,12 @@
     },
     {
       "nome": "COMPANHIA AIX",
-      "andamento": 163,
-      "entradas_mes": 3,
+      "andamento": 165,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 48,
       "saidas_mes_anterior": 0,
-      "valor_causa": 36933813.47,
+      "valor_causa": 36953813.47,
       "alerta_entrada": false
     },
     {
@@ -1844,13 +1844,13 @@
     },
     {
       "nome": "EUROCHEM FTO MATRIZ",
-      "andamento": 104,
-      "entradas_mes": 4,
+      "andamento": 105,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 10,
-      "valor_causa": 10455401.81,
-      "alerta_entrada": false
+      "valor_causa": 10576086.53,
+      "alerta_entrada": true
     },
     {
       "nome": "T4F ENTRETENIMENTO",
@@ -3745,13 +3745,24 @@
     {
       "grupo": "Sem grupo",
       "cliente": "EUROCHEM FTO MATRIZ",
-      "andamento": 4,
-      "entradas_mes": 4,
+      "andamento": 5,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 280760.04,
+      "valor_causa": 401444.76,
       "alerta_entrada": true
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "COMPANHIA AIX",
+      "andamento": 4,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 2,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 50000.0,
+      "alerta_entrada": false
     },
     {
       "grupo": "Sem grupo",
@@ -3763,17 +3774,6 @@
       "saidas_mes_anterior": 0,
       "valor_causa": 1575606.2,
       "alerta_entrada": true
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "COMPANHIA AIX",
-      "andamento": 2,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 2,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 30000.0,
-      "alerta_entrada": false
     },
     {
       "grupo": "Sem grupo",
@@ -4465,22 +4465,22 @@
     {
       "grupo": "Sem grupo",
       "profissional": "Rafael Yepez do Lago(RYL)",
-      "andamento": 4,
-      "entradas_mes": 4,
+      "andamento": 5,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 280760.04
+      "valor_causa": 401444.76
     },
     {
       "grupo": "Sem grupo",
       "profissional": "Vinicius da Silva Cerqueira(VSI)",
-      "andamento": 2,
-      "entradas_mes": 0,
+      "andamento": 4,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
-      "valor_causa": 30000.0
+      "valor_causa": 50000.0
     },
     {
       "grupo": "Sem grupo",
@@ -5777,12 +5777,12 @@
     {
       "estado": "PR",
       "cliente": "COMPANHIA AIX",
-      "andamento": 113,
-      "entradas_mes": 0,
+      "andamento": 115,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 0,
-      "valor_causa": 27848884.19
+      "valor_causa": 27868884.19
     },
     {
       "estado": "PR",
@@ -6796,6 +6796,16 @@
     },
     {
       "estado": "SP",
+      "cliente": "EUROCHEM FTO MATRIZ",
+      "andamento": 16,
+      "entradas_mes": 3,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 3,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 3811372.87
+    },
+    {
+      "estado": "SP",
       "cliente": "ITW CHEMICAL MATRIZ",
       "andamento": 15,
       "entradas_mes": 0,
@@ -6803,16 +6813,6 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 4,
       "valor_causa": 1481465.65
-    },
-    {
-      "estado": "SP",
-      "cliente": "EUROCHEM FTO MATRIZ",
-      "andamento": 15,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 3,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 3690688.15
     },
     {
       "estado": "SP",
@@ -7967,6 +7967,16 @@
   ],
   "clientes_com_alerta": [
     {
+      "nome": "EUROCHEM FTO MATRIZ",
+      "andamento": 105,
+      "entradas_mes": 5,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 9,
+      "saidas_mes_anterior": 10,
+      "valor_causa": 10576086.53,
+      "alerta_entrada": true
+    },
+    {
       "nome": "INPASA SINOP",
       "andamento": 74,
       "entradas_mes": 13,
@@ -8014,6 +8024,16 @@
       "profissional": "Vinicius da Silva Cerqueira(VSI)"
     },
     {
+      "numero_processo": "0000878-51.2026.5.09.0643",
+      "cliente": "COMPANHIA AIX",
+      "profissional": "Vinicius da Silva Cerqueira(VSI)"
+    },
+    {
+      "numero_processo": "0000877-66.2026.5.09.0643",
+      "cliente": "COMPANHIA AIX",
+      "profissional": "Vinicius da Silva Cerqueira(VSI)"
+    },
+    {
       "numero_processo": "0010916-03.2026.5.03.0090",
       "cliente": "EUROCHEM FTO MATRIZ",
       "profissional": "Rafael Yepez do Lago(RYL)"
@@ -8030,6 +8050,11 @@
     },
     {
       "numero_processo": "0001296-13.2026.5.06.0371",
+      "cliente": "EUROCHEM FTO MATRIZ",
+      "profissional": "Rafael Yepez do Lago(RYL)"
+    },
+    {
+      "numero_processo": "0010917-85.2026.5.03.0090",
       "cliente": "EUROCHEM FTO MATRIZ",
       "profissional": "Rafael Yepez do Lago(RYL)"
     },
