@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-11T09:30:20",
+  "atualizado_em": "2026-11-11T09:45:20",
   "kpis": {
-    "total_andamento": 7635,
+    "total_andamento": 7636,
     "entradas_hoje": 0,
     "saidas_hoje": 0,
-    "entradas_ontem": 17,
+    "entradas_ontem": 18,
     "saidas_ontem": 3,
-    "entradas_mes": 75,
+    "entradas_mes": 76,
     "saidas_mes": 53,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 224,
-    "valor_causa_total": 1787649689.72,
-    "saldo_mes": 22
+    "valor_causa_total": 1787699252.72,
+    "saldo_mes": 23
   },
   "serie_diaria": [
     {
@@ -306,7 +306,7 @@
     },
     {
       "data": "2026-11-10",
-      "entradas": 17,
+      "entradas": 18,
       "saidas": 3
     },
     {
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 18,
-      "entradas_mes": 15,
+      "andamento": 19,
+      "entradas_mes": 16,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 2947919.64
+      "valor_causa": 2997482.64
     },
     {
       "nome": "Sócios",
@@ -446,12 +446,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5763,
-      "entradas_mes": 46,
+      "andamento": 5764,
+      "entradas_mes": 47,
       "saidas_mes": 44,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 164,
-      "valor_causa": 1384778815.36
+      "valor_causa": 1384828378.36
     },
     {
       "nome": "MG",
@@ -691,12 +691,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2901,
-      "entradas_mes": 30,
+      "andamento": 2902,
+      "entradas_mes": 31,
       "saidas_mes": 17,
       "entradas_mes_anterior": 270,
       "saidas_mes_anterior": 75,
-      "valor_causa": 842928043.59
+      "valor_causa": 842977606.59
     },
     {
       "nome": "Sentença",
@@ -1021,12 +1021,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 18,
-      "entradas_mes": 15,
+      "andamento": 19,
+      "entradas_mes": 16,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 2947919.64
+      "valor_causa": 2997482.64
     },
     {
       "fase": "Instrução",
@@ -1502,6 +1502,15 @@
       "valor_causa": 46998269.54
     },
     {
+      "nome": "Tamires Lins Costa(TLI)",
+      "andamento": 228,
+      "entradas_mes": 3,
+      "saidas_mes": 6,
+      "entradas_mes_anterior": 8,
+      "saidas_mes_anterior": 10,
+      "valor_causa": 29344509.5
+    },
+    {
       "nome": "Vinícius Ronchi Arruda(VRO)",
       "andamento": 227,
       "entradas_mes": 0,
@@ -1509,15 +1518,6 @@
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 6,
       "valor_causa": 40011349.32
-    },
-    {
-      "nome": "Tamires Lins Costa(TLI)",
-      "andamento": 227,
-      "entradas_mes": 2,
-      "saidas_mes": 6,
-      "entradas_mes_anterior": 8,
-      "saidas_mes_anterior": 10,
-      "valor_causa": 29294946.5
     },
     {
       "nome": "Lucas Willott Pereira (LWP)",
@@ -3809,6 +3809,17 @@
       "alerta_entrada": false
     },
     {
+      "grupo": "Sem grupo",
+      "cliente": "MAHLE METAL -LIMEIRA",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 49563.0,
+      "alerta_entrada": false
+    },
+    {
       "grupo": "Sócios",
       "cliente": "PEIXOTO E CURY",
       "andamento": 2,
@@ -4511,6 +4522,16 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
       "valor_causa": 108458.51
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Tamires Lins Costa(TLI)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 49563.0
     },
     {
       "grupo": "Sem grupo",
@@ -7056,6 +7077,16 @@
     },
     {
       "estado": "SP",
+      "cliente": "MAHLE METAL -LIMEIRA",
+      "andamento": 4,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 213953.15
+    },
+    {
+      "estado": "SP",
       "cliente": "CTG - RIO PARANÁ",
       "andamento": 3,
       "entradas_mes": 0,
@@ -7103,16 +7134,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 1939470.07
-    },
-    {
-      "estado": "SP",
-      "cliente": "MAHLE METAL -LIMEIRA",
-      "andamento": 3,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 164390.15
     },
     {
       "estado": "SP",
@@ -8072,6 +8093,11 @@
       "numero_processo": "0010917-85.2026.5.03.0090",
       "cliente": "EUROCHEM FTO MATRIZ",
       "profissional": "Rafael Yepez do Lago(RYL)"
+    },
+    {
+      "numero_processo": "0012710-60.2026.5.15.0014",
+      "cliente": "MAHLE METAL -LIMEIRA",
+      "profissional": "Tamires Lins Costa(TLI)"
     },
     {
       "numero_processo": "0011291-78.2026.5.15.0119",
