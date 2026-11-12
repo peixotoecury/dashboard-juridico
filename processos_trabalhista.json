@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-12T10:30:21",
+  "atualizado_em": "2026-11-12T10:45:18",
   "kpis": {
-    "total_andamento": 7644,
+    "total_andamento": 7645,
     "entradas_hoje": 0,
     "saidas_hoje": 0,
-    "entradas_ontem": 7,
+    "entradas_ontem": 8,
     "saidas_ontem": 4,
-    "entradas_mes": 89,
+    "entradas_mes": 90,
     "saidas_mes": 57,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 224,
-    "valor_causa_total": 1792678633.09,
-    "saldo_mes": 32
+    "valor_causa_total": 1792850872.59,
+    "saldo_mes": 33
   },
   "serie_diaria": [
     {
@@ -306,7 +306,7 @@
     },
     {
       "data": "2026-11-11",
-      "entradas": 7,
+      "entradas": 8,
       "saidas": 4
     },
     {
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 12,
-      "entradas_mes": 9,
+      "andamento": 13,
+      "entradas_mes": 10,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 2663724.22
+      "valor_causa": 2835963.72
     },
     {
       "nome": "Sócios",
@@ -455,12 +455,12 @@
     },
     {
       "nome": "MG",
-      "andamento": 549,
-      "entradas_mes": 11,
+      "andamento": 550,
+      "entradas_mes": 12,
       "saidas_mes": 7,
       "entradas_mes_anterior": 26,
       "saidas_mes_anterior": 23,
-      "valor_causa": 142026230.07
+      "valor_causa": 142198469.57
     },
     {
       "nome": "PR",
@@ -691,12 +691,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2895,
-      "entradas_mes": 28,
+      "andamento": 2896,
+      "entradas_mes": 29,
       "saidas_mes": 18,
       "entradas_mes_anterior": 270,
       "saidas_mes_anterior": 75,
-      "valor_causa": 843552705.37
+      "valor_causa": 843724944.87
     },
     {
       "nome": "Sentença",
@@ -1020,6 +1020,16 @@
     },
     {
       "fase": "Instrução",
+      "grupo": "Sem grupo",
+      "andamento": 13,
+      "entradas_mes": 10,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 3,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 2835963.72
+    },
+    {
+      "fase": "Instrução",
       "grupo": "Grupo A2",
       "andamento": 12,
       "entradas_mes": 0,
@@ -1027,16 +1037,6 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 1,
       "valor_causa": 7695462.66
-    },
-    {
-      "fase": "Instrução",
-      "grupo": "Sem grupo",
-      "andamento": 12,
-      "entradas_mes": 9,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 3,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 2663724.22
     },
     {
       "fase": "Instrução",
@@ -1350,12 +1350,12 @@
     },
     {
       "nome": "Giulia Vendramini Milani(GVM)",
-      "andamento": 426,
-      "entradas_mes": 3,
+      "andamento": 427,
+      "entradas_mes": 4,
       "saidas_mes": 7,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 29,
-      "valor_causa": 66265308.42
+      "valor_causa": 66437547.92
     },
     {
       "nome": "Letícia Meneghini Fontes (LMI)",
@@ -1824,12 +1824,12 @@
     },
     {
       "nome": "SYNGENTA SEEDS NIDER",
-      "andamento": 150,
-      "entradas_mes": 1,
+      "andamento": 151,
+      "entradas_mes": 2,
       "saidas_mes": 1,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 13,
-      "valor_causa": 23835537.64,
+      "valor_causa": 24007777.14,
       "alerta_entrada": false
     },
     {
@@ -3809,6 +3809,17 @@
       "alerta_entrada": false
     },
     {
+      "grupo": "Sem grupo",
+      "cliente": "SYNGENTA SEEDS NIDER",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 172239.5,
+      "alerta_entrada": false
+    },
+    {
       "grupo": "Sócios",
       "cliente": "PEIXOTO E CURY",
       "andamento": 2,
@@ -4523,6 +4534,16 @@
       "valor_causa": 545244.44
     },
     {
+      "grupo": "Sem grupo",
+      "profissional": "Giulia Vendramini Milani(GVM)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 172239.5
+    },
+    {
       "grupo": "Sócios",
       "profissional": "Poliana Banqueri da Silva Guimarães(PBS)",
       "andamento": 3,
@@ -5177,12 +5198,12 @@
     {
       "estado": "MG",
       "cliente": "SYNGENTA SEEDS NIDER",
-      "andamento": 39,
-      "entradas_mes": 1,
+      "andamento": 40,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 7,
-      "valor_causa": 4319555.85
+      "valor_causa": 4491795.35
     },
     {
       "estado": "MG",
@@ -7286,16 +7307,6 @@
     },
     {
       "estado": "SP",
-      "cliente": "DE NORA DO BRASIL",
-      "andamento": 2,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 627758.89
-    },
-    {
-      "estado": "SP",
       "cliente": "THIRA PARTNERS",
       "andamento": 2,
       "entradas_mes": 0,
@@ -7313,6 +7324,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
+    },
+    {
+      "estado": "SP",
+      "cliente": "DE NORA DO BRASIL",
+      "andamento": 2,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 627758.89
     },
     {
       "estado": "SP",
@@ -8014,17 +8035,17 @@
       "profissional": "Vinicius da Silva Cerqueira(VSI)"
     },
     {
-      "numero_processo": "0011309-33.2026.5.03.0152",
-      "cliente": "EUROCHEM SALITRE",
-      "profissional": "Camila Alves Magalhães de Paula(CAL)"
-    },
-    {
       "numero_processo": "0011782-09.2026.5.03.0026",
       "cliente": "EUROCHEM SALITRE",
       "profissional": "Camila Alves Magalhães de Paula(CAL)"
     },
     {
       "numero_processo": "0010716-31.2026.5.03.0046",
+      "cliente": "EUROCHEM SALITRE",
+      "profissional": "Camila Alves Magalhães de Paula(CAL)"
+    },
+    {
+      "numero_processo": "0011309-33.2026.5.03.0152",
       "cliente": "EUROCHEM SALITRE",
       "profissional": "Camila Alves Magalhães de Paula(CAL)"
     },
@@ -8037,6 +8058,11 @@
       "numero_processo": "1002027-29.2026.5.02.0718",
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "profissional": "Vinícius Ronchi Arruda(VRO)"
+    },
+    {
+      "numero_processo": "0011993-89.2026.5.03.0173",
+      "cliente": "SYNGENTA SEEDS NIDER",
+      "profissional": "Giulia Vendramini Milani(GVM)"
     }
   ]
 }
