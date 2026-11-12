@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-12T11:00:22",
+  "atualizado_em": "2026-11-12T11:15:18",
   "kpis": {
-    "total_andamento": 7647,
+    "total_andamento": 7649,
     "entradas_hoje": 0,
     "saidas_hoje": 0,
-    "entradas_ontem": 10,
+    "entradas_ontem": 12,
     "saidas_ontem": 4,
-    "entradas_mes": 92,
+    "entradas_mes": 94,
     "saidas_mes": 57,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 224,
-    "valor_causa_total": 1792944132.11,
-    "saldo_mes": 35
+    "valor_causa_total": 1793044767.89,
+    "saldo_mes": 37
   },
   "serie_diaria": [
     {
@@ -306,7 +306,7 @@
     },
     {
       "data": "2026-11-11",
-      "entradas": 10,
+      "entradas": 12,
       "saidas": 4
     },
     {
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 15,
-      "entradas_mes": 12,
+      "andamento": 17,
+      "entradas_mes": 14,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 2929223.24
+      "valor_causa": 3029859.02
     },
     {
       "nome": "Sócios",
@@ -455,12 +455,12 @@
     },
     {
       "nome": "MG",
-      "andamento": 550,
-      "entradas_mes": 12,
+      "andamento": 551,
+      "entradas_mes": 13,
       "saidas_mes": 7,
       "entradas_mes_anterior": 26,
       "saidas_mes_anterior": 23,
-      "valor_causa": 142198469.57
+      "valor_causa": 142299104.35
     },
     {
       "nome": "PR",
@@ -500,12 +500,12 @@
     },
     {
       "nome": "BA",
-      "andamento": 102,
-      "entradas_mes": 2,
+      "andamento": 103,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 4,
-      "valor_causa": 13351947.73
+      "valor_causa": 13351948.73
     },
     {
       "nome": "GO",
@@ -691,12 +691,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2897,
-      "entradas_mes": 31,
+      "andamento": 2899,
+      "entradas_mes": 33,
       "saidas_mes": 18,
       "entradas_mes_anterior": 270,
       "saidas_mes_anterior": 75,
-      "valor_causa": 843776489.99
+      "valor_causa": 843877125.77
     },
     {
       "nome": "Sentença",
@@ -1021,12 +1021,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 15,
-      "entradas_mes": 12,
+      "andamento": 17,
+      "entradas_mes": 14,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 2929223.24
+      "valor_causa": 3029859.02
     },
     {
       "fase": "Instrução",
@@ -1341,12 +1341,12 @@
     },
     {
       "nome": "Rafael Yepez do Lago(RYL)",
-      "andamento": 467,
-      "entradas_mes": 9,
+      "andamento": 468,
+      "entradas_mes": 10,
       "saidas_mes": 1,
       "entradas_mes_anterior": 27,
       "saidas_mes_anterior": 21,
-      "valor_causa": 61935921.67
+      "valor_causa": 62036556.45
     },
     {
       "nome": "Giulia Vendramini Milani(GVM)",
@@ -1449,12 +1449,12 @@
     },
     {
       "nome": "Rafael Camargo Felisbino(RCF)",
-      "andamento": 277,
-      "entradas_mes": 9,
+      "andamento": 278,
+      "entradas_mes": 10,
       "saidas_mes": 0,
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 8,
-      "valor_causa": 109037994.57
+      "valor_causa": 109037995.57
     },
     {
       "nome": "Vanessa de Cassia Castrequini Rosa(VCR)",
@@ -1764,12 +1764,12 @@
     },
     {
       "nome": "VITERRA RIO VERMELHO",
-      "andamento": 319,
-      "entradas_mes": 3,
+      "andamento": 320,
+      "entradas_mes": 4,
       "saidas_mes": 0,
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 10,
-      "valor_causa": 43491654.44,
+      "valor_causa": 43592289.22,
       "alerta_entrada": false
     },
     {
@@ -1884,12 +1884,12 @@
     },
     {
       "nome": "INPASA SINOP",
-      "andamento": 76,
-      "entradas_mes": 15,
+      "andamento": 77,
+      "entradas_mes": 16,
       "saidas_mes": 0,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 0,
-      "valor_causa": 13530850.64,
+      "valor_causa": 13530851.64,
       "alerta_entrada": true
     }
   ],
@@ -3766,6 +3766,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "INPASA SINOP",
+      "andamento": 3,
+      "entradas_mes": 3,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 93260.52,
+      "alerta_entrada": true
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "COMPANHIA AIX",
       "andamento": 2,
       "entradas_mes": 0,
@@ -3788,17 +3799,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "INPASA SINOP",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 93259.52,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "andamento": 1,
       "entradas_mes": 0,
@@ -3806,6 +3806,17 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
       "valor_causa": 108458.51,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "VITERRA RIO VERMELHO",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 100634.78,
       "alerta_entrada": false
     },
     {
@@ -4536,6 +4547,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Rafael Yepez do Lago(RYL)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 100634.78
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Bruna Cembranelli Fazenda (BCF)",
       "andamento": 1,
       "entradas_mes": 1,
@@ -4563,6 +4584,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 172239.5
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Rafael Camargo Felisbino(RCF)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1.0
     },
     {
       "grupo": "Sócios",
@@ -4689,12 +4720,12 @@
     {
       "estado": "BA",
       "cliente": "INPASA SINOP",
-      "andamento": 4,
-      "entradas_mes": 2,
+      "andamento": 5,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 613937.72
+      "valor_causa": 613938.72
     },
     {
       "estado": "BA",
@@ -5258,6 +5289,16 @@
     },
     {
       "estado": "MG",
+      "cliente": "VITERRA RIO VERMELHO",
+      "andamento": 12,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1264275.86
+    },
+    {
+      "estado": "MG",
       "cliente": "SISTENGE",
       "andamento": 12,
       "entradas_mes": 0,
@@ -5265,16 +5306,6 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
       "valor_causa": 516781.21
-    },
-    {
-      "estado": "MG",
-      "cliente": "VITERRA RIO VERMELHO",
-      "andamento": 11,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 1163641.08
     },
     {
       "estado": "MG",
@@ -8010,12 +8041,12 @@
     },
     {
       "nome": "INPASA SINOP",
-      "andamento": 76,
-      "entradas_mes": 15,
+      "andamento": 77,
+      "entradas_mes": 16,
       "saidas_mes": 0,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 0,
-      "valor_causa": 13530850.64,
+      "valor_causa": 13530851.64,
       "alerta_entrada": true
     }
   ],
@@ -8071,12 +8102,17 @@
       "profissional": "Camila Alves Magalhães de Paula(CAL)"
     },
     {
-      "numero_processo": "0017354-28.2026.5.16.0011",
+      "numero_processo": "0000919-40.2026.5.05.0122",
+      "cliente": "INPASA SINOP",
+      "profissional": "Rafael Camargo Felisbino(RCF)"
+    },
+    {
+      "numero_processo": "0002914-23.2026.5.05.0661",
       "cliente": "INPASA SINOP",
       "profissional": "Bruno Tanganelli Farah(BTF)"
     },
     {
-      "numero_processo": "0002914-23.2026.5.05.0661",
+      "numero_processo": "0017354-28.2026.5.16.0011",
       "cliente": "INPASA SINOP",
       "profissional": "Bruno Tanganelli Farah(BTF)"
     },
@@ -8094,6 +8130,11 @@
       "numero_processo": "0011993-89.2026.5.03.0173",
       "cliente": "SYNGENTA SEEDS NIDER",
       "profissional": "Giulia Vendramini Milani(GVM)"
+    },
+    {
+      "numero_processo": "0011426-06.2026.5.15.0050",
+      "cliente": "VITERRA RIO VERMELHO",
+      "profissional": "Rafael Yepez do Lago(RYL)"
     }
   ]
 }
