@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-12T14:15:33",
+  "atualizado_em": "2026-11-12T14:30:22",
   "kpis": {
-    "total_andamento": 7652,
-    "entradas_hoje": 3,
+    "total_andamento": 7653,
+    "entradas_hoje": 4,
     "saidas_hoje": 0,
     "entradas_ontem": 13,
     "saidas_ontem": 4,
-    "entradas_mes": 98,
+    "entradas_mes": 99,
     "saidas_mes": 58,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 224,
-    "valor_causa_total": 1794664202.49,
-    "saldo_mes": 40
+    "valor_causa_total": 1795408751.77,
+    "saldo_mes": 41
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-11-12",
-      "entradas": 3,
+      "entradas": 4,
       "saidas": 0
     }
   ],
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 10,
-      "entradas_mes": 7,
+      "andamento": 11,
+      "entradas_mes": 8,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 3793893.04
+      "valor_causa": 4538442.32
     },
     {
       "nome": "Sócios",
@@ -446,12 +446,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5766,
-      "entradas_mes": 53,
+      "andamento": 5767,
+      "entradas_mes": 54,
       "saidas_mes": 47,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 164,
-      "valor_causa": 1385383010.4
+      "valor_causa": 1386127559.68
     },
     {
       "nome": "MG",
@@ -682,21 +682,21 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 450,
+      "andamento": 449,
       "entradas_mes": 45,
       "saidas_mes": 1,
       "entradas_mes_anterior": 35,
       "saidas_mes_anterior": 13,
-      "valor_causa": 101690197.99
+      "valor_causa": 101604560.94
     },
     {
       "nome": "Instrução",
-      "andamento": 2894,
-      "entradas_mes": 31,
+      "andamento": 2895,
+      "entradas_mes": 32,
       "saidas_mes": 19,
       "entradas_mes_anterior": 270,
       "saidas_mes_anterior": 75,
-      "valor_causa": 844661963.7
+      "valor_causa": 845406512.98
     },
     {
       "nome": "Sentença",
@@ -709,12 +709,12 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2949,
+      "andamento": 2950,
       "entradas_mes": 1,
       "saidas_mes": 17,
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 48,
-      "valor_causa": 676426083.56
+      "valor_causa": 676511720.61
     },
     {
       "nome": "Execução",
@@ -741,12 +741,12 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo B2",
-      "andamento": 89,
+      "andamento": 88,
       "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 2,
-      "valor_causa": 11965610.92
+      "valor_causa": 11879973.87
     },
     {
       "fase": "Ajuizamento",
@@ -1031,12 +1031,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 10,
-      "entradas_mes": 7,
+      "andamento": 11,
+      "entradas_mes": 8,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 3793893.04
+      "valor_causa": 4538442.32
     },
     {
       "fase": "Instrução",
@@ -1191,12 +1191,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo B2",
-      "andamento": 384,
+      "andamento": 385,
       "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 68975479.07
+      "valor_causa": 69061116.12
     },
     {
       "fase": "Recurso",
@@ -1413,12 +1413,12 @@
     },
     {
       "nome": "Rafael Rocha Ferreira(RFE)",
-      "andamento": 293,
-      "entradas_mes": 4,
+      "andamento": 294,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 9,
-      "valor_causa": 81813601.46
+      "valor_causa": 82558150.74
     },
     {
       "nome": "Bruna Cembranelli Fazenda (BCF)",
@@ -1694,12 +1694,12 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1429,
-      "entradas_mes": 13,
+      "andamento": 1430,
+      "entradas_mes": 14,
       "saidas_mes": 11,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 42,
-      "valor_causa": 326957004.34,
+      "valor_causa": 327701553.62,
       "alerta_entrada": false
     },
     {
@@ -3744,6 +3744,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "BRIDGESTONE",
+      "andamento": 3,
+      "entradas_mes": 3,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1290793.72,
+      "alerta_entrada": true
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "COMPANHIA AIX",
       "andamento": 2,
       "entradas_mes": 0,
@@ -3751,17 +3762,6 @@
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
       "valor_causa": 30000.0,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "BRIDGESTONE",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 546244.44,
       "alerta_entrada": false
     },
     {
@@ -3799,6 +3799,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "INPASA SINOP",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 572816.7,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "ROBERT BOSCH",
       "andamento": 1,
       "entradas_mes": 1,
@@ -3817,17 +3828,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 433116.46,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "INPASA SINOP",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 572816.7,
       "alerta_entrada": false
     },
     {
@@ -4536,6 +4536,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Bruno Tanganelli Farah(BTF)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 572816.7
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "André Alessandro de Paula(AAP)",
       "andamento": 1,
       "entradas_mes": 1,
@@ -4546,6 +4556,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Rafael Rocha Ferreira(RFE)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 744549.28
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Rafael Yepez do Lago(RYL)",
       "andamento": 1,
       "entradas_mes": 1,
@@ -4553,16 +4573,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 433116.46
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Bruno Tanganelli Farah(BTF)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 572816.7
     },
     {
       "grupo": "Sócios",
@@ -6579,12 +6589,12 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1403,
-      "entradas_mes": 12,
+      "andamento": 1404,
+      "entradas_mes": 13,
       "saidas_mes": 11,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 40,
-      "valor_causa": 315326884.55
+      "valor_causa": 316071433.83
     },
     {
       "estado": "SP",
@@ -8054,6 +8064,11 @@
       "numero_processo": "1002293-04.2026.5.02.0431",
       "cliente": "BRIDGESTONE",
       "profissional": "Beatriz Santiago de Souza(BSO)"
+    },
+    {
+      "numero_processo": "1002254-95.2026.5.02.0434",
+      "cliente": "BRIDGESTONE",
+      "profissional": "Rafael Rocha Ferreira(RFE)"
     },
     {
       "numero_processo": "0001607-78.2026.5.07.0014",
