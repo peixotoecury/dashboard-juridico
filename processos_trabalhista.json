@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-12T11:30:23",
+  "atualizado_em": "2026-11-12T11:45:19",
   "kpis": {
     "total_andamento": 7650,
     "entradas_hoje": 1,
@@ -318,12 +318,12 @@
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2160,
-      "entradas_mes": 36,
+      "andamento": 2162,
+      "entradas_mes": 38,
       "saidas_mes": 13,
       "entradas_mes_anterior": 105,
       "saidas_mes_anterior": 70,
-      "valor_causa": 485490867.12
+      "valor_causa": 485492102.06
     },
     {
       "nome": "Grupo E1",
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 17,
-      "entradas_mes": 14,
+      "andamento": 15,
+      "entradas_mes": 12,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 2975159.02
+      "valor_causa": 2973924.08
     },
     {
       "nome": "Sócios",
@@ -682,21 +682,21 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 446,
-      "entradas_mes": 40,
+      "andamento": 447,
+      "entradas_mes": 41,
       "saidas_mes": 1,
       "entradas_mes_anterior": 35,
       "saidas_mes_anterior": 13,
-      "valor_causa": 101384275.47
+      "valor_causa": 101385509.41
     },
     {
       "nome": "Instrução",
-      "andamento": 2900,
-      "entradas_mes": 34,
+      "andamento": 2899,
+      "entradas_mes": 33,
       "saidas_mes": 18,
       "entradas_mes_anterior": 270,
       "saidas_mes_anterior": 75,
-      "valor_causa": 843972425.77
+      "valor_causa": 843971191.83
     },
     {
       "nome": "Sentença",
@@ -731,12 +731,12 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo E2",
-      "andamento": 185,
-      "entradas_mes": 18,
+      "andamento": 186,
+      "entradas_mes": 19,
       "saidas_mes": 0,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 9,
-      "valor_causa": 46590392.89
+      "valor_causa": 46591626.83
     },
     {
       "fase": "Ajuizamento",
@@ -931,12 +931,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 895,
-      "entradas_mes": 6,
+      "andamento": 896,
+      "entradas_mes": 7,
       "saidas_mes": 5,
       "entradas_mes_anterior": 88,
       "saidas_mes_anterior": 21,
-      "valor_causa": 193353624.51
+      "valor_causa": 193353625.51
     },
     {
       "fase": "Instrução",
@@ -1021,12 +1021,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 17,
-      "entradas_mes": 14,
+      "andamento": 15,
+      "entradas_mes": 12,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 2975159.02
+      "valor_causa": 2973924.08
     },
     {
       "fase": "Instrução",
@@ -3173,12 +3173,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "BP BIOENERGIA",
-      "andamento": 758,
-      "entradas_mes": 8,
+      "andamento": 759,
+      "entradas_mes": 9,
       "saidas_mes": 10,
       "entradas_mes_anterior": 32,
       "saidas_mes_anterior": 22,
-      "valor_causa": 216140944.15,
+      "valor_causa": 216142178.09,
       "alerta_entrada": false
     },
     {
@@ -3206,12 +3206,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "EUROCHEM SALITRE",
-      "andamento": 166,
-      "entradas_mes": 2,
+      "andamento": 167,
+      "entradas_mes": 3,
       "saidas_mes": 1,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 9,
-      "valor_causa": 39942932.16,
+      "valor_causa": 39942933.16,
       "alerta_entrada": false
     },
     {
@@ -3744,17 +3744,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "EUROCHEM SALITRE",
-      "andamento": 3,
-      "entradas_mes": 3,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 247731.84,
-      "alerta_entrada": true
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "INPASA SINOP",
       "andamento": 3,
       "entradas_mes": 3,
@@ -3788,17 +3777,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "BP BIOENERGIA",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 1551868.92,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "BRIDGESTONE",
       "andamento": 2,
       "entradas_mes": 2,
@@ -3810,6 +3788,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "EUROCHEM SALITRE",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 247730.84,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "andamento": 1,
       "entradas_mes": 0,
@@ -3817,6 +3806,17 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
       "valor_causa": 108458.51,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "BP BIOENERGIA",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1550634.98,
       "alerta_entrada": false
     },
     {
@@ -4388,12 +4388,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 357,
-      "entradas_mes": 6,
+      "andamento": 359,
+      "entradas_mes": 8,
       "saidas_mes": 4,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 17,
-      "valor_causa": 50003532.34
+      "valor_causa": 50004767.28
     },
     {
       "grupo": "Grupo E2",
@@ -4497,16 +4497,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 4,
-      "entradas_mes": 4,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 248965.78
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Vinicius da Silva Cerqueira(VSI)",
       "andamento": 2,
       "entradas_mes": 0,
@@ -4534,6 +4524,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
       "valor_causa": 1580055.49
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Camila Alves Magalhães de Paula(CAL)",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 247730.84
     },
     {
       "grupo": "Sem grupo",
@@ -8057,11 +8057,6 @@
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
     },
     {
-      "numero_processo": "0011662-94.2026.5.15.0037",
-      "cliente": "BP BIOENERGIA",
-      "profissional": "Camila Alves Magalhães de Paula(CAL)"
-    },
-    {
       "numero_processo": "1014460-85.2026.5.02.0000",
       "cliente": "BRIDGESTONE",
       "profissional": "Bruna Cembranelli Fazenda (BCF)"
@@ -8080,11 +8075,6 @@
       "numero_processo": "0001683-94.2026.5.09.0128",
       "cliente": "COMPANHIA AIX",
       "profissional": "Vinicius da Silva Cerqueira(VSI)"
-    },
-    {
-      "numero_processo": "0011782-09.2026.5.03.0026",
-      "cliente": "EUROCHEM SALITRE",
-      "profissional": "Camila Alves Magalhães de Paula(CAL)"
     },
     {
       "numero_processo": "0010716-31.2026.5.03.0046",
