@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-12T11:15:18",
+  "atualizado_em": "2026-11-12T11:30:23",
   "kpis": {
-    "total_andamento": 7649,
-    "entradas_hoje": 0,
+    "total_andamento": 7650,
+    "entradas_hoje": 1,
     "saidas_hoje": 0,
     "entradas_ontem": 12,
     "saidas_ontem": 4,
-    "entradas_mes": 94,
+    "entradas_mes": 95,
     "saidas_mes": 57,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 224,
-    "valor_causa_total": 1793044767.89,
-    "saldo_mes": 37
+    "valor_causa_total": 1793140067.89,
+    "saldo_mes": 38
   },
   "serie_diaria": [
     {
@@ -311,19 +311,19 @@
     },
     {
       "data": "2026-11-12",
-      "entradas": 0,
+      "entradas": 1,
       "saidas": 0
     }
   ],
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2159,
-      "entradas_mes": 35,
+      "andamento": 2160,
+      "entradas_mes": 36,
       "saidas_mes": 13,
       "entradas_mes_anterior": 105,
       "saidas_mes_anterior": 70,
-      "valor_causa": 485340867.12
+      "valor_causa": 485490867.12
     },
     {
       "nome": "Grupo E1",
@@ -422,7 +422,7 @@
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 3029859.02
+      "valor_causa": 2975159.02
     },
     {
       "nome": "Sócios",
@@ -446,21 +446,21 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5767,
-      "entradas_mes": 53,
+      "andamento": 5766,
+      "entradas_mes": 52,
       "saidas_mes": 46,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 164,
-      "valor_causa": 1385014808.96
+      "valor_causa": 1384864808.96
     },
     {
       "nome": "MG",
-      "andamento": 551,
-      "entradas_mes": 13,
+      "andamento": 553,
+      "entradas_mes": 15,
       "saidas_mes": 7,
       "entradas_mes_anterior": 26,
       "saidas_mes_anterior": 23,
-      "valor_causa": 142299104.35
+      "valor_causa": 142544404.35
     },
     {
       "nome": "PR",
@@ -691,12 +691,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2899,
-      "entradas_mes": 33,
+      "andamento": 2900,
+      "entradas_mes": 34,
       "saidas_mes": 18,
       "entradas_mes_anterior": 270,
       "saidas_mes_anterior": 75,
-      "valor_causa": 843877125.77
+      "valor_causa": 843972425.77
     },
     {
       "nome": "Sentença",
@@ -931,12 +931,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 894,
-      "entradas_mes": 5,
+      "andamento": 895,
+      "entradas_mes": 6,
       "saidas_mes": 5,
       "entradas_mes_anterior": 88,
       "saidas_mes_anterior": 21,
-      "valor_causa": 193203624.51
+      "valor_causa": 193353624.51
     },
     {
       "fase": "Instrução",
@@ -1026,7 +1026,7 @@
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 3029859.02
+      "valor_causa": 2975159.02
     },
     {
       "fase": "Instrução",
@@ -1341,12 +1341,12 @@
     },
     {
       "nome": "Rafael Yepez do Lago(RYL)",
-      "andamento": 468,
-      "entradas_mes": 10,
+      "andamento": 469,
+      "entradas_mes": 11,
       "saidas_mes": 1,
       "entradas_mes_anterior": 27,
       "saidas_mes_anterior": 21,
-      "valor_causa": 62036556.45
+      "valor_causa": 62131856.45
     },
     {
       "nome": "Giulia Vendramini Milani(GVM)",
@@ -1764,12 +1764,12 @@
     },
     {
       "nome": "VITERRA RIO VERMELHO",
-      "andamento": 320,
-      "entradas_mes": 4,
+      "andamento": 321,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 10,
-      "valor_causa": 43592289.22,
+      "valor_causa": 43687589.22,
       "alerta_entrada": false
     },
     {
@@ -3173,12 +3173,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "BP BIOENERGIA",
-      "andamento": 757,
-      "entradas_mes": 7,
+      "andamento": 758,
+      "entradas_mes": 8,
       "saidas_mes": 10,
       "entradas_mes_anterior": 32,
       "saidas_mes_anterior": 22,
-      "valor_causa": 215990944.15,
+      "valor_causa": 216140944.15,
       "alerta_entrada": false
     },
     {
@@ -3744,17 +3744,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "BP BIOENERGIA",
-      "andamento": 3,
-      "entradas_mes": 3,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 1701868.92,
-      "alerta_entrada": true
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "EUROCHEM SALITRE",
       "andamento": 3,
       "entradas_mes": 3,
@@ -3788,6 +3777,28 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "VITERRA RIO VERMELHO",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 195934.78,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "BP BIOENERGIA",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1551868.92,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "BRIDGESTONE",
       "andamento": 2,
       "entradas_mes": 2,
@@ -3806,17 +3817,6 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
       "valor_causa": 108458.51,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "VITERRA RIO VERMELHO",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 100634.78,
       "alerta_entrada": false
     },
     {
@@ -4388,12 +4388,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 356,
-      "entradas_mes": 5,
+      "andamento": 357,
+      "entradas_mes": 6,
       "saidas_mes": 4,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 17,
-      "valor_causa": 49853532.34
+      "valor_causa": 50003532.34
     },
     {
       "grupo": "Grupo E2",
@@ -4498,12 +4498,12 @@
     {
       "grupo": "Sem grupo",
       "profissional": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 5,
-      "entradas_mes": 5,
+      "andamento": 4,
+      "entradas_mes": 4,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 398965.78
+      "valor_causa": 248965.78
     },
     {
       "grupo": "Sem grupo",
@@ -4514,6 +4514,16 @@
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
       "valor_causa": 30000.0
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Rafael Yepez do Lago(RYL)",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 195934.78
     },
     {
       "grupo": "Sem grupo",
@@ -4544,16 +4554,6 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
       "valor_causa": 108458.51
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Rafael Yepez do Lago(RYL)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 100634.78
     },
     {
       "grupo": "Sem grupo",
@@ -5220,12 +5220,12 @@
     {
       "estado": "MG",
       "cliente": "BP BIOENERGIA",
-      "andamento": 216,
-      "entradas_mes": 1,
+      "andamento": 217,
+      "entradas_mes": 2,
       "saidas_mes": 4,
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 4,
-      "valor_causa": 83289279.83
+      "valor_causa": 83439279.83
     },
     {
       "estado": "MG",
@@ -5290,12 +5290,12 @@
     {
       "estado": "MG",
       "cliente": "VITERRA RIO VERMELHO",
-      "andamento": 12,
-      "entradas_mes": 1,
+      "andamento": 13,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 1264275.86
+      "valor_causa": 1359575.86
     },
     {
       "estado": "MG",
@@ -6640,12 +6640,12 @@
     {
       "estado": "SP",
       "cliente": "BP BIOENERGIA",
-      "andamento": 424,
-      "entradas_mes": 8,
+      "andamento": 423,
+      "entradas_mes": 7,
       "saidas_mes": 6,
       "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 13,
-      "valor_causa": 104750523.1
+      "valor_causa": 104600523.1
     },
     {
       "estado": "SP",
@@ -8057,11 +8057,6 @@
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
     },
     {
-      "numero_processo": "0012481-31.2026.5.03.0048",
-      "cliente": "BP BIOENERGIA",
-      "profissional": "Camila Alves Magalhães de Paula(CAL)"
-    },
-    {
       "numero_processo": "0011662-94.2026.5.15.0037",
       "cliente": "BP BIOENERGIA",
       "profissional": "Camila Alves Magalhães de Paula(CAL)"
@@ -8102,11 +8097,6 @@
       "profissional": "Camila Alves Magalhães de Paula(CAL)"
     },
     {
-      "numero_processo": "0000919-40.2026.5.05.0122",
-      "cliente": "INPASA SINOP",
-      "profissional": "Rafael Camargo Felisbino(RCF)"
-    },
-    {
       "numero_processo": "0002914-23.2026.5.05.0661",
       "cliente": "INPASA SINOP",
       "profissional": "Bruno Tanganelli Farah(BTF)"
@@ -8115,6 +8105,11 @@
       "numero_processo": "0017354-28.2026.5.16.0011",
       "cliente": "INPASA SINOP",
       "profissional": "Bruno Tanganelli Farah(BTF)"
+    },
+    {
+      "numero_processo": "0000919-40.2026.5.05.0122",
+      "cliente": "INPASA SINOP",
+      "profissional": "Rafael Camargo Felisbino(RCF)"
     },
     {
       "numero_processo": "0011291-78.2026.5.15.0119",
@@ -8133,6 +8128,11 @@
     },
     {
       "numero_processo": "0011426-06.2026.5.15.0050",
+      "cliente": "VITERRA RIO VERMELHO",
+      "profissional": "Rafael Yepez do Lago(RYL)"
+    },
+    {
+      "numero_processo": "0011433-95.2026.5.15.0050",
       "cliente": "VITERRA RIO VERMELHO",
       "profissional": "Rafael Yepez do Lago(RYL)"
     }
