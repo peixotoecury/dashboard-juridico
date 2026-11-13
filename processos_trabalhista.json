@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-13T16:00:21",
+  "atualizado_em": "2026-11-13T16:15:20",
   "kpis": {
     "total_andamento": 7653,
     "entradas_hoje": 3,
@@ -318,12 +318,12 @@
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2168,
-      "entradas_mes": 52,
+      "andamento": 2170,
+      "entradas_mes": 54,
       "saidas_mes": 14,
       "entradas_mes_anterior": 105,
       "saidas_mes_anterior": 77,
-      "valor_causa": 486436004.5
+      "valor_causa": 486740366.89
     },
     {
       "nome": "Grupo E1",
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 11,
-      "entradas_mes": 8,
+      "andamento": 9,
+      "entradas_mes": 6,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 2714120.83
+      "valor_causa": 2409758.44
     },
     {
       "nome": "Sócios",
@@ -682,21 +682,21 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 447,
-      "entradas_mes": 51,
+      "andamento": 449,
+      "entradas_mes": 53,
       "saidas_mes": 1,
       "entradas_mes_anterior": 35,
       "saidas_mes_anterior": 17,
-      "valor_causa": 103498630.64
+      "valor_causa": 103802993.03
     },
     {
       "nome": "Instrução",
-      "andamento": 2896,
-      "entradas_mes": 37,
+      "andamento": 2894,
+      "entradas_mes": 35,
       "saidas_mes": 21,
       "entradas_mes_anterior": 270,
       "saidas_mes_anterior": 76,
-      "valor_causa": 843898884.09
+      "valor_causa": 843594521.7
     },
     {
       "nome": "Sentença",
@@ -731,12 +731,12 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo E2",
-      "andamento": 189,
-      "entradas_mes": 28,
+      "andamento": 191,
+      "entradas_mes": 30,
       "saidas_mes": 0,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 13,
-      "valor_causa": 47043023.81
+      "valor_causa": 47347386.2
     },
     {
       "fase": "Ajuizamento",
@@ -1031,12 +1031,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 11,
-      "entradas_mes": 8,
+      "andamento": 9,
+      "entradas_mes": 6,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 2714120.83
+      "valor_causa": 2409758.44
     },
     {
       "fase": "Instrução",
@@ -3173,12 +3173,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "BP BIOENERGIA",
-      "andamento": 759,
-      "entradas_mes": 9,
+      "andamento": 760,
+      "entradas_mes": 10,
       "saidas_mes": 10,
       "entradas_mes_anterior": 32,
       "saidas_mes_anterior": 22,
-      "valor_causa": 216142178.09,
+      "valor_causa": 216347467.48,
       "alerta_entrada": false
     },
     {
@@ -3228,12 +3228,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "INPASA SINOP",
-      "andamento": 82,
-      "entradas_mes": 21,
+      "andamento": 83,
+      "entradas_mes": 22,
       "saidas_mes": 0,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 0,
-      "valor_causa": 14255497.29,
+      "valor_causa": 14354570.29,
       "alerta_entrada": true
     },
     {
@@ -3766,17 +3766,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "BP BIOENERGIA",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 1755924.37,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "andamento": 1,
       "entradas_mes": 0,
@@ -3788,6 +3777,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "BP BIOENERGIA",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1550634.98,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "PILKINGTON (NSG)",
       "andamento": 1,
       "entradas_mes": 1,
@@ -3795,17 +3795,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 29420.51,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "INPASA SINOP",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 99073.0,
       "alerta_entrada": false
     },
     {
@@ -4385,12 +4374,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Mariana Borges de Menezes Fávaro(MBF)",
-      "andamento": 255,
-      "entradas_mes": 3,
+      "andamento": 256,
+      "entradas_mes": 4,
       "saidas_mes": 3,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 8,
-      "valor_causa": 35694118.48
+      "valor_causa": 35899407.87
     },
     {
       "grupo": "Grupo E2",
@@ -4415,12 +4404,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Bruno Tanganelli Farah(BTF)",
-      "andamento": 68,
-      "entradas_mes": 14,
+      "andamento": 69,
+      "entradas_mes": 15,
       "saidas_mes": 0,
       "entradas_mes_anterior": 14,
       "saidas_mes_anterior": 0,
-      "valor_causa": 22831621.97
+      "valor_causa": 22930694.97
     },
     {
       "grupo": "Grupo E2",
@@ -4521,26 +4510,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 1000.0
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Bruno Tanganelli Farah(BTF)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 99073.0
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Mariana Borges de Menezes Fávaro(MBF)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 205289.39
     },
     {
       "grupo": "Sócios",
@@ -5316,16 +5285,6 @@
     },
     {
       "estado": "MG",
-      "cliente": "TELEFONICA BRASIL",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 220453.2
-    },
-    {
-      "estado": "MG",
       "cliente": "LAÉRCIO VALENTIM",
       "andamento": 1,
       "entradas_mes": 0,
@@ -5463,6 +5422,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 685000.0
+    },
+    {
+      "estado": "MG",
+      "cliente": "TELEFONICA BRASIL",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 220453.2
     },
     {
       "estado": "MS",
@@ -8024,11 +7993,6 @@
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
     },
     {
-      "numero_processo": "0011664-64.2026.5.15.0037",
-      "cliente": "BP BIOENERGIA",
-      "profissional": "Mariana Borges de Menezes Fávaro(MBF)"
-    },
-    {
       "numero_processo": "1014460-85.2026.5.02.0000",
       "cliente": "BRIDGESTONE",
       "profissional": "Bruna Cembranelli Fazenda (BCF)"
@@ -8057,11 +8021,6 @@
       "numero_processo": "0001760-47.2026.5.07.0003",
       "cliente": "COMPANHIA AIX",
       "profissional": "Vinicius da Silva Cerqueira(VSI)"
-    },
-    {
-      "numero_processo": "0026021-45.2026.5.24.0022",
-      "cliente": "INPASA SINOP",
-      "profissional": "Bruno Tanganelli Farah(BTF)"
     },
     {
       "numero_processo": "0011291-78.2026.5.15.0119",
