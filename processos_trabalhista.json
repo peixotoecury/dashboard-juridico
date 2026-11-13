@@ -1,11 +1,11 @@
 {
-  "atualizado_em": "2026-11-12T20:00:18",
+  "atualizado_em": "2026-11-13T08:00:21",
   "kpis": {
     "total_andamento": 7652,
-    "entradas_hoje": 4,
-    "saidas_hoje": 1,
-    "entradas_ontem": 13,
-    "saidas_ontem": 4,
+    "entradas_hoje": 0,
+    "saidas_hoje": 0,
+    "entradas_ontem": 4,
+    "saidas_ontem": 1,
     "entradas_mes": 99,
     "saidas_mes": 59,
     "entradas_mes_anterior": 325,
@@ -14,11 +14,6 @@
     "saldo_mes": 40
   },
   "serie_diaria": [
-    {
-      "data": "2026-09-14",
-      "entradas": 13,
-      "saidas": 10
-    },
     {
       "data": "2026-09-15",
       "entradas": 13,
@@ -313,6 +308,11 @@
       "data": "2026-11-12",
       "entradas": 4,
       "saidas": 1
+    },
+    {
+      "data": "2026-11-13",
+      "entradas": 0,
+      "saidas": 0
     }
   ],
   "por_grupo": [
@@ -682,12 +682,12 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 445,
+      "andamento": 444,
       "entradas_mes": 43,
       "saidas_mes": 1,
       "entradas_mes_anterior": 35,
       "saidas_mes_anterior": 13,
-      "valor_causa": 101390301.72
+      "valor_causa": 101209352.48
     },
     {
       "nome": "Instrução",
@@ -709,12 +709,12 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2952,
+      "andamento": 2953,
       "entradas_mes": 1,
       "saidas_mes": 17,
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 48,
-      "valor_causa": 676511720.61
+      "valor_causa": 676692669.85
     },
     {
       "nome": "Execução",
@@ -731,12 +731,12 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo E2",
-      "andamento": 190,
+      "andamento": 189,
       "entradas_mes": 23,
       "saidas_mes": 0,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 9,
-      "valor_causa": 46880821.13
+      "valor_causa": 46699871.89
     },
     {
       "fase": "Ajuizamento",
@@ -1181,12 +1181,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo E2",
-      "andamento": 587,
+      "andamento": 588,
       "entradas_mes": 0,
       "saidas_mes": 1,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 17,
-      "valor_causa": 184989215.29
+      "valor_causa": 185170164.53
     },
     {
       "fase": "Recurso",
@@ -1770,7 +1770,7 @@
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 10,
       "valor_causa": 44120705.68,
-      "alerta_entrada": true
+      "alerta_entrada": false
     },
     {
       "nome": "MAHLE METAL - SBC",
@@ -7987,16 +7987,6 @@
     }
   ],
   "clientes_com_alerta": [
-    {
-      "nome": "VITERRA RIO VERMELHO",
-      "andamento": 322,
-      "entradas_mes": 6,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 10,
-      "saidas_mes_anterior": 10,
-      "valor_causa": 44120705.68,
-      "alerta_entrada": true
-    },
     {
       "nome": "ROBERT BOSCH",
       "andamento": 190,
