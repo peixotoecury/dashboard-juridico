@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-13T17:15:18",
+  "atualizado_em": "2026-11-13T17:30:23",
   "kpis": {
-    "total_andamento": 7655,
+    "total_andamento": 7654,
     "entradas_hoje": 5,
-    "saidas_hoje": 2,
+    "saidas_hoje": 3,
     "entradas_ontem": 11,
     "saidas_ontem": 1,
     "entradas_mes": 113,
-    "saidas_mes": 62,
+    "saidas_mes": 63,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 231,
-    "valor_causa_total": 1796483036.23,
-    "saldo_mes": 51
+    "valor_causa_total": 1795610886.08,
+    "saldo_mes": 50
   },
   "serie_diaria": [
     {
@@ -312,7 +312,7 @@
     {
       "data": "2026-11-13",
       "entradas": 5,
-      "saidas": 2
+      "saidas": 3
     }
   ],
   "por_grupo": [
@@ -327,12 +327,12 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1789,
+      "andamento": 1788,
       "entradas_mes": 14,
-      "saidas_mes": 28,
+      "saidas_mes": 29,
       "entradas_mes_anterior": 60,
       "saidas_mes_anterior": 70,
-      "valor_causa": 309312734.29
+      "valor_causa": 308440584.14
     },
     {
       "nome": "Grupo B1",
@@ -446,12 +446,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5766,
+      "andamento": 5765,
       "entradas_mes": 60,
-      "saidas_mes": 51,
+      "saidas_mes": 52,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 166,
-      "valor_causa": 1386842956.73
+      "valor_causa": 1385970806.58
     },
     {
       "nome": "MG",
@@ -691,12 +691,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2892,
+      "andamento": 2891,
       "entradas_mes": 33,
-      "saidas_mes": 21,
+      "saidas_mes": 22,
       "entradas_mes_anterior": 270,
       "saidas_mes_anterior": 76,
-      "valor_causa": 843449521.7
+      "valor_causa": 842577371.55
     },
     {
       "nome": "Sentença",
@@ -941,12 +941,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 733,
+      "andamento": 732,
       "entradas_mes": 7,
-      "saidas_mes": 6,
+      "saidas_mes": 7,
       "entradas_mes_anterior": 30,
       "saidas_mes_anterior": 23,
-      "valor_causa": 157441285.53
+      "valor_causa": 156569135.38
     },
     {
       "fase": "Instrução",
@@ -1440,12 +1440,12 @@
     },
     {
       "nome": "Júlia Priego Lopes da Silva(JPL)",
-      "andamento": 281,
+      "andamento": 280,
       "entradas_mes": 0,
-      "saidas_mes": 3,
+      "saidas_mes": 4,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 9,
-      "valor_causa": 29929055.74
+      "valor_causa": 29056905.59
     },
     {
       "nome": "Rafael Camargo Felisbino(RCF)",
@@ -1874,12 +1874,12 @@
     },
     {
       "nome": "DELL COMPUTADORES",
-      "andamento": 87,
+      "andamento": 86,
       "entradas_mes": 0,
-      "saidas_mes": 3,
+      "saidas_mes": 4,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 6,
-      "valor_causa": 13771662.9,
+      "valor_causa": 12899512.75,
       "alerta_entrada": false
     },
     {
@@ -2975,12 +2975,12 @@
     {
       "grupo": "Grupo E1",
       "cliente": "DELL COMPUTADORES",
-      "andamento": 87,
+      "andamento": 86,
       "entradas_mes": 0,
-      "saidas_mes": 3,
+      "saidas_mes": 4,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 6,
-      "valor_causa": 13771662.9,
+      "valor_causa": 12899512.75,
       "alerta_entrada": false
     },
     {
@@ -4224,12 +4224,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Júlia Priego Lopes da Silva(JPL)",
-      "andamento": 281,
+      "andamento": 280,
       "entradas_mes": 0,
-      "saidas_mes": 3,
+      "saidas_mes": 4,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 9,
-      "valor_causa": 29929055.74
+      "valor_causa": 29056905.59
     },
     {
       "grupo": "Grupo E1",
@@ -6645,16 +6645,6 @@
     },
     {
       "estado": "SP",
-      "cliente": "DELL COMPUTADORES",
-      "andamento": 83,
-      "entradas_mes": 0,
-      "saidas_mes": 3,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 6,
-      "valor_causa": 12994383.02
-    },
-    {
-      "estado": "SP",
       "cliente": "T4F ENTRETENIMENTO",
       "andamento": 82,
       "entradas_mes": 0,
@@ -6662,6 +6652,16 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 1,
       "valor_causa": 9772654.64
+    },
+    {
+      "estado": "SP",
+      "cliente": "DELL COMPUTADORES",
+      "andamento": 82,
+      "entradas_mes": 0,
+      "saidas_mes": 4,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 6,
+      "valor_causa": 12122232.87
     },
     {
       "estado": "SP",
