@@ -1,7 +1,7 @@
 {
-  "atualizado_em": "2026-11-13T11:15:19",
+  "atualizado_em": "2026-11-13T11:30:20",
   "kpis": {
-    "total_andamento": 7654,
+    "total_andamento": 7653,
     "entradas_hoje": 0,
     "saidas_hoje": 0,
     "entradas_ontem": 5,
@@ -92,7 +92,7 @@
     {
       "data": "2026-09-30",
       "entradas": 14,
-      "saidas": 5
+      "saidas": 6
     },
     {
       "data": "2026-10-01",
@@ -336,7 +336,7 @@
     },
     {
       "nome": "Grupo B1",
-      "andamento": 1427,
+      "andamento": 1426,
       "entradas_mes": 11,
       "saidas_mes": 11,
       "entradas_mes_anterior": 43,
@@ -446,7 +446,7 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5767,
+      "andamento": 5766,
       "entradas_mes": 56,
       "saidas_mes": 49,
       "entradas_mes_anterior": 197,
@@ -718,7 +718,7 @@
     },
     {
       "nome": "Execução",
-      "andamento": 926,
+      "andamento": 925,
       "entradas_mes": 7,
       "saidas_mes": 12,
       "entradas_mes_anterior": 5,
@@ -861,7 +861,7 @@
     {
       "fase": "Execução",
       "grupo": "Grupo B1",
-      "andamento": 174,
+      "andamento": 173,
       "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
@@ -1385,15 +1385,6 @@
       "valor_causa": 74149406.64
     },
     {
-      "nome": "Beatriz Santiago de Souza(BSO)",
-      "andamento": 306,
-      "entradas_mes": 3,
-      "saidas_mes": 2,
-      "entradas_mes_anterior": 12,
-      "saidas_mes_anterior": 7,
-      "valor_causa": 63875847.34
-    },
-    {
       "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
       "andamento": 305,
       "entradas_mes": 4,
@@ -1401,6 +1392,15 @@
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 7,
       "valor_causa": 162422009.04
+    },
+    {
+      "nome": "Beatriz Santiago de Souza(BSO)",
+      "andamento": 305,
+      "entradas_mes": 3,
+      "saidas_mes": 2,
+      "entradas_mes_anterior": 12,
+      "saidas_mes_anterior": 7,
+      "valor_causa": 63875847.34
     },
     {
       "nome": "Bianca Bolanhi Camacho(BBO)",
@@ -1694,7 +1694,7 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1430,
+      "andamento": 1429,
       "entradas_mes": 14,
       "saidas_mes": 11,
       "entradas_mes_anterior": 43,
@@ -2326,7 +2326,7 @@
     {
       "grupo": "Grupo B1",
       "cliente": "BRIDGESTONE",
-      "andamento": 1427,
+      "andamento": 1426,
       "entradas_mes": 11,
       "saidas_mes": 11,
       "entradas_mes_anterior": 43,
@@ -3967,7 +3967,7 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Beatriz Santiago de Souza(BSO)",
-      "andamento": 305,
+      "andamento": 304,
       "entradas_mes": 2,
       "saidas_mes": 2,
       "entradas_mes_anterior": 12,
@@ -5118,16 +5118,6 @@
     },
     {
       "estado": "GO",
-      "cliente": "EUROCHEM SALITRE",
-      "andamento": 2,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 207130.92
-    },
-    {
-      "estado": "GO",
       "cliente": "FERRERO DO BRASIL",
       "andamento": 2,
       "entradas_mes": 0,
@@ -5135,6 +5125,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 551401.12
+    },
+    {
+      "estado": "GO",
+      "cliente": "EUROCHEM SALITRE",
+      "andamento": 2,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 207130.92
     },
     {
       "estado": "GO",
@@ -6599,7 +6599,7 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1404,
+      "andamento": 1403,
       "entradas_mes": 13,
       "saidas_mes": 11,
       "entradas_mes_anterior": 43,
