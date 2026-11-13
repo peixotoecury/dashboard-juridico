@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-13T11:30:20",
+  "atualizado_em": "2026-11-13T11:45:21",
   "kpis": {
     "total_andamento": 7653,
     "entradas_hoje": 0,
@@ -327,12 +327,12 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1789,
-      "entradas_mes": 13,
+      "andamento": 1790,
+      "entradas_mes": 14,
       "saidas_mes": 27,
       "entradas_mes_anterior": 60,
       "saidas_mes_anterior": 70,
-      "valor_causa": 308832733.53
+      "valor_causa": 309291432.32
     },
     {
       "nome": "Grupo B1",
@@ -363,12 +363,12 @@
     },
     {
       "nome": "Grupo C1",
-      "andamento": 328,
-      "entradas_mes": 9,
+      "andamento": 329,
+      "entradas_mes": 10,
       "saidas_mes": 0,
       "entradas_mes_anterior": 36,
       "saidas_mes_anterior": 0,
-      "valor_causa": 185893620.78
+      "valor_causa": 186578620.78
     },
     {
       "nome": "Grupo C2",
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 12,
-      "entradas_mes": 9,
+      "andamento": 10,
+      "entradas_mes": 7,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 4622012.62
+      "valor_causa": 3478313.83
     },
     {
       "nome": "Sócios",
@@ -682,21 +682,21 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 443,
-      "entradas_mes": 43,
+      "andamento": 445,
+      "entradas_mes": 45,
       "saidas_mes": 1,
       "entradas_mes_anterior": 35,
       "saidas_mes_anterior": 13,
-      "valor_causa": 101151595.28
+      "valor_causa": 102295294.07
     },
     {
       "nome": "Instrução",
-      "andamento": 2899,
-      "entradas_mes": 37,
+      "andamento": 2897,
+      "entradas_mes": 35,
       "saidas_mes": 19,
       "entradas_mes_anterior": 270,
       "saidas_mes_anterior": 75,
-      "valor_causa": 846397460.64
+      "valor_causa": 845253761.85
     },
     {
       "nome": "Sentença",
@@ -751,22 +751,22 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo E1",
-      "andamento": 76,
-      "entradas_mes": 6,
+      "andamento": 77,
+      "entradas_mes": 7,
       "saidas_mes": 0,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 0,
-      "valor_causa": 19200686.71
+      "valor_causa": 19659385.5
     },
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo C1",
-      "andamento": 38,
-      "entradas_mes": 5,
+      "andamento": 39,
+      "entradas_mes": 6,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 19403786.98
+      "valor_causa": 20088786.98
     },
     {
       "fase": "Ajuizamento",
@@ -1031,12 +1031,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 12,
-      "entradas_mes": 9,
+      "andamento": 10,
+      "entradas_mes": 7,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 4622012.62
+      "valor_causa": 3478313.83
     },
     {
       "fase": "Instrução",
@@ -2491,12 +2491,12 @@
     {
       "grupo": "Grupo C1",
       "cliente": "COMPANHIA AIX",
-      "andamento": 121,
-      "entradas_mes": 6,
+      "andamento": 122,
+      "entradas_mes": 7,
       "saidas_mes": 0,
       "entradas_mes_anterior": 27,
       "saidas_mes_anterior": 0,
-      "valor_causa": 22644773.72,
+      "valor_causa": 23329773.72,
       "alerta_entrada": false
     },
     {
@@ -3007,6 +3007,17 @@
     },
     {
       "grupo": "Grupo E1",
+      "cliente": "MAHLE - COMPRESSORES",
+      "andamento": 7,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 4,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1587485.1,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Grupo E1",
       "cliente": "CORREIOS E TELEGRAFO",
       "andamento": 6,
       "entradas_mes": 0,
@@ -3014,17 +3025,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 3382573.72,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Grupo E1",
-      "cliente": "MAHLE - COMPRESSORES",
-      "andamento": 6,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 4,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 1128786.31,
       "alerta_entrada": false
     },
     {
@@ -3744,17 +3744,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "COMPANHIA AIX",
-      "andamento": 3,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 2,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 715000.0,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "BRIDGESTONE",
       "andamento": 3,
       "entradas_mes": 3,
@@ -3763,6 +3752,17 @@
       "saidas_mes_anterior": 0,
       "valor_causa": 1290793.72,
       "alerta_entrada": true
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "COMPANHIA AIX",
+      "andamento": 2,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 2,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 30000.0,
+      "alerta_entrada": false
     },
     {
       "grupo": "Sem grupo",
@@ -3817,17 +3817,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 433116.46,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "MAHLE - COMPRESSORES",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 458698.79,
       "alerta_entrada": false
     },
     {
@@ -4127,12 +4116,12 @@
     {
       "grupo": "Grupo C1",
       "profissional": "Vinicius da Silva Cerqueira(VSI)",
-      "andamento": 163,
-      "entradas_mes": 7,
+      "andamento": 164,
+      "entradas_mes": 8,
       "saidas_mes": 0,
       "entradas_mes_anterior": 28,
       "saidas_mes_anterior": 0,
-      "valor_causa": 60884017.22
+      "valor_causa": 61569017.22
     },
     {
       "grupo": "Grupo C1",
@@ -4267,12 +4256,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Paloma da Silva Santos(PSI)",
-      "andamento": 248,
-      "entradas_mes": 1,
+      "andamento": 249,
+      "entradas_mes": 2,
       "saidas_mes": 7,
       "entradas_mes_anterior": 15,
       "saidas_mes_anterior": 10,
-      "valor_causa": 56348491.82
+      "valor_causa": 56807190.61
     },
     {
       "grupo": "Grupo E1",
@@ -4487,12 +4476,12 @@
     {
       "grupo": "Sem grupo",
       "profissional": "Vinicius da Silva Cerqueira(VSI)",
-      "andamento": 3,
-      "entradas_mes": 1,
+      "andamento": 2,
+      "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
-      "valor_causa": 715000.0
+      "valor_causa": 30000.0
     },
     {
       "grupo": "Sem grupo",
@@ -4563,16 +4552,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 433116.46
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Paloma da Silva Santos(PSI)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 458698.79
     },
     {
       "grupo": "Sócios",
@@ -8081,19 +8060,9 @@
       "profissional": "Vinicius da Silva Cerqueira(VSI)"
     },
     {
-      "numero_processo": "0011113-04.2026.5.03.0107",
-      "cliente": "COMPANHIA AIX",
-      "profissional": "Vinicius da Silva Cerqueira(VSI)"
-    },
-    {
       "numero_processo": "0001626-08.2026.5.18.0102",
       "cliente": "INPASA SINOP",
       "profissional": "Bruno Tanganelli Farah(BTF)"
-    },
-    {
-      "numero_processo": "0012395-75.2026.5.15.0032",
-      "cliente": "MAHLE - COMPRESSORES",
-      "profissional": "Paloma da Silva Santos(PSI)"
     },
     {
       "numero_processo": "0011291-78.2026.5.15.0119",
