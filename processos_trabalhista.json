@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-13T17:00:19",
+  "atualizado_em": "2026-11-13T17:15:18",
   "kpis": {
-    "total_andamento": 7654,
-    "entradas_hoje": 4,
+    "total_andamento": 7655,
+    "entradas_hoje": 5,
     "saidas_hoje": 2,
     "entradas_ontem": 11,
     "saidas_ontem": 1,
-    "entradas_mes": 112,
+    "entradas_mes": 113,
     "saidas_mes": 62,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 231,
     "valor_causa_total": 1796483036.23,
-    "saldo_mes": 50
+    "saldo_mes": 51
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-11-13",
-      "entradas": 4,
+      "entradas": 5,
       "saidas": 2
     }
   ],
@@ -390,8 +390,8 @@
     },
     {
       "nome": "Grupo A3",
-      "andamento": 151,
-      "entradas_mes": 3,
+      "andamento": 152,
+      "entradas_mes": 4,
       "saidas_mes": 1,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 3,
@@ -562,6 +562,15 @@
       "valor_causa": 13837030.09
     },
     {
+      "nome": "DF",
+      "andamento": 30,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 16362883.23
+    },
+    {
       "nome": "ES",
       "andamento": 29,
       "entradas_mes": 1,
@@ -569,15 +578,6 @@
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 3,
       "valor_causa": 4331626.13
-    },
-    {
-      "nome": "DF",
-      "andamento": 29,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 16362883.23
     },
     {
       "nome": "MA",
@@ -709,8 +709,8 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2954,
-      "entradas_mes": 3,
+      "andamento": 2955,
+      "entradas_mes": 4,
       "saidas_mes": 17,
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 48,
@@ -1231,8 +1231,8 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo A3",
-      "andamento": 13,
-      "entradas_mes": 1,
+      "andamento": 14,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
@@ -1557,8 +1557,8 @@
     },
     {
       "nome": "Sofia Freire (SOF)",
-      "andamento": 118,
-      "entradas_mes": 3,
+      "andamento": 119,
+      "entradas_mes": 4,
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 3,
@@ -2215,6 +2215,17 @@
     },
     {
       "grupo": "Grupo A3",
+      "cliente": "CONEXIS BRASIL",
+      "andamento": 2,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 675000.0,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Grupo A3",
       "cliente": "FIS SOLUCÕES",
       "andamento": 1,
       "entradas_mes": 0,
@@ -2266,17 +2277,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Grupo A3",
-      "cliente": "CONEXIS BRASIL",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 675000.0,
       "alerta_entrada": false
     },
     {
@@ -3854,8 +3854,8 @@
     {
       "grupo": "Grupo A3",
       "profissional": "Sofia Freire (SOF)",
-      "andamento": 116,
-      "entradas_mes": 3,
+      "andamento": 117,
+      "entradas_mes": 4,
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 3,
@@ -4912,6 +4912,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 600000.0
+    },
+    {
+      "estado": "DF",
+      "cliente": "CONEXIS BRASIL",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 0.0
     },
     {
       "estado": "ES",
