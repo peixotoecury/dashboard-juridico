@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-13T13:15:18",
+  "atualizado_em": "2026-11-13T13:45:18",
   "kpis": {
-    "total_andamento": 7657,
-    "entradas_hoje": 0,
+    "total_andamento": 7661,
+    "entradas_hoje": 2,
     "saidas_hoje": 0,
-    "entradas_ontem": 9,
+    "entradas_ontem": 11,
     "saidas_ontem": 1,
-    "entradas_mes": 106,
+    "entradas_mes": 110,
     "saidas_mes": 60,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 224,
-    "valor_causa_total": 1796390056.24,
-    "saldo_mes": 46
+    "valor_causa_total": 1796746738.34,
+    "saldo_mes": 50
   },
   "serie_diaria": [
     {
@@ -306,12 +306,12 @@
     },
     {
       "data": "2026-11-12",
-      "entradas": 9,
+      "entradas": 11,
       "saidas": 1
     },
     {
       "data": "2026-11-13",
-      "entradas": 0,
+      "entradas": 2,
       "saidas": 0
     }
   ],
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 11,
-      "entradas_mes": 8,
+      "andamento": 15,
+      "entradas_mes": 12,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 2469374.47
+      "valor_causa": 2826056.57
     },
     {
       "nome": "Sócios",
@@ -446,12 +446,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5768,
-      "entradas_mes": 58,
+      "andamento": 5771,
+      "entradas_mes": 61,
       "saidas_mes": 49,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 164,
-      "valor_causa": 1386756471.37
+      "valor_causa": 1387014080.47
     },
     {
       "nome": "MG",
@@ -482,12 +482,12 @@
     },
     {
       "nome": "MS",
-      "andamento": 117,
-      "entradas_mes": 1,
+      "andamento": 118,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 3,
-      "valor_causa": 22708414.13
+      "valor_causa": 22807487.13
     },
     {
       "nome": "RJ",
@@ -691,12 +691,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2896,
-      "entradas_mes": 34,
+      "andamento": 2900,
+      "entradas_mes": 38,
       "saidas_mes": 19,
       "entradas_mes_anterior": 270,
       "saidas_mes_anterior": 75,
-      "valor_causa": 843663418.59
+      "valor_causa": 844020100.69
     },
     {
       "nome": "Sentença",
@@ -1030,6 +1030,16 @@
     },
     {
       "fase": "Instrução",
+      "grupo": "Sem grupo",
+      "andamento": 14,
+      "entradas_mes": 11,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 3,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 2767854.11
+    },
+    {
+      "fase": "Instrução",
       "grupo": "Grupo A2",
       "andamento": 12,
       "entradas_mes": 0,
@@ -1037,16 +1047,6 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 1,
       "valor_causa": 7695462.66
-    },
-    {
-      "fase": "Instrução",
-      "grupo": "Sem grupo",
-      "andamento": 10,
-      "entradas_mes": 7,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 3,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 2411172.01
     },
     {
       "fase": "Instrução",
@@ -1342,12 +1342,12 @@
   "por_profissional": [
     {
       "nome": "Nicolau Rafael Guimarães Coelho(NRG)",
-      "andamento": 480,
-      "entradas_mes": 3,
+      "andamento": 481,
+      "entradas_mes": 4,
       "saidas_mes": 9,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 22,
-      "valor_causa": 99664161.91
+      "valor_causa": 99665161.91
     },
     {
       "nome": "Rafael Yepez do Lago(RYL)",
@@ -1486,12 +1486,12 @@
     },
     {
       "nome": "Mariana Borges de Menezes Fávaro(MBF)",
-      "andamento": 255,
-      "entradas_mes": 3,
+      "andamento": 256,
+      "entradas_mes": 4,
       "saidas_mes": 3,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 8,
-      "valor_causa": 35694118.48
+      "valor_causa": 35899407.87
     },
     {
       "nome": "Paloma da Silva Santos(PSI)",
@@ -1585,12 +1585,12 @@
     },
     {
       "nome": "Bruno Tanganelli Farah(BTF)",
-      "andamento": 67,
-      "entradas_mes": 13,
+      "andamento": 69,
+      "entradas_mes": 15,
       "saidas_mes": 0,
       "entradas_mes_anterior": 14,
       "saidas_mes_anterior": 0,
-      "valor_causa": 22780302.26
+      "valor_causa": 22930694.97
     },
     {
       "nome": "Thais Catharine Cardozo Esteves(TCE)",
@@ -1704,22 +1704,22 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1429,
-      "entradas_mes": 14,
+      "andamento": 1430,
+      "entradas_mes": 15,
       "saidas_mes": 11,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 42,
-      "valor_causa": 327701553.62,
+      "valor_causa": 327702553.62,
       "alerta_entrada": false
     },
     {
       "nome": "BP BIOENERGIA",
-      "andamento": 760,
-      "entradas_mes": 10,
+      "andamento": 761,
+      "entradas_mes": 11,
       "saidas_mes": 10,
       "entradas_mes_anterior": 32,
       "saidas_mes_anterior": 22,
-      "valor_causa": 217692813.07,
+      "valor_causa": 217898102.46,
       "alerta_entrada": false
     },
     {
@@ -1894,12 +1894,12 @@
     },
     {
       "nome": "INPASA SINOP",
-      "andamento": 81,
-      "entradas_mes": 20,
+      "andamento": 83,
+      "entradas_mes": 22,
       "saidas_mes": 0,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 0,
-      "valor_causa": 14204177.58,
+      "valor_causa": 14354570.29,
       "alerta_entrada": true
     }
   ],
@@ -3754,6 +3754,28 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "INPASA SINOP",
+      "andamento": 4,
+      "entradas_mes": 4,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 215012.3,
+      "alerta_entrada": true
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "BRIDGESTONE",
+      "andamento": 3,
+      "entradas_mes": 3,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 547244.44,
+      "alerta_entrada": true
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "COMPANHIA AIX",
       "andamento": 2,
       "entradas_mes": 0,
@@ -3765,24 +3787,13 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "BRIDGESTONE",
+      "cliente": "BP BIOENERGIA",
       "andamento": 2,
       "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 546244.44,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "INPASA SINOP",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 64619.59,
+      "valor_causa": 1755924.37,
       "alerta_entrada": false
     },
     {
@@ -3794,17 +3805,6 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
       "valor_causa": 108458.51,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "BP BIOENERGIA",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 1550634.98,
       "alerta_entrada": false
     },
     {
@@ -4496,6 +4496,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Bruno Tanganelli Farah(BTF)",
+      "andamento": 4,
+      "entradas_mes": 4,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 215012.3
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
       "andamento": 3,
       "entradas_mes": 3,
@@ -4513,16 +4523,6 @@
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
       "valor_causa": 30000.0
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Bruno Tanganelli Farah(BTF)",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 64619.59
     },
     {
       "grupo": "Sem grupo",
@@ -4563,6 +4563,26 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 58878.17
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Nicolau Rafael Guimarães Coelho(NRG)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1000.0
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Mariana Borges de Menezes Fávaro(MBF)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 205289.39
     },
     {
       "grupo": "Sócios",
@@ -5509,12 +5529,12 @@
     {
       "estado": "MS",
       "cliente": "INPASA SINOP",
-      "andamento": 15,
-      "entradas_mes": 0,
+      "andamento": 16,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
-      "valor_causa": 5060436.29
+      "valor_causa": 5159509.29
     },
     {
       "estado": "MS",
@@ -6589,12 +6609,12 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1403,
-      "entradas_mes": 13,
+      "andamento": 1404,
+      "entradas_mes": 14,
       "saidas_mes": 11,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 40,
-      "valor_causa": 316071433.83
+      "valor_causa": 316072433.83
     },
     {
       "estado": "SP",
@@ -6619,12 +6639,12 @@
     {
       "estado": "SP",
       "cliente": "BP BIOENERGIA",
-      "andamento": 423,
-      "entradas_mes": 7,
+      "andamento": 424,
+      "entradas_mes": 8,
       "saidas_mes": 6,
       "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 13,
-      "valor_causa": 104600523.1
+      "valor_causa": 104805812.49
     },
     {
       "estado": "SP",
@@ -7348,6 +7368,16 @@
     },
     {
       "estado": "SP",
+      "cliente": "INPASA SINOP",
+      "andamento": 2,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 649052.65
+    },
+    {
+      "estado": "SP",
       "cliente": "HEWLETT-PACKARD - HP",
       "andamento": 2,
       "entradas_mes": 0,
@@ -7708,16 +7738,6 @@
     },
     {
       "estado": "SP",
-      "cliente": "INPASA SINOP",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 597732.94
-    },
-    {
-      "estado": "SP",
       "cliente": "COLEGIO INOVATI",
       "andamento": 1,
       "entradas_mes": 0,
@@ -8030,12 +8050,12 @@
     },
     {
       "nome": "INPASA SINOP",
-      "andamento": 81,
-      "entradas_mes": 20,
+      "andamento": 83,
+      "entradas_mes": 22,
       "saidas_mes": 0,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 0,
-      "valor_causa": 14204177.58,
+      "valor_causa": 14354570.29,
       "alerta_entrada": true
     }
   ],
@@ -8046,6 +8066,11 @@
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
     },
     {
+      "numero_processo": "0011664-64.2026.5.15.0037",
+      "cliente": "BP BIOENERGIA",
+      "profissional": "Mariana Borges de Menezes Fávaro(MBF)"
+    },
+    {
       "numero_processo": "1014460-85.2026.5.02.0000",
       "cliente": "BRIDGESTONE",
       "profissional": "Bruna Cembranelli Fazenda (BCF)"
@@ -8054,6 +8079,11 @@
       "numero_processo": "1002293-04.2026.5.02.0431",
       "cliente": "BRIDGESTONE",
       "profissional": "Beatriz Santiago de Souza(BSO)"
+    },
+    {
+      "numero_processo": "1008925-78.2026.5.02.0000",
+      "cliente": "BRIDGESTONE",
+      "profissional": "Nicolau Rafael Guimarães Coelho(NRG)"
     },
     {
       "numero_processo": "1001709-94.2026.5.02.0411",
@@ -8071,7 +8101,17 @@
       "profissional": "Vinicius da Silva Cerqueira(VSI)"
     },
     {
+      "numero_processo": "0026021-45.2026.5.24.0022",
+      "cliente": "INPASA SINOP",
+      "profissional": "Bruno Tanganelli Farah(BTF)"
+    },
+    {
       "numero_processo": "0001535-17.2026.5.23.0121",
+      "cliente": "INPASA SINOP",
+      "profissional": "Bruno Tanganelli Farah(BTF)"
+    },
+    {
+      "numero_processo": "0001575-97.2026.5.18.0101",
       "cliente": "INPASA SINOP",
       "profissional": "Bruno Tanganelli Farah(BTF)"
     },
