@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-13T13:00:20",
+  "atualizado_em": "2026-11-13T13:15:18",
   "kpis": {
-    "total_andamento": 7654,
+    "total_andamento": 7657,
     "entradas_hoje": 0,
     "saidas_hoje": 0,
-    "entradas_ontem": 6,
+    "entradas_ontem": 9,
     "saidas_ontem": 1,
-    "entradas_mes": 103,
+    "entradas_mes": 106,
     "saidas_mes": 60,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 224,
-    "valor_causa_total": 1796244318.38,
-    "saldo_mes": 43
+    "valor_causa_total": 1796390056.24,
+    "saldo_mes": 46
   },
   "serie_diaria": [
     {
@@ -306,7 +306,7 @@
     },
     {
       "data": "2026-11-12",
-      "entradas": 6,
+      "entradas": 9,
       "saidas": 1
     },
     {
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 8,
-      "entradas_mes": 5,
+      "andamento": 11,
+      "entradas_mes": 8,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 2323636.61
+      "valor_causa": 2469374.47
     },
     {
       "nome": "Sócios",
@@ -446,12 +446,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5767,
-      "entradas_mes": 57,
+      "andamento": 5768,
+      "entradas_mes": 58,
       "saidas_mes": 49,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 164,
-      "valor_causa": 1386675353.1
+      "valor_causa": 1386756471.37
     },
     {
       "nome": "MG",
@@ -518,12 +518,12 @@
     },
     {
       "nome": "MT",
-      "andamento": 66,
-      "entradas_mes": 3,
+      "andamento": 68,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 3,
-      "valor_causa": 10205827.13
+      "valor_causa": 10270446.72
     },
     {
       "nome": "—",
@@ -682,21 +682,21 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 448,
-      "entradas_mes": 48,
+      "andamento": 449,
+      "entradas_mes": 49,
       "saidas_mes": 1,
       "entradas_mes_anterior": 35,
       "saidas_mes_anterior": 13,
-      "valor_causa": 103508849.46
+      "valor_causa": 103567051.92
     },
     {
       "nome": "Instrução",
-      "andamento": 2894,
-      "entradas_mes": 32,
+      "andamento": 2896,
+      "entradas_mes": 34,
       "saidas_mes": 19,
       "entradas_mes_anterior": 270,
       "saidas_mes_anterior": 75,
-      "valor_causa": 843575883.19
+      "valor_causa": 843663418.59
     },
     {
       "nome": "Sentença",
@@ -837,6 +837,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 60000.0
+    },
+    {
+      "fase": "Ajuizamento",
+      "grupo": "Sem grupo",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 58202.46
     },
     {
       "fase": "Execução",
@@ -1031,12 +1041,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 8,
-      "entradas_mes": 5,
+      "andamento": 10,
+      "entradas_mes": 7,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 2323636.61
+      "valor_causa": 2411172.01
     },
     {
       "fase": "Instrução",
@@ -1386,12 +1396,12 @@
     },
     {
       "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 305,
-      "entradas_mes": 4,
+      "andamento": 306,
+      "entradas_mes": 5,
       "saidas_mes": 1,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 7,
-      "valor_causa": 162422009.04
+      "valor_causa": 162503127.31
     },
     {
       "nome": "Beatriz Santiago de Souza(BSO)",
@@ -1575,12 +1585,12 @@
     },
     {
       "nome": "Bruno Tanganelli Farah(BTF)",
-      "andamento": 65,
-      "entradas_mes": 11,
+      "andamento": 67,
+      "entradas_mes": 13,
       "saidas_mes": 0,
       "entradas_mes_anterior": 14,
       "saidas_mes_anterior": 0,
-      "valor_causa": 22715682.67
+      "valor_causa": 22780302.26
     },
     {
       "nome": "Thais Catharine Cardozo Esteves(TCE)",
@@ -1884,12 +1894,12 @@
     },
     {
       "nome": "INPASA SINOP",
-      "andamento": 79,
-      "entradas_mes": 18,
+      "andamento": 81,
+      "entradas_mes": 20,
       "saidas_mes": 0,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 0,
-      "valor_causa": 14139557.99,
+      "valor_causa": 14204177.58,
       "alerta_entrada": true
     }
   ],
@@ -3766,6 +3776,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "INPASA SINOP",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 64619.59,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "andamento": 1,
       "entradas_mes": 0,
@@ -3806,6 +3827,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 58878.17,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "MITRE VENDAS",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 81118.27,
       "alerta_entrada": false
     },
     {
@@ -4464,6 +4496,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
+      "andamento": 3,
+      "entradas_mes": 3,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 1661173.76
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Vinicius da Silva Cerqueira(VSI)",
       "andamento": 2,
       "entradas_mes": 0,
@@ -4474,13 +4516,13 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
+      "profissional": "Bruno Tanganelli Farah(BTF)",
       "andamento": 2,
       "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 1580055.49
+      "saidas_mes_anterior": 0,
+      "valor_causa": 64619.59
     },
     {
       "grupo": "Sem grupo",
@@ -5537,12 +5579,12 @@
     {
       "estado": "MT",
       "cliente": "INPASA SINOP",
-      "andamento": 41,
-      "entradas_mes": 3,
+      "andamento": 43,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
-      "valor_causa": 6661394.36
+      "valor_causa": 6726013.95
     },
     {
       "estado": "MT",
@@ -6916,6 +6958,16 @@
     },
     {
       "estado": "SP",
+      "cliente": "MITRE VENDAS",
+      "andamento": 7,
+      "entradas_mes": 1,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1305329.7
+    },
+    {
+      "estado": "SP",
       "cliente": "MAHLE - COMPRESSORES",
       "andamento": 7,
       "entradas_mes": 1,
@@ -6943,16 +6995,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 3809650.95
-    },
-    {
-      "estado": "SP",
-      "cliente": "MITRE VENDAS",
-      "andamento": 6,
-      "entradas_mes": 0,
-      "saidas_mes": 1,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 1224211.43
     },
     {
       "estado": "SP",
@@ -7988,12 +8030,12 @@
     },
     {
       "nome": "INPASA SINOP",
-      "andamento": 79,
-      "entradas_mes": 18,
+      "andamento": 81,
+      "entradas_mes": 20,
       "saidas_mes": 0,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 0,
-      "valor_causa": 14139557.99,
+      "valor_causa": 14204177.58,
       "alerta_entrada": true
     }
   ],
@@ -8027,6 +8069,21 @@
       "numero_processo": "0001683-94.2026.5.09.0128",
       "cliente": "COMPANHIA AIX",
       "profissional": "Vinicius da Silva Cerqueira(VSI)"
+    },
+    {
+      "numero_processo": "0001535-17.2026.5.23.0121",
+      "cliente": "INPASA SINOP",
+      "profissional": "Bruno Tanganelli Farah(BTF)"
+    },
+    {
+      "numero_processo": "0001502-27.2026.5.23.0121",
+      "cliente": "INPASA SINOP",
+      "profissional": "Bruno Tanganelli Farah(BTF)"
+    },
+    {
+      "numero_processo": "1001947-69.2026.5.02.0070",
+      "cliente": "MITRE VENDAS",
+      "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
     },
     {
       "numero_processo": "0011291-78.2026.5.15.0119",
