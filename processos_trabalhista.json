@@ -1,11 +1,11 @@
 {
-  "atualizado_em": "2026-11-13T20:00:18",
+  "atualizado_em": "2026-11-14T08:00:26",
   "kpis": {
     "total_andamento": 7653,
-    "entradas_hoje": 5,
-    "saidas_hoje": 4,
-    "entradas_ontem": 11,
-    "saidas_ontem": 1,
+    "entradas_hoje": 0,
+    "saidas_hoje": 0,
+    "entradas_ontem": 5,
+    "saidas_ontem": 4,
     "entradas_mes": 113,
     "saidas_mes": 64,
     "entradas_mes_anterior": 325,
@@ -14,11 +14,6 @@
     "saldo_mes": 49
   },
   "serie_diaria": [
-    {
-      "data": "2026-09-15",
-      "entradas": 13,
-      "saidas": 15
-    },
     {
       "data": "2026-09-16",
       "entradas": 12,
@@ -313,6 +308,11 @@
       "data": "2026-11-13",
       "entradas": 5,
       "saidas": 4
+    },
+    {
+      "data": "2026-11-14",
+      "entradas": 0,
+      "saidas": 0
     }
   ],
   "por_grupo": [
@@ -1860,7 +1860,7 @@
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 12,
       "valor_causa": 13496089.46,
-      "alerta_entrada": true
+      "alerta_entrada": false
     },
     {
       "nome": "WHIRLPOOL S.A.",
@@ -3223,7 +3223,7 @@
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 12,
       "valor_causa": 13496089.46,
-      "alerta_entrada": true
+      "alerta_entrada": false
     },
     {
       "grupo": "Grupo E2",
@@ -7963,16 +7963,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
       "valor_causa": 15422884.73,
-      "alerta_entrada": true
-    },
-    {
-      "nome": "EUROCHEM FTO MATRIZ",
-      "andamento": 103,
-      "entradas_mes": 6,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 9,
-      "saidas_mes_anterior": 12,
-      "valor_causa": 13496089.46,
       "alerta_entrada": true
     },
     {
