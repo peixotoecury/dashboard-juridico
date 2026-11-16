@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-16T09:30:22",
+  "atualizado_em": "2026-11-16T09:45:24",
   "kpis": {
-    "total_andamento": 7656,
+    "total_andamento": 7658,
     "entradas_hoje": 0,
     "saidas_hoje": 1,
     "entradas_ontem": 0,
     "saidas_ontem": 1,
-    "entradas_mes": 118,
+    "entradas_mes": 120,
     "saidas_mes": 66,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 231,
-    "valor_causa_total": 1796746905.35,
-    "saldo_mes": 52
+    "valor_causa_total": 1797084945.9,
+    "saldo_mes": 54
   },
   "serie_diaria": [
     {
@@ -296,7 +296,7 @@
     },
     {
       "data": "2026-11-13",
-      "entradas": 9,
+      "entradas": 11,
       "saidas": 4
     },
     {
@@ -354,12 +354,12 @@
     },
     {
       "nome": "Grupo B3",
-      "andamento": 581,
-      "entradas_mes": 7,
+      "andamento": 582,
+      "entradas_mes": 8,
       "saidas_mes": 4,
       "entradas_mes_anterior": 35,
       "saidas_mes_anterior": 12,
-      "valor_causa": 113417882.62
+      "valor_causa": 113915771.37
     },
     {
       "nome": "Grupo C1",
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 12,
-      "entradas_mes": 9,
+      "andamento": 13,
+      "entradas_mes": 10,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 3418861.76
+      "valor_causa": 3259013.56
     },
     {
       "nome": "Sócios",
@@ -446,12 +446,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5769,
-      "entradas_mes": 65,
+      "andamento": 5771,
+      "entradas_mes": 67,
       "saidas_mes": 53,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 166,
-      "valor_causa": 1387117382.0
+      "valor_causa": 1387455422.55
     },
     {
       "nome": "MG",
@@ -691,12 +691,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2889,
-      "entradas_mes": 38,
+      "andamento": 2890,
+      "entradas_mes": 40,
       "saidas_mes": 23,
       "entradas_mes_anterior": 270,
       "saidas_mes_anterior": 76,
-      "valor_causa": 842264728.97
+      "valor_causa": 842202769.52
     },
     {
       "nome": "Sentença",
@@ -714,16 +714,16 @@
       "saidas_mes": 17,
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 48,
-      "valor_causa": 678033982.09
+      "valor_causa": 678218005.89
     },
     {
       "nome": "Execução",
-      "andamento": 922,
+      "andamento": 923,
       "entradas_mes": 7,
       "saidas_mes": 14,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 50,
-      "valor_causa": 133308636.88
+      "valor_causa": 133524613.08
     }
   ],
   "por_fase_outras": 404,
@@ -861,12 +861,12 @@
     {
       "fase": "Execução",
       "grupo": "Grupo B1",
-      "andamento": 174,
+      "andamento": 175,
       "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 20,
-      "valor_causa": 20573143.12
+      "valor_causa": 20789119.32
     },
     {
       "fase": "Execução",
@@ -951,12 +951,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B1",
-      "andamento": 399,
+      "andamento": 398,
       "entradas_mes": 3,
       "saidas_mes": 7,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 14,
-      "valor_causa": 131070545.97
+      "valor_causa": 130670545.97
     },
     {
       "fase": "Instrução",
@@ -981,12 +981,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B3",
-      "andamento": 156,
-      "entradas_mes": 4,
+      "andamento": 157,
+      "entradas_mes": 5,
       "saidas_mes": 1,
       "entradas_mes_anterior": 31,
       "saidas_mes_anterior": 4,
-      "valor_causa": 27957547.81
+      "valor_causa": 28455436.56
     },
     {
       "fase": "Instrução",
@@ -1020,6 +1020,16 @@
     },
     {
       "fase": "Instrução",
+      "grupo": "Sem grupo",
+      "andamento": 13,
+      "entradas_mes": 10,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 3,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 3259013.56
+    },
+    {
+      "fase": "Instrução",
       "grupo": "Grupo A2",
       "andamento": 12,
       "entradas_mes": 0,
@@ -1027,16 +1037,6 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 1,
       "valor_causa": 7695462.66
-    },
-    {
-      "fase": "Instrução",
-      "grupo": "Sem grupo",
-      "andamento": 12,
-      "entradas_mes": 9,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 3,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 3418861.76
     },
     {
       "fase": "Instrução",
@@ -1166,7 +1166,7 @@
       "saidas_mes": 5,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 8,
-      "valor_causa": 172095704.68
+      "valor_causa": 172279728.48
     },
     {
       "fase": "Recurso",
@@ -1422,12 +1422,12 @@
     },
     {
       "nome": "Bruna Cembranelli Fazenda (BCF)",
-      "andamento": 289,
-      "entradas_mes": 4,
+      "andamento": 290,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 7,
-      "valor_causa": 48601172.86
+      "valor_causa": 48758968.96
     },
     {
       "nome": "Guilherme Silva Morimoto(GSM)",
@@ -1448,6 +1448,15 @@
       "valor_causa": 29049377.69
     },
     {
+      "nome": "Vanessa de Cassia Castrequini Rosa(VCR)",
+      "andamento": 278,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 6,
+      "saidas_mes_anterior": 4,
+      "valor_causa": 46035287.8
+    },
+    {
       "nome": "Rafael Camargo Felisbino(RCF)",
       "andamento": 278,
       "entradas_mes": 10,
@@ -1455,15 +1464,6 @@
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 8,
       "valor_causa": 109037995.57
-    },
-    {
-      "nome": "Vanessa de Cassia Castrequini Rosa(VCR)",
-      "andamento": 277,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 6,
-      "saidas_mes_anterior": 4,
-      "valor_causa": 45855043.35
     },
     {
       "nome": "Anna Carolina Balbino Gatti Baani(ANB)",
@@ -1714,12 +1714,12 @@
     },
     {
       "nome": "EMBRAER",
-      "andamento": 731,
-      "entradas_mes": 8,
+      "andamento": 733,
+      "entradas_mes": 10,
       "saidas_mes": 1,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 12,
-      "valor_causa": 140707298.47,
+      "valor_causa": 141045339.02,
       "alerta_entrada": false
     },
     {
@@ -2359,12 +2359,12 @@
     {
       "grupo": "Grupo B3",
       "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 243,
-      "entradas_mes": 7,
+      "andamento": 244,
+      "entradas_mes": 8,
       "saidas_mes": 2,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 10,
-      "valor_causa": 31378831.09,
+      "valor_causa": 31876719.84,
       "alerta_entrada": false
     },
     {
@@ -3744,6 +3744,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "EMBRAER",
+      "andamento": 4,
+      "entradas_mes": 4,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 709933.41,
+      "alerta_entrada": true
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "andamento": 2,
       "entradas_mes": 1,
@@ -3762,17 +3773,6 @@
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
       "valor_causa": 30000.0,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "EMBRAER",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 371892.86,
       "alerta_entrada": false
     },
     {
@@ -3806,17 +3806,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 29420.51,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 497888.75,
       "alerta_entrada": false
     },
     {
@@ -4077,12 +4066,12 @@
     {
       "grupo": "Grupo B3",
       "profissional": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 364,
-      "entradas_mes": 7,
+      "andamento": 365,
+      "entradas_mes": 8,
       "saidas_mes": 2,
       "entradas_mes_anterior": 31,
       "saidas_mes_anterior": 5,
-      "valor_causa": 67832973.8
+      "valor_causa": 68330862.55
     },
     {
       "grupo": "Grupo B3",
@@ -4486,6 +4475,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Bruna Cembranelli Fazenda (BCF)",
+      "andamento": 3,
+      "entradas_mes": 3,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 246265.93
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Vinicius da Silva Cerqueira(VSI)",
       "andamento": 2,
       "entradas_mes": 0,
@@ -4493,6 +4492,16 @@
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
       "valor_causa": 30000.0
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Vanessa de Cassia Castrequini Rosa(VCR)",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 464667.48
     },
     {
       "grupo": "Sem grupo",
@@ -4506,16 +4515,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Bruna Cembranelli Fazenda (BCF)",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 88469.83
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Vinícius Ronchi Arruda(VRO)",
       "andamento": 1,
       "entradas_mes": 0,
@@ -4526,16 +4525,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Vanessa de Cassia Castrequini Rosa(VCR)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 284423.03
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Beatriz Santiago de Souza(BSO)",
       "andamento": 1,
       "entradas_mes": 1,
@@ -4543,16 +4532,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 545244.44
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 497888.75
     },
     {
       "grupo": "Sem grupo",
@@ -6619,12 +6598,12 @@
     {
       "estado": "SP",
       "cliente": "EMBRAER",
-      "andamento": 713,
-      "entradas_mes": 7,
+      "andamento": 715,
+      "entradas_mes": 9,
       "saidas_mes": 0,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 12,
-      "valor_causa": 140257456.06
+      "valor_causa": 140595496.61
     },
     {
       "estado": "SP",
@@ -8066,11 +8045,6 @@
       "profissional": "Beatriz Santiago de Souza(BSO)"
     },
     {
-      "numero_processo": "1001706-42.2026.5.02.0411",
-      "cliente": "CBC CARTUCHOS BRASIL",
-      "profissional": "Letícia Meneghini Fontes (LMI)"
-    },
-    {
       "numero_processo": "0001607-78.2026.5.07.0014",
       "cliente": "COMPANHIA AIX",
       "profissional": "Vinicius da Silva Cerqueira(VSI)"
@@ -8089,6 +8063,16 @@
       "numero_processo": "0012598-75.2026.5.15.0084",
       "cliente": "EMBRAER",
       "profissional": "Bruna Cembranelli Fazenda (BCF)"
+    },
+    {
+      "numero_processo": "0012805-77.2026.5.15.0083",
+      "cliente": "EMBRAER",
+      "profissional": "Bruna Cembranelli Fazenda (BCF)"
+    },
+    {
+      "numero_processo": "0014376-02.2026.5.15.0013",
+      "cliente": "EMBRAER",
+      "profissional": "Vanessa de Cassia Castrequini Rosa(VCR)"
     },
     {
       "numero_processo": "1001931-06.2026.5.02.0462",
