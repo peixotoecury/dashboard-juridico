@@ -1,24 +1,19 @@
 {
-  "atualizado_em": "2026-11-15T20:00:19",
+  "atualizado_em": "2026-11-16T08:00:28",
   "kpis": {
     "total_andamento": 7651,
     "entradas_hoje": 0,
     "saidas_hoje": 1,
     "entradas_ontem": 0,
-    "saidas_ontem": 0,
+    "saidas_ontem": 1,
     "entradas_mes": 113,
-    "saidas_mes": 65,
+    "saidas_mes": 66,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 231,
     "valor_causa_total": 1795592802.03,
-    "saldo_mes": 48
+    "saldo_mes": 47
   },
   "serie_diaria": [
-    {
-      "data": "2026-09-17",
-      "entradas": 10,
-      "saidas": 14
-    },
     {
       "data": "2026-09-18",
       "entradas": 17,
@@ -313,6 +308,11 @@
       "data": "2026-11-15",
       "entradas": 0,
       "saidas": 1
+    },
+    {
+      "data": "2026-11-16",
+      "entradas": 0,
+      "saidas": 1
     }
   ],
   "por_grupo": [
@@ -320,7 +320,7 @@
       "nome": "Grupo E2",
       "andamento": 2168,
       "entradas_mes": 54,
-      "saidas_mes": 15,
+      "saidas_mes": 16,
       "entradas_mes_anterior": 105,
       "saidas_mes_anterior": 77,
       "valor_causa": 486729810.74
@@ -466,7 +466,7 @@
       "nome": "PR",
       "andamento": 256,
       "entradas_mes": 4,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 22,
       "saidas_mes_anterior": 3,
       "valor_causa": 53139242.51
@@ -691,7 +691,7 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2887,
+      "andamento": 2886,
       "entradas_mes": 33,
       "saidas_mes": 23,
       "entradas_mes_anterior": 270,
@@ -709,7 +709,7 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2959,
+      "andamento": 2960,
       "entradas_mes": 4,
       "saidas_mes": 17,
       "entradas_mes_anterior": 9,
@@ -720,7 +720,7 @@
       "nome": "Execução",
       "andamento": 921,
       "entradas_mes": 7,
-      "saidas_mes": 13,
+      "saidas_mes": 14,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 50,
       "valor_causa": 133136306.44
@@ -843,7 +843,7 @@
       "grupo": "Grupo E2",
       "andamento": 335,
       "entradas_mes": 3,
-      "saidas_mes": 5,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 21,
       "valor_causa": 54062481.92
@@ -931,7 +931,7 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 894,
+      "andamento": 893,
       "entradas_mes": 11,
       "saidas_mes": 5,
       "entradas_mes_anterior": 88,
@@ -1181,7 +1181,7 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo E2",
-      "andamento": 592,
+      "andamento": 593,
       "entradas_mes": 0,
       "saidas_mes": 1,
       "entradas_mes_anterior": 3,
@@ -1406,7 +1406,7 @@
       "nome": "Bianca Bolanhi Camacho(BBO)",
       "andamento": 295,
       "entradas_mes": 2,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 5,
       "valor_causa": 33534661.49
@@ -1756,7 +1756,7 @@
       "nome": "HERINGER",
       "andamento": 341,
       "entradas_mes": 2,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 14,
       "saidas_mes_anterior": 5,
       "valor_causa": 49039550.4,
@@ -3186,7 +3186,7 @@
       "cliente": "HERINGER",
       "andamento": 340,
       "entradas_mes": 2,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 14,
       "saidas_mes_anterior": 5,
       "valor_causa": 49039550.4,
@@ -4366,7 +4366,7 @@
       "profissional": "Bianca Bolanhi Camacho(BBO)",
       "andamento": 295,
       "entradas_mes": 2,
-      "saidas_mes": 1,
+      "saidas_mes": 2,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 5,
       "valor_causa": 33534661.49
@@ -5778,7 +5778,7 @@
       "cliente": "HERINGER",
       "andamento": 49,
       "entradas_mes": 0,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
       "valor_causa": 3461105.24
