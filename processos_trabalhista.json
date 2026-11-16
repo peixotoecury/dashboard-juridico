@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-16T18:45:25",
+  "atualizado_em": "2026-11-16T19:00:19",
   "kpis": {
-    "total_andamento": 7653,
+    "total_andamento": 7647,
     "entradas_hoje": 5,
-    "saidas_hoje": 8,
+    "saidas_hoje": 14,
     "entradas_ontem": 0,
     "saidas_ontem": 1,
     "entradas_mes": 128,
-    "saidas_mes": 73,
+    "saidas_mes": 79,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 231,
-    "valor_causa_total": 1797815099.57,
-    "saldo_mes": 55
+    "valor_causa_total": 1796049838.37,
+    "saldo_mes": 49
   },
   "serie_diaria": [
     {
@@ -312,7 +312,7 @@
     {
       "data": "2026-11-16",
       "entradas": 5,
-      "saidas": 8
+      "saidas": 14
     }
   ],
   "por_grupo": [
@@ -336,12 +336,12 @@
     },
     {
       "nome": "Grupo B1",
-      "andamento": 1419,
+      "andamento": 1413,
       "entradas_mes": 13,
-      "saidas_mes": 14,
+      "saidas_mes": 20,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 42,
-      "valor_causa": 326325308.7
+      "valor_causa": 324560047.5
     },
     {
       "nome": "Grupo B2",
@@ -446,12 +446,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5765,
+      "andamento": 5759,
       "entradas_mes": 74,
-      "saidas_mes": 60,
+      "saidas_mes": 66,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 166,
-      "valor_causa": 1388169891.65
+      "valor_causa": 1386404630.45
     },
     {
       "nome": "MG",
@@ -709,21 +709,21 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2963,
+      "andamento": 2960,
       "entradas_mes": 4,
-      "saidas_mes": 19,
+      "saidas_mes": 22,
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 48,
-      "valor_causa": 682443284.18
+      "valor_causa": 680921826.96
     },
     {
       "nome": "Execução",
-      "andamento": 925,
+      "andamento": 922,
       "entradas_mes": 7,
-      "saidas_mes": 16,
+      "saidas_mes": 19,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 49,
-      "valor_causa": 134193192.61
+      "valor_causa": 133949388.63
     }
   ],
   "por_fase_outras": 404,
@@ -861,12 +861,12 @@
     {
       "fase": "Execução",
       "grupo": "Grupo B1",
-      "andamento": 178,
+      "andamento": 175,
       "entradas_mes": 1,
-      "saidas_mes": 1,
+      "saidas_mes": 4,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 20,
-      "valor_causa": 21510845.25
+      "valor_causa": 21267041.27
     },
     {
       "fase": "Execução",
@@ -1161,12 +1161,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo B1",
-      "andamento": 849,
+      "andamento": 846,
       "entradas_mes": 2,
-      "saidas_mes": 6,
+      "saidas_mes": 9,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 8,
-      "valor_causa": 176505006.77
+      "valor_causa": 174983549.55
     },
     {
       "fase": "Recurso",
@@ -1332,12 +1332,12 @@
   "por_profissional": [
     {
       "nome": "Nicolau Rafael Guimarães Coelho(NRG)",
-      "andamento": 479,
+      "andamento": 478,
       "entradas_mes": 4,
-      "saidas_mes": 10,
+      "saidas_mes": 11,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 22,
-      "valor_causa": 99648637.36
+      "valor_causa": 98195526.78
     },
     {
       "nome": "Rafael Yepez do Lago(RYL)",
@@ -1395,9 +1395,9 @@
     },
     {
       "nome": "Beatriz Santiago de Souza(BSO)",
-      "andamento": 300,
+      "andamento": 298,
       "entradas_mes": 3,
-      "saidas_mes": 2,
+      "saidas_mes": 4,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 7,
       "valor_causa": 63713232.36
@@ -1412,15 +1412,6 @@
       "valor_causa": 33534661.49
     },
     {
-      "nome": "Rafael Rocha Ferreira(RFE)",
-      "andamento": 293,
-      "entradas_mes": 5,
-      "saidas_mes": 1,
-      "entradas_mes_anterior": 11,
-      "saidas_mes_anterior": 9,
-      "valor_causa": 82230906.89
-    },
-    {
       "nome": "Bruna Cembranelli Fazenda (BCF)",
       "andamento": 291,
       "entradas_mes": 6,
@@ -1428,6 +1419,15 @@
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 7,
       "valor_causa": 49355549.38
+    },
+    {
+      "nome": "Rafael Rocha Ferreira(RFE)",
+      "andamento": 290,
+      "entradas_mes": 5,
+      "saidas_mes": 4,
+      "entradas_mes_anterior": 11,
+      "saidas_mes_anterior": 9,
+      "valor_causa": 81918756.27
     },
     {
       "nome": "Guilherme Silva Morimoto(GSM)",
@@ -1694,12 +1694,12 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1421,
+      "andamento": 1415,
       "entradas_mes": 15,
-      "saidas_mes": 14,
+      "saidas_mes": 20,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 42,
-      "valor_causa": 326871553.14,
+      "valor_causa": 325106291.94,
       "alerta_entrada": false
     },
     {
@@ -2326,12 +2326,12 @@
     {
       "grupo": "Grupo B1",
       "cliente": "BRIDGESTONE",
-      "andamento": 1419,
+      "andamento": 1413,
       "entradas_mes": 13,
-      "saidas_mes": 14,
+      "saidas_mes": 20,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 42,
-      "valor_causa": 326325308.7,
+      "valor_causa": 324560047.5,
       "alerta_entrada": false
     },
     {
@@ -3924,19 +3924,19 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Nicolau Rafael Guimarães Coelho(NRG)",
-      "andamento": 325,
+      "andamento": 324,
       "entradas_mes": 3,
-      "saidas_mes": 9,
+      "saidas_mes": 10,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 14,
-      "valor_causa": 71604743.75
+      "valor_causa": 70151633.17
     },
     {
       "grupo": "Grupo B1",
       "profissional": "Beatriz Santiago de Souza(BSO)",
-      "andamento": 299,
+      "andamento": 297,
       "entradas_mes": 2,
-      "saidas_mes": 2,
+      "saidas_mes": 4,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 7,
       "valor_causa": 63167987.92
@@ -3944,12 +3944,12 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Rafael Rocha Ferreira(RFE)",
-      "andamento": 293,
+      "andamento": 290,
       "entradas_mes": 5,
-      "saidas_mes": 1,
+      "saidas_mes": 4,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 9,
-      "valor_causa": 82230906.89
+      "valor_causa": 81918756.27
     },
     {
       "grupo": "Grupo B1",
@@ -6546,12 +6546,12 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1395,
+      "andamento": 1389,
       "entradas_mes": 14,
-      "saidas_mes": 14,
+      "saidas_mes": 20,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 40,
-      "valor_causa": 315241433.35
+      "valor_causa": 313476172.15
     },
     {
       "estado": "SP",
