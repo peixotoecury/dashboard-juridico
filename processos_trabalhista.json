@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-16T09:15:25",
+  "atualizado_em": "2026-11-16T09:30:22",
   "kpis": {
-    "total_andamento": 7654,
+    "total_andamento": 7656,
     "entradas_hoje": 0,
     "saidas_hoje": 1,
     "entradas_ontem": 0,
     "saidas_ontem": 1,
-    "entradas_mes": 116,
+    "entradas_mes": 118,
     "saidas_mes": 66,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 231,
-    "valor_causa_total": 1796553651.89,
-    "saldo_mes": 50
+    "valor_causa_total": 1796746905.35,
+    "saldo_mes": 52
   },
   "serie_diaria": [
     {
@@ -296,7 +296,7 @@
     },
     {
       "data": "2026-11-13",
-      "entradas": 7,
+      "entradas": 9,
       "saidas": 4
     },
     {
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 10,
-      "entradas_mes": 7,
+      "andamento": 12,
+      "entradas_mes": 9,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 3225608.3
+      "valor_causa": 3418861.76
     },
     {
       "nome": "Sócios",
@@ -446,12 +446,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5767,
-      "entradas_mes": 63,
+      "andamento": 5769,
+      "entradas_mes": 65,
       "saidas_mes": 53,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 166,
-      "valor_causa": 1386924128.54
+      "valor_causa": 1387117382.0
     },
     {
       "nome": "MG",
@@ -691,12 +691,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2887,
-      "entradas_mes": 36,
+      "andamento": 2889,
+      "entradas_mes": 38,
       "saidas_mes": 23,
       "entradas_mes_anterior": 270,
       "saidas_mes_anterior": 76,
-      "valor_causa": 842071475.51
+      "valor_causa": 842264728.97
     },
     {
       "nome": "Sentença",
@@ -1031,12 +1031,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 10,
-      "entradas_mes": 7,
+      "andamento": 12,
+      "entradas_mes": 9,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 3225608.3
+      "valor_causa": 3418861.76
     },
     {
       "fase": "Instrução",
@@ -1377,12 +1377,12 @@
     },
     {
       "nome": "Joice Ramos Miranda(JRM)",
-      "andamento": 307,
-      "entradas_mes": 2,
+      "andamento": 308,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 6,
-      "valor_causa": 74149406.64
+      "valor_causa": 74255190.27
     },
     {
       "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
@@ -1422,12 +1422,12 @@
     },
     {
       "nome": "Bruna Cembranelli Fazenda (BCF)",
-      "andamento": 288,
-      "entradas_mes": 3,
+      "andamento": 289,
+      "entradas_mes": 4,
       "saidas_mes": 0,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 7,
-      "valor_causa": 48513703.03
+      "valor_causa": 48601172.86
     },
     {
       "nome": "Guilherme Silva Morimoto(GSM)",
@@ -1714,22 +1714,22 @@
     },
     {
       "nome": "EMBRAER",
-      "andamento": 730,
-      "entradas_mes": 7,
+      "andamento": 731,
+      "entradas_mes": 8,
       "saidas_mes": 1,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 12,
-      "valor_causa": 140619828.64,
+      "valor_causa": 140707298.47,
       "alerta_entrada": false
     },
     {
       "nome": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 710,
-      "entradas_mes": 6,
+      "andamento": 711,
+      "entradas_mes": 7,
       "saidas_mes": 9,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 23,
-      "valor_causa": 142506695.83,
+      "valor_causa": 142612479.46,
       "alerta_entrada": false
     },
     {
@@ -3744,6 +3744,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "SYNGENTA PROTEÇÃO DE",
+      "andamento": 2,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 214242.14,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "COMPANHIA AIX",
       "andamento": 2,
       "entradas_mes": 0,
@@ -3755,6 +3766,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "EMBRAER",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 371892.86,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "BRIDGESTONE",
       "andamento": 2,
       "entradas_mes": 2,
@@ -3762,28 +3784,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 546244.44,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 108458.51,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "EMBRAER",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 284423.03,
       "alerta_entrada": false
     },
     {
@@ -3810,17 +3810,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "MAHLE METAL - SBC",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 178538.08,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "CBC CARTUCHOS BRASIL",
       "andamento": 1,
       "entradas_mes": 1,
@@ -3828,6 +3817,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 497888.75,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "MAHLE METAL - SBC",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 178538.08,
       "alerta_entrada": false
     },
     {
@@ -4506,6 +4506,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Bruna Cembranelli Fazenda (BCF)",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 88469.83
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Vinícius Ronchi Arruda(VRO)",
       "andamento": 1,
       "entradas_mes": 0,
@@ -4526,16 +4536,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Bruna Cembranelli Fazenda (BCF)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 1000.0
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Beatriz Santiago de Souza(BSO)",
       "andamento": 1,
       "entradas_mes": 1,
@@ -4543,6 +4543,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 545244.44
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Letícia Meneghini Fontes (LMI)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 497888.75
     },
     {
       "grupo": "Sem grupo",
@@ -4556,13 +4566,13 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Letícia Meneghini Fontes (LMI)",
+      "profissional": "Joice Ramos Miranda(JRM)",
       "andamento": 1,
       "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 497888.75
+      "valor_causa": 105783.63
     },
     {
       "grupo": "Sócios",
@@ -6609,22 +6619,22 @@
     {
       "estado": "SP",
       "cliente": "EMBRAER",
-      "andamento": 712,
-      "entradas_mes": 6,
+      "andamento": 713,
+      "entradas_mes": 7,
       "saidas_mes": 0,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 12,
-      "valor_causa": 140169986.23
+      "valor_causa": 140257456.06
     },
     {
       "estado": "SP",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 608,
-      "entradas_mes": 6,
+      "andamento": 609,
+      "entradas_mes": 7,
       "saidas_mes": 6,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 18,
-      "valor_causa": 128655710.95
+      "valor_causa": 128761494.58
     },
     {
       "estado": "SP",
@@ -8076,6 +8086,11 @@
       "profissional": "Vanessa de Cassia Castrequini Rosa(VCR)"
     },
     {
+      "numero_processo": "0012598-75.2026.5.15.0084",
+      "cliente": "EMBRAER",
+      "profissional": "Bruna Cembranelli Fazenda (BCF)"
+    },
+    {
       "numero_processo": "1001931-06.2026.5.02.0462",
       "cliente": "MAHLE METAL - SBC",
       "profissional": "Lucas Willott Pereira (LWP)"
@@ -8089,6 +8104,11 @@
       "numero_processo": "1002027-29.2026.5.02.0718",
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "profissional": "Vinícius Ronchi Arruda(VRO)"
+    },
+    {
+      "numero_processo": "0001343-14.2026.5.12.0017",
+      "cliente": "SYNGENTA PROTEÇÃO DE",
+      "profissional": "Joice Ramos Miranda(JRM)"
     }
   ]
 }
