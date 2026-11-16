@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-16T17:45:22",
+  "atualizado_em": "2026-11-16T18:45:25",
   "kpis": {
-    "total_andamento": 7654,
+    "total_andamento": 7653,
     "entradas_hoje": 5,
-    "saidas_hoje": 7,
+    "saidas_hoje": 8,
     "entradas_ontem": 0,
     "saidas_ontem": 1,
     "entradas_mes": 128,
-    "saidas_mes": 72,
+    "saidas_mes": 73,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 231,
-    "valor_causa_total": 1798142343.42,
-    "saldo_mes": 56
+    "valor_causa_total": 1797815099.57,
+    "saldo_mes": 55
   },
   "serie_diaria": [
     {
@@ -312,7 +312,7 @@
     {
       "data": "2026-11-16",
       "entradas": 5,
-      "saidas": 7
+      "saidas": 8
     }
   ],
   "por_grupo": [
@@ -336,12 +336,12 @@
     },
     {
       "nome": "Grupo B1",
-      "andamento": 1420,
+      "andamento": 1419,
       "entradas_mes": 13,
-      "saidas_mes": 13,
+      "saidas_mes": 14,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 42,
-      "valor_causa": 326652552.55
+      "valor_causa": 326325308.7
     },
     {
       "nome": "Grupo B2",
@@ -446,12 +446,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5766,
+      "andamento": 5765,
       "entradas_mes": 74,
-      "saidas_mes": 59,
+      "saidas_mes": 60,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 166,
-      "valor_causa": 1388497135.5
+      "valor_causa": 1388169891.65
     },
     {
       "nome": "MG",
@@ -682,7 +682,7 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 451,
+      "andamento": 452,
       "entradas_mes": 57,
       "saidas_mes": 2,
       "entradas_mes_anterior": 35,
@@ -691,12 +691,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2881,
+      "andamento": 2878,
       "entradas_mes": 45,
       "saidas_mes": 25,
       "entradas_mes_anterior": 270,
       "saidas_mes_anterior": 76,
-      "valor_causa": 837070418.5
+      "valor_causa": 836723939.43
     },
     {
       "nome": "Sentença",
@@ -709,21 +709,21 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2961,
+      "andamento": 2963,
       "entradas_mes": 4,
       "saidas_mes": 19,
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 48,
-      "valor_causa": 682096805.11
+      "valor_causa": 682443284.18
     },
     {
       "nome": "Execução",
-      "andamento": 926,
+      "andamento": 925,
       "entradas_mes": 7,
-      "saidas_mes": 15,
+      "saidas_mes": 16,
       "entradas_mes_anterior": 5,
-      "saidas_mes_anterior": 50,
-      "valor_causa": 134520436.46
+      "saidas_mes_anterior": 49,
+      "valor_causa": 134193192.61
     }
   ],
   "por_fase_outras": 404,
@@ -741,7 +741,7 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo B2",
-      "andamento": 86,
+      "andamento": 87,
       "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
@@ -861,12 +861,12 @@
     {
       "fase": "Execução",
       "grupo": "Grupo B1",
-      "andamento": 179,
+      "andamento": 178,
       "entradas_mes": 1,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 20,
-      "valor_causa": 21838089.1
+      "valor_causa": 21510845.25
     },
     {
       "fase": "Execução",
@@ -885,7 +885,7 @@
       "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 1,
+      "saidas_mes_anterior": 0,
       "valor_causa": 14848278.01
     },
     {
@@ -951,12 +951,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B1",
-      "andamento": 387,
+      "andamento": 384,
       "entradas_mes": 3,
       "saidas_mes": 7,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 14,
-      "valor_causa": 125239020.34
+      "valor_causa": 124892541.27
     },
     {
       "fase": "Instrução",
@@ -1095,7 +1095,7 @@
       "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 7,
+      "saidas_mes_anterior": 8,
       "valor_causa": 3368410.48
     },
     {
@@ -1161,12 +1161,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo B1",
-      "andamento": 846,
+      "andamento": 849,
       "entradas_mes": 2,
       "saidas_mes": 6,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 8,
-      "valor_causa": 176158527.7
+      "valor_causa": 176505006.77
     },
     {
       "fase": "Recurso",
@@ -1191,7 +1191,7 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo B2",
-      "andamento": 387,
+      "andamento": 386,
       "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
@@ -1413,12 +1413,12 @@
     },
     {
       "nome": "Rafael Rocha Ferreira(RFE)",
-      "andamento": 294,
+      "andamento": 293,
       "entradas_mes": 5,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 9,
-      "valor_causa": 82558150.74
+      "valor_causa": 82230906.89
     },
     {
       "nome": "Bruna Cembranelli Fazenda (BCF)",
@@ -1694,12 +1694,12 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1422,
+      "andamento": 1421,
       "entradas_mes": 15,
-      "saidas_mes": 13,
+      "saidas_mes": 14,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 42,
-      "valor_causa": 327198796.99,
+      "valor_causa": 326871553.14,
       "alerta_entrada": false
     },
     {
@@ -2326,12 +2326,12 @@
     {
       "grupo": "Grupo B1",
       "cliente": "BRIDGESTONE",
-      "andamento": 1420,
+      "andamento": 1419,
       "entradas_mes": 13,
-      "saidas_mes": 13,
+      "saidas_mes": 14,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 42,
-      "valor_causa": 326652552.55,
+      "valor_causa": 326325308.7,
       "alerta_entrada": false
     },
     {
@@ -3944,12 +3944,12 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Rafael Rocha Ferreira(RFE)",
-      "andamento": 294,
+      "andamento": 293,
       "entradas_mes": 5,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 9,
-      "valor_causa": 82558150.74
+      "valor_causa": 82230906.89
     },
     {
       "grupo": "Grupo B1",
@@ -6546,12 +6546,12 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1396,
+      "andamento": 1395,
       "entradas_mes": 14,
-      "saidas_mes": 13,
+      "saidas_mes": 14,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 40,
-      "valor_causa": 315568677.2
+      "valor_causa": 315241433.35
     },
     {
       "estado": "SP",
