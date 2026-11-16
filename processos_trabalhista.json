@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-16T10:00:26",
+  "atualizado_em": "2026-11-16T10:15:22",
   "kpis": {
-    "total_andamento": 7658,
+    "total_andamento": 7659,
     "entradas_hoje": 0,
     "saidas_hoje": 1,
     "entradas_ontem": 0,
     "saidas_ontem": 1,
-    "entradas_mes": 120,
+    "entradas_mes": 121,
     "saidas_mes": 66,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 231,
-    "valor_causa_total": 1797084945.9,
-    "saldo_mes": 54
+    "valor_causa_total": 1797515075.1,
+    "saldo_mes": 55
   },
   "serie_diaria": [
     {
@@ -296,7 +296,7 @@
     },
     {
       "data": "2026-11-13",
-      "entradas": 11,
+      "entradas": 12,
       "saidas": 4
     },
     {
@@ -345,12 +345,12 @@
     },
     {
       "nome": "Grupo B2",
-      "andamento": 748,
-      "entradas_mes": 6,
+      "andamento": 750,
+      "entradas_mes": 8,
       "saidas_mes": 1,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 12,
-      "valor_causa": 142685496.43
+      "valor_causa": 143203095.46
     },
     {
       "nome": "Grupo B3",
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 12,
-      "entradas_mes": 9,
+      "andamento": 11,
+      "entradas_mes": 8,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 2974590.53
+      "valor_causa": 2887120.7
     },
     {
       "nome": "Sócios",
@@ -446,12 +446,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5771,
-      "entradas_mes": 67,
+      "andamento": 5772,
+      "entradas_mes": 68,
       "saidas_mes": 53,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 166,
-      "valor_causa": 1387455422.55
+      "valor_causa": 1387885551.75
     },
     {
       "nome": "MG",
@@ -691,12 +691,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2890,
-      "entradas_mes": 40,
+      "andamento": 2891,
+      "entradas_mes": 41,
       "saidas_mes": 23,
       "entradas_mes_anterior": 270,
       "saidas_mes_anterior": 76,
-      "valor_causa": 842202769.52
+      "valor_causa": 842632898.72
     },
     {
       "nome": "Sentença",
@@ -991,12 +991,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B2",
-      "andamento": 151,
-      "entradas_mes": 4,
+      "andamento": 153,
+      "entradas_mes": 6,
       "saidas_mes": 1,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 2,
-      "valor_causa": 43527717.95
+      "valor_causa": 44045316.98
     },
     {
       "fase": "Instrução",
@@ -1031,12 +1031,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 12,
-      "entradas_mes": 9,
+      "andamento": 11,
+      "entradas_mes": 8,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 2974590.53
+      "valor_causa": 2887120.7
     },
     {
       "fase": "Instrução",
@@ -1467,12 +1467,12 @@
     },
     {
       "nome": "Anna Carolina Balbino Gatti Baani(ANB)",
-      "andamento": 267,
-      "entradas_mes": 2,
+      "andamento": 268,
+      "entradas_mes": 3,
       "saidas_mes": 1,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 2,
-      "valor_causa": 65468905.39
+      "valor_causa": 65899034.59
     },
     {
       "nome": "Mariana Borges de Menezes Fávaro(MBF)",
@@ -1714,13 +1714,13 @@
     },
     {
       "nome": "EMBRAER",
-      "andamento": 733,
-      "entradas_mes": 10,
+      "andamento": 734,
+      "entradas_mes": 11,
       "saidas_mes": 1,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 12,
-      "valor_causa": 141045339.02,
-      "alerta_entrada": false
+      "valor_causa": 141475468.22,
+      "alerta_entrada": true
     },
     {
       "nome": "SYNGENTA PROTEÇÃO DE",
@@ -2337,12 +2337,12 @@
     {
       "grupo": "Grupo B2",
       "cliente": "EMBRAER",
-      "andamento": 725,
-      "entradas_mes": 6,
+      "andamento": 727,
+      "entradas_mes": 8,
       "saidas_mes": 1,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 12,
-      "valor_causa": 140619828.64,
+      "valor_causa": 141137427.67,
       "alerta_entrada": false
     },
     {
@@ -3744,17 +3744,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "EMBRAER",
-      "andamento": 3,
-      "entradas_mes": 3,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 425510.38,
-      "alerta_entrada": true
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "andamento": 2,
       "entradas_mes": 1,
@@ -3784,6 +3773,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 546244.44,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "EMBRAER",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 338040.55,
       "alerta_entrada": false
     },
     {
@@ -4036,22 +4036,22 @@
     {
       "grupo": "Grupo B2",
       "profissional": "Bruna Cembranelli Fazenda (BCF)",
-      "andamento": 215,
-      "entradas_mes": 2,
+      "andamento": 216,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 5,
-      "valor_causa": 27635189.04
+      "valor_causa": 27722658.87
     },
     {
       "grupo": "Grupo B2",
       "profissional": "Anna Carolina Balbino Gatti Baani(ANB)",
-      "andamento": 180,
-      "entradas_mes": 2,
+      "andamento": 181,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 0,
-      "valor_causa": 44320076.43
+      "valor_causa": 44750205.63
     },
     {
       "grupo": "Grupo B2",
@@ -4475,16 +4475,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Bruna Cembranelli Fazenda (BCF)",
-      "andamento": 3,
-      "entradas_mes": 3,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 246265.93
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Vinicius da Silva Cerqueira(VSI)",
       "andamento": 2,
       "entradas_mes": 0,
@@ -4502,6 +4492,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
       "valor_causa": 1580055.49
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Bruna Cembranelli Fazenda (BCF)",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 158796.1
     },
     {
       "grupo": "Sem grupo",
@@ -6598,12 +6598,12 @@
     {
       "estado": "SP",
       "cliente": "EMBRAER",
-      "andamento": 715,
-      "entradas_mes": 9,
+      "andamento": 716,
+      "entradas_mes": 10,
       "saidas_mes": 0,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 12,
-      "valor_causa": 140595496.61
+      "valor_causa": 141025625.81
     },
     {
       "estado": "SP",
@@ -8008,6 +8008,16 @@
   ],
   "clientes_com_alerta": [
     {
+      "nome": "EMBRAER",
+      "andamento": 734,
+      "entradas_mes": 11,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 13,
+      "saidas_mes_anterior": 12,
+      "valor_causa": 141475468.22,
+      "alerta_entrada": true
+    },
+    {
       "nome": "ROBERT BOSCH",
       "andamento": 190,
       "entradas_mes": 3,
@@ -8056,11 +8066,6 @@
     },
     {
       "numero_processo": "0012805-77.2026.5.15.0083",
-      "cliente": "EMBRAER",
-      "profissional": "Bruna Cembranelli Fazenda (BCF)"
-    },
-    {
-      "numero_processo": "0012598-75.2026.5.15.0084",
       "cliente": "EMBRAER",
       "profissional": "Bruna Cembranelli Fazenda (BCF)"
     },
