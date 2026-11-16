@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-16T15:16:16",
+  "atualizado_em": "2026-11-16T15:30:20",
   "kpis": {
     "total_andamento": 7656,
     "entradas_hoje": 4,
@@ -327,12 +327,12 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1790,
-      "entradas_mes": 18,
+      "andamento": 1791,
+      "entradas_mes": 19,
       "saidas_mes": 31,
       "entradas_mes_anterior": 60,
       "saidas_mes_anterior": 70,
-      "valor_causa": 308760773.56
+      "valor_causa": 308827152.07
     },
     {
       "nome": "Grupo B1",
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 8,
-      "entradas_mes": 5,
+      "andamento": 7,
+      "entradas_mes": 4,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 2331136.95
+      "valor_causa": 2264758.44
     },
     {
       "nome": "Sócios",
@@ -682,21 +682,21 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 448,
-      "entradas_mes": 54,
+      "andamento": 449,
+      "entradas_mes": 55,
       "saidas_mes": 2,
       "entradas_mes_anterior": 35,
       "saidas_mes_anterior": 17,
-      "valor_causa": 103836845.84
+      "valor_causa": 103903224.35
     },
     {
       "nome": "Instrução",
-      "andamento": 2886,
-      "entradas_mes": 46,
+      "andamento": 2885,
+      "entradas_mes": 45,
       "saidas_mes": 23,
       "entradas_mes_anterior": 270,
       "saidas_mes_anterior": 76,
-      "valor_causa": 838820605.69
+      "valor_causa": 838754227.18
     },
     {
       "nome": "Sentença",
@@ -751,12 +751,12 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo E1",
-      "andamento": 75,
-      "entradas_mes": 6,
+      "andamento": 76,
+      "entradas_mes": 7,
       "saidas_mes": 1,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 0,
-      "valor_causa": 19610846.42
+      "valor_causa": 19677224.93
     },
     {
       "fase": "Ajuizamento",
@@ -1031,12 +1031,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 8,
-      "entradas_mes": 5,
+      "andamento": 7,
+      "entradas_mes": 4,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 2331136.95
+      "valor_causa": 2264758.44
     },
     {
       "fase": "Instrução",
@@ -2920,12 +2920,12 @@
     {
       "grupo": "Grupo E1",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 638,
-      "entradas_mes": 5,
+      "andamento": 639,
+      "entradas_mes": 6,
       "saidas_mes": 9,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 23,
-      "valor_causa": 141529782.01,
+      "valor_causa": 141596160.52,
       "alerta_entrada": false
     },
     {
@@ -3744,17 +3744,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 2,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 174837.02,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "COMPANHIA AIX",
       "andamento": 2,
       "entradas_mes": 0,
@@ -3773,6 +3762,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 546244.44,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "SYNGENTA PROTEÇÃO DE",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 108458.51,
       "alerta_entrada": false
     },
     {
@@ -4214,12 +4214,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Joice Ramos Miranda(JRM)",
-      "andamento": 308,
-      "entradas_mes": 3,
+      "andamento": 309,
+      "entradas_mes": 4,
       "saidas_mes": 0,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 6,
-      "valor_causa": 74255190.27
+      "valor_causa": 74321568.78
     },
     {
       "grupo": "Grupo E1",
@@ -4510,16 +4510,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 545244.44
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Joice Ramos Miranda(JRM)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 66378.51
     },
     {
       "grupo": "Sócios",
@@ -8041,11 +8031,6 @@
       "numero_processo": "1002027-29.2026.5.02.0718",
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "profissional": "Vinícius Ronchi Arruda(VRO)"
-    },
-    {
-      "numero_processo": "0011852-81.2026.5.15.0126",
-      "cliente": "SYNGENTA PROTEÇÃO DE",
-      "profissional": "Joice Ramos Miranda(JRM)"
     }
   ]
 }
