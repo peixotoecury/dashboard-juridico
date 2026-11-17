@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-17T14:45:25",
+  "atualizado_em": "2026-11-17T15:00:20",
   "kpis": {
-    "total_andamento": 7643,
-    "entradas_hoje": 2,
+    "total_andamento": 7644,
+    "entradas_hoje": 3,
     "saidas_hoje": 6,
     "entradas_ontem": 6,
     "saidas_ontem": 14,
-    "entradas_mes": 131,
+    "entradas_mes": 132,
     "saidas_mes": 86,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 231,
-    "valor_causa_total": 1798452241.96,
-    "saldo_mes": 45
+    "valor_causa_total": 1799435593.71,
+    "saldo_mes": 46
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-11-17",
-      "entradas": 2,
+      "entradas": 3,
       "saidas": 6
     }
   ],
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 7,
-      "entradas_mes": 4,
+      "andamento": 8,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 2264758.44
+      "valor_causa": 3248110.19
     },
     {
       "nome": "Sócios",
@@ -446,12 +446,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5756,
-      "entradas_mes": 77,
+      "andamento": 5757,
+      "entradas_mes": 78,
       "saidas_mes": 72,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 166,
-      "valor_causa": 1388878909.04
+      "valor_causa": 1389862260.79
     },
     {
       "nome": "MG",
@@ -682,21 +682,21 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 454,
-      "entradas_mes": 59,
+      "andamento": 453,
+      "entradas_mes": 58,
       "saidas_mes": 2,
       "entradas_mes_anterior": 35,
       "saidas_mes_anterior": 17,
-      "valor_causa": 107466728.97
+      "valor_causa": 107407850.8
     },
     {
       "nome": "Instrução",
-      "andamento": 2878,
-      "entradas_mes": 46,
+      "andamento": 2880,
+      "entradas_mes": 48,
       "saidas_mes": 25,
       "entradas_mes_anterior": 270,
       "saidas_mes_anterior": 76,
-      "valor_causa": 837323677.96
+      "valor_causa": 838365907.88
     },
     {
       "nome": "Sentença",
@@ -810,16 +810,6 @@
     },
     {
       "fase": "Ajuizamento",
-      "grupo": "Grupo B3",
-      "andamento": 3,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 118878.17
-    },
-    {
-      "fase": "Ajuizamento",
       "grupo": "Sócios",
       "andamento": 2,
       "entradas_mes": 0,
@@ -837,6 +827,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
       "valor_causa": 0.0
+    },
+    {
+      "fase": "Ajuizamento",
+      "grupo": "Grupo B3",
+      "andamento": 2,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 60000.0
     },
     {
       "fase": "Execução",
@@ -981,12 +981,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B3",
-      "andamento": 157,
-      "entradas_mes": 5,
+      "andamento": 158,
+      "entradas_mes": 6,
       "saidas_mes": 1,
       "entradas_mes_anterior": 31,
       "saidas_mes_anterior": 4,
-      "valor_causa": 28455436.56
+      "valor_causa": 28514314.73
     },
     {
       "fase": "Instrução",
@@ -1031,12 +1031,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 7,
-      "entradas_mes": 4,
+      "andamento": 8,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 2264758.44
+      "valor_causa": 3248110.19
     },
     {
       "fase": "Instrução",
@@ -1350,12 +1350,12 @@
     },
     {
       "nome": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 364,
-      "entradas_mes": 8,
+      "andamento": 365,
+      "entradas_mes": 9,
       "saidas_mes": 3,
       "entradas_mes_anterior": 31,
       "saidas_mes_anterior": 5,
-      "valor_causa": 68258987.55
+      "valor_causa": 69242339.3
     },
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
@@ -1793,12 +1793,12 @@
     },
     {
       "nome": "CBC CARTUCHOS BRASIL",
-      "andamento": 247,
-      "entradas_mes": 8,
+      "andamento": 248,
+      "entradas_mes": 9,
       "saidas_mes": 2,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 10,
-      "valor_causa": 31876719.84,
+      "valor_causa": 32860071.59,
       "alerta_entrada": false
     },
     {
@@ -3807,6 +3807,17 @@
       "alerta_entrada": false
     },
     {
+      "grupo": "Sem grupo",
+      "cliente": "CBC CARTUCHOS BRASIL",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 983351.75,
+      "alerta_entrada": false
+    },
+    {
       "grupo": "Sócios",
       "cliente": "PEIXOTO E CURY",
       "andamento": 2,
@@ -4529,6 +4540,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 545244.44
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Letícia Meneghini Fontes (LMI)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 983351.75
     },
     {
       "grupo": "Sócios",
@@ -6645,12 +6666,12 @@
     {
       "estado": "SP",
       "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 237,
-      "entradas_mes": 7,
+      "andamento": 238,
+      "entradas_mes": 8,
       "saidas_mes": 2,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 9,
-      "valor_causa": 30591225.9
+      "valor_causa": 31574577.65
     },
     {
       "estado": "SP",
@@ -8030,6 +8051,11 @@
       "numero_processo": "1002293-04.2026.5.02.0431",
       "cliente": "BRIDGESTONE",
       "profissional": "Beatriz Santiago de Souza(BSO)"
+    },
+    {
+      "numero_processo": "1001715-04.2026.5.02.0411",
+      "cliente": "CBC CARTUCHOS BRASIL",
+      "profissional": "Letícia Meneghini Fontes (LMI)"
     },
     {
       "numero_processo": "0001607-78.2026.5.07.0014",
