@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-17T09:30:25",
+  "atualizado_em": "2026-11-17T09:45:19",
   "kpis": {
     "total_andamento": 7650,
     "entradas_hoje": 2,
@@ -363,12 +363,12 @@
     },
     {
       "nome": "Grupo C1",
-      "andamento": 331,
-      "entradas_mes": 12,
+      "andamento": 332,
+      "entradas_mes": 13,
       "saidas_mes": 0,
       "entradas_mes_anterior": 36,
       "saidas_mes_anterior": 0,
-      "valor_causa": 187382760.75
+      "valor_causa": 189507589.75
     },
     {
       "nome": "Grupo C2",
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 10,
-      "entradas_mes": 7,
+      "andamento": 9,
+      "entradas_mes": 6,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 5131715.08
+      "valor_causa": 3006886.08
     },
     {
       "nome": "Sócios",
@@ -682,21 +682,21 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 452,
-      "entradas_mes": 57,
+      "andamento": 453,
+      "entradas_mes": 58,
       "saidas_mes": 2,
       "entradas_mes_anterior": 35,
       "saidas_mes_anterior": 17,
-      "valor_causa": 105199510.86
+      "valor_causa": 107324339.86
     },
     {
       "nome": "Instrução",
-      "andamento": 2881,
-      "entradas_mes": 48,
+      "andamento": 2880,
+      "entradas_mes": 47,
       "saidas_mes": 25,
       "entradas_mes_anterior": 270,
       "saidas_mes_anterior": 76,
-      "valor_causa": 839590896.07
+      "valor_causa": 837466067.07
     },
     {
       "nome": "Sentença",
@@ -761,12 +761,12 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo C1",
-      "andamento": 41,
-      "entradas_mes": 8,
+      "andamento": 42,
+      "entradas_mes": 9,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 20892926.95
+      "valor_causa": 23017755.95
     },
     {
       "fase": "Ajuizamento",
@@ -1031,12 +1031,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 10,
-      "entradas_mes": 7,
+      "andamento": 9,
+      "entradas_mes": 6,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 5131715.08
+      "valor_causa": 3006886.08
     },
     {
       "fase": "Instrução",
@@ -2480,12 +2480,12 @@
     {
       "grupo": "Grupo C1",
       "cliente": "TELEFONICA BRASIL",
-      "andamento": 205,
-      "entradas_mes": 2,
+      "andamento": 206,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 0,
-      "valor_causa": 163873970.64,
+      "valor_causa": 165998799.64,
       "alerta_entrada": false
     },
     {
@@ -3798,17 +3798,6 @@
       "alerta_entrada": false
     },
     {
-      "grupo": "Sem grupo",
-      "cliente": "TELEFONICA BRASIL",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 2124829.0,
-      "alerta_entrada": false
-    },
-    {
       "grupo": "Sócios",
       "cliente": "PEIXOTO E CURY",
       "andamento": 2,
@@ -4115,12 +4104,12 @@
     {
       "grupo": "Grupo C1",
       "profissional": "Thiago Frid Figueiredo Rossi(TFR)",
-      "andamento": 142,
-      "entradas_mes": 1,
+      "andamento": 143,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 0,
-      "valor_causa": 114360395.64
+      "valor_causa": 116485224.64
     },
     {
       "grupo": "Grupo C1",
@@ -4521,16 +4510,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 545244.44
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Thiago Frid Figueiredo Rossi(TFR)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 2124829.0
     },
     {
       "grupo": "Sem grupo",
@@ -8082,11 +8061,6 @@
       "numero_processo": "1002027-29.2026.5.02.0718",
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "profissional": "Vinícius Ronchi Arruda(VRO)"
-    },
-    {
-      "numero_processo": "1001958-78.2026.5.02.0012",
-      "cliente": "TELEFONICA BRASIL",
-      "profissional": "Thiago Frid Figueiredo Rossi(TFR)"
     }
   ]
 }
