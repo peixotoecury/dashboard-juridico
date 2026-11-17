@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-17T10:15:29",
+  "atualizado_em": "2026-11-17T10:30:20",
   "kpis": {
     "total_andamento": 7650,
     "entradas_hoje": 2,
@@ -336,12 +336,12 @@
     },
     {
       "nome": "Grupo B1",
-      "andamento": 1414,
-      "entradas_mes": 14,
+      "andamento": 1415,
+      "entradas_mes": 15,
       "saidas_mes": 20,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 42,
-      "valor_causa": 325159786.03
+      "valor_causa": 325302175.14
     },
     {
       "nome": "Grupo B2",
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 8,
-      "entradas_mes": 5,
+      "andamento": 7,
+      "entradas_mes": 4,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 2407147.55
+      "valor_causa": 2264758.44
     },
     {
       "nome": "Sócios",
@@ -682,21 +682,21 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 453,
-      "entradas_mes": 58,
+      "andamento": 454,
+      "entradas_mes": 59,
       "saidas_mes": 2,
       "entradas_mes_anterior": 35,
       "saidas_mes_anterior": 17,
-      "valor_causa": 107324339.86
+      "valor_causa": 107466728.97
     },
     {
       "nome": "Instrução",
-      "andamento": 2880,
-      "entradas_mes": 47,
+      "andamento": 2879,
+      "entradas_mes": 46,
       "saidas_mes": 25,
       "entradas_mes_anterior": 270,
       "saidas_mes_anterior": 76,
-      "valor_causa": 837466067.07
+      "valor_causa": 837323677.96
     },
     {
       "nome": "Sentença",
@@ -791,12 +791,12 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo B1",
-      "andamento": 7,
-      "entradas_mes": 7,
+      "andamento": 8,
+      "entradas_mes": 8,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 3416915.41
+      "valor_causa": 3559304.52
     },
     {
       "fase": "Ajuizamento",
@@ -1031,12 +1031,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 8,
-      "entradas_mes": 5,
+      "andamento": 7,
+      "entradas_mes": 4,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 2407147.55
+      "valor_causa": 2264758.44
     },
     {
       "fase": "Instrução",
@@ -2326,12 +2326,12 @@
     {
       "grupo": "Grupo B1",
       "cliente": "BRIDGESTONE",
-      "andamento": 1414,
-      "entradas_mes": 14,
+      "andamento": 1415,
+      "entradas_mes": 15,
       "saidas_mes": 20,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 42,
-      "valor_causa": 325159786.03,
+      "valor_causa": 325302175.14,
       "alerta_entrada": false
     },
     {
@@ -3744,17 +3744,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "BRIDGESTONE",
-      "andamento": 3,
-      "entradas_mes": 3,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 688633.55,
-      "alerta_entrada": true
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "COMPANHIA AIX",
       "andamento": 2,
       "entradas_mes": 0,
@@ -3762,6 +3751,17 @@
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
       "valor_causa": 30000.0,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "BRIDGESTONE",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 546244.44,
       "alerta_entrada": false
     },
     {
@@ -3954,12 +3954,12 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Guilherme Silva Morimoto(GSM)",
-      "andamento": 234,
-      "entradas_mes": 3,
+      "andamento": 235,
+      "entradas_mes": 4,
       "saidas_mes": 0,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 4,
-      "valor_causa": 55426495.22
+      "valor_causa": 55568884.33
     },
     {
       "grupo": "Grupo B1",
@@ -4510,16 +4510,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 545244.44
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Guilherme Silva Morimoto(GSM)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 142389.11
     },
     {
       "grupo": "Sócios",
@@ -8021,11 +8011,6 @@
       "numero_processo": "1002293-04.2026.5.02.0431",
       "cliente": "BRIDGESTONE",
       "profissional": "Beatriz Santiago de Souza(BSO)"
-    },
-    {
-      "numero_processo": "1002272-22.2026.5.02.0433",
-      "cliente": "BRIDGESTONE",
-      "profissional": "Guilherme Silva Morimoto(GSM)"
     },
     {
       "numero_processo": "0001607-78.2026.5.07.0014",
