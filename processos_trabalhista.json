@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-17T10:45:20",
+  "atualizado_em": "2026-11-17T11:00:19",
   "kpis": {
-    "total_andamento": 7650,
+    "total_andamento": 7649,
     "entradas_hoje": 2,
-    "saidas_hoje": 0,
+    "saidas_hoje": 1,
     "entradas_ontem": 6,
     "saidas_ontem": 14,
     "entradas_mes": 131,
-    "saidas_mes": 79,
+    "saidas_mes": 80,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 231,
-    "valor_causa_total": 1798916795.01,
-    "saldo_mes": 52
+    "valor_causa_total": 1798759103.32,
+    "saldo_mes": 51
   },
   "serie_diaria": [
     {
@@ -312,7 +312,7 @@
     {
       "data": "2026-11-17",
       "entradas": 2,
-      "saidas": 0
+      "saidas": 1
     }
   ],
   "por_grupo": [
@@ -327,12 +327,12 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1788,
+      "andamento": 1787,
       "entradas_mes": 20,
-      "saidas_mes": 35,
+      "saidas_mes": 36,
       "entradas_mes_anterior": 60,
       "saidas_mes_anterior": 70,
-      "valor_causa": 308575997.94
+      "valor_causa": 308418306.25
     },
     {
       "nome": "Grupo B1",
@@ -446,12 +446,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5762,
+      "andamento": 5761,
       "entradas_mes": 77,
-      "saidas_mes": 66,
+      "saidas_mes": 67,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 166,
-      "valor_causa": 1389271587.09
+      "valor_causa": 1389113895.4
     },
     {
       "nome": "MG",
@@ -718,12 +718,12 @@
     },
     {
       "nome": "Execução",
-      "andamento": 922,
+      "andamento": 921,
       "entradas_mes": 7,
-      "saidas_mes": 19,
+      "saidas_mes": 20,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 49,
-      "valor_causa": 133949388.63
+      "valor_causa": 133791696.94
     }
   ],
   "por_fase_outras": 404,
@@ -851,12 +851,12 @@
     {
       "fase": "Execução",
       "grupo": "Grupo E1",
-      "andamento": 190,
+      "andamento": 189,
       "entradas_mes": 0,
-      "saidas_mes": 8,
+      "saidas_mes": 9,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 7,
-      "valor_causa": 20338379.27
+      "valor_causa": 20180687.58
     },
     {
       "fase": "Execução",
@@ -1502,15 +1502,6 @@
       "valor_causa": 46998269.54
     },
     {
-      "nome": "Tamires Lins Costa(TLI)",
-      "andamento": 227,
-      "entradas_mes": 3,
-      "saidas_mes": 8,
-      "entradas_mes_anterior": 8,
-      "saidas_mes_anterior": 10,
-      "valor_causa": 29243824.02
-    },
-    {
       "nome": "Vinícius Ronchi Arruda(VRO)",
       "andamento": 226,
       "entradas_mes": 0,
@@ -1518,6 +1509,15 @@
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 6,
       "valor_causa": 40011349.32
+    },
+    {
+      "nome": "Tamires Lins Costa(TLI)",
+      "andamento": 226,
+      "entradas_mes": 3,
+      "saidas_mes": 9,
+      "entradas_mes_anterior": 8,
+      "saidas_mes_anterior": 10,
+      "valor_causa": 29086132.33
     },
     {
       "nome": "Lucas Willott Pereira (LWP)",
@@ -1774,12 +1774,12 @@
     },
     {
       "nome": "MAHLE METAL - SBC",
-      "andamento": 262,
+      "andamento": 261,
       "entradas_mes": 2,
-      "saidas_mes": 7,
+      "saidas_mes": 8,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 10,
-      "valor_causa": 23853313.21,
+      "valor_causa": 23695621.52,
       "alerta_entrada": false
     },
     {
@@ -2942,12 +2942,12 @@
     {
       "grupo": "Grupo E1",
       "cliente": "MAHLE METAL - SBC",
-      "andamento": 262,
+      "andamento": 261,
       "entradas_mes": 2,
-      "saidas_mes": 7,
+      "saidas_mes": 8,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 10,
-      "valor_causa": 23853313.21,
+      "valor_causa": 23695621.52,
       "alerta_entrada": false
     },
     {
@@ -4244,12 +4244,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Tamires Lins Costa(TLI)",
-      "andamento": 227,
+      "andamento": 226,
       "entradas_mes": 3,
-      "saidas_mes": 8,
+      "saidas_mes": 9,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 10,
-      "valor_causa": 29243824.02
+      "valor_causa": 29086132.33
     },
     {
       "grupo": "Grupo E1",
@@ -6616,12 +6616,12 @@
     {
       "estado": "SP",
       "cliente": "MAHLE METAL - SBC",
-      "andamento": 262,
+      "andamento": 261,
       "entradas_mes": 2,
-      "saidas_mes": 7,
+      "saidas_mes": 8,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 10,
-      "valor_causa": 23853313.21
+      "valor_causa": 23695621.52
     },
     {
       "estado": "SP",
