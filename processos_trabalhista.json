@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-18T15:31:00",
+  "atualizado_em": "2026-11-18T15:45:55",
   "kpis": {
-    "total_andamento": 7664,
-    "entradas_hoje": 13,
+    "total_andamento": 7665,
+    "entradas_hoje": 14,
     "saidas_hoje": 1,
     "entradas_ontem": 15,
     "saidas_ontem": 10,
-    "entradas_mes": 157,
+    "entradas_mes": 158,
     "saidas_mes": 91,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 231,
-    "valor_causa_total": 1811863267.83,
-    "saldo_mes": 66
+    "valor_causa_total": 1812513831.5,
+    "saldo_mes": 67
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-11-18",
-      "entradas": 13,
+      "entradas": 14,
       "saidas": 1
     }
   ],
@@ -434,6 +434,15 @@
       "valor_causa": 0.0
     },
     {
+      "nome": "Cível",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 650563.67
+    },
+    {
       "nome": "Grupo C",
       "andamento": 0,
       "entradas_mes": 0,
@@ -446,12 +455,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5769,
-      "entradas_mes": 93,
+      "andamento": 5770,
+      "entradas_mes": 94,
       "saidas_mes": 76,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 166,
-      "valor_causa": 1398593718.26
+      "valor_causa": 1399244281.93
     },
     {
       "nome": "MG",
@@ -691,12 +700,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2889,
-      "entradas_mes": 70,
+      "andamento": 2890,
+      "entradas_mes": 71,
       "saidas_mes": 26,
       "entradas_mes_anterior": 270,
       "saidas_mes_anterior": 76,
-      "valor_causa": 849138188.22
+      "valor_causa": 849788751.89
     },
     {
       "nome": "Sentença",
@@ -709,21 +718,21 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2961,
+      "andamento": 2960,
       "entradas_mes": 5,
       "saidas_mes": 25,
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 48,
-      "valor_causa": 679794858.9
+      "valor_causa": 679692827.19
     },
     {
       "nome": "Execução",
-      "andamento": 926,
+      "andamento": 927,
       "entradas_mes": 7,
       "saidas_mes": 25,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 49,
-      "valor_causa": 136802616.72
+      "valor_causa": 136904648.43
     }
   ],
   "por_fase_outras": 404,
@@ -881,12 +890,12 @@
     {
       "fase": "Execução",
       "grupo": "Grupo B2",
-      "andamento": 100,
+      "andamento": 101,
       "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 18216498.14
+      "valor_causa": 18318529.85
     },
     {
       "fase": "Execução",
@@ -1049,6 +1058,16 @@
       "valor_causa": 0.0
     },
     {
+      "fase": "Instrução",
+      "grupo": "Cível",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 650563.67
+    },
+    {
       "fase": "Outras",
       "grupo": "Grupo E2",
       "andamento": 137,
@@ -1191,12 +1210,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo B2",
-      "andamento": 379,
+      "andamento": 378,
       "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 65727495.99
+      "valor_causa": 65625464.28
     },
     {
       "fase": "Recurso",
@@ -1682,6 +1701,15 @@
       "valor_causa": 283292.82
     },
     {
+      "nome": "Marcos Filipe Aleixo de Araújo(MFA)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 650563.67
+    },
+    {
       "nome": "Daniela Prandi Pedro Ricca (DPR)",
       "andamento": 1,
       "entradas_mes": 0,
@@ -1903,6 +1931,17 @@
     }
   ],
   "por_grupo_cliente": [
+    {
+      "grupo": "Cível",
+      "cliente": "GRAMMER DO BRASIL",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 650563.67,
+      "alerta_entrada": false
+    },
     {
       "grupo": "Grupo A1",
       "cliente": "ACCIONA CONSTRUCCION",
@@ -3896,6 +3935,16 @@
     }
   ],
   "por_grupo_profissional": [
+    {
+      "grupo": "Cível",
+      "profissional": "Marcos Filipe Aleixo de Araújo(MFA)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 650563.67
+    },
     {
       "grupo": "Grupo A1",
       "profissional": "Thais Catharine Cardozo Esteves(TCE)",
@@ -6921,12 +6970,12 @@
     {
       "estado": "SP",
       "cliente": "GRAMMER DO BRASIL",
-      "andamento": 25,
-      "entradas_mes": 1,
+      "andamento": 26,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 2,
-      "valor_causa": 2347245.5
+      "valor_causa": 2997809.17
     },
     {
       "estado": "SP",
