@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-18T11:30:56",
+  "atualizado_em": "2026-11-18T11:45:59",
   "kpis": {
     "total_andamento": 7664,
     "entradas_hoje": 12,
@@ -10,7 +10,7 @@
     "saidas_mes": 90,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 231,
-    "valor_causa_total": 1812118564.7,
+    "valor_causa_total": 1812298564.7,
     "saldo_mes": 66
   },
   "serie_diaria": [
@@ -354,12 +354,12 @@
     },
     {
       "nome": "Grupo B3",
-      "andamento": 584,
-      "entradas_mes": 11,
+      "andamento": 585,
+      "entradas_mes": 12,
       "saidas_mes": 5,
       "entradas_mes_anterior": 35,
       "saidas_mes_anterior": 12,
-      "valor_causa": 116583273.88
+      "valor_causa": 116763273.88
     },
     {
       "nome": "Grupo C1",
@@ -398,15 +398,6 @@
       "valor_causa": 135074103.84
     },
     {
-      "nome": "Sem grupo",
-      "andamento": 29,
-      "entradas_mes": 26,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 3,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 14213209.77
-    },
-    {
       "nome": "Grupo A1",
       "andamento": 28,
       "entradas_mes": 1,
@@ -414,6 +405,15 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
+    },
+    {
+      "nome": "Sem grupo",
+      "andamento": 28,
+      "entradas_mes": 25,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 3,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 14213209.77
     },
     {
       "nome": "Grupo A2",
@@ -478,7 +478,7 @@
       "saidas_mes": 1,
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 1,
-      "valor_causa": 57917889.85
+      "valor_causa": 58097889.85
     },
     {
       "nome": "MS",
@@ -691,12 +691,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2901,
+      "andamento": 2900,
       "entradas_mes": 72,
       "saidas_mes": 25,
       "entradas_mes_anterior": 270,
       "saidas_mes_anterior": 76,
-      "valor_causa": 851931784.97
+      "valor_causa": 852087281.06
     },
     {
       "nome": "Sentença",
@@ -709,21 +709,21 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2962,
+      "andamento": 2961,
       "entradas_mes": 4,
       "saidas_mes": 25,
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 48,
-      "valor_causa": 680893010.59
+      "valor_causa": 680824608.28
     },
     {
       "nome": "Execução",
-      "andamento": 915,
+      "andamento": 917,
       "entradas_mes": 7,
       "saidas_mes": 25,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 49,
-      "valor_causa": 133364892.68
+      "valor_causa": 133457798.9
     }
   ],
   "por_fase_outras": 404,
@@ -851,12 +851,12 @@
     {
       "fase": "Execução",
       "grupo": "Grupo E1",
-      "andamento": 187,
+      "andamento": 188,
       "entradas_mes": 0,
       "saidas_mes": 11,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 7,
-      "valor_causa": 20065616.18
+      "valor_causa": 20090120.09
     },
     {
       "fase": "Execução",
@@ -881,12 +881,12 @@
     {
       "fase": "Execução",
       "grupo": "Grupo B2",
-      "andamento": 91,
+      "andamento": 92,
       "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 14848278.01
+      "valor_causa": 14916680.32
     },
     {
       "fase": "Execução",
@@ -941,12 +941,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 732,
+      "andamento": 731,
       "entradas_mes": 11,
       "saidas_mes": 10,
       "entradas_mes_anterior": 30,
       "saidas_mes_anterior": 23,
-      "valor_causa": 156042709.61
+      "valor_causa": 156018205.7
     },
     {
       "fase": "Instrução",
@@ -981,12 +981,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B3",
-      "andamento": 160,
-      "entradas_mes": 9,
+      "andamento": 161,
+      "entradas_mes": 10,
       "saidas_mes": 1,
       "entradas_mes_anterior": 31,
       "saidas_mes_anterior": 4,
-      "valor_causa": 31209692.24
+      "valor_causa": 31389692.24
     },
     {
       "fase": "Instrução",
@@ -1021,8 +1021,8 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 29,
-      "entradas_mes": 26,
+      "andamento": 28,
+      "entradas_mes": 25,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
@@ -1191,12 +1191,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo B2",
-      "andamento": 388,
+      "andamento": 387,
       "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 69095716.12
+      "valor_causa": 69027313.81
     },
     {
       "fase": "Recurso",
@@ -1350,12 +1350,12 @@
     },
     {
       "nome": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 368,
-      "entradas_mes": 12,
+      "andamento": 369,
+      "entradas_mes": 13,
       "saidas_mes": 3,
       "entradas_mes_anterior": 31,
       "saidas_mes_anterior": 5,
-      "valor_causa": 71178411.64
+      "valor_causa": 71358411.64
     },
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
@@ -1485,12 +1485,12 @@
     },
     {
       "nome": "Paloma da Silva Santos(PSI)",
-      "andamento": 249,
+      "andamento": 248,
       "entradas_mes": 5,
       "saidas_mes": 10,
       "entradas_mes_anterior": 15,
       "saidas_mes_anterior": 10,
-      "valor_causa": 56589251.79
+      "valor_causa": 56564747.88
     },
     {
       "nome": "Erik Mota Coppi(ECO)",
@@ -1512,12 +1512,12 @@
     },
     {
       "nome": "Tamires Lins Costa(TLI)",
-      "andamento": 224,
+      "andamento": 225,
       "entradas_mes": 3,
       "saidas_mes": 11,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 10,
-      "valor_causa": 28242915.69
+      "valor_causa": 28267419.6
     },
     {
       "nome": "Lucas Willott Pereira (LWP)",
@@ -1691,15 +1691,6 @@
       "valor_causa": 0.0
     },
     {
-      "nome": "Luiz Vicente de Carvalho(LVC)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 0.0
-    },
-    {
       "nome": "Tamara Silva Marcílio(TAM)",
       "andamento": 0,
       "entradas_mes": 0,
@@ -1857,7 +1848,7 @@
       "saidas_mes": 1,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 0,
-      "valor_causa": 34107930.16,
+      "valor_causa": 34287930.16,
       "alerta_entrada": false
     },
     {
@@ -2388,12 +2379,12 @@
     {
       "grupo": "Grupo B3",
       "cliente": "CBC MONTENEGRO",
-      "andamento": 134,
-      "entradas_mes": 0,
+      "andamento": 135,
+      "entradas_mes": 1,
       "saidas_mes": 1,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 0,
-      "valor_causa": 34107930.16,
+      "valor_causa": 34287930.16,
       "alerta_entrada": false
     },
     {
@@ -3883,17 +3874,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "CBC MONTENEGRO",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 0.0,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "FERRERO DO BRASIL",
       "andamento": 1,
       "entradas_mes": 1,
@@ -4171,12 +4151,12 @@
     {
       "grupo": "Grupo B3",
       "profissional": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 366,
-      "entradas_mes": 10,
+      "andamento": 367,
+      "entradas_mes": 11,
       "saidas_mes": 3,
       "entradas_mes_anterior": 31,
       "saidas_mes_anterior": 5,
-      "valor_causa": 70998365.06
+      "valor_causa": 71178365.06
     },
     {
       "grupo": "Grupo B3",
@@ -4371,12 +4351,22 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Paloma da Silva Santos(PSI)",
-      "andamento": 247,
+      "andamento": 246,
       "entradas_mes": 3,
       "saidas_mes": 10,
       "entradas_mes_anterior": 15,
       "saidas_mes_anterior": 10,
-      "valor_causa": 55993225.79
+      "valor_causa": 55968721.88
+    },
+    {
+      "grupo": "Grupo E1",
+      "profissional": "Tamires Lins Costa(TLI)",
+      "andamento": 225,
+      "entradas_mes": 3,
+      "saidas_mes": 11,
+      "entradas_mes_anterior": 8,
+      "saidas_mes_anterior": 10,
+      "valor_causa": 28267419.6
     },
     {
       "grupo": "Grupo E1",
@@ -4387,16 +4377,6 @@
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 6,
       "valor_causa": 39730602.94
-    },
-    {
-      "grupo": "Grupo E1",
-      "profissional": "Tamires Lins Costa(TLI)",
-      "andamento": 224,
-      "entradas_mes": 3,
-      "saidas_mes": 11,
-      "entradas_mes_anterior": 8,
-      "saidas_mes_anterior": 10,
-      "valor_causa": 28242915.69
     },
     {
       "grupo": "Grupo E1",
@@ -4727,16 +4707,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 1592221.09
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Luiz Vicente de Carvalho(LVC)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 0.0
     },
     {
       "grupo": "Sem grupo",
@@ -6468,7 +6438,7 @@
       "saidas_mes": 1,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 0,
-      "valor_causa": 30188035.56
+      "valor_causa": 30368035.56
     },
     {
       "estado": "RS",
@@ -8283,11 +8253,6 @@
       "numero_processo": "1001701-20.2026.5.02.0411",
       "cliente": "CBC CARTUCHOS BRASIL",
       "profissional": "Letícia Meneghini Fontes (LMI)"
-    },
-    {
-      "numero_processo": "0021660-02.2026.5.04.0261",
-      "cliente": "CBC MONTENEGRO",
-      "profissional": "Luiz Vicente de Carvalho(LVC)"
     },
     {
       "numero_processo": "0001607-78.2026.5.07.0014",
