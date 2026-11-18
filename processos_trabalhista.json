@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-18T14:45:55",
+  "atualizado_em": "2026-11-18T15:00:56",
   "kpis": {
     "total_andamento": 7663,
     "entradas_hoje": 12,
@@ -318,12 +318,12 @@
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2168,
-      "entradas_mes": 56,
+      "andamento": 2169,
+      "entradas_mes": 57,
       "saidas_mes": 18,
       "entradas_mes_anterior": 105,
       "saidas_mes_anterior": 77,
-      "valor_causa": 486596791.16
+      "valor_causa": 486833799.83
     },
     {
       "nome": "Grupo E1",
@@ -336,8 +336,8 @@
     },
     {
       "nome": "Grupo B1",
-      "andamento": 1414,
-      "entradas_mes": 15,
+      "andamento": 1415,
+      "entradas_mes": 16,
       "saidas_mes": 21,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 42,
@@ -407,15 +407,6 @@
       "valor_causa": 0.0
     },
     {
-      "nome": "Sem grupo",
-      "andamento": 22,
-      "entradas_mes": 19,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 3,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 12772722.19
-    },
-    {
       "nome": "Grupo A2",
       "andamento": 21,
       "entradas_mes": 0,
@@ -423,6 +414,15 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 2,
       "valor_causa": 10695821.76
+    },
+    {
+      "nome": "Sem grupo",
+      "andamento": 20,
+      "entradas_mes": 17,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 3,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 12535713.52
     },
     {
       "nome": "Sócios",
@@ -709,21 +709,21 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2964,
+      "andamento": 2962,
       "entradas_mes": 4,
       "saidas_mes": 25,
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 48,
-      "valor_causa": 678858661.66
+      "valor_causa": 678508661.66
     },
     {
       "nome": "Execução",
-      "andamento": 920,
+      "andamento": 922,
       "entradas_mes": 7,
       "saidas_mes": 25,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 49,
-      "valor_causa": 136204612.96
+      "valor_causa": 136554612.96
     }
   ],
   "por_fase_outras": 404,
@@ -881,12 +881,12 @@
     {
       "fase": "Execução",
       "grupo": "Grupo B2",
-      "andamento": 95,
+      "andamento": 97,
       "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 17663494.38
+      "valor_causa": 18013494.38
     },
     {
       "fase": "Execução",
@@ -931,12 +931,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 894,
-      "entradas_mes": 13,
+      "andamento": 895,
+      "entradas_mes": 14,
       "saidas_mes": 5,
       "entradas_mes_anterior": 88,
       "saidas_mes_anterior": 22,
-      "valor_causa": 192492527.22
+      "valor_causa": 192729535.89
     },
     {
       "fase": "Instrução",
@@ -951,8 +951,8 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B1",
-      "andamento": 385,
-      "entradas_mes": 4,
+      "andamento": 386,
+      "entradas_mes": 5,
       "saidas_mes": 7,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 14,
@@ -1021,12 +1021,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 22,
-      "entradas_mes": 19,
+      "andamento": 20,
+      "entradas_mes": 17,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 12772722.19
+      "valor_causa": 12535713.52
     },
     {
       "fase": "Instrução",
@@ -1191,12 +1191,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo B2",
-      "andamento": 384,
+      "andamento": 382,
       "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 66280499.75
+      "valor_causa": 65930499.75
     },
     {
       "fase": "Recurso",
@@ -2335,8 +2335,8 @@
     {
       "grupo": "Grupo B1",
       "cliente": "BRIDGESTONE",
-      "andamento": 1414,
-      "entradas_mes": 15,
+      "andamento": 1415,
+      "entradas_mes": 16,
       "saidas_mes": 21,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 42,
@@ -3226,12 +3226,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "EUROCHEM SALITRE",
-      "andamento": 166,
-      "entradas_mes": 7,
+      "andamento": 167,
+      "entradas_mes": 8,
       "saidas_mes": 1,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 14,
-      "valor_causa": 39851408.72,
+      "valor_causa": 40088417.39,
       "alerta_entrada": false
     },
     {
@@ -3390,17 +3390,6 @@
     },
     {
       "grupo": "Grupo E2",
-      "cliente": "IPE REALTY",
-      "andamento": 6,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 2,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 1843757.53,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Grupo E2",
       "cliente": "GRUPO BAND RADIO TV",
       "andamento": 6,
       "entradas_mes": 0,
@@ -3408,6 +3397,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
       "valor_causa": 1500000.0,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Grupo E2",
+      "cliente": "IPE REALTY",
+      "andamento": 6,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 2,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 1843757.53,
       "alerta_entrada": false
     },
     {
@@ -3765,8 +3765,8 @@
     {
       "grupo": "Sem grupo",
       "cliente": "BRIDGESTONE",
-      "andamento": 6,
-      "entradas_mes": 6,
+      "andamento": 5,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
@@ -3819,17 +3819,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "EUROCHEM SALITRE",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 718035.21,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "MAHLE METAL - MOGI",
       "andamento": 1,
       "entradas_mes": 1,
@@ -3859,6 +3848,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 1592221.09,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "EUROCHEM SALITRE",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 481026.54,
       "alerta_entrada": false
     },
     {
@@ -4029,8 +4029,8 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Guilherme Silva Morimoto(GSM)",
-      "andamento": 235,
-      "entradas_mes": 4,
+      "andamento": 236,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 4,
@@ -4509,12 +4509,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Bruno Tanganelli Farah(BTF)",
-      "andamento": 68,
-      "entradas_mes": 15,
+      "andamento": 69,
+      "entradas_mes": 16,
       "saidas_mes": 0,
       "entradas_mes_anterior": 14,
       "saidas_mes_anterior": 0,
-      "valor_causa": 22696780.01
+      "valor_causa": 22933788.68
     },
     {
       "grupo": "Grupo E2",
@@ -4568,16 +4568,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Bruno Tanganelli Farah(BTF)",
-      "andamento": 3,
-      "entradas_mes": 3,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 958035.21
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
       "andamento": 2,
       "entradas_mes": 2,
@@ -4618,6 +4608,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Bruno Tanganelli Farah(BTF)",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 721026.54
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Vinícius Ronchi Arruda(VRO)",
       "andamento": 1,
       "entradas_mes": 0,
@@ -4645,16 +4645,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 1000.0
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Guilherme Silva Morimoto(GSM)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 0.0
     },
     {
       "grupo": "Sem grupo",
@@ -7090,16 +7080,6 @@
     },
     {
       "estado": "SP",
-      "cliente": "IPE REALTY",
-      "andamento": 7,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 2,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 1843757.53
-    },
-    {
-      "estado": "SP",
       "cliente": "MITRE VENDAS",
       "andamento": 7,
       "entradas_mes": 1,
@@ -7107,6 +7087,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 1305329.7
+    },
+    {
+      "estado": "SP",
+      "cliente": "IPE REALTY",
+      "andamento": 7,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 2,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 1843757.53
     },
     {
       "estado": "SP",
@@ -8193,11 +8183,6 @@
       "profissional": "Beatriz Santiago de Souza(BSO)"
     },
     {
-      "numero_processo": "1002286-97.2026.5.02.0435",
-      "cliente": "BRIDGESTONE",
-      "profissional": "Guilherme Silva Morimoto(GSM)"
-    },
-    {
       "numero_processo": "1002294-74.2026.5.02.0435",
       "cliente": "BRIDGESTONE",
       "profissional": "Rafael Rocha Ferreira(RFE)"
@@ -8236,11 +8221,6 @@
       "numero_processo": "0012070-44.2026.5.15.0083",
       "cliente": "EMBRAER",
       "profissional": "Nicolau Rafael Guimarães Coelho(NRG)"
-    },
-    {
-      "numero_processo": "0011452-44.2026.5.03.0080",
-      "cliente": "EUROCHEM SALITRE",
-      "profissional": "Bruno Tanganelli Farah(BTF)"
     },
     {
       "numero_processo": "0011458-51.2026.5.03.0080",
