@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-18T09:15:59",
+  "atualizado_em": "2026-11-18T10:42:00",
   "kpis": {
-    "total_andamento": 7653,
-    "entradas_hoje": 1,
+    "total_andamento": 7664,
+    "entradas_hoje": 12,
     "saidas_hoje": 0,
     "entradas_ontem": 15,
     "saidas_ontem": 10,
-    "entradas_mes": 145,
+    "entradas_mes": 156,
     "saidas_mes": 90,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 231,
-    "valor_causa_total": 1801237812.63,
-    "saldo_mes": 55
+    "valor_causa_total": 1810374836.38,
+    "saldo_mes": 66
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-11-18",
-      "entradas": 1,
+      "entradas": 12,
       "saidas": 0
     }
   ],
@@ -398,6 +398,15 @@
       "valor_causa": 135074103.84
     },
     {
+      "nome": "Sem grupo",
+      "andamento": 32,
+      "entradas_mes": 29,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 3,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 15208858.96
+    },
+    {
       "nome": "Grupo A1",
       "andamento": 28,
       "entradas_mes": 1,
@@ -414,15 +423,6 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 2,
       "valor_causa": 10695821.76
-    },
-    {
-      "nome": "Sem grupo",
-      "andamento": 21,
-      "entradas_mes": 18,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 3,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 6071835.21
     },
     {
       "nome": "Sócios",
@@ -446,21 +446,21 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5762,
-      "entradas_mes": 85,
+      "andamento": 5770,
+      "entradas_mes": 93,
       "saidas_mes": 75,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 166,
-      "valor_causa": 1389828342.67
+      "valor_causa": 1396957898.28
     },
     {
       "nome": "MG",
-      "andamento": 554,
-      "entradas_mes": 19,
+      "andamento": 556,
+      "entradas_mes": 21,
       "saidas_mes": 7,
       "entradas_mes_anterior": 26,
       "saidas_mes_anterior": 26,
-      "valor_causa": 144170498.25
+      "valor_causa": 146072182.76
     },
     {
       "nome": "PR",
@@ -554,12 +554,12 @@
     },
     {
       "nome": "SC",
-      "andamento": 40,
-      "entradas_mes": 0,
+      "andamento": 41,
+      "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 13837030.09
+      "valor_causa": 13942813.72
     },
     {
       "nome": "DF",
@@ -691,12 +691,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2891,
-      "entradas_mes": 61,
+      "andamento": 2902,
+      "entradas_mes": 72,
       "saidas_mes": 25,
       "entradas_mes_anterior": 270,
       "saidas_mes_anterior": 76,
-      "valor_causa": 841085632.9
+      "valor_causa": 850222656.65
     },
     {
       "nome": "Sentença",
@@ -1021,12 +1021,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 21,
-      "entradas_mes": 18,
+      "andamento": 32,
+      "entradas_mes": 29,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 6071835.21
+      "valor_causa": 15208858.96
     },
     {
       "fase": "Instrução",
@@ -1341,12 +1341,12 @@
     },
     {
       "nome": "Giulia Vendramini Milani(GVM)",
-      "andamento": 422,
-      "entradas_mes": 4,
+      "andamento": 423,
+      "entradas_mes": 5,
       "saidas_mes": 11,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 29,
-      "valor_causa": 66429963.6
+      "valor_causa": 68022184.69
     },
     {
       "nome": "Letícia Meneghini Fontes (LMI)",
@@ -1368,12 +1368,12 @@
     },
     {
       "nome": "Joice Ramos Miranda(JRM)",
-      "andamento": 310,
-      "entradas_mes": 4,
+      "andamento": 313,
+      "entradas_mes": 7,
       "saidas_mes": 0,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 6,
-      "valor_causa": 74321568.78
+      "valor_causa": 75512548.51
     },
     {
       "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
@@ -1386,12 +1386,12 @@
     },
     {
       "nome": "Beatriz Santiago de Souza(BSO)",
-      "andamento": 298,
-      "entradas_mes": 3,
+      "andamento": 299,
+      "entradas_mes": 4,
       "saidas_mes": 4,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 7,
-      "valor_causa": 63713232.36
+      "valor_causa": 63834639.61
     },
     {
       "nome": "Bianca Bolanhi Camacho(BBO)",
@@ -1403,6 +1403,15 @@
       "valor_causa": 33534661.49
     },
     {
+      "nome": "Rafael Rocha Ferreira(RFE)",
+      "andamento": 293,
+      "entradas_mes": 8,
+      "saidas_mes": 4,
+      "entradas_mes_anterior": 11,
+      "saidas_mes_anterior": 9,
+      "valor_causa": 82655019.27
+    },
+    {
       "nome": "Bruna Cembranelli Fazenda (BCF)",
       "andamento": 291,
       "entradas_mes": 6,
@@ -1412,22 +1421,13 @@
       "valor_causa": 49355549.38
     },
     {
-      "nome": "Rafael Rocha Ferreira(RFE)",
-      "andamento": 291,
-      "entradas_mes": 6,
-      "saidas_mes": 4,
-      "entradas_mes_anterior": 11,
-      "saidas_mes_anterior": 9,
-      "valor_causa": 82518494.8
-    },
-    {
       "nome": "Guilherme Silva Morimoto(GSM)",
-      "andamento": 286,
-      "entradas_mes": 4,
+      "andamento": 287,
+      "entradas_mes": 5,
       "saidas_mes": 1,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 4,
-      "valor_causa": 76836258.19
+      "valor_causa": 76851583.07
     },
     {
       "nome": "Júlia Priego Lopes da Silva(JPL)",
@@ -1485,12 +1485,12 @@
     },
     {
       "nome": "Paloma da Silva Santos(PSI)",
-      "andamento": 247,
-      "entradas_mes": 3,
+      "andamento": 249,
+      "entradas_mes": 5,
       "saidas_mes": 10,
       "entradas_mes_anterior": 15,
       "saidas_mes_anterior": 10,
-      "valor_causa": 55993225.79
+      "valor_causa": 56601549.23
     },
     {
       "nome": "Erik Mota Coppi(ECO)",
@@ -1539,12 +1539,12 @@
     },
     {
       "nome": "Nicolau Rafael Guimarães Coelho(NRG)",
-      "andamento": 198,
-      "entradas_mes": 3,
+      "andamento": 199,
+      "entradas_mes": 4,
       "saidas_mes": 11,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 22,
-      "valor_causa": 28146903.28
+      "valor_causa": 33619146.17
     },
     {
       "nome": "Thais Amaral Rocca(TAR)",
@@ -1664,15 +1664,6 @@
       "valor_causa": 0.0
     },
     {
-      "nome": "Daniela Prandi Pedro Ricca (DPR)",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 0.0
-    },
-    {
       "nome": "Vinicius da Silva Cerqueira(VSI) ; Antonio Carlos Aguiar(ACA)",
       "andamento": 1,
       "entradas_mes": 0,
@@ -1689,6 +1680,15 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 283292.82
+    },
+    {
+      "nome": "Daniela Prandi Pedro Ricca (DPR)",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 0.0
     },
     {
       "nome": "Luiz Vicente de Carvalho(LVC)",
@@ -1712,12 +1712,12 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1416,
-      "entradas_mes": 17,
+      "andamento": 1420,
+      "entradas_mes": 21,
       "saidas_mes": 21,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 42,
-      "valor_causa": 325789138.38,
+      "valor_causa": 326062394.98,
       "alerta_entrada": false
     },
     {
@@ -1732,22 +1732,22 @@
     },
     {
       "nome": "EMBRAER",
-      "andamento": 736,
-      "entradas_mes": 13,
+      "andamento": 737,
+      "entradas_mes": 14,
       "saidas_mes": 1,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 12,
-      "valor_causa": 142231221.31,
+      "valor_causa": 147703464.2,
       "alerta_entrada": true
     },
     {
       "nome": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 709,
-      "entradas_mes": 8,
+      "andamento": 711,
+      "entradas_mes": 10,
       "saidas_mes": 12,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 23,
-      "valor_causa": 142645855.37,
+      "valor_causa": 143527371.68,
       "alerta_entrada": false
     },
     {
@@ -1762,12 +1762,12 @@
     },
     {
       "nome": "MAHLE METAL - MOGI",
-      "andamento": 352,
-      "entradas_mes": 2,
+      "andamento": 354,
+      "entradas_mes": 4,
       "saidas_mes": 13,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 13,
-      "valor_causa": 71330989.1,
+      "valor_causa": 71939312.54,
       "alerta_entrada": false
     },
     {
@@ -1842,12 +1842,12 @@
     },
     {
       "nome": "SYNGENTA SEEDS NIDER",
-      "andamento": 151,
-      "entradas_mes": 2,
+      "andamento": 153,
+      "entradas_mes": 4,
       "saidas_mes": 1,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 13,
-      "valor_causa": 24007777.14,
+      "valor_causa": 25909461.65,
       "alerta_entrada": false
     },
     {
@@ -3762,6 +3762,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "BRIDGESTONE",
+      "andamento": 6,
+      "entradas_mes": 6,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 819501.04,
+      "alerta_entrada": true
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "COMPANHIA AIX",
       "andamento": 4,
       "entradas_mes": 2,
@@ -3781,6 +3792,17 @@
       "saidas_mes_anterior": 0,
       "valor_causa": 1163398.33,
       "alerta_entrada": true
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "SYNGENTA PROTEÇÃO DE",
+      "andamento": 3,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 989974.82,
+      "alerta_entrada": false
     },
     {
       "grupo": "Sem grupo",
@@ -3806,24 +3828,35 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "BRIDGESTONE",
+      "cliente": "MAHLE METAL - MOGI",
       "andamento": 2,
       "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 546244.44,
+      "valor_causa": 608323.44,
       "alerta_entrada": false
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 1,
-      "entradas_mes": 0,
+      "cliente": "SYNGENTA SEEDS NIDER",
+      "andamento": 2,
+      "entradas_mes": 2,
       "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
+      "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 108458.51,
+      "valor_causa": 1901684.51,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "EMBRAER",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 5631415.56,
       "alerta_entrada": false
     },
     {
@@ -3857,17 +3890,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 360560.16,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "EMBRAER",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 159172.67,
       "alerta_entrada": false
     },
     {
@@ -4407,7 +4429,7 @@
     },
     {
       "grupo": "Grupo E1",
-      "profissional": "Daniela Prandi Pedro Ricca (DPR)",
+      "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
       "andamento": 1,
       "entradas_mes": 0,
       "saidas_mes": 0,
@@ -4417,7 +4439,7 @@
     },
     {
       "grupo": "Grupo E1",
-      "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
+      "profissional": "Daniela Prandi Pedro Ricca (DPR)",
       "andamento": 1,
       "entradas_mes": 0,
       "saidas_mes": 0,
@@ -4587,6 +4609,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Joice Ramos Miranda(JRM)",
+      "andamento": 3,
+      "entradas_mes": 3,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1190979.73
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
       "andamento": 2,
       "entradas_mes": 2,
@@ -4594,6 +4626,36 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
       "valor_causa": 1580055.49
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Paloma da Silva Santos(PSI)",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 608323.44
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Beatriz Santiago de Souza(BSO)",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 666651.69
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Rafael Rocha Ferreira(RFE)",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 136524.47
     },
     {
       "grupo": "Sem grupo",
@@ -4627,13 +4689,23 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Beatriz Santiago de Souza(BSO)",
+      "profissional": "Guilherme Silva Morimoto(GSM)",
       "andamento": 1,
       "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 545244.44
+      "valor_causa": 15324.88
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Giulia Vendramini Milani(GVM)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1592221.09
     },
     {
       "grupo": "Sem grupo",
@@ -4644,6 +4716,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Nicolau Rafael Guimarães Coelho(NRG)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 5472242.89
     },
     {
       "grupo": "Sem grupo",
@@ -5309,6 +5391,16 @@
     },
     {
       "estado": "MG",
+      "cliente": "SYNGENTA SEEDS NIDER",
+      "andamento": 42,
+      "entradas_mes": 4,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 2,
+      "saidas_mes_anterior": 7,
+      "valor_causa": 6393479.86
+    },
+    {
+      "estado": "MG",
       "cliente": "HERINGER",
       "andamento": 40,
       "entradas_mes": 0,
@@ -5316,16 +5408,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 3,
       "valor_causa": 8407155.43
-    },
-    {
-      "estado": "MG",
-      "cliente": "SYNGENTA SEEDS NIDER",
-      "andamento": 40,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 2,
-      "saidas_mes_anterior": 7,
-      "valor_causa": 4491795.35
     },
     {
       "estado": "MG",
@@ -6569,6 +6651,16 @@
     },
     {
       "estado": "SC",
+      "cliente": "SYNGENTA PROTEÇÃO DE",
+      "andamento": 2,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 105783.63
+    },
+    {
+      "estado": "SC",
       "cliente": "UHE SÃO SIMÃO",
       "andamento": 2,
       "entradas_mes": 0,
@@ -6590,16 +6682,6 @@
     {
       "estado": "SC",
       "cliente": "EMBRAER",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 0.0
-    },
-    {
-      "estado": "SC",
-      "cliente": "SYNGENTA PROTEÇÃO DE",
       "andamento": 1,
       "entradas_mes": 0,
       "saidas_mes": 0,
@@ -6680,32 +6762,32 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1390,
-      "entradas_mes": 16,
+      "andamento": 1394,
+      "entradas_mes": 20,
       "saidas_mes": 21,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 40,
-      "valor_causa": 314159018.59
+      "valor_causa": 314432275.19
     },
     {
       "estado": "SP",
       "cliente": "EMBRAER",
-      "andamento": 718,
-      "entradas_mes": 12,
+      "andamento": 719,
+      "entradas_mes": 13,
       "saidas_mes": 0,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 12,
-      "valor_causa": 141781378.9
+      "valor_causa": 147253621.79
     },
     {
       "estado": "SP",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 607,
-      "entradas_mes": 8,
+      "andamento": 608,
+      "entradas_mes": 9,
       "saidas_mes": 9,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 18,
-      "valor_causa": 128794870.49
+      "valor_causa": 129570603.17
     },
     {
       "estado": "SP",
@@ -6720,12 +6802,12 @@
     {
       "estado": "SP",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 351,
-      "entradas_mes": 2,
+      "andamento": 353,
+      "entradas_mes": 4,
       "saidas_mes": 13,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 13,
-      "valor_causa": 71330989.1
+      "valor_causa": 71939312.54
     },
     {
       "estado": "SP",
@@ -8101,12 +8183,12 @@
   "clientes_com_alerta": [
     {
       "nome": "EMBRAER",
-      "andamento": 736,
-      "entradas_mes": 13,
+      "andamento": 737,
+      "entradas_mes": 14,
       "saidas_mes": 1,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 12,
-      "valor_causa": 142231221.31,
+      "valor_causa": 147703464.2,
       "alerta_entrada": true
     },
     {
@@ -8148,6 +8230,26 @@
     },
     {
       "numero_processo": "1002293-04.2026.5.02.0431",
+      "cliente": "BRIDGESTONE",
+      "profissional": "Beatriz Santiago de Souza(BSO)"
+    },
+    {
+      "numero_processo": "1002286-97.2026.5.02.0435",
+      "cliente": "BRIDGESTONE",
+      "profissional": "Guilherme Silva Morimoto(GSM)"
+    },
+    {
+      "numero_processo": "1002294-74.2026.5.02.0435",
+      "cliente": "BRIDGESTONE",
+      "profissional": "Rafael Rocha Ferreira(RFE)"
+    },
+    {
+      "numero_processo": "1001953-69.2026.5.02.0040",
+      "cliente": "BRIDGESTONE",
+      "profissional": "Rafael Rocha Ferreira(RFE)"
+    },
+    {
+      "numero_processo": "1002295-59.2026.5.02.0435",
       "cliente": "BRIDGESTONE",
       "profissional": "Beatriz Santiago de Souza(BSO)"
     },
@@ -8202,6 +8304,11 @@
       "profissional": "Anna Carolina Balbino Gatti Baani(ANB)"
     },
     {
+      "numero_processo": "0012070-44.2026.5.15.0083",
+      "cliente": "EMBRAER",
+      "profissional": "Nicolau Rafael Guimarães Coelho(NRG)"
+    },
+    {
       "numero_processo": "0011445-52.2026.5.03.0080",
       "cliente": "EUROCHEM SALITRE",
       "profissional": "Bruno Tanganelli Farah(BTF)"
@@ -8227,6 +8334,16 @@
       "profissional": "Bruno Tanganelli Farah(BTF)"
     },
     {
+      "numero_processo": "0012455-28.2026.5.15.0071",
+      "cliente": "MAHLE METAL - MOGI",
+      "profissional": "Paloma da Silva Santos(PSI)"
+    },
+    {
+      "numero_processo": "0012477-86.2026.5.15.0071",
+      "cliente": "MAHLE METAL - MOGI",
+      "profissional": "Paloma da Silva Santos(PSI)"
+    },
+    {
       "numero_processo": "0011291-78.2026.5.15.0119",
       "cliente": "PILKINGTON (NSG)",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
@@ -8235,6 +8352,26 @@
       "numero_processo": "1002027-29.2026.5.02.0718",
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "profissional": "Vinícius Ronchi Arruda(VRO)"
+    },
+    {
+      "numero_processo": "0011875-27.2026.5.15.0126",
+      "cliente": "SYNGENTA PROTEÇÃO DE",
+      "profissional": "Joice Ramos Miranda(JRM)"
+    },
+    {
+      "numero_processo": "0011856-21.2026.5.15.0126",
+      "cliente": "SYNGENTA PROTEÇÃO DE",
+      "profissional": "Joice Ramos Miranda(JRM)"
+    },
+    {
+      "numero_processo": "0012045-84.2026.5.03.0044",
+      "cliente": "SYNGENTA SEEDS NIDER",
+      "profissional": "Joice Ramos Miranda(JRM)"
+    },
+    {
+      "numero_processo": "0011125-05.2026.5.03.0176",
+      "cliente": "SYNGENTA SEEDS NIDER",
+      "profissional": "Giulia Vendramini Milani(GVM)"
     }
   ]
 }
