@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-19T18:30:19",
+  "atualizado_em": "2026-11-19T18:45:23",
   "kpis": {
-    "total_andamento": 7667,
-    "entradas_hoje": 15,
+    "total_andamento": 7668,
+    "entradas_hoje": 16,
     "saidas_hoje": 9,
     "entradas_ontem": 16,
     "saidas_ontem": 8,
-    "entradas_mes": 176,
+    "entradas_mes": 177,
     "saidas_mes": 107,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 231,
-    "valor_causa_total": 1813808048.53,
-    "saldo_mes": 69
+    "valor_causa_total": 1813822993.43,
+    "saldo_mes": 70
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-11-19",
-      "entradas": 15,
+      "entradas": 16,
       "saidas": 9
     }
   ],
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 8,
-      "entradas_mes": 5,
+      "andamento": 9,
+      "entradas_mes": 6,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 3856979.53
+      "valor_causa": 3871924.43
     },
     {
       "nome": "Sócios",
@@ -464,12 +464,12 @@
     },
     {
       "nome": "MG",
-      "andamento": 555,
-      "entradas_mes": 21,
+      "andamento": 556,
+      "entradas_mes": 22,
       "saidas_mes": 8,
       "entradas_mes_anterior": 26,
       "saidas_mes_anterior": 26,
-      "valor_causa": 145635290.22
+      "valor_causa": 145650235.12
     },
     {
       "nome": "PR",
@@ -700,12 +700,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2907,
-      "entradas_mes": 85,
+      "andamento": 2908,
+      "entradas_mes": 86,
       "saidas_mes": 30,
       "entradas_mes_anterior": 272,
       "saidas_mes_anterior": 76,
-      "valor_causa": 854713280.5
+      "valor_causa": 854728225.4
     },
     {
       "nome": "Sentença",
@@ -1040,12 +1040,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 7,
-      "entradas_mes": 4,
+      "andamento": 8,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 2264758.44
+      "valor_causa": 2279703.34
     },
     {
       "fase": "Instrução",
@@ -1388,12 +1388,12 @@
     },
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 358,
-      "entradas_mes": 13,
+      "andamento": 359,
+      "entradas_mes": 14,
       "saidas_mes": 4,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 23,
-      "valor_causa": 51257355.4
+      "valor_causa": 51272300.3
     },
     {
       "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
@@ -1861,12 +1861,12 @@
     },
     {
       "nome": "EUROCHEM SALITRE",
-      "andamento": 168,
-      "entradas_mes": 9,
+      "andamento": 169,
+      "entradas_mes": 10,
       "saidas_mes": 1,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 14,
-      "valor_causa": 40569443.93,
+      "valor_causa": 40584388.83,
       "alerta_entrada": false
     },
     {
@@ -3856,6 +3856,17 @@
       "alerta_entrada": false
     },
     {
+      "grupo": "Sem grupo",
+      "cliente": "EUROCHEM SALITRE",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 14944.9,
+      "alerta_entrada": false
+    },
+    {
       "grupo": "Sócios",
       "cliente": "PEIXOTO E CURY",
       "andamento": 2,
@@ -4600,6 +4611,16 @@
       "valor_causa": 1592221.09
     },
     {
+      "grupo": "Sem grupo",
+      "profissional": "Camila Alves Magalhães de Paula(CAL)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 14944.9
+    },
+    {
       "grupo": "Sócios",
       "profissional": "Poliana Banqueri da Silva Guimarães(PBS)",
       "andamento": 3,
@@ -5244,12 +5265,12 @@
     {
       "estado": "MG",
       "cliente": "EUROCHEM SALITRE",
-      "andamento": 117,
-      "entradas_mes": 6,
+      "andamento": 118,
+      "entradas_mes": 7,
       "saidas_mes": 1,
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 9,
-      "valor_causa": 28009798.1
+      "valor_causa": 28024743.0
     },
     {
       "estado": "MG",
@@ -8099,6 +8120,11 @@
       "numero_processo": "0001683-94.2026.5.09.0128",
       "cliente": "COMPANHIA AIX",
       "profissional": "Natália Biondi Gaggini Robles(NBG)"
+    },
+    {
+      "numero_processo": "0011476-72.2026.5.03.0080",
+      "cliente": "EUROCHEM SALITRE",
+      "profissional": "Camila Alves Magalhães de Paula(CAL)"
     },
     {
       "numero_processo": "0011291-78.2026.5.15.0119",
