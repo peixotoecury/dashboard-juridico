@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-19T15:45:18",
+  "atualizado_em": "2026-11-19T16:00:20",
   "kpis": {
-    "total_andamento": 7669,
+    "total_andamento": 7668,
     "entradas_hoje": 13,
-    "saidas_hoje": 5,
+    "saidas_hoje": 6,
     "entradas_ontem": 16,
     "saidas_ontem": 8,
     "entradas_mes": 174,
-    "saidas_mes": 103,
+    "saidas_mes": 104,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 231,
-    "valor_causa_total": 1813848262.9,
-    "saldo_mes": 71
+    "valor_causa_total": 1813834466.81,
+    "saldo_mes": 70
   },
   "serie_diaria": [
     {
@@ -312,18 +312,18 @@
     {
       "data": "2026-11-19",
       "entradas": 13,
-      "saidas": 5
+      "saidas": 6
     }
   ],
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2171,
+      "andamento": 2170,
       "entradas_mes": 64,
-      "saidas_mes": 23,
+      "saidas_mes": 24,
       "entradas_mes_anterior": 105,
       "saidas_mes_anterior": 77,
-      "valor_causa": 488572588.89
+      "valor_causa": 488558792.8
     },
     {
       "nome": "Grupo E1",
@@ -455,12 +455,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5772,
+      "andamento": 5771,
       "entradas_mes": 105,
-      "saidas_mes": 85,
+      "saidas_mes": 86,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 166,
-      "valor_causa": 1400100352.69
+      "valor_causa": 1400086556.6
     },
     {
       "nome": "MG",
@@ -700,12 +700,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2900,
+      "andamento": 2899,
       "entradas_mes": 86,
-      "saidas_mes": 28,
+      "saidas_mes": 29,
       "entradas_mes_anterior": 270,
       "saidas_mes_anterior": 76,
-      "valor_causa": 852613525.99
+      "valor_causa": 852599729.9
     },
     {
       "nome": "Sentença",
@@ -940,12 +940,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 902,
+      "andamento": 901,
       "entradas_mes": 21,
-      "saidas_mes": 5,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 88,
       "saidas_mes_anterior": 22,
-      "valor_causa": 195103294.05
+      "valor_causa": 195089497.96
     },
     {
       "fase": "Instrução",
@@ -1387,12 +1387,12 @@
     },
     {
       "nome": "Lucas Willott Pereira (LWP)",
-      "andamento": 320,
+      "andamento": 319,
       "entradas_mes": 4,
-      "saidas_mes": 6,
+      "saidas_mes": 7,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 7,
-      "valor_causa": 39562743.12
+      "valor_causa": 39548947.03
     },
     {
       "nome": "Joice Ramos Miranda(JRM)",
@@ -1741,12 +1741,12 @@
     },
     {
       "nome": "BP BIOENERGIA",
-      "andamento": 761,
+      "andamento": 760,
       "entradas_mes": 13,
-      "saidas_mes": 12,
+      "saidas_mes": 13,
       "entradas_mes_anterior": 32,
       "saidas_mes_anterior": 22,
-      "valor_causa": 219334775.73,
+      "valor_causa": 219320979.64,
       "alerta_entrada": false
     },
     {
@@ -1761,7 +1761,7 @@
     },
     {
       "nome": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 713,
+      "andamento": 714,
       "entradas_mes": 12,
       "saidas_mes": 12,
       "entradas_mes_anterior": 25,
@@ -1955,22 +1955,22 @@
     },
     {
       "grupo": "Grupo A1",
-      "cliente": "EMBRAER",
+      "cliente": "SYNGENTA PROTEÇÃO DE",
       "andamento": 5,
-      "entradas_mes": 1,
+      "entradas_mes": 0,
       "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
+      "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0,
       "alerta_entrada": false
     },
     {
       "grupo": "Grupo A1",
-      "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 4,
-      "entradas_mes": 0,
+      "cliente": "EMBRAER",
+      "andamento": 5,
+      "entradas_mes": 1,
       "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
+      "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0,
       "alerta_entrada": false
@@ -2033,17 +2033,6 @@
     {
       "grupo": "Grupo A1",
       "cliente": "GRAMMER DO BRASIL",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 0.0,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Grupo A1",
-      "cliente": "JAMIL EL KADRE",
       "andamento": 1,
       "entradas_mes": 0,
       "saidas_mes": 0,
@@ -3221,12 +3210,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "BP BIOENERGIA",
-      "andamento": 760,
+      "andamento": 759,
       "entradas_mes": 12,
-      "saidas_mes": 12,
+      "saidas_mes": 13,
       "entradas_mes_anterior": 32,
       "saidas_mes_anterior": 22,
-      "valor_causa": 217784140.75,
+      "valor_causa": 217770344.66,
       "alerta_entrada": false
     },
     {
@@ -4443,12 +4432,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Lucas Willott Pereira (LWP)",
-      "andamento": 319,
+      "andamento": 318,
       "entradas_mes": 3,
-      "saidas_mes": 6,
+      "saidas_mes": 7,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 7,
-      "valor_causa": 39384205.04
+      "valor_causa": 39370408.95
     },
     {
       "grupo": "Grupo E2",
@@ -6655,7 +6644,7 @@
     {
       "estado": "SP",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 609,
+      "andamento": 610,
       "entradas_mes": 10,
       "saidas_mes": 9,
       "entradas_mes_anterior": 17,
@@ -6665,12 +6654,12 @@
     {
       "estado": "SP",
       "cliente": "BP BIOENERGIA",
-      "andamento": 426,
+      "andamento": 425,
       "entradas_mes": 10,
-      "saidas_mes": 6,
+      "saidas_mes": 7,
       "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 13,
-      "valor_causa": 106248487.35
+      "valor_causa": 106234691.26
     },
     {
       "estado": "SP",
@@ -7691,16 +7680,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 703031.78
-    },
-    {
-      "estado": "SP",
-      "cliente": "JAMIL EL KADRE",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 0.0
     },
     {
       "estado": "SP",
