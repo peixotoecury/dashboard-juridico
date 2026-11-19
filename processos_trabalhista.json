@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-19T11:45:21",
+  "atualizado_em": "2026-11-19T12:00:21",
   "kpis": {
     "total_andamento": 7670,
     "entradas_hoje": 12,
@@ -345,21 +345,21 @@
     },
     {
       "nome": "Grupo B2",
-      "andamento": 754,
-      "entradas_mes": 12,
+      "andamento": 755,
+      "entradas_mes": 13,
       "saidas_mes": 1,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 12,
-      "valor_causa": 144296889.1
+      "valor_causa": 149769131.99
     },
     {
       "nome": "Grupo B3",
-      "andamento": 587,
-      "entradas_mes": 15,
+      "andamento": 588,
+      "entradas_mes": 16,
       "saidas_mes": 6,
       "entradas_mes_anterior": 35,
       "saidas_mes_anterior": 12,
-      "valor_causa": 117567390.45
+      "valor_causa": 117697205.65
     },
     {
       "nome": "Grupo C1",
@@ -408,12 +408,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 27,
-      "entradas_mes": 24,
+      "andamento": 25,
+      "entradas_mes": 22,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 11921193.79
+      "valor_causa": 6319135.7
     },
     {
       "nome": "Grupo A2",
@@ -691,21 +691,21 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 451,
-      "entradas_mes": 59,
+      "andamento": 452,
+      "entradas_mes": 60,
       "saidas_mes": 5,
       "entradas_mes_anterior": 35,
       "saidas_mes_anterior": 17,
-      "valor_causa": 106027286.55
+      "valor_causa": 106157101.75
     },
     {
       "nome": "Instrução",
-      "andamento": 2901,
-      "entradas_mes": 86,
+      "andamento": 2900,
+      "entradas_mes": 85,
       "saidas_mes": 28,
       "entradas_mes_anterior": 270,
       "saidas_mes_anterior": 76,
-      "valor_causa": 851161862.67
+      "valor_causa": 851032047.47
     },
     {
       "nome": "Sentença",
@@ -819,6 +819,16 @@
     },
     {
       "fase": "Ajuizamento",
+      "grupo": "Grupo B3",
+      "andamento": 3,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 189815.2
+    },
+    {
+      "fase": "Ajuizamento",
       "grupo": "Sócios",
       "andamento": 2,
       "entradas_mes": 0,
@@ -836,16 +846,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
       "valor_causa": 0.0
-    },
-    {
-      "fase": "Ajuizamento",
-      "grupo": "Grupo B3",
-      "andamento": 2,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 60000.0
     },
     {
       "fase": "Execução",
@@ -1000,12 +1000,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B2",
-      "andamento": 155,
-      "entradas_mes": 10,
+      "andamento": 156,
+      "entradas_mes": 11,
       "saidas_mes": 1,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 2,
-      "valor_causa": 45104510.62
+      "valor_causa": 50576753.51
     },
     {
       "fase": "Instrução",
@@ -1030,12 +1030,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 27,
-      "entradas_mes": 24,
+      "andamento": 25,
+      "entradas_mes": 22,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 11921193.79
+      "valor_causa": 6319135.7
     },
     {
       "fase": "Instrução",
@@ -2385,12 +2385,12 @@
     {
       "grupo": "Grupo B2",
       "cliente": "EMBRAER",
-      "andamento": 731,
-      "entradas_mes": 12,
+      "andamento": 732,
+      "entradas_mes": 13,
       "saidas_mes": 1,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 12,
-      "valor_causa": 142231221.31,
+      "valor_causa": 147703464.2,
       "alerta_entrada": true
     },
     {
@@ -2407,12 +2407,12 @@
     {
       "grupo": "Grupo B3",
       "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 248,
-      "entradas_mes": 13,
+      "andamento": 249,
+      "entradas_mes": 14,
       "saidas_mes": 3,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 10,
-      "valor_causa": 35059653.76,
+      "valor_causa": 35189468.96,
       "alerta_entrada": false
     },
     {
@@ -3858,17 +3858,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 129815.2,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "PILKINGTON (NSG)",
       "andamento": 1,
       "entradas_mes": 1,
@@ -3876,28 +3865,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 29420.51,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "EMBRAER",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 5472242.89,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "MAHLE THERMAL",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 26201.62,
       "alerta_entrada": false
     },
     {
@@ -3920,6 +3887,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 32163.75,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "MAHLE THERMAL",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 26201.62,
       "alerta_entrada": false
     },
     {
@@ -4190,22 +4168,22 @@
     {
       "grupo": "Grupo B2",
       "profissional": "Nicolau Rafael Guimarães Coelho(NRG)",
-      "andamento": 75,
-      "entradas_mes": 1,
+      "andamento": 76,
+      "entradas_mes": 2,
       "saidas_mes": 1,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 3,
-      "valor_causa": 24875187.61
+      "valor_causa": 30347430.5
     },
     {
       "grupo": "Grupo B3",
       "profissional": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 369,
-      "entradas_mes": 14,
+      "andamento": 370,
+      "entradas_mes": 15,
       "saidas_mes": 4,
       "entradas_mes_anterior": 31,
       "saidas_mes_anterior": 5,
-      "valor_causa": 71621921.47
+      "valor_causa": 71751736.67
     },
     {
       "grupo": "Grupo B3",
@@ -4719,16 +4697,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 129815.2
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Bruna Cembranelli Fazenda (BCF)",
       "andamento": 1,
       "entradas_mes": 1,
@@ -4736,16 +4704,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 1000.0
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Nicolau Rafael Guimarães Coelho(NRG)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 5472242.89
     },
     {
       "grupo": "Sem grupo",
@@ -8274,11 +8232,6 @@
       "profissional": "Guilherme Silva Morimoto(GSM)"
     },
     {
-      "numero_processo": "1001747-09.2026.5.02.0411",
-      "cliente": "CBC CARTUCHOS BRASIL",
-      "profissional": "Letícia Meneghini Fontes (LMI)"
-    },
-    {
       "numero_processo": "0001607-78.2026.5.07.0014",
       "cliente": "COMPANHIA AIX",
       "profissional": "Natália Biondi Gaggini Robles(NBG)"
@@ -8292,11 +8245,6 @@
       "numero_processo": "0001778-74.2026.5.07.0001",
       "cliente": "COMPANHIA AIX",
       "profissional": "Natália Biondi Gaggini Robles(NBG)"
-    },
-    {
-      "numero_processo": "0012070-44.2026.5.15.0083",
-      "cliente": "EMBRAER",
-      "profissional": "Nicolau Rafael Guimarães Coelho(NRG)"
     },
     {
       "numero_processo": "0011834-60.2026.5.15.0126",
