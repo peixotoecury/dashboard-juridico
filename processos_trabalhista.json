@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-19T19:45:19",
+  "atualizado_em": "2026-11-19T20:00:20",
   "kpis": {
-    "total_andamento": 7676,
-    "entradas_hoje": 24,
+    "total_andamento": 7677,
+    "entradas_hoje": 25,
     "saidas_hoje": 9,
     "entradas_ontem": 16,
     "saidas_ontem": 8,
-    "entradas_mes": 185,
+    "entradas_mes": 186,
     "saidas_mes": 107,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 231,
-    "valor_causa_total": 1816122042.2,
-    "saldo_mes": 78
+    "valor_causa_total": 1816590301.5,
+    "saldo_mes": 79
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-11-19",
-      "entradas": 24,
+      "entradas": 25,
       "saidas": 9
     }
   ],
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 17,
-      "entradas_mes": 14,
+      "andamento": 18,
+      "entradas_mes": 15,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 6170973.2
+      "valor_causa": 6639232.5
     },
     {
       "nome": "Sócios",
@@ -455,12 +455,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5778,
-      "entradas_mes": 114,
+      "andamento": 5779,
+      "entradas_mes": 115,
       "saidas_mes": 88,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 166,
-      "valor_causa": 1402267535.55
+      "valor_causa": 1402735794.85
     },
     {
       "nome": "MG",
@@ -700,12 +700,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2916,
-      "entradas_mes": 94,
+      "andamento": 2917,
+      "entradas_mes": 95,
       "saidas_mes": 30,
       "entradas_mes_anterior": 272,
       "saidas_mes_anterior": 76,
-      "valor_causa": 857027274.17
+      "valor_causa": 857495533.47
     },
     {
       "nome": "Sentença",
@@ -1030,12 +1030,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 16,
-      "entradas_mes": 13,
+      "andamento": 17,
+      "entradas_mes": 14,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 4578752.11
+      "valor_causa": 5047011.41
     },
     {
       "fase": "Instrução",
@@ -1424,12 +1424,12 @@
     },
     {
       "nome": "Beatriz Santiago de Souza(BSO)",
-      "andamento": 299,
-      "entradas_mes": 4,
+      "andamento": 300,
+      "entradas_mes": 5,
       "saidas_mes": 4,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 7,
-      "valor_causa": 63834639.61
+      "valor_causa": 64301898.91
     },
     {
       "nome": "Bianca Bolanhi Camacho(BBO)",
@@ -1582,7 +1582,7 @@
       "saidas_mes": 2,
       "entradas_mes_anterior": 33,
       "saidas_mes_anterior": 2,
-      "valor_causa": 40921637.94
+      "valor_causa": 40922637.94
     },
     {
       "nome": "Mariana Borges de Menezes Fávaro(MBF)",
@@ -1741,12 +1741,12 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1419,
-      "entradas_mes": 23,
+      "andamento": 1420,
+      "entradas_mes": 24,
       "saidas_mes": 24,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 42,
-      "valor_causa": 326037407.61,
+      "valor_causa": 326504666.91,
       "alerta_entrada": false
     },
     {
@@ -1836,7 +1836,7 @@
       "saidas_mes": 3,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 10,
-      "valor_causa": 35653593.32,
+      "valor_causa": 35654593.32,
       "alerta_entrada": false
     },
     {
@@ -3797,7 +3797,7 @@
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 464124.36,
+      "valor_causa": 465124.36,
       "alerta_entrada": true
     },
     {
@@ -3813,6 +3813,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "BRIDGESTONE",
+      "andamento": 3,
+      "entradas_mes": 3,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1013503.74,
+      "alerta_entrada": true
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "COMPANHIA AIX",
       "andamento": 2,
       "entradas_mes": 0,
@@ -3820,17 +3831,6 @@
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
       "valor_causa": 30000.0,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "BRIDGESTONE",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 546244.44,
       "alerta_entrada": false
     },
     {
@@ -4580,7 +4580,7 @@
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
-      "valor_causa": 30000.0
+      "valor_causa": 31000.0
     },
     {
       "grupo": "Sem grupo",
@@ -4601,6 +4601,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
       "valor_causa": 1580055.49
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Beatriz Santiago de Souza(BSO)",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1012503.74
     },
     {
       "grupo": "Sem grupo",
@@ -4631,16 +4641,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 1000.0
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Beatriz Santiago de Souza(BSO)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 545244.44
     },
     {
       "grupo": "Sem grupo",
@@ -6717,12 +6717,12 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1393,
-      "entradas_mes": 22,
+      "andamento": 1394,
+      "entradas_mes": 23,
       "saidas_mes": 24,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 40,
-      "valor_causa": 314407287.82
+      "valor_causa": 314874547.12
     },
     {
       "estado": "SP",
@@ -6802,7 +6802,7 @@
       "saidas_mes": 3,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 9,
-      "valor_causa": 34368099.38
+      "valor_causa": 34369099.38
     },
     {
       "estado": "SP",
@@ -8174,12 +8174,12 @@
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
     },
     {
-      "numero_processo": "0011698-39.2026.5.15.0037",
+      "numero_processo": "0011699-24.2026.5.15.0037",
       "cliente": "BP BIOENERGIA",
       "profissional": "Mariana Borges de Menezes Fávaro(MBF)"
     },
     {
-      "numero_processo": "0011699-24.2026.5.15.0037",
+      "numero_processo": "0011698-39.2026.5.15.0037",
       "cliente": "BP BIOENERGIA",
       "profissional": "Mariana Borges de Menezes Fávaro(MBF)"
     },
@@ -8190,6 +8190,11 @@
     },
     {
       "numero_processo": "1002293-04.2026.5.02.0431",
+      "cliente": "BRIDGESTONE",
+      "profissional": "Beatriz Santiago de Souza(BSO)"
+    },
+    {
+      "numero_processo": "1002288-73.2026.5.02.0433",
       "cliente": "BRIDGESTONE",
       "profissional": "Beatriz Santiago de Souza(BSO)"
     },
