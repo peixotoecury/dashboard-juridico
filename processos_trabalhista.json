@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-19T19:15:19",
+  "atualizado_em": "2026-11-19T19:30:19",
   "kpis": {
-    "total_andamento": 7673,
-    "entradas_hoje": 21,
+    "total_andamento": 7674,
+    "entradas_hoje": 22,
     "saidas_hoje": 9,
     "entradas_ontem": 16,
     "saidas_ontem": 8,
-    "entradas_mes": 182,
+    "entradas_mes": 183,
     "saidas_mes": 107,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 231,
-    "valor_causa_total": 1814378769.33,
-    "saldo_mes": 75
+    "valor_causa_total": 1815464494.03,
+    "saldo_mes": 76
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-11-19",
-      "entradas": 21,
+      "entradas": 22,
       "saidas": 9
     }
   ],
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 14,
-      "entradas_mes": 11,
+      "andamento": 15,
+      "entradas_mes": 12,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 4427700.33
+      "valor_causa": 5513425.03
     },
     {
       "nome": "Sócios",
@@ -455,12 +455,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5775,
-      "entradas_mes": 111,
+      "andamento": 5776,
+      "entradas_mes": 112,
       "saidas_mes": 88,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 166,
-      "valor_causa": 1400524262.68
+      "valor_causa": 1401609987.38
     },
     {
       "nome": "MG",
@@ -700,12 +700,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2913,
-      "entradas_mes": 91,
+      "andamento": 2914,
+      "entradas_mes": 92,
       "saidas_mes": 30,
       "entradas_mes_anterior": 272,
       "saidas_mes_anterior": 76,
-      "valor_causa": 855284001.3
+      "valor_causa": 856369726.0
     },
     {
       "nome": "Sentença",
@@ -1030,12 +1030,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 13,
-      "entradas_mes": 10,
+      "andamento": 14,
+      "entradas_mes": 11,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 2835479.24
+      "valor_causa": 3921203.94
     },
     {
       "fase": "Instrução",
@@ -1586,12 +1586,12 @@
     },
     {
       "nome": "Mariana Borges de Menezes Fávaro(MBF)",
-      "andamento": 155,
-      "entradas_mes": 4,
+      "andamento": 156,
+      "entradas_mes": 5,
       "saidas_mes": 4,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 8,
-      "valor_causa": 19449150.49
+      "valor_causa": 19763089.18
     },
     {
       "nome": "Bruno Tanganelli Farah(BTF)",
@@ -1600,7 +1600,7 @@
       "saidas_mes": 0,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 0,
-      "valor_causa": 24383325.78
+      "valor_causa": 25155111.79
     },
     {
       "nome": "Sofia Freire (SOF)",
@@ -1751,12 +1751,12 @@
     },
     {
       "nome": "BP BIOENERGIA",
-      "andamento": 760,
-      "entradas_mes": 14,
+      "andamento": 761,
+      "entradas_mes": 15,
       "saidas_mes": 14,
       "entradas_mes_anterior": 32,
       "saidas_mes_anterior": 22,
-      "valor_causa": 219320979.64,
+      "valor_causa": 219634918.33,
       "alerta_entrada": false
     },
     {
@@ -1866,7 +1866,7 @@
       "saidas_mes": 1,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 14,
-      "valor_causa": 40584388.83,
+      "valor_causa": 41356174.84,
       "alerta_entrada": false
     },
     {
@@ -3813,6 +3813,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "BP BIOENERGIA",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1864573.67,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "BRIDGESTONE",
       "andamento": 2,
       "entradas_mes": 2,
@@ -3830,7 +3841,7 @@
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 14944.9,
+      "valor_causa": 786730.91,
       "alerta_entrada": false
     },
     {
@@ -3842,17 +3853,6 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
       "valor_causa": 108458.51,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "BP BIOENERGIA",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 1550634.98,
       "alerta_entrada": false
     },
     {
@@ -4670,7 +4670,17 @@
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 0.0
+      "valor_causa": 771786.01
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Mariana Borges de Menezes Fávaro(MBF)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 313938.69
     },
     {
       "grupo": "Sócios",
@@ -6737,12 +6747,12 @@
     {
       "estado": "SP",
       "cliente": "BP BIOENERGIA",
-      "andamento": 425,
-      "entradas_mes": 11,
+      "andamento": 426,
+      "entradas_mes": 12,
       "saidas_mes": 8,
       "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 13,
-      "valor_causa": 106234691.26
+      "valor_causa": 106548629.95
     },
     {
       "estado": "SP",
@@ -7002,7 +7012,7 @@
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 3,
-      "valor_causa": 2285141.21
+      "valor_causa": 3056927.22
     },
     {
       "estado": "SP",
@@ -8164,6 +8174,11 @@
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
     },
     {
+      "numero_processo": "0011699-24.2026.5.15.0037",
+      "cliente": "BP BIOENERGIA",
+      "profissional": "Mariana Borges de Menezes Fávaro(MBF)"
+    },
+    {
       "numero_processo": "1014460-85.2026.5.02.0000",
       "cliente": "BRIDGESTONE",
       "profissional": "Bruna Cembranelli Fazenda (BCF)"
@@ -8179,12 +8194,12 @@
       "profissional": "Letícia Meneghini Fontes (LMI)"
     },
     {
-      "numero_processo": "1001746-24.2026.5.02.0411",
+      "numero_processo": "1001753-16.2026.5.02.0411",
       "cliente": "CBC CARTUCHOS BRASIL",
       "profissional": "Letícia Meneghini Fontes (LMI)"
     },
     {
-      "numero_processo": "1001753-16.2026.5.02.0411",
+      "numero_processo": "1001746-24.2026.5.02.0411",
       "cliente": "CBC CARTUCHOS BRASIL",
       "profissional": "Letícia Meneghini Fontes (LMI)"
     },
