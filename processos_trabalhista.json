@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-23T18:45:21",
+  "atualizado_em": "2026-11-23T19:00:19",
   "kpis": {
-    "total_andamento": 7678,
+    "total_andamento": 7677,
     "entradas_hoje": 22,
-    "saidas_hoje": 10,
+    "saidas_hoje": 11,
     "entradas_ontem": 0,
     "saidas_ontem": 5,
     "entradas_mes": 212,
-    "saidas_mes": 126,
+    "saidas_mes": 127,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 231,
-    "valor_causa_total": 1832944041.79,
-    "saldo_mes": 86
+    "valor_causa_total": 1832908887.16,
+    "saldo_mes": 85
   },
   "serie_diaria": [
     {
@@ -312,18 +312,18 @@
     {
       "data": "2026-11-23",
       "entradas": 22,
-      "saidas": 10
+      "saidas": 11
     }
   ],
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2166,
+      "andamento": 2165,
       "entradas_mes": 70,
-      "saidas_mes": 33,
+      "saidas_mes": 34,
       "entradas_mes_anterior": 105,
       "saidas_mes_anterior": 77,
-      "valor_causa": 488271717.18
+      "valor_causa": 488236562.55
     },
     {
       "nome": "Grupo E1",
@@ -455,12 +455,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5779,
+      "andamento": 5778,
       "entradas_mes": 138,
-      "saidas_mes": 105,
+      "saidas_mes": 106,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 166,
-      "valor_causa": 1418928234.75
+      "valor_causa": 1418893080.12
     },
     {
       "nome": "MG",
@@ -700,12 +700,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2925,
+      "andamento": 2924,
       "entradas_mes": 119,
-      "saidas_mes": 34,
+      "saidas_mes": 35,
       "entradas_mes_anterior": 270,
       "saidas_mes_anterior": 76,
-      "valor_causa": 874292281.23
+      "valor_causa": 874257126.6
     },
     {
       "nome": "Sentença",
@@ -950,12 +950,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 896,
+      "andamento": 895,
       "entradas_mes": 27,
-      "saidas_mes": 9,
+      "saidas_mes": 10,
       "entradas_mes_anterior": 87,
       "saidas_mes_anterior": 22,
-      "valor_causa": 193938314.42
+      "valor_causa": 193903159.79
     },
     {
       "fase": "Instrução",
@@ -1442,15 +1442,6 @@
       "valor_causa": 63984828.9
     },
     {
-      "nome": "Bianca Bolanhi Camacho(BBO)",
-      "andamento": 294,
-      "entradas_mes": 3,
-      "saidas_mes": 4,
-      "entradas_mes_anterior": 2,
-      "saidas_mes_anterior": 5,
-      "valor_causa": 33325498.75
-    },
-    {
       "nome": "Guilherme Silva Morimoto(GSM)",
       "andamento": 293,
       "entradas_mes": 9,
@@ -1458,6 +1449,15 @@
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 4,
       "valor_causa": 79144811.92
+    },
+    {
+      "nome": "Bianca Bolanhi Camacho(BBO)",
+      "andamento": 293,
+      "entradas_mes": 3,
+      "saidas_mes": 5,
+      "entradas_mes_anterior": 2,
+      "saidas_mes_anterior": 5,
+      "valor_causa": 33290344.12
     },
     {
       "nome": "Bruna Cembranelli Fazenda (BCF)",
@@ -1820,12 +1820,12 @@
     },
     {
       "nome": "HERINGER",
-      "andamento": 339,
+      "andamento": 338,
       "entradas_mes": 3,
-      "saidas_mes": 5,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 14,
       "saidas_mes_anterior": 5,
-      "valor_causa": 48572970.3,
+      "valor_causa": 48537815.67,
       "alerta_entrada": false
     },
     {
@@ -3250,12 +3250,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "HERINGER",
-      "andamento": 338,
+      "andamento": 337,
       "entradas_mes": 3,
-      "saidas_mes": 5,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 14,
       "saidas_mes_anterior": 5,
-      "valor_causa": 48572970.3,
+      "valor_causa": 48537815.67,
       "alerta_entrada": false
     },
     {
@@ -4535,12 +4535,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Bianca Bolanhi Camacho(BBO)",
-      "andamento": 294,
+      "andamento": 293,
       "entradas_mes": 3,
-      "saidas_mes": 4,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 5,
-      "valor_causa": 33325498.75
+      "valor_causa": 33290344.12
     },
     {
       "grupo": "Grupo E2",
@@ -6867,12 +6867,12 @@
     {
       "estado": "SP",
       "cliente": "HERINGER",
-      "andamento": 106,
+      "andamento": 105,
       "entradas_mes": 1,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
-      "valor_causa": 13712621.83
+      "valor_causa": 13677467.2
     },
     {
       "estado": "SP",
