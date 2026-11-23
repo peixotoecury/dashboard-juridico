@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-23T18:00:21",
+  "atualizado_em": "2026-11-23T18:15:19",
   "kpis": {
-    "total_andamento": 7675,
-    "entradas_hoje": 19,
+    "total_andamento": 7678,
+    "entradas_hoje": 22,
     "saidas_hoje": 10,
     "entradas_ontem": 0,
     "saidas_ontem": 5,
-    "entradas_mes": 209,
+    "entradas_mes": 212,
     "saidas_mes": 126,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 231,
-    "valor_causa_total": 1832460479.57,
-    "saldo_mes": 83
+    "valor_causa_total": 1832944041.79,
+    "saldo_mes": 86
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-11-23",
-      "entradas": 19,
+      "entradas": 22,
       "saidas": 10
     }
   ],
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 18,
-      "entradas_mes": 15,
+      "andamento": 21,
+      "entradas_mes": 18,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 6674673.55
+      "valor_causa": 7158235.77
     },
     {
       "nome": "Sócios",
@@ -455,21 +455,21 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5777,
-      "entradas_mes": 136,
+      "andamento": 5779,
+      "entradas_mes": 138,
       "saidas_mes": 105,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 166,
-      "valor_causa": 1418686639.23
+      "valor_causa": 1418928234.75
     },
     {
       "nome": "MG",
-      "andamento": 557,
-      "entradas_mes": 25,
+      "andamento": 558,
+      "entradas_mes": 26,
       "saidas_mes": 10,
       "entradas_mes_anterior": 26,
       "saidas_mes_anterior": 26,
-      "valor_causa": 145836088.38
+      "valor_causa": 146078055.08
     },
     {
       "nome": "PR",
@@ -691,8 +691,8 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 445,
-      "entradas_mes": 63,
+      "andamento": 444,
+      "entradas_mes": 62,
       "saidas_mes": 5,
       "entradas_mes_anterior": 35,
       "saidas_mes_anterior": 17,
@@ -700,12 +700,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2921,
-      "entradas_mes": 115,
+      "andamento": 2925,
+      "entradas_mes": 119,
       "saidas_mes": 34,
       "entradas_mes_anterior": 270,
       "saidas_mes_anterior": 76,
-      "valor_causa": 873808719.01
+      "valor_causa": 874292281.23
     },
     {
       "nome": "Sentença",
@@ -799,16 +799,6 @@
     },
     {
       "fase": "Ajuizamento",
-      "grupo": "Grupo B1",
-      "andamento": 6,
-      "entradas_mes": 5,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 884392.8
-    },
-    {
-      "fase": "Ajuizamento",
       "grupo": "Grupo A1",
       "andamento": 5,
       "entradas_mes": 0,
@@ -816,6 +806,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
+    },
+    {
+      "fase": "Ajuizamento",
+      "grupo": "Grupo B1",
+      "andamento": 5,
+      "entradas_mes": 4,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 884392.8
     },
     {
       "fase": "Ajuizamento",
@@ -970,8 +970,8 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B1",
-      "andamento": 387,
-      "entradas_mes": 16,
+      "andamento": 388,
+      "entradas_mes": 17,
       "saidas_mes": 10,
       "entradas_mes_anterior": 42,
       "saidas_mes_anterior": 14,
@@ -1040,12 +1040,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 16,
-      "entradas_mes": 13,
+      "andamento": 19,
+      "entradas_mes": 16,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 4486426.46
+      "valor_causa": 4969988.68
     },
     {
       "fase": "Instrução",
@@ -1380,12 +1380,12 @@
     },
     {
       "nome": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 376,
-      "entradas_mes": 21,
+      "andamento": 378,
+      "entradas_mes": 23,
       "saidas_mes": 4,
       "entradas_mes_anterior": 31,
       "saidas_mes_anterior": 5,
-      "valor_causa": 72535521.84
+      "valor_causa": 72777117.36
     },
     {
       "nome": "Rafael Yepez do Lago(RYL)",
@@ -1398,12 +1398,12 @@
     },
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 358,
-      "entradas_mes": 14,
+      "andamento": 359,
+      "entradas_mes": 15,
       "saidas_mes": 5,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 23,
-      "valor_causa": 51032486.07
+      "valor_causa": 51274452.77
     },
     {
       "nome": "Lucas Willott Pereira (LWP)",
@@ -1840,12 +1840,12 @@
     },
     {
       "nome": "CBC CARTUCHOS BRASIL",
-      "andamento": 269,
-      "entradas_mes": 31,
+      "andamento": 271,
+      "entradas_mes": 33,
       "saidas_mes": 3,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 10,
-      "valor_causa": 35974254.13,
+      "valor_causa": 36215849.65,
       "alerta_entrada": true
     },
     {
@@ -1880,12 +1880,12 @@
     },
     {
       "nome": "EUROCHEM SALITRE",
-      "andamento": 171,
-      "entradas_mes": 12,
+      "andamento": 172,
+      "entradas_mes": 13,
       "saidas_mes": 1,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 14,
-      "valor_causa": 41483174.84,
+      "valor_causa": 41725141.54,
       "alerta_entrada": false
     },
     {
@@ -3822,12 +3822,12 @@
     {
       "grupo": "Sem grupo",
       "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 3,
-      "entradas_mes": 3,
+      "andamento": 5,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 319660.81,
+      "valor_causa": 561256.33,
       "alerta_entrada": true
     },
     {
@@ -3850,6 +3850,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 210092.2,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "EUROCHEM SALITRE",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 368966.7,
       "alerta_entrada": false
     },
     {
@@ -3905,17 +3916,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 1592221.09,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "EUROCHEM SALITRE",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 127000.0,
       "alerta_entrada": false
     },
     {
@@ -4614,6 +4614,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Letícia Meneghini Fontes (LMI)",
+      "andamento": 5,
+      "entradas_mes": 5,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 561256.33
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Bruno Tanganelli Farah(BTF)",
       "andamento": 3,
       "entradas_mes": 3,
@@ -4621,16 +4631,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 1707055.49
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 3,
-      "entradas_mes": 3,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 319660.81
     },
     {
       "grupo": "Sem grupo",
@@ -4681,6 +4681,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 596026.0
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Camila Alves Magalhães de Paula(CAL)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 241966.7
     },
     {
       "grupo": "Sem grupo",
@@ -5367,12 +5377,12 @@
     {
       "estado": "MG",
       "cliente": "EUROCHEM SALITRE",
-      "andamento": 119,
-      "entradas_mes": 8,
+      "andamento": 120,
+      "entradas_mes": 9,
       "saidas_mes": 1,
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 9,
-      "valor_causa": 28151743.0
+      "valor_causa": 28393709.7
     },
     {
       "estado": "MG",
@@ -6826,6 +6836,16 @@
     },
     {
       "estado": "SP",
+      "cliente": "CBC CARTUCHOS BRASIL",
+      "andamento": 261,
+      "entradas_mes": 32,
+      "saidas_mes": 3,
+      "entradas_mes_anterior": 24,
+      "saidas_mes_anterior": 9,
+      "valor_causa": 34930355.71
+    },
+    {
+      "estado": "SP",
       "cliente": "MAHLE METAL - SBC",
       "andamento": 260,
       "entradas_mes": 3,
@@ -6833,16 +6853,6 @@
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 10,
       "valor_causa": 23475587.72
-    },
-    {
-      "estado": "SP",
-      "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 259,
-      "entradas_mes": 30,
-      "saidas_mes": 3,
-      "entradas_mes_anterior": 24,
-      "saidas_mes_anterior": 9,
-      "valor_causa": 34688760.19
     },
     {
       "estado": "SP",
@@ -8178,12 +8188,12 @@
     },
     {
       "nome": "CBC CARTUCHOS BRASIL",
-      "andamento": 269,
-      "entradas_mes": 31,
+      "andamento": 271,
+      "entradas_mes": 33,
       "saidas_mes": 3,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 10,
-      "valor_causa": 35974254.13,
+      "valor_causa": 36215849.65,
       "alerta_entrada": true
     },
     {
@@ -8254,6 +8264,16 @@
       "profissional": "Letícia Meneghini Fontes (LMI)"
     },
     {
+      "numero_processo": "1001767-97.2026.5.02.0411",
+      "cliente": "CBC CARTUCHOS BRASIL",
+      "profissional": "Letícia Meneghini Fontes (LMI)"
+    },
+    {
+      "numero_processo": "1001773-07.2026.5.02.0411",
+      "cliente": "CBC CARTUCHOS BRASIL",
+      "profissional": "Letícia Meneghini Fontes (LMI)"
+    },
+    {
       "numero_processo": "0001607-78.2026.5.07.0014",
       "cliente": "COMPANHIA AIX",
       "profissional": "Natália Biondi Gaggini Robles(NBG)"
@@ -8262,6 +8282,11 @@
       "numero_processo": "0001683-94.2026.5.09.0128",
       "cliente": "COMPANHIA AIX",
       "profissional": "Natália Biondi Gaggini Robles(NBG)"
+    },
+    {
+      "numero_processo": "0011497-48.2026.5.03.0080",
+      "cliente": "EUROCHEM SALITRE",
+      "profissional": "Camila Alves Magalhães de Paula(CAL)"
     },
     {
       "numero_processo": "0011481-94.2026.5.03.0080",
