@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-23T16:45:19",
+  "atualizado_em": "2026-11-23T17:00:20",
   "kpis": {
     "total_andamento": 7669,
     "entradas_hoje": 11,
@@ -336,12 +336,12 @@
     },
     {
       "nome": "Grupo B1",
-      "andamento": 1405,
-      "entradas_mes": 22,
+      "andamento": 1407,
+      "entradas_mes": 24,
       "saidas_mes": 34,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 42,
-      "valor_causa": 322897489.98
+      "valor_causa": 341652225.91
     },
     {
       "nome": "Grupo B2",
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 12,
-      "entradas_mes": 9,
+      "andamento": 10,
+      "entradas_mes": 7,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 23342409.53
+      "valor_causa": 4587673.6
     },
     {
       "nome": "Sócios",
@@ -970,12 +970,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B1",
-      "andamento": 384,
-      "entradas_mes": 13,
+      "andamento": 386,
+      "entradas_mes": 15,
       "saidas_mes": 10,
       "entradas_mes_anterior": 42,
       "saidas_mes_anterior": 14,
-      "valor_causa": 121660593.99
+      "valor_causa": 140415329.92
     },
     {
       "fase": "Instrução",
@@ -1050,12 +1050,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 10,
-      "entradas_mes": 7,
+      "andamento": 8,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 21154162.44
+      "valor_causa": 2399426.51
     },
     {
       "fase": "Instrução",
@@ -1406,15 +1406,6 @@
       "valor_causa": 51032486.07
     },
     {
-      "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 335,
-      "entradas_mes": 21,
-      "saidas_mes": 4,
-      "entradas_mes_anterior": 26,
-      "saidas_mes_anterior": 7,
-      "valor_causa": 172125723.18
-    },
-    {
       "nome": "Lucas Willott Pereira (LWP)",
       "andamento": 318,
       "entradas_mes": 5,
@@ -1431,6 +1422,15 @@
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 6,
       "valor_causa": 75822011.95
+    },
+    {
+      "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
+      "andamento": 305,
+      "entradas_mes": 10,
+      "saidas_mes": 4,
+      "entradas_mes_anterior": 12,
+      "saidas_mes_anterior": 7,
+      "valor_causa": 159119979.23
     },
     {
       "nome": "Beatriz Santiago de Souza(BSO)",
@@ -1586,6 +1586,15 @@
       "valor_causa": 126300297.14
     },
     {
+      "nome": "Bruno Tanganelli Farah(BTF)",
+      "andamento": 174,
+      "entradas_mes": 18,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 24,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 42916187.58
+    },
+    {
       "nome": "Natália Biondi Gaggini Robles(NBG)",
       "andamento": 166,
       "entradas_mes": 12,
@@ -1602,15 +1611,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 8,
       "valor_causa": 20409841.41
-    },
-    {
-      "nome": "Bruno Tanganelli Farah(BTF)",
-      "andamento": 144,
-      "entradas_mes": 7,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 10,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 29910443.63
     },
     {
       "nome": "Sofia Freire (SOF)",
@@ -2383,12 +2383,12 @@
     {
       "grupo": "Grupo B1",
       "cliente": "BRIDGESTONE",
-      "andamento": 1405,
-      "entradas_mes": 22,
+      "andamento": 1407,
+      "entradas_mes": 24,
       "saidas_mes": 34,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 42,
-      "valor_causa": 322897489.98,
+      "valor_causa": 341652225.91,
       "alerta_entrada": false
     },
     {
@@ -3802,12 +3802,12 @@
     {
       "grupo": "Sem grupo",
       "cliente": "BRIDGESTONE",
-      "andamento": 5,
-      "entradas_mes": 5,
+      "andamento": 3,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 19435648.44,
+      "valor_causa": 680912.51,
       "alerta_entrada": true
     },
     {
@@ -3834,17 +3834,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "MAHLE METAL - MOGI",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 596026.0,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "BP BIOENERGIA",
       "andamento": 1,
       "entradas_mes": 1,
@@ -3852,6 +3841,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 1550634.98,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "MAHLE METAL - MOGI",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 596026.0,
       "alerta_entrada": false
     },
     {
@@ -4023,12 +4023,12 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Rafael Rocha Ferreira(RFE)",
-      "andamento": 287,
-      "entradas_mes": 8,
+      "andamento": 289,
+      "entradas_mes": 10,
       "saidas_mes": 9,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 9,
-      "valor_causa": 80178098.08
+      "valor_causa": 98932834.01
     },
     {
       "grupo": "Grupo B1",
@@ -4472,16 +4472,6 @@
     },
     {
       "grupo": "Grupo E2",
-      "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 329,
-      "entradas_mes": 19,
-      "saidas_mes": 4,
-      "entradas_mes_anterior": 26,
-      "saidas_mes_anterior": 6,
-      "valor_causa": 170508121.97
-    },
-    {
-      "grupo": "Grupo E2",
       "profissional": "Lucas Willott Pereira (LWP)",
       "andamento": 317,
       "entradas_mes": 4,
@@ -4492,6 +4482,16 @@
     },
     {
       "grupo": "Grupo E2",
+      "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
+      "andamento": 301,
+      "entradas_mes": 10,
+      "saidas_mes": 4,
+      "entradas_mes_anterior": 12,
+      "saidas_mes_anterior": 6,
+      "valor_causa": 159082433.51
+    },
+    {
+      "grupo": "Grupo E2",
       "profissional": "Bianca Bolanhi Camacho(BBO)",
       "andamento": 294,
       "entradas_mes": 3,
@@ -4499,6 +4499,16 @@
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 5,
       "valor_causa": 33325498.75
+    },
+    {
+      "grupo": "Grupo E2",
+      "profissional": "Bruno Tanganelli Farah(BTF)",
+      "andamento": 172,
+      "entradas_mes": 16,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 24,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 41336132.09
     },
     {
       "grupo": "Grupo E2",
@@ -4519,16 +4529,6 @@
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 4,
       "valor_causa": 78381150.97
-    },
-    {
-      "grupo": "Grupo E2",
-      "profissional": "Bruno Tanganelli Farah(BTF)",
-      "andamento": 144,
-      "entradas_mes": 7,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 10,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 29910443.63
     },
     {
       "grupo": "Grupo E2",
@@ -4582,23 +4582,13 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 1580055.49
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Rafael Rocha Ferreira(RFE)",
+      "profissional": "Bruno Tanganelli Farah(BTF)",
       "andamento": 2,
       "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 18754735.93
+      "valor_causa": 1580055.49
     },
     {
       "grupo": "Sem grupo",
@@ -8149,7 +8139,7 @@
     {
       "numero_processo": "0012618-82.2026.5.15.0014",
       "cliente": "BP BIOENERGIA",
-      "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
+      "profissional": "Bruno Tanganelli Farah(BTF)"
     },
     {
       "numero_processo": "1014460-85.2026.5.02.0000",
@@ -8165,16 +8155,6 @@
       "numero_processo": "1002329-40.2026.5.02.0433",
       "cliente": "BRIDGESTONE",
       "profissional": "Guilherme Silva Morimoto(GSM)"
-    },
-    {
-      "numero_processo": "1001714-72.2026.5.02.0361",
-      "cliente": "BRIDGESTONE",
-      "profissional": "Rafael Rocha Ferreira(RFE)"
-    },
-    {
-      "numero_processo": "1002322-48.2026.5.02.0433",
-      "cliente": "BRIDGESTONE",
-      "profissional": "Rafael Rocha Ferreira(RFE)"
     },
     {
       "numero_processo": "0001607-78.2026.5.07.0014",
@@ -8194,7 +8174,7 @@
     {
       "numero_processo": "0011291-78.2026.5.15.0119",
       "cliente": "PILKINGTON (NSG)",
-      "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
+      "profissional": "Bruno Tanganelli Farah(BTF)"
     },
     {
       "numero_processo": "1002027-29.2026.5.02.0718",
