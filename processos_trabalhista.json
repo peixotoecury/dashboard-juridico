@@ -1,24 +1,19 @@
 {
-  "atualizado_em": "2026-11-22T20:00:19",
+  "atualizado_em": "2026-11-23T08:00:21",
   "kpis": {
-    "total_andamento": 7669,
+    "total_andamento": 7666,
     "entradas_hoje": 0,
-    "saidas_hoje": 3,
+    "saidas_hoje": 1,
     "entradas_ontem": 0,
-    "saidas_ontem": 0,
+    "saidas_ontem": 5,
     "entradas_mes": 186,
-    "saidas_mes": 114,
+    "saidas_mes": 117,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 231,
-    "valor_causa_total": 1814502064.25,
-    "saldo_mes": 72
+    "valor_causa_total": 1814481244.41,
+    "saldo_mes": 69
   },
   "serie_diaria": [
-    {
-      "data": "2026-09-24",
-      "entradas": 21,
-      "saidas": 13
-    },
     {
       "data": "2026-09-25",
       "entradas": 7,
@@ -312,15 +307,20 @@
     {
       "data": "2026-11-22",
       "entradas": 0,
-      "saidas": 3
+      "saidas": 5
+    },
+    {
+      "data": "2026-11-23",
+      "entradas": 0,
+      "saidas": 1
     }
   ],
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2162,
+      "andamento": 2161,
       "entradas_mes": 65,
-      "saidas_mes": 32,
+      "saidas_mes": 33,
       "entradas_mes_anterior": 105,
       "saidas_mes_anterior": 77,
       "valor_causa": 486470555.55
@@ -336,12 +336,12 @@
     },
     {
       "nome": "Grupo B1",
-      "andamento": 1417,
+      "andamento": 1415,
       "entradas_mes": 21,
-      "saidas_mes": 24,
+      "saidas_mes": 26,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 42,
-      "valor_causa": 325491163.17
+      "valor_causa": 325470343.33
     },
     {
       "nome": "Grupo B2",
@@ -455,12 +455,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5773,
+      "andamento": 5770,
       "entradas_mes": 115,
-      "saidas_mes": 93,
+      "saidas_mes": 96,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 166,
-      "valor_causa": 1400898167.77
+      "valor_causa": 1400877347.93
     },
     {
       "nome": "MG",
@@ -718,21 +718,21 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2949,
+      "andamento": 2948,
       "entradas_mes": 6,
-      "saidas_mes": 32,
+      "saidas_mes": 33,
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 48,
       "valor_causa": 678212337.88
     },
     {
       "nome": "Execução",
-      "andamento": 937,
+      "andamento": 935,
       "entradas_mes": 7,
-      "saidas_mes": 32,
+      "saidas_mes": 34,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 49,
-      "valor_causa": 139990831.53
+      "valor_causa": 139970011.69
     }
   ],
   "por_fase_outras": 404,
@@ -850,9 +850,9 @@
     {
       "fase": "Execução",
       "grupo": "Grupo E2",
-      "andamento": 335,
+      "andamento": 334,
       "entradas_mes": 3,
-      "saidas_mes": 12,
+      "saidas_mes": 13,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 21,
       "valor_causa": 56006370.07
@@ -870,12 +870,12 @@
     {
       "fase": "Execução",
       "grupo": "Grupo B1",
-      "andamento": 174,
+      "andamento": 173,
       "entradas_mes": 1,
-      "saidas_mes": 5,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 20,
-      "valor_causa": 21379428.24
+      "valor_causa": 21358608.4
     },
     {
       "fase": "Execução",
@@ -1180,9 +1180,9 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo B1",
-      "andamento": 848,
+      "andamento": 847,
       "entradas_mes": 2,
-      "saidas_mes": 10,
+      "saidas_mes": 11,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 8,
       "valor_causa": 175820522.22
@@ -1496,12 +1496,12 @@
     },
     {
       "nome": "Aline Menendes Aponte Moraes(AEM)",
-      "andamento": 277,
+      "andamento": 275,
       "entradas_mes": 1,
-      "saidas_mes": 2,
+      "saidas_mes": 4,
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 0,
-      "valor_causa": 69580417.85
+      "valor_causa": 69559598.01
     },
     {
       "nome": "Anna Carolina Balbino Gatti Baani(ANB)",
@@ -1586,9 +1586,9 @@
     },
     {
       "nome": "Mariana Borges de Menezes Fávaro(MBF)",
-      "andamento": 156,
+      "andamento": 155,
       "entradas_mes": 6,
-      "saidas_mes": 5,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 8,
       "valor_causa": 20409841.41
@@ -1741,19 +1741,19 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1420,
+      "andamento": 1418,
       "entradas_mes": 24,
-      "saidas_mes": 24,
+      "saidas_mes": 26,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 42,
-      "valor_causa": 326504666.91,
+      "valor_causa": 326483847.07,
       "alerta_entrada": false
     },
     {
       "nome": "BP BIOENERGIA",
-      "andamento": 756,
+      "andamento": 755,
       "entradas_mes": 16,
-      "saidas_mes": 19,
+      "saidas_mes": 20,
       "entradas_mes_anterior": 32,
       "saidas_mes_anterior": 22,
       "valor_causa": 218378564.33,
@@ -1767,7 +1767,7 @@
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 12,
       "valor_causa": 147703464.2,
-      "alerta_entrada": true
+      "alerta_entrada": false
     },
     {
       "nome": "SYNGENTA PROTEÇÃO DE",
@@ -2373,12 +2373,12 @@
     {
       "grupo": "Grupo B1",
       "cliente": "BRIDGESTONE",
-      "andamento": 1417,
+      "andamento": 1415,
       "entradas_mes": 21,
-      "saidas_mes": 24,
+      "saidas_mes": 26,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 42,
-      "valor_causa": 325491163.17,
+      "valor_causa": 325470343.33,
       "alerta_entrada": false
     },
     {
@@ -2390,7 +2390,7 @@
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 12,
       "valor_causa": 147703464.2,
-      "alerta_entrada": true
+      "alerta_entrada": false
     },
     {
       "grupo": "Grupo B2",
@@ -3220,9 +3220,9 @@
     {
       "grupo": "Grupo E2",
       "cliente": "BP BIOENERGIA",
-      "andamento": 753,
+      "andamento": 752,
       "entradas_mes": 13,
-      "saidas_mes": 19,
+      "saidas_mes": 20,
       "entradas_mes_anterior": 32,
       "saidas_mes_anterior": 22,
       "valor_causa": 215856442.49,
@@ -4045,12 +4045,12 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Aline Menendes Aponte Moraes(AEM)",
-      "andamento": 277,
+      "andamento": 275,
       "entradas_mes": 1,
-      "saidas_mes": 2,
+      "saidas_mes": 4,
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 0,
-      "valor_causa": 69580417.85
+      "valor_causa": 69559598.01
     },
     {
       "grupo": "Grupo B1",
@@ -4505,9 +4505,9 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Mariana Borges de Menezes Fávaro(MBF)",
-      "andamento": 154,
+      "andamento": 153,
       "entradas_mes": 4,
-      "saidas_mes": 5,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 8,
       "valor_causa": 19438354.55
@@ -6717,12 +6717,12 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1394,
+      "andamento": 1392,
       "entradas_mes": 23,
-      "saidas_mes": 24,
+      "saidas_mes": 26,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 40,
-      "valor_causa": 314874547.12
+      "valor_causa": 314853727.28
     },
     {
       "estado": "SP",
@@ -6747,9 +6747,9 @@
     {
       "estado": "SP",
       "cliente": "BP BIOENERGIA",
-      "andamento": 423,
+      "andamento": 422,
       "entradas_mes": 13,
-      "saidas_mes": 11,
+      "saidas_mes": 12,
       "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 13,
       "valor_causa": 105542886.12
@@ -8126,16 +8126,6 @@
     }
   ],
   "clientes_com_alerta": [
-    {
-      "nome": "EMBRAER",
-      "andamento": 737,
-      "entradas_mes": 14,
-      "saidas_mes": 1,
-      "entradas_mes_anterior": 13,
-      "saidas_mes_anterior": 12,
-      "valor_causa": 147703464.2,
-      "alerta_entrada": true
-    },
     {
       "nome": "ROBERT BOSCH",
       "andamento": 191,
