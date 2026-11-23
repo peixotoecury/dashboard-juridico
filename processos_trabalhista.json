@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-23T11:15:42",
+  "atualizado_em": "2026-11-23T11:30:20",
   "kpis": {
-    "total_andamento": 7667,
-    "entradas_hoje": 3,
+    "total_andamento": 7669,
+    "entradas_hoje": 5,
     "saidas_hoje": 1,
     "entradas_ontem": 0,
     "saidas_ontem": 5,
-    "entradas_mes": 189,
+    "entradas_mes": 191,
     "saidas_mes": 117,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 231,
     "valor_causa_total": 1814443932.61,
-    "saldo_mes": 72
+    "saldo_mes": 74
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-11-23",
-      "entradas": 3,
+      "entradas": 5,
       "saidas": 1
     }
   ],
@@ -354,8 +354,8 @@
     },
     {
       "nome": "Grupo B3",
-      "andamento": 592,
-      "entradas_mes": 20,
+      "andamento": 594,
+      "entradas_mes": 22,
       "saidas_mes": 6,
       "entradas_mes_anterior": 35,
       "saidas_mes_anterior": 12,
@@ -455,8 +455,8 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5771,
-      "entradas_mes": 118,
+      "andamento": 5773,
+      "entradas_mes": 120,
       "saidas_mes": 96,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 166,
@@ -700,8 +700,8 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2908,
-      "entradas_mes": 98,
+      "andamento": 2910,
+      "entradas_mes": 100,
       "saidas_mes": 33,
       "entradas_mes_anterior": 271,
       "saidas_mes_anterior": 76,
@@ -990,8 +990,8 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B3",
-      "andamento": 166,
-      "entradas_mes": 16,
+      "andamento": 168,
+      "entradas_mes": 18,
       "saidas_mes": 1,
       "entradas_mes_anterior": 31,
       "saidas_mes_anterior": 4,
@@ -1450,6 +1450,15 @@
       "valor_causa": 82655019.27
     },
     {
+      "nome": "Guilherme Silva Morimoto(GSM)",
+      "andamento": 291,
+      "entradas_mes": 7,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 5,
+      "saidas_mes_anterior": 4,
+      "valor_causa": 77656545.44
+    },
+    {
       "nome": "Bruna Cembranelli Fazenda (BCF)",
       "andamento": 291,
       "entradas_mes": 6,
@@ -1457,15 +1466,6 @@
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 7,
       "valor_causa": 49239524.09
-    },
-    {
-      "nome": "Guilherme Silva Morimoto(GSM)",
-      "andamento": 290,
-      "entradas_mes": 7,
-      "saidas_mes": 1,
-      "entradas_mes_anterior": 5,
-      "saidas_mes_anterior": 4,
-      "valor_causa": 77351545.44
     },
     {
       "nome": "Júlia Priego Lopes da Silva(JPL)",
@@ -1496,12 +1496,12 @@
     },
     {
       "nome": "Aline Menendes Aponte Moraes(AEM)",
-      "andamento": 275,
+      "andamento": 274,
       "entradas_mes": 1,
       "saidas_mes": 4,
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 0,
-      "valor_causa": 69559598.01
+      "valor_causa": 69254598.01
     },
     {
       "nome": "Anna Carolina Balbino Gatti Baani(ANB)",
@@ -1550,8 +1550,8 @@
     },
     {
       "nome": "Nicolau Rafael Guimarães Coelho(NRG)",
-      "andamento": 201,
-      "entradas_mes": 7,
+      "andamento": 203,
+      "entradas_mes": 9,
       "saidas_mes": 12,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 22,
@@ -1820,6 +1820,16 @@
       "alerta_entrada": false
     },
     {
+      "nome": "CBC CARTUCHOS BRASIL",
+      "andamento": 261,
+      "entradas_mes": 23,
+      "saidas_mes": 3,
+      "entradas_mes_anterior": 24,
+      "saidas_mes_anterior": 10,
+      "valor_causa": 35654593.32,
+      "alerta_entrada": false
+    },
+    {
       "nome": "MAHLE METAL - SBC",
       "andamento": 260,
       "entradas_mes": 3,
@@ -1827,16 +1837,6 @@
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 10,
       "valor_causa": 23475587.72,
-      "alerta_entrada": false
-    },
-    {
-      "nome": "CBC CARTUCHOS BRASIL",
-      "andamento": 259,
-      "entradas_mes": 21,
-      "saidas_mes": 3,
-      "entradas_mes_anterior": 24,
-      "saidas_mes_anterior": 10,
-      "valor_causa": 35654593.32,
       "alerta_entrada": false
     },
     {
@@ -2406,8 +2406,8 @@
     {
       "grupo": "Grupo B3",
       "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 253,
-      "entradas_mes": 18,
+      "andamento": 255,
+      "entradas_mes": 20,
       "saidas_mes": 3,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 10,
@@ -4045,22 +4045,22 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Aline Menendes Aponte Moraes(AEM)",
-      "andamento": 275,
+      "andamento": 274,
       "entradas_mes": 1,
       "saidas_mes": 4,
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 0,
-      "valor_causa": 69559598.01
+      "valor_causa": 69254598.01
     },
     {
       "grupo": "Grupo B1",
       "profissional": "Guilherme Silva Morimoto(GSM)",
-      "andamento": 239,
+      "andamento": 240,
       "entradas_mes": 7,
       "saidas_mes": 0,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 4,
-      "valor_causa": 56084171.58
+      "valor_causa": 56389171.58
     },
     {
       "grupo": "Grupo B1",
@@ -4175,8 +4175,8 @@
     {
       "grupo": "Grupo B3",
       "profissional": "Nicolau Rafael Guimarães Coelho(NRG)",
-      "andamento": 81,
-      "entradas_mes": 3,
+      "andamento": 83,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 5,
@@ -6807,8 +6807,8 @@
     {
       "estado": "SP",
       "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 249,
-      "entradas_mes": 20,
+      "andamento": 251,
+      "entradas_mes": 22,
       "saidas_mes": 3,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 9,
@@ -8194,12 +8194,12 @@
       "profissional": "Letícia Meneghini Fontes (LMI)"
     },
     {
-      "numero_processo": "1001746-24.2026.5.02.0411",
+      "numero_processo": "1001753-16.2026.5.02.0411",
       "cliente": "CBC CARTUCHOS BRASIL",
       "profissional": "Letícia Meneghini Fontes (LMI)"
     },
     {
-      "numero_processo": "1001753-16.2026.5.02.0411",
+      "numero_processo": "1001746-24.2026.5.02.0411",
       "cliente": "CBC CARTUCHOS BRASIL",
       "profissional": "Letícia Meneghini Fontes (LMI)"
     },
