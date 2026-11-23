@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-23T17:45:25",
+  "atualizado_em": "2026-11-23T18:00:21",
   "kpis": {
-    "total_andamento": 7673,
-    "entradas_hoje": 17,
+    "total_andamento": 7675,
+    "entradas_hoje": 19,
     "saidas_hoje": 10,
     "entradas_ontem": 0,
     "saidas_ontem": 5,
-    "entradas_mes": 207,
+    "entradas_mes": 209,
     "saidas_mes": 126,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 231,
-    "valor_causa_total": 1832256820.88,
-    "saldo_mes": 81
+    "valor_causa_total": 1832460479.57,
+    "saldo_mes": 83
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-11-23",
-      "entradas": 17,
+      "entradas": 19,
       "saidas": 10
     }
   ],
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 16,
-      "entradas_mes": 13,
+      "andamento": 18,
+      "entradas_mes": 15,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 6471014.86
+      "valor_causa": 6674673.55
     },
     {
       "nome": "Sócios",
@@ -455,12 +455,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5775,
-      "entradas_mes": 134,
+      "andamento": 5777,
+      "entradas_mes": 136,
       "saidas_mes": 105,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 166,
-      "valor_causa": 1418482980.54
+      "valor_causa": 1418686639.23
     },
     {
       "nome": "MG",
@@ -691,21 +691,21 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 446,
-      "entradas_mes": 64,
+      "andamento": 445,
+      "entradas_mes": 63,
       "saidas_mes": 5,
       "entradas_mes_anterior": 35,
       "saidas_mes_anterior": 17,
-      "valor_causa": 102860740.71
+      "valor_causa": 100453804.11
     },
     {
       "nome": "Instrução",
-      "andamento": 2918,
-      "entradas_mes": 112,
+      "andamento": 2921,
+      "entradas_mes": 115,
       "saidas_mes": 34,
       "entradas_mes_anterior": 270,
       "saidas_mes_anterior": 76,
-      "valor_causa": 871198123.72
+      "valor_causa": 873808719.01
     },
     {
       "nome": "Sentença",
@@ -800,12 +800,12 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo B1",
-      "andamento": 7,
-      "entradas_mes": 6,
+      "andamento": 6,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 3291329.4
+      "valor_causa": 884392.8
     },
     {
       "fase": "Ajuizamento",
@@ -970,12 +970,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B1",
-      "andamento": 386,
-      "entradas_mes": 15,
+      "andamento": 387,
+      "entradas_mes": 16,
       "saidas_mes": 10,
       "entradas_mes_anterior": 42,
       "saidas_mes_anterior": 14,
-      "valor_causa": 140415329.92
+      "valor_causa": 142822266.52
     },
     {
       "fase": "Instrução",
@@ -1040,12 +1040,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 14,
-      "entradas_mes": 11,
+      "andamento": 16,
+      "entradas_mes": 13,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 4282767.77
+      "valor_causa": 4486426.46
     },
     {
       "fase": "Instrução",
@@ -1380,12 +1380,12 @@
     },
     {
       "nome": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 374,
-      "entradas_mes": 19,
+      "andamento": 376,
+      "entradas_mes": 21,
       "saidas_mes": 4,
       "entradas_mes_anterior": 31,
       "saidas_mes_anterior": 5,
-      "valor_causa": 72331863.15
+      "valor_causa": 72535521.84
     },
     {
       "nome": "Rafael Yepez do Lago(RYL)",
@@ -1840,12 +1840,12 @@
     },
     {
       "nome": "CBC CARTUCHOS BRASIL",
-      "andamento": 267,
-      "entradas_mes": 29,
+      "andamento": 269,
+      "entradas_mes": 31,
       "saidas_mes": 3,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 10,
-      "valor_causa": 35770595.44,
+      "valor_causa": 35974254.13,
       "alerta_entrada": true
     },
     {
@@ -3821,6 +3821,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "CBC CARTUCHOS BRASIL",
+      "andamento": 3,
+      "entradas_mes": 3,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 319660.81,
+      "alerta_entrada": true
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "COMPANHIA AIX",
       "andamento": 2,
       "entradas_mes": 0,
@@ -3905,17 +3916,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 127000.0,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 116002.12,
       "alerta_entrada": false
     },
     {
@@ -4624,6 +4624,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Letícia Meneghini Fontes (LMI)",
+      "andamento": 3,
+      "entradas_mes": 3,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 319660.81
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Natália Biondi Gaggini Robles(NBG)",
       "andamento": 2,
       "entradas_mes": 0,
@@ -4711,16 +4721,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 76648.53
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 116002.12
     },
     {
       "grupo": "Sócios",
@@ -6837,12 +6837,12 @@
     {
       "estado": "SP",
       "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 257,
-      "entradas_mes": 28,
+      "andamento": 259,
+      "entradas_mes": 30,
       "saidas_mes": 3,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 9,
-      "valor_causa": 34485101.5
+      "valor_causa": 34688760.19
     },
     {
       "estado": "SP",
@@ -8178,12 +8178,12 @@
     },
     {
       "nome": "CBC CARTUCHOS BRASIL",
-      "andamento": 267,
-      "entradas_mes": 29,
+      "andamento": 269,
+      "entradas_mes": 31,
       "saidas_mes": 3,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 10,
-      "valor_causa": 35770595.44,
+      "valor_causa": 35974254.13,
       "alerta_entrada": true
     },
     {
@@ -8237,6 +8237,16 @@
       "numero_processo": "0012514-70.2026.5.15.0053",
       "cliente": "BRIDGESTONE",
       "profissional": "Guilherme Silva Morimoto(GSM)"
+    },
+    {
+      "numero_processo": "1001772-22.2026.5.02.0411",
+      "cliente": "CBC CARTUCHOS BRASIL",
+      "profissional": "Letícia Meneghini Fontes (LMI)"
+    },
+    {
+      "numero_processo": "1001770-52.2026.5.02.0411",
+      "cliente": "CBC CARTUCHOS BRASIL",
+      "profissional": "Letícia Meneghini Fontes (LMI)"
     },
     {
       "numero_processo": "1001764-45.2026.5.02.0411",
