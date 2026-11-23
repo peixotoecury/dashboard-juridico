@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-23T17:15:29",
+  "atualizado_em": "2026-11-23T17:30:26",
   "kpis": {
-    "total_andamento": 7669,
-    "entradas_hoje": 11,
+    "total_andamento": 7673,
+    "entradas_hoje": 15,
     "saidas_hoje": 10,
     "entradas_ontem": 0,
     "saidas_ontem": 5,
-    "entradas_mes": 201,
+    "entradas_mes": 205,
     "saidas_mes": 126,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 231,
-    "valor_causa_total": 1830373479.62,
-    "saldo_mes": 75
+    "valor_causa_total": 1832013818.76,
+    "saldo_mes": 79
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-11-23",
-      "entradas": 11,
+      "entradas": 15,
       "saidas": 10
     }
   ],
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 10,
-      "entradas_mes": 7,
+      "andamento": 14,
+      "entradas_mes": 11,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 4587673.6
+      "valor_causa": 6228012.74
     },
     {
       "nome": "Sócios",
@@ -455,12 +455,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5772,
-      "entradas_mes": 129,
+      "andamento": 5776,
+      "entradas_mes": 133,
       "saidas_mes": 105,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 166,
-      "valor_causa": 1416726639.28
+      "valor_causa": 1418366978.42
     },
     {
       "nome": "MG",
@@ -700,12 +700,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2912,
-      "entradas_mes": 106,
+      "andamento": 2916,
+      "entradas_mes": 110,
       "saidas_mes": 34,
       "entradas_mes_anterior": 270,
       "saidas_mes_anterior": 76,
-      "valor_causa": 869314782.46
+      "valor_causa": 870955121.6
     },
     {
       "nome": "Sentença",
@@ -1050,12 +1050,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 8,
-      "entradas_mes": 5,
+      "andamento": 12,
+      "entradas_mes": 9,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 2399426.51
+      "valor_causa": 4039765.65
     },
     {
       "fase": "Instrução",
@@ -1389,12 +1389,12 @@
     },
     {
       "nome": "Rafael Yepez do Lago(RYL)",
-      "andamento": 365,
-      "entradas_mes": 7,
+      "andamento": 367,
+      "entradas_mes": 9,
       "saidas_mes": 4,
       "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 22,
-      "valor_causa": 49671185.12
+      "valor_causa": 49881277.32
     },
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
@@ -1452,12 +1452,12 @@
     },
     {
       "nome": "Guilherme Silva Morimoto(GSM)",
-      "andamento": 292,
-      "entradas_mes": 8,
+      "andamento": 293,
+      "entradas_mes": 9,
       "saidas_mes": 1,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 4,
-      "valor_causa": 77791213.51
+      "valor_causa": 79144811.92
     },
     {
       "nome": "Bruna Cembranelli Fazenda (BCF)",
@@ -1739,6 +1739,15 @@
       "valor_causa": 0.0
     },
     {
+      "nome": "Luiz Vicente de Carvalho(LVC)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 76648.53
+    },
+    {
       "nome": "Tamara Silva Marcílio(TAM)",
       "andamento": 0,
       "entradas_mes": 0,
@@ -1751,12 +1760,12 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1410,
-      "entradas_mes": 27,
+      "andamento": 1412,
+      "entradas_mes": 29,
       "saidas_mes": 34,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 42,
-      "valor_causa": 342333138.42,
+      "valor_causa": 343763385.36,
       "alerta_entrada": false
     },
     {
@@ -1821,12 +1830,12 @@
     },
     {
       "nome": "VITERRA RIO VERMELHO",
-      "andamento": 320,
-      "entradas_mes": 6,
+      "andamento": 322,
+      "entradas_mes": 8,
       "saidas_mes": 2,
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 10,
-      "valor_causa": 43978003.12,
+      "valor_causa": 44188095.32,
       "alerta_entrada": false
     },
     {
@@ -3802,12 +3811,12 @@
     {
       "grupo": "Sem grupo",
       "cliente": "BRIDGESTONE",
-      "andamento": 3,
-      "entradas_mes": 3,
+      "andamento": 5,
+      "entradas_mes": 5,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 680912.51,
+      "valor_causa": 2111159.45,
       "alerta_entrada": true
     },
     {
@@ -3819,6 +3828,17 @@
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
       "valor_causa": 30000.0,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "VITERRA RIO VERMELHO",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 210092.2,
       "alerta_entrada": false
     },
     {
@@ -4592,6 +4612,26 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Rafael Yepez do Lago(RYL)",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 210092.2
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Guilherme Silva Morimoto(GSM)",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1488266.48
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Vinícius Ronchi Arruda(VRO)",
       "andamento": 1,
       "entradas_mes": 0,
@@ -4642,13 +4682,13 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Guilherme Silva Morimoto(GSM)",
+      "profissional": "Luiz Vicente de Carvalho(LVC)",
       "andamento": 1,
       "entradas_mes": 1,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 134668.07
+      "valor_causa": 76648.53
     },
     {
       "grupo": "Sócios",
@@ -6685,12 +6725,12 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1384,
-      "entradas_mes": 26,
+      "andamento": 1386,
+      "entradas_mes": 28,
       "saidas_mes": 34,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 40,
-      "valor_causa": 330703018.63
+      "valor_causa": 332133265.57
     },
     {
       "estado": "SP",
@@ -6735,12 +6775,12 @@
     {
       "estado": "SP",
       "cliente": "VITERRA RIO VERMELHO",
-      "andamento": 300,
-      "entradas_mes": 4,
+      "andamento": 302,
+      "entradas_mes": 6,
       "saidas_mes": 2,
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 10,
-      "valor_causa": 42520126.81
+      "valor_causa": 42730219.01
     },
     {
       "estado": "SP",
@@ -8157,6 +8197,16 @@
       "profissional": "Guilherme Silva Morimoto(GSM)"
     },
     {
+      "numero_processo": "1001908-21.2026.5.02.0087",
+      "cliente": "BRIDGESTONE",
+      "profissional": "Luiz Vicente de Carvalho(LVC)"
+    },
+    {
+      "numero_processo": "0012514-70.2026.5.15.0053",
+      "cliente": "BRIDGESTONE",
+      "profissional": "Guilherme Silva Morimoto(GSM)"
+    },
+    {
       "numero_processo": "0001607-78.2026.5.07.0014",
       "cliente": "COMPANHIA AIX",
       "profissional": "Natália Biondi Gaggini Robles(NBG)"
@@ -8185,6 +8235,16 @@
       "numero_processo": "0011125-05.2026.5.03.0176",
       "cliente": "SYNGENTA SEEDS NIDER",
       "profissional": "Giulia Vendramini Milani(GVM)"
+    },
+    {
+      "numero_processo": "0011487-61.2026.5.15.0050",
+      "cliente": "VITERRA RIO VERMELHO",
+      "profissional": "Rafael Yepez do Lago(RYL)"
+    },
+    {
+      "numero_processo": "0011487-57.2026.5.15.0019",
+      "cliente": "VITERRA RIO VERMELHO",
+      "profissional": "Rafael Yepez do Lago(RYL)"
     }
   ]
 }
