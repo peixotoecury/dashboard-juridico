@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-23T13:00:26",
+  "atualizado_em": "2026-11-23T13:15:20",
   "kpis": {
-    "total_andamento": 7672,
-    "entradas_hoje": 9,
+    "total_andamento": 7673,
+    "entradas_hoje": 10,
     "saidas_hoje": 1,
     "entradas_ontem": 0,
     "saidas_ontem": 5,
-    "entradas_mes": 195,
+    "entradas_mes": 196,
     "saidas_mes": 117,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 231,
     "valor_causa_total": 1814219533.81,
-    "saldo_mes": 78
+    "saldo_mes": 79
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-11-23",
-      "entradas": 9,
+      "entradas": 10,
       "saidas": 1
     }
   ],
@@ -354,8 +354,8 @@
     },
     {
       "nome": "Grupo B3",
-      "andamento": 598,
-      "entradas_mes": 26,
+      "andamento": 599,
+      "entradas_mes": 27,
       "saidas_mes": 6,
       "entradas_mes_anterior": 35,
       "saidas_mes_anterior": 12,
@@ -455,8 +455,8 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5776,
-      "entradas_mes": 124,
+      "andamento": 5777,
+      "entradas_mes": 125,
       "saidas_mes": 96,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 166,
@@ -691,8 +691,8 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 444,
-      "entradas_mes": 62,
+      "andamento": 445,
+      "entradas_mes": 63,
       "saidas_mes": 4,
       "entradas_mes_anterior": 34,
       "saidas_mes_anterior": 17,
@@ -760,8 +760,8 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo E1",
-      "andamento": 67,
-      "entradas_mes": 9,
+      "andamento": 68,
+      "entradas_mes": 10,
       "saidas_mes": 1,
       "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 0,
@@ -960,8 +960,8 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 741,
-      "entradas_mes": 20,
+      "andamento": 740,
+      "entradas_mes": 19,
       "saidas_mes": 12,
       "entradas_mes_anterior": 32,
       "saidas_mes_anterior": 23,
@@ -990,8 +990,8 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B3",
-      "andamento": 172,
-      "entradas_mes": 22,
+      "andamento": 173,
+      "entradas_mes": 23,
       "saidas_mes": 1,
       "entradas_mes_anterior": 31,
       "saidas_mes_anterior": 4,
@@ -1560,8 +1560,8 @@
     },
     {
       "nome": "Nicolau Rafael Guimarães Coelho(NRG)",
-      "andamento": 207,
-      "entradas_mes": 13,
+      "andamento": 208,
+      "entradas_mes": 14,
       "saidas_mes": 12,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 22,
@@ -1831,8 +1831,8 @@
     },
     {
       "nome": "CBC CARTUCHOS BRASIL",
-      "andamento": 265,
-      "entradas_mes": 27,
+      "andamento": 266,
+      "entradas_mes": 28,
       "saidas_mes": 3,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 10,
@@ -2416,8 +2416,8 @@
     {
       "grupo": "Grupo B3",
       "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 259,
-      "entradas_mes": 24,
+      "andamento": 260,
+      "entradas_mes": 25,
       "saidas_mes": 3,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 10,
@@ -4185,6 +4185,16 @@
     },
     {
       "grupo": "Grupo B3",
+      "profissional": "Nicolau Rafael Guimarães Coelho(NRG)",
+      "andamento": 88,
+      "entradas_mes": 10,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 5,
+      "valor_causa": 3168706.0
+    },
+    {
+      "grupo": "Grupo B3",
       "profissional": "Anna Carolina Balbino Gatti Baani(ANB)",
       "andamento": 88,
       "entradas_mes": 1,
@@ -4192,16 +4202,6 @@
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 2,
       "valor_causa": 21509389.12
-    },
-    {
-      "grupo": "Grupo B3",
-      "profissional": "Nicolau Rafael Guimarães Coelho(NRG)",
-      "andamento": 87,
-      "entradas_mes": 9,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 5,
-      "valor_causa": 3168706.0
     },
     {
       "grupo": "Grupo B3",
@@ -6838,8 +6838,8 @@
     {
       "estado": "SP",
       "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 255,
-      "entradas_mes": 26,
+      "andamento": 256,
+      "entradas_mes": 27,
       "saidas_mes": 3,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 9,
@@ -8169,8 +8169,8 @@
   "clientes_com_alerta": [
     {
       "nome": "CBC CARTUCHOS BRASIL",
-      "andamento": 265,
-      "entradas_mes": 27,
+      "andamento": 266,
+      "entradas_mes": 28,
       "saidas_mes": 3,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 10,
