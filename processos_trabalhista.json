@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-23T14:30:24",
+  "atualizado_em": "2026-11-23T14:45:19",
   "kpis": {
-    "total_andamento": 7668,
+    "total_andamento": 7666,
     "entradas_hoje": 11,
-    "saidas_hoje": 7,
+    "saidas_hoje": 9,
     "entradas_ontem": 0,
     "saidas_ontem": 5,
     "entradas_mes": 197,
-    "saidas_mes": 123,
+    "saidas_mes": 125,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 231,
     "valor_causa_total": 1811441131.76,
-    "saldo_mes": 74
+    "saldo_mes": 72
   },
   "serie_diaria": [
     {
@@ -312,7 +312,7 @@
     {
       "data": "2026-11-23",
       "entradas": 11,
-      "saidas": 7
+      "saidas": 9
     }
   ],
   "por_grupo": [
@@ -336,9 +336,9 @@
     },
     {
       "nome": "Grupo B1",
-      "andamento": 1406,
+      "andamento": 1404,
       "entradas_mes": 21,
-      "saidas_mes": 32,
+      "saidas_mes": 34,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 42,
       "valor_causa": 322430230.68
@@ -354,12 +354,12 @@
     },
     {
       "nome": "Grupo B3",
-      "andamento": 601,
-      "entradas_mes": 29,
+      "andamento": 602,
+      "entradas_mes": 30,
       "saidas_mes": 6,
       "entradas_mes_anterior": 35,
       "saidas_mes_anterior": 12,
-      "valor_causa": 117958656.1
+      "valor_causa": 118162330.01
     },
     {
       "nome": "Grupo C1",
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 14,
-      "entradas_mes": 11,
+      "andamento": 13,
+      "entradas_mes": 10,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 6867211.61
+      "valor_causa": 6663537.7
     },
     {
       "nome": "Sócios",
@@ -455,9 +455,9 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5772,
+      "andamento": 5770,
       "entradas_mes": 126,
-      "saidas_mes": 102,
+      "saidas_mes": 104,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 166,
       "valor_causa": 1397837235.28
@@ -727,9 +727,9 @@
     },
     {
       "nome": "Execução",
-      "andamento": 935,
+      "andamento": 933,
       "entradas_mes": 7,
-      "saidas_mes": 35,
+      "saidas_mes": 37,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 49,
       "valor_causa": 139530236.0
@@ -880,9 +880,9 @@
     {
       "fase": "Execução",
       "grupo": "Grupo B1",
-      "andamento": 173,
+      "andamento": 171,
       "entradas_mes": 1,
-      "saidas_mes": 7,
+      "saidas_mes": 9,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 20,
       "valor_causa": 20918832.71
@@ -990,12 +990,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B3",
-      "andamento": 175,
-      "entradas_mes": 25,
+      "andamento": 176,
+      "entradas_mes": 26,
       "saidas_mes": 1,
       "entradas_mes_anterior": 31,
       "saidas_mes_anterior": 4,
-      "valor_causa": 31799250.31
+      "valor_causa": 32002924.22
     },
     {
       "fase": "Instrução",
@@ -1050,12 +1050,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 12,
-      "entradas_mes": 9,
+      "andamento": 11,
+      "entradas_mes": 8,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 4678964.52
+      "valor_causa": 4475290.61
     },
     {
       "fase": "Instrução",
@@ -1470,9 +1470,9 @@
     },
     {
       "nome": "Rafael Rocha Ferreira(RFE)",
-      "andamento": 289,
+      "andamento": 287,
       "entradas_mes": 8,
-      "saidas_mes": 7,
+      "saidas_mes": 9,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 9,
       "valor_causa": 80178098.08
@@ -1751,9 +1751,9 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1409,
+      "andamento": 1407,
       "entradas_mes": 24,
-      "saidas_mes": 32,
+      "saidas_mes": 34,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 42,
       "valor_causa": 323443734.42,
@@ -2383,9 +2383,9 @@
     {
       "grupo": "Grupo B1",
       "cliente": "BRIDGESTONE",
-      "andamento": 1406,
+      "andamento": 1404,
       "entradas_mes": 21,
-      "saidas_mes": 32,
+      "saidas_mes": 34,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 42,
       "valor_causa": 322430230.68,
@@ -2416,12 +2416,12 @@
     {
       "grupo": "Grupo B3",
       "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 262,
-      "entradas_mes": 27,
+      "andamento": 263,
+      "entradas_mes": 28,
       "saidas_mes": 3,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 10,
-      "valor_causa": 35450919.41,
+      "valor_causa": 35654593.32,
       "alerta_entrada": true
     },
     {
@@ -3888,17 +3888,6 @@
       "alerta_entrada": false
     },
     {
-      "grupo": "Sem grupo",
-      "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 203673.91,
-      "alerta_entrada": false
-    },
-    {
       "grupo": "Sócios",
       "cliente": "PEIXOTO E CURY",
       "andamento": 2,
@@ -4045,9 +4034,9 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Rafael Rocha Ferreira(RFE)",
-      "andamento": 289,
+      "andamento": 287,
       "entradas_mes": 8,
-      "saidas_mes": 7,
+      "saidas_mes": 9,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 9,
       "valor_causa": 80178098.08
@@ -4165,12 +4154,12 @@
     {
       "grupo": "Grupo B3",
       "profissional": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 372,
-      "entradas_mes": 17,
+      "andamento": 373,
+      "entradas_mes": 18,
       "saidas_mes": 4,
       "entradas_mes_anterior": 31,
       "saidas_mes_anterior": 5,
-      "valor_causa": 72012187.12
+      "valor_causa": 72215861.03
     },
     {
       "grupo": "Grupo B3",
@@ -4681,16 +4670,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 771786.01
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 203673.91
     },
     {
       "grupo": "Sócios",
@@ -6727,9 +6706,9 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1383,
+      "andamento": 1381,
       "entradas_mes": 23,
-      "saidas_mes": 32,
+      "saidas_mes": 34,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 40,
       "valor_causa": 311813614.63
@@ -8207,11 +8186,6 @@
       "numero_processo": "1002288-73.2026.5.02.0433",
       "cliente": "BRIDGESTONE",
       "profissional": "Beatriz Santiago de Souza(BSO)"
-    },
-    {
-      "numero_processo": "1001753-16.2026.5.02.0411",
-      "cliente": "CBC CARTUCHOS BRASIL",
-      "profissional": "Letícia Meneghini Fontes (LMI)"
     },
     {
       "numero_processo": "0001607-78.2026.5.07.0014",
