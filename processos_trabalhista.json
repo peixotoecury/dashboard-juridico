@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-23T14:00:23",
+  "atualizado_em": "2026-11-23T14:15:21",
   "kpis": {
     "total_andamento": 7673,
     "entradas_hoje": 11,
@@ -354,12 +354,12 @@
     },
     {
       "nome": "Grupo B3",
-      "andamento": 599,
-      "entradas_mes": 27,
+      "andamento": 600,
+      "entradas_mes": 28,
       "saidas_mes": 6,
       "entradas_mes_anterior": 35,
       "saidas_mes_anterior": 12,
-      "valor_causa": 117698205.65
+      "valor_causa": 117886958.0
     },
     {
       "nome": "Grupo C1",
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 16,
-      "entradas_mes": 13,
+      "andamento": 15,
+      "entradas_mes": 12,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 7127662.06
+      "valor_causa": 6938909.71
     },
     {
       "nome": "Sócios",
@@ -691,21 +691,21 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 447,
-      "entradas_mes": 65,
+      "andamento": 448,
+      "entradas_mes": 66,
       "saidas_mes": 4,
       "entradas_mes_anterior": 34,
       "saidas_mes_anterior": 17,
-      "valor_causa": 103061390.36
+      "valor_causa": 103128715.83
     },
     {
       "nome": "Instrução",
-      "andamento": 2911,
-      "entradas_mes": 102,
+      "andamento": 2910,
+      "entradas_mes": 101,
       "saidas_mes": 33,
       "entradas_mes_anterior": 271,
       "saidas_mes_anterior": 76,
-      "valor_causa": 853980700.78
+      "valor_causa": 853913375.31
     },
     {
       "nome": "Sentença",
@@ -760,12 +760,12 @@
     {
       "fase": "Ajuizamento",
       "grupo": "Grupo E1",
-      "andamento": 70,
-      "entradas_mes": 12,
+      "andamento": 71,
+      "entradas_mes": 13,
       "saidas_mes": 1,
       "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 0,
-      "valor_causa": 15236578.85
+      "valor_causa": 15303904.32
     },
     {
       "fase": "Ajuizamento",
@@ -960,12 +960,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 739,
-      "entradas_mes": 18,
+      "andamento": 738,
+      "entradas_mes": 17,
       "saidas_mes": 12,
       "entradas_mes_anterior": 32,
       "saidas_mes_anterior": 23,
-      "valor_causa": 161173712.01
+      "valor_causa": 161106386.54
     },
     {
       "fase": "Instrução",
@@ -990,12 +990,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B3",
-      "andamento": 173,
-      "entradas_mes": 23,
+      "andamento": 174,
+      "entradas_mes": 24,
       "saidas_mes": 1,
       "entradas_mes_anterior": 31,
       "saidas_mes_anterior": 4,
-      "valor_causa": 31538799.86
+      "valor_causa": 31727552.21
     },
     {
       "fase": "Instrução",
@@ -1040,12 +1040,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 14,
-      "entradas_mes": 11,
+      "andamento": 13,
+      "entradas_mes": 10,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 4939414.97
+      "valor_causa": 4750662.62
     },
     {
       "fase": "Instrução",
@@ -2416,12 +2416,12 @@
     {
       "grupo": "Grupo B3",
       "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 260,
-      "entradas_mes": 25,
+      "andamento": 261,
+      "entradas_mes": 26,
       "saidas_mes": 3,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 10,
-      "valor_causa": 35190468.96,
+      "valor_causa": 35379221.31,
       "alerta_entrada": false
     },
     {
@@ -3823,17 +3823,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 3,
-      "entradas_mes": 3,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 464124.36,
-      "alerta_entrada": true
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "COMPANHIA AIX",
       "andamento": 2,
       "entradas_mes": 0,
@@ -3841,6 +3830,17 @@
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
       "valor_causa": 30000.0,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "CBC CARTUCHOS BRASIL",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 275372.01,
       "alerta_entrada": false
     },
     {
@@ -4165,12 +4165,12 @@
     {
       "grupo": "Grupo B3",
       "profissional": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 370,
-      "entradas_mes": 15,
+      "andamento": 371,
+      "entradas_mes": 16,
       "saidas_mes": 4,
       "entradas_mes_anterior": 31,
       "saidas_mes_anterior": 5,
-      "valor_causa": 71751736.67
+      "valor_causa": 71940489.02
     },
     {
       "grupo": "Grupo B3",
@@ -4594,16 +4594,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 3,
-      "entradas_mes": 3,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 464124.36
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Natália Biondi Gaggini Robles(NBG)",
       "andamento": 2,
       "entradas_mes": 0,
@@ -4641,6 +4631,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 971486.86
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Letícia Meneghini Fontes (LMI)",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 275372.01
     },
     {
       "grupo": "Sem grupo",
@@ -8207,11 +8207,6 @@
       "numero_processo": "1002288-73.2026.5.02.0433",
       "cliente": "BRIDGESTONE",
       "profissional": "Beatriz Santiago de Souza(BSO)"
-    },
-    {
-      "numero_processo": "1002319-50.2026.5.02.0318",
-      "cliente": "CBC CARTUCHOS BRASIL",
-      "profissional": "Letícia Meneghini Fontes (LMI)"
     },
     {
       "numero_processo": "1001746-24.2026.5.02.0411",
