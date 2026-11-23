@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-23T13:15:20",
+  "atualizado_em": "2026-11-23T13:30:22",
   "kpis": {
-    "total_andamento": 7673,
-    "entradas_hoje": 10,
+    "total_andamento": 7674,
+    "entradas_hoje": 11,
     "saidas_hoje": 1,
     "entradas_ontem": 0,
     "saidas_ontem": 5,
-    "entradas_mes": 196,
+    "entradas_mes": 197,
     "saidas_mes": 117,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 231,
     "valor_causa_total": 1814219533.81,
-    "saldo_mes": 79
+    "saldo_mes": 80
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-11-23",
-      "entradas": 10,
+      "entradas": 11,
       "saidas": 1
     }
   ],
@@ -345,8 +345,8 @@
     },
     {
       "nome": "Grupo B2",
-      "andamento": 755,
-      "entradas_mes": 13,
+      "andamento": 756,
+      "entradas_mes": 14,
       "saidas_mes": 1,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 12,
@@ -455,8 +455,8 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5777,
-      "entradas_mes": 125,
+      "andamento": 5778,
+      "entradas_mes": 126,
       "saidas_mes": 96,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 166,
@@ -700,8 +700,8 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2912,
-      "entradas_mes": 103,
+      "andamento": 2913,
+      "entradas_mes": 104,
       "saidas_mes": 33,
       "entradas_mes_anterior": 271,
       "saidas_mes_anterior": 76,
@@ -1010,8 +1010,8 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B2",
-      "andamento": 156,
-      "entradas_mes": 11,
+      "andamento": 157,
+      "entradas_mes": 12,
       "saidas_mes": 1,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 2,
@@ -1451,6 +1451,15 @@
       "valor_causa": 33325498.75
     },
     {
+      "nome": "Bruna Cembranelli Fazenda (BCF)",
+      "andamento": 292,
+      "entradas_mes": 7,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 4,
+      "saidas_mes_anterior": 7,
+      "valor_causa": 49239524.09
+    },
+    {
       "nome": "Rafael Rocha Ferreira(RFE)",
       "andamento": 292,
       "entradas_mes": 8,
@@ -1467,15 +1476,6 @@
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 4,
       "valor_causa": 77656545.44
-    },
-    {
-      "nome": "Bruna Cembranelli Fazenda (BCF)",
-      "andamento": 291,
-      "entradas_mes": 6,
-      "saidas_mes": 1,
-      "entradas_mes_anterior": 4,
-      "saidas_mes_anterior": 7,
-      "valor_causa": 49239524.09
     },
     {
       "nome": "Júlia Priego Lopes da Silva(JPL)",
@@ -1771,13 +1771,13 @@
     },
     {
       "nome": "EMBRAER",
-      "andamento": 737,
-      "entradas_mes": 14,
+      "andamento": 738,
+      "entradas_mes": 15,
       "saidas_mes": 1,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 12,
       "valor_causa": 147703464.2,
-      "alerta_entrada": false
+      "alerta_entrada": true
     },
     {
       "nome": "SYNGENTA PROTEÇÃO DE",
@@ -2394,13 +2394,13 @@
     {
       "grupo": "Grupo B2",
       "cliente": "EMBRAER",
-      "andamento": 732,
-      "entradas_mes": 13,
+      "andamento": 733,
+      "entradas_mes": 14,
       "saidas_mes": 1,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 12,
       "valor_causa": 147703464.2,
-      "alerta_entrada": false
+      "alerta_entrada": true
     },
     {
       "grupo": "Grupo B2",
@@ -4146,8 +4146,8 @@
     {
       "grupo": "Grupo B2",
       "profissional": "Bruna Cembranelli Fazenda (BCF)",
-      "andamento": 219,
-      "entradas_mes": 5,
+      "andamento": 220,
+      "entradas_mes": 6,
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 5,
@@ -6768,8 +6768,8 @@
     {
       "estado": "SP",
       "cliente": "EMBRAER",
-      "andamento": 719,
-      "entradas_mes": 13,
+      "andamento": 720,
+      "entradas_mes": 14,
       "saidas_mes": 0,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 12,
@@ -8167,6 +8167,16 @@
     }
   ],
   "clientes_com_alerta": [
+    {
+      "nome": "EMBRAER",
+      "andamento": 738,
+      "entradas_mes": 15,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 13,
+      "saidas_mes_anterior": 12,
+      "valor_causa": 147703464.2,
+      "alerta_entrada": true
+    },
     {
       "nome": "CBC CARTUCHOS BRASIL",
       "andamento": 266,
