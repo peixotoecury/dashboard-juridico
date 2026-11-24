@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-24T13:30:26",
+  "atualizado_em": "2026-11-24T13:45:19",
   "kpis": {
     "total_andamento": 7688,
     "entradas_hoje": 6,
@@ -336,12 +336,12 @@
     },
     {
       "nome": "Grupo B1",
-      "andamento": 1405,
-      "entradas_mes": 25,
+      "andamento": 1406,
+      "entradas_mes": 26,
       "saidas_mes": 35,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 42,
-      "valor_causa": 341728874.44
+      "valor_causa": 343082472.85
     },
     {
       "nome": "Grupo B2",
@@ -399,12 +399,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 34,
-      "entradas_mes": 31,
+      "andamento": 33,
+      "entradas_mes": 30,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 10427731.78
+      "valor_causa": 9074133.37
     },
     {
       "nome": "Grupo A1",
@@ -970,12 +970,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B1",
-      "andamento": 387,
-      "entradas_mes": 18,
+      "andamento": 388,
+      "entradas_mes": 19,
       "saidas_mes": 10,
       "entradas_mes_anterior": 42,
       "saidas_mes_anterior": 14,
-      "valor_causa": 141902716.83
+      "valor_causa": 143256315.24
     },
     {
       "fase": "Instrução",
@@ -1040,12 +1040,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 32,
-      "entradas_mes": 29,
+      "andamento": 31,
+      "entradas_mes": 28,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 8239484.69
+      "valor_causa": 6885886.28
     },
     {
       "fase": "Instrução",
@@ -2383,12 +2383,12 @@
     {
       "grupo": "Grupo B1",
       "cliente": "BRIDGESTONE",
-      "andamento": 1405,
-      "entradas_mes": 25,
+      "andamento": 1406,
+      "entradas_mes": 26,
       "saidas_mes": 35,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 42,
-      "valor_causa": 341728874.44,
+      "valor_causa": 343082472.85,
       "alerta_entrada": false
     },
     {
@@ -3802,12 +3802,12 @@
     {
       "grupo": "Sem grupo",
       "cliente": "BRIDGESTONE",
-      "andamento": 9,
-      "entradas_mes": 9,
+      "andamento": 8,
+      "entradas_mes": 8,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 3886940.82,
+      "valor_causa": 2533342.41,
       "alerta_entrada": true
     },
     {
@@ -4131,12 +4131,12 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Guilherme Silva Morimoto(GSM)",
-      "andamento": 241,
-      "entradas_mes": 7,
+      "andamento": 242,
+      "entradas_mes": 8,
       "saidas_mes": 0,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 4,
-      "valor_causa": 56812841.07
+      "valor_causa": 58166439.48
     },
     {
       "grupo": "Grupo B1",
@@ -4740,16 +4740,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Guilherme Silva Morimoto(GSM)",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 1488266.48
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Vinícius Ronchi Arruda(VRO)",
       "andamento": 1,
       "entradas_mes": 0,
@@ -4777,6 +4767,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 1000.0
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Guilherme Silva Morimoto(GSM)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 134668.07
     },
     {
       "grupo": "Sem grupo",
@@ -8326,11 +8326,6 @@
     },
     {
       "numero_processo": "1002329-40.2026.5.02.0433",
-      "cliente": "BRIDGESTONE",
-      "profissional": "Guilherme Silva Morimoto(GSM)"
-    },
-    {
-      "numero_processo": "0012514-70.2026.5.15.0053",
       "cliente": "BRIDGESTONE",
       "profissional": "Guilherme Silva Morimoto(GSM)"
     },
