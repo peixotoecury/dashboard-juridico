@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-24T17:30:19",
+  "atualizado_em": "2026-11-24T17:45:20",
   "kpis": {
     "total_andamento": 7682,
     "entradas_hoje": 17,
@@ -318,12 +318,12 @@
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2166,
-      "entradas_mes": 77,
+      "andamento": 2167,
+      "entradas_mes": 78,
       "saidas_mes": 40,
       "entradas_mes_anterior": 105,
       "saidas_mes_anterior": 77,
-      "valor_causa": 488679408.99
+      "valor_causa": 488903433.89
     },
     {
       "nome": "Grupo E1",
@@ -399,12 +399,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 31,
-      "entradas_mes": 28,
+      "andamento": 30,
+      "entradas_mes": 27,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 8474127.81
+      "valor_causa": 8250102.91
     },
     {
       "nome": "Grupo A1",
@@ -950,12 +950,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 895,
-      "entradas_mes": 34,
+      "andamento": 896,
+      "entradas_mes": 35,
       "saidas_mes": 14,
       "entradas_mes_anterior": 86,
       "saidas_mes_anterior": 22,
-      "valor_causa": 194829876.04
+      "valor_causa": 195053900.94
     },
     {
       "fase": "Instrução",
@@ -1040,12 +1040,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 29,
-      "entradas_mes": 26,
+      "andamento": 28,
+      "entradas_mes": 25,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 6285880.72
+      "valor_causa": 6061855.82
     },
     {
       "fase": "Instrução",
@@ -3241,12 +3241,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "BP BIOENERGIA",
-      "andamento": 754,
-      "entradas_mes": 15,
+      "andamento": 755,
+      "entradas_mes": 16,
       "saidas_mes": 20,
       "entradas_mes_anterior": 32,
       "saidas_mes_anterior": 22,
-      "valor_causa": 216827929.35,
+      "valor_causa": 217051954.25,
       "alerta_entrada": false
     },
     {
@@ -3867,17 +3867,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "BP BIOENERGIA",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 1774659.88,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "HERINGER",
       "andamento": 2,
       "entradas_mes": 2,
@@ -3896,6 +3885,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 227663.0,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "BP BIOENERGIA",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1550634.98,
       "alerta_entrada": false
     },
     {
@@ -4540,12 +4540,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 354,
-      "entradas_mes": 14,
+      "andamento": 355,
+      "entradas_mes": 15,
       "saidas_mes": 9,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 23,
-      "valor_causa": 50562186.46
+      "valor_causa": 50786211.36
     },
     {
       "grupo": "Grupo E2",
@@ -4719,16 +4719,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 259522.32
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Vinícius Ronchi Arruda(VRO)",
       "andamento": 1,
       "entradas_mes": 0,
@@ -4766,6 +4756,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 134668.07
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Camila Alves Magalhães de Paula(CAL)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 35497.42
     },
     {
       "grupo": "Sem grupo",
@@ -8287,11 +8287,6 @@
       "numero_processo": "0012618-82.2026.5.15.0014",
       "cliente": "BP BIOENERGIA",
       "profissional": "Bruno Tanganelli Farah(BTF)"
-    },
-    {
-      "numero_processo": "0012711-73.2026.5.03.0048",
-      "cliente": "BP BIOENERGIA",
-      "profissional": "Camila Alves Magalhães de Paula(CAL)"
     },
     {
       "numero_processo": "1014460-85.2026.5.02.0000",
