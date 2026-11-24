@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-24T16:30:19",
+  "atualizado_em": "2026-11-24T16:45:19",
   "kpis": {
-    "total_andamento": 7676,
-    "entradas_hoje": 10,
+    "total_andamento": 7679,
+    "entradas_hoje": 13,
     "saidas_hoje": 20,
     "entradas_ontem": 32,
     "saidas_ontem": 12,
-    "entradas_mes": 233,
+    "entradas_mes": 236,
     "saidas_mes": 149,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 231,
-    "valor_causa_total": 1833624305.57,
-    "saldo_mes": 84
+    "valor_causa_total": 1834009634.09,
+    "saldo_mes": 87
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-11-24",
-      "entradas": 10,
+      "entradas": 13,
       "saidas": 20
     }
   ],
@@ -398,6 +398,15 @@
       "valor_causa": 135074103.84
     },
     {
+      "nome": "Sem grupo",
+      "andamento": 31,
+      "entradas_mes": 28,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 3,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 8522382.98
+    },
+    {
       "nome": "Grupo A1",
       "andamento": 29,
       "entradas_mes": 2,
@@ -405,15 +414,6 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
-    },
-    {
-      "nome": "Sem grupo",
-      "andamento": 28,
-      "entradas_mes": 25,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 3,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 8137054.46
     },
     {
       "nome": "Grupo A2",
@@ -455,12 +455,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5773,
-      "entradas_mes": 151,
+      "andamento": 5775,
+      "entradas_mes": 153,
       "saidas_mes": 124,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 166,
-      "valor_causa": 1419335816.66
+      "valor_causa": 1419493482.18
     },
     {
       "nome": "MG",
@@ -482,12 +482,12 @@
     },
     {
       "nome": "RS",
-      "andamento": 241,
-      "entradas_mes": 4,
+      "andamento": 242,
+      "entradas_mes": 5,
       "saidas_mes": 2,
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 1,
-      "valor_causa": 57786523.88
+      "valor_causa": 58014186.88
     },
     {
       "nome": "MS",
@@ -700,12 +700,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2929,
-      "entradas_mes": 140,
+      "andamento": 2931,
+      "entradas_mes": 142,
       "saidas_mes": 41,
       "entradas_mes_anterior": 269,
       "saidas_mes_anterior": 76,
-      "valor_causa": 874905136.71
+      "valor_causa": 875198813.69
     },
     {
       "nome": "Sentença",
@@ -727,12 +727,12 @@
     },
     {
       "nome": "Execução",
-      "andamento": 943,
-      "entradas_mes": 8,
+      "andamento": 944,
+      "entradas_mes": 9,
       "saidas_mes": 39,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 49,
-      "valor_causa": 145123000.74
+      "valor_causa": 145214652.28
     }
   ],
   "por_fase_outras": 404,
@@ -870,12 +870,12 @@
     {
       "fase": "Execução",
       "grupo": "Grupo E1",
-      "andamento": 197,
-      "entradas_mes": 1,
+      "andamento": 198,
+      "entradas_mes": 2,
       "saidas_mes": 13,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 7,
-      "valor_causa": 21925755.93
+      "valor_causa": 22017407.47
     },
     {
       "fase": "Execução",
@@ -960,12 +960,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 730,
-      "entradas_mes": 15,
+      "andamento": 729,
+      "entradas_mes": 14,
       "saidas_mes": 13,
       "entradas_mes_anterior": 32,
       "saidas_mes_anterior": 23,
-      "valor_causa": 159539096.76
+      "valor_causa": 159447445.22
     },
     {
       "fase": "Instrução",
@@ -1040,12 +1040,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 26,
-      "entradas_mes": 23,
+      "andamento": 29,
+      "entradas_mes": 26,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 5948807.37
+      "valor_causa": 6334135.89
     },
     {
       "fase": "Instrução",
@@ -1380,12 +1380,12 @@
     },
     {
       "nome": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 381,
-      "entradas_mes": 27,
+      "andamento": 384,
+      "entradas_mes": 30,
       "saidas_mes": 5,
       "entradas_mes_anterior": 31,
       "saidas_mes_anterior": 5,
-      "valor_causa": 73364306.54
+      "valor_causa": 73749635.06
     },
     {
       "nome": "Rafael Yepez do Lago(RYL)",
@@ -1831,12 +1831,12 @@
     },
     {
       "nome": "CBC CARTUCHOS BRASIL",
-      "andamento": 273,
-      "entradas_mes": 35,
+      "andamento": 275,
+      "entradas_mes": 37,
       "saidas_mes": 3,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 10,
-      "valor_causa": 36500038.29,
+      "valor_causa": 36657703.81,
       "alerta_entrada": true
     },
     {
@@ -1891,12 +1891,12 @@
     },
     {
       "nome": "CBC MONTENEGRO",
-      "andamento": 135,
-      "entradas_mes": 2,
+      "andamento": 136,
+      "entradas_mes": 3,
       "saidas_mes": 2,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 0,
-      "valor_causa": 33976564.18,
+      "valor_causa": 34204227.18,
       "alerta_entrada": false
     },
     {
@@ -3812,6 +3812,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "CBC CARTUCHOS BRASIL",
+      "andamento": 4,
+      "entradas_mes": 4,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 441854.16,
+      "alerta_entrada": true
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "EMBRAER",
       "andamento": 3,
       "entradas_mes": 3,
@@ -3867,13 +3878,13 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "CBC CARTUCHOS BRASIL",
+      "cliente": "CBC MONTENEGRO",
       "andamento": 2,
       "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 284188.64,
+      "valor_causa": 227663.0,
       "alerta_entrada": false
     },
     {
@@ -3940,17 +3951,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 35497.42,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "CBC MONTENEGRO",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 0.0,
       "alerta_entrada": false
     },
     {
@@ -4649,6 +4649,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Letícia Meneghini Fontes (LMI)",
+      "andamento": 7,
+      "entradas_mes": 7,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1283883.68
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Beatriz Santiago de Souza(BSO)",
       "andamento": 4,
       "entradas_mes": 4,
@@ -4656,16 +4666,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 1185895.93
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 4,
-      "entradas_mes": 4,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 898555.16
     },
     {
       "grupo": "Sem grupo",
@@ -6522,12 +6522,12 @@
     {
       "estado": "RS",
       "cliente": "CBC MONTENEGRO",
-      "andamento": 118,
-      "entradas_mes": 2,
+      "andamento": 119,
+      "entradas_mes": 3,
       "saidas_mes": 2,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 0,
-      "valor_causa": 30056669.58
+      "valor_causa": 30284332.58
     },
     {
       "estado": "RS",
@@ -6901,6 +6901,16 @@
     },
     {
       "estado": "SP",
+      "cliente": "CBC CARTUCHOS BRASIL",
+      "andamento": 265,
+      "entradas_mes": 36,
+      "saidas_mes": 3,
+      "entradas_mes_anterior": 24,
+      "saidas_mes_anterior": 9,
+      "valor_causa": 35372209.87
+    },
+    {
+      "estado": "SP",
       "cliente": "TELEFONICA BRASIL",
       "andamento": 265,
       "entradas_mes": 3,
@@ -6908,16 +6918,6 @@
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 2,
       "valor_causa": 176072231.06
-    },
-    {
-      "estado": "SP",
-      "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 263,
-      "entradas_mes": 34,
-      "saidas_mes": 3,
-      "entradas_mes_anterior": 24,
-      "saidas_mes_anterior": 9,
-      "valor_causa": 35214544.35
     },
     {
       "estado": "SP",
@@ -8263,12 +8263,12 @@
     },
     {
       "nome": "CBC CARTUCHOS BRASIL",
-      "andamento": 273,
-      "entradas_mes": 35,
+      "andamento": 275,
+      "entradas_mes": 37,
       "saidas_mes": 3,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 10,
-      "valor_causa": 36500038.29,
+      "valor_causa": 36657703.81,
       "alerta_entrada": true
     },
     {
@@ -8364,7 +8364,22 @@
       "profissional": "Letícia Meneghini Fontes (LMI)"
     },
     {
+      "numero_processo": "1001769-67.2026.5.02.0411",
+      "cliente": "CBC CARTUCHOS BRASIL",
+      "profissional": "Letícia Meneghini Fontes (LMI)"
+    },
+    {
+      "numero_processo": "1001765-30.2026.5.02.0411",
+      "cliente": "CBC CARTUCHOS BRASIL",
+      "profissional": "Letícia Meneghini Fontes (LMI)"
+    },
+    {
       "numero_processo": "0021697-29.2026.5.04.0261",
+      "cliente": "CBC MONTENEGRO",
+      "profissional": "Letícia Meneghini Fontes (LMI)"
+    },
+    {
+      "numero_processo": "0021696-44.2026.5.04.0261",
       "cliente": "CBC MONTENEGRO",
       "profissional": "Letícia Meneghini Fontes (LMI)"
     },
