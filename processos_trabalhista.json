@@ -1,16 +1,16 @@
 {
-  "atualizado_em": "2026-11-24T16:15:19",
+  "atualizado_em": "2026-11-24T16:30:19",
   "kpis": {
     "total_andamento": 7676,
-    "entradas_hoje": 8,
-    "saidas_hoje": 18,
+    "entradas_hoje": 10,
+    "saidas_hoje": 20,
     "entradas_ontem": 32,
     "saidas_ontem": 12,
-    "entradas_mes": 231,
-    "saidas_mes": 147,
+    "entradas_mes": 233,
+    "saidas_mes": 149,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 231,
-    "valor_causa_total": 1833843630.29,
+    "valor_causa_total": 1833624305.57,
     "saldo_mes": 84
   },
   "serie_diaria": [
@@ -311,19 +311,19 @@
     },
     {
       "data": "2026-11-24",
-      "entradas": 8,
-      "saidas": 18
+      "entradas": 10,
+      "saidas": 20
     }
   ],
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2166,
-      "entradas_mes": 75,
-      "saidas_mes": 38,
+      "andamento": 2165,
+      "entradas_mes": 76,
+      "saidas_mes": 40,
       "entradas_mes_anterior": 105,
       "saidas_mes_anterior": 77,
-      "valor_causa": 488816470.17
+      "valor_causa": 488618777.79
     },
     {
       "nome": "Grupo E1",
@@ -408,12 +408,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 27,
-      "entradas_mes": 24,
+      "andamento": 28,
+      "entradas_mes": 25,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 8158686.8
+      "valor_causa": 8137054.46
     },
     {
       "nome": "Grupo A2",
@@ -455,12 +455,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5775,
+      "andamento": 5773,
       "entradas_mes": 151,
-      "saidas_mes": 122,
+      "saidas_mes": 124,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 166,
-      "valor_causa": 1419655141.38
+      "valor_causa": 1419335816.66
     },
     {
       "nome": "MG",
@@ -482,8 +482,8 @@
     },
     {
       "nome": "RS",
-      "andamento": 240,
-      "entradas_mes": 3,
+      "andamento": 241,
+      "entradas_mes": 4,
       "saidas_mes": 2,
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 1,
@@ -571,6 +571,15 @@
       "valor_causa": 13942813.72
     },
     {
+      "nome": "ES",
+      "andamento": 30,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 7,
+      "saidas_mes_anterior": 3,
+      "valor_causa": 4431626.13
+    },
+    {
       "nome": "DF",
       "andamento": 30,
       "entradas_mes": 2,
@@ -578,15 +587,6 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
       "valor_causa": 16362883.23
-    },
-    {
-      "nome": "ES",
-      "andamento": 29,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 7,
-      "saidas_mes_anterior": 3,
-      "valor_causa": 4331626.13
     },
     {
       "nome": "MA",
@@ -700,21 +700,21 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2928,
-      "entradas_mes": 138,
-      "saidas_mes": 40,
+      "andamento": 2929,
+      "entradas_mes": 140,
+      "saidas_mes": 41,
       "entradas_mes_anterior": 269,
       "saidas_mes_anterior": 76,
-      "valor_causa": 874751221.25
+      "valor_causa": 874905136.71
     },
     {
       "nome": "Sentença",
-      "andamento": 29,
+      "andamento": 28,
       "entradas_mes": 2,
-      "saidas_mes": 5,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
-      "valor_causa": 29373427.9
+      "valor_causa": 29000187.72
     },
     {
       "nome": "Recurso",
@@ -951,11 +951,11 @@
       "fase": "Instrução",
       "grupo": "Grupo E2",
       "andamento": 894,
-      "entradas_mes": 32,
-      "saidas_mes": 13,
+      "entradas_mes": 33,
+      "saidas_mes": 14,
       "entradas_mes_anterior": 86,
       "saidas_mes_anterior": 22,
-      "valor_causa": 194593697.04
+      "valor_causa": 194769244.84
     },
     {
       "fase": "Instrução",
@@ -1040,12 +1040,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 25,
-      "entradas_mes": 22,
+      "andamento": 26,
+      "entradas_mes": 23,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 5970439.71
+      "valor_causa": 5948807.37
     },
     {
       "fase": "Instrução",
@@ -1310,12 +1310,12 @@
     {
       "fase": "Sentença",
       "grupo": "Grupo E2",
-      "andamento": 19,
+      "andamento": 18,
       "entradas_mes": 1,
-      "saidas_mes": 2,
+      "saidas_mes": 3,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 1653680.16
+      "valor_causa": 1280439.98
     },
     {
       "fase": "Sentença",
@@ -1380,12 +1380,12 @@
     },
     {
       "nome": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 380,
-      "entradas_mes": 26,
+      "andamento": 381,
+      "entradas_mes": 27,
       "saidas_mes": 5,
       "entradas_mes_anterior": 31,
       "saidas_mes_anterior": 5,
-      "valor_causa": 73189161.56
+      "valor_causa": 73364306.54
     },
     {
       "nome": "Rafael Yepez do Lago(RYL)",
@@ -1398,12 +1398,12 @@
     },
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 358,
+      "andamento": 356,
       "entradas_mes": 16,
-      "saidas_mes": 7,
+      "saidas_mes": 9,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 23,
-      "valor_causa": 51316178.48
+      "valor_causa": 50821708.78
     },
     {
       "nome": "Lucas Willott Pereira (LWP)",
@@ -1425,12 +1425,12 @@
     },
     {
       "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 305,
-      "entradas_mes": 14,
+      "andamento": 306,
+      "entradas_mes": 15,
       "saidas_mes": 4,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 7,
-      "valor_causa": 155843939.04
+      "valor_causa": 155943939.04
     },
     {
       "nome": "Beatriz Santiago de Souza(BSO)",
@@ -1811,12 +1811,12 @@
     },
     {
       "nome": "HERINGER",
-      "andamento": 339,
-      "entradas_mes": 4,
+      "andamento": 340,
+      "entradas_mes": 5,
       "saidas_mes": 6,
       "entradas_mes_anterior": 14,
       "saidas_mes_anterior": 5,
-      "valor_causa": 48549015.67,
+      "valor_causa": 48649015.67,
       "alerta_entrada": false
     },
     {
@@ -1836,7 +1836,7 @@
       "saidas_mes": 3,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 10,
-      "valor_causa": 36324893.31,
+      "valor_causa": 36500038.29,
       "alerta_entrada": true
     },
     {
@@ -1891,8 +1891,8 @@
     },
     {
       "nome": "CBC MONTENEGRO",
-      "andamento": 134,
-      "entradas_mes": 1,
+      "andamento": 135,
+      "entradas_mes": 2,
       "saidas_mes": 2,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 0,
@@ -3274,12 +3274,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "EUROCHEM FTO MATRIZ",
-      "andamento": 102,
-      "entradas_mes": 7,
+      "andamento": 103,
+      "entradas_mes": 8,
       "saidas_mes": 2,
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 12,
-      "valor_causa": 13439033.32,
+      "valor_causa": 13735810.64,
       "alerta_entrada": false
     },
     {
@@ -3340,12 +3340,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "L. SANT ANGELO",
-      "andamento": 35,
+      "andamento": 33,
       "entradas_mes": 2,
-      "saidas_mes": 2,
+      "saidas_mes": 4,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 5317500.21,
+      "valor_causa": 4823030.51,
       "alerta_entrada": false
     },
     {
@@ -3856,13 +3856,13 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "EUROCHEM FTO MATRIZ",
+      "cliente": "HERINGER",
       "andamento": 2,
       "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 357408.52,
+      "valor_causa": 111200.0,
       "alerta_entrada": false
     },
     {
@@ -3873,7 +3873,7 @@
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 109043.66,
+      "valor_causa": 284188.64,
       "alerta_entrada": false
     },
     {
@@ -3911,6 +3911,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "EUROCHEM FTO MATRIZ",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 60631.2,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "UHE SÃO SIMÃO",
       "andamento": 1,
       "entradas_mes": 1,
@@ -3922,17 +3933,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "HERINGER",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 11200.0,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "SISTENGE",
       "andamento": 1,
       "entradas_mes": 1,
@@ -3940,6 +3940,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 35497.42,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "CBC MONTENEGRO",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 0.0,
       "alerta_entrada": false
     },
     {
@@ -4519,22 +4530,22 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Rafael Yepez do Lago(RYL)",
-      "andamento": 365,
-      "entradas_mes": 9,
+      "andamento": 366,
+      "entradas_mes": 10,
       "saidas_mes": 6,
       "entradas_mes_anterior": 23,
       "saidas_mes_anterior": 22,
-      "valor_causa": 49949922.65
+      "valor_causa": 50246699.97
     },
     {
       "grupo": "Grupo E2",
       "profissional": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 356,
+      "andamento": 354,
       "entradas_mes": 14,
-      "saidas_mes": 7,
+      "saidas_mes": 9,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 23,
-      "valor_causa": 51056656.16
+      "valor_causa": 50562186.46
     },
     {
       "grupo": "Grupo E2",
@@ -4648,6 +4659,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Letícia Meneghini Fontes (LMI)",
+      "andamento": 4,
+      "entradas_mes": 4,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 898555.16
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Vanessa de Cassia Castrequini Rosa(VCR)",
       "andamento": 3,
       "entradas_mes": 3,
@@ -4655,16 +4676,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 277857.22
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 3,
-      "entradas_mes": 3,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 723410.18
     },
     {
       "grupo": "Sem grupo",
@@ -4698,13 +4709,13 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Rafael Yepez do Lago(RYL)",
+      "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
       "andamento": 2,
       "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 357408.52
+      "saidas_mes_anterior": 1,
+      "valor_causa": 111200.0
     },
     {
       "grupo": "Sem grupo",
@@ -4758,6 +4769,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Rafael Yepez do Lago(RYL)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 60631.2
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Erik Mota Coppi(ECO)",
       "andamento": 1,
       "entradas_mes": 1,
@@ -4765,16 +4786,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 657473.98
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 11200.0
     },
     {
       "grupo": "Sem grupo",
@@ -5211,12 +5222,12 @@
     {
       "estado": "ES",
       "cliente": "HERINGER",
-      "andamento": 22,
-      "entradas_mes": 1,
+      "andamento": 23,
+      "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 2,
-      "valor_causa": 4195999.21
+      "valor_causa": 4295999.21
     },
     {
       "estado": "ES",
@@ -6511,8 +6522,8 @@
     {
       "estado": "RS",
       "cliente": "CBC MONTENEGRO",
-      "andamento": 117,
-      "entradas_mes": 1,
+      "andamento": 118,
+      "entradas_mes": 2,
       "saidas_mes": 2,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 0,
@@ -6906,7 +6917,7 @@
       "saidas_mes": 3,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 9,
-      "valor_causa": 35039399.37
+      "valor_causa": 35214544.35
     },
     {
       "estado": "SP",
@@ -7020,16 +7031,6 @@
     },
     {
       "estado": "SP",
-      "cliente": "L. SANT ANGELO",
-      "andamento": 35,
-      "entradas_mes": 2,
-      "saidas_mes": 2,
-      "entradas_mes_anterior": 3,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 5317500.21
-    },
-    {
-      "estado": "SP",
       "cliente": "SISTENGE",
       "andamento": 34,
       "entradas_mes": 1,
@@ -7037,6 +7038,16 @@
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
       "valor_causa": 1757149.37
+    },
+    {
+      "estado": "SP",
+      "cliente": "L. SANT ANGELO",
+      "andamento": 33,
+      "entradas_mes": 2,
+      "saidas_mes": 4,
+      "entradas_mes_anterior": 3,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 4823030.51
     },
     {
       "estado": "SP",
@@ -8257,7 +8268,7 @@
       "saidas_mes": 3,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 10,
-      "valor_causa": 36324893.31,
+      "valor_causa": 36500038.29,
       "alerta_entrada": true
     },
     {
@@ -8353,6 +8364,11 @@
       "profissional": "Letícia Meneghini Fontes (LMI)"
     },
     {
+      "numero_processo": "0021697-29.2026.5.04.0261",
+      "cliente": "CBC MONTENEGRO",
+      "profissional": "Letícia Meneghini Fontes (LMI)"
+    },
+    {
       "numero_processo": "0001607-78.2026.5.07.0014",
       "cliente": "COMPANHIA AIX",
       "profissional": "Natália Biondi Gaggini Robles(NBG)"
@@ -8383,12 +8399,12 @@
       "profissional": "Rafael Yepez do Lago(RYL)"
     },
     {
-      "numero_processo": "0001908-67.2026.5.09.0661",
-      "cliente": "EUROCHEM FTO MATRIZ",
-      "profissional": "Rafael Yepez do Lago(RYL)"
+      "numero_processo": "0016565-25.2026.5.03.0000",
+      "cliente": "HERINGER",
+      "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
     },
     {
-      "numero_processo": "0016565-25.2026.5.03.0000",
+      "numero_processo": "0001943-03.2026.5.17.0015",
       "cliente": "HERINGER",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
     },
