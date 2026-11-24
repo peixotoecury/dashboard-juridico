@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-24T12:00:21",
+  "atualizado_em": "2026-11-24T12:15:42",
   "kpis": {
     "total_andamento": 7689,
     "entradas_hoje": 6,
@@ -691,21 +691,21 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 446,
-      "entradas_mes": 62,
+      "andamento": 445,
+      "entradas_mes": 61,
       "saidas_mes": 5,
       "entradas_mes_anterior": 36,
       "saidas_mes_anterior": 17,
-      "valor_causa": 101118839.33
+      "valor_causa": 100989024.13
     },
     {
       "nome": "Instrução",
-      "andamento": 2933,
-      "entradas_mes": 135,
+      "andamento": 2934,
+      "entradas_mes": 136,
       "saidas_mes": 37,
       "entradas_mes_anterior": 269,
       "saidas_mes_anterior": 76,
-      "valor_causa": 876101371.17
+      "valor_causa": 876231186.37
     },
     {
       "nome": "Sentença",
@@ -819,16 +819,6 @@
     },
     {
       "fase": "Ajuizamento",
-      "grupo": "Grupo B3",
-      "andamento": 3,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 189815.2
-    },
-    {
-      "fase": "Ajuizamento",
       "grupo": "Sócios",
       "andamento": 2,
       "entradas_mes": 0,
@@ -846,6 +836,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
       "valor_causa": 0.0
+    },
+    {
+      "fase": "Ajuizamento",
+      "grupo": "Grupo B3",
+      "andamento": 2,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 60000.0
     },
     {
       "fase": "Ajuizamento",
@@ -990,12 +990,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B3",
-      "andamento": 176,
-      "entradas_mes": 26,
+      "andamento": 177,
+      "entradas_mes": 27,
       "saidas_mes": 1,
       "entradas_mes_anterior": 31,
       "saidas_mes_anterior": 4,
-      "valor_causa": 32002924.22
+      "valor_causa": 32132739.42
     },
     {
       "fase": "Instrução",
@@ -1425,12 +1425,12 @@
     },
     {
       "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 304,
-      "entradas_mes": 13,
+      "andamento": 305,
+      "entradas_mes": 14,
       "saidas_mes": 4,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 7,
-      "valor_causa": 155832739.04
+      "valor_causa": 155843939.04
     },
     {
       "nome": "Beatriz Santiago de Souza(BSO)",
@@ -1452,12 +1452,12 @@
     },
     {
       "nome": "Bianca Bolanhi Camacho(BBO)",
-      "andamento": 294,
-      "entradas_mes": 4,
+      "andamento": 293,
+      "entradas_mes": 3,
       "saidas_mes": 5,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 5,
-      "valor_causa": 33301544.12
+      "valor_causa": 33290344.12
     },
     {
       "nome": "Bruna Cembranelli Fazenda (BCF)",
@@ -3953,17 +3953,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "SISTENGE",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 35497.42,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "HERINGER",
       "andamento": 1,
       "entradas_mes": 1,
@@ -3971,6 +3960,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 11200.0,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "SISTENGE",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 35497.42,
       "alerta_entrada": false
     },
     {
@@ -4809,6 +4809,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 11200.0
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Rafael Rocha Ferreira(RFE)",
       "andamento": 1,
       "entradas_mes": 1,
@@ -4816,16 +4826,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 597411.89
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Bianca Bolanhi Camacho(BBO)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 11200.0
     },
     {
       "grupo": "Sócios",
@@ -8461,7 +8461,7 @@
     {
       "numero_processo": "0016565-25.2026.5.03.0000",
       "cliente": "HERINGER",
-      "profissional": "Bianca Bolanhi Camacho(BBO)"
+      "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)"
     },
     {
       "numero_processo": "0012455-28.2026.5.15.0071",
