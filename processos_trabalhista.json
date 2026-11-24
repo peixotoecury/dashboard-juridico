@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-24T14:30:24",
+  "atualizado_em": "2026-11-24T14:45:19",
   "kpis": {
-    "total_andamento": 7684,
+    "total_andamento": 7681,
     "entradas_hoje": 6,
-    "saidas_hoje": 8,
+    "saidas_hoje": 11,
     "entradas_ontem": 32,
     "saidas_ontem": 12,
     "entradas_mes": 229,
-    "saidas_mes": 137,
+    "saidas_mes": 140,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 231,
-    "valor_causa_total": 1834969015.07,
-    "saldo_mes": 92
+    "valor_causa_total": 1834395756.06,
+    "saldo_mes": 89
   },
   "serie_diaria": [
     {
@@ -312,7 +312,7 @@
     {
       "data": "2026-11-24",
       "entradas": 6,
-      "saidas": 8
+      "saidas": 11
     }
   ],
   "por_grupo": [
@@ -327,12 +327,12 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1782,
+      "andamento": 1779,
       "entradas_mes": 32,
-      "saidas_mes": 53,
+      "saidas_mes": 56,
       "entradas_mes_anterior": 60,
       "saidas_mes_anterior": 70,
-      "valor_causa": 308141735.67
+      "valor_causa": 307568476.66
     },
     {
       "nome": "Grupo B1",
@@ -455,12 +455,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5782,
+      "andamento": 5779,
       "entradas_mes": 149,
-      "saidas_mes": 113,
+      "saidas_mes": 116,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 166,
-      "valor_causa": 1420780526.16
+      "valor_causa": 1420207267.15
     },
     {
       "nome": "MG",
@@ -700,12 +700,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2932,
+      "andamento": 2929,
       "entradas_mes": 136,
       "saidas_mes": 39,
       "entradas_mes_anterior": 269,
       "saidas_mes_anterior": 76,
-      "valor_causa": 876043613.99
+      "valor_causa": 874674341.34
     },
     {
       "nome": "Sentença",
@@ -718,21 +718,21 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2938,
+      "andamento": 2934,
       "entradas_mes": 6,
-      "saidas_mes": 42,
+      "saidas_mes": 45,
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 48,
-      "valor_causa": 675399841.14
+      "valor_causa": 674979651.48
     },
     {
       "nome": "Execução",
-      "andamento": 934,
+      "andamento": 938,
       "entradas_mes": 8,
       "saidas_mes": 38,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 49,
-      "valor_causa": 143287364.91
+      "valor_causa": 144503568.21
     }
   ],
   "por_fase_outras": 404,
@@ -870,12 +870,12 @@
     {
       "fase": "Execução",
       "grupo": "Grupo E1",
-      "andamento": 188,
+      "andamento": 192,
       "entradas_mes": 1,
       "saidas_mes": 12,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 7,
-      "valor_causa": 20090120.1
+      "valor_causa": 21306323.4
     },
     {
       "fase": "Execução",
@@ -960,12 +960,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 735,
+      "andamento": 732,
       "entradas_mes": 15,
       "saidas_mes": 13,
       "entradas_mes_anterior": 32,
       "saidas_mes_anterior": 23,
-      "valor_causa": 160908369.41
+      "valor_causa": 159539096.76
     },
     {
       "fase": "Instrução",
@@ -1200,12 +1200,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo E1",
-      "andamento": 731,
+      "andamento": 727,
       "entradas_mes": 0,
-      "saidas_mes": 21,
+      "saidas_mes": 24,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 19,
-      "valor_causa": 110380257.72
+      "valor_causa": 109960068.06
     },
     {
       "fase": "Recurso",
@@ -1533,12 +1533,12 @@
     },
     {
       "nome": "Paloma da Silva Santos(PSI)",
-      "andamento": 244,
+      "andamento": 241,
       "entradas_mes": 6,
-      "saidas_mes": 15,
+      "saidas_mes": 18,
       "entradas_mes_anterior": 15,
       "saidas_mes_anterior": 10,
-      "valor_causa": 56293875.61
+      "valor_causa": 55720616.6
     },
     {
       "nome": "Vinícius Ronchi Arruda(VRO)",
@@ -1801,12 +1801,12 @@
     },
     {
       "nome": "MAHLE METAL - MOGI",
-      "andamento": 347,
+      "andamento": 344,
       "entradas_mes": 5,
-      "saidas_mes": 21,
+      "saidas_mes": 24,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 13,
-      "valor_causa": 71125552.27,
+      "valor_causa": 70552293.26,
       "alerta_entrada": false
     },
     {
@@ -2988,12 +2988,12 @@
     {
       "grupo": "Grupo E1",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 346,
+      "andamento": 343,
       "entradas_mes": 4,
-      "saidas_mes": 21,
+      "saidas_mes": 24,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 13,
-      "valor_causa": 70529526.27,
+      "valor_causa": 69956267.26,
       "alerta_entrada": false
     },
     {
@@ -4420,12 +4420,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Paloma da Silva Santos(PSI)",
-      "andamento": 243,
+      "andamento": 240,
       "entradas_mes": 5,
-      "saidas_mes": 15,
+      "saidas_mes": 18,
       "entradas_mes_anterior": 15,
       "saidas_mes_anterior": 10,
-      "valor_causa": 55697849.61
+      "valor_causa": 55124590.6
     },
     {
       "grupo": "Grupo E1",
@@ -6882,12 +6882,12 @@
     {
       "estado": "SP",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 346,
+      "andamento": 343,
       "entradas_mes": 5,
-      "saidas_mes": 21,
+      "saidas_mes": 24,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 13,
-      "valor_causa": 71125552.27
+      "valor_causa": 70552293.26
     },
     {
       "estado": "SP",
