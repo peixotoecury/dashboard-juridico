@@ -1,16 +1,16 @@
 {
-  "atualizado_em": "2026-11-24T10:30:19",
+  "atualizado_em": "2026-11-24T10:45:23",
   "kpis": {
     "total_andamento": 7679,
     "entradas_hoje": 0,
     "saidas_hoje": 1,
-    "entradas_ontem": 26,
+    "entradas_ontem": 27,
     "saidas_ontem": 12,
-    "entradas_mes": 216,
-    "saidas_mes": 129,
+    "entradas_mes": 217,
+    "saidas_mes": 130,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 231,
-    "valor_causa_total": 1833284202.25,
+    "valor_causa_total": 1833286202.25,
     "saldo_mes": 87
   },
   "serie_diaria": [
@@ -277,7 +277,7 @@
     {
       "data": "2026-11-17",
       "entradas": 16,
-      "saidas": 10
+      "saidas": 11
     },
     {
       "data": "2026-11-18",
@@ -306,7 +306,7 @@
     },
     {
       "data": "2026-11-23",
-      "entradas": 26,
+      "entradas": 27,
       "saidas": 12
     },
     {
@@ -336,9 +336,9 @@
     },
     {
       "nome": "Grupo B1",
-      "andamento": 1405,
+      "andamento": 1404,
       "entradas_mes": 24,
-      "saidas_mes": 34,
+      "saidas_mes": 35,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 42,
       "valor_causa": 341652225.91
@@ -408,12 +408,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 25,
-      "entradas_mes": 22,
+      "andamento": 26,
+      "entradas_mes": 23,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 7776271.51
+      "valor_causa": 7778271.51
     },
     {
       "nome": "Grupo A2",
@@ -456,11 +456,11 @@
     {
       "nome": "SP",
       "andamento": 5778,
-      "entradas_mes": 139,
-      "saidas_mes": 107,
+      "entradas_mes": 140,
+      "saidas_mes": 108,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 166,
-      "valor_causa": 1419003251.5
+      "valor_causa": 1419005251.5
     },
     {
       "nome": "MG",
@@ -691,21 +691,21 @@
   "por_fase": [
     {
       "nome": "Ajuizamento",
-      "andamento": 444,
+      "andamento": 445,
       "entradas_mes": 62,
       "saidas_mes": 5,
       "entradas_mes_anterior": 36,
       "saidas_mes_anterior": 17,
-      "valor_causa": 100122641.11
+      "valor_causa": 100171746.11
     },
     {
       "nome": "Instrução",
-      "andamento": 2926,
-      "entradas_mes": 123,
+      "andamento": 2925,
+      "entradas_mes": 124,
       "saidas_mes": 36,
       "entradas_mes_anterior": 269,
       "saidas_mes_anterior": 76,
-      "valor_causa": 875105996.4
+      "valor_causa": 875007332.3
     },
     {
       "nome": "Sentença",
@@ -718,18 +718,18 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2941,
+      "andamento": 2942,
       "entradas_mes": 6,
       "saidas_mes": 38,
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 48,
-      "valor_causa": 675519028.93
+      "valor_causa": 675570588.03
     },
     {
       "nome": "Execução",
-      "andamento": 934,
+      "andamento": 933,
       "entradas_mes": 8,
-      "saidas_mes": 37,
+      "saidas_mes": 38,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 49,
       "valor_causa": 143287364.91
@@ -799,6 +799,16 @@
     },
     {
       "fase": "Ajuizamento",
+      "grupo": "Grupo B1",
+      "andamento": 6,
+      "entradas_mes": 4,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 933497.8
+    },
+    {
+      "fase": "Ajuizamento",
       "grupo": "Grupo A1",
       "andamento": 5,
       "entradas_mes": 0,
@@ -806,16 +816,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
-    },
-    {
-      "fase": "Ajuizamento",
-      "grupo": "Grupo B1",
-      "andamento": 5,
-      "entradas_mes": 4,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 884392.8
     },
     {
       "fase": "Ajuizamento",
@@ -880,9 +880,9 @@
     {
       "fase": "Execução",
       "grupo": "Grupo B1",
-      "andamento": 171,
+      "andamento": 170,
       "entradas_mes": 1,
-      "saidas_mes": 9,
+      "saidas_mes": 10,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 20,
       "valor_causa": 24675961.61
@@ -950,12 +950,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 893,
+      "andamento": 892,
       "entradas_mes": 27,
       "saidas_mes": 11,
       "entradas_mes_anterior": 86,
       "saidas_mes_anterior": 22,
-      "valor_causa": 194133993.85
+      "valor_causa": 194082434.75
     },
     {
       "fase": "Instrução",
@@ -970,12 +970,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B1",
-      "andamento": 388,
+      "andamento": 387,
       "entradas_mes": 17,
       "saidas_mes": 10,
       "entradas_mes_anterior": 42,
       "saidas_mes_anterior": 14,
-      "valor_causa": 142822266.52
+      "valor_causa": 142773161.52
     },
     {
       "fase": "Instrução",
@@ -1040,12 +1040,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 23,
-      "entradas_mes": 20,
+      "andamento": 24,
+      "entradas_mes": 21,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 5588024.42
+      "valor_causa": 5590024.42
     },
     {
       "fase": "Instrução",
@@ -1210,12 +1210,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo E2",
-      "andamento": 594,
+      "andamento": 595,
       "entradas_mes": 0,
       "saidas_mes": 4,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 17,
-      "valor_causa": 184404122.21
+      "valor_causa": 184455681.31
     },
     {
       "fase": "Recurso",
@@ -1435,20 +1435,20 @@
     {
       "nome": "Beatriz Santiago de Souza(BSO)",
       "andamento": 295,
-      "entradas_mes": 6,
-      "saidas_mes": 5,
+      "entradas_mes": 7,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 7,
-      "valor_causa": 64026354.95
+      "valor_causa": 64028354.95
     },
     {
       "nome": "Guilherme Silva Morimoto(GSM)",
-      "andamento": 293,
+      "andamento": 294,
       "entradas_mes": 9,
       "saidas_mes": 1,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 4,
-      "valor_causa": 79144811.92
+      "valor_causa": 79568481.41
     },
     {
       "nome": "Bianca Bolanhi Camacho(BBO)",
@@ -1533,12 +1533,12 @@
     },
     {
       "nome": "Erik Mota Coppi(ECO)",
-      "andamento": 245,
+      "andamento": 246,
       "entradas_mes": 2,
       "saidas_mes": 0,
-      "entradas_mes_anterior": 18,
+      "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 8,
-      "valor_causa": 46998269.54
+      "valor_causa": 47136469.54
     },
     {
       "nome": "Vinícius Ronchi Arruda(VRO)",
@@ -1596,12 +1596,12 @@
     },
     {
       "nome": "Natália Biondi Gaggini Robles(NBG)",
-      "andamento": 167,
+      "andamento": 166,
       "entradas_mes": 13,
       "saidas_mes": 2,
-      "entradas_mes_anterior": 33,
+      "entradas_mes_anterior": 32,
       "saidas_mes_anterior": 2,
-      "valor_causa": 41141739.11
+      "valor_causa": 41003539.11
     },
     {
       "nome": "Mariana Borges de Menezes Fávaro(MBF)",
@@ -1685,15 +1685,6 @@
       "valor_causa": 0.0
     },
     {
-      "nome": "Juliana Perucci (JPE)",
-      "andamento": 3,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 2046841.95
-    },
-    {
       "nome": "Lucas Diniz Almeida(LDI)",
       "andamento": 2,
       "entradas_mes": 0,
@@ -1701,6 +1692,15 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
+    },
+    {
+      "nome": "Juliana Perucci (JPE)",
+      "andamento": 2,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1623172.46
     },
     {
       "nome": "Vinicius da Silva Cerqueira(VSI) ; Antonio Carlos Aguiar(ACA)",
@@ -1761,11 +1761,11 @@
     {
       "nome": "BRIDGESTONE",
       "andamento": 1411,
-      "entradas_mes": 30,
-      "saidas_mes": 34,
+      "entradas_mes": 31,
+      "saidas_mes": 35,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 42,
-      "valor_causa": 343804911.41,
+      "valor_causa": 343806911.41,
       "alerta_entrada": false
     },
     {
@@ -2392,9 +2392,9 @@
     {
       "grupo": "Grupo B1",
       "cliente": "BRIDGESTONE",
-      "andamento": 1405,
+      "andamento": 1404,
       "entradas_mes": 24,
-      "saidas_mes": 34,
+      "saidas_mes": 35,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 42,
       "valor_causa": 341652225.91,
@@ -3811,12 +3811,12 @@
     {
       "grupo": "Sem grupo",
       "cliente": "BRIDGESTONE",
-      "andamento": 6,
-      "entradas_mes": 6,
+      "andamento": 7,
+      "entradas_mes": 7,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 2152685.5,
+      "valor_causa": 2154685.5,
       "alerta_entrada": true
     },
     {
@@ -4066,9 +4066,9 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Beatriz Santiago de Souza(BSO)",
-      "andamento": 293,
+      "andamento": 292,
       "entradas_mes": 4,
-      "saidas_mes": 5,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 7,
       "valor_causa": 63439584.46
@@ -4096,12 +4096,12 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Guilherme Silva Morimoto(GSM)",
-      "andamento": 240,
+      "andamento": 241,
       "entradas_mes": 7,
       "saidas_mes": 0,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 4,
-      "valor_causa": 56389171.58
+      "valor_causa": 56812841.07
     },
     {
       "grupo": "Grupo B1",
@@ -4135,16 +4135,6 @@
     },
     {
       "grupo": "Grupo B1",
-      "profissional": "Juliana Perucci (JPE)",
-      "andamento": 3,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 2046841.95
-    },
-    {
-      "grupo": "Grupo B1",
       "profissional": "Sofia Freire (SOF)",
       "andamento": 2,
       "entradas_mes": 0,
@@ -4152,6 +4142,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 947093.22
+    },
+    {
+      "grupo": "Grupo B1",
+      "profissional": "Juliana Perucci (JPE)",
+      "andamento": 2,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1623172.46
     },
     {
       "grupo": "Grupo B2",
@@ -4306,22 +4306,22 @@
     {
       "grupo": "Grupo C2",
       "profissional": "Erik Mota Coppi(ECO)",
-      "andamento": 199,
+      "andamento": 200,
       "entradas_mes": 0,
       "saidas_mes": 0,
-      "entradas_mes_anterior": 16,
+      "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 7,
-      "valor_causa": 40008456.79
+      "valor_causa": 40146656.79
     },
     {
       "grupo": "Grupo C2",
       "profissional": "Natália Biondi Gaggini Robles(NBG)",
-      "andamento": 18,
+      "andamento": 17,
       "entradas_mes": 0,
       "saidas_mes": 0,
-      "entradas_mes_anterior": 5,
+      "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 0,
-      "valor_causa": 6536526.28
+      "valor_causa": 6398326.28
     },
     {
       "grupo": "Grupo C2",
@@ -4666,12 +4666,12 @@
     {
       "grupo": "Sem grupo",
       "profissional": "Beatriz Santiago de Souza(BSO)",
-      "andamento": 2,
-      "entradas_mes": 2,
+      "andamento": 3,
+      "entradas_mes": 3,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 586770.49
+      "valor_causa": 588770.49
     },
     {
       "grupo": "Sem grupo",
@@ -6779,11 +6779,11 @@
       "estado": "SP",
       "cliente": "BRIDGESTONE",
       "andamento": 1385,
-      "entradas_mes": 29,
-      "saidas_mes": 34,
+      "entradas_mes": 30,
+      "saidas_mes": 35,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 40,
-      "valor_causa": 332174791.62
+      "valor_causa": 332176791.62
     },
     {
       "estado": "SP",
@@ -8255,6 +8255,11 @@
       "profissional": "Beatriz Santiago de Souza(BSO)"
     },
     {
+      "numero_processo": "0029100-04.1997.5.15.0053",
+      "cliente": "BRIDGESTONE",
+      "profissional": "Beatriz Santiago de Souza(BSO)"
+    },
+    {
       "numero_processo": "1001767-97.2026.5.02.0411",
       "cliente": "CBC CARTUCHOS BRASIL",
       "profissional": "Letícia Meneghini Fontes (LMI)"
@@ -8295,12 +8300,12 @@
       "profissional": "Natália Biondi Gaggini Robles(NBG)"
     },
     {
-      "numero_processo": "0001908-67.2026.5.09.0661",
+      "numero_processo": "0019122-74.2026.5.16.0015",
       "cliente": "EUROCHEM FTO MATRIZ",
       "profissional": "Rafael Yepez do Lago(RYL)"
     },
     {
-      "numero_processo": "0019122-74.2026.5.16.0015",
+      "numero_processo": "0001908-67.2026.5.09.0661",
       "cliente": "EUROCHEM FTO MATRIZ",
       "profissional": "Rafael Yepez do Lago(RYL)"
     },
