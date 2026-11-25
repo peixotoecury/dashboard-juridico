@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-25T08:15:18",
+  "atualizado_em": "2026-11-25T08:30:19",
   "kpis": {
-    "total_andamento": 7689,
+    "total_andamento": 7691,
     "entradas_hoje": 0,
     "saidas_hoje": 1,
-    "entradas_ontem": 25,
+    "entradas_ontem": 27,
     "saidas_ontem": 20,
-    "entradas_mes": 248,
+    "entradas_mes": 250,
     "saidas_mes": 151,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 231,
-    "valor_causa_total": 1835840105.85,
-    "saldo_mes": 97
+    "valor_causa_total": 1836825479.84,
+    "saldo_mes": 99
   },
   "serie_diaria": [
     {
@@ -306,7 +306,7 @@
     },
     {
       "data": "2026-11-24",
-      "entradas": 25,
+      "entradas": 27,
       "saidas": 20
     },
     {
@@ -398,6 +398,15 @@
       "valor_causa": 135074103.84
     },
     {
+      "nome": "Sem grupo",
+      "andamento": 31,
+      "entradas_mes": 28,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 3,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 8283243.36
+    },
+    {
       "nome": "Grupo A1",
       "andamento": 29,
       "entradas_mes": 2,
@@ -405,15 +414,6 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
       "valor_causa": 0.0
-    },
-    {
-      "nome": "Sem grupo",
-      "andamento": 29,
-      "entradas_mes": 26,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 3,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 7297869.37
     },
     {
       "nome": "Grupo A2",
@@ -455,12 +455,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5785,
-      "entradas_mes": 165,
+      "andamento": 5787,
+      "entradas_mes": 167,
       "saidas_mes": 126,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 166,
-      "valor_causa": 1421323953.94
+      "valor_causa": 1422309327.93
     },
     {
       "nome": "MG",
@@ -700,12 +700,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2942,
-      "entradas_mes": 154,
+      "andamento": 2944,
+      "entradas_mes": 156,
       "saidas_mes": 41,
       "entradas_mes_anterior": 269,
       "saidas_mes_anterior": 76,
-      "valor_causa": 877093414.7
+      "valor_causa": 878078788.69
     },
     {
       "nome": "Sentença",
@@ -1040,12 +1040,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 27,
-      "entradas_mes": 24,
+      "andamento": 29,
+      "entradas_mes": 26,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 5109622.28
+      "valor_causa": 6094996.27
     },
     {
       "fase": "Instrução",
@@ -1371,12 +1371,12 @@
   "por_profissional": [
     {
       "nome": "Giulia Vendramini Milani(GVM)",
-      "andamento": 416,
-      "entradas_mes": 6,
+      "andamento": 417,
+      "entradas_mes": 7,
       "saidas_mes": 18,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 29,
-      "valor_causa": 67196816.22
+      "valor_causa": 67538119.11
     },
     {
       "nome": "Letícia Meneghini Fontes (LMI)",
@@ -1739,6 +1739,15 @@
       "valor_causa": 0.0
     },
     {
+      "nome": "Luiz Vicente de Carvalho(LVC)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 644071.1
+    },
+    {
       "nome": "Tamara Silva Marcílio(TAM)",
       "andamento": 0,
       "entradas_mes": 0,
@@ -1801,12 +1810,12 @@
     },
     {
       "nome": "MAHLE METAL - MOGI",
-      "andamento": 344,
-      "entradas_mes": 5,
+      "andamento": 345,
+      "entradas_mes": 6,
       "saidas_mes": 24,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 13,
-      "valor_causa": 70552293.26,
+      "valor_causa": 70893596.15,
       "alerta_entrada": false
     },
     {
@@ -1841,12 +1850,12 @@
     },
     {
       "nome": "MAHLE METAL - SBC",
-      "andamento": 260,
-      "entradas_mes": 3,
+      "andamento": 261,
+      "entradas_mes": 4,
       "saidas_mes": 10,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 10,
-      "valor_causa": 23475587.72,
+      "valor_causa": 24119658.82,
       "alerta_entrada": false
     },
     {
@@ -3856,6 +3865,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "MAHLE METAL - MOGI",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 937328.89,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "CBC MONTENEGRO",
       "andamento": 2,
       "entradas_mes": 2,
@@ -3874,17 +3894,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 1550634.98,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "MAHLE METAL - MOGI",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 596026.0,
       "alerta_entrada": false
     },
     {
@@ -3940,6 +3949,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 438084.86,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "MAHLE METAL - SBC",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 644071.1,
       "alerta_entrada": false
     },
     {
@@ -4658,6 +4678,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Giulia Vendramini Milani(GVM)",
+      "andamento": 3,
+      "entradas_mes": 3,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1979601.58
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Natália Biondi Gaggini Robles(NBG)",
       "andamento": 2,
       "entradas_mes": 0,
@@ -4665,16 +4695,6 @@
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
       "valor_causa": 30000.0
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Giulia Vendramini Milani(GVM)",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 1638298.69
     },
     {
       "grupo": "Sem grupo",
@@ -4745,6 +4765,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 438084.86
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Luiz Vicente de Carvalho(LVC)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 644071.1
     },
     {
       "grupo": "Sócios",
@@ -6831,12 +6861,12 @@
     {
       "estado": "SP",
       "cliente": "MAHLE METAL - MOGI",
-      "andamento": 343,
-      "entradas_mes": 5,
+      "andamento": 344,
+      "entradas_mes": 6,
       "saidas_mes": 24,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 13,
-      "valor_causa": 70552293.26
+      "valor_causa": 70893596.15
     },
     {
       "estado": "SP",
@@ -6871,12 +6901,12 @@
     {
       "estado": "SP",
       "cliente": "MAHLE METAL - SBC",
-      "andamento": 260,
-      "entradas_mes": 3,
+      "andamento": 261,
+      "entradas_mes": 4,
       "saidas_mes": 10,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 10,
-      "valor_causa": 23475587.72
+      "valor_causa": 24119658.82
     },
     {
       "estado": "SP",
@@ -8371,6 +8401,16 @@
       "numero_processo": "0012455-28.2026.5.15.0071",
       "cliente": "MAHLE METAL - MOGI",
       "profissional": "Paloma da Silva Santos(PSI)"
+    },
+    {
+      "numero_processo": "0012507-24.2026.5.15.0071",
+      "cliente": "MAHLE METAL - MOGI",
+      "profissional": "Giulia Vendramini Milani(GVM)"
+    },
+    {
+      "numero_processo": "1001963-93.2026.5.02.0467",
+      "cliente": "MAHLE METAL - SBC",
+      "profissional": "Luiz Vicente de Carvalho(LVC)"
     },
     {
       "numero_processo": "0011291-78.2026.5.15.0119",
