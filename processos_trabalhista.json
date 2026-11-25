@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-25T11:15:25",
+  "atualizado_em": "2026-11-25T11:30:22",
   "kpis": {
-    "total_andamento": 7691,
+    "total_andamento": 7689,
     "entradas_hoje": 1,
-    "saidas_hoje": 4,
+    "saidas_hoje": 6,
     "entradas_ontem": 29,
     "saidas_ontem": 20,
     "entradas_mes": 253,
-    "saidas_mes": 154,
+    "saidas_mes": 156,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 231,
-    "valor_causa_total": 1837266527.13,
-    "saldo_mes": 99
+    "valor_causa_total": 1836433692.86,
+    "saldo_mes": 97
   },
   "serie_diaria": [
     {
@@ -312,7 +312,7 @@
     {
       "data": "2026-11-25",
       "entradas": 1,
-      "saidas": 4
+      "saidas": 6
     }
   ],
   "por_grupo": [
@@ -327,12 +327,12 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1771,
+      "andamento": 1769,
       "entradas_mes": 32,
-      "saidas_mes": 64,
+      "saidas_mes": 66,
       "entradas_mes_anterior": 60,
       "saidas_mes_anterior": 70,
-      "valor_causa": 306926377.31
+      "valor_causa": 306093543.04
     },
     {
       "nome": "Grupo B1",
@@ -455,12 +455,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5785,
+      "andamento": 5783,
       "entradas_mes": 168,
-      "saidas_mes": 129,
+      "saidas_mes": 131,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 166,
-      "valor_causa": 1422363879.92
+      "valor_causa": 1421531045.65
     },
     {
       "nome": "MG",
@@ -700,12 +700,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2943,
+      "andamento": 2942,
       "entradas_mes": 158,
-      "saidas_mes": 42,
+      "saidas_mes": 43,
       "entradas_mes_anterior": 269,
       "saidas_mes_anterior": 76,
-      "valor_causa": 878385997.77
+      "valor_causa": 877553163.5
     },
     {
       "nome": "Sentença",
@@ -727,9 +727,9 @@
     },
     {
       "nome": "Execução",
-      "andamento": 943,
+      "andamento": 942,
       "entradas_mes": 9,
-      "saidas_mes": 41,
+      "saidas_mes": 42,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 49,
       "valor_causa": 146635832.86
@@ -870,9 +870,9 @@
     {
       "fase": "Execução",
       "grupo": "Grupo E1",
-      "andamento": 197,
+      "andamento": 196,
       "entradas_mes": 2,
-      "saidas_mes": 14,
+      "saidas_mes": 15,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 7,
       "valor_causa": 22004313.8
@@ -960,12 +960,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 728,
+      "andamento": 727,
       "entradas_mes": 14,
-      "saidas_mes": 14,
+      "saidas_mes": 15,
       "entradas_mes_anterior": 32,
       "saidas_mes_anterior": 23,
-      "valor_causa": 159447445.22
+      "valor_causa": 158614610.95
     },
     {
       "fase": "Instrução",
@@ -1371,12 +1371,12 @@
   "por_profissional": [
     {
       "nome": "Giulia Vendramini Milani(GVM)",
-      "andamento": 414,
+      "andamento": 413,
       "entradas_mes": 7,
-      "saidas_mes": 21,
+      "saidas_mes": 22,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 29,
-      "valor_causa": 67525025.44
+      "valor_causa": 66692191.17
     },
     {
       "nome": "Letícia Meneghini Fontes (LMI)",
@@ -1416,9 +1416,9 @@
     },
     {
       "nome": "Joice Ramos Miranda(JRM)",
-      "andamento": 317,
+      "andamento": 316,
       "entradas_mes": 10,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 6,
       "valor_causa": 76038034.06
@@ -1790,12 +1790,12 @@
     },
     {
       "nome": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 706,
+      "andamento": 704,
       "entradas_mes": 13,
-      "saidas_mes": 21,
+      "saidas_mes": 23,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 23,
-      "valor_causa": 142904931.66,
+      "valor_causa": 142072097.39,
       "alerta_entrada": false
     },
     {
@@ -2997,12 +2997,12 @@
     {
       "grupo": "Grupo E1",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 630,
+      "andamento": 628,
       "entradas_mes": 9,
-      "saidas_mes": 21,
+      "saidas_mes": 23,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 23,
-      "valor_causa": 141776156.61,
+      "valor_causa": 140943322.34,
       "alerta_entrada": false
     },
     {
@@ -4388,19 +4388,19 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Giulia Vendramini Milani(GVM)",
-      "andamento": 411,
+      "andamento": 410,
       "entradas_mes": 4,
-      "saidas_mes": 21,
+      "saidas_mes": 22,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 29,
-      "valor_causa": 65545423.86
+      "valor_causa": 64712589.59
     },
     {
       "grupo": "Grupo E1",
       "profissional": "Joice Ramos Miranda(JRM)",
-      "andamento": 317,
+      "andamento": 316,
       "entradas_mes": 10,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 6,
       "valor_causa": 76038034.06
@@ -6820,12 +6820,12 @@
     {
       "estado": "SP",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 602,
+      "andamento": 600,
       "entradas_mes": 11,
-      "saidas_mes": 18,
+      "saidas_mes": 20,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 18,
-      "valor_causa": 128948163.14
+      "valor_causa": 128115328.87
     },
     {
       "estado": "SP",
