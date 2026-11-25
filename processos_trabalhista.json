@@ -1,24 +1,19 @@
 {
-  "atualizado_em": "2026-11-24T20:00:18",
+  "atualizado_em": "2026-11-25T08:00:33",
   "kpis": {
-    "total_andamento": 7683,
-    "entradas_hoje": 18,
-    "saidas_hoje": 20,
-    "entradas_ontem": 32,
-    "saidas_ontem": 13,
-    "entradas_mes": 241,
-    "saidas_mes": 150,
+    "total_andamento": 7688,
+    "entradas_hoje": 0,
+    "saidas_hoje": 1,
+    "entradas_ontem": 24,
+    "saidas_ontem": 20,
+    "entradas_mes": 247,
+    "saidas_mes": 151,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 231,
-    "valor_causa_total": 1834704173.82,
-    "saldo_mes": 91
+    "valor_causa_total": 1835688576.79,
+    "saldo_mes": 96
   },
   "serie_diaria": [
-    {
-      "data": "2026-09-26",
-      "entradas": 0,
-      "saidas": 0
-    },
     {
       "data": "2026-09-27",
       "entradas": 0,
@@ -311,19 +306,24 @@
     },
     {
       "data": "2026-11-24",
-      "entradas": 18,
+      "entradas": 24,
       "saidas": 20
+    },
+    {
+      "data": "2026-11-25",
+      "entradas": 0,
+      "saidas": 1
     }
   ],
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2169,
+      "andamento": 2168,
       "entradas_mes": 80,
-      "saidas_mes": 40,
+      "saidas_mes": 41,
       "entradas_mes_anterior": 105,
       "saidas_mes_anterior": 77,
-      "valor_causa": 488950131.31
+      "valor_causa": 488904838.39
     },
     {
       "nome": "Grupo E1",
@@ -408,12 +408,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 22,
-      "entradas_mes": 19,
+      "andamento": 28,
+      "entradas_mes": 25,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 6116644.42
+      "valor_causa": 7146340.31
     },
     {
       "nome": "Grupo A2",
@@ -455,12 +455,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5779,
-      "entradas_mes": 158,
-      "saidas_mes": 125,
+      "andamento": 5784,
+      "entradas_mes": 164,
+      "saidas_mes": 126,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 166,
-      "valor_causa": 1420188021.91
+      "valor_causa": 1421172424.88
     },
     {
       "nome": "MG",
@@ -700,21 +700,21 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2936,
-      "entradas_mes": 147,
+      "andamento": 2941,
+      "entradas_mes": 153,
       "saidas_mes": 41,
       "entradas_mes_anterior": 269,
       "saidas_mes_anterior": 76,
-      "valor_causa": 875912189.75
+      "valor_causa": 876941885.64
     },
     {
       "nome": "Sentença",
       "andamento": 28,
       "entradas_mes": 2,
-      "saidas_mes": 6,
+      "saidas_mes": 7,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
-      "valor_causa": 29000187.72
+      "valor_causa": 28954894.8
     },
     {
       "nome": "Recurso",
@@ -950,7 +950,7 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 898,
+      "andamento": 897,
       "entradas_mes": 37,
       "saidas_mes": 14,
       "entradas_mes_anterior": 86,
@@ -1040,12 +1040,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 20,
-      "entradas_mes": 17,
+      "andamento": 26,
+      "entradas_mes": 23,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 3928397.33
+      "valor_causa": 4958093.22
     },
     {
       "fase": "Instrução",
@@ -1312,10 +1312,10 @@
       "grupo": "Grupo E2",
       "andamento": 18,
       "entradas_mes": 1,
-      "saidas_mes": 3,
+      "saidas_mes": 4,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 1280439.98
+      "valor_causa": 1235147.06
     },
     {
       "fase": "Sentença",
@@ -1380,12 +1380,12 @@
     },
     {
       "nome": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 386,
-      "entradas_mes": 32,
+      "andamento": 391,
+      "entradas_mes": 37,
       "saidas_mes": 5,
       "entradas_mes_anterior": 31,
       "saidas_mes_anterior": 5,
-      "valor_causa": 73725144.6
+      "valor_causa": 74316755.63
     },
     {
       "nome": "Rafael Yepez do Lago(RYL)",
@@ -1398,12 +1398,12 @@
     },
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 356,
+      "andamento": 355,
       "entradas_mes": 16,
-      "saidas_mes": 9,
+      "saidas_mes": 10,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 23,
-      "valor_causa": 50821708.78
+      "valor_causa": 50776415.86
     },
     {
       "nome": "Lucas Willott Pereira (LWP)",
@@ -1515,12 +1515,12 @@
     },
     {
       "nome": "Anna Carolina Balbino Gatti Baani(ANB)",
-      "andamento": 270,
-      "entradas_mes": 5,
+      "andamento": 271,
+      "entradas_mes": 6,
       "saidas_mes": 1,
       "entradas_mes_anterior": 8,
       "saidas_mes_anterior": 2,
-      "valor_causa": 66418767.42
+      "valor_causa": 66856852.28
     },
     {
       "nome": "Erik Mota Coppi(ECO)",
@@ -1771,12 +1771,12 @@
     },
     {
       "nome": "EMBRAER",
-      "andamento": 741,
-      "entradas_mes": 19,
+      "andamento": 742,
+      "entradas_mes": 20,
       "saidas_mes": 2,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 12,
-      "valor_causa": 147981321.42,
+      "valor_causa": 148419406.28,
       "alerta_entrada": true
     },
     {
@@ -1831,12 +1831,12 @@
     },
     {
       "nome": "CBC CARTUCHOS BRASIL",
-      "andamento": 278,
-      "entradas_mes": 40,
+      "andamento": 283,
+      "entradas_mes": 45,
       "saidas_mes": 3,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 10,
-      "valor_causa": 37247579.87,
+      "valor_causa": 37839190.9,
       "alerta_entrada": true
     },
     {
@@ -3351,12 +3351,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "L. SANT ANGELO",
-      "andamento": 33,
+      "andamento": 32,
       "entradas_mes": 2,
-      "saidas_mes": 4,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 4823030.51,
+      "valor_causa": 4777737.59,
       "alerta_entrada": false
     },
     {
@@ -3813,12 +3813,12 @@
     {
       "grupo": "Sem grupo",
       "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 7,
-      "entradas_mes": 7,
+      "andamento": 12,
+      "entradas_mes": 12,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 1031730.22,
+      "valor_causa": 1623341.25,
       "alerta_entrada": true
     },
     {
@@ -3929,6 +3929,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 123500.0,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "EMBRAER",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 438084.86,
       "alerta_entrada": false
     },
     {
@@ -4518,12 +4529,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 356,
+      "andamento": 355,
       "entradas_mes": 16,
-      "saidas_mes": 9,
+      "saidas_mes": 10,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 23,
-      "valor_causa": 50821708.78
+      "valor_causa": 50776415.86
     },
     {
       "grupo": "Grupo E2",
@@ -4628,12 +4639,12 @@
     {
       "grupo": "Sem grupo",
       "profissional": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 9,
-      "entradas_mes": 9,
+      "andamento": 14,
+      "entradas_mes": 14,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 1259393.22
+      "valor_causa": 1851004.25
     },
     {
       "grupo": "Sem grupo",
@@ -4724,6 +4735,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
       "valor_causa": 100000.0
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Anna Carolina Balbino Gatti Baani(ANB)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 438084.86
     },
     {
       "grupo": "Sócios",
@@ -6599,16 +6620,6 @@
     },
     {
       "estado": "RS",
-      "cliente": "MSA BRASIL",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 63250.0
-    },
-    {
-      "estado": "RS",
       "cliente": "PILKINGTON (NSG)",
       "andamento": 1,
       "entradas_mes": 0,
@@ -6616,6 +6627,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 29999.99
+    },
+    {
+      "estado": "RS",
+      "cliente": "MSA BRASIL",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 63250.0
     },
     {
       "estado": "SC",
@@ -6780,12 +6801,12 @@
     {
       "estado": "SP",
       "cliente": "EMBRAER",
-      "andamento": 723,
-      "entradas_mes": 18,
+      "andamento": 724,
+      "entradas_mes": 19,
       "saidas_mes": 1,
       "entradas_mes_anterior": 12,
       "saidas_mes_anterior": 12,
-      "valor_causa": 147531479.01
+      "valor_causa": 147969563.87
     },
     {
       "estado": "SP",
@@ -6830,12 +6851,12 @@
     {
       "estado": "SP",
       "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 268,
-      "entradas_mes": 39,
+      "andamento": 273,
+      "entradas_mes": 44,
       "saidas_mes": 3,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 9,
-      "valor_causa": 35962085.93
+      "valor_causa": 36553696.96
     },
     {
       "estado": "SP",
@@ -6970,12 +6991,12 @@
     {
       "estado": "SP",
       "cliente": "L. SANT ANGELO",
-      "andamento": 33,
+      "andamento": 32,
       "entradas_mes": 2,
-      "saidas_mes": 4,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 4823030.51
+      "valor_causa": 4777737.59
     },
     {
       "estado": "SP",
@@ -8181,22 +8202,22 @@
   "clientes_com_alerta": [
     {
       "nome": "EMBRAER",
-      "andamento": 741,
-      "entradas_mes": 19,
+      "andamento": 742,
+      "entradas_mes": 20,
       "saidas_mes": 2,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 12,
-      "valor_causa": 147981321.42,
+      "valor_causa": 148419406.28,
       "alerta_entrada": true
     },
     {
       "nome": "CBC CARTUCHOS BRASIL",
-      "andamento": 278,
-      "entradas_mes": 40,
+      "andamento": 283,
+      "entradas_mes": 45,
       "saidas_mes": 3,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 10,
-      "valor_causa": 37247579.87,
+      "valor_causa": 37839190.9,
       "alerta_entrada": true
     },
     {
@@ -8287,6 +8308,31 @@
       "profissional": "Letícia Meneghini Fontes (LMI)"
     },
     {
+      "numero_processo": "1001788-73.2026.5.02.0411",
+      "cliente": "CBC CARTUCHOS BRASIL",
+      "profissional": "Letícia Meneghini Fontes (LMI)"
+    },
+    {
+      "numero_processo": "1001789-58.2026.5.02.0411",
+      "cliente": "CBC CARTUCHOS BRASIL",
+      "profissional": "Letícia Meneghini Fontes (LMI)"
+    },
+    {
+      "numero_processo": "1001790-43.2026.5.02.0411",
+      "cliente": "CBC CARTUCHOS BRASIL",
+      "profissional": "Letícia Meneghini Fontes (LMI)"
+    },
+    {
+      "numero_processo": "1001795-65.2026.5.02.0411",
+      "cliente": "CBC CARTUCHOS BRASIL",
+      "profissional": "Letícia Meneghini Fontes (LMI)"
+    },
+    {
+      "numero_processo": "1001787-88.2026.5.02.0411",
+      "cliente": "CBC CARTUCHOS BRASIL",
+      "profissional": "Letícia Meneghini Fontes (LMI)"
+    },
+    {
       "numero_processo": "0021697-29.2026.5.04.0261",
       "cliente": "CBC MONTENEGRO",
       "profissional": "Letícia Meneghini Fontes (LMI)"
@@ -8305,6 +8351,11 @@
       "numero_processo": "0001683-94.2026.5.09.0128",
       "cliente": "COMPANHIA AIX",
       "profissional": "Natália Biondi Gaggini Robles(NBG)"
+    },
+    {
+      "numero_processo": "0012660-18.2026.5.15.0084",
+      "cliente": "EMBRAER",
+      "profissional": "Anna Carolina Balbino Gatti Baani(ANB)"
     },
     {
       "numero_processo": "0001943-03.2026.5.17.0015",
