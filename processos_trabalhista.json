@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-25T14:15:20",
+  "atualizado_em": "2026-11-25T14:30:20",
   "kpis": {
-    "total_andamento": 7679,
+    "total_andamento": 7678,
     "entradas_hoje": 1,
-    "saidas_hoje": 16,
+    "saidas_hoje": 17,
     "entradas_ontem": 29,
     "saidas_ontem": 20,
     "entradas_mes": 253,
-    "saidas_mes": 166,
+    "saidas_mes": 167,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 231,
-    "valor_causa_total": 1835519587.95,
-    "saldo_mes": 87
+    "valor_causa_total": 1834990038.29,
+    "saldo_mes": 86
   },
   "serie_diaria": [
     {
@@ -312,7 +312,7 @@
     {
       "data": "2026-11-25",
       "entradas": 1,
-      "saidas": 16
+      "saidas": 17
     }
   ],
   "por_grupo": [
@@ -327,12 +327,12 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1760,
+      "andamento": 1759,
       "entradas_mes": 32,
-      "saidas_mes": 75,
+      "saidas_mes": 76,
       "entradas_mes_anterior": 60,
       "saidas_mes_anterior": 70,
-      "valor_causa": 305208942.4
+      "valor_causa": 304679392.74
     },
     {
       "nome": "Grupo B1",
@@ -354,12 +354,12 @@
     },
     {
       "nome": "Grupo B3",
-      "andamento": 616,
-      "entradas_mes": 45,
+      "andamento": 617,
+      "entradas_mes": 46,
       "saidas_mes": 7,
       "entradas_mes_anterior": 35,
       "saidas_mes_anterior": 12,
-      "valor_causa": 119825484.69
+      "valor_causa": 119920490.92
     },
     {
       "nome": "Grupo C1",
@@ -407,15 +407,6 @@
       "valor_causa": 0.0
     },
     {
-      "nome": "Sem grupo",
-      "andamento": 22,
-      "entradas_mes": 19,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 3,
-      "saidas_mes_anterior": 1,
-      "valor_causa": 7100619.99
-    },
-    {
       "nome": "Grupo A2",
       "andamento": 21,
       "entradas_mes": 0,
@@ -423,6 +414,15 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 2,
       "valor_causa": 10695821.76
+    },
+    {
+      "nome": "Sem grupo",
+      "andamento": 21,
+      "entradas_mes": 18,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 3,
+      "saidas_mes_anterior": 1,
+      "valor_causa": 7005613.76
     },
     {
       "nome": "Sócios",
@@ -581,12 +581,12 @@
     },
     {
       "nome": "DF",
-      "andamento": 30,
+      "andamento": 29,
       "entradas_mes": 2,
-      "saidas_mes": 0,
+      "saidas_mes": 1,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
-      "valor_causa": 16362883.23
+      "valor_causa": 15833333.57
     },
     {
       "nome": "MA",
@@ -700,12 +700,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2937,
+      "andamento": 2934,
       "entradas_mes": 158,
-      "saidas_mes": 48,
+      "saidas_mes": 49,
       "entradas_mes_anterior": 269,
       "saidas_mes_anterior": 76,
-      "valor_causa": 876917772.76
+      "valor_causa": 876113577.89
     },
     {
       "nome": "Sentença",
@@ -718,21 +718,21 @@
     },
     {
       "nome": "Recurso",
-      "andamento": 2923,
+      "andamento": 2922,
       "entradas_mes": 6,
       "saidas_mes": 52,
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 48,
-      "valor_causa": 672404506.25
+      "valor_causa": 672387821.77
     },
     {
       "nome": "Execução",
-      "andamento": 941,
+      "andamento": 944,
       "entradas_mes": 9,
       "saidas_mes": 44,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 49,
-      "valor_causa": 146610236.86
+      "valor_causa": 146901566.55
     }
   ],
   "por_fase_outras": 403,
@@ -890,12 +890,12 @@
     {
       "fase": "Execução",
       "grupo": "Grupo B2",
-      "andamento": 112,
+      "andamento": 115,
       "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 19153579.97
+      "valor_causa": 19444909.66
     },
     {
       "fase": "Execução",
@@ -960,22 +960,22 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 723,
+      "andamento": 722,
       "entradas_mes": 14,
-      "saidas_mes": 19,
+      "saidas_mes": 20,
       "entradas_mes_anterior": 32,
       "saidas_mes_anterior": 23,
-      "valor_causa": 158008724.48
+      "valor_causa": 157479174.82
     },
     {
       "fase": "Instrução",
       "grupo": "Grupo B1",
-      "andamento": 393,
+      "andamento": 391,
       "entradas_mes": 24,
       "saidas_mes": 10,
       "entradas_mes_anterior": 42,
       "saidas_mes_anterior": 14,
-      "valor_causa": 145108745.14
+      "valor_causa": 144834099.93
     },
     {
       "fase": "Instrução",
@@ -990,12 +990,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B3",
-      "andamento": 192,
-      "entradas_mes": 42,
+      "andamento": 193,
+      "entradas_mes": 43,
       "saidas_mes": 1,
       "entradas_mes_anterior": 31,
       "saidas_mes_anterior": 4,
-      "valor_causa": 34107260.08
+      "valor_causa": 34202266.31
     },
     {
       "fase": "Instrução",
@@ -1040,12 +1040,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 20,
-      "entradas_mes": 17,
+      "andamento": 19,
+      "entradas_mes": 16,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 4912372.9
+      "valor_causa": 4817366.67
     },
     {
       "fase": "Instrução",
@@ -1190,12 +1190,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo B1",
-      "andamento": 837,
+      "andamento": 839,
       "entradas_mes": 2,
       "saidas_mes": 15,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 8,
-      "valor_causa": 171752494.4
+      "valor_causa": 172027139.61
     },
     {
       "fase": "Recurso",
@@ -1220,12 +1220,12 @@
     {
       "fase": "Recurso",
       "grupo": "Grupo B2",
-      "andamento": 367,
+      "andamento": 364,
       "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 64790414.16
+      "valor_causa": 64499084.47
     },
     {
       "fase": "Recurso",
@@ -1371,12 +1371,12 @@
   "por_profissional": [
     {
       "nome": "Giulia Vendramini Milani(GVM)",
-      "andamento": 404,
+      "andamento": 403,
       "entradas_mes": 7,
-      "saidas_mes": 31,
+      "saidas_mes": 32,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 29,
-      "valor_causa": 65807590.53
+      "valor_causa": 65278040.87
     },
     {
       "nome": "Letícia Meneghini Fontes (LMI)",
@@ -1890,12 +1890,12 @@
     },
     {
       "nome": "SYNGENTA SEEDS NIDER",
-      "andamento": 151,
+      "andamento": 150,
       "entradas_mes": 6,
-      "saidas_mes": 5,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 13,
-      "valor_causa": 25804485.54,
+      "valor_causa": 25274935.88,
       "alerta_entrada": false
     },
     {
@@ -2425,12 +2425,12 @@
     {
       "grupo": "Grupo B3",
       "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 277,
-      "entradas_mes": 42,
+      "andamento": 278,
+      "entradas_mes": 43,
       "saidas_mes": 3,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 10,
-      "valor_causa": 37464292.98,
+      "valor_causa": 37559299.21,
       "alerta_entrada": true
     },
     {
@@ -3041,12 +3041,12 @@
     {
       "grupo": "Grupo E1",
       "cliente": "SYNGENTA SEEDS NIDER",
-      "andamento": 145,
+      "andamento": 144,
       "entradas_mes": 5,
-      "saidas_mes": 5,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 13,
-      "valor_causa": 24212264.45,
+      "valor_causa": 23682714.79,
       "alerta_entrada": false
     },
     {
@@ -3832,17 +3832,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 4,
-      "entradas_mes": 4,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 526426.98,
-      "alerta_entrada": true
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "MAHLE METAL - MOGI",
       "andamento": 3,
       "entradas_mes": 3,
@@ -3861,6 +3850,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 680912.51,
+      "alerta_entrada": true
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "CBC CARTUCHOS BRASIL",
+      "andamento": 3,
+      "entradas_mes": 3,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 431420.75,
       "alerta_entrada": true
     },
     {
@@ -4207,12 +4207,12 @@
     {
       "grupo": "Grupo B3",
       "profissional": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 387,
-      "entradas_mes": 33,
+      "andamento": 388,
+      "entradas_mes": 34,
       "saidas_mes": 5,
       "entradas_mes_anterior": 31,
       "saidas_mes_anterior": 5,
-      "valor_causa": 73879015.71
+      "valor_causa": 73974021.94
     },
     {
       "grupo": "Grupo B3",
@@ -4377,12 +4377,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Giulia Vendramini Milani(GVM)",
-      "andamento": 401,
+      "andamento": 400,
       "entradas_mes": 4,
-      "saidas_mes": 31,
+      "saidas_mes": 32,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 29,
-      "valor_causa": 63827988.95
+      "valor_causa": 63298439.29
     },
     {
       "grupo": "Grupo E1",
@@ -4636,16 +4636,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 5,
-      "entradas_mes": 5,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 589268.98
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Natália Biondi Gaggini Robles(NBG)",
       "andamento": 4,
       "entradas_mes": 2,
@@ -4653,6 +4643,16 @@
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
       "valor_causa": 416495.3
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Letícia Meneghini Fontes (LMI)",
+      "andamento": 4,
+      "entradas_mes": 4,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 494262.75
     },
     {
       "grupo": "Sem grupo",
@@ -5078,16 +5078,6 @@
     },
     {
       "estado": "DF",
-      "cliente": "SYNGENTA SEEDS NIDER",
-      "andamento": 2,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 8332199.03
-    },
-    {
-      "estado": "DF",
       "cliente": "TELEFONICA BRASIL",
       "andamento": 2,
       "entradas_mes": 0,
@@ -5155,6 +5145,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 600000.0
+    },
+    {
+      "estado": "DF",
+      "cliente": "SYNGENTA SEEDS NIDER",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 7802649.37
     },
     {
       "estado": "DF",
@@ -8269,11 +8269,6 @@
       "numero_processo": "1002329-40.2026.5.02.0433",
       "cliente": "BRIDGESTONE",
       "profissional": "Guilherme Silva Morimoto(GSM)"
-    },
-    {
-      "numero_processo": "1001788-73.2026.5.02.0411",
-      "cliente": "CBC CARTUCHOS BRASIL",
-      "profissional": "Letícia Meneghini Fontes (LMI)"
     },
     {
       "numero_processo": "1001787-88.2026.5.02.0411",
