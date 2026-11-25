@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-25T08:30:19",
+  "atualizado_em": "2026-11-25T08:45:21",
   "kpis": {
-    "total_andamento": 7691,
+    "total_andamento": 7692,
     "entradas_hoje": 0,
     "saidas_hoje": 1,
-    "entradas_ontem": 27,
+    "entradas_ontem": 28,
     "saidas_ontem": 20,
-    "entradas_mes": 250,
+    "entradas_mes": 251,
     "saidas_mes": 151,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 231,
-    "valor_causa_total": 1836825479.84,
-    "saldo_mes": 99
+    "valor_causa_total": 1837073375.14,
+    "saldo_mes": 100
   },
   "serie_diaria": [
     {
@@ -306,7 +306,7 @@
     },
     {
       "data": "2026-11-24",
-      "entradas": 27,
+      "entradas": 28,
       "saidas": 20
     },
     {
@@ -399,12 +399,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 31,
-      "entradas_mes": 28,
+      "andamento": 32,
+      "entradas_mes": 29,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 8283243.36
+      "valor_causa": 8531138.66
     },
     {
       "nome": "Grupo A1",
@@ -545,12 +545,12 @@
     },
     {
       "nome": "CE",
-      "andamento": 48,
-      "entradas_mes": 7,
+      "andamento": 49,
+      "entradas_mes": 8,
       "saidas_mes": 0,
       "entradas_mes_anterior": 30,
       "saidas_mes_anterior": 1,
-      "valor_causa": 6980281.48
+      "valor_causa": 7228176.78
     },
     {
       "nome": "TO",
@@ -700,12 +700,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2944,
-      "entradas_mes": 156,
+      "andamento": 2945,
+      "entradas_mes": 157,
       "saidas_mes": 41,
       "entradas_mes_anterior": 269,
       "saidas_mes_anterior": 76,
-      "valor_causa": 878078788.69
+      "valor_causa": 878326683.99
     },
     {
       "nome": "Sentença",
@@ -1040,12 +1040,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 29,
-      "entradas_mes": 26,
+      "andamento": 30,
+      "entradas_mes": 27,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 6094996.27
+      "valor_causa": 6342891.57
     },
     {
       "fase": "Instrução",
@@ -1596,12 +1596,12 @@
     },
     {
       "nome": "Natália Biondi Gaggini Robles(NBG)",
-      "andamento": 165,
-      "entradas_mes": 13,
+      "andamento": 166,
+      "entradas_mes": 14,
       "saidas_mes": 3,
       "entradas_mes_anterior": 32,
       "saidas_mes_anterior": 2,
-      "valor_causa": 40029713.83
+      "valor_causa": 40277609.13
     },
     {
       "nome": "Mariana Borges de Menezes Fávaro(MBF)",
@@ -1870,12 +1870,12 @@
     },
     {
       "nome": "COMPANHIA AIX",
-      "andamento": 172,
-      "entradas_mes": 13,
+      "andamento": 173,
+      "entradas_mes": 14,
       "saidas_mes": 1,
       "entradas_mes_anterior": 48,
       "saidas_mes_anterior": 0,
-      "valor_causa": 37902546.56,
+      "valor_causa": 38150441.86,
       "alerta_entrada": false
     },
     {
@@ -3832,6 +3832,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "COMPANHIA AIX",
+      "andamento": 3,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 2,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 277895.3,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "BRIDGESTONE",
       "andamento": 3,
       "entradas_mes": 3,
@@ -3850,17 +3861,6 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
       "valor_causa": 154536.11,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
-      "cliente": "COMPANHIA AIX",
-      "andamento": 2,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 2,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 30000.0,
       "alerta_entrada": false
     },
     {
@@ -3942,17 +3942,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "EMBRAER",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 438084.86,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "MAHLE METAL - SBC",
       "andamento": 1,
       "entradas_mes": 1,
@@ -3960,6 +3949,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 644071.1,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "EMBRAER",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 438084.86,
       "alerta_entrada": false
     },
     {
@@ -4668,6 +4668,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Natália Biondi Gaggini Robles(NBG)",
+      "andamento": 3,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 2,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 277895.3
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Bruno Tanganelli Farah(BTF)",
       "andamento": 3,
       "entradas_mes": 3,
@@ -4685,16 +4695,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 1979601.58
-    },
-    {
-      "grupo": "Sem grupo",
-      "profissional": "Natália Biondi Gaggini Robles(NBG)",
-      "andamento": 2,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 2,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 30000.0
     },
     {
       "grupo": "Sem grupo",
@@ -4758,16 +4758,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Anna Carolina Balbino Gatti Baani(ANB)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 438084.86
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Luiz Vicente de Carvalho(LVC)",
       "andamento": 1,
       "entradas_mes": 1,
@@ -4775,6 +4765,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 644071.1
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Anna Carolina Balbino Gatti Baani(ANB)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 438084.86
     },
     {
       "grupo": "Sócios",
@@ -5001,12 +5001,12 @@
     {
       "estado": "CE",
       "cliente": "COMPANHIA AIX",
-      "andamento": 42,
-      "entradas_mes": 7,
+      "andamento": 43,
+      "entradas_mes": 8,
       "saidas_mes": 0,
       "entradas_mes_anterior": 30,
       "saidas_mes_anterior": 0,
-      "valor_causa": 6974463.55
+      "valor_causa": 7222358.85
     },
     {
       "estado": "CE",
@@ -8313,12 +8313,12 @@
       "profissional": "Letícia Meneghini Fontes (LMI)"
     },
     {
-      "numero_processo": "1001765-30.2026.5.02.0411",
+      "numero_processo": "1001768-82.2026.5.02.0411",
       "cliente": "CBC CARTUCHOS BRASIL",
       "profissional": "Letícia Meneghini Fontes (LMI)"
     },
     {
-      "numero_processo": "1001768-82.2026.5.02.0411",
+      "numero_processo": "1001765-30.2026.5.02.0411",
       "cliente": "CBC CARTUCHOS BRASIL",
       "profissional": "Letícia Meneghini Fontes (LMI)"
     },
@@ -8384,6 +8384,11 @@
     },
     {
       "numero_processo": "0001683-94.2026.5.09.0128",
+      "cliente": "COMPANHIA AIX",
+      "profissional": "Natália Biondi Gaggini Robles(NBG)"
+    },
+    {
+      "numero_processo": "0001770-58.2026.5.07.0014",
       "cliente": "COMPANHIA AIX",
       "profissional": "Natália Biondi Gaggini Robles(NBG)"
     },
