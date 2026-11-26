@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-26T16:30:26",
+  "atualizado_em": "2026-11-26T16:45:19",
   "kpis": {
     "total_andamento": 7679,
     "entradas_hoje": 16,
@@ -354,12 +354,12 @@
     },
     {
       "nome": "Grupo B3",
-      "andamento": 624,
-      "entradas_mes": 53,
+      "andamento": 626,
+      "entradas_mes": 55,
       "saidas_mes": 7,
       "entradas_mes_anterior": 35,
       "saidas_mes_anterior": 12,
-      "valor_causa": 120990816.12
+      "valor_causa": 121594994.5
     },
     {
       "nome": "Grupo C1",
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 20,
-      "entradas_mes": 17,
+      "andamento": 18,
+      "entradas_mes": 15,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 8305577.21
+      "valor_causa": 7701398.83
     },
     {
       "nome": "Sócios",
@@ -990,12 +990,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B3",
-      "andamento": 200,
-      "entradas_mes": 50,
+      "andamento": 202,
+      "entradas_mes": 52,
       "saidas_mes": 1,
       "entradas_mes_anterior": 31,
       "saidas_mes_anterior": 4,
-      "valor_causa": 35272591.51
+      "valor_causa": 35876769.89
     },
     {
       "fase": "Instrução",
@@ -1040,12 +1040,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 18,
-      "entradas_mes": 15,
+      "andamento": 16,
+      "entradas_mes": 13,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 6117330.12
+      "valor_causa": 5513151.74
     },
     {
       "fase": "Instrução",
@@ -2427,12 +2427,12 @@
     {
       "grupo": "Grupo B3",
       "cliente": "CBC MONTENEGRO",
-      "andamento": 136,
-      "entradas_mes": 3,
+      "andamento": 138,
+      "entradas_mes": 5,
       "saidas_mes": 2,
       "entradas_mes_anterior": 7,
       "saidas_mes_anterior": 0,
-      "valor_causa": 34204227.18,
+      "valor_causa": 34808405.56,
       "alerta_entrada": false
     },
     {
@@ -3834,17 +3834,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "CBC MONTENEGRO",
-      "andamento": 3,
-      "entradas_mes": 3,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 2174199.06,
-      "alerta_entrada": true
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "andamento": 2,
       "entradas_mes": 1,
@@ -3896,6 +3885,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 1592221.09,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "CBC MONTENEGRO",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1570020.68,
       "alerta_entrada": false
     },
     {
@@ -4175,12 +4175,12 @@
     {
       "grupo": "Grupo B3",
       "profissional": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 395,
-      "entradas_mes": 41,
+      "andamento": 397,
+      "entradas_mes": 43,
       "saidas_mes": 5,
       "entradas_mes_anterior": 31,
       "saidas_mes_anterior": 5,
-      "valor_causa": 75044347.14
+      "valor_causa": 75648525.52
     },
     {
       "grupo": "Grupo B3",
@@ -4604,16 +4604,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 3,
-      "entradas_mes": 3,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 2174199.06
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Natália Biondi Gaggini Robles(NBG)",
       "andamento": 2,
       "entradas_mes": 0,
@@ -4701,6 +4691,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 1000.0
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Letícia Meneghini Fontes (LMI)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1570020.68
     },
     {
       "grupo": "Sem grupo",
@@ -8277,16 +8277,6 @@
       "numero_processo": "1002336-32.2026.5.02.0433",
       "cliente": "BRIDGESTONE",
       "profissional": "Rafael Rocha Ferreira(RFE)"
-    },
-    {
-      "numero_processo": "0021709-43.2026.5.04.0261",
-      "cliente": "CBC MONTENEGRO",
-      "profissional": "Letícia Meneghini Fontes (LMI)"
-    },
-    {
-      "numero_processo": "0021708-58.2026.5.04.0261",
-      "cliente": "CBC MONTENEGRO",
-      "profissional": "Letícia Meneghini Fontes (LMI)"
     },
     {
       "numero_processo": "0021185-72.2026.5.04.0026",
