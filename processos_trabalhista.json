@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-26T14:00:24",
+  "atualizado_em": "2026-11-26T14:15:24",
   "kpis": {
-    "total_andamento": 7679,
+    "total_andamento": 7678,
     "entradas_hoje": 9,
-    "saidas_hoje": 2,
+    "saidas_hoje": 3,
     "entradas_ontem": 1,
     "saidas_ontem": 22,
     "entradas_mes": 262,
-    "saidas_mes": 175,
+    "saidas_mes": 176,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 231,
     "valor_causa_total": 1835361744.05,
-    "saldo_mes": 87
+    "saldo_mes": 86
   },
   "serie_diaria": [
     {
@@ -312,15 +312,15 @@
     {
       "data": "2026-11-26",
       "entradas": 9,
-      "saidas": 2
+      "saidas": 3
     }
   ],
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2163,
+      "andamento": 2162,
       "entradas_mes": 82,
-      "saidas_mes": 48,
+      "saidas_mes": 49,
       "entradas_mes_anterior": 105,
       "saidas_mes_anterior": 77,
       "valor_causa": 488667538.42
@@ -455,9 +455,9 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5782,
+      "andamento": 5781,
       "entradas_mes": 174,
-      "saidas_mes": 138,
+      "saidas_mes": 139,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 166,
       "valor_causa": 1421573089.14
@@ -735,7 +735,7 @@
       "valor_causa": 148300626.26
     }
   ],
-  "por_fase_outras": 404,
+  "por_fase_outras": 403,
   "por_fase_grupo": [
     {
       "fase": "Ajuizamento",
@@ -1080,9 +1080,9 @@
     {
       "fase": "Outras",
       "grupo": "Grupo E2",
-      "andamento": 137,
+      "andamento": 136,
       "entradas_mes": 10,
-      "saidas_mes": 3,
+      "saidas_mes": 4,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 4,
       "valor_causa": 5254337.42
@@ -1339,16 +1339,6 @@
     },
     {
       "fase": "Sentença",
-      "grupo": "Grupo A2",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 912238.94
-    },
-    {
-      "fase": "Sentença",
       "grupo": "Grupo A3",
       "andamento": 1,
       "entradas_mes": 0,
@@ -1366,6 +1356,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
       "valor_causa": 150747.29
+    },
+    {
+      "fase": "Sentença",
+      "grupo": "Grupo A2",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 912238.94
     }
   ],
   "por_profissional": [
@@ -1425,9 +1425,9 @@
     },
     {
       "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 306,
+      "andamento": 305,
       "entradas_mes": 13,
-      "saidas_mes": 4,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 14,
       "saidas_mes_anterior": 7,
       "valor_causa": 156037951.15
@@ -1761,9 +1761,9 @@
     },
     {
       "nome": "BP BIOENERGIA",
-      "andamento": 755,
+      "andamento": 754,
       "entradas_mes": 18,
-      "saidas_mes": 22,
+      "saidas_mes": 23,
       "entradas_mes_anterior": 32,
       "saidas_mes_anterior": 22,
       "valor_causa": 218550511.17,
@@ -2129,17 +2129,6 @@
     },
     {
       "grupo": "Grupo A2",
-      "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 1,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 912238.94,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Grupo A2",
       "cliente": "HUB SERVIÇOS",
       "andamento": 1,
       "entradas_mes": 0,
@@ -2191,6 +2180,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 1025000.0,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Grupo A2",
+      "cliente": "SYNGENTA PROTEÇÃO DE",
+      "andamento": 1,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 912238.94,
       "alerta_entrada": false
     },
     {
@@ -3241,9 +3241,9 @@
     {
       "grupo": "Grupo E2",
       "cliente": "BP BIOENERGIA",
-      "andamento": 753,
+      "andamento": 752,
       "entradas_mes": 16,
-      "saidas_mes": 22,
+      "saidas_mes": 23,
       "entradas_mes_anterior": 32,
       "saidas_mes_anterior": 22,
       "valor_causa": 216918728.77,
@@ -4526,9 +4526,9 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 302,
+      "andamento": 301,
       "entradas_mes": 13,
-      "saidas_mes": 4,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 14,
       "saidas_mes_anterior": 6,
       "valor_causa": 156000405.43
@@ -6788,9 +6788,9 @@
     {
       "estado": "SP",
       "cliente": "BP BIOENERGIA",
-      "andamento": 421,
+      "andamento": 420,
       "entradas_mes": 14,
-      "saidas_mes": 14,
+      "saidas_mes": 15,
       "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 13,
       "valor_causa": 105490808.06
