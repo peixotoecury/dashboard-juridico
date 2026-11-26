@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-26T12:30:20",
+  "atualizado_em": "2026-11-26T12:45:19",
   "kpis": {
-    "total_andamento": 7672,
-    "entradas_hoje": 2,
+    "total_andamento": 7675,
+    "entradas_hoje": 5,
     "saidas_hoje": 2,
     "entradas_ontem": 1,
     "saidas_ontem": 22,
-    "entradas_mes": 255,
+    "entradas_mes": 258,
     "saidas_mes": 175,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 231,
-    "valor_causa_total": 1834089416.42,
-    "saldo_mes": 80
+    "valor_causa_total": 1834468364.38,
+    "saldo_mes": 83
   },
   "serie_diaria": [
     {
@@ -311,7 +311,7 @@
     },
     {
       "data": "2026-11-26",
-      "entradas": 2,
+      "entradas": 5,
       "saidas": 2
     }
   ],
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 11,
-      "entradas_mes": 8,
+      "andamento": 14,
+      "entradas_mes": 11,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 4633751.2
+      "valor_causa": 5012699.16
     },
     {
       "nome": "Sócios",
@@ -455,12 +455,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5777,
-      "entradas_mes": 169,
+      "andamento": 5780,
+      "entradas_mes": 172,
       "saidas_mes": 138,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 166,
-      "valor_causa": 1420904939.89
+      "valor_causa": 1421283887.85
     },
     {
       "nome": "MG",
@@ -700,12 +700,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2922,
-      "entradas_mes": 156,
+      "andamento": 2925,
+      "entradas_mes": 159,
       "saidas_mes": 54,
       "entradas_mes_anterior": 267,
       "saidas_mes_anterior": 76,
-      "valor_causa": 871268641.46
+      "valor_causa": 871647589.42
     },
     {
       "nome": "Sentença",
@@ -1050,12 +1050,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 9,
-      "entradas_mes": 6,
+      "andamento": 12,
+      "entradas_mes": 9,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 2445504.11
+      "valor_causa": 2824452.07
     },
     {
       "fase": "Instrução",
@@ -1371,12 +1371,12 @@
   "por_profissional": [
     {
       "nome": "Giulia Vendramini Milani(GVM)",
-      "andamento": 402,
-      "entradas_mes": 6,
+      "andamento": 403,
+      "entradas_mes": 7,
       "saidas_mes": 32,
       "entradas_mes_anterior": 18,
       "saidas_mes_anterior": 29,
-      "valor_causa": 64936737.98
+      "valor_causa": 64947677.36
     },
     {
       "nome": "Rafael Yepez do Lago(RYL)",
@@ -1389,12 +1389,12 @@
     },
     {
       "nome": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 392,
-      "entradas_mes": 38,
+      "andamento": 394,
+      "entradas_mes": 40,
       "saidas_mes": 5,
       "entradas_mes_anterior": 31,
       "saidas_mes_anterior": 5,
-      "valor_causa": 74468284.69
+      "valor_causa": 74836293.27
     },
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
@@ -1781,12 +1781,12 @@
     },
     {
       "nome": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 698,
-      "entradas_mes": 13,
+      "andamento": 699,
+      "entradas_mes": 14,
       "saidas_mes": 29,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 23,
-      "valor_causa": 141601936.29,
+      "valor_causa": 141612875.67,
       "alerta_entrada": false
     },
     {
@@ -1831,12 +1831,12 @@
     },
     {
       "nome": "CBC CARTUCHOS BRASIL",
-      "andamento": 284,
-      "entradas_mes": 46,
+      "andamento": 286,
+      "entradas_mes": 48,
       "saidas_mes": 3,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 10,
-      "valor_causa": 37990719.96,
+      "valor_causa": 38358728.54,
       "alerta_entrada": true
     },
     {
@@ -3812,6 +3812,17 @@
     },
     {
       "grupo": "Sem grupo",
+      "cliente": "SYNGENTA PROTEÇÃO DE",
+      "andamento": 3,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 165475.49,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
       "cliente": "BRIDGESTONE",
       "andamento": 3,
       "entradas_mes": 3,
@@ -3823,17 +3834,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 2,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 154536.11,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "COMPANHIA AIX",
       "andamento": 2,
       "entradas_mes": 0,
@@ -3841,6 +3841,17 @@
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
       "valor_causa": 30000.0,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "CBC CARTUCHOS BRASIL",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 368008.58,
       "alerta_entrada": false
     },
     {
@@ -4593,6 +4604,16 @@
     },
     {
       "grupo": "Sem grupo",
+      "profissional": "Giulia Vendramini Milani(GVM)",
+      "andamento": 3,
+      "entradas_mes": 3,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1649238.07
+    },
+    {
+      "grupo": "Sem grupo",
       "profissional": "Natália Biondi Gaggini Robles(NBG)",
       "andamento": 2,
       "entradas_mes": 0,
@@ -4613,13 +4634,13 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Giulia Vendramini Milani(GVM)",
+      "profissional": "Letícia Meneghini Fontes (LMI)",
       "andamento": 2,
       "entradas_mes": 2,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 1638298.69
+      "valor_causa": 368008.58
     },
     {
       "grupo": "Sem grupo",
@@ -6736,12 +6757,12 @@
     {
       "estado": "SP",
       "cliente": "SYNGENTA PROTEÇÃO DE",
-      "andamento": 597,
-      "entradas_mes": 11,
+      "andamento": 598,
+      "entradas_mes": 12,
       "saidas_mes": 23,
       "entradas_mes_anterior": 17,
       "saidas_mes_anterior": 18,
-      "valor_causa": 128091774.76
+      "valor_causa": 128102714.14
     },
     {
       "estado": "SP",
@@ -6776,12 +6797,12 @@
     {
       "estado": "SP",
       "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 274,
-      "entradas_mes": 45,
+      "andamento": 276,
+      "entradas_mes": 47,
       "saidas_mes": 3,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 9,
-      "valor_causa": 36705226.02
+      "valor_causa": 37073234.6
     },
     {
       "estado": "SP",
@@ -8137,12 +8158,12 @@
     },
     {
       "nome": "CBC CARTUCHOS BRASIL",
-      "andamento": 284,
-      "entradas_mes": 46,
+      "andamento": 286,
+      "entradas_mes": 48,
       "saidas_mes": 3,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 10,
-      "valor_causa": 37990719.96,
+      "valor_causa": 38358728.54,
       "alerta_entrada": true
     },
     {
@@ -8198,6 +8219,16 @@
       "profissional": "Guilherme Silva Morimoto(GSM)"
     },
     {
+      "numero_processo": "1001804-27.2026.5.02.0411",
+      "cliente": "CBC CARTUCHOS BRASIL",
+      "profissional": "Letícia Meneghini Fontes (LMI)"
+    },
+    {
+      "numero_processo": "1001784-36.2026.5.02.0411",
+      "cliente": "CBC CARTUCHOS BRASIL",
+      "profissional": "Letícia Meneghini Fontes (LMI)"
+    },
+    {
       "numero_processo": "0001607-78.2026.5.07.0014",
       "cliente": "COMPANHIA AIX",
       "profissional": "Natália Biondi Gaggini Robles(NBG)"
@@ -8221,6 +8252,11 @@
       "numero_processo": "1002027-29.2026.5.02.0718",
       "cliente": "SYNGENTA PROTEÇÃO DE",
       "profissional": "Vinícius Ronchi Arruda(VRO)"
+    },
+    {
+      "numero_processo": "0011848-44.2026.5.15.0126",
+      "cliente": "SYNGENTA PROTEÇÃO DE",
+      "profissional": "Giulia Vendramini Milani(GVM)"
     },
     {
       "numero_processo": "0012653-18.2026.5.15.0022",
