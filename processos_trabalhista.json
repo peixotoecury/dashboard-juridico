@@ -1,24 +1,19 @@
 {
-  "atualizado_em": "2026-11-25T20:00:19",
+  "atualizado_em": "2026-11-26T08:00:22",
   "kpis": {
-    "total_andamento": 7673,
-    "entradas_hoje": 1,
-    "saidas_hoje": 21,
-    "entradas_ontem": 29,
-    "saidas_ontem": 20,
+    "total_andamento": 7672,
+    "entradas_hoje": 0,
+    "saidas_hoje": 0,
+    "entradas_ontem": 1,
+    "saidas_ontem": 22,
     "entradas_mes": 253,
-    "saidas_mes": 172,
+    "saidas_mes": 173,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 231,
-    "valor_causa_total": 1834270922.19,
-    "saldo_mes": 81
+    "valor_causa_total": 1834167200.98,
+    "saldo_mes": 80
   },
   "serie_diaria": [
-    {
-      "data": "2026-09-27",
-      "entradas": 0,
-      "saidas": 0
-    },
     {
       "data": "2026-09-28",
       "entradas": 18,
@@ -312,18 +307,23 @@
     {
       "data": "2026-11-25",
       "entradas": 1,
-      "saidas": 21
+      "saidas": 22
+    },
+    {
+      "data": "2026-11-26",
+      "entradas": 0,
+      "saidas": 0
     }
   ],
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2165,
+      "andamento": 2164,
       "entradas_mes": 82,
-      "saidas_mes": 46,
+      "saidas_mes": 47,
       "entradas_mes_anterior": 105,
       "saidas_mes_anterior": 77,
-      "valor_causa": 488808044.19
+      "valor_causa": 488704322.98
     },
     {
       "nome": "Grupo E1",
@@ -455,12 +455,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5778,
+      "andamento": 5777,
       "entradas_mes": 168,
-      "saidas_mes": 136,
+      "saidas_mes": 137,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 166,
-      "valor_causa": 1421049661.1
+      "valor_causa": 1420945939.89
     },
     {
       "nome": "MG",
@@ -700,12 +700,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2923,
-      "entradas_mes": 155,
-      "saidas_mes": 52,
+      "andamento": 2921,
+      "entradas_mes": 154,
+      "saidas_mes": 53,
       "entradas_mes_anterior": 267,
       "saidas_mes_anterior": 76,
-      "valor_causa": 871409147.23
+      "valor_causa": 871305426.02
     },
     {
       "nome": "Sentença",
@@ -735,7 +735,7 @@
       "valor_causa": 148300626.26
     }
   ],
-  "por_fase_outras": 403,
+  "por_fase_outras": 404,
   "por_fase_grupo": [
     {
       "fase": "Ajuizamento",
@@ -950,12 +950,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 892,
-      "entradas_mes": 38,
-      "saidas_mes": 18,
+      "andamento": 890,
+      "entradas_mes": 37,
+      "saidas_mes": 19,
       "entradas_mes_anterior": 86,
       "saidas_mes_anterior": 22,
-      "valor_causa": 194856872.28
+      "valor_causa": 194753151.07
     },
     {
       "fase": "Instrução",
@@ -1080,8 +1080,8 @@
     {
       "fase": "Outras",
       "grupo": "Grupo E2",
-      "andamento": 136,
-      "entradas_mes": 9,
+      "andamento": 137,
+      "entradas_mes": 10,
       "saidas_mes": 3,
       "entradas_mes_anterior": 4,
       "saidas_mes_anterior": 4,
@@ -1407,12 +1407,12 @@
     },
     {
       "nome": "Lucas Willott Pereira (LWP)",
-      "andamento": 318,
+      "andamento": 317,
       "entradas_mes": 5,
-      "saidas_mes": 10,
+      "saidas_mes": 11,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 7,
-      "valor_causa": 39487962.55
+      "valor_causa": 39384241.34
     },
     {
       "nome": "Joice Ramos Miranda(JRM)",
@@ -1425,12 +1425,12 @@
     },
     {
       "nome": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 307,
-      "entradas_mes": 15,
+      "andamento": 306,
+      "entradas_mes": 14,
       "saidas_mes": 4,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 7,
-      "valor_causa": 155746082.49
+      "valor_causa": 155646082.49
     },
     {
       "nome": "Beatriz Santiago de Souza(BSO)",
@@ -1497,12 +1497,12 @@
     },
     {
       "nome": "Rafael Camargo Felisbino(RCF)",
-      "andamento": 278,
-      "entradas_mes": 10,
+      "andamento": 279,
+      "entradas_mes": 11,
       "saidas_mes": 0,
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 8,
-      "valor_causa": 109037995.57
+      "valor_causa": 109137995.57
     },
     {
       "nome": "Aline Menendes Aponte Moraes(AEM)",
@@ -1761,12 +1761,12 @@
     },
     {
       "nome": "BP BIOENERGIA",
-      "andamento": 755,
+      "andamento": 754,
       "entradas_mes": 17,
-      "saidas_mes": 21,
+      "saidas_mes": 22,
       "entradas_mes_anterior": 32,
       "saidas_mes_anterior": 22,
-      "valor_causa": 218573084.96,
+      "valor_causa": 218469363.75,
       "alerta_entrada": false
     },
     {
@@ -3241,12 +3241,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "BP BIOENERGIA",
-      "andamento": 754,
+      "andamento": 753,
       "entradas_mes": 16,
-      "saidas_mes": 21,
+      "saidas_mes": 22,
       "entradas_mes_anterior": 32,
       "saidas_mes_anterior": 22,
-      "valor_causa": 217022449.98,
+      "valor_causa": 216918728.77,
       "alerta_entrada": false
     },
     {
@@ -4484,22 +4484,22 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Lucas Willott Pereira (LWP)",
-      "andamento": 317,
+      "andamento": 316,
       "entradas_mes": 4,
-      "saidas_mes": 10,
+      "saidas_mes": 11,
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 7,
-      "valor_causa": 39309424.47
+      "valor_causa": 39205703.26
     },
     {
       "grupo": "Grupo E2",
       "profissional": "Arthur Rodrigues Rios Toledo de Castro(ARC)",
-      "andamento": 303,
-      "entradas_mes": 15,
+      "andamento": 302,
+      "entradas_mes": 14,
       "saidas_mes": 4,
       "entradas_mes_anterior": 13,
       "saidas_mes_anterior": 6,
-      "valor_causa": 155708536.77
+      "valor_causa": 155608536.77
     },
     {
       "grupo": "Grupo E2",
@@ -4524,12 +4524,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Rafael Camargo Felisbino(RCF)",
-      "andamento": 147,
-      "entradas_mes": 10,
+      "andamento": 148,
+      "entradas_mes": 11,
       "saidas_mes": 0,
       "entradas_mes_anterior": 11,
       "saidas_mes_anterior": 4,
-      "valor_causa": 78381150.97
+      "valor_causa": 78481150.97
     },
     {
       "grupo": "Grupo E2",
@@ -6736,12 +6736,12 @@
     {
       "estado": "SP",
       "cliente": "BP BIOENERGIA",
-      "andamento": 421,
+      "andamento": 420,
       "entradas_mes": 13,
-      "saidas_mes": 13,
+      "saidas_mes": 14,
       "entradas_mes_anterior": 19,
       "saidas_mes_anterior": 13,
-      "valor_causa": 105513381.85
+      "valor_causa": 105409660.64
     },
     {
       "estado": "SP",
