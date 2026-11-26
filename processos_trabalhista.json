@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-26T15:30:31",
+  "atualizado_em": "2026-11-26T15:45:19",
   "kpis": {
-    "total_andamento": 7680,
+    "total_andamento": 7679,
     "entradas_hoje": 16,
-    "saidas_hoje": 8,
+    "saidas_hoje": 9,
     "entradas_ontem": 1,
     "saidas_ontem": 22,
     "entradas_mes": 269,
-    "saidas_mes": 181,
+    "saidas_mes": 182,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 231,
-    "valor_causa_total": 1838429391.67,
-    "saldo_mes": 88
+    "valor_causa_total": 1838290838.0,
+    "saldo_mes": 87
   },
   "serie_diaria": [
     {
@@ -312,7 +312,7 @@
     {
       "data": "2026-11-26",
       "entradas": 16,
-      "saidas": 8
+      "saidas": 9
     }
   ],
   "por_grupo": [
@@ -336,12 +336,12 @@
     },
     {
       "nome": "Grupo B1",
-      "andamento": 1404,
+      "andamento": 1403,
       "entradas_mes": 31,
-      "saidas_mes": 42,
+      "saidas_mes": 43,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 42,
-      "valor_causa": 344446740.25
+      "valor_causa": 344308186.58
     },
     {
       "nome": "Grupo B2",
@@ -354,12 +354,12 @@
     },
     {
       "nome": "Grupo B3",
-      "andamento": 622,
-      "entradas_mes": 51,
+      "andamento": 623,
+      "entradas_mes": 52,
       "saidas_mes": 7,
       "entradas_mes_anterior": 35,
       "saidas_mes_anterior": 12,
-      "valor_causa": 120562454.79
+      "valor_causa": 120782762.25
     },
     {
       "nome": "Grupo C1",
@@ -408,12 +408,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 23,
-      "entradas_mes": 20,
+      "andamento": 22,
+      "entradas_mes": 19,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 8815085.96
+      "valor_causa": 8594778.5
     },
     {
       "nome": "Grupo A2",
@@ -455,12 +455,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5782,
+      "andamento": 5781,
       "entradas_mes": 179,
-      "saidas_mes": 143,
+      "saidas_mes": 144,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 166,
-      "valor_causa": 1422852143.8
+      "valor_causa": 1422713590.13
     },
     {
       "nome": "MG",
@@ -700,7 +700,7 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2934,
+      "andamento": 2933,
       "entradas_mes": 170,
       "saidas_mes": 56,
       "entradas_mes_anterior": 267,
@@ -720,10 +720,10 @@
       "nome": "Recurso",
       "andamento": 2913,
       "entradas_mes": 7,
-      "saidas_mes": 57,
+      "saidas_mes": 58,
       "entradas_mes_anterior": 9,
       "saidas_mes_anterior": 48,
-      "valor_causa": 673589734.58
+      "valor_causa": 673451180.91
     },
     {
       "nome": "Execução",
@@ -970,7 +970,7 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B1",
-      "andamento": 386,
+      "andamento": 385,
       "entradas_mes": 24,
       "saidas_mes": 11,
       "entradas_mes_anterior": 41,
@@ -990,12 +990,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B3",
-      "andamento": 198,
-      "entradas_mes": 48,
+      "andamento": 199,
+      "entradas_mes": 49,
       "saidas_mes": 1,
       "entradas_mes_anterior": 31,
       "saidas_mes_anterior": 4,
-      "valor_causa": 34844230.18
+      "valor_causa": 35064537.64
     },
     {
       "fase": "Instrução",
@@ -1040,12 +1040,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 21,
-      "entradas_mes": 18,
+      "andamento": 20,
+      "entradas_mes": 17,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 6626838.87
+      "valor_causa": 6406531.41
     },
     {
       "fase": "Instrução",
@@ -1192,10 +1192,10 @@
       "grupo": "Grupo B1",
       "andamento": 836,
       "entradas_mes": 2,
-      "saidas_mes": 19,
+      "saidas_mes": 20,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 8,
-      "valor_causa": 174163102.55
+      "valor_causa": 174024548.88
     },
     {
       "fase": "Recurso",
@@ -1515,12 +1515,12 @@
     },
     {
       "nome": "Aline Menendes Aponte Moraes(AEM)",
-      "andamento": 270,
+      "andamento": 269,
       "entradas_mes": 2,
-      "saidas_mes": 8,
+      "saidas_mes": 9,
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 0,
-      "valor_causa": 69066288.76
+      "valor_causa": 68927735.09
     },
     {
       "nome": "Erik Mota Coppi(ECO)",
@@ -1751,12 +1751,12 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1411,
+      "andamento": 1410,
       "entradas_mes": 38,
-      "saidas_mes": 42,
+      "saidas_mes": 43,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 42,
-      "valor_causa": 345944014.12,
+      "valor_causa": 345805460.45,
       "alerta_entrada": false
     },
     {
@@ -2383,12 +2383,12 @@
     {
       "grupo": "Grupo B1",
       "cliente": "BRIDGESTONE",
-      "andamento": 1404,
+      "andamento": 1403,
       "entradas_mes": 31,
-      "saidas_mes": 42,
+      "saidas_mes": 43,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 42,
-      "valor_causa": 344446740.25,
+      "valor_causa": 344308186.58,
       "alerta_entrada": false
     },
     {
@@ -2416,12 +2416,12 @@
     {
       "grupo": "Grupo B3",
       "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 282,
-      "entradas_mes": 47,
+      "andamento": 283,
+      "entradas_mes": 48,
       "saidas_mes": 3,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 10,
-      "valor_causa": 38138421.08,
+      "valor_causa": 38358728.54,
       "alerta_entrada": true
     },
     {
@@ -3867,17 +3867,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 428361.33,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "MAHLE METAL - MOGI",
       "andamento": 1,
       "entradas_mes": 1,
@@ -3907,6 +3896,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 1592221.09,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "CBC CARTUCHOS BRASIL",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 208053.87,
       "alerta_entrada": false
     },
     {
@@ -4076,12 +4076,12 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Aline Menendes Aponte Moraes(AEM)",
-      "andamento": 270,
+      "andamento": 269,
       "entradas_mes": 2,
-      "saidas_mes": 8,
+      "saidas_mes": 9,
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 0,
-      "valor_causa": 69066288.76
+      "valor_causa": 68927735.09
     },
     {
       "grupo": "Grupo B1",
@@ -4186,12 +4186,12 @@
     {
       "grupo": "Grupo B3",
       "profissional": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 393,
-      "entradas_mes": 39,
+      "andamento": 394,
+      "entradas_mes": 40,
       "saidas_mes": 5,
       "entradas_mes_anterior": 31,
       "saidas_mes_anterior": 5,
-      "valor_causa": 74615985.81
+      "valor_causa": 74836293.27
     },
     {
       "grupo": "Grupo B3",
@@ -4616,12 +4616,12 @@
     {
       "grupo": "Sem grupo",
       "profissional": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 5,
-      "entradas_mes": 5,
+      "andamento": 4,
+      "entradas_mes": 4,
       "saidas_mes": 0,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
-      "valor_causa": 2602560.39
+      "valor_causa": 2382252.93
     },
     {
       "grupo": "Sem grupo",
@@ -6778,12 +6778,12 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1385,
+      "andamento": 1384,
       "entradas_mes": 37,
-      "saidas_mes": 42,
+      "saidas_mes": 43,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 40,
-      "valor_causa": 334313894.33
+      "valor_causa": 334175340.66
     },
     {
       "estado": "SP",
@@ -8296,11 +8296,6 @@
     },
     {
       "numero_processo": "1001806-94.2026.5.02.0411",
-      "cliente": "CBC CARTUCHOS BRASIL",
-      "profissional": "Letícia Meneghini Fontes (LMI)"
-    },
-    {
-      "numero_processo": "1001784-36.2026.5.02.0411",
       "cliente": "CBC CARTUCHOS BRASIL",
       "profissional": "Letícia Meneghini Fontes (LMI)"
     },
