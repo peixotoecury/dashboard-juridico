@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-27T09:30:21",
+  "atualizado_em": "2026-11-27T09:45:21",
   "kpis": {
-    "total_andamento": 7668,
+    "total_andamento": 7666,
     "entradas_hoje": 0,
-    "saidas_hoje": 1,
+    "saidas_hoje": 3,
     "entradas_ontem": 16,
     "saidas_ontem": 19,
     "entradas_mes": 269,
-    "saidas_mes": 193,
+    "saidas_mes": 195,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 231,
-    "valor_causa_total": 1837840998.35,
-    "saldo_mes": 76
+    "valor_causa_total": 1837636663.82,
+    "saldo_mes": 74
   },
   "serie_diaria": [
     {
@@ -312,7 +312,7 @@
     {
       "data": "2026-11-27",
       "entradas": 0,
-      "saidas": 1
+      "saidas": 3
     }
   ],
   "por_grupo": [
@@ -336,12 +336,12 @@
     },
     {
       "nome": "Grupo B1",
-      "andamento": 1400,
+      "andamento": 1398,
       "entradas_mes": 35,
-      "saidas_mes": 50,
+      "saidas_mes": 52,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 42,
-      "valor_causa": 344838736.25
+      "valor_causa": 344634401.72
     },
     {
       "nome": "Grupo B2",
@@ -455,12 +455,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5772,
+      "andamento": 5770,
       "entradas_mes": 179,
-      "saidas_mes": 153,
+      "saidas_mes": 155,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 166,
-      "valor_causa": 1422303750.48
+      "valor_causa": 1422099415.95
     },
     {
       "nome": "MG",
@@ -700,9 +700,9 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2928,
+      "andamento": 2927,
       "entradas_mes": 169,
-      "saidas_mes": 60,
+      "saidas_mes": 61,
       "entradas_mes_anterior": 267,
       "saidas_mes_anterior": 76,
       "valor_causa": 875407451.71
@@ -727,12 +727,12 @@
     },
     {
       "nome": "Execução",
-      "andamento": 948,
+      "andamento": 947,
       "entradas_mes": 9,
-      "saidas_mes": 48,
+      "saidas_mes": 49,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 49,
-      "valor_causa": 148136598.3
+      "valor_causa": 147932263.77
     }
   ],
   "por_fase_outras": 403,
@@ -880,12 +880,12 @@
     {
       "fase": "Execução",
       "grupo": "Grupo B1",
-      "andamento": 173,
+      "andamento": 172,
       "entradas_mes": 1,
-      "saidas_mes": 12,
+      "saidas_mes": 13,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 20,
-      "valor_causa": 26571919.97
+      "valor_causa": 26367585.44
     },
     {
       "fase": "Execução",
@@ -970,9 +970,9 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B1",
-      "andamento": 384,
+      "andamento": 383,
       "entradas_mes": 27,
-      "saidas_mes": 15,
+      "saidas_mes": 16,
       "entradas_mes_anterior": 41,
       "saidas_mes_anterior": 14,
       "valor_causa": 142375106.13
@@ -1515,12 +1515,12 @@
     },
     {
       "nome": "Aline Menendes Aponte Moraes(AEM)",
-      "andamento": 265,
+      "andamento": 264,
       "entradas_mes": 2,
-      "saidas_mes": 13,
+      "saidas_mes": 14,
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 0,
-      "valor_causa": 68827570.09
+      "valor_causa": 68623235.56
     },
     {
       "nome": "Erik Mota Coppi(ECO)",
@@ -1560,9 +1560,9 @@
     },
     {
       "nome": "Nicolau Rafael Guimarães Coelho(NRG)",
-      "andamento": 206,
+      "andamento": 205,
       "entradas_mes": 14,
-      "saidas_mes": 14,
+      "saidas_mes": 15,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 22,
       "valor_causa": 33619146.17
@@ -1751,12 +1751,12 @@
   "por_cliente": [
     {
       "nome": "BRIDGESTONE",
-      "andamento": 1403,
+      "andamento": 1401,
       "entradas_mes": 38,
-      "saidas_mes": 50,
+      "saidas_mes": 52,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 42,
-      "valor_causa": 345519648.76,
+      "valor_causa": 345315314.23,
       "alerta_entrada": false
     },
     {
@@ -2383,12 +2383,12 @@
     {
       "grupo": "Grupo B1",
       "cliente": "BRIDGESTONE",
-      "andamento": 1400,
+      "andamento": 1398,
       "entradas_mes": 35,
-      "saidas_mes": 50,
+      "saidas_mes": 52,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 42,
-      "valor_causa": 344838736.25,
+      "valor_causa": 344634401.72,
       "alerta_entrada": false
     },
     {
@@ -4054,12 +4054,12 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Aline Menendes Aponte Moraes(AEM)",
-      "andamento": 265,
+      "andamento": 264,
       "entradas_mes": 2,
-      "saidas_mes": 13,
+      "saidas_mes": 14,
       "entradas_mes_anterior": 10,
       "saidas_mes_anterior": 0,
-      "valor_causa": 68827570.09
+      "valor_causa": 68623235.56
     },
     {
       "grupo": "Grupo B1",
@@ -4094,9 +4094,9 @@
     {
       "grupo": "Grupo B1",
       "profissional": "Nicolau Rafael Guimarães Coelho(NRG)",
-      "andamento": 43,
+      "andamento": 42,
       "entradas_mes": 2,
-      "saidas_mes": 12,
+      "saidas_mes": 13,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 14,
       "valor_causa": 103009.67
@@ -6716,12 +6716,12 @@
     {
       "estado": "SP",
       "cliente": "BRIDGESTONE",
-      "andamento": 1378,
+      "andamento": 1376,
       "entradas_mes": 37,
-      "saidas_mes": 49,
+      "saidas_mes": 51,
       "entradas_mes_anterior": 43,
       "saidas_mes_anterior": 40,
-      "valor_causa": 333889528.97
+      "valor_causa": 333685194.44
     },
     {
       "estado": "SP",
