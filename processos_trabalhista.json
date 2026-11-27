@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-27T13:30:26",
+  "atualizado_em": "2026-11-27T13:45:27",
   "kpis": {
-    "total_andamento": 7675,
+    "total_andamento": 7676,
     "entradas_hoje": 2,
     "saidas_hoje": 8,
-    "entradas_ontem": 29,
+    "entradas_ontem": 30,
     "saidas_ontem": 20,
-    "entradas_mes": 284,
+    "entradas_mes": 285,
     "saidas_mes": 201,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 231,
-    "valor_causa_total": 1839834976.87,
-    "saldo_mes": 83
+    "valor_causa_total": 1839877943.87,
+    "saldo_mes": 84
   },
   "serie_diaria": [
     {
@@ -306,7 +306,7 @@
     },
     {
       "data": "2026-11-26",
-      "entradas": 29,
+      "entradas": 30,
       "saidas": 20
     },
     {
@@ -318,12 +318,12 @@
   "por_grupo": [
     {
       "nome": "Grupo E2",
-      "andamento": 2162,
-      "entradas_mes": 85,
+      "andamento": 2163,
+      "entradas_mes": 86,
       "saidas_mes": 52,
       "entradas_mes_anterior": 105,
       "saidas_mes_anterior": 77,
-      "valor_causa": 488308677.8
+      "valor_causa": 488495326.14
     },
     {
       "nome": "Grupo E1",
@@ -413,7 +413,7 @@
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 7991554.68
+      "valor_causa": 7847873.34
     },
     {
       "nome": "Grupo A2",
@@ -455,12 +455,12 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5775,
-      "entradas_mes": 188,
+      "andamento": 5776,
+      "entradas_mes": 189,
       "saidas_mes": 159,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 166,
-      "valor_causa": 1423331084.02
+      "valor_causa": 1423374051.02
     },
     {
       "nome": "MG",
@@ -700,12 +700,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2940,
-      "entradas_mes": 184,
+      "andamento": 2941,
+      "entradas_mes": 185,
       "saidas_mes": 62,
       "entradas_mes_anterior": 267,
       "saidas_mes_anterior": 76,
-      "valor_causa": 877739997.51
+      "valor_causa": 877782964.51
     },
     {
       "nome": "Sentença",
@@ -950,12 +950,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E2",
-      "andamento": 892,
-      "entradas_mes": 40,
+      "andamento": 893,
+      "entradas_mes": 41,
       "saidas_mes": 20,
       "entradas_mes_anterior": 86,
       "saidas_mes_anterior": 22,
-      "valor_causa": 195478779.52
+      "valor_causa": 195665427.86
     },
     {
       "fase": "Instrução",
@@ -1045,7 +1045,7 @@
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 5803307.59
+      "valor_causa": 5659626.25
     },
     {
       "fase": "Instrução",
@@ -1398,12 +1398,12 @@
     },
     {
       "nome": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 378,
-      "entradas_mes": 20,
+      "andamento": 379,
+      "entradas_mes": 21,
       "saidas_mes": 15,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 23,
-      "valor_causa": 54791956.42
+      "valor_causa": 54834923.42
     },
     {
       "nome": "Lucas Willott Pereira (LWP)",
@@ -3241,12 +3241,12 @@
     {
       "grupo": "Grupo E2",
       "cliente": "BP BIOENERGIA",
-      "andamento": 752,
-      "entradas_mes": 19,
+      "andamento": 753,
+      "entradas_mes": 20,
       "saidas_mes": 26,
       "entradas_mes_anterior": 32,
       "saidas_mes_anterior": 22,
-      "valor_causa": 216559868.15,
+      "valor_causa": 216746516.49,
       "alerta_entrada": false
     },
     {
@@ -3834,17 +3834,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "BP BIOENERGIA",
-      "andamento": 3,
-      "entradas_mes": 3,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 1863374.29,
-      "alerta_entrada": true
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "BRIDGESTONE",
       "andamento": 3,
       "entradas_mes": 3,
@@ -3864,6 +3853,17 @@
       "saidas_mes_anterior": 0,
       "valor_causa": 2229364.97,
       "alerta_entrada": true
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "BP BIOENERGIA",
+      "andamento": 2,
+      "entradas_mes": 2,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 1676725.95,
+      "alerta_entrada": false
     },
     {
       "grupo": "Sem grupo",
@@ -3907,6 +3907,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 425289.29,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "L. SANT ANGELO",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 42967.0,
       "alerta_entrada": false
     },
     {
@@ -4506,12 +4517,12 @@
     {
       "grupo": "Grupo E2",
       "profissional": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 377,
-      "entradas_mes": 19,
+      "andamento": 378,
+      "entradas_mes": 20,
       "saidas_mes": 15,
       "entradas_mes_anterior": 25,
       "saidas_mes_anterior": 23,
-      "valor_causa": 54605308.08
+      "valor_causa": 54791956.42
     },
     {
       "grupo": "Grupo E2",
@@ -4715,16 +4726,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Camila Alves Magalhães de Paula(CAL)",
-      "andamento": 1,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 186648.34
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Rafael Yepez do Lago(RYL)",
       "andamento": 1,
       "entradas_mes": 1,
@@ -4752,6 +4753,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 425289.29
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Camila Alves Magalhães de Paula(CAL)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 42967.0
     },
     {
       "grupo": "Sócios",
@@ -6998,12 +7009,12 @@
     {
       "estado": "SP",
       "cliente": "L. SANT ANGELO",
-      "andamento": 32,
-      "entradas_mes": 2,
+      "andamento": 33,
+      "entradas_mes": 3,
       "saidas_mes": 5,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 4777737.59
+      "valor_causa": 4820704.59
     },
     {
       "estado": "SP",
@@ -8275,11 +8286,6 @@
       "profissional": "Bruno Tanganelli Farah(BTF)"
     },
     {
-      "numero_processo": "0011707-31.2026.5.15.0027",
-      "cliente": "BP BIOENERGIA",
-      "profissional": "Camila Alves Magalhães de Paula(CAL)"
-    },
-    {
       "numero_processo": "0024862-32.2026.5.24.0066",
       "cliente": "BP BIOENERGIA",
       "profissional": "Rafael Yepez do Lago(RYL)"
@@ -8323,6 +8329,11 @@
       "numero_processo": "0001933-35.2026.5.07.0015",
       "cliente": "COMPANHIA AIX",
       "profissional": "Natália Biondi Gaggini Robles(NBG)"
+    },
+    {
+      "numero_processo": "1002099-55.2026.5.02.0026",
+      "cliente": "L. SANT ANGELO",
+      "profissional": "Camila Alves Magalhães de Paula(CAL)"
     },
     {
       "numero_processo": "0012455-28.2026.5.15.0071",
