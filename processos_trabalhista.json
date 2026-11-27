@@ -1,17 +1,17 @@
 {
-  "atualizado_em": "2026-11-27T17:15:19",
+  "atualizado_em": "2026-11-27T17:30:21",
   "kpis": {
-    "total_andamento": 7674,
+    "total_andamento": 7672,
     "entradas_hoje": 2,
-    "saidas_hoje": 9,
+    "saidas_hoje": 11,
     "entradas_ontem": 30,
     "saidas_ontem": 20,
     "entradas_mes": 285,
-    "saidas_mes": 202,
+    "saidas_mes": 204,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 232,
-    "valor_causa_total": 1839790718.19,
-    "saldo_mes": 83
+    "valor_causa_total": 1839146224.21,
+    "saldo_mes": 81
   },
   "serie_diaria": [
     {
@@ -312,7 +312,7 @@
     {
       "data": "2026-11-27",
       "entradas": 2,
-      "saidas": 9
+      "saidas": 11
     }
   ],
   "por_grupo": [
@@ -327,12 +327,12 @@
     },
     {
       "nome": "Grupo E1",
-      "andamento": 1766,
+      "andamento": 1764,
       "entradas_mes": 42,
-      "saidas_mes": 79,
+      "saidas_mes": 81,
       "entradas_mes_anterior": 60,
       "saidas_mes_anterior": 70,
-      "valor_causa": 307726540.7
+      "valor_causa": 307082046.72
     },
     {
       "nome": "Grupo B1",
@@ -363,12 +363,12 @@
     },
     {
       "nome": "Grupo C1",
-      "andamento": 342,
-      "entradas_mes": 23,
+      "andamento": 343,
+      "entradas_mes": 24,
       "saidas_mes": 0,
       "entradas_mes_anterior": 36,
       "saidas_mes_anterior": 0,
-      "valor_causa": 191782967.94
+      "valor_causa": 191880017.94
     },
     {
       "nome": "Grupo C2",
@@ -417,12 +417,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 14,
-      "entradas_mes": 11,
+      "andamento": 13,
+      "entradas_mes": 10,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 5199057.49
+      "valor_causa": 5102007.49
     },
     {
       "nome": "Sócios",
@@ -455,21 +455,21 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5774,
+      "andamento": 5773,
       "entradas_mes": 189,
-      "saidas_mes": 160,
+      "saidas_mes": 161,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 167,
       "valor_causa": 1423286825.34
     },
     {
       "nome": "MG",
-      "andamento": 552,
+      "andamento": 551,
       "entradas_mes": 29,
-      "saidas_mes": 19,
+      "saidas_mes": 20,
       "entradas_mes_anterior": 26,
       "saidas_mes_anterior": 26,
-      "valor_causa": 146206081.62
+      "valor_causa": 145561587.64
     },
     {
       "nome": "PR",
@@ -700,12 +700,12 @@
     },
     {
       "nome": "Instrução",
-      "andamento": 2940,
+      "andamento": 2938,
       "entradas_mes": 186,
-      "saidas_mes": 63,
+      "saidas_mes": 65,
       "entradas_mes_anterior": 267,
       "saidas_mes_anterior": 77,
-      "valor_causa": 878037041.72
+      "valor_causa": 877392547.74
     },
     {
       "nome": "Sentença",
@@ -960,12 +960,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo E1",
-      "andamento": 726,
+      "andamento": 724,
       "entradas_mes": 22,
-      "saidas_mes": 22,
+      "saidas_mes": 24,
       "entradas_mes_anterior": 31,
       "saidas_mes_anterior": 23,
-      "valor_causa": 159528175.1
+      "valor_causa": 158883681.12
     },
     {
       "fase": "Instrução",
@@ -980,12 +980,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo C1",
-      "andamento": 206,
-      "entradas_mes": 9,
+      "andamento": 207,
+      "entradas_mes": 10,
       "saidas_mes": 0,
       "entradas_mes_anterior": 35,
       "saidas_mes_anterior": 0,
-      "valor_causa": 112999556.01
+      "valor_causa": 113096606.01
     },
     {
       "fase": "Instrução",
@@ -1050,12 +1050,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 12,
-      "entradas_mes": 9,
+      "andamento": 11,
+      "entradas_mes": 8,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 3010810.4
+      "valor_causa": 2913760.4
     },
     {
       "fase": "Instrução",
@@ -1487,15 +1487,6 @@
       "valor_causa": 98552966.45
     },
     {
-      "nome": "Júlia Priego Lopes da Silva(JPL)",
-      "andamento": 281,
-      "entradas_mes": 2,
-      "saidas_mes": 5,
-      "entradas_mes_anterior": 1,
-      "saidas_mes_anterior": 9,
-      "valor_causa": 29756269.47
-    },
-    {
       "nome": "Rafael Camargo Felisbino(RCF)",
       "andamento": 281,
       "entradas_mes": 12,
@@ -1503,6 +1494,15 @@
       "entradas_mes_anterior": 16,
       "saidas_mes_anterior": 8,
       "valor_causa": 110891239.57
+    },
+    {
+      "nome": "Júlia Priego Lopes da Silva(JPL)",
+      "andamento": 279,
+      "entradas_mes": 2,
+      "saidas_mes": 7,
+      "entradas_mes_anterior": 1,
+      "saidas_mes_anterior": 9,
+      "valor_causa": 29111775.49
     },
     {
       "nome": "Anna Carolina Balbino Gatti Baani(ANB)",
@@ -1930,16 +1930,6 @@
       "alerta_entrada": false
     },
     {
-      "nome": "DELL COMPUTADORES",
-      "andamento": 86,
-      "entradas_mes": 1,
-      "saidas_mes": 5,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 6,
-      "valor_causa": 13528131.39,
-      "alerta_entrada": false
-    },
-    {
       "nome": "INPASA SINOP",
       "andamento": 85,
       "entradas_mes": 24,
@@ -1948,6 +1938,16 @@
       "saidas_mes_anterior": 0,
       "valor_causa": 14704074.3,
       "alerta_entrada": true
+    },
+    {
+      "nome": "DELL COMPUTADORES",
+      "andamento": 84,
+      "entradas_mes": 1,
+      "saidas_mes": 7,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 6,
+      "valor_causa": 12883637.41,
+      "alerta_entrada": false
     }
   ],
   "por_grupo_cliente": [
@@ -2548,12 +2548,12 @@
     {
       "grupo": "Grupo C1",
       "cliente": "COMPANHIA AIX",
-      "andamento": 131,
-      "entradas_mes": 16,
+      "andamento": 132,
+      "entradas_mes": 17,
       "saidas_mes": 0,
       "entradas_mes_anterior": 27,
       "saidas_mes_anterior": 0,
-      "valor_causa": 24972957.39,
+      "valor_causa": 25070007.39,
       "alerta_entrada": false
     },
     {
@@ -3043,12 +3043,12 @@
     {
       "grupo": "Grupo E1",
       "cliente": "DELL COMPUTADORES",
-      "andamento": 86,
+      "andamento": 84,
       "entradas_mes": 1,
-      "saidas_mes": 5,
+      "saidas_mes": 7,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 6,
-      "valor_causa": 13528131.39,
+      "valor_causa": 12883637.41,
       "alerta_entrada": false
     },
     {
@@ -3812,17 +3812,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "COMPANHIA AIX",
-      "andamento": 3,
-      "entradas_mes": 1,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 2,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 127050.0,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "BRIDGESTONE",
       "andamento": 3,
       "entradas_mes": 3,
@@ -3841,6 +3830,17 @@
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 0,
       "valor_causa": 154536.11,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "COMPANHIA AIX",
+      "andamento": 2,
+      "entradas_mes": 0,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 2,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 30000.0,
       "alerta_entrada": false
     },
     {
@@ -4256,12 +4256,12 @@
     {
       "grupo": "Grupo C1",
       "profissional": "Natália Biondi Gaggini Robles(NBG)",
-      "andamento": 126,
-      "entradas_mes": 15,
+      "andamento": 127,
+      "entradas_mes": 16,
       "saidas_mes": 0,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 0,
-      "valor_causa": 24311562.09
+      "valor_causa": 24408612.09
     },
     {
       "grupo": "Grupo C1",
@@ -4386,12 +4386,12 @@
     {
       "grupo": "Grupo E1",
       "profissional": "Júlia Priego Lopes da Silva(JPL)",
-      "andamento": 281,
+      "andamento": 279,
       "entradas_mes": 2,
-      "saidas_mes": 5,
+      "saidas_mes": 7,
       "entradas_mes_anterior": 1,
       "saidas_mes_anterior": 9,
-      "valor_causa": 29756269.47
+      "valor_causa": 29111775.49
     },
     {
       "grupo": "Grupo E1",
@@ -4626,12 +4626,12 @@
     {
       "grupo": "Sem grupo",
       "profissional": "Natália Biondi Gaggini Robles(NBG)",
-      "andamento": 3,
-      "entradas_mes": 1,
+      "andamento": 2,
+      "entradas_mes": 0,
       "saidas_mes": 0,
       "entradas_mes_anterior": 2,
       "saidas_mes_anterior": 0,
-      "valor_causa": 127050.0
+      "valor_causa": 30000.0
     },
     {
       "grupo": "Sem grupo",
@@ -5467,16 +5467,6 @@
     },
     {
       "estado": "MG",
-      "cliente": "DELL COMPUTADORES",
-      "andamento": 3,
-      "entradas_mes": 0,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 777279.88
-    },
-    {
-      "estado": "MG",
       "cliente": "BRIDGESTONE",
       "andamento": 2,
       "entradas_mes": 1,
@@ -5494,6 +5484,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 50000.0
+    },
+    {
+      "estado": "MG",
+      "cliente": "DELL COMPUTADORES",
+      "andamento": 2,
+      "entradas_mes": 0,
+      "saidas_mes": 1,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 132785.9
     },
     {
       "estado": "MG",
@@ -6888,9 +6888,9 @@
     {
       "estado": "SP",
       "cliente": "DELL COMPUTADORES",
-      "andamento": 82,
+      "andamento": 81,
       "entradas_mes": 1,
-      "saidas_mes": 5,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 6,
       "valor_causa": 12750851.51
@@ -8271,11 +8271,6 @@
     },
     {
       "numero_processo": "0001683-94.2026.5.09.0128",
-      "cliente": "COMPANHIA AIX",
-      "profissional": "Natália Biondi Gaggini Robles(NBG)"
-    },
-    {
-      "numero_processo": "0001933-35.2026.5.07.0015",
       "cliente": "COMPANHIA AIX",
       "profissional": "Natália Biondi Gaggini Robles(NBG)"
     },
