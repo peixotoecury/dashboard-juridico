@@ -1,24 +1,19 @@
 {
-  "atualizado_em": "2026-11-26T20:00:20",
+  "atualizado_em": "2026-11-27T08:00:29",
   "kpis": {
-    "total_andamento": 7670,
-    "entradas_hoje": 16,
-    "saidas_hoje": 18,
-    "entradas_ontem": 1,
-    "saidas_ontem": 22,
+    "total_andamento": 7669,
+    "entradas_hoje": 0,
+    "saidas_hoje": 0,
+    "entradas_ontem": 16,
+    "saidas_ontem": 19,
     "entradas_mes": 269,
-    "saidas_mes": 191,
+    "saidas_mes": 192,
     "entradas_mes_anterior": 325,
     "saidas_mes_anterior": 231,
     "valor_causa_total": 1837840998.35,
-    "saldo_mes": 78
+    "saldo_mes": 77
   },
   "serie_diaria": [
-    {
-      "data": "2026-09-28",
-      "entradas": 18,
-      "saidas": 8
-    },
     {
       "data": "2026-09-29",
       "entradas": 13,
@@ -312,7 +307,12 @@
     {
       "data": "2026-11-26",
       "entradas": 16,
-      "saidas": 18
+      "saidas": 19
+    },
+    {
+      "data": "2026-11-27",
+      "entradas": 0,
+      "saidas": 0
     }
   ],
   "por_grupo": [
@@ -354,9 +354,9 @@
     },
     {
       "nome": "Grupo B3",
-      "andamento": 624,
+      "andamento": 623,
       "entradas_mes": 56,
-      "saidas_mes": 10,
+      "saidas_mes": 11,
       "entradas_mes_anterior": 35,
       "saidas_mes_anterior": 12,
       "valor_causa": 123000987.22
@@ -455,9 +455,9 @@
   "por_estado": [
     {
       "nome": "SP",
-      "andamento": 5773,
+      "andamento": 5772,
       "entradas_mes": 179,
-      "saidas_mes": 152,
+      "saidas_mes": 153,
       "entradas_mes_anterior": 197,
       "saidas_mes_anterior": 166,
       "valor_causa": 1422303750.48
@@ -727,9 +727,9 @@
     },
     {
       "nome": "Execução",
-      "andamento": 949,
+      "andamento": 948,
       "entradas_mes": 9,
-      "saidas_mes": 47,
+      "saidas_mes": 48,
       "entradas_mes_anterior": 5,
       "saidas_mes_anterior": 49,
       "valor_causa": 148136598.3
@@ -900,9 +900,9 @@
     {
       "fase": "Execução",
       "grupo": "Grupo B3",
-      "andamento": 103,
+      "andamento": 102,
       "entradas_mes": 1,
-      "saidas_mes": 5,
+      "saidas_mes": 6,
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
       "valor_causa": 19821263.53
@@ -1389,9 +1389,9 @@
     },
     {
       "nome": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 397,
+      "andamento": 396,
       "entradas_mes": 44,
-      "saidas_mes": 6,
+      "saidas_mes": 7,
       "entradas_mes_anterior": 31,
       "saidas_mes_anterior": 5,
       "valor_causa": 77218546.2
@@ -1524,12 +1524,12 @@
     },
     {
       "nome": "Erik Mota Coppi(ECO)",
-      "andamento": 247,
+      "andamento": 249,
       "entradas_mes": 3,
       "saidas_mes": 0,
-      "entradas_mes_anterior": 19,
+      "entradas_mes_anterior": 20,
       "saidas_mes_anterior": 8,
-      "valor_causa": 47793943.52
+      "valor_causa": 47883943.52
     },
     {
       "nome": "Paloma da Silva Santos(PSI)",
@@ -1596,12 +1596,12 @@
     },
     {
       "nome": "Natália Biondi Gaggini Robles(NBG)",
-      "andamento": 167,
+      "andamento": 165,
       "entradas_mes": 15,
       "saidas_mes": 3,
-      "entradas_mes_anterior": 32,
+      "entradas_mes_anterior": 31,
       "saidas_mes_anterior": 2,
-      "valor_causa": 40416209.13
+      "valor_causa": 40326209.13
     },
     {
       "nome": "Sofia Freire (SOF)",
@@ -1831,9 +1831,9 @@
     },
     {
       "nome": "CBC CARTUCHOS BRASIL",
-      "andamento": 286,
+      "andamento": 285,
       "entradas_mes": 49,
-      "saidas_mes": 4,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 10,
       "valor_causa": 38566782.41,
@@ -2416,9 +2416,9 @@
     {
       "grupo": "Grupo B3",
       "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 283,
+      "andamento": 282,
       "entradas_mes": 49,
-      "saidas_mes": 4,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 10,
       "valor_causa": 38566782.41,
@@ -4164,9 +4164,9 @@
     {
       "grupo": "Grupo B3",
       "profissional": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 397,
+      "andamento": 396,
       "entradas_mes": 44,
-      "saidas_mes": 6,
+      "saidas_mes": 7,
       "entradas_mes_anterior": 31,
       "saidas_mes_anterior": 5,
       "valor_causa": 77218546.2
@@ -4234,12 +4234,12 @@
     {
       "grupo": "Grupo C1",
       "profissional": "Natália Biondi Gaggini Robles(NBG)",
-      "andamento": 127,
+      "andamento": 125,
       "entradas_mes": 14,
       "saidas_mes": 0,
-      "entradas_mes_anterior": 25,
+      "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 0,
-      "valor_causa": 24302432.09
+      "valor_causa": 24212432.09
     },
     {
       "grupo": "Grupo C1",
@@ -4264,12 +4264,12 @@
     {
       "grupo": "Grupo C1",
       "profissional": "Erik Mota Coppi(ECO)",
-      "andamento": 5,
+      "andamento": 7,
       "entradas_mes": 3,
       "saidas_mes": 0,
-      "entradas_mes_anterior": 2,
+      "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 1065373.98
+      "valor_causa": 1155373.98
     },
     {
       "grupo": "Grupo C2",
@@ -6776,9 +6776,9 @@
     {
       "estado": "SP",
       "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 276,
+      "andamento": 275,
       "entradas_mes": 48,
-      "saidas_mes": 4,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 9,
       "valor_causa": 37281288.47
@@ -8137,9 +8137,9 @@
     },
     {
       "nome": "CBC CARTUCHOS BRASIL",
-      "andamento": 286,
+      "andamento": 285,
       "entradas_mes": 49,
-      "saidas_mes": 4,
+      "saidas_mes": 5,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 10,
       "valor_causa": 38566782.41,
