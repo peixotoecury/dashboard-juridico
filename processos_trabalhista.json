@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-27T13:00:21",
+  "atualizado_em": "2026-11-27T13:15:21",
   "kpis": {
     "total_andamento": 7675,
     "entradas_hoje": 2,
@@ -354,12 +354,12 @@
     },
     {
       "nome": "Grupo B3",
-      "andamento": 624,
-      "entradas_mes": 57,
+      "andamento": 625,
+      "entradas_mes": 58,
       "saidas_mes": 11,
       "entradas_mes_anterior": 35,
       "saidas_mes_anterior": 12,
-      "valor_causa": 123018507.15
+      "valor_causa": 123069418.73
     },
     {
       "nome": "Grupo C1",
@@ -408,12 +408,12 @@
     },
     {
       "nome": "Sem grupo",
-      "andamento": 24,
-      "entradas_mes": 21,
+      "andamento": 23,
+      "entradas_mes": 20,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 1,
-      "valor_causa": 8042466.26
+      "valor_causa": 7991554.68
     },
     {
       "nome": "Grupo A2",
@@ -990,12 +990,12 @@
     {
       "fase": "Instrução",
       "grupo": "Grupo B3",
-      "andamento": 204,
-      "entradas_mes": 54,
+      "andamento": 205,
+      "entradas_mes": 55,
       "saidas_mes": 1,
       "entradas_mes_anterior": 31,
       "saidas_mes_anterior": 4,
-      "valor_causa": 37464310.5
+      "valor_causa": 37515222.08
     },
     {
       "fase": "Instrução",
@@ -1040,12 +1040,12 @@
     {
       "fase": "Instrução",
       "grupo": "Sem grupo",
-      "andamento": 22,
-      "entradas_mes": 19,
+      "andamento": 21,
+      "entradas_mes": 18,
       "saidas_mes": 0,
       "entradas_mes_anterior": 3,
       "saidas_mes_anterior": 0,
-      "valor_causa": 5854219.17
+      "valor_causa": 5803307.59
     },
     {
       "fase": "Instrução",
@@ -2416,12 +2416,12 @@
     {
       "grupo": "Grupo B3",
       "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 283,
-      "entradas_mes": 50,
+      "andamento": 284,
+      "entradas_mes": 51,
       "saidas_mes": 5,
       "entradas_mes_anterior": 24,
       "saidas_mes_anterior": 10,
-      "valor_causa": 38584302.34,
+      "valor_causa": 38635213.92,
       "alerta_entrada": true
     },
     {
@@ -3889,17 +3889,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "cliente": "CBC CARTUCHOS BRASIL",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 476200.87,
-      "alerta_entrada": false
-    },
-    {
-      "grupo": "Sem grupo",
       "cliente": "MAHLE METAL- ITAJUBÁ",
       "andamento": 1,
       "entradas_mes": 1,
@@ -3907,6 +3896,17 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 48636.71,
+      "alerta_entrada": false
+    },
+    {
+      "grupo": "Sem grupo",
+      "cliente": "CBC CARTUCHOS BRASIL",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 425289.29,
       "alerta_entrada": false
     },
     {
@@ -4186,12 +4186,12 @@
     {
       "grupo": "Grupo B3",
       "profissional": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 397,
-      "entradas_mes": 45,
+      "andamento": 398,
+      "entradas_mes": 46,
       "saidas_mes": 7,
       "entradas_mes_anterior": 31,
       "saidas_mes_anterior": 5,
-      "valor_causa": 77236066.13
+      "valor_causa": 77286977.71
     },
     {
       "grupo": "Grupo B3",
@@ -4655,16 +4655,6 @@
     },
     {
       "grupo": "Sem grupo",
-      "profissional": "Letícia Meneghini Fontes (LMI)",
-      "andamento": 2,
-      "entradas_mes": 2,
-      "saidas_mes": 0,
-      "entradas_mes_anterior": 0,
-      "saidas_mes_anterior": 0,
-      "valor_causa": 476200.87
-    },
-    {
-      "grupo": "Sem grupo",
       "profissional": "Joice Ramos Miranda(JRM)",
       "andamento": 2,
       "entradas_mes": 2,
@@ -4752,6 +4742,16 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 0,
       "valor_causa": 48636.71
+    },
+    {
+      "grupo": "Sem grupo",
+      "profissional": "Letícia Meneghini Fontes (LMI)",
+      "andamento": 1,
+      "entradas_mes": 1,
+      "saidas_mes": 0,
+      "entradas_mes_anterior": 0,
+      "saidas_mes_anterior": 0,
+      "valor_causa": 425289.29
     },
     {
       "grupo": "Sócios",
@@ -8298,11 +8298,6 @@
       "numero_processo": "1002329-40.2026.5.02.0433",
       "cliente": "BRIDGESTONE",
       "profissional": "Guilherme Silva Morimoto(GSM)"
-    },
-    {
-      "numero_processo": "1001810-34.2026.5.02.0411",
-      "cliente": "CBC CARTUCHOS BRASIL",
-      "profissional": "Letícia Meneghini Fontes (LMI)"
     },
     {
       "numero_processo": "1001823-33.2026.5.02.0411",
