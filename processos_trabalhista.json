@@ -1,11 +1,11 @@
 {
-  "atualizado_em": "2026-11-27T20:00:20",
+  "atualizado_em": "2026-11-28T08:00:28",
   "kpis": {
     "total_andamento": 7671,
-    "entradas_hoje": 2,
-    "saidas_hoje": 12,
-    "entradas_ontem": 30,
-    "saidas_ontem": 20,
+    "entradas_hoje": 0,
+    "saidas_hoje": 0,
+    "entradas_ontem": 2,
+    "saidas_ontem": 12,
     "entradas_mes": 285,
     "saidas_mes": 205,
     "entradas_mes_anterior": 325,
@@ -14,11 +14,6 @@
     "saldo_mes": 80
   },
   "serie_diaria": [
-    {
-      "data": "2026-09-29",
-      "entradas": 13,
-      "saidas": 10
-    },
     {
       "data": "2026-09-30",
       "entradas": 14,
@@ -313,6 +308,11 @@
       "data": "2026-11-27",
       "entradas": 2,
       "saidas": 12
+    },
+    {
+      "data": "2026-11-28",
+      "entradas": 0,
+      "saidas": 0
     }
   ],
   "por_grupo": [
@@ -1887,7 +1887,7 @@
       "entradas_mes_anterior": 6,
       "saidas_mes_anterior": 13,
       "valor_causa": 25912079.75,
-      "alerta_entrada": true
+      "alerta_entrada": false
     },
     {
       "nome": "CBC MONTENEGRO",
@@ -8184,16 +8184,6 @@
       "entradas_mes_anterior": 0,
       "saidas_mes_anterior": 1,
       "valor_causa": 15514536.27,
-      "alerta_entrada": true
-    },
-    {
-      "nome": "SYNGENTA SEEDS NIDER",
-      "andamento": 151,
-      "entradas_mes": 8,
-      "saidas_mes": 7,
-      "entradas_mes_anterior": 6,
-      "saidas_mes_anterior": 13,
-      "valor_causa": 25912079.75,
       "alerta_entrada": true
     },
     {
